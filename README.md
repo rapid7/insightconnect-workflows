@@ -1,5 +1,6 @@
 # Workflows
-Komand repository of Workflows and Snippets
+
+InsightConnect repository of Workflows and Snippets.
 
 Organize using the following directory structure:
 ```
