@@ -25,7 +25,7 @@ Organize using the following directory structure:
 ```
 └── workflows
     └── Basic_Domain_Enrichment_Report
-        ├── Basic_Domain_Enrichment_Report.kom
+        ├── Basic_Domain_Enrichment_Report.icon
         └── screenshots
             ├── artifact1.png
             ├── artifact2.png
