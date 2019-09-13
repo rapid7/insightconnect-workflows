@@ -1,14 +1,14 @@
 {
   "kom": {
-    "komandVersion": "1.36.3-0-g942d4",
+    "komandVersion": "1.37.0-0-gda4e3",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2019-09-05T19:25:23.822061884Z",
+    "exportedAt": "2019-09-13T20:24:44.73410889Z",
     "workflowVersions": [
       {
         "name": "Automated Indicator Enrichment",
         "type": "runnable",
         "version": "",
-        "description": "",
+        "description": "This workflow triggers from directly slack messaging the chatbot to \"!investigate\" the defined indicator. To date, this workflow supports automatically looking up URLs and IPs in open source threat intelligence such as VirusTotal and Whois. Lastly, the workflow will post back results to the specific user.",
         "graph": {
           "edges": {
             "0facd877-3c98-4576-94f7-fffc18732c61": {
