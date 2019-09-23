@@ -9,7 +9,7 @@ Developers, verify you have completed the following items by checking them off:
 - [ ] User friendly step descriptions where needed
 - [ ] Workflow contains at least 1 artifact with well formatted information
 - [ ] Directory created and named after the title the snippet or workflow e.g. `workflows/Basic_Domain_Enrichment_Report/`, `snippets/Domain_Enrichment`
-- [ ] Workflow `.kom` file is in the workflow's directory e.g. `workflows/Basic_Domain_Enrichment_Report/Basic_Domain_Enrichment_Report.kom`
+- [ ] Workflow `.icon` file is in the workflow's directory e.g. `workflows/Basic_Domain_Enrichment_Report/Basic_Domain_Enrichment_Report.icon`
 - [ ] Take PNG screenshots of the workflow or snippet e.g.  https://market.komand.com/workflows/ross/chatops-github-commands/1.0.0, https://market.komand.com/snippets/jschipp/basic-domain-enrichment-report/0.1.0
 - [ ] Create a directory called `screenshots` in your workflow's/snippet's directory
 - [ ] Includes PNG screenshots of the workflow in canvas, job, artifact in the `screenshots` directory e.g.  `workflows/Basic_Domain_Enrichment_Report/screenshots/`
