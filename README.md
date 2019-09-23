@@ -35,6 +35,8 @@ Organize using the following directory structure:
     └── ...
 ```
 
+For contributions, follow the [PR Template Checklist](./.github/PULL_REQUEST_TEMPLATE.md).
+
 ### Contributing
 
 See our [contributing guide](./CONTRIBUTING.md).
