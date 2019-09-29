@@ -8,7 +8,7 @@
         "name": "Office 365 Analysis",
         "type": "runnable",
         "version": "",
-        "description": "",
+        "description": "This workflow is designed to automatically analyze incoming emails to determine if they are malicious. This workflow assumes a user is using their report phishing button to send an email to an administrative account with the suspicious email attached. The workflow will then analyze any URLs or files in the attached email to find malicious links. If any malicious indicators are found the email will be remediated across the organization.",
         "graph": {
           "edges": {
             "035a7f86-3850-47e4-9055-373c4c9f3a7a": {
