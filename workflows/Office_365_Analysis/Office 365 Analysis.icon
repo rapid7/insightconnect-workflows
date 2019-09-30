@@ -1,20 +1,20 @@
 {
   "kom": {
-    "komandVersion": "1.37.0-0-gda4e3",
+    "komandVersion": "1.37.3-0-gc689b",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2019-09-12T21:02:43.845817734Z",
+    "exportedAt": "2019-09-26T16:27:47.982612983Z",
     "workflowVersions": [
       {
         "name": "Office 365 Analysis",
         "type": "runnable",
         "version": "",
-        "description": "",
+        "description": "This workflow is designed to automatically analyze incoming emails to determine if they are malicious. This workflow assumes a user is using their report phishing button to send an email to an administrative account with the suspicious email attached. The workflow will then analyze any URLs or files in the attached email to find malicious links. If any malicious indicators are found the email will be remediated across the organization.",
         "graph": {
           "edges": {
             "035a7f86-3850-47e4-9055-373c4c9f3a7a": {
               "id": "035a7f86-3850-47e4-9055-373c4c9f3a7a",
               "name": "",
-              "description": "This workflow is designed to automatically analyze incoming emails to determine if they are malicious. This workflow assumes a user is using their report phishing button to send an email to an administrative account with the suspicious email attached. The workflow will then analyze any URLs or files in the attached email to find malicious links. If any malicious indicators are found the email will be remediated across the organization.",
+              "description": "",
               "parentNodeId": "",
               "fromNodeId": "419e96fc-d195-4e15-ba31-c98036bd8617",
               "toNodeId": "f15c9ec4-4e01-4647-91cb-b84e04cdc67c"
@@ -532,7 +532,7 @@
               "name": "Storage",
               "slugVendor": "rapid7",
               "slugName": "storage",
-              "slugVersion": "1.0.0-release",
+              "slugVersion": "1.0.0",
               "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg"
             },
             "identifier": "store",
@@ -1831,7 +1831,7 @@
               "name": "Storage",
               "slugVendor": "rapid7",
               "slugName": "storage",
-              "slugVersion": "1.0.0-release",
+              "slugVersion": "1.0.0",
               "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg"
             },
             "identifier": "store",
@@ -1954,7 +1954,7 @@
               "name": "Storage",
               "slugVendor": "rapid7",
               "slugName": "storage",
-              "slugVersion": "1.0.0-release",
+              "slugVersion": "1.0.0",
               "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg"
             },
             "identifier": "store",
@@ -2043,7 +2043,7 @@
               "name": "Storage",
               "slugVendor": "rapid7",
               "slugName": "storage",
-              "slugVersion": "1.0.0-release",
+              "slugVersion": "1.0.0",
               "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg"
             },
             "identifier": "retrieve",
@@ -2390,7 +2390,7 @@
               "name": "Storage",
               "slugVendor": "rapid7",
               "slugName": "storage",
-              "slugVersion": "1.0.0-release",
+              "slugVersion": "1.0.0",
               "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg"
             },
             "identifier": "retrieve",
