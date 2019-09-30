@@ -2,7 +2,7 @@
   "kom": {
     "komandVersion": "1.38.0-0-g8d14f",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2019-09-30T18:53:19.746094221Z",
+    "exportedAt": "2019-09-30T20:48:04.550583945Z",
     "workflowVersions": [
       {
         "name": "Office 365 Analysis Virus Total",
@@ -145,7 +145,7 @@
               "description": "",
               "parentNodeId": "5476f0ac-2e67-40c5-a2b9-e26dd2fba99d",
               "fromNodeId": "a1a97629-e864-453e-a675-1fc6774842cf",
-              "toNodeId": ""
+              "toNodeId": "6751b0d1-78c0-4f7f-8e16-1dbf9c882333"
             },
             "610a5118-6d16-4d71-ad39-d083897f41f3": {
               "id": "610a5118-6d16-4d71-ad39-d083897f41f3",
@@ -266,6 +266,14 @@
               "parentNodeId": "5476f0ac-2e67-40c5-a2b9-e26dd2fba99d",
               "fromNodeId": "0d009b62-123a-4cbc-b741-2eea71fddc28",
               "toNodeId": "bb5fca5c-2d71-4432-be47-8c5ee4d9ad6a"
+            },
+            "9a5afefa-a91d-4af5-b7a9-6db1642420ec": {
+              "id": "9a5afefa-a91d-4af5-b7a9-6db1642420ec",
+              "name": "",
+              "description": "",
+              "parentNodeId": "5476f0ac-2e67-40c5-a2b9-e26dd2fba99d",
+              "fromNodeId": "6751b0d1-78c0-4f7f-8e16-1dbf9c882333",
+              "toNodeId": ""
             },
             "9e8a3175-fc54-4817-9beb-73c6ca4b94bc": {
               "id": "9e8a3175-fc54-4817-9beb-73c6ca4b94bc",
@@ -533,6 +541,10 @@
               "id": "66edc4da-f487-4623-836c-97faea6384c9",
               "parentNodeId": "1074a86c-bc81-415d-8edc-3c387b774420"
             },
+            "6751b0d1-78c0-4f7f-8e16-1dbf9c882333": {
+              "id": "6751b0d1-78c0-4f7f-8e16-1dbf9c882333",
+              "parentNodeId": "5476f0ac-2e67-40c5-a2b9-e26dd2fba99d"
+            },
             "6b947305-1f10-4bca-86e7-25333ab90671": {
               "id": "6b947305-1f10-4bca-86e7-25333ab90671",
               "parentNodeId": "5476f0ac-2e67-40c5-a2b9-e26dd2fba99d"
@@ -762,7 +774,7 @@
           },
           "0df75dc8-0336-43c3-b3d7-18f080a89f19": {
             "nodeId": "0df75dc8-0336-43c3-b3d7-18f080a89f19",
-            "name": "Has attachments",
+            "name": "Has Attachments",
             "type": "automated_decision",
             "continueOnFailure": false,
             "isDisabled": false,
@@ -2032,6 +2044,27 @@
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
             "connectionType": "NONE"
           },
+          "6751b0d1-78c0-4f7f-8e16-1dbf9c882333": {
+            "nodeId": "6751b0d1-78c0-4f7f-8e16-1dbf9c882333",
+            "name": "Break on malicious VT Scan",
+            "type": "break",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "stepControlParam": {
+                "edgeId": "9a5afefa-a91d-4af5-b7a9-6db1642420ec",
+                "expression": {
+                  "type": "literal",
+                  "value": true
+                },
+                "expressionText": "true"
+              }
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/break.svg",
+            "connectionType": "NONE"
+          },
           "6b947305-1f10-4bca-86e7-25333ab90671": {
             "nodeId": "6b947305-1f10-4bca-86e7-25333ab90671",
             "name": "Was Malicious File Found?",
@@ -2391,7 +2424,7 @@
           },
           "a7f3eab4-43e2-4a42-bf19-9bc95004bba3": {
             "nodeId": "a7f3eab4-43e2-4a42-bf19-9bc95004bba3",
-            "name": "Is URL malicious",
+            "name": "Is URL Malicious",
             "type": "action",
             "plugin": {
               "name": "Storage",
@@ -2826,7 +2859,7 @@
           },
           "f15c9ec4-4e01-4647-91cb-b84e04cdc67c": {
             "nodeId": "f15c9ec4-4e01-4647-91cb-b84e04cdc67c",
-            "name": "Was overall mail malicious",
+            "name": "Was Overall Mail Malicious",
             "type": "automated_decision",
             "continueOnFailure": false,
             "isDisabled": false,
