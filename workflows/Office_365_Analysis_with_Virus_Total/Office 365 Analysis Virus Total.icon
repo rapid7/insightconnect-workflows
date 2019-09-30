@@ -662,7 +662,7 @@
           },
           "0d009b62-123a-4cbc-b741-2eea71fddc28": {
             "nodeId": "0d009b62-123a-4cbc-b741-2eea71fddc28",
-            "name": "Send file to VT for Scan",
+            "name": "Send File to VT for Scan",
             "type": "action",
             "plugin": {
               "name": "VirusTotal",
