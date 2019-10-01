@@ -2,7 +2,7 @@
   "kom": {
     "komandVersion": "1.38.0-0-g8d14f",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2019-09-30T20:48:04.550583945Z",
+    "exportedAt": "2019-10-01T14:53:41.288972961Z",
     "workflowVersions": [
       {
         "name": "Office 365 Analysis Virus Total",
@@ -674,7 +674,7 @@
           },
           "0d009b62-123a-4cbc-b741-2eea71fddc28": {
             "nodeId": "0d009b62-123a-4cbc-b741-2eea71fddc28",
-            "name": "Send File to VT for Scan",
+            "name": "Send file to VT for Scan",
             "type": "action",
             "plugin": {
               "name": "VirusTotal",
@@ -1273,7 +1273,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "# Malicious File Found\n\n{{[bb5fca5c-2d71-4432-be47-8c5ee4d9ad6a].[permalink]}}\n\n{{[bb5fca5c-2d71-4432-be47-8c5ee4d9ad6a].[scans]}}"
+                "content": "# Malicious File Found: \nFile Name: {{[5476f0ac-2e67-40c5-a2b9-e26dd2fba99d].[$item].[file_name]}}\nFile Type: {{[5476f0ac-2e67-40c5-a2b9-e26dd2fba99d].[$item].[content_type]}}\n\n---\n\n{{[bb5fca5c-2d71-4432-be47-8c5ee4d9ad6a].[permalink]}}\n"
               },
               "type": "markdown"
             },
@@ -1500,7 +1500,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "# Malicious File Found: \n\nLink: {{[3747b60f-4236-4393-a4da-bc760bbf86d6].[permalink]}}\n\n{{[3747b60f-4236-4393-a4da-bc760bbf86d6].[scans]}}"
+                "content": "# Malicious File Found: \nFile Name: {{[5476f0ac-2e67-40c5-a2b9-e26dd2fba99d].[$item].[file_name]}}\nFile Type: {{[5476f0ac-2e67-40c5-a2b9-e26dd2fba99d].[$item].[content_type]}}\n\n---\n\nLink: {{[3747b60f-4236-4393-a4da-bc760bbf86d6].[permalink]}}\n"
               },
               "type": "markdown"
             },
