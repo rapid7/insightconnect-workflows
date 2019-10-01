@@ -836,7 +836,7 @@
                 "flatten_attachments": true,
                 "folder_name": "Inbox",
                 "interval": 15,
-                "mailbox_id": "jschipp@komanddev.onmicrosoft.com",
+                "mailbox_id": "test@outlook.com",
                 "subject_query": ""
               }
             },
@@ -2145,8 +2145,8 @@
                 "bcc": [],
                 "body": "The following email was found to be malicious. \n\nEmail From: {{[17edb1e0-ffca-4ff7-ad48-adbd19429a29].[icon_email].[sender]}}\nEmail Subject: {{[17edb1e0-ffca-4ff7-ad48-adbd19429a29].[icon_email].[subject]}}\n\nJob URL: {{[$job].[URL]}}",
                 "cc": [],
-                "email_from": "jschipp@komanddev.onmicrosoft.com",
-                "email_to": "jmcadams@rapid7.com",
+                "email_from": "test@outlook.com",
+                "email_to": "othertest@outlook.com",
                 "is_html": false,
                 "subject": "Malicious Email Found"
               }
@@ -2943,7 +2943,7 @@
           "flatten_attachments": true,
           "folder_name": "Inbox",
           "interval": 15,
-          "mailbox_id": "jschipp@komanddev.onmicrosoft.com",
+          "mailbox_id": "target@outlook.com",
           "subject_query": ""
         },
         "inputJsonSchema": {
