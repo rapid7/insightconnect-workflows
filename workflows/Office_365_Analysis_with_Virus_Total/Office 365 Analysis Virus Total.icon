@@ -620,7 +620,7 @@
               "name": "Storage",
               "slugVendor": "rapid7",
               "slugName": "storage",
-              "slugVersion": "1.0.0-release",
+              "slugVersion": "1.0.0",
               "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg"
             },
             "identifier": "store",
@@ -2370,7 +2370,7 @@
               "name": "Storage",
               "slugVendor": "rapid7",
               "slugName": "storage",
-              "slugVersion": "1.0.0-release",
+              "slugVersion": "1.0.0",
               "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg"
             },
             "identifier": "store",
@@ -2430,7 +2430,7 @@
               "name": "Storage",
               "slugVendor": "rapid7",
               "slugName": "storage",
-              "slugVersion": "1.0.0-release",
+              "slugVersion": "1.0.0",
               "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg"
             },
             "identifier": "retrieve",
@@ -2692,7 +2692,7 @@
               "name": "Storage",
               "slugVendor": "rapid7",
               "slugName": "storage",
-              "slugVersion": "1.0.0-release",
+              "slugVersion": "1.0.0",
               "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg"
             },
             "identifier": "retrieve",
@@ -2744,7 +2744,7 @@
               "name": "Storage",
               "slugVendor": "rapid7",
               "slugName": "storage",
-              "slugVersion": "1.0.0-release",
+              "slugVersion": "1.0.0",
               "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg"
             },
             "identifier": "store",
