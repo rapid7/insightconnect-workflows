@@ -1,6 +1,6 @@
 # Description
 
-This workflow is designed to automatically analyze incoming emails to determine if they are malicious. This workflow assumes a user is using their report phishing button to send an email to an administrative account with the suspicious email attached. The workflow will then analyze the attached email for any suspicious links or files. If any malicious indicators are found the email will be remediated across the organization.
+This workflow is designed to automatically analyze incoming emails to determine if they are malicious. This workflow assumes a user is using their report phishing button to send an email to an administrative account with the suspicious email attached. The workflow will then analyze the attached email for any suspicious links or files.. If any malicious indicators are found the email will be remediated across the organization.
 
 # Key Features
 
@@ -32,11 +32,10 @@ Plugins utilized by workflow:
 |Basename|1.0.0|1|
 |ExtractIt|1.1.6|1|
 |HashIt|2.0.1|1|
-|Hybrid Analysis|2.0.0|1|
 |Microsoft Office 365 Email|4.0.0|3|
 |Microsoft Office 365 Email Security|2.1.0|2|
-|Storage|1.0.0|5|
-|VirusTotal|5.0.0|2|
+|Storage|1.0.0|6|
+|VirusTotal|5.0.0|3|
 
 ## Troubleshooting
 
