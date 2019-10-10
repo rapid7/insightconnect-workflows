@@ -16,6 +16,8 @@ Developers, verify you have completed the following items by checking them off:
 - [ ] PNG screenshot file names should conform to style e.g. `workflow1.png`, `artifact1.png`, `job.png`
 - [ ] Workflow verified as working through WUI
 - [ ] Credentials are not exported and stored in git
+- [ ] `workflow.spec.yaml` file with metadata accompanies workflow
+- [ ] Workflow documentation is provided in `help.md`
 - [ ] Directory structure is followed, see https://github.com/rapid7/insightconnect-workflows/blob/master/README.md
 
 ### Assessment
