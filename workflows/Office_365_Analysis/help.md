@@ -4,17 +4,24 @@ This workflow is designed to automatically analyze incoming emails to determine 
 
 # Key Features
 
-* Bulleted list
+* Identifies malicious e-mails
+* Removes identified e-mails from the entire organization
+* Blocks sender from the organization
 
 # Requirements
 
-_There are no special requirements for this workflow_
+API and account credentials for 
+
+* Microsoft Office365
+* VirusTotal
 
 # Documentation
 
 ## Setup
 
-Once the workflow has been downloaded, login to InsightConnect and “Import” it into the workflow builder.  Once imported, you will initially be prompted to configure the connections for Office 365 and VirusTotal.
+Once the workflow has been downloaded, login to InsightConnect and “Import” it into the workflow builder.  Once imported, you will initially be prompted to configure the connections for each of the plugins.
+
+The remediation steps are disabled due to their destructive nature, to use them they must be manually enabled after importing the workflow.
 
 ## Technical Details
 
@@ -22,8 +29,14 @@ Plugins leveraged by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Microsoft Office 365|1.1.1|2|
-|VirusTotal|1.0.0|3|
+|Basename|1.0.0|1|
+|ExtractIt|1.1.6|1|
+|HashIt|2.0.1|1|
+|Hybrid Analysis|2.0.0|1|
+|Microsoft Office 365 Email|4.0.0|3|
+|Microsoft Office 365 Email Security|2.1.0|2|
+|Storage|1.0.0|5|
+|VirusTotal|5.0.0|2|
 
 ## Troubleshooting
 
