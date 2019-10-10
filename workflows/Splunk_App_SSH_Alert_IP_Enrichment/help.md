@@ -1,17 +1,16 @@
 # Description
 
-This workflow triggers from directly slack messaging the chatbot to \"!investigate\" the defined indicator. To date, this workflow supports automatically looking up URLs and IPs in open source threat intelligence such as VirusTotal and Whois. Lastly, the workflow will post back results to the specific user.
+This workflow receives an event sent by the Rapid7 InsightConnect App for Splunk and performs enrichment on it.
 
 # Key Features
 
-* IP and URL enrichment from Slack
+* Enrich alerts triggered from Splunk
 
 # Requirements
 
 API and account credentials for
 
 * AbuseIPDB
-* VirusTotal
 
 # Documentation
 
@@ -25,11 +24,9 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|AbuseIPDB|3.0.1|1|
+|AbuseIPDB|5.0.0|1|
 |ExtractIt|1.1.6|1|
 |IPStack|1.0.0|1|
-|VirusTotal|4.0.0|1|
-|Whois|1.0.3|1|
 
 ## Troubleshooting
 
@@ -43,7 +40,7 @@ _There is no troubleshooting information at this time_
 
 ## Source Code
 
-* https://github.com/rapid7/insightconnect-workflows/blob/master/workflows/Office_365_Analysis
+* https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Splunk_App_SSH_Alert_IP_Enrichment
 
 ## References
 
