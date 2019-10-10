@@ -32,6 +32,7 @@ Plugins utilized by workflow:
 |Basename|1.0.0|1|
 |ExtractIt|1.1.6|1|
 |Microsoft Office 365 Email|4.0.0|2|
+|Microsoft Office 365 Email Security|2.1.0|2|
 |Palo Alto Wildfire|1.0.2|4|
 |Sleep|1.0.0|2|
 |Storage|1.0.0|6|
