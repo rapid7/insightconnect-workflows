@@ -1,0 +1,11 @@
+name: Splunk_App_SSH_Alert_IP_Enrichment
+title: "Splunk App SSH Alert IP Enrichment"
+description: "Receives an event sent by the Rapid7 InsightConnect App for Splunk."
+version: 1.0.0
+vendor: rapid7
+support: rapid7
+status: ["supported"]
+tags:
+- phishing
+- email
+- office365
