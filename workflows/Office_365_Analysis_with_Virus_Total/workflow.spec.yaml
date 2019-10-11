@@ -4,7 +4,7 @@ description: "This workflow is designed to automatically analyze incoming emails
 version: 1.0.0
 vendor: rapid7
 support: rapid7
-status: ["supported"]
+status: []
 tags:
 - phishing
 - email
