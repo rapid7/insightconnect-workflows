@@ -1,6 +1,6 @@
 # Description
 
-This workflow triggers from directly slack messaging the chatbot to \"!investigate\" the defined indicator. To date, this workflow supports automatically looking up URLs and IPs in open source threat intelligence such as VirusTotal and Whois. Lastly, the workflow will post back results to the specific user.
+This workflow triggers by directly Slack messaging the chatbot to \"!investigate\" the defined indicator. To date, this workflow supports automatically looking up URLs and IPs in open source threat intelligence such as VirusTotal and Whois. Lastly, the workflow will post back results to the specific user.
 
 # Key Features
 
@@ -17,7 +17,7 @@ API and account credentials for
 
 ## Setup
 
-Once the workflow has been downloaded, login to InsightConnect and “Import” it into the workflow builder.  Once imported, you will initially be prompted to configure the connections for each of the plugins.
+Once the workflow has been downloaded, login to InsightConnect and “Import” it into the workflow builder. Once imported, you will initially be prompted to configure the connections for each of the plugins.
 
 ## Technical Details
 

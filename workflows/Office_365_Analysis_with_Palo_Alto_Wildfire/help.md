@@ -4,8 +4,8 @@ This workflow is designed to automatically analyze incoming emails to determine 
 
 # Key Features
 
-* Identifies malicious e-mails
-* Removes identified e-mails from the entire organization
+* Identifies malicious emails
+* Removes identified emails from the entire organization
 * Blocks sender from the organization
 
 # Requirements
@@ -21,7 +21,7 @@ API and account credentials for
 
 Once the workflow has been downloaded, login to InsightConnect and "Import" it into the workflow builder.  Once imported, you will initially be prompted to configure the connections for each of the plugins.
 
-The remediation steps are disabled due to their destructive nature, to use them they must be manually enabled after importing the workflow.
+The remediation steps are disabled due to their destructive nature. To use them, they must be manually enabled after importing the workflow.
 
 ## Technical Details
 
