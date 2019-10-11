@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.38.2-0-gb16fd",
+    "komandVersion": "1.39.1-0-g39b69",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2019-10-03T20:30:01.030827494Z",
+    "exportedAt": "2019-10-10T21:39:37.132949365Z",
     "workflowVersions": [
       {
         "name": "Office 365 Analysis Palo Alto Wildfire",
@@ -18,6 +18,14 @@
               "parentNodeId": "",
               "fromNodeId": "419e96fc-d195-4e15-ba31-c98036bd8617",
               "toNodeId": "f15c9ec4-4e01-4647-91cb-b84e04cdc67c"
+            },
+            "064eef16-0f9b-4ad3-9323-546d2d76958e": {
+              "id": "064eef16-0f9b-4ad3-9323-546d2d76958e",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "545017a5-c34c-4d54-b191-2a968ffe9909",
+              "toNodeId": "a50a4f1a-6aec-405f-8b6d-cf8fb9d8d71e"
             },
             "093d30cf-aff0-4f0b-8194-8587ec40789b": {
               "id": "093d30cf-aff0-4f0b-8194-8587ec40789b",
@@ -275,6 +283,14 @@
               "fromNodeId": "aaebce98-efac-456a-b2a9-2eacbf70858a",
               "toNodeId": ""
             },
+            "a75143b0-fa05-4c14-a710-86fba6e3396f": {
+              "id": "a75143b0-fa05-4c14-a710-86fba6e3396f",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "965469b8-454c-40d5-904d-9fc9724345ef",
+              "toNodeId": ""
+            },
             "ab7059a9-41b2-4e0f-a965-f1921253f17c": {
               "id": "ab7059a9-41b2-4e0f-a965-f1921253f17c",
               "name": "Not Malicious",
@@ -313,7 +329,7 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "1b82897d-95a2-4799-87d8-881d201d8fa8",
-              "toNodeId": ""
+              "toNodeId": "545017a5-c34c-4d54-b191-2a968ffe9909"
             },
             "b3cc74fe-7d84-4d55-b496-debcff297acd": {
               "id": "b3cc74fe-7d84-4d55-b496-debcff297acd",
@@ -354,6 +370,14 @@
               "parentNodeId": "5476f0ac-2e67-40c5-a2b9-e26dd2fba99d",
               "fromNodeId": "801dfe81-fc47-4006-9cc1-68fa6e04f13a",
               "toNodeId": "586369c3-98c2-4d80-9574-6f901a5a994e"
+            },
+            "ce9631eb-2585-4d91-9949-964171fcd21b": {
+              "id": "ce9631eb-2585-4d91-9949-964171fcd21b",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "a50a4f1a-6aec-405f-8b6d-cf8fb9d8d71e",
+              "toNodeId": "965469b8-454c-40d5-904d-9fc9724345ef"
             },
             "d0ddd32f-6772-4265-8732-5a220d5802a8": {
               "id": "d0ddd32f-6772-4265-8732-5a220d5802a8",
@@ -493,6 +517,10 @@
               "id": "47496fd4-9310-4fac-b631-ef321f7ef064",
               "parentNodeId": ""
             },
+            "545017a5-c34c-4d54-b191-2a968ffe9909": {
+              "id": "545017a5-c34c-4d54-b191-2a968ffe9909",
+              "parentNodeId": ""
+            },
             "5476f0ac-2e67-40c5-a2b9-e26dd2fba99d": {
               "id": "5476f0ac-2e67-40c5-a2b9-e26dd2fba99d",
               "parentNodeId": ""
@@ -553,6 +581,10 @@
               "id": "87e72977-6289-4a6e-a73a-8e76b54b63fc",
               "parentNodeId": "1074a86c-bc81-415d-8edc-3c387b774420"
             },
+            "965469b8-454c-40d5-904d-9fc9724345ef": {
+              "id": "965469b8-454c-40d5-904d-9fc9724345ef",
+              "parentNodeId": ""
+            },
             "984bb254-4b9b-4f19-9088-40903b948dfb": {
               "id": "984bb254-4b9b-4f19-9088-40903b948dfb",
               "parentNodeId": ""
@@ -560,6 +592,10 @@
             "a1770956-a564-49c8-94d4-b8669b36aba8": {
               "id": "a1770956-a564-49c8-94d4-b8669b36aba8",
               "parentNodeId": "5476f0ac-2e67-40c5-a2b9-e26dd2fba99d"
+            },
+            "a50a4f1a-6aec-405f-8b6d-cf8fb9d8d71e": {
+              "id": "a50a4f1a-6aec-405f-8b6d-cf8fb9d8d71e",
+              "parentNodeId": ""
             },
             "a7f3eab4-43e2-4a42-bf19-9bc95004bba3": {
               "id": "a7f3eab4-43e2-4a42-bf19-9bc95004bba3",
@@ -1414,6 +1450,137 @@
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
             "connectionType": "NONE"
           },
+          "545017a5-c34c-4d54-b191-2a968ffe9909": {
+            "nodeId": "545017a5-c34c-4d54-b191-2a968ffe9909",
+            "name": "Send Notification",
+            "type": "action",
+            "plugin": {
+              "name": "Microsoft Office 365 Email",
+              "slugVendor": "rapid7",
+              "slugName": "microsoft_office365_email",
+              "slugVersion": "4.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_office365_email/4.0.1/icon.png"
+            },
+            "identifier": "send_email",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachment": {},
+                "bcc": [],
+                "body": "A malicious email was found by InsightConnect. \n\nSubject: {{[17edb1e0-ffca-4ff7-ad48-adbd19429a29].[icon_email].[flattened_attached_emails].[0].[subject]}}\n\nSender: {{[17edb1e0-ffca-4ff7-ad48-adbd19429a29].[icon_email].[flattened_attached_emails].[0].[sender]}}",
+                "cc": [],
+                "email_from": "admin@office365.com",
+                "email_to": "admin@office365.com",
+                "is_html": false,
+                "subject": "Malicious Email Found"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "definitions": {
+                "file": {
+                  "description": "File Object",
+                  "properties": {
+                    "content": {
+                      "description": "File contents",
+                      "format": "bytes",
+                      "title": "Content",
+                      "type": "string"
+                    },
+                    "filename": {
+                      "description": "Name of file",
+                      "title": "Filename",
+                      "type": "string"
+                    }
+                  },
+                  "title": "File",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "attachment": {
+                  "$ref": "#/definitions/file",
+                  "description": "Attachment",
+                  "order": 8,
+                  "title": "Attachment"
+                },
+                "bcc": {
+                  "description": "Blind carbon copy recipients",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 6,
+                  "title": "BCC",
+                  "type": "array"
+                },
+                "body": {
+                  "description": "Body of the email",
+                  "order": 4,
+                  "title": "Body",
+                  "type": "string"
+                },
+                "cc": {
+                  "description": "Carbon copy recipients",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 7,
+                  "title": "CC",
+                  "type": "array"
+                },
+                "email_from": {
+                  "description": "Email address this email will be sent from",
+                  "order": 1,
+                  "title": "Email Sender",
+                  "type": "string"
+                },
+                "email_to": {
+                  "description": "Email address of recipients",
+                  "order": 2,
+                  "title": "Email To",
+                  "type": "string"
+                },
+                "is_html": {
+                  "description": "Is the body of this email HTML",
+                  "order": 5,
+                  "title": "Is HTML",
+                  "type": "boolean"
+                },
+                "subject": {
+                  "description": "Subject of the email",
+                  "order": 3,
+                  "title": "Subject",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "body",
+                "is_html",
+                "email_from",
+                "email_to",
+                "subject"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "success": {
+                  "description": "Success",
+                  "order": 1,
+                  "title": "Success",
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "success"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
           "5476f0ac-2e67-40c5-a2b9-e26dd2fba99d": {
             "nodeId": "5476f0ac-2e67-40c5-a2b9-e26dd2fba99d",
             "name": "File Analysis Loop",
@@ -2061,6 +2228,82 @@
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/break.svg",
             "connectionType": "NONE"
           },
+          "965469b8-454c-40d5-904d-9fc9724345ef": {
+            "nodeId": "965469b8-454c-40d5-904d-9fc9724345ef",
+            "name": "Remove Malicious Email from Organization",
+            "type": "action",
+            "plugin": {
+              "name": "Microsoft Office365 Email Security",
+              "slugVendor": "rapid7",
+              "slugName": "microsoft_office365_email_security",
+              "slugVersion": "2.1.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_office365_email_security/2.1.0/icon.png"
+            },
+            "identifier": "mass_search_and_purge",
+            "continueOnFailure": false,
+            "isDisabled": true,
+            "parameters": {
+              "input": {
+                "compliance_search_name": "Search for {{[17edb1e0-ffca-4ff7-ad48-adbd19429a29].[icon_email].[flattened_attached_emails].[0].[subject]}}",
+                "content_match_query": "subject: \"{{[17edb1e0-ffca-4ff7-ad48-adbd19429a29].[icon_email].[flattened_attached_emails].[0].[subject]}}\" from: \"{{[17edb1e0-ffca-4ff7-ad48-adbd19429a29].[icon_email].[flattened_attached_emails].[0].[sender]}}\"",
+                "delete_items": true,
+                "query_timeout": 120
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "compliance_search_name": {
+                  "description": "Name of compliance search",
+                  "order": 1,
+                  "title": "Compliance Search Name",
+                  "type": "string"
+                },
+                "content_match_query": {
+                  "description": "This parameter uses a text search string or a query that's formatted by using the Keyword Query Language (KQL). For more information about KQL, see Keyword Query Language syntax reference (https://go.microsoft.com/fwlink/p/?linkid=269603)",
+                  "order": 2,
+                  "title": "Content Match Query",
+                  "type": "string"
+                },
+                "delete_items": {
+                  "default": false,
+                  "description": "The script only executes the delete action if this parameter is true",
+                  "order": 4,
+                  "title": "Delete Items",
+                  "type": "boolean"
+                },
+                "query_timeout": {
+                  "default": 60,
+                  "description": "Query timeout in minutes",
+                  "order": 3,
+                  "title": "Query Timeout",
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "compliance_search_name",
+                "content_match_query"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "success": {
+                  "description": "Success",
+                  "order": 1,
+                  "title": "Success",
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "success"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
           "984bb254-4b9b-4f19-9088-40903b948dfb": {
             "nodeId": "984bb254-4b9b-4f19-9088-40903b948dfb",
             "name": "Set Malicious Variable",
@@ -2137,6 +2380,67 @@
             "defaultOutputJSONSchema": null,
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
             "connectionType": "NONE"
+          },
+          "a50a4f1a-6aec-405f-8b6d-cf8fb9d8d71e": {
+            "nodeId": "a50a4f1a-6aec-405f-8b6d-cf8fb9d8d71e",
+            "name": "Block Sender",
+            "type": "action",
+            "plugin": {
+              "name": "Microsoft Office365 Email Security",
+              "slugVendor": "rapid7",
+              "slugName": "microsoft_office365_email_security",
+              "slugVersion": "2.1.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_office365_email_security/2.1.0/icon.png"
+            },
+            "identifier": "block_sender_transport_rule",
+            "continueOnFailure": false,
+            "isDisabled": true,
+            "parameters": {
+              "input": {
+                "domain_or_email_to_block": "{{[17edb1e0-ffca-4ff7-ad48-adbd19429a29].[icon_email].[flattened_attached_emails].[0].[sender]}}\n\n",
+                "transport_rule_name": "Block {{[17edb1e0-ffca-4ff7-ad48-adbd19429a29].[icon_email].[flattened_attached_emails].[0].[sender]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "domain_or_email_to_block": {
+                  "description": "Domain or email address to block",
+                  "order": 1,
+                  "title": "Domain or Email to Block",
+                  "type": "string"
+                },
+                "transport_rule_name": {
+                  "default": "InsightConnect Block List",
+                  "description": "Transport rule name",
+                  "order": 2,
+                  "title": "Transport Rule Name",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "domain_or_email_to_block",
+                "transport_rule_name"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "result": {
+                  "description": "Result",
+                  "order": 1,
+                  "title": "Result",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "result"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
           },
           "a7f3eab4-43e2-4a42-bf19-9bc95004bba3": {
             "nodeId": "a7f3eab4-43e2-4a42-bf19-9bc95004bba3",

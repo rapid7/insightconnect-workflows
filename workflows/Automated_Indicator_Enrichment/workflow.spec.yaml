@@ -1,0 +1,9 @@
+name: Automated_Indicator_Enrichment
+title: "Automated Indicator Enrichment"
+description: "This workflow triggers from directly slack messaging the chatbot to \"!investigate\" the defined indicator. To date, this workflow supports automatically looking up URLs and IPs in open source threat intelligence such as VirusTotal and Whois. Lastly, the workflow will post back results to the specific user."
+version: 1.0.0
+vendor: rapid7
+support: rapid7
+status: ["supported"]
+tags:
+- enrichment
