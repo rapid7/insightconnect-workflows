@@ -4,7 +4,7 @@ description: "Receives an event sent by the Rapid7 InsightConnect App for Splunk
 version: 1.0.0
 vendor: rapid7
 support: rapid7
-status: ["supported"]
+status: []
 tags:
 - phishing
 - email
