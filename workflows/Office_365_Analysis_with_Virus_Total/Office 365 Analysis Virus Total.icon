@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.38.0-0-g8d14f",
+    "komandVersion": "1.39.1-0-g39b69",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2019-10-01T14:53:41.288972961Z",
+    "exportedAt": "2019-10-14T14:54:17.954410748Z",
     "workflowVersions": [
       {
         "name": "Office 365 Analysis Virus Total",
@@ -669,7 +669,7 @@
               "title": "Variables",
               "type": "object"
             },
-            "defaultImageData": "",
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg",
             "connectionType": "ORCHESTRATOR"
           },
           "0d009b62-123a-4cbc-b741-2eea71fddc28": {
@@ -836,7 +836,7 @@
                 "flatten_attachments": true,
                 "folder_name": "Inbox",
                 "interval": 15,
-                "mailbox_id": "test@outlook.com",
+                "mailbox_id": "test@hotmail.com",
                 "subject_query": ""
               }
             },
@@ -1898,11 +1898,11 @@
             },
             "identifier": "mass_search_and_purge",
             "continueOnFailure": false,
-            "isDisabled": true,
+            "isDisabled": false,
             "parameters": {
               "input": {
-                "compliance_search_name": "{{[17edb1e0-ffca-4ff7-ad48-adbd19429a29].[icon_email].[subject]}}",
-                "content_match_query": "subject: \"{{[17edb1e0-ffca-4ff7-ad48-adbd19429a29].[icon_email].[subject]}}\" from: \"{{[17edb1e0-ffca-4ff7-ad48-adbd19429a29].[icon_email].[sender]}}\"",
+                "compliance_search_name": "Search for {{[17edb1e0-ffca-4ff7-ad48-adbd19429a29].[icon_email].[flattened_attached_emails].[0].[subject]}}",
+                "content_match_query": "subject: \"{{[17edb1e0-ffca-4ff7-ad48-adbd19429a29].[icon_email].[flattened_attached_emails].[0].[subject]}}\" from: \"{{[17edb1e0-ffca-4ff7-ad48-adbd19429a29].[icon_email].[flattened_attached_emails].[0].[sender]}}\"",
                 "delete_items": true,
                 "query_timeout": 60
               }
@@ -2145,8 +2145,8 @@
                 "bcc": [],
                 "body": "The following email was found to be malicious. \n\nEmail From: {{[17edb1e0-ffca-4ff7-ad48-adbd19429a29].[icon_email].[sender]}}\nEmail Subject: {{[17edb1e0-ffca-4ff7-ad48-adbd19429a29].[icon_email].[subject]}}\n\nJob URL: {{[$job].[URL]}}",
                 "cc": [],
-                "email_from": "test@outlook.com",
-                "email_to": "othertest@outlook.com",
+                "email_from": "test@hotmail.com",
+                "email_to": "test@hotmail.com",
                 "is_html": false,
                 "subject": "Malicious Email Found"
               }
@@ -2359,7 +2359,7 @@
               "title": "Variables",
               "type": "object"
             },
-            "defaultImageData": "",
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg",
             "connectionType": "ORCHESTRATOR"
           },
           "a1a97629-e864-453e-a675-1fc6774842cf": {
@@ -2419,7 +2419,7 @@
               "title": "Variables",
               "type": "object"
             },
-            "defaultImageData": "",
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg",
             "connectionType": "ORCHESTRATOR"
           },
           "a7f3eab4-43e2-4a42-bf19-9bc95004bba3": {
@@ -2471,7 +2471,7 @@
               "title": "Variables",
               "type": "object"
             },
-            "defaultImageData": "",
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg",
             "connectionType": "ORCHESTRATOR"
           },
           "aaebce98-efac-456a-b2a9-2eacbf70858a": {
@@ -2733,7 +2733,7 @@
               "title": "Variables",
               "type": "object"
             },
-            "defaultImageData": "",
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg",
             "connectionType": "ORCHESTRATOR"
           },
           "d8e82411-e4c9-4c41-89f7-e43af5bb5fd9": {
@@ -2793,7 +2793,7 @@
               "title": "Variables",
               "type": "object"
             },
-            "defaultImageData": "",
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg",
             "connectionType": "ORCHESTRATOR"
           },
           "e44548ff-3920-4b39-a193-c8edb4f6c117": {
@@ -2943,7 +2943,7 @@
           "flatten_attachments": true,
           "folder_name": "Inbox",
           "interval": 15,
-          "mailbox_id": "target@outlook.com",
+          "mailbox_id": "test@hotmail.com",
           "subject_query": ""
         },
         "inputJsonSchema": {
