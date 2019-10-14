@@ -9,3 +9,9 @@ tags:
 - phishing
 - email
 - office365
+attributes:
+  source_url: https://github.com/rapid7/insightconnect-workflows
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  support_url:
+  issue_url:
+  external_url:
