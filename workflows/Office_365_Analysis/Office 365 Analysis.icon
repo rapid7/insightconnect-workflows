@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.37.3-0-gc689b",
+    "komandVersion": "1.39.1-0-g39b69",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2019-09-26T16:27:47.982612983Z",
+    "exportedAt": "2019-10-14T14:52:28.085185371Z",
     "workflowVersions": [
       {
         "name": "Office 365 Analysis",
@@ -532,7 +532,7 @@
               "name": "Storage",
               "slugVendor": "rapid7",
               "slugName": "storage",
-              "slugVersion": "1.0.0",
+              "slugVersion": "1.0.0-release",
               "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg"
             },
             "identifier": "store",
@@ -581,7 +581,7 @@
               "title": "Variables",
               "type": "object"
             },
-            "defaultImageData": "",
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg",
             "connectionType": "ORCHESTRATOR"
           },
           "0df75dc8-0336-43c3-b3d7-18f080a89f19": {
@@ -648,7 +648,7 @@
                 "flatten_attachments": true,
                 "folder_name": "Inbox",
                 "interval": 15,
-                "mailbox_id": "jschipp@komanddev.onmicrosoft.com",
+                "mailbox_id": "test@hotmail.com",
                 "subject_query": ""
               }
             },
@@ -1543,11 +1543,11 @@
             },
             "identifier": "mass_search_and_purge",
             "continueOnFailure": false,
-            "isDisabled": true,
+            "isDisabled": false,
             "parameters": {
               "input": {
-                "compliance_search_name": "{{[17edb1e0-ffca-4ff7-ad48-adbd19429a29].[icon_email].[subject]}}",
-                "content_match_query": "subject: \"{{[17edb1e0-ffca-4ff7-ad48-adbd19429a29].[icon_email].[subject]}}\" from: \"{{[17edb1e0-ffca-4ff7-ad48-adbd19429a29].[icon_email].[sender]}}\"",
+                "compliance_search_name": "Search for {{[17edb1e0-ffca-4ff7-ad48-adbd19429a29].[icon_email].[flattened_attached_emails].[0].[subject]}}",
+                "content_match_query": "subject: \"{{[17edb1e0-ffca-4ff7-ad48-adbd19429a29].[icon_email].[flattened_attached_emails].[0].[subject]}}\" from: \"{{[17edb1e0-ffca-4ff7-ad48-adbd19429a29].[icon_email].[flattened_attached_emails].[0].[sender]}}\"",
                 "delete_items": true,
                 "query_timeout": 60
               }
@@ -1712,8 +1712,8 @@
                 "bcc": [],
                 "body": "The following email was found to be malicious. \n\nEmail From: {{[17edb1e0-ffca-4ff7-ad48-adbd19429a29].[icon_email].[sender]}}\nEmail Subject: {{[17edb1e0-ffca-4ff7-ad48-adbd19429a29].[icon_email].[subject]}}\n\nJob URL: {{[$job].[URL]}}",
                 "cc": [],
-                "email_from": "jschipp@komanddev.onmicrosoft.com",
-                "email_to": "jmcadams@rapid7.com",
+                "email_from": "test@hotmail.com",
+                "email_to": "test@hotmail.com",
                 "is_html": false,
                 "subject": "Malicious Email Found"
               }
@@ -1831,7 +1831,7 @@
               "name": "Storage",
               "slugVendor": "rapid7",
               "slugName": "storage",
-              "slugVersion": "1.0.0",
+              "slugVersion": "1.0.0-release",
               "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg"
             },
             "identifier": "store",
@@ -1880,7 +1880,7 @@
               "title": "Variables",
               "type": "object"
             },
-            "defaultImageData": "",
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg",
             "connectionType": "ORCHESTRATOR"
           },
           "823eb1a5-9ebf-405f-9324-572605d6dd68": {
@@ -1975,7 +1975,7 @@
                   "type": "string"
                 },
                 "variable_value": {
-                  "description": "Value of the variable to store",
+                  "description": "Name of the variable to store",
                   "order": 2,
                   "title": "Variable Value",
                   "type": "string"
@@ -2003,7 +2003,7 @@
               "title": "Variables",
               "type": "object"
             },
-            "defaultImageData": "",
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg",
             "connectionType": "ORCHESTRATOR"
           },
           "a783f2be-fcf7-4f47-a4b5-8167ce048c1d": {
@@ -2043,7 +2043,7 @@
               "name": "Storage",
               "slugVendor": "rapid7",
               "slugName": "storage",
-              "slugVersion": "1.0.0",
+              "slugVersion": "1.0.0-release",
               "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg"
             },
             "identifier": "retrieve",
@@ -2084,7 +2084,7 @@
               "title": "Variables",
               "type": "object"
             },
-            "defaultImageData": "",
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg",
             "connectionType": "ORCHESTRATOR"
           },
           "aaebce98-efac-456a-b2a9-2eacbf70858a": {
@@ -2390,7 +2390,7 @@
               "name": "Storage",
               "slugVendor": "rapid7",
               "slugName": "storage",
-              "slugVersion": "1.0.0",
+              "slugVersion": "1.0.0-release",
               "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg"
             },
             "identifier": "retrieve",
@@ -2431,7 +2431,7 @@
               "title": "Variables",
               "type": "object"
             },
-            "defaultImageData": "",
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg",
             "connectionType": "ORCHESTRATOR"
           },
           "e44548ff-3920-4b39-a193-c8edb4f6c117": {
@@ -2447,11 +2447,11 @@
             },
             "identifier": "block_sender_transport_rule",
             "continueOnFailure": false,
-            "isDisabled": true,
+            "isDisabled": false,
             "parameters": {
               "input": {
-                "domain_or_email_to_block": "{{[17edb1e0-ffca-4ff7-ad48-adbd19429a29].[icon_email].[sender]}}",
-                "transport_rule_name": "Block {{[17edb1e0-ffca-4ff7-ad48-adbd19429a29].[icon_email].[sender]}}"
+                "domain_or_email_to_block": "{{[17edb1e0-ffca-4ff7-ad48-adbd19429a29].[icon_email].[flattened_attached_emails].[0].[sender]}}",
+                "transport_rule_name": "Block {{[17edb1e0-ffca-4ff7-ad48-adbd19429a29].[icon_email].[flattened_attached_emails].[0].[sender]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -2581,7 +2581,7 @@
           "flatten_attachments": true,
           "folder_name": "Inbox",
           "interval": 15,
-          "mailbox_id": "jschipp@komanddev.onmicrosoft.com",
+          "mailbox_id": "test@hotmail.com",
           "subject_query": ""
         },
         "inputJsonSchema": {
