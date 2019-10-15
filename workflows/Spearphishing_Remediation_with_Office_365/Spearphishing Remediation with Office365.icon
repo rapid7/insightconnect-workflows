@@ -1,0 +1,2112 @@
+{
+  "kom": {
+    "komandVersion": "1.39.1-0-g39b69",
+    "komFileVersion": "2.0.0",
+    "exportedAt": "2019-10-15T06:53:42.504270679Z",
+    "workflowVersions": [
+      {
+        "name": "Spearphishing Remediation with Office365",
+        "type": "runnable",
+        "version": "",
+        "description": "",
+        "graph": {
+          "edges": {
+            "178c6c88-a375-4711-8878-0728bbbce423": {
+              "id": "178c6c88-a375-4711-8878-0728bbbce423",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "c2447438-5b6d-4d16-adfa-cc74d3c51f58",
+              "toNodeId": ""
+            },
+            "411c4530-b394-4afe-8ebc-a4782ac37af8": {
+              "id": "411c4530-b394-4afe-8ebc-a4782ac37af8",
+              "name": "Close Investigation",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "085c9ffa-55de-4f4a-a5b6-a4a42abdb63c",
+              "toNodeId": "f302ffdc-fea8-4842-9842-22aa0f23c5c1"
+            },
+            "4e981610-b035-4838-87c3-ac6105bf205d": {
+              "id": "4e981610-b035-4838-87c3-ac6105bf205d",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "b13b74c8-4252-4653-a549-650863b7067c",
+              "toNodeId": "b13ad9c7-80a7-4654-bf2e-4cc781d3ac6e"
+            },
+            "6676b62a-48af-47a6-956f-b97b928c5727": {
+              "id": "6676b62a-48af-47a6-956f-b97b928c5727",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "1c467a59-1216-4665-a417-1cff72137a8b",
+              "toNodeId": "16e05672-4aaf-47a5-a145-56e267e65eb7"
+            },
+            "76bc5532-cea8-4362-b3e7-d4e8f52efbf0": {
+              "id": "76bc5532-cea8-4362-b3e7-d4e8f52efbf0",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "6738364e-d8a9-417a-a8da-ed390c42fe82",
+              "toNodeId": "085c9ffa-55de-4f4a-a5b6-a4a42abdb63c"
+            },
+            "aa6b85cc-7e4b-4d5f-9cf6-a7f9117596ac": {
+              "id": "aa6b85cc-7e4b-4d5f-9cf6-a7f9117596ac",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "c43761b8-bc4a-48e8-a325-08c07ec867dd",
+              "toNodeId": "c2447438-5b6d-4d16-adfa-cc74d3c51f58"
+            },
+            "b9781744-2d0b-4c86-b88d-927d8fcc074c": {
+              "id": "b9781744-2d0b-4c86-b88d-927d8fcc074c",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "d1e8b84b-4180-40bd-941e-f64f1c7515e4",
+              "toNodeId": "9986f254-e41a-4c30-bc18-9ab34db2ad96"
+            },
+            "c343dbe8-286f-4026-bf5d-061c0735af3a": {
+              "id": "c343dbe8-286f-4026-bf5d-061c0735af3a",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "9986f254-e41a-4c30-bc18-9ab34db2ad96",
+              "toNodeId": "b13b74c8-4252-4653-a549-650863b7067c"
+            },
+            "c9d6bbae-1edf-4231-8f9f-0384b50888d1": {
+              "id": "c9d6bbae-1edf-4231-8f9f-0384b50888d1",
+              "name": "Remediate",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "085c9ffa-55de-4f4a-a5b6-a4a42abdb63c",
+              "toNodeId": "d1e8b84b-4180-40bd-941e-f64f1c7515e4"
+            },
+            "d46f044f-3bd5-49aa-bc5f-fc28a10c8438": {
+              "id": "d46f044f-3bd5-49aa-bc5f-fc28a10c8438",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "16e05672-4aaf-47a5-a145-56e267e65eb7",
+              "toNodeId": "c43761b8-bc4a-48e8-a325-08c07ec867dd"
+            },
+            "d87fec4f-dda0-45a2-9bd1-d7f83e2d4d7e": {
+              "id": "d87fec4f-dda0-45a2-9bd1-d7f83e2d4d7e",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "f302ffdc-fea8-4842-9842-22aa0f23c5c1",
+              "toNodeId": ""
+            },
+            "e2935726-6b08-4b4b-93c9-2a1116228efd": {
+              "id": "e2935726-6b08-4b4b-93c9-2a1116228efd",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "b13ad9c7-80a7-4654-bf2e-4cc781d3ac6e",
+              "toNodeId": "1c467a59-1216-4665-a417-1cff72137a8b"
+            },
+            "fe62d634-f02a-47b1-a5b3-fd77c3a9a4ac": {
+              "id": "fe62d634-f02a-47b1-a5b3-fd77c3a9a4ac",
+              "name": "Do Nothing",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "085c9ffa-55de-4f4a-a5b6-a4a42abdb63c",
+              "toNodeId": ""
+            }
+          },
+          "nodes": {
+            "085c9ffa-55de-4f4a-a5b6-a4a42abdb63c": {
+              "id": "085c9ffa-55de-4f4a-a5b6-a4a42abdb63c",
+              "parentNodeId": ""
+            },
+            "16e05672-4aaf-47a5-a145-56e267e65eb7": {
+              "id": "16e05672-4aaf-47a5-a145-56e267e65eb7",
+              "parentNodeId": ""
+            },
+            "1c467a59-1216-4665-a417-1cff72137a8b": {
+              "id": "1c467a59-1216-4665-a417-1cff72137a8b",
+              "parentNodeId": ""
+            },
+            "6738364e-d8a9-417a-a8da-ed390c42fe82": {
+              "id": "6738364e-d8a9-417a-a8da-ed390c42fe82",
+              "parentNodeId": ""
+            },
+            "9986f254-e41a-4c30-bc18-9ab34db2ad96": {
+              "id": "9986f254-e41a-4c30-bc18-9ab34db2ad96",
+              "parentNodeId": ""
+            },
+            "b13ad9c7-80a7-4654-bf2e-4cc781d3ac6e": {
+              "id": "b13ad9c7-80a7-4654-bf2e-4cc781d3ac6e",
+              "parentNodeId": ""
+            },
+            "b13b74c8-4252-4653-a549-650863b7067c": {
+              "id": "b13b74c8-4252-4653-a549-650863b7067c",
+              "parentNodeId": ""
+            },
+            "c2447438-5b6d-4d16-adfa-cc74d3c51f58": {
+              "id": "c2447438-5b6d-4d16-adfa-cc74d3c51f58",
+              "parentNodeId": ""
+            },
+            "c43761b8-bc4a-48e8-a325-08c07ec867dd": {
+              "id": "c43761b8-bc4a-48e8-a325-08c07ec867dd",
+              "parentNodeId": ""
+            },
+            "d1e8b84b-4180-40bd-941e-f64f1c7515e4": {
+              "id": "d1e8b84b-4180-40bd-941e-f64f1c7515e4",
+              "parentNodeId": ""
+            },
+            "f302ffdc-fea8-4842-9842-22aa0f23c5c1": {
+              "id": "f302ffdc-fea8-4842-9842-22aa0f23c5c1",
+              "parentNodeId": ""
+            }
+          }
+        },
+        "steps": {
+          "085c9ffa-55de-4f4a-a5b6-a4a42abdb63c": {
+            "nodeId": "085c9ffa-55de-4f4a-a5b6-a4a42abdb63c",
+            "name": "Remediate or Close",
+            "type": "decision_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "attachments": null,
+              "message": "{{[6738364e-d8a9-417a-a8da-ed390c42fe82].[description]}}",
+              "messageType": "button",
+              "options": [
+                {
+                  "answer": "Remediate",
+                  "buttonStyle": "primary",
+                  "confirmation": "Purging email from domain and creating transport rule.",
+                  "edgeId": "c9d6bbae-1edf-4231-8f9f-0384b50888d1",
+                  "isTimeoutOnly": false
+                },
+                {
+                  "answer": "Close Investigation",
+                  "buttonStyle": "default",
+                  "confirmation": "Investigation closed! Nice work!",
+                  "edgeId": "411c4530-b394-4afe-8ebc-a4782ac37af8",
+                  "isTimeoutOnly": false
+                },
+                {
+                  "answer": "Do Nothing",
+                  "buttonStyle": "danger",
+                  "confirmation": "Follow up at {{[6738364e-d8a9-417a-a8da-ed390c42fe82].[link]}}.",
+                  "edgeId": "fe62d634-f02a-47b1-a5b3-fd77c3a9a4ac",
+                  "isTimeoutOnly": false
+                }
+              ],
+              "question": "Would you like to remediate automatically, close the investigation, or do nothing?",
+              "recipient": "#testing123",
+              "timeout": 600,
+              "timeoutDisplayUnit": "minutes",
+              "timeoutEdgeId": "fe62d634-f02a-47b1-a5b3-fd77c3a9a4ac"
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "displayType": "bytes",
+                  "format": "bytes",
+                  "order": 3,
+                  "title": "Attachments",
+                  "type": "string"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 1,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "A channel (e.g. #channel) or username",
+                  "order": 2,
+                  "title": "Recipient",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "$success": {
+                  "description": "",
+                  "order": 8,
+                  "title": "$success",
+                  "type": "boolean"
+                },
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "message": {
+                  "description": "The message that was sent to slack",
+                  "order": 4,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "path": {
+                  "description": "The path taken",
+                  "order": 6,
+                  "title": "Path",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "The Channel name or User Name",
+                  "order": 3,
+                  "title": "Recipient",
+                  "type": "string"
+                },
+                "responding_user": {
+                  "description": "The slack username of the user responding to the question",
+                  "order": 7,
+                  "title": "Response Question",
+                  "type": "string"
+                },
+                "response_question": {
+                  "description": "The response question that was sent to slack",
+                  "order": 5,
+                  "title": "Response Question",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_interactive_message"
+          },
+          "16e05672-4aaf-47a5-a145-56e267e65eb7": {
+            "nodeId": "16e05672-4aaf-47a5-a145-56e267e65eb7",
+            "name": "Mass Purge Email",
+            "type": "action",
+            "plugin": {
+              "name": "Microsoft Office365 Email Security",
+              "slugVendor": "rapid7",
+              "slugName": "microsoft_office365_email_security",
+              "slugVersion": "2.2.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_office365_email_security/2.2.0/icon.png"
+            },
+            "identifier": "mass_search_and_purge",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "compliance_search_name": "Spearphishing - {{[6738364e-d8a9-417a-a8da-ed390c42fe82].[investigationId]}}",
+                "content_match_query": "from:{{[d1e8b84b-4180-40bd-941e-f64f1c7515e4].[sender]}}",
+                "delete_items": true,
+                "query_timeout": 60
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "compliance_search_name": {
+                  "description": "Name of compliance search",
+                  "order": 1,
+                  "title": "Compliance Search Name",
+                  "type": "string"
+                },
+                "content_match_query": {
+                  "description": "This parameter uses a text search string or a query that's formatted by using the Keyword Query Language (KQL). For more information about KQL, see Keyword Query Language syntax reference (https://go.microsoft.com/fwlink/p/?linkid=269603)",
+                  "order": 2,
+                  "title": "Content Match Query",
+                  "type": "string"
+                },
+                "delete_items": {
+                  "default": false,
+                  "description": "The script only executes the delete action if this parameter is true",
+                  "order": 4,
+                  "title": "Delete Items",
+                  "type": "boolean"
+                },
+                "query_timeout": {
+                  "default": 60,
+                  "description": "Query timeout in minutes",
+                  "order": 3,
+                  "title": "Query Timeout",
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "compliance_search_name",
+                "content_match_query"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "success": {
+                  "description": "Success",
+                  "order": 1,
+                  "title": "Success",
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "success"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "1c467a59-1216-4665-a417-1cff72137a8b": {
+            "nodeId": "1c467a59-1216-4665-a417-1cff72137a8b",
+            "name": "Get DateTime",
+            "type": "action",
+            "plugin": {
+              "name": "Datetime",
+              "slugVendor": "rapid7",
+              "slugName": "datetime",
+              "slugVersion": "2.0.4",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/datetime/2.0.4/icon.png"
+            },
+            "identifier": "get_datetime",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "format_string": "%d/%m/%Y",
+                "use_rfc3339_format": false
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "format_string": {
+                  "default": "%d %b %Y %H:%M:%S",
+                  "description": "Format string for the output. Example: %H:%M:%S or %d/%m/%Y",
+                  "order": 1,
+                  "title": "Format String",
+                  "type": "string"
+                },
+                "use_rfc3339_format": {
+                  "description": "Use RFC3339 format (eg. 2017-10-24T18:27:36.23Z). This is the most compatible date format for timestamp manipulation. Enabling this will override the format string input",
+                  "order": 2,
+                  "title": "Use RFC3339 Format",
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "use_rfc3339_format",
+                "format_string"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "datetime": {
+                  "description": "Datetime",
+                  "order": 1,
+                  "title": "Datetime",
+                  "type": "string"
+                },
+                "epoch_timestamp": {
+                  "description": "Epoch timestamp",
+                  "order": 2,
+                  "title": "Epoch Timestamp",
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "datetime",
+                "epoch_timestamp"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR"
+          },
+          "6738364e-d8a9-417a-a8da-ed390c42fe82": {
+            "nodeId": "6738364e-d8a9-417a-a8da-ed390c42fe82",
+            "name": "Spearphishing Alert",
+            "description": "New Spearphishing URL Detected",
+            "type": "trigger",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "triggerId": "81b6c16e-7d05-4f2f-b0c5-b1b8d44fd222",
+            "defaultInputJSONSchema": {
+              "definitions": {
+                "actor": {
+                  "properties": {
+                    "assets": {
+                      "description": "The assets that are part of the investigation",
+                      "items": {
+                        "$ref": "#/definitions/asset"
+                      },
+                      "order": 2,
+                      "title": "Assets",
+                      "type": "array"
+                    },
+                    "users": {
+                      "description": "The users that are part of the investigation",
+                      "items": {
+                        "$ref": "#/definitions/user"
+                      },
+                      "order": 1,
+                      "title": "Users",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Actor",
+                  "type": "object"
+                },
+                "asset": {
+                  "properties": {
+                    "assetId": {
+                      "description": "the ID of the asset",
+                      "order": 1,
+                      "title": "AssetId",
+                      "type": "string"
+                    },
+                    "fqdn": {
+                      "description": "The fully qualified domain name",
+                      "order": 3,
+                      "title": "Fqdn",
+                      "type": "string"
+                    },
+                    "shortname": {
+                      "description": "shortname of the asset",
+                      "order": 2,
+                      "title": "Shortname",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "shortname",
+                    "assetId"
+                  ],
+                  "title": "Asset",
+                  "type": "object"
+                },
+                "content": {
+                  "properties": {
+                    "domains": {
+                      "description": "A list of domains to check",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "Domains",
+                      "type": "array"
+                    },
+                    "ipAddresses": {
+                      "description": "A list of ip addresses to check",
+                      "items": {
+                        "$ref": "#/definitions/ipAddress"
+                      },
+                      "order": 3,
+                      "title": "IpAddresses",
+                      "type": "array"
+                    },
+                    "processes": {
+                      "description": "A list of processes to check",
+                      "items": {
+                        "$ref": "#/definitions/process"
+                      },
+                      "order": 4,
+                      "title": "Processes",
+                      "type": "array"
+                    },
+                    "urls": {
+                      "description": "A list of URLs to check",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 1,
+                      "title": "Urls",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Content",
+                  "type": "object"
+                },
+                "hash": {
+                  "properties": {
+                    "hash": {
+                      "description": "The actual hash",
+                      "order": 1,
+                      "title": "Hash",
+                      "type": "string"
+                    },
+                    "type": {
+                      "description": "The algorithm used to generate the hash",
+                      "order": 2,
+                      "title": "Type",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "hash",
+                    "type"
+                  ],
+                  "title": "Hash",
+                  "type": "object"
+                },
+                "ipAddress": {
+                  "properties": {
+                    "ip": {
+                      "description": "The raw IP",
+                      "order": 1,
+                      "title": "Ip",
+                      "type": "string"
+                    },
+                    "type": {
+                      "description": "Denotes if an IP is internal or external",
+                      "order": 2,
+                      "title": "Type",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "ip",
+                    "type"
+                  ],
+                  "title": "IpAddress",
+                  "type": "object"
+                },
+                "process": {
+                  "properties": {
+                    "assetId": {
+                      "description": "The asset id associated with the process",
+                      "order": 1,
+                      "title": "AssetId",
+                      "type": "string"
+                    },
+                    "cmdLine": {
+                      "description": "The raw value of the command line call used to invoke the process",
+                      "order": 5,
+                      "title": "CmdLine",
+                      "type": "string"
+                    },
+                    "hashes": {
+                      "description": "The list of hashes to check",
+                      "items": {
+                        "$ref": "#/definitions/hash"
+                      },
+                      "order": 3,
+                      "title": "Hashes",
+                      "type": "array"
+                    },
+                    "name": {
+                      "description": "The name of the process",
+                      "order": 4,
+                      "title": "Name",
+                      "type": "string"
+                    },
+                    "processId": {
+                      "description": "The PID from the running process on the asset",
+                      "order": 2,
+                      "title": "ProcessId",
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "assetId",
+                    "processId"
+                  ],
+                  "title": "Process",
+                  "type": "object"
+                },
+                "user": {
+                  "properties": {
+                    "distinguishedName": {
+                      "description": "The Active Directory distinguished name of the user",
+                      "order": 2,
+                      "title": "DistinguishedName",
+                      "type": "string"
+                    },
+                    "emails": {
+                      "description": "The email addresses associated with the user",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 3,
+                      "title": "Emails",
+                      "type": "array"
+                    },
+                    "name": {
+                      "description": "The name of the user, as '<firstname> <lastname>' if available, or account name otherwise",
+                      "order": 1,
+                      "title": "Name",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "emails"
+                  ],
+                  "title": "User",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "actors": {
+                  "$ref": "#/definitions/actor",
+                  "description": "The insightIDR actors that are part of the investigation",
+                  "order": 7,
+                  "title": "Actors"
+                },
+                "contents": {
+                  "$ref": "#/definitions/content",
+                  "description": "The contents to enrich",
+                  "order": 8,
+                  "title": "Contents"
+                },
+                "description": {
+                  "description": "The description of the alert",
+                  "order": 4,
+                  "title": "Description",
+                  "type": "string"
+                },
+                "investigationId": {
+                  "description": "The investigation id",
+                  "order": 6,
+                  "title": "InvestigationId",
+                  "type": "string"
+                },
+                "link": {
+                  "description": "The deep link to the investigation in insightIDR",
+                  "order": 5,
+                  "title": "Link",
+                  "type": "string"
+                },
+                "name": {
+                  "description": "The human-readable name of the alert",
+                  "order": 3,
+                  "title": "Name",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "The time the alert was triggered in ISO 8601 extended timestamp format",
+                  "order": 1,
+                  "title": "Timestamp",
+                  "type": "string"
+                },
+                "type": {
+                  "description": "The type of alert",
+                  "order": 2,
+                  "title": "Type",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "investigationId",
+                "actors",
+                "timestamp",
+                "type",
+                "name",
+                "description",
+                "link"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "actor": {
+                  "properties": {
+                    "assets": {
+                      "description": "The assets that are part of the investigation",
+                      "items": {
+                        "$ref": "#/definitions/asset"
+                      },
+                      "order": 2,
+                      "title": "Assets",
+                      "type": "array"
+                    },
+                    "users": {
+                      "description": "The users that are part of the investigation",
+                      "items": {
+                        "$ref": "#/definitions/user"
+                      },
+                      "order": 1,
+                      "title": "Users",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Actor",
+                  "type": "object"
+                },
+                "asset": {
+                  "properties": {
+                    "assetId": {
+                      "description": "the ID of the asset",
+                      "order": 1,
+                      "title": "AssetId",
+                      "type": "string"
+                    },
+                    "fqdn": {
+                      "description": "The fully qualified domain name",
+                      "order": 3,
+                      "title": "Fqdn",
+                      "type": "string"
+                    },
+                    "shortname": {
+                      "description": "shortname of the asset",
+                      "order": 2,
+                      "title": "Shortname",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "shortname",
+                    "assetId"
+                  ],
+                  "title": "Asset",
+                  "type": "object"
+                },
+                "content": {
+                  "properties": {
+                    "domains": {
+                      "description": "A list of domains to check",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "Domains",
+                      "type": "array"
+                    },
+                    "ipAddresses": {
+                      "description": "A list of ip addresses to check",
+                      "items": {
+                        "$ref": "#/definitions/ipAddress"
+                      },
+                      "order": 3,
+                      "title": "IpAddresses",
+                      "type": "array"
+                    },
+                    "processes": {
+                      "description": "A list of processes to check",
+                      "items": {
+                        "$ref": "#/definitions/process"
+                      },
+                      "order": 4,
+                      "title": "Processes",
+                      "type": "array"
+                    },
+                    "urls": {
+                      "description": "A list of URLs to check",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 1,
+                      "title": "Urls",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Content",
+                  "type": "object"
+                },
+                "hash": {
+                  "properties": {
+                    "hash": {
+                      "description": "The actual hash",
+                      "order": 1,
+                      "title": "Hash",
+                      "type": "string"
+                    },
+                    "type": {
+                      "description": "The algorithm used to generate the hash",
+                      "order": 2,
+                      "title": "Type",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "hash",
+                    "type"
+                  ],
+                  "title": "Hash",
+                  "type": "object"
+                },
+                "ipAddress": {
+                  "properties": {
+                    "ip": {
+                      "description": "The raw IP",
+                      "order": 1,
+                      "title": "Ip",
+                      "type": "string"
+                    },
+                    "type": {
+                      "description": "Denotes if an IP is internal or external",
+                      "order": 2,
+                      "title": "Type",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "ip",
+                    "type"
+                  ],
+                  "title": "IpAddress",
+                  "type": "object"
+                },
+                "process": {
+                  "properties": {
+                    "assetId": {
+                      "description": "The asset id associated with the process",
+                      "order": 1,
+                      "title": "AssetId",
+                      "type": "string"
+                    },
+                    "cmdLine": {
+                      "description": "The raw value of the command line call used to invoke the process",
+                      "order": 5,
+                      "title": "CmdLine",
+                      "type": "string"
+                    },
+                    "hashes": {
+                      "description": "The list of hashes to check",
+                      "items": {
+                        "$ref": "#/definitions/hash"
+                      },
+                      "order": 3,
+                      "title": "Hashes",
+                      "type": "array"
+                    },
+                    "name": {
+                      "description": "The name of the process",
+                      "order": 4,
+                      "title": "Name",
+                      "type": "string"
+                    },
+                    "processId": {
+                      "description": "The PID from the running process on the asset",
+                      "order": 2,
+                      "title": "ProcessId",
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "assetId",
+                    "processId"
+                  ],
+                  "title": "Process",
+                  "type": "object"
+                },
+                "user": {
+                  "properties": {
+                    "distinguishedName": {
+                      "description": "The Active Directory distinguished name of the user",
+                      "order": 2,
+                      "title": "DistinguishedName",
+                      "type": "string"
+                    },
+                    "emails": {
+                      "description": "The email addresses associated with the user",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 3,
+                      "title": "Emails",
+                      "type": "array"
+                    },
+                    "name": {
+                      "description": "The name of the user, as '<firstname> <lastname>' if available, or account name otherwise",
+                      "order": 1,
+                      "title": "Name",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "emails"
+                  ],
+                  "title": "User",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "actors": {
+                  "$ref": "#/definitions/actor",
+                  "description": "The insightIDR actors that are part of the investigation",
+                  "order": 7,
+                  "title": "Actors"
+                },
+                "contents": {
+                  "$ref": "#/definitions/content",
+                  "description": "The contents to enrich",
+                  "order": 8,
+                  "title": "Contents"
+                },
+                "description": {
+                  "description": "The description of the alert",
+                  "order": 4,
+                  "title": "Description",
+                  "type": "string"
+                },
+                "investigationId": {
+                  "description": "The investigation id",
+                  "order": 6,
+                  "title": "InvestigationId",
+                  "type": "string"
+                },
+                "link": {
+                  "description": "The deep link to the investigation in insightIDR",
+                  "order": 5,
+                  "title": "Link",
+                  "type": "string"
+                },
+                "name": {
+                  "description": "The human-readable name of the alert",
+                  "order": 3,
+                  "title": "Name",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "The time the alert was triggered in ISO 8601 extended timestamp format",
+                  "order": 1,
+                  "title": "Timestamp",
+                  "type": "string"
+                },
+                "type": {
+                  "description": "The type of alert",
+                  "order": 2,
+                  "title": "Type",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "investigationId",
+                "actors",
+                "timestamp",
+                "type",
+                "name",
+                "description",
+                "link"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/trigger-api-idr.svg",
+            "connectionType": "NONE"
+          },
+          "9986f254-e41a-4c30-bc18-9ab34db2ad96": {
+            "nodeId": "9986f254-e41a-4c30-bc18-9ab34db2ad96",
+            "name": "Get Domain",
+            "type": "pattern_match",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "captureAll": false,
+              "expressionText": "^(?:.*://)?(?:www\\.)?{{domain:/[^:\\/]*/}}.*$",
+              "expressions": [
+                {
+                  "type": "text",
+                  "value": "^(?:.*://)?(?:www\\.)?"
+                },
+                {
+                  "type": "variable",
+                  "value": {
+                    "ident": "domain",
+                    "regex": "[^:\\/]*"
+                  }
+                },
+                {
+                  "type": "text",
+                  "value": ".*$"
+                }
+              ],
+              "ignoreCase": false,
+              "input": "{{[d1e8b84b-4180-40bd-941e-f64f1c7515e4].[url]}}"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/pattern-match.svg",
+            "connectionType": "NONE"
+          },
+          "b13ad9c7-80a7-4654-bf2e-4cc781d3ac6e": {
+            "nodeId": "b13ad9c7-80a7-4654-bf2e-4cc781d3ac6e",
+            "name": "Block Sender",
+            "type": "action",
+            "plugin": {
+              "name": "Microsoft Office365 Email Security",
+              "slugVendor": "rapid7",
+              "slugName": "microsoft_office365_email_security",
+              "slugVersion": "2.2.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_office365_email_security/2.2.0/icon.png"
+            },
+            "identifier": "block_sender_transport_rule",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "domain_or_email_to_block": "{{[d1e8b84b-4180-40bd-941e-f64f1c7515e4].[sender]}}",
+                "transport_rule_name": "{{[d1e8b84b-4180-40bd-941e-f64f1c7515e4].[sender]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "domain_or_email_to_block": {
+                  "description": "Domain or email address to block",
+                  "order": 1,
+                  "title": "Domain or Email to Block",
+                  "type": "string"
+                },
+                "transport_rule_name": {
+                  "default": "InsightConnect Block List",
+                  "description": "Transport rule name",
+                  "order": 2,
+                  "title": "Transport Rule Name",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "domain_or_email_to_block",
+                "transport_rule_name"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "result": {
+                  "description": "Result",
+                  "order": 1,
+                  "title": "Result",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "result"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "b13b74c8-4252-4653-a549-650863b7067c": {
+            "nodeId": "b13b74c8-4252-4653-a549-650863b7067c",
+            "name": "Block Domain",
+            "type": "action",
+            "plugin": {
+              "name": "Microsoft Office365 Email Security",
+              "slugVendor": "rapid7",
+              "slugName": "microsoft_office365_email_security",
+              "slugVersion": "2.2.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_office365_email_security/2.2.0/icon.png"
+            },
+            "identifier": "block_sender_transport_rule",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "domain_or_email_to_block": "{{[9986f254-e41a-4c30-bc18-9ab34db2ad96].[domain]}}",
+                "transport_rule_name": "{{[9986f254-e41a-4c30-bc18-9ab34db2ad96].[domain]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "domain_or_email_to_block": {
+                  "description": "Domain or email address to block",
+                  "order": 1,
+                  "title": "Domain or Email to Block",
+                  "type": "string"
+                },
+                "transport_rule_name": {
+                  "default": "InsightConnect Block List",
+                  "description": "Transport rule name",
+                  "order": 2,
+                  "title": "Transport Rule Name",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "domain_or_email_to_block",
+                "transport_rule_name"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "result": {
+                  "description": "Result",
+                  "order": 1,
+                  "title": "Result",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "result"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "c2447438-5b6d-4d16-adfa-cc74d3c51f58": {
+            "nodeId": "c2447438-5b6d-4d16-adfa-cc74d3c51f58",
+            "name": "Summary",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "# Investigation {{[6738364e-d8a9-417a-a8da-ed390c42fe82].[investigationId]}} Closed!\n\nThe malicious URL, {{[d1e8b84b-4180-40bd-941e-f64f1c7515e4].[url]}}, was detected.\n\nThe following remediations were performed:\nBlock domain -- {{[9986f254-e41a-4c30-bc18-9ab34db2ad96].[domain]}}\nBlock sender -- {{[d1e8b84b-4180-40bd-941e-f64f1c7515e4].[sender]}}\nMass purge emails with query -- from:{{[d1e8b84b-4180-40bd-941e-f64f1c7515e4].[sender]}}"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "c43761b8-bc4a-48e8-a325-08c07ec867dd": {
+            "nodeId": "c43761b8-bc4a-48e8-a325-08c07ec867dd",
+            "name": "Close Investigation after Remediation",
+            "type": "action",
+            "plugin": {
+              "name": "Rapid7 InsightIDR",
+              "slugVendor": "rapid7",
+              "slugName": "rapid7_insightidr",
+              "slugVersion": "1.1.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightidr/1.1.0/icon.png"
+            },
+            "identifier": "set_status_of_investigation_action",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "id": "{{[6738364e-d8a9-417a-a8da-ed390c42fe82].[investigationId]}}",
+                "status": "CLOSED"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "id": {
+                  "description": "The ID of the investigation to change the status of",
+                  "order": 1,
+                  "title": "ID",
+                  "type": "string"
+                },
+                "status": {
+                  "default": "CLOSED",
+                  "description": "The new status for the investigation",
+                  "enum": [
+                    "OPEN",
+                    "CLOSED"
+                  ],
+                  "order": 2,
+                  "title": "Status",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "status"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "alerts": {
+                  "properties": {
+                    "first_event_time": {
+                      "description": "The time the first event involved in this alert occurred",
+                      "order": 1,
+                      "title": "First Event Time",
+                      "type": "string"
+                    },
+                    "type": {
+                      "description": "Alert type",
+                      "order": 2,
+                      "title": "Type",
+                      "type": "string"
+                    },
+                    "type_description": {
+                      "description": "An optional description of this type of alert",
+                      "order": 3,
+                      "title": "Type Description",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Alerts",
+                  "type": "object"
+                },
+                "assignee": {
+                  "properties": {
+                    "email": {
+                      "description": "The email of the assigned user",
+                      "order": 1,
+                      "title": "Email",
+                      "type": "string"
+                    },
+                    "name": {
+                      "description": "The name of the assigned user",
+                      "order": 2,
+                      "title": "Name",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Assignee",
+                  "type": "object"
+                },
+                "investigation": {
+                  "properties": {
+                    "alerts": {
+                      "description": "The alerts involved in this investigation, if any",
+                      "items": {
+                        "$ref": "#/definitions/alerts"
+                      },
+                      "order": 2,
+                      "title": "Alerts",
+                      "type": "array"
+                    },
+                    "assignee": {
+                      "$ref": "#/definitions/assignee",
+                      "description": "The user assigned to this investigation, if any",
+                      "order": 1,
+                      "title": "Assignee"
+                    },
+                    "created_time": {
+                      "description": "The time the investigation was created as an ISO formatted timestamp",
+                      "order": 3,
+                      "title": "Created Time",
+                      "type": "string"
+                    },
+                    "id": {
+                      "description": "The ID of the investigation",
+                      "order": 4,
+                      "title": "ID",
+                      "type": "string"
+                    },
+                    "source": {
+                      "description": "The source of this investigation",
+                      "order": 5,
+                      "title": "Source",
+                      "type": "string"
+                    },
+                    "status": {
+                      "description": "The status of the investigation",
+                      "order": 6,
+                      "title": "Status",
+                      "type": "string"
+                    },
+                    "title": {
+                      "description": "Investigation title",
+                      "order": 7,
+                      "title": "Title",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Investigation",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "investigation": {
+                  "$ref": "#/definitions/investigation",
+                  "description": "The investigation for which the status was set",
+                  "order": 1,
+                  "title": "Investigations"
+                }
+              },
+              "required": [
+                "investigation"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "d1e8b84b-4180-40bd-941e-f64f1c7515e4": {
+            "nodeId": "d1e8b84b-4180-40bd-941e-f64f1c7515e4",
+            "name": "Get Sender and URL",
+            "type": "pattern_match",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "captureAll": false,
+              "expressionText": "suspicious link {{url:/[\\S]*/}} from sender {{sender:/[a-z0-9._%+\\-]+@[a-z0-9.\\-]+\\.[a-z]{2,4}/}}.",
+              "expressions": [
+                {
+                  "type": "text",
+                  "value": "suspicious link "
+                },
+                {
+                  "type": "variable",
+                  "value": {
+                    "ident": "url",
+                    "regex": "[\\S]*"
+                  }
+                },
+                {
+                  "type": "text",
+                  "value": " from sender "
+                },
+                {
+                  "type": "variable",
+                  "value": {
+                    "ident": "sender",
+                    "regex": "[a-z0-9._%+\\-]+@[a-z0-9.\\-]+\\.[a-z]{2,4}"
+                  }
+                },
+                {
+                  "type": "text",
+                  "value": "."
+                }
+              ],
+              "ignoreCase": false,
+              "input": "{{[6738364e-d8a9-417a-a8da-ed390c42fe82].[description]}}"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/pattern-match.svg",
+            "connectionType": "NONE"
+          },
+          "f302ffdc-fea8-4842-9842-22aa0f23c5c1": {
+            "nodeId": "f302ffdc-fea8-4842-9842-22aa0f23c5c1",
+            "name": "Close Investigation",
+            "type": "action",
+            "plugin": {
+              "name": "Rapid7 InsightIDR",
+              "slugVendor": "rapid7",
+              "slugName": "rapid7_insightidr",
+              "slugVersion": "1.1.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightidr/1.1.0/icon.png"
+            },
+            "identifier": "set_status_of_investigation_action",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "id": "{{[6738364e-d8a9-417a-a8da-ed390c42fe82].[investigationId]}}",
+                "status": "CLOSED"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "id": {
+                  "description": "The ID of the investigation to change the status of",
+                  "order": 1,
+                  "title": "ID",
+                  "type": "string"
+                },
+                "status": {
+                  "default": "CLOSED",
+                  "description": "The new status for the investigation",
+                  "enum": [
+                    "OPEN",
+                    "CLOSED"
+                  ],
+                  "order": 2,
+                  "title": "Status",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "status"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "alerts": {
+                  "properties": {
+                    "first_event_time": {
+                      "description": "The time the first event involved in this alert occurred",
+                      "order": 1,
+                      "title": "First Event Time",
+                      "type": "string"
+                    },
+                    "type": {
+                      "description": "Alert type",
+                      "order": 2,
+                      "title": "Type",
+                      "type": "string"
+                    },
+                    "type_description": {
+                      "description": "An optional description of this type of alert",
+                      "order": 3,
+                      "title": "Type Description",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Alerts",
+                  "type": "object"
+                },
+                "assignee": {
+                  "properties": {
+                    "email": {
+                      "description": "The email of the assigned user",
+                      "order": 1,
+                      "title": "Email",
+                      "type": "string"
+                    },
+                    "name": {
+                      "description": "The name of the assigned user",
+                      "order": 2,
+                      "title": "Name",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Assignee",
+                  "type": "object"
+                },
+                "investigation": {
+                  "properties": {
+                    "alerts": {
+                      "description": "The alerts involved in this investigation, if any",
+                      "items": {
+                        "$ref": "#/definitions/alerts"
+                      },
+                      "order": 2,
+                      "title": "Alerts",
+                      "type": "array"
+                    },
+                    "assignee": {
+                      "$ref": "#/definitions/assignee",
+                      "description": "The user assigned to this investigation, if any",
+                      "order": 1,
+                      "title": "Assignee"
+                    },
+                    "created_time": {
+                      "description": "The time the investigation was created as an ISO formatted timestamp",
+                      "order": 3,
+                      "title": "Created Time",
+                      "type": "string"
+                    },
+                    "id": {
+                      "description": "The ID of the investigation",
+                      "order": 4,
+                      "title": "ID",
+                      "type": "string"
+                    },
+                    "source": {
+                      "description": "The source of this investigation",
+                      "order": 5,
+                      "title": "Source",
+                      "type": "string"
+                    },
+                    "status": {
+                      "description": "The status of the investigation",
+                      "order": 6,
+                      "title": "Status",
+                      "type": "string"
+                    },
+                    "title": {
+                      "description": "Investigation title",
+                      "order": 7,
+                      "title": "Title",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Investigation",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "investigation": {
+                  "$ref": "#/definitions/investigation",
+                  "description": "The investigation for which the status was set",
+                  "order": 1,
+                  "title": "Investigations"
+                }
+              },
+              "required": [
+                "investigation"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          }
+        },
+        "tags": null,
+        "humanCostSeconds": 0,
+        "humanCostDisplayUnit": ""
+      }
+    ],
+    "triggers": [
+      {
+        "id": "81b6c16e-7d05-4f2f-b0c5-b1b8d44fd222",
+        "name": "Spearphishing Alert",
+        "description": "New Spearphishing URL Detected",
+        "input": null,
+        "inputJsonSchema": {
+          "definitions": {
+            "actor": {
+              "properties": {
+                "assets": {
+                  "description": "The assets that are part of the investigation",
+                  "items": {
+                    "$ref": "#/definitions/asset"
+                  },
+                  "order": 2,
+                  "title": "Assets",
+                  "type": "array"
+                },
+                "users": {
+                  "description": "The users that are part of the investigation",
+                  "items": {
+                    "$ref": "#/definitions/user"
+                  },
+                  "order": 1,
+                  "title": "Users",
+                  "type": "array"
+                }
+              },
+              "title": "Actor",
+              "type": "object"
+            },
+            "asset": {
+              "properties": {
+                "assetId": {
+                  "description": "the ID of the asset",
+                  "order": 1,
+                  "title": "AssetId",
+                  "type": "string"
+                },
+                "fqdn": {
+                  "description": "The fully qualified domain name",
+                  "order": 3,
+                  "title": "Fqdn",
+                  "type": "string"
+                },
+                "shortname": {
+                  "description": "shortname of the asset",
+                  "order": 2,
+                  "title": "Shortname",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "shortname",
+                "assetId"
+              ],
+              "title": "Asset",
+              "type": "object"
+            },
+            "content": {
+              "properties": {
+                "domains": {
+                  "description": "A list of domains to check",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "Domains",
+                  "type": "array"
+                },
+                "ipAddresses": {
+                  "description": "A list of ip addresses to check",
+                  "items": {
+                    "$ref": "#/definitions/ipAddress"
+                  },
+                  "order": 3,
+                  "title": "IpAddresses",
+                  "type": "array"
+                },
+                "processes": {
+                  "description": "A list of processes to check",
+                  "items": {
+                    "$ref": "#/definitions/process"
+                  },
+                  "order": 4,
+                  "title": "Processes",
+                  "type": "array"
+                },
+                "urls": {
+                  "description": "A list of URLs to check",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "Urls",
+                  "type": "array"
+                }
+              },
+              "title": "Content",
+              "type": "object"
+            },
+            "hash": {
+              "properties": {
+                "hash": {
+                  "description": "The actual hash",
+                  "order": 1,
+                  "title": "Hash",
+                  "type": "string"
+                },
+                "type": {
+                  "description": "The algorithm used to generate the hash",
+                  "order": 2,
+                  "title": "Type",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "hash",
+                "type"
+              ],
+              "title": "Hash",
+              "type": "object"
+            },
+            "ipAddress": {
+              "properties": {
+                "ip": {
+                  "description": "The raw IP",
+                  "order": 1,
+                  "title": "Ip",
+                  "type": "string"
+                },
+                "type": {
+                  "description": "Denotes if an IP is internal or external",
+                  "order": 2,
+                  "title": "Type",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "ip",
+                "type"
+              ],
+              "title": "IpAddress",
+              "type": "object"
+            },
+            "process": {
+              "properties": {
+                "assetId": {
+                  "description": "The asset id associated with the process",
+                  "order": 1,
+                  "title": "AssetId",
+                  "type": "string"
+                },
+                "cmdLine": {
+                  "description": "The raw value of the command line call used to invoke the process",
+                  "order": 5,
+                  "title": "CmdLine",
+                  "type": "string"
+                },
+                "hashes": {
+                  "description": "The list of hashes to check",
+                  "items": {
+                    "$ref": "#/definitions/hash"
+                  },
+                  "order": 3,
+                  "title": "Hashes",
+                  "type": "array"
+                },
+                "name": {
+                  "description": "The name of the process",
+                  "order": 4,
+                  "title": "Name",
+                  "type": "string"
+                },
+                "processId": {
+                  "description": "The PID from the running process on the asset",
+                  "order": 2,
+                  "title": "ProcessId",
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "assetId",
+                "processId"
+              ],
+              "title": "Process",
+              "type": "object"
+            },
+            "user": {
+              "properties": {
+                "distinguishedName": {
+                  "description": "The Active Directory distinguished name of the user",
+                  "order": 2,
+                  "title": "DistinguishedName",
+                  "type": "string"
+                },
+                "emails": {
+                  "description": "The email addresses associated with the user",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 3,
+                  "title": "Emails",
+                  "type": "array"
+                },
+                "name": {
+                  "description": "The name of the user, as '<firstname> <lastname>' if available, or account name otherwise",
+                  "order": 1,
+                  "title": "Name",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "emails"
+              ],
+              "title": "User",
+              "type": "object"
+            }
+          },
+          "properties": {
+            "actors": {
+              "$ref": "#/definitions/actor",
+              "description": "The insightIDR actors that are part of the investigation",
+              "order": 7,
+              "title": "Actors"
+            },
+            "contents": {
+              "$ref": "#/definitions/content",
+              "description": "The contents to enrich",
+              "order": 8,
+              "title": "Contents"
+            },
+            "description": {
+              "description": "The description of the alert",
+              "order": 4,
+              "title": "Description",
+              "type": "string"
+            },
+            "investigationId": {
+              "description": "The investigation id",
+              "order": 6,
+              "title": "InvestigationId",
+              "type": "string"
+            },
+            "link": {
+              "description": "The deep link to the investigation in insightIDR",
+              "order": 5,
+              "title": "Link",
+              "type": "string"
+            },
+            "name": {
+              "description": "The human-readable name of the alert",
+              "order": 3,
+              "title": "Name",
+              "type": "string"
+            },
+            "timestamp": {
+              "description": "The time the alert was triggered in ISO 8601 extended timestamp format",
+              "order": 1,
+              "title": "Timestamp",
+              "type": "string"
+            },
+            "type": {
+              "description": "The type of alert",
+              "order": 2,
+              "title": "Type",
+              "type": "string"
+            }
+          },
+          "required": [
+            "investigationId",
+            "actors",
+            "timestamp",
+            "type",
+            "name",
+            "description",
+            "link"
+          ],
+          "title": "Variables",
+          "type": "object"
+        },
+        "outputJsonSchema": {
+          "definitions": {
+            "actor": {
+              "properties": {
+                "assets": {
+                  "description": "The assets that are part of the investigation",
+                  "items": {
+                    "$ref": "#/definitions/asset"
+                  },
+                  "order": 2,
+                  "title": "Assets",
+                  "type": "array"
+                },
+                "users": {
+                  "description": "The users that are part of the investigation",
+                  "items": {
+                    "$ref": "#/definitions/user"
+                  },
+                  "order": 1,
+                  "title": "Users",
+                  "type": "array"
+                }
+              },
+              "title": "Actor",
+              "type": "object"
+            },
+            "asset": {
+              "properties": {
+                "assetId": {
+                  "description": "the ID of the asset",
+                  "order": 1,
+                  "title": "AssetId",
+                  "type": "string"
+                },
+                "fqdn": {
+                  "description": "The fully qualified domain name",
+                  "order": 3,
+                  "title": "Fqdn",
+                  "type": "string"
+                },
+                "shortname": {
+                  "description": "shortname of the asset",
+                  "order": 2,
+                  "title": "Shortname",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "shortname",
+                "assetId"
+              ],
+              "title": "Asset",
+              "type": "object"
+            },
+            "content": {
+              "properties": {
+                "domains": {
+                  "description": "A list of domains to check",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "Domains",
+                  "type": "array"
+                },
+                "ipAddresses": {
+                  "description": "A list of ip addresses to check",
+                  "items": {
+                    "$ref": "#/definitions/ipAddress"
+                  },
+                  "order": 3,
+                  "title": "IpAddresses",
+                  "type": "array"
+                },
+                "processes": {
+                  "description": "A list of processes to check",
+                  "items": {
+                    "$ref": "#/definitions/process"
+                  },
+                  "order": 4,
+                  "title": "Processes",
+                  "type": "array"
+                },
+                "urls": {
+                  "description": "A list of URLs to check",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "Urls",
+                  "type": "array"
+                }
+              },
+              "title": "Content",
+              "type": "object"
+            },
+            "hash": {
+              "properties": {
+                "hash": {
+                  "description": "The actual hash",
+                  "order": 1,
+                  "title": "Hash",
+                  "type": "string"
+                },
+                "type": {
+                  "description": "The algorithm used to generate the hash",
+                  "order": 2,
+                  "title": "Type",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "hash",
+                "type"
+              ],
+              "title": "Hash",
+              "type": "object"
+            },
+            "ipAddress": {
+              "properties": {
+                "ip": {
+                  "description": "The raw IP",
+                  "order": 1,
+                  "title": "Ip",
+                  "type": "string"
+                },
+                "type": {
+                  "description": "Denotes if an IP is internal or external",
+                  "order": 2,
+                  "title": "Type",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "ip",
+                "type"
+              ],
+              "title": "IpAddress",
+              "type": "object"
+            },
+            "process": {
+              "properties": {
+                "assetId": {
+                  "description": "The asset id associated with the process",
+                  "order": 1,
+                  "title": "AssetId",
+                  "type": "string"
+                },
+                "cmdLine": {
+                  "description": "The raw value of the command line call used to invoke the process",
+                  "order": 5,
+                  "title": "CmdLine",
+                  "type": "string"
+                },
+                "hashes": {
+                  "description": "The list of hashes to check",
+                  "items": {
+                    "$ref": "#/definitions/hash"
+                  },
+                  "order": 3,
+                  "title": "Hashes",
+                  "type": "array"
+                },
+                "name": {
+                  "description": "The name of the process",
+                  "order": 4,
+                  "title": "Name",
+                  "type": "string"
+                },
+                "processId": {
+                  "description": "The PID from the running process on the asset",
+                  "order": 2,
+                  "title": "ProcessId",
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "assetId",
+                "processId"
+              ],
+              "title": "Process",
+              "type": "object"
+            },
+            "user": {
+              "properties": {
+                "distinguishedName": {
+                  "description": "The Active Directory distinguished name of the user",
+                  "order": 2,
+                  "title": "DistinguishedName",
+                  "type": "string"
+                },
+                "emails": {
+                  "description": "The email addresses associated with the user",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 3,
+                  "title": "Emails",
+                  "type": "array"
+                },
+                "name": {
+                  "description": "The name of the user, as '<firstname> <lastname>' if available, or account name otherwise",
+                  "order": 1,
+                  "title": "Name",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "emails"
+              ],
+              "title": "User",
+              "type": "object"
+            }
+          },
+          "properties": {
+            "actors": {
+              "$ref": "#/definitions/actor",
+              "description": "The insightIDR actors that are part of the investigation",
+              "order": 7,
+              "title": "Actors"
+            },
+            "contents": {
+              "$ref": "#/definitions/content",
+              "description": "The contents to enrich",
+              "order": 8,
+              "title": "Contents"
+            },
+            "description": {
+              "description": "The description of the alert",
+              "order": 4,
+              "title": "Description",
+              "type": "string"
+            },
+            "investigationId": {
+              "description": "The investigation id",
+              "order": 6,
+              "title": "InvestigationId",
+              "type": "string"
+            },
+            "link": {
+              "description": "The deep link to the investigation in insightIDR",
+              "order": 5,
+              "title": "Link",
+              "type": "string"
+            },
+            "name": {
+              "description": "The human-readable name of the alert",
+              "order": 3,
+              "title": "Name",
+              "type": "string"
+            },
+            "timestamp": {
+              "description": "The time the alert was triggered in ISO 8601 extended timestamp format",
+              "order": 1,
+              "title": "Timestamp",
+              "type": "string"
+            },
+            "type": {
+              "description": "The type of alert",
+              "order": 2,
+              "title": "Type",
+              "type": "string"
+            }
+          },
+          "required": [
+            "investigationId",
+            "actors",
+            "timestamp",
+            "type",
+            "name",
+            "description",
+            "link"
+          ],
+          "title": "Variables",
+          "type": "object"
+        },
+        "tags": [],
+        "type": "trigger_api_idr"
+      }
+    ]
+  }
+}
