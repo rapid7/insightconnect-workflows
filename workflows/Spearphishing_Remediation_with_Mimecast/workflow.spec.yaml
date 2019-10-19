@@ -1,5 +1,5 @@
 name: Spearphishing_Remediation_with_Mimecast
-title: "Spearphishing_Remediation_with_Mimecast"
+title: "Spearphishing Remediation with Mimecast"
 description: "IDR provides built-in machine learning based detections of spearphishing attempts through DNS queries to spoofed domains. On alert generation, this workflow automatically blocks a sender and creates a managed URL in Mimecast."
 version: 1.0.0
 vendor: rapid7
