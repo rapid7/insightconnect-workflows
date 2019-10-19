@@ -44,7 +44,7 @@ Plugins leveraged by workflow:
 
 ## Source Code
 
-* https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Spearphishing_Remediation_with_Mimecast
+https://github.com/rapid7/insightconnect-workflows
 
 ## References
 

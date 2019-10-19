@@ -43,7 +43,7 @@ _There is no troubleshooting information at this time_
 
 ## Source Code
 
-* https://github.com/rapid7/insightconnect-workflows/blob/master/workflows/Office_365_Analysis
+* https://github.com/rapid7/insightconnect-workflows
 
 ## References
 

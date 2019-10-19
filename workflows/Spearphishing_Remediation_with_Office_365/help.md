@@ -45,7 +45,7 @@ Plugins leveraged by workflow:
 
 ## Source Code
 
-* https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Spearphishing_Remediation_with_Office_365
+https://github.com/rapid7/insightconnect-workflows
 
 ## References
 
