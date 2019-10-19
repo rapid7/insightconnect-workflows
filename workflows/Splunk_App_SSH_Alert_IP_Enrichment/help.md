@@ -40,7 +40,7 @@ _There is no troubleshooting information at this time_
 
 ## Source Code
 
-* https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Splunk_App_SSH_Alert_IP_Enrichment
+https://github.com/rapid7/insightconnect-workflows
 
 ## References
 

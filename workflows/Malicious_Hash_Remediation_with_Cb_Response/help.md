@@ -37,7 +37,7 @@ Plugins leveraged by workflow:
 
 ## Source Code
 
-* https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Malicious_Hash_Remediation_with_Cb_Response
+https://github.com/rapid7/insightconnect-workflows
 
 ## References
 

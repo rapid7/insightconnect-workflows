@@ -50,7 +50,7 @@ _There is no troubleshooting information at this time_
 
 ## Source Code
 
-* https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Office_365_Analysis_with_Virus_Total
+https://github.com/rapid7/insightconnect-workflows
 
 ## References
 
