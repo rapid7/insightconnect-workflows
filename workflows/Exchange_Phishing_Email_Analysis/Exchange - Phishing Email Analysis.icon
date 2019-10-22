@@ -1,0 +1,2125 @@
+{
+  "kom": {
+    "komandVersion": "1.37.0-0-gda4e3",
+    "komFileVersion": "2.0.0",
+    "exportedAt": "2019-09-16T17:58:50.152745962Z",
+    "workflowVersions": [
+      {
+        "name": "Exchange - Phishing Analysis",
+        "type": "runnable",
+        "version": "",
+        "description": "",
+        "graph": {
+          "edges": {
+            "015470b3-67b8-4964-a22f-d0b85d7055b5": {
+              "id": "015470b3-67b8-4964-a22f-d0b85d7055b5",
+              "name": "",
+              "description": "",
+              "parentNodeId": "d79ce396-c769-418a-8069-c62ea8f496e9",
+              "fromNodeId": "2c730fcd-7156-4440-862c-c0dd7811deaa",
+              "toNodeId": ""
+            },
+            "0250a5da-0a92-4a23-b1b0-0a27d0f1c30c": {
+              "id": "0250a5da-0a92-4a23-b1b0-0a27d0f1c30c",
+              "name": "",
+              "description": "",
+              "parentNodeId": "d03f098e-71de-4257-bae1-cbb49a1e891c",
+              "fromNodeId": "d7465ea5-2ba1-4a64-a8f4-4590dd1031ba",
+              "toNodeId": ""
+            },
+            "06a0bea1-48e8-47cd-85ce-63aedbd5181b": {
+              "id": "06a0bea1-48e8-47cd-85ce-63aedbd5181b",
+              "name": "No",
+              "description": "",
+              "parentNodeId": "d7465ea5-2ba1-4a64-a8f4-4590dd1031ba",
+              "fromNodeId": "ec0e48e2-7097-4040-94e9-5cda6146b49a",
+              "toNodeId": ""
+            },
+            "0ad8ccb8-37ae-4030-b977-da868456d5d8": {
+              "id": "0ad8ccb8-37ae-4030-b977-da868456d5d8",
+              "name": "",
+              "description": "",
+              "parentNodeId": "db8303e3-c8bc-435e-84ee-d3acc81e83d3",
+              "fromNodeId": "aa50d774-3d0f-4296-8f40-0d74b345af0b",
+              "toNodeId": "e0436280-3057-4423-a583-df1293560134"
+            },
+            "0f0e69ef-51ed-4db2-881e-d0ef75c0e327": {
+              "id": "0f0e69ef-51ed-4db2-881e-d0ef75c0e327",
+              "name": "No",
+              "description": "",
+              "parentNodeId": "0b87f45c-4614-4e40-8732-40e3da972aef",
+              "fromNodeId": "ea06f933-cafe-4a26-8aa2-66719c584b21",
+              "toNodeId": ""
+            },
+            "12f4b99c-63b3-4ea4-b6eb-aad935a3e0b0": {
+              "id": "12f4b99c-63b3-4ea4-b6eb-aad935a3e0b0",
+              "name": "No",
+              "description": "",
+              "parentNodeId": "db8303e3-c8bc-435e-84ee-d3acc81e83d3",
+              "fromNodeId": "e0436280-3057-4423-a583-df1293560134",
+              "toNodeId": ""
+            },
+            "15bcd842-15c9-4469-aceb-e480e88830ad": {
+              "id": "15bcd842-15c9-4469-aceb-e480e88830ad",
+              "name": "Yes",
+              "description": "",
+              "parentNodeId": "d7465ea5-2ba1-4a64-a8f4-4590dd1031ba",
+              "fromNodeId": "ec0e48e2-7097-4040-94e9-5cda6146b49a",
+              "toNodeId": "9e39bd58-069b-478b-a74f-da038b65945d"
+            },
+            "1bf3d61e-5c38-49e5-8b4c-8526a8a01391": {
+              "id": "1bf3d61e-5c38-49e5-8b4c-8526a8a01391",
+              "name": "",
+              "description": "",
+              "parentNodeId": "d7465ea5-2ba1-4a64-a8f4-4590dd1031ba",
+              "fromNodeId": "80426a56-e0e0-4093-9070-82b8f12794c1",
+              "toNodeId": "350fd90c-06eb-4cd8-94d9-62c0fae40802"
+            },
+            "2109ad58-79f6-47f9-87f2-ec0ebd354fad": {
+              "id": "2109ad58-79f6-47f9-87f2-ec0ebd354fad",
+              "name": "",
+              "description": "",
+              "parentNodeId": "db8303e3-c8bc-435e-84ee-d3acc81e83d3",
+              "fromNodeId": "cadc6fd3-6301-4748-ac25-db403bd52040",
+              "toNodeId": ""
+            },
+            "225c1005-cd24-4dc9-a98a-f3ed4989c72a": {
+              "id": "225c1005-cd24-4dc9-a98a-f3ed4989c72a",
+              "name": "",
+              "description": "",
+              "parentNodeId": "db8303e3-c8bc-435e-84ee-d3acc81e83d3",
+              "fromNodeId": "db8303e3-c8bc-435e-84ee-d3acc81e83d3",
+              "toNodeId": "aa50d774-3d0f-4296-8f40-0d74b345af0b"
+            },
+            "2331a2a6-b929-49f7-a594-b146f84f7019": {
+              "id": "2331a2a6-b929-49f7-a594-b146f84f7019",
+              "name": "",
+              "description": "",
+              "parentNodeId": "0b87f45c-4614-4e40-8732-40e3da972aef",
+              "fromNodeId": "31d8d139-ebc6-4d93-ad31-7c6ebd902814",
+              "toNodeId": ""
+            },
+            "2bf3c032-3dd2-4a70-b45c-572f69c00513": {
+              "id": "2bf3c032-3dd2-4a70-b45c-572f69c00513",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "106e85f1-73d5-430a-9954-59c28b5acfff",
+              "toNodeId": "d79ce396-c769-418a-8069-c62ea8f496e9"
+            },
+            "300e05e5-9e29-4168-b68b-1f7e79e875c7": {
+              "id": "300e05e5-9e29-4168-b68b-1f7e79e875c7",
+              "name": "",
+              "description": "",
+              "parentNodeId": "d79ce396-c769-418a-8069-c62ea8f496e9",
+              "fromNodeId": "b5fe44cb-39ec-44fe-ad8c-9d957fdaf4b6",
+              "toNodeId": "789ae80f-5d20-4be0-8546-9f2c1f9a2666"
+            },
+            "366a99e1-0aca-491f-bfbc-a72a76ff5ff9": {
+              "id": "366a99e1-0aca-491f-bfbc-a72a76ff5ff9",
+              "name": "No",
+              "description": "",
+              "parentNodeId": "d79ce396-c769-418a-8069-c62ea8f496e9",
+              "fromNodeId": "789ae80f-5d20-4be0-8546-9f2c1f9a2666",
+              "toNodeId": ""
+            },
+            "6fb2c2a0-01c1-4330-86c3-90d390a21134": {
+              "id": "6fb2c2a0-01c1-4330-86c3-90d390a21134",
+              "name": "",
+              "description": "",
+              "parentNodeId": "d03f098e-71de-4257-bae1-cbb49a1e891c",
+              "fromNodeId": "d03f098e-71de-4257-bae1-cbb49a1e891c",
+              "toNodeId": "fb40bbdd-0452-487e-ae35-58d6f681bcc0"
+            },
+            "7a91dd78-c28b-4ced-b108-44e354ab8e98": {
+              "id": "7a91dd78-c28b-4ced-b108-44e354ab8e98",
+              "name": "",
+              "description": "",
+              "parentNodeId": "d7465ea5-2ba1-4a64-a8f4-4590dd1031ba",
+              "fromNodeId": "9e39bd58-069b-478b-a74f-da038b65945d",
+              "toNodeId": ""
+            },
+            "7e7793e3-b678-41d0-bbd2-349bb434b322": {
+              "id": "7e7793e3-b678-41d0-bbd2-349bb434b322",
+              "name": "Yes",
+              "description": "",
+              "parentNodeId": "d79ce396-c769-418a-8069-c62ea8f496e9",
+              "fromNodeId": "789ae80f-5d20-4be0-8546-9f2c1f9a2666",
+              "toNodeId": "2c730fcd-7156-4440-862c-c0dd7811deaa"
+            },
+            "802c52e0-fdce-4453-993f-fd7eb242a0df": {
+              "id": "802c52e0-fdce-4453-993f-fd7eb242a0df",
+              "name": "",
+              "description": "",
+              "parentNodeId": "0b87f45c-4614-4e40-8732-40e3da972aef",
+              "fromNodeId": "0b87f45c-4614-4e40-8732-40e3da972aef",
+              "toNodeId": "6c2609b8-b567-4e2d-8b6f-af405bd6fc79"
+            },
+            "839a34b8-8e74-4776-9a22-5304d8dba209": {
+              "id": "839a34b8-8e74-4776-9a22-5304d8dba209",
+              "name": "",
+              "description": "",
+              "parentNodeId": "d7465ea5-2ba1-4a64-a8f4-4590dd1031ba",
+              "fromNodeId": "350fd90c-06eb-4cd8-94d9-62c0fae40802",
+              "toNodeId": "ec0e48e2-7097-4040-94e9-5cda6146b49a"
+            },
+            "84780f2e-30bf-4044-980e-c4e822d1eef9": {
+              "id": "84780f2e-30bf-4044-980e-c4e822d1eef9",
+              "name": "",
+              "description": "",
+              "parentNodeId": "0b87f45c-4614-4e40-8732-40e3da972aef",
+              "fromNodeId": "6c2609b8-b567-4e2d-8b6f-af405bd6fc79",
+              "toNodeId": "c98092bf-ba67-421d-9651-235e0089b976"
+            },
+            "8b7ddbe0-24d1-4fcf-8fca-d37651588d5b": {
+              "id": "8b7ddbe0-24d1-4fcf-8fca-d37651588d5b",
+              "name": "",
+              "description": "",
+              "parentNodeId": "d03f098e-71de-4257-bae1-cbb49a1e891c",
+              "fromNodeId": "db8303e3-c8bc-435e-84ee-d3acc81e83d3",
+              "toNodeId": "d7465ea5-2ba1-4a64-a8f4-4590dd1031ba"
+            },
+            "8eaa3696-2056-41af-b783-d219428fd4b2": {
+              "id": "8eaa3696-2056-41af-b783-d219428fd4b2",
+              "name": "Yes",
+              "description": "",
+              "parentNodeId": "0b87f45c-4614-4e40-8732-40e3da972aef",
+              "fromNodeId": "ea06f933-cafe-4a26-8aa2-66719c584b21",
+              "toNodeId": "31d8d139-ebc6-4d93-ad31-7c6ebd902814"
+            },
+            "93c29708-25b3-43c6-90b5-0162f66a1edb": {
+              "id": "93c29708-25b3-43c6-90b5-0162f66a1edb",
+              "name": "",
+              "description": "",
+              "parentNodeId": "d7465ea5-2ba1-4a64-a8f4-4590dd1031ba",
+              "fromNodeId": "d7465ea5-2ba1-4a64-a8f4-4590dd1031ba",
+              "toNodeId": "80426a56-e0e0-4093-9070-82b8f12794c1"
+            },
+            "961b1a2d-6013-4bd8-86e1-e1e394ea21bc": {
+              "id": "961b1a2d-6013-4bd8-86e1-e1e394ea21bc",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "d03f098e-71de-4257-bae1-cbb49a1e891c",
+              "toNodeId": "106e85f1-73d5-430a-9954-59c28b5acfff"
+            },
+            "9ad64187-a5cf-4850-894b-35d93323fe5b": {
+              "id": "9ad64187-a5cf-4850-894b-35d93323fe5b",
+              "name": "Phishing Arrempt",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "82b25bd9-97c0-41a0-9e80-031dd276f8f1",
+              "toNodeId": ""
+            },
+            "9dbd9329-d77f-415a-97f6-fb108be9030a": {
+              "id": "9dbd9329-d77f-415a-97f6-fb108be9030a",
+              "name": "False Positive",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "82b25bd9-97c0-41a0-9e80-031dd276f8f1",
+              "toNodeId": ""
+            },
+            "a4b85bac-b48c-4189-87b2-477e79a30e11": {
+              "id": "a4b85bac-b48c-4189-87b2-477e79a30e11",
+              "name": "Yes",
+              "description": "",
+              "parentNodeId": "db8303e3-c8bc-435e-84ee-d3acc81e83d3",
+              "fromNodeId": "e0436280-3057-4423-a583-df1293560134",
+              "toNodeId": "cadc6fd3-6301-4748-ac25-db403bd52040"
+            },
+            "a5932ecc-0733-43f2-8aef-8488e09f667f": {
+              "id": "a5932ecc-0733-43f2-8aef-8488e09f667f",
+              "name": "",
+              "description": "",
+              "parentNodeId": "d03f098e-71de-4257-bae1-cbb49a1e891c",
+              "fromNodeId": "fb40bbdd-0452-487e-ae35-58d6f681bcc0",
+              "toNodeId": "db8303e3-c8bc-435e-84ee-d3acc81e83d3"
+            },
+            "b72a2259-3628-4f55-be6b-290f1f9464ea": {
+              "id": "b72a2259-3628-4f55-be6b-290f1f9464ea",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "83b02632-ae9d-45b8-980e-7307bde325b9",
+              "toNodeId": "d03f098e-71de-4257-bae1-cbb49a1e891c"
+            },
+            "c162878a-9bce-4285-a9cf-9612129f80ad": {
+              "id": "c162878a-9bce-4285-a9cf-9612129f80ad",
+              "name": "",
+              "description": "",
+              "parentNodeId": "0b87f45c-4614-4e40-8732-40e3da972aef",
+              "fromNodeId": "c98092bf-ba67-421d-9651-235e0089b976",
+              "toNodeId": "ea06f933-cafe-4a26-8aa2-66719c584b21"
+            },
+            "d32350e7-4279-4a02-a336-57064f402bd1": {
+              "id": "d32350e7-4279-4a02-a336-57064f402bd1",
+              "name": "",
+              "description": "",
+              "parentNodeId": "d79ce396-c769-418a-8069-c62ea8f496e9",
+              "fromNodeId": "d79ce396-c769-418a-8069-c62ea8f496e9",
+              "toNodeId": "b5fe44cb-39ec-44fe-ad8c-9d957fdaf4b6"
+            },
+            "df0d6ee6-15a8-45fa-acd1-475285dc9ca8": {
+              "id": "df0d6ee6-15a8-45fa-acd1-475285dc9ca8",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "0b87f45c-4614-4e40-8732-40e3da972aef",
+              "toNodeId": "82b25bd9-97c0-41a0-9e80-031dd276f8f1"
+            },
+            "f2485040-c197-4cc9-8e9b-77c2952096c8": {
+              "id": "f2485040-c197-4cc9-8e9b-77c2952096c8",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "d79ce396-c769-418a-8069-c62ea8f496e9",
+              "toNodeId": "0b87f45c-4614-4e40-8732-40e3da972aef"
+            }
+          },
+          "nodes": {
+            "0b87f45c-4614-4e40-8732-40e3da972aef": {
+              "id": "0b87f45c-4614-4e40-8732-40e3da972aef",
+              "parentNodeId": ""
+            },
+            "106e85f1-73d5-430a-9954-59c28b5acfff": {
+              "id": "106e85f1-73d5-430a-9954-59c28b5acfff",
+              "parentNodeId": ""
+            },
+            "2c730fcd-7156-4440-862c-c0dd7811deaa": {
+              "id": "2c730fcd-7156-4440-862c-c0dd7811deaa",
+              "parentNodeId": "d79ce396-c769-418a-8069-c62ea8f496e9"
+            },
+            "31d8d139-ebc6-4d93-ad31-7c6ebd902814": {
+              "id": "31d8d139-ebc6-4d93-ad31-7c6ebd902814",
+              "parentNodeId": "0b87f45c-4614-4e40-8732-40e3da972aef"
+            },
+            "350fd90c-06eb-4cd8-94d9-62c0fae40802": {
+              "id": "350fd90c-06eb-4cd8-94d9-62c0fae40802",
+              "parentNodeId": "d7465ea5-2ba1-4a64-a8f4-4590dd1031ba"
+            },
+            "6c2609b8-b567-4e2d-8b6f-af405bd6fc79": {
+              "id": "6c2609b8-b567-4e2d-8b6f-af405bd6fc79",
+              "parentNodeId": "0b87f45c-4614-4e40-8732-40e3da972aef"
+            },
+            "789ae80f-5d20-4be0-8546-9f2c1f9a2666": {
+              "id": "789ae80f-5d20-4be0-8546-9f2c1f9a2666",
+              "parentNodeId": "d79ce396-c769-418a-8069-c62ea8f496e9"
+            },
+            "80426a56-e0e0-4093-9070-82b8f12794c1": {
+              "id": "80426a56-e0e0-4093-9070-82b8f12794c1",
+              "parentNodeId": "d7465ea5-2ba1-4a64-a8f4-4590dd1031ba"
+            },
+            "82b25bd9-97c0-41a0-9e80-031dd276f8f1": {
+              "id": "82b25bd9-97c0-41a0-9e80-031dd276f8f1",
+              "parentNodeId": ""
+            },
+            "83b02632-ae9d-45b8-980e-7307bde325b9": {
+              "id": "83b02632-ae9d-45b8-980e-7307bde325b9",
+              "parentNodeId": ""
+            },
+            "9e39bd58-069b-478b-a74f-da038b65945d": {
+              "id": "9e39bd58-069b-478b-a74f-da038b65945d",
+              "parentNodeId": "d7465ea5-2ba1-4a64-a8f4-4590dd1031ba"
+            },
+            "aa50d774-3d0f-4296-8f40-0d74b345af0b": {
+              "id": "aa50d774-3d0f-4296-8f40-0d74b345af0b",
+              "parentNodeId": "db8303e3-c8bc-435e-84ee-d3acc81e83d3"
+            },
+            "b5fe44cb-39ec-44fe-ad8c-9d957fdaf4b6": {
+              "id": "b5fe44cb-39ec-44fe-ad8c-9d957fdaf4b6",
+              "parentNodeId": "d79ce396-c769-418a-8069-c62ea8f496e9"
+            },
+            "c98092bf-ba67-421d-9651-235e0089b976": {
+              "id": "c98092bf-ba67-421d-9651-235e0089b976",
+              "parentNodeId": "0b87f45c-4614-4e40-8732-40e3da972aef"
+            },
+            "cadc6fd3-6301-4748-ac25-db403bd52040": {
+              "id": "cadc6fd3-6301-4748-ac25-db403bd52040",
+              "parentNodeId": "db8303e3-c8bc-435e-84ee-d3acc81e83d3"
+            },
+            "d03f098e-71de-4257-bae1-cbb49a1e891c": {
+              "id": "d03f098e-71de-4257-bae1-cbb49a1e891c",
+              "parentNodeId": ""
+            },
+            "d7465ea5-2ba1-4a64-a8f4-4590dd1031ba": {
+              "id": "d7465ea5-2ba1-4a64-a8f4-4590dd1031ba",
+              "parentNodeId": "d03f098e-71de-4257-bae1-cbb49a1e891c"
+            },
+            "d79ce396-c769-418a-8069-c62ea8f496e9": {
+              "id": "d79ce396-c769-418a-8069-c62ea8f496e9",
+              "parentNodeId": ""
+            },
+            "db8303e3-c8bc-435e-84ee-d3acc81e83d3": {
+              "id": "db8303e3-c8bc-435e-84ee-d3acc81e83d3",
+              "parentNodeId": "d03f098e-71de-4257-bae1-cbb49a1e891c"
+            },
+            "e0436280-3057-4423-a583-df1293560134": {
+              "id": "e0436280-3057-4423-a583-df1293560134",
+              "parentNodeId": "db8303e3-c8bc-435e-84ee-d3acc81e83d3"
+            },
+            "ea06f933-cafe-4a26-8aa2-66719c584b21": {
+              "id": "ea06f933-cafe-4a26-8aa2-66719c584b21",
+              "parentNodeId": "0b87f45c-4614-4e40-8732-40e3da972aef"
+            },
+            "ec0e48e2-7097-4040-94e9-5cda6146b49a": {
+              "id": "ec0e48e2-7097-4040-94e9-5cda6146b49a",
+              "parentNodeId": "d7465ea5-2ba1-4a64-a8f4-4590dd1031ba"
+            },
+            "fb40bbdd-0452-487e-ae35-58d6f681bcc0": {
+              "id": "fb40bbdd-0452-487e-ae35-58d6f681bcc0",
+              "parentNodeId": "d03f098e-71de-4257-bae1-cbb49a1e891c"
+            }
+          }
+        },
+        "steps": {
+          "0b87f45c-4614-4e40-8732-40e3da972aef": {
+            "nodeId": "0b87f45c-4614-4e40-8732-40e3da972aef",
+            "name": "File Analysis",
+            "type": "loop",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "innerEdgeId": "802c52e0-fdce-4453-993f-fd7eb242a0df",
+              "nextEdgeId": "df0d6ee6-15a8-45fa-acd1-475285dc9ca8",
+              "repeatVariable": "[83b02632-ae9d-45b8-980e-7307bde325b9].[email].[attached_files]"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/loop.svg",
+            "connectionType": "NONE"
+          },
+          "106e85f1-73d5-430a-9954-59c28b5acfff": {
+            "nodeId": "106e85f1-73d5-430a-9954-59c28b5acfff",
+            "name": "URLExtraction",
+            "type": "action",
+            "plugin": {
+              "name": "ExtractIt",
+              "slugVendor": "rapid7",
+              "slugName": "extractit",
+              "slugVersion": "1.1.6",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/extractit/1.1.6/icon.png"
+            },
+            "identifier": "url_extractor",
+            "continueOnFailure": true,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "file": "",
+                "str": "{{[83b02632-ae9d-45b8-980e-7307bde325b9].[email].[body]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "file": {
+                  "description": "Input file as bytes",
+                  "displayType": "bytes",
+                  "format": "bytes",
+                  "order": 2,
+                  "title": "File",
+                  "type": "string"
+                },
+                "str": {
+                  "description": "Input string",
+                  "order": 1,
+                  "title": "String",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "urls": {
+                  "description": "List of extracted URLs",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "URLs",
+                  "type": "array"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR"
+          },
+          "2c730fcd-7156-4440-862c-c0dd7811deaa": {
+            "nodeId": "2c730fcd-7156-4440-862c-c0dd7811deaa",
+            "name": "VirusTotal Findings",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "# {{[d79ce396-c769-418a-8069-c62ea8f496e9].[$item]}} Report\n____\n\n### Positive Hits: {{[b5fe44cb-39ec-44fe-ad8c-9d957fdaf4b6].[positives]}}\n### AV Scans: {{[b5fe44cb-39ec-44fe-ad8c-9d957fdaf4b6].[total]}}\n\n### Link: {{[b5fe44cb-39ec-44fe-ad8c-9d957fdaf4b6].[permalink]}}\n\n## AV Scans\n{{#each [b5fe44cb-39ec-44fe-ad8c-9d957fdaf4b6].[scans]}}\n{{#if detected}}\n{{@key}}:{{detected}}\n{{/if}}\n{{/each}}"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "31d8d139-ebc6-4d93-ad31-7c6ebd902814": {
+            "nodeId": "31d8d139-ebc6-4d93-ad31-7c6ebd902814",
+            "name": "Hybrid Analysis Report",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "# {{[0b87f45c-4614-4e40-8732-40e3da972aef].[$item].[name]}} Report\n____\n\n### Threat Score: {{[c98092bf-ba67-421d-9651-235e0089b976].[threatscore]}}\n\n## Reports\n{{#each [c98092bf-ba67-421d-9651-235e0089b976].[reports]}}\n{{this}}\n{{/each}}"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "350fd90c-06eb-4cd8-94d9-62c0fae40802": {
+            "nodeId": "350fd90c-06eb-4cd8-94d9-62c0fae40802",
+            "name": "Lookup Hash",
+            "type": "action",
+            "plugin": {
+              "name": "Hybrid Analysis",
+              "slugVendor": "rapid7",
+              "slugName": "hybrid_analysis",
+              "slugVersion": "2.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/hybrid_analysis/2.0.0/icon.png"
+            },
+            "identifier": "lookup_hash",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "hash": "{{[80426a56-e0e0-4093-9070-82b8f12794c1].[md5]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "hash": {
+                  "description": "MD5/SHA1/SHA256 Hash",
+                  "order": 1,
+                  "title": "Hash",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "hash"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "report": {
+                  "properties": {
+                    "analysis_start_time": {
+                      "order": 14,
+                      "title": "Analysis Start Time",
+                      "type": "string"
+                    },
+                    "compromised_hosts": {
+                      "description": "Compromised Hosts",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 18,
+                      "title": "Compromised Hosts",
+                      "type": "array"
+                    },
+                    "domains": {
+                      "description": "Domains",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 19,
+                      "title": "Domains",
+                      "type": "array"
+                    },
+                    "environmentDescription": {
+                      "description": "Environment Description",
+                      "order": 6,
+                      "title": "EnvironmentDescription",
+                      "type": "string"
+                    },
+                    "environment_id": {
+                      "description": "Environment ID",
+                      "order": 1,
+                      "title": "Environment Id",
+                      "type": "string"
+                    },
+                    "hosts": {
+                      "description": "Hosts",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 20,
+                      "title": "Hosts",
+                      "type": "array"
+                    },
+                    "isinteresting": {
+                      "description": "Is Interesting",
+                      "order": 16,
+                      "title": "Isinteresting",
+                      "type": "boolean"
+                    },
+                    "isurlanalysis": {
+                      "order": 13,
+                      "title": "Isurlanalysis",
+                      "type": "boolean"
+                    },
+                    "md5": {
+                      "description": "MD5",
+                      "order": 3,
+                      "title": "Md5",
+                      "type": "string"
+                    },
+                    "multiscan_detectrate_pcnt": {
+                      "order": 10,
+                      "title": "Multiscan Detectrate Pcnt",
+                      "type": "number"
+                    },
+                    "sha1": {
+                      "description": "SHA1",
+                      "order": 2,
+                      "title": "Sha1",
+                      "type": "string"
+                    },
+                    "sha256": {
+                      "description": "SHA256",
+                      "order": 4,
+                      "title": "Sha256",
+                      "type": "string"
+                    },
+                    "size": {
+                      "description": "Size",
+                      "order": 7,
+                      "title": "Size",
+                      "type": "integer"
+                    },
+                    "submitname": {
+                      "description": "Submission Name",
+                      "order": 5,
+                      "title": "Submitname",
+                      "type": "string"
+                    },
+                    "targeturl": {
+                      "description": "Target URL",
+                      "order": 9,
+                      "title": "Targeturl",
+                      "type": "string"
+                    },
+                    "threatlevel": {
+                      "description": "Threat Level",
+                      "order": 17,
+                      "title": "Threatlevel",
+                      "type": "integer"
+                    },
+                    "threatscore": {
+                      "order": 15,
+                      "title": "Threatscore",
+                      "type": "integer"
+                    },
+                    "type": {
+                      "description": "ASCII Text",
+                      "order": 8,
+                      "title": "Type",
+                      "type": "string"
+                    },
+                    "virustotal_detectrate_pcnt": {
+                      "description": "VT Detect Rate Percent",
+                      "order": 12,
+                      "title": "Virustotal Detectrate Pcnt",
+                      "type": "number"
+                    },
+                    "virustotal_familyname": {
+                      "description": "VT Family Name",
+                      "order": 11,
+                      "title": "Virustotal Familyname",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Report",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "found": {
+                  "description": "True if found",
+                  "order": 1,
+                  "title": "Found",
+                  "type": "boolean"
+                },
+                "reports": {
+                  "description": "Reports",
+                  "items": {
+                    "$ref": "#/definitions/report"
+                  },
+                  "order": 3,
+                  "title": "Reports",
+                  "type": "array"
+                },
+                "threatscore": {
+                  "description": "Threat Score (max found)",
+                  "order": 2,
+                  "title": "Threatscore",
+                  "type": "integer"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "6c2609b8-b567-4e2d-8b6f-af405bd6fc79": {
+            "nodeId": "6c2609b8-b567-4e2d-8b6f-af405bd6fc79",
+            "name": "HashFile",
+            "type": "action",
+            "plugin": {
+              "name": "HashIt",
+              "slugVendor": "rapid7",
+              "slugName": "hashit",
+              "slugVersion": "2.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/hashit/2.0.1/icon.png"
+            },
+            "identifier": "bytes",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "bytes": "{{[0b87f45c-4614-4e40-8732-40e3da972aef].[$item].[content]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "bytes": {
+                  "description": "Base64 encoded file bytes to hash",
+                  "displayType": "bytes",
+                  "format": "bytes",
+                  "order": 1,
+                  "title": "Bytes",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "bytes"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "md5": {
+                  "description": "MD5 hash",
+                  "order": 1,
+                  "title": "MD5 Hash",
+                  "type": "string"
+                },
+                "sha1": {
+                  "description": "SHA1 hash",
+                  "order": 2,
+                  "title": "SHA1 Hash",
+                  "type": "string"
+                },
+                "sha256": {
+                  "description": "SHA256 hash",
+                  "order": 3,
+                  "title": "SHA256 Hash",
+                  "type": "string"
+                },
+                "sha512": {
+                  "description": "SHA512 hash",
+                  "order": 4,
+                  "title": "SHA512 Hash",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR"
+          },
+          "789ae80f-5d20-4be0-8546-9f2c1f9a2666": {
+            "nodeId": "789ae80f-5d20-4be0-8546-9f2c1f9a2666",
+            "name": "FOund",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "366a99e1-0aca-491f-bfbc-a72a76ff5ff9",
+              "stepControlParams": [
+                {
+                  "edgeId": "7e7793e3-b678-41d0-bbd2-349bb434b322",
+                  "expression": {
+                    "left": {
+                      "name": "b5fe44cb-39ec-44fe-ad8c-9d957fdaf4b6.malicious",
+                      "type": "variable"
+                    },
+                    "op": "=",
+                    "right": {
+                      "type": "literal",
+                      "value": true
+                    },
+                    "type": "binary"
+                  },
+                  "expressionText": "{{[b5fe44cb-39ec-44fe-ad8c-9d957fdaf4b6].[malicious]}}=true"
+                },
+                {
+                  "edgeId": "366a99e1-0aca-491f-bfbc-a72a76ff5ff9",
+                  "expression": {},
+                  "expressionText": ""
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          },
+          "80426a56-e0e0-4093-9070-82b8f12794c1": {
+            "nodeId": "80426a56-e0e0-4093-9070-82b8f12794c1",
+            "name": "Hashit",
+            "type": "action",
+            "plugin": {
+              "name": "HashIt",
+              "slugVendor": "rapid7",
+              "slugName": "hashit",
+              "slugVersion": "2.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/hashit/2.0.1/icon.png"
+            },
+            "identifier": "bytes",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "bytes": "{{[d7465ea5-2ba1-4a64-a8f4-4590dd1031ba].[$item].[content]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "bytes": {
+                  "description": "Base64 encoded file bytes to hash",
+                  "displayType": "bytes",
+                  "format": "bytes",
+                  "order": 1,
+                  "title": "Bytes",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "bytes"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "md5": {
+                  "description": "MD5 hash",
+                  "order": 1,
+                  "title": "MD5 Hash",
+                  "type": "string"
+                },
+                "sha1": {
+                  "description": "SHA1 hash",
+                  "order": 2,
+                  "title": "SHA1 Hash",
+                  "type": "string"
+                },
+                "sha256": {
+                  "description": "SHA256 hash",
+                  "order": 3,
+                  "title": "SHA256 Hash",
+                  "type": "string"
+                },
+                "sha512": {
+                  "description": "SHA512 hash",
+                  "order": 4,
+                  "title": "SHA512 Hash",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR"
+          },
+          "82b25bd9-97c0-41a0-9e80-031dd276f8f1": {
+            "nodeId": "82b25bd9-97c0-41a0-9e80-031dd276f8f1",
+            "name": "Determine Response",
+            "type": "human_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "",
+              "stepControlParams": [
+                {
+                  "edgeId": "9ad64187-a5cf-4850-894b-35d93323fe5b",
+                  "expression": {},
+                  "expressionText": "",
+                  "nodeId": "82b25bd9-97c0-41a0-9e80-031dd276f8f1"
+                },
+                {
+                  "edgeId": "9dbd9329-d77f-415a-97f6-fb108be9030a",
+                  "expression": {},
+                  "expressionText": "",
+                  "nodeId": "82b25bd9-97c0-41a0-9e80-031dd276f8f1"
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/human-decision.svg",
+            "connectionType": "NONE"
+          },
+          "83b02632-ae9d-45b8-980e-7307bde325b9": {
+            "nodeId": "83b02632-ae9d-45b8-980e-7307bde325b9",
+            "name": "Email Received",
+            "type": "trigger",
+            "plugin": {
+              "name": "Microsoft Exchange",
+              "slugVendor": "rapid7",
+              "slugName": "microsoft_exchange",
+              "slugVersion": "5.1.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_exchange/5.1.0/icon.png"
+            },
+            "identifier": "email_received",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "flatten_attachments": false,
+                "mailbox_name": "Inbox",
+                "poll_interval": 11,
+                "subject_query": ""
+              }
+            },
+            "triggerId": "acc7ae52-b652-4d16-80dc-2a6b79dd3ef0",
+            "defaultInputJSONSchema": {
+              "properties": {
+                "flatten_attachments": {
+                  "default": false,
+                  "description": "Flattens attachments to a single list",
+                  "order": 3,
+                  "title": "Flatten Attachments",
+                  "type": "boolean"
+                },
+                "mailbox_name": {
+                  "description": "Common values are Calendar, Trash, Drafts, Inbox, Outbox, Sent, Junk, Tasks, Contacts. You can also use a completely custom value, for example python_mailing_list. Mailbox names are case-sensitive",
+                  "order": 1,
+                  "title": "Mailbox Name",
+                  "type": "string"
+                },
+                "poll_interval": {
+                  "default": 15,
+                  "description": "How often to poll the specified mailbox for new emails, in seconds. Default value is 15 seconds",
+                  "order": 2,
+                  "title": "Poll Interval",
+                  "type": "integer"
+                },
+                "subject_query": {
+                  "default": "",
+                  "description": "Query to search for in subject (regex capable). Only these emails will be marked as read",
+                  "order": 4,
+                  "title": "Subject Query",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "mailbox_name",
+                "poll_interval"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "attachment_email": {
+                  "properties": {
+                    "attached_emails": {
+                      "items": {
+                        "type": "object"
+                      },
+                      "order": 9,
+                      "title": "Attached Emails",
+                      "type": "array"
+                    },
+                    "attached_files": {
+                      "items": {
+                        "$ref": "#/definitions/attachment_file"
+                      },
+                      "order": 8,
+                      "title": "Attached Files",
+                      "type": "array"
+                    },
+                    "body": {
+                      "order": 4,
+                      "title": "Body",
+                      "type": "string"
+                    },
+                    "categories": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 5,
+                      "title": "Categories",
+                      "type": "array"
+                    },
+                    "date_received": {
+                      "displayType": "date",
+                      "format": "date-time",
+                      "order": 6,
+                      "title": "Date Received",
+                      "type": "string"
+                    },
+                    "headers": {
+                      "items": {
+                        "$ref": "#/definitions/header"
+                      },
+                      "order": 7,
+                      "title": "Headers",
+                      "type": "array"
+                    },
+                    "id": {
+                      "order": 1,
+                      "title": "ID",
+                      "type": "string"
+                    },
+                    "sender": {
+                      "order": 2,
+                      "title": "Sender",
+                      "type": "string"
+                    },
+                    "subject": {
+                      "order": 3,
+                      "title": "Subject",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "headers"
+                  ],
+                  "title": "Attachment Email",
+                  "type": "object"
+                },
+                "attachment_file": {
+                  "properties": {
+                    "content": {
+                      "displayType": "bytes",
+                      "format": "bytes",
+                      "order": 2,
+                      "title": "Content",
+                      "type": "string"
+                    },
+                    "name": {
+                      "order": 1,
+                      "title": "Name",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Attachment File",
+                  "type": "object"
+                },
+                "email": {
+                  "properties": {
+                    "account": {
+                      "description": "Primary SMTP Address of the account for which the email was found on",
+                      "order": 2,
+                      "title": "Account",
+                      "type": "string"
+                    },
+                    "attached_emails": {
+                      "items": {
+                        "$ref": "#/definitions/attachment_email"
+                      },
+                      "order": 8,
+                      "title": "Attached Emails",
+                      "type": "array"
+                    },
+                    "attached_files": {
+                      "items": {
+                        "$ref": "#/definitions/attachment_file"
+                      },
+                      "order": 7,
+                      "title": "Attached Files",
+                      "type": "array"
+                    },
+                    "body": {
+                      "order": 6,
+                      "title": "Body",
+                      "type": "string"
+                    },
+                    "categories": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 11,
+                      "title": "Categories",
+                      "type": "array"
+                    },
+                    "date_received": {
+                      "displayType": "date",
+                      "format": "date-time",
+                      "order": 12,
+                      "title": "Date Received",
+                      "type": "string"
+                    },
+                    "flattened_attached_emails": {
+                      "items": {
+                        "$ref": "#/definitions/attachment_email"
+                      },
+                      "order": 9,
+                      "title": "Flattened Attached Emails",
+                      "type": "array"
+                    },
+                    "flattened_attached_files": {
+                      "items": {
+                        "$ref": "#/definitions/attachment_file"
+                      },
+                      "order": 10,
+                      "title": "Flattened Attached Files",
+                      "type": "array"
+                    },
+                    "headers": {
+                      "items": {
+                        "$ref": "#/definitions/header"
+                      },
+                      "order": 13,
+                      "title": "Headers",
+                      "type": "array"
+                    },
+                    "id": {
+                      "order": 1,
+                      "title": "ID",
+                      "type": "string"
+                    },
+                    "is_read": {
+                      "description": "Whether or not the email has been read",
+                      "order": 3,
+                      "title": "Is Read",
+                      "type": "boolean"
+                    },
+                    "sender": {
+                      "order": 4,
+                      "title": "Sender",
+                      "type": "string"
+                    },
+                    "subject": {
+                      "order": 5,
+                      "title": "Subject",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "sender",
+                    "headers"
+                  ],
+                  "title": "Email",
+                  "type": "object"
+                },
+                "header": {
+                  "properties": {
+                    "name": {
+                      "order": 1,
+                      "title": "Name",
+                      "type": "string"
+                    },
+                    "value": {
+                      "order": 2,
+                      "title": "Value",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "value",
+                    "name"
+                  ],
+                  "title": "Header",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "email": {
+                  "$ref": "#/definitions/email",
+                  "description": "Email",
+                  "order": 1,
+                  "title": "Email"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg",
+            "connectionType": "CONNECTION"
+          },
+          "9e39bd58-069b-478b-a74f-da038b65945d": {
+            "nodeId": "9e39bd58-069b-478b-a74f-da038b65945d",
+            "name": "File Report",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "# {{[d7465ea5-2ba1-4a64-a8f4-4590dd1031ba].[$item].[name]}} Report\n____\n\n### Threatscore: {{[350fd90c-06eb-4cd8-94d9-62c0fae40802].[threatscore]}}\n\n## Reports\n{{#each [350fd90c-06eb-4cd8-94d9-62c0fae40802].[reports]}}\n{{this}}\n{{/each}}"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "aa50d774-3d0f-4296-8f40-0d74b345af0b": {
+            "nodeId": "aa50d774-3d0f-4296-8f40-0d74b345af0b",
+            "name": "Pull URL Report",
+            "type": "action",
+            "plugin": {
+              "name": "VirusTotal",
+              "slugVendor": "rapid7",
+              "slugName": "virustotal",
+              "slugVersion": "5.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/virustotal/5.0.0/icon.png"
+            },
+            "identifier": "scan_url_report",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "url": "{{[db8303e3-c8bc-435e-84ee-d3acc81e83d3].[$item]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "url": {
+                  "description": "URL scanned",
+                  "order": 1,
+                  "title": "URL",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "malicious": {
+                  "description": "True if one or more positives",
+                  "order": 1,
+                  "title": "Malicious",
+                  "type": "boolean"
+                },
+                "permalink": {
+                  "description": "Permalink",
+                  "order": 8,
+                  "title": "Permalink",
+                  "type": "string"
+                },
+                "positives": {
+                  "description": "Positives",
+                  "order": 9,
+                  "title": "Positives",
+                  "type": "integer"
+                },
+                "resource": {
+                  "description": "Resource",
+                  "order": 4,
+                  "title": "Resource",
+                  "type": "string"
+                },
+                "response_code": {
+                  "description": "Response code",
+                  "order": 2,
+                  "title": "Response Code",
+                  "type": "integer"
+                },
+                "scan_date": {
+                  "description": "Scan date",
+                  "order": 7,
+                  "title": "Scan Date",
+                  "type": "string"
+                },
+                "scan_id": {
+                  "description": "Scan ID",
+                  "order": 6,
+                  "title": "Scan ID",
+                  "type": "string"
+                },
+                "scans": {
+                  "description": "Scans",
+                  "order": 11,
+                  "title": "Scans",
+                  "type": "object"
+                },
+                "total": {
+                  "description": "Total",
+                  "order": 10,
+                  "title": "Total",
+                  "type": "integer"
+                },
+                "url": {
+                  "description": "URL",
+                  "order": 5,
+                  "title": "URL",
+                  "type": "string"
+                },
+                "verbose_msg": {
+                  "description": "Verbose message",
+                  "order": 3,
+                  "title": "Verbose Message",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "b5fe44cb-39ec-44fe-ad8c-9d957fdaf4b6": {
+            "nodeId": "b5fe44cb-39ec-44fe-ad8c-9d957fdaf4b6",
+            "name": "VirusTotal Enrichment",
+            "type": "action",
+            "plugin": {
+              "name": "VirusTotal",
+              "slugVendor": "rapid7",
+              "slugName": "virustotal",
+              "slugVersion": "5.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/virustotal/5.0.0/icon.png"
+            },
+            "identifier": "scan_url_report",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "url": "{{[d79ce396-c769-418a-8069-c62ea8f496e9].[$item]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "url": {
+                  "description": "URL scanned",
+                  "order": 1,
+                  "title": "URL",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "malicious": {
+                  "description": "True if one or more positives",
+                  "order": 1,
+                  "title": "Malicious",
+                  "type": "boolean"
+                },
+                "permalink": {
+                  "description": "Permalink",
+                  "order": 8,
+                  "title": "Permalink",
+                  "type": "string"
+                },
+                "positives": {
+                  "description": "Positives",
+                  "order": 9,
+                  "title": "Positives",
+                  "type": "integer"
+                },
+                "resource": {
+                  "description": "Resource",
+                  "order": 4,
+                  "title": "Resource",
+                  "type": "string"
+                },
+                "response_code": {
+                  "description": "Response code",
+                  "order": 2,
+                  "title": "Response Code",
+                  "type": "integer"
+                },
+                "scan_date": {
+                  "description": "Scan date",
+                  "order": 7,
+                  "title": "Scan Date",
+                  "type": "string"
+                },
+                "scan_id": {
+                  "description": "Scan ID",
+                  "order": 6,
+                  "title": "Scan ID",
+                  "type": "string"
+                },
+                "scans": {
+                  "description": "Scans",
+                  "order": 11,
+                  "title": "Scans",
+                  "type": "object"
+                },
+                "total": {
+                  "description": "Total",
+                  "order": 10,
+                  "title": "Total",
+                  "type": "integer"
+                },
+                "url": {
+                  "description": "URL",
+                  "order": 5,
+                  "title": "URL",
+                  "type": "string"
+                },
+                "verbose_msg": {
+                  "description": "Verbose message",
+                  "order": 3,
+                  "title": "Verbose Message",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "c98092bf-ba67-421d-9651-235e0089b976": {
+            "nodeId": "c98092bf-ba67-421d-9651-235e0089b976",
+            "name": "HybridAnalysis",
+            "type": "action",
+            "plugin": {
+              "name": "Hybrid Analysis",
+              "slugVendor": "rapid7",
+              "slugName": "hybrid_analysis",
+              "slugVersion": "2.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/hybrid_analysis/2.0.0/icon.png"
+            },
+            "identifier": "lookup_hash",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "hash": "{{[6c2609b8-b567-4e2d-8b6f-af405bd6fc79].[md5]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "hash": {
+                  "description": "MD5/SHA1/SHA256 Hash",
+                  "order": 1,
+                  "title": "Hash",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "hash"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "report": {
+                  "properties": {
+                    "analysis_start_time": {
+                      "order": 14,
+                      "title": "Analysis Start Time",
+                      "type": "string"
+                    },
+                    "compromised_hosts": {
+                      "description": "Compromised Hosts",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 18,
+                      "title": "Compromised Hosts",
+                      "type": "array"
+                    },
+                    "domains": {
+                      "description": "Domains",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 19,
+                      "title": "Domains",
+                      "type": "array"
+                    },
+                    "environmentDescription": {
+                      "description": "Environment Description",
+                      "order": 6,
+                      "title": "EnvironmentDescription",
+                      "type": "string"
+                    },
+                    "environment_id": {
+                      "description": "Environment ID",
+                      "order": 1,
+                      "title": "Environment Id",
+                      "type": "string"
+                    },
+                    "hosts": {
+                      "description": "Hosts",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 20,
+                      "title": "Hosts",
+                      "type": "array"
+                    },
+                    "isinteresting": {
+                      "description": "Is Interesting",
+                      "order": 16,
+                      "title": "Isinteresting",
+                      "type": "boolean"
+                    },
+                    "isurlanalysis": {
+                      "order": 13,
+                      "title": "Isurlanalysis",
+                      "type": "boolean"
+                    },
+                    "md5": {
+                      "description": "MD5",
+                      "order": 3,
+                      "title": "Md5",
+                      "type": "string"
+                    },
+                    "multiscan_detectrate_pcnt": {
+                      "order": 10,
+                      "title": "Multiscan Detectrate Pcnt",
+                      "type": "number"
+                    },
+                    "sha1": {
+                      "description": "SHA1",
+                      "order": 2,
+                      "title": "Sha1",
+                      "type": "string"
+                    },
+                    "sha256": {
+                      "description": "SHA256",
+                      "order": 4,
+                      "title": "Sha256",
+                      "type": "string"
+                    },
+                    "size": {
+                      "description": "Size",
+                      "order": 7,
+                      "title": "Size",
+                      "type": "integer"
+                    },
+                    "submitname": {
+                      "description": "Submission Name",
+                      "order": 5,
+                      "title": "Submitname",
+                      "type": "string"
+                    },
+                    "targeturl": {
+                      "description": "Target URL",
+                      "order": 9,
+                      "title": "Targeturl",
+                      "type": "string"
+                    },
+                    "threatlevel": {
+                      "description": "Threat Level",
+                      "order": 17,
+                      "title": "Threatlevel",
+                      "type": "integer"
+                    },
+                    "threatscore": {
+                      "order": 15,
+                      "title": "Threatscore",
+                      "type": "integer"
+                    },
+                    "type": {
+                      "description": "ASCII Text",
+                      "order": 8,
+                      "title": "Type",
+                      "type": "string"
+                    },
+                    "virustotal_detectrate_pcnt": {
+                      "description": "VT Detect Rate Percent",
+                      "order": 12,
+                      "title": "Virustotal Detectrate Pcnt",
+                      "type": "number"
+                    },
+                    "virustotal_familyname": {
+                      "description": "VT Family Name",
+                      "order": 11,
+                      "title": "Virustotal Familyname",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Report",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "found": {
+                  "description": "True if found",
+                  "order": 1,
+                  "title": "Found",
+                  "type": "boolean"
+                },
+                "reports": {
+                  "description": "Reports",
+                  "items": {
+                    "$ref": "#/definitions/report"
+                  },
+                  "order": 3,
+                  "title": "Reports",
+                  "type": "array"
+                },
+                "threatscore": {
+                  "description": "Threat Score (max found)",
+                  "order": 2,
+                  "title": "Threatscore",
+                  "type": "integer"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "cadc6fd3-6301-4748-ac25-db403bd52040": {
+            "nodeId": "cadc6fd3-6301-4748-ac25-db403bd52040",
+            "name": "VirusTotal Report",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "# {{[db8303e3-c8bc-435e-84ee-d3acc81e83d3].[$item]}}\n\n## Virus Total Results \n### Positive Hits: {{[aa50d774-3d0f-4296-8f40-0d74b345af0b].[positives]}}\n### AV Scans: {{[aa50d774-3d0f-4296-8f40-0d74b345af0b].[total]}}\n\n{{#each [aa50d774-3d0f-4296-8f40-0d74b345af0b].[scans]}}\n{{#if detected}}\n### {{@key}}:{{detected}}\n{{/if}}\n{{/each}}\n\n#### Link to report: {{[aa50d774-3d0f-4296-8f40-0d74b345af0b].[permalink]}}\n\n"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "d03f098e-71de-4257-bae1-cbb49a1e891c": {
+            "nodeId": "d03f098e-71de-4257-bae1-cbb49a1e891c",
+            "name": "EML Analysis",
+            "type": "loop",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "innerEdgeId": "6fb2c2a0-01c1-4330-86c3-90d390a21134",
+              "nextEdgeId": "961b1a2d-6013-4bd8-86e1-e1e394ea21bc",
+              "repeatVariable": "[83b02632-ae9d-45b8-980e-7307bde325b9].[email].[attached_emails]"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/loop.svg",
+            "connectionType": "NONE"
+          },
+          "d7465ea5-2ba1-4a64-a8f4-4590dd1031ba": {
+            "nodeId": "d7465ea5-2ba1-4a64-a8f4-4590dd1031ba",
+            "name": "AttachmentAnalysis",
+            "type": "loop",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "innerEdgeId": "93c29708-25b3-43c6-90b5-0162f66a1edb",
+              "nextEdgeId": "0250a5da-0a92-4a23-b1b0-0a27d0f1c30c",
+              "repeatVariable": "[d03f098e-71de-4257-bae1-cbb49a1e891c].[$item].[attached_files]"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/loop.svg",
+            "connectionType": "NONE"
+          },
+          "d79ce396-c769-418a-8069-c62ea8f496e9": {
+            "nodeId": "d79ce396-c769-418a-8069-c62ea8f496e9",
+            "name": "URL Analysis",
+            "type": "loop",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "innerEdgeId": "d32350e7-4279-4a02-a336-57064f402bd1",
+              "nextEdgeId": "f2485040-c197-4cc9-8e9b-77c2952096c8",
+              "repeatVariable": "[106e85f1-73d5-430a-9954-59c28b5acfff].[urls]"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/loop.svg",
+            "connectionType": "NONE"
+          },
+          "db8303e3-c8bc-435e-84ee-d3acc81e83d3": {
+            "nodeId": "db8303e3-c8bc-435e-84ee-d3acc81e83d3",
+            "name": "EML-URL Analysis",
+            "type": "loop",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "innerEdgeId": "225c1005-cd24-4dc9-a98a-f3ed4989c72a",
+              "nextEdgeId": "8b7ddbe0-24d1-4fcf-8fca-d37651588d5b",
+              "repeatVariable": "[fb40bbdd-0452-487e-ae35-58d6f681bcc0].[urls]"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/loop.svg",
+            "connectionType": "NONE"
+          },
+          "e0436280-3057-4423-a583-df1293560134": {
+            "nodeId": "e0436280-3057-4423-a583-df1293560134",
+            "name": "Report Found",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "12f4b99c-63b3-4ea4-b6eb-aad935a3e0b0",
+              "stepControlParams": [
+                {
+                  "edgeId": "a4b85bac-b48c-4189-87b2-477e79a30e11",
+                  "expression": {
+                    "left": {
+                      "name": "aa50d774-3d0f-4296-8f40-0d74b345af0b.malicious",
+                      "type": "variable"
+                    },
+                    "op": "=",
+                    "right": {
+                      "type": "literal",
+                      "value": true
+                    },
+                    "type": "binary"
+                  },
+                  "expressionText": "{{[aa50d774-3d0f-4296-8f40-0d74b345af0b].[malicious]}}=true"
+                },
+                {
+                  "edgeId": "12f4b99c-63b3-4ea4-b6eb-aad935a3e0b0",
+                  "expression": {},
+                  "expressionText": ""
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          },
+          "ea06f933-cafe-4a26-8aa2-66719c584b21": {
+            "nodeId": "ea06f933-cafe-4a26-8aa2-66719c584b21",
+            "name": "Found File",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "0f0e69ef-51ed-4db2-881e-d0ef75c0e327",
+              "stepControlParams": [
+                {
+                  "edgeId": "8eaa3696-2056-41af-b783-d219428fd4b2",
+                  "expression": {
+                    "left": {
+                      "name": "c98092bf-ba67-421d-9651-235e0089b976.found",
+                      "type": "variable"
+                    },
+                    "op": "=",
+                    "right": {
+                      "type": "literal",
+                      "value": true
+                    },
+                    "type": "binary"
+                  },
+                  "expressionText": "{{[c98092bf-ba67-421d-9651-235e0089b976].[found]}}=true"
+                },
+                {
+                  "edgeId": "0f0e69ef-51ed-4db2-881e-d0ef75c0e327",
+                  "expression": {},
+                  "expressionText": ""
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          },
+          "ec0e48e2-7097-4040-94e9-5cda6146b49a": {
+            "nodeId": "ec0e48e2-7097-4040-94e9-5cda6146b49a",
+            "name": "HashFound",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "06a0bea1-48e8-47cd-85ce-63aedbd5181b",
+              "stepControlParams": [
+                {
+                  "edgeId": "15bcd842-15c9-4469-aceb-e480e88830ad",
+                  "expression": {
+                    "left": {
+                      "name": "350fd90c-06eb-4cd8-94d9-62c0fae40802.found",
+                      "type": "variable"
+                    },
+                    "op": "=",
+                    "right": {
+                      "type": "literal",
+                      "value": true
+                    },
+                    "type": "binary"
+                  },
+                  "expressionText": "{{[350fd90c-06eb-4cd8-94d9-62c0fae40802].[found]}}=true"
+                },
+                {
+                  "edgeId": "06a0bea1-48e8-47cd-85ce-63aedbd5181b",
+                  "expression": {},
+                  "expressionText": ""
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          },
+          "fb40bbdd-0452-487e-ae35-58d6f681bcc0": {
+            "nodeId": "fb40bbdd-0452-487e-ae35-58d6f681bcc0",
+            "name": "URLExtractor",
+            "type": "action",
+            "plugin": {
+              "name": "ExtractIt",
+              "slugVendor": "rapid7",
+              "slugName": "extractit",
+              "slugVersion": "1.1.6",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/extractit/1.1.6/icon.png"
+            },
+            "identifier": "url_extractor",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "file": "",
+                "str": "{{[d03f098e-71de-4257-bae1-cbb49a1e891c].[$item].[body]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "file": {
+                  "description": "Input file as bytes",
+                  "displayType": "bytes",
+                  "format": "bytes",
+                  "order": 2,
+                  "title": "File",
+                  "type": "string"
+                },
+                "str": {
+                  "description": "Input string",
+                  "order": 1,
+                  "title": "String",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "urls": {
+                  "description": "List of extracted URLs",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "URLs",
+                  "type": "array"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR"
+          }
+        },
+        "tags": null,
+        "humanCostSeconds": 0,
+        "humanCostDisplayUnit": ""
+      }
+    ],
+    "triggers": [
+      {
+        "id": "acc7ae52-b652-4d16-80dc-2a6b79dd3ef0",
+        "identifier": "email_received",
+        "name": "Email Received",
+        "description": "",
+        "input": {
+          "flatten_attachments": false,
+          "mailbox_name": "Inbox",
+          "poll_interval": 11,
+          "subject_query": ""
+        },
+        "inputJsonSchema": {
+          "properties": {
+            "flatten_attachments": {
+              "default": false,
+              "description": "Flattens attachments to a single list",
+              "order": 3,
+              "title": "Flatten Attachments",
+              "type": "boolean"
+            },
+            "mailbox_name": {
+              "description": "Common values are Calendar, Trash, Drafts, Inbox, Outbox, Sent, Junk, Tasks, Contacts. You can also use a completely custom value, for example python_mailing_list. Mailbox names are case-sensitive",
+              "order": 1,
+              "title": "Mailbox Name",
+              "type": "string"
+            },
+            "poll_interval": {
+              "default": 15,
+              "description": "How often to poll the specified mailbox for new emails, in seconds. Default value is 15 seconds",
+              "order": 2,
+              "title": "Poll Interval",
+              "type": "integer"
+            },
+            "subject_query": {
+              "default": "",
+              "description": "Query to search for in subject (regex capable). Only these emails will be marked as read",
+              "order": 4,
+              "title": "Subject Query",
+              "type": "string"
+            }
+          },
+          "required": [
+            "mailbox_name",
+            "poll_interval"
+          ],
+          "title": "Variables",
+          "type": "object"
+        },
+        "outputJsonSchema": {
+          "definitions": {
+            "attachment_email": {
+              "properties": {
+                "attached_emails": {
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 9,
+                  "title": "Attached Emails",
+                  "type": "array"
+                },
+                "attached_files": {
+                  "items": {
+                    "$ref": "#/definitions/attachment_file"
+                  },
+                  "order": 8,
+                  "title": "Attached Files",
+                  "type": "array"
+                },
+                "body": {
+                  "order": 4,
+                  "title": "Body",
+                  "type": "string"
+                },
+                "categories": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 5,
+                  "title": "Categories",
+                  "type": "array"
+                },
+                "date_received": {
+                  "displayType": "date",
+                  "format": "date-time",
+                  "order": 6,
+                  "title": "Date Received",
+                  "type": "string"
+                },
+                "headers": {
+                  "items": {
+                    "$ref": "#/definitions/header"
+                  },
+                  "order": 7,
+                  "title": "Headers",
+                  "type": "array"
+                },
+                "id": {
+                  "order": 1,
+                  "title": "ID",
+                  "type": "string"
+                },
+                "sender": {
+                  "order": 2,
+                  "title": "Sender",
+                  "type": "string"
+                },
+                "subject": {
+                  "order": 3,
+                  "title": "Subject",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "headers"
+              ],
+              "title": "Attachment Email",
+              "type": "object"
+            },
+            "attachment_file": {
+              "properties": {
+                "content": {
+                  "displayType": "bytes",
+                  "format": "bytes",
+                  "order": 2,
+                  "title": "Content",
+                  "type": "string"
+                },
+                "name": {
+                  "order": 1,
+                  "title": "Name",
+                  "type": "string"
+                }
+              },
+              "title": "Attachment File",
+              "type": "object"
+            },
+            "email": {
+              "properties": {
+                "account": {
+                  "description": "Primary SMTP Address of the account for which the email was found on",
+                  "order": 2,
+                  "title": "Account",
+                  "type": "string"
+                },
+                "attached_emails": {
+                  "items": {
+                    "$ref": "#/definitions/attachment_email"
+                  },
+                  "order": 8,
+                  "title": "Attached Emails",
+                  "type": "array"
+                },
+                "attached_files": {
+                  "items": {
+                    "$ref": "#/definitions/attachment_file"
+                  },
+                  "order": 7,
+                  "title": "Attached Files",
+                  "type": "array"
+                },
+                "body": {
+                  "order": 6,
+                  "title": "Body",
+                  "type": "string"
+                },
+                "categories": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 11,
+                  "title": "Categories",
+                  "type": "array"
+                },
+                "date_received": {
+                  "displayType": "date",
+                  "format": "date-time",
+                  "order": 12,
+                  "title": "Date Received",
+                  "type": "string"
+                },
+                "flattened_attached_emails": {
+                  "items": {
+                    "$ref": "#/definitions/attachment_email"
+                  },
+                  "order": 9,
+                  "title": "Flattened Attached Emails",
+                  "type": "array"
+                },
+                "flattened_attached_files": {
+                  "items": {
+                    "$ref": "#/definitions/attachment_file"
+                  },
+                  "order": 10,
+                  "title": "Flattened Attached Files",
+                  "type": "array"
+                },
+                "headers": {
+                  "items": {
+                    "$ref": "#/definitions/header"
+                  },
+                  "order": 13,
+                  "title": "Headers",
+                  "type": "array"
+                },
+                "id": {
+                  "order": 1,
+                  "title": "ID",
+                  "type": "string"
+                },
+                "is_read": {
+                  "description": "Whether or not the email has been read",
+                  "order": 3,
+                  "title": "Is Read",
+                  "type": "boolean"
+                },
+                "sender": {
+                  "order": 4,
+                  "title": "Sender",
+                  "type": "string"
+                },
+                "subject": {
+                  "order": 5,
+                  "title": "Subject",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "sender",
+                "headers"
+              ],
+              "title": "Email",
+              "type": "object"
+            },
+            "header": {
+              "properties": {
+                "name": {
+                  "order": 1,
+                  "title": "Name",
+                  "type": "string"
+                },
+                "value": {
+                  "order": 2,
+                  "title": "Value",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "value",
+                "name"
+              ],
+              "title": "Header",
+              "type": "object"
+            }
+          },
+          "properties": {
+            "email": {
+              "$ref": "#/definitions/email",
+              "description": "Email",
+              "order": 1,
+              "title": "Email"
+            }
+          },
+          "title": "Variables",
+          "type": "object"
+        },
+        "tags": [],
+        "type": "trigger_plugin",
+        "plugin": {
+          "name": "Microsoft Exchange",
+          "slugVendor": "rapid7",
+          "slugName": "microsoft_exchange",
+          "slugVersion": "5.1.0",
+          "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_exchange/5.1.0/icon.png"
+        }
+      }
+    ]
+  }
+}
