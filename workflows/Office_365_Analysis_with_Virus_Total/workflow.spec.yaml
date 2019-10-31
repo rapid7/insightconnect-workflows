@@ -1,3 +1,5 @@
+extension: workflow
+product: ["insightconnect"]
 name: Office_365_Analysis_with_Virus_Total
 title: "Office 365 Analysis with Virus Total"
 description: "This workflow is designed to automatically analyze incoming emails to determine if they are malicious. This workflow assumes a user is using their report phishing button to send an email to an administrative account with the suspicious email attached. The workflow will then analyze any URLs or files in the attached email to find malicious links. If any malicious indicators are found the email will be remediated across the organization."

@@ -1,3 +1,5 @@
+extension: workflow
+product: ["insightconnect"]
 name: Look_Up_Domains_with_Recorded_Future
 title: "Look Up Domains with Recorded Future"
 description: "This workflow enriches an IDR alert by performing a lookup on all domains in the investigation with Recorded Future."
