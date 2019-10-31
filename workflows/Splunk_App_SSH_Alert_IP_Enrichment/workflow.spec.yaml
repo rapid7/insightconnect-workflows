@@ -1,3 +1,5 @@
+extension: workflow
+product: ["insightconnect"]
 name: Splunk_App_SSH_Alert_IP_Enrichment
 title: "Splunk App SSH Alert IP Enrichment"
 description: "Receives an event sent by the Rapid7 InsightConnect App for Splunk and performs enrichment"
