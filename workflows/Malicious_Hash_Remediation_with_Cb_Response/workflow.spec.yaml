@@ -11,4 +11,8 @@ tags:
 - cb
 - hash
 - insightidr
+hub_tags:
+  use_cases: []
+  keywords: [cb, hash, insightidr]
+  features: []
 - carbonblack
