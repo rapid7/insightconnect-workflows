@@ -10,4 +10,8 @@ status: ["supported"]
 tags:
 - phishing
 - email
+hub_tags:
+  use_cases: []
+  keywords: [phishing, email]
+  features: []
 - mimecast
