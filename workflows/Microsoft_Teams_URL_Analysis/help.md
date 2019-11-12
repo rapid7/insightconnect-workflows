@@ -4,9 +4,9 @@ This workflow will scan a Microsoft Teams channel for `!check_url http://example
 
 # Key Features
 
-* Uses `New Message Received`
+* Uses `New Message Received` to listen for incoming messages in a specified channel
 * Scans for specific input and breaks that apart into useable data for other actions
-* Scans a url for any malicious indicators
+* Scans a URL for any malicious indicators
 
 # Requirements
 
