@@ -44,8 +44,9 @@ _There is no troubleshooting information at this time_
 
 ## Source Code
 
-* https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Microsoft_Teams_URL_Analysis
+* https://github.com/rapid7/insightconnect-workflows
 
 ## References
 
 * [Microsoft Office Teams](https://products.office.com/en-us/microsoft-teams/group-chat-software)
+* [VirusTotal](https://www.virustotal.com/)
