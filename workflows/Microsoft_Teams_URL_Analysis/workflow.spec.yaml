@@ -9,9 +9,10 @@ support: rapid7
 status: ["supported"]
 tags:
 - microsoft_teams
+- teams
 - virustotal
 - chat
 hub_tags:
   use_cases: []
-  keywords: [chat, microsoft_teams, virustotal]
+  keywords: [chat, microsoft_teams, teams, virustotal]
   features: []
