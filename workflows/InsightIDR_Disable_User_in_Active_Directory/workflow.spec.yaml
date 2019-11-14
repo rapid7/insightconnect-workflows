@@ -1,0 +1,24 @@
+extension: workflow
+product: ["insightconnect"]
+name: InsightIDR_Disable_User_in_Active_Directory
+title: "InsightIDR Disable User in Active Directory"
+description: "Disable user in Active Directory from a triggered alert in InsightIDR"
+version: 1.0.0
+vendor: rapid7
+support: rapid7
+status: []
+tags:
+- insightidr
+- ldap
+- ad
+- activedirectory
+- user
+- disable
+- deprovision
+hub_tags:
+  use_cases: [user_management]
+  keywords: [insightidr, ldap, ad, activedirectory, user, disable, deprovision]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
