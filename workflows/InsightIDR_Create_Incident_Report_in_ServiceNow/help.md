@@ -4,7 +4,7 @@ This workflow takes an incident from Rapid7 InsightIDR and creates an ticket in 
 
 # Key Features
 
-*  Triggers on incident from Rapid7 InsightIDR and automatically generates a ticket in ServiceNow
+* Triggers on incident from Rapid7 InsightIDR and automatically generates a ticket in ServiceNow
 
 # Requirements
 

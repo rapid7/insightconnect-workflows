@@ -12,7 +12,7 @@ tags:
 - ticket
 - insightidr
 hub_tags:
-  use_cases: [ticketing , generate_ticket ]
+  use_cases: [remediation_ticketing , threat_detection_and_response ]
   keywords: [servicenow, ticket, insightidr]
   features: []
 resources:
