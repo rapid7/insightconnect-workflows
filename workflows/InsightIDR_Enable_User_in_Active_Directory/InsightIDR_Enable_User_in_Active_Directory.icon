@@ -7,8 +7,8 @@
       {
         "id": "df71f96a-047b-4283-9241-dd1ff374c281",
         "workflowId": "9a50374d-80ac-45f7-8a11-f7d1077e4eba",
-        "version": "",
-        "name": "Enable User in Active Directory",
+        "version": "1.0.0",
+        "name": "InsightIDR Enable User in Active Directory",
         "type": "runnable",
         "tags": [
           "insightidr",
