@@ -1,0 +1,2860 @@
+{
+  "kom": {
+    "komandVersion": "1.38.2-0-gb16fd",
+    "komFileVersion": "2.0.0",
+    "exportedAt": "2019-10-09T16:32:11.047112935Z",
+    "workflowVersions": [
+      {
+        "name": "Enrich Alert Data with Open Source Plugins",
+        "type": "runnable",
+        "version": "1.0.0",
+        "workflowId": "d2100cdb-1b45-4baf-84ef-f696f47383a5",
+        "description": "Workflow that attempts to enrich all following IoCs (IPs, Domains, URLs, Hashes), if available. Can be associated with almost any alert.",
+        "tags": [
+          "insightidr",
+          "enrichment",
+          "analysis",
+          "hash",
+          "domain"
+        ],
+        "meta": {
+          "idrValidationMode": "AT_LEAST_ONE",
+          "idrWorkflowCategory": "ENRICHMENT",
+          "idrOriginalTemplateName": "Enrich Alert Data with Open Source Plugins"
+        },
+        "graph": {
+          "edges": {
+            "08406bf2-2a9b-48be-9404-362d5e344e90": {
+              "id": "08406bf2-2a9b-48be-9404-362d5e344e90",
+              "name": "",
+              "description": "",
+              "parentNodeId": "f40095fc-6245-4216-83bd-c93c23cc8f49",
+              "fromNodeId": "65e55b29-ef1b-4647-896c-269ac599a677",
+              "toNodeId": "3b3e8061-41cf-4259-8a11-9a03b80b6039"
+            },
+            "0b278de9-a665-4ddd-82be-d8431bb0a719": {
+              "id": "0b278de9-a665-4ddd-82be-d8431bb0a719",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "b1889468-c96f-472f-ad27-8302893b4a0b",
+              "toNodeId": "6213bb06-7eff-484e-8463-249d3b7f1eae"
+            },
+            "11359725-f33d-4538-a258-e9ab918d9a01": {
+              "id": "11359725-f33d-4538-a258-e9ab918d9a01",
+              "name": "",
+              "description": "",
+              "parentNodeId": "1cc50ea9-4e9d-46ff-b3d9-13fe53d2b617",
+              "fromNodeId": "4f24a6e4-76a3-4c34-84ed-b67fb76ed872",
+              "toNodeId": "d4bb653a-5b4e-411c-8f7f-4d99399b0a50"
+            },
+            "11876bdb-5d1e-4150-91de-cc5f0e9a21cd": {
+              "id": "11876bdb-5d1e-4150-91de-cc5f0e9a21cd",
+              "name": "",
+              "description": "",
+              "parentNodeId": "1cc50ea9-4e9d-46ff-b3d9-13fe53d2b617",
+              "fromNodeId": "066afd0d-0d6a-4584-ba8c-2de4ea64f9ac",
+              "toNodeId": ""
+            },
+            "139111fd-7fa3-471d-8daa-9553228fba78": {
+              "id": "139111fd-7fa3-471d-8daa-9553228fba78",
+              "name": "",
+              "description": "",
+              "parentNodeId": "6213bb06-7eff-484e-8463-249d3b7f1eae",
+              "fromNodeId": "6213bb06-7eff-484e-8463-249d3b7f1eae",
+              "toNodeId": "097efb1a-00d3-486c-884e-d293149c18cb"
+            },
+            "20b8faa3-10be-418d-9dfc-e59873bfd328": {
+              "id": "20b8faa3-10be-418d-9dfc-e59873bfd328",
+              "name": "",
+              "description": "",
+              "parentNodeId": "b1889468-c96f-472f-ad27-8302893b4a0b",
+              "fromNodeId": "b1889468-c96f-472f-ad27-8302893b4a0b",
+              "toNodeId": "5957d573-9891-4d53-9e3b-e8f1dd28fd5e"
+            },
+            "211c5f7e-48b8-4b3b-9a43-8b690bc3f8e3": {
+              "id": "211c5f7e-48b8-4b3b-9a43-8b690bc3f8e3",
+              "name": "",
+              "description": "",
+              "parentNodeId": "b1889468-c96f-472f-ad27-8302893b4a0b",
+              "fromNodeId": "39aa77e0-7bf8-4abd-a216-8f8aeff61ed2",
+              "toNodeId": ""
+            },
+            "274c78b6-4bba-4057-8f6a-8fdb2518d5f6": {
+              "id": "274c78b6-4bba-4057-8f6a-8fdb2518d5f6",
+              "name": "",
+              "description": "",
+              "parentNodeId": "1cc50ea9-4e9d-46ff-b3d9-13fe53d2b617",
+              "fromNodeId": "1cc50ea9-4e9d-46ff-b3d9-13fe53d2b617",
+              "toNodeId": "379f4975-c387-4832-ac9f-5c483290f5e0"
+            },
+            "375e258b-f03f-4349-ace5-1a3cd48f8222": {
+              "id": "375e258b-f03f-4349-ace5-1a3cd48f8222",
+              "name": "",
+              "description": "",
+              "parentNodeId": "f40095fc-6245-4216-83bd-c93c23cc8f49",
+              "fromNodeId": "f40095fc-6245-4216-83bd-c93c23cc8f49",
+              "toNodeId": "65e55b29-ef1b-4647-896c-269ac599a677"
+            },
+            "44799af9-90e1-400d-b755-876703a0e3ec": {
+              "id": "44799af9-90e1-400d-b755-876703a0e3ec",
+              "name": "",
+              "description": "",
+              "parentNodeId": "1cc50ea9-4e9d-46ff-b3d9-13fe53d2b617",
+              "fromNodeId": "3dbbeb00-fbf5-4f66-9291-4a49d4d7ad14",
+              "toNodeId": "5b74fcff-b77a-4f19-a2a5-354858edb0fe"
+            },
+            "4f68dd7a-d00c-423d-b7ba-a599e23ca0c1": {
+              "id": "4f68dd7a-d00c-423d-b7ba-a599e23ca0c1",
+              "name": "",
+              "description": "",
+              "parentNodeId": "f40095fc-6245-4216-83bd-c93c23cc8f49",
+              "fromNodeId": "3b3e8061-41cf-4259-8a11-9a03b80b6039",
+              "toNodeId": ""
+            },
+            "5d833ef0-b583-4680-9ca2-3007dc9551c3": {
+              "id": "5d833ef0-b583-4680-9ca2-3007dc9551c3",
+              "name": "",
+              "description": "",
+              "parentNodeId": "097efb1a-00d3-486c-884e-d293149c18cb",
+              "fromNodeId": "097efb1a-00d3-486c-884e-d293149c18cb",
+              "toNodeId": "663dfbba-6321-4d82-a839-d5cdcce6feb6"
+            },
+            "5e923d9c-9f6b-4c55-80c2-2514b72a8df7": {
+              "id": "5e923d9c-9f6b-4c55-80c2-2514b72a8df7",
+              "name": "",
+              "description": "",
+              "parentNodeId": "863ac254-8a70-4f50-9b2c-00dedefe9a33",
+              "fromNodeId": "565b4014-61e2-4480-a9b1-9ef2fcd41edb",
+              "toNodeId": "14dd5a9d-f053-41ef-9bac-2e4081843849"
+            },
+            "6a2531a3-57cd-4a8c-af0d-3c0f81b74ba7": {
+              "id": "6a2531a3-57cd-4a8c-af0d-3c0f81b74ba7",
+              "name": "External IPs",
+              "description": "External IP Path",
+              "parentNodeId": "1cc50ea9-4e9d-46ff-b3d9-13fe53d2b617",
+              "fromNodeId": "379f4975-c387-4832-ac9f-5c483290f5e0",
+              "toNodeId": "3dbbeb00-fbf5-4f66-9291-4a49d4d7ad14"
+            },
+            "6a4923e3-3b1d-4d80-8a3d-51d6ecc9d41e": {
+              "id": "6a4923e3-3b1d-4d80-8a3d-51d6ecc9d41e",
+              "name": "ShortenURL Resolved",
+              "description": "ShortenURL resolved the shortened URL, use resolved_url.",
+              "parentNodeId": "b1889468-c96f-472f-ad27-8302893b4a0b",
+              "fromNodeId": "8d9727b9-8df6-4873-87bf-ae9c649416fa",
+              "toNodeId": "f454de8f-25b7-4560-815b-b6ba084c3a63"
+            },
+            "74ca5f89-5e81-4bbb-af27-4c8289b331dc": {
+              "id": "74ca5f89-5e81-4bbb-af27-4c8289b331dc",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "6213bb06-7eff-484e-8463-249d3b7f1eae",
+              "toNodeId": ""
+            },
+            "752901e4-4172-4cde-91c2-07b7fc6999db": {
+              "id": "752901e4-4172-4cde-91c2-07b7fc6999db",
+              "name": "",
+              "description": "",
+              "parentNodeId": "1cc50ea9-4e9d-46ff-b3d9-13fe53d2b617",
+              "fromNodeId": "d4bb653a-5b4e-411c-8f7f-4d99399b0a50",
+              "toNodeId": ""
+            },
+            "829df6f8-15b4-4fc7-8131-9688d8e6b8f7": {
+              "id": "829df6f8-15b4-4fc7-8131-9688d8e6b8f7",
+              "name": "",
+              "description": "",
+              "parentNodeId": "1cc50ea9-4e9d-46ff-b3d9-13fe53d2b617",
+              "fromNodeId": "5b74fcff-b77a-4f19-a2a5-354858edb0fe",
+              "toNodeId": "4f24a6e4-76a3-4c34-84ed-b67fb76ed872"
+            },
+            "8914f91e-e32a-4602-bc4a-888282dbf129": {
+              "id": "8914f91e-e32a-4602-bc4a-888282dbf129",
+              "name": "",
+              "description": "",
+              "parentNodeId": "097efb1a-00d3-486c-884e-d293149c18cb",
+              "fromNodeId": "76ae3dd0-1bc4-4eea-adc8-8b0c56b0f3c9",
+              "toNodeId": ""
+            },
+            "8bde4172-7656-4817-965d-f708f53e9925": {
+              "id": "8bde4172-7656-4817-965d-f708f53e9925",
+              "name": "",
+              "description": "",
+              "parentNodeId": "863ac254-8a70-4f50-9b2c-00dedefe9a33",
+              "fromNodeId": "14dd5a9d-f053-41ef-9bac-2e4081843849",
+              "toNodeId": ""
+            },
+            "8dd411be-1ce0-4869-85dc-5513566907c0": {
+              "id": "8dd411be-1ce0-4869-85dc-5513566907c0",
+              "name": "ShortenURL Failed",
+              "description": "When ShortenURL failed to resolve, use requested_url.",
+              "parentNodeId": "b1889468-c96f-472f-ad27-8302893b4a0b",
+              "fromNodeId": "8d9727b9-8df6-4873-87bf-ae9c649416fa",
+              "toNodeId": "6896a09b-eff2-4796-a494-3f97880b56aa"
+            },
+            "933f749f-1831-4806-805d-d92f96fd34ce": {
+              "id": "933f749f-1831-4806-805d-d92f96fd34ce",
+              "name": "",
+              "description": "",
+              "parentNodeId": "6213bb06-7eff-484e-8463-249d3b7f1eae",
+              "fromNodeId": "097efb1a-00d3-486c-884e-d293149c18cb",
+              "toNodeId": ""
+            },
+            "94f22843-a091-439f-858b-b1e05a4fc9c1": {
+              "id": "94f22843-a091-439f-858b-b1e05a4fc9c1",
+              "name": "",
+              "description": "",
+              "parentNodeId": "863ac254-8a70-4f50-9b2c-00dedefe9a33",
+              "fromNodeId": "863ac254-8a70-4f50-9b2c-00dedefe9a33",
+              "toNodeId": "565b4014-61e2-4480-a9b1-9ef2fcd41edb"
+            },
+            "9a45fea7-8304-4751-a898-3b9878d15644": {
+              "id": "9a45fea7-8304-4751-a898-3b9878d15644",
+              "name": "",
+              "description": "",
+              "parentNodeId": "b1889468-c96f-472f-ad27-8302893b4a0b",
+              "fromNodeId": "5957d573-9891-4d53-9e3b-e8f1dd28fd5e",
+              "toNodeId": "8d9727b9-8df6-4873-87bf-ae9c649416fa"
+            },
+            "9a478bea-2f06-46b6-b744-ff9657302c11": {
+              "id": "9a478bea-2f06-46b6-b744-ff9657302c11",
+              "name": "",
+              "description": "",
+              "parentNodeId": "39aa77e0-7bf8-4abd-a216-8f8aeff61ed2",
+              "fromNodeId": "026dc47a-6142-478d-8158-b5ae53b88c06",
+              "toNodeId": ""
+            },
+            "9e2020d5-38d9-437d-b6d6-29507bfa9d29": {
+              "id": "9e2020d5-38d9-437d-b6d6-29507bfa9d29",
+              "name": "Internal IPs",
+              "description": "Internal IP Path",
+              "parentNodeId": "1cc50ea9-4e9d-46ff-b3d9-13fe53d2b617",
+              "fromNodeId": "379f4975-c387-4832-ac9f-5c483290f5e0",
+              "toNodeId": "066afd0d-0d6a-4584-ba8c-2de4ea64f9ac"
+            },
+            "ade55d17-055c-40ea-9096-f37199617126": {
+              "id": "ade55d17-055c-40ea-9096-f37199617126",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "1cc50ea9-4e9d-46ff-b3d9-13fe53d2b617",
+              "toNodeId": "863ac254-8a70-4f50-9b2c-00dedefe9a33"
+            },
+            "d47d752f-5ea3-47f5-891e-fd6a02bbcb4d": {
+              "id": "d47d752f-5ea3-47f5-891e-fd6a02bbcb4d",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "863ac254-8a70-4f50-9b2c-00dedefe9a33",
+              "toNodeId": "b1889468-c96f-472f-ad27-8302893b4a0b"
+            },
+            "dc7d95c7-59c1-40ff-82f5-fbce54e697e8": {
+              "id": "dc7d95c7-59c1-40ff-82f5-fbce54e697e8",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "fbb534ef-ce5c-41d1-b0f9-3ae1098ce077",
+              "toNodeId": "1cc50ea9-4e9d-46ff-b3d9-13fe53d2b617"
+            },
+            "dec69941-ecee-4cd5-9ecf-c11a53f93232": {
+              "id": "dec69941-ecee-4cd5-9ecf-c11a53f93232",
+              "name": "",
+              "description": "",
+              "parentNodeId": "39aa77e0-7bf8-4abd-a216-8f8aeff61ed2",
+              "fromNodeId": "39aa77e0-7bf8-4abd-a216-8f8aeff61ed2",
+              "toNodeId": "9fe86969-5c87-4edb-97f4-3d9169ec1024"
+            },
+            "e7207789-986e-4020-b354-dd6d8c02b65a": {
+              "id": "e7207789-986e-4020-b354-dd6d8c02b65a",
+              "name": "",
+              "description": "",
+              "parentNodeId": "b1889468-c96f-472f-ad27-8302893b4a0b",
+              "fromNodeId": "f40095fc-6245-4216-83bd-c93c23cc8f49",
+              "toNodeId": ""
+            },
+            "e947a198-547a-443a-9d11-9150bda829d9": {
+              "id": "e947a198-547a-443a-9d11-9150bda829d9",
+              "name": "",
+              "description": "",
+              "parentNodeId": "b1889468-c96f-472f-ad27-8302893b4a0b",
+              "fromNodeId": "6896a09b-eff2-4796-a494-3f97880b56aa",
+              "toNodeId": "f40095fc-6245-4216-83bd-c93c23cc8f49"
+            },
+            "ee3df1ad-b105-48dd-bafc-02623977fda4": {
+              "id": "ee3df1ad-b105-48dd-bafc-02623977fda4",
+              "name": "",
+              "description": "",
+              "parentNodeId": "097efb1a-00d3-486c-884e-d293149c18cb",
+              "fromNodeId": "663dfbba-6321-4d82-a839-d5cdcce6feb6",
+              "toNodeId": "76ae3dd0-1bc4-4eea-adc8-8b0c56b0f3c9"
+            },
+            "eea66b1b-d056-420f-a0c9-526a5f35488f": {
+              "id": "eea66b1b-d056-420f-a0c9-526a5f35488f",
+              "name": "",
+              "description": "",
+              "parentNodeId": "b1889468-c96f-472f-ad27-8302893b4a0b",
+              "fromNodeId": "f454de8f-25b7-4560-815b-b6ba084c3a63",
+              "toNodeId": "39aa77e0-7bf8-4abd-a216-8f8aeff61ed2"
+            },
+            "f6a31724-8b0f-4277-a854-9c95e01f5638": {
+              "id": "f6a31724-8b0f-4277-a854-9c95e01f5638",
+              "name": "",
+              "description": "",
+              "parentNodeId": "39aa77e0-7bf8-4abd-a216-8f8aeff61ed2",
+              "fromNodeId": "9fe86969-5c87-4edb-97f4-3d9169ec1024",
+              "toNodeId": "026dc47a-6142-478d-8158-b5ae53b88c06"
+            },
+            "f6b57526-0ec9-41c1-a52c-01e738c3ae78": {
+              "id": "f6b57526-0ec9-41c1-a52c-01e738c3ae78",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "ed131cbd-07dd-4a40-8abc-98e45c1669cb",
+              "toNodeId": "fbb534ef-ce5c-41d1-b0f9-3ae1098ce077"
+            }
+          },
+          "nodes": {
+            "026dc47a-6142-478d-8158-b5ae53b88c06": {
+              "id": "026dc47a-6142-478d-8158-b5ae53b88c06",
+              "parentNodeId": "39aa77e0-7bf8-4abd-a216-8f8aeff61ed2"
+            },
+            "066afd0d-0d6a-4584-ba8c-2de4ea64f9ac": {
+              "id": "066afd0d-0d6a-4584-ba8c-2de4ea64f9ac",
+              "parentNodeId": "1cc50ea9-4e9d-46ff-b3d9-13fe53d2b617"
+            },
+            "097efb1a-00d3-486c-884e-d293149c18cb": {
+              "id": "097efb1a-00d3-486c-884e-d293149c18cb",
+              "parentNodeId": "6213bb06-7eff-484e-8463-249d3b7f1eae"
+            },
+            "14dd5a9d-f053-41ef-9bac-2e4081843849": {
+              "id": "14dd5a9d-f053-41ef-9bac-2e4081843849",
+              "parentNodeId": "863ac254-8a70-4f50-9b2c-00dedefe9a33"
+            },
+            "1cc50ea9-4e9d-46ff-b3d9-13fe53d2b617": {
+              "id": "1cc50ea9-4e9d-46ff-b3d9-13fe53d2b617",
+              "parentNodeId": ""
+            },
+            "379f4975-c387-4832-ac9f-5c483290f5e0": {
+              "id": "379f4975-c387-4832-ac9f-5c483290f5e0",
+              "parentNodeId": "1cc50ea9-4e9d-46ff-b3d9-13fe53d2b617"
+            },
+            "39aa77e0-7bf8-4abd-a216-8f8aeff61ed2": {
+              "id": "39aa77e0-7bf8-4abd-a216-8f8aeff61ed2",
+              "parentNodeId": "b1889468-c96f-472f-ad27-8302893b4a0b"
+            },
+            "3b3e8061-41cf-4259-8a11-9a03b80b6039": {
+              "id": "3b3e8061-41cf-4259-8a11-9a03b80b6039",
+              "parentNodeId": "f40095fc-6245-4216-83bd-c93c23cc8f49"
+            },
+            "3dbbeb00-fbf5-4f66-9291-4a49d4d7ad14": {
+              "id": "3dbbeb00-fbf5-4f66-9291-4a49d4d7ad14",
+              "parentNodeId": "1cc50ea9-4e9d-46ff-b3d9-13fe53d2b617"
+            },
+            "4f24a6e4-76a3-4c34-84ed-b67fb76ed872": {
+              "id": "4f24a6e4-76a3-4c34-84ed-b67fb76ed872",
+              "parentNodeId": "1cc50ea9-4e9d-46ff-b3d9-13fe53d2b617"
+            },
+            "565b4014-61e2-4480-a9b1-9ef2fcd41edb": {
+              "id": "565b4014-61e2-4480-a9b1-9ef2fcd41edb",
+              "parentNodeId": "863ac254-8a70-4f50-9b2c-00dedefe9a33"
+            },
+            "5957d573-9891-4d53-9e3b-e8f1dd28fd5e": {
+              "id": "5957d573-9891-4d53-9e3b-e8f1dd28fd5e",
+              "parentNodeId": "b1889468-c96f-472f-ad27-8302893b4a0b"
+            },
+            "5b74fcff-b77a-4f19-a2a5-354858edb0fe": {
+              "id": "5b74fcff-b77a-4f19-a2a5-354858edb0fe",
+              "parentNodeId": "1cc50ea9-4e9d-46ff-b3d9-13fe53d2b617"
+            },
+            "6213bb06-7eff-484e-8463-249d3b7f1eae": {
+              "id": "6213bb06-7eff-484e-8463-249d3b7f1eae",
+              "parentNodeId": ""
+            },
+            "65e55b29-ef1b-4647-896c-269ac599a677": {
+              "id": "65e55b29-ef1b-4647-896c-269ac599a677",
+              "parentNodeId": "f40095fc-6245-4216-83bd-c93c23cc8f49"
+            },
+            "663dfbba-6321-4d82-a839-d5cdcce6feb6": {
+              "id": "663dfbba-6321-4d82-a839-d5cdcce6feb6",
+              "parentNodeId": "097efb1a-00d3-486c-884e-d293149c18cb"
+            },
+            "6896a09b-eff2-4796-a494-3f97880b56aa": {
+              "id": "6896a09b-eff2-4796-a494-3f97880b56aa",
+              "parentNodeId": "b1889468-c96f-472f-ad27-8302893b4a0b"
+            },
+            "76ae3dd0-1bc4-4eea-adc8-8b0c56b0f3c9": {
+              "id": "76ae3dd0-1bc4-4eea-adc8-8b0c56b0f3c9",
+              "parentNodeId": "097efb1a-00d3-486c-884e-d293149c18cb"
+            },
+            "863ac254-8a70-4f50-9b2c-00dedefe9a33": {
+              "id": "863ac254-8a70-4f50-9b2c-00dedefe9a33",
+              "parentNodeId": ""
+            },
+            "8d9727b9-8df6-4873-87bf-ae9c649416fa": {
+              "id": "8d9727b9-8df6-4873-87bf-ae9c649416fa",
+              "parentNodeId": "b1889468-c96f-472f-ad27-8302893b4a0b"
+            },
+            "9fe86969-5c87-4edb-97f4-3d9169ec1024": {
+              "id": "9fe86969-5c87-4edb-97f4-3d9169ec1024",
+              "parentNodeId": "39aa77e0-7bf8-4abd-a216-8f8aeff61ed2"
+            },
+            "b1889468-c96f-472f-ad27-8302893b4a0b": {
+              "id": "b1889468-c96f-472f-ad27-8302893b4a0b",
+              "parentNodeId": ""
+            },
+            "d4bb653a-5b4e-411c-8f7f-4d99399b0a50": {
+              "id": "d4bb653a-5b4e-411c-8f7f-4d99399b0a50",
+              "parentNodeId": "1cc50ea9-4e9d-46ff-b3d9-13fe53d2b617"
+            },
+            "ed131cbd-07dd-4a40-8abc-98e45c1669cb": {
+              "id": "ed131cbd-07dd-4a40-8abc-98e45c1669cb",
+              "parentNodeId": ""
+            },
+            "f40095fc-6245-4216-83bd-c93c23cc8f49": {
+              "id": "f40095fc-6245-4216-83bd-c93c23cc8f49",
+              "parentNodeId": "b1889468-c96f-472f-ad27-8302893b4a0b"
+            },
+            "f454de8f-25b7-4560-815b-b6ba084c3a63": {
+              "id": "f454de8f-25b7-4560-815b-b6ba084c3a63",
+              "parentNodeId": "b1889468-c96f-472f-ad27-8302893b4a0b"
+            },
+            "fbb534ef-ce5c-41d1-b0f9-3ae1098ce077": {
+              "id": "fbb534ef-ce5c-41d1-b0f9-3ae1098ce077",
+              "parentNodeId": ""
+            }
+          }
+        },
+        "steps": {
+          "026dc47a-6142-478d-8158-b5ae53b88c06": {
+            "nodeId": "026dc47a-6142-478d-8158-b5ae53b88c06",
+            "name": "Whois Lookup Resolved Domain Output",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "**URL Unshorten Successful**\n**Input URL:** {{[b1889468-c96f-472f-ad27-8302893b4a0b].[$item]}}\n**Resolved Domain:** {{[39aa77e0-7bf8-4abd-a216-8f8aeff61ed2].[$item]}}\n\n{{#if [9fe86969-5c87-4edb-97f4-3d9169ec1024].[$success]}}\n**Domain Name**\n{{[9fe86969-5c87-4edb-97f4-3d9169ec1024].[name]}}\n\n**DNSSEC**\n{{[9fe86969-5c87-4edb-97f4-3d9169ec1024].[dnssec]}}\n**Domain Registrar**\n{{[9fe86969-5c87-4edb-97f4-3d9169ec1024].[registrar]}}\n**Name Servers**\n{{#each [9fe86969-5c87-4edb-97f4-3d9169ec1024].[name_servers]}}\n  {{this}}\n{{/each}}\n**Updated Date**\n{{[9fe86969-5c87-4edb-97f4-3d9169ec1024].[updated_date]}}\n  **Creation Date**\n{{[9fe86969-5c87-4edb-97f4-3d9169ec1024].[creation_date]}}\n**Domain Status**\n{{#each [9fe86969-5c87-4edb-97f4-3d9169ec1024].[domain_status]}}\n  {{this}}\n{{/each}}\n**Registrant Country**\n{{[9fe86969-5c87-4edb-97f4-3d9169ec1024].[registrant_cc]}}\n**Registrar URL**\n{{[9fe86969-5c87-4edb-97f4-3d9169ec1024].[registrar_url]}}\n  **Expiration Date**\n{{[9fe86969-5c87-4edb-97f4-3d9169ec1024].[expiration_date]}}\n**Registrant Name**\n{{[9fe86969-5c87-4edb-97f4-3d9169ec1024].[registrant_name]}}\n**Registrar IANA ID**\n{{[9fe86969-5c87-4edb-97f4-3d9169ec1024].[registrar_iana_id]}}\n**Registry Domain ID**\n{{[9fe86969-5c87-4edb-97f4-3d9169ec1024].[registry_domain_id]}}\n  **Registrar WHOIS Server**\n{{[9fe86969-5c87-4edb-97f4-3d9169ec1024].[registrar_whois_server]}}\n**Registrar Abuse Contact Email**\n{{[9fe86969-5c87-4edb-97f4-3d9169ec1024].[registrar_abuse_contact_email]}}\n**Registrar Abuse Contact Phone**\n{{[9fe86969-5c87-4edb-97f4-3d9169ec1024].[registrar_abuse_contact_phone]}}\n\n{{else}}\n**WHOIS Domain Lookup yielded no results**\n{{/if}}"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "066afd0d-0d6a-4584-ba8c-2de4ea64f9ac": {
+            "nodeId": "066afd0d-0d6a-4584-ba8c-2de4ea64f9ac",
+            "name": "Internal IP Output",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "**IP Address ({{[1cc50ea9-4e9d-46ff-b3d9-13fe53d2b617].[$item].[ip]}}) is internal. No lookup is performed.**"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "097efb1a-00d3-486c-884e-d293149c18cb": {
+            "nodeId": "097efb1a-00d3-486c-884e-d293149c18cb",
+            "name": "Hashes Loop",
+            "type": "loop",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "innerEdgeId": "5d833ef0-b583-4680-9ca2-3007dc9551c3",
+              "nextEdgeId": "933f749f-1831-4806-805d-d92f96fd34ce",
+              "repeatVariable": "[6213bb06-7eff-484e-8463-249d3b7f1eae].[$item].[hashes]"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/loop.svg",
+            "connectionType": "NONE"
+          },
+          "14dd5a9d-f053-41ef-9bac-2e4081843849": {
+            "nodeId": "14dd5a9d-f053-41ef-9bac-2e4081843849",
+            "name": "Whois Lookup Domain Output",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "{{#if [565b4014-61e2-4480-a9b1-9ef2fcd41edb].[$success]}}\n\n**Domain Name**\n{{[565b4014-61e2-4480-a9b1-9ef2fcd41edb].[name]}}\n\n**DNSSEC**\n{{[565b4014-61e2-4480-a9b1-9ef2fcd41edb].[dnssec]}}\n**Domain Registrar**\n{{[565b4014-61e2-4480-a9b1-9ef2fcd41edb].[registrar]}}\n**Name Servers**\n{{#each [565b4014-61e2-4480-a9b1-9ef2fcd41edb].[name_servers]}}\n  {{this}}\n{{/each}}\n**Updated Date**\n{{[565b4014-61e2-4480-a9b1-9ef2fcd41edb].[updated_date]}}\n  **Creation Date**\n{{[565b4014-61e2-4480-a9b1-9ef2fcd41edb].[creation_date]}}\n**Domain Status**\n{{#each [565b4014-61e2-4480-a9b1-9ef2fcd41edb].[domain_status]}}\n  {{this}}\n{{/each}}\n**Registrant Country**\n{{[565b4014-61e2-4480-a9b1-9ef2fcd41edb].[registrant_cc]}}  \n**Registrar URL**\n{{[565b4014-61e2-4480-a9b1-9ef2fcd41edb].[registrar_url]}}\n  **Expiration Date**\n{{[565b4014-61e2-4480-a9b1-9ef2fcd41edb].[expiration_date]}}\n**Registrant Name**\n{{[565b4014-61e2-4480-a9b1-9ef2fcd41edb].[registrant_name]}}\n**Registrar IANA ID**\n{{[565b4014-61e2-4480-a9b1-9ef2fcd41edb].[registrar_iana_id]}}\n**Registry Domain ID**\n{{[565b4014-61e2-4480-a9b1-9ef2fcd41edb].[registry_domain_id]}}\n  **Registrar WHOIS Server**\n{{[565b4014-61e2-4480-a9b1-9ef2fcd41edb].[registrar_whois_server]}}\n**Registrar Abuse Contact Email**\n{{[565b4014-61e2-4480-a9b1-9ef2fcd41edb].[registrar_abuse_contact_email]}}\n**Registrar Abuse Contact Phone**\n{{[565b4014-61e2-4480-a9b1-9ef2fcd41edb].[registrar_abuse_contact_phone]}}\n\n{{else}}\n**WHOIS Domain Lookup yielded no results**\n{{/if}}"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "1cc50ea9-4e9d-46ff-b3d9-13fe53d2b617": {
+            "nodeId": "1cc50ea9-4e9d-46ff-b3d9-13fe53d2b617",
+            "name": "IP Address Loop",
+            "type": "loop",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "innerEdgeId": "274c78b6-4bba-4057-8f6a-8fdb2518d5f6",
+              "nextEdgeId": "ade55d17-055c-40ea-9096-f37199617126",
+              "repeatVariable": "[ed131cbd-07dd-4a40-8abc-98e45c1669cb].[contents].[ipAddresses]"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/loop.svg",
+            "connectionType": "NONE"
+          },
+          "379f4975-c387-4832-ac9f-5c483290f5e0": {
+            "nodeId": "379f4975-c387-4832-ac9f-5c483290f5e0",
+            "name": "External IP Check",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "6a2531a3-57cd-4a8c-af0d-3c0f81b74ba7",
+              "stepControlParams": [
+                {
+                  "edgeId": "6a2531a3-57cd-4a8c-af0d-3c0f81b74ba7",
+                  "expression": {},
+                  "expressionText": ""
+                },
+                {
+                  "edgeId": "9e2020d5-38d9-437d-b6d6-29507bfa9d29",
+                  "expression": {
+                    "left": {
+                      "name": "1cc50ea9-4e9d-46ff-b3d9-13fe53d2b617.$item.type",
+                      "type": "variable"
+                    },
+                    "op": "=",
+                    "right": {
+                      "type": "literal",
+                      "value": "INTERNAL"
+                    },
+                    "type": "binary"
+                  },
+                  "expressionText": "{{[1cc50ea9-4e9d-46ff-b3d9-13fe53d2b617].[$item].[type]}} = \"INTERNAL\""
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          },
+          "39aa77e0-7bf8-4abd-a216-8f8aeff61ed2": {
+            "nodeId": "39aa77e0-7bf8-4abd-a216-8f8aeff61ed2",
+            "name": "Resolved Domain Loop",
+            "type": "loop",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "innerEdgeId": "dec69941-ecee-4cd5-9ecf-c11a53f93232",
+              "nextEdgeId": "211c5f7e-48b8-4b3b-9a43-8b690bc3f8e3",
+              "repeatVariable": "{{[f454de8f-25b7-4560-815b-b6ba084c3a63].[domains]}}"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/loop.svg",
+            "connectionType": "NONE"
+          },
+          "3b3e8061-41cf-4259-8a11-9a03b80b6039": {
+            "nodeId": "3b3e8061-41cf-4259-8a11-9a03b80b6039",
+            "name": "Whois Lookup Requested Domain Output",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "**URL Unshorten Not Successful**\n**Input URL:** {{[b1889468-c96f-472f-ad27-8302893b4a0b].[$item]}}\n**Requested Domain:** {{[f40095fc-6245-4216-83bd-c93c23cc8f49].[$item]}}\n\n{{#if [65e55b29-ef1b-4647-896c-269ac599a677].[$success]}}\n**Domain Name**\n{{[65e55b29-ef1b-4647-896c-269ac599a677].[name]}}\n\n**DNSSEC**\n{{[65e55b29-ef1b-4647-896c-269ac599a677].[dnssec]}}\n**Domain Registrar**\n{{[65e55b29-ef1b-4647-896c-269ac599a677].[registrar]}}\n**Name Servers**\n{{#each [65e55b29-ef1b-4647-896c-269ac599a677].[name_servers]}}\n  {{this}}\n{{/each}}\n**Updated Date**\n{{[65e55b29-ef1b-4647-896c-269ac599a677].[updated_date]}}\n  **Creation Date**\n{{[65e55b29-ef1b-4647-896c-269ac599a677].[creation_date]}}\n**Domain Status**\n{{#each [65e55b29-ef1b-4647-896c-269ac599a677].[domain_status]}}\n  {{this}}\n{{/each}}\n**Registrant Country**\n{{[65e55b29-ef1b-4647-896c-269ac599a677].[registrant_cc]}}\n**Registrar URL**\n{{[65e55b29-ef1b-4647-896c-269ac599a677].[registrar_url]}}\n  **Expiration Date**\n{{[65e55b29-ef1b-4647-896c-269ac599a677].[expiration_date]}}\n**Registrant Name**\n{{[65e55b29-ef1b-4647-896c-269ac599a677].[registrant_name]}}\n**Registrar IANA ID**\n{{[65e55b29-ef1b-4647-896c-269ac599a677].[registrar_iana_id]}}\n**Registry Domain ID**\n{{[65e55b29-ef1b-4647-896c-269ac599a677].[registry_domain_id]}}\n  **Registrar WHOIS Server**\n{{[65e55b29-ef1b-4647-896c-269ac599a677].[registrar_whois_server]}}\n**Registrar Abuse Contact Email**\n{{[65e55b29-ef1b-4647-896c-269ac599a677].[registrar_abuse_contact_email]}}\n**Registrar Abuse Contact Phone**\n{{[65e55b29-ef1b-4647-896c-269ac599a677].[registrar_abuse_contact_phone]}}\n{{else}}\n**WHOIS Domain Lookup yielded no results**\n{{/if}}"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "3dbbeb00-fbf5-4f66-9291-4a49d4d7ad14": {
+            "nodeId": "3dbbeb00-fbf5-4f66-9291-4a49d4d7ad14",
+            "name": "Whois Lookup IP",
+            "type": "action",
+            "plugin": {
+              "name": "Whois",
+              "slugVendor": "rapid7",
+              "slugName": "whois",
+              "slugVersion": "1.0.3",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/whois/1.0.3/icon.png"
+            },
+            "identifier": "address",
+            "continueOnFailure": true,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "address": "{{[1cc50ea9-4e9d-46ff-b3d9-13fe53d2b617].[$item].[ip]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "address": {
+                  "description": "IP to Lookup",
+                  "order": 1,
+                  "title": "Address",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "address"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "address": {
+                  "description": "Address",
+                  "order": 9,
+                  "title": "Address",
+                  "type": "string"
+                },
+                "cidr": {
+                  "description": "CIDR",
+                  "order": 4,
+                  "title": "CIDR",
+                  "type": "string"
+                },
+                "city": {
+                  "description": "City",
+                  "order": 10,
+                  "title": "City",
+                  "type": "string"
+                },
+                "country": {
+                  "description": "Country",
+                  "order": 13,
+                  "title": "Country",
+                  "type": "string"
+                },
+                "netname": {
+                  "description": "Network name",
+                  "order": 1,
+                  "title": "Network Name",
+                  "type": "string"
+                },
+                "netrange": {
+                  "description": "Network Range",
+                  "order": 3,
+                  "title": "Network Range",
+                  "type": "string"
+                },
+                "nettype": {
+                  "description": "Network type",
+                  "order": 2,
+                  "title": "Network Type",
+                  "type": "string"
+                },
+                "org_abuse_email": {
+                  "description": "Organization abuse e-mail",
+                  "order": 14,
+                  "title": "Organization Abuse E-mail",
+                  "type": "string"
+                },
+                "org_abuse_phone": {
+                  "description": "Organization abuse phone",
+                  "order": 15,
+                  "title": "Organization Abuse Phone",
+                  "type": "string"
+                },
+                "org_tech_email": {
+                  "description": "Organization tech e-mail",
+                  "order": 16,
+                  "title": "Organization Tech E-mail",
+                  "type": "string"
+                },
+                "org_tech_phone": {
+                  "description": "Organization tech phone",
+                  "order": 17,
+                  "title": "Organization Tech Phone",
+                  "type": "string"
+                },
+                "organization": {
+                  "description": "Organization",
+                  "order": 5,
+                  "title": "Organization",
+                  "type": "string"
+                },
+                "orgname": {
+                  "description": "Organization name",
+                  "order": 6,
+                  "title": "Organization Name",
+                  "type": "string"
+                },
+                "postal": {
+                  "description": "Postal",
+                  "order": 11,
+                  "title": "Postal",
+                  "type": "string"
+                },
+                "regdate": {
+                  "description": "Registration date",
+                  "order": 7,
+                  "title": "Registration Date",
+                  "type": "string"
+                },
+                "state": {
+                  "description": "State",
+                  "order": 12,
+                  "title": "State",
+                  "type": "string"
+                },
+                "update": {
+                  "description": "Whois updated date",
+                  "order": 8,
+                  "title": "Whois Updated Date",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR"
+          },
+          "4f24a6e4-76a3-4c34-84ed-b67fb76ed872": {
+            "nodeId": "4f24a6e4-76a3-4c34-84ed-b67fb76ed872",
+            "name": "Dig Lookup Reverse DNS",
+            "type": "action",
+            "plugin": {
+              "name": "Dig",
+              "slugVendor": "rapid7",
+              "slugName": "dig",
+              "slugVersion": "1.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/dig/1.0.1/icon.png"
+            },
+            "identifier": "reverse",
+            "continueOnFailure": true,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "address": "{{[1cc50ea9-4e9d-46ff-b3d9-13fe53d2b617].[$item].[ip]}}",
+                "resolver": ""
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "address": {
+                  "description": "Internet address to resolve",
+                  "order": 2,
+                  "title": "Address",
+                  "type": "string"
+                },
+                "resolver": {
+                  "description": "Resolver. Leave blank to use default resolver for the system",
+                  "order": 1,
+                  "title": "Resolver",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "address"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "answer": {
+                  "description": "Answer received",
+                  "order": 4,
+                  "title": "Answer",
+                  "type": "string"
+                },
+                "fulloutput": {
+                  "description": "Full Dig output",
+                  "order": 1,
+                  "title": "Full Output",
+                  "type": "string"
+                },
+                "nameserver": {
+                  "description": "Nameserver that fulfilled request",
+                  "order": 3,
+                  "title": "Nameserver",
+                  "type": "string"
+                },
+                "question": {
+                  "description": "Question asked",
+                  "order": 5,
+                  "title": "Question",
+                  "type": "string"
+                },
+                "status": {
+                  "description": "Query status [ NOERROR | FORMERR | NXDOMAIN | SERVFAIL | REFUSED ...]",
+                  "order": 2,
+                  "title": "Query Status",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR"
+          },
+          "565b4014-61e2-4480-a9b1-9ef2fcd41edb": {
+            "nodeId": "565b4014-61e2-4480-a9b1-9ef2fcd41edb",
+            "name": "Whois Lookup Domain",
+            "type": "action",
+            "plugin": {
+              "name": "Whois",
+              "slugVendor": "rapid7",
+              "slugName": "whois",
+              "slugVersion": "1.0.3",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/whois/1.0.3/icon.png"
+            },
+            "identifier": "domain",
+            "continueOnFailure": true,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "domain": "{{[863ac254-8a70-4f50-9b2c-00dedefe9a33].[$item]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "domain": {
+                  "description": "Domain name to lookup",
+                  "order": 1,
+                  "title": "Domain",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "domain"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "creation_date": {
+                  "description": "Creation date",
+                  "displayType": "date",
+                  "format": "date-time",
+                  "order": 5,
+                  "title": "Creation Date",
+                  "type": "string"
+                },
+                "dnssec": {
+                  "description": "DNSSEC",
+                  "order": 16,
+                  "title": "DNSSEC",
+                  "type": "string"
+                },
+                "domain_status": {
+                  "description": "Domain status",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 15,
+                  "title": "Domain Status",
+                  "type": "array"
+                },
+                "expiration_date": {
+                  "description": "Expiration date",
+                  "displayType": "date",
+                  "format": "date-time",
+                  "order": 6,
+                  "title": "Expiration Date",
+                  "type": "string"
+                },
+                "name": {
+                  "description": "Domain name",
+                  "order": 1,
+                  "title": "Domain Name",
+                  "type": "string"
+                },
+                "name_servers": {
+                  "description": "Nameservers",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 8,
+                  "title": "Nameservers",
+                  "type": "array"
+                },
+                "registrant_cc": {
+                  "description": "Registrant country",
+                  "order": 4,
+                  "title": "Registrant Country",
+                  "type": "string"
+                },
+                "registrant_name": {
+                  "description": "Registrant name",
+                  "order": 3,
+                  "title": "Registrant Name",
+                  "type": "string"
+                },
+                "registrar": {
+                  "description": "Domain registrar",
+                  "order": 2,
+                  "title": "Domain Registrar",
+                  "type": "string"
+                },
+                "registrar_abuse_contact_email": {
+                  "description": "Registrar abuse contact email",
+                  "order": 13,
+                  "title": "Registrar Abuse Contact Email",
+                  "type": "string"
+                },
+                "registrar_abuse_contact_phone": {
+                  "description": "Registrar abuse Contact phone",
+                  "order": 14,
+                  "title": "Registrar Abuse Contact Phone",
+                  "type": "string"
+                },
+                "registrar_iana_id": {
+                  "description": "Registrar IANA ID",
+                  "order": 12,
+                  "title": "Registrar IANA ID",
+                  "type": "string"
+                },
+                "registrar_url": {
+                  "description": "Registrar URL",
+                  "order": 11,
+                  "title": "Registrar URL",
+                  "type": "string"
+                },
+                "registrar_whois_server": {
+                  "description": "Registrar Whois server",
+                  "order": 10,
+                  "title": "Registrar Whois Server",
+                  "type": "string"
+                },
+                "registry_domain_id": {
+                  "description": "Registry domain ID",
+                  "order": 9,
+                  "title": "Registry Domain ID",
+                  "type": "string"
+                },
+                "updated_date": {
+                  "description": "Updated Date",
+                  "displayType": "date",
+                  "format": "date-time",
+                  "order": 7,
+                  "title": "Last updated date",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR"
+          },
+          "5957d573-9891-4d53-9e3b-e8f1dd28fd5e": {
+            "nodeId": "5957d573-9891-4d53-9e3b-e8f1dd28fd5e",
+            "name": "Unshorten URL",
+            "type": "action",
+            "plugin": {
+              "name": "Unshorten.me",
+              "slugVendor": "rapid7",
+              "slugName": "unshorten",
+              "slugVersion": "1.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/unshorten/1.0.0/icon.png"
+            },
+            "identifier": "unshorten",
+            "continueOnFailure": true,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "url": "{{[b1889468-c96f-472f-ad27-8302893b4a0b].[$item]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "url": {
+                  "description": "Short URL",
+                  "order": 1,
+                  "title": "URL",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "url"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "error": {
+                  "description": "Error message",
+                  "order": 5,
+                  "title": "Error",
+                  "type": "string"
+                },
+                "requested_url": {
+                  "description": "Short URL",
+                  "order": 1,
+                  "title": "Requested URL",
+                  "type": "string"
+                },
+                "resolved_url": {
+                  "description": "Long URL",
+                  "order": 2,
+                  "title": "Resolved URL",
+                  "type": "string"
+                },
+                "success": {
+                  "description": "Success",
+                  "order": 3,
+                  "title": "Success",
+                  "type": "boolean"
+                },
+                "usage_count": {
+                  "description": "Usage count",
+                  "order": 4,
+                  "title": "Usage Count",
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "requested_url",
+                "resolved_url",
+                "success",
+                "usage_count"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR"
+          },
+          "5b74fcff-b77a-4f19-a2a5-354858edb0fe": {
+            "nodeId": "5b74fcff-b77a-4f19-a2a5-354858edb0fe",
+            "name": "Whois Lookup IP Output",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "**WHOIS IP Lookup using {{[1cc50ea9-4e9d-46ff-b3d9-13fe53d2b617].[$item].[ip]}}**\n\n| Key | Value | Key | Value |\n| ------ | ------ | ------ | ------ |\n| **CIDR** | {{[3dbbeb00-fbf5-4f66-9291-4a49d4d7ad14].[cidr]}} | **Organization Name** | {{[3dbbeb00-fbf5-4f66-9291-4a49d4d7ad14].[orgname]}} |\n| **Network Range** | {{[3dbbeb00-fbf5-4f66-9291-4a49d4d7ad14].[netrange]}} | **Organization** | {{[3dbbeb00-fbf5-4f66-9291-4a49d4d7ad14].[organization]}} |\n| **Registration date** | {{[3dbbeb00-fbf5-4f66-9291-4a49d4d7ad14].[regdate]}} | **Organization Tech E-Mail** | {{[3dbbeb00-fbf5-4f66-9291-4a49d4d7ad14].[org_tech_email]}} |\n| **Whois updated date** | {{[3dbbeb00-fbf5-4f66-9291-4a49d4d7ad14].[update]}} | **Organization tech phone** | {{[3dbbeb00-fbf5-4f66-9291-4a49d4d7ad14].[org_tech_phone]}} |\n| **Network name** | {{[3dbbeb00-fbf5-4f66-9291-4a49d4d7ad14].[netname]}} | **Organization abuse e-mail** | {{[3dbbeb00-fbf5-4f66-9291-4a49d4d7ad14].[org_abuse_email]}} |\n| **Network type** | {{[3dbbeb00-fbf5-4f66-9291-4a49d4d7ad14].[nettype]}} | **Organization abuse phone** | {{[3dbbeb00-fbf5-4f66-9291-4a49d4d7ad14].[org_abuse_phone]}} |\n\n| Key | Value |\n| ------ | ------ |\n| **Address** | {{[3dbbeb00-fbf5-4f66-9291-4a49d4d7ad14].[address]}} |\n| **City** | {{[3dbbeb00-fbf5-4f66-9291-4a49d4d7ad14].[city]}} |\n| **State** | {{[3dbbeb00-fbf5-4f66-9291-4a49d4d7ad14].[state]}} |\n| **Postal Code** | {{[3dbbeb00-fbf5-4f66-9291-4a49d4d7ad14].[postal]}} |\n| **Country** | {{[3dbbeb00-fbf5-4f66-9291-4a49d4d7ad14].[country]}} |"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "6213bb06-7eff-484e-8463-249d3b7f1eae": {
+            "nodeId": "6213bb06-7eff-484e-8463-249d3b7f1eae",
+            "name": "Processes Loop",
+            "type": "loop",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "innerEdgeId": "139111fd-7fa3-471d-8daa-9553228fba78",
+              "nextEdgeId": "74ca5f89-5e81-4bbb-af27-4c8289b331dc",
+              "repeatVariable": "[ed131cbd-07dd-4a40-8abc-98e45c1669cb].[contents].[processes]"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/loop.svg",
+            "connectionType": "NONE"
+          },
+          "65e55b29-ef1b-4647-896c-269ac599a677": {
+            "nodeId": "65e55b29-ef1b-4647-896c-269ac599a677",
+            "name": "Whois Lookup Requested Domain",
+            "type": "action",
+            "plugin": {
+              "name": "Whois",
+              "slugVendor": "rapid7",
+              "slugName": "whois",
+              "slugVersion": "1.0.3",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/whois/1.0.3/icon.png"
+            },
+            "identifier": "domain",
+            "continueOnFailure": true,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "domain": "{{[f40095fc-6245-4216-83bd-c93c23cc8f49].[$item]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "domain": {
+                  "description": "Domain name to lookup",
+                  "order": 1,
+                  "title": "Domain",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "domain"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "creation_date": {
+                  "description": "Creation date",
+                  "displayType": "date",
+                  "format": "date-time",
+                  "order": 5,
+                  "title": "Creation Date",
+                  "type": "string"
+                },
+                "dnssec": {
+                  "description": "DNSSEC",
+                  "order": 16,
+                  "title": "DNSSEC",
+                  "type": "string"
+                },
+                "domain_status": {
+                  "description": "Domain status",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 15,
+                  "title": "Domain Status",
+                  "type": "array"
+                },
+                "expiration_date": {
+                  "description": "Expiration date",
+                  "displayType": "date",
+                  "format": "date-time",
+                  "order": 6,
+                  "title": "Expiration Date",
+                  "type": "string"
+                },
+                "name": {
+                  "description": "Domain name",
+                  "order": 1,
+                  "title": "Domain Name",
+                  "type": "string"
+                },
+                "name_servers": {
+                  "description": "Nameservers",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 8,
+                  "title": "Nameservers",
+                  "type": "array"
+                },
+                "registrant_cc": {
+                  "description": "Registrant country",
+                  "order": 4,
+                  "title": "Registrant Country",
+                  "type": "string"
+                },
+                "registrant_name": {
+                  "description": "Registrant name",
+                  "order": 3,
+                  "title": "Registrant Name",
+                  "type": "string"
+                },
+                "registrar": {
+                  "description": "Domain registrar",
+                  "order": 2,
+                  "title": "Domain Registrar",
+                  "type": "string"
+                },
+                "registrar_abuse_contact_email": {
+                  "description": "Registrar abuse contact email",
+                  "order": 13,
+                  "title": "Registrar Abuse Contact Email",
+                  "type": "string"
+                },
+                "registrar_abuse_contact_phone": {
+                  "description": "Registrar abuse Contact phone",
+                  "order": 14,
+                  "title": "Registrar Abuse Contact Phone",
+                  "type": "string"
+                },
+                "registrar_iana_id": {
+                  "description": "Registrar IANA ID",
+                  "order": 12,
+                  "title": "Registrar IANA ID",
+                  "type": "string"
+                },
+                "registrar_url": {
+                  "description": "Registrar URL",
+                  "order": 11,
+                  "title": "Registrar URL",
+                  "type": "string"
+                },
+                "registrar_whois_server": {
+                  "description": "Registrar Whois server",
+                  "order": 10,
+                  "title": "Registrar Whois Server",
+                  "type": "string"
+                },
+                "registry_domain_id": {
+                  "description": "Registry domain ID",
+                  "order": 9,
+                  "title": "Registry Domain ID",
+                  "type": "string"
+                },
+                "updated_date": {
+                  "description": "Updated Date",
+                  "displayType": "date",
+                  "format": "date-time",
+                  "order": 7,
+                  "title": "Last updated date",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR"
+          },
+          "663dfbba-6321-4d82-a839-d5cdcce6feb6": {
+            "nodeId": "663dfbba-6321-4d82-a839-d5cdcce6feb6",
+            "name": "Cymru Lookup Hash",
+            "type": "action",
+            "plugin": {
+              "name": "Team Cymru MHR",
+              "slugVendor": "rapid7",
+              "slugName": "cymru_malware_hash",
+              "slugVersion": "1.0.2",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/cymru_malware_hash/1.0.2/icon.png"
+            },
+            "identifier": "lookup_hash",
+            "continueOnFailure": true,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "hash": "{{[097efb1a-00d3-486c-884e-d293149c18cb].[$item].[hash]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "hash": {
+                  "description": "MD5 or SHA1 hash",
+                  "order": 1,
+                  "title": "Hash",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "hash"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "result": {
+                  "properties": {
+                    "detected": {
+                      "description": "Anti-Virus Detection Percentage",
+                      "order": 3,
+                      "title": "Detected",
+                      "type": "string"
+                    },
+                    "last_seen_utc": {
+                      "description": "Last seen timestamp",
+                      "order": 1,
+                      "title": "Last Seen Utc",
+                      "type": "string"
+                    },
+                    "response_code": {
+                      "description": "Response code",
+                      "order": 2,
+                      "title": "Response Code",
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "detected",
+                    "last_seen_utc",
+                    "response_code"
+                  ],
+                  "title": "Result",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "result": {
+                  "$ref": "#/definitions/result",
+                  "description": "Result",
+                  "order": 1,
+                  "title": "Result"
+                }
+              },
+              "required": [
+                "result"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR"
+          },
+          "6896a09b-eff2-4796-a494-3f97880b56aa": {
+            "nodeId": "6896a09b-eff2-4796-a494-3f97880b56aa",
+            "name": "Extract Requested Domain",
+            "type": "action",
+            "plugin": {
+              "name": "ExtractIt",
+              "slugVendor": "rapid7",
+              "slugName": "extractit",
+              "slugVersion": "1.1.6",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/extractit/1.1.6/icon.png"
+            },
+            "identifier": "domain_extractor",
+            "continueOnFailure": true,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "file": "",
+                "str": "{{[5957d573-9891-4d53-9e3b-e8f1dd28fd5e].[requested_url]}}",
+                "subdomain": true
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "file": {
+                  "description": "Input file as bytes",
+                  "displayType": "bytes",
+                  "format": "bytes",
+                  "order": 2,
+                  "title": "File",
+                  "type": "string"
+                },
+                "str": {
+                  "description": "Input string",
+                  "order": 1,
+                  "title": "String",
+                  "type": "string"
+                },
+                "subdomain": {
+                  "description": "Include subdomain in result",
+                  "order": 3,
+                  "title": "Subdomain",
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "subdomain"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "domains": {
+                  "description": "List of extracted Domain names",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "Domain names",
+                  "type": "array"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR"
+          },
+          "76ae3dd0-1bc4-4eea-adc8-8b0c56b0f3c9": {
+            "nodeId": "76ae3dd0-1bc4-4eea-adc8-8b0c56b0f3c9",
+            "name": "Cymru Lookup Hash Output",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "**Cymru Hash Lookup**\n\n**Is Successful?**\n{{[663dfbba-6321-4d82-a839-d5cdcce6feb6].[$success]}}\n\n**Input Hash**\n{{[097efb1a-00d3-486c-884e-d293149c18cb].[$item].[hash]}}\n**Algorithm**\n{{[097efb1a-00d3-486c-884e-d293149c18cb].[$item].[type]}}\n\n**Anti-Virus Detection Percentage**\n{{[663dfbba-6321-4d82-a839-d5cdcce6feb6].[result].[detected]}}\n**Last Seen Timestamp**\n{{[663dfbba-6321-4d82-a839-d5cdcce6feb6].[result].[last_seen_utc]}}\n**Response Code**\n{{[663dfbba-6321-4d82-a839-d5cdcce6feb6].[result].[response_code]}}"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "863ac254-8a70-4f50-9b2c-00dedefe9a33": {
+            "nodeId": "863ac254-8a70-4f50-9b2c-00dedefe9a33",
+            "name": "Domain Loop",
+            "type": "loop",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "innerEdgeId": "94f22843-a091-439f-858b-b1e05a4fc9c1",
+              "nextEdgeId": "d47d752f-5ea3-47f5-891e-fd6a02bbcb4d",
+              "repeatVariable": "[ed131cbd-07dd-4a40-8abc-98e45c1669cb].[contents].[domains]"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/loop.svg",
+            "connectionType": "NONE"
+          },
+          "8d9727b9-8df6-4873-87bf-ae9c649416fa": {
+            "nodeId": "8d9727b9-8df6-4873-87bf-ae9c649416fa",
+            "name": "Is Unshorten URL Successful",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "8dd411be-1ce0-4869-85dc-5513566907c0",
+              "stepControlParams": [
+                {
+                  "edgeId": "6a4923e3-3b1d-4d80-8a3d-51d6ecc9d41e",
+                  "expression": {
+                    "left": {
+                      "name": "5957d573-9891-4d53-9e3b-e8f1dd28fd5e.$success",
+                      "type": "variable"
+                    },
+                    "op": "=",
+                    "right": {
+                      "type": "literal",
+                      "value": true
+                    },
+                    "type": "binary"
+                  },
+                  "expressionText": "{{[5957d573-9891-4d53-9e3b-e8f1dd28fd5e].[$success]}} = true"
+                },
+                {
+                  "edgeId": "8dd411be-1ce0-4869-85dc-5513566907c0",
+                  "expression": {},
+                  "expressionText": ""
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          },
+          "9fe86969-5c87-4edb-97f4-3d9169ec1024": {
+            "nodeId": "9fe86969-5c87-4edb-97f4-3d9169ec1024",
+            "name": "Whois Lookup Resolved Domain",
+            "type": "action",
+            "plugin": {
+              "name": "Whois",
+              "slugVendor": "rapid7",
+              "slugName": "whois",
+              "slugVersion": "1.0.3",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/whois/1.0.3/icon.png"
+            },
+            "identifier": "domain",
+            "continueOnFailure": true,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "domain": "{{[39aa77e0-7bf8-4abd-a216-8f8aeff61ed2].[$item]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "domain": {
+                  "description": "Domain name to lookup",
+                  "order": 1,
+                  "title": "Domain",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "domain"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "creation_date": {
+                  "description": "Creation date",
+                  "displayType": "date",
+                  "format": "date-time",
+                  "order": 5,
+                  "title": "Creation Date",
+                  "type": "string"
+                },
+                "dnssec": {
+                  "description": "DNSSEC",
+                  "order": 16,
+                  "title": "DNSSEC",
+                  "type": "string"
+                },
+                "domain_status": {
+                  "description": "Domain status",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 15,
+                  "title": "Domain Status",
+                  "type": "array"
+                },
+                "expiration_date": {
+                  "description": "Expiration date",
+                  "displayType": "date",
+                  "format": "date-time",
+                  "order": 6,
+                  "title": "Expiration Date",
+                  "type": "string"
+                },
+                "name": {
+                  "description": "Domain name",
+                  "order": 1,
+                  "title": "Domain Name",
+                  "type": "string"
+                },
+                "name_servers": {
+                  "description": "Nameservers",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 8,
+                  "title": "Nameservers",
+                  "type": "array"
+                },
+                "registrant_cc": {
+                  "description": "Registrant country",
+                  "order": 4,
+                  "title": "Registrant Country",
+                  "type": "string"
+                },
+                "registrant_name": {
+                  "description": "Registrant name",
+                  "order": 3,
+                  "title": "Registrant Name",
+                  "type": "string"
+                },
+                "registrar": {
+                  "description": "Domain registrar",
+                  "order": 2,
+                  "title": "Domain Registrar",
+                  "type": "string"
+                },
+                "registrar_abuse_contact_email": {
+                  "description": "Registrar abuse contact email",
+                  "order": 13,
+                  "title": "Registrar Abuse Contact Email",
+                  "type": "string"
+                },
+                "registrar_abuse_contact_phone": {
+                  "description": "Registrar abuse Contact phone",
+                  "order": 14,
+                  "title": "Registrar Abuse Contact Phone",
+                  "type": "string"
+                },
+                "registrar_iana_id": {
+                  "description": "Registrar IANA ID",
+                  "order": 12,
+                  "title": "Registrar IANA ID",
+                  "type": "string"
+                },
+                "registrar_url": {
+                  "description": "Registrar URL",
+                  "order": 11,
+                  "title": "Registrar URL",
+                  "type": "string"
+                },
+                "registrar_whois_server": {
+                  "description": "Registrar Whois server",
+                  "order": 10,
+                  "title": "Registrar Whois Server",
+                  "type": "string"
+                },
+                "registry_domain_id": {
+                  "description": "Registry domain ID",
+                  "order": 9,
+                  "title": "Registry Domain ID",
+                  "type": "string"
+                },
+                "updated_date": {
+                  "description": "Updated Date",
+                  "displayType": "date",
+                  "format": "date-time",
+                  "order": 7,
+                  "title": "Last updated date",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR"
+          },
+          "b1889468-c96f-472f-ad27-8302893b4a0b": {
+            "nodeId": "b1889468-c96f-472f-ad27-8302893b4a0b",
+            "name": "Url Loop",
+            "type": "loop",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "innerEdgeId": "20b8faa3-10be-418d-9dfc-e59873bfd328",
+              "nextEdgeId": "0b278de9-a665-4ddd-82be-d8431bb0a719",
+              "repeatVariable": "[ed131cbd-07dd-4a40-8abc-98e45c1669cb].[contents].[urls]"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/loop.svg",
+            "connectionType": "NONE"
+          },
+          "d4bb653a-5b4e-411c-8f7f-4d99399b0a50": {
+            "nodeId": "d4bb653a-5b4e-411c-8f7f-4d99399b0a50",
+            "name": "Dig Lookup Reverse DNS Output",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "**My Dig Results**\n\n**Question Asked**\n{{[4f24a6e4-76a3-4c34-84ed-b67fb76ed872].[question]}}\n**Answer Received**\n{{[4f24a6e4-76a3-4c34-84ed-b67fb76ed872].[answer]}}\n\n**Query Status**\n{{[4f24a6e4-76a3-4c34-84ed-b67fb76ed872].[status]}}\n**Full Dig Output**\n{{[4f24a6e4-76a3-4c34-84ed-b67fb76ed872].[fulloutput]}}\n**Nameserver that Fulfilled Request**\n{{[4f24a6e4-76a3-4c34-84ed-b67fb76ed872].[nameserver]}}"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "ed131cbd-07dd-4a40-8abc-98e45c1669cb": {
+            "nodeId": "ed131cbd-07dd-4a40-8abc-98e45c1669cb",
+            "name": "InsightIDR Event",
+            "type": "trigger",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "triggerId": "522859e9-e586-4f3e-87d3-5756b9c1c836",
+            "defaultInputJSONSchema": {
+              "definitions": {
+                "actor": {
+                  "properties": {
+                    "assets": {
+                      "description": "The assets that are part of the investigation",
+                      "items": {
+                        "$ref": "#/definitions/asset"
+                      },
+                      "order": 2,
+                      "title": "Assets",
+                      "type": "array"
+                    },
+                    "users": {
+                      "description": "The users that are part of the investigation",
+                      "items": {
+                        "$ref": "#/definitions/user"
+                      },
+                      "order": 1,
+                      "title": "Users",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Actor",
+                  "type": "object"
+                },
+                "asset": {
+                  "properties": {
+                    "assetId": {
+                      "description": "the ID of the asset",
+                      "order": 1,
+                      "title": "AssetId",
+                      "type": "string"
+                    },
+                    "fqdn": {
+                      "description": "The fully qualified domain name",
+                      "order": 3,
+                      "title": "Fqdn",
+                      "type": "string"
+                    },
+                    "shortname": {
+                      "description": "shortname of the asset",
+                      "order": 2,
+                      "title": "Shortname",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "shortname",
+                    "assetId"
+                  ],
+                  "title": "Asset",
+                  "type": "object"
+                },
+                "content": {
+                  "properties": {
+                    "domains": {
+                      "description": "A list of domains to check",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "Domains",
+                      "type": "array"
+                    },
+                    "ipAddresses": {
+                      "description": "A list of ip addresses to check",
+                      "items": {
+                        "$ref": "#/definitions/ipAddress"
+                      },
+                      "order": 3,
+                      "title": "IpAddresses",
+                      "type": "array"
+                    },
+                    "processes": {
+                      "description": "A list of processes to check",
+                      "items": {
+                        "$ref": "#/definitions/process"
+                      },
+                      "order": 4,
+                      "title": "Processes",
+                      "type": "array"
+                    },
+                    "urls": {
+                      "description": "A list of URLs to check",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 1,
+                      "title": "Urls",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Content",
+                  "type": "object"
+                },
+                "hash": {
+                  "properties": {
+                    "hash": {
+                      "description": "The actual hash",
+                      "order": 1,
+                      "title": "Hash",
+                      "type": "string"
+                    },
+                    "type": {
+                      "description": "The algorithm used to generate the hash",
+                      "order": 2,
+                      "title": "Type",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "hash",
+                    "type"
+                  ],
+                  "title": "Hash",
+                  "type": "object"
+                },
+                "ipAddress": {
+                  "properties": {
+                    "ip": {
+                      "description": "The raw IP",
+                      "order": 1,
+                      "title": "Ip",
+                      "type": "string"
+                    },
+                    "type": {
+                      "description": "Denotes if an IP is internal or external",
+                      "order": 2,
+                      "title": "Type",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "ip",
+                    "type"
+                  ],
+                  "title": "IpAddress",
+                  "type": "object"
+                },
+                "process": {
+                  "properties": {
+                    "assetId": {
+                      "description": "The asset id associated with the process",
+                      "order": 1,
+                      "title": "AssetId",
+                      "type": "string"
+                    },
+                    "cmdLine": {
+                      "description": "The raw value of the command line call used to invoke the process",
+                      "order": 5,
+                      "title": "CmdLine",
+                      "type": "string"
+                    },
+                    "hashes": {
+                      "description": "The list of hashes to check",
+                      "items": {
+                        "$ref": "#/definitions/hash"
+                      },
+                      "order": 3,
+                      "title": "Hashes",
+                      "type": "array"
+                    },
+                    "name": {
+                      "description": "The name of the process",
+                      "order": 4,
+                      "title": "Name",
+                      "type": "string"
+                    },
+                    "processId": {
+                      "description": "The PID from the running process on the asset",
+                      "order": 2,
+                      "title": "ProcessId",
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "assetId",
+                    "processId"
+                  ],
+                  "title": "Process",
+                  "type": "object"
+                },
+                "user": {
+                  "properties": {
+                    "distinguishedName": {
+                      "description": "The Active Directory distinguished name of the user",
+                      "order": 2,
+                      "title": "DistinguishedName",
+                      "type": "string"
+                    },
+                    "emails": {
+                      "description": "The email addresses associated with the user",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 3,
+                      "title": "Emails",
+                      "type": "array"
+                    },
+                    "name": {
+                      "description": "The name of the user, as '<firstname> <lastname>' if available, or account name otherwise",
+                      "order": 1,
+                      "title": "Name",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "emails"
+                  ],
+                  "title": "User",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "actors": {
+                  "$ref": "#/definitions/actor",
+                  "description": "The insightIDR actors that are part of the investigation",
+                  "order": 7,
+                  "title": "Actors"
+                },
+                "contents": {
+                  "$ref": "#/definitions/content",
+                  "description": "The contents to enrich",
+                  "order": 8,
+                  "title": "Contents"
+                },
+                "description": {
+                  "description": "The description of the alert",
+                  "order": 4,
+                  "title": "Description",
+                  "type": "string"
+                },
+                "investigationId": {
+                  "description": "The investigation id",
+                  "order": 6,
+                  "title": "InvestigationId",
+                  "type": "string"
+                },
+                "link": {
+                  "description": "The deep link to the investigation in insightIDR",
+                  "order": 5,
+                  "title": "Link",
+                  "type": "string"
+                },
+                "name": {
+                  "description": "The human-readable name of the alert",
+                  "order": 3,
+                  "title": "Name",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "The time the alert was triggered in ISO 8601 extended timestamp format",
+                  "order": 1,
+                  "title": "Timestamp",
+                  "type": "string"
+                },
+                "type": {
+                  "description": "The type of alert",
+                  "order": 2,
+                  "title": "Type",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "investigationId",
+                "actors",
+                "timestamp",
+                "type",
+                "name",
+                "description",
+                "link"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "actor": {
+                  "properties": {
+                    "assets": {
+                      "description": "The assets that are part of the investigation",
+                      "items": {
+                        "$ref": "#/definitions/asset"
+                      },
+                      "order": 2,
+                      "title": "Assets",
+                      "type": "array"
+                    },
+                    "users": {
+                      "description": "The users that are part of the investigation",
+                      "items": {
+                        "$ref": "#/definitions/user"
+                      },
+                      "order": 1,
+                      "title": "Users",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Actor",
+                  "type": "object"
+                },
+                "asset": {
+                  "properties": {
+                    "assetId": {
+                      "description": "the ID of the asset",
+                      "order": 1,
+                      "title": "AssetId",
+                      "type": "string"
+                    },
+                    "fqdn": {
+                      "description": "The fully qualified domain name",
+                      "order": 3,
+                      "title": "Fqdn",
+                      "type": "string"
+                    },
+                    "shortname": {
+                      "description": "shortname of the asset",
+                      "order": 2,
+                      "title": "Shortname",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "shortname",
+                    "assetId"
+                  ],
+                  "title": "Asset",
+                  "type": "object"
+                },
+                "content": {
+                  "properties": {
+                    "domains": {
+                      "description": "A list of domains to check",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "Domains",
+                      "type": "array"
+                    },
+                    "ipAddresses": {
+                      "description": "A list of ip addresses to check",
+                      "items": {
+                        "$ref": "#/definitions/ipAddress"
+                      },
+                      "order": 3,
+                      "title": "IpAddresses",
+                      "type": "array"
+                    },
+                    "processes": {
+                      "description": "A list of processes to check",
+                      "items": {
+                        "$ref": "#/definitions/process"
+                      },
+                      "order": 4,
+                      "title": "Processes",
+                      "type": "array"
+                    },
+                    "urls": {
+                      "description": "A list of URLs to check",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 1,
+                      "title": "Urls",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Content",
+                  "type": "object"
+                },
+                "hash": {
+                  "properties": {
+                    "hash": {
+                      "description": "The actual hash",
+                      "order": 1,
+                      "title": "Hash",
+                      "type": "string"
+                    },
+                    "type": {
+                      "description": "The algorithm used to generate the hash",
+                      "order": 2,
+                      "title": "Type",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "hash",
+                    "type"
+                  ],
+                  "title": "Hash",
+                  "type": "object"
+                },
+                "ipAddress": {
+                  "properties": {
+                    "ip": {
+                      "description": "The raw IP",
+                      "order": 1,
+                      "title": "Ip",
+                      "type": "string"
+                    },
+                    "type": {
+                      "description": "Denotes if an IP is internal or external",
+                      "order": 2,
+                      "title": "Type",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "ip",
+                    "type"
+                  ],
+                  "title": "IpAddress",
+                  "type": "object"
+                },
+                "process": {
+                  "properties": {
+                    "assetId": {
+                      "description": "The asset id associated with the process",
+                      "order": 1,
+                      "title": "AssetId",
+                      "type": "string"
+                    },
+                    "cmdLine": {
+                      "description": "The raw value of the command line call used to invoke the process",
+                      "order": 5,
+                      "title": "CmdLine",
+                      "type": "string"
+                    },
+                    "hashes": {
+                      "description": "The list of hashes to check",
+                      "items": {
+                        "$ref": "#/definitions/hash"
+                      },
+                      "order": 3,
+                      "title": "Hashes",
+                      "type": "array"
+                    },
+                    "name": {
+                      "description": "The name of the process",
+                      "order": 4,
+                      "title": "Name",
+                      "type": "string"
+                    },
+                    "processId": {
+                      "description": "The PID from the running process on the asset",
+                      "order": 2,
+                      "title": "ProcessId",
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "assetId",
+                    "processId"
+                  ],
+                  "title": "Process",
+                  "type": "object"
+                },
+                "user": {
+                  "properties": {
+                    "distinguishedName": {
+                      "description": "The Active Directory distinguished name of the user",
+                      "order": 2,
+                      "title": "DistinguishedName",
+                      "type": "string"
+                    },
+                    "emails": {
+                      "description": "The email addresses associated with the user",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 3,
+                      "title": "Emails",
+                      "type": "array"
+                    },
+                    "name": {
+                      "description": "The name of the user, as '<firstname> <lastname>' if available, or account name otherwise",
+                      "order": 1,
+                      "title": "Name",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "emails"
+                  ],
+                  "title": "User",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "actors": {
+                  "$ref": "#/definitions/actor",
+                  "description": "The insightIDR actors that are part of the investigation",
+                  "order": 7,
+                  "title": "Actors"
+                },
+                "contents": {
+                  "$ref": "#/definitions/content",
+                  "description": "The contents to enrich",
+                  "order": 8,
+                  "title": "Contents"
+                },
+                "description": {
+                  "description": "The description of the alert",
+                  "order": 4,
+                  "title": "Description",
+                  "type": "string"
+                },
+                "investigationId": {
+                  "description": "The investigation id",
+                  "order": 6,
+                  "title": "InvestigationId",
+                  "type": "string"
+                },
+                "link": {
+                  "description": "The deep link to the investigation in insightIDR",
+                  "order": 5,
+                  "title": "Link",
+                  "type": "string"
+                },
+                "name": {
+                  "description": "The human-readable name of the alert",
+                  "order": 3,
+                  "title": "Name",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "The time the alert was triggered in ISO 8601 extended timestamp format",
+                  "order": 1,
+                  "title": "Timestamp",
+                  "type": "string"
+                },
+                "type": {
+                  "description": "The type of alert",
+                  "order": 2,
+                  "title": "Type",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "investigationId",
+                "actors",
+                "timestamp",
+                "type",
+                "name",
+                "description",
+                "link"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/trigger-api-idr.svg",
+            "connectionType": "NONE"
+          },
+          "f40095fc-6245-4216-83bd-c93c23cc8f49": {
+            "nodeId": "f40095fc-6245-4216-83bd-c93c23cc8f49",
+            "name": "Requested Domain Loop",
+            "type": "loop",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "innerEdgeId": "375e258b-f03f-4349-ace5-1a3cd48f8222",
+              "nextEdgeId": "e7207789-986e-4020-b354-dd6d8c02b65a",
+              "repeatVariable": "{{[6896a09b-eff2-4796-a494-3f97880b56aa].[domains]}}"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/loop.svg",
+            "connectionType": "NONE"
+          },
+          "f454de8f-25b7-4560-815b-b6ba084c3a63": {
+            "nodeId": "f454de8f-25b7-4560-815b-b6ba084c3a63",
+            "name": "Extract Resolved Domain",
+            "type": "action",
+            "plugin": {
+              "name": "ExtractIt",
+              "slugVendor": "rapid7",
+              "slugName": "extractit",
+              "slugVersion": "1.1.6",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/extractit/1.1.6/icon.png"
+            },
+            "identifier": "domain_extractor",
+            "continueOnFailure": true,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "file": "",
+                "str": "{{[5957d573-9891-4d53-9e3b-e8f1dd28fd5e].[resolved_url]}}",
+                "subdomain": true
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "file": {
+                  "description": "Input file as bytes",
+                  "displayType": "bytes",
+                  "format": "bytes",
+                  "order": 2,
+                  "title": "File",
+                  "type": "string"
+                },
+                "str": {
+                  "description": "Input string",
+                  "order": 1,
+                  "title": "String",
+                  "type": "string"
+                },
+                "subdomain": {
+                  "description": "Include subdomain in result",
+                  "order": 3,
+                  "title": "Subdomain",
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "subdomain"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "domains": {
+                  "description": "List of extracted Domain names",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "Domain names",
+                  "type": "array"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR"
+          },
+          "fbb534ef-ce5c-41d1-b0f9-3ae1098ce077": {
+            "nodeId": "fbb534ef-ce5c-41d1-b0f9-3ae1098ce077",
+            "name": "InsightIDR Event Input Summary",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "{{#if [ed131cbd-07dd-4a40-8abc-98e45c1669cb].[description]}}\n**Description:** {{[ed131cbd-07dd-4a40-8abc-98e45c1669cb].[description]}}\n{{/if}}\n\n{{#if [ed131cbd-07dd-4a40-8abc-98e45c1669cb].[investigationId]}}\n**Investigation ID:** {{[ed131cbd-07dd-4a40-8abc-98e45c1669cb].[investigationId]}}\n{{/if}}\n\n{{#if [ed131cbd-07dd-4a40-8abc-98e45c1669cb].[name]}}\n**Name:** {{[ed131cbd-07dd-4a40-8abc-98e45c1669cb].[name]}}\n{{/if}}\n\n{{#if [ed131cbd-07dd-4a40-8abc-98e45c1669cb].[link]}}\n**Link:** [{{[ed131cbd-07dd-4a40-8abc-98e45c1669cb].[link]}}]({{[ed131cbd-07dd-4a40-8abc-98e45c1669cb].[link]}})\n{{/if}}\n\n{{#if [ed131cbd-07dd-4a40-8abc-98e45c1669cb].[timestamp]}}\n**Timestamp:** {{[ed131cbd-07dd-4a40-8abc-98e45c1669cb].[timestamp]}}\n{{/if}}\n\n{{#if [ed131cbd-07dd-4a40-8abc-98e45c1669cb].[type]}}\n**Type:** {{[ed131cbd-07dd-4a40-8abc-98e45c1669cb].[type]}}\n{{/if}}\n\n{{#if [ed131cbd-07dd-4a40-8abc-98e45c1669cb].[contents]}}\n{{#if [ed131cbd-07dd-4a40-8abc-98e45c1669cb].[contents].[ipAddresses]}}\n**Alert IP Addresses**\n{{#each [ed131cbd-07dd-4a40-8abc-98e45c1669cb].[contents].[ipAddresses]}}\n{{#if ip}}\n* Alert IP: {{ip}} ({{type}})\n{{/if}}\n{{/each}}\n{{/if}}\n{{#if [ed131cbd-07dd-4a40-8abc-98e45c1669cb].[contents].[domains]}}\n\n**Alert Domains**\n{{#each [ed131cbd-07dd-4a40-8abc-98e45c1669cb].[contents].[domains]}}\n+ {{this}}\n{{/each}}\n{{/if}}\n{{#if [ed131cbd-07dd-4a40-8abc-98e45c1669cb].[contents].[urls]}}\n\n**Alert URLs**\n{{#each [ed131cbd-07dd-4a40-8abc-98e45c1669cb].[contents].[urls]}}\n+ {{this}}\n{{/each}}\n{{/if}}\n\n{{#if [ed131cbd-07dd-4a40-8abc-98e45c1669cb].[contents].[processes]}}\n\n**Alert Process Hashes**\n{{#each [ed131cbd-07dd-4a40-8abc-98e45c1669cb].[contents].[processes]}}\n{{#if processId}}\n+ Alert Process: {{name}} ({{processId}})\n{{#if cmdLine}}\n  + Command Line: {{cmdLine}}\n{{/if}}\n{{#if assetId}}\n  + Asset ID: {{assetId}}\n{{/if}}\n{{#if hashes}}\n{{#each hashes}}\n  + {{hash}} ({{type}})\n{{/each}}\n{{/if}}\n{{/if}}\n{{/each}}\n{{/if}}\n{{/if}}"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          }
+        },
+        "humanCostSeconds": 0,
+        "humanCostDisplayUnit": ""
+      }
+    ],
+    "triggers": [
+      {
+        "id": "522859e9-e586-4f3e-87d3-5756b9c1c836",
+        "name": "InsightIDR Event",
+        "description": "",
+        "input": null,
+        "inputJsonSchema": {
+          "definitions": {
+            "actor": {
+              "properties": {
+                "assets": {
+                  "description": "The assets that are part of the investigation",
+                  "items": {
+                    "$ref": "#/definitions/asset"
+                  },
+                  "order": 2,
+                  "title": "Assets",
+                  "type": "array"
+                },
+                "users": {
+                  "description": "The users that are part of the investigation",
+                  "items": {
+                    "$ref": "#/definitions/user"
+                  },
+                  "order": 1,
+                  "title": "Users",
+                  "type": "array"
+                }
+              },
+              "title": "Actor",
+              "type": "object"
+            },
+            "asset": {
+              "properties": {
+                "assetId": {
+                  "description": "the ID of the asset",
+                  "order": 1,
+                  "title": "AssetId",
+                  "type": "string"
+                },
+                "fqdn": {
+                  "description": "The fully qualified domain name",
+                  "order": 3,
+                  "title": "Fqdn",
+                  "type": "string"
+                },
+                "shortname": {
+                  "description": "shortname of the asset",
+                  "order": 2,
+                  "title": "Shortname",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "shortname",
+                "assetId"
+              ],
+              "title": "Asset",
+              "type": "object"
+            },
+            "content": {
+              "properties": {
+                "domains": {
+                  "description": "A list of domains to check",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "Domains",
+                  "type": "array"
+                },
+                "ipAddresses": {
+                  "description": "A list of ip addresses to check",
+                  "items": {
+                    "$ref": "#/definitions/ipAddress"
+                  },
+                  "order": 3,
+                  "title": "IpAddresses",
+                  "type": "array"
+                },
+                "processes": {
+                  "description": "A list of processes to check",
+                  "items": {
+                    "$ref": "#/definitions/process"
+                  },
+                  "order": 4,
+                  "title": "Processes",
+                  "type": "array"
+                },
+                "urls": {
+                  "description": "A list of URLs to check",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "Urls",
+                  "type": "array"
+                }
+              },
+              "title": "Content",
+              "type": "object"
+            },
+            "hash": {
+              "properties": {
+                "hash": {
+                  "description": "The actual hash",
+                  "order": 1,
+                  "title": "Hash",
+                  "type": "string"
+                },
+                "type": {
+                  "description": "The algorithm used to generate the hash",
+                  "order": 2,
+                  "title": "Type",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "hash",
+                "type"
+              ],
+              "title": "Hash",
+              "type": "object"
+            },
+            "ipAddress": {
+              "properties": {
+                "ip": {
+                  "description": "The raw IP",
+                  "order": 1,
+                  "title": "Ip",
+                  "type": "string"
+                },
+                "type": {
+                  "description": "Denotes if an IP is internal or external",
+                  "order": 2,
+                  "title": "Type",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "ip",
+                "type"
+              ],
+              "title": "IpAddress",
+              "type": "object"
+            },
+            "process": {
+              "properties": {
+                "assetId": {
+                  "description": "The asset id associated with the process",
+                  "order": 1,
+                  "title": "AssetId",
+                  "type": "string"
+                },
+                "cmdLine": {
+                  "description": "The raw value of the command line call used to invoke the process",
+                  "order": 5,
+                  "title": "CmdLine",
+                  "type": "string"
+                },
+                "hashes": {
+                  "description": "The list of hashes to check",
+                  "items": {
+                    "$ref": "#/definitions/hash"
+                  },
+                  "order": 3,
+                  "title": "Hashes",
+                  "type": "array"
+                },
+                "name": {
+                  "description": "The name of the process",
+                  "order": 4,
+                  "title": "Name",
+                  "type": "string"
+                },
+                "processId": {
+                  "description": "The PID from the running process on the asset",
+                  "order": 2,
+                  "title": "ProcessId",
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "assetId",
+                "processId"
+              ],
+              "title": "Process",
+              "type": "object"
+            },
+            "user": {
+              "properties": {
+                "distinguishedName": {
+                  "description": "The Active Directory distinguished name of the user",
+                  "order": 2,
+                  "title": "DistinguishedName",
+                  "type": "string"
+                },
+                "emails": {
+                  "description": "The email addresses associated with the user",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 3,
+                  "title": "Emails",
+                  "type": "array"
+                },
+                "name": {
+                  "description": "The name of the user, as '<firstname> <lastname>' if available, or account name otherwise",
+                  "order": 1,
+                  "title": "Name",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "emails"
+              ],
+              "title": "User",
+              "type": "object"
+            }
+          },
+          "properties": {
+            "actors": {
+              "$ref": "#/definitions/actor",
+              "description": "The insightIDR actors that are part of the investigation",
+              "order": 7,
+              "title": "Actors"
+            },
+            "contents": {
+              "$ref": "#/definitions/content",
+              "description": "The contents to enrich",
+              "order": 8,
+              "title": "Contents"
+            },
+            "description": {
+              "description": "The description of the alert",
+              "order": 4,
+              "title": "Description",
+              "type": "string"
+            },
+            "investigationId": {
+              "description": "The investigation id",
+              "order": 6,
+              "title": "InvestigationId",
+              "type": "string"
+            },
+            "link": {
+              "description": "The deep link to the investigation in insightIDR",
+              "order": 5,
+              "title": "Link",
+              "type": "string"
+            },
+            "name": {
+              "description": "The human-readable name of the alert",
+              "order": 3,
+              "title": "Name",
+              "type": "string"
+            },
+            "timestamp": {
+              "description": "The time the alert was triggered in ISO 8601 extended timestamp format",
+              "order": 1,
+              "title": "Timestamp",
+              "type": "string"
+            },
+            "type": {
+              "description": "The type of alert",
+              "order": 2,
+              "title": "Type",
+              "type": "string"
+            }
+          },
+          "required": [
+            "investigationId",
+            "actors",
+            "timestamp",
+            "type",
+            "name",
+            "description",
+            "link"
+          ],
+          "title": "Variables",
+          "type": "object"
+        },
+        "outputJsonSchema": {
+          "definitions": {
+            "actor": {
+              "properties": {
+                "assets": {
+                  "description": "The assets that are part of the investigation",
+                  "items": {
+                    "$ref": "#/definitions/asset"
+                  },
+                  "order": 2,
+                  "title": "Assets",
+                  "type": "array"
+                },
+                "users": {
+                  "description": "The users that are part of the investigation",
+                  "items": {
+                    "$ref": "#/definitions/user"
+                  },
+                  "order": 1,
+                  "title": "Users",
+                  "type": "array"
+                }
+              },
+              "title": "Actor",
+              "type": "object"
+            },
+            "asset": {
+              "properties": {
+                "assetId": {
+                  "description": "the ID of the asset",
+                  "order": 1,
+                  "title": "AssetId",
+                  "type": "string"
+                },
+                "fqdn": {
+                  "description": "The fully qualified domain name",
+                  "order": 3,
+                  "title": "Fqdn",
+                  "type": "string"
+                },
+                "shortname": {
+                  "description": "shortname of the asset",
+                  "order": 2,
+                  "title": "Shortname",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "shortname",
+                "assetId"
+              ],
+              "title": "Asset",
+              "type": "object"
+            },
+            "content": {
+              "properties": {
+                "domains": {
+                  "description": "A list of domains to check",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "Domains",
+                  "type": "array"
+                },
+                "ipAddresses": {
+                  "description": "A list of ip addresses to check",
+                  "items": {
+                    "$ref": "#/definitions/ipAddress"
+                  },
+                  "order": 3,
+                  "title": "IpAddresses",
+                  "type": "array"
+                },
+                "processes": {
+                  "description": "A list of processes to check",
+                  "items": {
+                    "$ref": "#/definitions/process"
+                  },
+                  "order": 4,
+                  "title": "Processes",
+                  "type": "array"
+                },
+                "urls": {
+                  "description": "A list of URLs to check",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "Urls",
+                  "type": "array"
+                }
+              },
+              "title": "Content",
+              "type": "object"
+            },
+            "hash": {
+              "properties": {
+                "hash": {
+                  "description": "The actual hash",
+                  "order": 1,
+                  "title": "Hash",
+                  "type": "string"
+                },
+                "type": {
+                  "description": "The algorithm used to generate the hash",
+                  "order": 2,
+                  "title": "Type",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "hash",
+                "type"
+              ],
+              "title": "Hash",
+              "type": "object"
+            },
+            "ipAddress": {
+              "properties": {
+                "ip": {
+                  "description": "The raw IP",
+                  "order": 1,
+                  "title": "Ip",
+                  "type": "string"
+                },
+                "type": {
+                  "description": "Denotes if an IP is internal or external",
+                  "order": 2,
+                  "title": "Type",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "ip",
+                "type"
+              ],
+              "title": "IpAddress",
+              "type": "object"
+            },
+            "process": {
+              "properties": {
+                "assetId": {
+                  "description": "The asset id associated with the process",
+                  "order": 1,
+                  "title": "AssetId",
+                  "type": "string"
+                },
+                "cmdLine": {
+                  "description": "The raw value of the command line call used to invoke the process",
+                  "order": 5,
+                  "title": "CmdLine",
+                  "type": "string"
+                },
+                "hashes": {
+                  "description": "The list of hashes to check",
+                  "items": {
+                    "$ref": "#/definitions/hash"
+                  },
+                  "order": 3,
+                  "title": "Hashes",
+                  "type": "array"
+                },
+                "name": {
+                  "description": "The name of the process",
+                  "order": 4,
+                  "title": "Name",
+                  "type": "string"
+                },
+                "processId": {
+                  "description": "The PID from the running process on the asset",
+                  "order": 2,
+                  "title": "ProcessId",
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "assetId",
+                "processId"
+              ],
+              "title": "Process",
+              "type": "object"
+            },
+            "user": {
+              "properties": {
+                "distinguishedName": {
+                  "description": "The Active Directory distinguished name of the user",
+                  "order": 2,
+                  "title": "DistinguishedName",
+                  "type": "string"
+                },
+                "emails": {
+                  "description": "The email addresses associated with the user",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 3,
+                  "title": "Emails",
+                  "type": "array"
+                },
+                "name": {
+                  "description": "The name of the user, as '<firstname> <lastname>' if available, or account name otherwise",
+                  "order": 1,
+                  "title": "Name",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "emails"
+              ],
+              "title": "User",
+              "type": "object"
+            }
+          },
+          "properties": {
+            "actors": {
+              "$ref": "#/definitions/actor",
+              "description": "The insightIDR actors that are part of the investigation",
+              "order": 7,
+              "title": "Actors"
+            },
+            "contents": {
+              "$ref": "#/definitions/content",
+              "description": "The contents to enrich",
+              "order": 8,
+              "title": "Contents"
+            },
+            "description": {
+              "description": "The description of the alert",
+              "order": 4,
+              "title": "Description",
+              "type": "string"
+            },
+            "investigationId": {
+              "description": "The investigation id",
+              "order": 6,
+              "title": "InvestigationId",
+              "type": "string"
+            },
+            "link": {
+              "description": "The deep link to the investigation in insightIDR",
+              "order": 5,
+              "title": "Link",
+              "type": "string"
+            },
+            "name": {
+              "description": "The human-readable name of the alert",
+              "order": 3,
+              "title": "Name",
+              "type": "string"
+            },
+            "timestamp": {
+              "description": "The time the alert was triggered in ISO 8601 extended timestamp format",
+              "order": 1,
+              "title": "Timestamp",
+              "type": "string"
+            },
+            "type": {
+              "description": "The type of alert",
+              "order": 2,
+              "title": "Type",
+              "type": "string"
+            }
+          },
+          "required": [
+            "investigationId",
+            "actors",
+            "timestamp",
+            "type",
+            "name",
+            "description",
+            "link"
+          ],
+          "title": "Variables",
+          "type": "object"
+        },
+        "tags": [],
+        "type": "trigger_api_idr"
+      }
+    ]
+  }
+}
