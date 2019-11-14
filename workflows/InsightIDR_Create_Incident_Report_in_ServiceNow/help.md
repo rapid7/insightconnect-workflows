@@ -1,20 +1,20 @@
 # Description
 
-This workflow takes an incident from InsightIDR and creates an ticket in ServiceNow
+This workflow takes an incident from Rapid7 InsightIDR and creates an ticket in ServiceNow
 
 # Key Features
 
-*  Triggers on incident from InsightIDR and automatically generates a ticket in ServiceNow
+*  Triggers on incident from Rapid7 InsightIDR and automatically generates a ticket in ServiceNow
 
 # Requirements
 
-API and account credentials for Recorded Future
+Account credentials and URL for ServiceNow
+Admin access to Rapid7 InsightIDR and Rapid7 InsightConnect
 
 # Documentation
 
 ## Setup
 
-* Make sure you have Admin access to Rapid7 InsightIDR and InsightConnect
 * Configure the connections for the ServiceNow plugin in Rapid7 InsightConnect
 * Navigate to Rapid7 InsightIDR's alert triggers page at #/automation/workflows
 * Click Create Workflow from Template
