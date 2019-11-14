@@ -1,6 +1,6 @@
 # Description
 
-This workflow creates a ticket in Jira from an incident triggered in InsightIDR
+This workflow creates a ticket in Jira from an incident triggered in InsightIDR.
 
 # Key Features
 
@@ -8,8 +8,8 @@ This workflow creates a ticket in Jira from an incident triggered in InsightIDR
 
 # Requirements
 
-Admin access to InsightIDR and InsightConnect
-API and account credentials for Jira
+* Admin access to InsightIDR
+* API and account credentials for Jira
 
 # Documentation
 
@@ -41,10 +41,6 @@ _There is no troubleshooting information at this time_
 * 1.0.0 - Initial workflow
 
 # Links
-
-## Source Code
-
-* https://github.com/rapid7/insightconnect-workflows
 
 ## References
 

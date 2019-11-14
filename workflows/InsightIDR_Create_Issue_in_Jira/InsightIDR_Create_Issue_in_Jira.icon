@@ -15,7 +15,7 @@
         ],
         "type": "runnable",
         "version": "1.0.0",
-        "description": "",
+        "description": "This workflow creates an issue in Jira from a triggered incident from InsightIDR",
         "meta": {
           "idrValidationMode": "ALL",
           "idrWorkflowCategory": "TICKETING",
