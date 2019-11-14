@@ -1,5 +1,5 @@
 extension: workflow
-product: ["insightconnect"]
+product: [insightconnect, insightidr]
 name: InsightIDR_Enable_User_in_Active_Directory
 title: "InsightIDR Enable User in Active Directory"
 description: "Enable user in Active Directory from an Insight IDR alert"
