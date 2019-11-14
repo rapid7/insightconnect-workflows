@@ -1,0 +1,832 @@
+{
+  "kom": {
+    "komandVersion": "1.38.2-0-gb16fd",
+    "komFileVersion": "2.0.0",
+    "exportedAt": "2019-10-07T19:33:14.767392488Z",
+    "workflowVersions": [
+      {
+        "name": "Create Incident Report in ServiceNow",
+        "id": "4f8af857-26d7-439f-88b4-412897ad09e7",
+        "workflowId": "e32f0a24-9788-47ce-b18e-24f2d7d9d8c4",
+        "type": "runnable",
+        "version": "1.0.0",
+        "description": "Create Incident Report in ServiceNow",
+        "tags": [
+           "servicenow",
+           "ticket",
+           "insightidr"
+         ],
+        "meta": {
+          "idrValidationMode": "ALL",
+          "idrWorkflowCategory": "TICKETING",
+          "idrOriginalTemplateName": "Create Incident Report in ServiceNow"
+        },
+        "graph": {
+          "edges": {
+            "053d6968-4e9d-9fde-ca04-d85f1a9aa77a": {
+              "id": "053d6968-4e9d-9fde-ca04-d85f1a9aa77a",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "1d318a25-9d9e-9ccc-370c-00e853d67a7d",
+              "toNodeId": "77bd3cd4-3c43-8fec-f9d6-ef66e3be5bdd"
+            },
+            "15337299-aaff-fbd5-c5e3-eb10e963ddf9": {
+              "id": "15337299-aaff-fbd5-c5e3-eb10e963ddf9",
+              "name": "Success",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "41ecae15-5c92-ad8b-300a-fdf0498d074f",
+              "toNodeId": "d29dcd54-eb25-c38f-2cc3-841abbbf9061"
+            },
+            "45b30565-27f2-750e-3e67-da27dab507f3": {
+              "id": "45b30565-27f2-750e-3e67-da27dab507f3",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "77bd3cd4-3c43-8fec-f9d6-ef66e3be5bdd",
+              "toNodeId": "41ecae15-5c92-ad8b-300a-fdf0498d074f"
+            },
+            "48d14e45-d597-afaf-2f69-8c45d46c4254": {
+              "id": "48d14e45-d597-afaf-2f69-8c45d46c4254",
+              "name": "Failure",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "41ecae15-5c92-ad8b-300a-fdf0498d074f",
+              "toNodeId": "131a9c28-9213-8392-65fb-aa17a776dc8c"
+            },
+            "a0281ad1-96f4-f5f8-3b25-d7b012732320": {
+              "id": "a0281ad1-96f4-f5f8-3b25-d7b012732320",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "131a9c28-9213-8392-65fb-aa17a776dc8c",
+              "toNodeId": ""
+            },
+            "aa9a4109-cec6-5e97-6bba-fdbda459535b": {
+              "id": "aa9a4109-cec6-5e97-6bba-fdbda459535b",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "d29dcd54-eb25-c38f-2cc3-841abbbf9061",
+              "toNodeId": ""
+            },
+            "ccd58c64-8375-a682-4541-116309e98aff": {
+              "id": "ccd58c64-8375-a682-4541-116309e98aff",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "d7baf306-9f48-fa5f-cf18-f2f7dbd8efbc",
+              "toNodeId": "1d318a25-9d9e-9ccc-370c-00e853d67a7d"
+            }
+          },
+          "nodes": {
+            "131a9c28-9213-8392-65fb-aa17a776dc8c": {
+              "id": "131a9c28-9213-8392-65fb-aa17a776dc8c",
+              "parentNodeId": ""
+            },
+            "1d318a25-9d9e-9ccc-370c-00e853d67a7d": {
+              "id": "1d318a25-9d9e-9ccc-370c-00e853d67a7d",
+              "parentNodeId": ""
+            },
+            "41ecae15-5c92-ad8b-300a-fdf0498d074f": {
+              "id": "41ecae15-5c92-ad8b-300a-fdf0498d074f",
+              "parentNodeId": ""
+            },
+            "77bd3cd4-3c43-8fec-f9d6-ef66e3be5bdd": {
+              "id": "77bd3cd4-3c43-8fec-f9d6-ef66e3be5bdd",
+              "parentNodeId": ""
+            },
+            "d29dcd54-eb25-c38f-2cc3-841abbbf9061": {
+              "id": "d29dcd54-eb25-c38f-2cc3-841abbbf9061",
+              "parentNodeId": ""
+            },
+            "d7baf306-9f48-fa5f-cf18-f2f7dbd8efbc": {
+              "id": "d7baf306-9f48-fa5f-cf18-f2f7dbd8efbc",
+              "parentNodeId": ""
+            }
+          }
+        },
+        "steps": {
+          "131a9c28-9213-8392-65fb-aa17a776dc8c": {
+            "nodeId": "131a9c28-9213-8392-65fb-aa17a776dc8c",
+            "name": "Ticket Creation Failed",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "content": "",
+              "input": {
+                "content": "## Result\n\nFailed to Create Ticket!\n\nPlease ensure your ServiceNow connection is configured properly and try again. \n\n_If the issue persists please contact InsightConnect support._\n\n"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "1d318a25-9d9e-9ccc-370c-00e853d67a7d": {
+            "nodeId": "1d318a25-9d9e-9ccc-370c-00e853d67a7d",
+            "name": "Alert Artifact",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "content": "",
+              "input": {
+                "content": "## Alert\n{{#if [d7baf306-9f48-fa5f-cf18-f2f7dbd8efbc].[description]}}\nDescription: {{[d7baf306-9f48-fa5f-cf18-f2f7dbd8efbc].[description]}}\n{{/if}}\n{{#if [d7baf306-9f48-fa5f-cf18-f2f7dbd8efbc].[investigationId]}}\nInvestigation ID: {{[d7baf306-9f48-fa5f-cf18-f2f7dbd8efbc].[investigationId]}}\n{{/if}}\n{{#if [d7baf306-9f48-fa5f-cf18-f2f7dbd8efbc].[name]}}\nName: {{[d7baf306-9f48-fa5f-cf18-f2f7dbd8efbc].[name]}}\n{{/if}}\n{{#if [d7baf306-9f48-fa5f-cf18-f2f7dbd8efbc].[link]}}\nLink: [{{[d7baf306-9f48-fa5f-cf18-f2f7dbd8efbc].[link]}}]({{[d7baf306-9f48-fa5f-cf18-f2f7dbd8efbc].[link]}})\n{{/if}}\n{{#if [d7baf306-9f48-fa5f-cf18-f2f7dbd8efbc].[timestamp]}}\nTimestamp: {{[d7baf306-9f48-fa5f-cf18-f2f7dbd8efbc].[timestamp]}}\n{{/if}}\n{{#if [d7baf306-9f48-fa5f-cf18-f2f7dbd8efbc].[type]}}\nType: {{[d7baf306-9f48-fa5f-cf18-f2f7dbd8efbc].[type]}}\n{{/if}}"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "41ecae15-5c92-ad8b-300a-fdf0498d074f": {
+            "nodeId": "41ecae15-5c92-ad8b-300a-fdf0498d074f",
+            "name": "Ticket Created",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "15337299-aaff-fbd5-c5e3-eb10e963ddf9",
+              "stepControlParams": [
+                {
+                  "description": "Ticket was successfully created",
+                  "edgeId": "15337299-aaff-fbd5-c5e3-eb10e963ddf9",
+                  "expression": {},
+                  "expressionText": "",
+                  "name": "Success",
+                  "nodeId": "d29dcd54-eb25-c38f-2cc3-841abbbf9061"
+                },
+                {
+                  "description": "Ticket failed to be successfully created",
+                  "edgeId": "48d14e45-d597-afaf-2f69-8c45d46c4254",
+                  "expression": {
+                    "left": {
+                      "name": "77bd3cd4-3c43-8fec-f9d6-ef66e3be5bdd.$success",
+                      "type": "variable"
+                    },
+                    "op": "=",
+                    "right": {
+                      "type": "literal",
+                      "value": false
+                    },
+                    "type": "binary"
+                  },
+                  "expressionText": "({{[77bd3cd4-3c43-8fec-f9d6-ef66e3be5bdd].[$success]}} = false)",
+                  "name": "Failure",
+                  "nodeId": "131a9c28-9213-8392-65fb-aa17a776dc8c"
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          },
+          "77bd3cd4-3c43-8fec-f9d6-ef66e3be5bdd": {
+            "nodeId": "77bd3cd4-3c43-8fec-f9d6-ef66e3be5bdd",
+            "name": "Create Ticket",
+            "type": "action",
+            "plugin": {
+              "name": "ServiceNow",
+              "slugVendor": "rapid7",
+              "slugName": "servicenow",
+              "slugVersion": "3.1.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/servicenow/3.1.0/icon.png"
+            },
+            "identifier": "create_incident",
+            "continueOnFailure": true,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "create_data": {}
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "create_data": {
+                  "description": "JSON object containing the fields and values to create a new incident",
+                  "order": 1,
+                  "title": "Create Data",
+                  "type": "object"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "system_id": {
+                  "description": "System ID of the new Incident created",
+                  "order": 1,
+                  "title": "System ID",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "system_id"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "d29dcd54-eb25-c38f-2cc3-841abbbf9061": {
+            "nodeId": "d29dcd54-eb25-c38f-2cc3-841abbbf9061",
+            "name": "Update Ticket Information",
+            "type": "action",
+            "plugin": {
+              "name": "ServiceNow",
+              "slugVendor": "rapid7",
+              "slugName": "servicenow",
+              "slugVersion": "3.1.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/servicenow/3.1.0/icon.png"
+            },
+            "identifier": "update_incident",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "system_id": "{{[77bd3cd4-3c43-8fec-f9d6-ef66e3be5bdd].[system_id]}}",
+                "update_data": {
+                  "description": "{{[1d318a25-9d9e-9ccc-370c-00e853d67a7d].[content]}}",
+                  "short_description": "{{[d7baf306-9f48-fa5f-cf18-f2f7dbd8efbc].[name]}}"
+                }
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "system_id": {
+                  "description": "System ID of the Incident record to update",
+                  "order": 1,
+                  "title": "System ID",
+                  "type": "string"
+                },
+                "update_data": {
+                  "description": "JSON object containing the fields and values to update",
+                  "order": 2,
+                  "title": "Update Data",
+                  "type": "object"
+                }
+              },
+              "required": [
+                "system_id",
+                "update_data"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "success": {
+                  "description": "True if the update was successful",
+                  "order": 1,
+                  "title": "Success",
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "success"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "d7baf306-9f48-fa5f-cf18-f2f7dbd8efbc": {
+            "nodeId": "d7baf306-9f48-fa5f-cf18-f2f7dbd8efbc",
+            "name": "InsightIDR Event",
+            "type": "trigger",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "triggerId": "9b1faa6a-1e2e-49ed-8beb-da95d6bef905",
+            "defaultInputJSONSchema": {
+              "definitions": {
+                "actor": {
+                  "properties": {
+                    "assets": {
+                      "description": "The assets that are part of the investigation",
+                      "items": {
+                        "$ref": "#/definitions/asset"
+                      },
+                      "order": 2,
+                      "title": "Assets",
+                      "type": "array"
+                    },
+                    "users": {
+                      "description": "The users that are part of the investigation",
+                      "items": {
+                        "$ref": "#/definitions/user"
+                      },
+                      "order": 1,
+                      "title": "Users",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Actor",
+                  "type": "object"
+                },
+                "asset": {
+                  "properties": {
+                    "fqdn": {
+                      "description": "The fully qualified domain name",
+                      "order": 2,
+                      "title": "Fqdn",
+                      "type": "string"
+                    },
+                    "shortname": {
+                      "description": "shortname of the asset",
+                      "order": 1,
+                      "title": "Shortname",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "shortname"
+                  ],
+                  "title": "Asset",
+                  "type": "object"
+                },
+                "user": {
+                  "properties": {
+                    "distinguishedName": {
+                      "description": "The Active Directory distinguished name of the user",
+                      "order": 2,
+                      "title": "DistinguishedName",
+                      "type": "string"
+                    },
+                    "emails": {
+                      "description": "The email addresses associated with the user",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 3,
+                      "title": "Emails",
+                      "type": "array"
+                    },
+                    "name": {
+                      "description": "The name of the user, as '<firstname> <lastname>' if available, or account name otherwise",
+                      "order": 1,
+                      "title": "Name",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "emails"
+                  ],
+                  "title": "User",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "actors": {
+                  "$ref": "#/definitions/actor",
+                  "description": "The insightIDR actors that are part of the investigation",
+                  "order": 6,
+                  "title": "Actors"
+                },
+                "description": {
+                  "description": "The description of the alert",
+                  "order": 4,
+                  "title": "Description",
+                  "type": "string"
+                },
+                "investigationId": {
+                  "description": "The unique identifier of the investigation",
+                  "order": 7,
+                  "title": "Investigation ID",
+                  "type": "string"
+                },
+                "link": {
+                  "description": "The deep link to the investigation in insightIDR",
+                  "order": 5,
+                  "title": "Link",
+                  "type": "string"
+                },
+                "name": {
+                  "description": "The human-readable name of the alert",
+                  "order": 3,
+                  "title": "Name",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "The time the alert was triggered in ISO 8601 extended timestamp format",
+                  "order": 1,
+                  "title": "Timestamp",
+                  "type": "string"
+                },
+                "type": {
+                  "description": "The type of alert",
+                  "order": 2,
+                  "title": "Type",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "actor": {
+                  "properties": {
+                    "assets": {
+                      "description": "The assets that are part of the investigation",
+                      "items": {
+                        "$ref": "#/definitions/asset"
+                      },
+                      "order": 2,
+                      "title": "Assets",
+                      "type": "array"
+                    },
+                    "users": {
+                      "description": "The users that are part of the investigation",
+                      "items": {
+                        "$ref": "#/definitions/user"
+                      },
+                      "order": 1,
+                      "title": "Users",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Actor",
+                  "type": "object"
+                },
+                "asset": {
+                  "properties": {
+                    "fqdn": {
+                      "description": "The fully qualified domain name",
+                      "order": 2,
+                      "title": "Fqdn",
+                      "type": "string"
+                    },
+                    "shortname": {
+                      "description": "shortname of the asset",
+                      "order": 1,
+                      "title": "Shortname",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "shortname"
+                  ],
+                  "title": "Asset",
+                  "type": "object"
+                },
+                "user": {
+                  "properties": {
+                    "distinguishedName": {
+                      "description": "The Active Directory distinguished name of the user",
+                      "order": 2,
+                      "title": "DistinguishedName",
+                      "type": "string"
+                    },
+                    "emails": {
+                      "description": "The email addresses associated with the user",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 3,
+                      "title": "Emails",
+                      "type": "array"
+                    },
+                    "name": {
+                      "description": "The name of the user, as '<firstname> <lastname>' if available, or account name otherwise",
+                      "order": 1,
+                      "title": "Name",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "emails"
+                  ],
+                  "title": "User",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "actors": {
+                  "$ref": "#/definitions/actor",
+                  "description": "The insightIDR actors that are part of the investigation",
+                  "order": 6,
+                  "title": "Actors"
+                },
+                "description": {
+                  "description": "The description of the alert",
+                  "order": 4,
+                  "title": "Description",
+                  "type": "string"
+                },
+                "investigationId": {
+                  "description": "The unique identifier of the investigation",
+                  "order": 7,
+                  "title": "Investigation ID",
+                  "type": "string"
+                },
+                "link": {
+                  "description": "The deep link to the investigation in insightIDR",
+                  "order": 5,
+                  "title": "Link",
+                  "type": "string"
+                },
+                "name": {
+                  "description": "The human-readable name of the alert",
+                  "order": 3,
+                  "title": "Name",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "The time the alert was triggered in ISO 8601 extended timestamp format",
+                  "order": 1,
+                  "title": "Timestamp",
+                  "type": "string"
+                },
+                "type": {
+                  "description": "The type of alert",
+                  "order": 2,
+                  "title": "Type",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/trigger-api-idr.svg",
+            "connectionType": "NONE"
+          }
+        },
+        "tags": null,
+        "humanCostSeconds": 0,
+        "humanCostDisplayUnit": ""
+      }
+    ],
+    "triggers": [
+      {
+        "id": "9b1faa6a-1e2e-49ed-8beb-da95d6bef905",
+        "name": "InsightIDR Event",
+        "description": "",
+        "input": null,
+        "inputJsonSchema": {
+          "definitions": {
+            "actor": {
+              "properties": {
+                "assets": {
+                  "description": "The assets that are part of the investigation",
+                  "items": {
+                    "$ref": "#/definitions/asset"
+                  },
+                  "order": 2,
+                  "title": "Assets",
+                  "type": "array"
+                },
+                "users": {
+                  "description": "The users that are part of the investigation",
+                  "items": {
+                    "$ref": "#/definitions/user"
+                  },
+                  "order": 1,
+                  "title": "Users",
+                  "type": "array"
+                }
+              },
+              "title": "Actor",
+              "type": "object"
+            },
+            "asset": {
+              "properties": {
+                "fqdn": {
+                  "description": "The fully qualified domain name",
+                  "order": 2,
+                  "title": "Fqdn",
+                  "type": "string"
+                },
+                "shortname": {
+                  "description": "shortname of the asset",
+                  "order": 1,
+                  "title": "Shortname",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "shortname"
+              ],
+              "title": "Asset",
+              "type": "object"
+            },
+            "user": {
+              "properties": {
+                "distinguishedName": {
+                  "description": "The Active Directory distinguished name of the user",
+                  "order": 2,
+                  "title": "DistinguishedName",
+                  "type": "string"
+                },
+                "emails": {
+                  "description": "The email addresses associated with the user",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 3,
+                  "title": "Emails",
+                  "type": "array"
+                },
+                "name": {
+                  "description": "The name of the user, as '<firstname> <lastname>' if available, or account name otherwise",
+                  "order": 1,
+                  "title": "Name",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "emails"
+              ],
+              "title": "User",
+              "type": "object"
+            }
+          },
+          "properties": {
+            "actors": {
+              "$ref": "#/definitions/actor",
+              "description": "The insightIDR actors that are part of the investigation",
+              "order": 6,
+              "title": "Actors"
+            },
+            "description": {
+              "description": "The description of the alert",
+              "order": 4,
+              "title": "Description",
+              "type": "string"
+            },
+            "investigationId": {
+              "description": "The unique identifier of the investigation",
+              "order": 7,
+              "title": "Investigation ID",
+              "type": "string"
+            },
+            "link": {
+              "description": "The deep link to the investigation in insightIDR",
+              "order": 5,
+              "title": "Link",
+              "type": "string"
+            },
+            "name": {
+              "description": "The human-readable name of the alert",
+              "order": 3,
+              "title": "Name",
+              "type": "string"
+            },
+            "timestamp": {
+              "description": "The time the alert was triggered in ISO 8601 extended timestamp format",
+              "order": 1,
+              "title": "Timestamp",
+              "type": "string"
+            },
+            "type": {
+              "description": "The type of alert",
+              "order": 2,
+              "title": "Type",
+              "type": "string"
+            }
+          },
+          "title": "Variables",
+          "type": "object"
+        },
+        "outputJsonSchema": {
+          "definitions": {
+            "actor": {
+              "properties": {
+                "assets": {
+                  "description": "The assets that are part of the investigation",
+                  "items": {
+                    "$ref": "#/definitions/asset"
+                  },
+                  "order": 2,
+                  "title": "Assets",
+                  "type": "array"
+                },
+                "users": {
+                  "description": "The users that are part of the investigation",
+                  "items": {
+                    "$ref": "#/definitions/user"
+                  },
+                  "order": 1,
+                  "title": "Users",
+                  "type": "array"
+                }
+              },
+              "title": "Actor",
+              "type": "object"
+            },
+            "asset": {
+              "properties": {
+                "fqdn": {
+                  "description": "The fully qualified domain name",
+                  "order": 2,
+                  "title": "Fqdn",
+                  "type": "string"
+                },
+                "shortname": {
+                  "description": "shortname of the asset",
+                  "order": 1,
+                  "title": "Shortname",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "shortname"
+              ],
+              "title": "Asset",
+              "type": "object"
+            },
+            "user": {
+              "properties": {
+                "distinguishedName": {
+                  "description": "The Active Directory distinguished name of the user",
+                  "order": 2,
+                  "title": "DistinguishedName",
+                  "type": "string"
+                },
+                "emails": {
+                  "description": "The email addresses associated with the user",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 3,
+                  "title": "Emails",
+                  "type": "array"
+                },
+                "name": {
+                  "description": "The name of the user, as '<firstname> <lastname>' if available, or account name otherwise",
+                  "order": 1,
+                  "title": "Name",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "emails"
+              ],
+              "title": "User",
+              "type": "object"
+            }
+          },
+          "properties": {
+            "actors": {
+              "$ref": "#/definitions/actor",
+              "description": "The insightIDR actors that are part of the investigation",
+              "order": 6,
+              "title": "Actors"
+            },
+            "description": {
+              "description": "The description of the alert",
+              "order": 4,
+              "title": "Description",
+              "type": "string"
+            },
+            "investigationId": {
+              "description": "The unique identifier of the investigation",
+              "order": 7,
+              "title": "Investigation ID",
+              "type": "string"
+            },
+            "link": {
+              "description": "The deep link to the investigation in insightIDR",
+              "order": 5,
+              "title": "Link",
+              "type": "string"
+            },
+            "name": {
+              "description": "The human-readable name of the alert",
+              "order": 3,
+              "title": "Name",
+              "type": "string"
+            },
+            "timestamp": {
+              "description": "The time the alert was triggered in ISO 8601 extended timestamp format",
+              "order": 1,
+              "title": "Timestamp",
+              "type": "string"
+            },
+            "type": {
+              "description": "The type of alert",
+              "order": 2,
+              "title": "Type",
+              "type": "string"
+            }
+          },
+          "title": "Variables",
+          "type": "object"
+        },
+        "type": "trigger_api_idr"
+      }
+    ]
+  }
+}
