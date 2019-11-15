@@ -12,7 +12,7 @@ tags:
 - insightidr
 - jira
 hub_tags:
-  use_cases: [remediation_ticketing, threat_detection_and_response]
+  use_cases: [soar, soc_automation, remediation_ticketing, threat_detection_and_response]
   keywords: [jira, insightidr, ticketing]
   features: []
 resources:
