@@ -1,15 +1,15 @@
 # Description
 
-This workflow takes an incident from Rapid7 InsightIDR and creates an ticket in ServiceNow
+This workflow takes an incident from Rapid7 InsightIDR and creates an ticket in ServiceNow.
 
 # Key Features
 
-* Triggers on incident from Rapid7 InsightIDR and automatically generates a ticket in ServiceNow
+* Create a ticket in ServiceNow
 
 # Requirements
 
-Account credentials and URL for ServiceNow
-Admin access to Rapid7 InsightIDR and Rapid7 InsightConnect
+* Account credentials and URL for ServiceNow
+* Admin access to Rapid7 InsightIDR
 
 # Documentation
 
@@ -41,10 +41,6 @@ _There is no troubleshooting information at this time_
 * 1.0.0 - Initial workflow
 
 # Links
-
-## Source Code
-
-https://github.com/rapid7/insightconnect-workflows
 
 ## References
 
