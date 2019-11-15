@@ -17,7 +17,7 @@ API and account credentials for
 
 ## Setup
 
-Once the workflow has been downloaded, login to InsightConnect and “Import” it into the workflow builder. Once imported, you will initially be prompted to configure the connections for each of the plugins.
+Once the workflow has been downloaded, login to InsightConnect and "Import" it into the workflow builder. Once imported, you will initially be prompted to configure the connections for each of the plugins.
 
 ## Technical Details
 
@@ -40,10 +40,6 @@ _There is no troubleshooting information at this time_
 * 1.0.0 - Initial workflow
 
 # Links
-
-## Source Code
-
-* https://github.com/rapid7/insightconnect-workflows
 
 ## References
 

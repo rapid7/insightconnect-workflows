@@ -6,12 +6,15 @@ description: "IDR provides built-in machine learning based detections of spearph
 version: 1.0.0
 vendor: rapid7
 support: rapid7
-status: ["supported"]
+status: []
 tags:
 - phishing
 - email
+- mimecast
 hub_tags:
-  use_cases: []
+  use_cases: [soar, soc_automation, phishing_investigations, threat_intel]
   keywords: [phishing, email]
   features: []
-- mimecast
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Spearphishing_Remediation_with_Mimecast
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE

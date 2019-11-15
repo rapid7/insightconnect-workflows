@@ -38,10 +38,6 @@ _There is no troubleshooting information at this time_
 
 # Links
 
-## Source Code
-
-https://github.com/rapid7/insightconnect-workflows
-
 ## References
 
 * https://github.com/rapid7/insightconnect-workflows

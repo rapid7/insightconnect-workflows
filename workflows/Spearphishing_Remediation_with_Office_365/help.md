@@ -43,10 +43,6 @@ Plugins leveraged by workflow:
 
 # Links
 
-## Source Code
-
-https://github.com/rapid7/insightconnect-workflows
-
 ## References
 
 * [IDR Spearphishing Video](https://www.youtube.com/watch?v=DNUDYfhv5bE)
