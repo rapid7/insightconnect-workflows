@@ -16,7 +16,7 @@ tags:
 - disable
 - deprovision
 hub_tags:
-  use_cases: [soar, soc_automation, user_management, siem]
+  use_cases: [soar, soc_automation, user_management, siem, threat_detection_and_response]
   keywords: [insightidr, ldap, ad, activedirectory, user, disable, deprovision]
   features: []
 resources:

@@ -4,11 +4,11 @@ This workflow disables a user in Active Directory from an alert sent by InsightI
 
 # Key Features
 
-* Disable user based on an alert from InsightIDR 
+* User deprovisioning
 
 # Requirements
 
-* Account credentials for an Active Directory user
+* Account credentials for an Active Directory user with permission to disable a user
 * Admin access to Rapid7 InsightIDR
 
 # Documentation
