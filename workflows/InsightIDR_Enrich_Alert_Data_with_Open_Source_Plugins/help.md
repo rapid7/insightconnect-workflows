@@ -1,10 +1,10 @@
 # Description
 
-This workflow attempts to enrich all following IoCs (IPs, Domains, URLs, Hashes), if available. Can be associated with almost any alert.
+This workflow attempts to enrich all following IoCs (IPs, Domains, URLs, Hashes), if available. It can be associated with almost any alert.
 
 # Key Features
 
-* Indicator of compromise enrichment
+* Indicator of Compromise enrichment
 
 # Requirements
 
