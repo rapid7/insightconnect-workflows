@@ -18,5 +18,5 @@ hub_tags:
   keywords: [insightidr, ldap, ad, active_directory]
   features: []
 resources:
-  source_url: https://github.com/rapid7/insightconnect-workflows/blob/master/InsightIDR_Enable_User_in_Active_Directory
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/InsightIDR_Enable_User_in_Active_Directory
   license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE

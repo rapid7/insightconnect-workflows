@@ -12,9 +12,9 @@ tags:
 - email
 - office365
 hub_tags:
-  use_cases: []
+  use_cases: [soar, phishing_investigations, soc_automation, threat_intel]
   keywords: [phishing, email, office365]
   features: []
 resources:
-  source_url: https://github.com/rapid7/insightconnect-workflows
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Office_365_Analysis
   license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
