@@ -1,6 +1,6 @@
 # Description
 
-This workflow enables a user in Active Directory from an alert sent by InsightIDR
+This workflow enables a user in Active Directory from an alert sent by InsightIDR.
 
 # Key Features
 
