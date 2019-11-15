@@ -1,6 +1,6 @@
 # Description
 
-This workflow disable a user in Active Directory from an alert sent by InsightIDR
+This workflow disables a user in Active Directory from an alert sent by InsightIDR.
 
 # Key Features
 
@@ -8,8 +8,8 @@ This workflow disable a user in Active Directory from an alert sent by InsightID
 
 # Requirements
 
-Account credentials for an Active Directory user
-Admin access to Rapid7 InsightIDR and Rapid7 InsightConnect
+* Account credentials for an Active Directory user
+* Admin access to Rapid7 InsightIDR
 
 # Documentation
 
@@ -41,10 +41,6 @@ _There is no troubleshooting information at this time_
 * 1.0.0 - Initial workflow
 
 # Links
-
-## Source Code
-
-https://github.com/rapid7/insightconnect-workflows
 
 ## References
 
