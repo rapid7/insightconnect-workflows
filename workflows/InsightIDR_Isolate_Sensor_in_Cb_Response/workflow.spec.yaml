@@ -2,7 +2,7 @@ extension: workflow
 product: [insightconnect, insightidr]
 name: InsightIDR_Isolate_Sensor_in_Cb_Response
 title: "InsightIDR Isolate Sensor in Cb Response"
-description: "This workflow isolates a sensor in Carbon Black Response from an event in InsightIDR"
+description: "This workflow isolates a sensor in Carbon Black Response from an event in InsightIDR."
 version: 1.0.0
 vendor: rapid7
 support: rapid7
@@ -12,7 +12,7 @@ tags:
 - isolate
 - insightidr
 hub_tags:
-  use_cases: [soc_automation, siem, detection_and_response, threat_detection_and_response]
+  use_cases: [soar, soc_automation, siem, detection_and_response, threat_detection_and_response]
   keywords: [cb_response, isolate, insightidr]
   features: []
 resources:

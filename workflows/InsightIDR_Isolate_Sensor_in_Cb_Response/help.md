@@ -1,6 +1,6 @@
 # Description
 
-This workflow isolates a sensor in Carbon Black Response from an event in InsightIDR
+This workflow isolates a sensor in Carbon Black Response from an event in InsightIDR.
 
 # Key Features
 
