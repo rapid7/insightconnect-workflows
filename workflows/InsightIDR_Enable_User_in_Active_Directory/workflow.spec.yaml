@@ -1,0 +1,22 @@
+extension: workflow
+product: [insightconnect, insightidr]
+name: InsightIDR_Enable_User_in_Active_Directory
+title: "InsightIDR Enable User in Active Directory"
+description: "Enable user in Active Directory from an Insight IDR alert"
+version: 1.0.0
+vendor: rapid7
+support: rapid7
+status: []
+tags:
+- insightidr
+- ldap
+- active_directory
+- enable
+- user_management
+hub_tags:
+  use_cases: [soar, siem, user_management, threat_detection_and_response, soc_automation]
+  keywords: [insightidr, ldap, ad, active_directory]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/blob/master/InsightIDR_Enable_User_in_Active_Directory
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE

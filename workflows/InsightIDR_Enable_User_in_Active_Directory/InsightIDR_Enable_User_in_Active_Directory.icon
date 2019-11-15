@@ -1,0 +1,761 @@
+{
+  "kom": {
+    "komFileVersion": "",
+    "komandVersion": "",
+    "exportedAt": "2019-06-20T16:31:01.274574328Z",
+    "workflowVersions": [
+      {
+        "id": "df71f96a-047b-4283-9241-dd1ff374c281",
+        "workflowId": "9a50374d-80ac-45f7-8a11-f7d1077e4eba",
+        "version": "1.0.0",
+        "name": "InsightIDR Enable User in Active Directory",
+        "type": "runnable",
+        "tags": [
+          "insightidr",
+          "ldap",
+          "ad",
+          "activedirectory",
+          "user",
+          "disable",
+          "deprovision"
+        ],
+        "meta": {
+          "idrValidationMode": "ALL",
+          "idrWorkflowCategory": "CONTAINMENT",
+          "idrOriginalTemplateName": "Enable User in Active Directory"
+        },
+        "state": "",
+        "steps": {
+          "83aea8d8-a1e6-0a0b-2b19-be815fc36e27": {
+            "nodeId": "83aea8d8-a1e6-0a0b-2b19-be815fc36e27",
+            "name": "InsightIDR Event",
+            "type": "trigger",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "triggerId": "627c967a-af33-4013-9c38-1672cdae9d02"
+          },
+          "d03147c3-addb-ef93-5e6c-50f6543883dd": {
+            "nodeId": "d03147c3-addb-ef93-5e6c-50f6543883dd",
+            "name": "User Loop",
+            "type": "loop",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "innerEdgeId": "6669f7fd-58a7-1a16-29fa-56d607a0f84a",
+              "nextEdgeId": "019ef001-3980-d9d5-8c65-d828bef63886",
+              "repeatCount": 0,
+              "repeatVariable": "[83aea8d8-a1e6-0a0b-2b19-be815fc36e27].[actors].[users]",
+              "repeatDelay": 0
+            }
+          },
+          "62a0c7c3-5501-0f07-afec-777b927b6ee4": {
+            "nodeId": "62a0c7c3-5501-0f07-afec-777b927b6ee4",
+            "name": "Match Search Base",
+            "type": "pattern_match",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": "{{[d03147c3-addb-ef93-5e6c-50f6543883dd].[$item].[distinguishedName]}}",
+              "ignoreCase": true,
+              "captureAll": false,
+              "expressionText": "{{search_base:/dc=.*/}}",
+              "expressions": [
+                {
+                  "type": "variable",
+                  "value": {
+                    "ident": "search_base",
+                    "regex": "dc=.*"
+                  }
+                }
+              ]
+            }
+          },
+          "9ccef593-56cd-4438-9e55-bade67c10c54": {
+            "nodeId": "9ccef593-56cd-4438-9e55-bade67c10c54",
+            "name": "Query AD",
+            "type": "action",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "identifier": "query",
+            "plugin": {
+              "slugName": "active_directory_ldap",
+              "slugVendor": "rapid7",
+              "slugVersion": "3.2.4"
+            },
+            "parameters": {
+              "input": {
+                "search_base": "{{[62a0c7c3-5501-0f07-afec-777b927b6ee4].[search_base]}}",
+                "search_filter": "(distinguishedName={{[d03147c3-addb-ef93-5e6c-50f6543883dd].[$item].[distinguishedName]}})"
+              }
+            }
+          },
+          "2b1a2862-37c0-752f-9518-1018649cb536": {
+            "nodeId": "2b1a2862-37c0-752f-9518-1018649cb536",
+            "name": "Distinguished Name Found in AD?",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "stepControlParams": [
+                {
+                  "nodeId": "27b0ca7d-ed43-33c3-5327-bd8e1233ec1a",
+                  "name": "Yes",
+                  "description": "Exactly one entry is returned from the distinguished name query.",
+                  "expression": {
+                    "type": "binary",
+                    "op": "==",
+                    "left": {
+                      "type": "function",
+                      "name": "length",
+                      "args": [
+                        {
+                          "type": "variable",
+                          "name": "9ccef593-56cd-4438-9e55-bade67c10c54.results"
+                        }
+                      ]
+                    },
+                    "right": {
+                      "type": "literal",
+                      "value": 1
+                    }
+                  },
+                  "expressionText": "length({{[9ccef593-56cd-4438-9e55-bade67c10c54].[results]}}) == 1",
+                  "edgeId": "aec2c439-a088-d565-6b20-9d66df45be9e"
+                },
+                {
+                  "nodeId": "1d2d6abf-cd20-823c-a9f4-76317247e00a",
+                  "name": "No",
+                  "description": "No",
+                  "expression": {},
+                  "expressionText": "",
+                  "edgeId": "4c8eaaa0-001a-510a-c5ee-c33eba26a2c6"
+                }
+              ],
+              "defaultEdgeId": "4c8eaaa0-001a-510a-c5ee-c33eba26a2c6"
+            }
+          },
+          "1d2d6abf-cd20-823c-a9f4-76317247e00a": {
+            "nodeId": "1d2d6abf-cd20-823c-a9f4-76317247e00a",
+            "name": "No User Artifact",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "type": "markdown",
+              "content": "",
+              "input": {
+                "content": "## Result\n\nThe enable user action was skipped because the user did not exist in Active Directory/LDAP during the job's execution.\n\n{{#if [d03147c3-addb-ef93-5e6c-50f6543883dd].[$item].[distinguishedName]}}\nDN: {{[d03147c3-addb-ef93-5e6c-50f6543883dd].[$item].[distinguishedName]}}\n{{/if}}\n{{#if [d03147c3-addb-ef93-5e6c-50f6543883dd].[$item].[name]}}\nName: {{[d03147c3-addb-ef93-5e6c-50f6543883dd].[$item].[name]}}\n{{/if}}"
+              }
+            }
+          },
+          "3e895203-7cc2-65fe-2973-3f8e4cafcc0e": {
+            "nodeId": "3e895203-7cc2-65fe-2973-3f8e4cafcc0e",
+            "name": "Alert Artifact",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "type": "markdown",
+              "content": "",
+              "input": {
+                "content": "## Alert\n{{#if [83aea8d8-a1e6-0a0b-2b19-be815fc36e27].[description]}}\nDescription: {{[83aea8d8-a1e6-0a0b-2b19-be815fc36e27].[description]}}\n{{/if}}\n{{#if [83aea8d8-a1e6-0a0b-2b19-be815fc36e27].[investigationId]}}\nInvestigation ID: {{[83aea8d8-a1e6-0a0b-2b19-be815fc36e27].[investigationId]}}\n{{/if}}\n{{#if [83aea8d8-a1e6-0a0b-2b19-be815fc36e27].[name]}}\nName: {{[83aea8d8-a1e6-0a0b-2b19-be815fc36e27].[name]}}\n{{/if}}\n{{#if [83aea8d8-a1e6-0a0b-2b19-be815fc36e27].[link]}}\nLink: [{{[83aea8d8-a1e6-0a0b-2b19-be815fc36e27].[link]}}]({{[83aea8d8-a1e6-0a0b-2b19-be815fc36e27].[link]}})\n{{/if}}\n{{#if [83aea8d8-a1e6-0a0b-2b19-be815fc36e27].[timestamp]}}\nTimestamp: {{[83aea8d8-a1e6-0a0b-2b19-be815fc36e27].[timestamp]}}\n{{/if}}\n{{#if [83aea8d8-a1e6-0a0b-2b19-be815fc36e27].[type]}}\nType: {{[83aea8d8-a1e6-0a0b-2b19-be815fc36e27].[type]}}\n{{/if}}\n{{#if [83aea8d8-a1e6-0a0b-2b19-be815fc36e27].[actors].[users]}}\n{{#each [83aea8d8-a1e6-0a0b-2b19-be815fc36e27].[actors].[users]}}\n{{#if distinguishedName}}\nActor Users: {{distinguishedName}}\n{{/if}}\n{{/each}}\n{{/if}}"
+              }
+            }
+          },
+          "480b4c67-001b-b55d-6256-c53ba5a9c11d": {
+            "nodeId": "480b4c67-001b-b55d-6256-c53ba5a9c11d",
+            "name": "Distinguished Name Exists?",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "stepControlParams": [
+                {
+                  "nodeId": "62a0c7c3-5501-0f07-afec-777b927b6ee4",
+                  "name": "Yes",
+                  "description": "Yes",
+                  "expression": {},
+                  "expressionText": "",
+                  "edgeId": "27342530-0443-2146-e645-8c948e2be01c"
+                },
+                {
+                  "nodeId": "e5e2a6f3-311b-e617-055e-f0f169802720",
+                  "name": "No",
+                  "description": "No",
+                  "expression": {
+                    "type": "binary",
+                    "op": "=",
+                    "left": {
+                      "type": "function",
+                      "name": "length",
+                      "args": [
+                        {
+                          "type": "variable",
+                          "name": "d03147c3-addb-ef93-5e6c-50f6543883dd.$item.distinguishedName"
+                        }
+                      ]
+                    },
+                    "right": {
+                      "type": "literal",
+                      "value": 0
+                    }
+                  },
+                  "expressionText": "length({{[d03147c3-addb-ef93-5e6c-50f6543883dd].[$item].[distinguishedName]}}) = 0",
+                  "edgeId": "af0baea9-6b64-c0a1-ee3a-781b2db4cac4"
+                }
+              ],
+              "defaultEdgeId": "27342530-0443-2146-e645-8c948e2be01c"
+            }
+          },
+          "e5e2a6f3-311b-e617-055e-f0f169802720": {
+            "nodeId": "e5e2a6f3-311b-e617-055e-f0f169802720",
+            "name": "No Distinguished Name",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "type": "markdown",
+              "content": "",
+              "input": {
+                "content": "## Result\n\nThe enable user action was skipped because the distinguished name did not exist in the event from IDR.\n\n{{#if [d03147c3-addb-ef93-5e6c-50f6543883dd].[$item].[distinguishedName]}}\nDN: {{[d03147c3-addb-ef93-5e6c-50f6543883dd].[$item].[distinguishedName]}}\n{{/if}}\n{{#if [d03147c3-addb-ef93-5e6c-50f6543883dd].[$item].[name]}}\nName: {{[d03147c3-addb-ef93-5e6c-50f6543883dd].[$item].[name]}}\n{{/if}}"
+              }
+            }
+          },
+          "c5111401-f1a6-8217-c72a-ca17479870c5": {
+            "nodeId": "c5111401-f1a6-8217-c72a-ca17479870c5",
+            "name": "Enable User",
+            "type": "action",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "identifier": "enable_user",
+            "plugin": {
+              "slugName": "active_directory_ldap",
+              "slugVendor": "rapid7",
+              "slugVersion": "3.2.4"
+            },
+            "parameters": {
+              "input": {
+                "distinguished_name": "{{[d03147c3-addb-ef93-5e6c-50f6543883dd].[$item].[distinguishedName]}}"
+              }
+            }
+          },
+          "de3e0af3-3d88-a62d-88c1-aa6496a9e134": {
+            "nodeId": "de3e0af3-3d88-a62d-88c1-aa6496a9e134",
+            "name": "Enable User Artifact",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "type": "markdown",
+              "content": "",
+              "input": {
+                "content": "##  Result\n{{#if[c5111401-f1a6-8217-c72a-ca17479870c5].[success]}}\nEnabling of user *succeeded*.\n{{else}}\nEnabling of user *failed*. Check the action's output and the account in Active Directory/LDAP\n{{/if}}\n\nDN: {{[d03147c3-addb-ef93-5e6c-50f6543883dd].[$item].[distinguishedName]}}\nUser: {{[d03147c3-addb-ef93-5e6c-50f6543883dd].[$item].[name]}}\n\n"
+              }
+            }
+          },
+          "238b0a9a-82b3-8eae-a570-f92a21ead93c": {
+            "nodeId": "238b0a9a-82b3-8eae-a570-f92a21ead93c",
+            "name": "Enable User?",
+            "type": "human_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "stepControlParams": [
+                {
+                  "nodeId": "c5111401-f1a6-8217-c72a-ca17479870c5",
+                  "name": "Yes",
+                  "description": "Yes",
+                  "expression": {},
+                  "expressionText": "",
+                  "edgeId": "d4351aa7-729e-9d01-5e98-b5f475cfb58e"
+                },
+                {
+                  "nodeId": "",
+                  "name": "No",
+                  "description": "No",
+                  "expression": {},
+                  "expressionText": "",
+                  "edgeId": "a681eff6-2c69-3b19-217e-387cc2a2eea9"
+                }
+              ],
+              "defaultEdgeId": ""
+            }
+          },
+          "27b0ca7d-ed43-33c3-5327-bd8e1233ec1a": {
+            "nodeId": "27b0ca7d-ed43-33c3-5327-bd8e1233ec1a",
+            "name": "Enable User Artifact?",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "type": "markdown",
+              "content": "",
+              "input": {
+                "content": "Enable User: {{[d03147c3-addb-ef93-5e6c-50f6543883dd].[$item].[distinguishedName]}}"
+              }
+            }
+          }
+        },
+        "graph": {
+          "nodes": {
+            "83aea8d8-a1e6-0a0b-2b19-be815fc36e27": {
+              "id": "83aea8d8-a1e6-0a0b-2b19-be815fc36e27",
+              "parentNodeId": ""
+            },
+            "d03147c3-addb-ef93-5e6c-50f6543883dd": {
+              "id": "d03147c3-addb-ef93-5e6c-50f6543883dd",
+              "parentNodeId": ""
+            },
+            "62a0c7c3-5501-0f07-afec-777b927b6ee4": {
+              "id": "62a0c7c3-5501-0f07-afec-777b927b6ee4",
+              "parentNodeId": "d03147c3-addb-ef93-5e6c-50f6543883dd"
+            },
+            "9ccef593-56cd-4438-9e55-bade67c10c54": {
+              "id": "9ccef593-56cd-4438-9e55-bade67c10c54",
+              "parentNodeId": "d03147c3-addb-ef93-5e6c-50f6543883dd"
+            },
+            "2b1a2862-37c0-752f-9518-1018649cb536": {
+              "id": "2b1a2862-37c0-752f-9518-1018649cb536",
+              "parentNodeId": "d03147c3-addb-ef93-5e6c-50f6543883dd"
+            },
+            "1d2d6abf-cd20-823c-a9f4-76317247e00a": {
+              "id": "1d2d6abf-cd20-823c-a9f4-76317247e00a",
+              "parentNodeId": "d03147c3-addb-ef93-5e6c-50f6543883dd"
+            },
+            "3e895203-7cc2-65fe-2973-3f8e4cafcc0e": {
+              "id": "3e895203-7cc2-65fe-2973-3f8e4cafcc0e",
+              "parentNodeId": ""
+            },
+            "480b4c67-001b-b55d-6256-c53ba5a9c11d": {
+              "id": "480b4c67-001b-b55d-6256-c53ba5a9c11d",
+              "parentNodeId": "d03147c3-addb-ef93-5e6c-50f6543883dd"
+            },
+            "e5e2a6f3-311b-e617-055e-f0f169802720": {
+              "id": "e5e2a6f3-311b-e617-055e-f0f169802720",
+              "parentNodeId": "d03147c3-addb-ef93-5e6c-50f6543883dd"
+            },
+            "c5111401-f1a6-8217-c72a-ca17479870c5": {
+              "id": "c5111401-f1a6-8217-c72a-ca17479870c5",
+              "parentNodeId": "d03147c3-addb-ef93-5e6c-50f6543883dd"
+            },
+            "de3e0af3-3d88-a62d-88c1-aa6496a9e134": {
+              "id": "de3e0af3-3d88-a62d-88c1-aa6496a9e134",
+              "parentNodeId": "d03147c3-addb-ef93-5e6c-50f6543883dd"
+            },
+            "238b0a9a-82b3-8eae-a570-f92a21ead93c": {
+              "id": "238b0a9a-82b3-8eae-a570-f92a21ead93c",
+              "parentNodeId": "d03147c3-addb-ef93-5e6c-50f6543883dd"
+            },
+            "27b0ca7d-ed43-33c3-5327-bd8e1233ec1a": {
+              "id": "27b0ca7d-ed43-33c3-5327-bd8e1233ec1a",
+              "parentNodeId": "d03147c3-addb-ef93-5e6c-50f6543883dd"
+            }
+          },
+          "edges": {
+            "e6b048d5-de12-62b5-6ab4-dc47beb99c2c": {
+              "id": "e6b048d5-de12-62b5-6ab4-dc47beb99c2c",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "83aea8d8-a1e6-0a0b-2b19-be815fc36e27",
+              "toNodeId": "3e895203-7cc2-65fe-2973-3f8e4cafcc0e"
+            },
+            "4a05caef-af2f-defe-4a37-1b5105214ae3": {
+              "id": "4a05caef-af2f-defe-4a37-1b5105214ae3",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "3e895203-7cc2-65fe-2973-3f8e4cafcc0e",
+              "toNodeId": "d03147c3-addb-ef93-5e6c-50f6543883dd"
+            },
+            "6669f7fd-58a7-1a16-29fa-56d607a0f84a": {
+              "id": "6669f7fd-58a7-1a16-29fa-56d607a0f84a",
+              "name": "",
+              "description": "",
+              "parentNodeId": "d03147c3-addb-ef93-5e6c-50f6543883dd",
+              "fromNodeId": "d03147c3-addb-ef93-5e6c-50f6543883dd",
+              "toNodeId": "480b4c67-001b-b55d-6256-c53ba5a9c11d"
+            },
+            "27342530-0443-2146-e645-8c948e2be01c": {
+              "id": "27342530-0443-2146-e645-8c948e2be01c",
+              "name": "Yes",
+              "description": "Yes",
+              "parentNodeId": "d03147c3-addb-ef93-5e6c-50f6543883dd",
+              "fromNodeId": "480b4c67-001b-b55d-6256-c53ba5a9c11d",
+              "toNodeId": "62a0c7c3-5501-0f07-afec-777b927b6ee4"
+            },
+            "af0baea9-6b64-c0a1-ee3a-781b2db4cac4": {
+              "id": "af0baea9-6b64-c0a1-ee3a-781b2db4cac4",
+              "name": "No",
+              "description": "No",
+              "parentNodeId": "d03147c3-addb-ef93-5e6c-50f6543883dd",
+              "fromNodeId": "480b4c67-001b-b55d-6256-c53ba5a9c11d",
+              "toNodeId": "e5e2a6f3-311b-e617-055e-f0f169802720"
+            },
+            "7dac49c9-e681-51c5-9c1c-3bb05183730f": {
+              "id": "7dac49c9-e681-51c5-9c1c-3bb05183730f",
+              "name": "",
+              "description": "",
+              "parentNodeId": "d03147c3-addb-ef93-5e6c-50f6543883dd",
+              "fromNodeId": "62a0c7c3-5501-0f07-afec-777b927b6ee4",
+              "toNodeId": "9ccef593-56cd-4438-9e55-bade67c10c54"
+            },
+            "c427e7ed-1928-3264-302a-9acaad3ba532": {
+              "id": "c427e7ed-1928-3264-302a-9acaad3ba532",
+              "name": "",
+              "description": "",
+              "parentNodeId": "d03147c3-addb-ef93-5e6c-50f6543883dd",
+              "fromNodeId": "9ccef593-56cd-4438-9e55-bade67c10c54",
+              "toNodeId": "2b1a2862-37c0-752f-9518-1018649cb536"
+            },
+            "aec2c439-a088-d565-6b20-9d66df45be9e": {
+              "id": "aec2c439-a088-d565-6b20-9d66df45be9e",
+              "name": "Yes",
+              "description": "Exactly one entry is returned from the distinguished name query.",
+              "parentNodeId": "d03147c3-addb-ef93-5e6c-50f6543883dd",
+              "fromNodeId": "2b1a2862-37c0-752f-9518-1018649cb536",
+              "toNodeId": "27b0ca7d-ed43-33c3-5327-bd8e1233ec1a"
+            },
+            "4c8eaaa0-001a-510a-c5ee-c33eba26a2c6": {
+              "id": "4c8eaaa0-001a-510a-c5ee-c33eba26a2c6",
+              "name": "No",
+              "description": "No",
+              "parentNodeId": "d03147c3-addb-ef93-5e6c-50f6543883dd",
+              "fromNodeId": "2b1a2862-37c0-752f-9518-1018649cb536",
+              "toNodeId": "1d2d6abf-cd20-823c-a9f4-76317247e00a"
+            },
+            "f97a899f-78c4-3e6e-2679-cce96dd46943": {
+              "id": "f97a899f-78c4-3e6e-2679-cce96dd46943",
+              "name": "",
+              "description": "",
+              "parentNodeId": "d03147c3-addb-ef93-5e6c-50f6543883dd",
+              "fromNodeId": "27b0ca7d-ed43-33c3-5327-bd8e1233ec1a",
+              "toNodeId": "238b0a9a-82b3-8eae-a570-f92a21ead93c"
+            },
+            "d4351aa7-729e-9d01-5e98-b5f475cfb58e": {
+              "id": "d4351aa7-729e-9d01-5e98-b5f475cfb58e",
+              "name": "Yes",
+              "description": "Yes",
+              "parentNodeId": "d03147c3-addb-ef93-5e6c-50f6543883dd",
+              "fromNodeId": "238b0a9a-82b3-8eae-a570-f92a21ead93c",
+              "toNodeId": "c5111401-f1a6-8217-c72a-ca17479870c5"
+            },
+            "a681eff6-2c69-3b19-217e-387cc2a2eea9": {
+              "id": "a681eff6-2c69-3b19-217e-387cc2a2eea9",
+              "name": "No",
+              "description": "No",
+              "parentNodeId": "d03147c3-addb-ef93-5e6c-50f6543883dd",
+              "fromNodeId": "238b0a9a-82b3-8eae-a570-f92a21ead93c",
+              "toNodeId": ""
+            },
+            "af092418-ac63-d4c8-e6fb-bba7967dcbf7": {
+              "id": "af092418-ac63-d4c8-e6fb-bba7967dcbf7",
+              "name": "",
+              "description": "",
+              "parentNodeId": "d03147c3-addb-ef93-5e6c-50f6543883dd",
+              "fromNodeId": "c5111401-f1a6-8217-c72a-ca17479870c5",
+              "toNodeId": "de3e0af3-3d88-a62d-88c1-aa6496a9e134"
+            },
+            "5d442586-fa84-c407-3408-d13405ca25cb": {
+              "id": "5d442586-fa84-c407-3408-d13405ca25cb",
+              "name": "",
+              "description": "",
+              "parentNodeId": "d03147c3-addb-ef93-5e6c-50f6543883dd",
+              "fromNodeId": "de3e0af3-3d88-a62d-88c1-aa6496a9e134",
+              "toNodeId": ""
+            },
+            "019ef001-3980-d9d5-8c65-d828bef63886": {
+              "id": "019ef001-3980-d9d5-8c65-d828bef63886",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "d03147c3-addb-ef93-5e6c-50f6543883dd",
+              "toNodeId": ""
+            },
+            "d653322f-ecbf-76b6-4023-20f0b7022444": {
+              "id": "d653322f-ecbf-76b6-4023-20f0b7022444",
+              "name": "",
+              "description": "",
+              "parentNodeId": "d03147c3-addb-ef93-5e6c-50f6543883dd",
+              "fromNodeId": "1d2d6abf-cd20-823c-a9f4-76317247e00a",
+              "toNodeId": ""
+            },
+            "d2954014-5f75-0a6f-b90c-52aa216915b5": {
+              "id": "d2954014-5f75-0a6f-b90c-52aa216915b5",
+              "name": "",
+              "description": "",
+              "parentNodeId": "d03147c3-addb-ef93-5e6c-50f6543883dd",
+              "fromNodeId": "e5e2a6f3-311b-e617-055e-f0f169802720",
+              "toNodeId": ""
+            }
+          }
+        }
+      }
+    ],
+    "triggers": [
+      {
+        "id": "627c967a-af33-4013-9c38-1672cdae9d02",
+        "identifier": "",
+        "name": "InsightIDR Event",
+        "description": "",
+        "tags": [],
+        "input": null,
+        "inputJsonSchema": {
+          "type": "object",
+          "title": "Variables",
+          "properties": {
+            "actors": {
+              "$ref": "#/definitions/actor",
+              "title": "Actors",
+              "description": "The insightIDR actors that are part of the investigation",
+              "order": 6
+            },
+            "description": {
+              "type": "string",
+              "title": "Description",
+              "description": "The description of the alert",
+              "order": 4
+            },
+            "link": {
+              "type": "string",
+              "title": "Link",
+              "description": "The deep link to the investigation in insightIDR",
+              "order": 5
+            },
+            "investigationId": {
+              "type": "string",
+              "title": "Investigation ID",
+              "description": "The unique identifier of the investigation",
+              "order": 7
+            },
+            "name": {
+              "type": "string",
+              "title": "Name",
+              "description": "The human-readable name of the alert",
+              "order": 3
+            },
+            "timestamp": {
+              "type": "string",
+              "title": "Timestamp",
+              "description": "The time the alert was triggered in ISO 8601 extended timestamp format",
+              "order": 1
+            },
+            "type": {
+              "type": "string",
+              "title": "Type",
+              "description": "The type of alert",
+              "order": 2
+            }
+          },
+          "definitions": {
+            "actor": {
+              "type": "object",
+              "title": "Actor",
+              "properties": {
+                "assets": {
+                  "type": "array",
+                  "title": "Assets",
+                  "description": "The assets that are part of the investigation",
+                  "items": {
+                    "$ref": "#/definitions/asset"
+                  },
+                  "order": 2
+                },
+                "users": {
+                  "type": "array",
+                  "title": "Users",
+                  "description": "The users that are part of the investigation",
+                  "items": {
+                    "$ref": "#/definitions/user"
+                  },
+                  "order": 1
+                }
+              }
+            },
+            "asset": {
+              "type": "object",
+              "title": "Asset",
+              "properties": {
+                "fqdn": {
+                  "type": "string",
+                  "title": "FQDN",
+                  "description": "The fully qualified domain name",
+                  "order": 2
+                },
+                "shortname": {
+                  "type": "string",
+                  "title": "Shortname",
+                  "description": "Shortname of the asset",
+                  "order": 1
+                }
+              },
+              "required": [
+                "shortname"
+              ]
+            },
+            "user": {
+              "type": "object",
+              "title": "User",
+              "properties": {
+                "distinguishedName": {
+                  "type": "string",
+                  "title": "DistinguishedName",
+                  "description": "The Active Directory distinguished name of the user",
+                  "order": 2
+                },
+                "emails": {
+                  "type": "array",
+                  "title": "Emails",
+                  "description": "The email addresses associated with the user",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 3
+                },
+                "name": {
+                  "type": "string",
+                  "title": "Name",
+                  "description": "The name of the user, as '<firstname> <lastname>' if available, or account name otherwise",
+                  "order": 1
+                }
+              },
+              "required": [
+                "name",
+                "emails"
+              ]
+            }
+          }
+        },
+        "outputJsonSchema": {
+          "type": "object",
+          "title": "Variables",
+          "properties": {
+            "actors": {
+              "$ref": "#/definitions/actor",
+              "title": "Actors",
+              "description": "The insightIDR actors that are part of the investigation",
+              "order": 6
+            },
+            "description": {
+              "type": "string",
+              "title": "Description",
+              "description": "The description of the alert",
+              "order": 4
+            },
+            "link": {
+              "type": "string",
+              "title": "Link",
+              "description": "The deep link to the investigation in insightIDR",
+              "order": 5
+            },
+            "investigationId": {
+              "type": "string",
+              "title": "Investigation ID",
+              "description": "The unique identifier of the investigation",
+              "order": 7
+            },
+            "name": {
+              "type": "string",
+              "title": "Name",
+              "description": "The human-readable name of the alert",
+              "order": 3
+            },
+            "timestamp": {
+              "type": "string",
+              "title": "Timestamp",
+              "description": "The time the alert was triggered in ISO 8601 extended timestamp format",
+              "order": 1
+            },
+            "type": {
+              "type": "string",
+              "title": "Type",
+              "description": "The type of alert",
+              "order": 2
+            }
+          },
+          "definitions": {
+            "actor": {
+              "type": "object",
+              "title": "Actor",
+              "properties": {
+                "assets": {
+                  "type": "array",
+                  "title": "Assets",
+                  "description": "The assets that are part of the investigation",
+                  "items": {
+                    "$ref": "#/definitions/asset"
+                  },
+                  "order": 2
+                },
+                "users": {
+                  "type": "array",
+                  "title": "Users",
+                  "description": "The users that are part of the investigation",
+                  "items": {
+                    "$ref": "#/definitions/user"
+                  },
+                  "order": 1
+                }
+              }
+            },
+            "asset": {
+              "type": "object",
+              "title": "Asset",
+              "properties": {
+                "fqdn": {
+                  "type": "string",
+                  "title": "FQDN",
+                  "description": "The fully qualified domain name",
+                  "order": 2
+                },
+                "shortname": {
+                  "type": "string",
+                  "title": "Shortname",
+                  "description": "Shortname of the asset",
+                  "order": 1
+                }
+              },
+              "required": [
+                "shortname"
+              ]
+            },
+            "user": {
+              "type": "object",
+              "title": "User",
+              "properties": {
+                "distinguishedName": {
+                  "type": "string",
+                  "title": "DistinguishedName",
+                  "description": "The Active Directory distinguished name of the user",
+                  "order": 2
+                },
+                "emails": {
+                  "type": "array",
+                  "title": "Emails",
+                  "description": "The email addresses associated with the user",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 3
+                },
+                "name": {
+                  "type": "string",
+                  "title": "Name",
+                  "description": "The name of the user, as '<firstname> <lastname>' if available, or account name otherwise",
+                  "order": 1
+                }
+              },
+              "required": [
+                "name",
+                "emails"
+              ]
+            }
+          }
+        },
+        "type": "trigger_api_idr"
+      }
+    ],
+    "connections": []
+  }
+}
+
