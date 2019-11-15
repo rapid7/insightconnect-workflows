@@ -14,7 +14,7 @@ tags:
 - deprovision
 - user
 hub_tags:
-  use_cases: [user_management, soar, soc_automation, threat_detection_and_response ]
+  use_cases: [user_management, soar, soc_automation, threat_detection_and_response]
   keywords: [insightidr, okta, containment, deprovision, user]
   features: []
 resources:
