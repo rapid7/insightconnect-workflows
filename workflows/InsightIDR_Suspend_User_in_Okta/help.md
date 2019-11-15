@@ -8,6 +8,7 @@ This workflow suspends a user in Okta from an event in InsightIDR.
 
 # Requirements
 
+* Admin access to Rapid7 InsightIDR
 * API and account credentials for Okta
 
 # Documentation
