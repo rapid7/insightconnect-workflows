@@ -1,6 +1,6 @@
 # Description
 
-This workflow will scan a Microsoft Teams channel for a specific check url command. When the workflow detects a message matching that signature, it will automatically scan the url in VirusTotal and return the results to Microsoft Teams.
+This workflow will scan a Microsoft Teams channel for a specific message. When the workflow detects a message matching that signature, it will automatically scan the URL in VirusTotal and return the results to Microsoft Teams.
 
 # Key Features
 

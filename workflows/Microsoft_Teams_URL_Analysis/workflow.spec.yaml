@@ -2,7 +2,7 @@ extension: workflow
 products: ["insightconnect"]
 name: Microsoft_Teams_URL_Analysis
 title: "Microsoft Teams URL Analysis"
-description: "This workflow will scan a Microsoft Teams channel for a specific check url command. When the workflow detects a message matching that signature, it will automatically scan the url in VirusTotal and return the results to Microsoft Teams"
+description: This workflow will scan a Microsoft Teams channel for a specific message. When the workflow detects a message matching that signature, it will automatically scan the URL in VirusTotal and return the results to Microsoft Teams
 version: 1.0.0
 vendor: rapid7
 support: rapid7
