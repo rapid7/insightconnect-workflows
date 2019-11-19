@@ -1,5 +1,5 @@
 extension: workflow
-product: ["insightconnect"]
+products: ["insightconnect"]
 name: Look_Up_Hashes_with_Recorded_Future
 title: "Look Up Hashes with Recorded Future"
 description: "This workflow enriches an IDR alert by performing a lookup on all hashes in the investigation with Recorded Future."

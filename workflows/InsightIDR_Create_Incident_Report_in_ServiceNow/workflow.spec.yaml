@@ -1,5 +1,5 @@
 extension: workflow
-product: [insightconnect, insightidr]
+products: [insightconnect, insightidr]
 name: InsightIDR_Create_Incident_Report_in_ServiceNow
 title: "InsightIDR Create Incident Report in ServiceNow"
 description: "This workflow creates an incident report in ServiceNow."

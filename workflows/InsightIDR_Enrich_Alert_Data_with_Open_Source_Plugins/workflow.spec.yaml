@@ -1,5 +1,5 @@
 extension: workflow
-product: [insightconnect, insightidr]
+products: [insightconnect, insightidr]
 name: InsightIDR_Enrich_Alert_Data_with_Open_Source_Plugins
 title: "InsightIDR Enrich Alert Data with Open Source Plugins"
 description: "Workflow that attempts to enrich all following IoCs (IPs, Domains, URLs, Hashes), if available. It can be associated with almost any alert."
