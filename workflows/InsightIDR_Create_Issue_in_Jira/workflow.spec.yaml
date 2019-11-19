@@ -1,5 +1,5 @@
 extension: workflow
-product: [insightconnect, insightidr]
+products: [insightconnect, insightidr]
 name: InsightIDR_Create_Issue_in_Jira
 title: "InsightIDR Create Issue in Jira"
 description: "This workflow creates an issue in Jira from a triggered incident from InsightIDR"

@@ -1,5 +1,5 @@
 extension: workflow
-product: [insightconnect, insightidr]
+products: [insightconnect, insightidr]
 name: InsightIDR_Disable_User_in_Active_Directory
 title: "InsightIDR Disable User in Active Directory"
 description: "Disable user in Active Directory from a triggered alert in InsightIDR"

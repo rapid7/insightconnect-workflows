@@ -1,5 +1,5 @@
 extension: workflow
-product: [insightconnect, insightidr]
+products: [insightconnect, insightidr]
 name: InsightIDR_Isolate_Sensor_in_Cb_Response
 title: "InsightIDR Isolate Sensor in Cb Response"
 description: "This workflow isolates a sensor in Carbon Black Response from an event in InsightIDR."

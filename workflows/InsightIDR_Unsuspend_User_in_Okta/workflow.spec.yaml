@@ -1,5 +1,5 @@
 extension: workflow
-product: [insightconnect, insightidr]
+products: [insightconnect, insightidr]
 name: InsightIDR_Unsuspend_User_in_Okta
 title: "InsightIDR Unsuspend User in Okta"
 description: "This workflow removes a user from suspension in Okta from an event in InsightIDR."
