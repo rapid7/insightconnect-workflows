@@ -1,0 +1,17 @@
+extension: workflow
+product: ["insightconnect"]
+name: Create_BMC_Incident_for_Top_Remediations_from_InsightVM
+title: "Create BMC Incident for Top Remediations from InsightVM"
+description: ""
+version: 1.0.0
+vendor: rapid7
+support: rapid7
+status: ["supported"]
+tags:
+- insightvm
+- bmc
+- vulnerability management
+hub_tags:
+  use_cases: []
+  keywords: [insightvm, vulnerability management, bmc]
+  features: []
