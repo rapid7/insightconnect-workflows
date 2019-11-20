@@ -8,7 +8,7 @@
         "name": "Teams Analysis Example",
         "type": "runnable",
         "version": "",
-        "description": "",
+        "description": "This workflow will scan a Microsoft Teams channel for a specific message. When the workflow detects a message matching that signature, it will automatically scan the URL in VirusTotal and return the results to Microsoft Teams.",
         "graph": {
           "edges": {
             "39cf1a3c-064d-4faa-b6c2-6f578d9ea545": {
