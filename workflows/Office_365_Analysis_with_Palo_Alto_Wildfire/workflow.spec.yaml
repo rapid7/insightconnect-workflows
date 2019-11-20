@@ -1,5 +1,5 @@
 extension: workflow
-product: ["insightconnect"]
+products: ["insightconnect"]
 name: Office_365_Analysis_with_Palo_Alto_Wildfire
 title: "Office 365 Analysis with Palo Alto Wildfire"
 description: "This workflow is designed to automatically analyze incoming emails to determine if they are malicious. This workflow assumes a user is using their report phishing button to send an email to an administrative account with the suspicious email attached. The workflow will then analyze any URLs or files in the attached email to find malicious links. If any malicious indicators are found the email will be remediated across the organization."
@@ -12,9 +12,9 @@ tags:
 - email
 - office365
 hub_tags:
-  use_cases: []
+  use_cases: [soar, soc_automation, phishing_investigations, threat_intel]
   keywords: [phishing, email, office365]
   features: []
 resources:
-  source_url: https://github.com/rapid7/insightconnect-workflows
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Office_365_Analysis_with_Palo_Alto_Wildfire
   license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE

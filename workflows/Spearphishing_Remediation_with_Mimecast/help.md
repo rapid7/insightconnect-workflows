@@ -42,10 +42,6 @@ Plugins leveraged by workflow:
 
 # Links
 
-## Source Code
-
-https://github.com/rapid7/insightconnect-workflows
-
 ## References
 
 * [Mimecast API Auth](https://www.mimecast.com/tech-connect/documentation/api-overview/authentication-and-authorization/)

@@ -48,10 +48,6 @@ _There is no troubleshooting information at this time_
 
 # Links
 
-## Source Code
-
-https://github.com/rapid7/insightconnect-workflows
-
 ## References
 
 * [Microsoft Office365](https://www.office.com)

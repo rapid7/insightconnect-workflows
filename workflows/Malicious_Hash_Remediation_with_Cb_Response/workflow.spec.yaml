@@ -1,18 +1,21 @@
 extension: workflow
-product: ["insightconnect"]
+products: ["insightconnect"]
 name: Malicious_Hash_Remediation_with_Cb_Response
 title: "Malicious Hash Remediation with Cb Response"
 description: "This workflow triggers off of InsightIDR's Malicious Hash on Asset alerts and does a lookup of the hash with Team Cymru before banning it with Cb Response"
 version: 1.0.0
 vendor: rapid7
 support: rapid7
-status: ["supported"]
+status: []
 tags:
 - cb
 - hash
 - insightidr
+- carbonblack
 hub_tags:
-  use_cases: []
+  use_cases: [soar, soc_automation, asset_containment, threat_detection_and_response]
   keywords: [cb, hash, insightidr]
   features: []
-- carbonblack
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Malicious_Hash_Remediation_with_Cb_Response
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE

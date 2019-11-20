@@ -35,10 +35,6 @@ Plugins leveraged by workflow:
 
 # Links
 
-## Source Code
-
-https://github.com/rapid7/insightconnect-workflows
-
 ## References
 
 * [Cb Response API Auth](https://developer.carbonblack.com/guide/enterprise-response/cbrestapiquickstart/)

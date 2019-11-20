@@ -1,0 +1,22 @@
+extension: workflow
+products: [insightconnect, insightidr]
+name: InsightIDR_Enrich_Alert_Data_with_Open_Source_Plugins
+title: "InsightIDR Enrich Alert Data with Open Source Plugins"
+description: "Workflow that attempts to enrich all following IoCs (IPs, Domains, URLs, Hashes), if available. It can be associated with almost any alert."
+version: 1.0.0
+vendor: rapid7
+support: rapid7
+status: []
+tags:
+- insightidr
+- enrichment
+- analysis
+- hash
+- domain
+hub_tags:
+  use_cases: [soar, soc_automation, siem, threat_detection_and_response, threat_intel]
+  keywords: [insightidr, enrichment, analysis, hash, domain]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/blob/master/workflows/InsightIDR_Enrich_Alert_Data_with_Open_Source_Plugins
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
