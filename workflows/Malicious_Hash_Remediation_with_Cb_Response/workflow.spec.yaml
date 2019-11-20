@@ -7,11 +7,6 @@ version: 1.0.0
 vendor: rapid7
 support: rapid7
 status: []
-tags:
-- cb
-- hash
-- insightidr
-- carbonblack
 hub_tags:
   use_cases: [soar, soc_automation, asset_containment, threat_detection_and_response]
   keywords: [cb, hash, insightidr]
