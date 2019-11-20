@@ -7,13 +7,6 @@ version: 1.0.0
 vendor: rapid7
 support: rapid7
 status: []
-tags:
-- insightidr
-- okta
-- containment
-- deprovision
-- user
-- remove suspension
 hub_tags:
   use_cases: [user_management, soar, soc_automation, threat_detection_and_response]
   keywords: [insightidr, okta, containment, deprovision, user, remove suspension]

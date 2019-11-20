@@ -7,11 +7,6 @@ version: 1.0.0
 vendor: rapid7
 support: rapid7
 status: []
-tags:
-- microsoft_teams
-- teams
-- virustotal
-- chat
 hub_tags:
   use_cases: [soar, soc_automation, chat_ops, threat_intel]
   keywords: [chat, microsoft_teams, teams, virustotal]

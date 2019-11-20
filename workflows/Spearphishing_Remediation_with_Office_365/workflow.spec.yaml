@@ -7,10 +7,6 @@ version: 1.0.0
 vendor: rapid7
 support: rapid7
 status: []
-tags:
-- phishing
-- email
-- office365
 hub_tags:
   use_cases: [soar, soc_automation, phishing_investigations, threat_intel]
   keywords: [phishing, email]
