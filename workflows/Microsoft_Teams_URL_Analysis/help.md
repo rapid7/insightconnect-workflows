@@ -1,6 +1,6 @@
 # Description
 
-This workflow will scan a Microsoft Teams channel for `!check_url http://example.url`. When the workflow dectects a message matching that signature, it will automatically scan the url in VirusTotal and return the results to Microsoft Teams.
+This workflow will scan a Microsoft Teams channel for a specific message. When the workflow detects a message matching that signature, it will automatically scan the URL in VirusTotal and return the results to Microsoft Teams.
 
 # Key Features
 
@@ -21,6 +21,8 @@ API and account credentials for
 ## Setup
 
 Once the workflow has been downloaded, login to InsightConnect and “Import” it into the workflow builder. Once imported, you will initially be prompted to configure the connections for each of the plugins.
+
+To run the workflow, in the channel being monitored, type `!check_url http://www.google.com`. This will tell VirusTotal to go scan the given workflow and return the results to Teams. 
 
 ## Technical Details
 
