@@ -1,11 +1,11 @@
 {
   "kom": {
-    "komandVersion": "1.41.2-0-gff81e",
+    "komandVersion": "1.42.1-0-ge77fb",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2019-11-19T19:52:05.417819343Z",
+    "exportedAt": "2019-11-21T17:10:55.429957206Z",
     "workflowVersions": [
       {
-        "name": "Create Incidents from InsightVM's Top Remediations",
+        "name": "Create_Incidents_from_InsightVM's_Top_Remediations",
         "type": "runnable",
         "version": "",
         "description": "Create incidents in BMC Remedy ITSM based on InsightVM's top remediations.",
@@ -189,7 +189,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "A BMC ticket will be created. With the following information.\n\n\n{{#each [f7c975c7-d167-4580-8170-71eb9086ac97].[$item].[assets]}}\nHostname: {{hostName}}\nIP: {{ip}}\nOS: {{os}}\n{{/each}}\n---\n\nFix: {{[f7c975c7-d167-4580-8170-71eb9086ac97].[$item].[fix]}}\nRisk Score: {{[f7c975c7-d167-4580-8170-71eb9086ac97].[$item].[riskScore]}}\nSolution ID: {{[f7c975c7-d167-4580-8170-71eb9086ac97].[$item].[solutionId]}}\nSummary: {{[f7c975c7-d167-4580-8170-71eb9086ac97].[$item].[summary]}}\n"
+                "content": "A BMC ticket will be created. With the following information.\n\n\n{{#each [f7c975c7-d167-4580-8170-71eb9086ac97].[$item].[assets]}}\n{{#if [hostName]}}\nHostname: {{hostName}}\n{{/if}}\n{{#if [ip]}}\nIP: {{ip}}\n{{/if}}\n{{#if [os]}}\nOS: {{os}}\n{{/if}}\n{{/each}}\n---\n\nFix: {{[f7c975c7-d167-4580-8170-71eb9086ac97].[$item].[fix]}}\nRisk Score: {{[f7c975c7-d167-4580-8170-71eb9086ac97].[$item].[riskScore]}}\nSolution ID: {{[f7c975c7-d167-4580-8170-71eb9086ac97].[$item].[solutionId]}}\nSummary: {{[f7c975c7-d167-4580-8170-71eb9086ac97].[$item].[summary]}}\n"
               },
               "type": "markdown"
             },
