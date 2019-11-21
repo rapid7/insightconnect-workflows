@@ -19,7 +19,7 @@ This workflow will get the top remediations from InsightVM, and create a BMC Rem
 * Download the workflow or clone the repository `git clone https://github.com/rapid7/insightconnet-workflows.git`
 * Login to InsightConnect, and “Import” the .icon file into the workflow builder
 * Configure the connections for the InsightVM and BMC remedy ITSM
-* The Timers trigger step is set to run this workflow once a week on Sunday at 10AM change this if you want
+* The Timers trigger step is set to run this workflow once a week on Sunday at 10AM. Change this to your desired time interval.
 * The InsightVM top remediations action is set to pull the top 10 remediations. This can be changes to larger numbers if you want
 * The BMC remedy ITSM action requires inputs that are unique to your organisation.
 * Review and update the BMC remedy ITSM action inputs other than `Other Inputs` as needed
