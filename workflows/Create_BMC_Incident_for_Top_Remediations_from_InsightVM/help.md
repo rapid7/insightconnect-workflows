@@ -23,7 +23,7 @@ This workflow will get the top remediations from InsightVM, and create a BMC Rem
 * The InsightVM top remediations action is set to pull the top 10 remediations. This can be changed to as larger number if desired
 * The BMC remedy ITSM action requires inputs that are unique to your organisation
 * Review and update the BMC remedy ITSM action inputs other than `Other Inputs` as needed
-* Activate your workflow.
+* Activate your workflow
 
 
 ## Technical Details
