@@ -21,7 +21,7 @@ This workflow will get the top remediations from InsightVM and create a BMC Reme
 * Configure the connections for both InsightVM and BMC Remedy ITSM.
 * The Timers trigger step is set to run this workflow once a week on Sunday at 10AM. Change this to your desired time interval
 * The InsightVM Top Remediations action is set to pull the top ten remediations. This can be changed to a larger number if desired.
-* Configure BMC Remedy ITSM plugin action inputs as needed per your organization
+* Configure the BMC Remedy ITSM plugin action inputs within the workflow as needed per your organization.
 * Activate your workflow.
 
 ## Technical Details
