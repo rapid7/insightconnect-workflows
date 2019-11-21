@@ -5,7 +5,7 @@ This workflow will get the top remediations from InsightVM and create a BMC Reme
 # Key Features
 
 * Get the top remediations from InsightVM.
-* Create a BMC remedy ITSM Incident for each of the top remediations
+* Create a BMC Remedy ITSM Incident for each of the top remediations.
 
 # Requirements
 
