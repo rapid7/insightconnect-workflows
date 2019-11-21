@@ -2,7 +2,7 @@ extension: workflow
 products: [insightconnect]
 name: Create_BMC_Incident_for_Top_Remediations_from_InsightVM
 title: "Create BMC Incident for Top Remediations from InsightVM"
-description: "This workflow will get the top remediations from InsightVM, and create a BMC Remedy ITSM Incident for each remediation. The Incident will have details on the affected endpoints as well as the Fix and risk score."
+description: "This workflow will get the top remediations from InsightVM and create a BMC Remedy ITSM Incident for each one. The Incident will have details on the affected endpoints as well as the fix and risk score."
 version: 1.0.0
 vendor: rapid7
 support: rapid7
