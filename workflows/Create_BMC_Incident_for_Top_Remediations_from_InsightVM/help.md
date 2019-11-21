@@ -16,32 +16,30 @@ This workflow will get the top remediations from InsightVM, and create a BMC Rem
 
 ## Setup
 
-* Download the workflow or clone the repository `git clone https://github.com/rapid7/insightconnet-workflows.git`
-* Login to InsightConnect, and “Import” the .icon file into the workflow builder
-* Configure the connections for the InsightVM and BMC remedy ITSM
+* Download the workflow or clone the repository `git clone https://github.com/rapid7/insightconnet-workflows.git`.
+* Login to InsightConnect, and “Import” the .icon file into the workflow builder.
+* Configure the connections for both InsightVM and BMC remedy ITSM.
 * The Timers trigger step is set to run this workflow once a week on Sunday at 10AM. Change this to your desired time interval.
-* The InsightVM top remediations action is set to pull the top 10 remediations. This can be changes to larger numbers if you want
+* The InsightVM top remediations action is set to pull the top 10 remediations. This can be changed to as larger number if desired.
 * The BMC remedy ITSM action requires inputs that are unique to your organisation.
-* Review and update the BMC remedy ITSM action inputs other than `Other Inputs` as needed
-* Activate your workflow
+* Review and update the BMC remedy ITSM action inputs other than `Other Inputs` as needed.
+* Activate your workflow.
 
 
 ## Technical Details
 
-Plugins leveraged by workflow:
+Plugins utilized by workflow:
 
-* Timers 2.0.2
-* Datetime 2.0.3
-* Rapid7 InsightVM 3.5.0
-* Python 3 2.0.0
-* BMC Remedy ITSM 1.7.0
+|Plugin|Version|Count|
+|----|----|--------|
+|Timers|2.0.2|1|
+|Datetime|2.0.3|1|
+|Rapid7 InsightVM|3.5.0|1|
+|Python 3|2.0.0|1|
+|BMC Remedy ITSM|1.7.0|1|
 
 ## Troubleshooting
 
 # Links
-
-## Source Code
-
-https://github.com/rapid7/insightconnect-workflows
 
 ## References

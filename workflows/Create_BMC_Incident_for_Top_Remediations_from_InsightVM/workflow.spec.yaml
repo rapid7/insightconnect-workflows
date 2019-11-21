@@ -7,10 +7,6 @@ version: 1.0.0
 vendor: rapid7
 support: rapid7
 status: []
-tags:
-- insightvm
-- bmc
-- vulnerability management
 hub_tags:
   use_cases: []
   keywords: [insightvm, vulnerability management, bmc]
