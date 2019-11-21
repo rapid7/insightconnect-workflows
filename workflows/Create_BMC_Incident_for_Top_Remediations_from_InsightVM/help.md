@@ -1,6 +1,6 @@
 # Description
 
-This workflow will get the top remediations from InsightVM, and create a BMC Remedy ITSM Incident for each remediation. The Incident will have details on the affected endpoints as well as the fix and risk score.
+This workflow will get the top remediations from InsightVM and create a BMC Remedy ITSM Incident for each one. The Incident will have details on the affected endpoints as well as the fix and risk score.
 
 # Key Features
 
