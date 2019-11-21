@@ -9,7 +9,7 @@ This workflow will get the top remediations from InsightVM and create a BMC Reme
 
 # Requirements
 
-* An InsightVM instance that has run at least one scan. 
+* InsightVM instance that has run at least one scan. 
 * BMC Remedy ITSM 9.1.x server.
 
 # Documentation
