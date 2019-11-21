@@ -6,7 +6,7 @@ description: "This workflow will get the top remediations from InsightVM, and cr
 version: 1.0.0
 vendor: rapid7
 support: rapid7
-status: ["supported"]
+status: []
 tags:
 - insightvm
 - bmc
