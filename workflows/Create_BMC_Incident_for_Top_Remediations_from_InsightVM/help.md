@@ -24,7 +24,6 @@ This workflow will get the top remediations from InsightVM, and create a BMC Rem
 * Configure BMC Remedy ITSM plugin action inputs as needed per your organization
 * Activate your workflow.
 
-
 ## Technical Details
 
 Plugins utilized by workflow:
@@ -39,7 +38,8 @@ Plugins utilized by workflow:
 
 ## Troubleshooting
 
-_There is no troubleshooting information at this time_
+_There is no troubleshooting information at this time._
+
 # Links
 
 ## References
