@@ -9,7 +9,7 @@ support: rapid7
 status: []
 hub_tags:
   use_cases: [application_security, patch_management, remediation_prioritization, remediation_ticketing, soar]
-  keywords: [vulnerability management, bmc]
+  keywords: [bmc]
   features: []
 resources:
   source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Create_Incidents_from_InsightVM's_Top_Remediations.icon
