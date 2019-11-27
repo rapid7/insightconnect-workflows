@@ -1,6 +1,6 @@
 extension: workflow
 products: ["insightconnect"]
-name: Look Up URLs with Recorded Future
+name: Look_Up_URLs_with_Recorded_Future
 title: "Look Up URLs with Recorded Future"
 description: "This workflow enriches an IDR alert by performing a lookup on all URLs in the investigation with Recorded Future."
 version: 1.0.0
