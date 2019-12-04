@@ -1,5 +1,5 @@
 extension: workflow
-products: ["insightconnect"]
+products: [insightconnect, insightidr]
 name: Look_Up_IPs_with_Recorded_Future
 title: "Look Up IPs with Recorded Future"
 description: "This workflow enriches an IDR alert by performing a lookup on all IPs in the investigation with Recorded Future."
