@@ -8,7 +8,7 @@ vendor: rapid7
 support: rapid7
 status: []
 hub_tags:
-  use_cases: [soar, soc_automation, asset_containment, threat_detection_and_response]
+  use_cases: [threat_detection_and_response]
   keywords: [cb, hash, insightidr]
   features: []
 resources:
