@@ -15,17 +15,17 @@ resources:
   source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Office_365_Analysis
   license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
   screenshots:
-  - name: screenshots/Artifacts1.png
+  - name: Artifacts1.png
     title: Artifact Example 1
-  - name: screenshots/Artifacts2.png
+  - name: Artifacts2.png
     title: Artifact Example 2
-  - name: screenshots/Artifacts3.png
+  - name: Artifacts3.png
     title: Artifact Example 3
-  - name: screenshots/InsightConnect1.png
+  - name: InsightConnect1.png
     title: Workflow Example 1
-  - name: screenshots/InsightConnect2.png
+  - name: InsightConnect2.png
     title: Workflow Example 2
-  - name: screenshots/InsightConnect3.png
+  - name: InsightConnect3.png
     title: Workflow Example 3
-  - name: screenshots/InsightConnect4.png
+  - name: InsightConnect4.png
     title: Workflow Example 4 with Optional Remediation

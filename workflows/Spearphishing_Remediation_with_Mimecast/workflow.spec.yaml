@@ -15,13 +15,13 @@ resources:
   source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Spearphishing_Remediation_with_Mimecast
   license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
   screenshots:
-  - name: screenshots/artifact1.png
+  - name: artifact1.png
     title: Artifact Example 1
-  - name: screenshots/mimecast1.png
+  - name: mimecast1.png
     title: Mimecast Policy Configuration
-  - name: screenshots/mimecast2.png
+  - name: mimecast2.png
     title: Mimecast Managed URL Blocking
-  - name: screenshots/slack1.png
+  - name: slack1.png
     title: Slack Prompt 1
-  - name: screenshots/workflow1.png
+  - name: workflow1.png
     title: Workflow View 1
