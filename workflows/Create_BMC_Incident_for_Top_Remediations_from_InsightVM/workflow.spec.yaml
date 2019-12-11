@@ -18,6 +18,6 @@ resources:
   - name: artifact1.png
     title: Artifact Example
   - name: workflow1.png
-    title: Workflow View 2
+    title: Workflow View 1
   - name: workflow2.png
     title: Workflow View 2
