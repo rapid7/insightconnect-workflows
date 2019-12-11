@@ -14,3 +14,10 @@ hub_tags:
 resources:
   source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Create_Incidents_from_InsightVM's_Top_Remediations.icon
   license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+  - name: artifact1.png
+    title: Artifact Example
+  - name: workflow1.png
+    title: Workflow View 2
+  - name: workflow2.png
+    title: Workflow View 2
