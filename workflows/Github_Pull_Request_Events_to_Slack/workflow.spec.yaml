@@ -1,0 +1,20 @@
+extension: workflow
+products: ["insightconnect"]
+name: Github_pull_request_events_to_slack
+title: Github_pull_request_events_to_slack
+description: This workflow is designed to notify Github Pull Request Events to Slack.  Post messages directly into your Slack workspace in your preferred channels, private groups, or IM channels.
+            The way this works is that Github is configured to run a webhook each time a pull request event happens. This is configured in Github on the repo's settings page under webhooks. 
+            When this event occurs, Github will POST a body of information about the Pull Request to InsightConnect which will use that information to kick off the workflow and post a message 
+            in a Slack channel that a pull request has been open, closed, merged, etc.. This workflow allows the team to be easily notified when new code is up without having to go to Github 
+            and refresh the page.
+version: 1.0.0
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: []
+  keywords: []
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Github_Pull_Request_Events_to_Slack
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE

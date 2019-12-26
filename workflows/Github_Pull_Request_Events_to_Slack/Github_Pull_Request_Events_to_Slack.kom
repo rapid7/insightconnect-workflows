@@ -1,0 +1,1088 @@
+{
+  "kom": {
+    "komandVersion": "1.44.0-0-g34a71",
+    "komFileVersion": "2.0.0",
+    "exportedAt": "2019-12-24T20:21:16.798709742Z",
+    "workflowVersions": [
+      {
+        "name": "Github Pull Request Events to Slack",
+        "type": "runnable",
+        "version": "",
+        "description": "",
+        "graph": {
+          "edges": {
+            "0243a694-9c34-457a-b0f3-92540d476252": {
+              "id": "0243a694-9c34-457a-b0f3-92540d476252",
+              "name": "Labeled",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "e49e1647-c604-47d6-8308-2e601b8b0988",
+              "toNodeId": "b0330655-137c-4333-acfc-c2beb5de74d3"
+            },
+            "0a650483-4a46-4d0d-876b-4c5bc8e9838d": {
+              "id": "0a650483-4a46-4d0d-876b-4c5bc8e9838d",
+              "name": "Review Requested",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "e49e1647-c604-47d6-8308-2e601b8b0988",
+              "toNodeId": "da86abf8-3eed-4684-907d-71a60969bbca"
+            },
+            "1cfbdca6-f97c-4222-8f86-a153eaabb7d3": {
+              "id": "1cfbdca6-f97c-4222-8f86-a153eaabb7d3",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "13763dee-c6fa-4237-9b32-74c212075854",
+              "toNodeId": "d3a88ebf-39f8-44d7-8acb-3eee604ec8f6"
+            },
+            "30633343-869c-4d91-a3a4-daf31a222042": {
+              "id": "30633343-869c-4d91-a3a4-daf31a222042",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "da86abf8-3eed-4684-907d-71a60969bbca",
+              "toNodeId": ""
+            },
+            "3bd37e5b-07d6-46c0-9805-7802efe140d5": {
+              "id": "3bd37e5b-07d6-46c0-9805-7802efe140d5",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "073c618b-b4d8-4393-956a-34d875b4ac3b",
+              "toNodeId": ""
+            },
+            "3c2598b6-1e5f-4db8-b308-162d3f0a1454": {
+              "id": "3c2598b6-1e5f-4db8-b308-162d3f0a1454",
+              "name": "Open",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "e49e1647-c604-47d6-8308-2e601b8b0988",
+              "toNodeId": "f3d796e1-dddc-433a-9cc6-f0923935bb09"
+            },
+            "4dac4ee4-0c50-4fa1-827b-3f951a835ed3": {
+              "id": "4dac4ee4-0c50-4fa1-827b-3f951a835ed3",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "14e66cbb-67b8-4c67-8f2a-459be1681bd4",
+              "toNodeId": ""
+            },
+            "5774dc84-770e-4b58-9be7-c309538fcf74": {
+              "id": "5774dc84-770e-4b58-9be7-c309538fcf74",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "cac18b4a-ad98-40f9-b2dd-27f8f49cda28",
+              "toNodeId": "e49e1647-c604-47d6-8308-2e601b8b0988"
+            },
+            "8528e117-892a-4995-902b-521ebc4d34f3": {
+              "id": "8528e117-892a-4995-902b-521ebc4d34f3",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "d3a88ebf-39f8-44d7-8acb-3eee604ec8f6",
+              "toNodeId": "cac18b4a-ad98-40f9-b2dd-27f8f49cda28"
+            },
+            "8e2ef27e-e1dd-4a67-9524-771a47c0a4b9": {
+              "id": "8e2ef27e-e1dd-4a67-9524-771a47c0a4b9",
+              "name": "Closed",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "e49e1647-c604-47d6-8308-2e601b8b0988",
+              "toNodeId": "57442df7-9ff9-4488-8b34-4703a0c92fa0"
+            },
+            "968340bc-848d-4eee-85ab-4e3f10f0a3ab": {
+              "id": "968340bc-848d-4eee-85ab-4e3f10f0a3ab",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "f3d796e1-dddc-433a-9cc6-f0923935bb09",
+              "toNodeId": ""
+            },
+            "bebb05c5-dff8-41b7-aebc-6290d993b8a7": {
+              "id": "bebb05c5-dff8-41b7-aebc-6290d993b8a7",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "b0330655-137c-4333-acfc-c2beb5de74d3",
+              "toNodeId": "073c618b-b4d8-4393-956a-34d875b4ac3b"
+            },
+            "cbdbcbf2-aff9-49f6-8c42-2a01bd51761b": {
+              "id": "cbdbcbf2-aff9-49f6-8c42-2a01bd51761b",
+              "name": "Merged",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "e49e1647-c604-47d6-8308-2e601b8b0988",
+              "toNodeId": "14e66cbb-67b8-4c67-8f2a-459be1681bd4"
+            },
+            "cc71215d-78c3-4132-83c5-ac650e6d0785": {
+              "id": "cc71215d-78c3-4132-83c5-ac650e6d0785",
+              "name": "Other",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "e49e1647-c604-47d6-8308-2e601b8b0988",
+              "toNodeId": ""
+            },
+            "e93f88a5-7b57-4676-b559-327641454f80": {
+              "id": "e93f88a5-7b57-4676-b559-327641454f80",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "57442df7-9ff9-4488-8b34-4703a0c92fa0",
+              "toNodeId": ""
+            }
+          },
+          "nodes": {
+            "073c618b-b4d8-4393-956a-34d875b4ac3b": {
+              "id": "073c618b-b4d8-4393-956a-34d875b4ac3b",
+              "parentNodeId": ""
+            },
+            "13763dee-c6fa-4237-9b32-74c212075854": {
+              "id": "13763dee-c6fa-4237-9b32-74c212075854",
+              "parentNodeId": ""
+            },
+            "14e66cbb-67b8-4c67-8f2a-459be1681bd4": {
+              "id": "14e66cbb-67b8-4c67-8f2a-459be1681bd4",
+              "parentNodeId": ""
+            },
+            "57442df7-9ff9-4488-8b34-4703a0c92fa0": {
+              "id": "57442df7-9ff9-4488-8b34-4703a0c92fa0",
+              "parentNodeId": ""
+            },
+            "b0330655-137c-4333-acfc-c2beb5de74d3": {
+              "id": "b0330655-137c-4333-acfc-c2beb5de74d3",
+              "parentNodeId": ""
+            },
+            "cac18b4a-ad98-40f9-b2dd-27f8f49cda28": {
+              "id": "cac18b4a-ad98-40f9-b2dd-27f8f49cda28",
+              "parentNodeId": ""
+            },
+            "d3a88ebf-39f8-44d7-8acb-3eee604ec8f6": {
+              "id": "d3a88ebf-39f8-44d7-8acb-3eee604ec8f6",
+              "parentNodeId": ""
+            },
+            "da86abf8-3eed-4684-907d-71a60969bbca": {
+              "id": "da86abf8-3eed-4684-907d-71a60969bbca",
+              "parentNodeId": ""
+            },
+            "e49e1647-c604-47d6-8308-2e601b8b0988": {
+              "id": "e49e1647-c604-47d6-8308-2e601b8b0988",
+              "parentNodeId": ""
+            },
+            "f3d796e1-dddc-433a-9cc6-f0923935bb09": {
+              "id": "f3d796e1-dddc-433a-9cc6-f0923935bb09",
+              "parentNodeId": ""
+            }
+          }
+        },
+        "steps": {
+          "073c618b-b4d8-4393-956a-34d875b4ac3b": {
+            "nodeId": "073c618b-b4d8-4393-956a-34d875b4ac3b",
+            "name": "Post Review Label Message",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": "@here We need :eyes: on {{[13763dee-c6fa-4237-9b32-74c212075854].[pull_request].[title]}}\nURL: {{[13763dee-c6fa-4237-9b32-74c212075854].[pull_request].[html_url]}}",
+                "recipient": "#komand-test"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 3,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 2,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
+          },
+          "13763dee-c6fa-4237-9b32-74c212075854": {
+            "nodeId": "13763dee-c6fa-4237-9b32-74c212075854",
+            "name": "Github Pull Request Webhook",
+            "type": "trigger",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "triggerId": "8ec72660-f2c4-417e-afab-ad3c6942bf16",
+            "defaultInputJSONSchema": {
+              "definitions": {
+                "label": {
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "pull_request": {
+                  "properties": {
+                    "html_url": {
+                      "type": "string"
+                    },
+                    "merged": {
+                      "type": "boolean"
+                    },
+                    "merged_at": {
+                      "type": "string"
+                    },
+                    "state": {
+                      "type": "string"
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "user": {
+                      "$ref": "#/definitions/user"
+                    }
+                  },
+                  "type": "object"
+                },
+                "requested_reviewer": {
+                  "properties": {
+                    "login": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "user": {
+                  "properties": {
+                    "login": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "action": {
+                  "type": "string"
+                },
+                "label": {
+                  "$ref": "#/definitions/label"
+                },
+                "number": {
+                  "type": "integer"
+                },
+                "pull_request": {
+                  "$ref": "#/definitions/pull_request"
+                },
+                "requested_reviewer": {
+                  "$ref": "#/definitions/requested_reviewer"
+                }
+              },
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "label": {
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "pull_request": {
+                  "properties": {
+                    "html_url": {
+                      "type": "string"
+                    },
+                    "merged": {
+                      "type": "boolean"
+                    },
+                    "merged_at": {
+                      "type": "string"
+                    },
+                    "state": {
+                      "type": "string"
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "user": {
+                      "$ref": "#/definitions/user"
+                    }
+                  },
+                  "type": "object"
+                },
+                "requested_reviewer": {
+                  "properties": {
+                    "login": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "user": {
+                  "properties": {
+                    "login": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "action": {
+                  "type": "string"
+                },
+                "label": {
+                  "$ref": "#/definitions/label"
+                },
+                "number": {
+                  "type": "integer"
+                },
+                "pull_request": {
+                  "$ref": "#/definitions/pull_request"
+                },
+                "requested_reviewer": {
+                  "$ref": "#/definitions/requested_reviewer"
+                }
+              },
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/trigger-api.svg",
+            "connectionType": "NONE"
+          },
+          "14e66cbb-67b8-4c67-8f2a-459be1681bd4": {
+            "nodeId": "14e66cbb-67b8-4c67-8f2a-459be1681bd4",
+            "name": "Post Merged Message",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": ":mergd: Merged PR *{{[13763dee-c6fa-4237-9b32-74c212075854].[pull_request].[title]}}* by @{{[cac18b4a-ad98-40f9-b2dd-27f8f49cda28].[pr_slack_user]}}\n\n{{#equal [Github Pull Request Webhook].[pull_request].[user].[login] \"jschipp-r7\"}}\nSmashing PR's in the gym :weight_lifter: and merging :mergd: them at work.\n{{/equal}}\nURL: {{[13763dee-c6fa-4237-9b32-74c212075854].[pull_request].[html_url]}}\nTime: {{[13763dee-c6fa-4237-9b32-74c212075854].[pull_request].[merged_at]}}\n:komand: :fire: :fire: :fire: :komand:",
+                "recipient": "#komand-test"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 3,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 2,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
+          },
+          "57442df7-9ff9-4488-8b34-4703a0c92fa0": {
+            "nodeId": "57442df7-9ff9-4488-8b34-4703a0c92fa0",
+            "name": "Post Closed Message",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": ":door: Closed PR *{{[13763dee-c6fa-4237-9b32-74c212075854].[pull_request].[title]}}* by @{{[cac18b4a-ad98-40f9-b2dd-27f8f49cda28].[pr_slack_user]}}\n\nURL: {{[13763dee-c6fa-4237-9b32-74c212075854].[pull_request].[html_url]}}",
+                "recipient": "#komand-test"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 3,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 2,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
+          },
+          "b0330655-137c-4333-acfc-c2beb5de74d3": {
+            "nodeId": "b0330655-137c-4333-acfc-c2beb5de74d3",
+            "name": "Check Label",
+            "type": "filter",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "stepControlParam": {
+                "edgeId": "bebb05c5-dff8-41b7-aebc-6290d993b8a7",
+                "expression": {
+                  "left": {
+                    "name": "13763dee-c6fa-4237-9b32-74c212075854.label.name",
+                    "type": "variable"
+                  },
+                  "op": "contains",
+                  "right": {
+                    "type": "literal",
+                    "value": "reviewer"
+                  },
+                  "type": "binary"
+                },
+                "expressionText": "({{[13763dee-c6fa-4237-9b32-74c212075854].[label].[name]}} contains \"reviewer\")"
+              },
+              "stopOnMatch": false
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/filter.svg",
+            "connectionType": "NONE"
+          },
+          "cac18b4a-ad98-40f9-b2dd-27f8f49cda28": {
+            "nodeId": "cac18b4a-ad98-40f9-b2dd-27f8f49cda28",
+            "name": "Strip -R7 from Github User",
+            "type": "action",
+            "plugin": {
+              "name": "Python 2 Script",
+              "slugVendor": "rapid7",
+              "slugName": "python_2_script",
+              "slugVersion": "2.0.3",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/python_2_script/2.0.3/icon.png"
+            },
+            "identifier": "run",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "function": "def run(params={}):\n    pr_slack_user = params.get('pr_github_user').rstrip('-r7')\n    review_slack_user = params.get('review_github_user').rstrip('-r7')\n    return { \"pr_slack_user\": pr_slack_user, \"review_slack_user\": review_slack_user }",
+                "input": {
+                  "pr_github_user": "{{[13763dee-c6fa-4237-9b32-74c212075854].[pull_request].[user].[login]}}",
+                  "review_github_user": "{{[13763dee-c6fa-4237-9b32-74c212075854].[requested_reviewer].[login]}}"
+                }
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "function": {
+                  "default": "def run(params={}):\n    return { 'result1': 'foo', 'result2': 'bar' }",
+                  "description": "Function definition. Must be named `run`. Accepts the `input` object as params. Returns the dict as output",
+                  "displayType": "python",
+                  "format": "python",
+                  "order": 1,
+                  "title": "Function",
+                  "type": "string"
+                },
+                "input": {
+                  "description": "Input object to be passed as `params={}` to the `run` function",
+                  "order": 2,
+                  "title": "Input",
+                  "type": "object"
+                }
+              },
+              "required": [
+                "function"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "result1": {
+                  "description": "Sample output result1 (delete or edit)",
+                  "order": 1,
+                  "title": "Result1",
+                  "type": "string"
+                },
+                "result2": {
+                  "description": "Sample output result2 (delete or edit)",
+                  "order": 2,
+                  "title": "Result2",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": {
+              "definitions": {},
+              "properties": {
+                "pr_slack_user": {
+                  "description": "Sample output result1 (delete or edit)",
+                  "order": 1,
+                  "title": "Result1",
+                  "type": "string"
+                },
+                "review_slack_user": {
+                  "description": "Sample output result2 (delete or edit)",
+                  "order": 2,
+                  "title": "Result2",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR"
+          },
+          "d3a88ebf-39f8-44d7-8acb-3eee604ec8f6": {
+            "nodeId": "d3a88ebf-39f8-44d7-8acb-3eee604ec8f6",
+            "name": "Pull Request Summary",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "Action: {{[13763dee-c6fa-4237-9b32-74c212075854].[action]}}\nNumber: {{[13763dee-c6fa-4237-9b32-74c212075854].[pull_request].[title]}}\nUrl:{{[13763dee-c6fa-4237-9b32-74c212075854].[pull_request].[html_url]}}\nTitle: {{[13763dee-c6fa-4237-9b32-74c212075854].[pull_request].[title]}}\nState: {{[13763dee-c6fa-4237-9b32-74c212075854].[pull_request].[state]}}\nMerged At: {{[13763dee-c6fa-4237-9b32-74c212075854].[pull_request].[merged_at]}}\nBy: {{[13763dee-c6fa-4237-9b32-74c212075854].[pull_request].[user].[login]}}"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "da86abf8-3eed-4684-907d-71a60969bbca": {
+            "nodeId": "da86abf8-3eed-4684-907d-71a60969bbca",
+            "name": "Post Review Request Message",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": ":eyes: @{{[cac18b4a-ad98-40f9-b2dd-27f8f49cda28].[pr_slack_user]}} your review has been requested on {{[13763dee-c6fa-4237-9b32-74c212075854].[pull_request].[title]}}",
+                "recipient": "#komand-test"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 3,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 2,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
+          },
+          "e49e1647-c604-47d6-8308-2e601b8b0988": {
+            "nodeId": "e49e1647-c604-47d6-8308-2e601b8b0988",
+            "name": "Action Type",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "cc71215d-78c3-4132-83c5-ac650e6d0785",
+              "stepControlParams": [
+                {
+                  "edgeId": "8e2ef27e-e1dd-4a67-9524-771a47c0a4b9",
+                  "expression": {
+                    "left": {
+                      "left": {
+                        "name": "13763dee-c6fa-4237-9b32-74c212075854.action",
+                        "type": "variable"
+                      },
+                      "op": "=",
+                      "right": {
+                        "type": "literal",
+                        "value": "closed"
+                      },
+                      "type": "binary"
+                    },
+                    "op": "AND",
+                    "right": {
+                      "left": {
+                        "name": "13763dee-c6fa-4237-9b32-74c212075854.pull_request.merged",
+                        "type": "variable"
+                      },
+                      "op": "=",
+                      "right": {
+                        "type": "literal",
+                        "value": false
+                      },
+                      "type": "binary"
+                    },
+                    "type": "binary"
+                  },
+                  "expressionText": "({{[13763dee-c6fa-4237-9b32-74c212075854].[action]}} = \"closed\" AND {{[13763dee-c6fa-4237-9b32-74c212075854].[pull_request].[merged]}} = false)"
+                },
+                {
+                  "edgeId": "3c2598b6-1e5f-4db8-b308-162d3f0a1454",
+                  "expression": {
+                    "left": {
+                      "name": "13763dee-c6fa-4237-9b32-74c212075854.action",
+                      "type": "variable"
+                    },
+                    "op": "=",
+                    "right": {
+                      "type": "literal",
+                      "value": "opened"
+                    },
+                    "type": "binary"
+                  },
+                  "expressionText": "({{[13763dee-c6fa-4237-9b32-74c212075854].[action]}} =\"opened\"\n)"
+                },
+                {
+                  "edgeId": "cbdbcbf2-aff9-49f6-8c42-2a01bd51761b",
+                  "expression": {
+                    "left": {
+                      "left": {
+                        "name": "13763dee-c6fa-4237-9b32-74c212075854.action",
+                        "type": "variable"
+                      },
+                      "op": "=",
+                      "right": {
+                        "type": "literal",
+                        "value": "closed"
+                      },
+                      "type": "binary"
+                    },
+                    "op": "AND",
+                    "right": {
+                      "left": {
+                        "name": "13763dee-c6fa-4237-9b32-74c212075854.pull_request.merged",
+                        "type": "variable"
+                      },
+                      "op": "=",
+                      "right": {
+                        "type": "literal",
+                        "value": true
+                      },
+                      "type": "binary"
+                    },
+                    "type": "binary"
+                  },
+                  "expressionText": "({{[13763dee-c6fa-4237-9b32-74c212075854].[action]}} = \"closed\" AND {{[13763dee-c6fa-4237-9b32-74c212075854].[pull_request].[merged]}} = true)"
+                },
+                {
+                  "edgeId": "cc71215d-78c3-4132-83c5-ac650e6d0785",
+                  "expression": {},
+                  "expressionText": ""
+                },
+                {
+                  "edgeId": "0a650483-4a46-4d0d-876b-4c5bc8e9838d",
+                  "expression": {
+                    "left": {
+                      "name": "13763dee-c6fa-4237-9b32-74c212075854.action",
+                      "type": "variable"
+                    },
+                    "op": "=",
+                    "right": {
+                      "type": "literal",
+                      "value": "review_requested"
+                    },
+                    "type": "binary"
+                  },
+                  "expressionText": "({{[13763dee-c6fa-4237-9b32-74c212075854].[action]}} = \"review_requested\")"
+                },
+                {
+                  "edgeId": "0243a694-9c34-457a-b0f3-92540d476252",
+                  "expression": {
+                    "left": {
+                      "name": "13763dee-c6fa-4237-9b32-74c212075854.action",
+                      "type": "variable"
+                    },
+                    "op": "=",
+                    "right": {
+                      "type": "literal",
+                      "value": "labeled"
+                    },
+                    "type": "binary"
+                  },
+                  "expressionText": "({{[13763dee-c6fa-4237-9b32-74c212075854].[action]}} = \"labeled\")"
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          },
+          "f3d796e1-dddc-433a-9cc6-f0923935bb09": {
+            "nodeId": "f3d796e1-dddc-433a-9cc6-f0923935bb09",
+            "name": "Post Open Message",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": ":pullrequest: New PR *{{[13763dee-c6fa-4237-9b32-74c212075854].[pull_request].[title]}}* by @{{[cac18b4a-ad98-40f9-b2dd-27f8f49cda28].[pr_slack_user]}}\n\nURL: {{[13763dee-c6fa-4237-9b32-74c212075854].[pull_request].[html_url]}}\n\nNice, now let's get that PR assessment up! :percy: :eyes:",
+                "recipient": "#komand-test"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 3,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 2,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
+          }
+        },
+        "tags": null,
+        "humanCostSeconds": 0,
+        "humanCostDisplayUnit": ""
+      }
+    ],
+    "triggers": [
+      {
+        "id": "8ec72660-f2c4-417e-afab-ad3c6942bf16",
+        "name": "Github Pull Request Webhook",
+        "description": "",
+        "input": null,
+        "inputJsonSchema": {
+          "definitions": {
+            "label": {
+              "properties": {
+                "name": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "pull_request": {
+              "properties": {
+                "html_url": {
+                  "type": "string"
+                },
+                "merged": {
+                  "type": "boolean"
+                },
+                "merged_at": {
+                  "type": "string"
+                },
+                "state": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "user": {
+                  "$ref": "#/definitions/user"
+                }
+              },
+              "type": "object"
+            },
+            "requested_reviewer": {
+              "properties": {
+                "login": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "user": {
+              "properties": {
+                "login": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          },
+          "properties": {
+            "action": {
+              "type": "string"
+            },
+            "label": {
+              "$ref": "#/definitions/label"
+            },
+            "number": {
+              "type": "integer"
+            },
+            "pull_request": {
+              "$ref": "#/definitions/pull_request"
+            },
+            "requested_reviewer": {
+              "$ref": "#/definitions/requested_reviewer"
+            }
+          },
+          "type": "object"
+        },
+        "outputJsonSchema": {
+          "definitions": {
+            "label": {
+              "properties": {
+                "name": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "pull_request": {
+              "properties": {
+                "html_url": {
+                  "type": "string"
+                },
+                "merged": {
+                  "type": "boolean"
+                },
+                "merged_at": {
+                  "type": "string"
+                },
+                "state": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "user": {
+                  "$ref": "#/definitions/user"
+                }
+              },
+              "type": "object"
+            },
+            "requested_reviewer": {
+              "properties": {
+                "login": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "user": {
+              "properties": {
+                "login": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          },
+          "properties": {
+            "action": {
+              "type": "string"
+            },
+            "label": {
+              "$ref": "#/definitions/label"
+            },
+            "number": {
+              "type": "integer"
+            },
+            "pull_request": {
+              "$ref": "#/definitions/pull_request"
+            },
+            "requested_reviewer": {
+              "$ref": "#/definitions/requested_reviewer"
+            }
+          },
+          "type": "object"
+        },
+        "tags": [],
+        "type": "trigger_api"
+      }
+    ]
+  }
+}
