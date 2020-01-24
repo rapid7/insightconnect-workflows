@@ -2,8 +2,6 @@
 
 This workflow isolates a sensor in Carbon Black Response from an event in InsightIDR.
 
-[Quarantine an Asset Help Documentation](https://insightidr.help.rapid7.com/docs/quarantine-an-asset)
-
 # Key Features
 
 * Isolate compromised asset
@@ -14,6 +12,8 @@ This workflow isolates a sensor in Carbon Black Response from an event in Insigh
 * API and account credentials for Carbon Black Response
 
 # Documentation
+
+* [Quarantine an Asset Help Documentation](https://insightidr.help.rapid7.com/docs/quarantine-an-asset)
 
 ## Setup
 
