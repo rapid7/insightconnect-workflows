@@ -45,3 +45,4 @@ _There is no troubleshooting information at this time_
 ## References
 
 * [Carbon Black Response API Documentation](https://developer.carbonblack.com/reference/enterprise-response/6.1/rest-api/)
+* [Quarantine an Asset Help Documentation](https://insightidr.help.rapid7.com/docs/quarantine-an-asset)
