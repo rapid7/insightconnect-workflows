@@ -1,0 +1,29 @@
+extension: workflow
+products: ["insightconnect"]
+name: InsightVM_Top_25_Remediations_to_ServiceNow
+title: "IVM Top Remediations to ServiceNow"
+description: "This workflow creates solution-based tickets in ServiceNow for each of the top 25 remediations in InsightVM.  If there is already a ticket open for a given remediation, the workflow updates the existing ticket with a current list of impacted assets."
+version: 1.0.0
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [vulnerability_management]
+  keywords: [insightvm, servicenow, vulnerability_management]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/InsightVM_Top_25_Remediations_to_ServiceNOW
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+  - name: artifact_example_1.png
+    title: Artifact Example 1
+  - name: artifact_example_2.png
+    title: Artifact Example 2
+  - name: snow_example_1.png
+    title: ServiceNow Example 1
+  - name: snow_example_2.png
+    title: ServiceNow Example 2
+  - name: workflow_example_1.png
+    title: Workflow Example 1
+  - name: workflow_example_2.png
+    title: Workflow Example 2
