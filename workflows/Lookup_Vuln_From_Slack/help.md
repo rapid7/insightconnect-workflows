@@ -10,6 +10,7 @@ Sample Slack Trigger Commands:
 
 `@Slack bot vuln check heartbleed vmware`
 
+
 # Key Features
 
 * Lookup vulnerability information from Slack
