@@ -3,7 +3,7 @@
 This workflow accepts a Slack command containing a CVE ID or vulnerability keyword(s), looks up the vulnerability in Rapid7's vulnerability database, and posts the vulnerability details back to the same Slack channel.
 
 Sample Slack Trigger Commands: 
-@Slack bot vuln check CVE-2020-0674
+`@Slack bot vuln check CVE-2020-0674`
 @Slack bot vuln check heartbleed
 @Slack bot vuln check heartbleed vmware
 
