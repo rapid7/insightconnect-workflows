@@ -21,7 +21,7 @@ Sample Slack Trigger Commands:
 
 ## Setup
 
-Once the workflow has been imported, edit the workflow and setup or select your Slack connection in the _Vuln Check Slack Trigger_ step, the _Searching Notification_ step, the _Post to Slack_ step, and the _Post to Slack 2_ step inside the _Loop over URLs_ loop.
+Once the workflow has been imported, edit the workflow and setup or select your Slack connection in the _Vuln Check Slack Trigger_ step, the _Searching Notification_ step, the _Post to Slack_ step, and the _Post to Slack (multiple results loop)_ step inside the _Loop over URLs_ loop.
 
 To run the workflow, @ your Slackbot in any channel or in a direct message along with the command "vuln check <vulnerability>". The workflow will post responses in a thread.
 
