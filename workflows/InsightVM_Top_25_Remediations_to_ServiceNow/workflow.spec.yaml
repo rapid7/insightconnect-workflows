@@ -17,8 +17,6 @@ resources:
   screenshots:
   - name: artifact_example_1.png
     title: Artifact Example 1
-  - name: artifact_example_2.png
-    title: Artifact Example 2
   - name: snow_example_1.png
     title: ServiceNow Example 1
   - name: snow_example_2.png
