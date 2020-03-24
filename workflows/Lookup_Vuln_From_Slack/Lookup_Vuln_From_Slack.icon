@@ -2,7 +2,7 @@
   "kom": {
     "komandVersion": "1.47.8-0-gaccae",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-03-18T21:26:29.003879635Z",
+    "exportedAt": "2020-03-24T02:44:25.175939484Z",
     "workflowVersions": [
       {
         "name": "Lookup Vulnerability from Slack",
@@ -113,7 +113,7 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "29a44d5d-00a5-4850-b997-a21c2fc36751",
-              "toNodeId": ""
+              "toNodeId": "928d1b48-5aad-48c6-9a71-a083ae773252"
             },
             "9fd9b028-abfa-49cb-ba52-e673ff26217a": {
               "id": "9fd9b028-abfa-49cb-ba52-e673ff26217a",
@@ -134,7 +134,7 @@
             "c20b633e-f9ed-4a8b-9f11-83e37e42364c": {
               "id": "c20b633e-f9ed-4a8b-9f11-83e37e42364c",
               "name": "Vulnerability Found",
-              "description": "If the CVE identifier matches a vulnerability in the Rapid7 database, then proceed with the workflow.",
+              "description": "If the CVE identifier matches a vulnerability in the Rapd7 database, then proceed with the workflow.",
               "parentNodeId": "",
               "fromNodeId": "931acedc-cff6-4f18-b348-3ff465c997c1",
               "toNodeId": "bd9b29e1-0809-49bb-ac3d-5d084ea71925"
@@ -169,6 +169,22 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "f7e75872-0a9a-4632-83eb-6f4ff0f322cf",
+              "toNodeId": "96595b57-5f52-4c1b-b0c2-6c00fbac4c96"
+            },
+            "ef2946e6-9ee4-4ff3-b80f-521e38eed154": {
+              "id": "ef2946e6-9ee4-4ff3-b80f-521e38eed154",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "96595b57-5f52-4c1b-b0c2-6c00fbac4c96",
+              "toNodeId": ""
+            },
+            "f345ec0a-d82b-4c94-808c-c867b4f8a5ac": {
+              "id": "f345ec0a-d82b-4c94-808c-c867b4f8a5ac",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "928d1b48-5aad-48c6-9a71-a083ae773252",
               "toNodeId": ""
             },
             "fb828861-fe7c-4ac3-ab03-9da0a3017833": {
@@ -221,8 +237,16 @@
               "id": "919c2297-d695-4af5-b29c-d099a0fb07a1",
               "parentNodeId": "29a44d5d-00a5-4850-b997-a21c2fc36751"
             },
+            "928d1b48-5aad-48c6-9a71-a083ae773252": {
+              "id": "928d1b48-5aad-48c6-9a71-a083ae773252",
+              "parentNodeId": ""
+            },
             "931acedc-cff6-4f18-b348-3ff465c997c1": {
               "id": "931acedc-cff6-4f18-b348-3ff465c997c1",
+              "parentNodeId": ""
+            },
+            "96595b57-5f52-4c1b-b0c2-6c00fbac4c96": {
+              "id": "96595b57-5f52-4c1b-b0c2-6c00fbac4c96",
               "parentNodeId": ""
             },
             "aa8aef01-53a9-436c-9bca-d6a25121c028": {
@@ -951,6 +975,24 @@
             "defaultImageData": "",
             "connectionType": "ORCHESTRATOR"
           },
+          "928d1b48-5aad-48c6-9a71-a083ae773252": {
+            "nodeId": "928d1b48-5aad-48c6-9a71-a083ae773252",
+            "name": "Final Report (multiple results loop)",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "# Trigger\n_{{[8b5f067d-03aa-4d9e-a06b-5ad7dda77b99].[message].[user]}}_ started Vuln Check from Slack workflow with search term _{{[61855db7-9d9e-46ab-8176-6e18cd3d8299].[argument]}}_ in the _{{[8b5f067d-03aa-4d9e-a06b-5ad7dda77b99].[message].[channel]}}_ channel at _{{[8b5f067d-03aa-4d9e-a06b-5ad7dda77b99].[timestamp]}}_. \n\n# Search Results\n_{{[61855db7-9d9e-46ab-8176-6e18cd3d8299].[argument]}}_ yielded the following search results in Rapid7's Vulnerability Database:\n{{#each [e2c1efab-3959-44b2-b245-34201728c59d].[search_results]}}\n{{this.[title]}}\n{{/each}}\n\n# Outcome\nWorkflow posted vulnerability details to Slack channel _{{[8b5f067d-03aa-4d9e-a06b-5ad7dda77b99].[message].[channel]}}_."
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
           "931acedc-cff6-4f18-b348-3ff465c997c1": {
             "nodeId": "931acedc-cff6-4f18-b348-3ff465c997c1",
             "name": "Vulnerability Found?",
@@ -987,6 +1029,24 @@
             "defaultOutputJSONSchema": null,
             "outputJSONSchema": null,
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          },
+          "96595b57-5f52-4c1b-b0c2-6c00fbac4c96": {
+            "nodeId": "96595b57-5f52-4c1b-b0c2-6c00fbac4c96",
+            "name": "Final Report",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "# Trigger\n_{{[8b5f067d-03aa-4d9e-a06b-5ad7dda77b99].[message].[user]}}_ started Vuln Check from Slack workflow with search term _{{[61855db7-9d9e-46ab-8176-6e18cd3d8299].[argument]}}_ in the _{{[8b5f067d-03aa-4d9e-a06b-5ad7dda77b99].[message].[channel]}}_ channel at _{{[8b5f067d-03aa-4d9e-a06b-5ad7dda77b99].[timestamp]}}_. \n\n# Search Results\n_{{[61855db7-9d9e-46ab-8176-6e18cd3d8299].[argument]}}_ yielded the following search results in Rapid7's Vulnerability Database:\n{{[e2c1efab-3959-44b2-b245-34201728c59d].[search_results].[0].[title]}}\n\n# Outcome\nWorkflow posted vulnerability details to Slack channel _{{[f7e75872-0a9a-4632-83eb-6f4ff0f322cf].[channel_id]}}_."
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
             "connectionType": "NONE"
           },
           "aa8aef01-53a9-436c-9bca-d6a25121c028": {
