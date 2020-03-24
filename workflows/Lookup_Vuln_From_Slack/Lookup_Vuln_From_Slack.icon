@@ -5,7 +5,7 @@
     "exportedAt": "2020-03-18T21:26:29.003879635Z",
     "workflowVersions": [
       {
-        "name": "Lookup Vulnerability Info from Slack",
+        "name": "Lookup Vulnerability from Slack",
         "type": "runnable",
         "version": "",
         "description": "This workflow accepts a Slack command containing a CVE ID or vulnerability keyword(s), looks up the vulnerability in Rapid7's vulnerability database, and posts the vulnerability details back to the same Slack channel.\n\nSample Slack Trigger Commands: \nvuln check CVE-2020-0674\nvuln check heartbleed\nvuln check heartbleed vmware\n\nRapid7 Vulnerability Database: https://www.rapid7.com/db",

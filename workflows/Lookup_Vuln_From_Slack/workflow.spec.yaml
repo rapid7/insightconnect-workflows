@@ -16,4 +16,12 @@ resources:
   license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
   screenshots:
   - name: workflow1.png
-    title: Full Workflow View
+    title: Workflow View
+  - name: job1.png
+    title: Successful Workflow Job
+  - name: job2.png
+    title: Completed Job In Slack, One Result
+  - name: job3.png
+    title: Completed Job In Slack, Multiple Results
+  - name: artifact1.png
+    title: Final Report Artifact
