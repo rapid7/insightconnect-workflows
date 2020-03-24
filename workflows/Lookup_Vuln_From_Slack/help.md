@@ -46,6 +46,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.1.0 - Updated workflow to work with v2.0.2 of the Rapid7 Vulnerability & Exploit Database plugin | Added a Final Report workflow artifact including a summary of workflow results
 * 1.0.0 - Initial workflow
 
 # Links
