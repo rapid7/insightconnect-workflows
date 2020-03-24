@@ -134,7 +134,7 @@
             "c20b633e-f9ed-4a8b-9f11-83e37e42364c": {
               "id": "c20b633e-f9ed-4a8b-9f11-83e37e42364c",
               "name": "Vulnerability Found",
-              "description": "If the CVE identifier matches a vulnerability in the Rapd7 database, then proceed with the workflow.",
+              "description": "If the CVE identifier matches a vulnerability in the Rapid7 database, then proceed with the workflow.",
               "parentNodeId": "",
               "fromNodeId": "931acedc-cff6-4f18-b348-3ff465c997c1",
               "toNodeId": "bd9b29e1-0809-49bb-ac3d-5d084ea71925"
