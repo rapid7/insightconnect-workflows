@@ -1,43 +1,38 @@
 # InsightConnect Workflows
 
-A repository for sharing InsightConnect workflows. Find existing automations as well as share yours!
+A repository for sharing automation workflows for Rapid7's SOAR product, InsightConnect.
 
-If you have questions, reach out to us at `IntegrationAlliance@rapid7.com`.
+Automation workflows can be found at: https://extensions.rapid7.com/?types=workflow
 
-![Workflow](./imgs/workflow.png)
+Help documentation for InsightConnect can be found at: https://insightconnect.help.rapid7.com/docs
 
-### Table of Contents
+General information on InsightConnect is available at: https://rapid7.com/products/insightconnect
 
-1. [Getting Started](#getting-started)
-2. [Contributing](#contributing)
 
-### Getting Started
+![InsightConnect](./imgs/insightconnect.png)
 
-See the documentation on building workflows in [InsightConnect](https://insightconnect.help.rapid7.com/docs/).
 
-1. Build your workflow in InsightConnect
-2. Export the intended workflow from the Workflows page
-![Workflow](./imgs/export.png)
-3. Create a PR of the workflow including screenshots demonstrating its use
-4. Add documentation in `help.md` and a `workflow.spec.yaml` file to define the workflow for release
+## Contributing Workflows to the Rapid7 Extension Library
 
-Organize using the following directory structure:
+To learn more about contributing to the (Rapid7 Extension Library)[https://extensions.rapid7.com], see the (Contributor's Guide)[./CONTRIBUTING] on GitHub. The guide walks through the whole process, from exporting your workflow to entering listing details to submitting a pull request.
 
+
+At a high level, contributing a workflow involves:
+1. Building and testing your workflow
+2. Preparing your workflow package
+3. Submitting a pull request
+
+
+Workflow packages are organized according to the following directory structure:
 ```
 └── workflows
-    └── Basic_Domain_Enrichment_Report
-        ├── Basic_Domain_Enrichment_Report.icon
+    └── Name_Of_Workflow
+        ├── Name_Of_Workflow.icon
         ├── help.md
         ├── workflow.spec.yaml
         └── screenshots
             ├── artifact1.png
-            ├── artifact2.png
-            ├── workflow1.png
-            └── workflow2.png
+            ├── job1.png
+            └── workflow1.png
 ```
 
-For contributions, follow the [PR Template Checklist](./.github/PULL_REQUEST_TEMPLATE.md).
-
-### Contributing
-
-See our [contributing guide](./CONTRIBUTING.md).
