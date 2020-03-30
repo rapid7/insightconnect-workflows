@@ -26,9 +26,9 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Plugin 1|1.0.0|1|
-|Plugin 2|1.0.0|1|
-|Plugin 3|1.0.1|1|
+|Python 3 Script|2.0.0|1|
+|Rapid7 InsightIDR|1.1.0|1|
+|Active Directory LDAP|3.2.6|2|
 
 ## Troubleshooting
 
