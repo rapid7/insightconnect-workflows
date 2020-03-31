@@ -18,7 +18,7 @@ This workflow is designed to respond to InsightIDR's Multi Country Authenticatio
 
 ## Setup
 
-Once the workflow has been imported, edit the workflow and setup or select your Active Director connection in the Query and Disable user steps. Also setp up your InsightIDR connection with an Organization Key for the Insight Platform.
+Once the workflow has been imported, edit the workflow and either configure or select an existing Active Directory connection in the Query and Disable User steps. Your InsightIDR connection will also need to be configured using your Insight Cloud Platform API key.
 
 ## Technical Details
 
