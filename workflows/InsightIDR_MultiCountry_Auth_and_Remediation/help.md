@@ -1,6 +1,6 @@
 # Description
 
-This workflow is designed to respond to InsightIDR's Multi Country Authentication alert by confirming if the user authenticated from more than 2 locations. With a flux of VPN loggings,a way to automatically reduce false positives would be to close alerts that have 2 or less locations or automatically respond to alerts with more than 2 locations. I this workflow, InsightConnect is responding by disabling the user account associated with more than 2 locations. 
+This workflow is designed to respond to InsightIDR's Multi Country Authentication alert by confirming if the user authenticated from more than two locations. Due to an influx of VPN logins, the amount of false positive alerts is increasing. This workflow will automatically reduce false positives by closing alerts with two or less locations or by automatically responding to alerts with more than two locations. If a user account is shown to be associated with two or more locations InsightConnect will respond by disabling the user account.
 
 # Key Features
 
