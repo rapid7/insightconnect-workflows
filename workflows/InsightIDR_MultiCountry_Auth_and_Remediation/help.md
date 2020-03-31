@@ -10,7 +10,7 @@ This workflow is designed to respond to InsightIDR's Multi Country Authenticatio
 
 # Requirements
 
-* InsightConnect Orchestrator Deployed
+* InsightConnect Orchestrator deployed
 * Active Directory connection
 * [Insight Cloud Platform API key](https://insight.rapid7.com/platform#/apiKeyManagement)
 
