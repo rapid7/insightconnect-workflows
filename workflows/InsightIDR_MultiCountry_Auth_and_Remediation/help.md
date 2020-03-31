@@ -6,7 +6,7 @@ This workflow is designed to respond to InsightIDR's Multi Country Authenticatio
 
 * Parses authentication count using Pattern Match & Python
 * If locations are two or less, the InsightIDR investigation is automatically closed.
-* If there are more than 2 locations Active Directory is automatically querying for the associated user. If the user is found, they are disabled.
+* If locations are more than two, Active Directory will query for the associated user and disable the account if found.
 
 # Requirements
 
