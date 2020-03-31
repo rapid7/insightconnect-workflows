@@ -2,7 +2,7 @@ extension: workflow
 products: ["insightconnect"]
 name: InsightIDR_MultiCountry_Auth_and_Remediation
 title: "InsightIDR Multi Country Auth and Remediation"
-description: If a multicountry authentication alert from IDR includes more than 2 countries, immediately disable in AD.
+description: Disable a user account in Active Directory based on a multi-country InsightIDR authentication alert containing more than two countries.
 version: 1.0.0
 vendor: rapid7
 support: rapid7
