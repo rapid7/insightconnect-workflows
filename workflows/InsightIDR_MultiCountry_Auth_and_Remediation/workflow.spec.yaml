@@ -1,0 +1,27 @@
+extension: workflow
+products: ["insightconnect"]
+name: InsightIDR_MultiCountry_Auth_and_Remediation
+title: "InsightIDR Multi Country Auth and Remediation"
+description: Disable a user account in Active Directory based on a multi-country InsightIDR authentication alert containing more than two countries.
+version: 1.0.0
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [threat_detection_and_response, user_management]
+  keywords: [InsightIDR, Remediation, Python, Active Directory]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/InsightIDR_MultiCountry_Auth_and_Remediation
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+  - name: InsightIDR_MultiCountry_Auth_Workflow_Image.png
+    title: Workflow View
+  - name: InsightIDR_MultiCountry_Auth_Output_DisableUser.png
+    title: Successful Workflow Job Output Disable User
+  - name: InsightIDR_MultiCountry_Auth_Output_CloseInvest.png
+    title: Successful Workflow Job Output Close InsightIDR Investigation
+  - name: InsightIDR_MultiCountry_Auth_Artifact_DisableUser.png
+    title: Successful Workflow Job Artifact Disable User
+  - name: InsightIDR MultiCountry_Auth_Artifact_CloseInvest.png
+    title: Success Workflow Job Artifact Close InsightIDR Investigation
