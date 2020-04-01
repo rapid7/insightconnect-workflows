@@ -11,7 +11,7 @@ This workflow creates solution-based issues in JIRA for each of the top 25 remed
 # Requirements
 
 API and account credentials for
-* InsightVM
+* InsightVM Console
 * JIRA
 
 # Documentation
