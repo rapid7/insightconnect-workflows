@@ -1,4 +1,5 @@
 # Description
+
 This workflow provides fast, convenient access to information about a given host from InsightVM. When triggered, the workflow fetches asset details from InsightVM and posts them in a Slack thread. Host info includes hostname, IP address, MAC address, operating system, running services, and vulnerability stats.
 
 Sample Slack Trigger Commands: 
@@ -15,7 +16,7 @@ Sample Slack Trigger Commands:
 
 # Requirements
 
-* API and account credentials for InsightVM
+* InsightVM Console URL and account credentials
 * Slack integration
 
 # Documentation
