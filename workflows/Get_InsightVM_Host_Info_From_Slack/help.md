@@ -22,12 +22,9 @@ Sample Slack Trigger Commands:
 
 ## Setup
 
-1. Once the workflow has been imported, edit the workflow and select the `Get Host Info Slack Trigger` step. Select your Slack connection. 
-----> If you do not have a Slack connection, then please refer to our [Help documentation](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops#section-find-a-slack-administrator). 
-2. Select the `Searching Notification` step and select your Slack connection.
-3. Select the `Search for Asset` step and configure or select a connection to your InsightVM console.
-4. Select the `Asset Not Found Message` step and select your Slack connection.
-5. Open the `Assets Loop`. Select the `Post to Slack` step and select your Slack connection.
+Once the workflow has been imported, edit the workflow and configure connections and orchestrators in each step.
+
+If you do not have a Slack connection configured already, then please refer to our [Help documentation](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops).
 
 ## Technical Details
 
