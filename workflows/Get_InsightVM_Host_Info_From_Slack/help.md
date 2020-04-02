@@ -24,7 +24,7 @@ Sample Slack Trigger Commands:
 
 Once the workflow has been imported, edit the workflow and configure connections and orchestrators in each step.
 
-If you do not have a Slack connection configured already, then please refer to our [Help documentation](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops).
+If you do not already have a Slack connection configured, please refer to our [Help documentation](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops).
 
 ## Technical Details
 
