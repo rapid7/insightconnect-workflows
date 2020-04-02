@@ -13,8 +13,8 @@ Sample Slack Trigger Command:
 
 # Requirements
 
-* Orci phasellus egestas
-* Porttitor eget dolor
+* InsightVM Console URL and account credentials
+* Slack integration
 
 # Documentation
 
