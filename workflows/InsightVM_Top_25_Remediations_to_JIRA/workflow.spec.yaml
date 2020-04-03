@@ -2,7 +2,7 @@ extension: workflow
 products: ["insightconnect"]
 name: InsightVM_Top_25_Remediations_to_JIRA 
 title: "InsightVM Top 25 Remediations to JIRA"
-description: This workflow identifies the current top remediations from InsightVM, determines if issues have been created in JIRA for the identified remediations, and creates or updates issues for the identified remediations as appropriate.
+description: Create and update Jira issues based on top risk-reducing remediation steps from InsightVM.
 version: 1.0.0
 vendor: rapid7
 support: rapid7
