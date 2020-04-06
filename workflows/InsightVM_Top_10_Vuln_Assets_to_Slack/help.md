@@ -1,6 +1,6 @@
 # Description
 
-This workflow returns the top 10 most vulnerable assets in each site in InsightVM
+This workflow returns the top 10 most vulnerable assets in each site in InsightVM.
 
 # Key Features
 
