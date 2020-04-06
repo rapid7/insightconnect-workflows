@@ -2,7 +2,7 @@
   "kom": {
     "komandVersion": "1.48.2-0-g4eb3f",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-04-06T18:16:11.769597847Z",
+    "exportedAt": "2020-04-06T18:27:51.807198973Z",
     "workflowVersions": [
       {
         "name": "Slack Chatbot URL Analysis with VirusTotal",
@@ -226,7 +226,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "function": "def run(params={}):\n    message =  '{{[edd82ea1-b0b1-46e3-80ca-cdc3857b9905].[message].[text]}}'\n    stripped_message = message.rstrip(\" \")\n    lookup_url = stripped_message.split(\" \")[-1]\n    \n    if \"|\" in lookup_url:\n        lookup_url = lookup_url.split(\"|\")[-1].replace(\">\", \"\")\n    \n    return {\"lookup_url\": lookup_url}",
+                "function": "def run(params={}):\n    message =  '{{[edd82ea1-b0b1-46e3-80ca-cdc3857b9905].[message].[text]}}'\n    stripped_message = message.rstrip(\" \")\n    lookup_url = stripped_message.split(\" \")[-1]\n    lookup_url = lookup_url.replace(\"<\", \"\").replace(\">\", \"\")\n    \n    if \"|\" in lookup_url:\n        lookup_url = lookup_url.split(\"|\")[-1].replace(\">\", \"\")\n    \n    return {\"lookup_url\": lookup_url}",
                 "input": {}
               }
             },
