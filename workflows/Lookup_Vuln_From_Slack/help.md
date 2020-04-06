@@ -35,7 +35,7 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Rapid7 Vulnerability & Exploit Database|2.0.0|1|
+|Rapid7 Vulnerability & Exploit Database|2.0.2|1|
 |Type Converter|1.5.1|1|
 |Basename|1.0.1|1|
 |URL Extractor|1.0.3|1|
@@ -46,6 +46,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.1.1 - Updated plugin versions in help.md
 * 1.1.0 - Updated workflow to work with v2.0.2 of the Rapid7 Vulnerability & Exploit Database plugin | Added a Final Report workflow artifact including a summary of workflow results
 * 1.0.0 - Initial workflow
 
