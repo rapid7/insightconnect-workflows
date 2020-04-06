@@ -17,7 +17,7 @@ This workflow automated the process of looking up an associated file hash in Vir
 
 ## Setup
 
-Once the workflow has been imported and the Slack chatbot selected for your workstation, edit the workflow and setup or select your CB Response connection in the Block Hash step. Also setp up your VirusTotal connection and confirm where applicable. 
+Once the workflow has been imported and the Slack chatbot selected for your workstation, edit the workflow and configure your CB Response connection in the Block Hash step. Also, configure your VirusTotal connection and confirm where applicable. 
 
 ## Technical Details
 
