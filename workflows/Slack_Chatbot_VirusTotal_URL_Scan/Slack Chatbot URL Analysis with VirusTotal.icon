@@ -2,13 +2,13 @@
   "kom": {
     "komandVersion": "1.48.2-0-g4eb3f",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-04-06T18:02:26.969567424Z",
+    "exportedAt": "2020-04-06T18:16:11.769597847Z",
     "workflowVersions": [
       {
-        "name": "URL Analysis with VirusTotal",
+        "name": "Slack Chatbot URL Analysis with VirusTotal",
         "type": "runnable",
         "version": "",
-        "description": "Initiate and receive VirusTotal URL scan reports directly with Slack.",
+        "description": "Initiate and receive VirusTotal URL scan reports with the Slack chatbot.",
         "graph": {
           "edges": {
             "478ef079-9228-4cc2-a5b3-f6d8690b1c08": {
@@ -17,7 +17,7 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "f740b0d7-2be2-4039-8cab-14fd047b8806",
-              "toNodeId": ""
+              "toNodeId": "b93e623f-7682-4436-a66e-795184a8ade0"
             },
             "74c17b59-b34f-4faf-bca9-42d15d93d17b": {
               "id": "74c17b59-b34f-4faf-bca9-42d15d93d17b",
@@ -26,6 +26,14 @@
               "parentNodeId": "",
               "fromNodeId": "d531b2a9-de6f-4e3f-8f08-d2b5889fcde0",
               "toNodeId": "cfce3a39-1195-4e59-97ea-2dc5646169b0"
+            },
+            "ab16c1cb-9c18-4037-b9ec-5f0cacceeded": {
+              "id": "ab16c1cb-9c18-4037-b9ec-5f0cacceeded",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "b93e623f-7682-4436-a66e-795184a8ade0",
+              "toNodeId": ""
             },
             "d5406a32-67eb-4af4-a5ed-5baae14992a9": {
               "id": "d5406a32-67eb-4af4-a5ed-5baae14992a9",
@@ -63,6 +71,10 @@
           "nodes": {
             "86873db3-ba4e-458a-a056-15aa04ad0b53": {
               "id": "86873db3-ba4e-458a-a056-15aa04ad0b53",
+              "parentNodeId": ""
+            },
+            "b93e623f-7682-4436-a66e-795184a8ade0": {
+              "id": "b93e623f-7682-4436-a66e-795184a8ade0",
               "parentNodeId": ""
             },
             "cfce3a39-1195-4e59-97ea-2dc5646169b0": {
@@ -161,6 +173,24 @@
             "connectionType": "NONE",
             "chatOpsAppName": "slack",
             "chatOpsIdentifier": "post_message"
+          },
+          "b93e623f-7682-4436-a66e-795184a8ade0": {
+            "nodeId": "b93e623f-7682-4436-a66e-795184a8ade0",
+            "name": "VirusTotal Scan Results",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "**URL Scan Report for {{[d531b2a9-de6f-4e3f-8f08-d2b5889fcde0].[lookup_url]}}**\n\n**Malicious:** {{[e86d1fc3-c46b-4b7e-afdb-33d624c03f12].[malicious]}}\n**Positives:** {{[e86d1fc3-c46b-4b7e-afdb-33d624c03f12].[positives]}} / {{[e86d1fc3-c46b-4b7e-afdb-33d624c03f12].[total]}}\n**Results permalink:** {{[e86d1fc3-c46b-4b7e-afdb-33d624c03f12].[permalink]}}"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
           },
           "cfce3a39-1195-4e59-97ea-2dc5646169b0": {
             "nodeId": "cfce3a39-1195-4e59-97ea-2dc5646169b0",
