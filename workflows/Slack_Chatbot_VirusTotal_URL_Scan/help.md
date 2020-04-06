@@ -14,7 +14,7 @@ Sample Slack Trigger Commands:
 # Key Features
 
 * Lookup a VirusTotal URL scan
-* Get VirusTotal scan report, total positives, and results permalink in a Slack message
+* Get a VirusTotal scan report, total positives, and results permalink in a Slack message
 
 # Requirements
 
