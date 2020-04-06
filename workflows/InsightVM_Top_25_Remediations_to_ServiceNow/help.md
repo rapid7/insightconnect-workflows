@@ -28,7 +28,7 @@ Plugins utilized by workflow:
 |Plugin|Version|Count|
 |----|----|--------|
 |Advanced Regex|1.0.1|1|
-|Rapid7 InsightVM|3.6.0|1|
+|Rapid7 InsightVM|4.0.0|1|
 |Base64|1.1.3|3|
 |Timers|2.0.4|1|
 |ServiceNow|3.1.1|3|
