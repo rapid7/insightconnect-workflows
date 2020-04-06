@@ -2,6 +2,10 @@
 
 This workflow returns the top 10 most vulnerable assets in each site in InsightVM.
 
+Sample Slack Trigger Commands:
+
+`@Slack bot list most vulnerable assets`
+
 # Key Features
 
 * Lists most vulnerable assets from InsightVM in Slack
