@@ -30,7 +30,7 @@ This workflow automates the process of parsing all IP addresses associated with 
 
 ## Setup
 
-Once the workflow has been imported and the Slack chatbot selected for your workstation, edit the workflow and setup or select your Jira connection. Also setp up your VirusTotal & AbuseIPDB connection and confirm where applicable. 
+Once the workflow has been imported and the Slack chatbot selected for your workstation, edit the workflow and configure your Jira connection. Also, configure your VirusTotal & AbuseIPDB connection and confirm where applicable.
 
 ## Technical Details
 
