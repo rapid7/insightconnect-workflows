@@ -572,7 +572,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "# {{[8fb69bee-42ce-4260-8026-333a73099d41].[type]}}\n\n_Description: {[8fb69bee-42ce-4260-8026-333a73099d41].[name]}}_\nLink: {{[8fb69bee-42ce-4260-8026-333a73099d41].[link]}}\n\n*Users*\n{{#each [8fb69bee-42ce-4260-8026-333a73099d41].[actors].[users]}}\n{{name}}\n{{/each}}\n\n*WhoIs Results*\n{{[fab3f75d-17d8-46b4-bed5-a55a043813d3].[address]}}\nCountry {{[fab3f75d-17d8-46b4-bed5-a55a043813d3].[country]}}\nAbuse Email: {{[fab3f75d-17d8-46b4-bed5-a55a043813d3].[org_abuse_email]}}\nNet Range: {{[fab3f75d-17d8-46b4-bed5-a55a043813d3].[netrange]}}\nLast Updated: {{[fab3f75d-17d8-46b4-bed5-a55a043813d3].[update]}}\n"
+                "content": "# {{[8fb69bee-42ce-4260-8026-333a73099d41].[type]}}\n\n_Description: {[8fb69bee-42ce-4260-8026-333a73099d41].[name]}}_\nLink: {{[8fb69bee-42ce-4260-8026-333a73099d41].[link]}}\n\n*Users*\n{{#each [8fb69bee-42ce-4260-8026-333a73099d41].[actors].[users]}}\n{{name}}\n{{/each}}\n\n*WhoIs Results*\n{{[fab3f75d-17d8-46b4-bed5-a55a043813d3].[address]}}\nCountry: {{[fab3f75d-17d8-46b4-bed5-a55a043813d3].[country]}}\nAbuse Email: {{[fab3f75d-17d8-46b4-bed5-a55a043813d3].[org_abuse_email]}}\nNet Range: {{[fab3f75d-17d8-46b4-bed5-a55a043813d3].[netrange]}}\nLast Updated: {{[fab3f75d-17d8-46b4-bed5-a55a043813d3].[update]}}\n"
               },
               "type": "markdown"
             },
