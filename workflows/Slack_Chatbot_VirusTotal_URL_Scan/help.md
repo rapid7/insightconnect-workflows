@@ -34,7 +34,7 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Python 3 Script|2.0.1|1|
+|ExtractIt|2.0.0|1|
 |VirusTotal|6.0.1|1|
 
 ## Troubleshooting

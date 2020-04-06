@@ -2,7 +2,7 @@
   "kom": {
     "komandVersion": "1.48.2-0-g4eb3f",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-04-06T18:27:51.807198973Z",
+    "exportedAt": "2020-04-06T19:55:06.405828426Z",
     "workflowVersions": [
       {
         "name": "Slack Chatbot URL Analysis with VirusTotal",
@@ -11,6 +11,14 @@
         "description": "Initiate and receive VirusTotal URL scan reports with the Slack chatbot.",
         "graph": {
           "edges": {
+            "0e1a8c44-956d-4e81-bef6-309cbdc19a60": {
+              "id": "0e1a8c44-956d-4e81-bef6-309cbdc19a60",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "9a6d880b-499b-4acc-8c58-d07660c48fc0",
+              "toNodeId": "cfce3a39-1195-4e59-97ea-2dc5646169b0"
+            },
             "478ef079-9228-4cc2-a5b3-f6d8690b1c08": {
               "id": "478ef079-9228-4cc2-a5b3-f6d8690b1c08",
               "name": "",
@@ -18,14 +26,6 @@
               "parentNodeId": "",
               "fromNodeId": "f740b0d7-2be2-4039-8cab-14fd047b8806",
               "toNodeId": "b93e623f-7682-4436-a66e-795184a8ade0"
-            },
-            "74c17b59-b34f-4faf-bca9-42d15d93d17b": {
-              "id": "74c17b59-b34f-4faf-bca9-42d15d93d17b",
-              "name": "",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "d531b2a9-de6f-4e3f-8f08-d2b5889fcde0",
-              "toNodeId": "cfce3a39-1195-4e59-97ea-2dc5646169b0"
             },
             "ab16c1cb-9c18-4037-b9ec-5f0cacceeded": {
               "id": "ab16c1cb-9c18-4037-b9ec-5f0cacceeded",
@@ -57,7 +57,7 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "edd82ea1-b0b1-46e3-80ca-cdc3857b9905",
-              "toNodeId": "d531b2a9-de6f-4e3f-8f08-d2b5889fcde0"
+              "toNodeId": "9a6d880b-499b-4acc-8c58-d07660c48fc0"
             },
             "e3cf8b7d-7095-43b9-ac61-b49369ba24bd": {
               "id": "e3cf8b7d-7095-43b9-ac61-b49369ba24bd",
@@ -73,16 +73,16 @@
               "id": "86873db3-ba4e-458a-a056-15aa04ad0b53",
               "parentNodeId": ""
             },
+            "9a6d880b-499b-4acc-8c58-d07660c48fc0": {
+              "id": "9a6d880b-499b-4acc-8c58-d07660c48fc0",
+              "parentNodeId": ""
+            },
             "b93e623f-7682-4436-a66e-795184a8ade0": {
               "id": "b93e623f-7682-4436-a66e-795184a8ade0",
               "parentNodeId": ""
             },
             "cfce3a39-1195-4e59-97ea-2dc5646169b0": {
               "id": "cfce3a39-1195-4e59-97ea-2dc5646169b0",
-              "parentNodeId": ""
-            },
-            "d531b2a9-de6f-4e3f-8f08-d2b5889fcde0": {
-              "id": "d531b2a9-de6f-4e3f-8f08-d2b5889fcde0",
               "parentNodeId": ""
             },
             "e86d1fc3-c46b-4b7e-afdb-33d624c03f12": {
@@ -109,7 +109,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "Starting URL lookup for the following URL: {{[d531b2a9-de6f-4e3f-8f08-d2b5889fcde0].[lookup_url]}}",
+                "message": "Starting URL lookup for the following URL: {{[9a6d880b-499b-4acc-8c58-d07660c48fc0].[domains].[0]}}",
                 "recipient": "mike-test",
                 "thread_ts": ""
               }
@@ -174,6 +174,75 @@
             "chatOpsAppName": "slack",
             "chatOpsIdentifier": "post_message"
           },
+          "9a6d880b-499b-4acc-8c58-d07660c48fc0": {
+            "nodeId": "9a6d880b-499b-4acc-8c58-d07660c48fc0",
+            "name": "Extract URL from Message",
+            "type": "action",
+            "plugin": {
+              "name": "ExtractIt",
+              "slugVendor": "rapid7",
+              "slugName": "extractit",
+              "slugVersion": "2.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/extractit/2.0.0/icon.png"
+            },
+            "identifier": "domain_extractor",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "file": "",
+                "str": "{{[edd82ea1-b0b1-46e3-80ca-cdc3857b9905].[message].[text]}}",
+                "subdomain": false
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "file": {
+                  "description": "Input file as bytes",
+                  "displayType": "bytes",
+                  "format": "bytes",
+                  "order": 2,
+                  "title": "File",
+                  "type": "string"
+                },
+                "str": {
+                  "description": "Input string",
+                  "order": 1,
+                  "title": "String",
+                  "type": "string"
+                },
+                "subdomain": {
+                  "description": "Include subdomain in result",
+                  "order": 3,
+                  "title": "Subdomain",
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "subdomain"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "domains": {
+                  "description": "List of extracted Domain names",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "Domain Names",
+                  "type": "array"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR"
+          },
           "b93e623f-7682-4436-a66e-795184a8ade0": {
             "nodeId": "b93e623f-7682-4436-a66e-795184a8ade0",
             "name": "VirusTotal Scan Results",
@@ -182,7 +251,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "**URL Scan Report for {{[d531b2a9-de6f-4e3f-8f08-d2b5889fcde0].[lookup_url]}}**\n\n**Malicious:** {{[e86d1fc3-c46b-4b7e-afdb-33d624c03f12].[malicious]}}\n**Positives:** {{[e86d1fc3-c46b-4b7e-afdb-33d624c03f12].[positives]}} / {{[e86d1fc3-c46b-4b7e-afdb-33d624c03f12].[total]}}\n**Results permalink:** {{[e86d1fc3-c46b-4b7e-afdb-33d624c03f12].[permalink]}}"
+                "content": "**URL Scan Report for {{[9a6d880b-499b-4acc-8c58-d07660c48fc0].[domains].[0]}}**\n\n**Malicious:** {{[e86d1fc3-c46b-4b7e-afdb-33d624c03f12].[malicious]}}\n**Positives:** {{[e86d1fc3-c46b-4b7e-afdb-33d624c03f12].[positives]}} / {{[e86d1fc3-c46b-4b7e-afdb-33d624c03f12].[total]}}\n**Results permalink:** {{[e86d1fc3-c46b-4b7e-afdb-33d624c03f12].[permalink]}}"
               },
               "type": "markdown"
             },
@@ -200,7 +269,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "**Found URL:** {{[d531b2a9-de6f-4e3f-8f08-d2b5889fcde0].[lookup_url]}}"
+                "content": "**Found URL:** {{[9a6d880b-499b-4acc-8c58-d07660c48fc0].[domains].[0]}}"
               },
               "type": "markdown"
             },
@@ -209,81 +278,6 @@
             "outputJSONSchema": null,
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
             "connectionType": "NONE"
-          },
-          "d531b2a9-de6f-4e3f-8f08-d2b5889fcde0": {
-            "nodeId": "d531b2a9-de6f-4e3f-8f08-d2b5889fcde0",
-            "name": "Extract URL from Message",
-            "type": "action",
-            "plugin": {
-              "name": "Python 3 Script",
-              "slugVendor": "rapid7",
-              "slugName": "python_3_script",
-              "slugVersion": "2.0.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/python_3_script/2.0.1/icon.png"
-            },
-            "identifier": "run",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "function": "def run(params={}):\n    message =  '{{[edd82ea1-b0b1-46e3-80ca-cdc3857b9905].[message].[text]}}'\n    stripped_message = message.rstrip(\" \")\n    lookup_url = stripped_message.split(\" \")[-1]\n    lookup_url = lookup_url.replace(\"<\", \"\").replace(\">\", \"\")\n    \n    if \"|\" in lookup_url:\n        lookup_url = lookup_url.split(\"|\")[-1].replace(\">\", \"\")\n    \n    return {\"lookup_url\": lookup_url}",
-                "input": {}
-              }
-            },
-            "defaultInputJSONSchema": {
-              "properties": {
-                "function": {
-                  "default": "def run(params={}):\\n    return {}",
-                  "description": "Function definition. Must be named `run`. Accepts the `input` object as params. Returns the dict as output",
-                  "displayType": "python",
-                  "format": "python",
-                  "order": 1,
-                  "title": "Function",
-                  "type": "string"
-                },
-                "input": {
-                  "description": "Input object to be passed as `params={}` to the `run` function",
-                  "order": 2,
-                  "title": "Input",
-                  "type": "object"
-                }
-              },
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultOutputJSONSchema": {
-              "properties": {
-                "result1": {
-                  "description": "Sample output result1 (delete or edit)",
-                  "order": 1,
-                  "title": "Result1",
-                  "type": "string"
-                },
-                "result2": {
-                  "description": "Sample output result2 (delete or edit)",
-                  "order": 2,
-                  "title": "Result2",
-                  "type": "string"
-                }
-              },
-              "title": "Variables",
-              "type": "object"
-            },
-            "outputJSONSchema": {
-              "definitions": {},
-              "properties": {
-                "lookup_url": {
-                  "description": "Sample output result1 (delete or edit)",
-                  "order": 1,
-                  "title": "Result1",
-                  "type": "string"
-                }
-              },
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultImageData": "",
-            "connectionType": "CONNECTION"
           },
           "e86d1fc3-c46b-4b7e-afdb-33d624c03f12": {
             "nodeId": "e86d1fc3-c46b-4b7e-afdb-33d624c03f12",
@@ -301,7 +295,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "url": "{{[d531b2a9-de6f-4e3f-8f08-d2b5889fcde0].[lookup_url]}}"
+                "url": "{{[9a6d880b-499b-4acc-8c58-d07660c48fc0].[domains].[0]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -528,7 +522,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": ":notebook_with_decorative_cover: URL Scan Report for {{[d531b2a9-de6f-4e3f-8f08-d2b5889fcde0].[lookup_url]}} :notebook_with_decorative_cover:\n:pushpin: Summary: \n\n_VirusTotal_\n> Malicious: {{[e86d1fc3-c46b-4b7e-afdb-33d624c03f12].[malicious]}}\n> Positives: {{[e86d1fc3-c46b-4b7e-afdb-33d624c03f12].[positives]}} / {{[e86d1fc3-c46b-4b7e-afdb-33d624c03f12].[total]}}\n> Results permalink: {{[e86d1fc3-c46b-4b7e-afdb-33d624c03f12].[permalink]}}",
+                "message": ":notebook_with_decorative_cover: URL Scan Report for {{[9a6d880b-499b-4acc-8c58-d07660c48fc0].[domains].[0]}} :notebook_with_decorative_cover:\n:pushpin: Summary: \n\n_VirusTotal_\n> Malicious: {{[e86d1fc3-c46b-4b7e-afdb-33d624c03f12].[malicious]}}\n> Positives: {{[e86d1fc3-c46b-4b7e-afdb-33d624c03f12].[positives]}} / {{[e86d1fc3-c46b-4b7e-afdb-33d624c03f12].[total]}}\n> Results permalink: {{[e86d1fc3-c46b-4b7e-afdb-33d624c03f12].[permalink]}}",
                 "recipient": "mike-test",
                 "thread_ts": ""
               }
