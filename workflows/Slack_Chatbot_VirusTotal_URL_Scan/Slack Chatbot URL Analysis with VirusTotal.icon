@@ -2,7 +2,7 @@
   "kom": {
     "komandVersion": "1.48.2-0-g4eb3f",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-04-06T19:55:06.405828426Z",
+    "exportedAt": "2020-04-06T20:02:25.822164693Z",
     "workflowVersions": [
       {
         "name": "Slack Chatbot URL Analysis with VirusTotal",
@@ -110,7 +110,7 @@
               "input": {
                 "attachments": [],
                 "message": "Starting URL lookup for the following URL: {{[9a6d880b-499b-4acc-8c58-d07660c48fc0].[domains].[0]}}",
-                "recipient": "mike-test",
+                "recipient": "change_me",
                 "thread_ts": ""
               }
             },
@@ -394,7 +394,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "matchChannel": "mike-test",
+                "matchChannel": "change_me",
                 "matchText": "!url_lookup",
                 "type": "group"
               }
@@ -523,7 +523,7 @@
               "input": {
                 "attachments": [],
                 "message": ":notebook_with_decorative_cover: URL Scan Report for {{[9a6d880b-499b-4acc-8c58-d07660c48fc0].[domains].[0]}} :notebook_with_decorative_cover:\n:pushpin: Summary: \n\n_VirusTotal_\n> Malicious: {{[e86d1fc3-c46b-4b7e-afdb-33d624c03f12].[malicious]}}\n> Positives: {{[e86d1fc3-c46b-4b7e-afdb-33d624c03f12].[positives]}} / {{[e86d1fc3-c46b-4b7e-afdb-33d624c03f12].[total]}}\n> Results permalink: {{[e86d1fc3-c46b-4b7e-afdb-33d624c03f12].[permalink]}}",
-                "recipient": "mike-test",
+                "recipient": "change_me",
                 "thread_ts": ""
               }
             },
@@ -599,7 +599,7 @@
         "name": "Start Lookup",
         "description": "",
         "input": {
-          "matchChannel": "mike-test",
+          "matchChannel": "change_me",
           "matchText": "!url_lookup",
           "type": "group"
         },

@@ -25,6 +25,7 @@ Sample Slack Trigger Commands:
 ## Setup
 
 Once the workflow has been imported, edit the workflow and setup or select your Slack connection in the _Start Lookup_ step, the _Post URL Lookup Confirmation_ step, and the _Post URL Scan Report step._
+Each Slack step will need the channel name updated as well (edit the input with the preset text of `change_me`).
 
 To run the workflow, @ your Slackbot in any channel or in a direct message along with the command "!url_lookup <url>". The workflow will post when it is starting the lookup and then again with the results of the lookup.
 
