@@ -33,7 +33,7 @@ Search criteria can be 'body', 'subject', or 'from' lines in the email. For exam
 
 `delete-email user@example.com subject="A phishy email" from="example.com" body="Click here for free stuff" `
 
-Any combination of body, subject, and from can be used. At least one search item must be given.
+Any combination of 'body', 'subject', and 'from' can be used. At least one search item must be given.
 
 If you'd like the workflow to just delete emails without prompting, you can also use 'delete=true' For example:
 
