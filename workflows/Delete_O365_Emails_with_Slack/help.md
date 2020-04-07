@@ -23,7 +23,7 @@ Once the workflow has been downloaded, login to InsightConnect and “Import” 
 
 This workflow uses the Chat Ops Slack connection to listen for key messages from the InsightConnect Rapid7 connection and will search for and delete emails when triggered.
 
-To trigger this workflow, send a direct message to Rapid7 InsightConnect from Slack like the following.
+To trigger this workflow, send a direct message to Rapid7 InsightConnect from Slack like the following:
 
 `delete-email user@example.com subject="A phishy email"`
 
