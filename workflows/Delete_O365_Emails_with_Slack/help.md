@@ -1,6 +1,6 @@
 # Description
 
-This workflow will delete emails matching given search criteria by sending a notification to InisghtConnect with Slack. It will look for any emails that match the body, subject, and from. It can either automatically delete these emails or prompt the user for further action.
+This workflow will delete emails matching given search criteria by sending a notification to InsightConnect with Slack. It will look for any emails that match the 'body', 'subject', and 'from'. It can either automatically delete these emails or prompt the user for further action.
 
 # Key Features
 
