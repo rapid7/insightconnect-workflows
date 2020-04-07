@@ -29,8 +29,6 @@ To trigger this workflow, send a direct message to Rapid7 InsightConnect from Sl
 
 This will kick off the workflow, and prompt you back when the search is completed. If any emails are found that match the criteria, you can hit the delete button in Slack to delete them.
 
-#### Other options:
-
 Search criteria can be body, subject, or from lines in the email. For example:
 
 `delete-email user@example.com subject="A phishy email" from="example.com" body="Click here for free stuff" `
