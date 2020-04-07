@@ -1,6 +1,6 @@
 # Description
 
-This workflow will delete emails matching given search criteria by sending a notification to InisghtConnect with Slack. The workflow will look for any emails that match the body, subject, for from contents given. It can either automatically delete these emails or prompt the user for further action.
+This workflow will delete emails matching given search criteria by sending a notification to InisghtConnect with Slack. It will look for any emails that match the body, subject, and from. It can either automatically delete these emails or prompt the user for further action.
 
 # Key Features
 
@@ -8,10 +8,10 @@ This workflow will delete emails matching given search criteria by sending a not
 
 # Requirements
 
-API and account credentials for
+The following connections will need to be setup: 
 
-* Microsoft Office365
-* Slack
+* [Microsoft Office365](https://insightconnect.help.rapid7.com/docs/office365)
+* [Slack](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops)
 
 # Documentation
 
@@ -20,8 +20,6 @@ API and account credentials for
 Once the workflow has been downloaded, login to InsightConnect and “Import” it into the workflow builder. Once imported, you will initially be prompted to configure the connections for each of the plugins.
 
 ### Usage
-
-(This artifact can be deleted)
 
 This workflow uses the Chat Ops Slack connection to listen for key messages from the InsightConnect Rapid7 connection and will search for and delete emails when triggered.
 
