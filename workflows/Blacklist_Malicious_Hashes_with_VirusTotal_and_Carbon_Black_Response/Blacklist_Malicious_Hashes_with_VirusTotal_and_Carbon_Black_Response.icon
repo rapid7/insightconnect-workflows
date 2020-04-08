@@ -1,0 +1,2045 @@
+{
+  "kom": {
+    "komandVersion": "1.47.8-0-gaccae",
+    "komFileVersion": "2.0.0",
+    "exportedAt": "2020-03-30T23:51:55.318022022Z",
+    "workflowVersions": [
+      {
+        "name": "Blacklist Malicious Hashes with VirusTotal & Carbon Black Response",
+        "type": "runnable",
+        "version": "",
+        "description": "",
+        "graph": {
+          "edges": {
+            "04946589-2002-417b-963c-8a1b7579d004": {
+              "id": "04946589-2002-417b-963c-8a1b7579d004",
+              "name": "successful",
+              "description": "The file was successfully blocked",
+              "parentNodeId": "15b6e09f-6a40-44f1-ae35-4d66b898f81a",
+              "fromNodeId": "aec8e3f1-0a11-4c9d-9f22-48cba7d60d43",
+              "toNodeId": "2714e4d7-31dd-4507-93b3-cab900544c31"
+            },
+            "0bb4fcee-0af2-47cd-88cd-d19fc8630442": {
+              "id": "0bb4fcee-0af2-47cd-88cd-d19fc8630442",
+              "name": "",
+              "description": "",
+              "parentNodeId": "a5fab515-967d-4afe-9a35-61759fe31ca4",
+              "fromNodeId": "a5fab515-967d-4afe-9a35-61759fe31ca4",
+              "toNodeId": "15b6e09f-6a40-44f1-ae35-4d66b898f81a"
+            },
+            "0c56caee-e9b9-4856-94c6-78dab833f247": {
+              "id": "0c56caee-e9b9-4856-94c6-78dab833f247",
+              "name": "",
+              "description": "",
+              "parentNodeId": "15b6e09f-6a40-44f1-ae35-4d66b898f81a",
+              "fromNodeId": "4eac1cd5-8db5-440e-8e2c-43c445473296",
+              "toNodeId": ""
+            },
+            "134520fd-a0b3-4748-87eb-eb5b5bea5ccf": {
+              "id": "134520fd-a0b3-4748-87eb-eb5b5bea5ccf",
+              "name": "Blacklist",
+              "description": "",
+              "parentNodeId": "15b6e09f-6a40-44f1-ae35-4d66b898f81a",
+              "fromNodeId": "efcddea7-b092-40e3-8209-5c1f797521da",
+              "toNodeId": "a75150ef-8fda-4965-8ebc-705b3048c7e3"
+            },
+            "25de078e-1845-4ce5-ab85-a673e3ad8fd5": {
+              "id": "25de078e-1845-4ce5-ab85-a673e3ad8fd5",
+              "name": "broken",
+              "description": "The connection needs some TLC.",
+              "parentNodeId": "15b6e09f-6a40-44f1-ae35-4d66b898f81a",
+              "fromNodeId": "aec8e3f1-0a11-4c9d-9f22-48cba7d60d43",
+              "toNodeId": "764ac227-3d7a-491e-8402-6b01200518e0"
+            },
+            "2d51e019-4f4f-429a-9043-0034cb429519": {
+              "id": "2d51e019-4f4f-429a-9043-0034cb429519",
+              "name": "",
+              "description": "",
+              "parentNodeId": "15b6e09f-6a40-44f1-ae35-4d66b898f81a",
+              "fromNodeId": "7b3c38d3-dfc9-4354-9306-c9d68171a641",
+              "toNodeId": "71bbbd9b-35cd-49f3-ac4b-240c016c0637"
+            },
+            "2e011723-4b4a-45e3-bb55-1e9bf91c3105": {
+              "id": "2e011723-4b4a-45e3-bb55-1e9bf91c3105",
+              "name": "",
+              "description": "",
+              "parentNodeId": "15b6e09f-6a40-44f1-ae35-4d66b898f81a",
+              "fromNodeId": "764ac227-3d7a-491e-8402-6b01200518e0",
+              "toNodeId": "d7b5abb0-07b4-4720-8a71-966ba40ed69c"
+            },
+            "45272ee1-a6fe-437a-a4e3-ae48741fd074": {
+              "id": "45272ee1-a6fe-437a-a4e3-ae48741fd074",
+              "name": "",
+              "description": "",
+              "parentNodeId": "15b6e09f-6a40-44f1-ae35-4d66b898f81a",
+              "fromNodeId": "4cd6f1d3-8ba2-446a-a97c-cdf4eb7dab68",
+              "toNodeId": ""
+            },
+            "508742a6-899f-448a-a686-dc2f77b18706": {
+              "id": "508742a6-899f-448a-a686-dc2f77b18706",
+              "name": "Dismiss",
+              "description": "",
+              "parentNodeId": "15b6e09f-6a40-44f1-ae35-4d66b898f81a",
+              "fromNodeId": "efcddea7-b092-40e3-8209-5c1f797521da",
+              "toNodeId": "4cd6f1d3-8ba2-446a-a97c-cdf4eb7dab68"
+            },
+            "551fae5c-3c4d-48cf-9baa-8ff6fc449550": {
+              "id": "551fae5c-3c4d-48cf-9baa-8ff6fc449550",
+              "name": "",
+              "description": "",
+              "parentNodeId": "a5fab515-967d-4afe-9a35-61759fe31ca4",
+              "fromNodeId": "15b6e09f-6a40-44f1-ae35-4d66b898f81a",
+              "toNodeId": ""
+            },
+            "6cc4dc69-478b-4cb6-b533-ac9b68521320": {
+              "id": "6cc4dc69-478b-4cb6-b533-ac9b68521320",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "a5fab515-967d-4afe-9a35-61759fe31ca4",
+              "toNodeId": ""
+            },
+            "6ee8a54e-b420-4cd2-954c-23cf5f4dc254": {
+              "id": "6ee8a54e-b420-4cd2-954c-23cf5f4dc254",
+              "name": "",
+              "description": "",
+              "parentNodeId": "15b6e09f-6a40-44f1-ae35-4d66b898f81a",
+              "fromNodeId": "2714e4d7-31dd-4507-93b3-cab900544c31",
+              "toNodeId": "4eac1cd5-8db5-440e-8e2c-43c445473296"
+            },
+            "993d8cec-31bf-41c5-b7c8-23d5db8fefa6": {
+              "id": "993d8cec-31bf-41c5-b7c8-23d5db8fefa6",
+              "name": "",
+              "description": "",
+              "parentNodeId": "15b6e09f-6a40-44f1-ae35-4d66b898f81a",
+              "fromNodeId": "b97a6872-de12-40e2-a806-87d2ab8fafdf",
+              "toNodeId": "efcddea7-b092-40e3-8209-5c1f797521da"
+            },
+            "9ab6507f-eeaa-42a3-9a3a-71dc2ea162a2": {
+              "id": "9ab6507f-eeaa-42a3-9a3a-71dc2ea162a2",
+              "name": "",
+              "description": "",
+              "parentNodeId": "15b6e09f-6a40-44f1-ae35-4d66b898f81a",
+              "fromNodeId": "d7b5abb0-07b4-4720-8a71-966ba40ed69c",
+              "toNodeId": ""
+            },
+            "a2aa3747-c41b-4712-ba58-90500167eca8": {
+              "id": "a2aa3747-c41b-4712-ba58-90500167eca8",
+              "name": "",
+              "description": "",
+              "parentNodeId": "15b6e09f-6a40-44f1-ae35-4d66b898f81a",
+              "fromNodeId": "15b6e09f-6a40-44f1-ae35-4d66b898f81a",
+              "toNodeId": "7b3c38d3-dfc9-4354-9306-c9d68171a641"
+            },
+            "d52701a5-8ea8-4c0c-8bad-4a77d7c7c42d": {
+              "id": "d52701a5-8ea8-4c0c-8bad-4a77d7c7c42d",
+              "name": "",
+              "description": "",
+              "parentNodeId": "15b6e09f-6a40-44f1-ae35-4d66b898f81a",
+              "fromNodeId": "a75150ef-8fda-4965-8ebc-705b3048c7e3",
+              "toNodeId": "aec8e3f1-0a11-4c9d-9f22-48cba7d60d43"
+            },
+            "df66abed-edd8-43ec-bdb4-892ae90ccf02": {
+              "id": "df66abed-edd8-43ec-bdb4-892ae90ccf02",
+              "name": "",
+              "description": "",
+              "parentNodeId": "15b6e09f-6a40-44f1-ae35-4d66b898f81a",
+              "fromNodeId": "71bbbd9b-35cd-49f3-ac4b-240c016c0637",
+              "toNodeId": "b97a6872-de12-40e2-a806-87d2ab8fafdf"
+            },
+            "ec57bf02-6531-4ff7-b4e1-6813dad15e15": {
+              "id": "ec57bf02-6531-4ff7-b4e1-6813dad15e15",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "818e00ab-6a26-49c6-9bbe-8791cef1c6d0",
+              "toNodeId": "a5fab515-967d-4afe-9a35-61759fe31ca4"
+            }
+          },
+          "nodes": {
+            "15b6e09f-6a40-44f1-ae35-4d66b898f81a": {
+              "id": "15b6e09f-6a40-44f1-ae35-4d66b898f81a",
+              "parentNodeId": "a5fab515-967d-4afe-9a35-61759fe31ca4"
+            },
+            "2714e4d7-31dd-4507-93b3-cab900544c31": {
+              "id": "2714e4d7-31dd-4507-93b3-cab900544c31",
+              "parentNodeId": "15b6e09f-6a40-44f1-ae35-4d66b898f81a"
+            },
+            "4cd6f1d3-8ba2-446a-a97c-cdf4eb7dab68": {
+              "id": "4cd6f1d3-8ba2-446a-a97c-cdf4eb7dab68",
+              "parentNodeId": "15b6e09f-6a40-44f1-ae35-4d66b898f81a"
+            },
+            "4eac1cd5-8db5-440e-8e2c-43c445473296": {
+              "id": "4eac1cd5-8db5-440e-8e2c-43c445473296",
+              "parentNodeId": "15b6e09f-6a40-44f1-ae35-4d66b898f81a"
+            },
+            "71bbbd9b-35cd-49f3-ac4b-240c016c0637": {
+              "id": "71bbbd9b-35cd-49f3-ac4b-240c016c0637",
+              "parentNodeId": "15b6e09f-6a40-44f1-ae35-4d66b898f81a"
+            },
+            "764ac227-3d7a-491e-8402-6b01200518e0": {
+              "id": "764ac227-3d7a-491e-8402-6b01200518e0",
+              "parentNodeId": "15b6e09f-6a40-44f1-ae35-4d66b898f81a"
+            },
+            "7b3c38d3-dfc9-4354-9306-c9d68171a641": {
+              "id": "7b3c38d3-dfc9-4354-9306-c9d68171a641",
+              "parentNodeId": "15b6e09f-6a40-44f1-ae35-4d66b898f81a"
+            },
+            "818e00ab-6a26-49c6-9bbe-8791cef1c6d0": {
+              "id": "818e00ab-6a26-49c6-9bbe-8791cef1c6d0",
+              "parentNodeId": ""
+            },
+            "a5fab515-967d-4afe-9a35-61759fe31ca4": {
+              "id": "a5fab515-967d-4afe-9a35-61759fe31ca4",
+              "parentNodeId": ""
+            },
+            "a75150ef-8fda-4965-8ebc-705b3048c7e3": {
+              "id": "a75150ef-8fda-4965-8ebc-705b3048c7e3",
+              "parentNodeId": "15b6e09f-6a40-44f1-ae35-4d66b898f81a"
+            },
+            "aec8e3f1-0a11-4c9d-9f22-48cba7d60d43": {
+              "id": "aec8e3f1-0a11-4c9d-9f22-48cba7d60d43",
+              "parentNodeId": "15b6e09f-6a40-44f1-ae35-4d66b898f81a"
+            },
+            "b97a6872-de12-40e2-a806-87d2ab8fafdf": {
+              "id": "b97a6872-de12-40e2-a806-87d2ab8fafdf",
+              "parentNodeId": "15b6e09f-6a40-44f1-ae35-4d66b898f81a"
+            },
+            "d7b5abb0-07b4-4720-8a71-966ba40ed69c": {
+              "id": "d7b5abb0-07b4-4720-8a71-966ba40ed69c",
+              "parentNodeId": "15b6e09f-6a40-44f1-ae35-4d66b898f81a"
+            },
+            "efcddea7-b092-40e3-8209-5c1f797521da": {
+              "id": "efcddea7-b092-40e3-8209-5c1f797521da",
+              "parentNodeId": "15b6e09f-6a40-44f1-ae35-4d66b898f81a"
+            }
+          }
+        },
+        "steps": {
+          "15b6e09f-6a40-44f1-ae35-4d66b898f81a": {
+            "nodeId": "15b6e09f-6a40-44f1-ae35-4d66b898f81a",
+            "name": "Hashes Loop",
+            "type": "loop",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "innerEdgeId": "a2aa3747-c41b-4712-ba58-90500167eca8",
+              "nextEdgeId": "551fae5c-3c4d-48cf-9baa-8ff6fc449550",
+              "repeatVariable": "[a5fab515-967d-4afe-9a35-61759fe31ca4].[$item].[hashes]"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/loop.svg",
+            "connectionType": "NONE"
+          },
+          "2714e4d7-31dd-4507-93b3-cab900544c31": {
+            "nodeId": "2714e4d7-31dd-4507-93b3-cab900544c31",
+            "name": "Success Message",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": "{{[15b6e09f-6a40-44f1-ae35-4d66b898f81a].[$item].[hash]}} was successfully blocked",
+                "recipient": "#slack-secops",
+                "thread_ts": "{{[efcddea7-b092-40e3-8209-5c1f797521da].[timestamp]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 4,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 3,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                },
+                "thread_ts": {
+                  "description": "Select timestamp output variable from parent message step",
+                  "order": 2,
+                  "title": "To post in a thread, select parent message timestamp",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
+          },
+          "4cd6f1d3-8ba2-446a-a97c-cdf4eb7dab68": {
+            "nodeId": "4cd6f1d3-8ba2-446a-a97c-cdf4eb7dab68",
+            "name": "Alert Summary",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "{{#if [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[description]}}\n**Description:** {{[818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[description]}}\n{{/if}}\n\n{{#if [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[investigationId]}}\n**Investigation ID:** {{[818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[investigationId]}}\n{{/if}}\n\n{{#if [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[name]}}\n**Name:** {{[818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[name]}}\n{{/if}}\n\n{{#if [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[link]}}\n**Link:** [{{[818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[link]}}]({{[818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[link]}})\n{{/if}}\n\n{{#if [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[timestamp]}}\n**Timestamp:** {{[818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[timestamp]}}\n{{/if}}\n\n{{#if [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[type]}}\n**Type:** {{[818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[type]}}\n{{/if}}\n\n{{#if [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[actors]}}\n**Available Actors**\n{{#each [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[actors].[assets]}}\n{{#if fqdn}}\nAsset FQDN: {{fqdn}}\n{{/if}}\n{{#if shortname}}\nAsset Shortname: {{shortname}}\n{{/if}}\n{{/each}}\n{{/if}}\n\n{{#if [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[contents]}}\n{{#if [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[contents].[ipAddresses]}}\n**Alert IP Addresses**\n{{#each [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[contents].[ipAddresses]}}\n{{#if ip}}\n* Alert IP: {{ip}} ({{type}})\n{{/if}}\n{{/each}}\n{{/if}}\n{{#if [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[contents].[domains]}}\n\n**Alert Domains**\n{{#each [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[contents].[domains]}}\n+ {{this}}\n{{/each}}\n{{/if}}\n{{#if [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[contents].[urls]}}\n\n**Alert URLs**\n{{#each [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[contents].[urls]}}\n+ {{this}}\n{{/each}}\n{{/if}}\n\n{{#if [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[contents].[processes]}}\n\n**Alert Process Hashes**\n{{#each [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[contents].[processes]}}\n{{#if processId}}\n+ Alert Process: {{name}} ({{processId}})\n{{#if cmdLine}}\n  + Command Line: {{cmdLine}}\n{{/if}}\n{{#if assetId}}\n  + Asset ID: {{assetId}}\n{{/if}}\n{{#if hashes}}\n{{#each hashes}}\n  + {{hash}} ({{type}})\n{{/each}}\n{{/if}}\n{{/if}}\n{{/each}}\n{{/if}}\n{{/if}}\n\n## VirusTotal Findings\n\nCymru Hash Lookup ( {{[7b3c38d3-dfc9-4354-9306-c9d68171a641].[$success]}} ):\n\n{{[7b3c38d3-dfc9-4354-9306-c9d68171a641].[result].[detected]}}\n\n{{[7b3c38d3-dfc9-4354-9306-c9d68171a641].[result].[last_seen_utc]}}\n\n{{[7b3c38d3-dfc9-4354-9306-c9d68171a641].[result].[response_code]}}\n\n"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "4eac1cd5-8db5-440e-8e2c-43c445473296": {
+            "nodeId": "4eac1cd5-8db5-440e-8e2c-43c445473296",
+            "name": "Incident Summary",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "{{#if [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[description]}}\n**Description:** {{[818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[description]}}\n{{/if}}\n\n{{#if [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[investigationId]}}\n**Investigation ID:** {{[818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[investigationId]}}\n{{/if}}\n\n{{#if [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[name]}}\n**Name:** {{[818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[name]}}\n{{/if}}\n\n{{#if [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[link]}}\n**Link:** [{{[818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[link]}}]({{[818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[link]}})\n{{/if}}\n\n{{#if [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[timestamp]}}\n**Timestamp:** {{[818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[timestamp]}}\n{{/if}}\n\n{{#if [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[type]}}\n**Type:** {{[818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[type]}}\n{{/if}}\n\n{{#if [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[actors]}}\n**Available Actors**\n{{#each [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[actors].[assets]}}\n{{#if fqdn}}\nAsset FQDN: {{fqdn}}\n{{/if}}\n{{#if shortname}}\nAsset Shortname: {{shortname}}\n{{/if}}\n{{/each}}\n{{/if}}\n\n{{#if [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[contents]}}\n{{#if [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[contents].[ipAddresses]}}\n**Alert IP Addresses**\n{{#each [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[contents].[ipAddresses]}}\n{{#if ip}}\n* Alert IP: {{ip}} ({{type}})\n{{/if}}\n{{/each}}\n{{/if}}\n{{#if [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[contents].[domains]}}\n\n**Alert Domains**\n{{#each [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[contents].[domains]}}\n+ {{this}}\n{{/each}}\n{{/if}}\n{{#if [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[contents].[urls]}}\n\n**Alert URLs**\n{{#each [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[contents].[urls]}}\n+ {{this}}\n{{/each}}\n{{/if}}\n\n{{#if [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[contents].[processes]}}\n\n**Alert Process Hashes**\n{{#each [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[contents].[processes]}}\n{{#if processId}}\n+ Alert Process: {{name}} ({{processId}})\n{{#if cmdLine}}\n  + Command Line: {{cmdLine}}\n{{/if}}\n{{#if assetId}}\n  + Asset ID: {{assetId}}\n{{/if}}\n{{#if hashes}}\n{{#each hashes}}\n  + {{hash}} ({{type}})\n{{/each}}\n{{/if}}\n{{/if}}\n{{/each}}\n{{/if}}\n{{/if}}\n\n## VirusTotal Findings\n\nCymru Hash Lookup ( {{[7b3c38d3-dfc9-4354-9306-c9d68171a641].[$success]}} ):\n\n{{[7b3c38d3-dfc9-4354-9306-c9d68171a641].[result].[detected]}}\n\n{{[7b3c38d3-dfc9-4354-9306-c9d68171a641].[result].[last_seen_utc]}}\n\n{{[7b3c38d3-dfc9-4354-9306-c9d68171a641].[result].[response_code]}}\n\n\n# Carbon Black Response\nBlock Hash: {{[a75150ef-8fda-4965-8ebc-705b3048c7e3].[success]}}\n\n"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "71bbbd9b-35cd-49f3-ac4b-240c016c0637": {
+            "nodeId": "71bbbd9b-35cd-49f3-ac4b-240c016c0637",
+            "name": "VirusTotal Hash Lookup",
+            "type": "action",
+            "plugin": {
+              "name": "VirusTotal",
+              "slugVendor": "rapid7",
+              "slugName": "virustotal",
+              "slugVersion": "6.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/virustotal/6.0.0/icon.png"
+            },
+            "identifier": "lookup_hash",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "hash": "{{[15b6e09f-6a40-44f1-ae35-4d66b898f81a].[$item].[hash]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "hash": {
+                  "description": "MD5/SHA1/SHA256 hash to lookup",
+                  "order": 1,
+                  "title": "Hash",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "malicious": {
+                  "description": "True if one or more positives",
+                  "order": 1,
+                  "title": "Malicious",
+                  "type": "boolean"
+                },
+                "md5": {
+                  "description": "MD5 hash",
+                  "order": 11,
+                  "title": "MD5",
+                  "type": "string"
+                },
+                "permalink": {
+                  "description": "Link to report (if found)",
+                  "order": 3,
+                  "title": "Permalink",
+                  "type": "string"
+                },
+                "positives": {
+                  "description": "Number of positives (if found)",
+                  "order": 2,
+                  "title": "Positives",
+                  "type": "integer"
+                },
+                "resource": {
+                  "description": "Resource",
+                  "order": 4,
+                  "title": "Resources",
+                  "type": "string"
+                },
+                "scan_date": {
+                  "description": "Scan Date",
+                  "order": 6,
+                  "title": "Scan Date",
+                  "type": "string"
+                },
+                "scan_id": {
+                  "description": "Scan ID",
+                  "order": 5,
+                  "title": "Scan ID",
+                  "type": "string"
+                },
+                "scans": {
+                  "description": "Scans",
+                  "order": 7,
+                  "title": "Scans",
+                  "type": "object"
+                },
+                "sha1": {
+                  "description": "SHA1 hash",
+                  "order": 10,
+                  "title": "SHA1",
+                  "type": "string"
+                },
+                "sha256": {
+                  "description": "SHA256 hash",
+                  "order": 9,
+                  "title": "SHA256",
+                  "type": "string"
+                },
+                "total": {
+                  "description": "Total Scans",
+                  "order": 8,
+                  "title": "Total",
+                  "type": "integer"
+                },
+                "verbose_msg": {
+                  "description": "Message returned from the submission",
+                  "order": 12,
+                  "title": "Verbose Message",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "764ac227-3d7a-491e-8402-6b01200518e0": {
+            "nodeId": "764ac227-3d7a-491e-8402-6b01200518e0",
+            "name": "Warning",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": "{{[15b6e09f-6a40-44f1-ae35-4d66b898f81a].[$item].[hash]}} black was unsuccessful, check Carbon Black connection.",
+                "recipient": "#slack-secops",
+                "thread_ts": "{{[efcddea7-b092-40e3-8209-5c1f797521da].[timestamp]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 4,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 3,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                },
+                "thread_ts": {
+                  "description": "Select timestamp output variable from parent message step",
+                  "order": 2,
+                  "title": "To post in a thread, select parent message timestamp",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
+          },
+          "7b3c38d3-dfc9-4354-9306-c9d68171a641": {
+            "nodeId": "7b3c38d3-dfc9-4354-9306-c9d68171a641",
+            "name": "VirusTotal File Lookup",
+            "type": "action",
+            "plugin": {
+              "name": "VirusTotal",
+              "slugVendor": "rapid7",
+              "slugName": "virustotal",
+              "slugVersion": "6.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/virustotal/6.0.0/icon.png"
+            },
+            "identifier": "scan_file_report",
+            "continueOnFailure": true,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "hash": "{{[a5fab515-967d-4afe-9a35-61759fe31ca4].[$item].[name]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "hash": {
+                  "description": "MD5/SHA1/SHA256 of file",
+                  "order": 1,
+                  "title": "Hash",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "malicious": {
+                  "description": "True if one or more positives",
+                  "order": 1,
+                  "title": "Malicious",
+                  "type": "boolean"
+                },
+                "md5": {
+                  "description": "MD5 hash",
+                  "order": 11,
+                  "title": "MD5",
+                  "type": "string"
+                },
+                "permalink": {
+                  "description": "Link to report (if found)",
+                  "order": 3,
+                  "title": "Permalink",
+                  "type": "string"
+                },
+                "positives": {
+                  "description": "Number of positives (if found)",
+                  "order": 2,
+                  "title": "Positives",
+                  "type": "integer"
+                },
+                "resource": {
+                  "description": "Resource",
+                  "order": 4,
+                  "title": "Resource",
+                  "type": "string"
+                },
+                "scan_date": {
+                  "description": "Scan Date",
+                  "order": 6,
+                  "title": "Scan Date",
+                  "type": "string"
+                },
+                "scan_id": {
+                  "description": "Scan ID",
+                  "order": 5,
+                  "title": "Scan ID",
+                  "type": "string"
+                },
+                "scans": {
+                  "description": "Scans",
+                  "order": 7,
+                  "title": "Scans",
+                  "type": "object"
+                },
+                "sha1": {
+                  "description": "SHA1 hash",
+                  "order": 10,
+                  "title": "SHA1",
+                  "type": "string"
+                },
+                "sha256": {
+                  "description": "SHA256 hash",
+                  "order": 9,
+                  "title": "SHA256",
+                  "type": "string"
+                },
+                "total": {
+                  "description": "Total Scans",
+                  "order": 8,
+                  "title": "Total",
+                  "type": "integer"
+                },
+                "verbose_msg": {
+                  "description": "Message returned from the submission",
+                  "order": 12,
+                  "title": "Verbose Message",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "818e00ab-6a26-49c6-9bbe-8791cef1c6d0": {
+            "nodeId": "818e00ab-6a26-49c6-9bbe-8791cef1c6d0",
+            "name": "InsightIDR Event",
+            "description": "This workflow automated the process of looking up an associated file hash in VirusTotal from an InsightIDR alert. InsightConnect then posts a user response prompt to the security channel in a synopsis of the incident. Based upon the details, the incident responder will either dismiss as a false positive or block the file with Carbon Black Response. ",
+            "type": "trigger",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "triggerId": "bb796bff-a650-4fd1-9d76-ab91ba78602e",
+            "defaultInputJSONSchema": {
+              "definitions": {
+                "actor": {
+                  "properties": {
+                    "assets": {
+                      "description": "The assets that are part of the investigation",
+                      "items": {
+                        "$ref": "#/definitions/asset"
+                      },
+                      "order": 2,
+                      "title": "Assets",
+                      "type": "array"
+                    },
+                    "users": {
+                      "description": "The users that are part of the investigation",
+                      "items": {
+                        "$ref": "#/definitions/user"
+                      },
+                      "order": 1,
+                      "title": "Users",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Actor",
+                  "type": "object"
+                },
+                "asset": {
+                  "properties": {
+                    "assetId": {
+                      "description": "the ID of the asset",
+                      "order": 1,
+                      "title": "AssetId",
+                      "type": "string"
+                    },
+                    "fqdn": {
+                      "description": "The fully qualified domain name",
+                      "order": 3,
+                      "title": "Fqdn",
+                      "type": "string"
+                    },
+                    "shortname": {
+                      "description": "shortname of the asset",
+                      "order": 2,
+                      "title": "Shortname",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "shortname",
+                    "assetId"
+                  ],
+                  "title": "Asset",
+                  "type": "object"
+                },
+                "content": {
+                  "properties": {
+                    "domains": {
+                      "description": "A list of domains to check",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "Domains",
+                      "type": "array"
+                    },
+                    "ipAddresses": {
+                      "description": "A list of ip addresses to check",
+                      "items": {
+                        "$ref": "#/definitions/ipAddress"
+                      },
+                      "order": 3,
+                      "title": "IpAddresses",
+                      "type": "array"
+                    },
+                    "processes": {
+                      "description": "A list of processes to check",
+                      "items": {
+                        "$ref": "#/definitions/process"
+                      },
+                      "order": 4,
+                      "title": "Processes",
+                      "type": "array"
+                    },
+                    "urls": {
+                      "description": "A list of URLs to check",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 1,
+                      "title": "Urls",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Content",
+                  "type": "object"
+                },
+                "hash": {
+                  "properties": {
+                    "hash": {
+                      "description": "The actual hash",
+                      "order": 1,
+                      "title": "Hash",
+                      "type": "string"
+                    },
+                    "type": {
+                      "description": "The algorithm used to generate the hash",
+                      "order": 2,
+                      "title": "Type",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "hash",
+                    "type"
+                  ],
+                  "title": "Hash",
+                  "type": "object"
+                },
+                "ipAddress": {
+                  "properties": {
+                    "ip": {
+                      "description": "The raw IP",
+                      "order": 1,
+                      "title": "Ip",
+                      "type": "string"
+                    },
+                    "type": {
+                      "description": "Denotes if an IP is internal or external",
+                      "order": 2,
+                      "title": "Type",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "ip",
+                    "type"
+                  ],
+                  "title": "IpAddress",
+                  "type": "object"
+                },
+                "process": {
+                  "properties": {
+                    "assetId": {
+                      "description": "The asset id associated with the process",
+                      "order": 1,
+                      "title": "AssetId",
+                      "type": "string"
+                    },
+                    "cmdLine": {
+                      "description": "The raw value of the command line call used to invoke the process",
+                      "order": 5,
+                      "title": "CmdLine",
+                      "type": "string"
+                    },
+                    "hashes": {
+                      "description": "The list of hashes to check",
+                      "items": {
+                        "$ref": "#/definitions/hash"
+                      },
+                      "order": 3,
+                      "title": "Hashes",
+                      "type": "array"
+                    },
+                    "name": {
+                      "description": "The name of the process",
+                      "order": 4,
+                      "title": "Name",
+                      "type": "string"
+                    },
+                    "processId": {
+                      "description": "The PID from the running process on the asset",
+                      "order": 2,
+                      "title": "ProcessId",
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "assetId",
+                    "processId"
+                  ],
+                  "title": "Process",
+                  "type": "object"
+                },
+                "user": {
+                  "properties": {
+                    "distinguishedName": {
+                      "description": "The Active Directory distinguished name of the user",
+                      "order": 2,
+                      "title": "DistinguishedName",
+                      "type": "string"
+                    },
+                    "emails": {
+                      "description": "The email addresses associated with the user",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 3,
+                      "title": "Emails",
+                      "type": "array"
+                    },
+                    "name": {
+                      "description": "The name of the user, as '<firstname> <lastname>' if available, or account name otherwise",
+                      "order": 1,
+                      "title": "Name",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "emails"
+                  ],
+                  "title": "User",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "actors": {
+                  "$ref": "#/definitions/actor",
+                  "description": "The insightIDR actors that are part of the investigation",
+                  "order": 7,
+                  "title": "Actors"
+                },
+                "contents": {
+                  "$ref": "#/definitions/content",
+                  "description": "The contents to enrich",
+                  "order": 8,
+                  "title": "Contents"
+                },
+                "description": {
+                  "description": "The description of the alert",
+                  "order": 4,
+                  "title": "Description",
+                  "type": "string"
+                },
+                "investigationId": {
+                  "description": "The investigation id",
+                  "order": 6,
+                  "title": "InvestigationId",
+                  "type": "string"
+                },
+                "link": {
+                  "description": "The deep link to the investigation in insightIDR",
+                  "order": 5,
+                  "title": "Link",
+                  "type": "string"
+                },
+                "name": {
+                  "description": "The human-readable name of the alert",
+                  "order": 3,
+                  "title": "Name",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "The time the alert was triggered in ISO 8601 extended timestamp format",
+                  "order": 1,
+                  "title": "Timestamp",
+                  "type": "string"
+                },
+                "type": {
+                  "description": "The type of alert",
+                  "order": 2,
+                  "title": "Type",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "investigationId",
+                "actors",
+                "timestamp",
+                "type",
+                "name",
+                "description",
+                "link"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "actor": {
+                  "properties": {
+                    "assets": {
+                      "description": "The assets that are part of the investigation",
+                      "items": {
+                        "$ref": "#/definitions/asset"
+                      },
+                      "order": 2,
+                      "title": "Assets",
+                      "type": "array"
+                    },
+                    "users": {
+                      "description": "The users that are part of the investigation",
+                      "items": {
+                        "$ref": "#/definitions/user"
+                      },
+                      "order": 1,
+                      "title": "Users",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Actor",
+                  "type": "object"
+                },
+                "asset": {
+                  "properties": {
+                    "assetId": {
+                      "description": "the ID of the asset",
+                      "order": 1,
+                      "title": "AssetId",
+                      "type": "string"
+                    },
+                    "fqdn": {
+                      "description": "The fully qualified domain name",
+                      "order": 3,
+                      "title": "Fqdn",
+                      "type": "string"
+                    },
+                    "shortname": {
+                      "description": "shortname of the asset",
+                      "order": 2,
+                      "title": "Shortname",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "shortname",
+                    "assetId"
+                  ],
+                  "title": "Asset",
+                  "type": "object"
+                },
+                "content": {
+                  "properties": {
+                    "domains": {
+                      "description": "A list of domains to check",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "Domains",
+                      "type": "array"
+                    },
+                    "ipAddresses": {
+                      "description": "A list of ip addresses to check",
+                      "items": {
+                        "$ref": "#/definitions/ipAddress"
+                      },
+                      "order": 3,
+                      "title": "IpAddresses",
+                      "type": "array"
+                    },
+                    "processes": {
+                      "description": "A list of processes to check",
+                      "items": {
+                        "$ref": "#/definitions/process"
+                      },
+                      "order": 4,
+                      "title": "Processes",
+                      "type": "array"
+                    },
+                    "urls": {
+                      "description": "A list of URLs to check",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 1,
+                      "title": "Urls",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Content",
+                  "type": "object"
+                },
+                "hash": {
+                  "properties": {
+                    "hash": {
+                      "description": "The actual hash",
+                      "order": 1,
+                      "title": "Hash",
+                      "type": "string"
+                    },
+                    "type": {
+                      "description": "The algorithm used to generate the hash",
+                      "order": 2,
+                      "title": "Type",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "hash",
+                    "type"
+                  ],
+                  "title": "Hash",
+                  "type": "object"
+                },
+                "ipAddress": {
+                  "properties": {
+                    "ip": {
+                      "description": "The raw IP",
+                      "order": 1,
+                      "title": "Ip",
+                      "type": "string"
+                    },
+                    "type": {
+                      "description": "Denotes if an IP is internal or external",
+                      "order": 2,
+                      "title": "Type",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "ip",
+                    "type"
+                  ],
+                  "title": "IpAddress",
+                  "type": "object"
+                },
+                "process": {
+                  "properties": {
+                    "assetId": {
+                      "description": "The asset id associated with the process",
+                      "order": 1,
+                      "title": "AssetId",
+                      "type": "string"
+                    },
+                    "cmdLine": {
+                      "description": "The raw value of the command line call used to invoke the process",
+                      "order": 5,
+                      "title": "CmdLine",
+                      "type": "string"
+                    },
+                    "hashes": {
+                      "description": "The list of hashes to check",
+                      "items": {
+                        "$ref": "#/definitions/hash"
+                      },
+                      "order": 3,
+                      "title": "Hashes",
+                      "type": "array"
+                    },
+                    "name": {
+                      "description": "The name of the process",
+                      "order": 4,
+                      "title": "Name",
+                      "type": "string"
+                    },
+                    "processId": {
+                      "description": "The PID from the running process on the asset",
+                      "order": 2,
+                      "title": "ProcessId",
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "assetId",
+                    "processId"
+                  ],
+                  "title": "Process",
+                  "type": "object"
+                },
+                "user": {
+                  "properties": {
+                    "distinguishedName": {
+                      "description": "The Active Directory distinguished name of the user",
+                      "order": 2,
+                      "title": "DistinguishedName",
+                      "type": "string"
+                    },
+                    "emails": {
+                      "description": "The email addresses associated with the user",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 3,
+                      "title": "Emails",
+                      "type": "array"
+                    },
+                    "name": {
+                      "description": "The name of the user, as '<firstname> <lastname>' if available, or account name otherwise",
+                      "order": 1,
+                      "title": "Name",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "emails"
+                  ],
+                  "title": "User",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "actors": {
+                  "$ref": "#/definitions/actor",
+                  "description": "The insightIDR actors that are part of the investigation",
+                  "order": 7,
+                  "title": "Actors"
+                },
+                "contents": {
+                  "$ref": "#/definitions/content",
+                  "description": "The contents to enrich",
+                  "order": 8,
+                  "title": "Contents"
+                },
+                "description": {
+                  "description": "The description of the alert",
+                  "order": 4,
+                  "title": "Description",
+                  "type": "string"
+                },
+                "investigationId": {
+                  "description": "The investigation id",
+                  "order": 6,
+                  "title": "InvestigationId",
+                  "type": "string"
+                },
+                "link": {
+                  "description": "The deep link to the investigation in insightIDR",
+                  "order": 5,
+                  "title": "Link",
+                  "type": "string"
+                },
+                "name": {
+                  "description": "The human-readable name of the alert",
+                  "order": 3,
+                  "title": "Name",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "The time the alert was triggered in ISO 8601 extended timestamp format",
+                  "order": 1,
+                  "title": "Timestamp",
+                  "type": "string"
+                },
+                "type": {
+                  "description": "The type of alert",
+                  "order": 2,
+                  "title": "Type",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "investigationId",
+                "actors",
+                "timestamp",
+                "type",
+                "name",
+                "description",
+                "link"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/trigger-api-idr.svg",
+            "connectionType": "NONE"
+          },
+          "a5fab515-967d-4afe-9a35-61759fe31ca4": {
+            "nodeId": "a5fab515-967d-4afe-9a35-61759fe31ca4",
+            "name": "Processes Loop",
+            "type": "loop",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "innerEdgeId": "0bb4fcee-0af2-47cd-88cd-d19fc8630442",
+              "nextEdgeId": "6cc4dc69-478b-4cb6-b533-ac9b68521320",
+              "repeatVariable": "{{[818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[contents].[processes]}}"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/loop.svg",
+            "connectionType": "NONE"
+          },
+          "a75150ef-8fda-4965-8ebc-705b3048c7e3": {
+            "nodeId": "a75150ef-8fda-4965-8ebc-705b3048c7e3",
+            "name": "CB Response - Block Hash",
+            "type": "action",
+            "plugin": {
+              "name": "Cb Response",
+              "slugVendor": "rapid7",
+              "slugName": "carbon_black_response",
+              "slugVersion": "3.1.8",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/carbon_black_response/3.1.8/icon.png"
+            },
+            "identifier": "blacklist_hash",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "md5_hash": "{{[15b6e09f-6a40-44f1-ae35-4d66b898f81a].[$item].[hash]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "md5_hash": {
+                  "description": "An MD5 hash",
+                  "order": 1,
+                  "title": "MD5 Hash",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "md5_hash"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "success": {
+                  "description": "Status of request - true if successful, false otherwise",
+                  "order": 1,
+                  "title": "Success",
+                  "type": "boolean"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "aec8e3f1-0a11-4c9d-9f22-48cba7d60d43": {
+            "nodeId": "aec8e3f1-0a11-4c9d-9f22-48cba7d60d43",
+            "name": "Carbon Black Integration",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "25de078e-1845-4ce5-ab85-a673e3ad8fd5",
+              "stepControlParams": [
+                {
+                  "edgeId": "04946589-2002-417b-963c-8a1b7579d004",
+                  "expression": {
+                    "left": {
+                      "name": "a75150ef-8fda-4965-8ebc-705b3048c7e3.success",
+                      "type": "variable"
+                    },
+                    "op": "=",
+                    "right": {
+                      "type": "literal",
+                      "value": true
+                    },
+                    "type": "binary"
+                  },
+                  "expressionText": "{{[a75150ef-8fda-4965-8ebc-705b3048c7e3].[success]}} = true"
+                },
+                {
+                  "edgeId": "25de078e-1845-4ce5-ab85-a673e3ad8fd5",
+                  "expression": {},
+                  "expressionText": ""
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          },
+          "b97a6872-de12-40e2-a806-87d2ab8fafdf": {
+            "nodeId": "b97a6872-de12-40e2-a806-87d2ab8fafdf",
+            "name": "VirusTotal Findings",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "*{{[15b6e09f-6a40-44f1-ae35-4d66b898f81a].[$item].[hash]}}*\n\n\nVirusTotal File Lookup ( {{[7b3c38d3-dfc9-4354-9306-c9d68171a641].[$success]}} ):\n\nDetected: {{[7b3c38d3-dfc9-4354-9306-c9d68171a641].[result].[detected]}}\nLast Seen: {{[7b3c38d3-dfc9-4354-9306-c9d68171a641].[result].[last_seen_utc]}}\nResponse Code: {{[7b3c38d3-dfc9-4354-9306-c9d68171a641].[result].[response_code]}}\n{{[7b3c38d3-dfc9-4354-9306-c9d68171a641].[permalink]}}\n\n\nVirusTotal File Lookup ( {{[71bbbd9b-35cd-49f3-ac4b-240c016c0637].[$success]}} ):\nMalicious: {{[71bbbd9b-35cd-49f3-ac4b-240c016c0637].[malicious]}}\nRisk Score: {{[71bbbd9b-35cd-49f3-ac4b-240c016c0637].[positives]}}/{{[71bbbd9b-35cd-49f3-ac4b-240c016c0637].[total]}}\n\n{{[71bbbd9b-35cd-49f3-ac4b-240c016c0637].[permalink]}}\n"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "d7b5abb0-07b4-4720-8a71-966ba40ed69c": {
+            "nodeId": "d7b5abb0-07b4-4720-8a71-966ba40ed69c",
+            "name": "Block Hash Summary",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "{{#if [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[description]}}\n**Description:** {{[818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[description]}}\n{{/if}}\n\n{{#if [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[investigationId]}}\n**Investigation ID:** {{[818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[investigationId]}}\n{{/if}}\n\n{{#if [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[name]}}\n**Name:** {{[818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[name]}}\n{{/if}}\n\n{{#if [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[link]}}\n**Link:** [{{[818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[link]}}]({{[818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[link]}})\n{{/if}}\n\n{{#if [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[timestamp]}}\n**Timestamp:** {{[818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[timestamp]}}\n{{/if}}\n\n{{#if [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[type]}}\n**Type:** {{[818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[type]}}\n{{/if}}\n\n{{#if [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[actors]}}\n**Available Actors**\n{{#each [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[actors].[assets]}}\n{{#if fqdn}}\nAsset FQDN: {{fqdn}}\n{{/if}}\n{{#if shortname}}\nAsset Shortname: {{shortname}}\n{{/if}}\n{{/each}}\n{{/if}}\n\n{{#if [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[contents]}}\n{{#if [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[contents].[ipAddresses]}}\n**Alert IP Addresses**\n{{#each [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[contents].[ipAddresses]}}\n{{#if ip}}\n* Alert IP: {{ip}} ({{type}})\n{{/if}}\n{{/each}}\n{{/if}}\n{{#if [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[contents].[domains]}}\n\n**Alert Domains**\n{{#each [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[contents].[domains]}}\n+ {{this}}\n{{/each}}\n{{/if}}\n{{#if [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[contents].[urls]}}\n\n**Alert URLs**\n{{#each [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[contents].[urls]}}\n+ {{this}}\n{{/each}}\n{{/if}}\n\n{{#if [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[contents].[processes]}}\n\n**Alert Process Hashes**\n{{#each [818e00ab-6a26-49c6-9bbe-8791cef1c6d0].[contents].[processes]}}\n{{#if processId}}\n+ Alert Process: {{name}} ({{processId}})\n{{#if cmdLine}}\n  + Command Line: {{cmdLine}}\n{{/if}}\n{{#if assetId}}\n  + Asset ID: {{assetId}}\n{{/if}}\n{{#if hashes}}\n{{#each hashes}}\n  + {{hash}} ({{type}})\n{{/each}}\n{{/if}}\n{{/if}}\n{{/each}}\n{{/if}}\n{{/if}}\n\n## VirusTotal Findings\n\nCymru Hash Lookup ( {{[7b3c38d3-dfc9-4354-9306-c9d68171a641].[$success]}} ):\n\n{{[7b3c38d3-dfc9-4354-9306-c9d68171a641].[result].[detected]}}\n\n{{[7b3c38d3-dfc9-4354-9306-c9d68171a641].[result].[last_seen_utc]}}\n\n{{[7b3c38d3-dfc9-4354-9306-c9d68171a641].[result].[response_code]}}\n\n\n# Carbon Black Response\nBlock Hash: {{[a75150ef-8fda-4965-8ebc-705b3048c7e3].[success]}}\n\n"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "efcddea7-b092-40e3-8209-5c1f797521da": {
+            "nodeId": "efcddea7-b092-40e3-8209-5c1f797521da",
+            "name": "User Response",
+            "type": "decision_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "attachments": null,
+              "message": "{{[b97a6872-de12-40e2-a806-87d2ab8fafdf].[content]}}\n\n\n_Would you like to blacklist this hash?_",
+              "messageType": "button",
+              "options": [
+                {
+                  "answer": "Blacklist",
+                  "buttonStyle": "danger",
+                  "confirmation": "Blacklisting Hash",
+                  "edgeId": "134520fd-a0b3-4748-87eb-eb5b5bea5ccf",
+                  "isTimeoutOnly": false
+                },
+                {
+                  "answer": "Dismiss",
+                  "buttonStyle": "default",
+                  "confirmation": "Dismissed",
+                  "edgeId": "508742a6-899f-448a-a686-dc2f77b18706",
+                  "isTimeoutOnly": false
+                }
+              ],
+              "question": "Thank you for your response",
+              "recipient": "#slack-secops",
+              "timeout": 600,
+              "timeoutDisplayUnit": "minutes",
+              "timeoutEdgeId": "508742a6-899f-448a-a686-dc2f77b18706"
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "displayType": "bytes",
+                  "format": "bytes",
+                  "order": 3,
+                  "title": "Attachments",
+                  "type": "string"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 1,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "A channel (e.g. #channel) or username",
+                  "order": 2,
+                  "title": "Recipient",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "$success": {
+                  "description": "",
+                  "order": 8,
+                  "title": "$success",
+                  "type": "boolean"
+                },
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "message": {
+                  "description": "The message that was sent to slack",
+                  "order": 4,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "path": {
+                  "description": "The path taken",
+                  "order": 6,
+                  "title": "Path",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "The Channel name or User Name",
+                  "order": 3,
+                  "title": "Recipient",
+                  "type": "string"
+                },
+                "responding_user": {
+                  "description": "The slack username of the user responding to the question",
+                  "order": 7,
+                  "title": "Response Question",
+                  "type": "string"
+                },
+                "response_question": {
+                  "description": "The response question that was sent to slack",
+                  "order": 5,
+                  "title": "Response Question",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_interactive_message"
+          }
+        },
+        "tags": null,
+        "humanCostSeconds": 0,
+        "humanCostDisplayUnit": ""
+      }
+    ],
+    "triggers": [
+      {
+        "id": "bb796bff-a650-4fd1-9d76-ab91ba78602e",
+        "name": "InsightIDR Event",
+        "description": "This workflow automated the process of looking up an associated file hash in VirusTotal from an InsightIDR alert. InsightConnect then posts a user response prompt to the security channel in a synopsis of the incident. Based upon the details, the incident responder will either dismiss as a false positive or block the file with Carbon Black Response. ",
+        "input": null,
+        "inputJsonSchema": {
+          "definitions": {
+            "actor": {
+              "properties": {
+                "assets": {
+                  "description": "The assets that are part of the investigation",
+                  "items": {
+                    "$ref": "#/definitions/asset"
+                  },
+                  "order": 2,
+                  "title": "Assets",
+                  "type": "array"
+                },
+                "users": {
+                  "description": "The users that are part of the investigation",
+                  "items": {
+                    "$ref": "#/definitions/user"
+                  },
+                  "order": 1,
+                  "title": "Users",
+                  "type": "array"
+                }
+              },
+              "title": "Actor",
+              "type": "object"
+            },
+            "asset": {
+              "properties": {
+                "assetId": {
+                  "description": "the ID of the asset",
+                  "order": 1,
+                  "title": "AssetId",
+                  "type": "string"
+                },
+                "fqdn": {
+                  "description": "The fully qualified domain name",
+                  "order": 3,
+                  "title": "Fqdn",
+                  "type": "string"
+                },
+                "shortname": {
+                  "description": "shortname of the asset",
+                  "order": 2,
+                  "title": "Shortname",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "shortname",
+                "assetId"
+              ],
+              "title": "Asset",
+              "type": "object"
+            },
+            "content": {
+              "properties": {
+                "domains": {
+                  "description": "A list of domains to check",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "Domains",
+                  "type": "array"
+                },
+                "ipAddresses": {
+                  "description": "A list of ip addresses to check",
+                  "items": {
+                    "$ref": "#/definitions/ipAddress"
+                  },
+                  "order": 3,
+                  "title": "IpAddresses",
+                  "type": "array"
+                },
+                "processes": {
+                  "description": "A list of processes to check",
+                  "items": {
+                    "$ref": "#/definitions/process"
+                  },
+                  "order": 4,
+                  "title": "Processes",
+                  "type": "array"
+                },
+                "urls": {
+                  "description": "A list of URLs to check",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "Urls",
+                  "type": "array"
+                }
+              },
+              "title": "Content",
+              "type": "object"
+            },
+            "hash": {
+              "properties": {
+                "hash": {
+                  "description": "The actual hash",
+                  "order": 1,
+                  "title": "Hash",
+                  "type": "string"
+                },
+                "type": {
+                  "description": "The algorithm used to generate the hash",
+                  "order": 2,
+                  "title": "Type",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "hash",
+                "type"
+              ],
+              "title": "Hash",
+              "type": "object"
+            },
+            "ipAddress": {
+              "properties": {
+                "ip": {
+                  "description": "The raw IP",
+                  "order": 1,
+                  "title": "Ip",
+                  "type": "string"
+                },
+                "type": {
+                  "description": "Denotes if an IP is internal or external",
+                  "order": 2,
+                  "title": "Type",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "ip",
+                "type"
+              ],
+              "title": "IpAddress",
+              "type": "object"
+            },
+            "process": {
+              "properties": {
+                "assetId": {
+                  "description": "The asset id associated with the process",
+                  "order": 1,
+                  "title": "AssetId",
+                  "type": "string"
+                },
+                "cmdLine": {
+                  "description": "The raw value of the command line call used to invoke the process",
+                  "order": 5,
+                  "title": "CmdLine",
+                  "type": "string"
+                },
+                "hashes": {
+                  "description": "The list of hashes to check",
+                  "items": {
+                    "$ref": "#/definitions/hash"
+                  },
+                  "order": 3,
+                  "title": "Hashes",
+                  "type": "array"
+                },
+                "name": {
+                  "description": "The name of the process",
+                  "order": 4,
+                  "title": "Name",
+                  "type": "string"
+                },
+                "processId": {
+                  "description": "The PID from the running process on the asset",
+                  "order": 2,
+                  "title": "ProcessId",
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "assetId",
+                "processId"
+              ],
+              "title": "Process",
+              "type": "object"
+            },
+            "user": {
+              "properties": {
+                "distinguishedName": {
+                  "description": "The Active Directory distinguished name of the user",
+                  "order": 2,
+                  "title": "DistinguishedName",
+                  "type": "string"
+                },
+                "emails": {
+                  "description": "The email addresses associated with the user",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 3,
+                  "title": "Emails",
+                  "type": "array"
+                },
+                "name": {
+                  "description": "The name of the user, as '<firstname> <lastname>' if available, or account name otherwise",
+                  "order": 1,
+                  "title": "Name",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "emails"
+              ],
+              "title": "User",
+              "type": "object"
+            }
+          },
+          "properties": {
+            "actors": {
+              "$ref": "#/definitions/actor",
+              "description": "The insightIDR actors that are part of the investigation",
+              "order": 7,
+              "title": "Actors"
+            },
+            "contents": {
+              "$ref": "#/definitions/content",
+              "description": "The contents to enrich",
+              "order": 8,
+              "title": "Contents"
+            },
+            "description": {
+              "description": "The description of the alert",
+              "order": 4,
+              "title": "Description",
+              "type": "string"
+            },
+            "investigationId": {
+              "description": "The investigation id",
+              "order": 6,
+              "title": "InvestigationId",
+              "type": "string"
+            },
+            "link": {
+              "description": "The deep link to the investigation in insightIDR",
+              "order": 5,
+              "title": "Link",
+              "type": "string"
+            },
+            "name": {
+              "description": "The human-readable name of the alert",
+              "order": 3,
+              "title": "Name",
+              "type": "string"
+            },
+            "timestamp": {
+              "description": "The time the alert was triggered in ISO 8601 extended timestamp format",
+              "order": 1,
+              "title": "Timestamp",
+              "type": "string"
+            },
+            "type": {
+              "description": "The type of alert",
+              "order": 2,
+              "title": "Type",
+              "type": "string"
+            }
+          },
+          "required": [
+            "investigationId",
+            "actors",
+            "timestamp",
+            "type",
+            "name",
+            "description",
+            "link"
+          ],
+          "title": "Variables",
+          "type": "object"
+        },
+        "outputJsonSchema": {
+          "definitions": {
+            "actor": {
+              "properties": {
+                "assets": {
+                  "description": "The assets that are part of the investigation",
+                  "items": {
+                    "$ref": "#/definitions/asset"
+                  },
+                  "order": 2,
+                  "title": "Assets",
+                  "type": "array"
+                },
+                "users": {
+                  "description": "The users that are part of the investigation",
+                  "items": {
+                    "$ref": "#/definitions/user"
+                  },
+                  "order": 1,
+                  "title": "Users",
+                  "type": "array"
+                }
+              },
+              "title": "Actor",
+              "type": "object"
+            },
+            "asset": {
+              "properties": {
+                "assetId": {
+                  "description": "the ID of the asset",
+                  "order": 1,
+                  "title": "AssetId",
+                  "type": "string"
+                },
+                "fqdn": {
+                  "description": "The fully qualified domain name",
+                  "order": 3,
+                  "title": "Fqdn",
+                  "type": "string"
+                },
+                "shortname": {
+                  "description": "shortname of the asset",
+                  "order": 2,
+                  "title": "Shortname",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "shortname",
+                "assetId"
+              ],
+              "title": "Asset",
+              "type": "object"
+            },
+            "content": {
+              "properties": {
+                "domains": {
+                  "description": "A list of domains to check",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "Domains",
+                  "type": "array"
+                },
+                "ipAddresses": {
+                  "description": "A list of ip addresses to check",
+                  "items": {
+                    "$ref": "#/definitions/ipAddress"
+                  },
+                  "order": 3,
+                  "title": "IpAddresses",
+                  "type": "array"
+                },
+                "processes": {
+                  "description": "A list of processes to check",
+                  "items": {
+                    "$ref": "#/definitions/process"
+                  },
+                  "order": 4,
+                  "title": "Processes",
+                  "type": "array"
+                },
+                "urls": {
+                  "description": "A list of URLs to check",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "Urls",
+                  "type": "array"
+                }
+              },
+              "title": "Content",
+              "type": "object"
+            },
+            "hash": {
+              "properties": {
+                "hash": {
+                  "description": "The actual hash",
+                  "order": 1,
+                  "title": "Hash",
+                  "type": "string"
+                },
+                "type": {
+                  "description": "The algorithm used to generate the hash",
+                  "order": 2,
+                  "title": "Type",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "hash",
+                "type"
+              ],
+              "title": "Hash",
+              "type": "object"
+            },
+            "ipAddress": {
+              "properties": {
+                "ip": {
+                  "description": "The raw IP",
+                  "order": 1,
+                  "title": "Ip",
+                  "type": "string"
+                },
+                "type": {
+                  "description": "Denotes if an IP is internal or external",
+                  "order": 2,
+                  "title": "Type",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "ip",
+                "type"
+              ],
+              "title": "IpAddress",
+              "type": "object"
+            },
+            "process": {
+              "properties": {
+                "assetId": {
+                  "description": "The asset id associated with the process",
+                  "order": 1,
+                  "title": "AssetId",
+                  "type": "string"
+                },
+                "cmdLine": {
+                  "description": "The raw value of the command line call used to invoke the process",
+                  "order": 5,
+                  "title": "CmdLine",
+                  "type": "string"
+                },
+                "hashes": {
+                  "description": "The list of hashes to check",
+                  "items": {
+                    "$ref": "#/definitions/hash"
+                  },
+                  "order": 3,
+                  "title": "Hashes",
+                  "type": "array"
+                },
+                "name": {
+                  "description": "The name of the process",
+                  "order": 4,
+                  "title": "Name",
+                  "type": "string"
+                },
+                "processId": {
+                  "description": "The PID from the running process on the asset",
+                  "order": 2,
+                  "title": "ProcessId",
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "assetId",
+                "processId"
+              ],
+              "title": "Process",
+              "type": "object"
+            },
+            "user": {
+              "properties": {
+                "distinguishedName": {
+                  "description": "The Active Directory distinguished name of the user",
+                  "order": 2,
+                  "title": "DistinguishedName",
+                  "type": "string"
+                },
+                "emails": {
+                  "description": "The email addresses associated with the user",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 3,
+                  "title": "Emails",
+                  "type": "array"
+                },
+                "name": {
+                  "description": "The name of the user, as '<firstname> <lastname>' if available, or account name otherwise",
+                  "order": 1,
+                  "title": "Name",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "emails"
+              ],
+              "title": "User",
+              "type": "object"
+            }
+          },
+          "properties": {
+            "actors": {
+              "$ref": "#/definitions/actor",
+              "description": "The insightIDR actors that are part of the investigation",
+              "order": 7,
+              "title": "Actors"
+            },
+            "contents": {
+              "$ref": "#/definitions/content",
+              "description": "The contents to enrich",
+              "order": 8,
+              "title": "Contents"
+            },
+            "description": {
+              "description": "The description of the alert",
+              "order": 4,
+              "title": "Description",
+              "type": "string"
+            },
+            "investigationId": {
+              "description": "The investigation id",
+              "order": 6,
+              "title": "InvestigationId",
+              "type": "string"
+            },
+            "link": {
+              "description": "The deep link to the investigation in insightIDR",
+              "order": 5,
+              "title": "Link",
+              "type": "string"
+            },
+            "name": {
+              "description": "The human-readable name of the alert",
+              "order": 3,
+              "title": "Name",
+              "type": "string"
+            },
+            "timestamp": {
+              "description": "The time the alert was triggered in ISO 8601 extended timestamp format",
+              "order": 1,
+              "title": "Timestamp",
+              "type": "string"
+            },
+            "type": {
+              "description": "The type of alert",
+              "order": 2,
+              "title": "Type",
+              "type": "string"
+            }
+          },
+          "required": [
+            "investigationId",
+            "actors",
+            "timestamp",
+            "type",
+            "name",
+            "description",
+            "link"
+          ],
+          "title": "Variables",
+          "type": "object"
+        },
+        "tags": [],
+        "type": "trigger_api_idr"
+      }
+    ]
+  }
+}
