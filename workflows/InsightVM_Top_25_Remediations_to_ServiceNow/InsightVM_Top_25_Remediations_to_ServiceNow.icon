@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.47.7-0-gf558b",
+    "komandVersion": "1.48.1-0-g787c7",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-03-18T16:22:51.737012033Z",
+    "exportedAt": "2020-04-06T03:35:41.534773827Z",
     "workflowVersions": [
       {
         "name": "IVM Top Remediations to ServiceNow {{[37c6a450-23c8-4a02-a03a-f86b37b060ff].[time]}}",
@@ -366,7 +366,7 @@
                 "dotall": false,
                 "ignorecase": false,
                 "in_regex": "((<\\/?p>)*\\\\n\\s*\\\\n\\s*(<\\/?p>)*\\s*)|((<\\/?p>)*\\\\n\\s*(<\\/?p>)*)",
-                "in_string": "{{[1c30bed3-a197-436f-b024-231cb35f52a4].[$item].[fix]}}",
+                "in_string": "{{#if [1c30bed3-a197-436f-b024-231cb35f52a4].[$item].[fix]}}{{[1c30bed3-a197-436f-b024-231cb35f52a4].[$item].[fix]}}{{else}} {{/if}}",
                 "max_replace": 0,
                 "multiline": false,
                 "replace_string": "\\n"
@@ -614,8 +614,8 @@
               "name": "Rapid7 InsightVM",
               "slugVendor": "rapid7",
               "slugName": "rapid7_insightvm",
-              "slugVersion": "3.6.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/3.6.0/icon.png"
+              "slugVersion": "4.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/4.0.0/icon.png"
             },
             "identifier": "top_remediations",
             "continueOnFailure": false,
@@ -683,8 +683,8 @@
                 }
               },
               "required": [
-                "scope",
-                "limit"
+                "limit",
+                "scope"
               ],
               "title": "Variables",
               "type": "object"
@@ -757,11 +757,11 @@
                   "required": [
                     "nexposeId",
                     "summary",
+                    "assetCount",
+                    "vulnerabilityCount",
                     "riskScore",
                     "assets",
                     "solutionId",
-                    "assetCount",
-                    "vulnerabilityCount",
                     "vulnerabilities"
                   ],
                   "title": "Remediation",
@@ -859,12 +859,12 @@
                     }
                   },
                   "required": [
+                    "riskScore",
+                    "id",
                     "title",
                     "description",
                     "cvssScore",
-                    "severity",
-                    "riskScore",
-                    "id"
+                    "severity"
                   ],
                   "title": "Remediation Vulnerability",
                   "type": "object"
@@ -911,7 +911,7 @@
                 "times_in_utc": "05:00"
               }
             },
-            "triggerId": "37d87671-1e61-4f38-8f7b-13e43b4b26a3",
+            "triggerId": "80d5d435-fa18-405b-94bc-403da487eb63",
             "defaultInputJSONSchema": {
               "properties": {
                 "message": {
@@ -1561,7 +1561,7 @@
     ],
     "triggers": [
       {
-        "id": "37d87671-1e61-4f38-8f7b-13e43b4b26a3",
+        "id": "80d5d435-fa18-405b-94bc-403da487eb63",
         "identifier": "daily",
         "name": "Daily Trigger",
         "description": "",
