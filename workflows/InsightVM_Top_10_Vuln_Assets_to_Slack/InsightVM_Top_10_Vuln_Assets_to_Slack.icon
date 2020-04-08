@@ -8,7 +8,7 @@
         "name": "Most Vulnerable Assets in Sites to Slack",
         "type": "runnable",
         "version": "",
-        "description": "",
+        "description": "This workflow returns the top 10 most vulnerable assets in each site in InsightVM.",
         "graph": {
           "edges": {
             "0790f9d1-36f4-4951-b716-07009f910c82": {
