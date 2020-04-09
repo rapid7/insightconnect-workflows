@@ -10,7 +10,7 @@ This workflow will delete emails matching given search criteria by sending a not
 
 The following connections will need to be setup: 
 
-* Microsoft Exchange
+* [Microsoft Exchange](https://insightconnect.help.rapid7.com/docs/microsoft-exchange)
 * [Slack](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops)
 
 # Documentation
