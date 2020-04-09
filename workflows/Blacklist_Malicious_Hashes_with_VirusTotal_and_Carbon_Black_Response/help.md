@@ -25,7 +25,7 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|CB Response|3.1.8|1|
+|Cb Response|3.1.8|1|
 |VirusTotal|6.0.0|2|
 
 ## Troubleshooting
