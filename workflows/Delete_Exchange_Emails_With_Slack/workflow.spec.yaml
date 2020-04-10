@@ -2,7 +2,7 @@ extension: workflow
 products: ["insightconnect"]
 name: Delete_Exchange_Emails_With_Slack
 title: "Delete Exchange Emails With Slack"
-description: "This workflow will delete emails matching given search criteria by sending a notification to InisghtConnect with Slack."
+description: "This workflow will delete emails matching given search criteria by sending a notification to InsightConnect with Slack."
 version: 1.0.0
 vendor: rapid7
 support: rapid7

@@ -4,13 +4,13 @@ This workflow will delete emails matching given search criteria by sending a not
 
 # Key Features
 
-* Removes malicious emails using a slack message
+* Removes malicious emails using a Slack message
 
 # Requirements
 
 The following connections will need to be setup: 
 
-* Microsoft Exchange
+* [Microsoft Exchange](https://insightconnect.help.rapid7.com/docs/microsoft-exchange)
 * [Slack](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops)
 
 # Documentation
