@@ -10,7 +10,7 @@ This workflow will delete emails matching given search criteria by sending a not
 
 The following connections will need to be setup: 
 
-* Microsoft O365
+* [Microsoft O365](https://insightconnect.help.rapid7.com/docs/office365)
 * Microsoft Teams
 
 # Documentation
