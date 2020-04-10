@@ -5,10 +5,10 @@
     "exportedAt": "2020-04-10T16:51:38.661140872Z",
     "workflowVersions": [
       {
-        "name": "Block Sender With Teams",
+        "name": "Block Sender In Office 365 With Teams",
         "type": "runnable",
         "version": "",
-        "description": "",
+        "description": "This workflow will block a sender in Office 365 using a command sent from Microsoft Teams.",
         "graph": {
           "edges": {
             "09a7bd49-1370-4d53-a758-9a695efda3ae": {

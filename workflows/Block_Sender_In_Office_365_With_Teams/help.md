@@ -1,6 +1,6 @@
 # Description
 
-This workflow will block a sender using a command sent from Microsoft Teams
+This workflow will block a sender in Office 365 using a command sent from Microsoft Teams
 
 # Key Features
 
