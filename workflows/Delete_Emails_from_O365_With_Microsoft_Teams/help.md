@@ -4,7 +4,7 @@ This workflow will delete emails matching given search criteria by sending a not
 
 # Key Features
 
-* Removes malicious emails using a slack message
+* Removes malicious emails using a Slack message
 
 # Requirements
 
