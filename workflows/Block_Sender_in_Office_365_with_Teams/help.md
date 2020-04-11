@@ -57,3 +57,5 @@ _There is no troubleshooting information at this time_
 * [Microsoft Office365](https://www.office.com)
 * [Microsoft Teams](https://teams.microsoft.com)
 * [Mail Flow Rules (Transport Rules)](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
+* [Microsoft Teams Plugin Configuration](https://insightconnect.help.rapid7.com/docs/microsoft-teams)
+* [Microsoft Office365 Email Security Plugin Configuration](https://insightconnect.help.rapid7.com/docs/mass-delete-with-powershell#section-set-up-office-365-dependencies)
