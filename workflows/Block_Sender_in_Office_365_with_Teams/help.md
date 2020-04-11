@@ -10,7 +10,7 @@ This workflow will block a sender in Office 365 using a command sent from Micros
 
 The following connections will need to be setup: 
 
-* Microsoft Teams
+* [Microsoft Teams](https://insightconnect.help.rapid7.com/docs/microsoft-teams)
 * [Microsoft Office365 Email Security](https://insightconnect.help.rapid7.com/docs/mass-delete-with-powershell#section-set-up-office-365-dependencies)
 
 # Documentation
