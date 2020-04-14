@@ -23,7 +23,7 @@ Once the workflow has been downloaded, login to InsightConnect and “Import” 
 
 This workflow uses the Slack App trigger to listen for key messages and will block a domain or email address when triggered.
 
-To trigger this workflow, in a direct message to the Rapid7 InsightConnect App in slack, send the following message.
+To trigger this workflow, in a direct message to the Rapid7 InsightConnect App in slack, send the following message:
 
 `block_sender user@example.com`
 
