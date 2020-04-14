@@ -4,7 +4,7 @@ This workflow will block a sender in Office 365 using a command sent from Slack.
 
 # Key Features
 
-* A simple command sent from Slack will block a malicious email or domain using Exchange transport rules
+* A simple command sent from Slack will block a malicious email or domain using Microsoft Exchange transport rules (see references section)
 
 # Requirements
 
