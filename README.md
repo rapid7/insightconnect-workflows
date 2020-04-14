@@ -14,7 +14,7 @@ General information on InsightConnect is available at: https://rapid7.com/produc
 
 ## Contributing Workflows to the Rapid7 Extension Library
 
-To learn more about contributing to the (Rapid7 Extension Library)[https://extensions.rapid7.com], see the (Contributor's Guide)[./CONTRIBUTING] on GitHub. The guide walks through the whole process, from exporting your workflow to entering listing details to submitting a pull request.
+To learn more about contributing to the [Rapid7 Extension Library], see our [Contributor's Guide]. The guide walks through the whole process, from exporting your workflow to entering listing details to submitting a pull request.
 
 
 At a high level, contributing a workflow involves:
@@ -23,16 +23,5 @@ At a high level, contributing a workflow involves:
 3. Submitting a pull request
 
 
-Workflow packages are organized according to the following directory structure:
-```
-└── workflows
-    └── Name_Of_Workflow
-        ├── Name_Of_Workflow.icon
-        ├── help.md
-        ├── workflow.spec.yaml
-        └── screenshots
-            ├── artifact1.png
-            ├── job1.png
-            └── workflow1.png
-```
-
+[Rapid7 Extension Library]:https://extensions.rapid7.com
+[Contributor's Guide]:./CONTRIBUTING

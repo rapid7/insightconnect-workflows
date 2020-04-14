@@ -1,17 +1,19 @@
 # Contributing
 
-Thank you for your interest in joining the InsightConnect developer community!! Please review our [Code of Conduct] before making contributions.
+Thank you for your interest in joining the InsightConnect community!! Please review our [Code of Conduct] before making contributions.
 
-There are multiple ways to contribute beyond writing code. These include:
+There are multiple ways you can help us at Rapid7 and our customers close the security achievement gap with InsightConnect. These include:
 
-- [Submit bugs and feature requests] with detailed information about your issue or idea.
-- [Help fellow users with open issues] or [help fellow committers test recent pull requests].
-- [Report a security vulnerability in InsightConnect] to Rapid7.
-- Submit an updated or brand new workflow!  We are always eager for new
-  workflows and use cases. Don't know where to start? Check out the [user documentation].
+- Build and contribute workflows to share the power of automation with fellow security leaders -- YOU ARE HERE!
+- [Build and contribute new plugins] to extend automation possibilities
+- [Report a security vulnerability in InsightConnect] to Rapid7
 
-Here is a short list of do's and don'ts to make sure *your* valuable contributions actually make
-it into production.  If you do not care to follow these rules, your contribution **will** be rejected. Sorry!
+## Workflow Contributions
+For those looking to contribute workflows, your first step is to plan, build, and test your workflow in InsightConnect. You may want to check to see if a similar workflow is available in the [Rapid7 Extension Library] first! If you're new to workflow building, you may want to read [get started with InsightConnect] and [Workflows 101]. These walkthroughs will help you get familiar with the mechanics of workflow building and include examples for many common scenarios. Once you've finished building your workflow, be sure to include a Final Report artifact to summarize the outcome. Finally, test it and take screenshots of the workflow, the successful job, and the Final Report artifact.
+
+Once you have finished building your workflow, you will need to prepare your workflow trunk. This includes the screenshots taken after testing and basic documentation for your workflow listing on the Rapid7 Extension Library. See our [Contributor's Guide] for a walkthrough.
+
+Finally, you're ready to submit your workflow pull request! See our [PR checklist] and please follow our short list of do's and don'ts below to make sure your valuable contributions actually make it into the Rapid7 Extension Library! We try to consider all our pull requests fairly and in detail, but if you do not follow these rules, your contribution will be closed. We need to ensure all the workflows published to the extension library are high-quality and and easily transferrable across our InsightConnect user base.
 
 ## Code Contributions
 
@@ -59,12 +61,13 @@ Finally, **thank you** for taking the few moments to read this far! You're alrea
 curve, so keep it up!
 
 [Code of Conduct]:./CODE_OF_CONDUCT.md
-[user documentation]:https://insightconnect.help.rapid7.com/docs/
-[Submit bugs and feature requests]:https://github.com/rapid7/insightconnect-workflows/issues
+[Build and contribute new plugins]:https://github.com/rapid7/insightconnect-plugins#getting-started
 [Report a security vulnerability in InsightConnect]:https://www.rapid7.com/disclosure.jsp
-[Help fellow users with open issues]:https://github.com/rapid7/insightconnect-workflows/issues
-[help fellow committers test recent pull requests]:https://github.com/rapid7/insightconnect-workflows/pulls
-[Python PEP8]:https://www.python.org/dev/peps/pep-0008/
+[get started with InsightConnect]:https://insightconnect.help.rapid7.com/docs/get-started-with-insightconnect
+[Workflows 101]:https://insightconnect.help.rapid7.com/docs/workflows-101
+[Contributor's Guide]:./Contributors_Guide.md
+[PR Checklist]:./.github/PULL_REQUEST_TEMPLATE.md
+[user documentation]:https://insightconnect.help.rapid7.com/docs/
 [50/72 rule]:http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
 [topic branch]:http://git-scm.com/book/en/Git-Branching-Branching-Workflows#Topic-Branches
 [draft PR]:https://help.github.com/en/articles/about-pull-requests#draft-pull-requests

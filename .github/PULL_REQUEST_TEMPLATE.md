@@ -1,43 +1,37 @@
 ## Requirements
 
-Developers, verify you have completed the following items by checking them off:
+Workflow contributors, verify you have completed the following items by checking them off:
 
 ### Checklist
-- [ ] Workflow/Snippet contains title and detailed description
-- [ ] Workflow/Snippet title should follow general [Title of Articles](http://grammar.yourdictionary.com/capitalization/rules-for-capitalization-in-titles.html) format
-- [ ] User friendly step names in [Title of Articles](http://grammar.yourdictionary.com/capitalization/rules-for-capitalization-in-titles.html) format
-- [ ] User friendly step descriptions where needed
-- [ ] Workflow contains at least 1 artifact with well formatted information
-- [ ] Directory created and named after the title the snippet or workflow e.g. `workflows/Basic_Domain_Enrichment_Report/`, `snippets/Domain_Enrichment`
-- [ ] Workflow `.icon` file is in the workflow's directory e.g. `workflows/Basic_Domain_Enrichment_Report/Basic_Domain_Enrichment_Report.icon`
-- [ ] Take PNG screenshots of the workflow or snippet e.g.  https://market.komand.com/workflows/ross/chatops-github-commands/1.0.0, https://market.komand.com/snippets/jschipp/basic-domain-enrichment-report/0.1.0
-- [ ] Create a directory called `screenshots` in your workflow's/snippet's directory
-- [ ] Includes PNG screenshots of the workflow in canvas, job, artifact in the `screenshots` directory e.g.  `workflows/Basic_Domain_Enrichment_Report/screenshots/`
-- [ ] PNG screenshot file names should conform to style e.g. `workflow1.png`, `artifact1.png`, `job.png`
-- [ ] Workflow verified as working through WUI
-- [ ] Credentials are not exported and stored in git
-- [ ] `workflow.spec.yaml` file with metadata accompanies workflow
-- [ ] Workflow documentation is provided in `help.md`
-- [ ] Directory structure is followed, see https://github.com/rapid7/insightconnect-workflows/blob/master/README.md
+- [ ] Workflow verified as working in a test
+- [ ] Workflow bundle includes `Name_Of_Workflow.icon` file, `help.md` file, `workflow.spec.yaml` file, and `screenshots` directory
+- [ ] Workflow title should follow general [Title of Articles](http://grammar.yourdictionary.com/capitalization/rules-for-capitalization-in-titles.html) format
+- [ ] Workflow includes a detailed Description
+- [ ] Workflow step names follow [Title of Articles](http://grammar.yourdictionary.com/capitalization/rules-for-capitalization-in-titles.html) format
+- [ ] Triggers, Decisions, and other workflow steps include descriptions where needed
+- [ ] Workflow includes at least one `Final Report` artifact that summarizes workflow execution details
+- [ ] Workflow bundle (directory) is named after the title of the workflow in snake case with first letters capitalized, e.g. `workflows/Name_Of_Workflow/`
+- [ ] `help.md` file includes Description, Key Features, Requirements, Setup, Technical Details, Version History, and References
+- [ ] `workflow.spec.yaml` file includes `products`, `name`, `title`, `description`, `use_cases` tags, `keywords` tags, `source_url`, and the `name` for each screenshot matches a PNG image in the `screenshots` directory
 
 ### Assessment
 
 Post your results with screenshots in this PR using the following style:
 
 ```
-### UI
+### Screenshots
 
-Screenshots of the workflow being used in Komand for validating use (drag and drop screenshots).
+Screenshots help your reviewers provide valuable feedback on your contribution. To add a screenshot here, simply drag and drop the PNG files from a file explorer.
 
 #### Workflow Builder
 
-<img width="697" alt="statsd_workflow" src="https://user-images.githubusercontent.com/2321183/27349935-8e00fd12-55be-11e7-9d86-31250743dc32.png">
+<Insert Workflow Image Here>
 
 #### Job
 
-<img width="1022" alt="screen shot 2017-06-20 at 2 03 31 pm" src="https://user-images.githubusercontent.com/2321183/27350999-9ef49fe0-55c1-11e7-9a74-7b31927d4d9a.png">
+<Insert Job Image Here>
 
 #### Artifact
 
-<img width="937" alt="screen shot 2017-06-20 at 2 03 41 pm" src="https://user-images.githubusercontent.com/2321183/27351011-a4f41880-55c1-11e7-89fa-0e671221863e.png">
+<Insert Artifact Image Here>
 ```
