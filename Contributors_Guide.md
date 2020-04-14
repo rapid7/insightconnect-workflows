@@ -86,22 +86,22 @@ The help markdown file – `help.md` – is the file that provides all the detai
 
 Open the template `help.md` file from the `My_Cool_Workflow` zip and make the following updates:
 
-1. Revise the `Description` to include a brief summary of the workflow. This should not exceed 5 sentences. The Description in the help.md file populates the Overview in the Extension Library listing.
-2. Enter as many `Key Features` as necessary – these should describe the value provided by the workflow to the end user.
-3. Enter any `Requirements` for the workflow to execute. This section should include any credentials, API keys, or other essential items for connections to plugins utilized by the workflow.
-4. Enter your `Setup` information. This may include updating certain variables in the workflow or configuring connections.
-5. Include the `Technical Details` of each plugin utilized by the workflow.
-6. Provide any `Troubleshooting` recommendations. This is uncommon for workflows, but if certain components are prone to failure then identify them here.
-7. Add to the `Version History` if you are updating an existing workflow. Workflow versions start with 1.0.0. Minor changes to the workflow (updated plugins, minor changes in workflow logic) may be reflected with minor updates (eg, 1.1.0, 1.2.0, etc.). Major changes to the workflow (added capabilities, entirely new workflow logic, completely changed plugins, etc.) may be reflected with major updates (eg, 1.0.0, 2.0.0, etc.).
-8. Include any `References` to integration details (white papers, tech sheets, etc.),vendors, or open source solutions utilized in the workflow.
+1. Revise the **Description** to include a brief summary of the workflow. This should not exceed 5 sentences. The Description in the help.md file populates the Overview in the Extension Library listing.
+2. Enter as many **Key Features** as necessary – these should describe the value provided by the workflow to the end user.
+3. Enter any **Requirements** for the workflow to execute. This section should include any credentials, API keys, or other essential items for connections to plugins utilized by the workflow.
+4. Enter your **Setup** information. This may include updating certain variables in the workflow or configuring connections.
+5. Include the **Technical Details** of each plugin utilized by the workflow.
+6. Provide any **Troubleshooting** recommendations. This is uncommon for workflows, but if certain components are prone to failure then identify them here.
+7. Add to the **Version History** if you are updating an existing workflow. Workflow versions start with 1.0.0. Minor changes to the workflow (updated plugins, minor changes in workflow logic) may be reflected with minor updates (eg, 1.1.0, 1.2.0, etc.). Major changes to the workflow (added capabilities, entirely new workflow logic, completely changed plugins, etc.) may be reflected with major updates (eg, 1.0.0, 2.0.0, etc.).
+8. Include any **References** to integration details (white papers, tech sheets, etc.),vendors, or open source solutions utilized in the workflow.
 
-When you're done, save the help.md file to the main workflow directory.
+When you're done, save the `help.md` file to the main workflow directory.
 
 ### Create Your Workflow Spec
 
-Fortunately, the `workflow.spec.yaml` file is less uplift than the help.md file was! Open the `workflow.spec.yaml` file from the `My_Cool_Workflow` zip to find a template. Make the following updates:
+Don't worry, the `workflow.spec.yaml` file is less uplift than the help.md file was! Open the `workflow.spec.yaml` file from the `My_Cool_Workflow` zip to find a template. Make the following updates:
 
-1. Match the `name` variable with your workflow directory title (eg, My_Cool_Workflow, Lookup_Vuln_From_Slack)
+1. Match the `name` variable with your workflow directory title (eg, `My_Cool_Workflow`)
 2. Match the `title` variable with the name of the workflow in InsightConnect (eg, My Cool Workflow, Lookup Vulnerability from Slack)
 3. Write a brief (2-sentence) `description`. This will oftentimes match the description written for the workflow in InsightConnect workflow settings. This description will show on the preview pane of the Extension Library.
 4. Enter any `use_cases` tags from the Extension Library that apply to your workflow. Use case tags use snake case (eg, vulnerability_management, threat_detection_and_response) and must match the use cases available on the Extension Library.
@@ -115,7 +115,7 @@ Your workflow bundle is now prepared! Just one more test and then we'll contribu
 
 ### Test Your Workflow Bundle
 
-Note, this is an optional step that is strongly encouraged in order to expedite reviews. The InsightConnect engineering team has built command-line validation tools that will help identify potential issues in the workflow bundle prior to submission. This helps identify minor inconsistencies, such as missing files, grammatical errors, capitalization mistakes, mismatched names across files, etc.
+The InsightConnect engineering team has built command-line validation tools that will help identify potential issues in the workflow bundle prior to submission. This helps identify minor inconsistencies, such as missing files, grammatical errors, capitalization mistakes, mismatched names across files, etc.
 
 Use the following commands to install and run the InsightConnect Workflow Validator tool:
 
