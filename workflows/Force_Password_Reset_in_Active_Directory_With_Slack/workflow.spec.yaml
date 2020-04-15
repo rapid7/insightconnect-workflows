@@ -2,7 +2,7 @@ extension: workflow
 products: ["insightconnect"]
 name: Force_Password_Reset_in_Active_Directory_With_Slack
 title: "Force Password Reset in Active Directory With Slack"
-description: "This workflow triggers from directly slack. Messaging the chatbot to \"!reset_password <username>\" will start the workflow. This workflow supports automatically Forcing a specified user to reset their password. The workflow will post back results to the specific user."
+description: "Force an Active Directory user password reset from Slack."
 version: 1.0.0
 vendor: rapid7
 support: rapid7
@@ -15,11 +15,11 @@ resources:
   source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Force_Password_Reset_in_Active_Directory_With_Slack
   license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
   screenshots:
-  - name: Artifact1.png
+  - name: artifact1.png
     title: Artifact View
-  - name: Slack_Job.png
+  - name: slack_job1.png
       title: Example Slack Job Input and Output
   - name: Workflow1.png
-    title: Workflow View One
+    title: Workflow View Part One
   - name: Workflow2.png
-      title: Workflow View Two
+      title: Workflow View Part Two
