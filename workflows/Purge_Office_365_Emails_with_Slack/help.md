@@ -22,7 +22,7 @@ Once the workflow has been downloaded, login to InsightConnect and “Import” 
 ### Usage
 
 
-This workflow uses the Chat Ops Slack connection to listen for key messages. When the Slack command triggers this workflow, it will open a compliance search in Office 365 and optionally delete messages
+This workflow uses the Chat Ops Slack connection to listen for key messages. When the Slack command triggers this workflow, it will open a compliance search in Office 365 and optionally delete messages.
 
 To trigger this workflow, send a direct message to Rapid7 InsightConnect from Slack like the following:
 
