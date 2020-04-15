@@ -45,7 +45,7 @@ Workflow bundles are organized according to the following directory structure:
 ```
 └── workflows
     └── Name_Of_Workflow
-        ├── Name_Of_Workflow.icon
+        ├── Name_of_Workflow.icon
         ├── help.md
         ├── workflow.spec.yaml
         └── screenshots
