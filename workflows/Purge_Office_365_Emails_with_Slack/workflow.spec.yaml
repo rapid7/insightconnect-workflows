@@ -1,0 +1,23 @@
+extension: workflow
+products: ["insightconnect"]
+name: Purge_Office_365_Emails_with_Slack
+title: "Purge Office 365 Emails with Slack"
+description: "This workflow will purge all emails in an organization matching given search criteria by sending a notification to InsightConnect with Slack."
+version: 1.0.0
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [threat_detection_and_response]
+  keywords: [phishing, email, office365, slack]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Purge_Office_365_Emails_with_Slack
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+  - name: workflow1.png
+    title: Workflow 1
+  - name: workflow2.png
+    title: Workflow 2
+  - name: slack_flow1.png
+    title: Completed Job In Slack with Valid Input

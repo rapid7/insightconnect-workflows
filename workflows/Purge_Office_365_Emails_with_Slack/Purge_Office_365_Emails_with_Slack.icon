@@ -1,0 +1,1810 @@
+{
+  "kom": {
+    "komandVersion": "1.48.3-0-g34439",
+    "komFileVersion": "2.0.0",
+    "exportedAt": "2020-04-15T15:22:11.348249489Z",
+    "workflowVersions": [
+      {
+        "name": "Purge Office 365 Emails with Slack",
+        "type": "runnable",
+        "version": "",
+        "description": "This workflow will purge all emails in an organization matching given search criteria by sending a notification to InisghtConnect with Slack. The workflow will look for any emails that match the body, subject, or from contents given. \n\nIt can either automatically delete these emails or prompt the user for further action.",
+        "graph": {
+          "edges": {
+            "08b0084b-c4c6-4b24-8cec-edc3a070ecf4": {
+              "id": "08b0084b-c4c6-4b24-8cec-edc3a070ecf4",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "97076139-2861-47f1-b2e2-c996d0700dea",
+              "toNodeId": "b32c0576-b7d9-4e20-bf10-25e8e28a13e9"
+            },
+            "17a8bb25-ae6b-44dc-9f8d-1b89cbadb236": {
+              "id": "17a8bb25-ae6b-44dc-9f8d-1b89cbadb236",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "7543b4f8-2cce-4653-be9a-92c35fa9f0f0",
+              "toNodeId": ""
+            },
+            "1ce1ab79-8288-4f44-a219-27b17b59999c": {
+              "id": "1ce1ab79-8288-4f44-a219-27b17b59999c",
+              "name": "No",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "b32c0576-b7d9-4e20-bf10-25e8e28a13e9",
+              "toNodeId": "48c09c4e-90a1-463a-9234-2726fd72ade0"
+            },
+            "23f3e134-061a-4e3b-9049-43e6133a6e8c": {
+              "id": "23f3e134-061a-4e3b-9049-43e6133a6e8c",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "9dfbea14-3d78-4fbb-937b-88d4c9b277d8",
+              "toNodeId": "75c4e364-f202-469e-bcb3-4140fe36e205"
+            },
+            "25ba90b1-90f5-46ba-8025-78a15ec39ce8": {
+              "id": "25ba90b1-90f5-46ba-8025-78a15ec39ce8",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "cb270db6-6dfb-4328-8b59-2f714aaa4763",
+              "toNodeId": ""
+            },
+            "369501e7-c422-4b9c-8e1c-732631cf351e": {
+              "id": "369501e7-c422-4b9c-8e1c-732631cf351e",
+              "name": "No",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "689e857a-48fd-4ae6-a26b-4713217e0b0d",
+              "toNodeId": "96789089-da8d-4397-a8ca-757467bd383f"
+            },
+            "3daf7970-48af-49f3-a0ea-96dcc4da28f1": {
+              "id": "3daf7970-48af-49f3-a0ea-96dcc4da28f1",
+              "name": "No",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "ac12622d-e616-46d3-9e72-38ec2318c644",
+              "toNodeId": "108dd5e7-348c-4093-939a-ed33bc3af030"
+            },
+            "42f7cf4d-3217-41bf-b3a5-379141760257": {
+              "id": "42f7cf4d-3217-41bf-b3a5-379141760257",
+              "name": "Yes",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "108dd5e7-348c-4093-939a-ed33bc3af030",
+              "toNodeId": "97076139-2861-47f1-b2e2-c996d0700dea"
+            },
+            "43ee78ce-8cf5-4df1-886f-e0e8a061f501": {
+              "id": "43ee78ce-8cf5-4df1-886f-e0e8a061f501",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "28b13b59-a02c-4faa-b69f-ce13ad921410",
+              "toNodeId": "afd9fd25-487a-4eee-b291-1ce335a02f1d"
+            },
+            "52c779bb-9b3a-4d26-b4da-cacd3784aa30": {
+              "id": "52c779bb-9b3a-4d26-b4da-cacd3784aa30",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "afd9fd25-487a-4eee-b291-1ce335a02f1d",
+              "toNodeId": "ac12622d-e616-46d3-9e72-38ec2318c644"
+            },
+            "55cc9089-bdf8-4805-b824-4c4dd6fe1b21": {
+              "id": "55cc9089-bdf8-4805-b824-4c4dd6fe1b21",
+              "name": "No",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "108dd5e7-348c-4093-939a-ed33bc3af030",
+              "toNodeId": "3fe29b9e-80e4-497a-99ed-a5487fe637fc"
+            },
+            "5ac62729-a8fb-4143-ad5f-d0bdd2cb081e": {
+              "id": "5ac62729-a8fb-4143-ad5f-d0bdd2cb081e",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "ada69091-7eb5-404b-8ce5-5b8420e11ca3",
+              "toNodeId": "4ea6adf6-4bb6-4018-b6af-cf45e6e3e267"
+            },
+            "61bef5bf-5fb7-4e4b-aa21-6057ccc70c24": {
+              "id": "61bef5bf-5fb7-4e4b-aa21-6057ccc70c24",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "75c4e364-f202-469e-bcb3-4140fe36e205",
+              "toNodeId": "9108708f-fe22-4f2a-869b-7ba004878a27"
+            },
+            "941adb16-50af-4c10-9763-600d35c2d92f": {
+              "id": "941adb16-50af-4c10-9763-600d35c2d92f",
+              "name": "Yes",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "9108708f-fe22-4f2a-869b-7ba004878a27",
+              "toNodeId": "ad5289eb-110e-4ac2-9ee8-b2bd30ffa455"
+            },
+            "9e5e9b40-518b-41a2-9a3f-75e81d34e899": {
+              "id": "9e5e9b40-518b-41a2-9a3f-75e81d34e899",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "96789089-da8d-4397-a8ca-757467bd383f",
+              "toNodeId": ""
+            },
+            "a27dcfba-4516-42c1-9a28-e9983554cea9": {
+              "id": "a27dcfba-4516-42c1-9a28-e9983554cea9",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "a91152dd-eeaf-4d50-9924-ee20e1a5fb98",
+              "toNodeId": "28b13b59-a02c-4faa-b69f-ce13ad921410"
+            },
+            "a65a30b8-fe07-4064-870f-c13a93dd3eee": {
+              "id": "a65a30b8-fe07-4064-870f-c13a93dd3eee",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "3fe29b9e-80e4-497a-99ed-a5487fe637fc",
+              "toNodeId": ""
+            },
+            "b17aca14-6a4f-46a3-82e7-e4fecffc6da4": {
+              "id": "b17aca14-6a4f-46a3-82e7-e4fecffc6da4",
+              "name": "Yes",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "ac12622d-e616-46d3-9e72-38ec2318c644",
+              "toNodeId": "f1ba86e9-b4c2-41c9-999c-252742274ea9"
+            },
+            "c1d455fb-47ec-48fd-9ffb-830d817cf8de": {
+              "id": "c1d455fb-47ec-48fd-9ffb-830d817cf8de",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "e7efa02a-2323-48fd-92ef-d5f197f4c150",
+              "toNodeId": ""
+            },
+            "c35a649f-3cb7-463b-aa43-eac62325d534": {
+              "id": "c35a649f-3cb7-463b-aa43-eac62325d534",
+              "name": "No",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "9108708f-fe22-4f2a-869b-7ba004878a27",
+              "toNodeId": "cb270db6-6dfb-4328-8b59-2f714aaa4763"
+            },
+            "c9101a2f-047e-4e1e-bb04-fa3a7f2b5b00": {
+              "id": "c9101a2f-047e-4e1e-bb04-fa3a7f2b5b00",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "f1ba86e9-b4c2-41c9-999c-252742274ea9",
+              "toNodeId": "689e857a-48fd-4ae6-a26b-4713217e0b0d"
+            },
+            "c98bfce9-286b-4476-88ce-25fd2e1e9a8e": {
+              "id": "c98bfce9-286b-4476-88ce-25fd2e1e9a8e",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "48c09c4e-90a1-463a-9234-2726fd72ade0",
+              "toNodeId": ""
+            },
+            "d13de5d6-ea32-4837-aebe-59145a20f0da": {
+              "id": "d13de5d6-ea32-4837-aebe-59145a20f0da",
+              "name": "Yes",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "689e857a-48fd-4ae6-a26b-4713217e0b0d",
+              "toNodeId": "7543b4f8-2cce-4653-be9a-92c35fa9f0f0"
+            },
+            "e52f75fb-4d23-41be-936e-37886e43a55d": {
+              "id": "e52f75fb-4d23-41be-936e-37886e43a55d",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "ad5289eb-110e-4ac2-9ee8-b2bd30ffa455",
+              "toNodeId": "ada69091-7eb5-404b-8ce5-5b8420e11ca3"
+            },
+            "e7d8b2b4-8285-4885-bb59-9080bb791a42": {
+              "id": "e7d8b2b4-8285-4885-bb59-9080bb791a42",
+              "name": "Yes",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "b32c0576-b7d9-4e20-bf10-25e8e28a13e9",
+              "toNodeId": "e7efa02a-2323-48fd-92ef-d5f197f4c150"
+            },
+            "e9dca260-cb4b-4f48-afcd-3704f38d947e": {
+              "id": "e9dca260-cb4b-4f48-afcd-3704f38d947e",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "4ea6adf6-4bb6-4018-b6af-cf45e6e3e267",
+              "toNodeId": "a91152dd-eeaf-4d50-9924-ee20e1a5fb98"
+            }
+          },
+          "nodes": {
+            "108dd5e7-348c-4093-939a-ed33bc3af030": {
+              "id": "108dd5e7-348c-4093-939a-ed33bc3af030",
+              "parentNodeId": ""
+            },
+            "28b13b59-a02c-4faa-b69f-ce13ad921410": {
+              "id": "28b13b59-a02c-4faa-b69f-ce13ad921410",
+              "parentNodeId": ""
+            },
+            "3fe29b9e-80e4-497a-99ed-a5487fe637fc": {
+              "id": "3fe29b9e-80e4-497a-99ed-a5487fe637fc",
+              "parentNodeId": ""
+            },
+            "48c09c4e-90a1-463a-9234-2726fd72ade0": {
+              "id": "48c09c4e-90a1-463a-9234-2726fd72ade0",
+              "parentNodeId": ""
+            },
+            "4ea6adf6-4bb6-4018-b6af-cf45e6e3e267": {
+              "id": "4ea6adf6-4bb6-4018-b6af-cf45e6e3e267",
+              "parentNodeId": ""
+            },
+            "689e857a-48fd-4ae6-a26b-4713217e0b0d": {
+              "id": "689e857a-48fd-4ae6-a26b-4713217e0b0d",
+              "parentNodeId": ""
+            },
+            "7543b4f8-2cce-4653-be9a-92c35fa9f0f0": {
+              "id": "7543b4f8-2cce-4653-be9a-92c35fa9f0f0",
+              "parentNodeId": ""
+            },
+            "75c4e364-f202-469e-bcb3-4140fe36e205": {
+              "id": "75c4e364-f202-469e-bcb3-4140fe36e205",
+              "parentNodeId": ""
+            },
+            "9108708f-fe22-4f2a-869b-7ba004878a27": {
+              "id": "9108708f-fe22-4f2a-869b-7ba004878a27",
+              "parentNodeId": ""
+            },
+            "96789089-da8d-4397-a8ca-757467bd383f": {
+              "id": "96789089-da8d-4397-a8ca-757467bd383f",
+              "parentNodeId": ""
+            },
+            "97076139-2861-47f1-b2e2-c996d0700dea": {
+              "id": "97076139-2861-47f1-b2e2-c996d0700dea",
+              "parentNodeId": ""
+            },
+            "9dfbea14-3d78-4fbb-937b-88d4c9b277d8": {
+              "id": "9dfbea14-3d78-4fbb-937b-88d4c9b277d8",
+              "parentNodeId": ""
+            },
+            "a91152dd-eeaf-4d50-9924-ee20e1a5fb98": {
+              "id": "a91152dd-eeaf-4d50-9924-ee20e1a5fb98",
+              "parentNodeId": ""
+            },
+            "ac12622d-e616-46d3-9e72-38ec2318c644": {
+              "id": "ac12622d-e616-46d3-9e72-38ec2318c644",
+              "parentNodeId": ""
+            },
+            "ad5289eb-110e-4ac2-9ee8-b2bd30ffa455": {
+              "id": "ad5289eb-110e-4ac2-9ee8-b2bd30ffa455",
+              "parentNodeId": ""
+            },
+            "ada69091-7eb5-404b-8ce5-5b8420e11ca3": {
+              "id": "ada69091-7eb5-404b-8ce5-5b8420e11ca3",
+              "parentNodeId": ""
+            },
+            "afd9fd25-487a-4eee-b291-1ce335a02f1d": {
+              "id": "afd9fd25-487a-4eee-b291-1ce335a02f1d",
+              "parentNodeId": ""
+            },
+            "b32c0576-b7d9-4e20-bf10-25e8e28a13e9": {
+              "id": "b32c0576-b7d9-4e20-bf10-25e8e28a13e9",
+              "parentNodeId": ""
+            },
+            "cb270db6-6dfb-4328-8b59-2f714aaa4763": {
+              "id": "cb270db6-6dfb-4328-8b59-2f714aaa4763",
+              "parentNodeId": ""
+            },
+            "e7efa02a-2323-48fd-92ef-d5f197f4c150": {
+              "id": "e7efa02a-2323-48fd-92ef-d5f197f4c150",
+              "parentNodeId": ""
+            },
+            "f1ba86e9-b4c2-41c9-999c-252742274ea9": {
+              "id": "f1ba86e9-b4c2-41c9-999c-252742274ea9",
+              "parentNodeId": ""
+            }
+          }
+        },
+        "steps": {
+          "108dd5e7-348c-4093-939a-ed33bc3af030": {
+            "nodeId": "108dd5e7-348c-4093-939a-ed33bc3af030",
+            "name": "Ask to Purge",
+            "type": "decision_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "attachments": null,
+              "message": "Purge Results? ",
+              "messageType": "button",
+              "options": [
+                {
+                  "answer": "Yes",
+                  "buttonStyle": "default",
+                  "confirmation": "Yes - Purge Search Results",
+                  "edgeId": "42f7cf4d-3217-41bf-b3a5-379141760257",
+                  "isTimeoutOnly": false
+                },
+                {
+                  "answer": "No",
+                  "buttonStyle": "default",
+                  "confirmation": "No - Do Not Purge Search Results",
+                  "edgeId": "55cc9089-bdf8-4805-b824-4c4dd6fe1b21",
+                  "isTimeoutOnly": false
+                }
+              ],
+              "question": "Would you like to purge the results of the compliance search? ",
+              "recipient": "@{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[user]}}",
+              "threadTimestamp": "{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[timestamp]}}",
+              "timeout": 600,
+              "timeoutDisplayUnit": "minutes",
+              "timeoutEdgeId": "55cc9089-bdf8-4805-b824-4c4dd6fe1b21"
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "displayType": "bytes",
+                  "format": "bytes",
+                  "order": 3,
+                  "title": "Attachments",
+                  "type": "string"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 1,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "A channel (e.g. #channel) or username",
+                  "order": 2,
+                  "title": "Recipient",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "$success": {
+                  "description": "",
+                  "order": 8,
+                  "title": "$success",
+                  "type": "boolean"
+                },
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "message": {
+                  "description": "The message that was sent to slack",
+                  "order": 4,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "path": {
+                  "description": "The path taken",
+                  "order": 6,
+                  "title": "Path",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "The Channel name or User Name",
+                  "order": 3,
+                  "title": "Recipient",
+                  "type": "string"
+                },
+                "responding_user": {
+                  "description": "The slack username of the user responding to the question",
+                  "order": 7,
+                  "title": "Response Question",
+                  "type": "string"
+                },
+                "response_question": {
+                  "description": "The response question that was sent to slack",
+                  "order": 5,
+                  "title": "Response Question",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_interactive_message"
+          },
+          "28b13b59-a02c-4faa-b69f-ce13ad921410": {
+            "nodeId": "28b13b59-a02c-4faa-b69f-ce13ad921410",
+            "name": "Compliance Search",
+            "type": "action",
+            "plugin": {
+              "name": "Microsoft Office365 Email Security",
+              "slugVendor": "rapid7",
+              "slugName": "microsoft_office365_email_security",
+              "slugVersion": "2.2.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_office365_email_security/2.2.1/icon.png"
+            },
+            "identifier": "email_compliance_search",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "compliance_search_name": "{{[4ea6adf6-4bb6-4018-b6af-cf45e6e3e267].[content]}}",
+                "content_match_query": "{{[ad5289eb-110e-4ac2-9ee8-b2bd30ffa455].[query_string]}}",
+                "query_timeout": 60
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "compliance_search_name": {
+                  "description": "Name of compliance search",
+                  "order": 1,
+                  "title": "Compliance search name",
+                  "type": "string"
+                },
+                "content_match_query": {
+                  "description": "This parameter uses a text search string or a query that's formatted by using the Keyword Query Language (KQL). For more information about KQL, see Keyword Query Language syntax reference (https://go.microsoft.com/fwlink/p/?linkid=269603)",
+                  "order": 2,
+                  "title": "Content Match Query",
+                  "type": "string"
+                },
+                "query_timeout": {
+                  "default": 60,
+                  "description": "Query timeout in minutes",
+                  "order": 3,
+                  "title": "Query Timeout",
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "compliance_search_name",
+                "content_match_query"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "affected_users": {
+                  "description": "Number of affected users",
+                  "order": 1,
+                  "title": "Users",
+                  "type": "integer"
+                },
+                "emails_found": {
+                  "description": "Emails found that matched",
+                  "order": 3,
+                  "title": "Emails found",
+                  "type": "integer"
+                },
+                "users": {
+                  "description": "Email address of all affected users",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "User Email Addresses",
+                  "type": "array"
+                }
+              },
+              "required": [
+                "affected_users",
+                "users",
+                "emails_found"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "3fe29b9e-80e4-497a-99ed-a5487fe637fc": {
+            "nodeId": "3fe29b9e-80e4-497a-99ed-a5487fe637fc",
+            "name": "Not Purged Message",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": "Compliance search was not purged. \n\nWorkflow Complete",
+                "recipient": "@{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[user]}}",
+                "thread_ts": "{{[108dd5e7-348c-4093-939a-ed33bc3af030].[timestamp]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 4,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 3,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                },
+                "thread_ts": {
+                  "description": "Select timestamp output variable from parent message step",
+                  "order": 2,
+                  "title": "To post in a thread, select parent message timestamp",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
+          },
+          "48c09c4e-90a1-463a-9234-2726fd72ade0": {
+            "nodeId": "48c09c4e-90a1-463a-9234-2726fd72ade0",
+            "name": "Manual Purge Failed",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": "Failed to purge compliance search. \n\nMore information can be found here: \n{{[$job].[URL]}}\n\nWorkflow Complete",
+                "recipient": "{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[user]}}@",
+                "thread_ts": "{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[timestamp]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 4,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 3,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                },
+                "thread_ts": {
+                  "description": "Select timestamp output variable from parent message step",
+                  "order": 2,
+                  "title": "To post in a thread, select parent message timestamp",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
+          },
+          "4ea6adf6-4bb6-4018-b6af-cf45e6e3e267": {
+            "nodeId": "4ea6adf6-4bb6-4018-b6af-cf45e6e3e267",
+            "name": "Compliance Search Name",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "InsightConnect Search for {{[75c4e364-f202-469e-bcb3-4140fe36e205].[from]}} {{[75c4e364-f202-469e-bcb3-4140fe36e205].[subject]}} {{[75c4e364-f202-469e-bcb3-4140fe36e205].[body]}}"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "689e857a-48fd-4ae6-a26b-4713217e0b0d": {
+            "nodeId": "689e857a-48fd-4ae6-a26b-4713217e0b0d",
+            "name": "Was Delete Successful?",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "369501e7-c422-4b9c-8e1c-732631cf351e",
+              "stepControlParams": [
+                {
+                  "edgeId": "d13de5d6-ea32-4837-aebe-59145a20f0da",
+                  "expression": {
+                    "name": "f1ba86e9-b4c2-41c9-999c-252742274ea9.$success",
+                    "type": "variable"
+                  },
+                  "expressionText": "{{[f1ba86e9-b4c2-41c9-999c-252742274ea9].[$success]}}"
+                },
+                {
+                  "edgeId": "369501e7-c422-4b9c-8e1c-732631cf351e",
+                  "expression": {},
+                  "expressionText": ""
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          },
+          "7543b4f8-2cce-4653-be9a-92c35fa9f0f0": {
+            "nodeId": "7543b4f8-2cce-4653-be9a-92c35fa9f0f0",
+            "name": "Workflow Success",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": "The compliance search was successfully purged!\n\nWorkflow Complete",
+                "recipient": "@{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[user]}}",
+                "thread_ts": "@{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[timestamp]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 4,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 3,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                },
+                "thread_ts": {
+                  "description": "Select timestamp output variable from parent message step",
+                  "order": 2,
+                  "title": "To post in a thread, select parent message timestamp",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
+          },
+          "75c4e364-f202-469e-bcb3-4140fe36e205": {
+            "nodeId": "75c4e364-f202-469e-bcb3-4140fe36e205",
+            "name": "Parse Args",
+            "type": "action",
+            "plugin": {
+              "name": "Python 3 Script",
+              "slugVendor": "rapid7",
+              "slugName": "python_3_script",
+              "slugVersion": "2.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/python_3_script/2.0.1/icon.png"
+            },
+            "identifier": "run",
+            "continueOnFailure": true,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "function": "def run(params={}):\n\n    # Sometimes Slack will give us email in their linked form:\n    # <mailto:user@example.com>\n    # or\n    # <http://www.exmaple.com|example.com>\n    def parse_email(email):\n\n        if email.startswith(\"<\"):\n            # mailto link\n            if \"mailto:\" in email:\n                split_email = email.split(\":\")[1]\n                if \"|\" in split_email:\n                    return split_email.split(\"|\")[0]\n                return split_email\n\n            # http link\n            if \"http:\" in email:\n                split_email = email.split(\"|\")[1]\n                split_email = split_email.rstrip(\">\")\n                return split_email\n\n        return email\n\n    import shlex\n    input = params.get(\"input\")\n\n    # Sometimes slack gives us unicode spaces\n    input = input.replace(u'\\xa0', u' ')\n\n    # split our args\n    args = shlex.split(input)\n\n    # setup\n    args_for_delete_email = {\"delete\": False}\n\n    # parse args\n    for i in range(1, len(args)):\n        split_args = args[i].split('=')\n        if split_args[0].lower() == \"subject\":\n            args_for_delete_email[\"subject\"] = split_args[1]\n        if split_args[0].lower() == \"body\":\n            args_for_delete_email[\"body\"] = split_args[1]\n        if split_args[0].lower() == \"from\":\n            args_for_delete_email[\"from\"] = parse_email(split_args[1])\n        if split_args[0].lower() == \"delete\":\n            args_for_delete_email[\"delete\"] = True if split_args[1][0].lower() == 't' else False\n\n    # Make sure we have at least one search criteria specified\n    if len(args_for_delete_email.keys()) <= 1:\n        raise Exception(\"No arguments specified. A body, subject, and/or from must be specified\")\n\n    return(args_for_delete_email)",
+                "input": {
+                  "input": "{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[text]}}"
+                }
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "function": {
+                  "default": "def run(params={}):\\n    return {}",
+                  "description": "Function definition. Must be named `run`. Accepts the `input` object as params. Returns the dict as output",
+                  "displayType": "python",
+                  "format": "python",
+                  "order": 1,
+                  "title": "Function",
+                  "type": "string"
+                },
+                "input": {
+                  "description": "Input object to be passed as `params={}` to the `run` function",
+                  "order": 2,
+                  "title": "Input",
+                  "type": "object"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "result1": {
+                  "description": "Sample output result1 (delete or edit)",
+                  "order": 1,
+                  "title": "Result1",
+                  "type": "string"
+                },
+                "result2": {
+                  "description": "Sample output result2 (delete or edit)",
+                  "order": 2,
+                  "title": "Result2",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": {
+              "definitions": {},
+              "properties": {
+                "body": {
+                  "description": "Sample output result1 (delete or edit)",
+                  "order": 1,
+                  "title": "Result1",
+                  "type": "string"
+                },
+                "delete": {
+                  "type": "boolean"
+                },
+                "from": {
+                  "type": "string"
+                },
+                "subject": {
+                  "description": "Sample output result2 (delete or edit)",
+                  "order": 2,
+                  "title": "Result2",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "9108708f-fe22-4f2a-869b-7ba004878a27": {
+            "nodeId": "9108708f-fe22-4f2a-869b-7ba004878a27",
+            "name": "Was parsing successful",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "c35a649f-3cb7-463b-aa43-eac62325d534",
+              "stepControlParams": [
+                {
+                  "edgeId": "941adb16-50af-4c10-9763-600d35c2d92f",
+                  "expression": {
+                    "name": "75c4e364-f202-469e-bcb3-4140fe36e205.$success",
+                    "type": "variable"
+                  },
+                  "expressionText": "{{[75c4e364-f202-469e-bcb3-4140fe36e205].[$success]}}"
+                },
+                {
+                  "edgeId": "c35a649f-3cb7-463b-aa43-eac62325d534",
+                  "expression": {},
+                  "expressionText": ""
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          },
+          "96789089-da8d-4397-a8ca-757467bd383f": {
+            "nodeId": "96789089-da8d-4397-a8ca-757467bd383f",
+            "name": "Workflow Failed",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": "Workflow failed to purge search results!\n\nMore information can be found here: \n{{[$job].[URL]}}\n\nWorkflow Complete",
+                "recipient": "@{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[user]}}",
+                "thread_ts": "{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[timestamp]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 4,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 3,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                },
+                "thread_ts": {
+                  "description": "Select timestamp output variable from parent message step",
+                  "order": 2,
+                  "title": "To post in a thread, select parent message timestamp",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
+          },
+          "97076139-2861-47f1-b2e2-c996d0700dea": {
+            "nodeId": "97076139-2861-47f1-b2e2-c996d0700dea",
+            "name": "Manual Purge",
+            "type": "action",
+            "plugin": {
+              "name": "Microsoft Office365 Email Security",
+              "slugVendor": "rapid7",
+              "slugName": "microsoft_office365_email_security",
+              "slugVersion": "2.2.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_office365_email_security/2.2.1/icon.png"
+            },
+            "identifier": "mass_purge",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "compliance_search_name": "{{[4ea6adf6-4bb6-4018-b6af-cf45e6e3e267].[content]}}",
+                "query_timeout": 60
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "compliance_search_name": {
+                  "description": "Name of compliance search",
+                  "order": 1,
+                  "title": "Compliance search name",
+                  "type": "string"
+                },
+                "query_timeout": {
+                  "default": 60,
+                  "description": "Query timeout in minutes",
+                  "order": 2,
+                  "title": "Query Timeout",
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "compliance_search_name"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "success": {
+                  "description": "Success",
+                  "order": 1,
+                  "title": "Success",
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "success"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "9dfbea14-3d78-4fbb-937b-88d4c9b277d8": {
+            "nodeId": "9dfbea14-3d78-4fbb-937b-88d4c9b277d8",
+            "name": "Purge Email Trigger",
+            "type": "trigger",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "matchChannel": "",
+                "matchText": "!purge-email",
+                "type": "any"
+              }
+            },
+            "triggerId": "4b8f4c0e-415a-4a83-8b2c-5adc1b844df5",
+            "defaultInputJSONSchema": {
+              "properties": {
+                "matchChannel": {
+                  "description": "Regex to match for channel name",
+                  "order": 1,
+                  "title": "Match Channel",
+                  "type": "string"
+                },
+                "matchText": {
+                  "description": "Regex to match for Slack message content",
+                  "order": 2,
+                  "title": "Match Text",
+                  "type": "string"
+                },
+                "type": {
+                  "default": "any",
+                  "description": "Desired Slack channel type: direct message to Slack app, group chats, or all channels",
+                  "enum": [
+                    "any",
+                    "direct",
+                    "group"
+                  ],
+                  "order": 3,
+                  "title": "Type",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "type"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "message": {
+                  "properties": {
+                    "channel": {
+                      "description": "Channel name",
+                      "order": 3,
+                      "title": "Channel",
+                      "type": "string"
+                    },
+                    "channel_id": {
+                      "description": "Slack channel ID",
+                      "order": 4,
+                      "title": "Channel ID",
+                      "type": "string"
+                    },
+                    "text": {
+                      "description": "Text",
+                      "order": 5,
+                      "title": "Text",
+                      "type": "string"
+                    },
+                    "ts": {
+                      "description": "Timestamp",
+                      "order": 6,
+                      "title": "Ts",
+                      "type": "string"
+                    },
+                    "user": {
+                      "description": "User name",
+                      "order": 1,
+                      "title": "User",
+                      "type": "string"
+                    },
+                    "user_id": {
+                      "description": "Slack User ID",
+                      "order": 2,
+                      "title": "User ID",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Message",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "display_name": {
+                  "description": "User display name",
+                  "order": 4,
+                  "title": "Display Name",
+                  "type": "string"
+                },
+                "message": {
+                  "$ref": "#/definitions/message",
+                  "description": "Message",
+                  "order": 1,
+                  "title": "Message"
+                },
+                "timestamp": {
+                  "description": "Timestamp",
+                  "order": 3,
+                  "title": "Timestamp",
+                  "type": "string"
+                },
+                "type": {
+                  "description": "Message Type",
+                  "order": 2,
+                  "title": "Type",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/chatops.svg",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "message"
+          },
+          "a91152dd-eeaf-4d50-9924-ee20e1a5fb98": {
+            "nodeId": "a91152dd-eeaf-4d50-9924-ee20e1a5fb98",
+            "name": "Starting Search Message",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": "Beginning Compliance Search\n\n{{[4ea6adf6-4bb6-4018-b6af-cf45e6e3e267].[content]}}\n\nThis can take up to 60 minutes depending on the size of your organization. ",
+                "recipient": "@{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[user]}}",
+                "thread_ts": "{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[timestamp]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 4,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 3,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                },
+                "thread_ts": {
+                  "description": "Select timestamp output variable from parent message step",
+                  "order": 2,
+                  "title": "To post in a thread, select parent message timestamp",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
+          },
+          "ac12622d-e616-46d3-9e72-38ec2318c644": {
+            "nodeId": "ac12622d-e616-46d3-9e72-38ec2318c644",
+            "name": "Automatically Delete Emails?",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "3daf7970-48af-49f3-a0ea-96dcc4da28f1",
+              "stepControlParams": [
+                {
+                  "edgeId": "b17aca14-6a4f-46a3-82e7-e4fecffc6da4",
+                  "expression": {
+                    "name": "75c4e364-f202-469e-bcb3-4140fe36e205.delete",
+                    "type": "variable"
+                  },
+                  "expressionText": "{{[75c4e364-f202-469e-bcb3-4140fe36e205].[delete]}}"
+                },
+                {
+                  "edgeId": "3daf7970-48af-49f3-a0ea-96dcc4da28f1",
+                  "expression": {},
+                  "expressionText": ""
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          },
+          "ad5289eb-110e-4ac2-9ee8-b2bd30ffa455": {
+            "nodeId": "ad5289eb-110e-4ac2-9ee8-b2bd30ffa455",
+            "name": "Create Query String",
+            "type": "action",
+            "plugin": {
+              "name": "Python 3 Script",
+              "slugVendor": "rapid7",
+              "slugName": "python_3_script",
+              "slugVersion": "2.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/python_3_script/2.0.1/icon.png"
+            },
+            "identifier": "run",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "function": "def run(params={}):\n    query_string = \"\"\n\n    if params.get(\"body\"):\n        query_string+=f\"body:'{params.get('body')}' \"\n\n    if params.get(\"from\"):\n        query_string+=f\"from:'{params.get('from')}' \"\n\n    if params.get(\"subject\"):\n        query_string += f\"subject:'{params.get('subject')}' \"\n\n    return {\"query_string\": query_string.strip()}",
+                "input": "{{[75c4e364-f202-469e-bcb3-4140fe36e205]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "function": {
+                  "default": "def run(params={}):\\n    return {}",
+                  "description": "Function definition. Must be named `run`. Accepts the `input` object as params. Returns the dict as output",
+                  "displayType": "python",
+                  "format": "python",
+                  "order": 1,
+                  "title": "Function",
+                  "type": "string"
+                },
+                "input": {
+                  "description": "Input object to be passed as `params={}` to the `run` function",
+                  "order": 2,
+                  "title": "Input",
+                  "type": "object"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "result1": {
+                  "description": "Sample output result1 (delete or edit)",
+                  "order": 1,
+                  "title": "Result1",
+                  "type": "string"
+                },
+                "result2": {
+                  "description": "Sample output result2 (delete or edit)",
+                  "order": 2,
+                  "title": "Result2",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": {
+              "definitions": {},
+              "properties": {
+                "query_string": {
+                  "description": "Sample output result1 (delete or edit)",
+                  "order": 1,
+                  "title": "Result1",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "ada69091-7eb5-404b-8ce5-5b8420e11ca3": {
+            "nodeId": "ada69091-7eb5-404b-8ce5-5b8420e11ca3",
+            "name": "Purge Command Elements",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "From: \"{{[75c4e364-f202-469e-bcb3-4140fe36e205].[from]}}\"\nSubject: \"{{[75c4e364-f202-469e-bcb3-4140fe36e205].[subject]}}\"\nBody: \"{{[75c4e364-f202-469e-bcb3-4140fe36e205].[body]}}\"\nDelete: \"{{[75c4e364-f202-469e-bcb3-4140fe36e205].[delete]}}\"\n\nQuery String: \"{{[ad5289eb-110e-4ac2-9ee8-b2bd30ffa455].[query_string]}}\""
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "afd9fd25-487a-4eee-b291-1ce335a02f1d": {
+            "nodeId": "afd9fd25-487a-4eee-b291-1ce335a02f1d",
+            "name": "Compliance Search Complete Message",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": "Compliance Search Complete\n\nEmails Found: {{[28b13b59-a02c-4faa-b69f-ce13ad921410].[emails_found]}}\nNumber of Users Affected: {{[28b13b59-a02c-4faa-b69f-ce13ad921410].[affected_users]}}\n\nFor more information: \n{{[$job].[URL]}}",
+                "recipient": "@{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[user]}}",
+                "thread_ts": "{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[timestamp]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 4,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 3,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                },
+                "thread_ts": {
+                  "description": "Select timestamp output variable from parent message step",
+                  "order": 2,
+                  "title": "To post in a thread, select parent message timestamp",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
+          },
+          "b32c0576-b7d9-4e20-bf10-25e8e28a13e9": {
+            "nodeId": "b32c0576-b7d9-4e20-bf10-25e8e28a13e9",
+            "name": "Was manual purge successful? ",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "1ce1ab79-8288-4f44-a219-27b17b59999c",
+              "stepControlParams": [
+                {
+                  "edgeId": "e7d8b2b4-8285-4885-bb59-9080bb791a42",
+                  "expression": {
+                    "name": "97076139-2861-47f1-b2e2-c996d0700dea.$success",
+                    "type": "variable"
+                  },
+                  "expressionText": "{{[97076139-2861-47f1-b2e2-c996d0700dea].[$success]}}"
+                },
+                {
+                  "edgeId": "1ce1ab79-8288-4f44-a219-27b17b59999c",
+                  "expression": {},
+                  "expressionText": ""
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          },
+          "cb270db6-6dfb-4328-8b59-2f714aaa4763": {
+            "nodeId": "cb270db6-6dfb-4328-8b59-2f714aaa4763",
+            "name": "Parsing Failed Message",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": "Something went wrong with delete-email. \n\nThe message received was: \n{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[text]}}",
+                "recipient": "@{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[user]}}",
+                "thread_ts": "{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[timestamp]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 4,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 3,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                },
+                "thread_ts": {
+                  "description": "Select timestamp output variable from parent message step",
+                  "order": 2,
+                  "title": "To post in a thread, select parent message timestamp",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
+          },
+          "e7efa02a-2323-48fd-92ef-d5f197f4c150": {
+            "nodeId": "e7efa02a-2323-48fd-92ef-d5f197f4c150",
+            "name": "Manual Purge Success",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": "Compliance Search was successfully purged.\n\nWorkflow Complete",
+                "recipient": "@{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[user]}}",
+                "thread_ts": "{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[timestamp]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 4,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 3,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                },
+                "thread_ts": {
+                  "description": "Select timestamp output variable from parent message step",
+                  "order": 2,
+                  "title": "To post in a thread, select parent message timestamp",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
+          },
+          "f1ba86e9-b4c2-41c9-999c-252742274ea9": {
+            "nodeId": "f1ba86e9-b4c2-41c9-999c-252742274ea9",
+            "name": "Auto Delete Search Results",
+            "type": "action",
+            "plugin": {
+              "name": "Microsoft Office365 Email Security",
+              "slugVendor": "rapid7",
+              "slugName": "microsoft_office365_email_security",
+              "slugVersion": "2.2.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_office365_email_security/2.2.1/icon.png"
+            },
+            "identifier": "mass_purge",
+            "continueOnFailure": true,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "compliance_search_name": "{{[4ea6adf6-4bb6-4018-b6af-cf45e6e3e267].[content]}}",
+                "query_timeout": 60
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "compliance_search_name": {
+                  "description": "Name of compliance search",
+                  "order": 1,
+                  "title": "Compliance search name",
+                  "type": "string"
+                },
+                "query_timeout": {
+                  "default": 60,
+                  "description": "Query timeout in minutes",
+                  "order": 2,
+                  "title": "Query Timeout",
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "compliance_search_name"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "success": {
+                  "description": "Success",
+                  "order": 1,
+                  "title": "Success",
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "success"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          }
+        },
+        "tags": null,
+        "humanCostSeconds": 0,
+        "humanCostDisplayUnit": ""
+      }
+    ],
+    "triggers": [
+      {
+        "id": "4b8f4c0e-415a-4a83-8b2c-5adc1b844df5",
+        "name": "Purge Email Trigger",
+        "description": "",
+        "input": {
+          "matchChannel": "",
+          "matchText": "!purge-email",
+          "type": "any"
+        },
+        "inputJsonSchema": {
+          "properties": {
+            "matchChannel": {
+              "description": "Regex to match for channel name",
+              "order": 1,
+              "title": "Match Channel",
+              "type": "string"
+            },
+            "matchText": {
+              "description": "Regex to match for Slack message content",
+              "order": 2,
+              "title": "Match Text",
+              "type": "string"
+            },
+            "type": {
+              "default": "any",
+              "description": "Desired Slack channel type: direct message to Slack app, group chats, or all channels",
+              "enum": [
+                "any",
+                "direct",
+                "group"
+              ],
+              "order": 3,
+              "title": "Type",
+              "type": "string"
+            }
+          },
+          "required": [
+            "type"
+          ],
+          "title": "Variables",
+          "type": "object"
+        },
+        "outputJsonSchema": {
+          "definitions": {
+            "message": {
+              "properties": {
+                "channel": {
+                  "description": "Channel name",
+                  "order": 3,
+                  "title": "Channel",
+                  "type": "string"
+                },
+                "channel_id": {
+                  "description": "Slack channel ID",
+                  "order": 4,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "text": {
+                  "description": "Text",
+                  "order": 5,
+                  "title": "Text",
+                  "type": "string"
+                },
+                "ts": {
+                  "description": "Timestamp",
+                  "order": 6,
+                  "title": "Ts",
+                  "type": "string"
+                },
+                "user": {
+                  "description": "User name",
+                  "order": 1,
+                  "title": "User",
+                  "type": "string"
+                },
+                "user_id": {
+                  "description": "Slack User ID",
+                  "order": 2,
+                  "title": "User ID",
+                  "type": "string"
+                }
+              },
+              "title": "Message",
+              "type": "object"
+            }
+          },
+          "properties": {
+            "display_name": {
+              "description": "User display name",
+              "order": 4,
+              "title": "Display Name",
+              "type": "string"
+            },
+            "message": {
+              "$ref": "#/definitions/message",
+              "description": "Message",
+              "order": 1,
+              "title": "Message"
+            },
+            "timestamp": {
+              "description": "Timestamp",
+              "order": 3,
+              "title": "Timestamp",
+              "type": "string"
+            },
+            "type": {
+              "description": "Message Type",
+              "order": 2,
+              "title": "Type",
+              "type": "string"
+            }
+          },
+          "title": "Variables",
+          "type": "object"
+        },
+        "tags": [],
+        "type": "trigger_chatops",
+        "chatOpsAppName": "slack",
+        "chatOpsIdentifier": "message"
+      }
+    ]
+  }
+}
