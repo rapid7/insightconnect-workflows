@@ -2,7 +2,7 @@ extension: workflow
 products: ["insightconnect"]
 name: Purge_Office_365_Emails_with_Slack
 title: "Purge Office 365 Emails with Slack"
-description: "This workflow will purge all emails in an organization matching given search criteria by sending a notification to InisghtConnect with Slack."
+description: "This workflow will purge all emails in an organization matching given search criteria by sending a notification to InsightConnect with Slack."
 version: 1.0.0
 vendor: rapid7
 support: rapid7
