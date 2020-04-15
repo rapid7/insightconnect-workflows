@@ -24,7 +24,7 @@ step and the _Reply With Success_ step. In addition, edit the _Reset User Passwo
 Each Slack step will need the channel name updated as well (edit the input with the preset text of `change_me`).
 
 To run the workflow, @ your Slackbot in any channel or in a direct message along with the command `!reset_password <user_email>`.
-The workflow will post when it is starting the lookup and then again with the results of the lookup.
+The workflow will reply when it has completed.
 
 ## Technical Details
 
