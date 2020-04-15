@@ -2,7 +2,7 @@ extension: workflow
 products: ["insightconnect"]
 name: Force_Password_Reset_in_Azure_AD_from_Slack
 title: "Force Password Reset in Azure AD from Slack"
-description: Initiate Azure AD password resets from Slack
+description: Initiate Azure AD password resets from Slack.
 version: 1.0.0
 vendor: rapid7
 support: rapid7
