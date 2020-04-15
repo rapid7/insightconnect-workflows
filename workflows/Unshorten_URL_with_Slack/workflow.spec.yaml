@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Unshorten_URL_with_Slack
 title: "Unshorten URL with Slack"
 description: This workflow accepts a Slack command, looks up the URL in the unshorten.me service and reports back the unshortened URL.
-version: 1.0.0
+version: 1.0.1
 vendor: rapid7
 support: rapid7
 status: []
