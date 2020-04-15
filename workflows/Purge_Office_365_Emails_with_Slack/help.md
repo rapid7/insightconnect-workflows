@@ -1,6 +1,6 @@
 # Description
 
-This workflow will delete all emails matching given search criteria from an organization using a command issued from slack.
+This workflow will delete all emails matching given search criteria from an organization using a command issued from Slack.
 
 # Key Features
 
