@@ -20,6 +20,6 @@ resources:
   - name: Slack_Job.png
       title: Example Slack Job Input and Output
   - name: Workflow1.png
-    title: Workflow View One
+    title: Workflow View Part One
   - name: Workflow2.png
       title: Workflow View Part Two
