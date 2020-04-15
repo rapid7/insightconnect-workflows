@@ -26,19 +26,19 @@ This workflow uses the Chat Ops Slack connection to listen for key messages. Whe
 
 To trigger this workflow, send a direct message to Rapid7 InsightConnect from Slack like the following:
 
-`purge-email subject="A phishy email"`
+`!purge-email subject="A phishy email"`
 
 This will kick off the workflow and prompt you when the search is completed. If any emails are found that match the criteria, you can choose the delete button in Slack to delete them.
 
 Search criteria can be 'body', 'subject', or 'from' lines in the email. For example:
 
-`purge-email subject="A phishy email" from="example.com" body="Click here for free stuff" `
+`!purge-email subject="A phishy email" from="example.com" body="Click here for free stuff" `
 
 Any combination of 'body', 'subject', and 'from' can be used. At least one search item must be given.
 
 If you'd like the workflow to just delete emails without prompting, you can also use 'delete=true' For example:
 
-`purge-email subject="A phishy email" delete=true`
+`!purge-email subject="A phishy email" delete=true`
 
 ## Technical Details
 

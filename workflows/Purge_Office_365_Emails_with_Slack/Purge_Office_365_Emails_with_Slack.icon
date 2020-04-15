@@ -2,7 +2,7 @@
   "kom": {
     "komandVersion": "1.48.3-0-g34439",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-04-15T13:41:42.327797139Z",
+    "exportedAt": "2020-04-15T15:22:11.348249489Z",
     "workflowVersions": [
       {
         "name": "Purge Office 365 Emails with Slack",
@@ -1049,11 +1049,11 @@
             "parameters": {
               "input": {
                 "matchChannel": "",
-                "matchText": "purge-email",
+                "matchText": "!purge-email",
                 "type": "any"
               }
             },
-            "triggerId": "0fbbc934-402f-4b58-8e2b-9902ef66971d",
+            "triggerId": "4b8f4c0e-415a-4a83-8b2c-5adc1b844df5",
             "defaultInputJSONSchema": {
               "properties": {
                 "matchChannel": {
@@ -1685,12 +1685,12 @@
     ],
     "triggers": [
       {
-        "id": "0fbbc934-402f-4b58-8e2b-9902ef66971d",
+        "id": "4b8f4c0e-415a-4a83-8b2c-5adc1b844df5",
         "name": "Purge Email Trigger",
         "description": "",
         "input": {
           "matchChannel": "",
-          "matchText": "purge-email",
+          "matchText": "!purge-email",
           "type": "any"
         },
         "inputJsonSchema": {
