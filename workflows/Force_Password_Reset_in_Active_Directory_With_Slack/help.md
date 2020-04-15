@@ -1,6 +1,11 @@
 # Description
 
-This workflow triggers from directly slack messaging the chatbot to \"!reset_password\" the defined indicator. This workflow supports automatically Forcing a specified user to reset their password. The workflow will post back results to the specific user.
+Force an Active Directory user password reset from Slack.
+
+Sample Slack command:
+
+`!reset_password user@example.com`
+
 
 # Key Features
 
