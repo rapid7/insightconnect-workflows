@@ -4,7 +4,7 @@ This page includes all the information needed to contribute an InsightConnect wo
 
 _Note that contributing a workflow from InsightConnect does not share any of the credentials, API keys, passwords, or other user data utilized by your Connections!_ The .icon file exported from InsightConnect only contains the workflow logic itself -- the plugins, actions, decisions, filters, etc.
 
-There are three  to contributing a workflow:
+There are three steps to contributing a workflow:
 
 1. **Build and test your workflow**. Read the brief Workflow Builder Checklist in Step 1 below to make sure your workflow step names and descriptions are standard. Be sure to include a Final Report artifact that summarizes the outcome of your workflow. Test your workflow (in production if possible!) and take screenshots of the successful job and Final Report artifact.
 2. **Prepare your workflow bundle**. Write your workflow description and associated documentation for the Rapid7 Extension Library listing. Put your screenshots in the bundle. Test it.
