@@ -1,0 +1,2104 @@
+{
+  "kom": {
+    "komandVersion": "1.48.4-0-g02625",
+    "komFileVersion": "2.0.0",
+    "exportedAt": "2020-04-15T21:04:13.868983393Z",
+    "workflowVersions": [
+      {
+        "name": "Purge Office 365 Emails with Teams",
+        "type": "runnable",
+        "version": "",
+        "description": "This workflow will delete all emails matching given search criteria from an organization using a command issued from Microsoft Teams.",
+        "graph": {
+          "edges": {
+            "23f3e134-061a-4e3b-9049-43e6133a6e8c": {
+              "id": "23f3e134-061a-4e3b-9049-43e6133a6e8c",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "9dfbea14-3d78-4fbb-937b-88d4c9b277d8",
+              "toNodeId": "67fbcfa4-8eab-49b5-8d2b-3b0f1dad382c"
+            },
+            "369501e7-c422-4b9c-8e1c-732631cf351e": {
+              "id": "369501e7-c422-4b9c-8e1c-732631cf351e",
+              "name": "No",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "689e857a-48fd-4ae6-a26b-4713217e0b0d",
+              "toNodeId": "1bee3977-64bb-4bbe-9a31-e1e4bf35c736"
+            },
+            "3daf7970-48af-49f3-a0ea-96dcc4da28f1": {
+              "id": "3daf7970-48af-49f3-a0ea-96dcc4da28f1",
+              "name": "No",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "ac12622d-e616-46d3-9e72-38ec2318c644",
+              "toNodeId": "d849f0fa-b351-47ab-9734-ed7b2845f9d2"
+            },
+            "43ee78ce-8cf5-4df1-886f-e0e8a061f501": {
+              "id": "43ee78ce-8cf5-4df1-886f-e0e8a061f501",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "28b13b59-a02c-4faa-b69f-ce13ad921410",
+              "toNodeId": "59e96533-a707-45e3-b837-bf45a44750d9"
+            },
+            "5ac62729-a8fb-4143-ad5f-d0bdd2cb081e": {
+              "id": "5ac62729-a8fb-4143-ad5f-d0bdd2cb081e",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "ada69091-7eb5-404b-8ce5-5b8420e11ca3",
+              "toNodeId": "4ea6adf6-4bb6-4018-b6af-cf45e6e3e267"
+            },
+            "5bd2883d-07f6-4887-8c81-84670dce4bb7": {
+              "id": "5bd2883d-07f6-4887-8c81-84670dce4bb7",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "41587ce0-e706-4d30-9332-90f43445f90a",
+              "toNodeId": ""
+            },
+            "61bef5bf-5fb7-4e4b-aa21-6057ccc70c24": {
+              "id": "61bef5bf-5fb7-4e4b-aa21-6057ccc70c24",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "75c4e364-f202-469e-bcb3-4140fe36e205",
+              "toNodeId": "9108708f-fe22-4f2a-869b-7ba004878a27"
+            },
+            "8afbe418-8c5f-479d-af8c-62b627ac06ac": {
+              "id": "8afbe418-8c5f-479d-af8c-62b627ac06ac",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "59e96533-a707-45e3-b837-bf45a44750d9",
+              "toNodeId": "ac12622d-e616-46d3-9e72-38ec2318c644"
+            },
+            "941adb16-50af-4c10-9763-600d35c2d92f": {
+              "id": "941adb16-50af-4c10-9763-600d35c2d92f",
+              "name": "Yes",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "9108708f-fe22-4f2a-869b-7ba004878a27",
+              "toNodeId": "ad5289eb-110e-4ac2-9ee8-b2bd30ffa455"
+            },
+            "af04a323-216d-4934-b3ff-da889656338c": {
+              "id": "af04a323-216d-4934-b3ff-da889656338c",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "8b8ab4e3-b209-4232-a9c9-767501123361",
+              "toNodeId": "28b13b59-a02c-4faa-b69f-ce13ad921410"
+            },
+            "b17aca14-6a4f-46a3-82e7-e4fecffc6da4": {
+              "id": "b17aca14-6a4f-46a3-82e7-e4fecffc6da4",
+              "name": "Yes",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "ac12622d-e616-46d3-9e72-38ec2318c644",
+              "toNodeId": "f1ba86e9-b4c2-41c9-999c-252742274ea9"
+            },
+            "c35a649f-3cb7-463b-aa43-eac62325d534": {
+              "id": "c35a649f-3cb7-463b-aa43-eac62325d534",
+              "name": "No",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "9108708f-fe22-4f2a-869b-7ba004878a27",
+              "toNodeId": "41587ce0-e706-4d30-9332-90f43445f90a"
+            },
+            "c9101a2f-047e-4e1e-bb04-fa3a7f2b5b00": {
+              "id": "c9101a2f-047e-4e1e-bb04-fa3a7f2b5b00",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "f1ba86e9-b4c2-41c9-999c-252742274ea9",
+              "toNodeId": "689e857a-48fd-4ae6-a26b-4713217e0b0d"
+            },
+            "d13de5d6-ea32-4837-aebe-59145a20f0da": {
+              "id": "d13de5d6-ea32-4837-aebe-59145a20f0da",
+              "name": "Yes",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "689e857a-48fd-4ae6-a26b-4713217e0b0d",
+              "toNodeId": "9938c45d-365a-4180-8e7e-323df8baca96"
+            },
+            "dac93cc1-e669-4774-afb3-253ecda1d702": {
+              "id": "dac93cc1-e669-4774-afb3-253ecda1d702",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "67fbcfa4-8eab-49b5-8d2b-3b0f1dad382c",
+              "toNodeId": "75c4e364-f202-469e-bcb3-4140fe36e205"
+            },
+            "e015b9cf-2e5b-48a4-852a-cd46f934f443": {
+              "id": "e015b9cf-2e5b-48a4-852a-cd46f934f443",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "9938c45d-365a-4180-8e7e-323df8baca96",
+              "toNodeId": ""
+            },
+            "e0602fac-5236-4725-b391-c57f20432eca": {
+              "id": "e0602fac-5236-4725-b391-c57f20432eca",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "d849f0fa-b351-47ab-9734-ed7b2845f9d2",
+              "toNodeId": ""
+            },
+            "e52f75fb-4d23-41be-936e-37886e43a55d": {
+              "id": "e52f75fb-4d23-41be-936e-37886e43a55d",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "ad5289eb-110e-4ac2-9ee8-b2bd30ffa455",
+              "toNodeId": "ada69091-7eb5-404b-8ce5-5b8420e11ca3"
+            },
+            "e9dca260-cb4b-4f48-afcd-3704f38d947e": {
+              "id": "e9dca260-cb4b-4f48-afcd-3704f38d947e",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "4ea6adf6-4bb6-4018-b6af-cf45e6e3e267",
+              "toNodeId": "8b8ab4e3-b209-4232-a9c9-767501123361"
+            },
+            "f1ca1526-306c-45ee-a415-8a8a3d856560": {
+              "id": "f1ca1526-306c-45ee-a415-8a8a3d856560",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "1bee3977-64bb-4bbe-9a31-e1e4bf35c736",
+              "toNodeId": ""
+            }
+          },
+          "nodes": {
+            "1bee3977-64bb-4bbe-9a31-e1e4bf35c736": {
+              "id": "1bee3977-64bb-4bbe-9a31-e1e4bf35c736",
+              "parentNodeId": ""
+            },
+            "28b13b59-a02c-4faa-b69f-ce13ad921410": {
+              "id": "28b13b59-a02c-4faa-b69f-ce13ad921410",
+              "parentNodeId": ""
+            },
+            "41587ce0-e706-4d30-9332-90f43445f90a": {
+              "id": "41587ce0-e706-4d30-9332-90f43445f90a",
+              "parentNodeId": ""
+            },
+            "4ea6adf6-4bb6-4018-b6af-cf45e6e3e267": {
+              "id": "4ea6adf6-4bb6-4018-b6af-cf45e6e3e267",
+              "parentNodeId": ""
+            },
+            "59e96533-a707-45e3-b837-bf45a44750d9": {
+              "id": "59e96533-a707-45e3-b837-bf45a44750d9",
+              "parentNodeId": ""
+            },
+            "67fbcfa4-8eab-49b5-8d2b-3b0f1dad382c": {
+              "id": "67fbcfa4-8eab-49b5-8d2b-3b0f1dad382c",
+              "parentNodeId": ""
+            },
+            "689e857a-48fd-4ae6-a26b-4713217e0b0d": {
+              "id": "689e857a-48fd-4ae6-a26b-4713217e0b0d",
+              "parentNodeId": ""
+            },
+            "75c4e364-f202-469e-bcb3-4140fe36e205": {
+              "id": "75c4e364-f202-469e-bcb3-4140fe36e205",
+              "parentNodeId": ""
+            },
+            "8b8ab4e3-b209-4232-a9c9-767501123361": {
+              "id": "8b8ab4e3-b209-4232-a9c9-767501123361",
+              "parentNodeId": ""
+            },
+            "9108708f-fe22-4f2a-869b-7ba004878a27": {
+              "id": "9108708f-fe22-4f2a-869b-7ba004878a27",
+              "parentNodeId": ""
+            },
+            "9938c45d-365a-4180-8e7e-323df8baca96": {
+              "id": "9938c45d-365a-4180-8e7e-323df8baca96",
+              "parentNodeId": ""
+            },
+            "9dfbea14-3d78-4fbb-937b-88d4c9b277d8": {
+              "id": "9dfbea14-3d78-4fbb-937b-88d4c9b277d8",
+              "parentNodeId": ""
+            },
+            "ac12622d-e616-46d3-9e72-38ec2318c644": {
+              "id": "ac12622d-e616-46d3-9e72-38ec2318c644",
+              "parentNodeId": ""
+            },
+            "ad5289eb-110e-4ac2-9ee8-b2bd30ffa455": {
+              "id": "ad5289eb-110e-4ac2-9ee8-b2bd30ffa455",
+              "parentNodeId": ""
+            },
+            "ada69091-7eb5-404b-8ce5-5b8420e11ca3": {
+              "id": "ada69091-7eb5-404b-8ce5-5b8420e11ca3",
+              "parentNodeId": ""
+            },
+            "d849f0fa-b351-47ab-9734-ed7b2845f9d2": {
+              "id": "d849f0fa-b351-47ab-9734-ed7b2845f9d2",
+              "parentNodeId": ""
+            },
+            "f1ba86e9-b4c2-41c9-999c-252742274ea9": {
+              "id": "f1ba86e9-b4c2-41c9-999c-252742274ea9",
+              "parentNodeId": ""
+            }
+          }
+        },
+        "steps": {
+          "1bee3977-64bb-4bbe-9a31-e1e4bf35c736": {
+            "nodeId": "1bee3977-64bb-4bbe-9a31-e1e4bf35c736",
+            "name": "Workflow Complete Purge Failed",
+            "type": "action",
+            "plugin": {
+              "name": "Microsoft Teams",
+              "slugVendor": "rapid7",
+              "slugName": "microsoft_teams",
+              "slugVersion": "2.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.1/icon.png"
+            },
+            "identifier": "send_html_message",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "channel_name": "Komand Test Channel",
+                "message_content": "The compliance search failed to purge!<br>\n<br>\nMore information can be found here:<br>\n{{[$job].[URL]}}<br>\n<br>\n<b>Workflow Complete</b>\n<b>Workflow Complete</b>",
+                "team_name": "Komand-Test-Everyone"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "channel_name": {
+                  "description": "Channel name",
+                  "order": 2,
+                  "title": "Channel Name",
+                  "type": "string"
+                },
+                "message_content": {
+                  "description": "HTML content to send",
+                  "order": 3,
+                  "title": "Message Content",
+                  "type": "string"
+                },
+                "team_name": {
+                  "description": "Team name",
+                  "order": 1,
+                  "title": "Team Name",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "team_name",
+                "channel_name",
+                "message_content"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "body": {
+                  "properties": {
+                    "content": {
+                      "description": "Content",
+                      "order": 1,
+                      "title": "Content",
+                      "type": "string"
+                    },
+                    "contentType": {
+                      "description": "Content type",
+                      "order": 2,
+                      "title": "Content Type",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Body",
+                  "type": "object"
+                },
+                "from": {
+                  "properties": {
+                    "user": {
+                      "$ref": "#/definitions/user",
+                      "description": "User",
+                      "order": 1,
+                      "title": "User"
+                    }
+                  },
+                  "title": "From",
+                  "type": "object"
+                },
+                "message": {
+                  "properties": {
+                    "body": {
+                      "$ref": "#/definitions/body",
+                      "description": "Body",
+                      "order": 1,
+                      "title": "Body"
+                    },
+                    "createdDateTime": {
+                      "description": "Created date time",
+                      "order": 3,
+                      "title": "Created Date Time",
+                      "type": "string"
+                    },
+                    "from": {
+                      "$ref": "#/definitions/from",
+                      "description": "From",
+                      "order": 2,
+                      "title": "From"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 8,
+                      "title": "ID",
+                      "type": "string"
+                    },
+                    "importance": {
+                      "description": "Importance",
+                      "order": 5,
+                      "title": "Importance",
+                      "type": "string"
+                    },
+                    "locale": {
+                      "description": "Locale",
+                      "order": 7,
+                      "title": "Locale",
+                      "type": "string"
+                    },
+                    "messageType": {
+                      "description": "Message type",
+                      "order": 6,
+                      "title": "Message Type",
+                      "type": "string"
+                    },
+                    "webUrl": {
+                      "description": "Web URL",
+                      "order": 4,
+                      "title": "Web URL",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Message",
+                  "type": "object"
+                },
+                "user": {
+                  "properties": {
+                    "displayName": {
+                      "description": "Display name",
+                      "order": 1,
+                      "title": "Display name",
+                      "type": "string"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 2,
+                      "title": "ID",
+                      "type": "string"
+                    }
+                  },
+                  "title": "User",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "message": {
+                  "$ref": "#/definitions/message",
+                  "description": "The message object that was created",
+                  "order": 1,
+                  "title": "Message"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "28b13b59-a02c-4faa-b69f-ce13ad921410": {
+            "nodeId": "28b13b59-a02c-4faa-b69f-ce13ad921410",
+            "name": "Compliance Search",
+            "type": "action",
+            "plugin": {
+              "name": "Microsoft Office365 Email Security",
+              "slugVendor": "rapid7",
+              "slugName": "microsoft_office365_email_security",
+              "slugVersion": "2.2.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_office365_email_security/2.2.1/icon.png"
+            },
+            "identifier": "email_compliance_search",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "compliance_search_name": "{{[4ea6adf6-4bb6-4018-b6af-cf45e6e3e267].[content]}}",
+                "content_match_query": "{{[ad5289eb-110e-4ac2-9ee8-b2bd30ffa455].[query_string]}}",
+                "query_timeout": 60
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "compliance_search_name": {
+                  "description": "Name of compliance search",
+                  "order": 1,
+                  "title": "Compliance search name",
+                  "type": "string"
+                },
+                "content_match_query": {
+                  "description": "This parameter uses a text search string or a query that's formatted by using the Keyword Query Language (KQL). For more information about KQL, see Keyword Query Language syntax reference (https://go.microsoft.com/fwlink/p/?linkid=269603)",
+                  "order": 2,
+                  "title": "Content Match Query",
+                  "type": "string"
+                },
+                "query_timeout": {
+                  "default": 60,
+                  "description": "Query timeout in minutes",
+                  "order": 3,
+                  "title": "Query Timeout",
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "compliance_search_name",
+                "content_match_query"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "affected_users": {
+                  "description": "Number of affected users",
+                  "order": 1,
+                  "title": "Users",
+                  "type": "integer"
+                },
+                "emails_found": {
+                  "description": "Emails found that matched",
+                  "order": 3,
+                  "title": "Emails found",
+                  "type": "integer"
+                },
+                "users": {
+                  "description": "Email address of all affected users",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "User Email Addresses",
+                  "type": "array"
+                }
+              },
+              "required": [
+                "affected_users",
+                "users",
+                "emails_found"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "41587ce0-e706-4d30-9332-90f43445f90a": {
+            "nodeId": "41587ce0-e706-4d30-9332-90f43445f90a",
+            "name": "Parse Args Error",
+            "type": "action",
+            "plugin": {
+              "name": "Microsoft Teams",
+              "slugVendor": "rapid7",
+              "slugName": "microsoft_teams",
+              "slugVersion": "2.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.1/icon.png"
+            },
+            "identifier": "send_html_message",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "channel_name": "Komand Test Channel",
+                "message_content": "Something went wrong with delete-email.<br> \n<br>\nThe message received was: <br>\n{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[body].[content]}}",
+                "team_name": "Komand-Test-Everyone"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "channel_name": {
+                  "description": "Channel name",
+                  "order": 2,
+                  "title": "Channel Name",
+                  "type": "string"
+                },
+                "message_content": {
+                  "description": "HTML content to send",
+                  "order": 3,
+                  "title": "Message Content",
+                  "type": "string"
+                },
+                "team_name": {
+                  "description": "Team name",
+                  "order": 1,
+                  "title": "Team Name",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "team_name",
+                "channel_name",
+                "message_content"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "body": {
+                  "properties": {
+                    "content": {
+                      "description": "Content",
+                      "order": 1,
+                      "title": "Content",
+                      "type": "string"
+                    },
+                    "contentType": {
+                      "description": "Content type",
+                      "order": 2,
+                      "title": "Content Type",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Body",
+                  "type": "object"
+                },
+                "from": {
+                  "properties": {
+                    "user": {
+                      "$ref": "#/definitions/user",
+                      "description": "User",
+                      "order": 1,
+                      "title": "User"
+                    }
+                  },
+                  "title": "From",
+                  "type": "object"
+                },
+                "message": {
+                  "properties": {
+                    "body": {
+                      "$ref": "#/definitions/body",
+                      "description": "Body",
+                      "order": 1,
+                      "title": "Body"
+                    },
+                    "createdDateTime": {
+                      "description": "Created date time",
+                      "order": 3,
+                      "title": "Created Date Time",
+                      "type": "string"
+                    },
+                    "from": {
+                      "$ref": "#/definitions/from",
+                      "description": "From",
+                      "order": 2,
+                      "title": "From"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 8,
+                      "title": "ID",
+                      "type": "string"
+                    },
+                    "importance": {
+                      "description": "Importance",
+                      "order": 5,
+                      "title": "Importance",
+                      "type": "string"
+                    },
+                    "locale": {
+                      "description": "Locale",
+                      "order": 7,
+                      "title": "Locale",
+                      "type": "string"
+                    },
+                    "messageType": {
+                      "description": "Message type",
+                      "order": 6,
+                      "title": "Message Type",
+                      "type": "string"
+                    },
+                    "webUrl": {
+                      "description": "Web URL",
+                      "order": 4,
+                      "title": "Web URL",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Message",
+                  "type": "object"
+                },
+                "user": {
+                  "properties": {
+                    "displayName": {
+                      "description": "Display name",
+                      "order": 1,
+                      "title": "Display name",
+                      "type": "string"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 2,
+                      "title": "ID",
+                      "type": "string"
+                    }
+                  },
+                  "title": "User",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "message": {
+                  "$ref": "#/definitions/message",
+                  "description": "The message object that was created",
+                  "order": 1,
+                  "title": "Message"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "4ea6adf6-4bb6-4018-b6af-cf45e6e3e267": {
+            "nodeId": "4ea6adf6-4bb6-4018-b6af-cf45e6e3e267",
+            "name": "Compliance Search Name",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "InsightConnect Search for {{[75c4e364-f202-469e-bcb3-4140fe36e205].[from]}} {{[75c4e364-f202-469e-bcb3-4140fe36e205].[subject]}} {{[75c4e364-f202-469e-bcb3-4140fe36e205].[body]}}"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "59e96533-a707-45e3-b837-bf45a44750d9": {
+            "nodeId": "59e96533-a707-45e3-b837-bf45a44750d9",
+            "name": "Search Finished Message",
+            "type": "action",
+            "plugin": {
+              "name": "Microsoft Teams",
+              "slugVendor": "rapid7",
+              "slugName": "microsoft_teams",
+              "slugVersion": "2.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.1/icon.png"
+            },
+            "identifier": "send_html_message",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "channel_name": "Komand Test Channel",
+                "message_content": "Compliance Search Complete<br>\n<br>\nEmails Found: {{[28b13b59-a02c-4faa-b69f-ce13ad921410].[emails_found]}}<br>\nNumber of Users Affected: {{[28b13b59-a02c-4faa-b69f-ce13ad921410].[affected_users]}}<br>\n<br>\nFor more information: <br>\n{{[$job].[URL]}}",
+                "team_name": "Komand-Test-Everyone"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "channel_name": {
+                  "description": "Channel name",
+                  "order": 2,
+                  "title": "Channel Name",
+                  "type": "string"
+                },
+                "message_content": {
+                  "description": "HTML content to send",
+                  "order": 3,
+                  "title": "Message Content",
+                  "type": "string"
+                },
+                "team_name": {
+                  "description": "Team name",
+                  "order": 1,
+                  "title": "Team Name",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "team_name",
+                "channel_name",
+                "message_content"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "body": {
+                  "properties": {
+                    "content": {
+                      "description": "Content",
+                      "order": 1,
+                      "title": "Content",
+                      "type": "string"
+                    },
+                    "contentType": {
+                      "description": "Content type",
+                      "order": 2,
+                      "title": "Content Type",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Body",
+                  "type": "object"
+                },
+                "from": {
+                  "properties": {
+                    "user": {
+                      "$ref": "#/definitions/user",
+                      "description": "User",
+                      "order": 1,
+                      "title": "User"
+                    }
+                  },
+                  "title": "From",
+                  "type": "object"
+                },
+                "message": {
+                  "properties": {
+                    "body": {
+                      "$ref": "#/definitions/body",
+                      "description": "Body",
+                      "order": 1,
+                      "title": "Body"
+                    },
+                    "createdDateTime": {
+                      "description": "Created date time",
+                      "order": 3,
+                      "title": "Created Date Time",
+                      "type": "string"
+                    },
+                    "from": {
+                      "$ref": "#/definitions/from",
+                      "description": "From",
+                      "order": 2,
+                      "title": "From"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 8,
+                      "title": "ID",
+                      "type": "string"
+                    },
+                    "importance": {
+                      "description": "Importance",
+                      "order": 5,
+                      "title": "Importance",
+                      "type": "string"
+                    },
+                    "locale": {
+                      "description": "Locale",
+                      "order": 7,
+                      "title": "Locale",
+                      "type": "string"
+                    },
+                    "messageType": {
+                      "description": "Message type",
+                      "order": 6,
+                      "title": "Message Type",
+                      "type": "string"
+                    },
+                    "webUrl": {
+                      "description": "Web URL",
+                      "order": 4,
+                      "title": "Web URL",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Message",
+                  "type": "object"
+                },
+                "user": {
+                  "properties": {
+                    "displayName": {
+                      "description": "Display name",
+                      "order": 1,
+                      "title": "Display name",
+                      "type": "string"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 2,
+                      "title": "ID",
+                      "type": "string"
+                    }
+                  },
+                  "title": "User",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "message": {
+                  "$ref": "#/definitions/message",
+                  "description": "The message object that was created",
+                  "order": 1,
+                  "title": "Message"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "67fbcfa4-8eab-49b5-8d2b-3b0f1dad382c": {
+            "nodeId": "67fbcfa4-8eab-49b5-8d2b-3b0f1dad382c",
+            "name": "Strip HTML",
+            "type": "action",
+            "plugin": {
+              "name": "HTML",
+              "slugVendor": "rapid7",
+              "slugName": "html",
+              "slugVersion": "1.2.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/html/1.2.1/icon.png"
+            },
+            "identifier": "text",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "doc": "{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[body].[content]}}",
+                "remove_scripts": true
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "doc": {
+                  "description": "Document to transform",
+                  "order": 1,
+                  "title": "Document",
+                  "type": "string"
+                },
+                "remove_scripts": {
+                  "description": "Remove non-HTML scripts from the document",
+                  "order": 2,
+                  "title": "Remove Scripts",
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "doc"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "text": {
+                  "description": "String without HTML tags",
+                  "order": 1,
+                  "title": "Text",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR"
+          },
+          "689e857a-48fd-4ae6-a26b-4713217e0b0d": {
+            "nodeId": "689e857a-48fd-4ae6-a26b-4713217e0b0d",
+            "name": "Was Delete Successful?",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "369501e7-c422-4b9c-8e1c-732631cf351e",
+              "stepControlParams": [
+                {
+                  "edgeId": "d13de5d6-ea32-4837-aebe-59145a20f0da",
+                  "expression": {
+                    "name": "f1ba86e9-b4c2-41c9-999c-252742274ea9.$success",
+                    "type": "variable"
+                  },
+                  "expressionText": "{{[f1ba86e9-b4c2-41c9-999c-252742274ea9].[$success]}}"
+                },
+                {
+                  "edgeId": "369501e7-c422-4b9c-8e1c-732631cf351e",
+                  "expression": {},
+                  "expressionText": ""
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          },
+          "75c4e364-f202-469e-bcb3-4140fe36e205": {
+            "nodeId": "75c4e364-f202-469e-bcb3-4140fe36e205",
+            "name": "Parse Args",
+            "type": "action",
+            "plugin": {
+              "name": "Python 3 Script",
+              "slugVendor": "rapid7",
+              "slugName": "python_3_script",
+              "slugVersion": "2.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/python_3_script/2.0.1/icon.png"
+            },
+            "identifier": "run",
+            "continueOnFailure": true,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "function": "def run(params={}):\n\n    # Sometimes Slack will give us email in their linked form:\n    # <mailto:user@example.com>\n    # or\n    # <http://www.exmaple.com|example.com>\n    def parse_email(email):\n\n        if email.startswith(\"<\"):\n            # mailto link\n            if \"mailto:\" in email:\n                split_email = email.split(\":\")[1]\n                if \"|\" in split_email:\n                    return split_email.split(\"|\")[0]\n                return split_email\n\n            # http link\n            if \"http:\" in email:\n                split_email = email.split(\"|\")[1]\n                split_email = split_email.rstrip(\">\")\n                return split_email\n\n        return email\n\n    import shlex\n    input = params.get(\"input\")\n\n    # Sometimes slack gives us unicode spaces\n    input = input.replace(u'\\xa0', u' ')\n\n    # split our args\n    args = shlex.split(input)\n\n    # setup\n    args_for_delete_email = {\"delete\": False}\n\n    # parse args\n    for i in range(1, len(args)):\n        split_args = args[i].split('=')\n        if split_args[0].lower() == \"subject\":\n            args_for_delete_email[\"subject\"] = split_args[1]\n        if split_args[0].lower() == \"body\":\n            args_for_delete_email[\"body\"] = split_args[1]\n        if split_args[0].lower() == \"from\":\n            args_for_delete_email[\"from\"] = parse_email(split_args[1])\n        if split_args[0].lower() == \"delete\":\n            args_for_delete_email[\"delete\"] = True if split_args[1][0].lower() == 't' else False\n\n    # Make sure we have at least one search criteria specified\n    if len(args_for_delete_email.keys()) <= 1:\n        raise Exception(\"No arguments specified. A body, subject, and/or from must be specified\")\n\n    return(args_for_delete_email)",
+                "input": {
+                  "input": "{{[67fbcfa4-8eab-49b5-8d2b-3b0f1dad382c].[text]}}"
+                }
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "function": {
+                  "default": "def run(params={}):\\n    return {}",
+                  "description": "Function definition. Must be named `run`. Accepts the `input` object as params. Returns the dict as output",
+                  "displayType": "python",
+                  "format": "python",
+                  "order": 1,
+                  "title": "Function",
+                  "type": "string"
+                },
+                "input": {
+                  "description": "Input object to be passed as `params={}` to the `run` function",
+                  "order": 2,
+                  "title": "Input",
+                  "type": "object"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "result1": {
+                  "description": "Sample output result1 (delete or edit)",
+                  "order": 1,
+                  "title": "Result1",
+                  "type": "string"
+                },
+                "result2": {
+                  "description": "Sample output result2 (delete or edit)",
+                  "order": 2,
+                  "title": "Result2",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": {
+              "definitions": {},
+              "properties": {
+                "body": {
+                  "description": "Sample output result1 (delete or edit)",
+                  "order": 1,
+                  "title": "Result1",
+                  "type": "string"
+                },
+                "delete": {
+                  "type": "boolean"
+                },
+                "from": {
+                  "type": "string"
+                },
+                "subject": {
+                  "description": "Sample output result2 (delete or edit)",
+                  "order": 2,
+                  "title": "Result2",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "8b8ab4e3-b209-4232-a9c9-767501123361": {
+            "nodeId": "8b8ab4e3-b209-4232-a9c9-767501123361",
+            "name": "Begin Compliance Search Message",
+            "type": "action",
+            "plugin": {
+              "name": "Microsoft Teams",
+              "slugVendor": "rapid7",
+              "slugName": "microsoft_teams",
+              "slugVersion": "2.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.1/icon.png"
+            },
+            "identifier": "send_html_message",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "channel_name": "Komand Test Channel",
+                "message_content": "Beginning Compliance Search<br>\n<br>\n{{[4ea6adf6-4bb6-4018-b6af-cf45e6e3e267].[content]}}<br>\n<br>\nThis can take up to 60 minutes depending on the size of your organization. ",
+                "team_name": "Komand-Test-Everyone"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "channel_name": {
+                  "description": "Channel name",
+                  "order": 2,
+                  "title": "Channel Name",
+                  "type": "string"
+                },
+                "message_content": {
+                  "description": "HTML content to send",
+                  "order": 3,
+                  "title": "Message Content",
+                  "type": "string"
+                },
+                "team_name": {
+                  "description": "Team name",
+                  "order": 1,
+                  "title": "Team Name",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "team_name",
+                "channel_name",
+                "message_content"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "body": {
+                  "properties": {
+                    "content": {
+                      "description": "Content",
+                      "order": 1,
+                      "title": "Content",
+                      "type": "string"
+                    },
+                    "contentType": {
+                      "description": "Content type",
+                      "order": 2,
+                      "title": "Content Type",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Body",
+                  "type": "object"
+                },
+                "from": {
+                  "properties": {
+                    "user": {
+                      "$ref": "#/definitions/user",
+                      "description": "User",
+                      "order": 1,
+                      "title": "User"
+                    }
+                  },
+                  "title": "From",
+                  "type": "object"
+                },
+                "message": {
+                  "properties": {
+                    "body": {
+                      "$ref": "#/definitions/body",
+                      "description": "Body",
+                      "order": 1,
+                      "title": "Body"
+                    },
+                    "createdDateTime": {
+                      "description": "Created date time",
+                      "order": 3,
+                      "title": "Created Date Time",
+                      "type": "string"
+                    },
+                    "from": {
+                      "$ref": "#/definitions/from",
+                      "description": "From",
+                      "order": 2,
+                      "title": "From"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 8,
+                      "title": "ID",
+                      "type": "string"
+                    },
+                    "importance": {
+                      "description": "Importance",
+                      "order": 5,
+                      "title": "Importance",
+                      "type": "string"
+                    },
+                    "locale": {
+                      "description": "Locale",
+                      "order": 7,
+                      "title": "Locale",
+                      "type": "string"
+                    },
+                    "messageType": {
+                      "description": "Message type",
+                      "order": 6,
+                      "title": "Message Type",
+                      "type": "string"
+                    },
+                    "webUrl": {
+                      "description": "Web URL",
+                      "order": 4,
+                      "title": "Web URL",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Message",
+                  "type": "object"
+                },
+                "user": {
+                  "properties": {
+                    "displayName": {
+                      "description": "Display name",
+                      "order": 1,
+                      "title": "Display name",
+                      "type": "string"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 2,
+                      "title": "ID",
+                      "type": "string"
+                    }
+                  },
+                  "title": "User",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "message": {
+                  "$ref": "#/definitions/message",
+                  "description": "The message object that was created",
+                  "order": 1,
+                  "title": "Message"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "9108708f-fe22-4f2a-869b-7ba004878a27": {
+            "nodeId": "9108708f-fe22-4f2a-869b-7ba004878a27",
+            "name": "Was parsing successful",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "c35a649f-3cb7-463b-aa43-eac62325d534",
+              "stepControlParams": [
+                {
+                  "edgeId": "941adb16-50af-4c10-9763-600d35c2d92f",
+                  "expression": {
+                    "name": "75c4e364-f202-469e-bcb3-4140fe36e205.$success",
+                    "type": "variable"
+                  },
+                  "expressionText": "{{[75c4e364-f202-469e-bcb3-4140fe36e205].[$success]}}"
+                },
+                {
+                  "edgeId": "c35a649f-3cb7-463b-aa43-eac62325d534",
+                  "expression": {},
+                  "expressionText": ""
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          },
+          "9938c45d-365a-4180-8e7e-323df8baca96": {
+            "nodeId": "9938c45d-365a-4180-8e7e-323df8baca96",
+            "name": "Workflow Complete Purge Success",
+            "type": "action",
+            "plugin": {
+              "name": "Microsoft Teams",
+              "slugVendor": "rapid7",
+              "slugName": "microsoft_teams",
+              "slugVersion": "2.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.1/icon.png"
+            },
+            "identifier": "send_html_message",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "channel_name": "Komand Test Channel",
+                "message_content": "The compliance search was successfully purged!<br>\n<br>\n<b>Workflow Complete</b>",
+                "team_name": "Komand-Test-Everyone"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "channel_name": {
+                  "description": "Channel name",
+                  "order": 2,
+                  "title": "Channel Name",
+                  "type": "string"
+                },
+                "message_content": {
+                  "description": "HTML content to send",
+                  "order": 3,
+                  "title": "Message Content",
+                  "type": "string"
+                },
+                "team_name": {
+                  "description": "Team name",
+                  "order": 1,
+                  "title": "Team Name",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "team_name",
+                "channel_name",
+                "message_content"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "body": {
+                  "properties": {
+                    "content": {
+                      "description": "Content",
+                      "order": 1,
+                      "title": "Content",
+                      "type": "string"
+                    },
+                    "contentType": {
+                      "description": "Content type",
+                      "order": 2,
+                      "title": "Content Type",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Body",
+                  "type": "object"
+                },
+                "from": {
+                  "properties": {
+                    "user": {
+                      "$ref": "#/definitions/user",
+                      "description": "User",
+                      "order": 1,
+                      "title": "User"
+                    }
+                  },
+                  "title": "From",
+                  "type": "object"
+                },
+                "message": {
+                  "properties": {
+                    "body": {
+                      "$ref": "#/definitions/body",
+                      "description": "Body",
+                      "order": 1,
+                      "title": "Body"
+                    },
+                    "createdDateTime": {
+                      "description": "Created date time",
+                      "order": 3,
+                      "title": "Created Date Time",
+                      "type": "string"
+                    },
+                    "from": {
+                      "$ref": "#/definitions/from",
+                      "description": "From",
+                      "order": 2,
+                      "title": "From"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 8,
+                      "title": "ID",
+                      "type": "string"
+                    },
+                    "importance": {
+                      "description": "Importance",
+                      "order": 5,
+                      "title": "Importance",
+                      "type": "string"
+                    },
+                    "locale": {
+                      "description": "Locale",
+                      "order": 7,
+                      "title": "Locale",
+                      "type": "string"
+                    },
+                    "messageType": {
+                      "description": "Message type",
+                      "order": 6,
+                      "title": "Message Type",
+                      "type": "string"
+                    },
+                    "webUrl": {
+                      "description": "Web URL",
+                      "order": 4,
+                      "title": "Web URL",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Message",
+                  "type": "object"
+                },
+                "user": {
+                  "properties": {
+                    "displayName": {
+                      "description": "Display name",
+                      "order": 1,
+                      "title": "Display name",
+                      "type": "string"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 2,
+                      "title": "ID",
+                      "type": "string"
+                    }
+                  },
+                  "title": "User",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "message": {
+                  "$ref": "#/definitions/message",
+                  "description": "The message object that was created",
+                  "order": 1,
+                  "title": "Message"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "9dfbea14-3d78-4fbb-937b-88d4c9b277d8": {
+            "nodeId": "9dfbea14-3d78-4fbb-937b-88d4c9b277d8",
+            "name": "Purge Email Trigger",
+            "type": "trigger",
+            "plugin": {
+              "name": "Microsoft Teams",
+              "slugVendor": "rapid7",
+              "slugName": "microsoft_teams",
+              "slugVersion": "2.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.1/icon.png"
+            },
+            "identifier": "new_message_received",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "channel_name": "Komand Test Channel",
+                "message_content": "^!purge-email.*",
+                "team_name": "Komand-Test-Everyone"
+              }
+            },
+            "triggerId": "3d5570c3-e5a7-455f-8353-68b5ebf1ec56",
+            "defaultInputJSONSchema": {
+              "properties": {
+                "channel_name": {
+                  "description": "Channel",
+                  "order": 2,
+                  "title": "Channel Name",
+                  "type": "string"
+                },
+                "message_content": {
+                  "description": "Regex to match new messages against",
+                  "order": 3,
+                  "title": "Message Content",
+                  "type": "string"
+                },
+                "team_name": {
+                  "description": "Team name",
+                  "order": 1,
+                  "title": "Team Name",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "team_name",
+                "channel_name"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "body": {
+                  "properties": {
+                    "content": {
+                      "description": "Content",
+                      "order": 1,
+                      "title": "Content",
+                      "type": "string"
+                    },
+                    "contentType": {
+                      "description": "Content type",
+                      "order": 2,
+                      "title": "Content Type",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Body",
+                  "type": "object"
+                },
+                "from": {
+                  "properties": {
+                    "user": {
+                      "$ref": "#/definitions/user",
+                      "description": "User",
+                      "order": 1,
+                      "title": "User"
+                    }
+                  },
+                  "title": "From",
+                  "type": "object"
+                },
+                "message": {
+                  "properties": {
+                    "body": {
+                      "$ref": "#/definitions/body",
+                      "description": "Body",
+                      "order": 1,
+                      "title": "Body"
+                    },
+                    "createdDateTime": {
+                      "description": "Created date time",
+                      "order": 3,
+                      "title": "Created Date Time",
+                      "type": "string"
+                    },
+                    "from": {
+                      "$ref": "#/definitions/from",
+                      "description": "From",
+                      "order": 2,
+                      "title": "From"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 8,
+                      "title": "ID",
+                      "type": "string"
+                    },
+                    "importance": {
+                      "description": "Importance",
+                      "order": 5,
+                      "title": "Importance",
+                      "type": "string"
+                    },
+                    "locale": {
+                      "description": "Locale",
+                      "order": 7,
+                      "title": "Locale",
+                      "type": "string"
+                    },
+                    "messageType": {
+                      "description": "Message type",
+                      "order": 6,
+                      "title": "Message Type",
+                      "type": "string"
+                    },
+                    "webUrl": {
+                      "description": "Web URL",
+                      "order": 4,
+                      "title": "Web URL",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Message",
+                  "type": "object"
+                },
+                "user": {
+                  "properties": {
+                    "displayName": {
+                      "description": "Display name",
+                      "order": 1,
+                      "title": "Display name",
+                      "type": "string"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 2,
+                      "title": "ID",
+                      "type": "string"
+                    }
+                  },
+                  "title": "User",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "message": {
+                  "$ref": "#/definitions/message",
+                  "description": "The message object that was created",
+                  "order": 1,
+                  "title": "Message"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg",
+            "connectionType": "CONNECTION"
+          },
+          "ac12622d-e616-46d3-9e72-38ec2318c644": {
+            "nodeId": "ac12622d-e616-46d3-9e72-38ec2318c644",
+            "name": "Automatically Delete Emails?",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "3daf7970-48af-49f3-a0ea-96dcc4da28f1",
+              "stepControlParams": [
+                {
+                  "edgeId": "b17aca14-6a4f-46a3-82e7-e4fecffc6da4",
+                  "expression": {
+                    "name": "75c4e364-f202-469e-bcb3-4140fe36e205.delete",
+                    "type": "variable"
+                  },
+                  "expressionText": "{{[75c4e364-f202-469e-bcb3-4140fe36e205].[delete]}}"
+                },
+                {
+                  "edgeId": "3daf7970-48af-49f3-a0ea-96dcc4da28f1",
+                  "expression": {},
+                  "expressionText": ""
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          },
+          "ad5289eb-110e-4ac2-9ee8-b2bd30ffa455": {
+            "nodeId": "ad5289eb-110e-4ac2-9ee8-b2bd30ffa455",
+            "name": "Create Query String",
+            "type": "action",
+            "plugin": {
+              "name": "Python 3 Script",
+              "slugVendor": "rapid7",
+              "slugName": "python_3_script",
+              "slugVersion": "2.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/python_3_script/2.0.1/icon.png"
+            },
+            "identifier": "run",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "function": "def run(params={}):\n    query_string = \"\"\n\n    if params.get(\"body\"):\n        query_string+=f\"body:'{params.get('body')}' \"\n\n    if params.get(\"from\"):\n        query_string+=f\"from:'{params.get('from')}' \"\n\n    if params.get(\"subject\"):\n        query_string += f\"subject:'{params.get('subject')}' \"\n\n    return {\"query_string\": query_string.strip()}",
+                "input": "{{[75c4e364-f202-469e-bcb3-4140fe36e205]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "function": {
+                  "default": "def run(params={}):\\n    return {}",
+                  "description": "Function definition. Must be named `run`. Accepts the `input` object as params. Returns the dict as output",
+                  "displayType": "python",
+                  "format": "python",
+                  "order": 1,
+                  "title": "Function",
+                  "type": "string"
+                },
+                "input": {
+                  "description": "Input object to be passed as `params={}` to the `run` function",
+                  "order": 2,
+                  "title": "Input",
+                  "type": "object"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "result1": {
+                  "description": "Sample output result1 (delete or edit)",
+                  "order": 1,
+                  "title": "Result1",
+                  "type": "string"
+                },
+                "result2": {
+                  "description": "Sample output result2 (delete or edit)",
+                  "order": 2,
+                  "title": "Result2",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": {
+              "definitions": {},
+              "properties": {
+                "query_string": {
+                  "description": "Sample output result1 (delete or edit)",
+                  "order": 1,
+                  "title": "Result1",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "ada69091-7eb5-404b-8ce5-5b8420e11ca3": {
+            "nodeId": "ada69091-7eb5-404b-8ce5-5b8420e11ca3",
+            "name": "Purge Command Elements",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "From: \"{{[75c4e364-f202-469e-bcb3-4140fe36e205].[from]}}\"\nSubject: \"{{[75c4e364-f202-469e-bcb3-4140fe36e205].[subject]}}\"\nBody: \"{{[75c4e364-f202-469e-bcb3-4140fe36e205].[body]}}\"\nDelete: \"{{[75c4e364-f202-469e-bcb3-4140fe36e205].[delete]}}\"\n\nQuery String: \"{{[ad5289eb-110e-4ac2-9ee8-b2bd30ffa455].[query_string]}}\""
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "d849f0fa-b351-47ab-9734-ed7b2845f9d2": {
+            "nodeId": "d849f0fa-b351-47ab-9734-ed7b2845f9d2",
+            "name": "Workflow Complete No Deletion",
+            "type": "action",
+            "plugin": {
+              "name": "Microsoft Teams",
+              "slugVendor": "rapid7",
+              "slugName": "microsoft_teams",
+              "slugVersion": "2.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.1/icon.png"
+            },
+            "identifier": "send_html_message",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "channel_name": "Komand Test Channel",
+                "message_content": "Compliance results were not purged. <br>\n<br>\nIf you would like to automatically purge the emails, put:<br>\ndelete=true<br>\nat the end of the !purge-email command.<br>\n<br>\n<b>Workflow Complete</b>",
+                "team_name": "Komand-Test-Everyone"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "channel_name": {
+                  "description": "Channel name",
+                  "order": 2,
+                  "title": "Channel Name",
+                  "type": "string"
+                },
+                "message_content": {
+                  "description": "HTML content to send",
+                  "order": 3,
+                  "title": "Message Content",
+                  "type": "string"
+                },
+                "team_name": {
+                  "description": "Team name",
+                  "order": 1,
+                  "title": "Team Name",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "team_name",
+                "channel_name",
+                "message_content"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "body": {
+                  "properties": {
+                    "content": {
+                      "description": "Content",
+                      "order": 1,
+                      "title": "Content",
+                      "type": "string"
+                    },
+                    "contentType": {
+                      "description": "Content type",
+                      "order": 2,
+                      "title": "Content Type",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Body",
+                  "type": "object"
+                },
+                "from": {
+                  "properties": {
+                    "user": {
+                      "$ref": "#/definitions/user",
+                      "description": "User",
+                      "order": 1,
+                      "title": "User"
+                    }
+                  },
+                  "title": "From",
+                  "type": "object"
+                },
+                "message": {
+                  "properties": {
+                    "body": {
+                      "$ref": "#/definitions/body",
+                      "description": "Body",
+                      "order": 1,
+                      "title": "Body"
+                    },
+                    "createdDateTime": {
+                      "description": "Created date time",
+                      "order": 3,
+                      "title": "Created Date Time",
+                      "type": "string"
+                    },
+                    "from": {
+                      "$ref": "#/definitions/from",
+                      "description": "From",
+                      "order": 2,
+                      "title": "From"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 8,
+                      "title": "ID",
+                      "type": "string"
+                    },
+                    "importance": {
+                      "description": "Importance",
+                      "order": 5,
+                      "title": "Importance",
+                      "type": "string"
+                    },
+                    "locale": {
+                      "description": "Locale",
+                      "order": 7,
+                      "title": "Locale",
+                      "type": "string"
+                    },
+                    "messageType": {
+                      "description": "Message type",
+                      "order": 6,
+                      "title": "Message Type",
+                      "type": "string"
+                    },
+                    "webUrl": {
+                      "description": "Web URL",
+                      "order": 4,
+                      "title": "Web URL",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Message",
+                  "type": "object"
+                },
+                "user": {
+                  "properties": {
+                    "displayName": {
+                      "description": "Display name",
+                      "order": 1,
+                      "title": "Display name",
+                      "type": "string"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 2,
+                      "title": "ID",
+                      "type": "string"
+                    }
+                  },
+                  "title": "User",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "message": {
+                  "$ref": "#/definitions/message",
+                  "description": "The message object that was created",
+                  "order": 1,
+                  "title": "Message"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "f1ba86e9-b4c2-41c9-999c-252742274ea9": {
+            "nodeId": "f1ba86e9-b4c2-41c9-999c-252742274ea9",
+            "name": "Auto Delete Search Results",
+            "type": "action",
+            "plugin": {
+              "name": "Microsoft Office365 Email Security",
+              "slugVendor": "rapid7",
+              "slugName": "microsoft_office365_email_security",
+              "slugVersion": "2.2.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_office365_email_security/2.2.1/icon.png"
+            },
+            "identifier": "mass_purge",
+            "continueOnFailure": true,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "compliance_search_name": "{{[4ea6adf6-4bb6-4018-b6af-cf45e6e3e267].[content]}}",
+                "query_timeout": 60
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "compliance_search_name": {
+                  "description": "Name of compliance search",
+                  "order": 1,
+                  "title": "Compliance search name",
+                  "type": "string"
+                },
+                "query_timeout": {
+                  "default": 60,
+                  "description": "Query timeout in minutes",
+                  "order": 2,
+                  "title": "Query Timeout",
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "compliance_search_name"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "success": {
+                  "description": "Success",
+                  "order": 1,
+                  "title": "Success",
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "success"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          }
+        },
+        "tags": null,
+        "humanCostSeconds": 0,
+        "humanCostDisplayUnit": ""
+      }
+    ],
+    "triggers": [
+      {
+        "id": "3d5570c3-e5a7-455f-8353-68b5ebf1ec56",
+        "identifier": "new_message_received",
+        "name": "Purge Email Trigger",
+        "description": "",
+        "input": {
+          "channel_name": "Komand Test Channel",
+          "message_content": "^!purge-email.*",
+          "team_name": "Komand-Test-Everyone"
+        },
+        "inputJsonSchema": {
+          "properties": {
+            "channel_name": {
+              "description": "Channel",
+              "order": 2,
+              "title": "Channel Name",
+              "type": "string"
+            },
+            "message_content": {
+              "description": "Regex to match new messages against",
+              "order": 3,
+              "title": "Message Content",
+              "type": "string"
+            },
+            "team_name": {
+              "description": "Team name",
+              "order": 1,
+              "title": "Team Name",
+              "type": "string"
+            }
+          },
+          "required": [
+            "team_name",
+            "channel_name"
+          ],
+          "title": "Variables",
+          "type": "object"
+        },
+        "outputJsonSchema": {
+          "definitions": {
+            "body": {
+              "properties": {
+                "content": {
+                  "description": "Content",
+                  "order": 1,
+                  "title": "Content",
+                  "type": "string"
+                },
+                "contentType": {
+                  "description": "Content type",
+                  "order": 2,
+                  "title": "Content Type",
+                  "type": "string"
+                }
+              },
+              "title": "Body",
+              "type": "object"
+            },
+            "from": {
+              "properties": {
+                "user": {
+                  "$ref": "#/definitions/user",
+                  "description": "User",
+                  "order": 1,
+                  "title": "User"
+                }
+              },
+              "title": "From",
+              "type": "object"
+            },
+            "message": {
+              "properties": {
+                "body": {
+                  "$ref": "#/definitions/body",
+                  "description": "Body",
+                  "order": 1,
+                  "title": "Body"
+                },
+                "createdDateTime": {
+                  "description": "Created date time",
+                  "order": 3,
+                  "title": "Created Date Time",
+                  "type": "string"
+                },
+                "from": {
+                  "$ref": "#/definitions/from",
+                  "description": "From",
+                  "order": 2,
+                  "title": "From"
+                },
+                "id": {
+                  "description": "ID",
+                  "order": 8,
+                  "title": "ID",
+                  "type": "string"
+                },
+                "importance": {
+                  "description": "Importance",
+                  "order": 5,
+                  "title": "Importance",
+                  "type": "string"
+                },
+                "locale": {
+                  "description": "Locale",
+                  "order": 7,
+                  "title": "Locale",
+                  "type": "string"
+                },
+                "messageType": {
+                  "description": "Message type",
+                  "order": 6,
+                  "title": "Message Type",
+                  "type": "string"
+                },
+                "webUrl": {
+                  "description": "Web URL",
+                  "order": 4,
+                  "title": "Web URL",
+                  "type": "string"
+                }
+              },
+              "title": "Message",
+              "type": "object"
+            },
+            "user": {
+              "properties": {
+                "displayName": {
+                  "description": "Display name",
+                  "order": 1,
+                  "title": "Display name",
+                  "type": "string"
+                },
+                "id": {
+                  "description": "ID",
+                  "order": 2,
+                  "title": "ID",
+                  "type": "string"
+                }
+              },
+              "title": "User",
+              "type": "object"
+            }
+          },
+          "properties": {
+            "message": {
+              "$ref": "#/definitions/message",
+              "description": "The message object that was created",
+              "order": 1,
+              "title": "Message"
+            }
+          },
+          "title": "Variables",
+          "type": "object"
+        },
+        "tags": [],
+        "type": "trigger_plugin",
+        "plugin": {
+          "name": "Microsoft Teams",
+          "slugVendor": "rapid7",
+          "slugName": "microsoft_teams",
+          "slugVersion": "2.0.1",
+          "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.1/icon.png"
+        }
+      }
+    ]
+  }
+}
