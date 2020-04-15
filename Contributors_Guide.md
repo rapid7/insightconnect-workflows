@@ -56,7 +56,7 @@ Workflow bundles are organized according to the following directory structure:
 
 ### Export It
 
-Activate your workflow in InsightConnect. Navigate to the Active Workflows page, click the menu (...) icon for the workflow you want to contribute, and select Export. InsightConnect will save your workflow .icon file to your Downloads folder. Note that .icon files to *not* contain *any* of the credentials used in your implementation of the workflow! The .icon file merely contains the workflow plugins, actions, and logic -- not the connection details.
+Activate your workflow in InsightConnect. Navigate to the Active Workflows page, click the menu (...) icon for the workflow you want to contribute, and select Export. InsightConnect will save your workflow .icon file to your Downloads folder. Note that .icon files do *not* contain *any* of the credentials used in your implementation of the workflow! The .icon file merely contains the workflow plugins, actions, and logic -- not the connection details.
 
 The default export will name the file exactly as the workflow is named – edit the name of the .icon file to replace spaces with underscores and capitalize the first letter of each word. You may shorten keywords for brevity's sake. Just try to keep the file name as close to the original as possible. For example, the .icon file for a workflow named _Lookup Vuln from Slack_ would be _Lookup_Vuln_From_Slack.icon_.
 
