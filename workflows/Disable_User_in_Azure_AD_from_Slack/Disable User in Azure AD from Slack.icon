@@ -1,0 +1,701 @@
+{
+  "kom": {
+    "komandVersion": "1.48.4-0-g02625",
+    "komFileVersion": "2.0.0",
+    "exportedAt": "2020-04-15T20:52:35.83487739Z",
+    "workflowVersions": [
+      {
+        "name": "Disable User in Azure AD from Slack",
+        "type": "runnable",
+        "version": "",
+        "description": "This workflow disables a specified user in Azure AD",
+        "graph": {
+          "edges": {
+            "1b05c40a-ace9-48ce-a2f8-cbd9f91bb6c2": {
+              "id": "1b05c40a-ace9-48ce-a2f8-cbd9f91bb6c2",
+              "name": "Failure",
+              "description": "Disable user failed",
+              "parentNodeId": "",
+              "fromNodeId": "234d2459-50a4-4df9-b28c-5ab803169edb",
+              "toNodeId": "dc51eb45-630d-451c-b27f-8c8807d0c688"
+            },
+            "24142287-78c2-43e6-8700-02307375bb91": {
+              "id": "24142287-78c2-43e6-8700-02307375bb91",
+              "name": "Success",
+              "description": "Disable user was successful",
+              "parentNodeId": "",
+              "fromNodeId": "234d2459-50a4-4df9-b28c-5ab803169edb",
+              "toNodeId": "998383b0-2542-46ab-a5f6-07a997c0efb1"
+            },
+            "2e106e18-6e9a-4165-a497-755555035a21": {
+              "id": "2e106e18-6e9a-4165-a497-755555035a21",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "c6762d69-11fc-4e77-903f-e50b87cfb31f",
+              "toNodeId": "8c981215-af83-47b7-ad86-cd87167f4666"
+            },
+            "61907e9f-2033-417a-8c72-12111bb8b0bc": {
+              "id": "61907e9f-2033-417a-8c72-12111bb8b0bc",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "ba543f89-2915-4c4a-ab02-68d0531e35d1",
+              "toNodeId": "f43420db-cc40-43e3-a956-c5f4f1dde131"
+            },
+            "755a45ef-0a2f-441d-9623-75f295a2f55d": {
+              "id": "755a45ef-0a2f-441d-9623-75f295a2f55d",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "dc51eb45-630d-451c-b27f-8c8807d0c688",
+              "toNodeId": ""
+            },
+            "850cf6a1-6498-4136-b64b-40119c6956f6": {
+              "id": "850cf6a1-6498-4136-b64b-40119c6956f6",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "8c981215-af83-47b7-ad86-cd87167f4666",
+              "toNodeId": "234d2459-50a4-4df9-b28c-5ab803169edb"
+            },
+            "a5937453-db80-4977-97ee-fb562b219d7a": {
+              "id": "a5937453-db80-4977-97ee-fb562b219d7a",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "f43420db-cc40-43e3-a956-c5f4f1dde131",
+              "toNodeId": "c6762d69-11fc-4e77-903f-e50b87cfb31f"
+            },
+            "ab41a97c-9850-4aef-a31d-fa419861f786": {
+              "id": "ab41a97c-9850-4aef-a31d-fa419861f786",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "998383b0-2542-46ab-a5f6-07a997c0efb1",
+              "toNodeId": ""
+            }
+          },
+          "nodes": {
+            "234d2459-50a4-4df9-b28c-5ab803169edb": {
+              "id": "234d2459-50a4-4df9-b28c-5ab803169edb",
+              "parentNodeId": ""
+            },
+            "8c981215-af83-47b7-ad86-cd87167f4666": {
+              "id": "8c981215-af83-47b7-ad86-cd87167f4666",
+              "parentNodeId": ""
+            },
+            "998383b0-2542-46ab-a5f6-07a997c0efb1": {
+              "id": "998383b0-2542-46ab-a5f6-07a997c0efb1",
+              "parentNodeId": ""
+            },
+            "ba543f89-2915-4c4a-ab02-68d0531e35d1": {
+              "id": "ba543f89-2915-4c4a-ab02-68d0531e35d1",
+              "parentNodeId": ""
+            },
+            "c6762d69-11fc-4e77-903f-e50b87cfb31f": {
+              "id": "c6762d69-11fc-4e77-903f-e50b87cfb31f",
+              "parentNodeId": ""
+            },
+            "dc51eb45-630d-451c-b27f-8c8807d0c688": {
+              "id": "dc51eb45-630d-451c-b27f-8c8807d0c688",
+              "parentNodeId": ""
+            },
+            "f43420db-cc40-43e3-a956-c5f4f1dde131": {
+              "id": "f43420db-cc40-43e3-a956-c5f4f1dde131",
+              "parentNodeId": ""
+            }
+          }
+        },
+        "steps": {
+          "234d2459-50a4-4df9-b28c-5ab803169edb": {
+            "nodeId": "234d2459-50a4-4df9-b28c-5ab803169edb",
+            "name": "Was Disable Successful",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "24142287-78c2-43e6-8700-02307375bb91",
+              "stepControlParams": [
+                {
+                  "edgeId": "1b05c40a-ace9-48ce-a2f8-cbd9f91bb6c2",
+                  "expression": {
+                    "left": {
+                      "left": {
+                        "name": "8c981215-af83-47b7-ad86-cd87167f4666.$success",
+                        "type": "variable"
+                      },
+                      "op": "==",
+                      "right": {
+                        "type": "literal",
+                        "value": false
+                      },
+                      "type": "binary"
+                    },
+                    "op": "OR",
+                    "right": {
+                      "left": {
+                        "name": "8c981215-af83-47b7-ad86-cd87167f4666.success",
+                        "type": "variable"
+                      },
+                      "op": "==",
+                      "right": {
+                        "type": "literal",
+                        "value": false
+                      },
+                      "type": "binary"
+                    },
+                    "type": "binary"
+                  },
+                  "expressionText": "(({{[8c981215-af83-47b7-ad86-cd87167f4666].[$success]}} == false) or {{[8c981215-af83-47b7-ad86-cd87167f4666].[success]}} == false)"
+                },
+                {
+                  "edgeId": "24142287-78c2-43e6-8700-02307375bb91",
+                  "expression": {},
+                  "expressionText": ""
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          },
+          "8c981215-af83-47b7-ad86-cd87167f4666": {
+            "nodeId": "8c981215-af83-47b7-ad86-cd87167f4666",
+            "name": "Disable User Account",
+            "type": "action",
+            "plugin": {
+              "name": "Azure AD Admin",
+              "slugVendor": "rapid7",
+              "slugName": "azure_ad_admin",
+              "slugVersion": "1.4.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/azure_ad_admin/1.4.1/icon.png"
+            },
+            "identifier": "disable_user_account",
+            "continueOnFailure": true,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "user_id": "{{[f43420db-cc40-43e3-a956-c5f4f1dde131].[emails].[0]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "user_id": {
+                  "description": "User ID to disable e.g. user@example.com",
+                  "order": 1,
+                  "title": "User ID",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "user_id"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "success": {
+                  "description": "Was operation successful",
+                  "order": 1,
+                  "title": "Success",
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "success"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "998383b0-2542-46ab-a5f6-07a997c0efb1": {
+            "nodeId": "998383b0-2542-46ab-a5f6-07a997c0efb1",
+            "name": "Reply With Success",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": ":lock: Azure AD Disable User Request for {{[f43420db-cc40-43e3-a956-c5f4f1dde131].[emails].[0]}} :lock:\n> Disable user request was successful! :white_check_mark:",
+                "recipient": "change_me",
+                "thread_ts": ""
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 4,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 3,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                },
+                "thread_ts": {
+                  "description": "Select timestamp output variable from parent message step",
+                  "order": 2,
+                  "title": "To post in a thread, select parent message timestamp",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
+          },
+          "ba543f89-2915-4c4a-ab02-68d0531e35d1": {
+            "nodeId": "ba543f89-2915-4c4a-ab02-68d0531e35d1",
+            "name": "Slack message",
+            "description": "Trigger on Slack message\nE.X. !disable_user <SAMAccount>",
+            "type": "trigger",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "matchChannel": "change_me",
+                "matchText": "!disable_user",
+                "type": "any"
+              }
+            },
+            "triggerId": "256329bd-f588-4db1-9e16-80991640b0d2",
+            "defaultInputJSONSchema": {
+              "properties": {
+                "matchChannel": {
+                  "description": "Regex to match for channel name",
+                  "order": 1,
+                  "title": "Match Channel",
+                  "type": "string"
+                },
+                "matchText": {
+                  "description": "Regex to match for Slack message content",
+                  "order": 2,
+                  "title": "Match Text",
+                  "type": "string"
+                },
+                "type": {
+                  "default": "any",
+                  "description": "Desired Slack channel type: direct message to Slack app, group chats, or all channels",
+                  "enum": [
+                    "any",
+                    "direct",
+                    "group"
+                  ],
+                  "order": 3,
+                  "title": "Type",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "type"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "message": {
+                  "properties": {
+                    "channel": {
+                      "description": "Channel name",
+                      "order": 3,
+                      "title": "Channel",
+                      "type": "string"
+                    },
+                    "channel_id": {
+                      "description": "Slack channel ID",
+                      "order": 4,
+                      "title": "Channel ID",
+                      "type": "string"
+                    },
+                    "text": {
+                      "description": "Text",
+                      "order": 5,
+                      "title": "Text",
+                      "type": "string"
+                    },
+                    "ts": {
+                      "description": "Timestamp",
+                      "order": 6,
+                      "title": "Ts",
+                      "type": "string"
+                    },
+                    "user": {
+                      "description": "User name",
+                      "order": 1,
+                      "title": "User",
+                      "type": "string"
+                    },
+                    "user_id": {
+                      "description": "Slack User ID",
+                      "order": 2,
+                      "title": "User ID",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Message",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "display_name": {
+                  "description": "User display name",
+                  "order": 4,
+                  "title": "Display Name",
+                  "type": "string"
+                },
+                "message": {
+                  "$ref": "#/definitions/message",
+                  "description": "Message",
+                  "order": 1,
+                  "title": "Message"
+                },
+                "timestamp": {
+                  "description": "Timestamp",
+                  "order": 3,
+                  "title": "Timestamp",
+                  "type": "string"
+                },
+                "type": {
+                  "description": "Message Type",
+                  "order": 2,
+                  "title": "Type",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/chatops.svg",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "message"
+          },
+          "c6762d69-11fc-4e77-903f-e50b87cfb31f": {
+            "nodeId": "c6762d69-11fc-4e77-903f-e50b87cfb31f",
+            "name": "Show User",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "{{[f43420db-cc40-43e3-a956-c5f4f1dde131].[emails].[0]}}"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "dc51eb45-630d-451c-b27f-8c8807d0c688": {
+            "nodeId": "dc51eb45-630d-451c-b27f-8c8807d0c688",
+            "name": "Reply with Failure",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": ":lock: Azure AD Disable User Request for {{[f43420db-cc40-43e3-a956-c5f4f1dde131].[emails].[0]}} :lock:\n> Disable user request failed! :x:",
+                "recipient": "change_me",
+                "thread_ts": ""
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 4,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 3,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                },
+                "thread_ts": {
+                  "description": "Select timestamp output variable from parent message step",
+                  "order": 2,
+                  "title": "To post in a thread, select parent message timestamp",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
+          },
+          "f43420db-cc40-43e3-a956-c5f4f1dde131": {
+            "nodeId": "f43420db-cc40-43e3-a956-c5f4f1dde131",
+            "name": "Parse User Name",
+            "type": "action",
+            "plugin": {
+              "name": "ExtractIt",
+              "slugVendor": "rapid7",
+              "slugName": "extractit",
+              "slugVersion": "2.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/extractit/2.0.0/icon.png"
+            },
+            "identifier": "email_extractor",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "file": "",
+                "str": "{{[ba543f89-2915-4c4a-ab02-68d0531e35d1].[message].[text]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "file": {
+                  "description": "Input file as bytes",
+                  "displayType": "bytes",
+                  "format": "bytes",
+                  "order": 2,
+                  "title": "File",
+                  "type": "string"
+                },
+                "str": {
+                  "description": "Input string",
+                  "order": 1,
+                  "title": "String",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "emails": {
+                  "description": "List of extracted Email Addresses",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "Email Addresses",
+                  "type": "array"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR"
+          }
+        },
+        "tags": null,
+        "humanCostSeconds": 0,
+        "humanCostDisplayUnit": ""
+      }
+    ],
+    "triggers": [
+      {
+        "id": "256329bd-f588-4db1-9e16-80991640b0d2",
+        "name": "Slack Message",
+        "description": "Trigger on Slack message\nE.X. !disable_user <SAMAccount>",
+        "input": {
+          "matchChannel": "change_me",
+          "matchText": "!disable_user",
+          "type": "any"
+        },
+        "inputJsonSchema": {
+          "properties": {
+            "matchChannel": {
+              "description": "Regex to match for channel name",
+              "order": 1,
+              "title": "Match Channel",
+              "type": "string"
+            },
+            "matchText": {
+              "description": "Regex to match for Slack message content",
+              "order": 2,
+              "title": "Match Text",
+              "type": "string"
+            },
+            "type": {
+              "default": "any",
+              "description": "Desired Slack channel type: direct message to Slack app, group chats, or all channels",
+              "enum": [
+                "any",
+                "direct",
+                "group"
+              ],
+              "order": 3,
+              "title": "Type",
+              "type": "string"
+            }
+          },
+          "required": [
+            "type"
+          ],
+          "title": "Variables",
+          "type": "object"
+        },
+        "outputJsonSchema": {
+          "definitions": {
+            "message": {
+              "properties": {
+                "channel": {
+                  "description": "Channel name",
+                  "order": 3,
+                  "title": "Channel",
+                  "type": "string"
+                },
+                "channel_id": {
+                  "description": "Slack channel ID",
+                  "order": 4,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "text": {
+                  "description": "Text",
+                  "order": 5,
+                  "title": "Text",
+                  "type": "string"
+                },
+                "ts": {
+                  "description": "Timestamp",
+                  "order": 6,
+                  "title": "Ts",
+                  "type": "string"
+                },
+                "user": {
+                  "description": "User name",
+                  "order": 1,
+                  "title": "User",
+                  "type": "string"
+                },
+                "user_id": {
+                  "description": "Slack User ID",
+                  "order": 2,
+                  "title": "User ID",
+                  "type": "string"
+                }
+              },
+              "title": "Message",
+              "type": "object"
+            }
+          },
+          "properties": {
+            "display_name": {
+              "description": "User display name",
+              "order": 4,
+              "title": "Display Name",
+              "type": "string"
+            },
+            "message": {
+              "$ref": "#/definitions/message",
+              "description": "Message",
+              "order": 1,
+              "title": "Message"
+            },
+            "timestamp": {
+              "description": "Timestamp",
+              "order": 3,
+              "title": "Timestamp",
+              "type": "string"
+            },
+            "type": {
+              "description": "Message Type",
+              "order": 2,
+              "title": "Type",
+              "type": "string"
+            }
+          },
+          "title": "Variables",
+          "type": "object"
+        },
+        "tags": [],
+        "type": "trigger_chatops",
+        "chatOpsAppName": "slack",
+        "chatOpsIdentifier": "message"
+      }
+    ]
+  }
+}
