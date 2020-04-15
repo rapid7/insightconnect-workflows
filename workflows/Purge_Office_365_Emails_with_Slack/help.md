@@ -36,7 +36,7 @@ Search criteria can be 'body', 'subject', or 'from' lines in the email. For exam
 
 Any combination of 'body', 'subject', and 'from' can be used. At least one search item must be given.
 
-If you'd like the workflow to just delete emails without prompting, you can also use 'delete=true' For example:
+If you'd like the workflow to just delete emails without prompting, you can also use 'delete=true'. For example:
 
 `!purge-email subject="A phishy email" delete=true`
 
