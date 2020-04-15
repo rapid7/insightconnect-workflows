@@ -67,7 +67,7 @@ Take PNG screenshots of:
 * the successful workflow job
 * the Final Report artifact from the successful workflow job
 
-If you can't fit any of these items entirely into one screenshot, then don't worry! It's more important that the text is legible than that you capture the entire thing in one picture. If it would be helpful for a (per)user of the Extension Library to see multiple screenshots of the workflow, the job, or the artifact, then feel free to include multiple screenshots. Simply title them `workflow1.png`, `artifact1.png`, `artifact2.png`, `job1.png`...
+If you can't fit any of these items entirely into one screenshot, then don't worry! It's more important that the text is legible than that you capture the entire thing in one picture. If it would be helpful for a user of the Extension Library to see multiple screenshots of the workflow, the job, or the artifact, then feel free to include multiple screenshots. Simply title them `workflow1.png`, `artifact1.png`, `artifact2.png`, `job1.png`...
 
 ### Bundle It
 
