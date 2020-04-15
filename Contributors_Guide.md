@@ -128,13 +128,15 @@ The output of the tool will identify any errors:
 
 ![Workflow Validator Tool](./imgs/workflow_validator.png)
 
+*Note: The InsightConnect Workflow Validator tool requires python3*
+
 ## Step 3: Submit a Pull Request
 
 Once your workflow bundle passes the validation test, you're all set to submit a pull request! Please remember our *Dos* and *Don'ts*:
 
-* Do create a topic branch to work on. This helps ensure users are aware of commits on the branch being considered for merge, allows for a location for more commits to be offered without mingling with other contributor changes, and allows contributors to make progress while a PR is still being reviewed.
+* *Do* create a topic branch to work on. This helps ensure users are aware of commits on the branch being considered for merge, allows for a location for more commits to be offered without mingling with other contributor changes, and allows contributors to make progress while a PR is still being reviewed.
 * *Do* license your code as MIT.
-* *Do* follow the 50/72 rule for Git commit messages.
+* *Do* follow the [50/72 rule] for Git commit messages.
 * *Do* write "WIP" on your PR and/or open a draft PR if submitting unfinished code.
 * *Do* target your pull request to the master branch.
 * *Do* specify a descriptive title to make searching for your pull request easier e.g. "Okta: New user suspension workflow".
@@ -149,3 +151,4 @@ Our team strives to review and approve or provide feedback on workflow contribut
 
 [Title of Articles]:http://grammar.yourdictionary.com/capitalization/rules-for-capitalization-in-titles.html
 [My_Cool_Workflow archive]:./My_Cool_Workflow.zip
+[50/72 rule]:https://stackoverflow.com/questions/2290016/git-commit-messages-50-72-formatting
