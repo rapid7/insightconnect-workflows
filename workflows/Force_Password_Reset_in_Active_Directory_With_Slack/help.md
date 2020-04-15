@@ -6,7 +6,6 @@ Sample Slack command:
 
 `!reset_password user@example.com`
 
-
 # Key Features
 
 * Reset an Active Directory user password directly from Slack
