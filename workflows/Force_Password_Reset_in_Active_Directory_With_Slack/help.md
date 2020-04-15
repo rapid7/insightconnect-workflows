@@ -4,7 +4,7 @@ This workflow triggers from directly slack messaging the chatbot to \"!reset_pas
 
 # Key Features
 
-* Force a password reset for a specified user
+* Reset an Active Directory user password directly from Slack
 
 # Requirements
 
