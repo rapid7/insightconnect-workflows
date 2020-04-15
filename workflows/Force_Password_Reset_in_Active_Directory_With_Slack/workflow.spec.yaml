@@ -17,7 +17,7 @@ resources:
   screenshots:
   - name: artifact1.png
     title: Artifact View
-  - name: Slack_Job.png
+  - name: slack_job1.png
       title: Example Slack Job Input and Output
   - name: Workflow1.png
     title: Workflow View Part One
