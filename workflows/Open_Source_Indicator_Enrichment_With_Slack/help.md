@@ -8,13 +8,18 @@ This workflow triggers from directly slack messaging the chatbot to \"!investiga
 
 # Requirements
 
-* Slack connection
+* [Slack](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops
 
 # Documentation
 
 ## Setup
 
-Once the workflow has been downloaded, login to InsightConnect and "Import" it into the workflow builder. Once imported, you will initially be prompted to configure the connections for each of the plugins.
+Once the workflow has been downloaded, login to InsightConnect and "Import" it into the workflow builder. Once imported, you will initially be prompted to configure the connection for slack.
+[Slack](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops
+
+To run the workflow, @ your Slackbot in any channel or in a direct message along with the command "!nvestigate <hash>".
+Or use !nvestigate help for more information and examples.
+The workflow will post with the results of the lookup.
 
 ## Technical Details
 
@@ -22,8 +27,7 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Dig|1.0.5|2|
-|ExtractIt|2.0.0|1|
+|Dig|1.0.5|1|
 |Team Cymru MHR|1.0.4|1|
 |Whois|2.0.1|2|
 
@@ -39,4 +43,4 @@ _There is no troubleshooting information at this time_
 
 ## References
 
-* https://github.com/rapid7/insightconnect-workflows
+[Slack](https://slack.com)
