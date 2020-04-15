@@ -15,8 +15,8 @@ This workflow triggers from directly slack messaging the chatbot to \"!reset_pas
 
 ## Setup
 
-Once the workflow has been downloaded, login to InsightConnect and "Import" it into the workflow builder. Once imported,
-you will initially be prompted to configure the connection for slack and Active Directory.
+Once the workflow has been downloaded, login to InsightConnect and "Import" it into the workflow builder.
+Once imported, you will initially be prompted to configure the connection for Slack and Active Directory.
 In addition The `Find DN` step will need the Search Base field to be defined. This field should be based on your Active Directory domain.
 For example if your domain is example.com then the Search Base would be DC=example,DC=com
 
