@@ -4,7 +4,7 @@ Workflow contributors, verify you have completed the following items by checking
 
 ### Checklist
 - [ ] Workflow verified as working in a test
-- [ ] Workflow bundle includes `Name_Of_Workflow.icon` file, `help.md` file, `workflow.spec.yaml` file, and `screenshots` directory
+- [ ] Workflow bundle includes `Name_of_Workflow.icon` file, `help.md` file, `workflow.spec.yaml` file, and `screenshots` directory
 - [ ] Workflow title should follow general [Title of Articles](http://grammar.yourdictionary.com/capitalization/rules-for-capitalization-in-titles.html) format
 - [ ] Workflow includes a detailed Description
 - [ ] Workflow step names follow [Title of Articles](http://grammar.yourdictionary.com/capitalization/rules-for-capitalization-in-titles.html) format
