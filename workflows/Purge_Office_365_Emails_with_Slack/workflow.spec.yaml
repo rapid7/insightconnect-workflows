@@ -20,4 +20,4 @@ resources:
   - name: workflow2.png
     title: Workflow 2
   - name: slack_flow1.png
-    title: Slack Flow
+    title: Completed Job In Slack with Valid Input
