@@ -4,7 +4,7 @@ This page includes all the information needed to contribute an InsightConnect wo
 
 _Note that contributing a workflow from InsightConnect does not share any of the credentials, API keys, passwords, or other user data utilized by your Connections!_ The .icon file exported from InsightConnect only contains the workflow logic itself -- the plugins, actions, decisions, filters, etc.
 
-There are three  to contributing a workflow:
+There are three steps to contributing a workflow:
 
 1. **Build and test your workflow**. Read the brief Workflow Builder Checklist in Step 1 below to make sure your workflow step names and descriptions are standard. Be sure to include a Final Report artifact that summarizes the outcome of your workflow. Test your workflow (in production if possible!) and take screenshots of the successful job and Final Report artifact.
 2. **Prepare your workflow bundle**. Write your workflow description and associated documentation for the Rapid7 Extension Library listing. Put your screenshots in the bundle. Test it.
@@ -45,7 +45,7 @@ Workflow bundles are organized according to the following directory structure:
 ```
 └── workflows
     └── Name_Of_Workflow
-        ├── Name_Of_Workflow.icon
+        ├── Name_of_Workflow.icon
         ├── help.md
         ├── workflow.spec.yaml
         └── screenshots
@@ -56,7 +56,7 @@ Workflow bundles are organized according to the following directory structure:
 
 ### Export It
 
-Activate your workflow in InsightConnect. Navigate to the Active Workflows page, click the menu (...) icon for the workflow you want to contribute, and select Export. InsightConnect will save your workflow .icon file to your Downloads folder. Note that .icon files to *not* contain *any* of the credentials used in your implementation of the workflow! The .icon file merely contains the workflow plugins, actions, and logic -- not the connection details.
+Activate your workflow in InsightConnect. Navigate to the Active Workflows page, click the menu (...) icon for the workflow you want to contribute, and select Export. InsightConnect will save your workflow .icon file to your Downloads folder. Note that .icon files do *not* contain *any* of the credentials used in your implementation of the workflow! The .icon file merely contains the workflow plugins, actions, and logic -- not the connection details.
 
 The default export will name the file exactly as the workflow is named – edit the name of the .icon file to replace spaces with underscores and capitalize the first letter of each word. You may shorten keywords for brevity's sake. Just try to keep the file name as close to the original as possible. For example, the .icon file for a workflow named _Lookup Vuln from Slack_ would be _Lookup_Vuln_From_Slack.icon_.
 
@@ -67,7 +67,7 @@ Take PNG screenshots of:
 * the successful workflow job
 * the Final Report artifact from the successful workflow job
 
-If you can't fit any of these items entirely into one screenshot, then don't worry! It's more important that the text is legible than that you capture the entire thing in one picture. If it would be helpful for a (per)user of the Extension Library to see multiple screenshots of the workflow, the job, or the artifact, then feel free to include multiple screenshots. Simply title them `workflow1.png`, `artifact1.png`, `artifact2.png`, `job1.png`...
+If you can't fit any of these items entirely into one screenshot, then don't worry! It's more important that the text is legible than that you capture the entire thing in one picture. If it would be helpful for a user of the Extension Library to see multiple screenshots of the workflow, the job, or the artifact, then feel free to include multiple screenshots. Simply title them `workflow1.png`, `artifact1.png`, `artifact2.png`, `job1.png`...
 
 ### Bundle It
 
