@@ -25,11 +25,11 @@ This workflow uses the Slack App trigger to listen for key messages and will blo
 
 To trigger this workflow, in a direct message to the Rapid7 InsightConnect App in slack, send the following message:
 
-`block_sender user@example.com`
+`!block_sender user@example.com`
 
 You can also block a malicious domain. For example: 
 
-`block_sender example.com`
+`!block_sender example.com`
 
 ## Technical Details
 
@@ -46,6 +46,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.1 - Fix to Slack input command to standardize with leading exclamation point
 * 1.0.0 - Initial workflow
 
 # Links

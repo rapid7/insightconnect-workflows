@@ -209,7 +209,7 @@
             "parameters": {
               "input": {
                 "matchChannel": "",
-                "matchText": "block_sender",
+                "matchText": "!block_sender",
                 "type": "any"
               }
             },
@@ -931,7 +931,7 @@
         "description": "",
         "input": {
           "matchChannel": "",
-          "matchText": "block_sender",
+          "matchText": "!block_sender",
           "type": "any"
         },
         "inputJsonSchema": {

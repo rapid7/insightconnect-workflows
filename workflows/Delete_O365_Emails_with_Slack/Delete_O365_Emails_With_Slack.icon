@@ -978,7 +978,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "Something went wrong with delete-email. \n\nThe message received was: \n{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[text]}}\n\nThe expected command looks like this: \ndelete-email user@example.com subject=\"subject\" body=\"body\"\n\nPlease check the workflow here: \n{{[$job].[URL]}}",
+                "message": "Something went wrong with delete-email. \n\nThe message received was: \n{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[text]}}\n\nThe expected command looks like this: \n!delete-email user@example.com subject=\"subject\" body=\"body\"\n\nPlease check the workflow here: \n{{[$job].[URL]}}",
                 "recipient": "@{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[user]}}",
                 "thread_ts": "{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[ts]}}"
               }
@@ -1125,7 +1125,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "## Overview\n\n(This artifact can be deleted)\n\nThis workflow uses the Chat Ops Slack connection to listen for key messages from the InsightConnect Rapid7 connection and will search for and delete emails when triggered.\n\nTo trigger this workflow, send a direct message to Rapid7 InsightConnect from Slack like the following.\n\n`delete-email user@example.com subject=\"A phishy email\"`\n\nThis will kick off the workflow, and prompt you back when the search is completed. If any emails are found that match the criteria, you can hit the delete button in Slack to delete them.\n\n### Other options:\n\nSearch criteria can be body, subject, or from lines in the email. For example:\n\n`delete-email user@example.com subject=\"A phishy email\" from=\"example.com\" body=\"Click here for free stuff\" `\n\nAny combination of body, subject, and from can be used. At least one search item must be given.\n\nIf you'd like the workflow to just delete emails without prompting, you can also use 'delete=true' For example:\n\n`delete-email user@example.com subject=\"A phishy email\" delete=true`"
+                "content": "## Overview\n\n(This artifact can be deleted)\n\nThis workflow uses the Chat Ops Slack connection to listen for key messages from the InsightConnect Rapid7 connection and will search for and delete emails when triggered.\n\nTo trigger this workflow, send a direct message to Rapid7 InsightConnect from Slack like the following.\n\n`!delete-email user@example.com subject=\"A phishy email\"`\n\nThis will kick off the workflow, and prompt you back when the search is completed. If any emails are found that match the criteria, you can hit the delete button in Slack to delete them.\n\n### Other options:\n\nSearch criteria can be body, subject, or from lines in the email. For example:\n\n`!delete-email user@example.com subject=\"A phishy email\" from=\"example.com\" body=\"Click here for free stuff\" `\n\nAny combination of body, subject, and from can be used. At least one search item must be given.\n\nIf you'd like the workflow to just delete emails without prompting, you can also use 'delete=true' For example:\n\n`!delete-email user@example.com subject=\"A phishy email\" delete=true`"
               },
               "type": "markdown"
             },
@@ -1174,7 +1174,7 @@
             "parameters": {
               "input": {
                 "matchChannel": "",
-                "matchText": "delete-email",
+                "matchText": "!delete-email",
                 "type": "any"
               }
             },
@@ -1924,7 +1924,7 @@
         "description": "",
         "input": {
           "matchChannel": "",
-          "matchText": "delete-email",
+          "matchText": "!delete-email",
           "type": "any"
         },
         "inputJsonSchema": {
