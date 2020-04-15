@@ -15,13 +15,13 @@ This workflow triggers from directly slack messaging the chatbot to \"!reset_pas
 
 ## Setup
 
-Once the workflow has been downloaded, login to InsightConnect and "Import" it into the workflow builder. Once imported, you will initially be prompted to configure the connection for slack and active directory.
-In addition The `Find DN` step Will need the Search Base field to be defined. This field should be based on your Active Directory domain.
+Once the workflow has been downloaded, login to InsightConnect and "Import" it into the workflow builder. Once imported,
+you will initially be prompted to configure the connection for slack and Active Directory.
+In addition The `Find DN` step will need the Search Base field to be defined. This field should be based on your Active Directory domain.
 For example if your domain is example.com then the Search Base would be DC=example,DC=com
 
-To run the workflow, @ your Slackbot in any channel or in a direct message along with the command "!reset_password <hash>".
-Or use !nvestigate help for more information and examples.
-The workflow will post with the results of the lookup.
+To run the workflow, @ your Slackbot in any channel or in a direct message along with the command "!reset_password <username>".
+The workflow will post whether the force reset was successful or not.
 
 ## Technical Details
 
@@ -29,9 +29,7 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Dig|1.0.5|1|
-|Team Cymru MHR|1.0.4|1|
-|Whois|2.0.1|2|
+|Active Directory LDAP|3.2.8|2|
 
 ## Troubleshooting
 
