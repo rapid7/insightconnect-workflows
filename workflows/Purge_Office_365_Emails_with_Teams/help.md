@@ -1,6 +1,6 @@
 # Description
 
-This workflow will delete all emails matching given search criteria from an organization using a command issued from Teams.
+This workflow will delete all emails matching given search criteria from an organization using a command issued from Microsoft Teams.
 
 # Key Features
 
