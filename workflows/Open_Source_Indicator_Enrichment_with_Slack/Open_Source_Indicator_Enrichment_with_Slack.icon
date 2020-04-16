@@ -1,0 +1,1595 @@
+{
+  "kom": {
+    "komandVersion": "1.48.4-0-g02625",
+    "komFileVersion": "2.0.0",
+    "exportedAt": "2020-04-16T18:46:29.430994625Z",
+    "workflowVersions": [
+      {
+        "name": "Open_Source_Indicator_Enrichment_with_Slack",
+        "type": "runnable",
+        "version": "",
+        "description": "This workflow triggers from directly slack messaging the chatbot to \\\"!investigate\\\" the defined indicator. This workflow supports automatically looking up URLs, IPs, and hashs in open source threat intelligence such as Dig DNS and Whois. Lastly, the workflow will post back results to the specific user.\n",
+        "graph": {
+          "edges": {
+            "10337644-de8e-492d-9489-1926865c7215": {
+              "id": "10337644-de8e-492d-9489-1926865c7215",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "7836aa74-dced-4c87-8221-14ccb2cfcc43",
+              "toNodeId": "53e3d341-5f73-4c24-b293-308f47fafc8f"
+            },
+            "15008bbf-600e-417c-9607-6faf305e2623": {
+              "id": "15008bbf-600e-417c-9607-6faf305e2623",
+              "name": "Command = url",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "457adb9a-a214-48a3-ab95-76cc55d54c75",
+              "toNodeId": "8eaa7118-ec46-40ac-a7a9-3968658daa23"
+            },
+            "24caf642-fc83-4c24-ae18-780b66da9299": {
+              "id": "24caf642-fc83-4c24-ae18-780b66da9299",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "5c912344-3c5c-47d1-b707-7307d4027dbf",
+              "toNodeId": "7208b374-7b22-4ed9-b35d-b5497e69c9d4"
+            },
+            "3e44b8a0-c02c-4cda-9ae2-5293bda42830": {
+              "id": "3e44b8a0-c02c-4cda-9ae2-5293bda42830",
+              "name": "Command = ip",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "457adb9a-a214-48a3-ab95-76cc55d54c75",
+              "toNodeId": "d5faa8a7-7d19-43bc-be45-64137e33998b"
+            },
+            "51cf0feb-6221-44d1-9641-59c45d918a4c": {
+              "id": "51cf0feb-6221-44d1-9641-59c45d918a4c",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "53e3d341-5f73-4c24-b293-308f47fafc8f",
+              "toNodeId": ""
+            },
+            "568cb917-fa7c-4796-a295-a40d12c22cea": {
+              "id": "568cb917-fa7c-4796-a295-a40d12c22cea",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "33dbbab2-a13b-4ed0-8d14-1eecdbf1749a",
+              "toNodeId": "2086e2b2-3546-4bd9-9b3f-743258f95cd5"
+            },
+            "68ebfc1e-82ca-423d-9aff-1ac8ec33ba24": {
+              "id": "68ebfc1e-82ca-423d-9aff-1ac8ec33ba24",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "8eaa7118-ec46-40ac-a7a9-3968658daa23",
+              "toNodeId": "8739dbc9-cc19-4a14-82e4-fbc94da0bac1"
+            },
+            "72ea3df5-3cfc-4a30-9739-0a6435a13560": {
+              "id": "72ea3df5-3cfc-4a30-9739-0a6435a13560",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "d5faa8a7-7d19-43bc-be45-64137e33998b",
+              "toNodeId": "b95a8095-e0dc-4f1c-83b2-f912e34e8383"
+            },
+            "7833099c-342f-4e7d-a4c1-456bb0c08cc0": {
+              "id": "7833099c-342f-4e7d-a4c1-456bb0c08cc0",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "8739dbc9-cc19-4a14-82e4-fbc94da0bac1",
+              "toNodeId": "7836aa74-dced-4c87-8221-14ccb2cfcc43"
+            },
+            "814eea6d-f9f8-4a64-8a2f-9b26c2db8470": {
+              "id": "814eea6d-f9f8-4a64-8a2f-9b26c2db8470",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "0a891063-4911-473a-a452-c24a82b387d8",
+              "toNodeId": "22311e24-f648-41ed-8f3e-15137517b15e"
+            },
+            "83426843-cca0-4776-a967-b76f46dac74f": {
+              "id": "83426843-cca0-4776-a967-b76f46dac74f",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "22311e24-f648-41ed-8f3e-15137517b15e",
+              "toNodeId": ""
+            },
+            "917b48b1-ae2c-4313-8173-148fe42500db": {
+              "id": "917b48b1-ae2c-4313-8173-148fe42500db",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "2086e2b2-3546-4bd9-9b3f-743258f95cd5",
+              "toNodeId": "dd2850e7-9616-42e4-af12-56005cc6410c"
+            },
+            "a9dc7a80-1bea-401e-a44e-b444320a6c53": {
+              "id": "a9dc7a80-1bea-401e-a44e-b444320a6c53",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "b95a8095-e0dc-4f1c-83b2-f912e34e8383",
+              "toNodeId": "0a891063-4911-473a-a452-c24a82b387d8"
+            },
+            "aee3d89c-4fb3-4dd9-9948-460171b96779": {
+              "id": "aee3d89c-4fb3-4dd9-9948-460171b96779",
+              "name": "Send Help",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "7208b374-7b22-4ed9-b35d-b5497e69c9d4",
+              "toNodeId": "c24aec06-4062-4c6d-8def-949382ebbbe8"
+            },
+            "b804ff20-1fc4-4865-9479-57d40a0776ad": {
+              "id": "b804ff20-1fc4-4865-9479-57d40a0776ad",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "dd2850e7-9616-42e4-af12-56005cc6410c",
+              "toNodeId": ""
+            },
+            "bfca31c9-9b46-4776-bd74-6844e0d847ef": {
+              "id": "bfca31c9-9b46-4776-bd74-6844e0d847ef",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa",
+              "toNodeId": "5c912344-3c5c-47d1-b707-7307d4027dbf"
+            },
+            "cec4471e-5810-44a8-b9b7-3a25bc772c72": {
+              "id": "cec4471e-5810-44a8-b9b7-3a25bc772c72",
+              "name": "Command = hash",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "457adb9a-a214-48a3-ab95-76cc55d54c75",
+              "toNodeId": "33dbbab2-a13b-4ed0-8d14-1eecdbf1749a"
+            },
+            "d3de8ac3-f503-4eec-9dc3-8d21feb27b5d": {
+              "id": "d3de8ac3-f503-4eec-9dc3-8d21feb27b5d",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "c24aec06-4062-4c6d-8def-949382ebbbe8",
+              "toNodeId": ""
+            },
+            "eb875cb0-f192-406a-b69e-4f67b4dffb35": {
+              "id": "eb875cb0-f192-406a-b69e-4f67b4dffb35",
+              "name": "Investigate",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "7208b374-7b22-4ed9-b35d-b5497e69c9d4",
+              "toNodeId": "457adb9a-a214-48a3-ab95-76cc55d54c75"
+            },
+            "f3da16c7-ed37-428c-98a1-cecd19261409": {
+              "id": "f3da16c7-ed37-428c-98a1-cecd19261409",
+              "name": "No match",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "457adb9a-a214-48a3-ab95-76cc55d54c75",
+              "toNodeId": "75a1d706-e794-424c-8850-7544b7599206"
+            },
+            "f7e91c78-afee-483e-b565-a2c7ed4294f4": {
+              "id": "f7e91c78-afee-483e-b565-a2c7ed4294f4",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "75a1d706-e794-424c-8850-7544b7599206",
+              "toNodeId": ""
+            }
+          },
+          "nodes": {
+            "0a891063-4911-473a-a452-c24a82b387d8": {
+              "id": "0a891063-4911-473a-a452-c24a82b387d8",
+              "parentNodeId": ""
+            },
+            "2086e2b2-3546-4bd9-9b3f-743258f95cd5": {
+              "id": "2086e2b2-3546-4bd9-9b3f-743258f95cd5",
+              "parentNodeId": ""
+            },
+            "22311e24-f648-41ed-8f3e-15137517b15e": {
+              "id": "22311e24-f648-41ed-8f3e-15137517b15e",
+              "parentNodeId": ""
+            },
+            "33dbbab2-a13b-4ed0-8d14-1eecdbf1749a": {
+              "id": "33dbbab2-a13b-4ed0-8d14-1eecdbf1749a",
+              "parentNodeId": ""
+            },
+            "457adb9a-a214-48a3-ab95-76cc55d54c75": {
+              "id": "457adb9a-a214-48a3-ab95-76cc55d54c75",
+              "parentNodeId": ""
+            },
+            "490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa": {
+              "id": "490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa",
+              "parentNodeId": ""
+            },
+            "53e3d341-5f73-4c24-b293-308f47fafc8f": {
+              "id": "53e3d341-5f73-4c24-b293-308f47fafc8f",
+              "parentNodeId": ""
+            },
+            "5c912344-3c5c-47d1-b707-7307d4027dbf": {
+              "id": "5c912344-3c5c-47d1-b707-7307d4027dbf",
+              "parentNodeId": ""
+            },
+            "7208b374-7b22-4ed9-b35d-b5497e69c9d4": {
+              "id": "7208b374-7b22-4ed9-b35d-b5497e69c9d4",
+              "parentNodeId": ""
+            },
+            "75a1d706-e794-424c-8850-7544b7599206": {
+              "id": "75a1d706-e794-424c-8850-7544b7599206",
+              "parentNodeId": ""
+            },
+            "7836aa74-dced-4c87-8221-14ccb2cfcc43": {
+              "id": "7836aa74-dced-4c87-8221-14ccb2cfcc43",
+              "parentNodeId": ""
+            },
+            "8739dbc9-cc19-4a14-82e4-fbc94da0bac1": {
+              "id": "8739dbc9-cc19-4a14-82e4-fbc94da0bac1",
+              "parentNodeId": ""
+            },
+            "8eaa7118-ec46-40ac-a7a9-3968658daa23": {
+              "id": "8eaa7118-ec46-40ac-a7a9-3968658daa23",
+              "parentNodeId": ""
+            },
+            "b95a8095-e0dc-4f1c-83b2-f912e34e8383": {
+              "id": "b95a8095-e0dc-4f1c-83b2-f912e34e8383",
+              "parentNodeId": ""
+            },
+            "c24aec06-4062-4c6d-8def-949382ebbbe8": {
+              "id": "c24aec06-4062-4c6d-8def-949382ebbbe8",
+              "parentNodeId": ""
+            },
+            "d5faa8a7-7d19-43bc-be45-64137e33998b": {
+              "id": "d5faa8a7-7d19-43bc-be45-64137e33998b",
+              "parentNodeId": ""
+            },
+            "dd2850e7-9616-42e4-af12-56005cc6410c": {
+              "id": "dd2850e7-9616-42e4-af12-56005cc6410c",
+              "parentNodeId": ""
+            }
+          }
+        },
+        "steps": {
+          "0a891063-4911-473a-a452-c24a82b387d8": {
+            "nodeId": "0a891063-4911-473a-a452-c24a82b387d8",
+            "name": "Lookup IP Output",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "analysis for:{{[5c912344-3c5c-47d1-b707-7307d4027dbf].[argument]}}\n\n*WhoIs Results*\n\nOrg Details\nReg Date: {{[d5faa8a7-7d19-43bc-be45-64137e33998b].[regdate]}}\nOrg Name: {{[d5faa8a7-7d19-43bc-be45-64137e33998b].[orgname]}}\nNet Name: {{[d5faa8a7-7d19-43bc-be45-64137e33998b].[netname]}}\nNet Type: {{[d5faa8a7-7d19-43bc-be45-64137e33998b].[nettype]}}\nNetRange: {{[d5faa8a7-7d19-43bc-be45-64137e33998b].[netrange]}}\nLocation Details\nAddress: {{[d5faa8a7-7d19-43bc-be45-64137e33998b].[address]}}\nCity: {{[d5faa8a7-7d19-43bc-be45-64137e33998b].[city]}}\nCountry: {{[d5faa8a7-7d19-43bc-be45-64137e33998b].[country]}}\n\n*Dig Results*\n\nQuestion Asked: {{[b95a8095-e0dc-4f1c-83b2-f912e34e8383].[question]}}\nAnswer Received: {{[b95a8095-e0dc-4f1c-83b2-f912e34e8383].[answer]}}\nQuery Status: {{[b95a8095-e0dc-4f1c-83b2-f912e34e8383].[status]}}\n"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "2086e2b2-3546-4bd9-9b3f-743258f95cd5": {
+            "nodeId": "2086e2b2-3546-4bd9-9b3f-743258f95cd5",
+            "name": "Hash Output",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "Cymru malware hash analysis for: {{[5c912344-3c5c-47d1-b707-7307d4027dbf].[argument]}}\n\nMalicious: {{[33dbbab2-a13b-4ed0-8d14-1eecdbf1749a].[result].[detected]}}\nHash last seen: {{[33dbbab2-a13b-4ed0-8d14-1eecdbf1749a].[result].[last_seen_utc]}}\nResponse Code {{[33dbbab2-a13b-4ed0-8d14-1eecdbf1749a].[result].[response_code]}}"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "22311e24-f648-41ed-8f3e-15137517b15e": {
+            "nodeId": "22311e24-f648-41ed-8f3e-15137517b15e",
+            "name": "Dig IP Output Message",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": ":notebook_with_decorative_cover: IP Analysis for {{[5c912344-3c5c-47d1-b707-7307d4027dbf].[argument]}} :notebook_with_decorative_cover:\n\n_WhoIs_\n> Org Details\n> Reg Date : {{[d5faa8a7-7d19-43bc-be45-64137e33998b].[regdate]}}\n> Org Name : {{[d5faa8a7-7d19-43bc-be45-64137e33998b].[orgname]}}\n> Net Name : {{[d5faa8a7-7d19-43bc-be45-64137e33998b].[netname]}}\n> Net Type : {{[d5faa8a7-7d19-43bc-be45-64137e33998b].[nettype]}}\n> Net Range: {{[d5faa8a7-7d19-43bc-be45-64137e33998b].[netrange]}}\n> Location Details\n> Address : {{[d5faa8a7-7d19-43bc-be45-64137e33998b].[address]}}\n> City : {{[d5faa8a7-7d19-43bc-be45-64137e33998b].[city]}}\n> Country : {{[d5faa8a7-7d19-43bc-be45-64137e33998b].[country]}}\n\n_Dig_\n>Question Asked: {{[b95a8095-e0dc-4f1c-83b2-f912e34e8383].[question]}}\n>Answer Received: {{[b95a8095-e0dc-4f1c-83b2-f912e34e8383].[answer]}}\n>Query Status: {{[b95a8095-e0dc-4f1c-83b2-f912e34e8383].[status]}}\n>Nameserver that Fulfilled Request: {{[b95a8095-e0dc-4f1c-83b2-f912e34e8383].[nameserver]}}",
+                "recipient": "{{[490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa].[message].[channel]}}",
+                "thread_ts": ""
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 4,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 3,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                },
+                "thread_ts": {
+                  "description": "Select timestamp output variable from parent message step",
+                  "order": 2,
+                  "title": "To post in a thread, select parent message timestamp",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
+          },
+          "33dbbab2-a13b-4ed0-8d14-1eecdbf1749a": {
+            "nodeId": "33dbbab2-a13b-4ed0-8d14-1eecdbf1749a",
+            "name": "Cymru Lookup Hash",
+            "type": "action",
+            "plugin": {
+              "name": "Team Cymru MHR",
+              "slugVendor": "rapid7",
+              "slugName": "cymru_malware_hash",
+              "slugVersion": "1.0.3",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/cymru_malware_hash/1.0.3/icon.png"
+            },
+            "identifier": "lookup_hash",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "hash": "{{[5c912344-3c5c-47d1-b707-7307d4027dbf].[argument]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "hash": {
+                  "description": "MD5 or SHA1 hash",
+                  "order": 1,
+                  "title": "Hash",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "hash"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "result": {
+                  "properties": {
+                    "detected": {
+                      "description": "Anti-Virus Detection Percentage",
+                      "order": 3,
+                      "title": "Detected",
+                      "type": "string"
+                    },
+                    "last_seen_utc": {
+                      "description": "Last seen timestamp",
+                      "order": 1,
+                      "title": "Last Seen Utc",
+                      "type": "string"
+                    },
+                    "response_code": {
+                      "description": "Response code",
+                      "order": 2,
+                      "title": "Response Code",
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "last_seen_utc",
+                    "response_code",
+                    "detected"
+                  ],
+                  "title": "Result",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "result": {
+                  "$ref": "#/definitions/result",
+                  "description": "Result",
+                  "order": 1,
+                  "title": "Result"
+                }
+              },
+              "required": [
+                "result"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR"
+          },
+          "457adb9a-a214-48a3-ab95-76cc55d54c75": {
+            "nodeId": "457adb9a-a214-48a3-ab95-76cc55d54c75",
+            "name": "Slack Command",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "f3da16c7-ed37-428c-98a1-cecd19261409",
+              "stepControlParams": [
+                {
+                  "edgeId": "15008bbf-600e-417c-9607-6faf305e2623",
+                  "expression": {
+                    "left": {
+                      "name": "5c912344-3c5c-47d1-b707-7307d4027dbf.command",
+                      "type": "variable"
+                    },
+                    "op": "=",
+                    "right": {
+                      "type": "literal",
+                      "value": "url"
+                    },
+                    "type": "binary"
+                  },
+                  "expressionText": "{{[5c912344-3c5c-47d1-b707-7307d4027dbf].[command]}} = \"url\""
+                },
+                {
+                  "edgeId": "3e44b8a0-c02c-4cda-9ae2-5293bda42830",
+                  "expression": {
+                    "left": {
+                      "name": "5c912344-3c5c-47d1-b707-7307d4027dbf.command",
+                      "type": "variable"
+                    },
+                    "op": "=",
+                    "right": {
+                      "type": "literal",
+                      "value": "ip"
+                    },
+                    "type": "binary"
+                  },
+                  "expressionText": "{{[5c912344-3c5c-47d1-b707-7307d4027dbf].[command]}} = \"ip\""
+                },
+                {
+                  "edgeId": "cec4471e-5810-44a8-b9b7-3a25bc772c72",
+                  "expression": {
+                    "left": {
+                      "name": "5c912344-3c5c-47d1-b707-7307d4027dbf.command",
+                      "type": "variable"
+                    },
+                    "op": "=",
+                    "right": {
+                      "type": "literal",
+                      "value": "hash"
+                    },
+                    "type": "binary"
+                  },
+                  "expressionText": "{{[5c912344-3c5c-47d1-b707-7307d4027dbf].[command]}} = \"hash\""
+                },
+                {
+                  "edgeId": "f3da16c7-ed37-428c-98a1-cecd19261409",
+                  "expression": {},
+                  "expressionText": ""
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          },
+          "490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa": {
+            "nodeId": "490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa",
+            "name": "!Investigate",
+            "type": "trigger",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "matchChannel": "",
+                "matchText": "!investigate",
+                "type": "any"
+              }
+            },
+            "triggerId": "df09bc5c-20c5-482f-8b6a-210fc2580ba5",
+            "defaultInputJSONSchema": {
+              "properties": {
+                "matchChannel": {
+                  "description": "Regex to match for channel name",
+                  "order": 1,
+                  "title": "Match Channel",
+                  "type": "string"
+                },
+                "matchText": {
+                  "description": "Regex to match for Slack message content",
+                  "order": 2,
+                  "title": "Match Text",
+                  "type": "string"
+                },
+                "type": {
+                  "default": "any",
+                  "description": "Desired Slack channel type: direct message to Slack app, group chats, or all channels",
+                  "enum": [
+                    "any",
+                    "direct",
+                    "group"
+                  ],
+                  "order": 3,
+                  "title": "Type",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "type"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "message": {
+                  "properties": {
+                    "channel": {
+                      "description": "Channel name",
+                      "order": 3,
+                      "title": "Channel",
+                      "type": "string"
+                    },
+                    "channel_id": {
+                      "description": "Slack channel ID",
+                      "order": 4,
+                      "title": "Channel ID",
+                      "type": "string"
+                    },
+                    "text": {
+                      "description": "Text",
+                      "order": 5,
+                      "title": "Text",
+                      "type": "string"
+                    },
+                    "ts": {
+                      "description": "Timestamp",
+                      "order": 6,
+                      "title": "Ts",
+                      "type": "string"
+                    },
+                    "user": {
+                      "description": "User name",
+                      "order": 1,
+                      "title": "User",
+                      "type": "string"
+                    },
+                    "user_id": {
+                      "description": "Slack User ID",
+                      "order": 2,
+                      "title": "User ID",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Message",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "display_name": {
+                  "description": "User display name",
+                  "order": 4,
+                  "title": "Display Name",
+                  "type": "string"
+                },
+                "message": {
+                  "$ref": "#/definitions/message",
+                  "description": "Message",
+                  "order": 1,
+                  "title": "Message"
+                },
+                "timestamp": {
+                  "description": "Timestamp",
+                  "order": 3,
+                  "title": "Timestamp",
+                  "type": "string"
+                },
+                "type": {
+                  "description": "Message Type",
+                  "order": 2,
+                  "title": "Type",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/chatops.svg",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "message"
+          },
+          "53e3d341-5f73-4c24-b293-308f47fafc8f": {
+            "nodeId": "53e3d341-5f73-4c24-b293-308f47fafc8f",
+            "name": "URL Output Message",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": ":notebook_with_decorative_cover: IP Analysis for {{[8eaa7118-ec46-40ac-a7a9-3968658daa23].[domain]}} :notebook_with_decorative_cover:\n\n_WhoIs_\n> Org Details\n>Domain Name: {{[8739dbc9-cc19-4a14-82e4-fbc94da0bac1].[name]}}\n>Domain Registrar: {{[8739dbc9-cc19-4a14-82e4-fbc94da0bac1].[registrar]}}\n>Domain Creation Date: {{[8739dbc9-cc19-4a14-82e4-fbc94da0bac1].[creation_date]}}\n>Domain Last Updated: {{[8739dbc9-cc19-4a14-82e4-fbc94da0bac1].[last_updated]}}\n>Registrar Abuse Contact: {{[8739dbc9-cc19-4a14-82e4-fbc94da0bac1].[registrar_abuse_contact_email]}}",
+                "recipient": "{{[490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa].[message].[channel]}}",
+                "thread_ts": ""
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 4,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 3,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                },
+                "thread_ts": {
+                  "description": "Select timestamp output variable from parent message step",
+                  "order": 2,
+                  "title": "To post in a thread, select parent message timestamp",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
+          },
+          "5c912344-3c5c-47d1-b707-7307d4027dbf": {
+            "nodeId": "5c912344-3c5c-47d1-b707-7307d4027dbf",
+            "name": "Extract Slack Command",
+            "type": "pattern_match",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "captureAll": false,
+              "expressionText": "!investigate {{command:/.*/}} {{argument:/.*/}}",
+              "expressions": [
+                {
+                  "type": "text",
+                  "value": "!investigate "
+                },
+                {
+                  "type": "variable",
+                  "value": {
+                    "ident": "command",
+                    "regex": ".*"
+                  }
+                },
+                {
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "type": "variable",
+                  "value": {
+                    "ident": "argument",
+                    "regex": ".*"
+                  }
+                }
+              ],
+              "ignoreCase": true,
+              "input": "{{[490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa].[message].[text]}}"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/pattern-match.svg",
+            "connectionType": "NONE"
+          },
+          "7208b374-7b22-4ed9-b35d-b5497e69c9d4": {
+            "nodeId": "7208b374-7b22-4ed9-b35d-b5497e69c9d4",
+            "name": "Help",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "eb875cb0-f192-406a-b69e-4f67b4dffb35",
+              "stepControlParams": [
+                {
+                  "edgeId": "aee3d89c-4fb3-4dd9-9948-460171b96779",
+                  "expression": {
+                    "left": {
+                      "name": "5c912344-3c5c-47d1-b707-7307d4027dbf.$matched",
+                      "type": "variable"
+                    },
+                    "op": "==",
+                    "right": {
+                      "type": "literal",
+                      "value": false
+                    },
+                    "type": "binary"
+                  },
+                  "expressionText": "{{[5c912344-3c5c-47d1-b707-7307d4027dbf].[$matched]}} == false"
+                },
+                {
+                  "edgeId": "eb875cb0-f192-406a-b69e-4f67b4dffb35",
+                  "expression": {},
+                  "expressionText": ""
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          },
+          "75a1d706-e794-424c-8850-7544b7599206": {
+            "nodeId": "75a1d706-e794-424c-8850-7544b7599206",
+            "name": "Invalid input Message",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": "Your message was not correctly formatted.\nMessage format should be:\n!investigate <command> <data>\nUse !investigate help for more information and examples.",
+                "recipient": "{{[490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa].[message].[channel]}}",
+                "thread_ts": ""
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 4,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 3,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                },
+                "thread_ts": {
+                  "description": "Select timestamp output variable from parent message step",
+                  "order": 2,
+                  "title": "To post in a thread, select parent message timestamp",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
+          },
+          "7836aa74-dced-4c87-8221-14ccb2cfcc43": {
+            "nodeId": "7836aa74-dced-4c87-8221-14ccb2cfcc43",
+            "name": "Lookup URL Output",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "analysis for: {{[8eaa7118-ec46-40ac-a7a9-3968658daa23].[domain]}}\n\n*WhoIs Results*\nDomain Name: {{[8739dbc9-cc19-4a14-82e4-fbc94da0bac1].[name]}}\nDomain Registrar: {{[8739dbc9-cc19-4a14-82e4-fbc94da0bac1].[registrar]}}\nDomain Creation Date: {{[8739dbc9-cc19-4a14-82e4-fbc94da0bac1].[creation_date]}}\nDomain Last Updated: {{[8739dbc9-cc19-4a14-82e4-fbc94da0bac1].[last_updated]}}\nRegistrar Abuse Contact: {{[8739dbc9-cc19-4a14-82e4-fbc94da0bac1].[registrar_abuse_contact_email]}}"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "8739dbc9-cc19-4a14-82e4-fbc94da0bac1": {
+            "nodeId": "8739dbc9-cc19-4a14-82e4-fbc94da0bac1",
+            "name": "Whois Lookup Domain",
+            "type": "action",
+            "plugin": {
+              "name": "WHOIS",
+              "slugVendor": "rapid7",
+              "slugName": "whois",
+              "slugVersion": "1.0.7",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/whois/1.0.7/icon.png"
+            },
+            "identifier": "domain",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "domain": "{{[8eaa7118-ec46-40ac-a7a9-3968658daa23].[domain]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "domain": {
+                  "description": "Domain name to lookup",
+                  "order": 1,
+                  "title": "Domain",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "domain"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "creation_date": {
+                  "description": "Creation date",
+                  "displayType": "date",
+                  "format": "date-time",
+                  "order": 5,
+                  "title": "Creation Date",
+                  "type": "string"
+                },
+                "dnssec": {
+                  "description": "DNSSEC",
+                  "order": 16,
+                  "title": "DNSSEC",
+                  "type": "string"
+                },
+                "domain_status": {
+                  "description": "Domain status",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 15,
+                  "title": "Domain Status",
+                  "type": "array"
+                },
+                "expiration_date": {
+                  "description": "Expiration date",
+                  "displayType": "date",
+                  "format": "date-time",
+                  "order": 6,
+                  "title": "Expiration Date",
+                  "type": "string"
+                },
+                "last_updated": {
+                  "description": "Last updated date",
+                  "displayType": "date",
+                  "format": "date-time",
+                  "order": 7,
+                  "title": "Last updated date",
+                  "type": "string"
+                },
+                "name": {
+                  "description": "Domain name",
+                  "order": 1,
+                  "title": "Domain Name",
+                  "type": "string"
+                },
+                "name_servers": {
+                  "description": "Nameservers",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 8,
+                  "title": "Nameservers",
+                  "type": "array"
+                },
+                "registrant_cc": {
+                  "description": "Registrant country",
+                  "order": 4,
+                  "title": "Registrant Country",
+                  "type": "string"
+                },
+                "registrant_name": {
+                  "description": "Registrant name",
+                  "order": 3,
+                  "title": "Registrant Name",
+                  "type": "string"
+                },
+                "registrar": {
+                  "description": "Domain registrar",
+                  "order": 2,
+                  "title": "Domain Registrar",
+                  "type": "string"
+                },
+                "registrar_abuse_contact_email": {
+                  "description": "Registrar abuse contact email",
+                  "order": 13,
+                  "title": "Registrar Abuse Contact Email",
+                  "type": "string"
+                },
+                "registrar_abuse_contact_phone": {
+                  "description": "Registrar abuse Contact phone",
+                  "order": 14,
+                  "title": "Registrar Abuse Contact Phone",
+                  "type": "string"
+                },
+                "registrar_iana_id": {
+                  "description": "Registrar IANA ID",
+                  "order": 12,
+                  "title": "Registrar IANA ID",
+                  "type": "string"
+                },
+                "registrar_url": {
+                  "description": "Registrar URL",
+                  "order": 11,
+                  "title": "Registrar URL",
+                  "type": "string"
+                },
+                "registrar_whois_server": {
+                  "description": "Registrar WHOIS server",
+                  "order": 10,
+                  "title": "Registrar WHOIS Server",
+                  "type": "string"
+                },
+                "registry_domain_id": {
+                  "description": "Registry domain ID",
+                  "order": 9,
+                  "title": "Registry Domain ID",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR"
+          },
+          "8eaa7118-ec46-40ac-a7a9-3968658daa23": {
+            "nodeId": "8eaa7118-ec46-40ac-a7a9-3968658daa23",
+            "name": "Extract URL",
+            "type": "pattern_match",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "captureAll": false,
+              "expressionText": "<{{ignore:url}}\\|{{domain:/[-a-zA-Z0-9@:%._\\+~#=]{2,256}\\.[a-z]{2,10}\\b([-a-zA-Z0-9@:%_\\+.~]*)/}}>",
+              "expressions": [
+                {
+                  "type": "text",
+                  "value": "<"
+                },
+                {
+                  "type": "variable",
+                  "value": {
+                    "ident": "ignore",
+                    "typename": "url"
+                  }
+                },
+                {
+                  "type": "text",
+                  "value": "\\|"
+                },
+                {
+                  "type": "variable",
+                  "value": {
+                    "ident": "domain",
+                    "regex": "[-a-zA-Z0-9@:%._\\+~#=]{2,256}\\.[a-z]{2,10}\\b([-a-zA-Z0-9@:%_\\+.~]*)"
+                  }
+                },
+                {
+                  "type": "text",
+                  "value": ">"
+                }
+              ],
+              "ignoreCase": true,
+              "input": "{{[5c912344-3c5c-47d1-b707-7307d4027dbf].[argument]}}"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/pattern-match.svg",
+            "connectionType": "NONE"
+          },
+          "b95a8095-e0dc-4f1c-83b2-f912e34e8383": {
+            "nodeId": "b95a8095-e0dc-4f1c-83b2-f912e34e8383",
+            "name": "Dig Lookup Reverse DNS",
+            "type": "action",
+            "plugin": {
+              "name": "Dig",
+              "slugVendor": "rapid7",
+              "slugName": "dig",
+              "slugVersion": "1.0.3",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/dig/1.0.3/icon.png"
+            },
+            "identifier": "reverse",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "address": "{{[5c912344-3c5c-47d1-b707-7307d4027dbf].[argument]}}",
+                "resolver": ""
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "address": {
+                  "description": "Internet address to resolve",
+                  "order": 2,
+                  "title": "Address",
+                  "type": "string"
+                },
+                "resolver": {
+                  "description": "Resolver. Leave blank to use default resolver for the system",
+                  "order": 1,
+                  "title": "Resolver",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "address"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "answer": {
+                  "description": "Answer received",
+                  "order": 4,
+                  "title": "Answer",
+                  "type": "string"
+                },
+                "fulloutput": {
+                  "description": "Full Dig output",
+                  "order": 1,
+                  "title": "Full Output",
+                  "type": "string"
+                },
+                "nameserver": {
+                  "description": "Nameserver that fulfilled request",
+                  "order": 3,
+                  "title": "Nameserver",
+                  "type": "string"
+                },
+                "question": {
+                  "description": "Question asked",
+                  "order": 5,
+                  "title": "Question",
+                  "type": "string"
+                },
+                "status": {
+                  "description": "Query status [ NOERROR | FORMERR | NXDOMAIN | SERVFAIL | REFUSED ...]",
+                  "order": 2,
+                  "title": "Query Status",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR"
+          },
+          "c24aec06-4062-4c6d-8def-949382ebbbe8": {
+            "nodeId": "c24aec06-4062-4c6d-8def-949382ebbbe8",
+            "name": "Help Message",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": "This workflow will provide enrichment on URL's IP's and hashs\nCommands should be in the following format:\n\n!investigate <Command> <data>\n\nexamples:\n!investigate url rapid7.com\n\n!investigate ip 198.51.100.100\n\n!investigate hash 009f1e9b72cfb6daa3de82093a755bdb3685e0eb",
+                "recipient": "{{[490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa].[message].[channel]}}",
+                "thread_ts": ""
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 4,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 3,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                },
+                "thread_ts": {
+                  "description": "Select timestamp output variable from parent message step",
+                  "order": 2,
+                  "title": "To post in a thread, select parent message timestamp",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
+          },
+          "d5faa8a7-7d19-43bc-be45-64137e33998b": {
+            "nodeId": "d5faa8a7-7d19-43bc-be45-64137e33998b",
+            "name": "Whois Lookup IP",
+            "type": "action",
+            "plugin": {
+              "name": "WHOIS",
+              "slugVendor": "rapid7",
+              "slugName": "whois",
+              "slugVersion": "1.0.7",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/whois/1.0.7/icon.png"
+            },
+            "identifier": "address",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "address": "{{[5c912344-3c5c-47d1-b707-7307d4027dbf].[argument]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "address": {
+                  "description": "IP to Lookup",
+                  "order": 1,
+                  "title": "Address",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "address"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "address": {
+                  "description": "Address",
+                  "order": 9,
+                  "title": "Address",
+                  "type": "string"
+                },
+                "cidr": {
+                  "description": "CIDR",
+                  "order": 4,
+                  "title": "CIDR",
+                  "type": "string"
+                },
+                "city": {
+                  "description": "City",
+                  "order": 10,
+                  "title": "City",
+                  "type": "string"
+                },
+                "country": {
+                  "description": "Country",
+                  "order": 13,
+                  "title": "Country",
+                  "type": "string"
+                },
+                "netname": {
+                  "description": "Network name",
+                  "order": 1,
+                  "title": "Network Name",
+                  "type": "string"
+                },
+                "netrange": {
+                  "description": "Network Range",
+                  "order": 3,
+                  "title": "Network Range",
+                  "type": "string"
+                },
+                "nettype": {
+                  "description": "Network type",
+                  "order": 2,
+                  "title": "Network Type",
+                  "type": "string"
+                },
+                "org_abuse_email": {
+                  "description": "Organization abuse e-mail",
+                  "order": 14,
+                  "title": "Organization Abuse E-mail",
+                  "type": "string"
+                },
+                "org_abuse_phone": {
+                  "description": "Organization abuse phone",
+                  "order": 15,
+                  "title": "Organization Abuse Phone",
+                  "type": "string"
+                },
+                "org_tech_email": {
+                  "description": "Organization tech e-mail",
+                  "order": 16,
+                  "title": "Organization Tech E-mail",
+                  "type": "string"
+                },
+                "org_tech_phone": {
+                  "description": "Organization tech phone",
+                  "order": 17,
+                  "title": "Organization Tech Phone",
+                  "type": "string"
+                },
+                "organization": {
+                  "description": "Organization",
+                  "order": 5,
+                  "title": "Organization",
+                  "type": "string"
+                },
+                "orgname": {
+                  "description": "Organization name",
+                  "order": 6,
+                  "title": "Organization Name",
+                  "type": "string"
+                },
+                "postal": {
+                  "description": "Postal",
+                  "order": 11,
+                  "title": "Postal",
+                  "type": "string"
+                },
+                "regdate": {
+                  "description": "Registration date",
+                  "order": 7,
+                  "title": "Registration Date",
+                  "type": "string"
+                },
+                "state": {
+                  "description": "State",
+                  "order": 12,
+                  "title": "State",
+                  "type": "string"
+                },
+                "update": {
+                  "description": "WHOIS updated date",
+                  "order": 8,
+                  "title": "WHOIS Updated Date",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR"
+          },
+          "dd2850e7-9616-42e4-af12-56005cc6410c": {
+            "nodeId": "dd2850e7-9616-42e4-af12-56005cc6410c",
+            "name": "Hash Output Message",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": ":notebook_with_decorative_cover: hash Analysis for {{[5c912344-3c5c-47d1-b707-7307d4027dbf].[argument]}} :notebook_with_decorative_cover:\n\n_Cymru malware hash_\n>Malicious: {{[33dbbab2-a13b-4ed0-8d14-1eecdbf1749a].[result].[detected]}}\n>Hash last seen: {{[33dbbab2-a13b-4ed0-8d14-1eecdbf1749a].[result].[last_seen_utc]}}\n>Response Code {{[33dbbab2-a13b-4ed0-8d14-1eecdbf1749a].[result].[response_code]}}",
+                "recipient": "{{[490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa].[message].[channel]}}",
+                "thread_ts": ""
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 4,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 3,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                },
+                "thread_ts": {
+                  "description": "Select timestamp output variable from parent message step",
+                  "order": 2,
+                  "title": "To post in a thread, select parent message timestamp",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
+          }
+        },
+        "tags": null,
+        "humanCostSeconds": 0,
+        "humanCostDisplayUnit": ""
+      }
+    ],
+    "triggers": [
+      {
+        "id": "df09bc5c-20c5-482f-8b6a-210fc2580ba5",
+        "name": "!Investigate",
+        "description": "",
+        "input": {
+          "matchChannel": "",
+          "matchText": "!investigate",
+          "type": "any"
+        },
+        "inputJsonSchema": {
+          "properties": {
+            "matchChannel": {
+              "description": "Regex to match for channel name",
+              "order": 1,
+              "title": "Match Channel",
+              "type": "string"
+            },
+            "matchText": {
+              "description": "Regex to match for Slack message content",
+              "order": 2,
+              "title": "Match Text",
+              "type": "string"
+            },
+            "type": {
+              "default": "any",
+              "description": "Desired Slack channel type: direct message to Slack app, group chats, or all channels",
+              "enum": [
+                "any",
+                "direct",
+                "group"
+              ],
+              "order": 3,
+              "title": "Type",
+              "type": "string"
+            }
+          },
+          "required": [
+            "type"
+          ],
+          "title": "Variables",
+          "type": "object"
+        },
+        "outputJsonSchema": {
+          "definitions": {
+            "message": {
+              "properties": {
+                "channel": {
+                  "description": "Channel name",
+                  "order": 3,
+                  "title": "Channel",
+                  "type": "string"
+                },
+                "channel_id": {
+                  "description": "Slack channel ID",
+                  "order": 4,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "text": {
+                  "description": "Text",
+                  "order": 5,
+                  "title": "Text",
+                  "type": "string"
+                },
+                "ts": {
+                  "description": "Timestamp",
+                  "order": 6,
+                  "title": "Ts",
+                  "type": "string"
+                },
+                "user": {
+                  "description": "User name",
+                  "order": 1,
+                  "title": "User",
+                  "type": "string"
+                },
+                "user_id": {
+                  "description": "Slack User ID",
+                  "order": 2,
+                  "title": "User ID",
+                  "type": "string"
+                }
+              },
+              "title": "Message",
+              "type": "object"
+            }
+          },
+          "properties": {
+            "display_name": {
+              "description": "User display name",
+              "order": 4,
+              "title": "Display Name",
+              "type": "string"
+            },
+            "message": {
+              "$ref": "#/definitions/message",
+              "description": "Message",
+              "order": 1,
+              "title": "Message"
+            },
+            "timestamp": {
+              "description": "Timestamp",
+              "order": 3,
+              "title": "Timestamp",
+              "type": "string"
+            },
+            "type": {
+              "description": "Message Type",
+              "order": 2,
+              "title": "Type",
+              "type": "string"
+            }
+          },
+          "title": "Variables",
+          "type": "object"
+        },
+        "tags": [],
+        "type": "trigger_chatops",
+        "chatOpsAppName": "slack",
+        "chatOpsIdentifier": "message"
+      }
+    ]
+  }
+}
