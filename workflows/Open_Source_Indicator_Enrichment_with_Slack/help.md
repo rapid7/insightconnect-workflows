@@ -27,9 +27,9 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Dig|1.0.5|1|
-|Team Cymru MHR|1.0.4|1|
-|Whois|2.0.1|2|
+|Dig|1.0.3|1|
+|Team Cymru MHR|1.0.3|1|
+|WHOIS|1.0.7|2|
 
 ## Troubleshooting
 

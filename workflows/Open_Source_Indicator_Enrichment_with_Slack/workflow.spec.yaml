@@ -24,10 +24,10 @@ resources:
   - name: workflow1.png
     title: Workflow View
   - name: slack1.png
-    title: Example Slack output for help
+    title: Example Slack Output for Help
   - name: slack2.png
-    title: Example Slack output for IP Enrichment
+    title: Example Slack Output for IP Enrichment
   - name: slack3.png
-    title: Example Slack output for Hash Enrichment
-  - name: slack3.png
-    title: Example Slack output for URL Enrichment
+    title: Example Slack Output for Hash Enrichment
+  - name: slack4.png
+    title: Example Slack Output for URL Enrichment
