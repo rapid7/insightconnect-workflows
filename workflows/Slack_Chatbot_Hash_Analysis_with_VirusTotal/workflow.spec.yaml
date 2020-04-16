@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Slack_Chatbot_Hash_Analysis_with_VirusTotal
 title: "Slack Chatbot Hash Analysis with VirusTotal"
 description: Initiate and receive VirusTotal hash scan reports with the Slack chatbot.
-version: 1.0.1
+version: 1.0.2
 vendor: rapid7
 support: rapid7
 status: []

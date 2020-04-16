@@ -1,7 +1,7 @@
 extension: workflow
 products: ["insightconnect"]
 name: Delete_Emails_from_O365_With_Microsoft_Teams
-title: "Delete Emails from O365 With Microsoft Teams"
+title: "Delete Emails from O365 with Microsoft Teams"
 description: "This workflow will delete emails matching given search criteria by sending a notification to InsightConnect with Microsoft Teams."
 version: 1.0.0
 vendor: rapid7
