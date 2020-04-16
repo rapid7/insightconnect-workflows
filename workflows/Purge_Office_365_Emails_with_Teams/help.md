@@ -4,7 +4,7 @@ This workflow will delete all emails matching given search criteria from an orga
 
 # Key Features
 
-* A simple command sent from Teams will purge all emails from an organization using an Office 365 compliance search
+* A simple command sent from Microsoft Teams will purge all emails from an organization using an Office 365 compliance search
 
 # Requirements
 
