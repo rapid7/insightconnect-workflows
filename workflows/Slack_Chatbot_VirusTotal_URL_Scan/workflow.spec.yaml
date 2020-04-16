@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Slack_Chatbot_URL_Analysis_with_VirusTotal
 title: "Slack Chatbot URL Analysis with VirusTotal"
 description: Initiate and receive VirusTotal URL scan reports with the Slack chatbot.
-version: 1.0.0
+version: 1.0.1
 vendor: rapid7
 support: rapid7
 status: []
