@@ -22,7 +22,7 @@ Once the workflow has been downloaded, login to InsightConnect and “Import” 
 ### Usage
 
 
-This workflow uses the Microsoft Teams plugin to listen for key messages. When the Microsoft Teams command triggers this workflow, it will open a compliance search in Office 365 and optionally delete messages.
+This workflow uses the Microsoft Teams plugin to listen for key messages (commands). When the Microsoft Teams command triggers this workflow, it will open a compliance search in Office 365 and optionally delete messages.
 
 To trigger this workflow, send the following command to the channel being monitored by the Microsoft Teams plugin:
 
