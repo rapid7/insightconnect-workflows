@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Delete_O365_Emails_With_Slack
 title: "Delete O365 Emails With Slack"
 description: "This workflow will delete emails matching given search criteria by sending a notification to InisghtConnect with Slack."
-version: 1.0.2
+version: 1.0.3
 vendor: rapid7
 support: rapid7
 status: []
