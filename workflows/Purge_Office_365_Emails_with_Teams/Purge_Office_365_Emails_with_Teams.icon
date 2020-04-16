@@ -5,7 +5,7 @@
     "exportedAt": "2020-04-16T14:07:46.797017991Z",
     "workflowVersions": [
       {
-        "name": "Purge Office 365 Emails with Teams",
+        "name": "Purge Office 365 Emails with Microsoft Teams",
         "type": "runnable",
         "version": "",
         "description": "This workflow will delete all emails matching given search criteria from an organization using a command issued from Microsoft Teams.",
