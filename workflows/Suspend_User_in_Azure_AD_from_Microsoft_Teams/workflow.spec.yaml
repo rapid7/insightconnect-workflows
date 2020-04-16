@@ -1,0 +1,22 @@
+extension: workflow
+products: ["insightconnect"]
+name: Suspend_User_in_Azure_AD_from_Microsoft_Teams
+title: "Suspend User in Azure AD from Microsoft Teams"
+description: Suspend Azure AD users from Microsoft Teams.
+version: 1.0.0
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [threat_detection_and_response, cloud_security, user_management]
+  keywords: [chat, azure, slack]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Suspend_User_in_Azure_AD_from_Microsoft_Teams
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+  - name: workflow1.png
+    title: Workflow View
+  - name: teams_flow1.png
+    title: Microsoft Teams Post, Response, and Success
+  
