@@ -12,7 +12,7 @@ hub_tags:
   keywords: [phishing, email, office365, teams, microsoft]
   features: []
 resources:
-  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Purge_Office_365_Emails_with_Teams
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Purge_Office_365_Emails_with_Microsoft_Teams
   license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
   screenshots:
   - name: workflow1.png
