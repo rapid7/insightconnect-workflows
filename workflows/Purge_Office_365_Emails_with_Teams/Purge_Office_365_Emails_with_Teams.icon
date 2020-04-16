@@ -2,7 +2,7 @@
   "kom": {
     "komandVersion": "1.48.4-0-g02625",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-04-15T21:04:13.868983393Z",
+    "exportedAt": "2020-04-16T14:07:46.797017991Z",
     "workflowVersions": [
       {
         "name": "Purge Office 365 Emails with Teams",
@@ -261,7 +261,7 @@
             "parameters": {
               "input": {
                 "channel_name": "Komand Test Channel",
-                "message_content": "The compliance search failed to purge!<br>\n<br>\nMore information can be found here:<br>\n{{[$job].[URL]}}<br>\n<br>\n<b>Workflow Complete</b>\n<b>Workflow Complete</b>",
+                "message_content": "🔒The compliance search failed to purge!🔒<br>\n<br>\nMore information can be found here:<br>\n{{[$job].[URL]}}<br>\n<br>\n❌<b>Workflow Failed</b>\n<b>Workflow Complete</b>\n<b>Workflow Complete</b>",
                 "team_name": "Komand-Test-Everyone"
               }
             },
@@ -705,7 +705,7 @@
             "parameters": {
               "input": {
                 "channel_name": "Komand Test Channel",
-                "message_content": "Compliance Search Complete<br>\n<br>\nEmails Found: {{[28b13b59-a02c-4faa-b69f-ce13ad921410].[emails_found]}}<br>\nNumber of Users Affected: {{[28b13b59-a02c-4faa-b69f-ce13ad921410].[affected_users]}}<br>\n<br>\nFor more information: <br>\n{{[$job].[URL]}}",
+                "message_content": "🔒Compliance Search Complete🔒<br>\n<br>\nEmails Found: {{[28b13b59-a02c-4faa-b69f-ce13ad921410].[emails_found]}}<br>\nNumber of Users Affected: {{[28b13b59-a02c-4faa-b69f-ce13ad921410].[affected_users]}}<br>\n<br>\nFor more information: <br>\n<a href=\"{{[$job].[URL]}}\">InsightConnect Job Information</a>",
                 "team_name": "Komand-Test-Everyone"
               }
             },
@@ -1051,7 +1051,7 @@
             "parameters": {
               "input": {
                 "channel_name": "Komand Test Channel",
-                "message_content": "Beginning Compliance Search<br>\n<br>\n{{[4ea6adf6-4bb6-4018-b6af-cf45e6e3e267].[content]}}<br>\n<br>\nThis can take up to 60 minutes depending on the size of your organization. ",
+                "message_content": "🔒Beginning Compliance Search🔒<br>\n<br>\n{{[4ea6adf6-4bb6-4018-b6af-cf45e6e3e267].[content]}}<br>\n<br>\nThis can take up to 60 minutes depending on the size of your organization. ",
                 "team_name": "Komand-Test-Everyone"
               }
             },
@@ -1251,7 +1251,7 @@
             "parameters": {
               "input": {
                 "channel_name": "Komand Test Channel",
-                "message_content": "The compliance search was successfully purged!<br>\n<br>\n<b>Workflow Complete</b>",
+                "message_content": "🔒Purge compliance search was successful!🔒<br>\n<br>\nSearch Query: {{[ad5289eb-110e-4ac2-9ee8-b2bd30ffa455].[query_string]}}<br>\n<br> \n<b>✅ Workflow Complete</b>",
                 "team_name": "Komand-Test-Everyone"
               }
             },
@@ -1425,7 +1425,7 @@
                 "team_name": "Komand-Test-Everyone"
               }
             },
-            "triggerId": "3d5570c3-e5a7-455f-8353-68b5ebf1ec56",
+            "triggerId": "ffd0d6d4-add8-47b9-89fb-4476e5f16569",
             "defaultInputJSONSchema": {
               "properties": {
                 "channel_name": {
@@ -1936,7 +1936,7 @@
     ],
     "triggers": [
       {
-        "id": "3d5570c3-e5a7-455f-8353-68b5ebf1ec56",
+        "id": "ffd0d6d4-add8-47b9-89fb-4476e5f16569",
         "identifier": "new_message_received",
         "name": "Purge Email Trigger",
         "description": "",
