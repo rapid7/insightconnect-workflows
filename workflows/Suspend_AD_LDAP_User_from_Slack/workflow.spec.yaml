@@ -26,6 +26,6 @@ resources:
   - name: slack2.png
     title: Slack Post and Response, Failure
   - name: job1.png
-    title: Successful Job Run Part 1
+    title: Successful Job Run
   - name: artifact1.png
     title: Successful Suspension Artifact
