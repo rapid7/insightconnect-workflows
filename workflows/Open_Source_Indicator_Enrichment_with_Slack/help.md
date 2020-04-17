@@ -1,7 +1,7 @@
 # Description
 
 Look up and enrich URLs, IP addresses, and hashes directly from Slack using open source threat intelligence tools
-such as Dig DNS and Whois.
+such as Dig, DNS and Whois.
 
 # Key Features
 
