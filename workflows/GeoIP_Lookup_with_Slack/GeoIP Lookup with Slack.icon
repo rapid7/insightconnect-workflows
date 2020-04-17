@@ -2,13 +2,13 @@
   "kom": {
     "komandVersion": "1.48.4-0-g02625",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-04-16T18:44:13.571597203Z",
+    "exportedAt": "2020-04-17T13:49:15.55123259Z",
     "workflowVersions": [
       {
         "name": "GeoIP Lookup with Slack",
         "type": "runnable",
         "version": "",
-        "description": "his workflow accepts a Slack command, and performs a GeoIP lookup using the IPStack plugin",
+        "description": "Give a GeoIP report on an IP through a slack command",
         "graph": {
           "edges": {
             "18e819a1-6557-40bf-ac25-ff05e5004703": {
@@ -443,7 +443,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": ":notebook_with_decorative_cover: GeoIP Lookup for `{{[6f80dc1f-9a48-4fbd-bfa0-06f2a86a6c04].[content]}}` :notebook_with_decorative_cover:\n_WhoIs_\n> Address: {{[ebd2bfab-ad02-4e0d-8db9-1c1b5bf5cde7].[address]}}\n> City: {{[ebd2bfab-ad02-4e0d-8db9-1c1b5bf5cde7].[city]}}\n> Region: {{[ebd2bfab-ad02-4e0d-8db9-1c1b5bf5cde7].[region_name]}}\n> Country: {{[ebd2bfab-ad02-4e0d-8db9-1c1b5bf5cde7].[country_name]}}\n> Zip Code: {{[ebd2bfab-ad02-4e0d-8db9-1c1b5bf5cde7].[zip_code]}}\n> Coordinates: `({{[ebd2bfab-ad02-4e0d-8db9-1c1b5bf5cde7].[latitude]}},{{[ebd2bfab-ad02-4e0d-8db9-1c1b5bf5cde7].[longitude]}})`\n\n",
+                "message": ":notebook_with_decorative_cover: GeoIP Lookup for `{{[6f80dc1f-9a48-4fbd-bfa0-06f2a86a6c04].[content]}}` :notebook_with_decorative_cover:\n_WhoIs_\n> Address: {{[ebd2bfab-ad02-4e0d-8db9-1c1b5bf5cde7].[address]}}\n> City: {{[ebd2bfab-ad02-4e0d-8db9-1c1b5bf5cde7].[city]}}\n> Region: {{[ebd2bfab-ad02-4e0d-8db9-1c1b5bf5cde7].[region_name]}}\n> Country: {{[ebd2bfab-ad02-4e0d-8db9-1c1b5bf5cde7].[country_name]}}\n> Zip Code: {{[ebd2bfab-ad02-4e0d-8db9-1c1b5bf5cde7].[zip_code]}}\n> Co-ordinates: `({{[ebd2bfab-ad02-4e0d-8db9-1c1b5bf5cde7].[latitude]}},{{[ebd2bfab-ad02-4e0d-8db9-1c1b5bf5cde7].[longitude]}})`\n\n",
                 "recipient": "{{[9103f075-a1ff-4b65-8666-8b6331b38a96].[message].[channel]}}",
                 "thread_ts": "{{[9103f075-a1ff-4b65-8666-8b6331b38a96].[message].[ts]}}"
               }
@@ -576,7 +576,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": ":notebook_with_decorative_cover: GeoIP Lookup for `{{[6f80dc1f-9a48-4fbd-bfa0-06f2a86a6c04].[content]}}` :notebook_with_decorative_cover:\n_WhoIs_\nNo Results Found",
+                "message": ":notebook_with_decorative_cover: GeoIP Lookup ` :notebook_with_decorative_cover:\n_WhoIs_\nNo Results Found",
                 "recipient": "{{[9103f075-a1ff-4b65-8666-8b6331b38a96].[message].[channel]}}",
                 "thread_ts": "{{[9103f075-a1ff-4b65-8666-8b6331b38a96].[timestamp]}}"
               }

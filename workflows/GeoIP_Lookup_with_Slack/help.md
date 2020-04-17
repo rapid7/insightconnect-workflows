@@ -9,7 +9,7 @@ Sample Slack Trigger Commands:
 
 # Key Features
 
-* Location Lookup on an IP Address from Slack
+* Geo-location lookup on an IP Address from Slack
 
 # Requirements
 
