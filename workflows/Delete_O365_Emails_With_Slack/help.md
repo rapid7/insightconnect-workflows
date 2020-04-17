@@ -45,7 +45,7 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Microsoft Office 365 Email|4.1.1|2|
+|Microsoft Office 365 Email|4.1.1|3|
 |Python 3 Script|2.0.1|2|
 
 ## Troubleshooting
