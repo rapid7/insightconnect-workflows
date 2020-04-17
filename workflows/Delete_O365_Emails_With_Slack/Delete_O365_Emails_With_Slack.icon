@@ -2,10 +2,10 @@
   "kom": {
     "komandVersion": "1.48.4-0-g02625",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-04-17T15:49:17.460631553Z",
+    "exportedAt": "2020-04-17T17:13:10.422609812Z",
     "workflowVersions": [
       {
-        "name": "Delete Office 365 Emails with Slack",
+        "name": "Delete O365 Emails With Slack",
         "type": "runnable",
         "version": "",
         "description": "This workflow will delete emails matching given search criteria by sending a notification to InisghtConnect with Slack. The workflow will look for any emails that match the body, subject, for from contents given. It can either automatically delete these emails or prompt the user for further action.",
@@ -75,6 +75,14 @@
               "fromNodeId": "4b965b0c-fd3d-4f2b-aa30-37f93f214753",
               "toNodeId": ""
             },
+            "43e54ec0-7366-4a10-a5e2-8097158d97cb": {
+              "id": "43e54ec0-7366-4a10-a5e2-8097158d97cb",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "cfb0da23-e667-4969-a80e-6ef5775faa87",
+              "toNodeId": ""
+            },
             "498a0cb5-89cd-42c7-b450-72d68d86c5c2": {
               "id": "498a0cb5-89cd-42c7-b450-72d68d86c5c2",
               "name": "",
@@ -137,7 +145,7 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "2e45f712-a559-4d2b-bc72-051ea2e8a0ef",
-              "toNodeId": ""
+              "toNodeId": "c1be2795-8756-4862-ad94-1d7d2fe751ea"
             },
             "87b4da4f-1729-4a3b-bc76-3f23a0a1d741": {
               "id": "87b4da4f-1729-4a3b-bc76-3f23a0a1d741",
@@ -211,6 +219,14 @@
               "fromNodeId": "16077c2b-e376-4221-9100-687972fa5956",
               "toNodeId": "147d178f-d0b0-4a73-b432-22e6713449e4"
             },
+            "db5e9cc0-e786-4e9c-abaf-cc39d29d3443": {
+              "id": "db5e9cc0-e786-4e9c-abaf-cc39d29d3443",
+              "name": "",
+              "description": "",
+              "parentNodeId": "c1be2795-8756-4862-ad94-1d7d2fe751ea",
+              "fromNodeId": "807a9b29-3e8c-4f80-bdf7-00dcb1fe1c8f",
+              "toNodeId": ""
+            },
             "e97b590e-08b0-4963-a930-d287dc81222a": {
               "id": "e97b590e-08b0-4963-a930-d287dc81222a",
               "name": "",
@@ -218,6 +234,22 @@
               "parentNodeId": "",
               "fromNodeId": "8611a657-e320-4b61-8924-faceafdc49e1",
               "toNodeId": "ff066138-0d02-4a61-afb4-f7148af31434"
+            },
+            "ec54bcef-f96f-4a6f-a1a2-ce7f6604caff": {
+              "id": "ec54bcef-f96f-4a6f-a1a2-ce7f6604caff",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "c1be2795-8756-4862-ad94-1d7d2fe751ea",
+              "toNodeId": "cfb0da23-e667-4969-a80e-6ef5775faa87"
+            },
+            "f05f0c74-43f1-4c1a-aa6c-b9cc9859d005": {
+              "id": "f05f0c74-43f1-4c1a-aa6c-b9cc9859d005",
+              "name": "",
+              "description": "",
+              "parentNodeId": "c1be2795-8756-4862-ad94-1d7d2fe751ea",
+              "fromNodeId": "c1be2795-8756-4862-ad94-1d7d2fe751ea",
+              "toNodeId": "807a9b29-3e8c-4f80-bdf7-00dcb1fe1c8f"
             },
             "fc61a6d1-c28c-495f-8401-89e8145150bf": {
               "id": "fc61a6d1-c28c-495f-8401-89e8145150bf",
@@ -273,6 +305,10 @@
               "id": "75c4e364-f202-469e-bcb3-4140fe36e205",
               "parentNodeId": ""
             },
+            "807a9b29-3e8c-4f80-bdf7-00dcb1fe1c8f": {
+              "id": "807a9b29-3e8c-4f80-bdf7-00dcb1fe1c8f",
+              "parentNodeId": "c1be2795-8756-4862-ad94-1d7d2fe751ea"
+            },
             "8611a657-e320-4b61-8924-faceafdc49e1": {
               "id": "8611a657-e320-4b61-8924-faceafdc49e1",
               "parentNodeId": ""
@@ -297,12 +333,20 @@
               "id": "bc1e909d-4a55-4e24-9dd9-523b19e2c9d5",
               "parentNodeId": ""
             },
+            "c1be2795-8756-4862-ad94-1d7d2fe751ea": {
+              "id": "c1be2795-8756-4862-ad94-1d7d2fe751ea",
+              "parentNodeId": ""
+            },
             "c5cce12b-3672-4d99-83be-9df69fd3794c": {
               "id": "c5cce12b-3672-4d99-83be-9df69fd3794c",
               "parentNodeId": ""
             },
             "cfa4d7bb-cc21-49c5-b9c8-280713447b48": {
               "id": "cfa4d7bb-cc21-49c5-b9c8-280713447b48",
+              "parentNodeId": ""
+            },
+            "cfb0da23-e667-4969-a80e-6ef5775faa87": {
+              "id": "cfb0da23-e667-4969-a80e-6ef5775faa87",
               "parentNodeId": ""
             },
             "fa588e39-aba7-4a3a-bcac-bcea4e80ff74": {
@@ -355,7 +399,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "Something went wrong with delete-email. \n\nThe message received was: \n{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[text]}}",
+                "message": "Something went wrong with delete-email. \n\nThe message received was: \n{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[text]}}\n\nWorkflow Complete ❗",
                 "recipient": "@{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[user]}}",
                 "thread_ts": "{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[ts]}}"
               }
@@ -727,7 +771,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "Workflow Completed\n\n{{[16077c2b-e376-4221-9100-687972fa5956].[email_list_count]}} email(s) were successfully deleted.",
+                "message": "📧  Workflow Completed  📧\n\n{{[16077c2b-e376-4221-9100-687972fa5956].[email_list_count]}} email(s) were successfully deleted.✅",
                 "recipient": "@{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[user]}}",
                 "thread_ts": "{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[timestamp]}}"
               }
@@ -801,7 +845,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "Workflow completed\n\nNo emails found with the search criteria provided.\n",
+                "message": "📧  Workflow completed  📧\n\nNo emails found with the search criteria provided.❗",
                 "recipient": "@{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[user]}}",
                 "thread_ts": "{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[timestamp]}}"
               }
@@ -1017,6 +1061,67 @@
               "title": "Variables",
               "type": "object"
             },
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "807a9b29-3e8c-4f80-bdf7-00dcb1fe1c8f": {
+            "nodeId": "807a9b29-3e8c-4f80-bdf7-00dcb1fe1c8f",
+            "name": "Delete Email",
+            "type": "action",
+            "plugin": {
+              "name": "Microsoft Office 365 Email",
+              "slugVendor": "rapid7",
+              "slugName": "microsoft_office365_email",
+              "slugVersion": "4.1.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_office365_email/4.1.1/icon.png"
+            },
+            "identifier": "delete_email",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "email_id": "{{[c1be2795-8756-4862-ad94-1d7d2fe751ea].[$item]}}",
+                "mailbox_id": "{{[75c4e364-f202-469e-bcb3-4140fe36e205].[email]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "email_id": {
+                  "description": "ID of email to delete",
+                  "order": 1,
+                  "title": "Email ID",
+                  "type": "string"
+                },
+                "mailbox_id": {
+                  "description": "User mailbox ID to delete from e.g. user@example.com",
+                  "order": 2,
+                  "title": "Mailbox ID",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "mailbox_id",
+                "email_id"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "success": {
+                  "description": "Was delete successful",
+                  "order": 1,
+                  "title": "Success",
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "success"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
             "defaultImageData": "",
             "connectionType": "CONNECTION"
           },
@@ -1318,6 +1423,37 @@
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
             "connectionType": "NONE"
           },
+          "c1be2795-8756-4862-ad94-1d7d2fe751ea": {
+            "nodeId": "c1be2795-8756-4862-ad94-1d7d2fe751ea",
+            "name": "Delete Emails 2",
+            "type": "loop",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "customOutput": [],
+              "innerEdgeId": "f05f0c74-43f1-4c1a-aa6c-b9cc9859d005",
+              "nextEdgeId": "ec54bcef-f96f-4a6f-a1a2-ce7f6604caff",
+              "repeatVariable": "{{[ff066138-0d02-4a61-afb4-f7148af31434].[email_list]}}"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": {
+              "properties": {
+                "$outputs": {
+                  "items": {
+                    "properties": {},
+                    "type": "object"
+                  },
+                  "title": "$outputs",
+                  "type": "array"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/loop.svg",
+            "connectionType": "NONE"
+          },
           "c5cce12b-3672-4d99-83be-9df69fd3794c": {
             "nodeId": "c5cce12b-3672-4d99-83be-9df69fd3794c",
             "name": "Workflow Completed without Delete",
@@ -1327,7 +1463,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "Workflow Completed\n\nEmails were not deleted.",
+                "message": "📧  Workflow Completed  📧 \n\nEmails were not deleted.❗",
                 "recipient": "@{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[user]}}",
                 "thread_ts": "{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[timestamp]}}"
               }
@@ -1410,6 +1546,80 @@
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
             "connectionType": "NONE"
           },
+          "cfb0da23-e667-4969-a80e-6ef5775faa87": {
+            "nodeId": "cfb0da23-e667-4969-a80e-6ef5775faa87",
+            "name": "Workflow Complete Manual Delete",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": "📧  Emails deleted successfully  📧 \n\nWorkflow Complete ✅",
+                "recipient": "@{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[user]}}",
+                "thread_ts": "{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[timestamp]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 4,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 3,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                },
+                "thread_ts": {
+                  "description": "Select timestamp output variable from parent message step",
+                  "order": 2,
+                  "title": "To post in a thread, select parent message timestamp",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
+          },
           "fa588e39-aba7-4a3a-bcac-bcea4e80ff74": {
             "nodeId": "fa588e39-aba7-4a3a-bcac-bcea4e80ff74",
             "name": "No Emails Found Message",
@@ -1419,7 +1629,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "No mails found. \n\nWorkflow Complete",
+                "message": "📧  No mails found  📧 \n\nWorkflow Complete ❗",
                 "recipient": "{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[user]}}",
                 "thread_ts": "{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[ts]}}"
               }
