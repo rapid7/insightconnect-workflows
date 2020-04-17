@@ -1,0 +1,25 @@
+extension: workflow
+products: ["insightconnect"]
+name: GeoIP_Lookup_with_Slack
+title: "GeoIP Lookup with Slack"
+description: This workflow accepts a Slack command, and performs a GeoIP lookup using the IPStack plugin
+version: 1.0.0
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [data_enrichment, threat_detection_and_response]
+  keywords: [geoip, location, chat, chatops, work_from_home, phishing]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/GeoIP_Lookup_with_Slack
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+  - name: slack1.png
+    title: Completed Job In Slack with Valid Input
+  - name: slack2.png
+    title: Completed Job In Slack, Invalid input
+  - name: artifact.png
+    title: Successful Workflow Job
+  - name: workflow.png
+    title: Workflow View
