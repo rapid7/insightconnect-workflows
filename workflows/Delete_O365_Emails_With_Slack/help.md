@@ -45,7 +45,7 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Microsoft Office 365 Email|4.1.1|2|
+|Microsoft Office 365 Email|4.1.1|3|
 |Python 3 Script|2.0.1|2|
 
 ## Troubleshooting
@@ -54,6 +54,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.4 - Update to remove join step
 * 1.0.3 - Fix name matching
 * 1.0.2 - Fix filename
 * 1.0.1 - Fix to Slack input command to standardize with leading exclamation point
