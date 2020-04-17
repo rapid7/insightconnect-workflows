@@ -2,8 +2,8 @@ extension: workflow
 products: ["insightconnect"]
 name: Open_Source_Indicator_Enrichment_with_Slack
 title: "Open Source Indicator Enrichment with Slack"
-description: "This workflow triggers from directly slack messaging the chatbot to \"!investigate\" the defined indicator. This workflow supports automatically looking up URLs, IPs, and hashs in open source threat intelligence such as Dig DNS and Whois. Lastly, the workflow will post back results to the specific user."
-version: 1.0.0
+description: "Look up and enrich URLs, IP addresses, and hashes directly from Slack using open source threat intelligence tools such as Dig DNS and Whois."
+version: 1.0.1
 vendor: rapid7
 support: rapid7
 status: []
@@ -16,11 +16,11 @@ resources:
   license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
   screenshots:
   - name: artifact1.png
-    title: Example Artifact for an URL Enrichment
+    title: Example Artifact for URL Enrichment
   - name: artifact2.png
-    title: Example Artifact for an IP Enrichment
+    title: Example Artifact for IP Enrichment
   - name: artifact3.png
-    title: Example Artifact for a Hash Enrichment
+    title: Example Artifact for Hash Enrichment
   - name: workflow1.png
     title: Workflow View
   - name: slack1.png
