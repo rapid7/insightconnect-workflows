@@ -5,10 +5,10 @@
     "exportedAt": "2020-04-17T21:57:54.40297391Z",
     "workflowVersions": [
       {
-        "name": "Suspend AD/LDAP User from Slack",
+        "name": "Suspend Active Directory LDAP User from Slack",
         "type": "runnable",
         "version": "",
-        "description": "Suspend an AD/LDAP user from Slack.\n\nSample Slack command:\n\n`!suspend_ad_user <user>`\n",
+        "description": "Suspend an Active Directory LDAP user from Slack.\n\nSample Slack command:\n\n`!suspend_ad_user <user>`\n",
         "graph": {
           "edges": {
             "015ddf3d-152b-4944-8211-8a5f90212e84": {
