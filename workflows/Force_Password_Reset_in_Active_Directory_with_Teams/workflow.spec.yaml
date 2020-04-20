@@ -1,7 +1,7 @@
 extension: workflow
 products: ["insightconnect"]
 name: Force_Password_Reset_in_Active_Directory_with_Microsoft_Teams
-title: "Force Password Reset in Active Directory with Teams"
+title: "Force Password Reset in Active Directory with Microsoft Teams"
 description: "Force an Active Directory user password reset from Microsoft Teams."
 version: 1.0.0
 vendor: rapid7
