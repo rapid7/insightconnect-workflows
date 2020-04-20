@@ -1,11 +1,12 @@
 # Description
 
-Look up and enrich URLs, IP addresses, and hashes directly from Slack using open source threat intelligence tools
-such as Dig, DNS and Whois.
+Threat Intelligence doesn’t have to come with a cost. This workflow uses open-source intelligence (OSINT) to perform domain lookups, header analysis, hash analysis, and more directly from Slack or Microsoft Teams. Just connect Slack and activate this instant indicator enrichment workflow.
 
 # Key Features
 
-* IP address, URL, and hash enrichment from Slack
+* **Automation in Minutes** - Get your first automation workflow up and running in minutes with this connectionless enrichment workflow.
+* **Investigate Indicators at Scale** - Manually investigating every reported phishing attempt is extremely difficult to scale. Automatic analysis of common phishing IOCs reduces the overhead associated with every reported incident.
+* **Shorten the Investigation Timeline** - Manage timely responses to real attacks by eliminating the investigation of false positives and spam. If the URLs are found to be malicious, pivot seamlessly to incident response.
 
 # Requirements
 
@@ -41,6 +42,7 @@ what appear to be valid commands. It is recommended to avoid copying & pasting c
 
 # Version History
 
+* 1.0.2 - Updated Workflow Title, Description, and Key Features
 * 1.0.1 - Update help document
 * 1.0.0 - Initial workflow
 
