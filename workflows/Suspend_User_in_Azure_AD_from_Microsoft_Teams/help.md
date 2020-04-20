@@ -28,7 +28,7 @@ Once the workflow is successfully imported, edit each Microsoft Teams step to re
 To run the workflow, in the channel you are monitoring enter the following:
 `!disable_user <user_email>`. 
 
-Your Slack chat bot will reply when the workflow completes.
+Your chat bot will reply when the workflow completes.
 
 ## Technical Details
 
