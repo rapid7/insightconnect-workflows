@@ -30,4 +30,4 @@ resources:
   - name: teams3.png
     title: Example Teams Output for IP Enrichment
   - name: teams4.png
-    title: Example Teams Output for Help Enrichment
+    title: Example Teams Output for Help
