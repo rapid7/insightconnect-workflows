@@ -5,7 +5,7 @@ such as Dig, DNS, and Whois.
 
 # Key Features
 
-* IP address, URL, and hash enrichment from Teams
+* IP address, URL, and hash enrichment from Microsoft Teams
 
 # Requirements
 
