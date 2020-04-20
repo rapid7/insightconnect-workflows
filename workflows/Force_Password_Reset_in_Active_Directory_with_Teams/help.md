@@ -2,7 +2,7 @@
 
 Force an Active Directory user password reset from Microsoft Teams.
 
-Sample Slack command:
+Sample Microsoft Teams command:
 
 `!reset_password user`
 
