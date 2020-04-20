@@ -5,7 +5,7 @@
     "exportedAt": "2020-04-10T14:05:24.74805623Z",
     "workflowVersions": [
       {
-        "name": "Delete Emails from O365 With Microsoft Teams",
+        "name": "Delete Email in Office365 from Microsoft Teams",
         "type": "runnable",
         "version": "",
         "description": "This workflow will delete emails matching given search criteria by sending a notification to InsightConnect with Microsoft Teams.",
