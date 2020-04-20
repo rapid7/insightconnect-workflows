@@ -18,6 +18,8 @@ Sample Slack Trigger Commands:
 
 ## Setup
 
+Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
+
 Once the workflow has been imported, edit the workflow and setup or select your Slack connection in the _Unshorten URL Slack Trigger_ step.
 
 To run the workflow, @ your Slackbot in the channel along with the command "!unshorten <URL>". The workflow will post a response in a thread.
