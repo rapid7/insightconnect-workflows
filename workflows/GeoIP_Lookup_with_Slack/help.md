@@ -1,15 +1,14 @@
 # Description
 
-This workflow accepts a Slack command containing an IP Address, looks up the IP in the IP Stack Database, and returns
-details about where the IP Address is located on the globe.
+This workflow accepts a Slack command and performs a GeoIP lookup using the IPStack plugin
 
 Sample Slack Trigger Commands:
 
-`@Slack bot !geoip <IP Address>``
+`@Slack bot !geoip <IP Address>`
 
 # Key Features
 
-* Geo-location lookup on an IP Address from Slack
+* Geo-location lookup on an IP address from Slack
 
 # Requirements
 
@@ -38,6 +37,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.1 - Update help
 * 1.0.0 - Initial workflow
 
 # Links
