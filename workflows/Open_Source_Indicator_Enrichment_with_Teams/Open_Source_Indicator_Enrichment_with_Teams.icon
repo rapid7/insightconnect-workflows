@@ -1210,7 +1210,7 @@
             "parameters": {
               "input": {
                 "channel_name": "change_me",
-                "message_content": "This workflow will provide enrichment on URL's IP's and hashs\nCommands should be in the following format:<br>\n<br>\n!investigate \"command\" \"data\" <br>\n<br>\nexamples:<br>\n!investigate url rapid7.com<br>\n<br>\n!investigate ip 198.51.100.100<br>\n<br>\n!investigate hash 009f1e9b72cfb6daa3de82093a755bdb3685e0eb",
+                "message_content": "This workflow will provide enrichment on URLs, IP addresses, and hashes\nCommands should be in the following format:<br>\n<br>\n!investigate \"command\" \"data\" <br>\n<br>\nexamples:<br>\n!investigate url rapid7.com<br>\n<br>\n!investigate ip 198.51.100.100<br>\n<br>\n!investigate hash 009f1e9b72cfb6daa3de82093a755bdb3685e0eb",
                 "team_name": "change_me"
               }
             },
