@@ -24,11 +24,11 @@ Sample Slack Trigger Commands:
 
 ## Setup
 
-Once the workflow has been downloaded, login to InsightConnect and "Import" it into the workflow builder.
-After import, you will initially be prompted to configure the connection for slack.
+Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-To run the workflow, @ your Slackbot in any channel or in a direct message along with
-the command `!investigate <command> <data>`. Example: `!investigate ip 8.8.8.8`
+After import, you will need to activate the workflow in order to trigger it.
+
+To run the workflow, @ your Slackbot in any channel or in a direct message along with the command `!investigate <command> <data>`. Example: `!investigate ip 8.8.8.8`
 
 Alternatively, use `!investigate help` for more information and examples. The workflow will post with the results of the lookup.
 
