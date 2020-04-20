@@ -21,7 +21,7 @@ Sample Slack command:
 
 Once the workflow has been downloaded, login to InsightConnect and "Import" it into the workflow builder.
 After import, you will initially be prompted to configure the connection for Microsoft Teams and Microsoft Active Directory.
-You will then need to configure the Teams trigger and actions.
+You will then need to configure the Microsoft Teams trigger and actions.
 In the Team and chanel inputs replace `change_me` with the appropriate team and channel.
 
 To run the workflow, in the configured channel and enter the command `!reset_password <username>`.
