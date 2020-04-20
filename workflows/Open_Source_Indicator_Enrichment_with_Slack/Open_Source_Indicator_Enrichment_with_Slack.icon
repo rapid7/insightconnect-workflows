@@ -5,7 +5,7 @@
     "exportedAt": "2020-04-16T18:46:29.430994625Z",
     "workflowVersions": [
       {
-        "name": "Open Source Intelligence (OSINT) Indicator Enrichment from Slack",
+        "name": "Open Source Intelligence (OSINT) Indicator Enrichment with Slack",
         "type": "runnable",
         "version": "",
         "description": "This workflow triggers from directly slack messaging the chatbot to \\\"!investigate\\\" the defined indicator. This workflow supports automatically looking up URLs, IPs, and hashs in open source threat intelligence such as Dig DNS and Whois. Lastly, the workflow will post back results to the specific user.\n",
