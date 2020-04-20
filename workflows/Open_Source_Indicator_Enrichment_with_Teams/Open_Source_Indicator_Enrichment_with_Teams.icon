@@ -5,7 +5,7 @@
     "exportedAt": "2020-04-20T14:55:53.986661133Z",
     "workflowVersions": [
       {
-        "name": "Open_Source_Indicator_Enrichment_with_Teams",
+        "name": "Open Source Indicator Enrichment with Teams",
         "type": "runnable",
         "version": "",
         "description": "",
