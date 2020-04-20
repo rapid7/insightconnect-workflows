@@ -1,6 +1,6 @@
 # Description
 
-Understanding the scope of a phishing campaign is critical to ensuring no one in your organization takes the bait. This workflow runs a search from Microsoft Teams and purges emails across Office365 inboxes.
+Understanding the scope of a phishing campaign is critical to ensuring no one in your organization takes the bait. This workflow runs a search from a command in Microsoft Teams and purges emails across Office365 inboxes.
 
 Sample Trigger Commands:
 
