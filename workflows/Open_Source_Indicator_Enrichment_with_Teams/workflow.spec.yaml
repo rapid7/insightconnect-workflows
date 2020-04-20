@@ -24,7 +24,7 @@ resources:
   - name: workflow1.png
     title: Workflow View
   - name: teams1.png
-    title: Example Teams Output for URL
+    title: Example Teams Output for URL Enrichment
   - name: teams2.png
     title: Example Teams Output for Hash Enrichment
   - name: teams3.png
