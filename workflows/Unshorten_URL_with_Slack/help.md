@@ -8,7 +8,7 @@ Sample Slack Trigger Commands:
 
 # Key Features
 
-* Lookup full URL from Slack
+* Lookup full URL with Slack
 
 # Requirements
 
@@ -37,6 +37,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.2 - Fix image clarity | Fix documenation URL | Added keywords
 * 1.0.1 - Fix image filename
 * 1.0.0 - Initial workflow
 
