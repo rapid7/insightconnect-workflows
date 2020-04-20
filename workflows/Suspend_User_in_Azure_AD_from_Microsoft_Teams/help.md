@@ -2,7 +2,7 @@
 
 Disabling a compromised account can limit the scope of an attack and buy valuable time to investigate and contain the threat. This workflow disables an Azure account straight from Microsoft Teams.
 
-Sample Slack Trigger Commands:
+Sample Trigger Commands:
 
 `@Rapid7 InsightConnect !disable_user user@example.com`
 
@@ -55,4 +55,4 @@ _There is no troubleshooting information at this time_
 ## References
 
 * [Azure AD](https://azure.microsoft.com/en-us/services/active-directory/)
-* [Slack](https://slack.com)
+* [Microsoft Teams](https://products.office.com/en-us/microsoft-teams/group-chat-software)
