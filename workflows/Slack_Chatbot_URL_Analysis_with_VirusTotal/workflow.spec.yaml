@@ -1,8 +1,8 @@
 extension: workflow
 products: ["insightconnect"]
 name: Slack_Chatbot_URL_Analysis_with_VirusTotal
-title: "Slack Chatbot URL Analysis with VirusTotal"
-description: Initiate and receive VirusTotal URL scan reports with the Slack chatbot.
+title: "Enrich URL from Slack"
+description: "Use VirusTotal to look up and enrich URLs directly from Slack."
 version: 1.0.2
 vendor: rapid7
 support: rapid7

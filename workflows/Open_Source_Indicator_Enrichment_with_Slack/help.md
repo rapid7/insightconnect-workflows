@@ -2,6 +2,14 @@
 
 Threat Intelligence doesn’t have to come with a cost. This workflow uses open-source intelligence (OSINT) to perform domain lookups, header analysis, hash analysis, and more directly from Slack or Microsoft Teams. Just connect Slack and activate this instant indicator enrichment workflow.
 
+Sample Slack Trigger Commands:
+
+`@Security Bot !investigate ip 8.8.8.8`
+
+`@Security Bot !investigate url badsite.com`
+
+`@Security Bot !investigate hash 36c5012e100c8e91221e9891cad37df0cac938cee1e8f69b6fdf99821cb05339`
+
 # Key Features
 
 * **Automation in Minutes** - Get your first automation workflow up and running in minutes with this connectionless enrichment workflow.
