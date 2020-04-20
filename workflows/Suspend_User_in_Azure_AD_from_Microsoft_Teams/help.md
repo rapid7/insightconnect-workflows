@@ -1,6 +1,6 @@
 # Description
 
-Disabling a compromised account can limit the scope of an attack and buy valuable time to investigate and contain the threat. This workflow disables an Azure account straight from Slack or Microsoft Teams.
+Disabling a compromised account can limit the scope of an attack and buy valuable time to investigate and contain the threat. This workflow disables an Azure account straight from Microsoft Teams.
 
 Sample Slack Trigger Commands:
 
