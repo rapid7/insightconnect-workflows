@@ -1113,7 +1113,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "analysis for:  {{[bb63cb06-20d4-4166-b3c1-3abdd048da68].[argument]}}\n\n*WhoIs Results*\nDomain Name: {{[1ecb5f27-5497-4bc6-96dc-d25e40830738].[name]}}\nDomain Registrar: {{[1ecb5f27-5497-4bc6-96dc-d25e40830738].[registrar]}}\nDomain Creation Date: {{[1ecb5f27-5497-4bc6-96dc-d25e40830738].[creation_date]}}\nDomain Last Updated: {{[1ecb5f27-5497-4bc6-96dc-d25e40830738].[last_updated]}}\nRegistrar Abuse Contact: {{[1ecb5f27-5497-4bc6-96dc-d25e40830738].[registrar_abuse_contact_email]}}"
+                "content": "Analysis for: {{[bb63cb06-20d4-4166-b3c1-3abdd048da68].[argument]}}\n\n*WhoIs Results*\nDomain Name: {{[1ecb5f27-5497-4bc6-96dc-d25e40830738].[name]}}\nDomain Registrar: {{[1ecb5f27-5497-4bc6-96dc-d25e40830738].[registrar]}}\nDomain Creation Date: {{[1ecb5f27-5497-4bc6-96dc-d25e40830738].[creation_date]}}\nDomain Last Updated: {{[1ecb5f27-5497-4bc6-96dc-d25e40830738].[last_updated]}}\nRegistrar Abuse Contact: {{[1ecb5f27-5497-4bc6-96dc-d25e40830738].[registrar_abuse_contact_email]}}"
               },
               "type": "markdown"
             },
