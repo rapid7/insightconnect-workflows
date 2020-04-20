@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: GeoIP_Lookup_with_Slack
 title: "GeoIP Lookup with Slack"
 description: This workflow accepts a Slack command and performs a GeoIP lookup using the IPStack plugin
-version: 1.0.0
+version: 1.0.1
 vendor: rapid7
 support: rapid7
 status: []
