@@ -1,6 +1,6 @@
 # Description
 
-Understanding the scope of a phishing campaign is critical to ensuring no one in your organization takes the bait. This workflow runs a search from Slack or Microsoft Teams and purges emails across Office365 inboxes.
+Understanding the scope of a phishing campaign is critical to ensuring no one in your organization takes the bait. This workflow runs a search from Microsoft Teams and purges emails across Office365 inboxes.
 
 Sample Trigger Commands:
 
@@ -13,7 +13,7 @@ Sample Trigger Commands:
 
 * **Know the Blast Radius** - More often than not with phishing attacks, where there’s one email, there’s many. Quickly find all users affected by the same campaign.
 * **Eliminate the Threat** - Once a phishing message is verified, automatically remove that message from every inbox in your organization.
-* **Rapidly Respond** - Every second wasted adds more risk to your environment. Rather than hopping from tool to tool to respond, take action directly from Slack or Microsoft Teams.
+* **Rapidly Respond** - Every second wasted adds more risk to your environment. Rather than hopping from tool to tool to respond, take action directly from Microsoft Teams.
 
 # Requirements
 
