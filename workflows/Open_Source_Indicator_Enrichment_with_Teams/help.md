@@ -9,7 +9,7 @@ such as Dig, DNS and Whois.
 
 # Requirements
 
-* * [Microsoft Teams](https://insightconnect.help.rapid7.com/docs/microsoft-teams)
+* [Microsoft Teams](https://insightconnect.help.rapid7.com/docs/microsoft-teams)
 
 # Documentation
 
@@ -33,7 +33,7 @@ Plugins utilized by workflow:
 |----|----|--------|
 |Dig|1.0.3|1|
 |Team Cymru MHR|1.0.3|1|
-|Teams|2.0.2|5|
+|Microsoft Teams|2.0.2|6|
 |WHOIS|1.0.7|2|
 
 ## Troubleshooting
