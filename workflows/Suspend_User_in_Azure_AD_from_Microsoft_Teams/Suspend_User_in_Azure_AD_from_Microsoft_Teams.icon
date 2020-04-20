@@ -5,10 +5,10 @@
     "exportedAt": "2020-04-16T22:00:33.819803044Z",
     "workflowVersions": [
       {
-        "name": "Suspend User in Azure AD from Microsoft Teams",
+        "name": "Disable User in Azure AD from Microsoft Teams",
         "type": "runnable",
         "version": "",
-        "description": "This workflow suspends a specified user in Azure AD",
+        "description": "This workflow disables a specified user in Azure AD",
         "graph": {
           "edges": {
             "170841e0-eaec-485e-bb8e-d68282137e08": {
@@ -22,7 +22,7 @@
             "1b05c40a-ace9-48ce-a2f8-cbd9f91bb6c2": {
               "id": "1b05c40a-ace9-48ce-a2f8-cbd9f91bb6c2",
               "name": "Failure",
-              "description": "Suspend user failed",
+              "description": "Disable user failed",
               "parentNodeId": "",
               "fromNodeId": "234d2459-50a4-4df9-b28c-5ab803169edb",
               "toNodeId": "202ca8d0-e9b1-4201-9045-f5592119f39a"
@@ -38,7 +38,7 @@
             "24142287-78c2-43e6-8700-02307375bb91": {
               "id": "24142287-78c2-43e6-8700-02307375bb91",
               "name": "Success",
-              "description": "Suspend user was successful",
+              "description": "Disable user was successful",
               "parentNodeId": "",
               "fromNodeId": "234d2459-50a4-4df9-b28c-5ab803169edb",
               "toNodeId": "c9d69bbe-6efb-48b6-bd0f-52608e4afce1"
@@ -149,7 +149,7 @@
             "parameters": {
               "input": {
                 "channel_name": "Komand Test Channel",
-                "message_content": "🔒 Azure AD Suspend User Request for {{[f43420db-cc40-43e3-a956-c5f4f1dde131].[emails].[0]}} 🔒<br>\n<br>\n<b>User suspension request failed!</b> ❗",
+                "message_content": "🔒 Azure AD Disable User Request for {{[f43420db-cc40-43e3-a956-c5f4f1dde131].[emails].[0]}} 🔒<br>\n<br>\n<b>User suspension request failed!</b> ❗",
                 "team_name": "Komand-Test-Everyone"
               }
             },
@@ -358,7 +358,7 @@
           },
           "8c981215-af83-47b7-ad86-cd87167f4666": {
             "nodeId": "8c981215-af83-47b7-ad86-cd87167f4666",
-            "name": "Suspend User Account",
+            "name": "Disable User Account",
             "type": "action",
             "plugin": {
               "name": "Azure AD Admin",
@@ -411,7 +411,7 @@
           },
           "ad74de90-4bb6-45ce-bb06-9e24d5325de5": {
             "nodeId": "ad74de90-4bb6-45ce-bb06-9e24d5325de5",
-            "name": "Start Suspend Message",
+            "name": "Start Disable Message",
             "type": "action",
             "plugin": {
               "name": "Microsoft Teams",
@@ -426,7 +426,7 @@
             "parameters": {
               "input": {
                 "channel_name": "Komand Test Channel",
-                "message_content": "🔒 Attempting to suspend: {{[c6762d69-11fc-4e77-903f-e50b87cfb31f].[content]}} 🔒",
+                "message_content": "🔒 Attempting to disable: {{[c6762d69-11fc-4e77-903f-e50b87cfb31f].[content]}} 🔒",
                 "team_name": "Komand-Test-Everyone"
               }
             },
@@ -581,7 +581,7 @@
           },
           "ba543f89-2915-4c4a-ab02-68d0531e35d1": {
             "nodeId": "ba543f89-2915-4c4a-ab02-68d0531e35d1",
-            "name": "Suspend User Teams Trigger",
+            "name": "Disable User Teams Trigger",
             "type": "trigger",
             "plugin": {
               "name": "Microsoft Teams",
@@ -596,7 +596,7 @@
             "parameters": {
               "input": {
                 "channel_name": "Komand Test Channel",
-                "message_content": "!suspend_user",
+                "message_content": "!disable_user",
                 "team_name": "Komand-Test-Everyone"
               }
             },
@@ -784,7 +784,7 @@
             "parameters": {
               "input": {
                 "channel_name": "Komand Test Channel",
-                "message_content": "🔒 Azure AD Suspend User Request for {{[f43420db-cc40-43e3-a956-c5f4f1dde131].[emails].[0]}} 🔒<br>\n<br>\n<b>User suspension request succeeded!</b> ✅",
+                "message_content": "🔒 Azure AD Disable User Request for {{[f43420db-cc40-43e3-a956-c5f4f1dde131].[emails].[0]}} 🔒<br>\n<br>\n<b>User suspension request succeeded!</b> ✅",
                 "team_name": "Komand-Test-Everyone"
               }
             },
@@ -1063,11 +1063,11 @@
       {
         "id": "f535360d-802c-4a4b-aa70-8e4799b3d545",
         "identifier": "new_message_received",
-        "name": "Suspend User Teams Trigger",
+        "name": "Disable User Teams Trigger",
         "description": "",
         "input": {
           "channel_name": "Komand Test Channel",
-          "message_content": "!suspend_user",
+          "message_content": "!disable_user",
           "team_name": "Komand-Test-Everyone"
         },
         "inputJsonSchema": {
