@@ -45,7 +45,7 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Microsoft Teams|2.0.1|7|
+|Microsoft Teams|2.0.2|7|
 |Microsoft Office365 Email Security|2.2.1|2|
 |Python 3 Script|2.0.1|2|
 |HTML|1.2.1|1|
@@ -56,6 +56,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.1 - Update to Microsoft Teams 2.0.2
 * 1.0.0 - Initial workflow
 
 # Links
