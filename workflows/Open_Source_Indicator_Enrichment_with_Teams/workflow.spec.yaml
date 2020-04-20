@@ -24,10 +24,10 @@ resources:
   - name: workflow1.png
     title: Workflow View
   - name: teams1.png
-    title: Example Teams Output for URL Enrichment
+    title: Example Microsoft Teams Output for URL Enrichment
   - name: teams2.png
-    title: Example Teams Output for Hash Enrichment
+    title: Example Microsoft Teams Output for Hash Enrichment
   - name: teams3.png
-    title: Example Teams Output for IP Enrichment
+    title: Example Microsoft Teams Output for IP Enrichment
   - name: teams4.png
-    title: Example Teams Output for Help
+    title: Example Microsoft Teams Output for Help

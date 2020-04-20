@@ -2,13 +2,13 @@
   "kom": {
     "komandVersion": "1.49.0-0-gc013d",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-04-20T14:55:53.986661133Z",
+    "exportedAt": "2020-04-20T15:57:28.769476994Z",
     "workflowVersions": [
       {
         "name": "Open Source Indicator Enrichment with Teams",
         "type": "runnable",
         "version": "",
-        "description": "",
+        "description": "Look up and enrich URLs, IP addresses, and hashes directly from Teams using open source threat intelligence tools such as Dig DNS and Whois.",
         "graph": {
           "edges": {
             "034f847e-17a5-4345-9bba-dc41fe14bef3": {
@@ -412,7 +412,7 @@
           },
           "26b0afac-ca64-4f1c-99bf-22bd73b3c93f": {
             "nodeId": "26b0afac-ca64-4f1c-99bf-22bd73b3c93f",
-            "name": "Teams Message",
+            "name": "Microsoft Teams Message",
             "description": "Trigger on MS Teams message\nE.X. !investigate <Command> <data>",
             "type": "trigger",
             "plugin": {
@@ -432,7 +432,7 @@
                 "team_name": "change_me"
               }
             },
-            "triggerId": "71f3e402-df5c-4d35-96eb-16138c4c8276",
+            "triggerId": "73e70613-908f-494b-9c67-ffadf2107385",
             "defaultInputJSONSchema": {
               "properties": {
                 "channel_name": {
@@ -1125,45 +1125,13 @@
           },
           "7e7c6240-eaf5-4acb-86fc-bf6ecbe5c505": {
             "nodeId": "7e7c6240-eaf5-4acb-86fc-bf6ecbe5c505",
-            "name": "Teams Command",
+            "name": "Microsoft Teams Command",
             "type": "automated_decision",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "defaultEdgeId": "4846e7e7-4b0e-40a8-8472-c65b0737acf0",
               "stepControlParams": [
-                {
-                  "edgeId": "2bd82c50-23f9-46b1-ab80-73d22b70c95c",
-                  "expression": {
-                    "left": {
-                      "name": "bb63cb06-20d4-4166-b3c1-3abdd048da68.command",
-                      "type": "variable"
-                    },
-                    "op": "=",
-                    "right": {
-                      "type": "literal",
-                      "value": "url"
-                    },
-                    "type": "binary"
-                  },
-                  "expressionText": "{{[bb63cb06-20d4-4166-b3c1-3abdd048da68].[command]}} = \"url\""
-                },
-                {
-                  "edgeId": "9206e58d-b830-420e-95d9-117776283715",
-                  "expression": {
-                    "left": {
-                      "name": "bb63cb06-20d4-4166-b3c1-3abdd048da68.command",
-                      "type": "variable"
-                    },
-                    "op": "=",
-                    "right": {
-                      "type": "literal",
-                      "value": "ip"
-                    },
-                    "type": "binary"
-                  },
-                  "expressionText": "{{[bb63cb06-20d4-4166-b3c1-3abdd048da68].[command]}} = \"ip\""
-                },
                 {
                   "edgeId": "2046d2e6-db95-46e3-8153-aad224de4b92",
                   "expression": {
@@ -1181,9 +1149,41 @@
                   "expressionText": "{{[bb63cb06-20d4-4166-b3c1-3abdd048da68].[command]}} = \"hash\""
                 },
                 {
+                  "edgeId": "2bd82c50-23f9-46b1-ab80-73d22b70c95c",
+                  "expression": {
+                    "left": {
+                      "name": "bb63cb06-20d4-4166-b3c1-3abdd048da68.command",
+                      "type": "variable"
+                    },
+                    "op": "=",
+                    "right": {
+                      "type": "literal",
+                      "value": "url"
+                    },
+                    "type": "binary"
+                  },
+                  "expressionText": "{{[bb63cb06-20d4-4166-b3c1-3abdd048da68].[command]}} = \"url\""
+                },
+                {
                   "edgeId": "4846e7e7-4b0e-40a8-8472-c65b0737acf0",
                   "expression": {},
                   "expressionText": ""
+                },
+                {
+                  "edgeId": "9206e58d-b830-420e-95d9-117776283715",
+                  "expression": {
+                    "left": {
+                      "name": "bb63cb06-20d4-4166-b3c1-3abdd048da68.command",
+                      "type": "variable"
+                    },
+                    "op": "=",
+                    "right": {
+                      "type": "literal",
+                      "value": "ip"
+                    },
+                    "type": "binary"
+                  },
+                  "expressionText": "{{[bb63cb06-20d4-4166-b3c1-3abdd048da68].[command]}} = \"ip\""
                 }
               ]
             },
@@ -1449,7 +1449,7 @@
           },
           "bb63cb06-20d4-4166-b3c1-3abdd048da68": {
             "nodeId": "bb63cb06-20d4-4166-b3c1-3abdd048da68",
-            "name": "Extract Teams Command",
+            "name": "Extract Microsoft Teams Command",
             "type": "pattern_match",
             "continueOnFailure": false,
             "isDisabled": false,
@@ -1936,9 +1936,9 @@
     ],
     "triggers": [
       {
-        "id": "71f3e402-df5c-4d35-96eb-16138c4c8276",
+        "id": "73e70613-908f-494b-9c67-ffadf2107385",
         "identifier": "new_message_received",
-        "name": "Teams Message",
+        "name": "Microsoft Teams Message",
         "description": "Trigger on MS Teams message\nE.X. !investigate <Command> <data>",
         "input": {
           "channel_name": "change_me",
