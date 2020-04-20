@@ -32,6 +32,7 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
+|Microsoft Teams|2.0.2|4|
 |Active Directory LDAP|3.2.8|2|
 
 ## Troubleshooting
