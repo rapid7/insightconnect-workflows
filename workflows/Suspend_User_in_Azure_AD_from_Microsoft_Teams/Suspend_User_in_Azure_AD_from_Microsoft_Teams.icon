@@ -5,7 +5,7 @@
     "exportedAt": "2020-04-16T22:00:33.819803044Z",
     "workflowVersions": [
       {
-        "name": "Disable User in Azure AD from Microsoft Teams",
+        "name": "Disable User in Azure AD with Microsoft Teams",
         "type": "runnable",
         "version": "",
         "description": "This workflow disables a specified user in Azure AD",
