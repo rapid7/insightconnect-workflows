@@ -24,7 +24,7 @@ After import, you will initially be prompted to configure the connection for Mic
 You will then need to configure the Microsoft Teams trigger and actions.
 In the "Team" and "Channel" inputs replace `change_me` with the appropriate team and channel.
 
-To run the workflow, in the configured channel and enter the command `!reset_password <username>`.
+To run the workflow, send a message of `!reset_password <username>` in the configured channel.
 
 ## Technical Details
 
