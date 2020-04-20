@@ -1,6 +1,6 @@
 # Description
 
-Initiate Azure AD password resets from Microsoft Teams.
+Reset a user's password straight from Microsoft Teams. Respond quickly, albeit to contain a potential threat or to reset another user's locked out account.
 
 Sample Microsoft Teams Trigger Commands:
 
@@ -8,23 +8,27 @@ Sample Microsoft Teams Trigger Commands:
 
 # Key Features
 
-* Reset an Azure AD user password directly from Microsoft Teams
+* **Break the Kill Chain** - Credentials provide attackers with easy access to numerous targets. Disabling a compromised account or forcing a password reset can quickly and effectively interrupt an attacker’s kill chain.
+* **Minimize Disruption to the User** - Forcing a user to reset their password is a small inconvenience compared to re-imaging their entire system. Acting fast can save valuable time and teach a valuable lesson without a noticeable impact to your business.
+* **Make Persistence Inconsistent** - Attackers love using credentials for persistent access to networks or cloud applications. Changing a compromised password is the easiest way to cut off an attacker’s access to your systems and data.
 
 # Requirements
 
-* Microsoft Teams connection
+* [Microsoft Teams](https://insightconnect.help.rapid7.com/docs/microsoft-teams)
 * Azure AD connection
 
 # Documentation
 
 ## Setup
 
-Once the workflow has been imported, edit the workflow and setup or select your Microsoft Teams connection in the _Teams Message_ 
-step and the _Update Teams With Success_ step. In addition, edit the _Reset User Password_ step with your correct Azure AD connection information.
-Each Microsoft Teams step will need the team name and channel name updated as well (edit the input with the preset text of `change_me`).
+Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-To run the workflow, send the command `!reset_password <user_email>` in your configured team and channel.
-The workflow will post after it has completed.
+Once the workflow is successfully imported, edit each Microsoft Teams step to reflect your team name and channel.
+
+To run the workflow, in the channel you are monitoring enter the following:
+`!reset_password <user_email>`. 
+
+The workflow will reply when it has completed.
 
 ## Technical Details
 
@@ -42,6 +46,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.1 - Updated 
 * 1.0.0 - Initial workflow
 
 # Links
