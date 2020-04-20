@@ -20,7 +20,7 @@ After import, you will initially be prompted to configure the connection for Tea
 You will then need to configure the Teams trigger and actions.
 In the Team and chanel inputs replace `change_me` with the appropriate team and channel.
 
-To run the workflow, in the configured channel mention the slackbot and enter the command `!investigate <command> <data>`.
+To run the workflow, in the configured channel enter the command `!investigate <command> <data>`.
  Example: `!investigate ip 8.8.8.8`
 
 Alternatively, use `!investigate help` for more information and examples. The workflow will post with the results of the lookup.
