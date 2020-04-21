@@ -32,7 +32,7 @@ Import the workflow from the Rapid7 Extension Library and proceed through the Im
 Once the workflow is successfully imported, edit each Microsoft Teams step to reflect your team name and channel.
 
 To run the workflow, in the channel you are monitoring enter the following:
-`delete-email user@example.com subject="A phishy email" from="example.com" body="Click here for free stuff"`.
+`!delete-email user@example.com subject="A phishy email" from="example.com" body="Click here for free stuff"`.
 
 The workflow will reply when it has completed.
 
