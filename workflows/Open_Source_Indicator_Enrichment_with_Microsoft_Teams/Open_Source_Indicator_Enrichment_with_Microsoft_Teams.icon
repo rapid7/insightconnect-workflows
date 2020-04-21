@@ -1,14 +1,14 @@
 {
   "kom": {
-    "komandVersion": "1.49.0-0-gc013d",
+    "komandVersion": "1.49.1-0-g76758",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-04-21T15:53:54.301808878Z",
+    "exportedAt": "2020-04-21T21:13:57.990058603Z",
     "workflowVersions": [
       {
         "name": "Open Source Indicator Enrichment with Microsoft Teams",
         "type": "runnable",
         "version": "",
-        "description": "Look up and enrich URLs, IP addresses, and hashes directly from Microsoft Teams using open source threat intelligence tools such as Dig, DNS, and Whois.",
+        "description": "Look up and enrich URLs, IP addresses, and hashes directly from Microsoft Teams using open source threat intelligence tools such as Dig DNS and Whois.",
         "graph": {
           "edges": {
             "034f847e-17a5-4345-9bba-dc41fe14bef3": {
@@ -680,7 +680,7 @@
             "parameters": {
               "input": {
                 "channel_name": "change_me",
-                "message_content": "📔 IP Analysis for {{[bb63cb06-20d4-4166-b3c1-3abdd048da68].[argument]}} 📔<br>\n<br>\n<b>WhoIs</b><br>\nOrg Details<br>\nDomain Name: {{[1ecb5f27-5497-4bc6-96dc-d25e40830738].[name]}}<br>\nDomain Registrar: {{[1ecb5f27-5497-4bc6-96dc-d25e40830738].[registrar]}}<br>\nDomain Creation Date: {{[1ecb5f27-5497-4bc6-96dc-d25e40830738].[creation_date]}}<br>\nDomain Last Updated: {{[1ecb5f27-5497-4bc6-96dc-d25e40830738].[last_updated]}}<br>\nRegistrar Abuse Contact: {{[1ecb5f27-5497-4bc6-96dc-d25e40830738].[registrar_abuse_contact_email]}}",
+                "message_content": "📔 URL Analysis for {{[bb63cb06-20d4-4166-b3c1-3abdd048da68].[argument]}} 📔<br>\n<br>\n<b>WhoIs</b><br>\nOrg Details<br>\nDomain Name: {{[1ecb5f27-5497-4bc6-96dc-d25e40830738].[name]}}<br>\nDomain Registrar: {{[1ecb5f27-5497-4bc6-96dc-d25e40830738].[registrar]}}<br>\nDomain Creation Date: {{[1ecb5f27-5497-4bc6-96dc-d25e40830738].[creation_date]}}<br>\nDomain Last Updated: {{[1ecb5f27-5497-4bc6-96dc-d25e40830738].[last_updated]}}<br>\nRegistrar Abuse Contact: {{[1ecb5f27-5497-4bc6-96dc-d25e40830738].[registrar_abuse_contact_email]}}",
                 "team_name": "change_me"
               }
             },
@@ -850,7 +850,7 @@
             "parameters": {
               "input": {
                 "channel_name": "change_me",
-                "message_content": "📔 hash Analysis for {{[bb63cb06-20d4-4166-b3c1-3abdd048da68].[argument]}}📔<br>\n<br>\n<b>Cymru malware hash</b><br>\nMalicious: {{[9ec9042e-c767-41f5-81eb-9f0106ec411a].[result].[detected]}}<br>\nHash last seen: {{[9ec9042e-c767-41f5-81eb-9f0106ec411a].[result].[last_seen_utc]}}<br>\nResponse Code {{[9ec9042e-c767-41f5-81eb-9f0106ec411a].[result].[response_code]}}<br>",
+                "message_content": "📔 Hash Analysis for: {{[bb63cb06-20d4-4166-b3c1-3abdd048da68].[argument]}}📔<br>\n<br>\n<b>Cymru malware hash</b><br>\nMalicious: {{[9ec9042e-c767-41f5-81eb-9f0106ec411a].[result].[detected]}}<br>\nHash last seen: {{[9ec9042e-c767-41f5-81eb-9f0106ec411a].[result].[last_seen_utc]}}<br>\nResponse Code: {{[9ec9042e-c767-41f5-81eb-9f0106ec411a].[result].[response_code]}}<br>",
                 "team_name": "change_me"
               }
             },
@@ -1292,7 +1292,7 @@
             "parameters": {
               "input": {
                 "channel_name": "change_me",
-                "message_content": "This workflow will provide enrichment on URLs, IP addresses, and hashes\nCommands should be in the following format:<br>\n<br>\n!investigate \"command\" \"data\" <br>\n<br>\nexamples:<br>\n!investigate url rapid7.com<br>\n<br>\n!investigate ip 198.51.100.100<br>\n<br>\n!investigate hash 009f1e9b72cfb6daa3de82093a755bdb3685e0eb",
+                "message_content": "This workflow will provide enrichment on URLs, IP addresses, and hashes.\nCommands should be in the following format:<br>\n<br>\n!investigate \"command\" \"data\" <br>\n<br>\nExamples:<br>\n!investigate url rapid7.com<br>\n<br>\n!investigate ip 198.51.100.100<br>\n<br>\n!investigate hash 009f1e9b72cfb6daa3de82093a755bdb3685e0eb",
                 "team_name": "change_me"
               }
             },
@@ -1546,7 +1546,7 @@
             "parameters": {
               "input": {
                 "channel_name": "change_me",
-                "message_content": "📔 hash Analysis for {{[bb63cb06-20d4-4166-b3c1-3abdd048da68].[argument]}}📔<br>\n<br>\nNo data on the Hash was found",
+                "message_content": "📔 Hash Analysis for: {{[bb63cb06-20d4-4166-b3c1-3abdd048da68].[argument]}}📔<br>\n<br>\nNo data on the hash was found.",
                 "team_name": "change_me"
               }
             },
@@ -1707,7 +1707,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "Cymru malware hash analysis for: {{[bb63cb06-20d4-4166-b3c1-3abdd048da68].[argument]}}\n\nNo Data On the hash was found"
+                "content": "Cymru malware hash analysis for: {{[bb63cb06-20d4-4166-b3c1-3abdd048da68].[argument]}}\n\nNo data on the hash was found."
               },
               "type": "markdown"
             },
@@ -2018,7 +2018,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "Cymru malware hash analysis for: {{[bb63cb06-20d4-4166-b3c1-3abdd048da68].[argument]}}\n\nMalicious: {{[9ec9042e-c767-41f5-81eb-9f0106ec411a].[result].[detected]}}\nHash last seen: {{[9ec9042e-c767-41f5-81eb-9f0106ec411a].[result].[last_seen_utc]}}\nResponse Code {{[9ec9042e-c767-41f5-81eb-9f0106ec411a].[result].[response_code]}}"
+                "content": "Cymru malware hash analysis for: {{[bb63cb06-20d4-4166-b3c1-3abdd048da68].[argument]}}\n\nMalicious: {{[9ec9042e-c767-41f5-81eb-9f0106ec411a].[result].[detected]}}\nHash last seen: {{[9ec9042e-c767-41f5-81eb-9f0106ec411a].[result].[last_seen_utc]}}\nResponse Code: {{[9ec9042e-c767-41f5-81eb-9f0106ec411a].[result].[response_code]}}"
               },
               "type": "markdown"
             },
@@ -2045,7 +2045,7 @@
             "parameters": {
               "input": {
                 "channel_name": "change_me",
-                "message_content": "📔 IP Analysis for {{[bb63cb06-20d4-4166-b3c1-3abdd048da68].[argument]}} 📔<br>\n<br>\n<b>WhoIs</b><br>\nOrg Details<br>\nReg Date : {{[55db8044-0992-415e-b561-bcd83c33a12b].[regdate]}}<br>\nOrg Name : {{[55db8044-0992-415e-b561-bcd83c33a12b].[orgname]}}<br>\nNet Name : {{[55db8044-0992-415e-b561-bcd83c33a12b].[netname]}}<br>\nNet Type : {{[55db8044-0992-415e-b561-bcd83c33a12b].[nettype]}}<br>\nNet Range: {{[55db8044-0992-415e-b561-bcd83c33a12b].[netrange]}}<br>\nLocation Details<br>\nAddress : {{[55db8044-0992-415e-b561-bcd83c33a12b].[address]}}<br>\nCity : {{[55db8044-0992-415e-b561-bcd83c33a12b].[city]}}<br>\nCountry : {{[55db8044-0992-415e-b561-bcd83c33a12b].[country]}}<br>\n\n<b>Dig</b><br>\nQuestion Asked: {{[d005440d-a757-43a2-8e32-0688fccc84d8].[question]}}<br>\nAnswer Received: {{[d005440d-a757-43a2-8e32-0688fccc84d8].[answer]}}<br>\nQuery Status: {{[d005440d-a757-43a2-8e32-0688fccc84d8].[status]}}<br>\nNameserver that Fulfilled Request: {{[d005440d-a757-43a2-8e32-0688fccc84d8].[nameserver]}}",
+                "message_content": "📔 IP Analysis for: {{[bb63cb06-20d4-4166-b3c1-3abdd048da68].[argument]}} 📔<br>\n<br>\n<b>WhoIs</b><br>\nOrg Details<br>\nReg Date: {{[55db8044-0992-415e-b561-bcd83c33a12b].[regdate]}}<br>\nOrg Name: {{[55db8044-0992-415e-b561-bcd83c33a12b].[orgname]}}<br>\nNet Name: {{[55db8044-0992-415e-b561-bcd83c33a12b].[netname]}}<br>\nNet Type: {{[55db8044-0992-415e-b561-bcd83c33a12b].[nettype]}}<br>\nNet Range: {{[55db8044-0992-415e-b561-bcd83c33a12b].[netrange]}}<br>\nLocation Details<br>\nAddress: {{[55db8044-0992-415e-b561-bcd83c33a12b].[address]}}<br>\nCity: {{[55db8044-0992-415e-b561-bcd83c33a12b].[city]}}<br>\nCountry: {{[55db8044-0992-415e-b561-bcd83c33a12b].[country]}}<br>\n<br>\n<b>Dig</b><br>\nQuestion Asked: {{[d005440d-a757-43a2-8e32-0688fccc84d8].[question]}}<br>\nAnswer Received: {{[d005440d-a757-43a2-8e32-0688fccc84d8].[answer]}}<br>\nQuery Status: {{[d005440d-a757-43a2-8e32-0688fccc84d8].[status]}}<br>\nNameserver that Fulfilled Request: {{[d005440d-a757-43a2-8e32-0688fccc84d8].[nameserver]}}",
                 "team_name": "change_me"
               }
             },
