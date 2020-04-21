@@ -8,7 +8,7 @@ Sample trigger commands:
 
 `!delete-email user@example.com subject="A phishy email" delete="True"`
 
-`delete-email user@example.com subject="A phishy email" from="example.com" body="Click here for free stuff"`
+`!delete-email user@example.com subject="A phishy email" from="example.com" body="Click here for free stuff"`
 
 # Key Features
 
