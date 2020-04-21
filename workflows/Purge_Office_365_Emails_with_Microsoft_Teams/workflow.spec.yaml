@@ -2,7 +2,7 @@ extension: workflow
 products: ["insightconnect"]
 name: Purge_Office_365_Emails_with_Microsoft_Teams
 title: "Purge Emails in Office365 with Microsoft Teams"
-description: "This workflow will delete all emails in an Office365 tennant matching given search criteria from an organization using a command issued from Microsoft Teams."
+description: "This workflow will delete all emails in an Office365 tenant matching given search criteria from an organization using a command issued from Microsoft Teams."
 version: 1.0.2
 vendor: rapid7
 support: rapid7
