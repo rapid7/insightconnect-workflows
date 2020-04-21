@@ -1,10 +1,19 @@
 # Description
 
-This workflow will delete all emails matching given search criteria from an organization using a command issued from Microsoft Teams.
+Understanding the scope of a phishing campaign is critical to ensuring no one in your organization takes the bait. This workflow runs a search from a command in Microsoft Teams and purges emails across Office365 inboxes.
+
+Sample Trigger Commands:
+
+`!purge-email subject="A phishy email"`
+
+`!purge-email subject="A phishy email" from="example.com" body="Click here for free stuff" `
+
 
 # Key Features
 
-* A simple command sent from Microsoft Teams will purge all emails from an organization using an Office 365 compliance search
+* **Know the Blast Radius** - More often than not with phishing attacks, where there’s one email, there’s many. Quickly find all users affected by the same campaign.
+* **Eliminate the Threat** - Once a phishing message is verified, automatically remove that message from every inbox in your organization.
+* **Rapidly Respond** - Every second wasted adds more risk to your environment. Rather than hopping from tool to tool to respond, take action directly from Microsoft Teams.
 
 # Requirements
 
@@ -17,7 +26,14 @@ The following connections will need to be setup:
 
 ## Setup
 
-Once the workflow has been downloaded, login to InsightConnect and “Import” it into the workflow builder. Once imported, you will initially be prompted to configure the connections for each of the plugins.
+Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
+
+Once the workflow is successfully imported, edit each Microsoft Teams step to reflect your team name and channel.
+
+To run the workflow, in the channel you are monitoring enter the following:
+`!purge-email subject="A phishy email" from="example.com" body="Click here for free stuff" `
+
+The workflow will reply when it has completed.
 
 ### Usage
 
@@ -56,6 +72,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.2 - Updated documentation
 * 1.0.1 - Update to Microsoft Teams 2.0.2
 * 1.0.0 - Initial workflow
 
