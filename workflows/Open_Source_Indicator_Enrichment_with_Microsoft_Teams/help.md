@@ -1,6 +1,6 @@
 # Description
 
-Look up and enrich URLs, IP addresses, and hashes directly from Microsoft Teams using open source threat intelligence tools
+Lookup and enrich URLs, IP addresses, and hashes directly from Microsoft Teams using open source threat intelligence tools
 such as Dig, DNS, and Whois.
 
 # Key Features
