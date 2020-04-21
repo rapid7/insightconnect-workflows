@@ -4,7 +4,7 @@ This workflow accepts a Slack command containing a URL, looks up the URL with un
 
 Sample Slack Trigger Commands:
 
-`@Slack bot !unshorten https://bit.ly/39HoYMu`
+`@Slackbot !unshorten https://bit.ly/39HoYMu`
 
 # Key Features
 

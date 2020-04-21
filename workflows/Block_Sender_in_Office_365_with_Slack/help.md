@@ -26,7 +26,7 @@ Active the workflow in order to trigger it from Slack.
 
 ### Usage
 
-To trigger this workflow, @ the Rapid7 InsightConnect bot in slack or send the bot a DM in the following format:
+To trigger this workflow, @ the Slackbot in Slack or send the bot a DM in the following format:
 
 `!block_sender user@example.com`
 

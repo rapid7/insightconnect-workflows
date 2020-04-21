@@ -4,7 +4,7 @@ Disabling a compromised account can limit the scope of an attack and buy valuabl
 
 Sample Trigger Commands:
 
-`@Rapid7 InsightConnect !disable_user user@example.com`
+`!disable_user user@example.com`
 
 # Key Features
 
