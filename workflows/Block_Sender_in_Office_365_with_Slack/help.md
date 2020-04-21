@@ -1,14 +1,14 @@
 # Description
 
-This workflow will block a sender in Office 365 using a command sent from Slack.
+Don’t fall for the same phish twice. This workflow uses a Slack command to block domains and senders in Office 365.
 
 # Key Features
 
-* A simple command sent from Slack will block a malicious email or domain using Microsoft Exchange transport rules (see references section)
+* **Block the Source** - Once the immediate threat has been contained, blocking the source of the phish prevents your organization from being targeted by the same threat actor twice.
+* **Defense Wins Championships** - While you can’t prevent every attack, that doesn’t mean defense isn’t important.
+* **Reduce Portal Fatigue** - You have enough to do without logging into a different solution every 5 minutes. Control your response actions from chat instead.
 
 # Requirements
-
-The following connections will need to be setup: 
 
 * [Slack](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops)
 * [Microsoft Office365 Email Security](https://insightconnect.help.rapid7.com/docs/mass-delete-with-powershell#section-set-up-office-365-dependencies)
@@ -17,13 +17,13 @@ The following connections will need to be setup:
 
 ## Setup
 
-Once the workflow has been downloaded, login to InsightConnect and “Import” it into the workflow builder. Once imported, you will initially be prompted to configure the connections for each of the plugins.
+Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
+
+Active the workflow in order to trigger it from Slack.
 
 ### Usage
 
-This workflow uses the Slack App trigger to listen for key messages and will block a domain or email address when triggered.
-
-To trigger this workflow, in a direct message to the Rapid7 InsightConnect App in slack, send the following message:
+To trigger this workflow, @ the Rapid7 InsightConnect bot in slack or send the bot a DM in the following format:
 
 `!block_sender user@example.com`
 
@@ -46,6 +46,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.2 - Updated documentation
 * 1.0.1 - Fix to Slack input command to standardize with leading exclamation point
 * 1.0.0 - Initial workflow
 
