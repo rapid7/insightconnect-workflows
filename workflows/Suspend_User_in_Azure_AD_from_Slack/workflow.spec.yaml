@@ -1,15 +1,15 @@
 extension: workflow
 products: ["insightconnect"]
 name: Suspend_User_in_Azure_AD_from_Slack
-title: "Suspend User in Azure AD from Slack"
-description: Suspend Azure AD users from Slack.
-version: 1.0.0
+title: "Disable User in Azure AD with Slack"
+description: Disable user account in Azure AD with a command in Slack.
+version: 1.0.1
 vendor: rapid7
 support: rapid7
 status: []
 hub_tags:
   use_cases: [threat_detection_and_response, cloud_security, user_management]
-  keywords: [chat, azure, slack]
+  keywords: [chat, azure, slack, work_from_home, phishing]
   features: []
 resources:
   source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Suspend_User_in_Azure_AD_from_Slack
