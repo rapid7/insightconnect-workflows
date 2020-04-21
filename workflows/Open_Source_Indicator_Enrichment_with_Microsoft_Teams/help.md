@@ -18,9 +18,9 @@ such as Dig, DNS, and Whois.
 Once the workflow has been downloaded, login to InsightConnect and "Import" it into the workflow builder.
 After import, you will initially be prompted to configure the connection for Teams.
 You will then need to configure the Teams trigger and actions.
-In the Team and chanel inputs replace `change_me` with the appropriate team and chanel.
+In the Team and chanel inputs replace `change_me` with the appropriate team and channel.
 
-To run the workflow, in the configured channel  enter the command `!investigate <command> <data>`.
+To run the workflow, in the configured channel enter the command `!investigate <command> <data>`.
  Example: `!investigate ip 8.8.8.8`
 
 Alternatively, use `!investigate help` for more information and examples. The workflow will post with the results of the lookup.
