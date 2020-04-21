@@ -8,7 +8,7 @@
         "name": "Open Source Indicator Enrichment with Microsoft Teams",
         "type": "runnable",
         "version": "",
-        "description": "Look up and enrich URLs, IP addresses, and hashes directly from Microsoft Teams using open source threat intelligence tools such as Dig DNS and Whois.",
+        "description": "Lookup and enrich URLs, IP addresses, and hashes directly from Microsoft Teams using open source threat intelligence tools such as Dig, DNS, and Whois.",
         "graph": {
           "edges": {
             "034f847e-17a5-4345-9bba-dc41fe14bef3": {
