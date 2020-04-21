@@ -1,6 +1,6 @@
 # Description
 
-Understanding the scope of a phishing campaign is critical to ensuring no one in your organization takes the bait. This workflow runs a search from a command in Slack and purges emails across Office365 inboxes.
+Understanding the scope of a phishing campaign is critical to ensuring no one in your organization takes the bait. This workflow runs a search from a command in Slack and purges emails across Microsoft Office 365 inboxes.
 
 Sample Slack Trigger Commands:
 
