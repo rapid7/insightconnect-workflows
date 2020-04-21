@@ -50,7 +50,7 @@ what appear to be valid commands. It is recommended to avoid copying & pasting c
 
 # Version History
 
-* 1.0.2 - Updated Workflow Title, Description, and Key Features
+* 1.0.2 - Updated workflow title, description, and key features
 * 1.0.1 - Update help document
 * 1.0.0 - Initial workflow
 
