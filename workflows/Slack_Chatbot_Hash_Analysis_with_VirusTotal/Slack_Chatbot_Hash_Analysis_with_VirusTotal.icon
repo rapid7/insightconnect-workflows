@@ -5,7 +5,7 @@
     "exportedAt": "2020-04-13T19:15:49.324193354Z",
     "workflowVersions": [
       {
-        "name": "Slack Chatbot Hash Analysis with VirusTotal",
+        "name": "Enrich File Hash with Slack",
         "type": "runnable",
         "version": "",
         "description": "Initiate and receive VirusTotal hash analysis reports with the Slack chatbot.",

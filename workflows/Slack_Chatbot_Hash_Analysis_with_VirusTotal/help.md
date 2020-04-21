@@ -1,6 +1,6 @@
 # Description
 
-Initiate and receive VirusTotal hash scan reports with the Slack chatbot.
+Look up and enrich file hashes in VirusTotal directly from Slack, providing a fast, convenient way to check potential indicators of compromise. 
 
 Sample Slack Trigger Commands:
 
@@ -13,23 +13,20 @@ Sample Slack Trigger Commands:
 
 # Key Features
 
-* Lookup a VirusTotal hash scan
-* Get a VirusTotal scan report with total positive detections and a results permalink in a Slack message
+* **Easily Enrich Indicators** - Investigate suspicious file hashes without leaving the comfort of your Slack window
+* **Respond Rapidly** - Give your teams a head start on shutting down phishing attacks by automating routine tasks during investigations.
 
 # Requirements
 
-* Slack connection
+* [Slack](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops)
 
 # Documentation
 
 ## Setup
 
-Once the workflow has been imported, edit the workflow and setup or select your Slack connection in the _Start Lookup_ 
-step, the _Post Hash Lookup Confirmation_ step, and the _Post Hash Found Scan Report_ and Post Hash Not Found Scan Report steps.
-Each Slack step will need the channel name updated as well (edit the input with the preset text of `change_me`).
+Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-To run the workflow, @ your Slackbot in any channel or in a direct message along with the command "!hash_lookup <hash>".
-The workflow will post when it is starting the lookup and then again with the results of the lookup.
+After importing, activate the workflow in order to trigger it.
 
 ## Technical Details
 
@@ -45,6 +42,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.3 - Updated documentation
 * 1.0.2 - Fix name matching
 * 1.0.1 - Fix filename
 * 1.0.0 - Initial workflow
