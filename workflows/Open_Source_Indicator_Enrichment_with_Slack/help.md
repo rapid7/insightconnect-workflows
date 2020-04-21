@@ -1,11 +1,20 @@
 # Description
 
-Look up and enrich URLs, IP addresses, and hashes directly from Slack using open source threat intelligence tools
-such as Dig, DNS and Whois.
+Threat Intelligence doesn’t have to come with a cost. This workflow uses open-source intelligence (OSINT) to perform domain lookups, header analysis, hash analysis, and more directly from Slack. Just connect Slack and activate this instant indicator enrichment workflow.
+
+Sample Slack Trigger Commands:
+
+`@Security Bot !investigate ip 8.8.8.8`
+
+`@Security Bot !investigate url badsite.com`
+
+`@Security Bot !investigate hash 36c5012e100c8e91221e9891cad37df0cac938cee1e8f69b6fdf99821cb05339`
 
 # Key Features
 
-* IP address, URL, and hash enrichment from Slack
+* **Automation in Minutes** - Get your first automation workflow up and running in minutes with this connectionless enrichment workflow.
+* **Investigate Indicators at Scale** - Manually investigating every reported phishing attempt is extremely difficult to scale. Automatic analysis of common phishing IOCs reduces the overhead associated with every reported incident.
+* **Shorten the Investigation Timeline** - Manage timely responses to real attacks by eliminating the investigation of false positives and spam. If the URLs are found to be malicious, pivot seamlessly to incident response.
 
 # Requirements
 
@@ -15,11 +24,11 @@ such as Dig, DNS and Whois.
 
 ## Setup
 
-Once the workflow has been downloaded, login to InsightConnect and "Import" it into the workflow builder.
-After import, you will initially be prompted to configure the connection for slack.
+Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-To run the workflow, @ your Slackbot in any channel or in a direct message along with
-the command `!investigate <command> <data>`. Example: `!investigate ip 8.8.8.8`
+After import, you will need to activate the workflow in order to trigger it.
+
+To run the workflow, @ your Slackbot in any channel or in a direct message along with the command `!investigate <command> <data>`. Example: `!investigate ip 8.8.8.8`
 
 Alternatively, use `!investigate help` for more information and examples. The workflow will post with the results of the lookup.
 
@@ -41,6 +50,7 @@ what appear to be valid commands. It is recommended to avoid copying & pasting c
 
 # Version History
 
+* 1.0.2 - Updated workflow title, description, and key features
 * 1.0.1 - Update help document
 * 1.0.0 - Initial workflow
 
