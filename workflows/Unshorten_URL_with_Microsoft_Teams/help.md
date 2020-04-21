@@ -18,7 +18,9 @@ Sample Slack Trigger Commands:
 
 ## Setup
 
-Once the workflow has been imported, edit the workflow and setup or select your Teams connection. Each Microsoft Teams step will need the team name and channel name updated as well (edit the input with the preset text of `change_me`).
+Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
+
+Once the workflow has been imported, each Microsoft Teams step will need the team name and channel name updated to suit your Teams environment (edit the input with the preset text of `change_me`).
 The following are the 4 Microsoft Teams steps:
 - _Unshorten URL Trigger_
 - _Print No URL Found_
