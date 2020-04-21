@@ -1,6 +1,6 @@
 # Description
 
-This workflow accepts a Slack command and performs a GeoIP lookup using the IPStack plugin
+This workflow accepts a Slack command and performs a GeoIP lookup using the IPStack plugin.
 
 Sample Slack Trigger Commands:
 
