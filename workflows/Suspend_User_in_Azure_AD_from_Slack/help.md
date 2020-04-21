@@ -1,14 +1,16 @@
 # Description
 
-Suspend Azure AD users from Slack.
+Disabling a compromised account can limit the scope of an attack and buy valuable time to investigate and contain the threat. This workflow disables an Azure AD account with a simple Slack command.
 
 Sample Slack Trigger Commands:
 
-`@Rapid7 InsightConnect !suspend_user user@example.com`
+`@Rapid7 InsightConnect !disable_user user@example.com`
 
 # Key Features
 
-* Suspend an Azure AD user directly from Slack
+* **Break the Kill Chain** - Credentials provide attackers with easy access to numerous targets. Disabling a compromised account or forcing a password reset can quickly and effectively interrupt an attacker’s kill chain.
+* **Buy Time to Investigate and Remediate** - In a pinch, disabling a user account can limit your threat exposure and buy your team valuable time to investigate and contain a threat. Disabling the user may not remediate the root cause, but it can mitigate the immediate risk while you work on fixing underlying issues.
+* **Minimize Disruption to the User** - Forcing a user to reset their password is a small inconvenience compared to re-imaging their entire system. Acting fast can save valuable time and teach a valuable lesson without a noticeable impact to your business.
 
 # Requirements
 
@@ -19,13 +21,13 @@ Sample Slack Trigger Commands:
 
 ## Setup
 
-Once the workflow has been imported, edit the workflow and setup or select your Slack connection in the _Slack Message_ 
-step and the _Reply with Success_ and _Reply with Failure_ steps. In addition, edit the _Suspend User Account_
-step with your correct Azure AD connection information.
-Each Slack step will need the channel name updated as well (edit the input with the preset text of `change_me`).
+Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
+
+After importing, activate the workflow in order to trigger it.
 
 To run the workflow, @ your Slackbot in any channel or in a direct message
-along with the command `!suspend_user <user_email>`. The workflow will reply when it has completed.
+
+along with the command `!disable_user <user_email>`. The workflow will reply when it has completed.
 
 ## Technical Details
 
@@ -42,6 +44,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.1 - Updated documentation
 * 1.0.0 - Initial workflow
 
 # Links
