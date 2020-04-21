@@ -16,8 +16,8 @@ such as Dig, DNS, and Whois.
 ## Setup
 
 Once the workflow has been downloaded, login to InsightConnect and "Import" it into the workflow builder.
-After import, you will initially be prompted to configure the connection for Teams.
-You will then need to configure the Teams trigger and actions.
+After import, you will initially be prompted to configure the connection for Microsoft Teams.
+You will then need to configure the Microsoft Teams trigger and actions.
 In the Team and chanel inputs replace `change_me` with the appropriate team and channel.
 
 To run the workflow, in the configured channel enter the command `!investigate <command> <data>`.
