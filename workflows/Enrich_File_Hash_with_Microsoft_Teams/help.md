@@ -27,7 +27,7 @@ Sample Microsoft Teams Trigger Commands:
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect.
 Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-After importing, activate the workflow in order to trigger it.
+After importing and activating the workflow, execute the bot command to trigger it e.g. `!hash_lookup <hash>`
 
 ## Technical Details
 
