@@ -8,7 +8,7 @@
         "name": "Enrich File Hash with Microsoft Teams",
         "type": "runnable",
         "version": "",
-        "description": "Initiate and receive VirusTotal hash analysis reports with the Microsoft Teams",
+        "description": "Initiate and receive VirusTotal hash analysis reports with Microsoft Teams",
         "graph": {
           "edges": {
             "247676e2-82d6-40fc-bd01-2343905d1c2e": {
