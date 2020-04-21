@@ -1,6 +1,6 @@
 # Description
 
-Don’t fall for the same phish twice. This workflow uses a Microsoft Teams command to block domains and senders in Office365.
+Don’t fall for the same phish twice. This workflow uses a Microsoft Teams command to block domains and senders in Office 365.
 
 Example Trigger Commands:
 
@@ -20,7 +20,7 @@ Example Trigger Commands:
 The following connections will need to be setup: 
 
 * [Microsoft Teams](https://insightconnect.help.rapid7.com/docs/microsoft-teams)
-* [Microsoft Office365 Email Security](https://insightconnect.help.rapid7.com/docs/mass-delete-with-powershell#section-set-up-office-365-dependencies)
+* [Microsoft Office 365 Email Security](https://insightconnect.help.rapid7.com/docs/mass-delete-with-powershell#section-set-up-office-365-dependencies)
 
 # Documentation
 
@@ -54,7 +54,7 @@ Plugins utilized by workflow:
 |Plugin|Version|Count|
 |----|----|--------|
 |Microsoft Teams|2.0.1|5|
-|Microsoft Office365 Email Security|2.2.1|1|
+|Microsoft Office 365 Email Security|2.2.1|1|
 |HTML|1.2.1|1|
 |String Operations|1.2.1|1|
 
@@ -71,8 +71,8 @@ _There is no troubleshooting information at this time_
 
 ## References
 
-* [Microsoft Office365](https://www.office.com)
+* [Microsoft Office 365](https://www.office.com)
 * [Microsoft Teams](https://teams.microsoft.com)
 * [Mail Flow Rules (Transport Rules)](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
 * [Microsoft Teams Plugin Configuration](https://insightconnect.help.rapid7.com/docs/microsoft-teams)
-* [Microsoft Office365 Email Security Plugin Configuration](https://insightconnect.help.rapid7.com/docs/mass-delete-with-powershell#section-set-up-office-365-dependencies)
+* [Microsoft Office 365 Email Security Plugin Configuration](https://insightconnect.help.rapid7.com/docs/mass-delete-with-powershell#section-set-up-office-365-dependencies)

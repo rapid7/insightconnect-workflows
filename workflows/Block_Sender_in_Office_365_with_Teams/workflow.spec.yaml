@@ -1,8 +1,8 @@
 extension: workflow
 products: ["insightconnect"]
 name: Block_Sender_in_Office_365_with_Teams
-title: "Block Sender in Office365 from Microsoft Teams"
-description: "This workflow blocks a sender or domain in Office365 using a command sent from Microsoft Teams."
+title: "Block Sender in Office 365 from Microsoft Teams"
+description: "This workflow blocks a sender or domain in Office 365 using a command sent from Microsoft Teams."
 version: 1.0.1
 vendor: rapid7
 support: rapid7
