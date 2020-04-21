@@ -8,7 +8,7 @@ Sample Slack Trigger Commands:
 
 # Key Features
 
-* Lookup full URL from Slack
+* Lookup full URL with Slack
 
 # Requirements
 
@@ -17,6 +17,8 @@ Sample Slack Trigger Commands:
 # Documentation
 
 ## Setup
+
+Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
 Once the workflow has been imported, edit the workflow and setup or select your Slack connection in the _Unshorten URL Slack Trigger_ step.
 
@@ -37,6 +39,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.2 - Fix image clarity | Fix documenation URL | Added keywords
 * 1.0.1 - Fix image filename
 * 1.0.0 - Initial workflow
 
