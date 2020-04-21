@@ -5,10 +5,10 @@
     "exportedAt": "2020-04-10T16:51:38.661140872Z",
     "workflowVersions": [
       {
-        "name": "Block Sender in Office 365 with Teams",
+        "name": "Block Sender in Office 365 with Microsoft Teams",
         "type": "runnable",
         "version": "",
-        "description": "This workflow will block a sender in Office 365 using a command sent from Microsoft Teams.",
+        "description": "This workflow will block a sender in Office 365 using a command sent with Microsoft Teams.",
         "graph": {
           "edges": {
             "09a7bd49-1370-4d53-a758-9a695efda3ae": {
@@ -907,7 +907,7 @@
             "name": "Block Sender Transport Rule",
             "type": "action",
             "plugin": {
-              "name": "Microsoft Office365 Email Security",
+              "name": "Microsoft Office 365 Email Security",
               "slugVendor": "rapid7",
               "slugName": "microsoft_office365_email_security",
               "slugVersion": "2.2.1",
