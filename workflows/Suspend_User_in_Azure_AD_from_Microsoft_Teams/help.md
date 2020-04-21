@@ -47,7 +47,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
-* 1.0.1 - Updated Documentation | Updated Images
+* 1.0.1 - Updated documentation | Updated images
 * 1.0.0 - Initial workflow
 
 # Links
