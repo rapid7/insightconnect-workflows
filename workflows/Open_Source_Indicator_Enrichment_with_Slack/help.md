@@ -1,6 +1,6 @@
 # Description
 
-Threat Intelligence doesn’t have to come with a cost. This workflow uses open-source intelligence (OSINT) to perform domain lookups, header analysis, hash analysis, and more directly from Slack or Microsoft Teams. Just connect Slack and activate this instant indicator enrichment workflow.
+Threat Intelligence doesn’t have to come with a cost. This workflow uses open-source intelligence (OSINT) to perform domain lookups, header analysis, hash analysis, and more directly from Slack. Just connect Slack and activate this instant indicator enrichment workflow.
 
 Sample Slack Trigger Commands:
 
