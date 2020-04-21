@@ -1,10 +1,19 @@
 # Description
 
-This workflow will delete emails matching given search criteria by sending a notification to InsightConnect with Slack. It will look for any emails that match the 'body', 'subject', and 'from'. It can either automatically delete these emails or prompt the user for further action.
+Don’t fall for the same phish twice. This workflow uses a Slack command to find all emails in Office 365 that match the provided search criteria. It will look for any emails that match the 'body', 'subject', and 'from'. It can either automatically delete these emails or prompt the user for further action.
+
+Sample Slack trigger command:
+
+`!delete-email user@example.com subject="A phishy email" from="example.com" body="Click here for free stuff" `
+
+`!delete-email user@example.com subject="A phishy email" delete=true`
+
 
 # Key Features
 
-* Removes malicious emails using a slack message
+* **Eliminate the Threat** - Once a phishing message is verified, the first thing you should do is remove that message from the affected user’s inbox. 
+* **Work with Unparalleled Flexibility** - Take your work mobile and respond to reported threats from your phone, tablet, or PC.
+* **Reduce Portal Fatigue** - You have enough to do without logging into a different solution every 5 minutes. Control your response actions from chat instead.
 
 # Requirements
 
@@ -17,7 +26,9 @@ The following connections will need to be setup:
 
 ## Setup
 
-Once the workflow has been downloaded, login to InsightConnect and “Import” it into the workflow builder. Once imported, you will initially be prompted to configure the connections for each of the plugins.
+Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
+
+After importing, activate the workflow in order to trigger it.
 
 ### Usage
 
@@ -54,6 +65,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.5 - Updated documentation
 * 1.0.4 - Update to remove join step
 * 1.0.3 - Fix name matching
 * 1.0.2 - Fix filename
