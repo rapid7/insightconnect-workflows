@@ -2,13 +2,13 @@
   "kom": {
     "komandVersion": "1.49.0-0-gc013d",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-04-20T15:57:28.769476994Z",
+    "exportedAt": "2020-04-21T15:53:54.301808878Z",
     "workflowVersions": [
       {
-        "name": "Open Source Indicator Enrichment with Teams",
+        "name": "Open Source Indicator Enrichment with Microsoft Teams",
         "type": "runnable",
         "version": "",
-        "description": "Look up and enrich URLs, IP addresses, and hashes directly from Teams using open source threat intelligence tools such as Dig DNS and Whois.",
+        "description": "Look up and enrich URLs, IP addresses, and hashes directly from Microsoft Teams using open source threat intelligence tools such as Dig DNS and Whois.",
         "graph": {
           "edges": {
             "034f847e-17a5-4345-9bba-dc41fe14bef3": {
@@ -73,7 +73,7 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "9ec9042e-c767-41f5-81eb-9f0106ec411a",
-              "toNodeId": "dd4af07f-88b9-415b-b3a7-c5be1b4e7447"
+              "toNodeId": "1dcb0608-b782-4d9e-85b0-ccc729643054"
             },
             "4846e7e7-4b0e-40a8-8472-c65b0737acf0": {
               "id": "4846e7e7-4b0e-40a8-8472-c65b0737acf0",
@@ -82,6 +82,22 @@
               "parentNodeId": "",
               "fromNodeId": "7e7c6240-eaf5-4acb-86fc-bf6ecbe5c505",
               "toNodeId": "d132db42-fe3b-494f-8f39-86ab93eba1db"
+            },
+            "5139a12a-c549-4a54-9bc3-2b02e8c13fb9": {
+              "id": "5139a12a-c549-4a54-9bc3-2b02e8c13fb9",
+              "name": "Not Found",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "1dcb0608-b782-4d9e-85b0-ccc729643054",
+              "toNodeId": "b9060b69-76b3-4263-92e2-e46fbee80299"
+            },
+            "527de640-344b-4e05-9332-da41ce718129": {
+              "id": "527de640-344b-4e05-9332-da41ce718129",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "b9060b69-76b3-4263-92e2-e46fbee80299",
+              "toNodeId": "a126bbe6-7c9f-4cd9-b3db-86d6e09e3a2b"
             },
             "7e4f47e9-d983-464e-868c-c050405543be": {
               "id": "7e4f47e9-d983-464e-868c-c050405543be",
@@ -107,6 +123,14 @@
               "fromNodeId": "7e7c6240-eaf5-4acb-86fc-bf6ecbe5c505",
               "toNodeId": "55db8044-0992-415e-b561-bcd83c33a12b"
             },
+            "ae9c1c08-7dd1-46c3-bbac-c4a6bf18f8ae": {
+              "id": "ae9c1c08-7dd1-46c3-bbac-c4a6bf18f8ae",
+              "name": "Found",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "1dcb0608-b782-4d9e-85b0-ccc729643054",
+              "toNodeId": "dd4af07f-88b9-415b-b3a7-c5be1b4e7447"
+            },
             "af701dfe-3be3-4041-95bc-ad8ad02a87f0": {
               "id": "af701dfe-3be3-4041-95bc-ad8ad02a87f0",
               "name": "",
@@ -122,6 +146,14 @@
               "parentNodeId": "",
               "fromNodeId": "bb63cb06-20d4-4166-b3c1-3abdd048da68",
               "toNodeId": "7b46b970-ed7d-48c9-b220-4fecf0352d67"
+            },
+            "b42a28c6-5055-4a9e-8a36-488d399ecfb3": {
+              "id": "b42a28c6-5055-4a9e-8a36-488d399ecfb3",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "a126bbe6-7c9f-4cd9-b3db-86d6e09e3a2b",
+              "toNodeId": ""
             },
             "b635fb9b-88a0-43ec-a8fc-6fc53ed7643f": {
               "id": "b635fb9b-88a0-43ec-a8fc-6fc53ed7643f",
@@ -177,6 +209,10 @@
               "id": "00c2a382-37e6-44a4-a00f-5f31fc288f0e",
               "parentNodeId": ""
             },
+            "1dcb0608-b782-4d9e-85b0-ccc729643054": {
+              "id": "1dcb0608-b782-4d9e-85b0-ccc729643054",
+              "parentNodeId": ""
+            },
             "1ecb5f27-5497-4bc6-96dc-d25e40830738": {
               "id": "1ecb5f27-5497-4bc6-96dc-d25e40830738",
               "parentNodeId": ""
@@ -215,6 +251,14 @@
             },
             "9ec9042e-c767-41f5-81eb-9f0106ec411a": {
               "id": "9ec9042e-c767-41f5-81eb-9f0106ec411a",
+              "parentNodeId": ""
+            },
+            "a126bbe6-7c9f-4cd9-b3db-86d6e09e3a2b": {
+              "id": "a126bbe6-7c9f-4cd9-b3db-86d6e09e3a2b",
+              "parentNodeId": ""
+            },
+            "b9060b69-76b3-4263-92e2-e46fbee80299": {
+              "id": "b9060b69-76b3-4263-92e2-e46fbee80299",
               "parentNodeId": ""
             },
             "bb63cb06-20d4-4166-b3c1-3abdd048da68": {
@@ -256,6 +300,44 @@
             "defaultOutputJSONSchema": null,
             "outputJSONSchema": null,
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "1dcb0608-b782-4d9e-85b0-ccc729643054": {
+            "nodeId": "1dcb0608-b782-4d9e-85b0-ccc729643054",
+            "name": "Hash Data Found",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "ae9c1c08-7dd1-46c3-bbac-c4a6bf18f8ae",
+              "stepControlParams": [
+                {
+                  "edgeId": "ae9c1c08-7dd1-46c3-bbac-c4a6bf18f8ae",
+                  "expression": {},
+                  "expressionText": ""
+                },
+                {
+                  "edgeId": "5139a12a-c549-4a54-9bc3-2b02e8c13fb9",
+                  "expression": {
+                    "left": {
+                      "name": "9ec9042e-c767-41f5-81eb-9f0106ec411a.result.detected",
+                      "type": "variable"
+                    },
+                    "op": "=",
+                    "right": {
+                      "type": "literal",
+                      "value": "NO_DATA"
+                    },
+                    "type": "binary"
+                  },
+                  "expressionText": "{{[9ec9042e-c767-41f5-81eb-9f0106ec411a].[result].[detected]}} = \"NO_DATA\""
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
             "connectionType": "NONE"
           },
           "1ecb5f27-5497-4bc6-96dc-d25e40830738": {
@@ -1446,6 +1528,194 @@
             "outputJSONSchema": null,
             "defaultImageData": "",
             "connectionType": "ORCHESTRATOR"
+          },
+          "a126bbe6-7c9f-4cd9-b3db-86d6e09e3a2b": {
+            "nodeId": "a126bbe6-7c9f-4cd9-b3db-86d6e09e3a2b",
+            "name": "Hash Not Found Message",
+            "type": "action",
+            "plugin": {
+              "name": "Microsoft Teams",
+              "slugVendor": "rapid7",
+              "slugName": "microsoft_teams",
+              "slugVersion": "2.0.2",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.2/icon.png"
+            },
+            "identifier": "send_html_message",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "channel_name": "change_me",
+                "message_content": "📔 hash Analysis for {{[bb63cb06-20d4-4166-b3c1-3abdd048da68].[argument]}}📔<br>\n<br>\nNo data on the Hash was found",
+                "team_name": "change_me"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "channel_name": {
+                  "description": "Channel name",
+                  "order": 2,
+                  "title": "Channel Name",
+                  "type": "string"
+                },
+                "message_content": {
+                  "description": "HTML content to send",
+                  "order": 3,
+                  "title": "Message Content",
+                  "type": "string"
+                },
+                "team_name": {
+                  "description": "Team name",
+                  "order": 1,
+                  "title": "Team Name",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "team_name",
+                "channel_name",
+                "message_content"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "body": {
+                  "properties": {
+                    "content": {
+                      "description": "Content",
+                      "order": 1,
+                      "title": "Content",
+                      "type": "string"
+                    },
+                    "contentType": {
+                      "description": "Content type",
+                      "order": 2,
+                      "title": "Content Type",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Body",
+                  "type": "object"
+                },
+                "from": {
+                  "properties": {
+                    "user": {
+                      "$ref": "#/definitions/user",
+                      "description": "User",
+                      "order": 1,
+                      "title": "User"
+                    }
+                  },
+                  "title": "From",
+                  "type": "object"
+                },
+                "message": {
+                  "properties": {
+                    "body": {
+                      "$ref": "#/definitions/body",
+                      "description": "Body",
+                      "order": 1,
+                      "title": "Body"
+                    },
+                    "createdDateTime": {
+                      "description": "Created date time",
+                      "order": 3,
+                      "title": "Created Date Time",
+                      "type": "string"
+                    },
+                    "from": {
+                      "$ref": "#/definitions/from",
+                      "description": "From",
+                      "order": 2,
+                      "title": "From"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 8,
+                      "title": "ID",
+                      "type": "string"
+                    },
+                    "importance": {
+                      "description": "Importance",
+                      "order": 5,
+                      "title": "Importance",
+                      "type": "string"
+                    },
+                    "locale": {
+                      "description": "Locale",
+                      "order": 7,
+                      "title": "Locale",
+                      "type": "string"
+                    },
+                    "messageType": {
+                      "description": "Message type",
+                      "order": 6,
+                      "title": "Message Type",
+                      "type": "string"
+                    },
+                    "webUrl": {
+                      "description": "Web URL",
+                      "order": 4,
+                      "title": "Web URL",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Message",
+                  "type": "object"
+                },
+                "user": {
+                  "properties": {
+                    "displayName": {
+                      "description": "Display name",
+                      "order": 1,
+                      "title": "Display name",
+                      "type": "string"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 2,
+                      "title": "ID",
+                      "type": "string"
+                    }
+                  },
+                  "title": "User",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "message": {
+                  "$ref": "#/definitions/message",
+                  "description": "The message object that was created",
+                  "order": 1,
+                  "title": "Message"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "b9060b69-76b3-4263-92e2-e46fbee80299": {
+            "nodeId": "b9060b69-76b3-4263-92e2-e46fbee80299",
+            "name": "Hash Not found artifact",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "Cymru malware hash analysis for: {{[bb63cb06-20d4-4166-b3c1-3abdd048da68].[argument]}}\n\nNo Data On the hash was found"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
           },
           "bb63cb06-20d4-4166-b3c1-3abdd048da68": {
             "nodeId": "bb63cb06-20d4-4166-b3c1-3abdd048da68",
