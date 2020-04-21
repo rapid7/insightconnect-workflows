@@ -1,0 +1,25 @@
+extension: workflow
+products: ["insightconnect"]
+name: Enrich_File_Hash_with_Microsoft_Teams
+title: "Enrich File Hash with Microsoft Teams"
+description: Initiate and receive VirusTotal URL scan reports with Microsoft Teams.
+version: 1.0.0
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [threat_detection_and_response]
+  keywords: [chat, antivirus, data_enrichment, phishing, work_from_home]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Enrich_File_Hash_with_Microsoft_Teams
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+  - name: workflow1.png
+    title: Workflow View
+  - name: job1.png
+    title: Successful Workflow Job
+  - name: teams1.png
+    title: Completed Job in Microsoft Teams, One Result
+  - name: artifacts1.png
+    title: Final Report Artifacts
