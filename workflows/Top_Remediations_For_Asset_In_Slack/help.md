@@ -3,7 +3,8 @@
 This workflow gives a remediator direct access to top remediation steps for a specified asset in Slack. The workflow triggers from a Slack command containing the keywords `get top remediations`, searches for the specified hostname, and returns the Top Remediations for that asset from InsightVM.
 
 Sample Slack Trigger Command:
-@ Security Bot get top remediations workstation123
+
+`@Slackbot get top remediations workstation123`
 
 # Key Features
 

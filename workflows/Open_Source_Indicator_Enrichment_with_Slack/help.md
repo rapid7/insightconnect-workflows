@@ -4,11 +4,11 @@ Threat Intelligence doesn’t have to come with a cost. This workflow uses open-
 
 Sample Slack Trigger Commands:
 
-`@Security Bot !investigate ip 8.8.8.8`
+`@Slackbot !investigate ip 8.8.8.8`
 
-`@Security Bot !investigate url badsite.com`
+`@Slackbot !investigate url badsite.com`
 
-`@Security Bot !investigate hash 36c5012e100c8e91221e9891cad37df0cac938cee1e8f69b6fdf99821cb05339`
+`@Slackbot !investigate hash 36c5012e100c8e91221e9891cad37df0cac938cee1e8f69b6fdf99821cb05339`
 
 # Key Features
 

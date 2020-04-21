@@ -4,7 +4,7 @@ This workflow looks up a URL given via Slack command in urlscan.io and reports i
 
 Sample Slack Trigger Commands:
 
-`@Slack bot !urlscan https://example.com/suspicious/url`
+`@Slackbot !urlscan https://example.com/suspicious/url`
 
 # Key Features
 

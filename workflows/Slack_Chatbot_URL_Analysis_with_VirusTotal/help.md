@@ -4,11 +4,11 @@ Initiate and receive VirusTotal URL scan reports with the Slack chatbot.
 
 Sample Slack Trigger Commands:
 
-`@Security Bot !url_lookup example.com`
+`@Slackbot !url_lookup example.com`
 
-`@Security Bot !url_lookup www.example.com`
+`@Slackbot !url_lookup www.example.com`
 
-`@Security Bot !url_lookup https://www.example.com`
+`@Slackbot !url_lookup https://www.example.com`
 
 
 # Key Features

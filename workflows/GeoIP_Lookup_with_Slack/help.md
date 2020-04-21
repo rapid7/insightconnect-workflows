@@ -4,7 +4,7 @@ This workflow accepts a Slack command and performs a GeoIP lookup using the IPSt
 
 Sample Slack Trigger Commands:
 
-`@Slack bot !geoip <IP Address>`
+`@Slackbot !geoip <IP Address>`
 
 # Key Features
 

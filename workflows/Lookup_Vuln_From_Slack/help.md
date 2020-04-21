@@ -4,11 +4,11 @@ This workflow accepts a Slack command containing a CVE ID or vulnerability keywo
 
 Sample Slack Trigger Commands:
 
-`@Slack bot vuln check CVE-2020-0674`
+`@Slackbot vuln check CVE-2020-0674`
 
-`@Slack bot vuln check heartbleed`
+`@Slackbot vuln check heartbleed`
 
-`@Slack bot vuln check heartbleed vmware`
+`@Slackbot vuln check heartbleed vmware`
 
 
 # Key Features
