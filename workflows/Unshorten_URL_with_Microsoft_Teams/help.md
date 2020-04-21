@@ -2,7 +2,7 @@
 
 This workflow accepts a Microsoft Teams command containing a URL, looks up the URL with unshorten.me, and posts the full URL back.
 
-Sample Slack Trigger Commands:
+Sample Teams Trigger Commands:
 
 `!unshorten https://bit.ly/39HoYMu`
 

@@ -4,7 +4,8 @@ Don’t fall for the same phish twice. This workflow uses a Slack command to blo
 
 Sample Slack Trigger Commands:
 
-`!block_sender user@example.com`
+`@Slackbot !block_sender user@example.com`
+
 # Key Features
 
 * **Block the Source** - Once the immediate threat has been contained, blocking the source of the phish prevents your organization from being targeted by the same threat actor twice.

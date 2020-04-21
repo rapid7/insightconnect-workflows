@@ -4,9 +4,9 @@ This workflow provides fast, convenient access to information about a given host
 
 Sample Slack Trigger Commands: 
 
-`get host info workstation123`
+`@Slackbot get host info workstation123`
 
-`get host info 192.168.1.2`
+`@Slackbot get host info 192.168.1.2`
 
 # Key Features
 
@@ -26,6 +26,12 @@ Sample Slack Trigger Commands:
 Once the workflow has been imported, edit the workflow and configure connections and orchestrators in each step.
 
 If you do not already have a Slack connection configured, please refer to our [Help documentation](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops).
+
+### Usage
+
+To trigger this workflow, @ the Slackbot in Slack or send the bot a DM in the following format:
+
+`get host info workstation123`
 
 ## Technical Details
 
