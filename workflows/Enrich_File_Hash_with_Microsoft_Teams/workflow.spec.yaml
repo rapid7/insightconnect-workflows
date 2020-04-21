@@ -2,7 +2,7 @@ extension: workflow
 products: ["insightconnect"]
 name: Enrich_File_Hash_with_Microsoft_Teams
 title: "Enrich File Hash with Microsoft Teams"
-description: Initiate and receive VirusTotal URL scan reports with the Microsoft Teams.
+description: Initiate and receive VirusTotal URL scan reports with Microsoft Teams.
 version: 1.0.0
 vendor: rapid7
 support: rapid7
