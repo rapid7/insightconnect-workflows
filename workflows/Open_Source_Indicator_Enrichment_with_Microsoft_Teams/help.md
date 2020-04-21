@@ -38,7 +38,7 @@ Plugins utilized by workflow:
 
 ## Troubleshooting
 
-In some instances using copy & paste for `!investigate` commands many introduce unicode characters.
+In some instances using copy & paste for `!investigate` commands may introduce unicode characters.
 These characters may be misinterpreted by the workflow, resulting in the help response triggering for
 what appear to be valid commands. It is recommended to avoid copying & pasting commands.
 
