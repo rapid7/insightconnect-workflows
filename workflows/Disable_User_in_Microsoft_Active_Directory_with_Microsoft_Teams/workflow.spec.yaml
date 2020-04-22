@@ -1,0 +1,29 @@
+extension: workflow
+products: ["insightconnect"]
+name: Disable_User_in_Microsoft_Active_Directory_with_Microsoft_Teams
+title: "Disable User in Microsoft Active Directory with Microsoft Teams"
+description: Suspend Active Directory LDAP users from Slack.
+version: 1.0.0
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [threat_detection_and_response, cloud_security, user_management]
+  keywords: [chat, active_directory, ldap, teams, work_from_home, phishing, covid]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Disable_User_in_Microsoft_Active_Directory_with_Microsoft_Teams
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+  - name: workflow1.png
+    title: Workflow View Part 1
+  - name: workflow2.png
+    title: Workflow View Part 2
+  - name: workflow3.png
+    title: Workflow View Part 3
+  - name: teams1.png
+    title: Microsoft Teams Post and Response, Success
+  - name: teams2.png
+    title: Microsoft Teams Post and Response, Failure
+  - name: artifact1.png
+    title: Successful Disabled Artifact
