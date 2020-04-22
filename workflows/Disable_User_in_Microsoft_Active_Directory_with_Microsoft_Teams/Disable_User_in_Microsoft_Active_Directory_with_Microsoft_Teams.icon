@@ -230,7 +230,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "search_base": "DC=Akbar,DC=trap",
+                "search_base": "change_me",
                 "search_filter": "(sAMAccountName={{[a4934e67-ceaa-4eda-9b1f-c023175b37e9].[user_name]}})"
               }
             },
@@ -309,9 +309,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "matt_test",
+                "channel_name": "change_me",
                 "message_content": "🔒Disable User {{[a4934e67-ceaa-4eda-9b1f-c023175b37e9].[user_name]}} 🔒\n\n✅",
-                "team_name": "Dream Team"
+                "team_name": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -510,9 +510,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "matt_test",
+                "channel_name": "change_me",
                 "message_content": "^!disable_user",
-                "team_name": "Dream Team"
+                "team_name": "change_me"
               }
             },
             "triggerId": "c1e9656a-6652-4abe-82ec-77b2dbbeb3ed",
@@ -680,9 +680,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "matt_test",
+                "channel_name": "change_me",
                 "message_content": "⚠️ User '{{[a4934e67-ceaa-4eda-9b1f-c023175b37e9].[user_name]}}' was not found",
-                "team_name": "Dream Team"
+                "team_name": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -1011,9 +1011,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "matt_test",
+                "channel_name": "change_me",
                 "message_content": "🔒Disable user {{[a4934e67-ceaa-4eda-9b1f-c023175b37e9].[user_name]}} 🔒<br>\n<br>\n❌",
-                "team_name": "Dream Team"
+                "team_name": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -1216,9 +1216,9 @@
         "name": "Microsoft Teams Message",
         "description": "",
         "input": {
-          "channel_name": "matt_test",
+          "channel_name": "change_me",
           "message_content": "^!disable_user",
-          "team_name": "Dream Team"
+          "team_name": "change_me"
         },
         "inputJsonSchema": {
           "properties": {
