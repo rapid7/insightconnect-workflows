@@ -14,7 +14,6 @@ Sample Microsoft Teams Trigger Commands:
 
 * [Microsoft Teams](https://insightconnect.help.rapid7.com/docs/microsoft-teams)
 
-
 # Documentation
 
 ## Setup
