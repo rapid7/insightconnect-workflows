@@ -310,7 +310,7 @@
             "parameters": {
               "input": {
                 "channel_name": "change_me",
-                "message_content": "🔒Disable User {{[a4934e67-ceaa-4eda-9b1f-c023175b37e9].[user_name]}} 🔒\n\n✅",
+                "message_content": "🔒Disable User {{[a4934e67-ceaa-4eda-9b1f-c023175b37e9].[user_name]}} 🔒<br>\n<br>\nUser was successfully disabled ✅",
                 "team_name": "change_me"
               }
             },
@@ -1012,7 +1012,7 @@
             "parameters": {
               "input": {
                 "channel_name": "change_me",
-                "message_content": "🔒Disable user {{[a4934e67-ceaa-4eda-9b1f-c023175b37e9].[user_name]}} 🔒<br>\n<br>\n❌",
+                "message_content": "🔒Disable user {{[a4934e67-ceaa-4eda-9b1f-c023175b37e9].[user_name]}} 🔒<br>\n<br>\nUser was not successfully disabled ❌",
                 "team_name": "change_me"
               }
             },

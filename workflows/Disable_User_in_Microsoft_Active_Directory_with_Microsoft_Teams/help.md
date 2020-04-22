@@ -24,11 +24,6 @@ Once the workflow has been imported, each Microsoft Teams step will need the tea
 To run the workflow, send the command `!disable_user <exampleuser>` in your configured team and channel. The workflow will post after it has completed.
 In the Team and chanel inputs replace `change_me` with the appropriate team and channel.
 
-To run the workflow, in the configured channel enter the command `!disable_user <exampleuser>`.
-Example: `!disable_user jdoe`
-The workflow will acknowledge the request and reply when it has
-completed.
-
 ## Technical Details
 
 Plugins utilized by workflow:
