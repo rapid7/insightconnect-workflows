@@ -8,7 +8,7 @@ Sample Slack Trigger Commands:
 
 # Key Features
 
-* Suspend an Active Directory LDAP user directly from Microsoft Teams
+* Disable an Active Directory LDAP user directly from Microsoft Teams
 
 # Requirements
 
