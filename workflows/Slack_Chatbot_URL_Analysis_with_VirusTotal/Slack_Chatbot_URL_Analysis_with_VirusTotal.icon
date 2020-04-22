@@ -5,7 +5,7 @@
     "exportedAt": "2020-04-06T20:02:25.822164693Z",
     "workflowVersions": [
       {
-        "name": "Slack Chatbot URL Analysis with VirusTotal",
+        "name": "Enrich URLs and Domains with Slack",
         "type": "runnable",
         "version": "",
         "description": "Initiate and receive VirusTotal URL scan reports with the Slack chatbot.",
