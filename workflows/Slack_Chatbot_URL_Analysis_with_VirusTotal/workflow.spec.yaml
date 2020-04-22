@@ -9,7 +9,6 @@ version: 1.0.3
 title: "Enrich URLs and Domains with Slack"
 description: Initiate and receive VirusTotal URL scan reports with the Slack chatbot.
 version: 1.0.4
->>>>>>> Stashed changes
 vendor: rapid7
 support: rapid7
 status: []
