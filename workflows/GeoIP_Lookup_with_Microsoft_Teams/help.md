@@ -18,12 +18,11 @@ Sample Microsoft Teams Trigger Commands:
 
 ## Setup
 
-Once the workflow has been downloaded, login to InsightConnect and "Import" it into the workflow builder.
-After import, you will initially be prompted to configure the connection for Microsoft Teams.
-You will then need to configure the Microsoft Teams trigger and actions.
-In the "Team" and "Channel" inputs replace `change_me` with the appropriate team and channel.
+Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-To run the workflow, message in the channel the command "!geoip <IP Address>". The workflow will post a response in a thread.
+Once the workflow has been imported, each Microsoft Teams step will need the team name and channel name updated to suit your Teams environment (edit the input with the preset text of `change_me`).
+
+To run the workflow, send the command `!geoip <IP address>` in your configured team and channel. The workflow will post after it has completed.
 
 ## Technical Details
 
