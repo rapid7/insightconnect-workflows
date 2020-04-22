@@ -1,6 +1,6 @@
 # Description
 
-Lookup and enrich suspicious URLs and domains with a simple Slack command. URL and domain analysis provided by VirusTotal is returned in a :thread:.
+Lookup and enrich suspicious URLs and domains with a simple Slack command. URL and domain analysis provided by VirusTotal is returned in a Slack thread.
 
 Sample Slack Trigger Commands:
 
