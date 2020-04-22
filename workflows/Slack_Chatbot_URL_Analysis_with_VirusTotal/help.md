@@ -31,7 +31,7 @@ After importing, activate the workflow in order to trigger it.
 
 ### Usage
 
-This workflow uses the Chat Ops Slack connection to listen for key messages from the InsightConnect Rapid7 connection and will lookup the provided URL or domain in VirusTotal when triggered.
+This workflow uses the Chat Ops Slack integration to listen for messages sent to your InsightConnect Slack Chatbot and will lookup the provided URL or domain in VirusTotal when triggered.
 
 To trigger this workflow, either @ your Chat Bot in  a channel or send a direct message to the bot in Slack using the `!url_lookup` keyword:
 

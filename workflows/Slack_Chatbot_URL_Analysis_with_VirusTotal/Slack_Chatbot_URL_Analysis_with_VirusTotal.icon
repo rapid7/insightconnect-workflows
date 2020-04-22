@@ -1,14 +1,14 @@
 {
   "kom": {
-    "komandVersion": "1.48.2-0-g4eb3f",
+    "komandVersion": "1.49.2-0-gafb52",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-04-06T20:02:25.822164693Z",
+    "exportedAt": "2020-04-22T22:36:57.172430486Z",
     "workflowVersions": [
       {
         "name": "Enrich URLs and Domains with Slack",
         "type": "runnable",
         "version": "",
-        "description": "Initiate and receive VirusTotal URL scan reports with the Slack chatbot.",
+        "description": "Enrich potential indicators of compromise by getting VirusTotal reports for URLs and domains with a Slack command.",
         "graph": {
           "edges": {
             "0e1a8c44-956d-4e81-bef6-309cbdc19a60": {
@@ -110,8 +110,8 @@
               "input": {
                 "attachments": [],
                 "message": "Starting URL lookup for the following URL: {{[9a6d880b-499b-4acc-8c58-d07660c48fc0].[domains].[0]}}",
-                "recipient": "change_me",
-                "thread_ts": ""
+                "recipient": "{{[edd82ea1-b0b1-46e3-80ca-cdc3857b9905].[message].[channel_id]}}",
+                "thread_ts": "{{[edd82ea1-b0b1-46e3-80ca-cdc3857b9905].[timestamp]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -394,12 +394,12 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "matchChannel": "change_me",
+                "matchChannel": "",
                 "matchText": "!url_lookup",
-                "type": "group"
+                "type": "any"
               }
             },
-            "triggerId": "fbe13215-14f6-4c2b-a619-a6ee17de46f0",
+            "triggerId": "52148295-e968-4cba-a36e-8c2bc000e584",
             "defaultInputJSONSchema": {
               "properties": {
                 "matchChannel": {
@@ -523,8 +523,8 @@
               "input": {
                 "attachments": [],
                 "message": ":notebook_with_decorative_cover: URL Scan Report for {{[9a6d880b-499b-4acc-8c58-d07660c48fc0].[domains].[0]}} :notebook_with_decorative_cover:\n:pushpin: Summary: \n\n_VirusTotal_\n> Malicious: {{[e86d1fc3-c46b-4b7e-afdb-33d624c03f12].[malicious]}}\n> Positives: {{[e86d1fc3-c46b-4b7e-afdb-33d624c03f12].[positives]}} / {{[e86d1fc3-c46b-4b7e-afdb-33d624c03f12].[total]}}\n> Results permalink: {{[e86d1fc3-c46b-4b7e-afdb-33d624c03f12].[permalink]}}",
-                "recipient": "change_me",
-                "thread_ts": ""
+                "recipient": "{{[edd82ea1-b0b1-46e3-80ca-cdc3857b9905].[message].[channel_id]}}",
+                "thread_ts": "{{[edd82ea1-b0b1-46e3-80ca-cdc3857b9905].[timestamp]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -595,13 +595,13 @@
     ],
     "triggers": [
       {
-        "id": "fbe13215-14f6-4c2b-a619-a6ee17de46f0",
+        "id": "52148295-e968-4cba-a36e-8c2bc000e584",
         "name": "Start Lookup",
         "description": "",
         "input": {
-          "matchChannel": "change_me",
+          "matchChannel": "",
           "matchText": "!url_lookup",
-          "type": "group"
+          "type": "any"
         },
         "inputJsonSchema": {
           "properties": {
