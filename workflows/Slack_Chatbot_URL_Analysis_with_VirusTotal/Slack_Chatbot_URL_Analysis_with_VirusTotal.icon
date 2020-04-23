@@ -5,7 +5,7 @@
     "exportedAt": "2020-04-22T22:36:57.172430486Z",
     "workflowVersions": [
       {
-        "name": "Enrich URLs and Domains with Slack",
+        "name": "Enrich URLs and Domains with VirusTotal from Slack",
         "type": "runnable",
         "version": "",
         "description": "Enrich potential indicators of compromise by getting VirusTotal reports for URLs and domains with a Slack command.",
@@ -395,8 +395,8 @@
             "parameters": {
               "input": {
                 "matchChannel": "",
-                "matchText": "!url_lookup",
-                "type": "any"
+                "matchText": "enrich-url",
+                "type": "direct"
               }
             },
             "triggerId": "52148295-e968-4cba-a36e-8c2bc000e584",
@@ -600,7 +600,7 @@
         "description": "",
         "input": {
           "matchChannel": "",
-          "matchText": "!url_lookup",
+          "matchText": "enrich-url",
           "type": "any"
         },
         "inputJsonSchema": {
