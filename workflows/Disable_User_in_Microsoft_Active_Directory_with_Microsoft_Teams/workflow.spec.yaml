@@ -1,7 +1,7 @@
 extension: workflow
 products: ["insightconnect"]
-name: Disable_User_in_Microsoft_Active_Directory_with_Microsoft_Teams
-title: "Disable User in Microsoft Active Directory with Microsoft Teams"
+name: Disable_User_in_Microsoft_Active_Directory_from_Microsoft_Teams
+title: "Disable User in Microsoft Active Directory from Microsoft Teams"
 description: Disable Active Directory LDAP users from Slack.
 version: 1.0.0
 vendor: rapid7

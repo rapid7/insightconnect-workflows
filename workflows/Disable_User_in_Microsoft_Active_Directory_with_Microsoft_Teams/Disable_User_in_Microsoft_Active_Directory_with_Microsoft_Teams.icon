@@ -511,7 +511,7 @@
             "parameters": {
               "input": {
                 "channel_name": "change_me",
-                "message_content": "^!disable_user",
+                "message_content": "^!disable-user",
                 "team_name": "change_me"
               }
             },
@@ -842,11 +842,11 @@
             "isDisabled": false,
             "parameters": {
               "captureAll": false,
-              "expressionText": "!disable_user {{user_name:/.*/}}",
+              "expressionText": "!disable-user {{user_name:/.*/}}",
               "expressions": [
                 {
                   "type": "text",
-                  "value": "!disable_user "
+                  "value": "!disable-user "
                 },
                 {
                   "type": "variable",
@@ -1217,7 +1217,7 @@
         "description": "",
         "input": {
           "channel_name": "change_me",
-          "message_content": "^!disable_user",
+          "message_content": "^!disable-user",
           "team_name": "change_me"
         },
         "inputJsonSchema": {
