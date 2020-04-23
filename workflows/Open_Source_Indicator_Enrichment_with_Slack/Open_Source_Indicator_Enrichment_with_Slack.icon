@@ -1,14 +1,14 @@
 {
   "kom": {
-    "komandVersion": "1.48.4-0-g02625",
+    "komandVersion": "1.49.2-0-gafb52",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-04-16T18:46:29.430994625Z",
+    "exportedAt": "2020-04-23T17:12:46.521154694Z",
     "workflowVersions": [
       {
-        "name": "Open Source Intelligence (OSINT) Indicator Enrichment with Slack",
+        "name": "Enrich Indicators with OSINT from Slack",
         "type": "runnable",
         "version": "",
-        "description": "This workflow triggers from directly slack messaging the chatbot to \\\"!investigate\\\" the defined indicator. This workflow supports automatically looking up URLs, IPs, and hashs in open source threat intelligence such as Dig DNS and Whois. Lastly, the workflow will post back results to the specific user.\n",
+        "description": "This workflow triggers from directly messaging the InsightConnect Slack chatbot to investigate the specified indicator. It supports looking up URLs, IPs, and hashes in open-source threat intelligence such as Dig DNS and Whois. The workflow will post back results to the specific user.\n",
         "graph": {
           "edges": {
             "10337644-de8e-492d-9489-1926865c7215": {
@@ -298,8 +298,8 @@
               "input": {
                 "attachments": [],
                 "message": ":notebook_with_decorative_cover: IP Analysis for {{[5c912344-3c5c-47d1-b707-7307d4027dbf].[argument]}} :notebook_with_decorative_cover:\n\n_WhoIs_\n> Org Details\n> Reg Date : {{[d5faa8a7-7d19-43bc-be45-64137e33998b].[regdate]}}\n> Org Name : {{[d5faa8a7-7d19-43bc-be45-64137e33998b].[orgname]}}\n> Net Name : {{[d5faa8a7-7d19-43bc-be45-64137e33998b].[netname]}}\n> Net Type : {{[d5faa8a7-7d19-43bc-be45-64137e33998b].[nettype]}}\n> Net Range: {{[d5faa8a7-7d19-43bc-be45-64137e33998b].[netrange]}}\n> Location Details\n> Address : {{[d5faa8a7-7d19-43bc-be45-64137e33998b].[address]}}\n> City : {{[d5faa8a7-7d19-43bc-be45-64137e33998b].[city]}}\n> Country : {{[d5faa8a7-7d19-43bc-be45-64137e33998b].[country]}}\n\n_Dig_\n>Question Asked: {{[b95a8095-e0dc-4f1c-83b2-f912e34e8383].[question]}}\n>Answer Received: {{[b95a8095-e0dc-4f1c-83b2-f912e34e8383].[answer]}}\n>Query Status: {{[b95a8095-e0dc-4f1c-83b2-f912e34e8383].[status]}}\n>Nameserver that Fulfilled Request: {{[b95a8095-e0dc-4f1c-83b2-f912e34e8383].[nameserver]}}",
-                "recipient": "{{[490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa].[message].[channel]}}",
-                "thread_ts": ""
+                "recipient": "{{[490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa].[message].[channel_id]}}",
+                "thread_ts": "{{[490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa].[message].[ts]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -518,18 +518,18 @@
           },
           "490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa": {
             "nodeId": "490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa",
-            "name": "!Investigate",
+            "name": "Investigate",
             "type": "trigger",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "input": {
                 "matchChannel": "",
-                "matchText": "!investigate",
-                "type": "any"
+                "matchText": "enrich-indicator",
+                "type": "direct"
               }
             },
-            "triggerId": "df09bc5c-20c5-482f-8b6a-210fc2580ba5",
+            "triggerId": "6325ef4b-7c84-4b76-af88-4e6c6a61f021",
             "defaultInputJSONSchema": {
               "properties": {
                 "matchChannel": {
@@ -652,9 +652,9 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": ":notebook_with_decorative_cover: IP Analysis for {{[8eaa7118-ec46-40ac-a7a9-3968658daa23].[domain]}} :notebook_with_decorative_cover:\n\n_WhoIs_\n> Org Details\n>Domain Name: {{[8739dbc9-cc19-4a14-82e4-fbc94da0bac1].[name]}}\n>Domain Registrar: {{[8739dbc9-cc19-4a14-82e4-fbc94da0bac1].[registrar]}}\n>Domain Creation Date: {{[8739dbc9-cc19-4a14-82e4-fbc94da0bac1].[creation_date]}}\n>Domain Last Updated: {{[8739dbc9-cc19-4a14-82e4-fbc94da0bac1].[last_updated]}}\n>Registrar Abuse Contact: {{[8739dbc9-cc19-4a14-82e4-fbc94da0bac1].[registrar_abuse_contact_email]}}",
-                "recipient": "{{[490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa].[message].[channel]}}",
-                "thread_ts": ""
+                "message": ":notebook_with_decorative_cover: URL Analysis for {{[5c912344-3c5c-47d1-b707-7307d4027dbf].[argument]}} :notebook_with_decorative_cover:\n\n_WhoIs_\n> Org Details\n>Domain Name: {{[8739dbc9-cc19-4a14-82e4-fbc94da0bac1].[name]}}\n>Domain Registrar: {{[8739dbc9-cc19-4a14-82e4-fbc94da0bac1].[registrar]}}\n>Domain Creation Date: {{[8739dbc9-cc19-4a14-82e4-fbc94da0bac1].[creation_date]}}\n>Domain Last Updated: {{[8739dbc9-cc19-4a14-82e4-fbc94da0bac1].[last_updated]}}\n>Registrar Abuse Contact: {{[8739dbc9-cc19-4a14-82e4-fbc94da0bac1].[registrar_abuse_contact_email]}}",
+                "recipient": "{{[490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa].[message].[channel_id]}}",
+                "thread_ts": "{{[490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa].[message].[ts]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -725,11 +725,11 @@
             "isDisabled": false,
             "parameters": {
               "captureAll": false,
-              "expressionText": "!investigate {{command:/.*/}} {{argument:/.*/}}",
+              "expressionText": "enrich-indicator {{command:/.*/}} {{argument:/.*/}}",
               "expressions": [
                 {
                   "type": "text",
-                  "value": "!investigate "
+                  "value": "enrich-indicator "
                 },
                 {
                   "type": "variable",
@@ -806,9 +806,9 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "Your message was not correctly formatted.\nMessage format should be:\n!investigate <command> <data>\nUse !investigate help for more information and examples.",
-                "recipient": "{{[490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa].[message].[channel]}}",
-                "thread_ts": ""
+                "message": "Your message was not correctly formatted.\nMessage format should be:\n!enrich-indicator <command> <data>\nUse !enrich-indicator help for more information and examples.",
+                "recipient": "{{[490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa].[message].[channel_id]}}",
+                "thread_ts": "{{[490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa].[message].[ts]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -1177,9 +1177,9 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "This workflow will provide enrichment on URL's IP's and hashs\nCommands should be in the following format:\n\n!investigate <Command> <data>\n\nexamples:\n!investigate url rapid7.com\n\n!investigate ip 198.51.100.100\n\n!investigate hash 009f1e9b72cfb6daa3de82093a755bdb3685e0eb",
-                "recipient": "{{[490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa].[message].[channel]}}",
-                "thread_ts": ""
+                "message": "This workflow will enriches common indicators of compromise (IOCs) using open-source intelligence. Input a URL, IP address, or file hash to receive basic intelligence about the provided IOC.\n\nCommands should be in the following format:\n\nenrich-indicator <indicator type> <indicator>\n\nexamples:\nenrich-indicator url rapid7.com\n\nenrich-indicator ip 198.51.100.100\n\nenrich-indicator hash 009f1e9b72cfb6daa3de82093a755bdb3685e0eb",
+                "recipient": "{{[490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa].[message].[channel_id]}}",
+                "thread_ts": "{{[490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa].[message].[ts]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -1398,8 +1398,8 @@
               "input": {
                 "attachments": [],
                 "message": ":notebook_with_decorative_cover: hash Analysis for {{[5c912344-3c5c-47d1-b707-7307d4027dbf].[argument]}} :notebook_with_decorative_cover:\n\n_Cymru malware hash_\n>Malicious: {{[33dbbab2-a13b-4ed0-8d14-1eecdbf1749a].[result].[detected]}}\n>Hash last seen: {{[33dbbab2-a13b-4ed0-8d14-1eecdbf1749a].[result].[last_seen_utc]}}\n>Response Code {{[33dbbab2-a13b-4ed0-8d14-1eecdbf1749a].[result].[response_code]}}",
-                "recipient": "{{[490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa].[message].[channel]}}",
-                "thread_ts": ""
+                "recipient": "{{[490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa].[message].[channel_id]}}",
+                "thread_ts": "{{[490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa].[message].[ts]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -1470,13 +1470,13 @@
     ],
     "triggers": [
       {
-        "id": "df09bc5c-20c5-482f-8b6a-210fc2580ba5",
-        "name": "!Investigate",
+        "id": "6325ef4b-7c84-4b76-af88-4e6c6a61f021",
+        "name": "Investigate",
         "description": "",
         "input": {
           "matchChannel": "",
-          "matchText": "!investigate",
-          "type": "any"
+          "matchText": "enrich-indicator",
+          "type": "direct"
         },
         "inputJsonSchema": {
           "properties": {
