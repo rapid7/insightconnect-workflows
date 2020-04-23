@@ -1,15 +1,15 @@
 extension: workflow
 products: ["insightconnect"]
 name: Slack_Chatbot_Hash_Analysis_with_VirusTotal
-title: "Enrich File Hash with Slack"
-description: Initiate and receive VirusTotal hash scan reports with the Slack chatbot.
-version: 1.0.3
+title: "Enrich File Hash with VirusTotal from Slack"
+description: Lookup a potentially malicious file hash in VirusTotal with a Slack command.
+version: 1.0.4
 vendor: rapid7
 support: rapid7
 status: []
 hub_tags:
   use_cases: [threat_detection_and_response]
-  keywords: [threat_detection_and_response, chat, antivirus, data_enrichment, phishing, work_from_home, hash, ioc]
+  keywords: [threat_detection_and_response, slack, chat, antivirus, data_enrichment, phishing, work_from_home, hash, ioc]
   features: []
 resources:
   source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Slack_Chatbot_VirusTotal_Hash_Scan
