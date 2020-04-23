@@ -681,7 +681,7 @@
             "parameters": {
               "input": {
                 "channel_name": "change_me",
-                "message_content": "⚠️ Disable Active Directory User request for {{[a4934e67-ceaa-4eda-9b1f-c023175b37e9].[user_name]}}' failed.<br>\n<br>\n User was not found,
+                "message_content": "⚠️ Disable Active Directory User request for '{{[a4934e67-ceaa-4eda-9b1f-c023175b37e9].[user_name]}}' failed.<br>\n<br>\n User was not found,
                 "team_name": "change_me"
               }
             },
