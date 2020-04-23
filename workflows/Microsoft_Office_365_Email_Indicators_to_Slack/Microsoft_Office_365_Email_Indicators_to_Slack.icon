@@ -1584,7 +1584,7 @@
               "input": {
                 "attachments": [],
                 "message": "{{[bf712037-937a-4f6c-8817-22e1801e0bac].[content]}}",
-                "recipient": "#joey-test-channel",
+                "recipient": "#change-me",
                 "thread_ts": ""
               }
             },
@@ -1658,7 +1658,7 @@
               "input": {
                 "attachments": [],
                 "message": "📨  Email Received: Beginning Analysis 📨\n\nFrom: {{[6a008e1f-33e2-476d-b292-c98d5faeb1db].[icon_email].[sender]}}\nSubject: {{[6a008e1f-33e2-476d-b292-c98d5faeb1db].[icon_email].[subject]}}",
-                "recipient": "#joey-test-channel",
+                "recipient": "#change-me",
                 "thread_ts": ""
               }
             },
