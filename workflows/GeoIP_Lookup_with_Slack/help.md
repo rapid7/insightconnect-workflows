@@ -1,15 +1,16 @@
 # Description
 
-This workflow accepts a Slack command and performs a GeoIP lookup using the IPStack plugin.
+Use a Slack command to geolocate an IP address using IPStack's geoip database. 
 
 Sample Slack Trigger Commands:
 
-`@Slackbot !geoip <IP Address>`
+`@Slackbot geoip <IP Address>`
 
 # Key Features
 
-* Geo-location lookup on an IP address from Slack
-
+* **Leverage Trusted Tools** - Attackers often spoof emails to make them look like they were sent from somewhere else. Leverage the tools at your disposal to investigate and enrich indicators automatically.
+* **Investigate Indicators at Scale** - Manually investigating every reported phishing attempt is extremely difficult to scale. Automatic analysis of common phishing IOCs reduces the overhead associated with every reported incident.
+* **Pinpoint a Targeted Response** - Positively identifying a malicious IP address allows you to block the phishing campaign’s origin, mitigating the risk of repeated attacks from that same source.
 # Requirements
 
 * [Slack](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops)
@@ -18,9 +19,22 @@ Sample Slack Trigger Commands:
 
 ## Setup
 
-Once the workflow has been imported, edit the workflow and setup or select your Slack connection in the _GeoIP Lookup Slack Trigger_ step.
+Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-To run the workflow, @ your Slackbot in the channel along with the command "!geoip <IP Address>". The workflow will post a response in a thread.
+After import, activate the workflow in order to trigger it.
+
+# Usage
+
+*This workflow will trigger in any direct messages to your Chatbot **or** any message in a channel directed @ your Chatbot. Note the Chatbot must be in the channel in order to trigger the workflow this way.*
+
+To run the workflow, send a direct message to your InsightConnect Slack Chatbot or @ your Chatbot in a public channel starting with the command `enrich-url`. 
+
+For example:
+
+* `geoip 8.8.8.8`
+* `geoip 2001:4860:4860::8888`
+
+The workflow will post the results in a thread.
 
 ## Technical Details
 
@@ -37,6 +51,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.2 - Updated trigger syntax and documentation
 * 1.0.1 - Update documentation
 * 1.0.0 - Initial workflow
 

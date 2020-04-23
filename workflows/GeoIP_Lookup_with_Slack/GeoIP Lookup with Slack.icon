@@ -1,14 +1,14 @@
 {
   "kom": {
-    "komandVersion": "1.48.4-0-g02625",
+    "komandVersion": "1.49.2-0-gafb52",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-04-17T13:49:15.55123259Z",
+    "exportedAt": "2020-04-23T21:25:33.576979082Z",
     "workflowVersions": [
       {
-        "name": "GeoIP Lookup with Slack",
+        "name": "Geolocate IP Address with IPStack from Slack",
         "type": "runnable",
         "version": "",
-        "description": "Give a GeoIP report on an IP through a slack command",
+        "description": "Geolocate an IP address using IPStack's geoip database with a simple Slack command.",
         "graph": {
           "edges": {
             "18e819a1-6557-40bf-ac25-ff05e5004703": {
@@ -194,7 +194,7 @@
               "input": {
                 "attachments": [],
                 "message": ":notebook_with_decorative_cover: GeoIP Lookup for `{{[6f80dc1f-9a48-4fbd-bfa0-06f2a86a6c04].[content]}}` :notebook_with_decorative_cover:\n_WhoIs_\nNo Results Found",
-                "recipient": "{{[9103f075-a1ff-4b65-8666-8b6331b38a96].[message].[channel]}}",
+                "recipient": "{{[9103f075-a1ff-4b65-8666-8b6331b38a96].[message].[channel_id]}}",
                 "thread_ts": "{{[9103f075-a1ff-4b65-8666-8b6331b38a96].[timestamp]}}"
               }
             },
@@ -309,18 +309,18 @@
           "9103f075-a1ff-4b65-8666-8b6331b38a96": {
             "nodeId": "9103f075-a1ff-4b65-8666-8b6331b38a96",
             "name": "IP Stack Lookup Slack Trigger",
-            "description": "!geoip <url> is the command to slackbot to get it to perform a GeoIP analysis.",
+            "description": "geoip <ip> is the command to slackbot to get it to perform a GeoIP analysis.",
             "type": "trigger",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "input": {
-                "matchChannel": "geoip_lookup_testing",
-                "matchText": "!geoip",
-                "type": "group"
+                "matchChannel": "",
+                "matchText": "geoip",
+                "type": "any"
               }
             },
-            "triggerId": "0d2bdfbf-1706-44fd-ab23-74885449b693",
+            "triggerId": "f21bb110-ce5a-484d-97f5-784f315ffd42",
             "defaultInputJSONSchema": {
               "properties": {
                 "matchChannel": {
@@ -444,7 +444,7 @@
               "input": {
                 "attachments": [],
                 "message": ":notebook_with_decorative_cover: GeoIP Lookup for `{{[6f80dc1f-9a48-4fbd-bfa0-06f2a86a6c04].[content]}}` :notebook_with_decorative_cover:\n_WhoIs_\n> Address: {{[ebd2bfab-ad02-4e0d-8db9-1c1b5bf5cde7].[address]}}\n> City: {{[ebd2bfab-ad02-4e0d-8db9-1c1b5bf5cde7].[city]}}\n> Region: {{[ebd2bfab-ad02-4e0d-8db9-1c1b5bf5cde7].[region_name]}}\n> Country: {{[ebd2bfab-ad02-4e0d-8db9-1c1b5bf5cde7].[country_name]}}\n> Zip Code: {{[ebd2bfab-ad02-4e0d-8db9-1c1b5bf5cde7].[zip_code]}}\n> Co-ordinates: `({{[ebd2bfab-ad02-4e0d-8db9-1c1b5bf5cde7].[latitude]}},{{[ebd2bfab-ad02-4e0d-8db9-1c1b5bf5cde7].[longitude]}})`\n\n",
-                "recipient": "{{[9103f075-a1ff-4b65-8666-8b6331b38a96].[message].[channel]}}",
+                "recipient": "{{[9103f075-a1ff-4b65-8666-8b6331b38a96].[message].[channel_id]}}",
                 "thread_ts": "{{[9103f075-a1ff-4b65-8666-8b6331b38a96].[message].[ts]}}"
               }
             },
@@ -577,7 +577,7 @@
               "input": {
                 "attachments": [],
                 "message": ":notebook_with_decorative_cover: GeoIP Lookup ` :notebook_with_decorative_cover:\n_WhoIs_\nNo Results Found",
-                "recipient": "{{[9103f075-a1ff-4b65-8666-8b6331b38a96].[message].[channel]}}",
+                "recipient": "{{[9103f075-a1ff-4b65-8666-8b6331b38a96].[message].[channel_id]}}",
                 "thread_ts": "{{[9103f075-a1ff-4b65-8666-8b6331b38a96].[timestamp]}}"
               }
             },
@@ -759,13 +759,13 @@
     ],
     "triggers": [
       {
-        "id": "0d2bdfbf-1706-44fd-ab23-74885449b693",
+        "id": "f21bb110-ce5a-484d-97f5-784f315ffd42",
         "name": "IP Stack Lookup Slack Trigger",
-        "description": "!geoip <url> is the command to slackbot to get it to perform a GeoIP analysis.",
+        "description": "geoip <ip> is the command to slackbot to get it to perform a GeoIP analysis.",
         "input": {
-          "matchChannel": "geoip_lookup_testing",
-          "matchText": "!geoip",
-          "type": "group"
+          "matchChannel": "",
+          "matchText": "geoip",
+          "type": "any"
         },
         "inputJsonSchema": {
           "properties": {
