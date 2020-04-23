@@ -28,7 +28,7 @@ Import the workflow from the Rapid7 Extension Library and proceed through the Im
 
 Once the workflow has been imported, **each Microsoft Teams step will need the team name and channel name updated to suit your Teams environment!** Edit the input with the preset text of `change_me` in each Teams step in the workflow.
 
-After configuring the Teams step, activate the workflow in order to trigger it.
+After configuring the Teams steps, activate the workflow in order to trigger it.
 
 # Usage
 
