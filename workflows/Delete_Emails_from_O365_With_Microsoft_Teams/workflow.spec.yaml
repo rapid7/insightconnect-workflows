@@ -1,9 +1,9 @@
 extension: workflow
 products: ["insightconnect"]
 name: Delete_Emails_from_O365_With_Microsoft_Teams
-title: "Delete Emails in Office365 with Microsoft Teams"
-description: "Delete emails matching a given search criteria with Microsoft Teams."
-version: 1.0.1
+title: "Find and Delete Emails in Office 365 from Microsoft Teams"
+description: "Use a Microsoft Teams command to find and optionally delete emails matching the given search criteria."
+version: 1.0.2
 vendor: rapid7
 support: rapid7
 status: []
