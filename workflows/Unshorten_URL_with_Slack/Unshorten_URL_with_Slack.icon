@@ -1,14 +1,14 @@
 {
   "kom": {
-    "komandVersion": "1.48.3-0-g34439",
+    "komandVersion": "1.49.2-0-gafb52",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-04-14T19:49:16.167986054Z",
+    "exportedAt": "2020-04-23T22:19:54.246043483Z",
     "workflowVersions": [
       {
-        "name": "Unshorten URL with Slack",
+        "name": "Unshorten URL from Slack",
         "type": "runnable",
         "version": "",
-        "description": "Report back the full URL of a shortened URL with the Slack chatbot.",
+        "description": "Unshorten a URL with a message to your InsightConnect Slack Chatbot.",
         "graph": {
           "edges": {
             "155874dc-13fb-4829-bcb3-b3ecca9508d9": {
@@ -130,8 +130,8 @@
               "input": {
                 "attachments": [],
                 "message": ":notebook_with_decorative_cover: URL Unshorten for `<https://rapid7.com|{{[6f80dc1f-9a48-4fbd-bfa0-06f2a86a6c04].[content]}}>` :notebook_with_decorative_cover:\n_WhoIs_\nNo Results Found",
-                "recipient": "{{[9103f075-a1ff-4b65-8666-8b6331b38a96].[message].[channel]}}",
-                "thread_ts": "{{[9103f075-a1ff-4b65-8666-8b6331b38a96].[timestamp]}}"
+                "recipient": "{{[9103f075-a1ff-4b65-8666-8b6331b38a96].[message].[channel_id]}}",
+                "thread_ts": "{{[9103f075-a1ff-4b65-8666-8b6331b38a96].[message].[ts]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -259,18 +259,18 @@
           "9103f075-a1ff-4b65-8666-8b6331b38a96": {
             "nodeId": "9103f075-a1ff-4b65-8666-8b6331b38a96",
             "name": "Unshorten URL Slack Trigger",
-            "description": "!unshorten <url> is the command to slackbot to get it to produce an unshortening analysis.",
+            "description": "unshorten-url <url> is the command to slackbot to get it to produce an unshortening analysis.",
             "type": "trigger",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "input": {
-                "matchChannel": "unshorten_url_testing",
-                "matchText": "!unshorten",
-                "type": "group"
+                "matchChannel": "",
+                "matchText": "unshorten-url",
+                "type": "direct"
               }
             },
-            "triggerId": "3829b6f9-cca5-4a64-bd11-3abcd9cfda4a",
+            "triggerId": "0134d564-3da0-49b6-b885-3592467ede3a",
             "defaultInputJSONSchema": {
               "properties": {
                 "matchChannel": {
@@ -394,7 +394,7 @@
               "input": {
                 "attachments": [],
                 "message": ":notebook_with_decorative_cover: URL Unshorten for <http://rapid7.com|{{[6f80dc1f-9a48-4fbd-bfa0-06f2a86a6c04].[content]}}> :notebook_with_decorative_cover:\n_WhoIs_\n> Shortened URL: <http://rapid7.com|{{[6f80dc1f-9a48-4fbd-bfa0-06f2a86a6c04].[content]}}>\n> Full URL: <http://rapid7.com|{{[fe7505b0-7be8-41ee-865f-420850c69bbe].[content]}}>",
-                "recipient": "{{[9103f075-a1ff-4b65-8666-8b6331b38a96].[message].[channel]}}",
+                "recipient": "{{[9103f075-a1ff-4b65-8666-8b6331b38a96].[message].[channel_id]}}",
                 "thread_ts": "{{[9103f075-a1ff-4b65-8666-8b6331b38a96].[message].[ts]}}"
               }
             },
@@ -622,13 +622,13 @@
     ],
     "triggers": [
       {
-        "id": "3829b6f9-cca5-4a64-bd11-3abcd9cfda4a",
+        "id": "0134d564-3da0-49b6-b885-3592467ede3a",
         "name": "Unshorten URL Slack Trigger",
-        "description": "!unshorten <url> is the command to slackbot to get it to produce an unshortening analysis.",
+        "description": "unshorten-url <url> is the command to slackbot to get it to produce an unshortening analysis.",
         "input": {
-          "matchChannel": "unshorten_url_testing",
-          "matchText": "!unshorten",
-          "type": "group"
+          "matchChannel": "",
+          "matchText": "unshorten-url",
+          "type": "direct"
         },
         "inputJsonSchema": {
           "properties": {
