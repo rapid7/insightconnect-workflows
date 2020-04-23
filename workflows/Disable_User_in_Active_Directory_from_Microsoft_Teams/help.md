@@ -1,6 +1,6 @@
 # Description
 
-Disable User in Microsoft Active Directory from Microsoft Teams.
+Disable User in Active Directory from Microsoft Teams.
 
 Sample Slack Trigger Commands:
 
@@ -8,12 +8,12 @@ Sample Slack Trigger Commands:
 
 # Key Features
 
-* Disable an Active Directory LDAP user directly from Microsoft Teams
+* Disable an Active Directory user directly from Microsoft Teams
 
 # Requirements
 
 * [Microsoft Teams](https://insightconnect.help.rapid7.com/docs/microsoft-teams)
-* Active Directory LDAP connection
+* Active Directory connection
 
 # Documentation
 
@@ -24,7 +24,7 @@ Import the workflow from the Rapid7 Extension Library and proceed through the Im
 Once the workflow has been imported, each Microsoft Teams step will need the team name and channel name updated to suit your Teams environment (edit the input from the preset text of `change_me`).
 
 To run the workflow, send the command `!disable-user <exampleuser>` in your configured team and channel. The workflow will post after it has completed.
-In the Team and chanel inputs replace `change_me` with the appropriate team and channel.
+In the Team and channel inputs replace `change_me` with the appropriate team and channel.
 
 ## Technical Details
 

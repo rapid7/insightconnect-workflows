@@ -5,10 +5,10 @@
     "exportedAt": "2020-04-22T18:37:22.994611519Z",
     "workflowVersions": [
       {
-        "name": "Disable User in Microsoft Active Directory from Microsoft Teams",
+        "name": "Disable User in Active Directory from Microsoft Teams",
         "type": "runnable",
         "version": "",
-        "description": "",
+        "description": "Disable Active Directory users from Microsoft Teams",
         "graph": {
           "edges": {
             "03316e2e-6b69-40bd-8d62-60429cc3e392": {
