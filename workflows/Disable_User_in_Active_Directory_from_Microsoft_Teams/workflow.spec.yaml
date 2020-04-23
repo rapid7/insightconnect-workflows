@@ -9,7 +9,7 @@ support: rapid7
 status: []
 hub_tags:
   use_cases: [threat_detection_and_response, cloud_security, user_management]
-  keywords: [chat, active_directory, ldap, teams, work_from_home, phishing, covid]
+  keywords: [chat, active_directory, ldap, teams, work_from_home, phishing]
   features: []
 resources:
   source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Disable_User_in_Active_Directory_from_Microsoft_Teams
