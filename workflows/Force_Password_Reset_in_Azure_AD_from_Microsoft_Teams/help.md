@@ -27,7 +27,7 @@ Once the workflow has been imported, **each Microsoft Teams step will need the t
 
 After configuring the Teams steps and the `Find DN` step, activate the workflow in order to trigger it.
 
-## Usage
+### Usage
 
 *This workflow will only trigger in the channel specified in the Microsoft Teams workflow steps.*
 
