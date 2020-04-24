@@ -41,6 +41,11 @@ Plugins leveraged by workflow:
 
 ## Troubleshooting
 
+# Version History
+
+* 1.0.1 - Updated documentation
+* 1.0.0 - Initial workflow
+
 # Links
 
 ## References
