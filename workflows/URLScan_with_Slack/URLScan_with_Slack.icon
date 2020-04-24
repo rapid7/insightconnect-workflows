@@ -1,14 +1,14 @@
 {
   "kom": {
-    "komandVersion": "1.49.0-0-gc013d",
+    "komandVersion": "1.49.2-0-gafb52",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-04-20T14:20:02.994596322Z",
+    "exportedAt": "2020-04-24T17:51:49.394596246Z",
     "workflowVersions": [
       {
-        "name": "URLScan with Slack",
+        "name": "Enrich URL with urlscan.io from Slack",
         "type": "runnable",
         "version": "",
-        "description": "Retrieve the full URLScan.io report of a URL in Slack",
+        "description": "Retrieve the full urlscan.io report of a URL in Slack",
         "graph": {
           "edges": {
             "05d3f9d7-f83b-4f5d-9d51-27613d6414e0": {
@@ -351,7 +351,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": ":notebook_with_decorative_cover: URLScan for `<https://rapid7.com|{{[6f80dc1f-9a48-4fbd-bfa0-06f2a86a6c04].[content]}}>` :notebook_with_decorative_cover:\n_WhoIs_\nFailed to get Report",
+                "message": ":notebook_with_decorative_cover: urlscan.io for `<https://rapid7.com|{{[6f80dc1f-9a48-4fbd-bfa0-06f2a86a6c04].[content]}}>` :notebook_with_decorative_cover:\n_WhoIs_\nFailed to get Report",
                 "recipient": "{{[9103f075-a1ff-4b65-8666-8b6331b38a96].[message].[channel]}}",
                 "thread_ts": "{{[9103f075-a1ff-4b65-8666-8b6331b38a96].[timestamp]}}"
               }
@@ -647,7 +647,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": ":notebook_with_decorative_cover: URLScan for `<http://rapid7.com|{{[6f80dc1f-9a48-4fbd-bfa0-06f2a86a6c04].[content]}}>` :notebook_with_decorative_cover:\n_WhoIs_\nURL Submitted but no report generated\n",
+                "message": ":notebook_with_decorative_cover: urlscan.io for `<http://rapid7.com|{{[6f80dc1f-9a48-4fbd-bfa0-06f2a86a6c04].[content]}}>` :notebook_with_decorative_cover:\n_WhoIs_\nURL Submitted but no report generated\n",
                 "recipient": "{{[9103f075-a1ff-4b65-8666-8b6331b38a96].[message].[channel]}}",
                 "thread_ts": "{{[9103f075-a1ff-4b65-8666-8b6331b38a96].[message].[ts]}}"
               }
@@ -714,7 +714,7 @@
           },
           "79aaff7b-bc40-473e-bfac-3f3e90a700ed": {
             "nodeId": "79aaff7b-bc40-473e-bfac-3f3e90a700ed",
-            "name": "sleep 30sec",
+            "name": "sleep 30 seconds",
             "type": "action",
             "plugin": {
               "name": "Sleep",
@@ -842,7 +842,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": ":notebook_with_decorative_cover: URLScan :notebook_with_decorative_cover:\n_WhoIs_\nNo URL Found",
+                "message": ":notebook_with_decorative_cover: urlscan.io :notebook_with_decorative_cover:\n_WhoIs_\nNo URL Found",
                 "recipient": "{{[9103f075-a1ff-4b65-8666-8b6331b38a96].[message].[channel]}}",
                 "thread_ts": "{{[9103f075-a1ff-4b65-8666-8b6331b38a96].[message].[ts]}}"
               }
@@ -909,19 +909,19 @@
           },
           "9103f075-a1ff-4b65-8666-8b6331b38a96": {
             "nodeId": "9103f075-a1ff-4b65-8666-8b6331b38a96",
-            "name": "URLScan Slack Trigger",
-            "description": "!urlscan <url> is the command to slackbot to produce a report from urlscan.io",
+            "name": "enrich-url Trigger",
+            "description": "enrich-url <url> is the command to slackbot to produce a report from urlscan.io",
             "type": "trigger",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "input": {
                 "matchChannel": "urlscan_testing",
-                "matchText": "!urlscan",
+                "matchText": "enrich-url.*",
                 "type": "group"
               }
             },
-            "triggerId": "02546334-b2d2-47d6-ac04-abb2769966d1",
+            "triggerId": "a9db7366-566d-499e-bfc9-e447c2b7fadc",
             "defaultInputJSONSchema": {
               "properties": {
                 "matchChannel": {
@@ -1044,7 +1044,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": ":notebook_with_decorative_cover: URLScan for <http://rapid7.com|{{[6f80dc1f-9a48-4fbd-bfa0-06f2a86a6c04].[content]}}> :notebook_with_decorative_cover:\n_WhoIs_\n> Total HTTP Requests: {{[71041ba1-43e2-4e4e-9844-c9c947b5e3fd].[requests]}}\n> Total Cookies:{{[71041ba1-43e2-4e4e-9844-c9c947b5e3fd].[cookies]}}\n> Total Links: {{[71041ba1-43e2-4e4e-9844-c9c947b5e3fd].[links]}}\n> Total JSON Globals: {{[71041ba1-43e2-4e4e-9844-c9c947b5e3fd].[json]}}",
+                "message": ":notebook_with_decorative_cover: urlscan.io for <http://rapid7.com|{{[6f80dc1f-9a48-4fbd-bfa0-06f2a86a6c04].[content]}}> :notebook_with_decorative_cover:\n_WhoIs_\n> Total HTTP Requests: {{[71041ba1-43e2-4e4e-9844-c9c947b5e3fd].[requests]}}\n> Total Cookies:{{[71041ba1-43e2-4e4e-9844-c9c947b5e3fd].[cookies]}}\n> Total Links: {{[71041ba1-43e2-4e4e-9844-c9c947b5e3fd].[links]}}\n> Total JSON Globals: {{[71041ba1-43e2-4e4e-9844-c9c947b5e3fd].[json]}}",
                 "recipient": "{{[9103f075-a1ff-4b65-8666-8b6331b38a96].[message].[channel]}}",
                 "thread_ts": "{{[9103f075-a1ff-4b65-8666-8b6331b38a96].[message].[ts]}}"
               }
@@ -1220,12 +1220,12 @@
     ],
     "triggers": [
       {
-        "id": "02546334-b2d2-47d6-ac04-abb2769966d1",
-        "name": "URLScan Slack Trigger",
-        "description": "!urlscan <url> is the command to slackbot to produce a report from urlscan.io",
+        "id": "a9db7366-566d-499e-bfc9-e447c2b7fadc",
+        "name": "enrich-url Trigger",
+        "description": "enrich-url <url> is the command to slackbot to produce a report from urlscan.io",
         "input": {
           "matchChannel": "urlscan_testing",
-          "matchText": "!urlscan",
+          "matchText": "enrich-url.*",
           "type": "group"
         },
         "inputJsonSchema": {

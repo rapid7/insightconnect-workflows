@@ -4,16 +4,16 @@ This workflow looks up a URL given via Slack command in urlscan.io and reports i
 
 Sample Slack Trigger Commands:
 
-`@Slackbot !urlscan https://example.com/suspicious/url`
+`@Slackbot enrich-url https://example.com/suspicious/url`
 
 # Key Features
 
-* Lookup URL from Slack
+* Enrich URL from Slack
 
 # Requirements
 
 * [Slack](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops)
-* URLScan.io API Key
+* urlscan.io API Key
 
 # Documentation
 
@@ -23,7 +23,7 @@ Once the workflow has been imported, edit the workflow and setup or select your 
 
 The URLScan connection needs to be setup for steps _Submit URL for Scan_ and _Get URLScan Report_.
 
-To run the workflow, @ your Slackbot in the channel along with the command "!urlscan <URL>". The workflow will post a response in a thread.
+To run the workflow, @ your Slackbot in the channel along with the command "enrich-url <URL>". The workflow will post a response in a thread.
 
 ## Technical Details
 
@@ -42,6 +42,7 @@ If a URL is submitted but no report is generated, urlscan.io may have blackliste
 
 # Version History
 
+* 1.0.1 - Updated Documentation and names
 * 1.0.0 - Initial workflow
 
 # Links
