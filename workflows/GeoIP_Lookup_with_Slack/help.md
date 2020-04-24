@@ -27,7 +27,7 @@ After import, activate the workflow in order to trigger it.
 
 *This workflow will trigger in any direct messages to your Chatbot **or** any message in a channel directed @ your Chatbot. Note the Chatbot must be in the channel in order to trigger the workflow this way.*
 
-To run the workflow, send a direct message to your InsightConnect Slack Chatbot or @ your Chatbot in a public channel starting with the command `enrich-url`. 
+To run the workflow, send a direct message to your InsightConnect Slack Chatbot or @ your Chatbot in a public channel starting with the command `geo-ip`.
 
 For example:
 
@@ -51,6 +51,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.3 - Updated documentation
 * 1.0.2 - Updated trigger syntax and documentation
 * 1.0.1 - Update documentation
 * 1.0.0 - Initial workflow
