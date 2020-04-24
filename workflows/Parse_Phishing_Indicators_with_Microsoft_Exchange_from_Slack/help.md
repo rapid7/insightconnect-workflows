@@ -31,8 +31,8 @@ Plugins utilized by workflow:
 |Plugin|Version|Count|
 |----|----|--------|
 |ExtractIt|2.0.0|4|
-|HashIt|2.0.3|2|
-|String Operations|1.2.1|2|
+|HashIt|2.0.3|1|
+|String Operations|1.2.1|1|
 |Python 3 Script|2.0.1|1|
 |Microsoft Exchange|5.2.0|1|
 
