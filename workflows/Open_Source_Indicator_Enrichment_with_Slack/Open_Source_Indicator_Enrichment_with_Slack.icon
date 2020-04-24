@@ -2,7 +2,7 @@
   "kom": {
     "komandVersion": "1.49.2-0-gafb52",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-04-23T17:12:46.521154694Z",
+    "exportedAt": "2020-04-24T03:40:54.859362031Z",
     "workflowVersions": [
       {
         "name": "Enrich Indicators with OSINT from Slack",
@@ -525,11 +525,11 @@
             "parameters": {
               "input": {
                 "matchChannel": "",
-                "matchText": "enrich-indicator",
+                "matchText": "investigate",
                 "type": "direct"
               }
             },
-            "triggerId": "6325ef4b-7c84-4b76-af88-4e6c6a61f021",
+            "triggerId": "8b1a5e3b-48a4-40f1-850e-432510aca3c5",
             "defaultInputJSONSchema": {
               "properties": {
                 "matchChannel": {
@@ -725,11 +725,11 @@
             "isDisabled": false,
             "parameters": {
               "captureAll": false,
-              "expressionText": "enrich-indicator {{command:/.*/}} {{argument:/.*/}}",
+              "expressionText": "investigate {{command:/.*/}} {{argument:/.*/}}",
               "expressions": [
                 {
                   "type": "text",
-                  "value": "enrich-indicator "
+                  "value": "investigate "
                 },
                 {
                   "type": "variable",
@@ -1177,7 +1177,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "This workflow will enriches common indicators of compromise (IOCs) using open-source intelligence. Input a URL, IP address, or file hash to receive basic intelligence about the provided IOC.\n\nCommands should be in the following format:\n\nenrich-indicator <indicator type> <indicator>\n\nexamples:\nenrich-indicator url rapid7.com\n\nenrich-indicator ip 198.51.100.100\n\nenrich-indicator hash 009f1e9b72cfb6daa3de82093a755bdb3685e0eb",
+                "message": "This workflow will enriches common indicators of compromise (IOCs) using open-source intelligence. Input a URL, IP address, or file hash to receive basic intelligence about the provided IOC.\n\nCommands should be in the following format:\n\ninvestigate <indicator type> <indicator>\n\nexamples:\ninvestigate url rapid7.com\n\ninvestigate ip 198.51.100.100\n\ninvestigate hash 009f1e9b72cfb6daa3de82093a755bdb3685e0eb",
                 "recipient": "{{[490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa].[message].[channel_id]}}",
                 "thread_ts": "{{[490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa].[message].[ts]}}"
               }
@@ -1470,12 +1470,12 @@
     ],
     "triggers": [
       {
-        "id": "6325ef4b-7c84-4b76-af88-4e6c6a61f021",
+        "id": "8b1a5e3b-48a4-40f1-850e-432510aca3c5",
         "name": "Investigate",
         "description": "",
         "input": {
           "matchChannel": "",
-          "matchText": "enrich-indicator",
+          "matchText": "investigate",
           "type": "direct"
         },
         "inputJsonSchema": {
