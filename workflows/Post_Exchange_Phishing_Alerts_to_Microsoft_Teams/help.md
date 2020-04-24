@@ -1,17 +1,17 @@
 # Description
 
-This workflow will dissect an email and return all potential malicious indicators to Slack in a message. 
+This workflow will dissect an email and return all potential malicious indicators to Microsoft Teams in a message. 
 
 # Key Features
 
-* Automatically post potential malicious indicators to Slack
+* Automatically post potential malicious indicators to Microsoft Teams
 
 # Requirements
 
 The following connections will need to be setup: 
 
 * [Microsoft Exchange](https://insightconnect.help.rapid7.com/docs/microsoft-exchange)
-* [Slack ChatOps](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops)
+* [Microsoft Teams](https://insightconnect.help.rapid7.com/docs/microsoft-teams)
 
 # Documentation
 
@@ -20,7 +20,7 @@ The following connections will need to be setup:
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect.
 Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-Once the workflow is successfully imported, edit each Slack ChatOps step to target the channel you would like
+Once the workflow is successfully imported, edit each Microsoft Teams step to target the channel you would like
 indicators posted to. Change the Email Received trigger inputs to monitor the mailbox and folder where phishing
 emails will be sent. 
 
@@ -35,6 +35,7 @@ Plugins utilized by workflow:
 |String Operations|1.2.1|1|
 |Python 3 Script|2.0.1|1|
 |Microsoft Exchange|5.2.0|1|
+|Microsoft Teams|2.0.2|2|
 
 ## Troubleshooting
 
@@ -42,7 +43,6 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
-* 1.0.1 - Rename workflow
 * 1.0.0 - Initial workflow
 
 # Links
@@ -51,5 +51,5 @@ _There is no troubleshooting information at this time_
 
 * [Microsoft Exchange](https://www.microsoft.com/en-us/microsoft-365/exchange/email)
 * [Microsoft Exchange Setup Guide](https://insightconnect.help.rapid7.com/docs/microsoft-exchange)
-* [Slack](https://slack.com/)
-* [Slack ChatOps Setup Guide](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops)
+* [Microsoft Teams](https://www.microsoft.com/en-us/microsoft-365/microsoft-teams/group-chat-software)
+* [Microsoft Teams Setup Guide](https://insightconnect.help.rapid7.com/docs/microsoft-teams)
