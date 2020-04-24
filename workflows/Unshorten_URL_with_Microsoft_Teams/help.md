@@ -29,7 +29,7 @@ The following are the 4 Microsoft Teams steps:
 
 After configuring the Teams steps, activate the workflow in order to trigger it.
 
-# Usage
+## Usage
 
 *This workflow will only trigger in the channel specified in the Microsoft Teams workflow steps.*
 
