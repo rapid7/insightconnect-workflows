@@ -29,7 +29,7 @@ Import the workflow from the Rapid7 Extension Library and proceed through the Im
 
 After import, activate the workflow in order to trigger it.
 
-## Usage
+### Usage
 
 *This workflow will only trigger in direct messages to your Slackbot. This is by design to avoid posting potentially malicious URLs in shared Slack channels.*
 
