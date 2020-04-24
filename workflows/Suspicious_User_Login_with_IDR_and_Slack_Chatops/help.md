@@ -21,7 +21,7 @@ Suspicious User Login with InsightIDR and Slack automates the process of validat
 
 ## Setup
 
-Once the workflow has been imported and the Slack Chatbot selected for your Slack Workspace, edit the workflow and setup your Active Directory connection in the Query and Disable user steps. Also, setup up your Jira connection and confirm where applicable.
+Once the workflow has been imported and the Slack Chatbot selected for your Slack Workspace, edit the workflow and setup your Active Directory connection in the Query and Disable user steps.
 
 ## Technical Details
 
@@ -40,6 +40,7 @@ _There is no troubleshooting information at this time._
 
 # Version History
 
+* 1.0.2 - Updated documentation
 * 1.0.1 - Fix title
 * 1.0.0 - Initial workflow
 
