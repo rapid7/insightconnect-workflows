@@ -1,5 +1,5 @@
 extension: workflow
-products: ["insightconnect, insightidr"]
+products: ["insightconnect", "insightidr"]
 name: Spearphishing_Remediation_with_Office_365
 title: "Spearphishing Remediation with Office 365"
 description: "IDR provides built-in machine learning based detections of spearphishing attempts through DNS queries to spoofed domains. On alert generation, this workflow automatically deletes true positive phishing emails across all user inboxes, and also immediately creates a block domain transport rule in Office365 Security & Compliance Center."
