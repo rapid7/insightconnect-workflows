@@ -5,7 +5,7 @@
     "exportedAt": "2020-04-24T15:00:45.740113283Z",
     "workflowVersions": [
       {
-        "name": "Microsoft Office 365 Email Indicators to Microsoft Teams",
+        "name": "Parse Phishing Indicators with Office365 from Microsoft Teams",
         "type": "runnable",
         "version": "",
         "description": "This workflow will dissect an email and return all potential malicious indicators to Microsoft Teams in a message.",
