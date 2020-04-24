@@ -2,7 +2,7 @@
   "kom": {
     "komandVersion": "1.49.2-0-gafb52",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-04-24T17:56:43.995619244Z",
+    "exportedAt": "2020-04-24T18:40:18.252939122Z",
     "workflowVersions": [
       {
         "name": "Post Gmail Phishing Alerts to Microsoft Teams",
@@ -764,7 +764,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "<b>📨 Email Profile 📨</b><br>\n<br>\n<b>Reporter:</b><br>\n{{[a87bab8a-835c-4cec-ae7c-68dab0355e9f].[email].[sender]}}<br>\n<br>\n<b>Subject:</b><br>\n{{[a87bab8a-835c-4cec-ae7c-68dab0355e9f].[email].[subject]}}<br>\n<br>\n<b>Potential Threat:</b> <br>\n{{[a87bab8a-835c-4cec-ae7c-68dab0355e9f].[email].[account]}}<br>\n<br>\n<b>Domains from Headers</b><br>\n{{#each [ec601fec-af22-41a1-a8e6-c3cf55e0b162].[list]}}\n{{this}}<br>\n{{/each}}\n<br>\n<b>URLs</b><br> \n{{#each [87d860f1-94fb-470e-ab6d-ab4cfc804deb].[urls]}}\n{{this}}<br>\n{{/each}}\n<br>\n{{#each [b9ad794d-5aea-4429-bddc-5ff7d5072a38].[$outputs]}}\n{{#each [de9b99fb-2fc4-475b-8894-120949043c6c].[urls]}}\n{{this}}<br>\n{{/each}}\n{{/each}}\n<br>\n<b>File Hashes</b><br>\n{{#each [d8d9a774-bae0-41af-ab93-89e23830d086].[$outputs]}}\n{{[9461258e-f9fa-4fec-ad90-f170f28b89dc].[md5]}}<br>\n{{/each}}\n<br>\n{{#each [b9ad794d-5aea-4429-bddc-5ff7d5072a38].[$outputs]}}\n{{#each [4ba620f2-c47b-4a24-a90a-f8a2ea8df552].[$outputs]}}\n{{[f668647c-6d51-42b5-bba6-99159eb80e77].[md5]}}<br>\n{{/each}}\n{{/each}}\n"
+                "content": "<i>📨 Email Profile 📨</i><br><br>\n<i>Reporter:</i><br>\n{{[a87bab8a-835c-4cec-ae7c-68dab0355e9f].[email].[sender]}}<br><br>\n<i>Subject:</i><br>\n{{[a87bab8a-835c-4cec-ae7c-68dab0355e9f].[email].[subject]}}<br><br>\n<i>Potential Threat:</i><br>\n{{[a87bab8a-835c-4cec-ae7c-68dab0355e9f].[email].[account]}}<br><br>\n<i>Domains from Headers</i>\n{{#each [ec601fec-af22-41a1-a8e6-c3cf55e0b162].[list]}}\n{{this}}<br>\n{{/each}}\n<br>\n<i>URLs</i>\n{{#each [87d860f1-94fb-470e-ab6d-ab4cfc804deb].[urls]}}\n{{this}}<br>\n{{/each}}\n<br>\n{{#each [b9ad794d-5aea-4429-bddc-5ff7d5072a38].[$outputs]}}\n{{#each [de9b99fb-2fc4-475b-8894-120949043c6c].[urls]}}\n{{this}}<br>\n{{/each}}\n{{/each}}\n<br>\n<i>File Hashes</i><br>\n{{#each [d8d9a774-bae0-41af-ab93-89e23830d086].[$outputs]}}\n{{[9461258e-f9fa-4fec-ad90-f170f28b89dc].[md5]}}<br>\n{{/each}}\n<br>\n{{#each [b9ad794d-5aea-4429-bddc-5ff7d5072a38].[$outputs]}}\n{{#each [4ba620f2-c47b-4a24-a90a-f8a2ea8df552].[$outputs]}}\n{{[f668647c-6d51-42b5-bba6-99159eb80e77].[md5]}}<br>\n{{/each}}\n{{/each}}"
               },
               "type": "markdown"
             },

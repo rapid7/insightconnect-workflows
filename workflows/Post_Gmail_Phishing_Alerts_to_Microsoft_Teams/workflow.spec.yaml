@@ -23,3 +23,7 @@ resources:
     title: Workflow View
   - name: teams_flow1.png
     title: Example Message to Microsoft Teams
+  - name: artifact1.png
+    title: Top Level Headers Artifact
+  - name: artifact1.png
+    title: URL's Identified Artifact
