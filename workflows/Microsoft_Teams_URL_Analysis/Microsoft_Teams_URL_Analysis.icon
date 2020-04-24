@@ -238,7 +238,7 @@
             "parameters": {
               "input": {
                 "channel_name": "Komand Test Channel",
-                "message_content": "<b>📃  Could not get VirusTotal report  📃</b><hr>\n\nThis may happen if you overload the VirusTotal API with requests. Please wait a couple of minutes and try again.<br> \n<br>\nMake sure no other workflows are hitting the VirusTotal API excessively. <br>\n<br>\n<b>For more information:</b><br>\n<a href={{[$job].[URL]}}>Job Report</a>",
+                "message_content": "<b>📃  Could not get VirusTotal report  📃</b><hr>\n\nThis may happen if you overload the VirusTotal API with requests. Please wait a couple of minutes and try again.<br> \n<br>\nMake sure no other workflows are hitting the VirusTotal API excessively. <br>\n<br>\n<b>For more information:</b><br>\n<a href=\"{{[$job].[URL]}\"}>Job Report</a>",
                 "team_name": "Komand-Test-Everyone"
               }
             },
