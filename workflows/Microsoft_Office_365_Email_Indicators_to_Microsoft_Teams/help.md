@@ -28,6 +28,7 @@ Plugins utilized by workflow:
 |Plugin|Version|Count|
 |----|----|--------|
 |ExtractIt|2.0.0|4|
+|Microsoft Teams|2.0.2|2|
 |HashIt|2.0.3|2|
 |String Operations|1.2.1|2|
 |Python 3 Script|2.0.1|1|
