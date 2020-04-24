@@ -1,5 +1,5 @@
 extension: workflow
-products: ["insightconnect, insightvm"]
+products: ["insightconnect", "insightvm"]
 name: Top_Remediations_For_Asset_In_Slack
 title: "Top Remediations for Asset in Slack"
 description: Access top remediation steps for a specified asset in Slack. 
