@@ -25,7 +25,9 @@ Import the workflow from the Rapid7 Extension Library and proceed through the Im
 
 Once the workflow has been imported, **each Microsoft Teams step will need the team name and channel name updated to suit your Teams environment!** Edit the input with the preset text of `change_me` in each Teams step in the workflow.
 
-After configuring the Teams steps, activate the workflow in order to trigger it.
+In addition to updating the Teams steps, the `Find DN` step will need the Search Base field to be defined. Edit the workflow, open the `Find DN` step, and provide the appropriate Search Base for your domain. For example, if your domain is `acme.com` then the Search Base would be `DC=acme,DC=com`.
+
+After configuring the Teams steps and the `Find DN` step, activate the workflow in order to trigger it.
 
 # Usage
 
