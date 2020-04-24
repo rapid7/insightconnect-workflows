@@ -1,9 +1,9 @@
 extension: workflow
 products: ["insightconnect"]
 name: Enrich_File_Hash_with_Microsoft_Teams
-title: "Enrich File Hash with VirusTotal from Slack"
+title: "Enrich File Hash with VirusTotal from Microsoft Teams"
 description: Lookup a potentially malicious file hash in VirusTotal with a Microsoft Teams command.
-version: 1.0.1
+version: 1.0.2
 vendor: rapid7
 support: rapid7
 status: []
