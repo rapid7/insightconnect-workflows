@@ -16,4 +16,10 @@ resources:
   license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
   screenshots:
   - name: workflow1.png
-    title: Workflow View
+    title: Workflow Top View
+  - name: workflow2.png
+    title: Workflow Bottom View
+  - name: teams_flow1.png
+    title: Sample Teams Message
+  - name: teams_flow2.png
+    title: Sample Teams Message Complete
