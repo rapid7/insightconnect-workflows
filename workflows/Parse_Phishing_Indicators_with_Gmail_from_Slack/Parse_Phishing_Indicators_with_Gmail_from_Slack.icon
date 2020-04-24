@@ -8,7 +8,7 @@
         "name": "Parse Phishing Indicators with Gmail from Slack",
         "type": "runnable",
         "version": "",
-        "description": "",
+        "description": "This workflow will dissect an email and return all potential malicious indicators to Slack in a message.",
         "graph": {
           "edges": {
             "1cf31769-f9db-4ee3-b5c3-71740984a083": {
