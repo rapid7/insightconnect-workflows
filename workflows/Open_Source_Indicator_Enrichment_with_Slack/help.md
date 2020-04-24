@@ -32,17 +32,16 @@ After import, activate the workflow in order to trigger it.
 
 *This workflow will only trigger in direct messages to your Slackbot. This is by design to avoid posting potentially malicious URLs in shared Slack channels.*
 
-To run the workflow, send a direct message to your InsightConnect Slack Chatbot starting with the command `enrich-indicator`. 
+To run the workflow, send a direct message to your InsightConnect Slack Chatbot starting with the command `investigate`. 
 
 Commands should be in the following format:
-`enrich-indicator <indicator type> <indicator>`
+`investigate <indicator type> <indicator>`
 
-`enrich-indicator ip 8.8.8.8`
-`enrich-indicator url badsite.com`
-`enrich-indicator hash 009f1e9b72cfb6daa3de82093a755bdb3685e0eb`
+`investigate ip 8.8.8.8`
+`investigate url badsite.com`
+`investigate hash 009f1e9b72cfb6daa3de82093a755bdb3685e0eb`
 
-
-Alternatively, use `enrich-indicator help` for more information and examples. 
+Use `investigate help` for more information and examples. 
 
 The workflow will post the results in a thread.
 
