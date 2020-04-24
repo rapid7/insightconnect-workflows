@@ -1,6 +1,6 @@
 # Description
 
-Disable User in Active Directory from Microsoft Teams.
+Disabling a compromised account can limit the scope of an attack and buy valuable time to investigate and contain the threat. This workflow disables a domain user account with a command in Microsoft Teams.
 
 Sample Slack Trigger Commands:
 
