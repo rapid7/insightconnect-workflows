@@ -1,5 +1,5 @@
 extension: workflow
-products: ["insightconnect, insightvm"]
+products: ["insightconnect", "insightvm"]
 name: InsightVM_Top_25_Remediations_to_JIRA 
 title: "InsightVM Top 25 Remediations to JIRA"
 description: Create and update Jira issues based on top risk-reducing remediation steps from InsightVM.
