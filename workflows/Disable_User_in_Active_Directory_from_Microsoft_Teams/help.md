@@ -21,10 +21,21 @@ Sample Slack Trigger Commands:
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-Once the workflow has been imported, each Microsoft Teams step will need the team name and channel name updated to suit your Teams environment (edit the input from the preset text of `change_me`).
+Once the workflow has been imported, **each Microsoft Teams step will need the team name and channel name updated to suit your Teams environment!** Edit the input with the preset text of `change_me` in each Teams step in the workflow.
 
-To run the workflow, send the command `!disable-user <exampleuser>` in your configured team and channel. The workflow will post after it has completed.
-In the Team and channel inputs replace `change_me` with the appropriate team and channel.
+After configuring the Teams steps, activate the workflow in order to trigger it.
+
+# Usage
+
+*This workflow will only trigger in the channel specified in the Microsoft Teams workflow steps.*
+
+To run the workflow, send a message to the specified Microsoft Teams channel starting with the command `!disable-user`.
+
+Commands should be in the following format:
+
+`!disable-user jdoe`
+
+The workflow will post the results in a thread.
 
 ## Technical Details
 
