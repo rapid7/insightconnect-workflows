@@ -229,7 +229,7 @@
             "parameters": {
               "input": {
                 "channel_name": "Komand Test Channel",
-                "message_content": "!block_sender",
+                "message_content": "!block-sender",
                 "team_name": "Komand-Test-Everyone"
               }
             },
@@ -1411,7 +1411,7 @@
         "description": "",
         "input": {
           "channel_name": "Komand Test Channel",
-          "message_content": "!block_sender",
+          "message_content": "!block-sender",
           "team_name": "Komand-Test-Everyone"
         },
         "inputJsonSchema": {
