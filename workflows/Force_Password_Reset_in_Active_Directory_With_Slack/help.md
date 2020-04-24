@@ -27,7 +27,7 @@ Once the workflow has been imported, the `Find DN` step will need the Search Bas
 
 After updating the `Find DN` step, activate the workflow in order to trigger it.
 
-## Usage
+### Usage
 
 *This workflow will trigger in any direct messages to your Chatbot **or** any message in a channel directed @ your Chatbot. Note the Chatbot must be in the channel in order to trigger the workflow this way.*
 
