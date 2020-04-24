@@ -40,10 +40,10 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|HTML|1.2.0|1|
-|Microsoft Teams|1.2.2|1|
-|String Operations|1.2.0|1|
-|VirusTotal|5.0.0|1|
+|Microsoft Teams|2.0.2|4|
+|String Operations|1.2.1|3|
+|HTML|1.2.1|1|
+|VirusTotal|6.0.1|2|
 
 ## Troubleshooting
 
