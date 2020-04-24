@@ -553,9 +553,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "matt_test",
+                "channel_name": "change_me",
                 "message_content": "{{[5dc7b882-f670-402b-83e7-70e5da454c53].[content]}}",
-                "team_name": "Dream Team"
+                "team_name": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -966,7 +966,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "email": "admin@komandops.org",
+                "email": "change_me",
                 "flatten_attachments": false,
                 "only_new_emails": true,
                 "poll_interval": 15,
@@ -1262,9 +1262,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "matt_test",
+                "channel_name": "change_me",
                 "message_content": "📨  Email Received: Beginning Analysis 📨<br>\n<br>\nFrom: {{[a87bab8a-835c-4cec-ae7c-68dab0355e9f].[email].[sender]}}<br>\nSubject: {{[a87bab8a-835c-4cec-ae7c-68dab0355e9f].[email].[subject]}}",
-                "team_name": "Dream Team"
+                "team_name": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -1743,7 +1743,7 @@
         "name": "New Message",
         "description": "",
         "input": {
-          "email": "admin@komandops.org",
+          "email": "change_me",
           "flatten_attachments": false,
           "only_new_emails": true,
           "poll_interval": 15,
