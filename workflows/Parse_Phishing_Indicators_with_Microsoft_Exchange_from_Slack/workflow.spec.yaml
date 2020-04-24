@@ -1,9 +1,9 @@
 extension: workflow
 products: ["insightconnect"]
 name: Parse_Phishing_Indicators_with_Microsoft_Exchange_from_Slack
-title: "Parse Phishing Indicators with Microsoft Exchange from Slack"
+title: "Post Exchange Phishing Alerts to Slack"
 description: "This workflow will dissect an email and return all potential malicious indicators to Slack in a message."
-version: 1.0.0
+version: 1.0.1
 vendor: rapid7
 support: rapid7
 status: []
