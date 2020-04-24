@@ -237,9 +237,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
+                "channel_name": "change-me",
                 "message_content": "<b>📃  Could not get VirusTotal report  📃</b><hr>\n\nThis may happen if you overload the VirusTotal API with requests. Please wait a couple of minutes and try again.<br> \n<br>\nMake sure no other workflows are hitting the VirusTotal API excessively. <br>\n<br>\n<b>For more information:</b><br>\n<a href=\"{{[$job].[URL]}\"}>Job Report</a>",
-                "team_name": "Komand-Test-Everyone"
+                "team_name": "change-me"
               }
             },
             "defaultInputJSONSchema": {
@@ -407,9 +407,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
+                "channel_name": "change-me",
                 "message_content": "^!enrich-url.*",
-                "team_name": "Komand-Test-Everyone"
+                "team_name": "change-me"
               }
             },
             "triggerId": "a2159a2c-fe93-42f3-a0b0-d62b3bce73aa",
@@ -577,9 +577,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
+                "channel_name": "change-me",
                 "message_content": "<b>📃 Starting URL Anaysis 📃</b><hr>\nURL: {{[11d22bb8-eda1-479d-820b-c99f67b811b1].[trimmed]}}",
-                "team_name": "Komand-Test-Everyone"
+                "team_name": "change-me"
               }
             },
             "defaultInputJSONSchema": {
@@ -1157,9 +1157,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
+                "channel_name": "change-me",
                 "message_content": "<b>📃  URL Analysis Complete  📃</b><hr>\n\n<b>URL Scanned:</b> {{[ca5bece3-7ac4-4279-b513-ea1b3277e4f5].[url]}}\n<p><b>Was URL Malicious:</b> {{[ca5bece3-7ac4-4279-b513-ea1b3277e4f5].[malicious]}}\n<p><b>VT Scan ID:</b> {{[ca5bece3-7ac4-4279-b513-ea1b3277e4f5].[scan_id]}}",
-                "team_name": "Komand-Test-Everyone"
+                "team_name": "change-me"
               }
             },
             "defaultInputJSONSchema": {
@@ -1324,9 +1324,9 @@
         "name": "Get New Message",
         "description": "",
         "input": {
-          "channel_name": "Komand Test Channel",
+          "channel_name": "change-me",
           "message_content": "^!enrich-url.*",
-          "team_name": "Komand-Test-Everyone"
+          "team_name": "change-me"
         },
         "inputJsonSchema": {
           "properties": {
