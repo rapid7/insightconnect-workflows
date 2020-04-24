@@ -1,7 +1,7 @@
 extension: workflow
 products: ["insightconnect"]
 name: Microsoft_Office_365_Email_Indicators_to_Microsoft_Teams
-title: "Parse Phishing Indicators with Office 365 from Microsoft Teams"
+title: "Post Phishing Indicators with Office 365 to Microsoft Teams"
 description: "This workflow will dissect an email and return all potential malicious indicators to Microsoft Teams in a message.."
 version: 1.0.0
 vendor: rapid7
