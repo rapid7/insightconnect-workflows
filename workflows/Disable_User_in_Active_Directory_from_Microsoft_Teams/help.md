@@ -8,7 +8,9 @@ Sample Slack Trigger Commands:
 
 # Key Features
 
-* Disable an Active Directory user directly from Microsoft Teams
+* **Break the Kill Chain** - Credentials provide attackers with easy access to numerous targets. Disabling a compromised account or forcing a password reset can quickly and effectively interrupt an attacker’s kill chain.
+* **Buy Time to Investigate and Remediate** - In a pinch, disabling a user account can limit your threat exposure and buy your team valuable time to investigate and contain a threat. 
+* **Reduce Portal Fatigue** - You have enough to do without logging into a different solution every 5 minutes. Control your response actions from chat instead.
 
 # Requirements
 
