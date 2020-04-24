@@ -4,7 +4,7 @@ Disabling a compromised account can limit the scope of an attack and buy valuabl
 
 Sample Trigger Commands:
 
-`!disable_user user@example.com`
+`!disable-user user@example.com`
 
 # Key Features
 
@@ -23,10 +23,18 @@ Sample Trigger Commands:
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-Once the workflow is successfully imported, edit each Microsoft Teams step to reflect your team name and channel (edit the input with the preset text of `change_me`).
+Once the workflow has been imported, **each Microsoft Teams step will need the team name and channel name updated to suit your Teams environment!** Edit the input with the preset text of `change_me` in each Teams step in the workflow.
 
-To run the workflow, in the channel you are monitoring enter the following:
-`!disable_user <user_email>`. 
+After configuring the Teams steps, activate the workflow in order to trigger it.
+
+## Usage
+
+*This workflow will only trigger in the channel specified in the Microsoft Teams workflow steps.*
+
+To run the workflow, send a message to the specified Microsoft Teams channel starting with the command `!disable-user`. 
+
+For example:
+* `!disable-user user@example.com`
 
 Your chat bot will reply when the workflow completes.
 
@@ -47,6 +55,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.2 - Updated trigger syntax and documentation
 * 1.0.1 - Updated documentation | Updated images
 * 1.0.0 - Initial workflow
 

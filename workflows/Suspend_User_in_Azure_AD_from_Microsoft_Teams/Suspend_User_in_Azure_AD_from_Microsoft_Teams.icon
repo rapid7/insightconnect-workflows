@@ -8,7 +8,7 @@
         "name": "Disable User in Azure AD with Microsoft Teams",
         "type": "runnable",
         "version": "",
-        "description": "This workflow disables a specified user in Azure AD",
+        "description": "This workflow disables a specified user in Azure AD.",
         "graph": {
           "edges": {
             "170841e0-eaec-485e-bb8e-d68282137e08": {
@@ -596,7 +596,7 @@
             "parameters": {
               "input": {
                 "channel_name": "Komand Test Channel",
-                "message_content": "!disable_user",
+                "message_content": "!disable-user",
                 "team_name": "Komand-Test-Everyone"
               }
             },
@@ -1067,7 +1067,7 @@
         "description": "",
         "input": {
           "channel_name": "Komand Test Channel",
-          "message_content": "!disable_user",
+          "message_content": "!disable-user",
           "team_name": "Komand-Test-Everyone"
         },
         "inputJsonSchema": {

@@ -5,7 +5,7 @@
     "exportedAt": "2020-04-15T21:08:49.621420568Z",
     "workflowVersions": [
       {
-        "name": "Disable User Account in Azure AD with Slack",
+        "name": "Disable User Account in Azure AD from Slack",
         "type": "runnable",
         "version": "",
         "description": "This workflow disables a specified user in Azure AD",
@@ -292,14 +292,14 @@
           "ba543f89-2915-4c4a-ab02-68d0531e35d1": {
             "nodeId": "ba543f89-2915-4c4a-ab02-68d0531e35d1",
             "name": "Slack Message",
-            "description": "Trigger on Slack message\nE.X. !disable_user <SAMAccount>",
+            "description": "Trigger on Slack message\nE.X. disable-user <SAMAccount>",
             "type": "trigger",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "input": {
                 "matchChannel": "change_me",
-                "matchText": "!disable_user",
+                "matchText": "disable-user",
                 "type": "any"
               }
             },
@@ -578,10 +578,10 @@
       {
         "id": "256329bd-f588-4db1-9e16-80991640b0d2",
         "name": "Slack Message",
-        "description": "Trigger on Slack message\nE.X. !disable_user <SAMAccount>",
+        "description": "Trigger on Slack message\nE.X. disable-user <SAMAccount>",
         "input": {
           "matchChannel": "change_me",
-          "matchText": "!disable_user",
+          "matchText": "disable-user",
           "type": "any"
         },
         "inputJsonSchema": {
