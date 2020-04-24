@@ -1,5 +1,5 @@
 extension: workflow
-products: ["insightconnect, insightvm"]
+products: ["insightconnect", "insightvm"]
 name: Get_InsightVM_Host_Info_From_Slack
 title: "Get InsightVM Host Info from Slack"
 description: This workflow provides fast, convenient access to information about a given host from InsightVM. When triggered, the workflow fetches asset details from InsightVM and posts them in a Slack thread. Host info includes hostname, IP address, MAC address, operating system, running services, and vulnerability stats.
