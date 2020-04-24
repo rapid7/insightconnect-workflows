@@ -23,12 +23,18 @@ Sample Microsoft Teams Trigger Commands:
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-Once the workflow is successfully imported, edit each Microsoft Teams step to reflect your team name and channel.
+Once the workflow has been imported, **each Microsoft Teams step will need the team name and channel name updated to suit your Teams environment!** Edit the input with the preset text of `change_me` in each Teams step in the workflow.
 
-To run the workflow, in the channel you are monitoring enter the following:
-`!reset_password <user_email>`. 
+After configuring the Teams steps and the `Find DN` step, activate the workflow in order to trigger it.
 
-The workflow will reply when it has completed.
+### Usage
+
+*This workflow will only trigger in the channel specified in the Microsoft Teams workflow steps.*
+
+To run the workflow, send a message to the specified Microsoft Teams channel starting with the command `!reset-password`. 
+
+Commands should be in the following format:
+`!reset-password john.doe@acme.inc`
 
 ## Technical Details
 
@@ -46,6 +52,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.3 - Updated trigger syntax and documentation
 * 1.0.1 - Updated documentation
 * 1.0.0 - Initial workflow
 

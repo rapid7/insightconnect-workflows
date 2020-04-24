@@ -5,10 +5,10 @@
     "exportedAt": "2020-04-17T17:13:10.422609812Z",
     "workflowVersions": [
       {
-        "name": "Delete Office 365 Emails with Slack",
+        "name": "Find and Delete Emails in Office 365 from Slack",
         "type": "runnable",
         "version": "",
-        "description": "This workflow will delete emails matching given search criteria by sending a notification to InisghtConnect with Slack. The workflow will look for any emails that match the body, subject, for from contents given. It can either automatically delete these emails or prompt the user for further action.",
+        "description": "Use a Slack command to find and optionally delete emails matching the given search criteria.",
         "graph": {
           "edges": {
             "06e81ed2-31c6-4eb7-bfa4-819452bead1a": {
@@ -399,7 +399,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "Something went wrong with delete-email. \n\nThe message received was: \n{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[text]}}\n\nWorkflow Complete ❗",
+                "message": "Something went wrong with find-email. \n\nThe message received was: \n{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[text]}}\n\nWorkflow Complete ❗",
                 "recipient": "@{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[user]}}",
                 "thread_ts": "{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[ts]}}"
               }
@@ -1238,7 +1238,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "## Overview\n\n(This artifact can be deleted)\n\nThis workflow uses the Chat Ops Slack connection to listen for key messages from the InsightConnect Rapid7 connection and will search for and delete emails when triggered.\n\nTo trigger this workflow, send a direct message to Rapid7 InsightConnect from Slack like the following.\n\n`!delete-email user@example.com subject=\"A phishy email\"`\n\nThis will kick off the workflow, and prompt you back when the search is completed. If any emails are found that match the criteria, you can hit the delete button in Slack to delete them.\n\n### Other options:\n\nSearch criteria can be body, subject, or from lines in the email. For example:\n\n`!delete-email user@example.com subject=\"A phishy email\" from=\"example.com\" body=\"Click here for free stuff\" `\n\nAny combination of body, subject, and from can be used. At least one search item must be given.\n\nIf you'd like the workflow to just delete emails without prompting, you can also use 'delete=true' For example:\n\n`!delete-email user@example.com subject=\"A phishy email\" delete=true`"
+                "content": "## Overview\n\n(This artifact can be deleted)\n\nThis workflow uses the Chat Ops Slack connection to listen for key messages from the InsightConnect Rapid7 connection and will search for and delete emails when triggered.\n\nTo trigger this workflow, send a direct message to Rapid7 InsightConnect from Slack like the following.\n\n`find-email user@example.com subject=\"A phishy email\"`\n\nThis will kick off the workflow, and prompt you back when the search is completed. If any emails are found that match the criteria, you can hit the delete button in Slack to delete them.\n\n### Other options:\n\nSearch criteria can be body, subject, or from lines in the email. For example:\n\n`find-email user@example.com subject=\"A phishy email\" from=\"example.com\" body=\"Click here for free stuff\" `\n\nAny combination of body, subject, and from can be used. At least one search item must be given.\n\nIf you'd like the workflow to just delete emails without prompting, you can also use 'delete=true' For example:\n\n`find-email user@example.com subject=\"A phishy email\" delete=true`"
               },
               "type": "markdown"
             },
@@ -1287,7 +1287,7 @@
             "parameters": {
               "input": {
                 "matchChannel": "",
-                "matchText": "!delete-email",
+                "matchText": "find-email",
                 "type": "any"
               }
             },
@@ -2155,7 +2155,7 @@
         "description": "",
         "input": {
           "matchChannel": "",
-          "matchText": "!delete-email",
+          "matchText": "find-email",
           "type": "any"
         },
         "inputJsonSchema": {

@@ -4,14 +4,13 @@ Reset a user's Azure AD password with a command in Slack. Quickly respond, wheth
 
 Sample Slack Trigger Commands:
 
-`@Slackbot reset_password user@example.com`
+`@Slackbot reset-password user@example.com`
 
 # Key Features
 
 * **Break the Kill Chain** - Credentials provide attackers with easy access to numerous targets. Disabling a compromised account or forcing a password reset can quickly and effectively interrupt an attacker’s kill chain.
 * **Buy Time to Investigate and Remediate** - In a pinch, disabling a user account can limit your threat exposure and buy your team valuable time to investigate and contain a threat. Disabling the user may not remediate the root cause, but it can mitigate the immediate risk while you work on fixing underlying issues.
 * **Minimize Disruption to the User** - Forcing a user to reset their password is a small inconvenience compared to re-imaging their entire system. Acting fast can save valuable time and teach a valuable lesson without a noticeable impact to your business.
-
 
 # Requirements
 
@@ -24,13 +23,21 @@ Sample Slack Trigger Commands:
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-Once the workflow has been imported, the `Find DN` step will need the Search Base field to be defined. Edit the workflow, open the `Find DN` step, and provide the appropriate Search Base for your domain. For example, if your domain is `acme.com` then the Search Base would be `DC=acme,DC=com`.
-
 After importing, activate the workflow in order to trigger it.
 
-To run the workflow, @ your Slackbot in any channel or in a direct message along with the command `!reset_password <user_email>`.
+### Usage
 
-The workflow will reply when it has completed.
+*This workflow will trigger in any direct messages to your Chatbot **or** any message in a channel directed @ your Chatbot. Note the Chatbot must be in the channel in order to trigger the workflow this way.*
+
+To run the workflow, send a direct message to your InsightConnect Slack Chatbot or @ your Chatbot in a public channel starting with the command `reset-password`.
+
+For example, in a direct message to your Chatbot:
+* `reset-password john.doe@acme.inc`
+
+For example, in a channel with your Chatbot:
+* `@chatbot reset-password john.doe@acme.inc`
+
+The workflow will post the results in a thread.
 
 ## Technical Details
 

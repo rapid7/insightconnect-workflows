@@ -1,9 +1,9 @@
 extension: workflow
 products: ["insightconnect"]
 name: Unshorten_URL_with_Slack
-title: "Unshorten URL with Slack"
-description: This workflow accepts a Slack command, looks up the URL in the unshorten.me service and reports back the unshortened URL.
-version: 1.0.2
+title: "Unshorten URL from Slack"
+description: Unshorten a URL with a message to your InsightConnect Slack Chatbot.
+version: 1.0.3
 vendor: rapid7
 support: rapid7
 status: []

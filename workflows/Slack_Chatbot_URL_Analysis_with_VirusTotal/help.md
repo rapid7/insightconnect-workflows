@@ -4,11 +4,11 @@ Lookup and enrich suspicious URLs and domains with a simple Slack command. URL a
 
 Sample Slack Trigger Commands:
 
-`@Slackbot !url_lookup example.com`
+`enrich-url example.com`
 
-`@Slackbot !url_lookup www.example.com`
+`enrich-url www.example.com`
 
-`@Slackbot !url_lookup https://www.example.com`
+`enrich-url https://www.example.com`
 
 # Key Features
 
@@ -27,19 +27,20 @@ Sample Slack Trigger Commands:
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-After importing, activate the workflow in order to trigger it.
+After import, activate the workflow in order to trigger it.
 
 ### Usage
 
-This workflow uses the Chat Ops Slack integration to listen for messages sent to your InsightConnect Slack Chatbot and will lookup the provided URL or domain in VirusTotal when triggered.
+*This workflow will only trigger in direct messages to your Slackbot. This is by design to avoid posting potentially malicious URLs in shared Slack channels.*
 
-To trigger this workflow, either @ your Chat Bot in  a channel or send a direct message to the bot in Slack using the `!url_lookup` keyword:
+To run the workflow, send a direct message to your InsightConnect Slack Chatbot starting with the command `enrich-url`. 
 
-`!url_lookup badsite.com/suspicious/link`
+For example:
 
-`!url_lookup badsite.com`
+* `enrich-url badsite.com`
+* `enrich-url http://another.badsite.com`
 
-This will kick off the workflow. The VirusTotal scan results will be posted in a thread.
+The workflow will post the results in a thread.
 
 ## Technical Details
 
@@ -56,6 +57,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.5 - Updated trigger syntax and documentation
 * 1.0.4 - Updated documentation
 * 1.0.3 - Update workflow title to enrichment
 * 1.0.2 - Fix name matching

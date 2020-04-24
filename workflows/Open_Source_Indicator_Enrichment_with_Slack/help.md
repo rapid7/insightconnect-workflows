@@ -4,11 +4,11 @@ Threat Intelligence doesn’t have to come with a cost. This workflow uses open-
 
 Sample Slack Trigger Commands:
 
-`@Slackbot !investigate ip 8.8.8.8`
+`@Slackbot investigate ip 8.8.8.8`
 
-`@Slackbot !investigate url badsite.com`
+`@Slackbot investigate url badsite.com`
 
-`@Slackbot !investigate hash 36c5012e100c8e91221e9891cad37df0cac938cee1e8f69b6fdf99821cb05339`
+`@Slackbot investigate hash 36c5012e100c8e91221e9891cad37df0cac938cee1e8f69b6fdf99821cb05339`
 
 # Key Features
 
@@ -22,15 +22,28 @@ Sample Slack Trigger Commands:
 
 # Documentation
 
-## Setup
+### Setup
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-After import, you will need to activate the workflow in order to trigger it.
+After import, activate the workflow in order to trigger it.
 
-To run the workflow, @ your Slackbot in any channel or in a direct message along with the command `!investigate <command> <data>`. Example: `!investigate ip 8.8.8.8`
+## Usage
 
-Alternatively, use `!investigate help` for more information and examples. The workflow will post with the results of the lookup.
+*This workflow will only trigger in direct messages to your Slackbot. This is by design to avoid posting potentially malicious URLs in shared Slack channels.*
+
+To run the workflow, send a direct message to your InsightConnect Slack Chatbot starting with the command `investigate`. 
+
+Commands should be in the following format:
+`investigate <indicator type> <indicator>`
+
+`investigate ip 8.8.8.8`
+`investigate url badsite.com`
+`investigate hash 009f1e9b72cfb6daa3de82093a755bdb3685e0eb`
+
+Use `investigate help` for more information and examples. 
+
+The workflow will post the results in a thread.
 
 ## Technical Details
 
@@ -44,12 +57,11 @@ Plugins utilized by workflow:
 
 ## Troubleshooting
 
-In some instances using copy & paste for `!investigate` commands many introduce unicode characters.
-These characters may be misinterpreted by the workflow, resulting in the help response triggering for
-what appear to be valid commands. It is recommended to avoid copying & pasting commands.
+In some instances using copy & paste for `!enrich-indicator` commands many introduce unicode characters. These characters may be misinterpreted by the workflow, resulting in the help response triggering for what appear to be valid commands. It is recommended to avoid copying & pasting commands.
 
 # Version History
 
+* 1.0.3 - Updated trigger syntax and documentation
 * 1.0.2 - Updated workflow title, description, and key features
 * 1.0.1 - Update help document
 * 1.0.0 - Initial workflow

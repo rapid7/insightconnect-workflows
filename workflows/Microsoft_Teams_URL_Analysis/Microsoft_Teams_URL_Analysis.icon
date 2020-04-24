@@ -5,10 +5,10 @@
     "exportedAt": "2019-11-12T18:49:28.291927677Z",
     "workflowVersions": [
       {
-        "name": "Teams Analysis Example",
+        "name": "Enrich URLs and Domains with VirusTotal from Microsoft Teams",
         "type": "runnable",
         "version": "",
-        "description": "This workflow will scan a Microsoft Teams channel for a specific message. When the workflow detects a message matching that signature, it will automatically scan the URL in VirusTotal and return the results to Microsoft Teams.",
+        "description": "Enrich potential indicators of compromise by getting VirusTotal reports for URLs and domains with a Microsoft Teams command.",
         "graph": {
           "edges": {
             "39cf1a3c-064d-4faa-b6c2-6f578d9ea545": {
@@ -233,11 +233,11 @@
                     "op": "=~",
                     "right": {
                       "type": "literal",
-                      "value": "^!check_url.*"
+                      "value": "^!enrich-url.*"
                     },
                     "type": "binary"
                   },
-                  "expressionText": "{{[a5a9e449-2407-4567-a693-57b618057986].[trimmed]}} =~ \"^!check_url.*\""
+                  "expressionText": "{{[a5a9e449-2407-4567-a693-57b618057986].[trimmed]}} =~ \"^!enrich-url.*\""
                 }
               ]
             },
@@ -763,7 +763,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "delimiter": "!check_url",
+                "delimiter": "!enrich-url",
                 "string": "{{[6dd45e6a-358c-4a83-8a88-f1e6a31e2777].[text]}}"
               }
             },

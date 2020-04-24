@@ -1,12 +1,12 @@
 # Description
 
-Don’t fall for the same phish twice. This workflow uses a Slack command to find all emails in Office 365 that match the provided search criteria. It will look for any emails that match the 'body', 'subject', and 'from'. It can either automatically delete these emails or prompt the user for further action.
+Don’t let your users fall for the same phish twice. This workflow uses a Slack command to find all emails in the target user's Office 365 inbox that match the provided search criteria. It will look for any emails that match the 'body', 'subject', and 'from'. It will automatically delete these emails by using the `delete` flag.
 
 Sample Slack trigger command:
 
-`!delete-email user@example.com subject="A phishy email" from="example.com" body="Click here for free stuff" `
+`!find-email user@example.com subject="A phishy email" from="example.com" body="Click here for free stuff" `
 
-`!delete-email user@example.com subject="A phishy email" delete=true`
+`!find-email user@example.com subject="A phishy email" delete=true`
 
 
 # Key Features
@@ -28,27 +28,33 @@ The following connections will need to be setup:
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-After importing, activate the workflow in order to trigger it.
+After import, activate the workflow in order to trigger it.
 
 ### Usage
 
-This workflow uses the Chat Ops Slack connection to listen for key messages from the InsightConnect Rapid7 connection and will search for and delete emails when triggered.
+*This workflow will trigger in any direct messages to your Chatbot **or** any message in a channel directed @ your Chatbot. Note the Chatbot must be in the channel in order to trigger the workflow this way.*
 
-To trigger this workflow, send a direct message to Rapid7 InsightConnect from Slack like the following:
+To run the workflow, send a direct message to your InsightConnect Slack Chatbot or @ your Chatbot in a public channel starting with the command `find-email`.
 
-`!delete-email user@example.com subject="A phishy email"`
+For example, in a direct message to your Chatbot:
+* `find-email user@example.com subject="A phishy email"`
+
+Or in a channel including your Chatbot:
+* `@Chatbot find-email user@example.com subject="A phishy email"`
 
 This will kick off the workflow and prompt you when the search is completed. If any emails are found that match the criteria, you can choose the delete button in Slack to delete them.
 
 Search criteria can be 'body', 'subject', or 'from' lines in the email. For example:
 
-`!delete-email user@example.com subject="A phishy email" from="example.com" body="Click here for free stuff" `
+`!find-email user@example.com subject="A phishy email" from="example.com" body="Click here for free stuff" `
 
 Any combination of 'body', 'subject', and 'from' can be used. At least one search item must be given.
 
-If you'd like the workflow to just delete emails without prompting, you can also use 'delete=true' For example:
+If you'd like the workflow to delete matching emails without prompting, use `delete=true` For example:
 
-`!delete-email user@example.com subject="A phishy email" delete=true`
+`find-email user@example.com subject="A phishy email" delete=true`
+
+The workflow will post the results in a thread.
 
 ## Technical Details
 
@@ -65,6 +71,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.6 - Updated trigger syntax and documentation
 * 1.0.5 - Updated documentation
 * 1.0.4 - Update to remove join step
 * 1.0.3 - Fix name matching

@@ -1,9 +1,9 @@
 extension: workflow
 products: ["insightconnect"]
 name: Block_Sender_in_Office_365_with_Slack
-title: "Block Sender in Office 365 with Slack"
+title: "Block Sender in Office 365 from Slack"
 description: "This workflow uses a Slack command to block a sender or domain in Office 365."
-version: 1.0.2
+version: 1.0.3
 vendor: rapid7
 support: rapid7
 status: []

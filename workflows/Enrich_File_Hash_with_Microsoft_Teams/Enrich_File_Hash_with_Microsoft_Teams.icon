@@ -8,7 +8,7 @@
         "name": "Enrich File Hash with Microsoft Teams",
         "type": "runnable",
         "version": "",
-        "description": "Initiate and receive VirusTotal hash analysis reports with Microsoft Teams",
+        "description": "Lookup a potentially malicious file hash in VirusTotal with a Microsoft Teams command.",
         "graph": {
           "edges": {
             "247676e2-82d6-40fc-bd01-2343905d1c2e": {
@@ -797,8 +797,8 @@
           },
           "edd82ea1-b0b1-46e3-80ca-cdc3857b9905": {
             "nodeId": "edd82ea1-b0b1-46e3-80ca-cdc3857b9905",
-            "name": "!hash_lookup",
-            "description": "Receive a !hash_lookup command from Microsoft Teams",
+            "name": "!enrich-hash",
+            "description": "Receive a !enrich-hash command from Microsoft Teams",
             "type": "trigger",
             "plugin": {
               "name": "Microsoft Teams",
@@ -813,7 +813,7 @@
             "parameters": {
               "input": {
                 "channel_name": "change_me",
-                "message_content": "!hash_lookup",
+                "message_content": "!enrich-hash",
                 "team_name": ""
               }
             },
@@ -1146,11 +1146,11 @@
       {
         "id": "3c4d6231-ee29-4bd7-bd6f-2e13a7be88b0",
         "identifier": "new_message_received",
-        "name": "!hash_lookup",
-        "description": "Receive a !hash_lookup command from Microsoft Teams",
+        "name": "!enrich-hash",
+        "description": "Receive a !enrich-hash command from Microsoft Teams",
         "input": {
           "channel_name": "change_me",
-          "message_content": "!hash_lookup",
+          "message_content": "!enrich-hash",
           "team_name": ""
         },
         "inputJsonSchema": {

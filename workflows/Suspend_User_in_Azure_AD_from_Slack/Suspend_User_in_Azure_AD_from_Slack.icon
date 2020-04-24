@@ -1,11 +1,11 @@
 {
   "kom": {
-    "komandVersion": "1.48.4-0-g02625",
+    "komandVersion": "1.49.2-0-gafb52",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-04-15T21:08:49.621420568Z",
+    "exportedAt": "2020-04-24T03:50:15.635196198Z",
     "workflowVersions": [
       {
-        "name": "Disable User Account in Azure AD with Slack",
+        "name": "Disable User Account in Azure AD from Slack FINAL TEST",
         "type": "runnable",
         "version": "",
         "description": "This workflow disables a specified user in Azure AD",
@@ -225,8 +225,8 @@
               "input": {
                 "attachments": [],
                 "message": ":lock: Azure AD Disable User Request for {{[f43420db-cc40-43e3-a956-c5f4f1dde131].[emails].[0]}} :lock:\n> User suspension request succeeded! :white_check_mark:",
-                "recipient": "change_me",
-                "thread_ts": ""
+                "recipient": "{{[ba543f89-2915-4c4a-ab02-68d0531e35d1].[message].[channel_id]}}",
+                "thread_ts": "{{[ba543f89-2915-4c4a-ab02-68d0531e35d1].[message].[ts]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -292,18 +292,18 @@
           "ba543f89-2915-4c4a-ab02-68d0531e35d1": {
             "nodeId": "ba543f89-2915-4c4a-ab02-68d0531e35d1",
             "name": "Slack Message",
-            "description": "Trigger on Slack message\nE.X. !disable_user <SAMAccount>",
+            "description": "Trigger on Slack message\nE.X. disable-user <SAMAccount>",
             "type": "trigger",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "input": {
-                "matchChannel": "change_me",
-                "matchText": "!disable_user",
+                "matchChannel": "",
+                "matchText": "disable-user",
                 "type": "any"
               }
             },
-            "triggerId": "256329bd-f588-4db1-9e16-80991640b0d2",
+            "triggerId": "ec21710e-e446-40ab-98cb-1517b0a3575d",
             "defaultInputJSONSchema": {
               "properties": {
                 "matchChannel": {
@@ -445,8 +445,8 @@
               "input": {
                 "attachments": [],
                 "message": ":lock: Azure AD Disable User Request for {{[f43420db-cc40-43e3-a956-c5f4f1dde131].[emails].[0]}} :lock:\n> User suspension request failed! :x:",
-                "recipient": "change_me",
-                "thread_ts": ""
+                "recipient": "{{[ba543f89-2915-4c4a-ab02-68d0531e35d1].[message].[channel_id]}}",
+                "thread_ts": "{{[ba543f89-2915-4c4a-ab02-68d0531e35d1].[message].[ts]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -576,12 +576,12 @@
     ],
     "triggers": [
       {
-        "id": "256329bd-f588-4db1-9e16-80991640b0d2",
+        "id": "ec21710e-e446-40ab-98cb-1517b0a3575d",
         "name": "Slack Message",
-        "description": "Trigger on Slack message\nE.X. !disable_user <SAMAccount>",
+        "description": "Trigger on Slack message\nE.X. disable-user <SAMAccount>",
         "input": {
-          "matchChannel": "change_me",
-          "matchText": "!disable_user",
+          "matchChannel": "",
+          "matchText": "disable-user",
           "type": "any"
         },
         "inputJsonSchema": {

@@ -1,9 +1,9 @@
 extension: workflow
 products: ["insightconnect"]
 name: Force_Password_Reset_in_Azure_AD_from_Microsoft_Teams
-title: "Reset User Account Password in Azure AD from Microsoft Teams"
-description: Initiate Azure AD password resets from Microsoft Teams.
-version: 1.0.1
+title: "Reset Password in Azure AD from Microsoft Teams"
+description: Reset a user's Azure AD password with a simple command in Microsoft Teams.
+version: 1.0.2
 vendor: rapid7
 support: rapid7
 status: []

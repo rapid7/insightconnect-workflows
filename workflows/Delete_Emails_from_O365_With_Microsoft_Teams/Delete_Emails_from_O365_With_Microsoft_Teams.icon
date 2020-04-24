@@ -5,10 +5,10 @@
     "exportedAt": "2020-04-10T14:05:24.74805623Z",
     "workflowVersions": [
       {
-        "name": "Delete Email in Office365 with Microsoft Teams",
+        "name": "Find and Delete Emails in Office 365 from Microsoft Teams",
         "type": "runnable",
         "version": "",
-        "description": "This workflow will delete emails matching given search criteria by sending a notification to InsightConnect with Microsoft Teams.",
+        "description": "Use a Microsoft Teams command to find and optionally delete emails matching the given search criteria.",
         "graph": {
           "edges": {
             "2916ca29-6cac-4ab5-bb82-cc9ccf06bc33": {
@@ -269,7 +269,7 @@
             "parameters": {
               "input": {
                 "channel_name": "Komand Test Channel",
-                "message_content": "!delete_email.*",
+                "message_content": "!find-email.*",
                 "team_name": "Komand-Test-Everyone"
               }
             },
@@ -2170,7 +2170,7 @@
         "description": "",
         "input": {
           "channel_name": "Komand Test Channel",
-          "message_content": "!delete_email.*",
+          "message_content": "!find-email.*",
           "team_name": "Komand-Test-Everyone"
         },
         "inputJsonSchema": {

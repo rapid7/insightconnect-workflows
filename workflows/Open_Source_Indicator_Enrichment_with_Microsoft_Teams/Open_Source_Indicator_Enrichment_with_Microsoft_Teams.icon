@@ -5,10 +5,10 @@
     "exportedAt": "2020-04-21T21:13:57.990058603Z",
     "workflowVersions": [
       {
-        "name": "Open Source Indicator Enrichment with Microsoft Teams",
+        "name": "Enrich Indicators with OSINT from Microsoft Teams",
         "type": "runnable",
         "version": "",
-        "description": "Lookup and enrich URLs, IP addresses, and hashes directly from Microsoft Teams using open source threat intelligence tools such as Dig, DNS, and Whois.",
+        "description": "This workflow triggers from directly messaging the InsightConnect Slack chatbot to investigate the specified indicator. It supports looking up URLs, IPs, and hashes in open-source threat intelligence such as Dig DNS and Whois. The workflow will post back results to the specific user.",
         "graph": {
           "edges": {
             "034f847e-17a5-4345-9bba-dc41fe14bef3": {
@@ -495,7 +495,7 @@
           "26b0afac-ca64-4f1c-99bf-22bd73b3c93f": {
             "nodeId": "26b0afac-ca64-4f1c-99bf-22bd73b3c93f",
             "name": "Microsoft Teams Message",
-            "description": "Trigger on MS Teams message\nE.X. !investigate <Command> <data>",
+            "description": "Trigger on MS Teams message\nE.X. !enrich-indicator <Command> <data>",
             "type": "trigger",
             "plugin": {
               "name": "Microsoft Teams",
@@ -510,7 +510,7 @@
             "parameters": {
               "input": {
                 "channel_name": "change_me",
-                "message_content": "^!investigate",
+                "message_content": "^!enrich-indicator",
                 "team_name": "change_me"
               }
             },
@@ -1292,7 +1292,7 @@
             "parameters": {
               "input": {
                 "channel_name": "change_me",
-                "message_content": "This workflow will provide enrichment on URLs, IP addresses, and hashes.\nCommands should be in the following format:<br>\n<br>\n!investigate \"command\" \"data\" <br>\n<br>\nExamples:<br>\n!investigate url rapid7.com<br>\n<br>\n!investigate ip 198.51.100.100<br>\n<br>\n!investigate hash 009f1e9b72cfb6daa3de82093a755bdb3685e0eb",
+                "message_content": "This workflow will provide enrichment on URLs, IP addresses, and hashes.\nCommands should be in the following format:<br>\n<br>\n!enrich-indicator \"command\" \"data\" <br>\n<br>\nExamples:<br>\n!enrich-indicator url rapid7.com<br>\n<br>\n!enrich-indicator ip 198.51.100.100<br>\n<br>\n!enrich-indicator hash 009f1e9b72cfb6daa3de82093a755bdb3685e0eb",
                 "team_name": "change_me"
               }
             },
@@ -1725,11 +1725,11 @@
             "isDisabled": false,
             "parameters": {
               "captureAll": false,
-              "expressionText": "!investigate {{command:/.*/}} {{argument:/.*/}}",
+              "expressionText": "!enrich-indicator {{command:/.*/}} {{argument:/.*/}}",
               "expressions": [
                 {
                   "type": "text",
-                  "value": "!investigate "
+                  "value": "!enrich-indicator "
                 },
                 {
                   "type": "variable",
@@ -1857,7 +1857,7 @@
             "parameters": {
               "input": {
                 "channel_name": "change_me",
-                "message_content": "Your message was not correctly formatted.<br>\nMessage format should be:<br>\n!investigate <command> <data><br>\nUse !investigate help for more information and examples.",
+                "message_content": "Your message was not correctly formatted.<br>\nMessage format should be:<br>\n!enrich-indicator <command> <data><br>\nUse !enrich-indicator help for more information and examples.",
                 "team_name": "change_me"
               }
             },
@@ -2209,10 +2209,10 @@
         "id": "73e70613-908f-494b-9c67-ffadf2107385",
         "identifier": "new_message_received",
         "name": "Microsoft Teams Message",
-        "description": "Trigger on MS Teams message\nE.X. !investigate <Command> <data>",
+        "description": "Trigger on MS Teams message\nE.X. !enrich-indicator <Command> <data>",
         "input": {
           "channel_name": "change_me",
-          "message_content": "^!investigate",
+          "message_content": "^!enrich-indicator",
           "team_name": "change_me"
         },
         "inputJsonSchema": {

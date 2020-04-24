@@ -4,7 +4,7 @@ Don’t fall for the same phish twice. This workflow uses a Slack command to blo
 
 Sample Slack Trigger Commands:
 
-`@Slackbot !block_sender user@example.com`
+`@Slackbot block-sender user@example.com`
 
 # Key Features
 
@@ -23,17 +23,21 @@ Sample Slack Trigger Commands:
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-Active the workflow in order to trigger it from Slack.
+After import, activate the workflow in order to trigger it.
 
 ### Usage
 
-To trigger this workflow, @ the Slackbot in Slack or send the bot a DM in the following format:
+*This workflow will trigger in any direct messages to your Chatbot **or** any message in a channel directed @ your Chatbot. Note the Chatbot must be in the channel in order to trigger the workflow this way.*
 
-`!block_sender user@example.com`
+To run the workflow, send a direct message to your InsightConnect Slack Chatbot or @ your Chatbot in a public channel starting with the command `block-sender`.
+
+For example:
+* `block-sender user@example.com`
 
 You can also block a malicious domain. For example: 
+* `block-sender example.com`
 
-`!block_sender example.com`
+The workflow will reply when it completes.
 
 ## Technical Details
 
@@ -50,6 +54,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.3 - Updated trigger syntax and documentation
 * 1.0.2 - Updated documentation
 * 1.0.1 - Fix to Slack input command to standardize with leading exclamation point
 * 1.0.0 - Initial workflow

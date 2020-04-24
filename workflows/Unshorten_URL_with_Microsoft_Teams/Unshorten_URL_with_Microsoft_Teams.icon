@@ -5,10 +5,10 @@
     "exportedAt": "2020-04-20T21:21:43.427728485Z",
     "workflowVersions": [
       {
-        "name": "Unshorten URL with Microsoft Teams",
+        "name": "Unshorten URL from Microsoft Teams",
         "type": "runnable",
         "version": "",
-        "description": "Report back the full URL of a shortened URL using a command issued from Microsoft Teams.",
+        "description": "Unshorten a URL with a message to your InsightConnect Slack Chatbot.",
         "graph": {
           "edges": {
             "23826212-317d-4399-ba82-27958e37e06a": {
@@ -1094,7 +1094,7 @@
         "description": "",
         "input": {
           "channel_name": "change_me",
-          "message_content": "^!unshorten.*",
+          "message_content": "^!unshorten-url.*",
           "team_name": "change_me"
         },
         "inputJsonSchema": {

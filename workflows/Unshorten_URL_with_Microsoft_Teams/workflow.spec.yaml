@@ -1,15 +1,15 @@
 extension: workflow
 products: ["insightconnect"]
 name: Unshorten_URL_with_Microsoft_Teams
-title: "Unshorten URL with Microsoft Teams"
-description:  Accepts a Microsoft Teams command containing a URL, looks up the URL with unshorten.me, and posts the full URL back.
-version: 1.0.0
+title: "Unshorten URL from Microsoft Teams"
+description:  Unshorten a URL with a message in Microsoft Teams.
+version: 1.0.1
 vendor: rapid7
 support: rapid7
 status: []
 hub_tags:
   use_cases: [data_enrichment, threat_detection_and_response]
-  keywords: [chat, chatops, phishing, work_from_home]
+  keywords: [chat, chatops, phishing, work_from_home, microsoft_teams]
   features: []
 resources:
   source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Unshorten_URL_with_Microsoft_Teams

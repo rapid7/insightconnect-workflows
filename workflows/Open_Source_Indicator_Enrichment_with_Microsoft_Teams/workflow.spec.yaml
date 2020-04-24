@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Open_Source_Indicator_Enrichment_with_Microsoft_Teams
 title: "Open Source Indicator Enrichment with Microsoft Teams"
 description: "Look up and enrich URLs, IP addresses, and hashes directly from Microsoft Teams using open source threat intelligence tools such as Dig, DNS, and Whois."
-version: 1.0.0
+version: 1.0.1
 vendor: rapid7
 support: rapid7
 status: []

@@ -4,7 +4,7 @@ This workflow accepts a Slack command containing a URL, looks up the URL with un
 
 Sample Slack Trigger Commands:
 
-`@Slackbot !unshorten https://bit.ly/39HoYMu`
+`unshorten-url https://bit.ly/39HoYMu`
 
 # Key Features
 
@@ -20,9 +20,18 @@ Sample Slack Trigger Commands:
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-Once the workflow has been imported, edit the workflow and setup or select your Slack connection in the _Unshorten URL Slack Trigger_ step.
+After import, activate the workflow in order to trigger it.
 
-To run the workflow, @ your Slackbot in the channel along with the command "!unshorten <URL>". The workflow will post a response in a thread.
+### Usage
+
+*This workflow will only trigger in direct messages to your Slackbot. This is by design to avoid posting potentially malicious URLs in shared Slack channels.*
+
+To run the workflow, send a direct message to your InsightConnect Slack Chatbot starting with the command `unshorten-url`.
+
+For example:
+* `unshorten-url https://bit.ly/39HoYMu`
+
+The workflow will post a response in a thread.
 
 ## Technical Details
 
@@ -39,6 +48,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.3 - Updated trigger syntax and documentation
 * 1.0.2 - Fix image clarity | Fix documenation URL | Added keywords
 * 1.0.1 - Fix image filename
 * 1.0.0 - Initial workflow

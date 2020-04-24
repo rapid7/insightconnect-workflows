@@ -1,9 +1,9 @@
 extension: workflow
 products: ["insightconnect"]
 name: Delete_O365_Emails_With_Slack
-title: "Delete Office 365 Emails with Slack"
-description: "This workflow deletes emails matching given search criteria via a Slack command."
-version: 1.0.4
+title: "Find and Delete Emails in Office 365 from Slack"
+description: "Use a Slack command to find and optionally delete emails matching the given search criteria."
+version: 1.0.5
 vendor: rapid7
 support: rapid7
 status: []
