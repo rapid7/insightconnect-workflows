@@ -27,7 +27,7 @@ Import the workflow from the Rapid7 Extension Library and proceed through the Im
 
 After import, activate the workflow in order to trigger it.
 
-# Usage
+## Usage
 
 *This workflow will trigger in any direct messages to your Chatbot **or** any message in a channel directed @ your Chatbot. Note the Chatbot must be in the channel in order to trigger the workflow this way.*
 
