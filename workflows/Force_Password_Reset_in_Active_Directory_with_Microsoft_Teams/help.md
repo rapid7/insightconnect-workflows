@@ -29,7 +29,7 @@ In addition to updating the Teams steps, the `Find DN` step will need the Search
 
 After configuring the Teams steps and the `Find DN` step, activate the workflow in order to trigger it.
 
-# Usage
+## Usage
 
 *This workflow will only trigger in the channel specified in the Microsoft Teams workflow steps.*
 
