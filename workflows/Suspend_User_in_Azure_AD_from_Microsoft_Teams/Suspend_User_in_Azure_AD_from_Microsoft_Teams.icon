@@ -1,11 +1,11 @@
 {
   "kom": {
-    "komandVersion": "1.48.4-0-g02625",
+    "komandVersion": "1.49.2-0-gafb52",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-04-16T22:00:33.819803044Z",
+    "exportedAt": "2020-04-26T22:45:01.289813511Z",
     "workflowVersions": [
       {
-        "name": "Disable User in Azure AD with Microsoft Teams",
+        "name": "Disable User in Azure AD from Microsoft Teams",
         "type": "runnable",
         "version": "",
         "description": "This workflow disables a specified user in Azure AD.",
@@ -148,9 +148,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
+                "channel_name": "change_me",
                 "message_content": "🔒 Azure AD Disable User Request for {{[f43420db-cc40-43e3-a956-c5f4f1dde131].[emails].[0]}} 🔒<br>\n<br>\n<b>User suspension request failed!</b> ❗",
-                "team_name": "Komand-Test-Everyone"
+                "team_name": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -425,9 +425,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
+                "channel_name": "change_me",
                 "message_content": "🔒 Attempting to disable: {{[c6762d69-11fc-4e77-903f-e50b87cfb31f].[content]}} 🔒",
-                "team_name": "Komand-Test-Everyone"
+                "team_name": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -595,12 +595,12 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
-                "message_content": "!disable-user",
-                "team_name": "Komand-Test-Everyone"
+                "channel_name": "change_me",
+                "message_content": "!disable-user-azure",
+                "team_name": "change_me"
               }
             },
-            "triggerId": "f535360d-802c-4a4b-aa70-8e4799b3d545",
+            "triggerId": "35cad6b0-a5ff-4228-846e-975dea670b97",
             "defaultInputJSONSchema": {
               "properties": {
                 "channel_name": {
@@ -783,9 +783,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
+                "channel_name": "change_me",
                 "message_content": "🔒 Azure AD Disable User Request for {{[f43420db-cc40-43e3-a956-c5f4f1dde131].[emails].[0]}} 🔒<br>\n<br>\n<b>User suspension request succeeded!</b> ✅",
-                "team_name": "Komand-Test-Everyone"
+                "team_name": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -1061,14 +1061,14 @@
     ],
     "triggers": [
       {
-        "id": "f535360d-802c-4a4b-aa70-8e4799b3d545",
+        "id": "35cad6b0-a5ff-4228-846e-975dea670b97",
         "identifier": "new_message_received",
         "name": "Disable User Teams Trigger",
         "description": "",
         "input": {
-          "channel_name": "Komand Test Channel",
-          "message_content": "!disable-user",
-          "team_name": "Komand-Test-Everyone"
+          "channel_name": "change_me",
+          "message_content": "!disable-user-azure",
+          "team_name": "change_me"
         },
         "inputJsonSchema": {
           "properties": {
