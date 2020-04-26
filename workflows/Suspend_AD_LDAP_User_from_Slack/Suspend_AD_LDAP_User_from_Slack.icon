@@ -2,7 +2,7 @@
   "kom": {
     "komandVersion": "1.49.2-0-gafb52",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-04-26T20:01:51.962365249Z",
+    "exportedAt": "2020-04-26T20:23:51.139374923Z",
     "workflowVersions": [
       {
         "name": "Disable User Account in Active Directory from Slack",
@@ -420,7 +420,7 @@
                 "attachments": [],
                 "message": ":warning: User '{{[a4ab6ad5-f6dd-410b-8fe0-94043b573e29].[user_name]}}' was not found or is already disabled!",
                 "recipient": "{{[28088d79-d0fb-4251-a73e-4c803c4a2cd7].[message].[channel_id]}}",
-                "thread_ts": ""
+                "thread_ts": "{{[28088d79-d0fb-4251-a73e-4c803c4a2cd7].[message].[ts]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -494,7 +494,7 @@
                 "attachments": [],
                 "message": ":lock: Suspend User Request for '{{[a4ab6ad5-f6dd-410b-8fe0-94043b573e29].[user_name]}}' :lock:\n\nUser suspension was successful! :white_check_mark:",
                 "recipient": "{{[28088d79-d0fb-4251-a73e-4c803c4a2cd7].[message].[channel_id]}}",
-                "thread_ts": ""
+                "thread_ts": "{{[28088d79-d0fb-4251-a73e-4c803c4a2cd7].[message].[ts]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -693,7 +693,7 @@
                 "attachments": [],
                 "message": "Starting user suspension request for '{{[a4ab6ad5-f6dd-410b-8fe0-94043b573e29].[user_name]}}'...",
                 "recipient": "{{[28088d79-d0fb-4251-a73e-4c803c4a2cd7].[message].[channel_id]}}",
-                "thread_ts": ""
+                "thread_ts": "{{[28088d79-d0fb-4251-a73e-4c803c4a2cd7].[message].[ts]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -864,7 +864,7 @@
                 "attachments": [],
                 "message": ":lock: Suspend User Request for '{{[a4ab6ad5-f6dd-410b-8fe0-94043b573e29].[user_name]}}' :lock:\n\nUser suspension failed! :x:",
                 "recipient": "{{[28088d79-d0fb-4251-a73e-4c803c4a2cd7].[message].[channel_id]}}",
-                "thread_ts": ""
+                "thread_ts": "{{[28088d79-d0fb-4251-a73e-4c803c4a2cd7].[message].[ts]}}"
               }
             },
             "defaultInputJSONSchema": {
