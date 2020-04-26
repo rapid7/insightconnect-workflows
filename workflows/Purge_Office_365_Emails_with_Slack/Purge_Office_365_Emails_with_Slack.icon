@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.48.3-0-g34439",
+    "komandVersion": "1.49.2-0-gafb52",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-04-15T15:22:11.348249489Z",
+    "exportedAt": "2020-04-26T18:31:45.223907718Z",
     "workflowVersions": [
       {
         "name": "Purge Office 365 Emails with Slack",
@@ -89,7 +89,7 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "afd9fd25-487a-4eee-b291-1ce335a02f1d",
-              "toNodeId": "ac12622d-e616-46d3-9e72-38ec2318c644"
+              "toNodeId": "cebde365-c83a-4ff6-bd70-e88bb82c8a6d"
             },
             "55cc9089-bdf8-4805-b824-4c4dd6fe1b21": {
               "id": "55cc9089-bdf8-4805-b824-4c4dd6fe1b21",
@@ -186,6 +186,14 @@
               "parentNodeId": "",
               "fromNodeId": "48c09c4e-90a1-463a-9234-2726fd72ade0",
               "toNodeId": ""
+            },
+            "cb7c2eb8-c42f-4548-a6e1-a5c89d73449b": {
+              "id": "cb7c2eb8-c42f-4548-a6e1-a5c89d73449b",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "cebde365-c83a-4ff6-bd70-e88bb82c8a6d",
+              "toNodeId": "ac12622d-e616-46d3-9e72-38ec2318c644"
             },
             "d13de5d6-ea32-4837-aebe-59145a20f0da": {
               "id": "d13de5d6-ea32-4837-aebe-59145a20f0da",
@@ -295,6 +303,10 @@
             },
             "cb270db6-6dfb-4328-8b59-2f714aaa4763": {
               "id": "cb270db6-6dfb-4328-8b59-2f714aaa4763",
+              "parentNodeId": ""
+            },
+            "cebde365-c83a-4ff6-bd70-e88bb82c8a6d": {
+              "id": "cebde365-c83a-4ff6-bd70-e88bb82c8a6d",
               "parentNodeId": ""
             },
             "e7efa02a-2323-48fd-92ef-d5f197f4c150": {
@@ -1049,11 +1061,11 @@
             "parameters": {
               "input": {
                 "matchChannel": "",
-                "matchText": "!purge-email",
+                "matchText": "purge-email",
                 "type": "any"
               }
             },
-            "triggerId": "4b8f4c0e-415a-4a83-8b2c-5adc1b844df5",
+            "triggerId": "fc64b903-9045-4d0b-ba3c-62a725a17f9a",
             "defaultInputJSONSchema": {
               "properties": {
                 "matchChannel": {
@@ -1176,7 +1188,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "Beginning Compliance Search\n\n{{[4ea6adf6-4bb6-4018-b6af-cf45e6e3e267].[content]}}\n\nThis can take up to 60 minutes depending on the size of your organization. ",
+                "message": "{{[4ea6adf6-4bb6-4018-b6af-cf45e6e3e267].[content]}}\n\nThis can take up to 60 minutes depending on the size of your organization. ",
                 "recipient": "@{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[user]}}",
                 "thread_ts": "{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[timestamp]}}"
               }
@@ -1287,7 +1299,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "function": "def run(params={}):\n    query_string = \"\"\n\n    if params.get(\"body\"):\n        query_string+=f\"body:'{params.get('body')}' \"\n\n    if params.get(\"from\"):\n        query_string+=f\"from:'{params.get('from')}' \"\n\n    if params.get(\"subject\"):\n        query_string += f\"subject:'{params.get('subject')}' \"\n\n    return {\"query_string\": query_string.strip()}",
+                "function": "def run(params={}):\n    query_string = \"\"\n    \n    \n\n    if params.get(\"body\"):\n        query_string+=f'body:\\\"{params.get(\"body\")}\\\" '\n\n    if params.get(\"from\"):\n        query_string+=f'from:\\\"{params.get(\"from\")}\\\" '\n\n    if params.get(\"subject\"):\n        query_string += f'subject:\\\"{params.get(\"subject\")}\\\" '\n\n    return {\"query_string\": query_string.strip()}",
                 "input": "{{[75c4e364-f202-469e-bcb3-4140fe36e205]}}"
               }
             },
@@ -1542,6 +1554,37 @@
             "chatOpsAppName": "slack",
             "chatOpsIdentifier": "post_message"
           },
+          "cebde365-c83a-4ff6-bd70-e88bb82c8a6d": {
+            "nodeId": "cebde365-c83a-4ff6-bd70-e88bb82c8a6d",
+            "name": "Nothing to Purge",
+            "type": "filter",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "stepControlParam": {
+                "edgeId": "cb7c2eb8-c42f-4548-a6e1-a5c89d73449b",
+                "expression": {
+                  "left": {
+                    "name": "28b13b59-a02c-4faa-b69f-ce13ad921410.emails_found",
+                    "type": "variable"
+                  },
+                  "op": "=",
+                  "right": {
+                    "type": "literal",
+                    "value": 0
+                  },
+                  "type": "binary"
+                },
+                "expressionText": "{{[28b13b59-a02c-4faa-b69f-ce13ad921410].[emails_found]}} = 0"
+              },
+              "stopOnMatch": true
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/filter.svg",
+            "connectionType": "NONE"
+          },
           "e7efa02a-2323-48fd-92ef-d5f197f4c150": {
             "nodeId": "e7efa02a-2323-48fd-92ef-d5f197f4c150",
             "name": "Manual Purge Success",
@@ -1685,12 +1728,12 @@
     ],
     "triggers": [
       {
-        "id": "4b8f4c0e-415a-4a83-8b2c-5adc1b844df5",
+        "id": "fc64b903-9045-4d0b-ba3c-62a725a17f9a",
         "name": "Purge Email Trigger",
         "description": "",
         "input": {
           "matchChannel": "",
-          "matchText": "!purge-email",
+          "matchText": "purge-email",
           "type": "any"
         },
         "inputJsonSchema": {
