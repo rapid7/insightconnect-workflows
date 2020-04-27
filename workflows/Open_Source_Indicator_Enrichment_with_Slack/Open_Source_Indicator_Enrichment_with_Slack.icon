@@ -525,7 +525,7 @@
             "parameters": {
               "input": {
                 "matchChannel": "",
-                "matchText": "investigate",
+                "matchText": "enrich-indicator",
                 "type": "direct"
               }
             },
@@ -725,11 +725,11 @@
             "isDisabled": false,
             "parameters": {
               "captureAll": false,
-              "expressionText": "investigate {{command:/.*/}} {{argument:/.*/}}",
+              "expressionText": "enrich-indicator {{command:/.*/}} {{argument:/.*/}}",
               "expressions": [
                 {
                   "type": "text",
-                  "value": "investigate "
+                  "value": "enrich-indicator"
                 },
                 {
                   "type": "variable",
@@ -1177,7 +1177,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "This workflow will enriches common indicators of compromise (IOCs) using open-source intelligence. Input a URL, IP address, or file hash to receive basic intelligence about the provided IOC.\n\nCommands should be in the following format:\n\ninvestigate <indicator type> <indicator>\n\nexamples:\ninvestigate url rapid7.com\n\ninvestigate ip 198.51.100.100\n\ninvestigate hash 009f1e9b72cfb6daa3de82093a755bdb3685e0eb",
+                "message": "This workflow will enriches common indicators of compromise (IOCs) using open-source intelligence. Input a URL, IP address, or file hash to receive basic intelligence about the provided IOC.\n\nCommands should be in the following format:\n\nenrich-indicator <indicator type> <indicator>\n\nexamples:\nenrich-indicator url rapid7.com\n\nenrich-indicator ip 198.51.100.100\n\nenrich-indicator hash 009f1e9b72cfb6daa3de82093a755bdb3685e0eb",
                 "recipient": "{{[490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa].[message].[channel_id]}}",
                 "thread_ts": "{{[490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa].[message].[ts]}}"
               }
@@ -1475,7 +1475,7 @@
         "description": "",
         "input": {
           "matchChannel": "",
-          "matchText": "investigate",
+          "matchText": "enrich-indicator",
           "type": "direct"
         },
         "inputJsonSchema": {

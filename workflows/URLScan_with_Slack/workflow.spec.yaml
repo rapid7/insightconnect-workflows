@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: URLScan_with_Slack
 title: "Enrich URL with urlscan.io from Slack"
 description: This workflow enrichs a URL given via Slack command in urlscan.io and reports information back to Slack
-version: 1.0.3
+version: 1.0.2
 vendor: rapid7
 support: rapid7
 status: []
