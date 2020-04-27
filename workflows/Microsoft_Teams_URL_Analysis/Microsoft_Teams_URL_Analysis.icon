@@ -2,7 +2,7 @@
   "kom": {
     "komandVersion": "1.49.2-0-gafb52",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-04-24T21:11:14.533871585Z",
+    "exportedAt": "2020-04-27T15:52:09.022680703Z",
     "workflowVersions": [
       {
         "name": "Enrich URLs and Domains with VirusTotal from Microsoft Teams",
@@ -238,7 +238,7 @@
             "parameters": {
               "input": {
                 "channel_name": "change-me",
-                "message_content": "<b>📃  Could not get VirusTotal report  📃</b><hr>\n\nThis may happen if you overload the VirusTotal API with requests. Please wait a couple of minutes and try again.<br> \n<br>\nMake sure no other workflows are hitting the VirusTotal API excessively. <br>\n<br>\n<b>For more information:</b><br>\n<a href=\"{{[$job].[URL]}\"}>Job Report</a>",
+                "message_content": "<b>📃  Could not get VirusTotal report  📃</b><hr>\n\nThis may happen if you overload the VirusTotal API with requests. Please wait a couple of minutes and try again.<br> \n<br>\nMake sure no other workflows are hitting the VirusTotal API excessively. <br>\n<br>\n<b>For more information:</b><br>\n<a href=\"{{[$job].[URL]}}\">Job Report</a>",
                 "team_name": "change-me"
               }
             },
@@ -412,7 +412,7 @@
                 "team_name": "change-me"
               }
             },
-            "triggerId": "a2159a2c-fe93-42f3-a0b0-d62b3bce73aa",
+            "triggerId": "56a6e1d0-f26e-46de-98dc-98c355562f41",
             "defaultInputJSONSchema": {
               "properties": {
                 "channel_name": {
@@ -1319,7 +1319,7 @@
     ],
     "triggers": [
       {
-        "id": "a2159a2c-fe93-42f3-a0b0-d62b3bce73aa",
+        "id": "56a6e1d0-f26e-46de-98dc-98c355562f41",
         "identifier": "new_message_received",
         "name": "Get New Message",
         "description": "",
