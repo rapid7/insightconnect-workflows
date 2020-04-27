@@ -4,7 +4,7 @@ Disabling a compromised account can limit the scope of an attack and buy valuabl
 
 Sample Slack Trigger Commands:
 
-`@Rapid7 InsightConnect disable-user-azure user@example.com`
+`@Slackbot disable-user-azure user@example.com`
 
 # Key Features
 
