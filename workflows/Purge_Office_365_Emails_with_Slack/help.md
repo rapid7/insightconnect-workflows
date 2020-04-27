@@ -6,7 +6,7 @@ Sample Slack Trigger Commands:
 
 `@Slackbot purge-email subject="A phishy email"`
 
-`@Rapid7 InsightConnect purge-email subject="A phishy email" from="example.com" body="Click here for free stuff"`
+`@Slackbot purge-email subject="A phishy email" from="example.com" body="Click here for free stuff"`
 
 `@Rapid7 InsightConnect purge-email subject="A phishy email" delete=true`
 
