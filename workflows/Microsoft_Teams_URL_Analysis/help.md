@@ -51,6 +51,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.3 - Fix workflow syntax
 * 1.0.2 - Updated trigger syntax and documentation
 * 1.0.1 - Update workflow title to enrichment
 * 1.0.0 - Initial workflow
