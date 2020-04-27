@@ -22,7 +22,7 @@ Sample Slack Trigger Commands:
 Once the workflow has been imported, edit the workflow and setup or select your Slack connection in Slack chatbot steps.
 In addition, edit the Active Directory LDAP steps with your correct Active Directory LDAP connection information. Notably, edit the search base in the `Find DN` step.
 
-To run the workflow, @Rapid7 InsightConnect in any channel or in a direct message
+To run the workflow, @ your Slackbot in any channel or in a direct message
 along with the command `disable-user-ad <username>`. The workflow will acknowledge the request and reply when it has
 completed.
 
