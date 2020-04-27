@@ -4,7 +4,7 @@ Reset a domain user's password with a command in Microsoft Teams. Quickly respon
 
 Sample Microsoft Teams command:
 
-`!reset-password-ad username`
+`!reset-password-ad <username>`
 
 # Key Features
 
