@@ -1259,9 +1259,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "change_me",
+                "channel_name": "change-me",
                 "message_content": "{{[bf712037-937a-4f6c-8817-22e1801e0bac].[content]}}",
-                "team_name": "change_me"
+                "team_name": "change-me"
               }
             },
             "defaultInputJSONSchema": {
