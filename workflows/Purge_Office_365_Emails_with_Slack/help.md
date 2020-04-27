@@ -70,7 +70,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
-* 1.0.2 - Changed content search query to use double quotes. Workflow no longer prompts a manual purge when 0 emails are found. Trigger no longer requires an exclamation mark. Updated documatation
+* 1.0.2 - Changed content search query to use double quotes | Workflow no longer prompts a manual purge when 0 emails are found | Trigger no longer requires an exclamation mark | Updated documentation
 * 1.0.1 - Updated documentation
 * 1.0.0 - Initial workflow
 
