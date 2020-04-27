@@ -4,7 +4,7 @@ Reset a domain user's password with a command in Slack. Quickly respond, whether
 
 Sample Slack command:
 
-`reset-password jdoe`
+`reset-password-ad jdoe`
 
 # Key Features
 
@@ -31,13 +31,13 @@ After updating the `Find DN` step, activate the workflow in order to trigger it.
 
 *This workflow will trigger in any direct messages to your Chatbot **or** any message in a channel directed @ your Chatbot. Note the Chatbot must be in the channel in order to trigger the workflow this way.*
 
-To run the workflow, send a direct message to your InsightConnect Slack Chatbot or @ your Chatbot in a public channel starting with the command `reset-password`. Use the target user's username, not the full email address.
+To run the workflow, send a direct message to your InsightConnect Slack Chatbot or @ your Chatbot in a public channel starting with the command `reset-password-ad`. Use the target user's username, not the full email address.
 
 For example, in a direct message to your Chatbot:
-* `reset-password jdoe`
+* `reset-password-ad jdoe`
 
 For example, in a channel with your Chatbot:
-* `@chatbot reset-password jdoe`
+* `@Rapid7 InsightConnect reset-password-ad jdoe`
 
 The workflow will post the results in a thread.
 
@@ -55,6 +55,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.3 - Updated trigger syntax and documentation
 * 1.0.2 - Updated trigger syntax and documentation
 * 1.0.1 - Updated documentation
 * 1.0.0 - Initial workflow
