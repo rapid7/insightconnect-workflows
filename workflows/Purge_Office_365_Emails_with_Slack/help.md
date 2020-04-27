@@ -4,11 +4,11 @@ Understanding the scope of a phishing campaign is critical to ensuring no one in
 
 Sample Slack Trigger Commands:
 
-`@Slackbot purge-email subject="A phishy email"`
+`@Rapid7 InsightConnect purge-email subject="A phishy email"`
 
-`@Slackbot purge-email subject="A phishy email" from="example.com" body="Click here for free stuff"`
+`@Rapid7 InsightConnect purge-email subject="A phishy email" from="example.com" body="Click here for free stuff"`
 
-`@Slackbot purge-email subject="A phishy email" delete=true`
+`@Rapid7 InsightConnect purge-email subject="A phishy email" delete=true`
 
 # Key Features
 
@@ -70,6 +70,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.3 - Updated documentation
 * 1.0.2 - Changed content search query to use double quotes | Workflow no longer prompts a manual purge when 0 emails are found | Trigger no longer requires an exclamation mark | Updated documentation
 * 1.0.1 - Updated documentation
 * 1.0.0 - Initial workflow

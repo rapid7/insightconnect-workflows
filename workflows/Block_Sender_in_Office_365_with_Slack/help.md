@@ -4,7 +4,7 @@ Don’t fall for the same phish twice. This workflow uses a Slack command to blo
 
 Sample Slack Trigger Commands:
 
-`@Slackbot block-sender user@example.com`
+`@Rapid7 InsightConnect block-sender user@example.com`
 
 # Key Features
 
@@ -54,6 +54,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.4 - Updated documentation
 * 1.0.3 - Updated trigger syntax and documentation
 * 1.0.2 - Updated documentation
 * 1.0.1 - Fix to Slack input command to standardize with leading exclamation point

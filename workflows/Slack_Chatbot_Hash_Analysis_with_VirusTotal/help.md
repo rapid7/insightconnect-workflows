@@ -4,11 +4,11 @@ Look up and enrich file hashes in VirusTotal directly from Slack, providing a fa
 
 Sample Slack Trigger Commands:
 
-`@Slackbot enrich-hash 44d88612fea8a8f36de82e1278abb02f`
+`@Rapid7 InsightConnect enrich-hash 44d88612fea8a8f36de82e1278abb02f`
 
-`@Slackbot enrich-hash 3395856ce81f2b7382dee72602f798b642f14140`
+`@Rapid7 InsightConnect enrich-hash 3395856ce81f2b7382dee72602f798b642f14140`
 
-`@Slackbot enrich-hash 275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f`
+`@Rapid7 InsightConnect enrich-hash 275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f`
 
 # Key Features
 
@@ -35,7 +35,7 @@ To run the workflow, send a direct message to your InsightConnect Slack Chatbot 
 
 For example, in a channel with your Chatbot:
 
-* `@slackbot enrich-hash 44d88612fea8a8f36de82e1278abb02f`
+* `@Rapid7 InsightConnect enrich-hash 44d88612fea8a8f36de82e1278abb02f`
 
 For example, in a direct message to your Chatbot:
 
@@ -55,6 +55,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.5 - Updated documentation
 * 1.0.4 - Updated trigger syntax and documentation
 * 1.0.3 - Updated documentation
 * 1.0.2 - Fix name matching

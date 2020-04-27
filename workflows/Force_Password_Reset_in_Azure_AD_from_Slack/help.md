@@ -4,7 +4,7 @@ Reset a user's Azure AD password with a command in Slack. Quickly respond, wheth
 
 Sample Slack Trigger Commands:
 
-`@Slackbot reset-password user@example.com`
+`@Rapid7 InsightConnect reset-password user@example.com`
 
 # Key Features
 
@@ -54,6 +54,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.4 - Updated documentation
 * 1.0.1 - Updated documentation
 * 1.0.0 - Initial workflow
 

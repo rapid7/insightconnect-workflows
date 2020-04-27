@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Slack_Chatbot_Hash_Analysis_with_VirusTotal
 title: "Enrich File Hash with VirusTotal from Slack"
 description: Lookup a potentially malicious file hash in VirusTotal with a Slack command.
-version: 1.0.4
+version: 1.0.5
 vendor: rapid7
 support: rapid7
 status: []

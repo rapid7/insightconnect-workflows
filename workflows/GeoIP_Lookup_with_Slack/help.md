@@ -4,7 +4,7 @@ Use a Slack command to geolocate an IP address using IPStack's geoip database.
 
 Sample Slack Trigger Commands:
 
-`@Slackbot geoip <IP Address>`
+`@Rapid7 InsightConnect geoip <IP Address>`
 
 # Key Features
 
@@ -51,6 +51,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.4 - Updated documentation
 * 1.0.3 - Updated documentation
 * 1.0.2 - Updated trigger syntax and documentation
 * 1.0.1 - Update documentation
