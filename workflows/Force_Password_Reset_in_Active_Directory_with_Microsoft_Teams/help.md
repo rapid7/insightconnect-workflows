@@ -36,7 +36,7 @@ After configuring the Teams steps and the `Find DN` step, activate the workflow 
 To run the workflow, send a message to the specified Microsoft Teams channel starting with the command `!reset-password`. 
 
 Commands should be in the following format:
-`!reset-password username`
+`!reset-password <username>`
 
 ## Technical Details
 
