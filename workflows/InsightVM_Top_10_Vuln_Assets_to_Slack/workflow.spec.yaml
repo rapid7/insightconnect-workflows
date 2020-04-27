@@ -1,9 +1,9 @@
 extension: workflow
-products: ["insightconnect"]
+products: ["insightconnect", "insightvm"]
 name: InsightVM_Top_10_Vuln_Assets_to_Slack
 title: "Most Vulnerable Assets in Sites to Slack"
 description: "This workflow returns the top 10 most vulnerable assets in each site in InsightVM."
-version: 1.0.0
+version: 1.0.1
 vendor: rapid7
 support: rapid7
 status: []

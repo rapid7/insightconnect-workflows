@@ -15,7 +15,7 @@ Sample Slack Trigger Commands:
 API and account credentials for
 
 * InsightVM
-* Slack
+* [Slack](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops)
 
 # Documentation
 
@@ -42,6 +42,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.1 - Updated documentation
 * 1.0.0 - Initial workflow
 
 # Links
