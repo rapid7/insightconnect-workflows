@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Suspend_User_in_Azure_AD_from_Slack
 title: "Disable User in Azure AD from Slack"
 description: Disable user account in Azure AD with a command in Slack.
-version: 1.0.3
+version: 1.0.4
 vendor: rapid7
 support: rapid7
 status: []

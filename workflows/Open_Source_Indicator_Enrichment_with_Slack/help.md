@@ -4,11 +4,11 @@ Threat Intelligence doesn’t have to come with a cost. This workflow uses open-
 
 Sample Slack Trigger Commands:
 
-`@Slackbot investigate ip 8.8.8.8`
+`@Rapid7 InsightConnect enrich-indicator ip 8.8.8.8`
 
-`@Slackbot investigate url badsite.com`
+`@Rapid7 InsightConnect enrich-indicator url badsite.com`
 
-`@Slackbot investigate hash 36c5012e100c8e91221e9891cad37df0cac938cee1e8f69b6fdf99821cb05339`
+`@Rapid7 InsightConnect enrich-indicator hash 36c5012e100c8e91221e9891cad37df0cac938cee1e8f69b6fdf99821cb05339`
 
 # Key Features
 
@@ -32,16 +32,15 @@ After import, activate the workflow in order to trigger it.
 
 *This workflow will only trigger in direct messages to your Slackbot. This is by design to avoid posting potentially malicious URLs in shared Slack channels.*
 
-To run the workflow, send a direct message to your InsightConnect Slack Chatbot starting with the command `investigate`. 
+To run the workflow, send a direct message to your InsightConnect Slack Chatbot starting with the command `enrich-indicator`.
 
 Commands should be in the following format:
-`investigate <indicator type> <indicator>`
+`enrich-indicator <indicator type> <indicator>`
+`enrich-indicator ip 8.8.8.8`
+`enrich-indicator url badsite.com`
+`enrich-indicator hash 009f1e9b72cfb6daa3de82093a755bdb3685e0eb`
 
-`investigate ip 8.8.8.8`
-`investigate url badsite.com`
-`investigate hash 009f1e9b72cfb6daa3de82093a755bdb3685e0eb`
-
-Use `investigate help` for more information and examples. 
+Use `enrich-indicator help` for more information and examples.
 
 The workflow will post the results in a thread.
 
@@ -61,6 +60,7 @@ In some instances using copy & paste for `!enrich-indicator` commands many intro
 
 # Version History
 
+* 1.0.4 - Updated trigger syntax and documentation
 * 1.0.3 - Updated trigger syntax and documentation
 * 1.0.2 - Updated workflow title, description, and key features
 * 1.0.1 - Update help document

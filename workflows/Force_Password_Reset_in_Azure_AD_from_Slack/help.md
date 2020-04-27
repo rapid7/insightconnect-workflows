@@ -54,6 +54,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.3 - Updated documentation
 * 1.0.2 - Set "change_me" items in workflow input
 * 1.0.1 - Updated documentation
 * 1.0.0 - Initial workflow
