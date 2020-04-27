@@ -40,6 +40,8 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.3 - Set more "change_me" items in workflow input
+* 1.0.2 - Set "change_me" items in workflow input
 * 1.0.1 - Update to fix title
 * 1.0.0 - Initial workflow
 

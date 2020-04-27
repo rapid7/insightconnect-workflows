@@ -260,9 +260,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
+                "channel_name": "change_me",
                 "message_content": "🔒The compliance search failed to purge!🔒<br>\n<br>\nMore information can be found here:<br>\n{{[$job].[URL]}}<br>\n<br>\n❌<b>Workflow Failed</b>\n<b>Workflow Complete</b>\n<b>Workflow Complete</b>",
-                "team_name": "Komand-Test-Everyone"
+                "team_name": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -516,9 +516,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
+                "channel_name": "change_me",
                 "message_content": "Something went wrong with delete-email.<br> \n<br>\nThe message received was: <br>\n{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[body].[content]}}",
-                "team_name": "Komand-Test-Everyone"
+                "team_name": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -704,9 +704,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
+                "channel_name": "change_me",
                 "message_content": "🔒Compliance Search Complete🔒<br>\n<br>\nEmails Found: {{[28b13b59-a02c-4faa-b69f-ce13ad921410].[emails_found]}}<br>\nNumber of Users Affected: {{[28b13b59-a02c-4faa-b69f-ce13ad921410].[affected_users]}}<br>\n<br>\nFor more information: <br>\n<a href=\"{{[$job].[URL]}}\">InsightConnect Job Information</a>",
-                "team_name": "Komand-Test-Everyone"
+                "team_name": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -1050,9 +1050,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
+                "channel_name": "change_me",
                 "message_content": "🔒Beginning Compliance Search🔒<br>\n<br>\n{{[4ea6adf6-4bb6-4018-b6af-cf45e6e3e267].[content]}}<br>\n<br>\nThis can take up to 60 minutes depending on the size of your organization. ",
-                "team_name": "Komand-Test-Everyone"
+                "team_name": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -1250,9 +1250,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
+                "channel_name": "change_me",
                 "message_content": "🔒Purge compliance search was successful!🔒<br>\n<br>\nSearch Query: {{[ad5289eb-110e-4ac2-9ee8-b2bd30ffa455].[query_string]}}<br>\n<br> \n<b>✅ Workflow Complete</b>",
-                "team_name": "Komand-Test-Everyone"
+                "team_name": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -1420,9 +1420,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
-                "message_content": "^!purge-email.*",
-                "team_name": "Komand-Test-Everyone"
+                "channel_name": "change_me",
+                "message_content": "^!delete-emails.*",
+                "team_name": "change_me"
               }
             },
             "triggerId": "ffd0d6d4-add8-47b9-89fb-4476e5f16569",
@@ -1713,9 +1713,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
-                "message_content": "Compliance results were not purged. <br>\n<br>\nIf you would like to automatically purge the emails, put:<br>\ndelete=true<br>\nat the end of the !purge-email command.<br>\n<br>\n<b>Workflow Complete</b>",
-                "team_name": "Komand-Test-Everyone"
+                "channel_name": "change_me",
+                "message_content": "Compliance results were not purged. <br>\n<br>\nIf you would like to automatically purge the emails, put:<br>\ndelete=true<br>\nat the end of the !delete-emails command.<br>\n<br>\n<b>Workflow Complete</b>",
+                "team_name": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -1941,9 +1941,9 @@
         "name": "Purge Email Trigger",
         "description": "",
         "input": {
-          "channel_name": "Komand Test Channel",
-          "message_content": "^!purge-email.*",
-          "team_name": "Komand-Test-Everyone"
+          "channel_name": "change_me",
+          "message_content": "^!delete-emails.*",
+          "team_name": "change_me"
         },
         "inputJsonSchema": {
           "properties": {

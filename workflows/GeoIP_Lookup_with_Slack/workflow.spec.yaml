@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: GeoIP_Lookup_with_Slack
 title: "Enrich IP with IPStack from Slack"
 description: Geolocate an IP address using IPStack's geoip database with a simple Slack command.
-version: 1.0.3
+version: 1.0.4
 vendor: rapid7
 support: rapid7
 status: []

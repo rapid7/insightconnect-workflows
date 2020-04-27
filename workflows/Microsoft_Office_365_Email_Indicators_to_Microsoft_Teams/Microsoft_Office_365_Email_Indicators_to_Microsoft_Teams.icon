@@ -284,9 +284,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
+                "channel_name": "change_me",
                 "message_content": "<b>📨  Email Received: Beginning Analysis 📨</b><br>\n<br>\nFrom: {{[6a008e1f-33e2-476d-b292-c98d5faeb1db].[icon_email].[sender]}}<br>\nSubject: {{[6a008e1f-33e2-476d-b292-c98d5faeb1db].[icon_email].[subject]}}",
-                "team_name": "Komand-Test-Everyone"
+                "team_name": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -835,7 +835,7 @@
                 "flatten_attachments": true,
                 "folder_name": "Inbox",
                 "interval": 10,
-                "mailbox_id": "jschipp@komanddev.onmicrosoft.com",
+                "mailbox_id": "change_me",
                 "subject_query": ""
               }
             },
@@ -1554,9 +1554,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
+                "channel_name": "change_me",
                 "message_content": "{{[bf712037-937a-4f6c-8817-22e1801e0bac].[content]}}",
-                "team_name": "Komand-Test-Everyone"
+                "team_name": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -1828,7 +1828,7 @@
           "flatten_attachments": true,
           "folder_name": "Inbox",
           "interval": 10,
-          "mailbox_id": "jschipp@komanddev.onmicrosoft.com",
+          "mailbox_id": "change_me",
           "subject_query": ""
         },
         "inputJsonSchema": {

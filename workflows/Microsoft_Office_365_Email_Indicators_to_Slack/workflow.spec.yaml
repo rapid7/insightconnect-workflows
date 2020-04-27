@@ -1,9 +1,9 @@
 extension: workflow
 products: ["insightconnect"]
 name: Microsoft_Office_365_Email_Indicators_to_Slack
-title: "Microsoft Office 365 Email Indicators to Slack"
+title: "Post Office 365 Phishing Alerts to Slack"
 description: "This workflow will dissect an email and return all potential malicious indicators to Slack in a message."
-version: 1.0.0
+version: 1.0.1
 vendor: rapid7
 support: rapid7
 status: []

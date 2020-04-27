@@ -1,9 +1,9 @@
 extension: workflow
-products: ["insightconnect"]
+products: ["insightconnect", "insightidr"]
 name: Out_Of_Office_AutoResponse_User_Containment
 title: "Out of Office AutoResponse User Containment"
 description: This workflow responds to any user event from InsightIDR and determines if the event occurred during or after office hours.
-version: 1.0.0
+version: 1.0.1
 vendor: rapid7
 support: rapid7
 status: []

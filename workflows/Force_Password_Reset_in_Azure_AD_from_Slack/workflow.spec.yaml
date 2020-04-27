@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Force_Password_Reset_in_Azure_AD_from_Slack
 title: "Reset Password in Azure AD from Slack"
 description: Reset a user's Azure AD password with a simple command in Slack.
-version: 1.0.2
+version: 1.0.3
 vendor: rapid7
 support: rapid7
 status: []

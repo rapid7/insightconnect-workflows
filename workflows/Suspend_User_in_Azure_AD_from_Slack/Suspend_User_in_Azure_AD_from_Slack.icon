@@ -2,10 +2,10 @@
   "kom": {
     "komandVersion": "1.49.2-0-gafb52",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-04-24T03:50:15.635196198Z",
+    "exportedAt": "2020-04-26T20:01:17.495731931Z",
     "workflowVersions": [
       {
-        "name": "Disable User Account in Azure AD from Slack FINAL TEST",
+        "name": "Disable User Account in Azure AD from Slack",
         "type": "runnable",
         "version": "",
         "description": "This workflow disables a specified user in Azure AD",
@@ -299,11 +299,11 @@
             "parameters": {
               "input": {
                 "matchChannel": "",
-                "matchText": "disable-user",
+                "matchText": "disable-user-azure",
                 "type": "any"
               }
             },
-            "triggerId": "ec21710e-e446-40ab-98cb-1517b0a3575d",
+            "triggerId": "40dad043-fa10-4640-b4fd-d0be437b069f",
             "defaultInputJSONSchema": {
               "properties": {
                 "matchChannel": {
@@ -576,12 +576,12 @@
     ],
     "triggers": [
       {
-        "id": "ec21710e-e446-40ab-98cb-1517b0a3575d",
+        "id": "40dad043-fa10-4640-b4fd-d0be437b069f",
         "name": "Slack Message",
         "description": "Trigger on Slack message\nE.X. disable-user <SAMAccount>",
         "input": {
           "matchChannel": "",
-          "matchText": "disable-user",
+          "matchText": "disable-user-azure",
           "type": "any"
         },
         "inputJsonSchema": {

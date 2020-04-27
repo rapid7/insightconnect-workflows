@@ -4,7 +4,7 @@ Disabling a compromised account can limit the scope of an attack and buy valuabl
 
 Sample Trigger Commands:
 
-`!disable-user user@example.com`
+`!disable-user-azure user@example.com`
 
 # Key Features
 
@@ -31,10 +31,10 @@ After configuring the Teams steps, activate the workflow in order to trigger it.
 
 *This workflow will only trigger in the channel specified in the Microsoft Teams workflow steps.*
 
-To run the workflow, send a message to the specified Microsoft Teams channel starting with the command `!disable-user`. 
+To run the workflow, send a message to the specified Microsoft Teams channel starting with the command `!disable-user-azure`. 
 
 For example:
-* `!disable-user user@example.com`
+* `!disable-user-azure user@example.com`
 
 Your chat bot will reply when the workflow completes.
 
@@ -55,6 +55,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.3 - Updated trigger syntax and documentation
 * 1.0.2 - Updated trigger syntax and documentation
 * 1.0.1 - Updated documentation | Updated images
 * 1.0.0 - Initial workflow

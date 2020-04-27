@@ -20,7 +20,6 @@ API and account credentials for
 
 Once the workflow has been downloaded, login to InsightConnect and “Import” it into the workflow builder. Once imported, you will initially be prompted to configure the connections for each of the plugins.
 
-
 ## Technical Details
 
 Plugins utilized by workflow:
@@ -40,6 +39,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.1 - Updated documentation
 * 1.0.0 - Initial workflow
 
 # Links
