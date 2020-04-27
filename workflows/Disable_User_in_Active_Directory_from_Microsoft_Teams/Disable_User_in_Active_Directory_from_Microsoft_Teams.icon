@@ -1013,7 +1013,7 @@
               "input": {
                 "channel_name": "matt_test",
                 "message_content": "🔒Disable user {{[a4934e67-ceaa-4eda-9b1f-c023175b37e9].[user_name]}} 🔒<br>\n<br>\nUser was not successfully disabled ❌",
-                "team_name": "Dream Team"
+                "team_name": "change_me"
               }
             },
             "defaultInputJSONSchema": {
