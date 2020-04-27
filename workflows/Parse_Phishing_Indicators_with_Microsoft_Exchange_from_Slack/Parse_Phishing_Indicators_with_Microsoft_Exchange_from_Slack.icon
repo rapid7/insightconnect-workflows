@@ -1083,7 +1083,7 @@
               "input": {
                 "attachments": [],
                 "message": "{{[bf712037-937a-4f6c-8817-22e1801e0bac].[content]}}",
-                "recipient": "#change_me",
+                "recipient": "change_me",
                 "thread_ts": ""
               }
             },
@@ -1157,7 +1157,7 @@
               "input": {
                 "attachments": [],
                 "message": "📨  Email Received: Beginning Analysis 📨\n\nFrom: {{[6a008e1f-33e2-476d-b292-c98d5faeb1db].[email].[sender]}}\nSubject: {{[6a008e1f-33e2-476d-b292-c98d5faeb1db].[email].[subject]}}",
-                "recipient": "#change_me",
+                "recipient": "change_me",
                 "thread_ts": ""
               }
             },

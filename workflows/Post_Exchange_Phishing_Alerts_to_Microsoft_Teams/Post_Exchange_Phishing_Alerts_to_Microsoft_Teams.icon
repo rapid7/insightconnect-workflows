@@ -987,7 +987,7 @@
               "input": {
                 "channel_name": "change_me",
                 "message_content": "📨  Email Received: Beginning Analysis 📨<br>\n<b>From:</b> {{[6a008e1f-33e2-476d-b292-c98d5faeb1db].[email].[sender]}}<br>\n<b>Subject:</b> {{[6a008e1f-33e2-476d-b292-c98d5faeb1db].[email].[subject]}}\n",
-                "team_name": "Dream Team"
+                "team_name": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -1261,7 +1261,7 @@
               "input": {
                 "channel_name": "change_me",
                 "message_content": "{{[bf712037-937a-4f6c-8817-22e1801e0bac].[content]}}",
-                "team_name": "Dream Team"
+                "team_name": "change_me"
               }
             },
             "defaultInputJSONSchema": {

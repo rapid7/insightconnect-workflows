@@ -43,6 +43,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.1 - Change Microsoft Teams input fields to match new standards
 * 1.0.0 - Initial workflow
 
 # Links
