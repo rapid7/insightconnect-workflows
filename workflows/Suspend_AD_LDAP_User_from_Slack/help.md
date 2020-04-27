@@ -4,7 +4,7 @@ Suspend Active Directory LDAP users from Slack.
 
 Sample Slack Trigger Commands:
 
-`@Slackbot disable-user-ad <exampleuser>`
+`@Slackbot disable-user-ad <username>`
 
 # Key Features
 
