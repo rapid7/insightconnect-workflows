@@ -916,7 +916,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "matchChannel": "urlscan_testing",
+                "matchChannel": "",
                 "matchText": "enrich-url.*",
                 "type": "group"
               }
@@ -1224,7 +1224,7 @@
         "name": "enrich-url Trigger",
         "description": "enrich-url <url> is the command to slackbot to produce a report from urlscan.io",
         "input": {
-          "matchChannel": "urlscan_testing",
+          "matchChannel": "",
           "matchText": "enrich-url.*",
           "type": "group"
         },
