@@ -4,7 +4,7 @@ This workflow looks up a URL given via Slack command in urlscan.io and reports i
 
 Sample Slack Trigger Commands:
 
-`@Slackbot enrich-url https://example.com/suspicious/url`
+`@Rapid7 InsightConnect enrich-url https://example.com/suspicious/url`
 
 # Key Features
 
@@ -42,6 +42,7 @@ If a URL is submitted but no report is generated, urlscan.io may have blackliste
 
 # Version History
 
+* 1.0.2 - Set "change_me" items in workflow input
 * 1.0.1 - Updated Documentation and names
 * 1.0.0 - Initial workflow
 
