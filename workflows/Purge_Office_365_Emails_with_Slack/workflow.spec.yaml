@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Purge_Office_365_Emails_with_Slack
 title: "Purge Office 365 Emails with Slack"
 description: "This workflow uses a Slack command to purge all emails in an organization matching the provided search criteria."
-version: 1.0.1
+version: 1.0.2
 vendor: rapid7
 support: rapid7
 status: []

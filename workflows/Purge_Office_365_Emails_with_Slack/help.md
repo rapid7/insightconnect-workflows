@@ -4,11 +4,11 @@ Understanding the scope of a phishing campaign is critical to ensuring no one in
 
 Sample Slack Trigger Commands:
 
-`@Slackbot !purge-email subject="A phishy email"`
+`@Slackbot purge-email subject="A phishy email"`
 
-`@Slackbot !purge-email subject="A phishy email" from="example.com" body="Click here for free stuff"`
+`@Slackbot purge-email subject="A phishy email" from="example.com" body="Click here for free stuff"`
 
-`@Slackbot !purge-email subject="A phishy email" delete=true`
+`@Slackbot purge-email subject="A phishy email" delete=true`
 
 # Key Features
 
@@ -37,19 +37,23 @@ This workflow uses the Chat Ops Slack connection to listen for key messages. Whe
 
 To trigger this workflow, send a direct message to Rapid7 InsightConnect from Slack like the following:
 
-`!purge-email subject="A phishy email"`
+`purge-email subject="A phishy email"`
+
+You can also trigger this workflow from any channel by referencing Rapid7 InsightConnect:
+
+`@Rapid7 InsightConnect purge-email subject="A phishy email"`
 
 This will kick off the workflow and prompt you when the search is completed. If any emails are found that match the criteria, you can choose the delete button in Slack to delete them.
 
 Search criteria can be 'body', 'subject', or 'from' lines in the email. For example:
 
-`!purge-email subject="A phishy email" from="example.com" body="Click here for free stuff" `
+`purge-email subject="A phishy email" from="example.com" body="Click here for free stuff" `
 
 Any combination of 'body', 'subject', and 'from' can be used. At least one search item must be given.
 
 If you'd like the workflow to just delete emails without prompting, you can also use 'delete=true'. For example:
 
-`!purge-email subject="A phishy email" delete=true`
+`purge-email subject="A phishy email" delete=true`
 
 ## Technical Details
 
@@ -66,6 +70,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.2 - Changed content search query to use double quotes | Workflow no longer prompts a manual purge when 0 emails are found | Trigger no longer requires an exclamation mark | Updated documentation
 * 1.0.1 - Updated documentation
 * 1.0.0 - Initial workflow
 
