@@ -23,7 +23,7 @@ Sample Slack Trigger Commands:
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-Once the workflow has been imported, **The `Find DN` step and each Microsoft Teams step will need to be updated to suit your Teams and LDAP environments.** Edit the input with the preset text of `change_me` in each of these steps in the workflow.
+Once the workflow has been imported, **The `Find DN` step and each Microsoft Teams step will need to be updated to suit your Microsoft Teams and LDAP environments.** Edit the input with the preset text of `change_me` in each of these steps in the workflow.
 
 After configuring the Teams steps, activate the workflow in order to trigger it.
 
