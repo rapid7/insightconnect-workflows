@@ -52,6 +52,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.2 - Changed title from Slack to Microsoft Teams
 * 1.0.1 - Updated trigger syntax and documentation
 * 1.0.0 - Initial workflow
 
