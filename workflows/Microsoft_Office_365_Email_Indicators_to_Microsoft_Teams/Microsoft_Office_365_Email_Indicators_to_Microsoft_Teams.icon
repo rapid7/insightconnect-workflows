@@ -1554,9 +1554,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
+                "channel_name": "change_me",
                 "message_content": "{{[bf712037-937a-4f6c-8817-22e1801e0bac].[content]}}",
-                "team_name": "Komand-Test-Everyone"
+                "team_name": "change_me"
               }
             },
             "defaultInputJSONSchema": {

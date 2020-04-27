@@ -268,9 +268,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
+                "channel_name": "change_me",
                 "message_content": "!find-email.*",
-                "team_name": "Komand-Test-Everyone"
+                "team_name": "change_me"
               }
             },
             "triggerId": "0020ccf7-790f-468e-af59-e428f002e8e1",
@@ -551,9 +551,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
+                "channel_name": "change_me",
                 "message_content": "Delete command received, workflow starting with the following:\n<br>Email: \"{{[802f64dc-67d9-4d57-9a02-15d85a2494f6].[email]}}\"\n<br>From:\"{{[802f64dc-67d9-4d57-9a02-15d85a2494f6].[from]}}\"\n<br>Subject:\"{{[802f64dc-67d9-4d57-9a02-15d85a2494f6].[subject]}}\"\n<br>Body:\"{{[802f64dc-67d9-4d57-9a02-15d85a2494f6].[body]}}\"\n<br>Delete:\"{{[802f64dc-67d9-4d57-9a02-15d85a2494f6].[delete]}}\"",
-                "team_name": "Komand-Test-Everyone"
+                "team_name": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -721,9 +721,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
+                "channel_name": "change_me",
                 "message_content": "{{[a97e2e8d-752d-4d13-8f8e-42e80b4b48e7].[count]}} email(s) were deleted. \n<br>\n<br>Workflow Complete.",
-                "team_name": "Komand-Test-Everyone"
+                "team_name": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -998,9 +998,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
+                "channel_name": "change_me",
                 "message_content": "No emails were found.<br>\n<br> \nWorkflow Complete.",
-                "team_name": "Komand-Test-Everyone"
+                "team_name": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -1293,9 +1293,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
+                "channel_name": "change_me",
                 "message_content": "{{[a97e2e8d-752d-4d13-8f8e-42e80b4b48e7].[count]}} emails were found. \n<br>Delete was not set, or set to false. \n<br>Workflow complete.",
-                "team_name": "Komand-Test-Everyone"
+                "team_name": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -1463,9 +1463,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
+                "channel_name": "change_me",
                 "message_content": "delete-emails failed.<br>\n<br>\nYou can find more information here: {{[$job].[URL]}}",
-                "team_name": "Komand-Test-Everyone"
+                "team_name": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -2169,9 +2169,9 @@
         "name": "Microsoft Teams Delete Email",
         "description": "",
         "input": {
-          "channel_name": "Komand Test Channel",
+          "channel_name": "change_me",
           "message_content": "!find-email.*",
-          "team_name": "Komand-Test-Everyone"
+          "team_name": "change_me"
         },
         "inputJsonSchema": {
           "properties": {

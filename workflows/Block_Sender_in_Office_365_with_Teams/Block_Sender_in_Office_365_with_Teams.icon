@@ -228,9 +228,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
+                "channel_name": "change_me",
                 "message_content": "!block-sender",
-                "team_name": "Komand-Test-Everyone"
+                "team_name": "change_me"
               }
             },
             "triggerId": "15ba1072-78ba-4d31-a258-5a11d6835347",
@@ -398,9 +398,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
+                "channel_name": "change_me",
                 "message_content": "Attempting to block:\"{{[edfd27a8-76f3-48c9-b383-7f976e999b0d].[content]}}\"",
-                "team_name": "Komand-Test-Everyone"
+                "team_name": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -718,9 +718,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
+                "channel_name": "change_me",
                 "message_content": "The email or domain provided does not appear to be valid. <br>\n\"{{[edfd27a8-76f3-48c9-b383-7f976e999b0d].[content]}}\"<br>\n<b>Workflow Complete.</b>\n\n\n",
-                "team_name": "Komand-Test-Everyone"
+                "team_name": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -980,9 +980,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
+                "channel_name": "change_me",
                 "message_content": "<b>Block Failed</b><br>\n\"{{[edfd27a8-76f3-48c9-b383-7f976e999b0d].[content]}}\"<br>\n<br>\n<b>Workflow Complete</b>\n",
-                "team_name": "Komand-Test-Everyone"
+                "team_name": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -1150,9 +1150,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
+                "channel_name": "change_me",
                 "message_content": "<b>Block Successful</b><br>\n\"{{[edfd27a8-76f3-48c9-b383-7f976e999b0d].[content]}}\"<br>\n<br>\n<b>Workflow Completed<b>",
-                "team_name": "Komand-Test-Everyone"
+                "team_name": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -1410,9 +1410,9 @@
         "name": "Block Sender Trigger",
         "description": "",
         "input": {
-          "channel_name": "Komand Test Channel",
+          "channel_name": "change_me",
           "message_content": "!block-sender",
-          "team_name": "Komand-Test-Everyone"
+          "team_name": "change_me"
         },
         "inputJsonSchema": {
           "properties": {
