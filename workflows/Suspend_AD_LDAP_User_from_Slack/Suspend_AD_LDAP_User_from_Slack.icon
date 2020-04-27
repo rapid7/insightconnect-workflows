@@ -1,14 +1,14 @@
 {
   "kom": {
-    "komandVersion": "1.48.4-0-g02625",
+    "komandVersion": "1.49.2-0-gafb52",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-04-17T21:57:54.40297391Z",
+    "exportedAt": "2020-04-26T20:23:51.139374923Z",
     "workflowVersions": [
       {
-        "name": "Suspend Active Directory LDAP User from Slack",
+        "name": "Disable User Account in Active Directory from Slack",
         "type": "runnable",
         "version": "",
-        "description": "Suspend an Active Directory LDAP user from Slack.\n\nSample Slack command:\n\n`!suspend_ad_user <user>`\n",
+        "description": "Disable User Account in Active Directory from Slack\n\nSample Slack command:\n\n`suspend_ad_user <user>`\n",
         "graph": {
           "edges": {
             "015ddf3d-152b-4944-8211-8a5f90212e84": {
@@ -248,18 +248,18 @@
           },
           "28088d79-d0fb-4251-a73e-4c803c4a2cd7": {
             "nodeId": "28088d79-d0fb-4251-a73e-4c803c4a2cd7",
-            "name": "!suspend_ad_user",
+            "name": "Slack Message",
             "type": "trigger",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "input": {
-                "matchChannel": "change_me",
-                "matchText": "!suspend_ad_user",
-                "type": "group"
+                "matchChannel": "",
+                "matchText": "disable-user-ad",
+                "type": "any"
               }
             },
-            "triggerId": "b4d150f9-3b56-4956-87b3-659f9f9f695d",
+            "triggerId": "9cb3a96b-b556-4cf8-99b3-819c261f23d6",
             "defaultInputJSONSchema": {
               "properties": {
                 "matchChannel": {
@@ -419,8 +419,8 @@
               "input": {
                 "attachments": [],
                 "message": ":warning: User '{{[a4ab6ad5-f6dd-410b-8fe0-94043b573e29].[user_name]}}' was not found or is already disabled!",
-                "recipient": "change_me",
-                "thread_ts": ""
+                "recipient": "{{[28088d79-d0fb-4251-a73e-4c803c4a2cd7].[message].[channel_id]}}",
+                "thread_ts": "{{[28088d79-d0fb-4251-a73e-4c803c4a2cd7].[message].[ts]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -493,8 +493,8 @@
               "input": {
                 "attachments": [],
                 "message": ":lock: Suspend User Request for '{{[a4ab6ad5-f6dd-410b-8fe0-94043b573e29].[user_name]}}' :lock:\n\nUser suspension was successful! :white_check_mark:",
-                "recipient": "change_me",
-                "thread_ts": ""
+                "recipient": "{{[28088d79-d0fb-4251-a73e-4c803c4a2cd7].[message].[channel_id]}}",
+                "thread_ts": "{{[28088d79-d0fb-4251-a73e-4c803c4a2cd7].[message].[ts]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -615,11 +615,11 @@
             "isDisabled": false,
             "parameters": {
               "captureAll": false,
-              "expressionText": "!suspend_ad_user {{user_name:/.*/}}",
+              "expressionText": "disable-user-ad {{user_name:/.*/}}",
               "expressions": [
                 {
                   "type": "text",
-                  "value": "!suspend_ad_user "
+                  "value": "disable-user-ad "
                 },
                 {
                   "type": "variable",
@@ -692,8 +692,8 @@
               "input": {
                 "attachments": [],
                 "message": "Starting user suspension request for '{{[a4ab6ad5-f6dd-410b-8fe0-94043b573e29].[user_name]}}'...",
-                "recipient": "change_me",
-                "thread_ts": ""
+                "recipient": "{{[28088d79-d0fb-4251-a73e-4c803c4a2cd7].[message].[channel_id]}}",
+                "thread_ts": "{{[28088d79-d0fb-4251-a73e-4c803c4a2cd7].[message].[ts]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -772,7 +772,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "search_base": "DC=akbar,DC=trap",
+                "search_base": "change_me",
                 "search_filter": "(sAMAccountName={{[a4ab6ad5-f6dd-410b-8fe0-94043b573e29].[user_name]}})"
               }
             },
@@ -863,8 +863,8 @@
               "input": {
                 "attachments": [],
                 "message": ":lock: Suspend User Request for '{{[a4ab6ad5-f6dd-410b-8fe0-94043b573e29].[user_name]}}' :lock:\n\nUser suspension failed! :x:",
-                "recipient": "change_me",
-                "thread_ts": ""
+                "recipient": "{{[28088d79-d0fb-4251-a73e-4c803c4a2cd7].[message].[channel_id]}}",
+                "thread_ts": "{{[28088d79-d0fb-4251-a73e-4c803c4a2cd7].[message].[ts]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -966,13 +966,13 @@
     ],
     "triggers": [
       {
-        "id": "b4d150f9-3b56-4956-87b3-659f9f9f695d",
-        "name": "!suspend_ad_user",
+        "id": "9cb3a96b-b556-4cf8-99b3-819c261f23d6",
+        "name": "Slack Message",
         "description": "",
         "input": {
-          "matchChannel": "change_me",
-          "matchText": "!suspend_ad_user",
-          "type": "group"
+          "matchChannel": "",
+          "matchText": "disable-user-ad",
+          "type": "any"
         },
         "inputJsonSchema": {
           "properties": {

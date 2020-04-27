@@ -4,7 +4,7 @@ Suspend Active Directory LDAP users from Slack.
 
 Sample Slack Trigger Commands:
 
-`@Slackbot !suspend_ad_user <exampleuser>`
+`@Slackbot disable-user-ad <username>`
 
 # Key Features
 
@@ -20,11 +20,10 @@ Sample Slack Trigger Commands:
 ## Setup
 
 Once the workflow has been imported, edit the workflow and setup or select your Slack connection in Slack chatbot steps.
-In addition, edit the Active Directory LDAP steps with your correct Active Directory LDAP connection information.
-Each Slack step will need the channel name updated as well (edit the input with the preset text of `change_me`).
+In addition, edit the Active Directory LDAP steps with your correct Active Directory LDAP connection information. Notably, edit the search base in the `Find DN` step.
 
 To run the workflow, @ your Slackbot in any channel or in a direct message
-along with the command `!suspend_ad_user <username>`. The workflow will acknowledge the request and reply when it has
+along with the command `disable-user-ad <username>`. The workflow will acknowledge the request and reply when it has
 completed.
 
 ## Technical Details
@@ -41,6 +40,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.1 - Update trigger syntax, update documentation, fix naming scheme, add clarity to setup for LDAP search base
 * 1.0.0 - Initial workflow
 
 # Links

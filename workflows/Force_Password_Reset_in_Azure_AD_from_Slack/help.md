@@ -35,7 +35,7 @@ For example, in a direct message to your Chatbot:
 * `reset-password john.doe@acme.inc`
 
 For example, in a channel with your Chatbot:
-* `@chatbot reset-password john.doe@acme.inc`
+* `@Rapid7 InsightConnect reset-password john.doe@acme.inc`
 
 The workflow will post the results in a thread.
 
@@ -54,7 +54,8 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
-* 1.0.4 - Updated documentation
+* 1.0.3 - Updated documentation
+* 1.0.2 - Set "change_me" items in workflow input
 * 1.0.1 - Updated documentation
 * 1.0.0 - Initial workflow
 

@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Suspend_AD_LDAP_User_from_Slack
 title: "Suspend AD LDAP User from Slack"
 description: Suspend Active Directory LDAP users from Slack.
-version: 1.0.0
+version: 1.0.1
 vendor: rapid7
 support: rapid7
 status: []

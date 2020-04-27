@@ -11,6 +11,7 @@ Sample Slack Trigger Commands:
 * **Leverage Trusted Tools** - Attackers often spoof emails to make them look like they were sent from somewhere else. Leverage the tools at your disposal to investigate and enrich indicators automatically.
 * **Investigate Indicators at Scale** - Manually investigating every reported phishing attempt is extremely difficult to scale. Automatic analysis of common phishing IOCs reduces the overhead associated with every reported incident.
 * **Pinpoint a Targeted Response** - Positively identifying a malicious IP address allows you to block the phishing campaign’s origin, mitigating the risk of repeated attacks from that same source.
+
 # Requirements
 
 * [Slack](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops)
@@ -51,7 +52,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
-* 1.0.4 - Updated documentation
+* 1.0.4 - Set "change_me" items in workflow input
 * 1.0.3 - Updated documentation
 * 1.0.2 - Updated trigger syntax and documentation
 * 1.0.1 - Update documentation
