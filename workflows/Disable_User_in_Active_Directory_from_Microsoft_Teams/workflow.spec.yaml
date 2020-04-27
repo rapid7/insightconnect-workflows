@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Disable_User_in_Active_Directory_from_Microsoft_Teams
 title: "Disable User in Active Directory from Microsoft Teams"
 description: Disable Active Directory users from Microsoft Teams.
-version: 1.0.0
+version: 1.0.1
 vendor: rapid7
 support: rapid7
 status: []

@@ -2,13 +2,13 @@
   "kom": {
     "komandVersion": "1.49.2-0-gafb52",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-04-22T18:37:22.994611519Z",
+    "exportedAt": "2020-04-26T22:34:10.532223745Z",
     "workflowVersions": [
       {
         "name": "Disable User in Active Directory from Microsoft Teams",
         "type": "runnable",
         "version": "",
-        "description": "Disable Active Directory users from Microsoft Teams",
+        "description": "",
         "graph": {
           "edges": {
             "03316e2e-6b69-40bd-8d62-60429cc3e392": {
@@ -511,11 +511,11 @@
             "parameters": {
               "input": {
                 "channel_name": "change_me",
-                "message_content": "^!disable-user",
+                "message_content": "^!disable-user-ad",
                 "team_name": "change_me"
               }
             },
-            "triggerId": "c1e9656a-6652-4abe-82ec-77b2dbbeb3ed",
+            "triggerId": "9534425c-310b-4fbd-ab53-4c9bb05f4393",
             "defaultInputJSONSchema": {
               "properties": {
                 "channel_name": {
@@ -681,7 +681,7 @@
             "parameters": {
               "input": {
                 "channel_name": "change_me",
-                "message_content": "⚠️ Disable Active Directory User request for '{{[a4934e67-ceaa-4eda-9b1f-c023175b37e9].[user_name]}}' failed.<br>\n<br>\n User was not found,
+                "message_content": "⚠️ Disable Active Directory User request for {{[a4934e67-ceaa-4eda-9b1f-c023175b37e9].[user_name]}}' failed.<br>\n<br>\nUser was not found",
                 "team_name": "change_me"
               }
             },
@@ -842,11 +842,11 @@
             "isDisabled": false,
             "parameters": {
               "captureAll": false,
-              "expressionText": "!disable-user {{user_name:/.*/}}",
+              "expressionText": "!disable-user-ad {{user_name:/.*/}}",
               "expressions": [
                 {
                   "type": "text",
-                  "value": "!disable-user "
+                  "value": "!disable-user-ad "
                 },
                 {
                   "type": "variable",
@@ -1211,13 +1211,13 @@
     ],
     "triggers": [
       {
-        "id": "c1e9656a-6652-4abe-82ec-77b2dbbeb3ed",
+        "id": "9534425c-310b-4fbd-ab53-4c9bb05f4393",
         "identifier": "new_message_received",
         "name": "Microsoft Teams Message",
         "description": "",
         "input": {
           "channel_name": "change_me",
-          "message_content": "^!disable-user",
+          "message_content": "^!disable-user-ad",
           "team_name": "change_me"
         },
         "inputJsonSchema": {
