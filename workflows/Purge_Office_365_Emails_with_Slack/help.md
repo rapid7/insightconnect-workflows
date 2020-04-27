@@ -4,7 +4,7 @@ Understanding the scope of a phishing campaign is critical to ensuring no one in
 
 Sample Slack Trigger Commands:
 
-`@Rapid7 InsightConnect purge-email subject="A phishy email"`
+`@Slackbot purge-email subject="A phishy email"`
 
 `@Rapid7 InsightConnect purge-email subject="A phishy email" from="example.com" body="Click here for free stuff"`
 
