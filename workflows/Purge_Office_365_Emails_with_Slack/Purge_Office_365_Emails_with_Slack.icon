@@ -1061,7 +1061,7 @@
             "parameters": {
               "input": {
                 "matchChannel": "",
-                "matchText": "purge-email",
+                "matchText": "delete-emails",
                 "type": "any"
               }
             },
@@ -1733,7 +1733,7 @@
         "description": "",
         "input": {
           "matchChannel": "",
-          "matchText": "purge-email",
+          "matchText": "delete-emails",
           "type": "any"
         },
         "inputJsonSchema": {

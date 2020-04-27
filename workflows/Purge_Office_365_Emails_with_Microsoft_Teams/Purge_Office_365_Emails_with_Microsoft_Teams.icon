@@ -1421,7 +1421,7 @@
             "parameters": {
               "input": {
                 "channel_name": "Komand Test Channel",
-                "message_content": "^!purge-email.*",
+                "message_content": "^!delete-emails.*",
                 "team_name": "Komand-Test-Everyone"
               }
             },
@@ -1714,7 +1714,7 @@
             "parameters": {
               "input": {
                 "channel_name": "Komand Test Channel",
-                "message_content": "Compliance results were not purged. <br>\n<br>\nIf you would like to automatically purge the emails, put:<br>\ndelete=true<br>\nat the end of the !purge-email command.<br>\n<br>\n<b>Workflow Complete</b>",
+                "message_content": "Compliance results were not purged. <br>\n<br>\nIf you would like to automatically purge the emails, put:<br>\ndelete=true<br>\nat the end of the !delete-emails command.<br>\n<br>\n<b>Workflow Complete</b>",
                 "team_name": "Komand-Test-Everyone"
               }
             },
@@ -1942,7 +1942,7 @@
         "description": "",
         "input": {
           "channel_name": "Komand Test Channel",
-          "message_content": "^!purge-email.*",
+          "message_content": "^!delete-emails.*",
           "team_name": "Komand-Test-Everyone"
         },
         "inputJsonSchema": {

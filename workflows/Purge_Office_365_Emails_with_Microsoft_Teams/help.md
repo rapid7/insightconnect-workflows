@@ -1,12 +1,12 @@
 # Description
 
-Understanding the scope of a phishing campaign is critical to ensuring no one in your organization takes the bait. This workflow runs a search from a command in Microsoft Teams and purges emails across Office365 inboxes.
+Understanding the scope of a phishing campaign is critical to ensuring no one in your organization takes the bait. This workflow runs a search from a command in Microsoft Teams and deletes emails across Office 365 inboxes.
 
 Sample Trigger Commands:
 
-`!purge-email subject="A phishy email"`
+`!delete-emails subject="A phishy email"`
 
-`!purge-email subject="A phishy email" from="example.com" body="Click here for free stuff" `
+`!delete-emails subject="A phishy email" from="example.com" body="Click here for free stuff" `
 
 
 # Key Features
@@ -20,7 +20,7 @@ Sample Trigger Commands:
 The following connections will need to be setup: 
 
 * [Microsoft Teams](https://insightconnect.help.rapid7.com/docs/microsoft-teams)
-* [Microsoft Office365 Email Security](https://insightconnect.help.rapid7.com/docs/mass-delete-with-powershell#section-set-up-office-365-dependencies)
+* [Microsoft Office 365 Email Security](https://insightconnect.help.rapid7.com/docs/mass-delete-with-powershell#section-set-up-office-365-dependencies)
 
 # Documentation
 
@@ -31,7 +31,7 @@ Import the workflow from the Rapid7 Extension Library and proceed through the Im
 Once the workflow is successfully imported, edit each Microsoft Teams step to reflect your team name and channel.
 
 To run the workflow, in the channel you are monitoring enter the following:
-`!purge-email subject="A phishy email" from="example.com" body="Click here for free stuff" `
+`!delete-emails subject="A phishy email" from="example.com" body="Click here for free stuff" `
 
 The workflow will reply when it has completed.
 
@@ -41,19 +41,19 @@ This workflow uses the Microsoft Teams plugin to listen for key messages (comman
 
 To trigger this workflow, send the following command to the channel being monitored by the Microsoft Teams plugin:
 
-`!purge-email subject="A phishy email"`
+`!delete-emails subject="A phishy email"`
 
 This will kick off the workflow and prompt you when the search is completed.
 
 Search criteria can be 'body', 'subject', or 'from' lines in the email. For example:
 
-`!purge-email subject="A phishy email" from="example.com" body="Click here for free stuff" `
+`!delete-emails subject="A phishy email" from="example.com" body="Click here for free stuff" `
 
 Any combination of 'body', 'subject', and 'from' can be used. At least one search item must be given.
 
 If you'd like the workflow to delete emails you can use 'delete=true'. For example:
 
-`!purge-email subject="A phishy email" delete=true`
+`!delete-emails subject="A phishy email" delete=true`
 
 ## Technical Details
 
@@ -72,6 +72,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.3 - Change trigger command from `purge-email` to `delete-emails`
 * 1.0.2 - Updated documentation
 * 1.0.1 - Update to Microsoft Teams 2.0.2
 * 1.0.0 - Initial workflow
@@ -80,7 +81,7 @@ _There is no troubleshooting information at this time_
 
 ## References
 
-* [Microsoft Office365](https://www.office.com)
-* [Microsoft Office365 Email Security Plugin Configuration](https://insightconnect.help.rapid7.com/docs/mass-delete-with-powershell#section-set-up-office-365-dependencies)
+* [Microsoft Office 365](https://www.office.com)
+* [Microsoft Office 365 Email Security Plugin Configuration](https://insightconnect.help.rapid7.com/docs/mass-delete-with-powershell#section-set-up-office-365-dependencies)
 * [Microsoft Teams Configuration](https://insightconnect.help.rapid7.com/docs/microsoft-teams)
 * [Microsoft Teams](https://teams.microsoft.com/)
