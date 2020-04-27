@@ -230,7 +230,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "search_base": "DC=intad,DC=dslab,DC=internal",
+                "search_base": "change_me",
                 "search_filter": "(sAMAccountName={{[a4934e67-ceaa-4eda-9b1f-c023175b37e9].[user_name]}})"
               }
             },
