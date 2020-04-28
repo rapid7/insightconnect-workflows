@@ -9,9 +9,10 @@ This workflow automated the process of looking up an associated file hash in Vir
 
 # Requirements
 
-* Slack Chatbot
-* Carbon Black Response Connection
-* VirusTotal Connection
+* InsightConnect License
+* [Slack](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops)
+* Carbon Black Response URL and Account Credentials
+* VirusTotal API Key
 
 # Documentation
 
