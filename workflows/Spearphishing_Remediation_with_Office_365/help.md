@@ -14,7 +14,8 @@ IDR provides built-in machine learning based detections of spearphishing attempt
 
 # Requirements
 
-* Email provider is Office365 (Gmail does not support bulk deletion)
+* InsightConnect License
+* [Office 365](https://insightconnect.help.rapid7.com/docs/office365)
 
 # Documentation
 

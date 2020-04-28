@@ -14,6 +14,7 @@ IDR provides built-in machine learning based detections of spearphishing attempt
 # Requirements
 
 * Mimecast API key
+* InsightConnect License
 
 # Documentation
 

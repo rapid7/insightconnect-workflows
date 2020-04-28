@@ -20,7 +20,6 @@ Sample Slack Trigger Commands:
 * InsightConnect License
 * [Slack](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops)
 
-
 # Documentation
 
 ## Setup

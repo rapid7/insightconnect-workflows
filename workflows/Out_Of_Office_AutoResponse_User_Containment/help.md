@@ -13,7 +13,6 @@ This workflow responds to any user event from InsightIDR and determines if the e
 
 * InsightConnect License
 * [Slack](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops)
-
 * Active Directory Administrative Credentials
 * Jira URL and Account Credentials
 
