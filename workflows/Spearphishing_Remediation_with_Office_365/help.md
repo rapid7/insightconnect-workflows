@@ -4,12 +4,13 @@ IDR provides built-in machine learning based detections of spearphishing attempt
 
 # Key Features
 
-* Tag owned domains in IDR
-* Alert on DNS queries to spoofed domains and create an investigation to track related alerts
-* Prompt the user in Slack to either remediate or close the investigation
-* Automatically delete the email across all user inboxes based on a custom search query
-* Add a transport rule in Office365 to block the offending domain
-* Notify team of all actions performed
+* Tag domains in IDR at `#/settings/domains`
+* Import the workflow and configure connections in the import wizard
+* Activate the workflow
+* Navigate to IDR's alert triggers page at #/automation/alerts
+* Click Create Alert Trigger
+* Select `Spearphishing Remediation with Office365`
+* While Selecting Alerts, check "Spear Phishing URL Detected"
 
 # Requirements
 

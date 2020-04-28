@@ -9,10 +9,9 @@ This workflow creates solution-based tickets in Zendesk for each of the top 25 r
 
 # Requirements
 
-API and account credentials for
-
-* InsightVM
-* Zendesk
+* InsightVM Console URL and account credentials
+* InsightConnect License
+* Zendesk URL and account credentials
 
 # Documentation
 

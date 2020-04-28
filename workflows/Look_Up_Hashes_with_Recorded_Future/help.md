@@ -8,7 +8,8 @@ This workflow enriches an IDR alert by performing a lookup on all hashes in the 
 
 # Requirements
 
-API and account credentials for Recorded Future
+* InsightConnect License
+* Recorded Future API Key and Account Credentials
 
 # Documentation
 

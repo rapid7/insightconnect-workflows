@@ -13,20 +13,18 @@ IDR provides built-in machine learning based detections of spearphishing attempt
 
 # Requirements
 
-* API access to Mimecast as described in the Links section below
+* Mimecast API key
 
 # Documentation
 
 ## Setup
 
-* Tag domains in IDR at #/settings/domains
-* Download the workflow or clone the repository `git clone https://github.com/rapid7/insightconnet-workflows.git`
-* Login to InsightConnect, and “Import” the .icon file into the workflow builder
-* Configure the connections for the Mimecast plugin
-* Activate your workflow
+* Tag domains in IDR at `#/settings/domains`
+* Import the workflow and configure connections in the import wizard
+* Activate the workflow
 * Navigate to IDR's alert triggers page at #/automation/alerts
 * Click Create Alert Trigger
-* Select Spearphishing Remediation with Office365
+* Select `Spearphishing Remediation with Mimecast`
 * While Selecting Alerts, check "Spear Phishing URL Detected"
 
 ## Technical Details

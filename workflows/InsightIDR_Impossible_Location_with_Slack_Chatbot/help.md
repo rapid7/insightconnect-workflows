@@ -20,11 +20,11 @@ This workflow automates the process of parsing all IP addresses associated with 
 
 # Requirements
 
-* InsightConnect Orchestrator Deployed
-* Slack Chatbot
-* VirusTotal Connection
-* Jira Connection
-* IP Stack Connection
+* InsightConnect License
+* [Slack](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops)
+* VirusTotal API Key
+* Jira URL and Account Credentials
+* IPStack API Key
 
 # Documentation
 
