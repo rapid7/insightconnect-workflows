@@ -29,7 +29,7 @@ If you do not already have a Slack connection configured, please refer to our [H
 
 ### Usage
 
-To trigger this workflow, @ the Slackbot in Slack or send the bot a DM in the following format:
+To trigger this workflow, @ the Rapid7 InsightConnect bot in Slack or send the bot a DM in the following format:
 
 `check-agent-status hostname-1`
 
