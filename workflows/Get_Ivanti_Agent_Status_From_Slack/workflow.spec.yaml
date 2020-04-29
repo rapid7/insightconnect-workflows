@@ -1,0 +1,19 @@
+extension: workflow
+products: ["insightconnect"]
+name: Get_Ivanti_Agent_Status_From_Slack
+title: "Get Ivanti Agent Status from Slack"
+description: This workflow provides a convient way to retrieve agent status from Ivanti Security Controls directly from the comfort of Slack. When triggered, the workflow fetches agent details by hostname from Ivanti and posts the results in a Slack thread. Agent information includes hostname, agent ID, status, and last check-in time.
+version: 1.0.0
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [patch_management, asset_inventory]
+  keywords: [Ivanti, Slack, chat]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Get_Ivanti_Agent_Status_From_Slack
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+  - name: Workflow.png
+    title: Workflow Builder View
