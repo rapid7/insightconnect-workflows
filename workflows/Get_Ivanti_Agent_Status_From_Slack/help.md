@@ -4,7 +4,7 @@ This workflow provides a convient way to retrieve agent status from Ivanti Secur
 
 Sample Slack Trigger Commands: 
 
-`@Slackbot check-agent-status hostname-1`
+`@Rapid7 InsightConnect check-agent-status hostname-1`
 
 # Key Features
 
