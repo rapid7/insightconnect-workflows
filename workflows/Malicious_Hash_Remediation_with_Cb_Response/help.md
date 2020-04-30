@@ -10,7 +10,8 @@ This workflow triggers off of InsightIDR's Malicious Hash on Asset alerts and do
 
 # Requirements
 
-* API access to Carbon Black Response
+* InsightConnect License
+* Carbon Black Response API Key
 
 # Documentation
 

@@ -9,10 +9,9 @@ This workflow creates solution-based tickets in ServiceNow for each of the top 2
 
 # Requirements
 
-API and account credentials for
-
-* InsightVM
-* ServiceNow
+* InsightVM Console URL and account credentials
+* InsightConnect License
+* ServiceNow URL and account credentials
 
 # Documentation
 

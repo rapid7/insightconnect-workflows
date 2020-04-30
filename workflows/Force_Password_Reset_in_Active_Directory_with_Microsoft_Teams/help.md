@@ -1,10 +1,10 @@
 # Description
 
-Reset a domain user's password with a command in Slack. Quickly respond, whether it be to an emerging threat or to another user that locked themselves out of their account.
+Reset a domain user's password with a command in Microsoft Teams. Quickly respond, whether it be to an emerging threat or to another user that locked themselves out of their account.
 
 Sample Microsoft Teams command:
 
-`!reset-password user`
+`!reset-password-ad <username>`
 
 # Key Features
 
@@ -36,7 +36,7 @@ After configuring the Teams steps and the `Find DN` step, activate the workflow 
 To run the workflow, send a message to the specified Microsoft Teams channel starting with the command `!reset-password`. 
 
 Commands should be in the following format:
-`!reset-password john.doe@acme.inc`
+`!reset-password <username>`
 
 ## Technical Details
 
