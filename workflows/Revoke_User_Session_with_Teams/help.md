@@ -17,7 +17,7 @@ Revoke a user session forcing them to log in after their next page refresh with 
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-In each Microsoft Teams step set the Team and Channel you would like to send messages to. 
+In each Microsoft Teams step set the team and channel you would like to send messages to. 
 
 ### Usage
 
