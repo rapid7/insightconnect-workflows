@@ -31,8 +31,11 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Microsoft Office365 Email Security|2.2.1|3|
-|Python 3 Script|2.0.1|2|
+|Microsoft Teams|2.0.2|5|
+|String Operations|1.2.1|2|
+|Azure AD Admin|2.2.0|1|
+|HTML|1.2.1|1|
+
 
 ## Troubleshooting
 

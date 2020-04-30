@@ -279,9 +279,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
+                "channel_name": "change-me",
                 "message_content": "^!revoke-session.*",
-                "team_name": "Komand-Test-Everyone"
+                "team_name": "change-me"
               }
             },
             "triggerId": "f97330dc-7ccb-44ca-a928-72de8689006e",
@@ -449,9 +449,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
+                "channel_name": "change-me",
                 "message_content": "🗝  <b>No username was provided</b>  🗝<br>\n<br>\nCommand Received Was: {{[18b96fa1-eda6-4caa-b939-a346f6425241].[text]}}<br>\n<br>\n<b>Workflow Failed</b> ❗",
-                "team_name": "Komand-Test-Everyone"
+                "team_name": "change-me"
               }
             },
             "defaultInputJSONSchema": {
@@ -723,9 +723,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
+                "channel_name": "change-me",
                 "message_content": "🗝 <b>Successfully Revoked Session</b> 🗝<br>\n<br>\n<b>User: </b>{{[09136517-49a8-4051-8b93-4d72962eebc0].[content]}}<br>\n<br>\n<b>Workflow Complete</b>  ✅",
-                "team_name": "Komand-Test-Everyone"
+                "team_name": "change-me"
               }
             },
             "defaultInputJSONSchema": {
@@ -893,9 +893,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
+                "channel_name": "change-me",
                 "message_content": "🗝 <b>User Session Was Not Revoked</b><br> 🗝\n<br>\n<b>User:</b> {{[09136517-49a8-4051-8b93-4d72962eebc0].[content]}}<br>\n<br>\nMore information can be found here: <br>\n<a href=\"{{[$job].[URL]}}\">Job Info</a><br>\n<br>\n<b>Workflow Failed</b> ❗",
-                "team_name": "Komand-Test-Everyone"
+                "team_name": "change-me"
               }
             },
             "defaultInputJSONSchema": {
@@ -1146,9 +1146,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
+                "channel_name": "change-me",
                 "message_content": "🗝  <b>Starting Revoke User Session</b>  🗝<br>\n<br>\n<b>User:</b> {{[09136517-49a8-4051-8b93-4d72962eebc0].[content]}}\n",
-                "team_name": "Komand-Test-Everyone"
+                "team_name": "change-me"
               }
             },
             "defaultInputJSONSchema": {
@@ -1384,9 +1384,9 @@
         "name": "Revoke Session Trigger",
         "description": "",
         "input": {
-          "channel_name": "Komand Test Channel",
+          "channel_name": "change-me",
           "message_content": "^!revoke-session.*",
-          "team_name": "Komand-Test-Everyone"
+          "team_name": "change-me"
         },
         "inputJsonSchema": {
           "properties": {
