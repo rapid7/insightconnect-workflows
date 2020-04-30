@@ -1,6 +1,6 @@
 # Contributing
 
-Thank you for your interest in joining the InsightConnect community! Please review our [Code of Conduct] before making contributions.
+Thank you for your interest in joining the InsightConnect community! Please review our [Code of Conduct] before making contributions. 
 
 There are multiple ways you can help us at Rapid7 and our customers close the security achievement gap with InsightConnect. These include:
 
