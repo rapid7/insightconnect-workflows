@@ -1,0 +1,21 @@
+extension: workflow
+products: ["insightconnect"]
+name: Revoke_User_Session_with_Teams
+title: "Revoke User Session with Teams"
+description: "Revoke a user session forcing them to log in after their next page refresh with a command from Microsoft Teams."
+version: 1.0.0
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [threat_detection_and_response]
+  keywords: [phishing, email, office365, slack, work_from_home, session]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Purge_Office_365_Emails_with_Slack
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+  - name: workflow1.png
+    title: Workflow View
+  - name: teams_flow1.png
+    title: Example Teams Command and Response
