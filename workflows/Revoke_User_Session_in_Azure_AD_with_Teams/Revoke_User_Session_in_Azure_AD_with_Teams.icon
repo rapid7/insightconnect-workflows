@@ -5,7 +5,7 @@
     "exportedAt": "2020-04-30T17:44:26.015825844Z",
     "workflowVersions": [
       {
-        "name": "Revoke User Session with Microsoft Teams",
+        "name": "Revoke User Session in Azure AD with Teams",
         "type": "runnable",
         "version": "",
         "description": "Revoke a user session forcing them to log in after their next page refresh with a command from Microsoft Teams.",
