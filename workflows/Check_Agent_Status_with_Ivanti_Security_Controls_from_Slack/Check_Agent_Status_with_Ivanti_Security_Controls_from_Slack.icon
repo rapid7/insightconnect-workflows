@@ -2,13 +2,13 @@
   "kom": {
     "komandVersion": "1.49.3-0-g7c412",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-04-29T03:25:23.810889727Z",
+    "exportedAt": "2020-04-30T03:19:07.985786011Z",
     "workflowVersions": [
       {
-        "name": "Get Ivanti Agent Status from Slack",
+        "name": "Check Agent Status with Ivanti Security Controls from Slack",
         "type": "runnable",
         "version": "",
-        "description": "This workflow accepts a Slack command containing a hostname and returns agents details from Ivanti Security Controls.\n\nSample Slack Trigger Commands: \ncheck-agent-status hostname-1",
+        "description": "This workflow accepts a Slack command containing a hostname and returns agent details and status from Ivanti Security Controls.\n\nSample Slack Trigger Commands: \ncheck-agent-status hostname-1",
         "graph": {
           "edges": {
             "27b13b43-f2b5-40b1-811a-317ecf1321e6": {
@@ -253,7 +253,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "# Trigger\n_{{[8b5f067d-03aa-4d9e-a06b-5ad7dda77b99].[message].[user]}}_ started Get Ivanti Agent Status workflow with the search term _{{[61855db7-9d9e-46ab-8176-6e18cd3d8299].[hostname]}}_ in the _{{[8b5f067d-03aa-4d9e-a06b-5ad7dda77b99].[message].[channel]}}_ channel at _{{[8b5f067d-03aa-4d9e-a06b-5ad7dda77b99].[timestamp]}}_.\n\n# Search Results\n_{{[61855db7-9d9e-46ab-8176-6e18cd3d8299].[hostname]}}_ yielded the following search results in Ivanti:\n{{# each [d79b7dd3-bc74-4649-8e24-67680740b43e].[agents]}}\n{{this.[machineName]}} : {{this.[agentId]}}\n{{/each}}\n\n# Outcome\nPosted asset details to the _{{[8b5f067d-03aa-4d9e-a06b-5ad7dda77b99].[message].[channel]}}_ channel in Slack."
+                "content": "# Trigger\n_{{[8b5f067d-03aa-4d9e-a06b-5ad7dda77b99].[message].[user]}}_ started Check Agent Status workflow with the search term _{{[61855db7-9d9e-46ab-8176-6e18cd3d8299].[hostname]}}_ in the _{{[8b5f067d-03aa-4d9e-a06b-5ad7dda77b99].[message].[channel]}}_ channel at _{{[8b5f067d-03aa-4d9e-a06b-5ad7dda77b99].[timestamp]}}_.\n\n# Search Results\n_{{[61855db7-9d9e-46ab-8176-6e18cd3d8299].[hostname]}}_ yielded the following search results in Ivanti:\n{{# each [d79b7dd3-bc74-4649-8e24-67680740b43e].[agents]}}\n{{this.[machineName]}} : {{this.[agentId]}}\n{{/each}}\n\n# Outcome\nPosted asset details to the _{{[8b5f067d-03aa-4d9e-a06b-5ad7dda77b99].[message].[channel]}}_ channel in Slack."
               },
               "type": "markdown"
             },
@@ -539,7 +539,7 @@
             "name": "Post to Slack",
             "type": "action_chatops",
             "continueOnFailure": false,
-            "isDisabled": true,
+            "isDisabled": false,
             "parameters": {
               "input": {
                 "attachments": [],
@@ -614,10 +614,10 @@
             "type": "action",
             "plugin": {
               "name": "Ivanti Security Controls",
-              "slugVendor": "zyoutz",
+              "slugVendor": "rapid7",
               "slugName": "ivanti_security_controls",
-              "slugVersion": "1.0.0-1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg"
+              "slugVersion": "1.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/ivanti_security_controls/1.0.0/icon.png"
             },
             "identifier": "get_agents",
             "continueOnFailure": false,
@@ -736,8 +736,8 @@
                     }
                   },
                   "required": [
-                    "agentId",
-                    "status"
+                    "status",
+                    "agentId"
                   ],
                   "title": "Agent Detail",
                   "type": "object"
@@ -764,7 +764,7 @@
               "type": "object"
             },
             "outputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg",
+            "defaultImageData": "",
             "connectionType": "CONNECTION"
           }
         },

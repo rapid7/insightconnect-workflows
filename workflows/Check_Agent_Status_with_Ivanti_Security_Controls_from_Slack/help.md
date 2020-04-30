@@ -1,20 +1,20 @@
 # Description
 
-This workflow provides a convient way to retrieve agent status from Ivanti Security Controls directly from the comfort of Slack. When triggered, the workflow fetches agent details by hostname from Ivanti and posts the results in a Slack thread. Agent information includes hostname, agent ID, status, and last check-in time.
+This workflow provides a convenient way to retrieve the status of an Ivanti Security Controls agent directly from the comfort of Slack. When triggered, the workflow fetches agent details by hostname from Ivanti Security Controls and posts the results in a Slack thread. Agent information includes hostname, agent ID, status, and last check-in time.
 
-Sample Slack Trigger Commands: 
+Sample Slack Trigger Command: 
 
 `@Rapid7 InsightConnect check-agent-status hostname-1`
 
 # Key Features
 
-* Quickly identify if the Ivanti agent is installed on a host
+* Quickly identify if the Ivanti Security Controls agent is installed on a host
 * Retrieve the status of the agent
 * Find out the last time the agent checked in
 
 # Requirements
 
-* Ivanti Security Controls host or IP
+* Ivanti Security Controls hostname or IP address
 * Ivanti Security Controls account credentials
 * InsightConnect License
 * [Slack](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops)
@@ -29,7 +29,7 @@ If you do not already have a Slack connection configured, please refer to our [H
 
 ### Usage
 
-To trigger this workflow, @ the Rapid7 InsightConnect bot in Slack or send the bot a DM in the following format:
+To trigger this workflow, @ the *Rapid7 InsightConnect* bot in Slack or send the bot a DM in the following format:
 
 `check-agent-status hostname-1`
 
