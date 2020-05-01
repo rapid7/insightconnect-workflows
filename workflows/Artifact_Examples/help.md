@@ -20,7 +20,8 @@ Once the workflow has been downloaded, login to InsightConnect and "Import" it i
 
 ## Technical Details
 
-Plugins utilized by workflow: none
+|Plugin|Version|Count|
+|----|----|--------|
 
 ## Troubleshooting
 
