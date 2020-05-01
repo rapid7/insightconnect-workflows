@@ -29,11 +29,9 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Microsoft Teams|2.0.2|5|
-|String Operations|1.2.1|2|
+|Python 3 Script|2.0.1|1|
+|String Operations|1.2.1|1|
 |Azure AD Admin|2.2.0|1|
-|HTML|1.2.1|1|
-
 
 ## Troubleshooting
 

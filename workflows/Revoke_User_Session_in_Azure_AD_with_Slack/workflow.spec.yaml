@@ -17,5 +17,5 @@ resources:
   screenshots:
   - name: workflow1.png
     title: Workflow View
-  - name: teams_flow1.png
-    title: Example Teams Command and Response
+  - name: slack_flow1.png
+    title: Example Slack Command and Response
