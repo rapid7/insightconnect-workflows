@@ -2,7 +2,7 @@ extension: workflow
 products: ["insightconnect"]
 name: Artifact_Examples
 title: "Artifact Examples"
-description: "This uses an API Trigger with each of the DataTypes. The workflow then has different Actions to see how to work with that data"
+description: "This uses an API Trigger with each of the DataTypes. The workflow then has different Actions to see how to work with that data."
 version: 1.0.0
 vendor: community
 support: community
