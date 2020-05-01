@@ -34,4 +34,4 @@ _There is no troubleshooting information at this time_
 
 ## References
 
-* https://github.com/rapid7/insightconnect-workflows
+* [InsightConnect Workflows](https://github.com/rapid7/insightconnect-workflows)
