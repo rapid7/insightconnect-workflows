@@ -43,7 +43,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
-* 1.0.1 - Update to fix github reference
+* 1.0.1 - Update to correct `source_url` reference in spec
 * 1.0.0 - Initial workflow
 
 # Links
