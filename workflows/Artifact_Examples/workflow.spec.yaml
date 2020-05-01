@@ -18,6 +18,6 @@ resources:
   - name: Artifact_Examples_Job_First_Artifact.png
     title: Example of Presenting data directly from the Trigger
   - name: Artifact_Examples_Job_Second_Artifact.png
-    title: Example of presenting data inside a Loop
+    title: Example of Presenting data inside a Loop
   - name: Artifact_Examples_Workflow.png
     title: Workflow View
