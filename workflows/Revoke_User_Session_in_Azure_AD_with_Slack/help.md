@@ -9,7 +9,7 @@ Revoke a user session forcing them to log in after their next page refresh with 
 # Requirements
 
 * [Azure AD Admin](https://insightconnect.help.rapid7.com/docs/office365)
-* [Microsoft Teams](https://insightconnect.help.rapid7.com/docs/microsoft-teams)
+* [Slack Chat Ops](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops)
 
 # Documentation
 
@@ -47,6 +47,6 @@ _There is no troubleshooting information at this time_
 
 * [Microsoft Office 365](https://www.office.com)
 * [Azure](https://azure.microsoft.com)
-* [Microsoft Teams](https://teams.microsoft.com)
-* [Microsoft Teams Setup Guide](https://insightconnect.help.rapid7.com/docs/microsoft-teams)
 * [Microsoft Office 365 Permissions and Setup](https://insightconnect.help.rapid7.com/docs/office365)
+* [Slack](https://www.slack.com)
+* [Slack Chat Ops](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops)
