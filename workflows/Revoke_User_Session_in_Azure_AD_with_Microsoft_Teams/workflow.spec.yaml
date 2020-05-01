@@ -12,7 +12,7 @@ hub_tags:
   keywords: [phishing, email, office365, slack, work_from_home, session]
   features: []
 resources:
-  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Purge_Office_365_Emails_with_Slack
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Purge_Office_365_Revoke_User_Session_in_Azure_AD_with_Slack
   license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
   screenshots:
   - name: workflow1.png
