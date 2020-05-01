@@ -16,7 +16,7 @@ resources:
   license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
   screenshots:
   - name: Artifact_Examples_Job_First_Artifact.png
-    title: Example of presenting data directly from the Trigger
+    title: Example of Presenting data directly from the Trigger
   - name: Artifact_Examples_Job_Second_Artifact.png
     title: Example of presenting data inside a Loop
   - name: Artifact_Examples_Workflow.png
