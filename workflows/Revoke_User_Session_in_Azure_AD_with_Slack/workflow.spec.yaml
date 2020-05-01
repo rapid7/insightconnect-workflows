@@ -1,7 +1,7 @@
 extension: workflow
 products: ["insightconnect"]
 name: Revoke_User_Session_in_Azure_AD_with_Slack
-title: "Revoke User Session in Azure AD with Slack"
+title: "Revoke User Session in Azure AD from Slack"
 description: "Revoke a user session forcing them to log in after their next page refresh with a command from Slack."
 version: 1.0.0
 vendor: rapid7
