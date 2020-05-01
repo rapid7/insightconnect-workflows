@@ -10,7 +10,7 @@ This uses an API Trigger with each of the DataTypes. The workflow then has diffe
 
 # Requirements
 
-none
+None
 
 # Documentation
 
