@@ -1,6 +1,6 @@
 # Description
 
-Revoke a user session forcing them to log in after their next page refresh with a command from Microsoft Teams. 
+Revoke a user session forcing them to log in after their next page refresh with a command from Slack. 
 
 # Key Features
 
@@ -9,7 +9,7 @@ Revoke a user session forcing them to log in after their next page refresh with 
 # Requirements
 
 * [Azure AD Admin](https://insightconnect.help.rapid7.com/docs/office365)
-* [Microsoft Teams](https://insightconnect.help.rapid7.com/docs/microsoft-teams)
+* [Slack Chat Ops](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops)
 
 # Documentation
 
@@ -17,13 +17,11 @@ Revoke a user session forcing them to log in after their next page refresh with 
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-In each Microsoft Teams step set the team and channel you would like to send messages to. 
-
 ### Usage
 
-This workflow uses the Microsoft Teams plugin to monitor a channel for a specific command. To trigger this workflow enter the following in that channel
+This workflow uses the Slack Chat Ops trigger to monitor for a specific command. To trigger this workflow direct message the Rapid7 Insight Connect bot with:
 
-`!revoke-session user@example.com`
+`revoke-session user@example.com`
 
 ## Technical Details
 
@@ -31,19 +29,16 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Microsoft Teams|2.0.2|5|
-|String Operations|1.2.1|2|
+|Python 3 Script|2.0.1|1|
+|String Operations|1.2.1|1|
 |Azure AD Admin|2.2.0|1|
-|HTML|1.2.1|1|
-
 
 ## Troubleshooting
 
-_There is no troubleshooting information at this time_
+_There is no troubleshooting information at this time._
 
 # Version History
 
-* 1.0.1 - Update to correct `source_url` reference in spec
 * 1.0.0 - Initial workflow
 
 # Links
@@ -52,6 +47,6 @@ _There is no troubleshooting information at this time_
 
 * [Microsoft Office 365](https://www.office.com)
 * [Azure](https://azure.microsoft.com)
-* [Microsoft Teams](https://teams.microsoft.com)
-* [Microsoft Teams Setup Guide](https://insightconnect.help.rapid7.com/docs/microsoft-teams)
 * [Microsoft Office 365 Permissions and Setup](https://insightconnect.help.rapid7.com/docs/office365)
+* [Slack](https://www.slack.com)
+* [Slack Chat Ops](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops)
