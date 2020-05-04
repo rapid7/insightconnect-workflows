@@ -35,7 +35,7 @@ Plugins utilized by workflow:
 
 ## Troubleshooting
 
-_There is no troubleshooting information at this time_
+_There is no troubleshooting information at this time._
 
 # Version History
 
