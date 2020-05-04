@@ -5,7 +5,7 @@
     "exportedAt": "2020-05-01T16:56:06.08151441Z",
     "workflowVersions": [
       {
-        "name": "Revoke User Session in Azure AD with Slack",
+        "name": "Revoke User Session in Azure AD from Slack",
         "type": "runnable",
         "version": "",
         "description": "Revoke a user session forcing them to log in after their next page refresh from Slack. ",
