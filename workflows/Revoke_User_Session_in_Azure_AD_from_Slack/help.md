@@ -21,7 +21,7 @@ Import the workflow from the Rapid7 Extension Library and proceed through the Im
 
 This workflow uses the Slack Chat Ops trigger to monitor for a specific command. To trigger this workflow direct message the Rapid7 Insight Connect bot with:
 
-`!revoke-session user@example.com`
+`revoke-session user@example.com`
 
 ## Technical Details
 
