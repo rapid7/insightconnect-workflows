@@ -20,8 +20,8 @@ resources:
   - name: slack_message1.png
     title: Slack Message for IP Blocked
   - name: slack_message2.png
-    title: Slack Message for IP not Blocked
+    title: Slack Message for IP Not Blocked
   - name: artifact1.png
     title: Artifact for IP Blocked
   - name: artifact2.png
-    title: Artifact for IP not Blocked
+    title: Artifact for IP Not Blocked
