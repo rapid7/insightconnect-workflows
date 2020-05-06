@@ -22,7 +22,7 @@ Sample Slack Trigger Commands:
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-In the _Check for IP Message chatops_ step edit the Match Channel input from `change_me` to an aproprate channel.
+In the _Check for IP Message_ step edit the Match Channel input from `change_me` to an appropriate channel.
 In the _Check for IP_ step edit the Address Group Name input from `change_me` to an aproprate address group
 
 To run the workflow, @ your Slackbot in the chosen channel or in a direct message along with the command "block-status <IP>". The workflow will post responses in a thread.
