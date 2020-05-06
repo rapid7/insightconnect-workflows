@@ -1,0 +1,27 @@
+extension: workflow
+products: ["insightconnect"]
+name: Check_Host_Block_Status_with_Fortinet_Firewall_from_Slack
+title: "Check Host Block Status with Fortinet Firewall from Slack"
+description: This workflow accepts a Slack command, check if an IP address is blocked, and posts if the IP address is blocked.
+version: 1.0.0
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [remediation_management,threat_detection_and_response]
+  keywords: [fortinet, firewall, slack, chatops, work_from_home]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Check_Host_Block_Status_with_Fortinet_Firewall_from_Slack
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+  - name: workflow1.png
+    title: Workflow View
+  - name: slack_message1.png
+    title: Slack Message for IP Blocked
+  - name: slack_message2.png
+    title: Slack Message for IP Not Blocked
+  - name: artifact1.png
+    title: Artifact for IP Blocked
+  - name: artifact2.png
+    title: Artifact for IP Not Blocked
