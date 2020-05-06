@@ -1,6 +1,6 @@
 # Description
 
-This workflow accepts a Slack command containing an IP address. This IP address will be checked agenst a pre defined address group in Fortinet to determin if the IP address is present or not. It is assumed that this address group will be used to store IP address for a block policy. A message with the results will be returned.
+This workflow accepts a Slack command containing an IP address. This IP address will be checked against a pre-defined address group in Fortinet to determine if the IP address is present or not. It is assumed that this address group will be used to store IP addresses for a block policy. A message with the results will be returned.
 
 Sample Slack Trigger Commands:
 
