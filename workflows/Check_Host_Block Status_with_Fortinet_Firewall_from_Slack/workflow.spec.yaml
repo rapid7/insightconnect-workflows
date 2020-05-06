@@ -1,27 +1,27 @@
 extension: workflow
-products: ["insightconnect", "insightvm"]
-name: Lookup_Vuln_From_Slack
-title: "Lookup Vulnerability from Slack"
-description: This workflow accepts a Slack command, looks up the vulnerability in Rapid7's vulnerability database, and posts the vulnerability details back to the same Slack channel.
-version: 1.1.2
+products: ["insightconnect"]
+name: Check_Host_Block_Status_with_Fortinet_Firewall_from_Slack
+title: "Check Host Block Status with Fortinet Firewall from Slack"
+description: This workflow accepts a Slack command, check if an IP address is blocked, and posts if the IP address is blocked.
+version: 1.0.0
 vendor: rapid7
 support: rapid7
 status: []
 hub_tags:
-  use_cases: [remediation_management, vulnerability_management]
-  keywords: [remediation_management, vulnerability_management, chat, chatops]
+  use_cases: [remediation_management,threat_detection_and_response]
+  keywords: [Fortinet ,firewall, slack, chatops, work_from_home]
   features: []
 resources:
-  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Lookup_Vuln_From_Slack
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Check_Host_Block_Status_with_Fortinet_Firewall_from_Slack
   license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
   screenshots:
-  - name: workflow.png
+  - name: workflow1.png
     title: Workflow View
-  - name: job1.png
-    title: Successful Workflow Job
-  - name: job2.png
-    title: Completed Job In Slack, One Result
-  - name: job3.png
-    title: Completed Job In Slack, Multiple Results
+  - name: slack_message1.png
+    title: Slack Message for IP Blocked
+  - name: slack_message2.png
+    title: Slack Message for IP not Blocked
   - name: artifact1.png
-    title: Final Report Artifact
+    title: Artifact for IP Blocked
+  - name: artifact2.png
+    title: Artifact for IP not Blocked
