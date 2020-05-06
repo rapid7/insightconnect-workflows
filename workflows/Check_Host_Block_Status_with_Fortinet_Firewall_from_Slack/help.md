@@ -4,7 +4,7 @@ This workflow accepts a Slack command containing an IP address. This IP address 
 
 Sample Slack Trigger Commands:
 
-`@Slackbot block-status 198.51.100.100`
+`@Rapid7 InsightConnect block-status 198.51.100.100`
 
 # Key Features
 
