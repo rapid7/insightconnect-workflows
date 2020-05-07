@@ -2,7 +2,7 @@ extension: workflow
 products: ["insightconnect"]
 name: Check_Host_Block_Status_with_Fortinet_Firewall_from_Microsoft_Teams
 title: "Check Host Block Status with Fortinet Firewall from Microsoft Teams"
-description: This workflow accepts a Microsoft Teams command, check if an IP address is blocked, and posts if the IP address is blocked.
+description: Check if an IP address is blocked in Fortinet FortiGate from Microsoft Teams.
 version: 1.0.0
 vendor: rapid7
 support: rapid7
