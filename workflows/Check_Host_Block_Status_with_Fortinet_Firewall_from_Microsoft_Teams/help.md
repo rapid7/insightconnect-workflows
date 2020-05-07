@@ -51,4 +51,4 @@ _There is no troubleshooting information at this time_
 ## References
 
 * [Fortinet](https://www.fortinet.com/)
-* [Slack](https://slack.com)
+* [Microsoft Teams](https://teams.microsoft.com)
