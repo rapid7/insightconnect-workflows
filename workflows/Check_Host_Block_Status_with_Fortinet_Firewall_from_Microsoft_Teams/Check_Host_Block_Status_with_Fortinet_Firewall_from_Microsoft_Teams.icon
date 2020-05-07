@@ -1,0 +1,1041 @@
+{
+  "kom": {
+    "komandVersion": "1.49.5-0-g5c0c6",
+    "komFileVersion": "2.0.0",
+    "exportedAt": "2020-05-07T17:56:39.68091076Z",
+    "workflowVersions": [
+      {
+        "name": "Check Host Block Status with Fortinet Firewall from Microsoft Teams",
+        "type": "runnable",
+        "version": "",
+        "description": "This workflow accepts a Microsoft Teams command, check if an IP address is blocked, and posts if the IP address is blocked.",
+        "graph": {
+          "edges": {
+            "1b7c51fe-7bfa-4809-83d0-1c2de309dd81": {
+              "id": "1b7c51fe-7bfa-4809-83d0-1c2de309dd81",
+              "name": "IP is in Address Group",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "792ba23e-401f-4a04-b65a-396f849de558",
+              "toNodeId": "8d73f510-1fb3-4cec-8611-edd9c2394056"
+            },
+            "1f38c93e-4657-4d63-a788-bc0a249e41a9": {
+              "id": "1f38c93e-4657-4d63-a788-bc0a249e41a9",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "3ae0cb53-09df-47dc-b8db-fb11a28f15ae",
+              "toNodeId": "792ba23e-401f-4a04-b65a-396f849de558"
+            },
+            "56f82d17-61c7-45f1-9075-b28b3ee0543b": {
+              "id": "56f82d17-61c7-45f1-9075-b28b3ee0543b",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "0291a406-7bfa-4ca2-9de5-c2e635541d11",
+              "toNodeId": "4d7f15d0-4973-4430-8cd8-60221a0d49a4"
+            },
+            "61f65ca6-9ba9-41e5-969a-342390eba6eb": {
+              "id": "61f65ca6-9ba9-41e5-969a-342390eba6eb",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "f8671c10-b8f2-441d-b6e3-c98d10469fda",
+              "toNodeId": "2816d285-f8e9-4003-bed3-1c2c57a1d518"
+            },
+            "81b97b27-9b1e-4091-89ff-b86873b082c4": {
+              "id": "81b97b27-9b1e-4091-89ff-b86873b082c4",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "67025537-07fb-49c8-95ce-d12c9e8e8842",
+              "toNodeId": "3ae0cb53-09df-47dc-b8db-fb11a28f15ae"
+            },
+            "a570ddbc-a12d-4ad4-9191-dbd1b6206f8a": {
+              "id": "a570ddbc-a12d-4ad4-9191-dbd1b6206f8a",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "e92ffb3c-b18e-46b6-9815-52437dcc1ef4",
+              "toNodeId": ""
+            },
+            "a7c74ecb-574c-4527-82ee-e967517ac94f": {
+              "id": "a7c74ecb-574c-4527-82ee-e967517ac94f",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "4d7f15d0-4973-4430-8cd8-60221a0d49a4",
+              "toNodeId": ""
+            },
+            "c2b0f9d0-e7e7-4793-b906-ccfe4465bf33": {
+              "id": "c2b0f9d0-e7e7-4793-b906-ccfe4465bf33",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "2816d285-f8e9-4003-bed3-1c2c57a1d518",
+              "toNodeId": "67025537-07fb-49c8-95ce-d12c9e8e8842"
+            },
+            "c8054428-d967-49df-a74a-ac22d78c149f": {
+              "id": "c8054428-d967-49df-a74a-ac22d78c149f",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "8d73f510-1fb3-4cec-8611-edd9c2394056",
+              "toNodeId": "e92ffb3c-b18e-46b6-9815-52437dcc1ef4"
+            },
+            "f57db6b9-85c0-4229-bc5e-b81295ef0060": {
+              "id": "f57db6b9-85c0-4229-bc5e-b81295ef0060",
+              "name": "IP is not in Address Group",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "792ba23e-401f-4a04-b65a-396f849de558",
+              "toNodeId": "0291a406-7bfa-4ca2-9de5-c2e635541d11"
+            }
+          },
+          "nodes": {
+            "0291a406-7bfa-4ca2-9de5-c2e635541d11": {
+              "id": "0291a406-7bfa-4ca2-9de5-c2e635541d11",
+              "parentNodeId": ""
+            },
+            "2816d285-f8e9-4003-bed3-1c2c57a1d518": {
+              "id": "2816d285-f8e9-4003-bed3-1c2c57a1d518",
+              "parentNodeId": ""
+            },
+            "3ae0cb53-09df-47dc-b8db-fb11a28f15ae": {
+              "id": "3ae0cb53-09df-47dc-b8db-fb11a28f15ae",
+              "parentNodeId": ""
+            },
+            "4d7f15d0-4973-4430-8cd8-60221a0d49a4": {
+              "id": "4d7f15d0-4973-4430-8cd8-60221a0d49a4",
+              "parentNodeId": ""
+            },
+            "67025537-07fb-49c8-95ce-d12c9e8e8842": {
+              "id": "67025537-07fb-49c8-95ce-d12c9e8e8842",
+              "parentNodeId": ""
+            },
+            "792ba23e-401f-4a04-b65a-396f849de558": {
+              "id": "792ba23e-401f-4a04-b65a-396f849de558",
+              "parentNodeId": ""
+            },
+            "8d73f510-1fb3-4cec-8611-edd9c2394056": {
+              "id": "8d73f510-1fb3-4cec-8611-edd9c2394056",
+              "parentNodeId": ""
+            },
+            "e92ffb3c-b18e-46b6-9815-52437dcc1ef4": {
+              "id": "e92ffb3c-b18e-46b6-9815-52437dcc1ef4",
+              "parentNodeId": ""
+            },
+            "f8671c10-b8f2-441d-b6e3-c98d10469fda": {
+              "id": "f8671c10-b8f2-441d-b6e3-c98d10469fda",
+              "parentNodeId": ""
+            }
+          }
+        },
+        "steps": {
+          "0291a406-7bfa-4ca2-9de5-c2e635541d11": {
+            "nodeId": "0291a406-7bfa-4ca2-9de5-c2e635541d11",
+            "name": "IP Not Blocked ",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "✅🚧The IP {{[67025537-07fb-49c8-95ce-d12c9e8e8842].[ip]}} is not blocked. 🚧✅"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "2816d285-f8e9-4003-bed3-1c2c57a1d518": {
+            "nodeId": "2816d285-f8e9-4003-bed3-1c2c57a1d518",
+            "name": "Remove HTML",
+            "type": "action",
+            "plugin": {
+              "name": "HTML",
+              "slugVendor": "rapid7",
+              "slugName": "html",
+              "slugVersion": "1.2.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/html/1.2.1/icon.png"
+            },
+            "identifier": "text",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "doc": "{{[f8671c10-b8f2-441d-b6e3-c98d10469fda].[message].[body].[content]}}",
+                "remove_scripts": true
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "doc": {
+                  "description": "Document to transform",
+                  "order": 1,
+                  "title": "Document",
+                  "type": "string"
+                },
+                "remove_scripts": {
+                  "description": "Remove non-HTML scripts from the document",
+                  "order": 2,
+                  "title": "Remove Scripts",
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "doc"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "text": {
+                  "description": "String without HTML tags",
+                  "order": 1,
+                  "title": "Text",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR"
+          },
+          "3ae0cb53-09df-47dc-b8db-fb11a28f15ae": {
+            "nodeId": "3ae0cb53-09df-47dc-b8db-fb11a28f15ae",
+            "name": "Check for IP",
+            "type": "action",
+            "plugin": {
+              "name": "Fortinet FortiGate",
+              "slugVendor": "rapid7",
+              "slugName": "fortinet_fortigate",
+              "slugVersion": "1.1.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/fortinet_fortigate/1.1.0/icon.png"
+            },
+            "identifier": "check_if_ip_is_in_address_groups",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "address_group_name": "change_me",
+                "ip_address": "{{[67025537-07fb-49c8-95ce-d12c9e8e8842].[ip]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "address_group_name": {
+                  "description": "The name of the address group to check",
+                  "order": 1,
+                  "title": "Address Group Name",
+                  "type": "string"
+                },
+                "ip_address": {
+                  "description": "The IP address to check for",
+                  "order": 2,
+                  "title": "IP Address",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "address_group_name",
+                "ip_address"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "ip_address_found": {
+                  "description": "True if the IP address was found in the address group",
+                  "order": 1,
+                  "title": "IP Address Found",
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "ip_address_found"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "4d7f15d0-4973-4430-8cd8-60221a0d49a4": {
+            "nodeId": "4d7f15d0-4973-4430-8cd8-60221a0d49a4",
+            "name": "IP Not Blocked Message",
+            "type": "action",
+            "plugin": {
+              "name": "Microsoft Teams",
+              "slugVendor": "rapid7",
+              "slugName": "microsoft_teams",
+              "slugVersion": "2.0.2",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.2/icon.png"
+            },
+            "identifier": "send_html_message",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "channel_name": "change_me",
+                "message_content": "{{[0291a406-7bfa-4ca2-9de5-c2e635541d11].[content]}}",
+                "team_name": "change_me"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "channel_name": {
+                  "description": "Channel name",
+                  "order": 2,
+                  "title": "Channel Name",
+                  "type": "string"
+                },
+                "message_content": {
+                  "description": "HTML content to send",
+                  "order": 3,
+                  "title": "Message Content",
+                  "type": "string"
+                },
+                "team_name": {
+                  "description": "Team name",
+                  "order": 1,
+                  "title": "Team Name",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "team_name",
+                "channel_name",
+                "message_content"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "body": {
+                  "properties": {
+                    "content": {
+                      "description": "Content",
+                      "order": 1,
+                      "title": "Content",
+                      "type": "string"
+                    },
+                    "contentType": {
+                      "description": "Content type",
+                      "order": 2,
+                      "title": "Content Type",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Body",
+                  "type": "object"
+                },
+                "from": {
+                  "properties": {
+                    "user": {
+                      "$ref": "#/definitions/user",
+                      "description": "User",
+                      "order": 1,
+                      "title": "User"
+                    }
+                  },
+                  "title": "From",
+                  "type": "object"
+                },
+                "message": {
+                  "properties": {
+                    "body": {
+                      "$ref": "#/definitions/body",
+                      "description": "Body",
+                      "order": 1,
+                      "title": "Body"
+                    },
+                    "createdDateTime": {
+                      "description": "Created date time",
+                      "order": 3,
+                      "title": "Created Date Time",
+                      "type": "string"
+                    },
+                    "from": {
+                      "$ref": "#/definitions/from",
+                      "description": "From",
+                      "order": 2,
+                      "title": "From"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 8,
+                      "title": "ID",
+                      "type": "string"
+                    },
+                    "importance": {
+                      "description": "Importance",
+                      "order": 5,
+                      "title": "Importance",
+                      "type": "string"
+                    },
+                    "locale": {
+                      "description": "Locale",
+                      "order": 7,
+                      "title": "Locale",
+                      "type": "string"
+                    },
+                    "messageType": {
+                      "description": "Message type",
+                      "order": 6,
+                      "title": "Message Type",
+                      "type": "string"
+                    },
+                    "webUrl": {
+                      "description": "Web URL",
+                      "order": 4,
+                      "title": "Web URL",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Message",
+                  "type": "object"
+                },
+                "user": {
+                  "properties": {
+                    "displayName": {
+                      "description": "Display name",
+                      "order": 1,
+                      "title": "Display name",
+                      "type": "string"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 2,
+                      "title": "ID",
+                      "type": "string"
+                    }
+                  },
+                  "title": "User",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "message": {
+                  "$ref": "#/definitions/message",
+                  "description": "The message object that was created",
+                  "order": 1,
+                  "title": "Message"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "67025537-07fb-49c8-95ce-d12c9e8e8842": {
+            "nodeId": "67025537-07fb-49c8-95ce-d12c9e8e8842",
+            "name": "Extract IP",
+            "type": "pattern_match",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "captureAll": false,
+              "expressionText": "block-status {{ip:/.*/}}",
+              "expressions": [
+                {
+                  "type": "text",
+                  "value": "block-status "
+                },
+                {
+                  "type": "variable",
+                  "value": {
+                    "ident": "ip",
+                    "regex": ".*"
+                  }
+                }
+              ],
+              "ignoreCase": true,
+              "input": "{{[2816d285-f8e9-4003-bed3-1c2c57a1d518].[text]}}"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/pattern-match.svg",
+            "connectionType": "NONE"
+          },
+          "792ba23e-401f-4a04-b65a-396f849de558": {
+            "nodeId": "792ba23e-401f-4a04-b65a-396f849de558",
+            "name": "IP Found",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "f57db6b9-85c0-4229-bc5e-b81295ef0060",
+              "stepControlParams": [
+                {
+                  "edgeId": "1b7c51fe-7bfa-4809-83d0-1c2de309dd81",
+                  "expression": {
+                    "left": {
+                      "name": "3ae0cb53-09df-47dc-b8db-fb11a28f15ae.ip_address_found",
+                      "type": "variable"
+                    },
+                    "op": "==",
+                    "right": {
+                      "type": "literal",
+                      "value": true
+                    },
+                    "type": "binary"
+                  },
+                  "expressionText": "{{[3ae0cb53-09df-47dc-b8db-fb11a28f15ae].[ip_address_found]}} == true"
+                },
+                {
+                  "edgeId": "f57db6b9-85c0-4229-bc5e-b81295ef0060",
+                  "expression": {},
+                  "expressionText": ""
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          },
+          "8d73f510-1fb3-4cec-8611-edd9c2394056": {
+            "nodeId": "8d73f510-1fb3-4cec-8611-edd9c2394056",
+            "name": "IP Blocked ",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "🚫 🚧 The IP {{[67025537-07fb-49c8-95ce-d12c9e8e8842].[ip]}} is blocked. 🚧🚫"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "e92ffb3c-b18e-46b6-9815-52437dcc1ef4": {
+            "nodeId": "e92ffb3c-b18e-46b6-9815-52437dcc1ef4",
+            "name": "IP Blocked Message",
+            "type": "action",
+            "plugin": {
+              "name": "Microsoft Teams",
+              "slugVendor": "rapid7",
+              "slugName": "microsoft_teams",
+              "slugVersion": "2.0.2",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.2/icon.png"
+            },
+            "identifier": "send_html_message",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "channel_name": "change_me",
+                "message_content": "{{[8d73f510-1fb3-4cec-8611-edd9c2394056].[content]}}",
+                "team_name": "change_me"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "channel_name": {
+                  "description": "Channel name",
+                  "order": 2,
+                  "title": "Channel Name",
+                  "type": "string"
+                },
+                "message_content": {
+                  "description": "HTML content to send",
+                  "order": 3,
+                  "title": "Message Content",
+                  "type": "string"
+                },
+                "team_name": {
+                  "description": "Team name",
+                  "order": 1,
+                  "title": "Team Name",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "team_name",
+                "channel_name",
+                "message_content"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "body": {
+                  "properties": {
+                    "content": {
+                      "description": "Content",
+                      "order": 1,
+                      "title": "Content",
+                      "type": "string"
+                    },
+                    "contentType": {
+                      "description": "Content type",
+                      "order": 2,
+                      "title": "Content Type",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Body",
+                  "type": "object"
+                },
+                "from": {
+                  "properties": {
+                    "user": {
+                      "$ref": "#/definitions/user",
+                      "description": "User",
+                      "order": 1,
+                      "title": "User"
+                    }
+                  },
+                  "title": "From",
+                  "type": "object"
+                },
+                "message": {
+                  "properties": {
+                    "body": {
+                      "$ref": "#/definitions/body",
+                      "description": "Body",
+                      "order": 1,
+                      "title": "Body"
+                    },
+                    "createdDateTime": {
+                      "description": "Created date time",
+                      "order": 3,
+                      "title": "Created Date Time",
+                      "type": "string"
+                    },
+                    "from": {
+                      "$ref": "#/definitions/from",
+                      "description": "From",
+                      "order": 2,
+                      "title": "From"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 8,
+                      "title": "ID",
+                      "type": "string"
+                    },
+                    "importance": {
+                      "description": "Importance",
+                      "order": 5,
+                      "title": "Importance",
+                      "type": "string"
+                    },
+                    "locale": {
+                      "description": "Locale",
+                      "order": 7,
+                      "title": "Locale",
+                      "type": "string"
+                    },
+                    "messageType": {
+                      "description": "Message type",
+                      "order": 6,
+                      "title": "Message Type",
+                      "type": "string"
+                    },
+                    "webUrl": {
+                      "description": "Web URL",
+                      "order": 4,
+                      "title": "Web URL",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Message",
+                  "type": "object"
+                },
+                "user": {
+                  "properties": {
+                    "displayName": {
+                      "description": "Display name",
+                      "order": 1,
+                      "title": "Display name",
+                      "type": "string"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 2,
+                      "title": "ID",
+                      "type": "string"
+                    }
+                  },
+                  "title": "User",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "message": {
+                  "$ref": "#/definitions/message",
+                  "description": "The message object that was created",
+                  "order": 1,
+                  "title": "Message"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "f8671c10-b8f2-441d-b6e3-c98d10469fda": {
+            "nodeId": "f8671c10-b8f2-441d-b6e3-c98d10469fda",
+            "name": "Check for IP Message",
+            "type": "trigger",
+            "plugin": {
+              "name": "Microsoft Teams",
+              "slugVendor": "rapid7",
+              "slugName": "microsoft_teams",
+              "slugVersion": "2.0.2",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.2/icon.png"
+            },
+            "identifier": "new_message_received",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "channel_name": "change_me",
+                "message_content": "!block-status",
+                "team_name": "change_me"
+              }
+            },
+            "triggerId": "e098efa6-44e7-4c2a-90fd-df3c1fb41d46",
+            "defaultInputJSONSchema": {
+              "properties": {
+                "channel_name": {
+                  "description": "Channel",
+                  "order": 2,
+                  "title": "Channel Name",
+                  "type": "string"
+                },
+                "message_content": {
+                  "description": "Regex to match new messages against",
+                  "order": 3,
+                  "title": "Message Content",
+                  "type": "string"
+                },
+                "team_name": {
+                  "description": "Team name",
+                  "order": 1,
+                  "title": "Team Name",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "team_name",
+                "channel_name"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "body": {
+                  "properties": {
+                    "content": {
+                      "description": "Content",
+                      "order": 1,
+                      "title": "Content",
+                      "type": "string"
+                    },
+                    "contentType": {
+                      "description": "Content type",
+                      "order": 2,
+                      "title": "Content Type",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Body",
+                  "type": "object"
+                },
+                "from": {
+                  "properties": {
+                    "user": {
+                      "$ref": "#/definitions/user",
+                      "description": "User",
+                      "order": 1,
+                      "title": "User"
+                    }
+                  },
+                  "title": "From",
+                  "type": "object"
+                },
+                "message": {
+                  "properties": {
+                    "body": {
+                      "$ref": "#/definitions/body",
+                      "description": "Body",
+                      "order": 1,
+                      "title": "Body"
+                    },
+                    "createdDateTime": {
+                      "description": "Created date time",
+                      "order": 3,
+                      "title": "Created Date Time",
+                      "type": "string"
+                    },
+                    "from": {
+                      "$ref": "#/definitions/from",
+                      "description": "From",
+                      "order": 2,
+                      "title": "From"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 8,
+                      "title": "ID",
+                      "type": "string"
+                    },
+                    "importance": {
+                      "description": "Importance",
+                      "order": 5,
+                      "title": "Importance",
+                      "type": "string"
+                    },
+                    "locale": {
+                      "description": "Locale",
+                      "order": 7,
+                      "title": "Locale",
+                      "type": "string"
+                    },
+                    "messageType": {
+                      "description": "Message type",
+                      "order": 6,
+                      "title": "Message Type",
+                      "type": "string"
+                    },
+                    "webUrl": {
+                      "description": "Web URL",
+                      "order": 4,
+                      "title": "Web URL",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Message",
+                  "type": "object"
+                },
+                "user": {
+                  "properties": {
+                    "displayName": {
+                      "description": "Display name",
+                      "order": 1,
+                      "title": "Display name",
+                      "type": "string"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 2,
+                      "title": "ID",
+                      "type": "string"
+                    }
+                  },
+                  "title": "User",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "message": {
+                  "$ref": "#/definitions/message",
+                  "description": "The message object that was created",
+                  "order": 1,
+                  "title": "Message"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg",
+            "connectionType": "CONNECTION"
+          }
+        },
+        "tags": null,
+        "humanCostSeconds": 0,
+        "humanCostDisplayUnit": ""
+      }
+    ],
+    "triggers": [
+      {
+        "id": "e098efa6-44e7-4c2a-90fd-df3c1fb41d46",
+        "identifier": "new_message_received",
+        "name": "Check for IP Message",
+        "description": "",
+        "input": {
+          "channel_name": "change_me",
+          "message_content": "!block-status",
+          "team_name": "change_me"
+        },
+        "inputJsonSchema": {
+          "properties": {
+            "channel_name": {
+              "description": "Channel",
+              "order": 2,
+              "title": "Channel Name",
+              "type": "string"
+            },
+            "message_content": {
+              "description": "Regex to match new messages against",
+              "order": 3,
+              "title": "Message Content",
+              "type": "string"
+            },
+            "team_name": {
+              "description": "Team name",
+              "order": 1,
+              "title": "Team Name",
+              "type": "string"
+            }
+          },
+          "required": [
+            "team_name",
+            "channel_name"
+          ],
+          "title": "Variables",
+          "type": "object"
+        },
+        "outputJsonSchema": {
+          "definitions": {
+            "body": {
+              "properties": {
+                "content": {
+                  "description": "Content",
+                  "order": 1,
+                  "title": "Content",
+                  "type": "string"
+                },
+                "contentType": {
+                  "description": "Content type",
+                  "order": 2,
+                  "title": "Content Type",
+                  "type": "string"
+                }
+              },
+              "title": "Body",
+              "type": "object"
+            },
+            "from": {
+              "properties": {
+                "user": {
+                  "$ref": "#/definitions/user",
+                  "description": "User",
+                  "order": 1,
+                  "title": "User"
+                }
+              },
+              "title": "From",
+              "type": "object"
+            },
+            "message": {
+              "properties": {
+                "body": {
+                  "$ref": "#/definitions/body",
+                  "description": "Body",
+                  "order": 1,
+                  "title": "Body"
+                },
+                "createdDateTime": {
+                  "description": "Created date time",
+                  "order": 3,
+                  "title": "Created Date Time",
+                  "type": "string"
+                },
+                "from": {
+                  "$ref": "#/definitions/from",
+                  "description": "From",
+                  "order": 2,
+                  "title": "From"
+                },
+                "id": {
+                  "description": "ID",
+                  "order": 8,
+                  "title": "ID",
+                  "type": "string"
+                },
+                "importance": {
+                  "description": "Importance",
+                  "order": 5,
+                  "title": "Importance",
+                  "type": "string"
+                },
+                "locale": {
+                  "description": "Locale",
+                  "order": 7,
+                  "title": "Locale",
+                  "type": "string"
+                },
+                "messageType": {
+                  "description": "Message type",
+                  "order": 6,
+                  "title": "Message Type",
+                  "type": "string"
+                },
+                "webUrl": {
+                  "description": "Web URL",
+                  "order": 4,
+                  "title": "Web URL",
+                  "type": "string"
+                }
+              },
+              "title": "Message",
+              "type": "object"
+            },
+            "user": {
+              "properties": {
+                "displayName": {
+                  "description": "Display name",
+                  "order": 1,
+                  "title": "Display name",
+                  "type": "string"
+                },
+                "id": {
+                  "description": "ID",
+                  "order": 2,
+                  "title": "ID",
+                  "type": "string"
+                }
+              },
+              "title": "User",
+              "type": "object"
+            }
+          },
+          "properties": {
+            "message": {
+              "$ref": "#/definitions/message",
+              "description": "The message object that was created",
+              "order": 1,
+              "title": "Message"
+            }
+          },
+          "title": "Variables",
+          "type": "object"
+        },
+        "tags": [],
+        "type": "trigger_plugin",
+        "plugin": {
+          "name": "Microsoft Teams",
+          "slugVendor": "rapid7",
+          "slugName": "microsoft_teams",
+          "slugVersion": "2.0.2",
+          "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.2/icon.png"
+        }
+      }
+    ]
+  }
+}
