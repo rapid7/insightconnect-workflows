@@ -21,7 +21,7 @@ Sample Microsoft Teams Trigger Commands:
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-In the _Check for IP Message_, _IP Blocked Message_, and _IP Not Blocked Message_ steps edit the Team Name and Channel Name input from `change_me` to an appropriate team and channel.
+In the _Check for IP Message_, _IP Blocked Message_, and _IP Not Blocked Message_ steps change the Team Name and Channel Name input from `change_me` to an appropriate team and channel.
 
 In the _Check for IP_ step edit the Address Group Name input from `change_me` to an appropriate address group.
 
