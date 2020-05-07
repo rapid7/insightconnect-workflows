@@ -13,7 +13,7 @@ Sample Microsoft Teams Trigger Commands:
 # Requirements
 
 * Microsoft Teams connection
-* An admin API key to a Fortigate firewall
+* Admin API key to a Fortinet FortiGate firewall
 
 # Documentation
 
