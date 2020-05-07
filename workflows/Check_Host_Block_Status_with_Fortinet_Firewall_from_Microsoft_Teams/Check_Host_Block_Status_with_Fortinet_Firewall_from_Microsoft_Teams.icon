@@ -8,7 +8,7 @@
         "name": "Check Host Block Status with Fortinet Firewall from Microsoft Teams",
         "type": "runnable",
         "version": "",
-        "description": "This workflow accepts a Microsoft Teams command, checks if an IP address is blocked, and posts the results.",
+        "description": "Check if an IP address is blocked in Fortinet FortiGate from Microsoft Teams.",
         "graph": {
           "edges": {
             "1b7c51fe-7bfa-4809-83d0-1c2de309dd81": {
