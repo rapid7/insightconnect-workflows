@@ -40,6 +40,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.4 - Fix issue where Nested Headers artifact incorrectly defined an each loop
 * 1.0.4 - Update description
 * 1.0.3 - Set more "change_me" items in workflow input
 * 1.0.2 - Set "change_me" items in workflow input
