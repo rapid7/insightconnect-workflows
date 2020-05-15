@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.49.2-0-gafb52",
+    "komandVersion": "1.50.0-0-g9ce07",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-04-24T15:00:45.740113283Z",
+    "exportedAt": "2020-05-15T21:04:06.431010728Z",
     "workflowVersions": [
       {
         "name": "Post Office 365 Phishing Alerts to Microsoft Teams",
@@ -513,16 +513,7 @@
             "defaultInputJSONSchema": null,
             "defaultOutputJSONSchema": null,
             "outputJSONSchema": {
-              "properties": {
-                "$outputs": {
-                  "items": {
-                    "properties": {},
-                    "type": "object"
-                  },
-                  "title": "$outputs",
-                  "type": "array"
-                }
-              },
+              "properties": {},
               "title": "Variables",
               "type": "object"
             },
@@ -544,16 +535,7 @@
             "defaultInputJSONSchema": null,
             "defaultOutputJSONSchema": null,
             "outputJSONSchema": {
-              "properties": {
-                "$outputs": {
-                  "items": {
-                    "properties": {},
-                    "type": "object"
-                  },
-                  "title": "$outputs",
-                  "type": "array"
-                }
-              },
+              "properties": {},
               "title": "Variables",
               "type": "object"
             },
@@ -782,16 +764,7 @@
             "defaultInputJSONSchema": null,
             "defaultOutputJSONSchema": null,
             "outputJSONSchema": {
-              "properties": {
-                "$outputs": {
-                  "items": {
-                    "properties": {},
-                    "type": "object"
-                  },
-                  "title": "$outputs",
-                  "type": "array"
-                }
-              },
+              "properties": {},
               "title": "Variables",
               "type": "object"
             },
@@ -806,7 +779,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "{{#each [2b201ddd-9f55-4393-a287-133821563e98].[$outputs]}}\n{{#each [\"Headers\"].[$outputs]}}\n{{#each {{[82705658-5bbe-44a3-81f4-4196f66113f8].[domains]}}\n{{this}}\n{{/each}}\n{{/each}}\n{{/each}}"
+                "content": "{{#each [2b201ddd-9f55-4393-a287-133821563e98].[$outputs]}}\n{{#each [\"Headers\"].[$outputs]}}\n{{#each [82705658-5bbe-44a3-81f4-4196f66113f8].[domains]}}\n{{this}}\n{{/each}}\n{{/each}}\n{{/each}}"
               },
               "type": "markdown"
             },
@@ -839,7 +812,7 @@
                 "subject_query": ""
               }
             },
-            "triggerId": "5af4dfc8-3619-44ad-b4c2-fa597e3891b3",
+            "triggerId": "3be12d49-e4cb-4c5d-8856-298420fa39b2",
             "defaultInputJSONSchema": {
               "properties": {
                 "flatten_attachments": {
@@ -1820,7 +1793,7 @@
     ],
     "triggers": [
       {
-        "id": "5af4dfc8-3619-44ad-b4c2-fa597e3891b3",
+        "id": "3be12d49-e4cb-4c5d-8856-298420fa39b2",
         "identifier": "email_received",
         "name": "New Message",
         "description": "",

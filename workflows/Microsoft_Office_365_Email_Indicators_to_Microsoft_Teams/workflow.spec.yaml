@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Microsoft_Office_365_Email_Indicators_to_Microsoft_Teams
 title: "Post Office 365 Phishing Alerts to Microsoft Teams"
 description: "This workflow will dissect an email and return all potential malicious indicators to Microsoft Teams in a message."
-version: 1.0.4
+version: 1.0.5
 vendor: rapid7
 support: rapid7
 status: []
