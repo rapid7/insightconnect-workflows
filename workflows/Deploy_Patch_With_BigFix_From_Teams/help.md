@@ -62,4 +62,4 @@ _There is no troubleshooting information at this time_
 ## References
 
 * [BigFix](https://bigfix.com)
-* [Microsoft Teams](https://slack.com)
+* [Microsoft Teams](https://www.microsoft.com/en-us/microsoft-365/microsoft-teams/group-chat-software)
