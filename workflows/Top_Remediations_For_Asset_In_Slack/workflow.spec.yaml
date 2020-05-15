@@ -1,25 +1,23 @@
 extension: workflow
 products: ["insightconnect", "insightvm"]
-name: Top_Remediations_For_Asset_In_Slack
-title: "Top Remediations for Asset in Slack"
-description: Access top remediation steps for a specified asset in Slack. 
-version: 1.0.1
+name: Get_InsightVM_Top_Remediations_From_Slack
+title: "Get InsightVM Top Remediations from Slack"
+description: Lookup and receive the top 10 remediation steps from InsightVM for a given host, asset group, site, or tag from a Slack message.
+version: 1.0.0
 vendor: rapid7
 support: rapid7
 status: []
 hub_tags:
-  use_cases: [remediation_management, vulnerability_management]
-  keywords: [insightvm, slack, chat, wfh]
+  use_cases: [remediation_management]
+  keywords: [work_from_home, patch_management, slack, chat, insightvm]
   features: []
 resources:
-  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Top_Remediations_For_Asset_In_Slack
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/my_cool_workflow
   license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
   screenshots:
-  - name: WorkflowOutput.png
-    title: Workflow Output in Slack
-  - name: Workflow.png
-    title: Workflow Builder View
-  - name: Job.png
+  - name: execution1.png
+    title: Workflow Execution in Slack
+  - name: workflow1.png
+    title: Workflow View
+  - name: job1.png
     title: Successful Workflow Job
-  - name: Artifact.png
-    title: Final Report Artifact
