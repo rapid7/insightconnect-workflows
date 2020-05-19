@@ -1,14 +1,14 @@
 {
   "kom": {
-    "komandVersion": "1.48.1-0-g787c7",
+    "komandVersion": "1.50.0-0-g9ce07",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-04-02T14:44:41.520336508Z",
+    "exportedAt": "2020-05-19T16:26:12.350284104Z",
     "workflowVersions": [
       {
-        "name": "Get InsightVM Host Info from Slack",
+        "name": "Lookup Host in InsightVM from Slack",
         "type": "runnable",
         "version": "",
-        "description": "This workflow accepts a Slack command containing a hostname or IP address and returns asset details from InsightVM.\n\nSample Slack Trigger Commands: \nget host info workstation123\nget host info 192.168.1.2",
+        "description": "This workflow accepts a Slack command containing a hostname or IP address and returns asset details from InsightVM.\n\nSample Slack Trigger Commands: \nlookup-host workstation123\nlookup-host 192.168.1.2",
         "graph": {
           "edges": {
             "27b13b43-f2b5-40b1-811a-317ecf1321e6": {
@@ -227,7 +227,11 @@
             },
             "defaultInputJSONSchema": null,
             "defaultOutputJSONSchema": null,
-            "outputJSONSchema": null,
+            "outputJSONSchema": {
+              "properties": {},
+              "title": "Variables",
+              "type": "object"
+            },
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/loop.svg",
             "connectionType": "NONE"
           },
@@ -257,17 +261,17 @@
             "isDisabled": false,
             "parameters": {
               "captureAll": false,
-              "expressionText": "get host info {{argument:/.*/}}",
+              "expressionText": "lookup-host\\s+{{argument:/\\S+/}}",
               "expressions": [
                 {
                   "type": "text",
-                  "value": "get host info "
+                  "value": "lookup-host\\s+"
                 },
                 {
                   "type": "variable",
                   "value": {
                     "ident": "argument",
-                    "regex": ".*"
+                    "regex": "\\S+"
                   }
                 }
               ],
@@ -282,19 +286,19 @@
           },
           "8b5f067d-03aa-4d9e-a06b-5ad7dda77b99": {
             "nodeId": "8b5f067d-03aa-4d9e-a06b-5ad7dda77b99",
-            "name": "Get Host Info Slack Trigger",
-            "description": "Trigger this workflow by entering a Slack command in the following format:\n\"@slackbot get host info workstation123\"\nOR\n\"@slackbot get host info 192.168.1.2\"\n",
+            "name": "lookup-host Trigger",
+            "description": "Trigger this workflow by entering a Slack command in the following format:\n\"@Rapid7 InsightConnect lookup-host workstation123\"\nOR\n\"@Rapid7 InsightConnect lookup-host 192.168.1.2\"",
             "type": "trigger",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "input": {
                 "matchChannel": "",
-                "matchText": "(?i)get host info",
+                "matchText": "(?i)lookup-host",
                 "type": "any"
               }
             },
-            "triggerId": "3755ec7b-0220-48a4-a143-c4ac2223fed1",
+            "triggerId": "5b295edc-7f5a-4880-a5a6-5f7f36863fd2",
             "defaultInputJSONSchema": {
               "properties": {
                 "matchChannel": {
@@ -521,7 +525,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": ":mag: *Host Info* :computer:\n```Hostname: {{[103fd816-5be7-471a-8dc3-b846373703b2].[$item].[hostName]}}\nIP Address: {{[103fd816-5be7-471a-8dc3-b846373703b2].[$item].[ip]}}\nMAC Address: {{[103fd816-5be7-471a-8dc3-b846373703b2].[$item].[mac]}}\nOS: {{[103fd816-5be7-471a-8dc3-b846373703b2].[$item].[os]}}```\n\n:scroll: *Vulnerabilities* :unlock:\n```Assessed for Vulns: {{[103fd816-5be7-471a-8dc3-b846373703b2].[$item].[assessedForVulnerabilities]}}\nRisk Score: {{[103fd816-5be7-471a-8dc3-b846373703b2].[$item].[riskScore]}}\nTotal Vulnerabilities: {{[103fd816-5be7-471a-8dc3-b846373703b2].[$item].[vulnerabilities].[total]}}\nCritical Vulns: {{[103fd816-5be7-471a-8dc3-b846373703b2].[$item].[vulnerabilities].[critical]}}\nSevere Vulns: {{[103fd816-5be7-471a-8dc3-b846373703b2].[$item].[vulnerabilities].[severe]}}\nModerate Vulns: {{[103fd816-5be7-471a-8dc3-b846373703b2].[$item].[vulnerabilities].[moderate]}}```\n\n:trolleybus: *Services* :globe_with_meridians:\n```Port | Vendor | Product | Name\n{{#each [103fd816-5be7-471a-8dc3-b846373703b2].[$item].[services]}} \n{{this.[port]}} | {{this.[vendor]}} | {{this.[product]}} | {{this.[name]}} \n{{/each}}```",
+                "message": ":mag: *Host Info* :computer:\n```Hostname: {{[103fd816-5be7-471a-8dc3-b846373703b2].[$item].[hostName]}}\nIP Address: {{[103fd816-5be7-471a-8dc3-b846373703b2].[$item].[ip]}}\nMAC Address: {{[103fd816-5be7-471a-8dc3-b846373703b2].[$item].[mac]}}\nOS: {{[103fd816-5be7-471a-8dc3-b846373703b2].[$item].[os]}}```\n\n:scroll: *Vulnerabilities* :unlock:\n```Assessed for Vulns: {{[103fd816-5be7-471a-8dc3-b846373703b2].[$item].[assessedForVulnerabilities]}}\nLast Seen: {{#each [103fd816-5be7-471a-8dc3-b846373703b2].[$item].[history]}}{{#if @last}}{{this.[date]}}{{/if}}{{/each}}\nRisk Score: {{[103fd816-5be7-471a-8dc3-b846373703b2].[$item].[riskScore]}}\nTotal Vulnerabilities: {{[103fd816-5be7-471a-8dc3-b846373703b2].[$item].[vulnerabilities].[total]}}\nCritical Vulns: {{[103fd816-5be7-471a-8dc3-b846373703b2].[$item].[vulnerabilities].[critical]}}\nSevere Vulns: {{[103fd816-5be7-471a-8dc3-b846373703b2].[$item].[vulnerabilities].[severe]}}\nModerate Vulns: {{[103fd816-5be7-471a-8dc3-b846373703b2].[$item].[vulnerabilities].[moderate]}}```\n\n:trolleybus: *Services* :globe_with_meridians:\n```Port | Vendor | Product | Name\n{{#each [103fd816-5be7-471a-8dc3-b846373703b2].[$item].[services]}} \n{{this.[port]}} | {{this.[vendor]}} | {{this.[product]}} | {{this.[name]}} \n{{/each}}```",
                 "recipient": "{{[8b5f067d-03aa-4d9e-a06b-5ad7dda77b99].[message].[channel_id]}}",
                 "thread_ts": "{{[8b5f067d-03aa-4d9e-a06b-5ad7dda77b99].[timestamp]}}"
               }
@@ -1520,12 +1524,12 @@
     ],
     "triggers": [
       {
-        "id": "3755ec7b-0220-48a4-a143-c4ac2223fed1",
-        "name": "Get Host Info Slack Trigger",
-        "description": "Trigger this workflow by entering a Slack command in the following format:\n\"@slackbot get host info workstation123\"\nOR\n\"@slackbot get host info 192.168.1.2\"\n",
+        "id": "5b295edc-7f5a-4880-a5a6-5f7f36863fd2",
+        "name": "lookup-host Trigger",
+        "description": "Trigger this workflow by entering a Slack command in the following format:\n\"@Rapid7 InsightConnect lookup-host workstation123\"\nOR\n\"@Rapid7 InsightConnect lookup-host 192.168.1.2\"",
         "input": {
           "matchChannel": "",
-          "matchText": "(?i)get host info",
+          "matchText": "(?i)lookup-host",
           "type": "any"
         },
         "inputJsonSchema": {
