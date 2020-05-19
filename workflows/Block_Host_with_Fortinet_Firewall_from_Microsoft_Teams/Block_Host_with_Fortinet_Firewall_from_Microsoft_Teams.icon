@@ -1807,7 +1807,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "The host {{[a633dcc7-9450-4068-a9de-353cedd25976].[text]}} was added to the address group {{[19163cd1-69cf-487c-812a-d1aa6f1badd4].[result_object].[mkey]}}"
+                "content": "The host {{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}} was added to the address group {{[19163cd1-69cf-487c-812a-d1aa6f1badd4].[result_object].[mkey]}}"
               },
               "type": "markdown"
             },
