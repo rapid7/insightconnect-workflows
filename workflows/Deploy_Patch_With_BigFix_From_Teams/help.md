@@ -25,17 +25,14 @@ Once the workflow has been imported, **each Microsoft Teams step will need the t
 
 After import, activate the workflow in order to trigger it.
 
-### Usage
+## Usage
 
-*This workflow will trigger in any direct messages to your Chatbot **or** any message in a channel directed @ your Chatbot. Note the Chatbot must be in the channel in order to trigger the workflow this way.*
+*This workflow will only trigger in the channel specified in the Microsoft Teams workflow steps.*
 
-To run the workflow, send a direct message to your InsightConnect Chatbot or @ your Chatbot in a public channel starting with the command `deploy-patch`. The command accepts two parameters: `patch` and `target`. Input the title (may be a partial match) of the patch that should be deployed and the hostname of the target.
+To run the workflow, send a message to the specified Microsoft Teams channel starting with the `!deploy-patch` command. The command accepts two parameters: `patch` and `target`. Input the title (may be a partial match) of the patch that should be deployed and the hostname of the target.
 
-For example, in a direct message to your Chatbot:
-* `deploy-patch patch=Title of Patch target=targetHostName`
-
-Or in a channel including your Chatbot:
-* `@Rapid7 InsightConnect deploy-patch patch=Title of Patch target=targetHostName`
+For example:
+* `!deploy-patch patch=Title of Patch target=HostName`
 
 Both the `patch` and `target` parameters must be specified in order to run the workflow successfully. This workflow does not support deploying multiple patches to a single target or a single patch to multiple targets.
 
