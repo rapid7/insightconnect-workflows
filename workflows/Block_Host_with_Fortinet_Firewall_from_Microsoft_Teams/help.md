@@ -60,5 +60,5 @@ _There is no troubleshooting information at this time_
 
 ## References
 
-* [Fortigate](https://www.fortinet.com/products/next-generation-firewall.html)
+* [FortiGate](https://www.fortinet.com/products/next-generation-firewall.html)
 * [Microsoft Teams](https://teams.microsoft.com)
