@@ -1581,7 +1581,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "The Host {{[a633dcc7-9450-4068-a9de-353cedd25976].[text]}} was not added to the address group {{[19163cd1-69cf-487c-812a-d1aa6f1badd4].[result_object].[mkey]}}"
+                "content": "The host {{[a633dcc7-9450-4068-a9de-353cedd25976].[text]}} was not added to the address group {{[19163cd1-69cf-487c-812a-d1aa6f1badd4].[result_object].[mkey]}}"
               },
               "type": "markdown"
             },
