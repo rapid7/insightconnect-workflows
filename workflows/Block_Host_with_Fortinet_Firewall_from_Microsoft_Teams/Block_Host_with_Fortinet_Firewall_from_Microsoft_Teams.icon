@@ -1375,7 +1375,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "The Host {{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}} was found in the whitelist. {{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}} not added to block list."
+                "content": "The host {{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}} was found in the whitelist. {{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}} not added to block list."
               },
               "type": "markdown"
             },
