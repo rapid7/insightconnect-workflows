@@ -1,14 +1,14 @@
 {
   "kom": {
-    "komandVersion": "1.48.1-0-g787c7",
+    "komandVersion": "1.50.0-0-g9ce07",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-04-03T16:15:48.160779996Z",
+    "exportedAt": "2020-05-19T17:10:01.201708136Z",
     "workflowVersions": [
       {
         "name": "Lookup Vulnerability from Slack",
         "type": "runnable",
         "version": "",
-        "description": "This workflow accepts a Slack command containing a CVE ID or vulnerability keyword(s), looks up the vulnerability in Rapid7's vulnerability database, and posts the vulnerability details back to the same Slack channel.\n\nSample Slack Trigger Commands: \nvuln check CVE-2020-0674\nvuln check heartbleed\nvuln check heartbleed vmware\n\nRapid7 Vulnerability Database: https://www.rapid7.com/db",
+        "description": "This workflow accepts a Slack command containing a CVE ID or vulnerability keyword(s), looks up the vulnerability in Rapid7's vulnerability database, and posts the vulnerability details back to the same Slack channel.\n\nSample Slack Trigger Commands: \nlookup-vuln CVE-2020-0674\nlookup-vuln heartbleed\nlookup-vuln heartbleed vmware\n\nRapid7 Vulnerability Database: https://www.rapid7.com/db",
         "graph": {
           "edges": {
             "04e0f453-40b6-4f65-9f3f-2573e58c15a9": {
@@ -505,7 +505,11 @@
             },
             "defaultInputJSONSchema": null,
             "defaultOutputJSONSchema": null,
-            "outputJSONSchema": null,
+            "outputJSONSchema": {
+              "properties": {},
+              "title": "Variables",
+              "type": "object"
+            },
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/loop.svg",
             "connectionType": "NONE"
           },
@@ -641,11 +645,11 @@
             "isDisabled": false,
             "parameters": {
               "captureAll": false,
-              "expressionText": "vuln check {{argument:/.*/}}",
+              "expressionText": "lookup-vuln\\s+{{argument:/.*/}}",
               "expressions": [
                 {
                   "type": "text",
-                  "value": "vuln check "
+                  "value": "lookup-vuln\\s+"
                 },
                 {
                   "type": "variable",
@@ -716,19 +720,19 @@
           },
           "8b5f067d-03aa-4d9e-a06b-5ad7dda77b99": {
             "nodeId": "8b5f067d-03aa-4d9e-a06b-5ad7dda77b99",
-            "name": "Vuln Check Trigger",
-            "description": "Trigger this workflow by entering a Slack command in the following format:\n\"@slackbot vuln check CVE-XXXX-XXXX\"\nOR\n\"@slackbot vuln check heartbleed\"\n",
+            "name": "loojup-vuln Trigger",
+            "description": "Trigger this workflow by entering a Slack command in the following format:\n\"@Rapid7 InsightConnect lookup-vuln CVE-XXXX-XXXX\"\nOR\n\"@Rapid7 InsightConnect lookup-vuln heartbleed\"",
             "type": "trigger",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "input": {
                 "matchChannel": "",
-                "matchText": "(?i)vuln check",
+                "matchText": "(?i)lookup-vuln",
                 "type": "any"
               }
             },
-            "triggerId": "e1e1dc53-da6e-4077-a87b-a63daab1fa94",
+            "triggerId": "cd82f809-3b85-4c22-94c5-61e0ac44e5b1",
             "defaultInputJSONSchema": {
               "properties": {
                 "matchChannel": {
@@ -850,8 +854,8 @@
               "name": "Rapid7 Vulnerability & Exploit Database",
               "slugVendor": "rapid7",
               "slugName": "rapid7_vulndb",
-              "slugVersion": "2.0.2",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_vulndb/2.0.2/icon.png"
+              "slugVersion": "2.0.3",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_vulndb/2.0.3/icon.png"
             },
             "identifier": "get_content",
             "continueOnFailure": false,
@@ -1291,8 +1295,8 @@
               "name": "Rapid7 Vulnerability & Exploit Database",
               "slugVendor": "rapid7",
               "slugName": "rapid7_vulndb",
-              "slugVersion": "2.0.2",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_vulndb/2.0.2/icon.png"
+              "slugVersion": "2.0.3",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_vulndb/2.0.3/icon.png"
             },
             "identifier": "get_content",
             "continueOnFailure": false,
@@ -1424,8 +1428,8 @@
               "name": "Rapid7 Vulnerability & Exploit Database",
               "slugVendor": "rapid7",
               "slugName": "rapid7_vulndb",
-              "slugVersion": "2.0.2",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_vulndb/2.0.2/icon.png"
+              "slugVersion": "2.0.3",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_vulndb/2.0.3/icon.png"
             },
             "identifier": "search_db",
             "continueOnFailure": false,
@@ -1604,12 +1608,12 @@
     ],
     "triggers": [
       {
-        "id": "e1e1dc53-da6e-4077-a87b-a63daab1fa94",
-        "name": "Vuln Check Trigger",
-        "description": "Trigger this workflow by entering a Slack command in the following format:\n\"@slackbot vuln check CVE-XXXX-XXXX\"\nOR\n\"@slackbot vuln check heartbleed\"\n",
+        "id": "cd82f809-3b85-4c22-94c5-61e0ac44e5b1",
+        "name": "loojup-vuln Trigger",
+        "description": "Trigger this workflow by entering a Slack command in the following format:\n\"@Rapid7 InsightConnect lookup-vuln CVE-XXXX-XXXX\"\nOR\n\"@Rapid7 InsightConnect lookup-vuln heartbleed\"",
         "input": {
           "matchChannel": "",
-          "matchText": "(?i)vuln check",
+          "matchText": "(?i)lookup-vuln",
           "type": "any"
         },
         "inputJsonSchema": {
