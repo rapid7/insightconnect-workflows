@@ -8,7 +8,7 @@
         "name": "Block Host with Fortinet Firewall from Microsoft Teams",
         "type": "runnable",
         "version": "",
-        "description": "",
+        "description": "This workflow blocks or unblocks a host with Fortinet Firewall via Microsoft Teams command and reports information back to Microsoft Teams.",
         "graph": {
           "edges": {
             "18feee59-c202-4aa2-a5fc-977c4e7ded83": {

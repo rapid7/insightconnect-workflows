@@ -1,6 +1,6 @@
 # Description
 
-This workflow blocks or unblocks a host with Fortinet Firewall via Microsoft Teams command and reports information back to Microsoft Teams
+This workflow blocks or unblocks a host with Fortinet Firewall via Microsoft Teams command and reports information back to Microsoft Teams.
 
 Sample Microsoft Teams Trigger Commands:
 
@@ -45,10 +45,9 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|ExtractIt|2.0.0|1|
-|URLScan|2.1.4|2|
-|Python 3 Script|2.0.1|1|
-|Sleep|1.0.2|1|
+|HTML|1.2.1|1|
+|Fortinet FortiGate|2.0.0|3|
+|Microsoft Teams|2.0.2|6|
 
 ## Troubleshooting
 
