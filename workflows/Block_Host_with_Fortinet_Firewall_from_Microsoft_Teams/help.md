@@ -36,7 +36,6 @@ A optional whitelist can be added to the Fortigate Add Host to be Blocked action
 
 To run the workflow, send a message to the specified Microsoft Teams channel starting with the command `!block-host`.
 
-
 Your chat bot will reply when the workflow completes.
 
 ## Technical Details
