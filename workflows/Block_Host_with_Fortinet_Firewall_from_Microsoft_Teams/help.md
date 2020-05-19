@@ -28,7 +28,7 @@ Once the workflow has been imported, **each Microsoft Teams step will need the t
 
 After configuring the Teams steps, activate the workflow in order to trigger it.
  
-A optional whitelist can be added to the Fortigate Add Host to be Blocked action. To add this list add IP's or domains in the following format `["198.51.100.100", "example.com", "198.51.100.1"]`
+A optional whitelist can be added to the FortiGate Add Host to be Blocked action. To add this list add IP's or domains in the following format `["198.51.100.100", "example.com", "198.51.100.1"]`
 
 ### Usage
 
