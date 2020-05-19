@@ -1646,7 +1646,7 @@
             "parameters": {
               "input": {
                 "channel_name": "change_me",
-                "message_content": "⚠️The input could not be correctly parsed  ⚠️<br>\n<br>\nYour input was {{[a633dcc7-9450-4068-a9de-353cedd25976].[text]}}",
+                "message_content": "⚠️The input could not be correctly parsed ⚠️<br>\n<br>\nYour input was {{[a633dcc7-9450-4068-a9de-353cedd25976].[text]}}",
                 "team_name": "change_me"
               }
             },
