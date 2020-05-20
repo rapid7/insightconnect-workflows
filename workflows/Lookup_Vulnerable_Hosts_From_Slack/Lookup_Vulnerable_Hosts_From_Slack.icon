@@ -8,7 +8,7 @@
         "name": "Lookup Vulnerable Hosts from Slack",
         "type": "runnable",
         "version": "",
-        "description": "Lookup vulnerability details, including a summary of the vulnerability, the affected software package, the remediation or mitigation step, and a list of all affected hosts in the customer's environment, from a simple Slack message.\n\nCommand to run in any channel that includes your InsightConnect Slack chat bot:\n@Rapid7 InsightConnect lookup-vuln-assets <vulnerability>\n\n<vulnerability> in the command can be any InsightVM vulnerability reference including the following:\n* Vulnerability Name\n* KB Number\n* CVE ID\n* Nexpose ID\n* Other references InsightVM knows\n\nNote this workflow may also be triggered in a direct message to the InsightConnect Slack chat bot.",
+        "description": "Lookup vulnerability details, including a summary of the vulnerability, the affected software package, the remediation or mitigation step, and a list of all affected hosts in the user's environment, from a simple Slack message.\n\nCommand to run in any channel that includes your InsightConnect Slack chat bot:\n@Rapid7 InsightConnect lookup-vuln-assets <vulnerability>\n\n<vulnerability> in the command can be any InsightVM vulnerability reference including the following:\n* Vulnerability Name\n* KB Number\n* CVE ID\n* Nexpose ID\n* Other references InsightVM knows\n\nNote this workflow may also be triggered in a direct message to the InsightConnect Slack chat bot.",
         "graph": {
           "edges": {
             "048633cb-b96e-4387-a7c8-5f727dbc4d68": {
