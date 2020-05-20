@@ -1,18 +1,14 @@
 # Description
 
-This workflow provides fast, convenient access to information about a given host from InsightVM. When triggered, the workflow fetches asset details from InsightVM and posts them in a Slack thread. Host info includes hostname, IP address, MAC address, operating system, running services, and vulnerability stats.
-
-Sample Slack Trigger Commands: 
-
-`@Slackbot get host info workstation123`
-
-`@Slackbot get host info 192.168.1.2`
+This workflow provides fast, convenient access to information about a given host from InsightVM by fetching asset details from InsightVM and posting them in a Slack thread. Host info includes hostname, IP address, MAC address, operating system, running services, last assessment date, and vulnerability stats. Lookup can be performed by either hostname or IP address.
 
 # Key Features
 
-* Find details about a specified host
-* Find details about a specified IP address
-* Quickly check running services for a given asset
+* Fetch host information from InsightVM quickly in Slack
+* Determine when the system was last assessed for vulnerabilities
+* Positively identify a system by looking up its IP or hostname
+* Get an overview of vulnerabilities by criticality
+* View running services
 
 # Requirements
 
@@ -24,15 +20,25 @@ Sample Slack Trigger Commands:
 
 ## Setup
 
-Once the workflow has been imported, edit the workflow and configure connections and orchestrators in each step.
+Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-If you do not already have a Slack connection configured, please refer to our [Help documentation](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops).
+After import, activate the workflow in order to trigger it.
 
-### Usage
+## Usage
 
-To trigger this workflow, @ the Slackbot in Slack or send the bot a DM in the following format:
+*This workflow will trigger in any direct messages to your Chatbot **or** any message in a channel directed @ your Chatbot. Note the Chatbot must be in the channel in order to trigger the workflow this way.*
 
-`get host info workstation123`
+To run the workflow, send a direct message to your InsightConnect Slack Chatbot or @ your Chatbot in a public channel starting with the command `lookup-host`.
+
+For example, in a direct message to your Chatbot:
+* `lookup-host hostname123`
+* `lookup-host 10.1.2.34`
+
+Or in a channel including your Chatbot:
+* `@Rapid7 InsightConnect lookup-host hostname123`
+* `@Rapid7 InsightConnect lookup-host 10.1.2.34`
+
+The workflow will post matching host details in a thread. If multiple hosts meet the search criteria, the details of each will posted in separate messages in the same thread.
 
 ## Technical Details
 
@@ -48,6 +54,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.1 - Updated workflow to include last assessment date, updated trigger syntax, updated documentation
 * 1.0.0 - Initial workflow
 
 # Links
