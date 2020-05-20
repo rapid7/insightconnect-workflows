@@ -2,7 +2,7 @@ extension: workflow
 products: ["insightconnect"]
 name: Deploy_Patch_With_BigFix_From_Teams
 title: "Deploy Patch with BigFix from Mirosoft Teams"
-description: Deploys a specific patch to a specific target host with BigFix from a Microsoft Teams message trigger.
+description: Deploys a specific patch to a specific host with BigFix from a Microsoft Teams message trigger.
 version: 1.0.0
 vendor: rapid7
 support: rapid7
