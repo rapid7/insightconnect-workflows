@@ -2642,7 +2642,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "_Your search for vulnerability {{[320f400b-ada3-4f7c-8f57-9b583c6a3b46].[vulnerability]}} is too vague and returned more than 50 vulnerabilities.  Please try a narrower search.  Here is a search your may find helpful: <https://www.rapid7.com/db/?q={{[320f400b-ada3-4f7c-8f57-9b583c6a3b46].[vulnerability]}}&type=nexpose|Rapid7 VulnDB Search> _",
+                "message": "_Your search for vulnerability {{[320f400b-ada3-4f7c-8f57-9b583c6a3b46].[vulnerability]}} is too broad and returned more than 50 vulnerabilities.  Please try a narrower search.  Here is a search your may find helpful: <https://www.rapid7.com/db/?q={{[320f400b-ada3-4f7c-8f57-9b583c6a3b46].[vulnerability]}}&type=nexpose|Rapid7 VulnDB Search> _",
                 "recipient": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[channel_id]}}",
                 "thread_ts": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[ts]}}"
               }
