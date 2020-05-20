@@ -2,7 +2,7 @@ extension: workflow
 products: ["insightconnect", "insightvm"]
 name: Lookup_Vulnerable_Hosts_From_Slack
 title: "Lookup Vulnerable Hosts from Slack"
-description: Lookup vulnerability details, including a summary of the vulnerability, the affected software package, the remediation or mitigation step, and a list of all affected hosts in the customer's environment.
+description: Lookup vulnerability details, including a summary of the vulnerability, the affected software package, the remediation or mitigation step, and a list of all affected hosts in the user's environment.
 version: 1.0.0
 vendor: rapid7
 support: rapid7
