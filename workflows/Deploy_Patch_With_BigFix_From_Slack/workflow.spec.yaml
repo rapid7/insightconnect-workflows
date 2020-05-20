@@ -2,7 +2,7 @@ extension: workflow
 products: ["insightconnect"]
 name: Deploy_Patch_With_BigFix_From_Slack
 title: "Deploy Patch with BigFix from Slack"
-description: Deploys a specific patch to a specific target host with BigFix from a Slack message trigger.
+description: Deploys a specific patch to a specific host with BigFix from a Slack message trigger.
 version: 1.0.0
 vendor: rapid7
 support: rapid7
