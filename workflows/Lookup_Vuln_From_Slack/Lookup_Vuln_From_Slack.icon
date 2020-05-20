@@ -1609,7 +1609,7 @@
     "triggers": [
       {
         "id": "cd82f809-3b85-4c22-94c5-61e0ac44e5b1",
-        "name": "loojup-vuln Trigger",
+        "name": "lookup-vuln Trigger",
         "description": "Trigger this workflow by entering a Slack command in the following format:\n\"@Rapid7 InsightConnect lookup-vuln CVE-XXXX-XXXX\"\nOR\n\"@Rapid7 InsightConnect lookup-vuln heartbleed\"",
         "input": {
           "matchChannel": "",
