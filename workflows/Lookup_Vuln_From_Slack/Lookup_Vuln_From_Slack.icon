@@ -720,7 +720,7 @@
           },
           "8b5f067d-03aa-4d9e-a06b-5ad7dda77b99": {
             "nodeId": "8b5f067d-03aa-4d9e-a06b-5ad7dda77b99",
-            "name": "loojup-vuln Trigger",
+            "name": "lookup-vuln Trigger",
             "description": "Trigger this workflow by entering a Slack command in the following format:\n\"@Rapid7 InsightConnect lookup-vuln CVE-XXXX-XXXX\"\nOR\n\"@Rapid7 InsightConnect lookup-vuln heartbleed\"",
             "type": "trigger",
             "continueOnFailure": false,
