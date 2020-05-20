@@ -5,7 +5,7 @@ Search InsightVM for hosts with a particular vulnerability present directly from
 # Key Features
 
 * Identify vulnerable hosts
-* Share context with team members in the same Slak channel
+* Share context with team members in the same Slack channel
 
 # Requirements
 
