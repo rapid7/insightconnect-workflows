@@ -20,10 +20,10 @@ resources:
   - name: sample_trigger_message.png
     title: Sample Input
   - name: instructions_artifact.png
-    title: Instructions artifact
-    name: successful_artifact.png
+    title: Instructions Artifact
+  - name: successful_artifact.png
     title: Output Artifact
-    name: successful_jobs.png
+  - name: successful_jobs.png
     title: Successful Job
-    name: all_outputs.png
+  - name: all_outputs.png
     title: All Outputs
