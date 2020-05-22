@@ -43,6 +43,9 @@ For example:
 You can also unblock a host. For example: 
 * `!unblock-host 198.51.100.100`
 
+You can also block and unblock domains:
+* `!block-host www.example.com`
+
 The workflow will reply when it completes.
 
 ## Technical Details
