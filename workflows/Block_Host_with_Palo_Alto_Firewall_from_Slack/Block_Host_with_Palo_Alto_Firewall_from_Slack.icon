@@ -2,7 +2,7 @@
   "kom": {
     "komandVersion": "1.50.1-0-gaec79",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-05-22T18:08:12.409935312Z",
+    "exportedAt": "2020-05-22T18:41:22.771048852Z",
     "workflowVersions": [
       {
         "name": "Block Host with Palo Alto Firewall from Slack",
@@ -282,7 +282,7 @@
               "input": {
                 "attachments": [],
                 "message": "🚨  *Workflow Success*  🚨\n\nUnblocked: {{[83782ee6-5362-4b81-8902-9d4904c8ecd8].[content]}}\n\n*Workflow Complete*  ✅\n",
-                "recipient": "#{{[4d650a86-639d-4f34-8920-52d3c954152b].[message].[channel]}}",
+                "recipient": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[message].[channel_id]}}",
                 "thread_ts": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[message].[ts]}}"
               }
             },
@@ -483,7 +483,7 @@
               "input": {
                 "attachments": [],
                 "message": "*Workflow Failed*\n\nCould not find host \"{{[83782ee6-5362-4b81-8902-9d4904c8ecd8].[content]}}\" in block list\n\nMore information can be found here: \n{{[$job].[URL]}}\n\n*Workflow Failed* ❗",
-                "recipient": "#{{[4d650a86-639d-4f34-8920-52d3c954152b].[message].[channel]}}",
+                "recipient": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[message].[channel_id]}}",
                 "thread_ts": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[message].[ts]}}"
               }
             },
@@ -863,7 +863,7 @@
               "input": {
                 "attachments": [],
                 "message": "🚨  *Workflow Success* 🚨\n\nBlocked: {{[83782ee6-5362-4b81-8902-9d4904c8ecd8].[content]}}\n\n*Workflow Complete*  ✅\n\n",
-                "recipient": "#{{[4d650a86-639d-4f34-8920-52d3c954152b].[message].[channel]}}",
+                "recipient": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[message].[channel_id]}}",
                 "thread_ts": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[message].[ts]}}"
               }
             },
@@ -1056,7 +1056,7 @@
               "input": {
                 "attachments": [],
                 "message": "*Workflow Starting*\n\nCommand: {{[17ba3e71-3cbd-4995-a0d4-0c3b8974ef15].[content]}}\nHost: {{[83782ee6-5362-4b81-8902-9d4904c8ecd8].[content]}}\n\n",
-                "recipient": "#{{[4d650a86-639d-4f34-8920-52d3c954152b].[message].[channel]}}",
+                "recipient": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[message].[channel_id]}}",
                 "thread_ts": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[message].[ts]}}"
               }
             },

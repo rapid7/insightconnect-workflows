@@ -31,7 +31,7 @@ After import, activate the workflow in order to trigger it.
 
 ### Usage
 
-*This workflow will trigger in any direct messages to your Chatbot*
+*This workflow will trigger in any direct messages to your Chatbot **or** any message in a channel directed @ your Chatbot. Note the Chatbot must be in the channel in order to trigger the workflow this way.*
 
 To run the workflow in a direct message to the Rapid7 InsightConnect bot use `block-host <host>` or `unblock-host <host>`.
 
