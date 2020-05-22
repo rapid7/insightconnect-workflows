@@ -4,7 +4,7 @@ Create a ServiceNow Incident directly from Slack. If your team is collaborating 
 
 # Key Features
 
-* Automatically create an Incident 
+* Automatically create a ServiceNow Incident 
 * Return Incident identifying information to Slack for future updates
 
 # Requirements
