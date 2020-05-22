@@ -52,10 +52,8 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Microsoft Teams|2.0.2|5|
 |Palo Alto Firewall|5.1.1|4|
-|String Operations|1.2.1|3|
-|HTML|1.2.1|1|
+|Python 3 Script|2.0.1|1|
 
 
 ## Troubleshooting
