@@ -2,7 +2,7 @@ extension: workflow
 products: ["insightconnect"]
 name: Create_Incident_in_ServiceNow_from_Slack
 title: "Create Incident in ServiceNow from Slack"
-description: This workflow allows you to automatically create an incident in ServiceNow directly from Slack. 
+description: Automatically create an incident in ServiceNow directly from Slack. 
 version: 1.0.0
 vendor: rapid7
 support: rapid7
