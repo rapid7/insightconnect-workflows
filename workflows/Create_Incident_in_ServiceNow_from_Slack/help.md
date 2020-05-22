@@ -4,7 +4,7 @@ Create a ServiceNow Incident directly from Slack. If your team is collaborating 
 
 # Key Features
 
-* Automatically create an Incident 
+* Automatically create a ServiceNow Incident 
 * Return Incident identifying information to Slack for future updates
 
 # Requirements
@@ -17,7 +17,7 @@ Create a ServiceNow Incident directly from Slack. If your team is collaborating 
 
 ## Setup
 
-Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
+Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary. 
 
 After import, activate the workflow in order to trigger it.
 
@@ -35,6 +35,8 @@ To run the workflow, send a direct message to your InsightConnect Slack Chatbot 
  * impact
  * state
  * urgency
+
+ Fields that are required will depend on how your ServiceNow instance is configured. `short_description` is required for ServiceNow by default.
 
  For example, in a direct message to your Chatbot:
  * `create-incident short_description="New Alert to triage" description="The new alert contained indicators x, y, and z"`
@@ -65,3 +67,6 @@ _There is no troubleshooting information at this time_
 ## References
 
 * [Slack](https://slack.com)
+* [ServiceNow Extension](https://extensions.rapid7.com/extension/servicenow)
+* [InsightConnect Slack Instructions](https://insightconnect.help.rapid7.com/docs/chatops-step)
+* [Create a new ServiceNow Incident with InsightConnect](https://discuss.rapid7.com/t/creating-a-new-servicenow-incident-with-insightconnect/223)
