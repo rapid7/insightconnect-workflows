@@ -8,7 +8,7 @@
         "name": "Block Host with Palo Alto Firewall from Slack",
         "type": "runnable",
         "version": "",
-        "description": "",
+        "description": "Use the simplicity of a chat command in Slack to block or unblock a host in your Palo Alto Firewall.",
         "graph": {
           "edges": {
             "08ec65ca-0094-48f7-ab18-1034c59ccbc8": {
