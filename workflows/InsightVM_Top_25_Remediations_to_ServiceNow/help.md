@@ -40,7 +40,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
-* 1.0.1 - Change 'Clean Fix' step to handle solutions with a missing fix and updatetd InsightVM plugin to version 4.0.0
+* 1.0.1 - Change 'Clean Fix' step to handle solutions with a missing fix and updated InsightVM plugin to version 4.0.0
 * 1.0.0 - Initial workflow
 
 # Links
