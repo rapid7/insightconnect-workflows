@@ -31,11 +31,8 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Slack|2.0.2|4|
-|String Operations|1.2.1|3|
+|Python 3 Script|2.0.2|1|
 |Palo Alto Firewall|5.1.1|1|
-|HTML|1.2.1|1|
-
 
 ## Troubleshooting
 
