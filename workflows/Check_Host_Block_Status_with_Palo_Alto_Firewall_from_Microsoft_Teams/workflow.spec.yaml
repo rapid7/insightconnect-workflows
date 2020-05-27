@@ -16,12 +16,11 @@ resources:
   license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
   screenshots:
   - name: workflow1.png
-    title: Workflow View
-  - name: slack_message1.png
-    title: Slack Message for IP Blocked
-  - name: slack_message2.png
-    title: Slack Message for IP Not Blocked
-  - name: artifact1.png
-    title: Artifact for IP Blocked
-  - name: artifact2.png
-    title: Artifact for IP Not Blocked
+  title: Workflow View Top
+  - name: workflow2.png
+  title: Workflow View Middle
+  - name: workflow3.png
+  title: Workflow View Bottom
+  - name: teams_flow1.png
+  title: Sample Output from Microsoft Teams
+
