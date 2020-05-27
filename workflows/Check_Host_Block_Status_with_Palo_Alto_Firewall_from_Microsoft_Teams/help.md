@@ -8,13 +8,12 @@ Sample Microsoft Teams Trigger Commands:
 
 # Key Features
 
-* The ablity to see if an IP is curently blocked by the firewall
-
+* The ability to see if an IP is curently blocked by the firewall
 
 # Requirements
 
 * [Microsoft Teams Connection](https://insightconnect.help.rapid7.com/docs/microsoft-teams)
-* An admin API key to a Fortigate firewall
+* Username and Password for a Palo Alto firewall
 
 # Documentation
 
@@ -37,7 +36,11 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Fortinet FortiGate|1.1.0|1|
+|Microsoft Teams|2.0.2|4|
+|String Operations|1.2.1|3|
+|Palo Alto Firewall|5.1.1|1|
+|HTML|1.2.1|1|
+
 
 ## Troubleshooting
 

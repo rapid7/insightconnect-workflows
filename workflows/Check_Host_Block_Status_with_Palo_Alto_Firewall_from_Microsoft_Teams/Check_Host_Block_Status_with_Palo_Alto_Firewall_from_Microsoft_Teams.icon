@@ -407,9 +407,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
+                "channel_name": "change_me",
                 "message_content": "^!block-status.*",
-                "team_name": "Komand-Test-Everyone"
+                "team_name": "change_me"
               }
             },
             "triggerId": "8ade6e46-bdfe-4f78-9bfa-98403ecfd7c8",
@@ -577,9 +577,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
+                "channel_name": "change_me",
                 "message_content": "🔍  <b>Host Found</b>  🔍<br>\n<br>\n{{[83782ee6-5362-4b81-8902-9d4904c8ecd8].[content]}} was found in the following address objects: <br>\n<br>\n{{#each [8c18b523-d755-46d0-a37d-a3caf41e4b78].[address_objects]}}\n{{this}}<br>\n{{/each}}\n<br>\n<b>Workflow Complete</b>  ✅",
-                "team_name": "Komand-Test-Everyone"
+                "team_name": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -768,7 +768,7 @@
                 "address": "{{[83782ee6-5362-4b81-8902-9d4904c8ecd8].[content]}}",
                 "device_name": "localhost.localdomain",
                 "enable_search": true,
-                "group": "ICON Block List",
+                "group": "change_me",
                 "virtual_system": "vsys1"
               }
             },
@@ -862,9 +862,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
+                "channel_name": "change_me",
                 "message_content": "🔍  <b>Host Not Found</b>  🔍<br>\n<br>\n<b>Host was not in block list:</b> \"{{[83782ee6-5362-4b81-8902-9d4904c8ecd8].[content]}}\"<br> \n<br>\n<b>Workflow Complete</b>  ❗",
-                "team_name": "Komand-Test-Everyone"
+                "team_name": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -1062,9 +1062,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
+                "channel_name": "change_me",
                 "message_content": "🔍  <b> Starting Search </b>  🔍",
-                "team_name": "Komand-Test-Everyone"
+                "team_name": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -1307,9 +1307,9 @@
         "name": "Teams Trigger",
         "description": "",
         "input": {
-          "channel_name": "Komand Test Channel",
+          "channel_name": "change_me",
           "message_content": "^!block-status.*",
-          "team_name": "Komand-Test-Everyone"
+          "team_name": "change_me"
         },
         "inputJsonSchema": {
           "properties": {
