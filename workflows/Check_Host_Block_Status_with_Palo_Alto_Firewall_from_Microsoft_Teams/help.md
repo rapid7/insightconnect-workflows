@@ -13,7 +13,7 @@ Sample Microsoft Teams Trigger Commands:
 # Requirements
 
 * [Microsoft Teams Connection](https://insightconnect.help.rapid7.com/docs/microsoft-teams)
-* Username and Password for a Palo Alto firewall
+* Username and password for a Palo Alto firewall
 
 # Documentation
 
