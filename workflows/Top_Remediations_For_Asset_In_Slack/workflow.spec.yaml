@@ -1,9 +1,9 @@
 extension: workflow
 products: ["insightconnect", "insightvm"]
-name: Get_InsightVM_Top_Remediations_From_Slack
+name: Top_Remediations_From_Slack
 title: "Get InsightVM Top Remediations from Slack"
 description: Lookup and receive the top 10 remediation steps from InsightVM for a given host, asset group, site, or tag from a Slack message.
-version: 1.0.0
+version: 1.1.1
 vendor: rapid7
 support: rapid7
 status: []
@@ -12,7 +12,7 @@ hub_tags:
   keywords: [work_from_home, patch_management, slack, chat, insightvm]
   features: []
 resources:
-  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/my_cool_workflow
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Top_Remediations_From_Slack
   license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
   screenshots:
   - name: execution1.png
