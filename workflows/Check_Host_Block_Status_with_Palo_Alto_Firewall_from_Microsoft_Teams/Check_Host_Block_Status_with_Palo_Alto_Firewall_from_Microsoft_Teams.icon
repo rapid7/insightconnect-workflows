@@ -8,7 +8,7 @@
         "name": "Check Host Block Status with Palo Alto Firewall from Microsoft Teams",
         "type": "runnable",
         "version": "",
-        "description": "",
+        "description": "This workflow accepts a Microsoft Teams command containing an IP address. This IP address will be checked against a pre-defined address group in a Palo Alto firewall to determine if the IP address is present or not. It is assumed that this address group will be used to store IP addresses for a block policy. A message with the results will be returned.",
         "graph": {
           "edges": {
             "00f26916-43a3-418a-ab98-326391be9993": {
