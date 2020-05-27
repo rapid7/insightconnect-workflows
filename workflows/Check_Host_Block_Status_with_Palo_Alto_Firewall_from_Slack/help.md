@@ -1,10 +1,12 @@
 # Description
 
-This workflow accepts a Slack command containing an IP address. This IP address will be checked against a pre-defined address group in a Palo Alto firewall to determine if the IP address is present or not. It is assumed that this address group will be used to store IP addresses for a block policy. A message with the results will be returned.
+This workflow accepts a Slack command containing an IP address or domain. This object will be checked against a pre-defined address group in a Palo Alto firewall to determine if the object is present or not. It is assumed that this address group will be used to store address objects for a block policy. A message with the results will be returned.
 
 Sample Slack Trigger Commands:
 
 `@Rapid7 InsightConnect block-status 198.51.100.100`
+
+`@Rapid7 InsightConnect block-host example.com`
 
 # Key Features
 
@@ -24,6 +26,11 @@ Import the workflow from the Rapid7 Extension Library and proceed through the Im
 In the _Check if IP in Group_ step change the Group input from `change_me` to an appropriate address group.
 
 To run the workflow, @ your Slackbot or in a direct message along with the command "block-status <IP>". The workflow will post responses in a thread.
+
+For example:
+
+* `@Rapid7 InsightConnect block-host example.com`
+* `@Rapid7 InsightConnect block-host 198.10.198.100`
 
 ## Technical Details
 
