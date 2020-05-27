@@ -20,6 +20,8 @@ Import the workflow from the Rapid7 Extension Library and proceed through the Im
 
 After import, activate the workflow in order to trigger it.
 
+There is a settings step which can be edited to change the maximum number of vulnerabilities and maximum hosts listed per vulnerability which are returned.  The defaults are 50 vulnerabilities and 10 assets per vulnerability.
+
 ### Usage
 
 *This workflow will trigger in any direct messages to your Chatbot **or** any message in a channel directed @ your Chatbot. Note the Chatbot must be in the channel in order to trigger the workflow this way.*

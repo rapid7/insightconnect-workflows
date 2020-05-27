@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.50.0-0-g9ce07",
+    "komandVersion": "1.51.0-0-ge64bd",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-05-19T01:53:40.555851077Z",
+    "exportedAt": "2020-05-27T18:50:18.303917349Z",
     "workflowVersions": [
       {
         "name": "Lookup Vulnerable Hosts from Slack",
@@ -17,7 +17,7 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "aba0b6ae-4529-4827-a085-aeb46aa6affe",
-              "toNodeId": "a106410d-01bb-4fe6-aebf-4481868efd99"
+              "toNodeId": "e2a8436f-da58-4b85-9173-fd294bfb057d"
             },
             "061f4ce6-2833-4b31-97b1-78dbbb58fb3e": {
               "id": "061f4ce6-2833-4b31-97b1-78dbbb58fb3e",
@@ -89,7 +89,7 @@
               "description": "",
               "parentNodeId": "db592e51-daa5-44e6-9084-3439b7f09b85",
               "fromNodeId": "c8f054ac-027f-4183-bf23-a56c692d9e51",
-              "toNodeId": ""
+              "toNodeId": "0d3be19c-3f06-4db1-81df-0958ec44ed30"
             },
             "278aeedf-6481-4d0c-8589-20a51253bf4c": {
               "id": "278aeedf-6481-4d0c-8589-20a51253bf4c",
@@ -283,6 +283,14 @@
               "fromNodeId": "a5434f0d-592d-4815-8fe9-8719e47ddc43",
               "toNodeId": "91f352b5-30eb-4abc-a491-82d860f5de1b"
             },
+            "abd182d0-7404-4703-a323-8dbee3560af8": {
+              "id": "abd182d0-7404-4703-a323-8dbee3560af8",
+              "name": "",
+              "description": "",
+              "parentNodeId": "db592e51-daa5-44e6-9084-3439b7f09b85",
+              "fromNodeId": "0d3be19c-3f06-4db1-81df-0958ec44ed30",
+              "toNodeId": ""
+            },
             "b6efd95f-c8e7-4200-93b8-a16baf5e4e45": {
               "id": "b6efd95f-c8e7-4200-93b8-a16baf5e4e45",
               "name": "yes",
@@ -331,6 +339,14 @@
               "fromNodeId": "da2ea19b-42d4-43a7-90e5-63bddedf8068",
               "toNodeId": ""
             },
+            "e853a67e-ed84-42c2-89d7-beb426cf82f9": {
+              "id": "e853a67e-ed84-42c2-89d7-beb426cf82f9",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "e2a8436f-da58-4b85-9173-fd294bfb057d",
+              "toNodeId": "a106410d-01bb-4fe6-aebf-4481868efd99"
+            },
             "f2034945-2a35-4adc-a9d1-33608085766b": {
               "id": "f2034945-2a35-4adc-a9d1-33608085766b",
               "name": "",
@@ -352,6 +368,10 @@
             "0d368b5b-d7d0-4041-be73-b1db53a3895a": {
               "id": "0d368b5b-d7d0-4041-be73-b1db53a3895a",
               "parentNodeId": ""
+            },
+            "0d3be19c-3f06-4db1-81df-0958ec44ed30": {
+              "id": "0d3be19c-3f06-4db1-81df-0958ec44ed30",
+              "parentNodeId": "db592e51-daa5-44e6-9084-3439b7f09b85"
             },
             "24960792-15a3-4df7-b872-d61dc21c4aab": {
               "id": "24960792-15a3-4df7-b872-d61dc21c4aab",
@@ -453,6 +473,10 @@
               "id": "e19ba80b-5d1a-4646-bcdb-3844a9dd04cf",
               "parentNodeId": ""
             },
+            "e2a8436f-da58-4b85-9173-fd294bfb057d": {
+              "id": "e2a8436f-da58-4b85-9173-fd294bfb057d",
+              "parentNodeId": ""
+            },
             "ea5a238b-e930-4b91-b8bc-3f6d44ba273b": {
               "id": "ea5a238b-e930-4b91-b8bc-3f6d44ba273b",
               "parentNodeId": ""
@@ -497,12 +521,12 @@
                     },
                     "op": "<=",
                     "right": {
-                      "type": "literal",
-                      "value": 50
+                      "name": "e2a8436f-da58-4b85-9173-fd294bfb057d.output.max vulnerabilities",
+                      "type": "variable"
                     },
                     "type": "binary"
                   },
-                  "expressionText": "length({{[9f271d1c-aa6d-425d-97e8-2b45449a2eba].[search_results]}}) <= 50"
+                  "expressionText": "length({{[9f271d1c-aa6d-425d-97e8-2b45449a2eba].[search_results]}}) <= {{[e2a8436f-da58-4b85-9173-fd294bfb057d].[output].[max vulnerabilities]}}"
                 }
               ]
             },
@@ -612,6 +636,42 @@
               "type": "object"
             },
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/loop.svg",
+            "connectionType": "NONE"
+          },
+          "0d3be19c-3f06-4db1-81df-0958ec44ed30": {
+            "nodeId": "0d3be19c-3f06-4db1-81df-0958ec44ed30",
+            "name": "Max Hosts Returned Check",
+            "type": "break",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "stepControlParam": {
+                "edgeId": "abd182d0-7404-4703-a323-8dbee3560af8",
+                "expression": {
+                  "left": {
+                    "args": [
+                      {
+                        "name": "db592e51-daa5-44e6-9084-3439b7f09b85.$outputs",
+                        "type": "variable"
+                      }
+                    ],
+                    "name": "length",
+                    "type": "function"
+                  },
+                  "op": ">=",
+                  "right": {
+                    "name": "e2a8436f-da58-4b85-9173-fd294bfb057d.output.max hosts",
+                    "type": "variable"
+                  },
+                  "type": "binary"
+                },
+                "expressionText": "length({{[db592e51-daa5-44e6-9084-3439b7f09b85].[$outputs]}}) >= {{[e2a8436f-da58-4b85-9173-fd294bfb057d].[output].[max hosts]}}"
+              }
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/break.svg",
             "connectionType": "NONE"
           },
           "24960792-15a3-4df7-b872-d61dc21c4aab": {
@@ -824,7 +884,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "*Vulnerable Assets*\n{{#each [db592e51-daa5-44e6-9084-3439b7f09b85].[Asset Information]}}\n* {{this}}\n{{/each}}",
+                "message": "*Vulnerable Assets* _(max of {{[e2a8436f-da58-4b85-9173-fd294bfb057d].[output].[max hosts]}})_\n{{#each [db592e51-daa5-44e6-9084-3439b7f09b85].[Asset Information]}}\n* {{this}}\n{{/each}}",
                 "recipient": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[channel_id]}}",
                 "thread_ts": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[ts]}}"
               }
@@ -1630,7 +1690,7 @@
                 "type": "any"
               }
             },
-            "triggerId": "ef97c2e0-a3f7-4e15-8cc3-93b178dab219",
+            "triggerId": "be95e214-5649-4ff2-8b1f-090b3a81c36f",
             "defaultInputJSONSchema": {
               "properties": {
                 "matchChannel": {
@@ -2542,6 +2602,83 @@
                     }
                   },
                   "title": "Output",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "output": {
+                  "$ref": "#/definitions/output",
+                  "description": "Type converted input",
+                  "order": 1,
+                  "title": "Output"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR"
+          },
+          "e2a8436f-da58-4b85-9173-fd294bfb057d": {
+            "nodeId": "e2a8436f-da58-4b85-9173-fd294bfb057d",
+            "name": "Settings",
+            "type": "action",
+            "plugin": {
+              "name": "Type Converter",
+              "slugVendor": "rapid7",
+              "slugName": "type_converter",
+              "slugVersion": "1.5.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/type_converter/1.5.1/icon.png"
+            },
+            "identifier": "string_to_object",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "input": "{\"max hosts\":10,\"max vulnerabilities\":50}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "input": {
+                  "description": "Input variable",
+                  "order": 1,
+                  "title": "Input",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "input"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "output": {
+                  "description": "Type converted input",
+                  "order": 1,
+                  "title": "Output",
+                  "type": "object"
+                }
+              },
+              "required": [
+                "output"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": {
+              "definitions": {
+                "output": {
+                  "properties": {
+                    "max hosts": {
+                      "type": "integer"
+                    },
+                    "max vulnerabilities": {
+                      "type": "integer"
+                    }
+                  },
                   "type": "object"
                 }
               },
@@ -3624,7 +3761,7 @@
     ],
     "triggers": [
       {
-        "id": "ef97c2e0-a3f7-4e15-8cc3-93b178dab219",
+        "id": "be95e214-5649-4ff2-8b1f-090b3a81c36f",
         "name": "lookup-vuln-hosts Trigger",
         "description": "Trigger this workflow using the lookup-vuln-hosts command:\n\nlookup-vuln-hosts bluekeep\nlookup-vuln-hosts CVE-2019-0708",
         "input": {
