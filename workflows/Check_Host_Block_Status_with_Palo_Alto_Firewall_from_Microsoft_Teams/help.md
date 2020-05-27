@@ -26,7 +26,8 @@ In the _Check if IP in Group_ step change the Group input from `change_me` to an
 
 To run the workflow, enter a message such as `!block-status 198.51.100.100`. 
 
-The workflow will also check on domain names and CIDR IP addresses: 
+The workflow will also check on domain names and CIDR IP addresses:
+
 `!block-status www.example.com`
 `!block-status 198.51.0.0/24`
 
