@@ -30,7 +30,7 @@ After configuring the Settings step with your Microsoft Teams details, activate 
 
 *This workflow will only trigger in the channel specified in the Microsoft Teams workflow steps.*
 
-To run the workflow, send a message to the specified Microsoft Teams channel starting with the command `!insert-command-here`.
+To run the workflow, send a message to the specified Microsoft Teams channel starting with the command `!lookup-host`.
 
 For example:
 
