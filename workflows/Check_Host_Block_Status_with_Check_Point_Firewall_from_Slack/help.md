@@ -1,6 +1,6 @@
 # Description
 
-This workflow accepts a Slack command containing an IP address. This IP address will be checked against a pre-defined address group in Fortinet to determine if the IP address is present or not. It is assumed that this address group will be used to store IP addresses for a block policy. A message with the results will be returned.
+This workflow accepts a Slack command containing an IP address. This IP address will be checked against a pre-defined address group in Check Point to determine if the IP address is present or not. It is assumed that this address group will be used to store IP addresses for a block policy. A message with the results will be returned.
 
 Sample Slack Trigger Commands:
 
@@ -8,13 +8,12 @@ Sample Slack Trigger Commands:
 
 # Key Features
 
-* The ablity to see if an IP is curently blocked by the firewall
-
+* Check if an IP is currently blocked by the firewall
 
 # Requirements
 
 * Slack connection
-* An admin API key to a Fortigate firewall
+* Check Point firewall username and password
 
 # Documentation
 
@@ -33,7 +32,7 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Fortinet FortiGate|1.1.0|1|
+|Check Point NGFW|2.0.0|1|
 
 ## Troubleshooting
 
@@ -47,5 +46,5 @@ _There is no troubleshooting information at this time_
 
 ## References
 
-* [Fortinet](https://www.fortinet.com/)
+* [Check Point](https://www.checkpoint.com/)
 * [Slack](https://slack.com)
