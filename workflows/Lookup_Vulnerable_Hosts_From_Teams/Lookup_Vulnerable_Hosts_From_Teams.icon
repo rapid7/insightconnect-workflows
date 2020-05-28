@@ -8,7 +8,7 @@
         "name": "Lookup Vulnerable Hosts from Teams",
         "type": "runnable",
         "version": "",
-        "description": "Lookup vulnerability details, including a summary of the vulnerability, the affected software package, the remediation or mitigation step, and a list of affected hosts (up to 100) in the user's environment, from a simple Slack message.\n\nCommand to run in any channel that includes your InsightConnect Teams chat bot:\n!lookup-vuln-assets <vulnerability>\n\n<vulnerability> in the command can be any InsightVM vulnerability reference including the following:\n* Vulnerability Name\n* KB Number\n* CVE ID\n* Nexpose ID\n* Other references InsightVM knows",
+        "description": "Lookup vulnerability details, including a summary of the vulnerability, the affected software package, the remediation or mitigation step, and a list of affected hosts (up to 100) in the user's environment, from a simple Microsoft Teams message.\n\nCommand to run in any channel that includes your InsightConnect Teams chat bot:\n!lookup-vuln-assets <vulnerability>\n\n<vulnerability> in the command can be any InsightVM vulnerability reference including the following:\n* Vulnerability Name\n* KB Number\n* CVE ID\n* Nexpose ID\n* Other references InsightVM knows",
         "graph": {
           "edges": {
             "048633cb-b96e-4387-a7c8-5f727dbc4d68": {
