@@ -42,7 +42,10 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Rapid7 InsightVM|4.0.0|1|
+|CSV|1.1.5|1|
+|Rapid7 Vulnerability & Exploit Database|2.0.3|1|
+|Type Converter|1.5.1|3|
+|Rapid7 InsightVM|4.0.0|5|
 
 ## Troubleshooting
 
