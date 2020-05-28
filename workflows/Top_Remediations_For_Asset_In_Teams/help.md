@@ -59,4 +59,5 @@ _There is no troubleshooting information at this time_
 
 ## References
 
-* [Slack](https://slack.com)
+* [Microsoft Teams](https://teams.microsoft.com)
+* [Microsoft Teams Setup](https://insightconnect.help.rapid7.com/docs/microsoft-teams)
