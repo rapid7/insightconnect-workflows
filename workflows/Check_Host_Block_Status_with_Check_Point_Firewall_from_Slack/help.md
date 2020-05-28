@@ -12,7 +12,7 @@ Sample Slack Trigger Commands:
 
 # Requirements
 
-* Slack connection
+* [Slack connection](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops)
 * Check Point firewall username and password
 
 # Documentation
