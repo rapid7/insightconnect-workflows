@@ -40,7 +40,7 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Rapid7 InsightVM|4.0.0|4|
+|Rapid7 InsightVM|4.0.0|6|
 |Microsoft Teams|2.0.3|8|
 |HTML|1.2.1|1|
 |CSV|1.1.5|1|
