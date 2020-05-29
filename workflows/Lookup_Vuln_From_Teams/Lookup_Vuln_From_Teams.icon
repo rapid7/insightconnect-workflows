@@ -565,7 +565,7 @@
               "input": {
                 "channel_name": "change_me",
                 "message": "There are multiple search results for {{[61855db7-9d9e-46ab-8176-6e18cd3d8299].[argument]}} in Rapid7's vulnerability database. Click one of the links in this thread for more information. \n/n\nYou can also try a more specific search term for more information on one vulnerability. For example, you may try {{[61855db7-9d9e-46ab-8176-6e18cd3d8299].[argument]}} Ubuntu or {{[61855db7-9d9e-46ab-8176-6e18cd3d8299].[argument]}} Chrome",
-                "team_name": "Dream Team"
+                "team_name": "change_me"
               }
             },
             "defaultInputJSONSchema": {
