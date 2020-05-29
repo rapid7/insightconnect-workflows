@@ -3,7 +3,7 @@ products: ["insightconnect", "insightvm"]
 name: InsightVM_Top_25_Remediations_to_JIRA 
 title: "InsightVM Top 25 Remediations to JIRA"
 description: Create and update Jira issues based on top risk-reducing remediation steps from InsightVM.
-version: 1.0.2
+version: 1.0.3
 vendor: rapid7
 support: rapid7
 status: []
