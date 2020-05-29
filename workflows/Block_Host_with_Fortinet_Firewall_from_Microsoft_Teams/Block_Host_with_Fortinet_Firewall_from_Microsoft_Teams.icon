@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.50.0-0-g9ce07",
+    "komandVersion": "1.51.2-0-gfd7dc",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-05-19T16:09:10.294326531Z",
+    "exportedAt": "2020-05-29T19:37:46.523057881Z",
     "workflowVersions": [
       {
         "name": "Block Host with Fortinet Firewall from Microsoft Teams",
@@ -322,42 +322,50 @@
               "name": "Fortinet FortiGate",
               "slugVendor": "rapid7",
               "slugName": "fortinet_fortigate",
-              "slugVersion": "2.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/fortinet_fortigate/2.0.0/icon.png"
+              "slugVersion": "4.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/fortinet_fortigate/4.0.0/icon.png"
             },
-            "identifier": "delete_address_object",
+            "identifier": "remove_address_object_from_group",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "input": {
-                "host": "{{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}}"
+                "address_object": "{{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}}",
+                "group": "change_me"
               }
             },
             "defaultInputJSONSchema": {
               "properties": {
-                "host": {
-                  "description": "The host to delete. This can be an IP address, CIDR IP address e.g. 198.51.100.0/24, or a domain name",
+                "address_object": {
+                  "description": "Address object",
+                  "order": 2,
+                  "title": "Address Object",
+                  "type": "string"
+                },
+                "group": {
+                  "description": "Group name",
                   "order": 1,
-                  "title": "Host",
+                  "title": "Group",
                   "type": "string"
                 }
               },
               "required": [
-                "host"
+                "group",
+                "address_object"
               ],
               "title": "Variables",
               "type": "object"
             },
             "defaultOutputJSONSchema": {
               "properties": {
-                "response_object": {
-                  "description": "Information about the operation that was performed",
+                "result_object": {
+                  "description": "An object containing the results of the action",
                   "order": 2,
-                  "title": "Response Object",
+                  "title": "Result Object",
                   "type": "object"
                 },
                 "success": {
-                  "description": "Boolean value indicating the success of the operation",
+                  "description": "Was the operation successful",
                   "order": 1,
                   "title": "Success",
                   "type": "boolean"
@@ -365,7 +373,7 @@
               },
               "required": [
                 "success",
-                "response_object"
+                "result_object"
               ],
               "title": "Variables",
               "type": "object"
@@ -382,36 +390,36 @@
               "name": "Fortinet FortiGate",
               "slugVendor": "rapid7",
               "slugName": "fortinet_fortigate",
-              "slugVersion": "2.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/fortinet_fortigate/2.0.0/icon.png"
+              "slugVersion": "4.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/fortinet_fortigate/4.0.0/icon.png"
             },
             "identifier": "add_address_object_to_address_group",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "input": {
-                "address_object_name": "{{[747e47c2-f0a5-4f81-ad2a-35a7ad6627b3].[response_object].[mkey]}}",
-                "group_name": "Test Group"
+                "address_object": "{{[747e47c2-f0a5-4f81-ad2a-35a7ad6627b3].[response_object]}}",
+                "group": "change_me"
               }
             },
             "defaultInputJSONSchema": {
               "properties": {
-                "address_object_name": {
-                  "description": "Address object name",
+                "address_object": {
+                  "description": "Address object",
                   "order": 2,
-                  "title": "Address Object Name",
+                  "title": "Address Object",
                   "type": "string"
                 },
-                "group_name": {
+                "group": {
                   "description": "Group name",
                   "order": 1,
-                  "title": "Group Name",
+                  "title": "Group",
                   "type": "string"
                 }
               },
               "required": [
-                "group_name",
-                "address_object_name"
+                "group",
+                "address_object"
               ],
               "title": "Variables",
               "type": "object"
@@ -488,8 +496,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.0.2",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.2/icon.png"
+              "slugVersion": "2.0.3",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.3/icon.png"
             },
             "identifier": "new_message_received",
             "continueOnFailure": false,
@@ -501,7 +509,7 @@
                 "team_name": "change_me"
               }
             },
-            "triggerId": "5f8feb95-cd1f-4f3b-9e37-a219d37af10f",
+            "triggerId": "66436242-bc42-43e6-8d81-0d049516c5fd",
             "defaultInputJSONSchema": {
               "properties": {
                 "channel_name": {
@@ -658,8 +666,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.0.2",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.2/icon.png"
+              "slugVersion": "2.0.3",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.3/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
@@ -828,33 +836,40 @@
               "name": "Fortinet FortiGate",
               "slugVendor": "rapid7",
               "slugName": "fortinet_fortigate",
-              "slugVersion": "2.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/fortinet_fortigate/2.0.0/icon.png"
+              "slugVersion": "4.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/fortinet_fortigate/4.0.0/icon.png"
             },
             "identifier": "create_address_object",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "input": {
-                "host": "{{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}}",
-                "name": "",
-                "whitelist": [
-                ]
+                "address": "{{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}}",
+                "address_object": "",
+                "skip_rfc1918": false,
+                "whitelist": []
               }
             },
             "defaultInputJSONSchema": {
               "properties": {
-                "host": {
-                  "description": "The host to create. This can be an IP address, CIDR IP address e.g. 198.51.100.0/24, or a domain name",
+                "address": {
+                  "description": "The address to assign to the Address Object. This can be an IP address, CIDR IP address e.g. 198.51.100.0/24, or a domain name",
                   "order": 1,
-                  "title": "Host",
+                  "title": "Address",
                   "type": "string"
                 },
-                "name": {
-                  "description": "Optional name to give this address object. If not provided, the name will be the IP address or domain name",
+                "address_object": {
+                  "description": "Optional name to give this address object. If not provided, the name will be the value of address input field",
                   "order": 2,
-                  "title": "Name",
+                  "title": "Address Object",
                   "type": "string"
+                },
+                "skip_rfc1918": {
+                  "default": true,
+                  "description": "Skip private IP addresses as defined in RFC 1918",
+                  "order": 4,
+                  "title": "Skip RFC 1918 (Private) IP Addresses",
+                  "type": "boolean"
                 },
                 "whitelist": {
                   "description": "This list contains a set of network object that should not be blocked. This can be an IP address, CIDR IP address e.g. 198.51.100.0/24, or a domain name",
@@ -867,7 +882,8 @@
                 }
               },
               "required": [
-                "host"
+                "address",
+                "skip_rfc1918"
               ],
               "title": "Variables",
               "type": "object"
@@ -978,8 +994,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.0.2",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.2/icon.png"
+              "slugVersion": "2.0.3",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.3/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
@@ -1205,8 +1221,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.0.2",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.2/icon.png"
+              "slugVersion": "2.0.3",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.3/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
@@ -1393,7 +1409,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "Host {{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}} removed from block group."
+                "content": "The host {{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}} was removed to the address group {{[12ba74f0-d3ae-48a7-8860-607179f61a42].[result_object].[mkey]}}"
               },
               "type": "markdown"
             },
@@ -1411,8 +1427,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.0.2",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.2/icon.png"
+              "slugVersion": "2.0.3",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.3/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
@@ -1637,8 +1653,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.0.2",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.2/icon.png"
+              "slugVersion": "2.0.3",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.3/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
@@ -1825,7 +1841,7 @@
     ],
     "triggers": [
       {
-        "id": "5f8feb95-cd1f-4f3b-9e37-a219d37af10f",
+        "id": "66436242-bc42-43e6-8d81-0d049516c5fd",
         "identifier": "new_message_received",
         "name": "Block Request",
         "description": "",
@@ -1984,8 +2000,8 @@
           "name": "Microsoft Teams",
           "slugVendor": "rapid7",
           "slugName": "microsoft_teams",
-          "slugVersion": "2.0.2",
-          "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.2/icon.png"
+          "slugVersion": "2.0.3",
+          "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.3/icon.png"
         }
       }
     ]

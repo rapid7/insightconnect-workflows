@@ -4,9 +4,13 @@ This workflow blocks or unblocks a host with Fortinet Firewall via Microsoft Tea
 
 Sample Microsoft Teams Trigger Commands:
 
-`!block-host 198.51.100.100`
+`!block-host 198.51.100.100/32`
+`!block-host 198.51.100.0/24`
+`!block-host example.co `
 
-`!unblock-host 198.51.100.100`
+`!unblock-host 198.51.100.100/32`
+`!unblock-host 198.51.100.0/24`
+`!unblock-host example.com`
 
 # Key Features
 
@@ -45,7 +49,7 @@ Plugins utilized by workflow:
 |Plugin|Version|Count|
 |----|----|--------|
 |HTML|1.2.1|1|
-|Fortinet FortiGate|2.0.0|3|
+|Fortinet FortiGate|4.0.0|3|
 |Microsoft Teams|2.0.2|6|
 
 ## Troubleshooting
