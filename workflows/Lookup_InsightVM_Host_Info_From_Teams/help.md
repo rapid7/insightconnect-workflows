@@ -22,7 +22,7 @@ This workflow provides fast, convenient access to information about a given host
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-Once the workflow has been imported, **edit the Settings step to specify the Microsoft Teams team name and channel name to suit your Teams environment!** Edit the input with the preset text of `Your Team` and `Your Channel` in each Teams step in the workflow.
+Once the workflow has been imported, **edit the Settings step to specify the Microsoft Teams team name and channel name to suit your Teams environment!** Edit the input with the preset text of `change_me` in each Teams step in the workflow.
 
 After configuring the Settings step with your Microsoft Teams details, activate the workflow in order to trigger it.
 
