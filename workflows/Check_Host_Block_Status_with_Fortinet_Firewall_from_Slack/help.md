@@ -33,7 +33,7 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Fortinet FortiGate|1.1.0|1|
+|Fortinet FortiGate|4.0.0|1|
 
 ## Troubleshooting
 
@@ -41,6 +41,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.1.0 - Update Fortinet Fortigate to latest version
 * 1.0.0 - Initial workflow
 
 # Links
