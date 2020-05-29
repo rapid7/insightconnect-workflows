@@ -40,7 +40,7 @@ Plugins utilized by workflow:
 |----|----|--------|
 |Microsoft Teams|2.0.2|4|
 |String Operations|1.2.1|3|
-|Palo Alto Firewall|5.1.1|1|
+|Palo Alto Firewall|6.0.0|1|
 |HTML|1.2.1|1|
 
 
@@ -50,6 +50,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.1.0 - Update Palo Alto Firewall to latest version
 * 1.0.0 - Initial workflow
 
 # Links

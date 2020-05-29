@@ -29,6 +29,8 @@ Once the workflow has been imported, **each Microsoft Teams step will need the t
 
 **Edit Each Palo Alto Firewall step to specify the group you are using** In these steps, specify the group you would like to add and remove host objects from. 
 
+By default this workflow will automatically skip blocking private IP addresses, if you’d like to block these as well, set `Skip RFC 1918` option to false in the `Create Network Object` step.
+
 After import, activate the workflow in order to trigger it.
 
 ### Usage
@@ -55,7 +57,7 @@ Plugins utilized by workflow:
 |Plugin|Version|Count|
 |----|----|--------|
 |Microsoft Teams|2.0.2|5|
-|Palo Alto Firewall|5.1.1|4|
+|Palo Alto Firewall|6.0.0|4|
 |String Operations|1.2.1|3|
 |HTML|1.2.1|1|
 
@@ -66,6 +68,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.1.0 - Update Palo Alto Firewall to latest version
 * 1.0.0 - Initial workflow
 
 # Links
