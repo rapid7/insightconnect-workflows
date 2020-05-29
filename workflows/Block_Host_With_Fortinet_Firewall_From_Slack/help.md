@@ -4,9 +4,13 @@ This workflow blocks or unblocks a host with Fortinet Firewall via Slack command
 
 Sample Slack Trigger Commands:
 
-`@Rapid7 InsightConnect block-host 198.51.100.100`
+`@Rapid7 InsightConnect block-host 198.51.100.100/32`
+`@Rapid7 InsightConnect block-host 198.51.100.0/24`
+`@Rapid7 InsightConnect block-host example.com`
 
-`!unblock-host 198.51.100.100`
+`@Rapid7 InsightConnect unblock-host 198.51.100.100/32`
+`@Rapid7 InsightConnect unblock-host 198.51.100.0/24`
+`@Rapid7 InsightConnect unblock-host example.com`
 
 # Key Features
 
@@ -46,7 +50,7 @@ Plugins utilized by workflow:
 |Plugin|Version|Count|
 |----|----|--------|
 |HTML|1.2.1|1|
-|Fortinet FortiGate|2.0.0|3|
+|Fortinet FortiGate|4.0.0|3|
 
 
 ## Troubleshooting

@@ -2,7 +2,7 @@
   "kom": {
     "komandVersion": "1.51.2-0-gfd7dc",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-05-29T18:14:21.257001806Z",
+    "exportedAt": "2020-05-29T18:38:19.264591573Z",
     "workflowVersions": [
       {
         "name": "Block Host with Fortinet Firewall from Slack",
@@ -348,12 +348,12 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "matchChannel": "mhofert_testing",
+                "matchChannel": "change_me",
                 "matchText": "(block-host.*|unblock-host.*)",
                 "type": "any"
               }
             },
-            "triggerId": "7285a061-3ff2-4bdd-9215-09f427f0855b",
+            "triggerId": "687762e1-713c-460e-a535-9993475c5e99",
             "defaultInputJSONSchema": {
               "properties": {
                 "matchChannel": {
@@ -791,7 +791,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "Host {{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}} removed from block group."
+                "content": "The host {{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}} was removed to the address group {{[dbaf4fba-860b-470a-8cab-b778152fd609].[result_object].[mkey]}}"
               },
               "type": "markdown"
             },
@@ -810,7 +810,7 @@
               "slugVendor": "rapid7",
               "slugName": "fortinet_fortigate",
               "slugVersion": "4.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/fortinet_fortigate/3.0.0/icon.png"
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/fortinet_fortigate/4.0.0/icon.png"
             },
             "identifier": "create_address_object",
             "continueOnFailure": false,
@@ -819,6 +819,7 @@
               "input": {
                 "address": "{{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}}",
                 "address_object": "",
+                "skip_rfc1918": false,
                 "whitelist": []
               }
             },
@@ -836,6 +837,13 @@
                   "title": "Address Object",
                   "type": "string"
                 },
+                "skip_rfc1918": {
+                  "default": true,
+                  "description": "Skip private IP addresses as defined in RFC 1918",
+                  "order": 4,
+                  "title": "Skip RFC 1918 (Private) IP Addresses",
+                  "type": "boolean"
+                },
                 "whitelist": {
                   "description": "This list contains a set of network object that should not be blocked. This can be an IP address, CIDR IP address e.g. 198.51.100.0/24, or a domain name",
                   "items": {
@@ -847,7 +855,8 @@
                 }
               },
               "required": [
-                "address"
+                "address",
+                "skip_rfc1918"
               ],
               "title": "Variables",
               "type": "object"
@@ -979,7 +988,7 @@
               "slugVendor": "rapid7",
               "slugName": "fortinet_fortigate",
               "slugVersion": "4.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/fortinet_fortigate/3.0.0/icon.png"
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/fortinet_fortigate/4.0.0/icon.png"
             },
             "identifier": "remove_address_object_from_group",
             "continueOnFailure": false,
@@ -987,7 +996,7 @@
             "parameters": {
               "input": {
                 "address_object": "{{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}}",
-                "group": "Test Group"
+                "group": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -1177,7 +1186,7 @@
               "slugVendor": "rapid7",
               "slugName": "fortinet_fortigate",
               "slugVersion": "4.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/fortinet_fortigate/3.0.0/icon.png"
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/fortinet_fortigate/4.0.0/icon.png"
             },
             "identifier": "add_address_object_to_address_group",
             "continueOnFailure": false,
@@ -1185,7 +1194,7 @@
             "parameters": {
               "input": {
                 "address_object": "{{[b6be898d-28ee-4ead-93a1-ac177ced8973].[response_object].[mkey]}}",
-                "group": "Test Group"
+                "group": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -1244,11 +1253,11 @@
     ],
     "triggers": [
       {
-        "id": "7285a061-3ff2-4bdd-9215-09f427f0855b",
+        "id": "687762e1-713c-460e-a535-9993475c5e99",
         "name": "Block Request",
         "description": "Slack message received trigger",
         "input": {
-          "matchChannel": "mhofert_testing",
+          "matchChannel": "change_me",
           "matchText": "(block-host.*|unblock-host.*)",
           "type": "any"
         },
