@@ -63,3 +63,5 @@ _There is no troubleshooting information at this time_
 ## References
 
 * [Rapid7 InsightVM](https://www.rapid7.com/products/insightvm)
+* [Microsoft Teams](https://teams.microsoft.com)
+* [Microsoft Teams Setup](https://insightconnect.help.rapid7.com/docs/microsoft-teams)
