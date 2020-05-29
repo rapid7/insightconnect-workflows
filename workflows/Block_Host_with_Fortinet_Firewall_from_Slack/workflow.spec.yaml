@@ -1,7 +1,7 @@
 extension: workflow
 products:
 - insightconnect
-name: Block_Host_With_Fortinet_Firewall_From_Slack
+name: Block_Host_with_Fortinet_Firewall_from_Slack
 title: Block Host with Fortinet Firewall from Slack
 description: This workflow blocks or unblocks a host with Fortinet Firewall via Slack
   command and reports information back to Slack.
@@ -20,7 +20,7 @@ hub_tags:
   - slack
   features: []
 resources:
-  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Block_Host_With_Fortinet_Firewall_From_Slack
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Block_Host_with_Fortinet_Firewall_from_Slack
   license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
   screenshots:
     - name: workflow1.png
