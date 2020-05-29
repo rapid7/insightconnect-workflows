@@ -1093,7 +1093,7 @@
               "input": {
                 "channel_name": "change_me",
                 "message": "Severity: {{[919c2297-d695-4af5-b29c-d099a0fb07a1].[content_result].[severity]}}\n\nhttps://rapid7.com/db/vulnerabilities/{{[58eae3a8-f9f1-4006-b628-05e9cdca896a].[basename]}}",
-                "team_name": "Dream Team"
+                "team_name": "change_me"
               }
             },
             "defaultInputJSONSchema": {
