@@ -276,7 +276,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "input": "{\"team\":\"Your Team\",\"channel\":\"Your Channel\"}"
+                "input": "{\"team\":\"change_me\",\"channel\":\"change_me\"}"
               }
             },
             "defaultInputJSONSchema": {
