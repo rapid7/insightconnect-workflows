@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Block_Host_with_Palo_Alto_Firewall_from_Microsoft_Teams
 title: "Block Host with Palo Alto Firewall from Microsoft Teams"
 description: "This workflow uses a Microsoft Teams command to block and unblock a host from a Palo Alto firewall."
-version: 1.0.0
+version: 1.1.0
 vendor: rapid7
 support: rapid7
 status: []
