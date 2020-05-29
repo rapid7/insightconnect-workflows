@@ -34,6 +34,8 @@ After configuring the Teams steps, activate the workflow in order to trigger it.
  
 A optional whitelist can be added to the FortiGate Add Host to be Blocked action. To add this list add IP's or domains in the following format `["198.51.100.100", "example.com", "198.51.100.1"]`
 
+By default this workflow will automatically skip blocking private IP addresses, if you’d like to block these as well, set `Skip RFC 1918` option to false in the Add Host to be Blocked step
+
 ### Usage
 
 *This workflow will only trigger in the channel specified in the Microsoft Teams workflow steps.*
@@ -50,7 +52,7 @@ Plugins utilized by workflow:
 |----|----|--------|
 |HTML|1.2.1|1|
 |Fortinet FortiGate|4.0.0|3|
-|Microsoft Teams|2.0.2|6|
+|Microsoft Teams|2.0.3|6|
 
 ## Troubleshooting
 
