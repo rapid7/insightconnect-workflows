@@ -28,7 +28,7 @@ Sample Trigger Commands:
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-Once the workflow has been imported, **each Microsoft Teams step will need the team name and channel name updated to suit your Teams environment!** Edit the input with the preset text of `Dream Team` and `change_me` in each Teams step in the workflow. The following steps will need to be updated in this workflow:
+Once the workflow has been imported, **each Microsoft Teams step will need the team name and channel name updated to suit your Teams environment!** Edit the input with the preset text of `change_me` in each Teams step in the workflow. The following steps will need to be updated in this workflow:
 * `!lookup-vuln Trigger`
 * `Searching Notification`
 * `Vulnerability Not Found Notification`
