@@ -24,7 +24,7 @@ resources:
   license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
   screenshots:
     - name: workflow1.png
-    title: Workflow View
+      title: Workflow View
     - name: slack_message1.png
       title: Slack Message for Block Action
     - name: slack_message2.png
