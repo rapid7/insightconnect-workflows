@@ -819,7 +819,7 @@
               "name": "Palo Alto Firewall",
               "slugVendor": "rapid7",
               "slugName": "palo_alto_pan_os",
-              "slugVersion": "5.1.1",
+              "slugVersion": "6.0.0",
               "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/5.1.1/icon.png"
             },
             "identifier": "remove_address_object_from_group",
@@ -1274,7 +1274,7 @@
               "name": "Palo Alto Firewall",
               "slugVendor": "rapid7",
               "slugName": "palo_alto_pan_os",
-              "slugVersion": "5.1.1",
+              "slugVersion": "6.0.0",
               "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/5.1.1/icon.png"
             },
             "identifier": "set_address_object",
@@ -1286,7 +1286,8 @@
                 "address_object": "{{[83782ee6-5362-4b81-8902-9d4904c8ecd8].[content]}}",
                 "description": "InsightConnect Created Address Object",
                 "tags": "",
-                "whitelist": []
+                "whitelist": [],
+                "skip_rfc1918": true
               }
             },
             "defaultInputJSONSchema": {
@@ -1368,7 +1369,7 @@
               "name": "Palo Alto Firewall",
               "slugVendor": "rapid7",
               "slugName": "palo_alto_pan_os",
-              "slugVersion": "5.1.1",
+              "slugVersion": "6.0.0",
               "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/5.1.1/icon.png"
             },
             "identifier": "check_if_address_object_in_group",
@@ -1665,7 +1666,7 @@
               "name": "Palo Alto Firewall",
               "slugVendor": "rapid7",
               "slugName": "palo_alto_pan_os",
-              "slugVersion": "5.1.1",
+              "slugVersion": "6.0.0",
               "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/5.1.1/icon.png"
             },
             "identifier": "add_address_object_to_group",
@@ -1676,7 +1677,8 @@
                 "address_object": "{{[83782ee6-5362-4b81-8902-9d4904c8ecd8].[content]}}",
                 "device_name": "localhost.localdomain",
                 "group": "ICON Block List",
-                "virtual_system": "vsys1"
+                "virtual_system": "vsys1", 
+                "skip_rfc1918": true
               }
             },
             "defaultInputJSONSchema": {

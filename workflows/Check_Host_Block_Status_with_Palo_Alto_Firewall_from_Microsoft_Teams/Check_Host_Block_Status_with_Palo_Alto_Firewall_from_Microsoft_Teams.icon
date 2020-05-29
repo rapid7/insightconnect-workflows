@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.51.0-0-ge64bd",
+    "komandVersion": "1.51.2-0-gfd7dc",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-05-26T22:25:45.30138318Z",
+    "exportedAt": "2020-05-29T18:06:55.714684489Z",
     "workflowVersions": [
       {
         "name": "Check Host Block Status with Palo Alto Firewall from Microsoft Teams",
@@ -412,7 +412,7 @@
                 "team_name": "change_me"
               }
             },
-            "triggerId": "8ade6e46-bdfe-4f78-9bfa-98403ecfd7c8",
+            "triggerId": "f1b821bc-1661-49af-bdbf-15fa5c38fad2",
             "defaultInputJSONSchema": {
               "properties": {
                 "channel_name": {
@@ -751,14 +751,14 @@
           },
           "8c18b523-d755-46d0-a37d-a3caf41e4b78": {
             "nodeId": "8c18b523-d755-46d0-a37d-a3caf41e4b78",
-            "name": "Check if IP in Group",
+            "name": "Check IP in Group",
             "type": "action",
             "plugin": {
               "name": "Palo Alto Firewall",
               "slugVendor": "rapid7",
               "slugName": "palo_alto_pan_os",
-              "slugVersion": "5.1.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/5.1.1/icon.png"
+              "slugVersion": "6.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/6.0.0/icon.png"
             },
             "identifier": "check_if_address_object_in_group",
             "continueOnFailure": false,
@@ -775,7 +775,7 @@
             "defaultInputJSONSchema": {
               "properties": {
                 "address": {
-                  "description": "The Address Object name to check. If Enable Search is set to true then we search the addresses (IP, CIDR, doman) within the address object instead of matching the name",
+                  "description": "The Address Object name to check. If Enable Search is set to true then we search the addresses (IP, CIDR, domain) within the address object instead of matching the name",
                   "order": 2,
                   "title": "Address",
                   "type": "string"
@@ -1302,7 +1302,7 @@
     ],
     "triggers": [
       {
-        "id": "8ade6e46-bdfe-4f78-9bfa-98403ecfd7c8",
+        "id": "f1b821bc-1661-49af-bdbf-15fa5c38fad2",
         "identifier": "new_message_received",
         "name": "Teams Trigger",
         "description": "",
