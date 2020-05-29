@@ -8,7 +8,7 @@
         "name": "Lookup Host in InsightVM from Teams",
         "type": "runnable",
         "version": "",
-        "description": "This workflow accepts a Teams command containing a hostname or IP address and returns asset details from InsightVM.\n\nSample Slack Trigger Commands: \n!lookup-host workstation123\n!lookup-host 192.168.1.2",
+        "description": "This workflow accepts a Teams command containing a hostname or IP address and returns asset details from InsightVM.\n\nSample Teams Trigger Commands: \n!lookup-host workstation123\n!lookup-host 192.168.1.2",
         "graph": {
           "edges": {
             "1ddb1c81-319d-4dc8-9530-90f4566a6ade": {
