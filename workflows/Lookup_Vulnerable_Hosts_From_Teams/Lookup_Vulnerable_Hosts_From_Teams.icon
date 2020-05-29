@@ -2341,7 +2341,7 @@
               "input": {
                 "channel_name": "change_me",
                 "message_content": "!lookup-vuln-hosts\\s+\\S+",
-                "team_name": "Dream Team"
+                "team_name": "change_me"
               }
             },
             "triggerId": "ab442ba5-50f4-47e2-a40e-cbcf61383fe8",
