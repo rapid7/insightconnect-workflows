@@ -149,7 +149,7 @@
               "slugVersion": "4.0.0",
               "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/fortinet_fortigate/1.1.0/icon.png"
             },
-            "identifier": "check_if_ip_is_in_address_groups",
+            "identifier": "check_if_address_in_group",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
