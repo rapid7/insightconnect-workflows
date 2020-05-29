@@ -1264,7 +1264,7 @@
               "input": {
                 "channel_name": "change_me",
                 "message_content": "!lookup-vuln",
-                "team_name": "Dream Team"
+                "team_name": "change_me"
               }
             },
             "triggerId": "0a4b4f5f-00fd-4eef-8064-b48d2348b2e7",
