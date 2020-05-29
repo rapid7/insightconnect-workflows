@@ -39,7 +39,7 @@ Plugins utilized by workflow:
 |Plugin|Version|Count|
 |----|----|--------|
 |Python 3 Script|2.0.2|1|
-|Palo Alto Firewall|5.1.1|1|
+|Palo Alto Firewall|6.0.0|1|
 
 ## Troubleshooting
 
