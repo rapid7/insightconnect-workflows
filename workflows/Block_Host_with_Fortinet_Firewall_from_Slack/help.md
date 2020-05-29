@@ -67,4 +67,4 @@ _There is no troubleshooting information at this time_
 ## References
 
 * [Fortigate](https://www.fortinet.com/products/next-generation-firewall.html)
-* [Slack](https://teams.microsoft.com)
+* [Rapid7 Slack Chatbot](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops)
