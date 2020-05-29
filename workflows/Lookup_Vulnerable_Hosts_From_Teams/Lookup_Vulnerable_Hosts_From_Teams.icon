@@ -4555,7 +4555,7 @@
         "input": {
           "channel_name": "change_me",
           "message_content": "!lookup-vuln-hosts\\s+\\S+",
-          "team_name": "Dream Team"
+          "team_name": "change_me"
         },
         "inputJsonSchema": {
           "properties": {
