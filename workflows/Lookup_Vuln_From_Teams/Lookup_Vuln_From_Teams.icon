@@ -2040,7 +2040,7 @@
               "input": {
                 "channel_name": "change_me",
                 "message": "Vulnerability Found:\n\n Title: {{[deb172a3-eb20-4f24-b4a5-d75fbe005ed4].[content_result].[title]}}\n\n Severity: {{[deb172a3-eb20-4f24-b4a5-d75fbe005ed4].[content_result].[severity]}}\n\n Published: \n{{[deb172a3-eb20-4f24-b4a5-d75fbe005ed4].[content_result].[published_at]}}\n\n Solutions: {{[deb172a3-eb20-4f24-b4a5-d75fbe005ed4].[content_result].[solutions]}}\n\nDescription:\n{{[deb172a3-eb20-4f24-b4a5-d75fbe005ed4].[content_result].[description]}}",
-                "team_name": "Dream Team"
+                "team_name": "change_me"
               }
             },
             "defaultInputJSONSchema": {
