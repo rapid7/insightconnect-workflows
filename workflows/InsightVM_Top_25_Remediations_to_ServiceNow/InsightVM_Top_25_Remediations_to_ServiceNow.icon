@@ -5,7 +5,7 @@
     "exportedAt": "2020-04-06T03:35:41.534773827Z",
     "workflowVersions": [
       {
-        "name": "IVM Top Remediations to ServiceNow {{[37c6a450-23c8-4a02-a03a-f86b37b060ff].[time]}}",
+        "name": "Create Solution-Based Tickets with ServiceNow from InsightVM",
         "type": "runnable",
         "version": "",
         "description": "This workflow creates solution-based tickets in ServiceNow for each of the top 25 remediations in InsightVM.  If there is already a ticket open for a given remediation, the workflow updates the existing ticket with a current list of impacted assets.",

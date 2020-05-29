@@ -1,7 +1,7 @@
 extension: workflow
 products: ["insightconnect", "insightvm"]
 name: Get_InsightVM_Host_Info_From_Slack
-title: "Lookup Host in InsightVM from Slack"
+title: "Lookup Host with InsightVM from Slack"
 description: Lookup a host, including IP, MAC, last assessment date, vulnerability statistics, and running services, from a Slack message.
 version: 1.0.1
 vendor: rapid7

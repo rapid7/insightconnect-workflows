@@ -1,7 +1,7 @@
 extension: workflow
 products: ["insightconnect", "insightvm"]
 name: Top_Remediations_For_Asset_In_Teams
-title: "Get InsightVM Top Remediations from Microsoft Teams"
+title: "Lookup Top Remediations with InsightVM from Microsoft Teams"
 description: Lookup and receive the top 10 remediation steps from InsightVM for a given host from a Microsoft Teams message.
 version: 1.0.0
 vendor: rapid7

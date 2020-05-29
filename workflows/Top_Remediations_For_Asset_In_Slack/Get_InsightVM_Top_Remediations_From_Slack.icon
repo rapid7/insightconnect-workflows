@@ -5,7 +5,7 @@
     "exportedAt": "2020-05-15T22:56:25.618328786Z",
     "workflowVersions": [
       {
-        "name": "Get InsightVM Top Remediations from Slack",
+        "name": "Lookup Top Remediations with InsightVM from Slack",
         "type": "runnable",
         "version": "",
         "description": "Lookup the top 10 remediation steps from InsightVM for a given host, asset group, site, or tag from a Slack message.\n\nThe workflow returns the top 10 remediation steps for the specified entity in a Slack thread. Make it easy to identify top risk-reducing remediations and share with your team in Slack!\n\n@ your InsightConnect Slack chat bot or send a direct message to trigger the workflow using the command top-remediations asset/group/site/tag target_name\n\nFor example:\n@Rapid7 InsightConnect top-remediations asset hostname123\n@Rapid7 InsightConnect top-remediations group Windows Servers\n@Rapid7 InsightConnect top-remediations site DMZ\n@Rapid7 InsightConnect top-remediations tag John",

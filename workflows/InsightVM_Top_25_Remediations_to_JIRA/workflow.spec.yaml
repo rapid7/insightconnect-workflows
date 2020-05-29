@@ -1,7 +1,7 @@
 extension: workflow
 products: ["insightconnect", "insightvm"]
 name: InsightVM_Top_25_Remediations_to_JIRA 
-title: "InsightVM Top 25 Remediations to JIRA"
+title: "Create Solution-Based Tickets with Jira from InsightVM"
 description: Create and update Jira issues based on top risk-reducing remediation steps from InsightVM.
 version: 1.0.2
 vendor: rapid7
