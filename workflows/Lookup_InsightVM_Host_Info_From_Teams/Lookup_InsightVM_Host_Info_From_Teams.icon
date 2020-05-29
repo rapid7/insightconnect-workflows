@@ -250,7 +250,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "# Trigger\n_{{[8b5f067d-03aa-4d9e-a06b-5ad7dda77b99].[message].[user]}}_ started Get InsightVM Host Info workflow with the search term _{{[61855db7-9d9e-46ab-8176-6e18cd3d8299].[argument]}}_ in the _{{[8b5f067d-03aa-4d9e-a06b-5ad7dda77b99].[message].[channel]}}_ channel at _{{[8b5f067d-03aa-4d9e-a06b-5ad7dda77b99].[timestamp]}}_.\n\n# Search Results\n_{{[61855db7-9d9e-46ab-8176-6e18cd3d8299].[argument]}}_ yielded the following search results in InsightVM:\n{{# each [d79b7dd3-bc74-4649-8e24-67680740b43e].[assets]}}\n{{this.[hostName]}}\n{{/each}}\n\n# Outcome\nPosted asset details to the _{{[8b5f067d-03aa-4d9e-a06b-5ad7dda77b99].[message].[channel]}}_ channel in Slack."
+                "content": "# Trigger\n_{{[8b5f067d-03aa-4d9e-a06b-5ad7dda77b99].[message].[user]}}_ started Get InsightVM Host Info workflow with the search term _{{[61855db7-9d9e-46ab-8176-6e18cd3d8299].[argument]}}_ in the _{{[8b5f067d-03aa-4d9e-a06b-5ad7dda77b99].[message].[channel]}}_ channel at _{{[8b5f067d-03aa-4d9e-a06b-5ad7dda77b99].[timestamp]}}_.\n\n# Search Results\n_{{[61855db7-9d9e-46ab-8176-6e18cd3d8299].[argument]}}_ yielded the following search results in InsightVM:\n{{# each [d79b7dd3-bc74-4649-8e24-67680740b43e].[assets]}}\n{{this.[hostName]}}\n{{/each}}\n\n# Outcome\nPosted asset details to the _{{[8b5f067d-03aa-4d9e-a06b-5ad7dda77b99].[message].[channel]}}_ channel in Microsoft Teams."
               },
               "type": "markdown"
             },
