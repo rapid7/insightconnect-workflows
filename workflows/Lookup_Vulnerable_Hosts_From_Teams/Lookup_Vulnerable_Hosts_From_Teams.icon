@@ -1826,7 +1826,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "input": "{\"team\": \"Dream Team\",\"channel\":\"change_me\",\"max hosts\":100}"
+                "input": "{\"team\": \"change_me\",\"channel\":\"change_me\",\"max hosts\":100}"
               }
             },
             "defaultInputJSONSchema": {
