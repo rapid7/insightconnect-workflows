@@ -25,5 +25,7 @@ resources:
       title: Successful Unblock Host Request
     - name: slack2.png
       title: Successful Block Host Request
+    - name: job1.png
+      title: Successful Job Run
     - name: workflow1.png
       title: Workflow
