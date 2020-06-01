@@ -1230,7 +1230,7 @@
             "parameters": {
               "input": {
                 "channel_name": "change_me",
-                "message_content": "✅{{[b3aeb54a-4919-48dd-907b-a97947f0fa4c].[content]}} ✅",
+                "message_content": "✅ {{[b3aeb54a-4919-48dd-907b-a97947f0fa4c].[content]}} ✅",
                 "team_name": "change_me"
               }
             },
