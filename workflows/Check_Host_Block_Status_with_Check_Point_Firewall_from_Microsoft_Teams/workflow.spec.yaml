@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Check_Host_Block_Status_with_Check_Point_Firewall_from_Microsoft_Teams
 title: "Check Host Block Status with Check Point Firewall from Microsoft Teams"
 description: Check if an IP address is blocked in Check Point firewall from Microsoft Teams.
-version: 1.0.0
+version: 1.1.0
 vendor: rapid7
 support: rapid7
 status: []
