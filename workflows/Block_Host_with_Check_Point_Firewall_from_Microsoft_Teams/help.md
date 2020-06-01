@@ -40,7 +40,7 @@ By default this workflow will automatically skip blocking private IP addresses. 
 
 *This workflow will only trigger in the channel specified in the Microsoft Teams workflow steps.*
 
-To run the workflow, send a message to the specified Microsoft Teams channel starting with the command `!block-host` or `unblock-host`.
+To run the workflow, send a message to the specified Microsoft Teams channel starting with the command `!block-host` or `!unblock-host`.
 
 Your chat bot will reply when the workflow completes.
 
