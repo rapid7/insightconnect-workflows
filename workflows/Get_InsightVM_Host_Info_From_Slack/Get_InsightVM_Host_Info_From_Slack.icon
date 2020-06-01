@@ -5,7 +5,7 @@
     "exportedAt": "2020-05-19T16:26:12.350284104Z",
     "workflowVersions": [
       {
-        "name": "Lookup Host in InsightVM from Slack",
+        "name": "Lookup Host with InsightVM from Slack",
         "type": "runnable",
         "version": "",
         "description": "This workflow accepts a Slack command containing a hostname or IP address and returns asset details from InsightVM.\n\nSample Slack Trigger Commands: \nlookup-host workstation123\nlookup-host 192.168.1.2",

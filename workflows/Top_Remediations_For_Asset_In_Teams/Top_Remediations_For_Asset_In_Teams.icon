@@ -5,7 +5,7 @@
     "exportedAt": "2020-05-27T18:43:45.241470758Z",
     "workflowVersions": [
       {
-        "name": "Top Remediations for Asset in Teams",
+        "name": "Lookup Top Remediations with InsightVM from Microsoft Teams",
         "type": "runnable",
         "version": "",
         "description": "This workflow accepts a Teams command containing a hostname and returns the Top 10 Remediations for that asset from InsightVM.\n\nSample Slack Trigger Command:\n!top-remediations hostname123",
