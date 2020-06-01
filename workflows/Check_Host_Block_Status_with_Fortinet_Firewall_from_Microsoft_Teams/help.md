@@ -5,6 +5,7 @@ This workflow accepts a Microsoft Teams command containing an IP address. This I
 Sample Microsoft Teams Trigger Commands:
 
 `!block-status 198.51.100.100`
+`!block-status example.com`
 
 # Key Features
 
@@ -43,7 +44,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
-* 1.1.0 - Update Fortinet Fortigate to latest version
+* 1.1.0 - Update Fortinet FortiGate to latest version
 * 1.0.0 - Initial workflow
 
 # Links
