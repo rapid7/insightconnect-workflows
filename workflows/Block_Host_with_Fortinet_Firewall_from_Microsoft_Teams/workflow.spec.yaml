@@ -2,7 +2,7 @@ extension: workflow
 products: ["insightconnect"]
 name: Block_Host_with_Fortinet_Firewall_from_Microsoft_Teams
 title: "Block Host with Fortinet Firewall from Microsoft Teams"
-description: This workflow blocks or unblocks a host with Fortinet Firewall via Microsoft Teams command and reports information back to Microsoft Teams.
+description: Block or unblock a host with Fortinet FortiGate firewall via Microsoft Teams command and report information back to Microsoft Teams.
 version: 1.0.0
 vendor: rapid7
 support: rapid7
