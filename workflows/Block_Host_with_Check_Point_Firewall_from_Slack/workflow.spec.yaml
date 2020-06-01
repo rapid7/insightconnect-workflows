@@ -1,6 +1,6 @@
 extension: workflow
 products: ["insightconnect"]
-name: Block_Host_With_Check_Point_Firewall_from_Slack
+name: Block_Host_with_Check_Point_Firewall_from_Slack
 title: Block Host with Check Point Firewall from Slack
 description: Block or unblock a host with Check Point firewall via Slack command and report information back to Slack.
 version: 1.0.0
