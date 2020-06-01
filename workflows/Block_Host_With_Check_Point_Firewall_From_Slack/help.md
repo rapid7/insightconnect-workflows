@@ -8,9 +8,9 @@ Sample Slack Trigger Commands:
 `@Rapid7 InsightConnect block-host 198.51.100.100/32`
 `@Rapid7 InsightConnect block-host 198.51.100.0/24`
 
-`!unblock-host 198.51.100.100`
-`!unblock-host 198.51.100.100/32`
-`!unblock-host 198.51.100.0/24`
+`@Rapid7 InsightConnect unblock-host 198.51.100.100`
+`@Rapid7 InsightConnect unblock-host 198.51.100.100/32`
+`@Rapid7 InsightConnect unblock-host 198.51.100.0/24`
 
 # Key Features
 
