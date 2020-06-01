@@ -215,8 +215,8 @@
               "name": "Check Point NGFW",
               "slugVendor": "rapid7",
               "slugName": "checkpoint_ngfw",
-              "slugVersion": "2.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/checkpoint_ngfw/2.0.0/icon.png"
+              "slugVersion": "2.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/checkpoint_ngfw/2.0.1/icon.png"
             },
             "identifier": "check_if_address_in_group",
             "continueOnFailure": false,
