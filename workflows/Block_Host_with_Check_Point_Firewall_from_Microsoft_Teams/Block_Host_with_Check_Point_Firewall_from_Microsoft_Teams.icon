@@ -8,7 +8,7 @@
         "name": "Block Host with Check Point Firewall from Microsoft Teams",
         "type": "runnable",
         "version": "",
-        "description": "",
+        "description": "Block or unblock a host with Check Point firewall via Microsoft Teams command and report information back to Microsoft Teams.",
         "graph": {
           "edges": {
             "17d352ea-d1dd-407c-9fec-489d886f2ce0": {
