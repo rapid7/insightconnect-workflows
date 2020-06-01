@@ -50,7 +50,6 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|HTML|1.2.1|1|
 |Check Point NGFW|2.0.1|3|
 
 ## Troubleshooting
