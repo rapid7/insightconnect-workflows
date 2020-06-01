@@ -1,0 +1,24 @@
+extension: workflow
+products: ["insightconnect"]
+name: Block_Host_with_Check_Point_Firewall_from_Microsoft_Teams
+title: "Block Host with Check Point Firewall from Microsoft Teams"
+description: Block or unblock a host with Check Point firewall via Microsoft Teams command and report information back to Microsoft Teams.
+version: 1.0.0
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [threat_detection_and_response]
+  keywords: [chat, chatops, microsoft_teams, firewall, work_from_home]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Block_Host_with_Check_Point_Firewall_from_Microsoft_Teams
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+  - name: teams1.png
+    title: Successful Unblock Host Request
+  - name: teams2.png
+    title: Successful Block Host Request
+  - name: workflow1.png
+    title: Workflow
+
