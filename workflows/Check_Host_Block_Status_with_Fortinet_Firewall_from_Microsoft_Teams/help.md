@@ -5,6 +5,7 @@ This workflow accepts a Microsoft Teams command containing an IP address. This I
 Sample Microsoft Teams Trigger Commands:
 
 `!block-status 198.51.100.100`
+`!block-status example.com`
 
 # Key Features
 

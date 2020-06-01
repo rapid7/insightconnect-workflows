@@ -5,16 +5,17 @@ This workflow accepts a Slack command containing an IP address. This IP address 
 Sample Slack Trigger Commands:
 
 `@Rapid7 InsightConnect block-status 198.51.100.100`
+`@Rapid7 InsightConnect block-status example.com`
 
 # Key Features
 
-* The ablity to see if an IP is curently blocked by the firewall
+* The ability to see if an IP is currently blocked by the firewall
 
 
 # Requirements
 
 * Slack connection
-* An admin API key to a Fortigate firewall
+* Admin API key to a Fortinet FortiGate firewall
 
 # Documentation
 
