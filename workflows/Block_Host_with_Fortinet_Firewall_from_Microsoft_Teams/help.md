@@ -6,7 +6,7 @@ Sample Microsoft Teams Trigger Commands:
 
 `!block-host 198.51.100.100/32`
 `!block-host 198.51.100.0/24`
-`!block-host example.co `
+`!block-host example.com`
 
 `!unblock-host 198.51.100.100/32`
 `!unblock-host 198.51.100.0/24`
