@@ -28,4 +28,6 @@ resources:
     - name: job1.png
       title: Successful Job Run
     - name: workflow1.png
-      title: Workflow
+      title: Workflow Part 1
+    - name: workflow2.png
+      title: Workflow Part 2
