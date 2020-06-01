@@ -2,7 +2,7 @@
   "kom": {
     "komandVersion": "1.51.2-0-gfd7dc",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-06-01T17:05:52.34941775Z",
+    "exportedAt": "2020-06-01T19:22:05.87165411Z",
     "workflowVersions": [
       {
         "name": "Block Host with Check Point Firewall from Microsoft Teams",
@@ -2762,7 +2762,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "The Host {{[a633dcc7-9450-4068-a9de-353cedd25976].[text]}} was not added to the address group {{[19163cd1-69cf-487c-812a-d1aa6f1badd4].[result_object].[mkey]}}"
+                "content": "The Host {{[a633dcc7-9450-4068-a9de-353cedd25976].[text]}} was not blocked!"
               },
               "type": "markdown"
             },
@@ -3158,7 +3158,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "The host {{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}} was added to the address group {{[19163cd1-69cf-487c-812a-d1aa6f1badd4].[result_object].[mkey]}}"
+                "content": "The host {{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}} was blocked!"
               },
               "type": "markdown"
             },
