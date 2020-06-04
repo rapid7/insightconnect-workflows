@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Enrich_File_Hash_with_Microsoft_Teams
 title: "Enrich File Hash with VirusTotal from Microsoft Teams"
 description: Lookup a potentially malicious file hash in VirusTotal with a Microsoft Teams command.
-version: 1.0.2
+version: 1.0.3
 vendor: rapid7
 support: rapid7
 status: []

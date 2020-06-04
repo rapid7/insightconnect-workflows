@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Enrich_URL_with_urlscanio_from_Microsoft_Teams
 title: "Enrich URL with urlscan.io from Microsoft Teams"
 description: Retrieve the full URLScan.io report of a URL using a command issued from Microsoft Teams.
-version: 1.0.0
+version: 1.0.1
 vendor: rapid7
 support: rapid7
 status: []
