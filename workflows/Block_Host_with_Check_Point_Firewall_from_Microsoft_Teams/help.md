@@ -52,7 +52,7 @@ Plugins utilized by workflow:
 |----|----|--------|
 |HTML|1.2.1|1|
 |Check Point NGFW|2.0.1|3|
-|Microsoft Teams|2.0.3|11|
+|Microsoft Teams|2.0.4|11|
 
 ## Troubleshooting
 
@@ -60,6 +60,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.1 - Update to make Microsoft Teams plugin the latest version
 * 1.0.0 - Initial workflow
 
 # Links
