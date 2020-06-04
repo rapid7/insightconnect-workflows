@@ -52,9 +52,9 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.2 - Removed unnecessary type conversion step from workflow
 * 1.0.1 - Update to make Microsoft Teams plugin the latest version
 * 1.0.0 - Initial workflow
-
 
 # Links
 
