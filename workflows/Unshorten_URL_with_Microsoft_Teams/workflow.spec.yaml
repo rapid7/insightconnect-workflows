@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Unshorten_URL_with_Microsoft_Teams
 title: "Unshorten URL from Microsoft Teams"
 description:  Unshorten a URL with a message in Microsoft Teams.
-version: 1.0.1
+version: 1.0.2
 vendor: rapid7
 support: rapid7
 status: []
@@ -24,8 +24,8 @@ resources:
   - name: workflow1.png
     title: Workflow View
   - name: teams1.png
-    title: Completed Job In Microsoft Teams with Valid Input
+    title: Completed Job in Microsoft Teams with Valid Input
   - name: teams2.png
-    title: Completed Job In Microsoft Teams with Invalid Input
+    title: Completed Job in Microsoft Teams with Invalid Input
   - name: artifact1.png
     title: Final Report Artifact
