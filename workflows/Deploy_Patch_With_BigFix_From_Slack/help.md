@@ -1,11 +1,11 @@
 # Description
 
-Deploy a patch with BigFix to a target system with a Slack message. This workflow accepts a Patch Title and Target Host, searches BigFix for relevant fixlets, and attempts to deploy those fixlets to the Target Host. If successful, a link to the BigFix action is returned in Slack.
+Deploy a patch with HCL BigFix to a target system with a Slack message. This workflow accepts a Patch Title and Target Host, searches HCL BigFix for relevant fixlets, and attempts to deploy those fixlets to the Target Host. If successful, a link to the HCL BigFix action is returned in Slack.
 
 # Key Features
 
 * Deploy a specific patch to a specific system
-* Receive real-time updates on workflow execution, including links to InsightConnect jobs and BigFix actions
+* Receive real-time updates on workflow execution, including links to InsightConnect jobs and HCL BigFix actions
 * Keep your team in the loop when deploying hotfixes or missing patches with patching commands in Slack channels
 
 # Requirements
@@ -37,7 +37,7 @@ Or in a channel including your Chatbot:
 
 Both the `patch` and `target` parameters must be specified in order to run the workflow successfully. This workflow does not support deploying multiple patches to a single target or a single patch to multiple targets.
 
-The workflow will post status updates throughout execution. When complete, it will post a link to the resulting Action in BigFix.
+The workflow will post status updates throughout execution. When complete, it will post a link to the resulting Action in HCL BigFix.
 
 ## Technical Details
 
@@ -45,7 +45,7 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|IBM BigFix|6.0.0|2|
+|IBM HCL BigFix|6.0.0|2|
 
 ## Troubleshooting
 
@@ -53,11 +53,12 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.1 - Revised branding to "HCL BigFix"
 * 1.0.0 - Initial workflow
 
 # Links
 
 ## References
 
-* [BigFix](https://bigfix.com)
+* [HCL BigFix](https://bigfix.com)
 * [Slack](https://slack.com)
