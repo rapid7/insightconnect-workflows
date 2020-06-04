@@ -44,7 +44,7 @@ Plugins utilized by workflow:
 |Rapid7 InsightVM|4.0.0|2|
 |Microsoft Teams|2.0.4|5|
 |HTML|1.2.1|1|
-|Type Converter|1.5.1|3|
+|Type Converter|1.5.1|2|
 
 ## Troubleshooting
 
