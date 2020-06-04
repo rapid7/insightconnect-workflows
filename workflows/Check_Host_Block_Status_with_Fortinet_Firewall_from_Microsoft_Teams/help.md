@@ -36,7 +36,7 @@ Plugins utilized by workflow:
 |----|----|--------|
 |Fortinet FortiGate|4.0.0|1|
 |HTML|1.2.1|1|
-|Microsoft Teams|2.0.3|3|
+|Microsoft Teams|2.0.4|3|
 
 ## Troubleshooting
 
@@ -44,6 +44,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.1.1 - Update to make Microsoft Teams plugin the latest version
 * 1.1.0 - Update Fortinet FortiGate to latest version
 * 1.0.0 - Initial workflow
 

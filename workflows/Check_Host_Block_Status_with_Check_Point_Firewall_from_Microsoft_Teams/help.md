@@ -33,9 +33,9 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Check Point NGFW|2.0.0|1|
+|Check Point NGFW|2.0.1|1|
 |HTML|1.2.1|1|
-|Microsoft Teams|2.0.2|3|
+|Microsoft Teams|2.0.4|3|
 
 ## Troubleshooting
 
@@ -43,6 +43,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.1.1 - Update to make the Microsoft Teams plugin the latest version
 * 1.1.0 - Update to make the Check Point NGFW plugin the latest version
 * 1.0.0 - Initial workflow
 
