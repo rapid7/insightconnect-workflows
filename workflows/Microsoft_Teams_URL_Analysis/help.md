@@ -51,7 +51,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
-* 1.0.4 - Update to make Microsoft Teams plugin the latest versio
+* 1.0.4 - Update to make Microsoft Teams plugin the latest version
 * 1.0.3 - Fix workflow syntax
 * 1.0.2 - Updated trigger syntax and documentation
 * 1.0.1 - Update workflow title to enrichment
