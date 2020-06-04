@@ -46,10 +46,10 @@ Plugins utilized by workflow:
 |Plugin|Version|Count|
 |----|----|--------|
 |ExtractIt|2.0.0|1|
-|Microsoft Teams|2.0.2|5|
+|Microsoft Teams|2.0.4|5|
 |Python 3 Script|2.0.1|1|
 |Sleep|1.0.2|1|
-|URLScan|2.1.4|2|
+|urlscan.io|2.1.4|2|
 
 ## Troubleshooting
 
@@ -57,6 +57,7 @@ If a URL is submitted but no report is generated, urlscan.io may have blackliste
 
 # Version History
 
+* 1.0.1 - Update to make Microsoft Teams plugin the latest version
 * 1.0.0 - Initial workflow
 
 # Links
