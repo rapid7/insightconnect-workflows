@@ -20,4 +20,4 @@ resources:
   - name: job.png
     title: Successful Workflow Job
   - name: execution.png
-    title: Completed Job In Microsoft Teams, Multiple Results
+    title: Completed Job in Microsoft Teams, Multiple Results

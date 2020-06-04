@@ -3,7 +3,7 @@ products: ["insightconnect", "insightvm"]
 name: Lookup_Vulnerable_Hosts_From_Teams
 title: "Lookup Vulnerable Hosts from Microsoft Teams"
 description: Lookup vulnerability details and identify affected hosts with a Microsoft Teams message message trigger.
-version: 1.0.0
+version: 1.0.1
 vendor: rapid7
 support: rapid7
 status: []
