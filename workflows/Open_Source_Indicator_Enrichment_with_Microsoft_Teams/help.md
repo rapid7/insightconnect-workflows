@@ -56,7 +56,7 @@ Plugins utilized by workflow:
 |----|----|--------|
 |Dig|1.0.3|1|
 |Team Cymru MHR|1.0.3|1|
-|Microsoft Teams|2.0.2|6|
+|Microsoft Teams|2.0.4|7|
 |WHOIS|1.0.7|2|
 
 ## Troubleshooting
@@ -65,6 +65,7 @@ In some instances using copy & paste for `!enrich-indicator` commands may introd
 
 # Version History
 
+* 1.0.2 - Update to make Microsoft Teams plugin the latest version
 * 1.0.1 - Updated trigger syntax and documentation
 * 1.0.0 - Initial workflow
 

@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Microsoft_Teams_URL_Analysis
 title: "Enrich URLs and Domains with VirusTotal from Microsoft Teams"
 description: Enrich potential indicators of compromise by getting VirusTotal reports for URLs and domains with a Microsoft Teams command.
-version: 1.0.3
+version: 1.0.4
 vendor: rapid7
 support: rapid7
 status: []

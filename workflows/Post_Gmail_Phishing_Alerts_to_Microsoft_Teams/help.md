@@ -29,7 +29,7 @@ Plugins utilized by workflow:
 |----|----|--------|
 |ExtractIt|2.0.0|4|
 |HashIt|2.0.3|2|
-|Microsoft Teams|2.0.2|2|
+|Microsoft Teams|2.0.4|2|
 |String Operations|1.2.1|2|
 |Python 3 Script|2.0.1|1|
 |Gmail|5.1.4|1|
@@ -40,6 +40,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.1 - Update to make Microsoft Teams plugin the latest version
 * 1.0.0 - Initial workflow
 
 # Links

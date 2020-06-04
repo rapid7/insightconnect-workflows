@@ -31,7 +31,7 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Microsoft Teams|2.0.2|5|
+|Microsoft Teams|2.0.4|5|
 |String Operations|1.2.1|2|
 |Azure AD Admin|2.2.0|1|
 |HTML|1.2.1|1|
@@ -43,6 +43,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.2 - Update to make Microsoft Teams plugin the latest version
 * 1.0.1 - Update to correct `source_url` reference in spec
 * 1.0.0 - Initial workflow
 
