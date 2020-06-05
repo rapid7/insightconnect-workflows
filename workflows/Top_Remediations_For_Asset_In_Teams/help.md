@@ -44,7 +44,7 @@ Plugins utilized by workflow:
 |Rapid7 InsightVM|4.0.0|2|
 |Microsoft Teams|2.0.4|5|
 |HTML|1.2.1|1|
-|Type Converter|1.5.1|3|
+|Type Converter|1.5.1|2|
 
 ## Troubleshooting
 
@@ -52,9 +52,9 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.2 - Removed unnecessary type conversion step from workflow
 * 1.0.1 - Update to make Microsoft Teams plugin the latest version
 * 1.0.0 - Initial workflow
-
 
 # Links
 
