@@ -5,11 +5,15 @@ This workflow blocks or unblocks a host with Check Point Firewall via Microsoft 
 Sample Microsoft Teams Trigger Commands:
 
 `!block-host 198.51.100.100`
+
 `!block-host 198.51.100.100/32`
+
 `!block-host 198.51.100.0/24`
 
 `!unblock-host 198.51.100.100`
+
 `!unblock-host 198.51.100.100/32`
+
 `!unblock-host 198.51.100.0/24`
 
 # Key Features
@@ -60,6 +64,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.2 - Help amendments
 * 1.0.1 - Update to make Microsoft Teams plugin the latest version
 * 1.0.0 - Initial workflow
 
