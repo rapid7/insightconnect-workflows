@@ -5,11 +5,15 @@ This workflow blocks or unblocks a host with Check Point Firewall via Slack comm
 Sample Slack Trigger Commands:
 
 `@Rapid7 InsightConnect block-host 198.51.100.100`
+
 `@Rapid7 InsightConnect block-host 198.51.100.100/32`
+
 `@Rapid7 InsightConnect block-host 198.51.100.0/24`
 
 `@Rapid7 InsightConnect unblock-host 198.51.100.100`
+
 `@Rapid7 InsightConnect unblock-host 198.51.100.100/32`
+
 `@Rapid7 InsightConnect unblock-host 198.51.100.0/24`
 
 # Key Features
@@ -58,6 +62,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.1 - Help amendments
 * 1.0.0 - Initial workflow
 
 # Links
