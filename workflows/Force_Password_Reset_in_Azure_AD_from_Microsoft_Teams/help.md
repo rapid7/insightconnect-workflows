@@ -42,7 +42,7 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Microsoft Teams|2.0.2|2|
+|Microsoft Teams|2.0.4|2|
 |ExtractIt|2.0.0|1|
 |Azure AD Admin|2.1.1|1|
 
@@ -52,6 +52,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.5 - Update to make Microsoft Teams plugin the latest version
 * 1.0.4 - Update to newest plugin versions | Update to message formatting
 * 1.0.3 - Update to fix trigger syntax and documentation
 * 1.0.2 - Update missing log entry

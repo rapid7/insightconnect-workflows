@@ -1,0 +1,31 @@
+extension: workflow
+products: ["insightconnect"]
+name: Block_Host_with_Fortinet_Firewall_from_Microsoft_Teams
+title: "Block Host with Fortinet Firewall from Microsoft Teams"
+description: Block or unblock a host with Fortinet FortiGate firewall via Microsoft Teams command and report information back to Microsoft Teams.
+version: 1.0.2
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [threat_detection_and_response]
+  keywords: [chat, chatops, microsoft_teams, firewall, work_from_home]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Block_Host_with_Fortinet_Firewall_from_Microsoft_Teams
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+  - name: artifact1.png
+    title: Host Found in Whitelist Artifact
+  - name: artifact2.png
+    title: Successfully Blocked Host Artifact
+  - name: artifact3.png
+    title: Failed to Block Host Artifact
+  - name: workflow1.png
+    title: Workflow View
+  - name: teams_message1.png
+    title: Host Found in Whitelist Message
+  - name: teams_message2.png
+    title: Successfully Blocked Host Message
+  - name: teams_message3.png
+    title: Failed to Block Host Message

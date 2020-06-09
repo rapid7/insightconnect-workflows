@@ -5,7 +5,7 @@
     "exportedAt": "2020-05-29T16:51:59.563922173Z",
     "workflowVersions": [
       {
-        "name": "InsightVM Top 25 Remediations to JIRA",
+        "name": "Create Solution-Based Tickets with Jira from InsightVM",
         "type": "runnable",
         "version": "",
         "description": "This workflow:\n-Identifies the current top remediations from InsightVM\n-Determines if issues have been created in JIRA for the identified remediations\n-Creates or updates issues for the identified remediations as appropriate",

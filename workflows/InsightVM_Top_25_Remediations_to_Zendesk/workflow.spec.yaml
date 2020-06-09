@@ -1,7 +1,7 @@
 extension: workflow
 products: ["insightconnect", "insightvm"]
 name: InsightVM_Top_25_Remediations_to_Zendesk
-title: "IVM Top Remediations to Zendesk"
+title: "Create Solution-Based Tickets with Zendesk from InsightVM"
 description: "This workflow creates solution-based tickets in Zendesk for each of the top 25 remediations in InsightVM.  If there is already a ticket open for a given remediation, the workflow updates the existing ticket with a current list of impacted assets."
 version: 1.0.1
 vendor: rapid7

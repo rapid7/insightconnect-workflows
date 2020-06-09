@@ -146,15 +146,16 @@
               "name": "Fortinet FortiGate",
               "slugVendor": "rapid7",
               "slugName": "fortinet_fortigate",
-              "slugVersion": "1.1.0",
+              "slugVersion": "4.0.0",
               "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/fortinet_fortigate/1.1.0/icon.png"
             },
-            "identifier": "check_if_ip_is_in_address_groups",
+            "identifier": "check_if_address_in_group",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "input": {
-                "address_group_name": "change_me",
+                "enable_search": true,
+                "group": "change_me",
                 "ip_address": "{{[58ef804c-7f4b-4787-be69-39eed3e92016].[ip]}}"
               }
             },

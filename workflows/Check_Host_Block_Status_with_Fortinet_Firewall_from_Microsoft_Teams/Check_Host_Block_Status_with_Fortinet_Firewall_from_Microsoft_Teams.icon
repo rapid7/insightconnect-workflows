@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.49.5-0-g5c0c6",
+    "komandVersion": "1.51.2-0-gfd7dc",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-05-07T17:56:39.68091076Z",
+    "exportedAt": "2020-05-29T19:26:43.658792695Z",
     "workflowVersions": [
       {
         "name": "Check Host Block Status with Fortinet Firewall from Microsoft Teams",
@@ -215,51 +215,70 @@
               "name": "Fortinet FortiGate",
               "slugVendor": "rapid7",
               "slugName": "fortinet_fortigate",
-              "slugVersion": "1.1.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/fortinet_fortigate/1.1.0/icon.png"
+              "slugVersion": "4.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/fortinet_fortigate/4.0.0/icon.png"
             },
-            "identifier": "check_if_ip_is_in_address_groups",
+            "identifier": "check_if_address_in_group",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "input": {
-                "address_group_name": "change_me",
-                "ip_address": "{{[67025537-07fb-49c8-95ce-d12c9e8e8842].[ip]}}"
+                "address": "{{[67025537-07fb-49c8-95ce-d12c9e8e8842].[ip]}}",
+                "enable_search": true,
+                "group": "change_me"
               }
             },
             "defaultInputJSONSchema": {
               "properties": {
-                "address_group_name": {
-                  "description": "The name of the address group to check",
-                  "order": 1,
-                  "title": "Address Group Name",
+                "address": {
+                  "description": "The Address Object name to check. If Enable Search is set to true then we search the addresses (IP, CIDR, domain) within the address object instead of matching the name",
+                  "order": 2,
+                  "title": "Address",
                   "type": "string"
                 },
-                "ip_address": {
-                  "description": "The IP address to check for",
-                  "order": 2,
-                  "title": "IP Address",
+                "enable_search": {
+                  "default": false,
+                  "description": "When enabled, the Address input will accept a IP, CIDR, or domain name to search across the available Address Objects in the system. This is useful when you don't know the Address Object by its name",
+                  "order": 3,
+                  "title": "Enable Search",
+                  "type": "boolean"
+                },
+                "group": {
+                  "description": "Name of Address Group to check for address",
+                  "order": 1,
+                  "title": "Group",
                   "type": "string"
                 }
               },
               "required": [
-                "address_group_name",
-                "ip_address"
+                "group",
+                "address",
+                "enable_search"
               ],
               "title": "Variables",
               "type": "object"
             },
             "defaultOutputJSONSchema": {
               "properties": {
-                "ip_address_found": {
-                  "description": "True if the IP address was found in the address group",
+                "address_objects": {
+                  "description": "The names of the address objects that match or contain the address",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "Address Objects",
+                  "type": "array"
+                },
+                "found": {
+                  "description": "Was address found in group",
                   "order": 1,
-                  "title": "IP Address Found",
+                  "title": "Found",
                   "type": "boolean"
                 }
               },
               "required": [
-                "ip_address_found"
+                "found",
+                "address_objects"
               ],
               "title": "Variables",
               "type": "object"
@@ -276,8 +295,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.0.2",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.2/icon.png"
+              "slugVersion": "2.0.4",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
@@ -533,8 +552,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.0.2",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.2/icon.png"
+              "slugVersion": "2.0.4",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
@@ -703,8 +722,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.0.2",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.2/icon.png"
+              "slugVersion": "2.0.4",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
             },
             "identifier": "new_message_received",
             "continueOnFailure": false,
@@ -716,7 +735,7 @@
                 "team_name": "change_me"
               }
             },
-            "triggerId": "e098efa6-44e7-4c2a-90fd-df3c1fb41d46",
+            "triggerId": "78725f9d-8927-47e7-8599-c1ba9ce8e1c9",
             "defaultInputJSONSchema": {
               "properties": {
                 "channel_name": {
@@ -873,7 +892,7 @@
     ],
     "triggers": [
       {
-        "id": "e098efa6-44e7-4c2a-90fd-df3c1fb41d46",
+        "id": "78725f9d-8927-47e7-8599-c1ba9ce8e1c9",
         "identifier": "new_message_received",
         "name": "Check for IP Message",
         "description": "",
@@ -1032,8 +1051,8 @@
           "name": "Microsoft Teams",
           "slugVendor": "rapid7",
           "slugName": "microsoft_teams",
-          "slugVersion": "2.0.2",
-          "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.2/icon.png"
+          "slugVersion": "2.0.4",
+          "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
         }
       }
     ]

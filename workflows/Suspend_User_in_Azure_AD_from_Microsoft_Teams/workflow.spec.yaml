@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Suspend_User_in_Azure_AD_from_Microsoft_Teams
 title: "Disable User in Azure AD from Microsoft Teams"
 description: "Disable user accounts in Azure AD from Microsoft Teams."
-version: 1.0.3
+version: 1.0.4
 vendor: rapid7
 support: rapid7
 status: []

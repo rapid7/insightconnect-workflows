@@ -52,7 +52,7 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Microsoft Teams|2.0.1|5|
+|Microsoft Teams|2.0.4|5|
 |Microsoft Office 365 Email Security|2.2.1|1|
 |HTML|1.2.1|1|
 |String Operations|1.2.1|1|
@@ -63,6 +63,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.4 - Update Microsoft Teams plugin to the latest version
 * 1.0.3 - Set "change_me" items in workflow input
 * 1.0.2 - Updated trigger syntax and documentation
 * 1.0.1 - Updated documentation

@@ -1,11 +1,11 @@
 {
   "kom": {
-    "komandVersion": "1.51.0-0-ge64bd",
+    "komandVersion": "1.52.0-0-gfd7dc",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-05-27T18:43:45.241470758Z",
+    "exportedAt": "2020-06-04T23:45:41.370250548Z",
     "workflowVersions": [
       {
-        "name": "Top Remediations for Asset in Teams",
+        "name": "Lookup Top Remediations with InsightVM from Microsoft Teams",
         "type": "runnable",
         "version": "",
         "description": "This workflow accepts a Teams command containing a hostname and returns the Top 10 Remediations for that asset from InsightVM.\n\nSample Slack Trigger Command:\n!top-remediations hostname123",
@@ -113,7 +113,7 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "7fbd956f-e239-40fd-801e-4b4411dfe334",
-              "toNodeId": "7b076a6e-1ea1-4102-b4b9-438b6a754319"
+              "toNodeId": "368f0859-fe8b-462c-8d3a-42de7cf407e3"
             },
             "c161225d-f3b8-4dac-bb21-bc1463a25d28": {
               "id": "c161225d-f3b8-4dac-bb21-bc1463a25d28",
@@ -130,14 +130,6 @@
               "parentNodeId": "",
               "fromNodeId": "9be599b4-67eb-4a04-b12d-008cf153e310",
               "toNodeId": "e5cc9186-ca78-45ba-af5f-be183915d218"
-            },
-            "e5407a3b-95be-4390-971c-f29f29277e24": {
-              "id": "e5407a3b-95be-4390-971c-f29f29277e24",
-              "name": "",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "7b076a6e-1ea1-4102-b4b9-438b6a754319",
-              "toNodeId": "368f0859-fe8b-462c-8d3a-42de7cf407e3"
             },
             "e73de023-a305-44e3-8940-53858aaf681a": {
               "id": "e73de023-a305-44e3-8940-53858aaf681a",
@@ -171,10 +163,6 @@
             },
             "5c6d3567-4385-4be8-b143-f66de30ba196": {
               "id": "5c6d3567-4385-4be8-b143-f66de30ba196",
-              "parentNodeId": ""
-            },
-            "7b076a6e-1ea1-4102-b4b9-438b6a754319": {
-              "id": "7b076a6e-1ea1-4102-b4b9-438b6a754319",
               "parentNodeId": ""
             },
             "7b963048-cbe6-4368-b518-cdb5d810570b": {
@@ -297,8 +285,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.0.3",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.3/icon.png"
+              "slugVersion": "2.0.4",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
             },
             "identifier": "send_message",
             "continueOnFailure": false,
@@ -306,7 +294,7 @@
             "parameters": {
               "input": {
                 "channel_name": "{{[9be599b4-67eb-4a04-b12d-008cf153e310].[output].[channel]}}",
-                "message": "No asset with hostname containing `{{[7b076a6e-1ea1-4102-b4b9-438b6a754319].[output]}}` was found.\nhttps://media.giphy.com/media/xTiTnm8AGoS75Cvyko/giphy.gif",
+                "message": "No asset with hostname containing `{{[7fbd956f-e239-40fd-801e-4b4411dfe334].[argument]}}` was found.\nhttps://media.giphy.com/media/xTiTnm8AGoS75Cvyko/giphy.gif",
                 "team_name": "{{[9be599b4-67eb-4a04-b12d-008cf153e310].[output].[team]}}"
               }
             },
@@ -497,8 +485,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.0.3",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.3/icon.png"
+              "slugVersion": "2.0.4",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
             },
             "identifier": "send_message",
             "continueOnFailure": false,
@@ -506,7 +494,7 @@
             "parameters": {
               "input": {
                 "channel_name": "{{[9be599b4-67eb-4a04-b12d-008cf153e310].[output].[channel]}}",
-                "message": "Searching for {{[7b076a6e-1ea1-4102-b4b9-438b6a754319].[output]}}...",
+                "message": "Searching for {{[7fbd956f-e239-40fd-801e-4b4411dfe334].[argument]}}...",
                 "team_name": "{{[9be599b4-67eb-4a04-b12d-008cf153e310].[output].[team]}}"
               }
             },
@@ -698,69 +686,6 @@
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/loop.svg",
             "connectionType": "NONE"
           },
-          "7b076a6e-1ea1-4102-b4b9-438b6a754319": {
-            "nodeId": "7b076a6e-1ea1-4102-b4b9-438b6a754319",
-            "name": "Convert Argument to String",
-            "type": "action",
-            "plugin": {
-              "name": "Type Converter",
-              "slugVendor": "rapid7",
-              "slugName": "type_converter",
-              "slugVersion": "1.5.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/type_converter/1.5.1/icon.png"
-            },
-            "identifier": "array_to_string",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "delimiter": "",
-                "input": "{{[7fbd956f-e239-40fd-801e-4b4411dfe334].[argument]}}"
-              }
-            },
-            "defaultInputJSONSchema": {
-              "properties": {
-                "delimiter": {
-                  "description": "Characters used to join an array to a string. Default is a space, if not provided by user",
-                  "order": 2,
-                  "title": "Delimiter",
-                  "type": "string"
-                },
-                "input": {
-                  "description": "Array to convert",
-                  "items": {
-                    "type": "string"
-                  },
-                  "order": 1,
-                  "title": "Input",
-                  "type": "array"
-                }
-              },
-              "required": [
-                "input"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultOutputJSONSchema": {
-              "properties": {
-                "output": {
-                  "description": "Joined string",
-                  "order": 1,
-                  "title": "Output",
-                  "type": "string"
-                }
-              },
-              "required": [
-                "output"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "outputJSONSchema": null,
-            "defaultImageData": "",
-            "connectionType": "ORCHESTRATOR"
-          },
           "7b963048-cbe6-4368-b518-cdb5d810570b": {
             "nodeId": "7b963048-cbe6-4368-b518-cdb5d810570b",
             "name": "Found Asset Message",
@@ -769,8 +694,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.0.3",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.3/icon.png"
+              "slugVersion": "2.0.4",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
@@ -1047,20 +972,20 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.0.3",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.3/icon.png"
+              "slugVersion": "2.0.4",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
             },
             "identifier": "new_message_received",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "channel",
+                "channel_name": "change_me",
                 "message_content": "!top-remediations\\s+\\S+",
-                "team_name": "team"
+                "team_name": "change_me"
               }
             },
-            "triggerId": "cf3695c6-917a-4434-94ea-ececa94337cd",
+            "triggerId": "d6e660c7-6bbd-430a-8266-d99186c3c3d4",
             "defaultInputJSONSchema": {
               "properties": {
                 "channel_name": {
@@ -1083,8 +1008,8 @@
                 }
               },
               "required": [
-                "team_name",
-                "channel_name"
+                "channel_name",
+                "team_name"
               ],
               "title": "Variables",
               "type": "object"
@@ -1230,7 +1155,7 @@
                     {
                       "field": "host-name",
                       "operator": "contains",
-                      "value": "{{[7b076a6e-1ea1-4102-b4b9-438b6a754319].[output]}}"
+                      "value": "{{[7fbd956f-e239-40fd-801e-4b4411dfe334].[argument]}}"
                     }
                   ],
                   "match": "all"
@@ -2480,8 +2405,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.0.3",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.3/icon.png"
+              "slugVersion": "2.0.4",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
@@ -2650,14 +2575,14 @@
     ],
     "triggers": [
       {
-        "id": "cf3695c6-917a-4434-94ea-ececa94337cd",
+        "id": "d6e660c7-6bbd-430a-8266-d99186c3c3d4",
         "identifier": "new_message_received",
         "name": "!top-remediations Trigger",
         "description": "",
         "input": {
-          "channel_name": "channel",
+          "channel_name": "change_me",
           "message_content": "!top-remediations\\s+\\S+",
-          "team_name": "team"
+          "team_name": "change_me"
         },
         "inputJsonSchema": {
           "properties": {
@@ -2681,8 +2606,8 @@
             }
           },
           "required": [
-            "team_name",
-            "channel_name"
+            "channel_name",
+            "team_name"
           ],
           "title": "Variables",
           "type": "object"
@@ -2809,8 +2734,8 @@
           "name": "Microsoft Teams",
           "slugVendor": "rapid7",
           "slugName": "microsoft_teams",
-          "slugVersion": "2.0.3",
-          "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.3/icon.png"
+          "slugVersion": "2.0.4",
+          "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
         }
       }
     ]
