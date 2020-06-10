@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.47.8-0-gaccae",
+    "komandVersion": "1.51.2-0-gfd7dc",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-03-31T18:30:24.405129655Z",
+    "exportedAt": "2020-05-29T16:51:59.563922173Z",
     "workflowVersions": [
       {
         "name": "Create Solution-Based Tickets with Jira from InsightVM",
@@ -209,7 +209,7 @@
               "description": "",
               "parentNodeId": "20f9c1dc-72f2-4d23-b60d-e260d4930cbf",
               "fromNodeId": "abd1e993-3ba7-420f-a3ea-cfc778145414",
-              "toNodeId": "05c9327f-0888-4e34-8553-2b9a83df24a5"
+              "toNodeId": "708023ac-b42f-457b-925f-4a864fbc8566"
             },
             "e4cd54ff-a1ef-45fa-ab61-4653707eaaed": {
               "id": "e4cd54ff-a1ef-45fa-ab61-4653707eaaed",
@@ -226,6 +226,14 @@
               "parentNodeId": "",
               "fromNodeId": "4e9bff90-cdac-4f96-98d8-ac2a28bc9d11",
               "toNodeId": ""
+            },
+            "f5eb9d1a-76a6-4c7a-9038-aad3f30ecf94": {
+              "id": "f5eb9d1a-76a6-4c7a-9038-aad3f30ecf94",
+              "name": "",
+              "description": "",
+              "parentNodeId": "20f9c1dc-72f2-4d23-b60d-e260d4930cbf",
+              "fromNodeId": "708023ac-b42f-457b-925f-4a864fbc8566",
+              "toNodeId": "05c9327f-0888-4e34-8553-2b9a83df24a5"
             }
           },
           "nodes": {
@@ -268,6 +276,10 @@
             "6c282281-7438-4b61-8c1c-5e5486fceb92": {
               "id": "6c282281-7438-4b61-8c1c-5e5486fceb92",
               "parentNodeId": ""
+            },
+            "708023ac-b42f-457b-925f-4a864fbc8566": {
+              "id": "708023ac-b42f-457b-925f-4a864fbc8566",
+              "parentNodeId": "20f9c1dc-72f2-4d23-b60d-e260d4930cbf"
             },
             "81688941-366f-4a93-a8f2-4e707f9678f4": {
               "id": "81688941-366f-4a93-a8f2-4e707f9678f4",
@@ -345,7 +357,7 @@
             "parameters": {
               "input": {
                 "get_attachments": false,
-                "jql": "project = \"Test Project\" AND summary ~ {{[abd1e993-3ba7-420f-a3ea-cfc778145414].[content]}} AND status != \"Done\"",
+                "jql": "project = \"change_me\" AND summary ~ {{[708023ac-b42f-457b-925f-4a864fbc8566].[patchTitle]}} AND status != \"Done\"",
                 "max": 10
               }
             },
@@ -552,8 +564,8 @@
               "name": "Base64",
               "slugVendor": "rapid7",
               "slugName": "base64",
-              "slugVersion": "1.1.3",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/base64/1.1.3/icon.png"
+              "slugVersion": "1.1.4",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/base64/1.1.4/icon.png"
             },
             "identifier": "decode",
             "continueOnFailure": false,
@@ -643,7 +655,11 @@
             },
             "defaultInputJSONSchema": null,
             "defaultOutputJSONSchema": null,
-            "outputJSONSchema": null,
+            "outputJSONSchema": {
+              "properties": {},
+              "title": "Variables",
+              "type": "object"
+            },
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/loop.svg",
             "connectionType": "NONE"
           },
@@ -655,8 +671,8 @@
               "name": "Base64",
               "slugVendor": "rapid7",
               "slugName": "base64",
-              "slugVersion": "1.1.3",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/base64/1.1.3/icon.png"
+              "slugVersion": "1.1.4",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/base64/1.1.4/icon.png"
             },
             "identifier": "encode",
             "continueOnFailure": false,
@@ -860,8 +876,43 @@
             },
             "defaultInputJSONSchema": null,
             "defaultOutputJSONSchema": null,
-            "outputJSONSchema": null,
+            "outputJSONSchema": {
+              "properties": {},
+              "title": "Variables",
+              "type": "object"
+            },
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/loop.svg",
+            "connectionType": "NONE"
+          },
+          "708023ac-b42f-457b-925f-4a864fbc8566": {
+            "nodeId": "708023ac-b42f-457b-925f-4a864fbc8566",
+            "name": "Extract Patch Title from Key",
+            "type": "pattern_match",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "captureAll": false,
+              "expressionText": "key:{{patchTitle:/.*/}}",
+              "expressions": [
+                {
+                  "type": "text",
+                  "value": "key:"
+                },
+                {
+                  "type": "variable",
+                  "value": {
+                    "ident": "patchTitle",
+                    "regex": ".*"
+                  }
+                }
+              ],
+              "ignoreCase": true,
+              "input": "{{[abd1e993-3ba7-420f-a3ea-cfc778145414].[content]}}"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/pattern-match.svg",
             "connectionType": "NONE"
           },
           "81688941-366f-4a93-a8f2-4e707f9678f4": {
@@ -884,8 +935,7 @@
           },
           "86b4f173-7132-436c-b8e9-56201ce7103f": {
             "nodeId": "86b4f173-7132-436c-b8e9-56201ce7103f",
-            "name": "Daily Trigger",
-            "description": "Trigger the workflow once a day at the specified time.",
+            "name": "Daily Sync",
             "type": "trigger",
             "plugin": {
               "name": "Timers",
@@ -900,10 +950,10 @@
             "parameters": {
               "input": {
                 "message": "",
-                "times_in_utc": "05:00"
+                "times_in_utc": "12:00:00"
               }
             },
-            "triggerId": "163f0c7b-fe9d-47e4-a884-952f0fe345e4",
+            "triggerId": "3ef4109f-4916-4064-9430-d09f55971c9c",
             "defaultInputJSONSchema": {
               "properties": {
                 "message": {
@@ -955,8 +1005,8 @@
               "name": "Base64",
               "slugVendor": "rapid7",
               "slugName": "base64",
-              "slugVersion": "1.1.3",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/base64/1.1.3/icon.png"
+              "slugVersion": "1.1.4",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/base64/1.1.4/icon.png"
             },
             "identifier": "encode",
             "continueOnFailure": false,
@@ -1632,7 +1682,7 @@
                 "attachment_filename": "",
                 "description": "{{[a45b33bf-747a-41ef-af22-96579d90e2a5].[content]}}\n\n{{[0a9ef592-3310-4abd-973e-12de63d82b95].[content]}}",
                 "fields": {},
-                "project": "TP",
+                "project": "change_me",
                 "summary": "{{[54d1078f-4c9b-4ba5-bed5-ad96280cdd75].[content]}}",
                 "type": "Task"
               }
@@ -1862,13 +1912,13 @@
     ],
     "triggers": [
       {
-        "id": "163f0c7b-fe9d-47e4-a884-952f0fe345e4",
+        "id": "3ef4109f-4916-4064-9430-d09f55971c9c",
         "identifier": "daily",
-        "name": "Daily Trigger",
+        "name": "Daily Sync",
         "description": "Trigger the workflow once a day at the specified time.",
         "input": {
           "message": "",
-          "times_in_utc": "05:00"
+          "times_in_utc": "12:00:00"
         },
         "inputJsonSchema": {
           "properties": {
