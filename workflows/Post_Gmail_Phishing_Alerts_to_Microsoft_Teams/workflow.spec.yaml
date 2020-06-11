@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Post_Gmail_Phishing_Alerts_to_Microsoft_Teams
 title: "Post Gmail Phishing Alerts to Microsoft Teams"
 description: "This workflow will dissect an email and return all potential malicious indicators to Microsoft Teams in a message."
-version: 1.0.0
+version: 1.0.1
 vendor: rapid7
 support: rapid7
 status: []
@@ -25,5 +25,5 @@ resources:
     title: Example Message to Microsoft Teams
   - name: artifact1.png
     title: Top Level Headers Artifact
-  - name: artifact1.png
+  - name: artifact2.png
     title: URL's Identified Artifact

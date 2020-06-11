@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Delete_Emails_from_O365_With_Microsoft_Teams
 title: "Find and Delete Emails in Office 365 from Microsoft Teams"
 description: "Use a Microsoft Teams command to find and optionally delete emails matching the given search criteria."
-version: 1.0.3
+version: 1.0.4
 vendor: rapid7
 support: rapid7
 status: []

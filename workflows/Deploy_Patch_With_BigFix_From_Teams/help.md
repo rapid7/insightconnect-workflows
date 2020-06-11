@@ -44,7 +44,7 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Microsoft Teams|2.0.2|6|
+|Microsoft Teams|2.0.4|6|
 |HTML|1.2.1|1|
 |BigFix|7.0.0|2|
 
@@ -55,6 +55,7 @@ _There is no troubleshooting information at this time_
 # Version History
 
 * 2.0.0 - Updated workflow to use newly branded "HCL BigFix" plugin
+* 1.0.1 - Update to make Microsoft Teams plugin the latest version 
 * 1.0.0 - Initial workflow
 
 # Links

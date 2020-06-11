@@ -28,7 +28,7 @@ Plugins utilized by workflow:
 |Plugin|Version|Count|
 |----|----|--------|
 |ExtractIt|2.0.0|4|
-|Microsoft Teams|2.0.2|2|
+|Microsoft Teams|2.0.4|2|
 |HashIt|2.0.3|2|
 |String Operations|1.2.1|2|
 |Python 3 Script|2.0.1|1|
@@ -40,6 +40,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.6 - Update to make Microsoft Teams plugin the latest version
 * 1.0.5 - Fix issue where Nested Headers artifact incorrectly defined an each loop
 * 1.0.4 - Update description
 * 1.0.3 - Set more "change_me" items in workflow input
