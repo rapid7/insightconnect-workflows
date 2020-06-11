@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.50.0-0-g9ce07",
+    "komandVersion": "1.53.1-0-ga278c",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-05-14T23:50:51.466101279Z",
+    "exportedAt": "2020-06-11T21:02:06.12000577Z",
     "workflowVersions": [
       {
         "name": "Deploy Patch with BigFix from Slack",
@@ -211,14 +211,14 @@
             "name": "Deploy Patch -- Create Multi-Action Group",
             "type": "action",
             "plugin": {
-              "name": "IBM BigFix",
+              "name": "BigFix",
               "slugVendor": "rapid7",
-              "slugName": "ibm_bigfix",
-              "slugVersion": "6.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/ibm_bigfix/6.0.0/icon.png"
+              "slugName": "bigfix",
+              "slugVersion": "7.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/bigfix/7.0.0/icon.png"
             },
             "identifier": "create_multiaction_group",
-            "continueOnFailure": true,
+            "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "input": {
@@ -320,29 +320,14 @@
                         "Value": "PT1H"
                       }
                     },
-                    "RunningMessage": {
-                      "Text": "",
-                      "Title": ""
-                    },
+                    "RunningMessage": {},
                     "StartDateTimeLocalOffset": "",
                     "StartDateTimeOffset": "",
                     "TemporalDistribution": "",
-                    "TimeRange": {
-                      "EndTime": "",
-                      "StartTime": ""
-                    },
-                    "UIGroupConstraints": {
-                      "DomainGroups": [],
-                      "LocalGroups": [],
-                      "Win9xGroups": [],
-                      "WinNTGroups": []
-                    },
+                    "TimeRange": {},
+                    "UIGroupConstraints": {},
                     "UseUTCTime": false,
-                    "Whose": {
-                      "Property": "",
-                      "Relation": "",
-                      "Value": ""
-                    }
+                    "Whose": {}
                   },
                   "SourceFixlets": "{{[a3a30dcc-935c-4654-930e-c950aedc0e52].[results]}}",
                   "Target": {
@@ -1542,11 +1527,11 @@
             "name": "Fetch Relevant Fixlets",
             "type": "action",
             "plugin": {
-              "name": "IBM BigFix",
+              "name": "BigFix",
               "slugVendor": "rapid7",
-              "slugName": "ibm_bigfix",
-              "slugVersion": "6.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/ibm_bigfix/6.0.0/icon.png"
+              "slugName": "bigfix",
+              "slugVersion": "7.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/bigfix/7.0.0/icon.png"
             },
             "identifier": "fetch_relevant_fixlets",
             "continueOnFailure": false,
@@ -1948,7 +1933,7 @@
           },
           "efb71ef3-109d-4ba9-ba8f-22f8f4e1f6ee": {
             "nodeId": "efb71ef3-109d-4ba9-ba8f-22f8f4e1f6ee",
-            "name": "Slack Message Trigger",
+            "name": "deploy-patch Trigger",
             "description": "Trigger syntax:\n\ndeploy-patch patch=Title of Patch target=Target Host",
             "type": "trigger",
             "continueOnFailure": false,
@@ -1960,7 +1945,7 @@
                 "type": "any"
               }
             },
-            "triggerId": "5661898d-ea87-47bc-a3d7-46e2bd25356d",
+            "triggerId": "a555cf5d-79e9-4f7f-aa5a-880dcaae5902",
             "defaultInputJSONSchema": {
               "properties": {
                 "matchChannel": {
@@ -2110,8 +2095,8 @@
     ],
     "triggers": [
       {
-        "id": "5661898d-ea87-47bc-a3d7-46e2bd25356d",
-        "name": "Slack Message Trigger",
+        "id": "a555cf5d-79e9-4f7f-aa5a-880dcaae5902",
+        "name": "deploy-patch Trigger",
         "description": "Trigger syntax:\n\ndeploy-patch patch=Title of Patch target=Target Host",
         "input": {
           "matchChannel": "",
