@@ -45,7 +45,7 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|IBM HCL BigFix|6.0.0|2|
+|BigFix|7.0.0|2|
 
 ## Troubleshooting
 
