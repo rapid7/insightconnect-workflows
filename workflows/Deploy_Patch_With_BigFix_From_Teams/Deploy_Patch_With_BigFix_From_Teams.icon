@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.50.0-0-g9ce07",
+    "komandVersion": "1.53.1-0-ga278c",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-05-15T00:58:10.372015569Z",
+    "exportedAt": "2020-06-11T21:15:42.490026303Z",
     "workflowVersions": [
       {
         "name": "Deploy Patch with BigFix from Microsoft Teams",
@@ -223,11 +223,11 @@
             "name": "Deploy Patch -- Create Multi-Action Group",
             "type": "action",
             "plugin": {
-              "name": "IBM BigFix",
+              "name": "BigFix",
               "slugVendor": "rapid7",
-              "slugName": "ibm_bigfix",
-              "slugVersion": "6.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/ibm_bigfix/6.0.0/icon.png"
+              "slugName": "bigfix",
+              "slugVersion": "7.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/bigfix/7.0.0/icon.png"
             },
             "identifier": "create_multiaction_group",
             "continueOnFailure": false,
@@ -337,12 +337,7 @@
                     "StartDateTimeOffset": "",
                     "TemporalDistribution": "",
                     "TimeRange": {},
-                    "UIGroupConstraints": {
-                      "DomainGroups": [],
-                      "LocalGroups": [],
-                      "Win9xGroups": [],
-                      "WinNTGroups": []
-                    },
+                    "UIGroupConstraints": {},
                     "UseUTCTime": false,
                     "Whose": {}
                   },
@@ -1736,11 +1731,11 @@
             "name": "Fetch Relevant Fixlets",
             "type": "action",
             "plugin": {
-              "name": "IBM BigFix",
+              "name": "BigFix",
               "slugVendor": "rapid7",
-              "slugName": "ibm_bigfix",
-              "slugVersion": "6.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/ibm_bigfix/6.0.0/icon.png"
+              "slugName": "bigfix",
+              "slugVersion": "7.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/bigfix/7.0.0/icon.png"
             },
             "identifier": "fetch_relevant_fixlets",
             "continueOnFailure": false,
@@ -2487,8 +2482,8 @@
           },
           "efb71ef3-109d-4ba9-ba8f-22f8f4e1f6ee": {
             "nodeId": "efb71ef3-109d-4ba9-ba8f-22f8f4e1f6ee",
-            "name": "Teams Message Trigger",
-            "description": "Trigger syntax:\n\ndeploy-patch patch=Title of Patch target=Target Host",
+            "name": "!deploy-patch Trigger",
+            "description": "Trigger syntax:\n\n!deploy-patch patch=Title of Patch target=Target Host",
             "type": "trigger",
             "plugin": {
               "name": "Microsoft Teams",
@@ -2507,7 +2502,7 @@
                 "team_name": "Dream Team"
               }
             },
-            "triggerId": "34e43fc0-29b4-42e9-b0b5-e9689e747b54",
+            "triggerId": "515b8318-d19c-4a97-97e3-1065a01ccd92",
             "defaultInputJSONSchema": {
               "properties": {
                 "channel_name": {
@@ -2692,10 +2687,10 @@
     ],
     "triggers": [
       {
-        "id": "34e43fc0-29b4-42e9-b0b5-e9689e747b54",
+        "id": "515b8318-d19c-4a97-97e3-1065a01ccd92",
         "identifier": "new_message_received",
-        "name": "Teams Message Trigger",
-        "description": "Trigger syntax:\n\ndeploy-patch patch=Title of Patch target=Target Host",
+        "name": "!deploy-patch Trigger",
+        "description": "Trigger syntax:\n\n!deploy-patch patch=Title of Patch target=Target Host",
         "input": {
           "channel_name": "change_me",
           "message_content": "!deploy-patch",

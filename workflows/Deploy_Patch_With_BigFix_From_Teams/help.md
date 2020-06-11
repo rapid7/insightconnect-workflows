@@ -46,7 +46,7 @@ Plugins utilized by workflow:
 |----|----|--------|
 |Microsoft Teams|2.0.2|6|
 |HTML|1.2.1|1|
-|IBM HCL BigFix|6.0.0|2|
+|BigFix|7.0.0|2|
 
 ## Troubleshooting
 
