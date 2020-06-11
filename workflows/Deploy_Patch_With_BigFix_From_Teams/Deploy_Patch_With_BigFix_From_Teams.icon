@@ -230,7 +230,7 @@
               "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/bigfix/7.0.0/icon.png"
             },
             "identifier": "create_multiaction_group",
-            "continueOnFailure": false,
+            "continueOnFailure": true,
             "isDisabled": false,
             "parameters": {
               "input": {
