@@ -1,0 +1,25 @@
+extension: workflow
+products: ["insightconnect", "insightvm"]
+name: Scan_Asset_With_InsightVM_From_Slack
+title: "Scan Asset with InsightVM from Slack"
+description: Scan an asset and receive vulnerability and risk statistics with a Slack message.
+version: 1.0.0
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [remediation_management, vulnerability_management]
+  keywords: [remediation_management, vulnerability_management, slack, chat, chatops, work_from_home]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Scan_Asset_With_InsightVM_From_Slack
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+  - name: workflow.png
+    title: Workflow View
+  - name: job.png
+    title: Successful Workflow Job
+  - name: execution.png
+    title: Completed Asset Scan in Slack
+  - name: artifact.png
+    title: Final Report Artifact
