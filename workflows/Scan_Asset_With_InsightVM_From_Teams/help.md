@@ -24,6 +24,12 @@ Sample Trigger Commands:
 
 # Documentation
 
+## Readme
+
+This workflow utilizes existing InsightVM (or Nexpose) sites and scan engines to run ad hoc single-asset scans. These ad hoc scans will not skip the scan engine queue. As such, if a scan engine is running a scheduled scan, then the scan triggered by this workflow will be added to the back of the scan engine queue.
+
+This workflow may only scan assets that are in the site's asset scope. As such, administrators should configure the site so that the asset scope is broad enough to be useful for consumers of this workflow. On the other hand, explicitly exclude critical systems from the site scope to prevent unauthorized scanning activity.
+
 ## Setup
 
 ### InsightVM Setup
@@ -33,10 +39,10 @@ This workflow requires a pre-configured InsightVM (or Nexpose) site in order to 
 The following guidelines are recommended for use when configuring the site within InsightVM (or Nexpose) for this workflow:
 
 1. **Create New Site** Create a new site in InsightVM. This site will be used solely for this InsightConnect workflow.
-2. **Add Assets** Add all possible scan targets. Using Class B or even Class A subnets (eg, 10.1.0.0/16 or 10.0.0.0/8) is recommended.
+2. **Add Assets** Add all possible scan targets. Using Class A, B, or C subnets (eg, 10.1.2.0/24, 10.1.0.0/16, or 10.0.0.0/8) or an asset group (eg, Windows Workstations) is recommended.
 3. **Add Authentication** Add scan credentials in order to perform authenticated scans. Authenticated scans yield significantly more accurate results than non-authenticated scans. Administrative credentials are highly recommended for best results.
 4. **Select Scan Template** Choose a scan template for the site. The default `Full Audit without Web Spider` is appropriate in most cases.
-5. **Select Scan Engine** Select the `Engine most recently used for that asset` option. Also, select the scan engine with the broadest network access from the scan engine list.
+5. **Select Scan Engine** Select the `Engine most recently used for that asset` option. Also, select the scan engine with the broadest network access from the scan engine list below.
 6. **No Scheduled Scans** Given this site likely has an extremely broad scope, it is not recommended that this site be used for regular vulnerability scanning. As such, it is recommended that there be no scheduled scans for the site.
 
 Save the site configuration and navigate to the Site Summary page. View the URL in your web browser to find the `Site ID`. For example, if my console URL is `https://10.1.2.3:3780/site.jsp?siteid=123`, then my `Site ID` is `123`.
@@ -79,6 +85,5 @@ _There is no troubleshooting information at this time_
 
 ## References
 
-* [Rapid7 Vulnerability Database](https://www.rapid7.com/db)
 * [Microsoft Teams](https://teams.microsoft.com)
 * [Microsoft Teams Setup](https://insightconnect.help.rapid7.com/docs/microsoft-teams)

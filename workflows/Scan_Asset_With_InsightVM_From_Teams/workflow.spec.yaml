@@ -5,7 +5,7 @@ title: "Scan Asset with InsightVM from Microsoft Teams"
 description: Scan an asset and receive vulnerability and risk statistics with a Microsoft Teams message.
 version: 1.0.0
 vendor: rapid7
-support: rapid7
+support: community
 status: []
 hub_tags:
   use_cases: [remediation_management, vulnerability_management]
