@@ -1,6 +1,6 @@
 # Description
 
-This workflow demonstrates how to use various data types within InsightConnect. It uses an API Trigger for manual input and then prints artifact cards displaying the various data types and their values. Here is more information for description.
+This workflow demonstrates how to use various data types within InsightConnect. It uses an API Trigger for manual input and then prints artifact cards displaying the various data types and their values. Here is more information for description. Should be different.
 
 # Key Features
 
