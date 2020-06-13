@@ -24,4 +24,4 @@ At a high level, contributing a workflow involves:
 
 
 [Rapid7 Extension Library]:https://extensions.rapid7.com
-[Contributor's Guide]:./CONTRIBUTING
+[Contributor's Guide]:./Contributors_Guide.md
