@@ -2,7 +2,7 @@
   "kom": {
     "komandVersion": "1.53.3-0-gd1a07",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-06-18T15:23:03.219081716Z",
+    "exportedAt": "2020-06-18T16:02:13.754072311Z",
     "workflowVersions": [
       {
         "name": "Blacklist Hash with SentinelOne from Slack",
@@ -420,7 +420,7 @@
               "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/sentinelone/1.4.0/icon.png"
             },
             "identifier": "blacklist",
-            "continueOnFailure": false,
+            "continueOnFailure": true,
             "isDisabled": false,
             "parameters": {
               "input": {
@@ -739,7 +739,7 @@
               "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/sentinelone/1.4.0/icon.png"
             },
             "identifier": "blacklist",
-            "continueOnFailure": false,
+            "continueOnFailure": true,
             "isDisabled": false,
             "parameters": {
               "input": {
