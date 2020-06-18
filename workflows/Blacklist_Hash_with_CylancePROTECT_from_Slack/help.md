@@ -18,7 +18,7 @@ The hashes will show up in the Global Quarantine list in CylancePROTECT.
 
 * [Slack](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops)
 * CylancePROTECT
-* A CylancePROTECT custom application (Settings -> Integrations -> Add Application)
+* Create a "Custom Application" in CylancePROTECT (Settings -> Integrations -> Add Application)
 
 # Documentation
 

@@ -635,7 +635,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "Request received! Processing...",
+                "message": "Request received! Running Cylance workflow...",
                 "recipient": "#integration-testing",
                 "thread_ts": "{{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[timestamp]}}"
               }
