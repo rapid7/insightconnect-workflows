@@ -8,7 +8,7 @@
         "name": "Blacklist Hash with SentinelOne from Slack",
         "type": "runnable",
         "version": "",
-        "description": "Use the simplicity of Slack to blacklist and unblacklist hashes with SentinelOne.",
+        "description": "Use the simplicity of Slack to blacklist and unblacklist SHA1 hashes globally with SentinelOne.",
         "graph": {
           "edges": {
             "013f1bed-57f4-44bf-8ea7-36f73e62343a": {
@@ -78,7 +78,7 @@
             "609bedb0-4ffc-4d2d-9847-caf90378fc97": {
               "id": "609bedb0-4ffc-4d2d-9847-caf90378fc97",
               "name": "Correct Hash",
-              "description": "If the length of the hash is 64 characters then take the SHA256 path",
+              "description": "If the length of the hash is 40 characters then take the SHA1 path",
               "parentNodeId": "",
               "fromNodeId": "2cabd377-38a3-4a8c-b2c5-355d842841fb",
               "toNodeId": "908bb645-77fa-4808-a25d-e386d1f4dd8d"
@@ -102,7 +102,7 @@
             "680e60b9-5c6e-49a8-8d17-9da0d23d1f42": {
               "id": "680e60b9-5c6e-49a8-8d17-9da0d23d1f42",
               "name": "Unblacklist",
-              "description": "This path will unblacklist a SHA256 hash",
+              "description": "This path will unblacklist a SHA1 hash",
               "parentNodeId": "",
               "fromNodeId": "908bb645-77fa-4808-a25d-e386d1f4dd8d",
               "toNodeId": "7d3e35b7-a495-41a1-8fc3-2f433336fb18"
@@ -198,7 +198,7 @@
             "d08741ea-4f02-4476-8dfc-fe56c82712db": {
               "id": "d08741ea-4f02-4476-8dfc-fe56c82712db",
               "name": "Incorrect hash",
-              "description": "If the hash does not meet the 64 characters it's not a SHA256 hash.",
+              "description": "If the hash does not meet the 40 characters it's not a SHA1 hash.",
               "parentNodeId": "",
               "fromNodeId": "2cabd377-38a3-4a8c-b2c5-355d842841fb",
               "toNodeId": "ee41ed11-ed0f-4596-8097-c3ce2ff03e9b"
@@ -206,7 +206,7 @@
             "d99b3d44-5e90-4082-a791-2137cfdcbd57": {
               "id": "d99b3d44-5e90-4082-a791-2137cfdcbd57",
               "name": "Blacklist",
-              "description": "This path will blacklist a SHA256 hash",
+              "description": "This path will blacklist a SHA1 hash",
               "parentNodeId": "",
               "fromNodeId": "908bb645-77fa-4808-a25d-e386d1f4dd8d",
               "toNodeId": "2cb3d3dd-451a-4d3d-ad5e-fc443b43c6eb"
@@ -366,7 +366,7 @@
           },
           "2cabd377-38a3-4a8c-b2c5-355d842841fb": {
             "nodeId": "2cabd377-38a3-4a8c-b2c5-355d842841fb",
-            "name": "Check for SHA256 Hash",
+            "name": "Check for SHA1 Hash",
             "type": "automated_decision",
             "continueOnFailure": false,
             "isDisabled": false,
