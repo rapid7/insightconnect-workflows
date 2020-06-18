@@ -1424,8 +1424,8 @@
               "name": "Rapid7 Vulnerability & Exploit Database",
               "slugVendor": "rapid7",
               "slugName": "rapid7_vulndb",
-              "slugVersion": "2.0.4",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_vulndb/2.0.4/icon.png"
+              "slugVersion": "2.0.3",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_vulndb/2.0.3/icon.png"
             },
             "identifier": "get_content",
             "continueOnFailure": false,
@@ -1791,8 +1791,8 @@
               "name": "Rapid7 Vulnerability & Exploit Database",
               "slugVendor": "rapid7",
               "slugName": "rapid7_vulndb",
-              "slugVersion": "2.0.4",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_vulndb/2.0.4/icon.png"
+              "slugVersion": "2.0.3",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_vulndb/2.0.3/icon.png"
             },
             "identifier": "get_content",
             "continueOnFailure": false,
@@ -1924,8 +1924,8 @@
               "name": "Rapid7 Vulnerability & Exploit Database",
               "slugVendor": "rapid7",
               "slugName": "rapid7_vulndb",
-              "slugVersion": "2.0.4",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_vulndb/2.0.4/icon.png"
+              "slugVersion": "2.0.3",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_vulndb/2.0.3/icon.png"
             },
             "identifier": "search_db",
             "continueOnFailure": false,

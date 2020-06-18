@@ -46,7 +46,7 @@ Plugins utilized by workflow:
 |----|----|--------|
 |Microsoft Teams|2.0.4|6|
 |HTML|1.2.1|1|
-|Rapid7 Vulnerability & Exploit Database|2.0.4|3|
+|Rapid7 Vulnerability & Exploit Database|2.0.3|3|
 |Type Converter|1.5.1|2|
 |Basename|1.0.1|2|
 |URL Extractor|1.0.3|1|
@@ -57,6 +57,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.2 - Fix to correct invalid version of Rapid7 Vulnerability & Exploit Database
 * 1.0.1 - Update to make Microsoft Teams plugin the latest version
 * 1.0.0 - Initial workflow
 
