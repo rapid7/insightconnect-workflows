@@ -19,5 +19,7 @@ resources:
       title: Workflow View
     - name: slack1.png
       title: Successful Blacklist Request
-    - name: sentinelone.png
+    - name: trendmicro.png
       title: Blacklisted Indicator in Trend Micro Apex
+    - name: api_config.png
+      title: Trend Micro API Configuration Page
