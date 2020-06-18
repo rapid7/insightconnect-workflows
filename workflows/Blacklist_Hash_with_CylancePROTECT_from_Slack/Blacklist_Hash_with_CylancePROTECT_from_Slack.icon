@@ -2,7 +2,7 @@
   "kom": {
     "komandVersion": "1.53.3-0-gd1a07",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-06-18T00:35:56.950504148Z",
+    "exportedAt": "2020-06-18T14:35:27.522231285Z",
     "workflowVersions": [
       {
         "name": "Blacklist Hash with CylancePROTECT from Slack",
@@ -452,9 +452,9 @@
                 }
               },
               "required": [
-                "hash",
                 "description",
-                "blacklist_state"
+                "blacklist_state",
+                "hash"
               ],
               "title": "Variables",
               "type": "object"
@@ -771,9 +771,9 @@
                 }
               },
               "required": [
-                "hash",
                 "description",
-                "blacklist_state"
+                "blacklist_state",
+                "hash"
               ],
               "title": "Variables",
               "type": "object"
@@ -1021,7 +1021,7 @@
                 "type": "any"
               }
             },
-            "triggerId": "c23ba332-a509-4b64-b688-3670d7db411d",
+            "triggerId": "d0b21506-e44c-488e-95c0-7c065362766b",
             "defaultInputJSONSchema": {
               "properties": {
                 "matchChannel": {
@@ -1383,7 +1383,7 @@
     ],
     "triggers": [
       {
-        "id": "c23ba332-a509-4b64-b688-3670d7db411d",
+        "id": "d0b21506-e44c-488e-95c0-7c065362766b",
         "name": "Blacklist Request",
         "description": "Slack message that triggers if a blacklist-hash command is found",
         "input": {
