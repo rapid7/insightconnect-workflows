@@ -180,7 +180,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "doc": "{{[8b5f067d-03aa-4d9e-a06b-5ad7dda77b99].[message].[body]}}",
+                "doc": "{{[8b5f067d-03aa-4d9e-a06b-5ad7dda77b99].[message].[body].[content]}}",
                 "remove_scripts": true
               }
             },
