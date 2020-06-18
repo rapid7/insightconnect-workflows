@@ -8,7 +8,7 @@
         "name": "Blacklist Hash with CylancePROTECT from Slack",
         "type": "runnable",
         "version": "",
-        "description": "This workflow will blacklist a hash in Cylance from a Slack command.",
+        "description": "This workflow will blacklist a SHA256 hash globally in Cylance from a Slack command.",
         "graph": {
           "edges": {
             "013f1bed-57f4-44bf-8ea7-36f73e62343a": {
