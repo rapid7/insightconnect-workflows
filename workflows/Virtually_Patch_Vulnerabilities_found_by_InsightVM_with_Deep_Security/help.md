@@ -42,13 +42,11 @@ _There is no troubleshooting information at this time_
 
 # Links
 
-* [Rapid7 InsightVM - InsightConnect Plugin](https://extensions.rapid7.com/extension/rapid7_insightvm)
-* [Trend Micro Deep Security - InsightConnect Plugin](https://extensions.rapid7.com/extension/trendmicro_deepsecurity)
-
-
 ## References
 
 * [Rapid7 InsightVM](https://www.rapid7.com/products/insightvm/)
 * [Trend Micro Deep Security](https://www.trendmicro.com/en_us/business/products/hybrid-cloud/deep-security.html)
 * [Rapid7 InsightConnect](https://www.rapid7.com/products/insightconnect/)
 * [Rapid7 Vulnerability Database](https://www.rapid7.com/db)
+* [Rapid7 InsightVM - InsightConnect Plugin](https://extensions.rapid7.com/extension/rapid7_insightvm)
+* [Trend Micro Deep Security - InsightConnect Plugin](https://extensions.rapid7.com/extension/trendmicro_deepsecurity)
