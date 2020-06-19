@@ -8,7 +8,7 @@ Sample Slack Trigger Commands:
 
 `@Rapid7 InsightConnect unblacklist-hash 02699626f388ed830012e5b787640e71c56d42d8`
 
-The hashes will show up in the Global Quarantine list in SentinelOne.
+The hashes will show up on the "Blacklist" tab from the "Sentinels" page on the main menu in the SentinelOne console.
 
 # Key Features
 
