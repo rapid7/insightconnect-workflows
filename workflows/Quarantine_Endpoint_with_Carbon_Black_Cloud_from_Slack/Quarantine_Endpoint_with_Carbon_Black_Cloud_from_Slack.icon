@@ -290,7 +290,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "Host {{[de5a776f-74a5-4c62-bcd8-c988f1b522c8].[host]}} Unquarantined"
+                "content": "Host {{[de5a776f-74a5-4c62-bcd8-c988f1b522c8].[host]}} unquarantined"
               },
               "type": "markdown"
             },
