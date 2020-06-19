@@ -17,11 +17,11 @@ resources:
   screenshots:
     - name: workflow1.png
       title: Workflow View
-    - name: Message1.png
+    - name: message1.png
       title: Successful Quarantine Microsoft Teams Message
-    - name: Message2.png
+    - name: message2.png
       title: Successful Unquarantine Microsoft Teams Message
-    - name: Artifact1.png
+    - name: artifact1.png
       title: Successful Quarantine Artifact
-    - name: Artifact2.png
+    - name: artifact2.png
       title: Successful Unquarantine Artifact

@@ -5,13 +5,13 @@ This workflow supports endpoints in the form of Device IDs, hostnames, or IP add
 
 Sample Slack Trigger Commands:
 
-`!quarantine-endpoint 08-00-27-96-86-8E`
+`!quarantine-endpoint example-host`
 
 `!quarantine-endpoint 198.51.100.100`
 
 `!unquarantine-endpoint 198.51.100.100`
 
-`!unquarantine-endpoint 08-00-27-96-86-8E`
+`!unquarantine-endpoint example-host`
 
 
 # Key Features
@@ -20,7 +20,7 @@ Sample Slack Trigger Commands:
 
 # Requirements
 
-* [Microsoft Teams](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops)
+* [Microsoft Teams](https://insightconnect.help.rapid7.com/docs/microsoft-teams)
 * Carbon Black Cloud account with [Automation API Access Settings configured](https://developer.carbonblack.com/reference/carbon-black-cloud/authentication/#creating-an-api-key)
 
 # Documentation
@@ -39,7 +39,9 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Trend Micro Apex|3.0.0|2|
+|Carbon Black Cloud|1.0.1|2|
+|HTML|1.2.1|1|
+|Microsoft Teams|2.0.5|5|
 
 ## Troubleshooting
 
@@ -53,6 +55,6 @@ _There is no troubleshooting information at this time_
 
 ## References
 
-* [Trend Micro Apex](https://www.trendmicro.com/en_us/business/products/user-protection/sps/endpoint.html)
-* [Trend Micro Apex plugin](https://extensions.rapid7.com/extension/trendmicro_apex)
-* [Microsoft Teams](https://slack.com)
+* [Carbon Black Cloud](https://www.carbonblack.com/products/vmware-carbon-black-cloud)
+* [Carbon Black Cloud plugin](https://extensions.rapid7.com/extension/carbon_black_cloud)
+* [Microsoft Teams](https://teams.microsoft.com)
