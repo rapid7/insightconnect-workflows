@@ -17,7 +17,7 @@ Under the "Endpoints" tab from the "Sentinels" page on the main menu in the Sent
 # Requirements
 
 * [Slack](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops)
-* SentinelOne account with permission to manage blacklist
+* SentinelOne account with permission to manage endpoints
 
 # Documentation
 
