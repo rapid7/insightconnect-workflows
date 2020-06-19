@@ -40,7 +40,6 @@ Plugins utilized by workflow:
 |Plugin|Version|Count|
 |----|----|--------|
 |Carbon Black Cloud|1.0.1|2|
-|HTML|1.2.1|1|
 
 
 ## Troubleshooting
@@ -57,4 +56,4 @@ _There is no troubleshooting information at this time_
 
 * [Carbon Black Cloud](https://www.carbonblack.com/products/vmware-carbon-black-cloud)
 * [Carbon Black Cloud plugin](https://extensions.rapid7.com/extension/carbon_black_cloud)
-* [Slack](https://teams.microsoft.com)
+* [Slack](https://slack.com)
