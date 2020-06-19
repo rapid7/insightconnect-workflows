@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Quarantine_Endpoint_with_SentinelOne_from_Slack
 title: Quarantine Endpoint with SentinelOne from Slack
 description: This workflow will Quarantine an endpoint in SentinelOne from a Slack command.
-version: 1.0.1
+version: 1.0.0
 vendor: rapid7
 support: rapid7
 status: []
