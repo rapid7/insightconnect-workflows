@@ -2,10 +2,10 @@
   "kom": {
     "komandVersion": "1.53.3-0-gd1a07",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-06-17T21:17:44.510689766Z",
+    "exportedAt": "2020-06-19T14:14:56.742312543Z",
     "workflowVersions": [
       {
-        "name": "Integration InsightVM und Deep Security (asset2asset)",
+        "name": "Virtually Patch Vulnerabilities Found by InsightVM with Deep Security",
         "type": "runnable",
         "version": "",
         "description": "",
