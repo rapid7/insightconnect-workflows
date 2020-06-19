@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Blacklist_Indicators_with_Trend_Micro_Apex_from_Slack
 title: Blacklist Indicators with Trend Micro Apex from Slack
 description: Use the simplicity of Slack to blacklist and unblacklist indicators such as SHA1 hashes and IP addresses with Trend Micro Apex.
-version: 1.0.0
+version: 1.0.1
 vendor: rapid7
 support: rapid7
 status: []

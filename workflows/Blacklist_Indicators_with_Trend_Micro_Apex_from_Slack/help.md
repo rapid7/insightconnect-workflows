@@ -49,6 +49,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.1 - Fix decision path and set change_me values for Slack steps
 * 1.0.0 - Initial workflow
 
 # Links
