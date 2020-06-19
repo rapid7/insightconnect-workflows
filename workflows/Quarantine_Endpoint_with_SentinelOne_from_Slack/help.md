@@ -1,6 +1,6 @@
 # Description
 
-This workflow will Quarantine an endpoint in SentinelOne from a Slack command. This workflow supports endpoints in the form of Agent IDs, hostnames, MAC addresses, or IP addresses.
+This workflow will quarantine and unquarantine an endpoint in SentinelOne from a Slack command. This workflow supports endpoints in the form of Agent IDs, hostnames, MAC addresses, or IP addresses.
 
 Sample Slack Trigger Commands:
 
