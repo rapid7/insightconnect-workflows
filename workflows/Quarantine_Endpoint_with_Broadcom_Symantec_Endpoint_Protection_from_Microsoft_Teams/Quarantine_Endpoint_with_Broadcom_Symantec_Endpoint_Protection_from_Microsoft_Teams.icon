@@ -8,7 +8,7 @@
         "name": "Quarantine Endpoint with Broadcom Symantec Endpoint Protection from Microsoft Teams ",
         "type": "runnable",
         "version": "",
-        "description": "",
+        "description": "Manage the quarantine state of an endpoint with Broadcom Symantec Endpoint Protection from Microsoft Teams.",
         "graph": {
           "edges": {
             "010071d6-a43b-403c-945d-705eb5dab728": {
