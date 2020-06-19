@@ -2,7 +2,7 @@ extension: workflow
 products: ["insightconnect"]
 name: Quarantine_Endpoint_with_Broadcom_Symantec_Endpoint_Protection_from_Microsoft_Teams
 title: "Quarantine Endpoint with Broadcom Symantec Endpoint Protection from Microsoft Teams"
-description: Manage the quarantine state of an endpoint with Broadcom Symantec Endpoint Protection from Microsoft Teams
+description: Manage the quarantine state of an endpoint with Broadcom Symantec Endpoint Protection from Microsoft Teams.
 version: 1.0.0
 vendor: rapid7
 support: rapid7

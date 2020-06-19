@@ -1,7 +1,7 @@
 # Description
 
 Use the simplicity of a chat command in Microsoft Teams to manage the quarantine state of an endpoint with
-Broadcom Symantec Endpoint Protection
+Broadcom Symantec Endpoint Protection.
 
 Sample Microsoft Teams Trigger Commands:
 
@@ -53,7 +53,7 @@ Plugins utilized by workflow:
 |----|----|--------|
 |HTML|1.2.1|1|
 |Broadcom Symantec Endpoint Protection|1.0.2|2|
-|Microsoft Teams|2.0.4|11|
+|Microsoft Teams|2.0.4|9|
 
 ## Troubleshooting
 
