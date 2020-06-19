@@ -43,7 +43,6 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
-* 1.0.1 - Add Job URL to failure messages
 * 1.0.0 - Initial workflow
 
 # Links
