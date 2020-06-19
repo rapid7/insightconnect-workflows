@@ -44,7 +44,7 @@ Plugins utilized by workflow:
 |Microsoft Teams|2.0.4|8|
 |HTML|1.2.1|1|
 |CSV|1.1.5|1|
-|Rapid7 Vulnerability & Exploit Database|2.0.4|1|
+|Rapid7 Vulnerability & Exploit Database|2.0.3|1|
 |Type Converter|1.5.1|3|
 
 ## Troubleshooting
