@@ -420,7 +420,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "The host {{[de5a776f-74a5-4c62-bcd8-c988f1b522c8].[host]}} was not quarantined. See job logs for more information."
+                "content": "The host {{[de5a776f-74a5-4c62-bcd8-c988f1b522c8].[host]}} was not quarantined. See job logs at {{[$job].[URL]}} for more information."
               },
               "type": "markdown"
             },
