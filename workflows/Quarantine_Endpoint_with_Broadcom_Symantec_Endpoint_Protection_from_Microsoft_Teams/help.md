@@ -53,7 +53,7 @@ Plugins utilized by workflow:
 |----|----|--------|
 |HTML|1.2.1|1|
 |Broadcom Symantec Endpoint Protection|1.0.2|2|
-|Microsoft Teams|2.0.4|9|
+|Microsoft Teams|2.0.5|11|
 
 ## Troubleshooting
 
