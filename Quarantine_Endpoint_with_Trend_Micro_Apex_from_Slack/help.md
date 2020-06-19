@@ -13,8 +13,8 @@ Sample Slack Trigger Commands:
 
 `@Rapid7 InsightConnect unquarantine-endpoint 08-00-27-96-86-8E`
 
-The indicators will show up in the "User Defined Suspicious Objects" list in the Trend Micro Apex console.
-The UDSO tab is located on the Custom Intelligence page under Threat Intel from the main menu.
+To view quarantine logs, click "Directories" and then "Users/Endpoints" from the main menu in the Trend Micro Apex console.
+Next, select the endpoint you would like to view and click the "Notes" tab. The quarantine logs are found there.
 
 # Key Features
 

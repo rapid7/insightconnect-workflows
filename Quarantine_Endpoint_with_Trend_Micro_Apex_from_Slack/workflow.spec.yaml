@@ -21,5 +21,7 @@ resources:
       title: Successful Quarantine Request
     - name: slack2.png
       title: Successful Unquarantine Request
+    - name: quarantine.png
+      title: Trend Micro Asset Quarantine Logs
     - name: api_config.png
       title: Trend Micro API Configuration Page
