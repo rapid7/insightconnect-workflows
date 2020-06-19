@@ -843,7 +843,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "The unblacklist action failed for `{{[a62306f8-17fb-4ab7-8228-348bd1433df7].[hash]}}`.\n\nWe're only able to unblacklist a previously blacklisted hash. Double-check that the hash was previously blacklisted."
+                "content": "The unblacklist action failed for `{{[a62306f8-17fb-4ab7-8228-348bd1433df7].[hash]}}`.\n\nWe're only able to unblacklist a previously blacklisted hash. Double-check that the hash was previously blacklisted. Please check the job details for more information.\n\n{{[$job].[URL]}}"
               },
               "type": "markdown"
             },
@@ -1309,7 +1309,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "The blacklist action failed for `{{[a62306f8-17fb-4ab7-8228-348bd1433df7].[hash]}}`.\n\nWe're only able to unblacklist a hash that is not already in the list. Double-check that the hash is not already in the blacklist."
+                "content": "The blacklist action failed for `{{[a62306f8-17fb-4ab7-8228-348bd1433df7].[hash]}}`.\n\nWe're only able to unblacklist a hash that is not already in the list. Double-check that the hash is not already in the blacklist. Please check the job details for more information.\n\n{{[$job].[URL]}}"
               },
               "type": "markdown"
             },

@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Blacklist_Hash_with_CylancePROTECT_from_Slack
 title: Blacklist Hash with CylancePROTECT from Slack
 description: Use the simplicity of Slack to blacklist and unblacklist hashes with CylancePROTECT.
-version: 1.0.0
+version: 1.0.1
 vendor: rapid7
 support: rapid7
 status: []
