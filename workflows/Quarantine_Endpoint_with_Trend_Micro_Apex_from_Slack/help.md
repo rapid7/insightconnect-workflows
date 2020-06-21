@@ -41,7 +41,7 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Trend Micro Apex|3.0.0|2|
+|Trend Micro Apex|3.0.1|2|
 
 ## Troubleshooting
 
@@ -49,6 +49,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.1 - Update workflow with Trend Micro Apex 3.0.1 plugin
 * 1.0.0 - Initial workflow
 
 # Links
