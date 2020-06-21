@@ -962,8 +962,8 @@
               "name": "Trend Micro Apex",
               "slugVendor": "rapid7",
               "slugName": "trendmicro_apex",
-              "slugVersion": "3.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/trendmicro_apex/3.0.0/icon.png"
+              "slugVersion": "3.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/trendmicro_apex/3.0.1/icon.png"
             },
             "identifier": "quarantine",
             "continueOnFailure": true,
@@ -1314,8 +1314,8 @@
               "name": "Trend Micro Apex",
               "slugVendor": "rapid7",
               "slugName": "trendmicro_apex",
-              "slugVersion": "3.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/trendmicro_apex/3.0.0/icon.png"
+              "slugVersion": "3.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/trendmicro_apex/3.0.1/icon.png"
             },
             "identifier": "quarantine",
             "continueOnFailure": true,
