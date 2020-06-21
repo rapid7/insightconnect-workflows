@@ -17,7 +17,7 @@ resources:
   screenshots:
     - name: workflow1.png
       title: Workflow View
-    - name: team1.png
+    - name: teams1.png
       title: Successful Blacklist Request
     - name: cylance.png
       title: Blacklisted Hash in Cylance
