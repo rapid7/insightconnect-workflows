@@ -576,9 +576,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
+                "channel_name": "change_me",
                 "message_content": "🛑  <b>Workflow failed</b>\n\n{{[83d3ef05-d615-424f-89a1-4743468fb5bb].[content]}}",
-                "team_name": "Komand-Test-Everyone"
+                "team_name": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -764,9 +764,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
+                "channel_name": "change_me",
                 "message_content": "🛑 <b>Workflow failed!</b>\n\n{{[de9f616b-740a-4e2e-a506-33874749e04a].[content]}}",
-                "team_name": "Komand-Test-Everyone"
+                "team_name": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -961,9 +961,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
+                "channel_name": "change_me",
                 "message_content": "*Usage*\n<br><br>\n{{[19a25c50-657d-4a7e-bb3d-18a7460eaf16].[content]}}",
-                "team_name": "Komand-Test-Everyone"
+                "team_name": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -1333,9 +1333,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
+                "channel_name": "change_me",
                 "message": "Request received! Processing...",
-                "team_name": "Komand-Test-Everyone"
+                "team_name": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -1503,9 +1503,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
+                "channel_name": "change_me",
                 "message_content": "{{[4f3cf66f-1d10-4268-86c9-2737a63f0ec2].[content]}}",
-                "team_name": "Komand-Test-Everyone"
+                "team_name": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -1673,9 +1673,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
+                "channel_name": "change_me",
                 "message_content": "{{[d7bd4b5e-49b4-41b1-a672-dd370e4cb35c].[content]}}\n\n✅ <b>Workflow complete</b> ✅",
-                "team_name": "Komand-Test-Everyone"
+                "team_name": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -1843,9 +1843,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
+                "channel_name": "change_me",
                 "message_content": "^!blacklist-hash.*|^!unblacklist-hash.*",
-                "team_name": "Komand-Test-Everyone"
+                "team_name": "change_me"
               }
             },
             "triggerId": "2375d60a-8335-41ef-b273-5df2bc953cfa",
@@ -2087,9 +2087,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
+                "channel_name": "change_me",
                 "message_content": "{{[ee41ed11-ed0f-4596-8097-c3ce2ff03e9b].[content]}}",
-                "team_name": "Komand-Test-Everyone"
+                "team_name": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -2272,9 +2272,9 @@
         "name": "Blacklist Request",
         "description": "",
         "input": {
-          "channel_name": "Komand Test Channel",
+          "channel_name": "change_me",
           "message_content": "^!blacklist-hash.*|^!unblacklist-hash.*",
-          "team_name": "Komand-Test-Everyone"
+          "team_name": "change_me"
         },
         "inputJsonSchema": {
           "properties": {
