@@ -1334,7 +1334,7 @@
             "parameters": {
               "input": {
                 "channel_name": "change_me",
-                "message": "Request received! Processing...",
+                "message": "Request received! Processing CylancePROTECT workflow...",
                 "team_name": "change_me"
               }
             },
