@@ -3,15 +3,15 @@
 This workflow quarantines or unquarantines endpoints with Trend Micro Apex via Microsoft Teams command and reports information back to Microsoft Teams.
 This workflow supports endpoints in the form of Agent IDs, hostnames, MAC addresses, or IP addresses.
 
-Sample Slack Trigger Commands:
+Sample Microsoft Teams Trigger Commands:
 
-`@!quarantine-endpoint 08-00-27-96-86-8E`
+`!quarantine-endpoint 08-00-27-96-86-8E`
 
-`@!quarantine-endpoint 198.51.100.100`
+`!quarantine-endpoint 198.51.100.100`
 
-`@!unquarantine-endpoint 198.51.100.100`
+`!unquarantine-endpoint 198.51.100.100`
 
-`@!unquarantine-endpoint 08-00-27-96-86-8E`
+`!unquarantine-endpoint 08-00-27-96-86-8E`
 
 To view quarantine logs, click "Directories" and then "Users/Endpoints" from the main menu in the Trend Micro Apex console.
 Next, select the endpoint you would like to view and click the "Notes" tab. The quarantine logs are found there.
