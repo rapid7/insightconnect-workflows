@@ -19,6 +19,6 @@ resources:
     title: Successful Quarantine
   - name: slack_unquarantine.png
     title: Successful Unquarantine
-  - name: workflow1.png
+  - name: workflow.png
     title: Workflow Overview
 
