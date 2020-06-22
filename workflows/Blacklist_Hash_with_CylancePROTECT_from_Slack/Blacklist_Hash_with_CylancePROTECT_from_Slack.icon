@@ -413,10 +413,10 @@
             "name": "Blacklist Hash",
             "type": "action",
             "plugin": {
-              "name": "Blackberry CylancePROTECT",
+              "name": "BlackBerry CylancePROTECT",
               "slugVendor": "rapid7",
               "slugName": "cylance_protect",
-              "slugVersion": "1.0.2",
+              "slugVersion": "1.0.3",
               "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/cylance_protect/1.0.2/icon.png"
             },
             "identifier": "blacklist",
@@ -732,10 +732,10 @@
             "name": "Unblacklist Hash",
             "type": "action",
             "plugin": {
-              "name": "Blackberry CylancePROTECT",
+              "name": "BlackBerry CylancePROTECT",
               "slugVendor": "rapid7",
               "slugName": "cylance_protect",
-              "slugVersion": "1.0.2",
+              "slugVersion": "1.0.3",
               "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/cylance_protect/1.0.2/icon.png"
             },
             "identifier": "blacklist",
