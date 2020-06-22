@@ -1614,7 +1614,7 @@
                         "parameters": {
                             "input": {
                                 "attachments": [],
-                                "message": "Starting quarantine for '{{[478cc0c0-e9db-40e1-9b5f-ac925405efec].[agent]}}'...",
+                                "message": "Starting quarantine with Symantec Endpoint Protection for '{{[478cc0c0-e9db-40e1-9b5f-ac925405efec].[agent]}}'...",
                                 "recipient": "change_me",
                                 "thread_ts": "change_me"
                             }
