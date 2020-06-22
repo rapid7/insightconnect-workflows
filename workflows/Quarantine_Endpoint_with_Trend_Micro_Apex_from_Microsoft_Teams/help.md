@@ -18,7 +18,7 @@ Next, select the endpoint you would like to view and click the "Notes" tab. The 
 
 # Key Features
 
-* Quarantine endpoints
+* Quarantine and unquarantine endpoints
 
 # Requirements
 
