@@ -376,9 +376,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "matt_test",
+                "channel_name": "change_me",
                 "message_content": "{{[57498c87-ebcc-4f7d-897b-bc52af34c4b6].[content]}}\n<br>\n<br>✅  Workflow complete ",
-                "team_name": "Dream Team"
+                "team_name": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -582,9 +582,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "matt_test",
+                "channel_name": "change_me",
                 "message_content": "^(!quarantine-endpoint|!unquarantine-endpoint)",
-                "team_name": "Dream Team"
+                "team_name": "change_me"
               }
             },
             "triggerId": "3a311039-c31c-492d-9230-0f3425cd5894",
@@ -770,9 +770,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "matt_test",
+                "channel_name": "change_me",
                 "message_content": "⚠️  Workflow failed!<br>\n<br>\n{{[465d5b8e-ee10-4bc2-9366-a419b07dff01].[content]}}",
-                "team_name": "Dream Team"
+                "team_name": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -940,9 +940,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "matt_test",
+                "channel_name": "change_me",
                 "message_content": "⚠️  Workflow failed<br>\n<br>\n{{[e786a26b-2457-4390-91a4-355eefb00684].[content]}}",
-                "team_name": "Dream Team"
+                "team_name": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -1372,9 +1372,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "matt_test",
+                "channel_name": "change_me",
                 "message_content": "{{[367d0ee8-70f7-4398-8ea5-8a2f3afcc10c].[content]}}\n<br>\n<br>✅  Workflow complete ",
-                "team_name": "Dream Team"
+                "team_name": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -1542,9 +1542,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "matt_test",
+                "channel_name": "change_me",
                 "message": "📔 *Usage* 📔<br>\n<br>\n{{[f7372f97-78ff-4942-a52c-777fc6948f82].[content]}}",
-                "team_name": "Dream Team"
+                "team_name": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -1712,9 +1712,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "matt_test",
+                "channel_name": "change_me",
                 "message": "Request received! Processing...",
-                "team_name": "Dream Team"
+                "team_name": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -2081,9 +2081,9 @@
         "name": "Quarantine Request",
         "description": "",
         "input": {
-          "channel_name": "matt_test",
+          "channel_name": "change_me",
           "message_content": "^(!quarantine-endpoint|!unquarantine-endpoint)",
-          "team_name": "Dream Team"
+          "team_name": "change_me"
         },
         "inputJsonSchema": {
           "properties": {
