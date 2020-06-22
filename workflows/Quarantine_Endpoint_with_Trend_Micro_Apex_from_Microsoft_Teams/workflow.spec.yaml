@@ -1,0 +1,27 @@
+extension: workflow
+products: ["insightconnect"]
+name: Quarantine_Endpoint_with_Trend_Micro_Apex_from_Microsoft_Teams
+title: Quarantine Endpoint with Trend Micro Apex from Microsoft Teams
+description: Use the simplicity of Microsoft Teams to quarantine and unquarantine endpoints in the form of Agent IDs, hostnames, MAC addresses, or IP addresses with Trend Micro Apex.
+version: 1.0.0
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [threat_detection_and_response]
+  keywords: [chat, chatops, edr, blacklist, containment, quarantine, work_from_home, microsoft teams]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Quarantine_Endpoint_with_Trend_Micro_Apex_from_Microsoft_Teams
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+    - name: workflow1.png
+      title: Workflow View
+    - name: teams1.png
+      title: Successful Quarantine Request
+    - name: teams2.png
+      title: Successful Unquarantine Request
+    - name: quarantine.png
+      title: Trend Micro Asset Quarantine Logs
+    - name: api_config.png
+      title: Trend Micro API Configuration Page
