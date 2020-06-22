@@ -16,7 +16,7 @@ Sample Slack Trigger Commands:
 
 # Key Features
 
-* Quarantine endpoints
+* Quarantine and unquarantine endpoints
 
 # Requirements
 
