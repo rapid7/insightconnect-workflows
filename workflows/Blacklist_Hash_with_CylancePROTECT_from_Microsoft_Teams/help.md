@@ -36,7 +36,7 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Blackberry CylancePROTECT|1.0.2|2|
+|BlackBerry CylancePROTECT|1.0.3|2|
 |Microsoft Teams|2.0.5|8|
 
 ## Troubleshooting
