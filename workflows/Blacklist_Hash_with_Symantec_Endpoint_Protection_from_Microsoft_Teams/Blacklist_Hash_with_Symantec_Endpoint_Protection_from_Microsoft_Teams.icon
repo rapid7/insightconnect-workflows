@@ -2,7 +2,7 @@
   "kom": {
     "komandVersion": "1.54.0-0-gc18eb",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-06-23T02:05:46.472734108Z",
+    "exportedAt": "2020-06-23T02:35:12.302833447Z",
     "workflowVersions": [
       {
         "name": "Blacklist Hash with Broadcom Symantec Endpoint Protection from Microsoft Teams",
@@ -83,6 +83,14 @@
               "fromNodeId": "a182709d-c4f0-4987-9e99-e5ab1f6b70c8",
               "toNodeId": ""
             },
+            "930c8870-18ef-4f19-a70d-e80985a8f447": {
+              "id": "930c8870-18ef-4f19-a70d-e80985a8f447",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "e4a23495-1e6f-4486-92c8-d876d97e5e27",
+              "toNodeId": "d7458141-2816-4276-9471-a84f0b27a7ee"
+            },
             "980432e1-7477-454c-83da-f3a7ee03d3e7": {
               "id": "980432e1-7477-454c-83da-f3a7ee03d3e7",
               "name": "Success",
@@ -105,7 +113,7 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "c6b577e3-9857-4c0e-9c30-f1efe042f5a5",
-              "toNodeId": "d7458141-2816-4276-9471-a84f0b27a7ee"
+              "toNodeId": "e4a23495-1e6f-4486-92c8-d876d97e5e27"
             },
             "ae9134aa-ee1c-4a2e-90e1-242a3aa146a2": {
               "id": "ae9134aa-ee1c-4a2e-90e1-242a3aa146a2",
@@ -207,6 +215,10 @@
             },
             "de9f616b-740a-4e2e-a506-33874749e04a": {
               "id": "de9f616b-740a-4e2e-a506-33874749e04a",
+              "parentNodeId": ""
+            },
+            "e4a23495-1e6f-4486-92c8-d876d97e5e27": {
+              "id": "e4a23495-1e6f-4486-92c8-d876d97e5e27",
               "parentNodeId": ""
             },
             "e6c47cbc-e881-4038-9ce0-c42bf87453c9": {
@@ -462,7 +474,6 @@
               "slugName": "broadcom_symantec_endpoint_protection",
               "slugVersion": "1.0.2",
               "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/broadcom_symantec_endpoint_protection/1.0.2/icon.png"
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/broadcom_symantec_endpoint_protection/1.0.1/icon.png"
             },
             "identifier": "blacklist",
             "continueOnFailure": true,
@@ -492,7 +503,7 @@
                   "type": "string"
                 },
                 "hashes": {
-                  "description": "Hashes (MD5 or SHA256) to add to the blacklist. Note: only one type of hash is allowed at a time",
+                  "description": "MD5 hashes to add to the blacklist",
                   "items": {
                     "type": "string"
                   },
@@ -1111,18 +1122,14 @@
             "isDisabled": false,
             "parameters": {
               "captureAll": false,
-              "expressionText": "{{action:/!.*/}} {{hash:/.*/}}",
+              "expressionText": "{{action:/.* /}}{{hash:/.*/}}",
               "expressions": [
                 {
                   "type": "variable",
                   "value": {
                     "ident": "action",
-                    "regex": "!.*"
+                    "regex": ".* "
                   }
-                },
-                {
-                  "type": "text",
-                  "value": " "
                 },
                 {
                   "type": "variable",
@@ -1132,8 +1139,8 @@
                   }
                 }
               ],
-              "ignoreCase": false,
-              "input": "{{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[message].[body].[content]}}"
+              "ignoreCase": true,
+              "input": "{{[e4a23495-1e6f-4486-92c8-d876d97e5e27].[text]}}"
             },
             "defaultInputJSONSchema": null,
             "defaultOutputJSONSchema": null,
@@ -1159,11 +1166,11 @@
             "parameters": {
               "input": {
                 "channel_name": "change_me",
-                "message_content": "^!blacklist-hash",
+                "message_content": "^(!blacklist-hash|!unblacklist-hash)",
                 "team_name": "change_me"
               }
             },
-            "triggerId": "94ec3320-8362-47e7-ac9e-52e8c0e4c9cc",
+            "triggerId": "9adebfed-aab8-42e1-a4ee-a48d17597f9b",
             "defaultInputJSONSchema": {
               "properties": {
                 "channel_name": {
@@ -1500,6 +1507,63 @@
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
             "connectionType": "NONE"
           },
+          "e4a23495-1e6f-4486-92c8-d876d97e5e27": {
+            "nodeId": "e4a23495-1e6f-4486-92c8-d876d97e5e27",
+            "name": "Strip HTML",
+            "type": "action",
+            "plugin": {
+              "name": "HTML",
+              "slugVendor": "rapid7",
+              "slugName": "html",
+              "slugVersion": "1.2.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/html/1.2.1/icon.png"
+            },
+            "identifier": "text",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "doc": "{{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[message].[body].[content]}}",
+                "remove_scripts": false
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "doc": {
+                  "description": "Document to transform",
+                  "order": 1,
+                  "title": "Document",
+                  "type": "string"
+                },
+                "remove_scripts": {
+                  "description": "Remove non-HTML scripts from the document",
+                  "order": 2,
+                  "title": "Remove Scripts",
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "doc"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "text": {
+                  "description": "String without HTML tags",
+                  "order": 1,
+                  "title": "Text",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR"
+          },
           "e6c47cbc-e881-4038-9ce0-c42bf87453c9": {
             "nodeId": "e6c47cbc-e881-4038-9ce0-c42bf87453c9",
             "name": "Check Blacklist Result",
@@ -1564,13 +1628,13 @@
     ],
     "triggers": [
       {
-        "id": "94ec3320-8362-47e7-ac9e-52e8c0e4c9cc",
+        "id": "9adebfed-aab8-42e1-a4ee-a48d17597f9b",
         "identifier": "new_message_received",
         "name": "Blacklist Request",
         "description": "Microsoft Teams message that triggers if a blacklist-hash command is found",
         "input": {
           "channel_name": "change_me",
-          "message_content": "^!blacklist-hash",
+          "message_content": "^(!blacklist-hash|!unblacklist-hash)",
           "team_name": "change_me"
         },
         "inputJsonSchema": {
