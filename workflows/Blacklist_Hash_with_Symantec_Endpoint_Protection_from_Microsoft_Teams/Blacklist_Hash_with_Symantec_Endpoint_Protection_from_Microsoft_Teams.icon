@@ -1166,7 +1166,7 @@
             "parameters": {
               "input": {
                 "channel_name": "change_me",
-                "message_content": "^(!blacklist-hash|!unblacklist-hash)",
+                "message_content": "^(!blacklist-hash)",
                 "team_name": "change_me"
               }
             },
@@ -1634,7 +1634,7 @@
         "description": "Microsoft Teams message that triggers if a blacklist-hash command is found",
         "input": {
           "channel_name": "change_me",
-          "message_content": "^(!blacklist-hash|!unblacklist-hash)",
+          "message_content": "^(!blacklist-hash)",
           "team_name": "change_me"
         },
         "inputJsonSchema": {
