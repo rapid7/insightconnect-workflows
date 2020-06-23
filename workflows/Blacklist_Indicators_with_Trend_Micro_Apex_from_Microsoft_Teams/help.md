@@ -1,7 +1,7 @@
 # Description
 
 This workflow blacklists or unblacklists indicators with Trend Micro Apex via Microsoft Teams command and reports information back.
-Indicators supported in this workflow are SHA1 hashes and IP addresses.
+Indicators supported in this workflow are SHA-1 hashes and IP addresses.
 
 Sample Microsoft Teams Trigger Commands:
 
