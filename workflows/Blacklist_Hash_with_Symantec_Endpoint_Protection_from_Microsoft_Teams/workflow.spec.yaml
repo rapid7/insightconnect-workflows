@@ -17,8 +17,6 @@ resources:
   screenshots:
     - name: workflow1.png
       title: Workflow View
-    - name: teams1.png
-      title: Successful Blacklist Request
     - name: symantec.png
       title: Blacklisted Hash in Symantec
     - name: teams_blacklist_failure.png

@@ -33,8 +33,10 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Broadcom Symantec Endpoint Protection|1.0.1|1|
+|Broadcom Symantec Endpoint Protection|1.0.2|1|
 |Microsoft Teams|2.0.5|6|
+|HTML|1.2.1|1|
+
 
 ## Troubleshooting
 
