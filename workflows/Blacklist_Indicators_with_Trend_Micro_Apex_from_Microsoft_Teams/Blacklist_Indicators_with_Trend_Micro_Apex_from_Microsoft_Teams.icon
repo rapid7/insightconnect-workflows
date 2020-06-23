@@ -1768,7 +1768,7 @@
           "c6b577e3-9857-4c0e-9c30-f1efe042f5a5": {
             "nodeId": "c6b577e3-9857-4c0e-9c30-f1efe042f5a5",
             "name": "Blacklist Request",
-            "description": "Microsoft Teams message that triggers if a blacklist-indicator or unblacklist-indicator command is found containing a SHA1 hash or IP address",
+            "description": "Microsoft Teams message that triggers if a blacklist-indicator or unblacklist-indicator command is found containing a SHA-1 hash or IP address",
             "type": "trigger",
             "plugin": {
               "name": "Microsoft Teams",
