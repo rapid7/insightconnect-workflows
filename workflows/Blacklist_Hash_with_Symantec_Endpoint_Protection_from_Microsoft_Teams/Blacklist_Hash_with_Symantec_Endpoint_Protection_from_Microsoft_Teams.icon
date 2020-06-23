@@ -460,8 +460,8 @@
               "name": "Broadcom Symantec Endpoint Protection",
               "slugVendor": "rapid7",
               "slugName": "broadcom_symantec_endpoint_protection",
-              "slugVersion": "1.0.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/broadcom_symantec_endpoint_protection/1.0.1/icon.png"
+              "slugVersion": "1.0.2",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/broadcom_symantec_endpoint_protection/1.0.2/icon.png"
             },
             "identifier": "blacklist",
             "continueOnFailure": true,
