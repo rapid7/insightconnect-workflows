@@ -8,7 +8,7 @@
         "name": "Blacklist Indicator with Trend Micro Apex from Microsoft Teams",
         "type": "runnable",
         "version": "",
-        "description": "This workflow will blacklist an IP or SHA1 indicator with Trend Micro Apex from a Microsoft Teams command.",
+        "description": "This workflow will blacklist an IP address or SHA-1 hash indicator with Trend Micro Apex from a Microsoft Teams command.",
         "graph": {
           "edges": {
             "013f1bed-57f4-44bf-8ea7-36f73e62343a": {
