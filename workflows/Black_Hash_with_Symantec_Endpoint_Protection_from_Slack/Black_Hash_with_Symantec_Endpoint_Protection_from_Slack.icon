@@ -46,7 +46,7 @@
             "609bedb0-4ffc-4d2d-9847-caf90378fc97": {
               "id": "609bedb0-4ffc-4d2d-9847-caf90378fc97",
               "name": "Correct Hash",
-              "description": "If the length of the hash is 64 (SHA256) or 32 (MD5) characters then take this path",
+              "description": "If the length of the hash is 32 (MD5) characters then take this path",
               "parentNodeId": "",
               "fromNodeId": "2cabd377-38a3-4a8c-b2c5-355d842841fb",
               "toNodeId": "2cb3d3dd-451a-4d3d-ad5e-fc443b43c6eb"
