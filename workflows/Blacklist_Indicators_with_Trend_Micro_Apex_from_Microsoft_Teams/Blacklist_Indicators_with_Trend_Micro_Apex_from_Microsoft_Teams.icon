@@ -2039,7 +2039,7 @@
         "id": "d2ceb88e-4220-45ba-8ba8-67b2f6e3727b",
         "identifier": "new_message_received",
         "name": "Blacklist Request",
-        "description": "Microsoft Teams message that triggers if a blacklist-indicator or unblacklist-indicator command is found containing a SHA1 hash or IP address",
+        "description": "Microsoft Teams message that triggers if a blacklist-indicator or unblacklist-indicator command is found containing a SHA-1 hash or IP address",
         "input": {
           "channel_name": "change_me",
           "message_content": "blacklist-indicator|unblacklist-indicator",
