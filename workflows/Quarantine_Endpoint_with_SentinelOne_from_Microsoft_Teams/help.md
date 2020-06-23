@@ -12,7 +12,7 @@ Under the "Endpoints" tab from the "Sentinels" page on the main menu in the Sent
 
 # Key Features
 
-* Quarantine endpoints
+* Quarantine and unquarantine endpoints
 
 # Requirements
 
