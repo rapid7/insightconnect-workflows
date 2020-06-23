@@ -524,7 +524,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "This workflow will blacklist and unblacklist indicators in Trend Micro Apex. To use this workflow provide a blacklist or unblacklist command in Microsoft Teams with a supported indicator of IP address or SHA1 hash.\n<br><br>\nFor example:\n<br><br>\n<ul>\n<li>!blacklist-indicator a67f7c65c8ac1788a41be05f39d083ff532811a5</li>\n<li>!unblacklist-indicator a67f7c65c8ac1788a41be05f39d083ff532811a5</li>\n<li>!blacklist-indicator 198.51.100.10</li>\n<li>!unblacklist-indicator 198.51.100.10</li>\n</ul>"
+                "content": "This workflow will blacklist and unblacklist indicators in Trend Micro Apex. To use this workflow provide a blacklist or unblacklist command in Microsoft Teams with a supported indicator of IP address or SHA-1 hash.\n<br><br>\nFor example:\n<br><br>\n<ul>\n<li>!blacklist-indicator a67f7c65c8ac1788a41be05f39d083ff532811a5</li>\n<li>!unblacklist-indicator a67f7c65c8ac1788a41be05f39d083ff532811a5</li>\n<li>!blacklist-indicator 198.51.100.10</li>\n<li>!unblacklist-indicator 198.51.100.10</li>\n</ul>"
               },
               "type": "markdown"
             },
