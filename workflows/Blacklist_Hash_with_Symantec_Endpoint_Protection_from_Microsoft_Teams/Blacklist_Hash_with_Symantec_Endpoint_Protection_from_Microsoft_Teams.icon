@@ -1497,7 +1497,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "The blacklist action failed for <i>{{[a62306f8-17fb-4ab7-8228-348bd1433df7].[hash]}}</i>\n<br><br>\nWe're only able to blacklist a hash that is not already in the list. Double-check that the hash is not already blacklisted by checking Symantec console. If this hash is not already in the list, please check that the user is authorized and has sufficient privileges for the operation. See the job details page for more information:\n<br><br>\n{{[$job].[URL]}}"
+                "content": "The blacklist action failed for <i>{{[a62306f8-17fb-4ab7-8228-348bd1433df7].[hash]}}</i>\n<br><br>\nWe're only able to blacklist a hash that is not already in the list. Double-check that the hash is not already blacklisted by checking Symantec console. Otherwise, please check that the user is authorized and has sufficient privileges for the operation. See the job details page for more information:\n<br><br>\n{{[$job].[URL]}}"
               },
               "type": "markdown"
             },
