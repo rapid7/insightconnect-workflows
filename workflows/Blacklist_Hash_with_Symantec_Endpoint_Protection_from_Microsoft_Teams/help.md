@@ -1,10 +1,10 @@
 # Description
 
-This workflow blacklists a MD5 hash globally with Symantec Endpoint Protection via Slack command and reports information back to Slack.
+This workflow blacklists a MD5 hash globally with Symantec Endpoint Protection via Microsoft Teams command and reports information back.
 
-Sample Slack Trigger Commands:
+Sample Microsoft Teams Trigger Commands:
 
-`@Rapid7 InsightConnect blacklist-hash 9de5069c5afe602b2ea0a04b66beb2c0`
+`!blacklist-hash 9de5069c5afe602b2ea0a04b66beb2c0`
 
 The hashes will show up in the "File Fingerprint List" under "Policies" in the Symantec Endpoint Protection console.
 
@@ -14,7 +14,7 @@ The hashes will show up in the "File Fingerprint List" under "Policies" in the S
 
 # Requirements
 
-* [Slack](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops)
+* [Microsoft Teams](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops)
 * Symantec Endpoint Protection account
 
 # Documentation
@@ -23,9 +23,9 @@ The hashes will show up in the "File Fingerprint List" under "Policies" in the S
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-Once the workflow has been imported, **each Slack step will need the channel name updated to suit your Slack environment!** Edit the input with the preset text of `change_me` in each Slack step in the workflow.
+Once the workflow has been imported, **each Microsoft Teams step will need the channel name updated to suit your Teams environment!** Edit the input with the preset text of `change_me` in each Teams step in the workflow.
 
-After configuring the Slack steps, activate the workflow in order to trigger it.
+After configuring the Microsoft Teams steps, activate the workflow in order to trigger it.
  
 ## Technical Details
 
@@ -33,7 +33,10 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Broadcom Symantec Endpoint Protection|1.0.1|1|
+|Broadcom Symantec Endpoint Protection|1.0.2|1|
+|Microsoft Teams|2.0.5|6|
+|HTML|1.2.1|1|
+
 
 ## Troubleshooting
 
@@ -41,7 +44,6 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
-* 1.0.1 - Update title to include new branding
 * 1.0.0 - Initial workflow
 
 # Links
@@ -50,4 +52,4 @@ _There is no troubleshooting information at this time_
 
 * [Symantec Endpoint Protection](https://www.broadcom.com/products/cyber-security/endpoint/end-user)
 * [Symantec Endpoint Protection plugin](https://extensions.rapid7.com/extension/broadcom_symantec_endpoint_protection)
-* [Slack](https://slack.com)
+* [Microsoft Teams](https://www.microsoft.com/en-us/microsoft-365/microsoft-teams/group-chat-software)

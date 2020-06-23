@@ -46,7 +46,7 @@
             "609bedb0-4ffc-4d2d-9847-caf90378fc97": {
               "id": "609bedb0-4ffc-4d2d-9847-caf90378fc97",
               "name": "Correct Hash",
-              "description": "If the length of the hash is 64 (SHA256) or 32 (MD5) characters then take this path",
+              "description": "If the length of the hash is 32 (MD5) characters then take this path",
               "parentNodeId": "",
               "fromNodeId": "2cabd377-38a3-4a8c-b2c5-355d842841fb",
               "toNodeId": "2cb3d3dd-451a-4d3d-ad5e-fc443b43c6eb"
@@ -290,8 +290,8 @@
               "name": "Broadcom Symantec Endpoint Protection",
               "slugVendor": "rapid7",
               "slugName": "broadcom_symantec_endpoint_protection",
-              "slugVersion": "1.0.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/broadcom_symantec_endpoint_protection/1.0.1/icon.png"
+              "slugVersion": "1.0.2",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/broadcom_symantec_endpoint_protection/1.0.2/icon.png"
             },
             "identifier": "blacklist",
             "continueOnFailure": true,
@@ -896,7 +896,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "The blacklist action failed for `{{[a62306f8-17fb-4ab7-8228-348bd1433df7].[hash]}}`.\n\nWe're only able to blacklist a hash that is not already in the list. Double-check that the hash is not already blacklisted by checking Symantec console."
+                "content": "The blacklist action failed for `{{[a62306f8-17fb-4ab7-8228-348bd1433df7].[hash]}}`.\n\nWe're only able to blacklist a hash that is not already in the list. Double-check that the hash is not already blacklisted by checking Symantec console. Otherwise, please check that the user is authorized and has sufficient privileges for the operation. See the job details page for more information:\n\n{{[$job].[URL]}}"
               },
               "type": "markdown"
             },

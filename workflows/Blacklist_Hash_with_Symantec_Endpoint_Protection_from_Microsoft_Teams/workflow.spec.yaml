@@ -1,0 +1,25 @@
+extension: workflow
+products: ["insightconnect"]
+name: Blacklist_Hash_with_Symantec_Endpoint_Protection_from_Microsoft_Teams
+title: Blacklist Hash with Broadcom Symantec Endpoint Protection from Microsoft Teams
+description: Use the simplicity of Microsoft Teams to blacklist hashes globally with Symantec Endpoint Protection.
+version: 1.0.0
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [threat_detection_and_response]
+  keywords: [chat, chatops, edr, blacklist, containment, quarantine, work_from_home, microsoft teams]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Black_Hash_with_Symantec_Endpoint_Protection_from_Microsoft_Teams
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+    - name: workflow1.png
+      title: Workflow View
+    - name: symantec.png
+      title: Blacklisted Hash in Symantec
+    - name: teams_blacklist_failure.png
+      title: Blacklist Failure
+    - name: teams_blacklist_success.png
+      title: Blacklist Success
