@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Quarantine_Endpoint_with_Broadcom_Symantec_Endpoint_Protection_from_Slack
 title: "Quarantine Endpoint with Broadcom Symantec Endpoint Protection from Slack"
 description: Manage the quarantine state of an endpoint with Broadcom Symantec Endpoint Protection from Slack.
-version: 1.0.0
+version: 1.0.1
 vendor: rapid7
 support: rapid7
 status: []

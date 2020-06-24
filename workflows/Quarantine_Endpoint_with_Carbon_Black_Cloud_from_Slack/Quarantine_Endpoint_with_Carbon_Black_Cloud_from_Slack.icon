@@ -218,8 +218,8 @@
               "input": {
                 "attachments": [],
                 "message": "⚠️The input could not be correctly parsed  ⚠️Your input was {{[afd380e8-b0f5-4328-a036-8520c4b0a6ea].[message].[body].[content]}}",
-                "recipient": "{{[afd380e8-b0f5-4328-a036-8520c4b0a6ea].[message].[channel_id]}}",
-                "thread_ts": "{{[afd380e8-b0f5-4328-a036-8520c4b0a6ea].[message].[ts]}}"
+                "recipient": "{{[afd380e8-b0f5-4328-a036-8520c4b0a6ea].[message].[channel]}}",
+                "thread_ts": "{{[afd380e8-b0f5-4328-a036-8520c4b0a6ea].[message].[timestamp]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -348,8 +348,8 @@
               "input": {
                 "attachments": [],
                 "message": "✅ {{[2b6b654a-6f25-45cb-b5a6-c81ac32451c7].[content]}} ✅",
-                "recipient": "{{[afd380e8-b0f5-4328-a036-8520c4b0a6ea].[message].[channel_id]}}",
-                "thread_ts": "{{[afd380e8-b0f5-4328-a036-8520c4b0a6ea].[message].[ts]}}"
+                "recipient": "{{[afd380e8-b0f5-4328-a036-8520c4b0a6ea].[message].[channel]}}",
+                "thread_ts": "{{[afd380e8-b0f5-4328-a036-8520c4b0a6ea].[message].[timestamp]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -695,8 +695,8 @@
               "input": {
                 "attachments": [],
                 "message": "✅ {{[c2abc66a-4781-4a8d-a543-3195b26a9874].[content]}} ✅",
-                "recipient": "{{[afd380e8-b0f5-4328-a036-8520c4b0a6ea].[message].[channel_id]}}",
-                "thread_ts": "{{[afd380e8-b0f5-4328-a036-8520c4b0a6ea].[message].[ts]}}"
+                "recipient": "{{[afd380e8-b0f5-4328-a036-8520c4b0a6ea].[message].[channel]}}",
+                "thread_ts": "{{[afd380e8-b0f5-4328-a036-8520c4b0a6ea].[message].[timestamp]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -845,8 +845,8 @@
               "input": {
                 "attachments": [],
                 "message": "⚠️ {{[7df9e6c7-5fa3-411e-b457-2d2c9c907d33].[content]}} ⚠️",
-                "recipient": "{{[afd380e8-b0f5-4328-a036-8520c4b0a6ea].[message].[channel_id]}}",
-                "thread_ts": "{{[afd380e8-b0f5-4328-a036-8520c4b0a6ea].[message].[ts]}}"
+                "recipient": "{{[afd380e8-b0f5-4328-a036-8520c4b0a6ea].[message].[channel]}}",
+                "thread_ts": "{{[afd380e8-b0f5-4328-a036-8520c4b0a6ea].[message].[timestamp]}}"
               }
             },
             "defaultInputJSONSchema": {

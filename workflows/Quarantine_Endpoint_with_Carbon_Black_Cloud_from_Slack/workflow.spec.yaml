@@ -5,7 +5,7 @@ name: Quarantine_Endpoint_with_Carbon_Black_Cloud_from_Slack
 title: Quarantine Endpoint with Carbon Black Cloud from Slack
 description: Use the simplicity of Slack to quarantine and unquarantine endpoints
   in the form of Device IDs, hostnames, or IP addresses with Carbon Black Cloud.
-version: 1.0.0
+version: 1.0.1
 vendor: rapid7
 support: rapid7
 status: []
