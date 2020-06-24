@@ -1209,7 +1209,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "This workflow will quarantine or unquarantine an agent in Trend Micro Apex. To use this workflow, provide a quarantine or unquarantine command in Slack and an Agent ID, hostname, MAC address, or IP address to perform the command on.\n\nFor example:\n\n* `@Rapid7 InsightConnect quarantine-endpoint 198.51.100.100`\n* `@Rapid7 InsightConnect unquarantine-endpoint 198.51.100.100`"
+                "content": "This workflow will quarantine or unquarantine an agent in SentinelOne. To use this workflow, provide a quarantine or unquarantine command in Slack and an Agent ID, hostname, MAC address, or IP address to perform the command on.\n\nFor example:\n\n* `@Rapid7 InsightConnect quarantine-endpoint 198.51.100.100`\n* `@Rapid7 InsightConnect unquarantine-endpoint 198.51.100.100`"
               },
               "type": "markdown"
             },
