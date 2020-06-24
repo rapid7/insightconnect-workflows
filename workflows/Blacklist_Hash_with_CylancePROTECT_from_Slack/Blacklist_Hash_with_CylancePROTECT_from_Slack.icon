@@ -488,7 +488,7 @@
               "input": {
                 "attachments": [],
                 "message": ":book: *Usage* :book:\n\n{{[19a25c50-657d-4a7e-bb3d-18a7460eaf16].[content]}}",
-                "recipient": "change_me",
+                "recipient": "{{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[message].[channel]}}",
                 "thread_ts": "{{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[timestamp]}}"
               }
             },
@@ -562,7 +562,7 @@
               "input": {
                 "attachments": [],
                 "message": ":exclamation: *Workflow failed*\n\n{{[83d3ef05-d615-424f-89a1-4743468fb5bb].[content]}}",
-                "recipient": "change_me",
+                "recipient": "{{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[message].[channel]}}",
                 "thread_ts": "{{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[timestamp]}}"
               }
             },
@@ -636,7 +636,7 @@
               "input": {
                 "attachments": [],
                 "message": "Request received! Running Cylance workflow...",
-                "recipient": "change_me",
+                "recipient": "{{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[message].[channel]}}",
                 "thread_ts": "{{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[timestamp]}}"
               }
             },
@@ -863,7 +863,7 @@
               "input": {
                 "attachments": [],
                 "message": ":exclamation:\n\n{{[ee41ed11-ed0f-4596-8097-c3ce2ff03e9b].[content]}}",
-                "recipient": "change_me",
+                "recipient": "{{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[message].[channel]}}",
                 "thread_ts": "{{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[timestamp]}}"
               }
             },
@@ -1145,7 +1145,7 @@
               "input": {
                 "attachments": [],
                 "message": "{{[d7bd4b5e-49b4-41b1-a672-dd370e4cb35c].[content]}}\n\n:white_check_mark: *Workflow complete*",
-                "recipient": "change_me",
+                "recipient": "{{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[message].[channel]}}",
                 "thread_ts": "{{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[timestamp]}}"
               }
             },
@@ -1237,7 +1237,7 @@
               "input": {
                 "attachments": [],
                 "message": ":exclamation: *Workflow failed!*\n\n{{[de9f616b-740a-4e2e-a506-33874749e04a].[content]}}",
-                "recipient": "change_me",
+                "recipient": "{{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[message].[channel]}}",
                 "thread_ts": "{{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[timestamp]}}"
               }
             },

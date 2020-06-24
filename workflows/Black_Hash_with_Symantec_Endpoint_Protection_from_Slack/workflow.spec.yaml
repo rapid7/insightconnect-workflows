@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Black_Hash_with_Symantec_Endpoint_Protection_from_Slack
 title: Blacklist Hash with Broadcom Symantec Endpoint Protection from Slack
 description: Use the simplicity of Slack to blacklist hashes globally with Symantec Endpoint Protection.
-version: 1.0.1
+version: 1.0.2
 vendor: rapid7
 support: rapid7
 status: []

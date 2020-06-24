@@ -286,7 +286,7 @@
               "input": {
                 "attachments": [],
                 "message": ":exclamation: *Workflow failed!*\n\n{{[465d5b8e-ee10-4bc2-9366-a419b07dff01].[content]}}",
-                "recipient": "change_me",
+                "recipient": "{{[4b8da5e7-5581-4b1b-83de-1c3df275a29d].[message].[channel]}}",
                 "thread_ts": "{{[4b8da5e7-5581-4b1b-83de-1c3df275a29d].[timestamp]}}"
               }
             },
@@ -360,7 +360,7 @@
               "input": {
                 "attachments": [],
                 "message": ":book: *Usage* :book:\n\n{{[f7372f97-78ff-4942-a52c-777fc6948f82].[content]}}",
-                "recipient": "change_me",
+                "recipient": "{{[4b8da5e7-5581-4b1b-83de-1c3df275a29d].[message].[channel]}}",
                 "thread_ts": "{{[4b8da5e7-5581-4b1b-83de-1c3df275a29d].[timestamp]}}"
               }
             },
@@ -510,7 +510,7 @@
               "input": {
                 "attachments": [],
                 "message": "{{[367d0ee8-70f7-4398-8ea5-8a2f3afcc10c].[content]}}\n\n:white_check_mark: *Workflow complete*",
-                "recipient": "change_me",
+                "recipient": "{{[4b8da5e7-5581-4b1b-83de-1c3df275a29d].[message].[channel]}}",
                 "thread_ts": "{{[4b8da5e7-5581-4b1b-83de-1c3df275a29d].[timestamp]}}"
               }
             },
@@ -584,7 +584,7 @@
               "input": {
                 "attachments": [],
                 "message": "{{[57498c87-ebcc-4f7d-897b-bc52af34c4b6].[content]}}\n\n:white_check_mark: *Workflow complete*\n",
-                "recipient": "change_me",
+                "recipient": "{{[4b8da5e7-5581-4b1b-83de-1c3df275a29d].[message].[channel]}}",
                 "thread_ts": "{{[4b8da5e7-5581-4b1b-83de-1c3df275a29d].[timestamp]}}"
               }
             },
@@ -840,7 +840,7 @@
               "input": {
                 "attachments": [],
                 "message": "Request received! Running SentinelOne workflow...",
-                "recipient": "change_me",
+                "recipient": "{{[4b8da5e7-5581-4b1b-83de-1c3df275a29d].[message].[channel]}}",
                 "thread_ts": "{{[4b8da5e7-5581-4b1b-83de-1c3df275a29d].[timestamp]}}"
               }
             },
@@ -1043,7 +1043,7 @@
               "input": {
                 "attachments": [],
                 "message": ":exclamation: *Workflow failed*\n\n{{[e786a26b-2457-4390-91a4-355eefb00684].[content]}}\n",
-                "recipient": "change_me",
+                "recipient": "{{[4b8da5e7-5581-4b1b-83de-1c3df275a29d].[message].[channel]}}",
                 "thread_ts": "{{[4b8da5e7-5581-4b1b-83de-1c3df275a29d].[timestamp]}}"
               }
             },
