@@ -65,7 +65,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
-* 1.0.2 - Pass channel name from trigger to all subsequent steps so user only has to configure channel once
+* 1.1.1 - Pass channel name from trigger to all subsequent steps so user only has to configure channel once
 * 1.1.0 - Update Palo Alto Firewall to latest version
 * 1.0.0 - Initial workflow
 
