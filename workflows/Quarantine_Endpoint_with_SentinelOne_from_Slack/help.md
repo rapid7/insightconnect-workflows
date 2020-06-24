@@ -43,8 +43,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
-* 1.0.3 - Pass channel name from trigger to all subsequent steps so user only has to configure channel once
-* 1.0.2 - Allow user to set channel in a single Slack step
+* 1.0.2 - Pass channel name from trigger to all subsequent steps so user only has to configure channel once
 * 1.0.1 - Update product vendor text in Slack post
 * 1.0.0 - Initial workflow
 

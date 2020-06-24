@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Quarantine_Endpoint_with_Trend_Micro_Apex_from_Slack
 title: Quarantine Endpoint with Trend Micro Apex from Slack
 description: Use the simplicity of Slack to quarantine and unquarantine endpoints in the form of Agent IDs, hostnames, MAC addresses, or IP addresses with Trend Micro Apex.
-version: 1.0.3
+version: 1.0.2
 vendor: rapid7
 support: rapid7
 status: []
