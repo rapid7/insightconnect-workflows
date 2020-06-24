@@ -43,6 +43,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.1 - Update product vendor text in Slack post
 * 1.0.0 - Initial workflow
 
 # Links
