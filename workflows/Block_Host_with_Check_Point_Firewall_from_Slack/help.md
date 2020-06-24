@@ -32,7 +32,7 @@ Sample Slack Trigger Commands:
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-Once the workflow has been imported, **each Slack step will need the channel name updated to suit your Slack environment!** Edit the input with the preset text of `change_me` in each Slack step in the workflow.
+Once the workflow has been imported, **Update the first step with the channel name to suit your Slack environment!** by editing the input with the preset text of `change_me` to match the channel to monitor.
 
 After configuring the Slack steps, activate the workflow in order to trigger it.
  
@@ -62,6 +62,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.2 - Pass channel name from trigger to all subsequent steps so user only has to configure channel once
 * 1.0.1 - Help amendments
 * 1.0.0 - Initial workflow
 

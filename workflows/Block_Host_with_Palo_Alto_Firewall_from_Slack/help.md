@@ -25,7 +25,8 @@ The workflow works by adding and removing address objects from an address object
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-**Edit Each Palo Alto Firewall step to specify the group you are using** In these steps, specify the group you would like to add and remove host objects from. 
+Once the workflow has been imported, **Update the first step with the channel name to suit your Slack environment!** by editing the input with the preset text of `change_me` to match the channel to monitor.
+And then **Edit Each Palo Alto Firewall step to specify the group you are using** In these steps, specify the group you would like to add and remove host objects from. 
 
 By default this workflow will automatically skip blocking private IP addresses, if you’d like to block these as well, set `Skip RFC 1918` option to false in the `Create Network Object` step.
 
@@ -64,6 +65,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.2 - Pass channel name from trigger to all subsequent steps so user only has to configure channel once
 * 1.1.0 - Update Palo Alto Firewall to latest version
 * 1.0.0 - Initial workflow
 

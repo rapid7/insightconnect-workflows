@@ -478,7 +478,7 @@
                 "attachments": [],
                 "message": "🔎Host {{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}} was found in whitelist 🔎\n\nBecause the host was found in the whitelist it was not added to the block list.",
                 "recipient": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[message].[channel_id]}}",
-                "thread_ts": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[message].[ts]}}"
+                "thread_ts": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[message].[timestamp]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -627,8 +627,8 @@
               "input": {
                 "attachments": [],
                 "message": "⚠️{{[d00d5c3b-0e54-468b-977b-cbbb21960ca1].[content]}} ⚠️",
-                "recipient": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[message].[channel_id]}}",
-                "thread_ts": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[message].[ts]}}"
+                "recipient": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[message].[channel]}}",
+                "thread_ts": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[timestamp]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -701,8 +701,8 @@
               "input": {
                 "attachments": [],
                 "message": "✅{{[b3aeb54a-4919-48dd-907b-a97947f0fa4c].[content]}} ✅",
-                "recipient": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[message].[channel_id]}}",
-                "thread_ts": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[message].[ts]}}"
+                "recipient": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[message].[channel]}}",
+                "thread_ts": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[timestamp]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -897,8 +897,8 @@
               "input": {
                 "attachments": [],
                 "message": "✅{{[ebaa672f-650f-41f0-bb16-e3f6c56c0aca].[content]}} ✅",
-                "recipient": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[message].[channel_id]}}",
-                "thread_ts": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[message].[ts]}}"
+                "recipient": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[message].[channel]}}",
+                "thread_ts": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[timestamp]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -1095,8 +1095,8 @@
               "input": {
                 "attachments": [],
                 "message": "⚠️The input could not be correctly parsed  ⚠️\n\nYour input was {{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[message].[text]}}",
-                "recipient": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[message].[channel_id]}}",
-                "thread_ts": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[message].[ts]}}"
+                "recipient": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[message].[channel]}}",
+                "thread_ts": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[message].[timestamp]}}"
               }
             },
             "defaultInputJSONSchema": {

@@ -5,7 +5,7 @@ name: Block_Host_with_Fortinet_Firewall_from_Slack
 title: Block Host with Fortinet Firewall from Slack
 description: This workflow blocks or unblocks a host with Fortinet Firewall via Slack
   command and reports information back to Slack.
-version: 1.0.1
+version: 1.0.2
 vendor: rapid7
 support: rapid7
 status: []
