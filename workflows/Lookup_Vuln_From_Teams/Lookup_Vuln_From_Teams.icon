@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.51.0-0-ge64bd",
+    "komandVersion": "1.55.1-0-g08754",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-05-27T17:26:11.844805482Z",
+    "exportedAt": "2020-06-25T20:14:22.236334171Z",
     "workflowVersions": [
       {
         "name": "Lookup Vulnerability from Microsoft Teams",
@@ -59,6 +59,14 @@
               "fromNodeId": "29a44d5d-00a5-4850-b997-a21c2fc36751",
               "toNodeId": "58eae3a8-f9f1-4006-b628-05e9cdca896a"
             },
+            "6346c8fc-e995-42fc-b22e-bfdc76a280e3": {
+              "id": "6346c8fc-e995-42fc-b22e-bfdc76a280e3",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "4e64ed7b-6426-4ef0-9d88-d51ef2efa01f",
+              "toNodeId": "7dff4856-934d-4534-853a-709791f5ee4e"
+            },
             "63f2b999-c436-4ba3-acc3-b3cb600742b7": {
               "id": "63f2b999-c436-4ba3-acc3-b3cb600742b7",
               "name": "",
@@ -81,7 +89,7 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "8b5f067d-03aa-4d9e-a06b-5ad7dda77b99",
-              "toNodeId": "7dff4856-934d-4534-853a-709791f5ee4e"
+              "toNodeId": "4e64ed7b-6426-4ef0-9d88-d51ef2efa01f"
             },
             "7d40556e-150d-41ec-b904-1a311201a4a8": {
               "id": "7d40556e-150d-41ec-b904-1a311201a4a8",
@@ -217,6 +225,10 @@
               "id": "29a44d5d-00a5-4850-b997-a21c2fc36751",
               "parentNodeId": ""
             },
+            "4e64ed7b-6426-4ef0-9d88-d51ef2efa01f": {
+              "id": "4e64ed7b-6426-4ef0-9d88-d51ef2efa01f",
+              "parentNodeId": ""
+            },
             "544773ba-8870-4966-9adc-bbc530309064": {
               "id": "544773ba-8870-4966-9adc-bbc530309064",
               "parentNodeId": ""
@@ -300,17 +312,17 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.0.4",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
+              "slugVersion": "2.0.5",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.5/icon.png"
             },
             "identifier": "send_message",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "change_me",
+                "channel_name": "{{[4e64ed7b-6426-4ef0-9d88-d51ef2efa01f].[output].[channel]}}",
                 "message": "InsightConnect: Searching for {{[61855db7-9d9e-46ab-8176-6e18cd3d8299].[argument]}}...",
-                "team_name": "change_me"
+                "team_name": "{{[4e64ed7b-6426-4ef0-9d88-d51ef2efa01f].[output].[team]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -547,6 +559,83 @@
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/loop.svg",
             "connectionType": "NONE"
           },
+          "4e64ed7b-6426-4ef0-9d88-d51ef2efa01f": {
+            "nodeId": "4e64ed7b-6426-4ef0-9d88-d51ef2efa01f",
+            "name": "Settings",
+            "type": "action",
+            "plugin": {
+              "name": "Type Converter",
+              "slugVendor": "rapid7",
+              "slugName": "type_converter",
+              "slugVersion": "1.5.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/type_converter/1.5.1/icon.png"
+            },
+            "identifier": "string_to_object",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "input": "{\"team\": \"change_me\", \"channel\": \"change_me\"}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "input": {
+                  "description": "Input variable",
+                  "order": 1,
+                  "title": "Input",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "input"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "output": {
+                  "description": "Type converted input",
+                  "order": 1,
+                  "title": "Output",
+                  "type": "object"
+                }
+              },
+              "required": [
+                "output"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": {
+              "definitions": {
+                "output": {
+                  "properties": {
+                    "channel": {
+                      "type": "string"
+                    },
+                    "team": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "output": {
+                  "$ref": "#/definitions/output",
+                  "description": "Type converted input",
+                  "order": 1,
+                  "title": "Output"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR"
+          },
           "544773ba-8870-4966-9adc-bbc530309064": {
             "nodeId": "544773ba-8870-4966-9adc-bbc530309064",
             "name": "Multiple Results Notification",
@@ -555,17 +644,17 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.0.4",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
+              "slugVersion": "2.0.5",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.5/icon.png"
             },
             "identifier": "send_message",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "change_me",
+                "channel_name": "{{[4e64ed7b-6426-4ef0-9d88-d51ef2efa01f].[output].[channel]}}",
                 "message": "There are multiple search results for {{[61855db7-9d9e-46ab-8176-6e18cd3d8299].[argument]}} in Rapid7's vulnerability database. Click one of the links in this thread for more information. \n/n\nYou can also try a more specific search term for more information on one vulnerability. For example, you may try {{[61855db7-9d9e-46ab-8176-6e18cd3d8299].[argument]}} Ubuntu or {{[61855db7-9d9e-46ab-8176-6e18cd3d8299].[argument]}} Chrome",
-                "team_name": "change_me"
+                "team_name": "{{[4e64ed7b-6426-4ef0-9d88-d51ef2efa01f].[output].[team]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -775,17 +864,17 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.0.4",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
+              "slugVersion": "2.0.5",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.5/icon.png"
             },
             "identifier": "send_message",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "change_me",
+                "channel_name": "{{[4e64ed7b-6426-4ef0-9d88-d51ef2efa01f].[output].[channel]}}",
                 "message": "No results matching {{[61855db7-9d9e-46ab-8176-6e18cd3d8299].[argument]}} were found in Rapid7's Vulnerability Database.\nhttps://media.giphy.com/media/xTiTnm8AGoS75Cvyko/giphy.gif",
-                "team_name": "change_me"
+                "team_name": "{{[4e64ed7b-6426-4ef0-9d88-d51ef2efa01f].[output].[team]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -1083,17 +1172,17 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.0.4",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
+              "slugVersion": "2.0.5",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.5/icon.png"
             },
             "identifier": "send_message",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "change_me",
+                "channel_name": "{{[4e64ed7b-6426-4ef0-9d88-d51ef2efa01f].[output].[channel]}}change_me",
                 "message": "Severity: {{[919c2297-d695-4af5-b29c-d099a0fb07a1].[content_result].[severity]}}\n\nhttps://rapid7.com/db/vulnerabilities/{{[58eae3a8-f9f1-4006-b628-05e9cdca896a].[basename]}}",
-                "team_name": "change_me"
+                "team_name": "{{[4e64ed7b-6426-4ef0-9d88-d51ef2efa01f].[output].[team]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -1254,8 +1343,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.0.4",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
+              "slugVersion": "2.0.5",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.5/icon.png"
             },
             "identifier": "new_message_received",
             "continueOnFailure": false,
@@ -1267,7 +1356,7 @@
                 "team_name": "change_me"
               }
             },
-            "triggerId": "0a4b4f5f-00fd-4eef-8064-b48d2348b2e7",
+            "triggerId": "34eb707a-908f-4522-a3bd-3a7fec2c171b",
             "defaultInputJSONSchema": {
               "properties": {
                 "channel_name": {
@@ -2030,17 +2119,17 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.0.4",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
+              "slugVersion": "2.0.5",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.5/icon.png"
             },
             "identifier": "send_message",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "change_me",
+                "channel_name": "{{[4e64ed7b-6426-4ef0-9d88-d51ef2efa01f].[output].[channel]}}",
                 "message": "Vulnerability Found:\n\n Title: {{[deb172a3-eb20-4f24-b4a5-d75fbe005ed4].[content_result].[title]}}\n\n Severity: {{[deb172a3-eb20-4f24-b4a5-d75fbe005ed4].[content_result].[severity]}}\n\n Published: \n{{[deb172a3-eb20-4f24-b4a5-d75fbe005ed4].[content_result].[published_at]}}\n\n Solutions: {{[deb172a3-eb20-4f24-b4a5-d75fbe005ed4].[content_result].[solutions]}}\n\nDescription:\n{{[deb172a3-eb20-4f24-b4a5-d75fbe005ed4].[content_result].[description]}}",
-                "team_name": "change_me"
+                "team_name": "{{[4e64ed7b-6426-4ef0-9d88-d51ef2efa01f].[output].[team]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -2200,7 +2289,7 @@
     ],
     "triggers": [
       {
-        "id": "0a4b4f5f-00fd-4eef-8064-b48d2348b2e7",
+        "id": "34eb707a-908f-4522-a3bd-3a7fec2c171b",
         "identifier": "new_message_received",
         "name": "!lookup-vuln Trigger",
         "description": "Trigger this workflow by using the !lookup-vuln command.\n\nExamples:\n!lookup-vuln CVE-2020-0674\n!lookup-vuln heartbleed\n!lookup-vuln heartbleed vmware",
@@ -2359,8 +2448,8 @@
           "name": "Microsoft Teams",
           "slugVendor": "rapid7",
           "slugName": "microsoft_teams",
-          "slugVersion": "2.0.4",
-          "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
+          "slugVersion": "2.0.5",
+          "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.5/icon.png"
         }
       }
     ]
