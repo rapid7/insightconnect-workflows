@@ -259,8 +259,8 @@
               "input": {
                 "attachments": [],
                 "message": "{{[60772325-689a-485b-b66b-e6898e071d8a].[content]}}",
-                "recipient": "{{[eb45a27e-1a93-4580-b5dc-f48c252db9f3].[message].[channel_id]}}",
-                "thread_ts": "{{[eb45a27e-1a93-4580-b5dc-f48c252db9f3].[message].[ts]}}"
+                "recipient": "{{[eb45a27e-1a93-4580-b5dc-f48c252db9f3].[message].[channel]}}",
+                "thread_ts": "{{[eb45a27e-1a93-4580-b5dc-f48c252db9f3].[timestamp]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -498,8 +498,8 @@
               "input": {
                 "attachments": [],
                 "message": "{{[22b0b82b-5215-4760-9539-7eed95b5f59d].[content]}}",
-                "recipient": "{{[eb45a27e-1a93-4580-b5dc-f48c252db9f3].[message].[channel_id]}}",
-                "thread_ts": "{{[eb45a27e-1a93-4580-b5dc-f48c252db9f3].[message].[ts]}}"
+                "recipient": "{{[eb45a27e-1a93-4580-b5dc-f48c252db9f3].[message].[channel]}}",
+                "thread_ts": "{{[eb45a27e-1a93-4580-b5dc-f48c252db9f3].[timestamp]}}"
               }
             },
             "defaultInputJSONSchema": {

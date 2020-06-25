@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Check_Host_Block_Status_with_Fortinet_Firewall_from_Slack
 title: "Check Host Block Status with Fortinet Firewall from Slack"
 description: This workflow accepts a Slack command, check if an IP address is blocked, and posts if the IP address is blocked.
-version: 1.1.0
+version: 1.1.1
 vendor: rapid7
 support: rapid7
 status: []

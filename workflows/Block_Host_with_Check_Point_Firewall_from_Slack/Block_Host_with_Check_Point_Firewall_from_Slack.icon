@@ -917,8 +917,8 @@
               "input": {
                 "attachments": [],
                 "message": "Block/unblock request received! Processing request...",
-                "recipient": "#change_me",
-                "thread_ts": ""
+                "recipient": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[message].[channel]}}",
+                "thread_ts": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[timestamp]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -991,8 +991,8 @@
               "input": {
                 "attachments": [],
                 "message": "⚠️ Check Point encountered an error while attempting to unblock the specified host!",
-                "recipient": "#change_me",
-                "thread_ts": ""
+                "recipient": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[message].[channel]}}",
+                "thread_ts": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[timestamp]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -1388,8 +1388,8 @@
               "input": {
                 "attachments": [],
                 "message": "⚠️ Check Point encountered an error while attempting to add the specified host to the block group!",
-                "recipient": "#change_me",
-                "thread_ts": ""
+                "recipient": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[message].[channel]}}",
+                "thread_ts": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[timestamp]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -1496,8 +1496,8 @@
               "input": {
                 "attachments": [],
                 "message": "🛑 Blocking failed: {{[747e47c2-f0a5-4f81-ad2a-35a7ad6627b3].[error_message]}}",
-                "recipient": "#change_me",
-                "thread_ts": ""
+                "recipient": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[message].[channel]}}",
+                "thread_ts": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[timestamp]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -1570,8 +1570,8 @@
               "input": {
                 "attachments": [],
                 "message": "⚠️ {{[d00d5c3b-0e54-468b-977b-cbbb21960ca1].[content]}} ⚠️",
-                "recipient": "#change_me",
-                "thread_ts": ""
+                "recipient": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[message].[channel]}}",
+                "thread_ts": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[timestamp]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -1644,8 +1644,8 @@
               "input": {
                 "attachments": [],
                 "message": "✅ {{[b3aeb54a-4919-48dd-907b-a97947f0fa4c].[content]}} ✅",
-                "recipient": "#change_me",
-                "thread_ts": ""
+                "recipient": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[message].[channel]}}",
+                "thread_ts": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[timestamp]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -1736,8 +1736,8 @@
               "input": {
                 "attachments": [],
                 "message": "✅ {{[ebaa672f-650f-41f0-bb16-e3f6c56c0aca].[content]}} ✅",
-                "recipient": "#change_me",
-                "thread_ts": ""
+                "recipient": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[message].[channel]}}",
+                "thread_ts": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[timestamp]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -1810,8 +1810,8 @@
               "input": {
                 "attachments": [],
                 "message": "🛑 Check Point failed to add the host to the specified group! 🛑",
-                "recipient": "#change_me",
-                "thread_ts": ""
+                "recipient": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[message].[channel]}}",
+                "thread_ts": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[timestamp]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -1940,8 +1940,8 @@
               "input": {
                 "attachments": [],
                 "message": "⚠️The input could not be correctly parsed  ⚠️\nYour input was {{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[message].[text]}}",
-                "recipient": "#change_me",
-                "thread_ts": ""
+                "recipient": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[message].[channel]}}",
+                "thread_ts": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[timestamp]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -2014,8 +2014,8 @@
               "input": {
                 "attachments": [],
                 "message": "⚠️ Check Point encountered an error while attempting to add the specified host!",
-                "recipient": "#change_me",
-                "thread_ts": ""
+                "recipient": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[message].[channel]}}",
+                "thread_ts": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[timestamp]}}"
               }
             },
             "defaultInputJSONSchema": {

@@ -23,8 +23,8 @@ Sample Slack Trigger Commands:
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-In the _Check for IP Message_ step edit the Match Channel input from `change_me` to an appropriate channel.
-In the _Check for IP_ step edit the Address Group Name input from `change_me` to an appropriate address group.
+Once the workflow has been imported, **Update the first step with the channel name to suit your Slack environment!** by editing the input with the preset text of `change_me` to match the channel to monitor.
+And in the _Check for IP_ step edit the Address Group Name input from `change_me` to an appropriate address group to monitor.
 
 To run the workflow, @ your Slackbot in the chosen channel or in a direct message along with the command "block-status <IP>". The workflow will post responses in a thread.
 
@@ -42,6 +42,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.1.1 - Pass channel name from trigger to all subsequent steps so user only has to configure channel once
 * 1.1.0 - Update Fortinet FortiGate to latest version
 * 1.0.0 - Initial workflow
 

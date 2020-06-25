@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Block_Host_with_Palo_Alto_Firewall_from_Slack
 title: "Block Host with Palo Alto Firewall from Slack"
 description: "This workflow uses a Slack message to block and unblock a host from a Palo Alto firewall."
-version: 1.1.0
+version: 1.1.1
 vendor: rapid7
 support: rapid7
 status: []
