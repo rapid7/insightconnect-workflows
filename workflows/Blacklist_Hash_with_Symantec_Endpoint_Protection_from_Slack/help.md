@@ -33,7 +33,7 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Broadcom Symantec Endpoint Protection|1.0.1|1|
+|Broadcom Symantec Endpoint Protection|1.0.2|1|
 
 ## Troubleshooting
 
