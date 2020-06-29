@@ -1,0 +1,1471 @@
+{
+  "kom": {
+    "komandVersion": "1.55.1-0-g08754",
+    "komFileVersion": "2.0.0",
+    "exportedAt": "2020-06-29T22:34:21.546020001Z",
+    "workflowVersions": [
+      {
+        "name": "Blacklist Hash with Cylance from Slack",
+        "type": "runnable",
+        "version": "",
+        "description": "Blacklist SHA256 hashes with Cylance by submitting them from Slack",
+        "graph": {
+          "edges": {
+            "00f01f0e-36a9-45e0-87e3-bec518ff016a": {
+              "id": "00f01f0e-36a9-45e0-87e3-bec518ff016a",
+              "name": "Yes",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "893347f6-f470-4858-a993-79131e4d1cef",
+              "toNodeId": "3d2021b4-fc66-4dd2-a002-1d5e86962bc1"
+            },
+            "020f69ac-4aad-4996-a6c0-d6a06249efc6": {
+              "id": "020f69ac-4aad-4996-a6c0-d6a06249efc6",
+              "name": "No",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "893347f6-f470-4858-a993-79131e4d1cef",
+              "toNodeId": "2ee627f7-71fc-4b5d-936d-57378fbf7c79"
+            },
+            "0952ce6d-42f4-4fbe-8700-5ea86f4e0ceb": {
+              "id": "0952ce6d-42f4-4fbe-8700-5ea86f4e0ceb",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "3d2021b4-fc66-4dd2-a002-1d5e86962bc1",
+              "toNodeId": "48c91eaf-2f93-4d16-aa35-f7f709067cf9"
+            },
+            "12ae45fe-0093-4da1-9f7f-570c1902061d": {
+              "id": "12ae45fe-0093-4da1-9f7f-570c1902061d",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "2ee627f7-71fc-4b5d-936d-57378fbf7c79",
+              "toNodeId": ""
+            },
+            "1965c7bd-6a89-4c6a-abbc-8a1a338e0da5": {
+              "id": "1965c7bd-6a89-4c6a-abbc-8a1a338e0da5",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "4f241ab6-4336-4575-9576-b93b74e1be65",
+              "toNodeId": "893347f6-f470-4858-a993-79131e4d1cef"
+            },
+            "1a36d1a5-c078-49ca-848a-3617156f4eec": {
+              "id": "1a36d1a5-c078-49ca-848a-3617156f4eec",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "3354cf31-4138-42be-96b0-bb664ff6d92e",
+              "toNodeId": "f3ae9463-4286-456d-a962-6477505cb00c"
+            },
+            "20effd02-8df3-44e4-8c49-dd1e5ad291b0": {
+              "id": "20effd02-8df3-44e4-8c49-dd1e5ad291b0",
+              "name": "No",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "f77b4f26-7501-4c9e-810b-f00e34ed735c",
+              "toNodeId": "2be13d23-f159-455e-a32b-39d07fd67e06"
+            },
+            "39bcecb3-7ac6-4eec-b322-b11b90fefa75": {
+              "id": "39bcecb3-7ac6-4eec-b322-b11b90fefa75",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "d1cc5599-f1aa-4ce0-b6e8-553c69b3939f",
+              "toNodeId": "05cd428e-9b7f-49b6-8b8e-3113253ec552"
+            },
+            "497ee574-4f8f-4b4a-a7ea-b78eb1e0c2b4": {
+              "id": "497ee574-4f8f-4b4a-a7ea-b78eb1e0c2b4",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "2be13d23-f159-455e-a32b-39d07fd67e06",
+              "toNodeId": ""
+            },
+            "64c52871-f5d0-4990-adb3-cc65301ac7c9": {
+              "id": "64c52871-f5d0-4990-adb3-cc65301ac7c9",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "48c91eaf-2f93-4d16-aa35-f7f709067cf9",
+              "toNodeId": ""
+            },
+            "750f2112-edb9-4493-b0a5-fd4d28b94182": {
+              "id": "750f2112-edb9-4493-b0a5-fd4d28b94182",
+              "name": "Yes",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "f77b4f26-7501-4c9e-810b-f00e34ed735c",
+              "toNodeId": "3354cf31-4138-42be-96b0-bb664ff6d92e"
+            },
+            "831e8d45-dbe5-4df4-ae7d-9d2d8820933e": {
+              "id": "831e8d45-dbe5-4df4-ae7d-9d2d8820933e",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "2b25b62f-4e6c-44e1-9ea0-dfcea0bbee0b",
+              "toNodeId": "47530ca7-511b-4e75-85aa-753c47ab516a"
+            },
+            "93c5132f-8ab9-4cf1-add4-222c2b6abc06": {
+              "id": "93c5132f-8ab9-4cf1-add4-222c2b6abc06",
+              "name": "Unblacklist",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "f3ae9463-4286-456d-a962-6477505cb00c",
+              "toNodeId": "882ed1e0-e954-48bb-bfa0-e3e763ea85f7"
+            },
+            "9a87fdd8-52e6-4082-b0fb-83a2cbfd2006": {
+              "id": "9a87fdd8-52e6-4082-b0fb-83a2cbfd2006",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "7c54ce75-bf4b-4046-9ec3-3ec17d718b4a",
+              "toNodeId": "f77b4f26-7501-4c9e-810b-f00e34ed735c"
+            },
+            "9c00f4b5-7402-4a2d-85de-fc0bda6f784d": {
+              "id": "9c00f4b5-7402-4a2d-85de-fc0bda6f784d",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "6e7ce0f6-292d-4fd5-a223-b0c81e16f28a",
+              "toNodeId": ""
+            },
+            "9e0f6f9e-1970-4f54-a1f2-95a0c86a0650": {
+              "id": "9e0f6f9e-1970-4f54-a1f2-95a0c86a0650",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "05cd428e-9b7f-49b6-8b8e-3113253ec552",
+              "toNodeId": "7c54ce75-bf4b-4046-9ec3-3ec17d718b4a"
+            },
+            "a32ff8e1-8884-47cf-a6b3-ff02214781e7": {
+              "id": "a32ff8e1-8884-47cf-a6b3-ff02214781e7",
+              "name": "Yes",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "47530ca7-511b-4e75-85aa-753c47ab516a",
+              "toNodeId": "3d2021b4-fc66-4dd2-a002-1d5e86962bc1"
+            },
+            "a652cb66-7ebf-446d-b958-2b94f84a5f28": {
+              "id": "a652cb66-7ebf-446d-b958-2b94f84a5f28",
+              "name": "No",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "47530ca7-511b-4e75-85aa-753c47ab516a",
+              "toNodeId": "6e7ce0f6-292d-4fd5-a223-b0c81e16f28a"
+            },
+            "e3c84042-7391-40b4-8f64-d90dbca0bf52": {
+              "id": "e3c84042-7391-40b4-8f64-d90dbca0bf52",
+              "name": "Blacklist",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "f3ae9463-4286-456d-a962-6477505cb00c",
+              "toNodeId": "dfceb076-81c6-4d41-820b-cc564a955e43"
+            },
+            "e9a06c4b-3d15-435e-9250-63db316b9ccc": {
+              "id": "e9a06c4b-3d15-435e-9250-63db316b9ccc",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "dfceb076-81c6-4d41-820b-cc564a955e43",
+              "toNodeId": "4f241ab6-4336-4575-9576-b93b74e1be65"
+            },
+            "fb214bf6-985a-42a0-9e4a-41cf39676c2d": {
+              "id": "fb214bf6-985a-42a0-9e4a-41cf39676c2d",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "882ed1e0-e954-48bb-bfa0-e3e763ea85f7",
+              "toNodeId": "2b25b62f-4e6c-44e1-9ea0-dfcea0bbee0b"
+            }
+          },
+          "nodes": {
+            "05cd428e-9b7f-49b6-8b8e-3113253ec552": {
+              "id": "05cd428e-9b7f-49b6-8b8e-3113253ec552",
+              "parentNodeId": ""
+            },
+            "2b25b62f-4e6c-44e1-9ea0-dfcea0bbee0b": {
+              "id": "2b25b62f-4e6c-44e1-9ea0-dfcea0bbee0b",
+              "parentNodeId": ""
+            },
+            "2be13d23-f159-455e-a32b-39d07fd67e06": {
+              "id": "2be13d23-f159-455e-a32b-39d07fd67e06",
+              "parentNodeId": ""
+            },
+            "2ee627f7-71fc-4b5d-936d-57378fbf7c79": {
+              "id": "2ee627f7-71fc-4b5d-936d-57378fbf7c79",
+              "parentNodeId": ""
+            },
+            "3354cf31-4138-42be-96b0-bb664ff6d92e": {
+              "id": "3354cf31-4138-42be-96b0-bb664ff6d92e",
+              "parentNodeId": ""
+            },
+            "3d2021b4-fc66-4dd2-a002-1d5e86962bc1": {
+              "id": "3d2021b4-fc66-4dd2-a002-1d5e86962bc1",
+              "parentNodeId": ""
+            },
+            "47530ca7-511b-4e75-85aa-753c47ab516a": {
+              "id": "47530ca7-511b-4e75-85aa-753c47ab516a",
+              "parentNodeId": ""
+            },
+            "48c91eaf-2f93-4d16-aa35-f7f709067cf9": {
+              "id": "48c91eaf-2f93-4d16-aa35-f7f709067cf9",
+              "parentNodeId": ""
+            },
+            "4f241ab6-4336-4575-9576-b93b74e1be65": {
+              "id": "4f241ab6-4336-4575-9576-b93b74e1be65",
+              "parentNodeId": ""
+            },
+            "6e7ce0f6-292d-4fd5-a223-b0c81e16f28a": {
+              "id": "6e7ce0f6-292d-4fd5-a223-b0c81e16f28a",
+              "parentNodeId": ""
+            },
+            "7c54ce75-bf4b-4046-9ec3-3ec17d718b4a": {
+              "id": "7c54ce75-bf4b-4046-9ec3-3ec17d718b4a",
+              "parentNodeId": ""
+            },
+            "882ed1e0-e954-48bb-bfa0-e3e763ea85f7": {
+              "id": "882ed1e0-e954-48bb-bfa0-e3e763ea85f7",
+              "parentNodeId": ""
+            },
+            "893347f6-f470-4858-a993-79131e4d1cef": {
+              "id": "893347f6-f470-4858-a993-79131e4d1cef",
+              "parentNodeId": ""
+            },
+            "d1cc5599-f1aa-4ce0-b6e8-553c69b3939f": {
+              "id": "d1cc5599-f1aa-4ce0-b6e8-553c69b3939f",
+              "parentNodeId": ""
+            },
+            "dfceb076-81c6-4d41-820b-cc564a955e43": {
+              "id": "dfceb076-81c6-4d41-820b-cc564a955e43",
+              "parentNodeId": ""
+            },
+            "f3ae9463-4286-456d-a962-6477505cb00c": {
+              "id": "f3ae9463-4286-456d-a962-6477505cb00c",
+              "parentNodeId": ""
+            },
+            "f77b4f26-7501-4c9e-810b-f00e34ed735c": {
+              "id": "f77b4f26-7501-4c9e-810b-f00e34ed735c",
+              "parentNodeId": ""
+            }
+          }
+        },
+        "steps": {
+          "05cd428e-9b7f-49b6-8b8e-3113253ec552": {
+            "nodeId": "05cd428e-9b7f-49b6-8b8e-3113253ec552",
+            "name": "Post Workflow Running",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": "Message received! The Cylance workflow is running...",
+                "recipient": "{{[d1cc5599-f1aa-4ce0-b6e8-553c69b3939f].[message].[channel]}}",
+                "thread_ts": "{{[d1cc5599-f1aa-4ce0-b6e8-553c69b3939f].[timestamp]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 4,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 3,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                },
+                "thread_ts": {
+                  "description": "Select timestamp output variable from parent message step",
+                  "order": 2,
+                  "title": "To post in a thread, select parent message timestamp",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
+          },
+          "2b25b62f-4e6c-44e1-9ea0-dfcea0bbee0b": {
+            "nodeId": "2b25b62f-4e6c-44e1-9ea0-dfcea0bbee0b",
+            "name": "Unblacklist Hash",
+            "type": "action",
+            "plugin": {
+              "name": "BlackBerry CylancePROTECT",
+              "slugVendor": "rapid7",
+              "slugName": "cylance_protect",
+              "slugVersion": "1.0.3",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/cylance_protect/1.0.3/icon.png"
+            },
+            "identifier": "blacklist",
+            "continueOnFailure": true,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "blacklist_state": false,
+                "description": "Hash Blacklisted from InsightConnect",
+                "hash": "{{[7c54ce75-bf4b-4046-9ec3-3ec17d718b4a].[hash]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "blacklist_state": {
+                  "description": "True to blacklist hash, false to unblacklist hash",
+                  "order": 3,
+                  "title": "Blacklist State",
+                  "type": "boolean"
+                },
+                "description": {
+                  "default": "Hash Blacklisted from InsightConnect",
+                  "description": "Description for why the hash is blacklisted",
+                  "order": 2,
+                  "title": "Description",
+                  "type": "string"
+                },
+                "hash": {
+                  "description": "Create a blacklist item from a SHA256 hash",
+                  "order": 1,
+                  "title": "Hash",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "hash",
+                "description",
+                "blacklist_state"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "success": {
+                  "description": "Return true if blacklist item was created or deleted",
+                  "order": 1,
+                  "title": "Success",
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "success"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "2be13d23-f159-455e-a32b-39d07fd67e06": {
+            "nodeId": "2be13d23-f159-455e-a32b-39d07fd67e06",
+            "name": "Post Invalid Hash",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": ":rotating_light: The hash provided is not a SHA256 hash which is what Cylance expects. Please enter the proper hash and try again!\n\n*Example:*\n* !blacklist-hash 275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f",
+                "recipient": "{{[d1cc5599-f1aa-4ce0-b6e8-553c69b3939f].[message].[channel]}}",
+                "thread_ts": "{{[d1cc5599-f1aa-4ce0-b6e8-553c69b3939f].[timestamp]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 4,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 3,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                },
+                "thread_ts": {
+                  "description": "Select timestamp output variable from parent message step",
+                  "order": 2,
+                  "title": "To post in a thread, select parent message timestamp",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
+          },
+          "2ee627f7-71fc-4b5d-936d-57378fbf7c79": {
+            "nodeId": "2ee627f7-71fc-4b5d-936d-57378fbf7c79",
+            "name": "Blacklist Failure",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": "The Cylance Blacklist step failed unexpectedly. This could occur if you're trying to blacklist a hash that is already blacklisted. Check if this is the case, otherwise please see the job details for more information.\n\n{{[$job].[URL]}}",
+                "recipient": "{{[d1cc5599-f1aa-4ce0-b6e8-553c69b3939f].[message].[channel]}}",
+                "thread_ts": "{{[d1cc5599-f1aa-4ce0-b6e8-553c69b3939f].[timestamp]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 4,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 3,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                },
+                "thread_ts": {
+                  "description": "Select timestamp output variable from parent message step",
+                  "order": 2,
+                  "title": "To post in a thread, select parent message timestamp",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
+          },
+          "3354cf31-4138-42be-96b0-bb664ff6d92e": {
+            "nodeId": "3354cf31-4138-42be-96b0-bb664ff6d92e",
+            "name": "Valid Hash",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": "Hash is valid! \n\n`{{[7c54ce75-bf4b-4046-9ec3-3ec17d718b4a].[hash]}}`",
+                "recipient": "{{[d1cc5599-f1aa-4ce0-b6e8-553c69b3939f].[message].[channel]}}",
+                "thread_ts": "{{[d1cc5599-f1aa-4ce0-b6e8-553c69b3939f].[timestamp]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 4,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 3,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                },
+                "thread_ts": {
+                  "description": "Select timestamp output variable from parent message step",
+                  "order": 2,
+                  "title": "To post in a thread, select parent message timestamp",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
+          },
+          "3d2021b4-fc66-4dd2-a002-1d5e86962bc1": {
+            "nodeId": "3d2021b4-fc66-4dd2-a002-1d5e86962bc1",
+            "name": "Success Path",
+            "type": "join",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "decisionEdgeIds": [
+                "a32ff8e1-8884-47cf-a6b3-ff02214781e7",
+                "00f01f0e-36a9-45e0-87e3-bec518ff016a"
+              ],
+              "variableSets": []
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": {
+              "properties": {},
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": {
+              "properties": {},
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "NONE"
+          },
+          "47530ca7-511b-4e75-85aa-753c47ab516a": {
+            "nodeId": "47530ca7-511b-4e75-85aa-753c47ab516a",
+            "name": "Unblacklist Success?",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "a652cb66-7ebf-446d-b958-2b94f84a5f28",
+              "stepControlParams": [
+                {
+                  "edgeId": "a32ff8e1-8884-47cf-a6b3-ff02214781e7",
+                  "expression": {
+                    "left": {
+                      "name": "2b25b62f-4e6c-44e1-9ea0-dfcea0bbee0b.$success",
+                      "type": "variable"
+                    },
+                    "op": "=",
+                    "right": {
+                      "type": "literal",
+                      "value": true
+                    },
+                    "type": "binary"
+                  },
+                  "expressionText": "{{[2b25b62f-4e6c-44e1-9ea0-dfcea0bbee0b].[$success]}} = true"
+                },
+                {
+                  "edgeId": "a652cb66-7ebf-446d-b958-2b94f84a5f28",
+                  "expression": {},
+                  "expressionText": ""
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          },
+          "48c91eaf-2f93-4d16-aa35-f7f709067cf9": {
+            "nodeId": "48c91eaf-2f93-4d16-aa35-f7f709067cf9",
+            "name": "Post Success!",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": ":white_check_mark: Workflow executed successfully \n\nCylance successfully completed the task for the hash:\n\n`{{[7c54ce75-bf4b-4046-9ec3-3ec17d718b4a].[hash]}}`",
+                "recipient": "{{[d1cc5599-f1aa-4ce0-b6e8-553c69b3939f].[message].[channel]}}",
+                "thread_ts": "{{[d1cc5599-f1aa-4ce0-b6e8-553c69b3939f].[timestamp]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 4,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 3,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                },
+                "thread_ts": {
+                  "description": "Select timestamp output variable from parent message step",
+                  "order": 2,
+                  "title": "To post in a thread, select parent message timestamp",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
+          },
+          "4f241ab6-4336-4575-9576-b93b74e1be65": {
+            "nodeId": "4f241ab6-4336-4575-9576-b93b74e1be65",
+            "name": "Blacklist Hash",
+            "type": "action",
+            "plugin": {
+              "name": "BlackBerry CylancePROTECT",
+              "slugVendor": "rapid7",
+              "slugName": "cylance_protect",
+              "slugVersion": "1.0.3",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/cylance_protect/1.0.3/icon.png"
+            },
+            "identifier": "blacklist",
+            "continueOnFailure": true,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "blacklist_state": true,
+                "description": "Hash Blacklisted from InsightConnect",
+                "hash": "{{[7c54ce75-bf4b-4046-9ec3-3ec17d718b4a].[hash]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "blacklist_state": {
+                  "description": "True to blacklist hash, false to unblacklist hash",
+                  "order": 3,
+                  "title": "Blacklist State",
+                  "type": "boolean"
+                },
+                "description": {
+                  "default": "Hash Blacklisted from InsightConnect",
+                  "description": "Description for why the hash is blacklisted",
+                  "order": 2,
+                  "title": "Description",
+                  "type": "string"
+                },
+                "hash": {
+                  "description": "Create a blacklist item from a SHA256 hash",
+                  "order": 1,
+                  "title": "Hash",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "hash",
+                "description",
+                "blacklist_state"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "success": {
+                  "description": "Return true if blacklist item was created or deleted",
+                  "order": 1,
+                  "title": "Success",
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "success"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "6e7ce0f6-292d-4fd5-a223-b0c81e16f28a": {
+            "nodeId": "6e7ce0f6-292d-4fd5-a223-b0c81e16f28a",
+            "name": "Unblacklist Failure Post",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": "The Cylance Unblacklist step failed unexpectedly. This could occur if you're trying to unblacklist a hash that is NOT blacklisted. Check if this is the case, otherwise please see the job details for more information.\n\n{{[$job].[URL]}}",
+                "recipient": "{{[d1cc5599-f1aa-4ce0-b6e8-553c69b3939f].[message].[channel]}}",
+                "thread_ts": "{{[d1cc5599-f1aa-4ce0-b6e8-553c69b3939f].[timestamp]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 4,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 3,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                },
+                "thread_ts": {
+                  "description": "Select timestamp output variable from parent message step",
+                  "order": 2,
+                  "title": "To post in a thread, select parent message timestamp",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
+          },
+          "7c54ce75-bf4b-4046-9ec3-3ec17d718b4a": {
+            "nodeId": "7c54ce75-bf4b-4046-9ec3-3ec17d718b4a",
+            "name": "Extract Command and Hash",
+            "type": "pattern_match",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "captureAll": false,
+              "expressionText": "<.*> {{command:/!.*/}} {{hash:/.*/}}",
+              "expressions": [
+                {
+                  "type": "text",
+                  "value": "<.*> "
+                },
+                {
+                  "type": "variable",
+                  "value": {
+                    "ident": "command",
+                    "regex": "!.*"
+                  }
+                },
+                {
+                  "type": "text",
+                  "value": " "
+                },
+                {
+                  "type": "variable",
+                  "value": {
+                    "ident": "hash",
+                    "regex": ".*"
+                  }
+                }
+              ],
+              "ignoreCase": false,
+              "input": "{{[d1cc5599-f1aa-4ce0-b6e8-553c69b3939f].[message].[text]}}"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/pattern-match.svg",
+            "connectionType": "NONE"
+          },
+          "882ed1e0-e954-48bb-bfa0-e3e763ea85f7": {
+            "nodeId": "882ed1e0-e954-48bb-bfa0-e3e763ea85f7",
+            "name": "Post Unblacklist Path",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": "The unblacklist pathway was executed!",
+                "recipient": "{{[d1cc5599-f1aa-4ce0-b6e8-553c69b3939f].[message].[channel]}}",
+                "thread_ts": "{{[d1cc5599-f1aa-4ce0-b6e8-553c69b3939f].[timestamp]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 4,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 3,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                },
+                "thread_ts": {
+                  "description": "Select timestamp output variable from parent message step",
+                  "order": 2,
+                  "title": "To post in a thread, select parent message timestamp",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
+          },
+          "893347f6-f470-4858-a993-79131e4d1cef": {
+            "nodeId": "893347f6-f470-4858-a993-79131e4d1cef",
+            "name": "Blacklist Success?",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "020f69ac-4aad-4996-a6c0-d6a06249efc6",
+              "stepControlParams": [
+                {
+                  "edgeId": "00f01f0e-36a9-45e0-87e3-bec518ff016a",
+                  "expression": {
+                    "left": {
+                      "name": "4f241ab6-4336-4575-9576-b93b74e1be65.$success",
+                      "type": "variable"
+                    },
+                    "op": "=",
+                    "right": {
+                      "type": "literal",
+                      "value": true
+                    },
+                    "type": "binary"
+                  },
+                  "expressionText": "{{[4f241ab6-4336-4575-9576-b93b74e1be65].[$success]}} = true"
+                },
+                {
+                  "edgeId": "020f69ac-4aad-4996-a6c0-d6a06249efc6",
+                  "expression": {},
+                  "expressionText": ""
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          },
+          "d1cc5599-f1aa-4ce0-b6e8-553c69b3939f": {
+            "nodeId": "d1cc5599-f1aa-4ce0-b6e8-553c69b3939f",
+            "name": "Blacklist Message Received",
+            "type": "trigger",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "matchChannel": "change_me",
+                "matchText": "!blacklist-hash|!unblacklist-hash",
+                "type": "any"
+              }
+            },
+            "triggerId": "9e5880e9-16e7-40a7-96f2-ff69c0c04661",
+            "defaultInputJSONSchema": {
+              "properties": {
+                "matchChannel": {
+                  "description": "Regex to match for channel name",
+                  "order": 1,
+                  "title": "Match Channel",
+                  "type": "string"
+                },
+                "matchText": {
+                  "description": "Regex to match for Slack message content",
+                  "order": 2,
+                  "title": "Match Text",
+                  "type": "string"
+                },
+                "type": {
+                  "default": "any",
+                  "description": "Desired Slack channel type: direct message to Slack app, group chats, or all channels",
+                  "enum": [
+                    "any",
+                    "direct",
+                    "group"
+                  ],
+                  "order": 3,
+                  "title": "Type",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "type"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "message": {
+                  "properties": {
+                    "channel": {
+                      "description": "Channel name",
+                      "order": 3,
+                      "title": "Channel",
+                      "type": "string"
+                    },
+                    "channel_id": {
+                      "description": "Slack channel ID",
+                      "order": 4,
+                      "title": "Channel ID",
+                      "type": "string"
+                    },
+                    "text": {
+                      "description": "Text",
+                      "order": 5,
+                      "title": "Text",
+                      "type": "string"
+                    },
+                    "ts": {
+                      "description": "Timestamp",
+                      "order": 6,
+                      "title": "Ts",
+                      "type": "string"
+                    },
+                    "user": {
+                      "description": "User name",
+                      "order": 1,
+                      "title": "User",
+                      "type": "string"
+                    },
+                    "user_id": {
+                      "description": "Slack User ID",
+                      "order": 2,
+                      "title": "User ID",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Message",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "display_name": {
+                  "description": "User display name",
+                  "order": 4,
+                  "title": "Display Name",
+                  "type": "string"
+                },
+                "message": {
+                  "$ref": "#/definitions/message",
+                  "description": "Message",
+                  "order": 1,
+                  "title": "Message"
+                },
+                "timestamp": {
+                  "description": "Timestamp",
+                  "order": 3,
+                  "title": "Timestamp",
+                  "type": "string"
+                },
+                "type": {
+                  "description": "Message Type",
+                  "order": 2,
+                  "title": "Type",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/chatops.svg",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "message"
+          },
+          "dfceb076-81c6-4d41-820b-cc564a955e43": {
+            "nodeId": "dfceb076-81c6-4d41-820b-cc564a955e43",
+            "name": "Blacklist Path Post",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": "The blacklist pathway was executed!",
+                "recipient": "{{[d1cc5599-f1aa-4ce0-b6e8-553c69b3939f].[message].[channel]}}",
+                "thread_ts": "{{[05cd428e-9b7f-49b6-8b8e-3113253ec552].[timestamp]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 4,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 3,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                },
+                "thread_ts": {
+                  "description": "Select timestamp output variable from parent message step",
+                  "order": 2,
+                  "title": "To post in a thread, select parent message timestamp",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
+          },
+          "f3ae9463-4286-456d-a962-6477505cb00c": {
+            "nodeId": "f3ae9463-4286-456d-a962-6477505cb00c",
+            "name": "Which Command?",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "e3c84042-7391-40b4-8f64-d90dbca0bf52",
+              "stepControlParams": [
+                {
+                  "edgeId": "e3c84042-7391-40b4-8f64-d90dbca0bf52",
+                  "expression": {},
+                  "expressionText": ""
+                },
+                {
+                  "edgeId": "93c5132f-8ab9-4cf1-add4-222c2b6abc06",
+                  "expression": {
+                    "left": {
+                      "name": "7c54ce75-bf4b-4046-9ec3-3ec17d718b4a.command",
+                      "type": "variable"
+                    },
+                    "op": "contains",
+                    "right": {
+                      "type": "literal",
+                      "value": "unblacklist"
+                    },
+                    "type": "binary"
+                  },
+                  "expressionText": "{{[7c54ce75-bf4b-4046-9ec3-3ec17d718b4a].[command]}} contains \"unblacklist\""
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          },
+          "f77b4f26-7501-4c9e-810b-f00e34ed735c": {
+            "nodeId": "f77b4f26-7501-4c9e-810b-f00e34ed735c",
+            "name": "Is SHA256 Hash?",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "20effd02-8df3-44e4-8c49-dd1e5ad291b0",
+              "stepControlParams": [
+                {
+                  "edgeId": "750f2112-edb9-4493-b0a5-fd4d28b94182",
+                  "expression": {
+                    "left": {
+                      "args": [
+                        {
+                          "name": "7c54ce75-bf4b-4046-9ec3-3ec17d718b4a.hash",
+                          "type": "variable"
+                        }
+                      ],
+                      "name": "length",
+                      "type": "function"
+                    },
+                    "op": "=",
+                    "right": {
+                      "type": "literal",
+                      "value": 64
+                    },
+                    "type": "binary"
+                  },
+                  "expressionText": "length({{[7c54ce75-bf4b-4046-9ec3-3ec17d718b4a].[hash]}}) = 64"
+                },
+                {
+                  "edgeId": "20effd02-8df3-44e4-8c49-dd1e5ad291b0",
+                  "expression": {},
+                  "expressionText": ""
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          }
+        },
+        "tags": null,
+        "humanCostSeconds": 0,
+        "humanCostDisplayUnit": ""
+      }
+    ],
+    "triggers": [
+      {
+        "id": "9e5880e9-16e7-40a7-96f2-ff69c0c04661",
+        "name": "Blacklist Message Received",
+        "description": "",
+        "input": {
+          "matchChannel": "change_me",
+          "matchText": "!blacklist-hash|!unblacklist-hash",
+          "type": "any"
+        },
+        "inputJsonSchema": {
+          "properties": {
+            "matchChannel": {
+              "description": "Regex to match for channel name",
+              "order": 1,
+              "title": "Match Channel",
+              "type": "string"
+            },
+            "matchText": {
+              "description": "Regex to match for Slack message content",
+              "order": 2,
+              "title": "Match Text",
+              "type": "string"
+            },
+            "type": {
+              "default": "any",
+              "description": "Desired Slack channel type: direct message to Slack app, group chats, or all channels",
+              "enum": [
+                "any",
+                "direct",
+                "group"
+              ],
+              "order": 3,
+              "title": "Type",
+              "type": "string"
+            }
+          },
+          "required": [
+            "type"
+          ],
+          "title": "Variables",
+          "type": "object"
+        },
+        "outputJsonSchema": {
+          "definitions": {
+            "message": {
+              "properties": {
+                "channel": {
+                  "description": "Channel name",
+                  "order": 3,
+                  "title": "Channel",
+                  "type": "string"
+                },
+                "channel_id": {
+                  "description": "Slack channel ID",
+                  "order": 4,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "text": {
+                  "description": "Text",
+                  "order": 5,
+                  "title": "Text",
+                  "type": "string"
+                },
+                "ts": {
+                  "description": "Timestamp",
+                  "order": 6,
+                  "title": "Ts",
+                  "type": "string"
+                },
+                "user": {
+                  "description": "User name",
+                  "order": 1,
+                  "title": "User",
+                  "type": "string"
+                },
+                "user_id": {
+                  "description": "Slack User ID",
+                  "order": 2,
+                  "title": "User ID",
+                  "type": "string"
+                }
+              },
+              "title": "Message",
+              "type": "object"
+            }
+          },
+          "properties": {
+            "display_name": {
+              "description": "User display name",
+              "order": 4,
+              "title": "Display Name",
+              "type": "string"
+            },
+            "message": {
+              "$ref": "#/definitions/message",
+              "description": "Message",
+              "order": 1,
+              "title": "Message"
+            },
+            "timestamp": {
+              "description": "Timestamp",
+              "order": 3,
+              "title": "Timestamp",
+              "type": "string"
+            },
+            "type": {
+              "description": "Message Type",
+              "order": 2,
+              "title": "Type",
+              "type": "string"
+            }
+          },
+          "title": "Variables",
+          "type": "object"
+        },
+        "tags": [],
+        "type": "trigger_chatops",
+        "chatOpsAppName": "slack",
+        "chatOpsIdentifier": "message"
+      }
+    ]
+  }
+}
