@@ -8,6 +8,7 @@ Help documentation for InsightConnect can be found at: https://insightconnect.he
 
 General information on InsightConnect is available at: https://rapid7.com/products/insightconnect
 
+Video tutorials are available at: https://discuss.rapid7.com/t/video-tutorials-on-building-and-contributing-workflows/1325
 
 ![InsightConnect](./imgs/insightconnect.png)
 
@@ -18,8 +19,8 @@ To learn more about contributing to the [Rapid7 Extension Library], see our [Con
 
 
 At a high level, contributing a workflow involves:
-1. Building and testing your workflow
-2. Preparing your workflow package
+1. [Building and testing your workflow](https://share.vidyard.com/watch/dYmjsCD9XmuyjXvQcr1dZ6) - Click link for video!
+2. [Preparing your workflow package](https://share.vidyard.com/watch/3qVR4yDEoiAEXRsAz4NYqV) - Click link for video!
 3. Submitting a pull request
 
 
