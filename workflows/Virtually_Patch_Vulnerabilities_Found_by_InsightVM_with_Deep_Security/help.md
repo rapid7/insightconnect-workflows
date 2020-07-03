@@ -38,7 +38,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
-* 1.0.2 - Rename to fix import issue and include Trend Micro in the name
+* 1.0.2 - Rename to fix import issue
 * 1.0.1 - Fix issue in name which caused workflow to fail import from Extension Library
 * 1.0.0 - Initial workflow
 
