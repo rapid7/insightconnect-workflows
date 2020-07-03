@@ -1,6 +1,6 @@
 # Description
 
-Automatically protect your assets against exploitation of vulnerabilities found by InsightVM with Deep Security Virtual Patching (IPS).
+Automatically protect your assets against exploitation of vulnerabilities found by InsightVM with Trend Micro Deep Security Virtual Patching (IPS).
 
 # Key Features
 
@@ -38,6 +38,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.2 - Rename to fix import issue and include Trend Micro in the name
 * 1.0.1 - Fix issue in name which caused workflow to fail import from Extension Library
 * 1.0.0 - Initial workflow
 
