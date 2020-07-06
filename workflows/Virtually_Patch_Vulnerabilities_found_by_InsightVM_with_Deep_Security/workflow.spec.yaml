@@ -3,7 +3,7 @@ products: ["insightconnect", "insightvm"]
 name: Virtually_Patch_Vulnerabilities_found_by_InsightVM_with_Deep_Security
 title: "Virtually Patch Vulnerabilities found by InsightVM with Deep Security"
 description: Automatically protect your assets against exploitation of vulnerabilities found by InsightVM with Deep Security virtual patching.
-version: 1.0.1
+version: 1.0.2
 vendor: rapid7
 support: rapid7
 status: []
