@@ -34,7 +34,7 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Fortinet FortiGate|4.0.0|1|
+|Fortinet FortiGate|4.0.3|1|
 
 ## Troubleshooting
 
@@ -42,6 +42,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.1.2 - Update Fortinet FortiGate to latest version
 * 1.1.1 - Pass channel name from trigger to all subsequent steps so user only has to configure channel once
 * 1.1.0 - Update Fortinet FortiGate to latest version
 * 1.0.0 - Initial workflow
