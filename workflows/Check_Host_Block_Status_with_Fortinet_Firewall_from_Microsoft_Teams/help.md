@@ -44,7 +44,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
-* 1.1.2 - Update Fortinet FortiGate and Microsoft Teams plugins the latest version
+* 1.1.2 - Update Fortinet FortiGate and Microsoft Teams plugins the latest version | Add a new message if Fortinet FortiGate action fails
 * 1.1.1 - Update to make Microsoft Teams plugin the latest version
 * 1.1.0 - Update Fortinet FortiGate to latest version
 * 1.0.0 - Initial workflow
