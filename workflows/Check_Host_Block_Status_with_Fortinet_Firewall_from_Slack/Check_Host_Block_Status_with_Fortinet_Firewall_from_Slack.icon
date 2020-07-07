@@ -161,7 +161,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "⚠️ There was an error with the workflow. The FortiGate did not return results correctly. Check The InsightConnect failed jobs tab for more information. ⚠️",
+                "message": "⚠️ There was an error with the workflow. FortiGate did not return results correctly. Check the InsightConnect failed jobs tab for more information. ⚠️",
                 "recipient": "{{[eb45a27e-1a93-4580-b5dc-f48c252db9f3].[message].[channel]}}",
                 "thread_ts": "{{[eb45a27e-1a93-4580-b5dc-f48c252db9f3].[timestamp]}}"
               }
