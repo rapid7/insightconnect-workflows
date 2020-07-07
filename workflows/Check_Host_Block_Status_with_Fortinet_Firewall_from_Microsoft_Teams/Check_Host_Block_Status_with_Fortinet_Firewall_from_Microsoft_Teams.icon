@@ -801,7 +801,7 @@
             "parameters": {
               "input": {
                 "channel_name": "change_me",
-                "message_content": "⚠️ There was an error with the workflow. The FortiGate did not return results correctly. Check The InsightConnect failed jobs tab for more information. ⚠️",
+                "message_content": "⚠️ There was an error with the workflow. FortiGate did not return results correctly. Check the InsightConnect failed jobs tab for more information. ⚠️",
                 "team_name": "change_me"
               }
             },
