@@ -560,7 +560,7 @@
           },
           "87196bc2-e1e2-428a-a60c-fd3a62974f7a": {
             "nodeId": "87196bc2-e1e2-428a-a60c-fd3a62974f7a",
-            "name": "Fortigate failure",
+            "name": "FortiGate failure",
             "type": "automated_decision",
             "continueOnFailure": false,
             "isDisabled": false,
@@ -786,7 +786,7 @@
           },
           "f699b372-fca8-49c3-90b3-68001b3b1cec": {
             "nodeId": "f699b372-fca8-49c3-90b3-68001b3b1cec",
-            "name": "Fortigate Failure Message",
+            "name": "FortiGate Failure Message",
             "type": "action",
             "plugin": {
               "name": "Microsoft Teams",
@@ -801,7 +801,7 @@
             "parameters": {
               "input": {
                 "channel_name": "change_me",
-                "message_content": "⚠️ There was an error with the workflow. The Fortigate did not return results correctly. Check The InsightConnect failed jobs tab for more information. ⚠️",
+                "message_content": "⚠️ There was an error with the workflow. The FortiGate did not return results correctly. Check The InsightConnect failed jobs tab for more information. ⚠️",
                 "team_name": "change_me"
               }
             },
