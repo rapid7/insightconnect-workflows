@@ -2,7 +2,7 @@
   "kom": {
     "komandVersion": "1.55.1-0-g08754",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-07-07T16:39:51.024797153Z",
+    "exportedAt": "2020-07-07T17:52:10.016910441Z",
     "workflowVersions": [
       {
         "name": "Check Host Block Status with Fortinet Firewall from Microsoft Teams",
@@ -801,7 +801,7 @@
             "parameters": {
               "input": {
                 "channel_name": "change_me",
-                "message_content": "⚠️ There was an error with the workflow. FortiGate did not return results correctly. Check the InsightConnect failed jobs tab for more information. ⚠️",
+                "message_content": "⚠️ There was an error with the workflow. FortiGate did not return results correctly. Check This URL for more information. ⚠️\n<br>{{[$job].[URL]}}\"",
                 "team_name": "change_me"
               }
             },
@@ -975,7 +975,7 @@
                 "team_name": "change_me"
               }
             },
-            "triggerId": "aac0c0f4-b228-43e1-b8fb-cd1424d6e97f",
+            "triggerId": "2c55c7f8-7b90-4ecd-92b7-ae0dd6e2cac4",
             "defaultInputJSONSchema": {
               "properties": {
                 "channel_name": {
@@ -1132,7 +1132,7 @@
     ],
     "triggers": [
       {
-        "id": "aac0c0f4-b228-43e1-b8fb-cd1424d6e97f",
+        "id": "2c55c7f8-7b90-4ecd-92b7-ae0dd6e2cac4",
         "identifier": "new_message_received",
         "name": "Check for IP Message",
         "description": "",
