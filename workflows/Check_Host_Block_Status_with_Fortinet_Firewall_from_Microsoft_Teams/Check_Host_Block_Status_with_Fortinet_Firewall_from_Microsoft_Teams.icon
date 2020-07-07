@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.51.2-0-gfd7dc",
+    "komandVersion": "1.55.1-0-g08754",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-05-29T19:26:43.658792695Z",
+    "exportedAt": "2020-07-07T16:39:51.024797153Z",
     "workflowVersions": [
       {
         "name": "Check Host Block Status with Fortinet Firewall from Microsoft Teams",
@@ -25,7 +25,7 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "3ae0cb53-09df-47dc-b8db-fb11a28f15ae",
-              "toNodeId": "792ba23e-401f-4a04-b65a-396f849de558"
+              "toNodeId": "87196bc2-e1e2-428a-a60c-fd3a62974f7a"
             },
             "56f82d17-61c7-45f1-9075-b28b3ee0543b": {
               "id": "56f82d17-61c7-45f1-9075-b28b3ee0543b",
@@ -50,6 +50,14 @@
               "parentNodeId": "",
               "fromNodeId": "67025537-07fb-49c8-95ce-d12c9e8e8842",
               "toNodeId": "3ae0cb53-09df-47dc-b8db-fb11a28f15ae"
+            },
+            "8c05ad1d-4323-46f7-8872-af86fd5b2ea4": {
+              "id": "8c05ad1d-4323-46f7-8872-af86fd5b2ea4",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "f699b372-fca8-49c3-90b3-68001b3b1cec",
+              "toNodeId": ""
             },
             "a570ddbc-a12d-4ad4-9191-dbd1b6206f8a": {
               "id": "a570ddbc-a12d-4ad4-9191-dbd1b6206f8a",
@@ -82,6 +90,22 @@
               "parentNodeId": "",
               "fromNodeId": "8d73f510-1fb3-4cec-8611-edd9c2394056",
               "toNodeId": "e92ffb3c-b18e-46b6-9815-52437dcc1ef4"
+            },
+            "d9e169f8-747e-47f3-90d3-db10d7148ada": {
+              "id": "d9e169f8-747e-47f3-90d3-db10d7148ada",
+              "name": "No",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "87196bc2-e1e2-428a-a60c-fd3a62974f7a",
+              "toNodeId": "792ba23e-401f-4a04-b65a-396f849de558"
+            },
+            "dabf1ede-1c76-4d30-9909-299db0b399ff": {
+              "id": "dabf1ede-1c76-4d30-9909-299db0b399ff",
+              "name": "Yes",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "87196bc2-e1e2-428a-a60c-fd3a62974f7a",
+              "toNodeId": "f699b372-fca8-49c3-90b3-68001b3b1cec"
             },
             "f57db6b9-85c0-4229-bc5e-b81295ef0060": {
               "id": "f57db6b9-85c0-4229-bc5e-b81295ef0060",
@@ -117,12 +141,20 @@
               "id": "792ba23e-401f-4a04-b65a-396f849de558",
               "parentNodeId": ""
             },
+            "87196bc2-e1e2-428a-a60c-fd3a62974f7a": {
+              "id": "87196bc2-e1e2-428a-a60c-fd3a62974f7a",
+              "parentNodeId": ""
+            },
             "8d73f510-1fb3-4cec-8611-edd9c2394056": {
               "id": "8d73f510-1fb3-4cec-8611-edd9c2394056",
               "parentNodeId": ""
             },
             "e92ffb3c-b18e-46b6-9815-52437dcc1ef4": {
               "id": "e92ffb3c-b18e-46b6-9815-52437dcc1ef4",
+              "parentNodeId": ""
+            },
+            "f699b372-fca8-49c3-90b3-68001b3b1cec": {
+              "id": "f699b372-fca8-49c3-90b3-68001b3b1cec",
               "parentNodeId": ""
             },
             "f8671c10-b8f2-441d-b6e3-c98d10469fda": {
@@ -215,11 +247,11 @@
               "name": "Fortinet FortiGate",
               "slugVendor": "rapid7",
               "slugName": "fortinet_fortigate",
-              "slugVersion": "4.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/fortinet_fortigate/4.0.0/icon.png"
+              "slugVersion": "4.0.3",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/fortinet_fortigate/4.0.3/icon.png"
             },
             "identifier": "check_if_address_in_group",
-            "continueOnFailure": false,
+            "continueOnFailure": true,
             "isDisabled": false,
             "parameters": {
               "input": {
@@ -277,8 +309,8 @@
                 }
               },
               "required": [
-                "found",
-                "address_objects"
+                "address_objects",
+                "found"
               ],
               "title": "Variables",
               "type": "object"
@@ -295,8 +327,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.0.4",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
+              "slugVersion": "2.0.5",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.5/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
@@ -501,7 +533,7 @@
                   "edgeId": "1b7c51fe-7bfa-4809-83d0-1c2de309dd81",
                   "expression": {
                     "left": {
-                      "name": "3ae0cb53-09df-47dc-b8db-fb11a28f15ae.ip_address_found",
+                      "name": "3ae0cb53-09df-47dc-b8db-fb11a28f15ae.found",
                       "type": "variable"
                     },
                     "op": "==",
@@ -511,10 +543,48 @@
                     },
                     "type": "binary"
                   },
-                  "expressionText": "{{[3ae0cb53-09df-47dc-b8db-fb11a28f15ae].[ip_address_found]}} == true"
+                  "expressionText": "{{[3ae0cb53-09df-47dc-b8db-fb11a28f15ae].[found]}} == true"
                 },
                 {
                   "edgeId": "f57db6b9-85c0-4229-bc5e-b81295ef0060",
+                  "expression": {},
+                  "expressionText": ""
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          },
+          "87196bc2-e1e2-428a-a60c-fd3a62974f7a": {
+            "nodeId": "87196bc2-e1e2-428a-a60c-fd3a62974f7a",
+            "name": "Fortigate failure",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "dabf1ede-1c76-4d30-9909-299db0b399ff",
+              "stepControlParams": [
+                {
+                  "edgeId": "d9e169f8-747e-47f3-90d3-db10d7148ada",
+                  "expression": {
+                    "left": {
+                      "name": "3ae0cb53-09df-47dc-b8db-fb11a28f15ae.$success",
+                      "type": "variable"
+                    },
+                    "op": "==",
+                    "right": {
+                      "type": "literal",
+                      "value": true
+                    },
+                    "type": "binary"
+                  },
+                  "expressionText": "{{[3ae0cb53-09df-47dc-b8db-fb11a28f15ae].[$success]}} == true"
+                },
+                {
+                  "edgeId": "dabf1ede-1c76-4d30-9909-299db0b399ff",
                   "expression": {},
                   "expressionText": ""
                 }
@@ -552,8 +622,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.0.4",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
+              "slugVersion": "2.0.5",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.5/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
@@ -714,6 +784,176 @@
             "defaultImageData": "",
             "connectionType": "CONNECTION"
           },
+          "f699b372-fca8-49c3-90b3-68001b3b1cec": {
+            "nodeId": "f699b372-fca8-49c3-90b3-68001b3b1cec",
+            "name": "Fortigate Failure Message",
+            "type": "action",
+            "plugin": {
+              "name": "Microsoft Teams",
+              "slugVendor": "rapid7",
+              "slugName": "microsoft_teams",
+              "slugVersion": "2.0.5",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.5/icon.png"
+            },
+            "identifier": "send_html_message",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "channel_name": "change_me",
+                "message_content": "⚠️ There was an error with the workflow. The Fortigate did not return results correctly. Check The InsightConnect failed jobs tab for more information. ⚠️",
+                "team_name": "change_me"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "channel_name": {
+                  "description": "Channel name",
+                  "order": 2,
+                  "title": "Channel Name",
+                  "type": "string"
+                },
+                "message_content": {
+                  "description": "HTML content to send",
+                  "order": 3,
+                  "title": "Message Content",
+                  "type": "string"
+                },
+                "team_name": {
+                  "description": "Team name",
+                  "order": 1,
+                  "title": "Team Name",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "team_name",
+                "channel_name",
+                "message_content"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "body": {
+                  "properties": {
+                    "content": {
+                      "description": "Content",
+                      "order": 1,
+                      "title": "Content",
+                      "type": "string"
+                    },
+                    "contentType": {
+                      "description": "Content type",
+                      "order": 2,
+                      "title": "Content Type",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Body",
+                  "type": "object"
+                },
+                "from": {
+                  "properties": {
+                    "user": {
+                      "$ref": "#/definitions/user",
+                      "description": "User",
+                      "order": 1,
+                      "title": "User"
+                    }
+                  },
+                  "title": "From",
+                  "type": "object"
+                },
+                "message": {
+                  "properties": {
+                    "body": {
+                      "$ref": "#/definitions/body",
+                      "description": "Body",
+                      "order": 1,
+                      "title": "Body"
+                    },
+                    "createdDateTime": {
+                      "description": "Created date time",
+                      "order": 3,
+                      "title": "Created Date Time",
+                      "type": "string"
+                    },
+                    "from": {
+                      "$ref": "#/definitions/from",
+                      "description": "From",
+                      "order": 2,
+                      "title": "From"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 8,
+                      "title": "ID",
+                      "type": "string"
+                    },
+                    "importance": {
+                      "description": "Importance",
+                      "order": 5,
+                      "title": "Importance",
+                      "type": "string"
+                    },
+                    "locale": {
+                      "description": "Locale",
+                      "order": 7,
+                      "title": "Locale",
+                      "type": "string"
+                    },
+                    "messageType": {
+                      "description": "Message type",
+                      "order": 6,
+                      "title": "Message Type",
+                      "type": "string"
+                    },
+                    "webUrl": {
+                      "description": "Web URL",
+                      "order": 4,
+                      "title": "Web URL",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Message",
+                  "type": "object"
+                },
+                "user": {
+                  "properties": {
+                    "displayName": {
+                      "description": "Display name",
+                      "order": 1,
+                      "title": "Display name",
+                      "type": "string"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 2,
+                      "title": "ID",
+                      "type": "string"
+                    }
+                  },
+                  "title": "User",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "message": {
+                  "$ref": "#/definitions/message",
+                  "description": "The message object that was created",
+                  "order": 1,
+                  "title": "Message"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
           "f8671c10-b8f2-441d-b6e3-c98d10469fda": {
             "nodeId": "f8671c10-b8f2-441d-b6e3-c98d10469fda",
             "name": "Check for IP Message",
@@ -722,8 +962,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.0.4",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
+              "slugVersion": "2.0.5",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.5/icon.png"
             },
             "identifier": "new_message_received",
             "continueOnFailure": false,
@@ -731,11 +971,11 @@
             "parameters": {
               "input": {
                 "channel_name": "change_me",
-                "message_content": "!block-status",
+                "message_content": "^!block-status",
                 "team_name": "change_me"
               }
             },
-            "triggerId": "78725f9d-8927-47e7-8599-c1ba9ce8e1c9",
+            "triggerId": "aac0c0f4-b228-43e1-b8fb-cd1424d6e97f",
             "defaultInputJSONSchema": {
               "properties": {
                 "channel_name": {
@@ -892,13 +1132,13 @@
     ],
     "triggers": [
       {
-        "id": "78725f9d-8927-47e7-8599-c1ba9ce8e1c9",
+        "id": "aac0c0f4-b228-43e1-b8fb-cd1424d6e97f",
         "identifier": "new_message_received",
         "name": "Check for IP Message",
         "description": "",
         "input": {
           "channel_name": "change_me",
-          "message_content": "!block-status",
+          "message_content": "^!block-status",
           "team_name": "change_me"
         },
         "inputJsonSchema": {
@@ -1051,8 +1291,8 @@
           "name": "Microsoft Teams",
           "slugVendor": "rapid7",
           "slugName": "microsoft_teams",
-          "slugVersion": "2.0.4",
-          "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
+          "slugVersion": "2.0.5",
+          "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.5/icon.png"
         }
       }
     ]
