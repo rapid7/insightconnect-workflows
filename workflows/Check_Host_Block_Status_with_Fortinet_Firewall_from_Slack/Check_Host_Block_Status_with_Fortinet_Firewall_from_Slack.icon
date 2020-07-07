@@ -2,7 +2,7 @@
   "kom": {
     "komandVersion": "1.55.1-0-g08754",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-07-07T16:56:10.666439565Z",
+    "exportedAt": "2020-07-07T17:46:58.805990603Z",
     "workflowVersions": [
       {
         "name": "Check Host Block Status with Fortinet Firewall from Slack",
@@ -161,7 +161,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "⚠️ There was an error with the workflow. FortiGate did not return results correctly. Check the InsightConnect failed jobs tab for more information. ⚠️",
+                "message": "⚠️ There was an error with the workflow. FortiGate did not return results correctly. Check This URL for more information. ⚠️\n{{[$job].[URL]}}",
                 "recipient": "{{[eb45a27e-1a93-4580-b5dc-f48c252db9f3].[message].[channel]}}",
                 "thread_ts": "{{[eb45a27e-1a93-4580-b5dc-f48c252db9f3].[timestamp]}}"
               }
@@ -498,7 +498,7 @@
                 "type": "any"
               }
             },
-            "triggerId": "c3d3150f-1daf-47d3-9970-7c46b34e5487",
+            "triggerId": "0db88efa-4b2f-4bb1-9596-d0c1e0cfa63a",
             "defaultInputJSONSchema": {
               "properties": {
                 "matchChannel": {
@@ -732,7 +732,7 @@
     ],
     "triggers": [
       {
-        "id": "c3d3150f-1daf-47d3-9970-7c46b34e5487",
+        "id": "0db88efa-4b2f-4bb1-9596-d0c1e0cfa63a",
         "name": "Check for IP Message",
         "description": "",
         "input": {
