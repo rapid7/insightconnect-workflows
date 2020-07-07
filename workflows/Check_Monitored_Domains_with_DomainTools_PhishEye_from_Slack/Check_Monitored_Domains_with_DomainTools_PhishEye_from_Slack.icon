@@ -241,7 +241,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "matchChannel": "#integration-testing",
+                "matchChannel": "change_me",
                 "matchText": "check-phisheye",
                 "type": "any"
               }
@@ -946,7 +946,7 @@
         "name": "Command Received",
         "description": "Trigger workflow from one of the following commands in Slack:\n!check-domains\ncheck-domains\n",
         "input": {
-          "matchChannel": "#integration-testing",
+          "matchChannel": "change_me",
           "matchText": "check-phisheye",
           "type": "any"
         },
