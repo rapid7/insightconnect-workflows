@@ -64,6 +64,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.1.0 - Update workflow to handle block requests for address that already exist | Update workflow to continue on failure and send messages indicating that something went wrong
 * 1.0.2 - Help amendments
 * 1.0.1 - Update to make Microsoft Teams plugin the latest version
 * 1.0.0 - Initial workflow

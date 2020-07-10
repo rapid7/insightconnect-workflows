@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.51.2-0-gfd7dc",
+    "komandVersion": "1.56.1-0-gd040f",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-05-29T19:37:46.523057881Z",
+    "exportedAt": "2020-07-10T15:37:04.050211581Z",
     "workflowVersions": [
       {
         "name": "Block Host with Fortinet Firewall from Microsoft Teams",
@@ -11,6 +11,14 @@
         "description": "This workflow blocks or unblocks a host with Fortinet Firewall via Microsoft Teams command and reports information back to Microsoft Teams.",
         "graph": {
           "edges": {
+            "12762780-5d4b-4397-bebd-4554480ccf8a": {
+              "id": "12762780-5d4b-4397-bebd-4554480ccf8a",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "4ade2824-a5a9-4e2e-9314-0b636751e9be",
+              "toNodeId": "bde34392-fc93-4b4c-9acc-9d7214aa5cd8"
+            },
             "18feee59-c202-4aa2-a5fc-977c4e7ded83": {
               "id": "18feee59-c202-4aa2-a5fc-977c4e7ded83",
               "name": "Yes",
@@ -27,6 +35,14 @@
               "fromNodeId": "9fed5588-2be5-4114-928e-1eb0f8843c4e",
               "toNodeId": "af855b2c-0b66-4d0d-961f-06e32a91d591"
             },
+            "1cd6a2c1-94cd-467c-af97-eb3d81481656": {
+              "id": "1cd6a2c1-94cd-467c-af97-eb3d81481656",
+              "name": "Yes",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "7f8c7239-fd10-4773-838c-059bc4c9407f",
+              "toNodeId": "efc0e7bd-692b-43fd-9018-dbdc1695f7e1"
+            },
             "3b4b51f8-ceab-44e1-ab40-be277b85c25c": {
               "id": "3b4b51f8-ceab-44e1-ab40-be277b85c25c",
               "name": "",
@@ -35,13 +51,45 @@
               "fromNodeId": "a457570c-0e21-4e1d-b062-ace6b371b5f8",
               "toNodeId": ""
             },
+            "3baa82b2-1db0-411d-ab23-419c60ebc378": {
+              "id": "3baa82b2-1db0-411d-ab23-419c60ebc378",
+              "name": "No",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "4abceb59-127d-4799-bab4-19adc7258daf",
+              "toNodeId": "9fed5588-2be5-4114-928e-1eb0f8843c4e"
+            },
+            "3e91087b-f56c-4df6-a94c-014f089d8e60": {
+              "id": "3e91087b-f56c-4df6-a94c-014f089d8e60",
+              "name": "No",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "7f8c7239-fd10-4773-838c-059bc4c9407f",
+              "toNodeId": "decb42d6-f84f-4d7a-9fb4-990e955b7c5e"
+            },
+            "426c8df5-6d6b-40ee-82b9-b20e3caf5c11": {
+              "id": "426c8df5-6d6b-40ee-82b9-b20e3caf5c11",
+              "name": "No",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "2fb8f099-449a-4d5c-a579-44b44612d9bc",
+              "toNodeId": "b3aeb54a-4919-48dd-907b-a97947f0fa4c"
+            },
             "441f9ff2-6891-4fc8-9e18-8c7b48be1e80": {
               "id": "441f9ff2-6891-4fc8-9e18-8c7b48be1e80",
               "name": "Block",
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "0fecc5a7-267e-4fc1-a6d4-759caefc7345",
-              "toNodeId": "747e47c2-f0a5-4f81-ad2a-35a7ad6627b3"
+              "toNodeId": "4ade2824-a5a9-4e2e-9314-0b636751e9be"
+            },
+            "49a60ab8-b896-4bd4-8086-adeea1beebcc": {
+              "id": "49a60ab8-b896-4bd4-8086-adeea1beebcc",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "0412430a-e875-43e9-abb2-d7cd0806b065",
+              "toNodeId": ""
             },
             "4fc70727-8b4a-42b5-8e06-a482c7c90639": {
               "id": "4fc70727-8b4a-42b5-8e06-a482c7c90639",
@@ -81,7 +129,15 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "19163cd1-69cf-487c-812a-d1aa6f1badd4",
-              "toNodeId": "decb42d6-f84f-4d7a-9fb4-990e955b7c5e"
+              "toNodeId": "7f8c7239-fd10-4773-838c-059bc4c9407f"
+            },
+            "634f9e2a-7151-4c27-96c7-4036f91abdb6": {
+              "id": "634f9e2a-7151-4c27-96c7-4036f91abdb6",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "efc0e7bd-692b-43fd-9018-dbdc1695f7e1",
+              "toNodeId": ""
             },
             "6ac152f2-4230-494e-8eb7-82849da6fa34": {
               "id": "6ac152f2-4230-494e-8eb7-82849da6fa34",
@@ -91,6 +147,22 @@
               "fromNodeId": "a633dcc7-9450-4068-a9de-353cedd25976",
               "toNodeId": "8e8fadef-5163-47c3-a329-bfd6c15e9f1d"
             },
+            "6bee02d0-b9bd-469d-a944-6c1fbd06762e": {
+              "id": "6bee02d0-b9bd-469d-a944-6c1fbd06762e",
+              "name": "Yes",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "4abceb59-127d-4799-bab4-19adc7258daf",
+              "toNodeId": "5fe6e8f2-ab0d-452a-8f27-f591be26a7e7"
+            },
+            "7957c545-b02c-40dc-ba9b-aa8db6771cfc": {
+              "id": "7957c545-b02c-40dc-ba9b-aa8db6771cfc",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "409a3332-ac2f-4ee6-a961-a7173a380d6f",
+              "toNodeId": "19163cd1-69cf-487c-812a-d1aa6f1badd4"
+            },
             "7c0314cb-ed10-459a-b42b-0f74b5f386d6": {
               "id": "7c0314cb-ed10-459a-b42b-0f74b5f386d6",
               "name": "",
@@ -98,6 +170,14 @@
               "parentNodeId": "",
               "fromNodeId": "a7b191c4-5e2f-4246-9adc-0b06e5a3ec6d",
               "toNodeId": ""
+            },
+            "858f402b-32b5-4f3c-8096-97fab2cab9b4": {
+              "id": "858f402b-32b5-4f3c-8096-97fab2cab9b4",
+              "name": "Yes",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "3106a49b-35e4-4271-8a46-1481dcc63259",
+              "toNodeId": "409a3332-ac2f-4ee6-a961-a7173a380d6f"
             },
             "89aabfc5-e9be-46cc-81a2-a12e4a9bdf7d": {
               "id": "89aabfc5-e9be-46cc-81a2-a12e4a9bdf7d",
@@ -123,6 +203,14 @@
               "fromNodeId": "0fecc5a7-267e-4fc1-a6d4-759caefc7345",
               "toNodeId": "12ba74f0-d3ae-48a7-8860-607179f61a42"
             },
+            "a091fd09-01c0-4d65-a71b-e6a8db471f4a": {
+              "id": "a091fd09-01c0-4d65-a71b-e6a8db471f4a",
+              "name": "Yes",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "2fb8f099-449a-4d5c-a579-44b44612d9bc",
+              "toNodeId": "0412430a-e875-43e9-abb2-d7cd0806b065"
+            },
             "aecbf470-f9a0-4fe1-b265-73ac8c00d0f0": {
               "id": "aecbf470-f9a0-4fe1-b265-73ac8c00d0f0",
               "name": "Found",
@@ -145,7 +233,7 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "12ba74f0-d3ae-48a7-8860-607179f61a42",
-              "toNodeId": "b3aeb54a-4919-48dd-907b-a97947f0fa4c"
+              "toNodeId": "2fb8f099-449a-4d5c-a579-44b44612d9bc"
             },
             "c4ce4909-04b0-482b-a753-2f5ef12c0a40": {
               "id": "c4ce4909-04b0-482b-a753-2f5ef12c0a40",
@@ -171,13 +259,29 @@
               "fromNodeId": "ebaa672f-650f-41f0-bb16-e3f6c56c0aca",
               "toNodeId": "c807b0a0-c0d3-4fc6-889a-536eaa9554d5"
             },
+            "d5d4e649-5560-4370-8f7c-a7a5546679e3": {
+              "id": "d5d4e649-5560-4370-8f7c-a7a5546679e3",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "bde34392-fc93-4b4c-9acc-9d7214aa5cd8",
+              "toNodeId": "3106a49b-35e4-4271-8a46-1481dcc63259"
+            },
+            "d84a72dd-547b-42fc-8bf6-ce3be485861b": {
+              "id": "d84a72dd-547b-42fc-8bf6-ce3be485861b",
+              "name": "No",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "3106a49b-35e4-4271-8a46-1481dcc63259",
+              "toNodeId": "747e47c2-f0a5-4f81-ad2a-35a7ad6627b3"
+            },
             "e16547e3-55b5-4911-b116-4bd3396c7b38": {
               "id": "e16547e3-55b5-4911-b116-4bd3396c7b38",
               "name": "No",
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "9fed5588-2be5-4114-928e-1eb0f8843c4e",
-              "toNodeId": "19163cd1-69cf-487c-812a-d1aa6f1badd4"
+              "toNodeId": "409a3332-ac2f-4ee6-a961-a7173a380d6f"
             },
             "f87e78b5-9c1a-41af-8d1d-402b57cf8373": {
               "id": "f87e78b5-9c1a-41af-8d1d-402b57cf8373",
@@ -187,16 +291,28 @@
               "fromNodeId": "d00d5c3b-0e54-468b-977b-cbbb21960ca1",
               "toNodeId": "a457570c-0e21-4e1d-b062-ace6b371b5f8"
             },
+            "fa4cb0ae-3b9e-404c-98b4-ee4142a4f50f": {
+              "id": "fa4cb0ae-3b9e-404c-98b4-ee4142a4f50f",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "5fe6e8f2-ab0d-452a-8f27-f591be26a7e7",
+              "toNodeId": ""
+            },
             "fff12555-e996-491a-bf78-534be7ca6344": {
               "id": "fff12555-e996-491a-bf78-534be7ca6344",
               "name": "",
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "747e47c2-f0a5-4f81-ad2a-35a7ad6627b3",
-              "toNodeId": "9fed5588-2be5-4114-928e-1eb0f8843c4e"
+              "toNodeId": "4abceb59-127d-4799-bab4-19adc7258daf"
             }
           },
           "nodes": {
+            "0412430a-e875-43e9-abb2-d7cd0806b065": {
+              "id": "0412430a-e875-43e9-abb2-d7cd0806b065",
+              "parentNodeId": ""
+            },
             "0fecc5a7-267e-4fc1-a6d4-759caefc7345": {
               "id": "0fecc5a7-267e-4fc1-a6d4-759caefc7345",
               "parentNodeId": ""
@@ -209,8 +325,28 @@
               "id": "19163cd1-69cf-487c-812a-d1aa6f1badd4",
               "parentNodeId": ""
             },
+            "2fb8f099-449a-4d5c-a579-44b44612d9bc": {
+              "id": "2fb8f099-449a-4d5c-a579-44b44612d9bc",
+              "parentNodeId": ""
+            },
+            "3106a49b-35e4-4271-8a46-1481dcc63259": {
+              "id": "3106a49b-35e4-4271-8a46-1481dcc63259",
+              "parentNodeId": ""
+            },
+            "409a3332-ac2f-4ee6-a961-a7173a380d6f": {
+              "id": "409a3332-ac2f-4ee6-a961-a7173a380d6f",
+              "parentNodeId": ""
+            },
             "41e91ba2-a546-46c0-9244-a3799bd9d216": {
               "id": "41e91ba2-a546-46c0-9244-a3799bd9d216",
+              "parentNodeId": ""
+            },
+            "4abceb59-127d-4799-bab4-19adc7258daf": {
+              "id": "4abceb59-127d-4799-bab4-19adc7258daf",
+              "parentNodeId": ""
+            },
+            "4ade2824-a5a9-4e2e-9314-0b636751e9be": {
+              "id": "4ade2824-a5a9-4e2e-9314-0b636751e9be",
               "parentNodeId": ""
             },
             "4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd": {
@@ -221,8 +357,16 @@
               "id": "5dc60d63-ed88-4691-a548-59021b2c6171",
               "parentNodeId": ""
             },
+            "5fe6e8f2-ab0d-452a-8f27-f591be26a7e7": {
+              "id": "5fe6e8f2-ab0d-452a-8f27-f591be26a7e7",
+              "parentNodeId": ""
+            },
             "747e47c2-f0a5-4f81-ad2a-35a7ad6627b3": {
               "id": "747e47c2-f0a5-4f81-ad2a-35a7ad6627b3",
+              "parentNodeId": ""
+            },
+            "7f8c7239-fd10-4773-838c-059bc4c9407f": {
+              "id": "7f8c7239-fd10-4773-838c-059bc4c9407f",
               "parentNodeId": ""
             },
             "8e8fadef-5163-47c3-a329-bfd6c15e9f1d": {
@@ -253,6 +397,10 @@
               "id": "b3aeb54a-4919-48dd-907b-a97947f0fa4c",
               "parentNodeId": ""
             },
+            "bde34392-fc93-4b4c-9acc-9d7214aa5cd8": {
+              "id": "bde34392-fc93-4b4c-9acc-9d7214aa5cd8",
+              "parentNodeId": ""
+            },
             "c807b0a0-c0d3-4fc6-889a-536eaa9554d5": {
               "id": "c807b0a0-c0d3-4fc6-889a-536eaa9554d5",
               "parentNodeId": ""
@@ -272,10 +420,184 @@
             "ebaa672f-650f-41f0-bb16-e3f6c56c0aca": {
               "id": "ebaa672f-650f-41f0-bb16-e3f6c56c0aca",
               "parentNodeId": ""
+            },
+            "efc0e7bd-692b-43fd-9018-dbdc1695f7e1": {
+              "id": "efc0e7bd-692b-43fd-9018-dbdc1695f7e1",
+              "parentNodeId": ""
             }
           }
         },
         "steps": {
+          "0412430a-e875-43e9-abb2-d7cd0806b065": {
+            "nodeId": "0412430a-e875-43e9-abb2-d7cd0806b065",
+            "name": "Remove Host Failed Message",
+            "type": "action",
+            "plugin": {
+              "name": "Microsoft Teams",
+              "slugVendor": "rapid7",
+              "slugName": "microsoft_teams",
+              "slugVersion": "2.0.5",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.5/icon.png"
+            },
+            "identifier": "send_html_message",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "channel_name": "change_me",
+                "message_content": "⚠️The host {{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}} was not removed from the blocking group. ⚠️<br>\n<br>\nSee {{[$job].[URL]}} for more information.",
+                "team_name": "change_me"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "channel_name": {
+                  "description": "Channel name",
+                  "order": 2,
+                  "title": "Channel Name",
+                  "type": "string"
+                },
+                "message_content": {
+                  "description": "HTML content to send",
+                  "order": 3,
+                  "title": "Message Content",
+                  "type": "string"
+                },
+                "team_name": {
+                  "description": "Team name",
+                  "order": 1,
+                  "title": "Team Name",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "team_name",
+                "channel_name",
+                "message_content"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "body": {
+                  "properties": {
+                    "content": {
+                      "description": "Content",
+                      "order": 1,
+                      "title": "Content",
+                      "type": "string"
+                    },
+                    "contentType": {
+                      "description": "Content type",
+                      "order": 2,
+                      "title": "Content Type",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Body",
+                  "type": "object"
+                },
+                "from": {
+                  "properties": {
+                    "user": {
+                      "$ref": "#/definitions/user",
+                      "description": "User",
+                      "order": 1,
+                      "title": "User"
+                    }
+                  },
+                  "title": "From",
+                  "type": "object"
+                },
+                "message": {
+                  "properties": {
+                    "body": {
+                      "$ref": "#/definitions/body",
+                      "description": "Body",
+                      "order": 1,
+                      "title": "Body"
+                    },
+                    "createdDateTime": {
+                      "description": "Created date time",
+                      "order": 3,
+                      "title": "Created Date Time",
+                      "type": "string"
+                    },
+                    "from": {
+                      "$ref": "#/definitions/from",
+                      "description": "From",
+                      "order": 2,
+                      "title": "From"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 8,
+                      "title": "ID",
+                      "type": "string"
+                    },
+                    "importance": {
+                      "description": "Importance",
+                      "order": 5,
+                      "title": "Importance",
+                      "type": "string"
+                    },
+                    "locale": {
+                      "description": "Locale",
+                      "order": 7,
+                      "title": "Locale",
+                      "type": "string"
+                    },
+                    "messageType": {
+                      "description": "Message type",
+                      "order": 6,
+                      "title": "Message Type",
+                      "type": "string"
+                    },
+                    "webUrl": {
+                      "description": "Web URL",
+                      "order": 4,
+                      "title": "Web URL",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Message",
+                  "type": "object"
+                },
+                "user": {
+                  "properties": {
+                    "displayName": {
+                      "description": "Display name",
+                      "order": 1,
+                      "title": "Display name",
+                      "type": "string"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 2,
+                      "title": "ID",
+                      "type": "string"
+                    }
+                  },
+                  "title": "User",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "message": {
+                  "$ref": "#/definitions/message",
+                  "description": "The message object that was created",
+                  "order": 1,
+                  "title": "Message"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
           "0fecc5a7-267e-4fc1-a6d4-759caefc7345": {
             "nodeId": "0fecc5a7-267e-4fc1-a6d4-759caefc7345",
             "name": "Which Action",
@@ -322,11 +644,11 @@
               "name": "Fortinet FortiGate",
               "slugVendor": "rapid7",
               "slugName": "fortinet_fortigate",
-              "slugVersion": "4.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/fortinet_fortigate/4.0.0/icon.png"
+              "slugVersion": "4.0.3",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/fortinet_fortigate/4.0.3/icon.png"
             },
             "identifier": "remove_address_object_from_group",
-            "continueOnFailure": false,
+            "continueOnFailure": true,
             "isDisabled": false,
             "parameters": {
               "input": {
@@ -390,15 +712,15 @@
               "name": "Fortinet FortiGate",
               "slugVendor": "rapid7",
               "slugName": "fortinet_fortigate",
-              "slugVersion": "4.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/fortinet_fortigate/4.0.0/icon.png"
+              "slugVersion": "4.0.3",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/fortinet_fortigate/4.0.3/icon.png"
             },
             "identifier": "add_address_object_to_address_group",
-            "continueOnFailure": false,
+            "continueOnFailure": true,
             "isDisabled": false,
             "parameters": {
               "input": {
-                "address_object": "{{[747e47c2-f0a5-4f81-ad2a-35a7ad6627b3].[response_object]}}",
+                "address_object": "{{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}}",
                 "group": "change_me"
               }
             },
@@ -450,6 +772,109 @@
             "defaultImageData": "",
             "connectionType": "CONNECTION"
           },
+          "2fb8f099-449a-4d5c-a579-44b44612d9bc": {
+            "nodeId": "2fb8f099-449a-4d5c-a579-44b44612d9bc",
+            "name": "Remove Host From List Failed",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "a091fd09-01c0-4d65-a71b-e6a8db471f4a",
+              "stepControlParams": [
+                {
+                  "edgeId": "426c8df5-6d6b-40ee-82b9-b20e3caf5c11",
+                  "expression": {
+                    "left": {
+                      "name": "12ba74f0-d3ae-48a7-8860-607179f61a42.$success",
+                      "type": "variable"
+                    },
+                    "op": "==",
+                    "right": {
+                      "type": "literal",
+                      "value": true
+                    },
+                    "type": "binary"
+                  },
+                  "expressionText": "{{[12ba74f0-d3ae-48a7-8860-607179f61a42].[$success]}} == true"
+                },
+                {
+                  "edgeId": "a091fd09-01c0-4d65-a71b-e6a8db471f4a",
+                  "expression": {},
+                  "expressionText": ""
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          },
+          "3106a49b-35e4-4271-8a46-1481dcc63259": {
+            "nodeId": "3106a49b-35e4-4271-8a46-1481dcc63259",
+            "name": "Host Already Exists",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "d84a72dd-547b-42fc-8bf6-ce3be485861b",
+              "stepControlParams": [
+                {
+                  "edgeId": "858f402b-32b5-4f3c-8096-97fab2cab9b4",
+                  "expression": {
+                    "left": {
+                      "name": "bde34392-fc93-4b4c-9acc-9d7214aa5cd8.content",
+                      "type": "variable"
+                    },
+                    "op": "!=",
+                    "right": {
+                      "type": "literal",
+                      "value": ""
+                    },
+                    "type": "binary"
+                  },
+                  "expressionText": "{{[bde34392-fc93-4b4c-9acc-9d7214aa5cd8].[content]}} != \"\""
+                },
+                {
+                  "edgeId": "d84a72dd-547b-42fc-8bf6-ce3be485861b",
+                  "expression": {},
+                  "expressionText": ""
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          },
+          "409a3332-ac2f-4ee6-a961-a7173a380d6f": {
+            "nodeId": "409a3332-ac2f-4ee6-a961-a7173a380d6f",
+            "name": "Host Already in FotiGate",
+            "type": "join",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "decisionEdgeIds": [
+                "858f402b-32b5-4f3c-8096-97fab2cab9b4",
+                "e16547e3-55b5-4911-b116-4bd3396c7b38"
+              ],
+              "variableSets": []
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": {
+              "properties": {},
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": {
+              "properties": {},
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "NONE"
+          },
           "41e91ba2-a546-46c0-9244-a3799bd9d216": {
             "nodeId": "41e91ba2-a546-46c0-9244-a3799bd9d216",
             "name": "Host Found",
@@ -488,6 +913,97 @@
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
             "connectionType": "NONE"
           },
+          "4abceb59-127d-4799-bab4-19adc7258daf": {
+            "nodeId": "4abceb59-127d-4799-bab4-19adc7258daf",
+            "name": "Add Host Failed",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "6bee02d0-b9bd-469d-a944-6c1fbd06762e",
+              "stepControlParams": [
+                {
+                  "edgeId": "3baa82b2-1db0-411d-ab23-419c60ebc378",
+                  "expression": {
+                    "left": {
+                      "name": "747e47c2-f0a5-4f81-ad2a-35a7ad6627b3.$success",
+                      "type": "variable"
+                    },
+                    "op": "==",
+                    "right": {
+                      "type": "literal",
+                      "value": true
+                    },
+                    "type": "binary"
+                  },
+                  "expressionText": "{{[747e47c2-f0a5-4f81-ad2a-35a7ad6627b3].[$success]}} == true"
+                },
+                {
+                  "edgeId": "6bee02d0-b9bd-469d-a944-6c1fbd06762e",
+                  "expression": {},
+                  "expressionText": ""
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          },
+          "4ade2824-a5a9-4e2e-9314-0b636751e9be": {
+            "nodeId": "4ade2824-a5a9-4e2e-9314-0b636751e9be",
+            "name": "Check if Host Exists",
+            "type": "action",
+            "plugin": {
+              "name": "Fortinet FortiGate",
+              "slugVendor": "rapid7",
+              "slugName": "fortinet_fortigate",
+              "slugVersion": "4.0.3",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/fortinet_fortigate/4.0.3/icon.png"
+            },
+            "identifier": "get_address_objects",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "name_filter": "{{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "name_filter": {
+                  "description": "Optional name to filter on",
+                  "order": 1,
+                  "title": "Name Filter",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "address_objects": {
+                  "description": "A list of address objects",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 1,
+                  "title": "Address Objects",
+                  "type": "array"
+                }
+              },
+              "required": [
+                "address_objects"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
           "4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd": {
             "nodeId": "4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd",
             "name": "Block Request",
@@ -496,8 +1012,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.0.4",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
+              "slugVersion": "2.0.5",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.5/icon.png"
             },
             "identifier": "new_message_received",
             "continueOnFailure": false,
@@ -509,7 +1025,7 @@
                 "team_name": "change_me"
               }
             },
-            "triggerId": "66436242-bc42-43e6-8d81-0d049516c5fd",
+            "triggerId": "a2584b11-2640-44a1-bb6f-1c7fd2b5abc3",
             "defaultInputJSONSchema": {
               "properties": {
                 "channel_name": {
@@ -666,8 +1182,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.0.4",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
+              "slugVersion": "2.0.5",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.5/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
@@ -828,6 +1344,176 @@
             "defaultImageData": "",
             "connectionType": "CONNECTION"
           },
+          "5fe6e8f2-ab0d-452a-8f27-f591be26a7e7": {
+            "nodeId": "5fe6e8f2-ab0d-452a-8f27-f591be26a7e7",
+            "name": "Add Host Action Failed Message",
+            "type": "action",
+            "plugin": {
+              "name": "Microsoft Teams",
+              "slugVendor": "rapid7",
+              "slugName": "microsoft_teams",
+              "slugVersion": "2.0.5",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.5/icon.png"
+            },
+            "identifier": "send_html_message",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "channel_name": "change_me",
+                "message_content": "⚠️ Unable to create the host {{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}} In the FortiGate firewall. ⚠️<br>\n<br>\nSee {{[$job].[URL]}} for more information.",
+                "team_name": "change_me"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "channel_name": {
+                  "description": "Channel name",
+                  "order": 2,
+                  "title": "Channel Name",
+                  "type": "string"
+                },
+                "message_content": {
+                  "description": "HTML content to send",
+                  "order": 3,
+                  "title": "Message Content",
+                  "type": "string"
+                },
+                "team_name": {
+                  "description": "Team name",
+                  "order": 1,
+                  "title": "Team Name",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "team_name",
+                "channel_name",
+                "message_content"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "body": {
+                  "properties": {
+                    "content": {
+                      "description": "Content",
+                      "order": 1,
+                      "title": "Content",
+                      "type": "string"
+                    },
+                    "contentType": {
+                      "description": "Content type",
+                      "order": 2,
+                      "title": "Content Type",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Body",
+                  "type": "object"
+                },
+                "from": {
+                  "properties": {
+                    "user": {
+                      "$ref": "#/definitions/user",
+                      "description": "User",
+                      "order": 1,
+                      "title": "User"
+                    }
+                  },
+                  "title": "From",
+                  "type": "object"
+                },
+                "message": {
+                  "properties": {
+                    "body": {
+                      "$ref": "#/definitions/body",
+                      "description": "Body",
+                      "order": 1,
+                      "title": "Body"
+                    },
+                    "createdDateTime": {
+                      "description": "Created date time",
+                      "order": 3,
+                      "title": "Created Date Time",
+                      "type": "string"
+                    },
+                    "from": {
+                      "$ref": "#/definitions/from",
+                      "description": "From",
+                      "order": 2,
+                      "title": "From"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 8,
+                      "title": "ID",
+                      "type": "string"
+                    },
+                    "importance": {
+                      "description": "Importance",
+                      "order": 5,
+                      "title": "Importance",
+                      "type": "string"
+                    },
+                    "locale": {
+                      "description": "Locale",
+                      "order": 7,
+                      "title": "Locale",
+                      "type": "string"
+                    },
+                    "messageType": {
+                      "description": "Message type",
+                      "order": 6,
+                      "title": "Message Type",
+                      "type": "string"
+                    },
+                    "webUrl": {
+                      "description": "Web URL",
+                      "order": 4,
+                      "title": "Web URL",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Message",
+                  "type": "object"
+                },
+                "user": {
+                  "properties": {
+                    "displayName": {
+                      "description": "Display name",
+                      "order": 1,
+                      "title": "Display name",
+                      "type": "string"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 2,
+                      "title": "ID",
+                      "type": "string"
+                    }
+                  },
+                  "title": "User",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "message": {
+                  "$ref": "#/definitions/message",
+                  "description": "The message object that was created",
+                  "order": 1,
+                  "title": "Message"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
           "747e47c2-f0a5-4f81-ad2a-35a7ad6627b3": {
             "nodeId": "747e47c2-f0a5-4f81-ad2a-35a7ad6627b3",
             "name": "Add Host to be Blocked",
@@ -836,11 +1522,11 @@
               "name": "Fortinet FortiGate",
               "slugVendor": "rapid7",
               "slugName": "fortinet_fortigate",
-              "slugVersion": "4.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/fortinet_fortigate/4.0.0/icon.png"
+              "slugVersion": "4.0.3",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/fortinet_fortigate/4.0.3/icon.png"
             },
             "identifier": "create_address_object",
-            "continueOnFailure": false,
+            "continueOnFailure": true,
             "isDisabled": false,
             "parameters": {
               "input": {
@@ -913,6 +1599,44 @@
             "outputJSONSchema": null,
             "defaultImageData": "",
             "connectionType": "CONNECTION"
+          },
+          "7f8c7239-fd10-4773-838c-059bc4c9407f": {
+            "nodeId": "7f8c7239-fd10-4773-838c-059bc4c9407f",
+            "name": "Add Host To List Failed",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "1cd6a2c1-94cd-467c-af97-eb3d81481656",
+              "stepControlParams": [
+                {
+                  "edgeId": "3e91087b-f56c-4df6-a94c-014f089d8e60",
+                  "expression": {
+                    "left": {
+                      "name": "19163cd1-69cf-487c-812a-d1aa6f1badd4.$success",
+                      "type": "variable"
+                    },
+                    "op": "==",
+                    "right": {
+                      "type": "literal",
+                      "value": true
+                    },
+                    "type": "binary"
+                  },
+                  "expressionText": "{{[19163cd1-69cf-487c-812a-d1aa6f1badd4].[$success]}} == true"
+                },
+                {
+                  "edgeId": "1cd6a2c1-94cd-467c-af97-eb3d81481656",
+                  "expression": {},
+                  "expressionText": ""
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
           },
           "8e8fadef-5163-47c3-a329-bfd6c15e9f1d": {
             "nodeId": "8e8fadef-5163-47c3-a329-bfd6c15e9f1d",
@@ -994,8 +1718,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.0.4",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
+              "slugVersion": "2.0.5",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.5/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
@@ -1221,8 +1945,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.0.4",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
+              "slugVersion": "2.0.5",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.5/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
@@ -1419,6 +2143,24 @@
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
             "connectionType": "NONE"
           },
+          "bde34392-fc93-4b4c-9acc-9d7214aa5cd8": {
+            "nodeId": "bde34392-fc93-4b4c-9acc-9d7214aa5cd8",
+            "name": "Check if Host Exists Artifact",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "{{#each [4ade2824-a5a9-4e2e-9314-0b636751e9be].[address_objects]}}\n{{#equal name [8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}}\ntrue\n   {{/equal}}\n{{/each}}"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
           "c807b0a0-c0d3-4fc6-889a-536eaa9554d5": {
             "nodeId": "c807b0a0-c0d3-4fc6-889a-536eaa9554d5",
             "name": "Host Added to Block List Address Group Message",
@@ -1427,8 +2169,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.0.4",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
+              "slugVersion": "2.0.5",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.5/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
@@ -1653,8 +2395,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.0.4",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
+              "slugVersion": "2.0.5",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.5/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
@@ -1832,6 +2574,176 @@
             "outputJSONSchema": null,
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
             "connectionType": "NONE"
+          },
+          "efc0e7bd-692b-43fd-9018-dbdc1695f7e1": {
+            "nodeId": "efc0e7bd-692b-43fd-9018-dbdc1695f7e1",
+            "name": "Add Host to be Blocked Failed Message",
+            "type": "action",
+            "plugin": {
+              "name": "Microsoft Teams",
+              "slugVendor": "rapid7",
+              "slugName": "microsoft_teams",
+              "slugVersion": "2.0.5",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.5/icon.png"
+            },
+            "identifier": "send_html_message",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "channel_name": "change_me",
+                "message_content": "⚠️Unable to add the host {{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}} to the blocking group. ⚠️<br>\n<br>\nSee {{[$job].[URL]}} for more information",
+                "team_name": "change_me"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "channel_name": {
+                  "description": "Channel name",
+                  "order": 2,
+                  "title": "Channel Name",
+                  "type": "string"
+                },
+                "message_content": {
+                  "description": "HTML content to send",
+                  "order": 3,
+                  "title": "Message Content",
+                  "type": "string"
+                },
+                "team_name": {
+                  "description": "Team name",
+                  "order": 1,
+                  "title": "Team Name",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "team_name",
+                "channel_name",
+                "message_content"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "body": {
+                  "properties": {
+                    "content": {
+                      "description": "Content",
+                      "order": 1,
+                      "title": "Content",
+                      "type": "string"
+                    },
+                    "contentType": {
+                      "description": "Content type",
+                      "order": 2,
+                      "title": "Content Type",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Body",
+                  "type": "object"
+                },
+                "from": {
+                  "properties": {
+                    "user": {
+                      "$ref": "#/definitions/user",
+                      "description": "User",
+                      "order": 1,
+                      "title": "User"
+                    }
+                  },
+                  "title": "From",
+                  "type": "object"
+                },
+                "message": {
+                  "properties": {
+                    "body": {
+                      "$ref": "#/definitions/body",
+                      "description": "Body",
+                      "order": 1,
+                      "title": "Body"
+                    },
+                    "createdDateTime": {
+                      "description": "Created date time",
+                      "order": 3,
+                      "title": "Created Date Time",
+                      "type": "string"
+                    },
+                    "from": {
+                      "$ref": "#/definitions/from",
+                      "description": "From",
+                      "order": 2,
+                      "title": "From"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 8,
+                      "title": "ID",
+                      "type": "string"
+                    },
+                    "importance": {
+                      "description": "Importance",
+                      "order": 5,
+                      "title": "Importance",
+                      "type": "string"
+                    },
+                    "locale": {
+                      "description": "Locale",
+                      "order": 7,
+                      "title": "Locale",
+                      "type": "string"
+                    },
+                    "messageType": {
+                      "description": "Message type",
+                      "order": 6,
+                      "title": "Message Type",
+                      "type": "string"
+                    },
+                    "webUrl": {
+                      "description": "Web URL",
+                      "order": 4,
+                      "title": "Web URL",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Message",
+                  "type": "object"
+                },
+                "user": {
+                  "properties": {
+                    "displayName": {
+                      "description": "Display name",
+                      "order": 1,
+                      "title": "Display name",
+                      "type": "string"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 2,
+                      "title": "ID",
+                      "type": "string"
+                    }
+                  },
+                  "title": "User",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "message": {
+                  "$ref": "#/definitions/message",
+                  "description": "The message object that was created",
+                  "order": 1,
+                  "title": "Message"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
           }
         },
         "tags": null,
@@ -1841,7 +2753,7 @@
     ],
     "triggers": [
       {
-        "id": "66436242-bc42-43e6-8d81-0d049516c5fd",
+        "id": "a2584b11-2640-44a1-bb6f-1c7fd2b5abc3",
         "identifier": "new_message_received",
         "name": "Block Request",
         "description": "",
@@ -2000,8 +2912,8 @@
           "name": "Microsoft Teams",
           "slugVendor": "rapid7",
           "slugName": "microsoft_teams",
-          "slugVersion": "2.0.4",
-          "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
+          "slugVersion": "2.0.5",
+          "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.5/icon.png"
         }
       }
     ]
