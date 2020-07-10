@@ -1073,7 +1073,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "⚠️ Unable to create the host {{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}} In the FortiGate firewall. ⚠️\n\nSee {{[$job].[URL]}} for more information.",
+                "message": "⚠️ Unable to create the host {{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}} in the FortiGate firewall. ⚠️\n\nSee {{[$job].[URL]}} for more information.",
                 "recipient": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[message].[channel_id]}}",
                 "thread_ts": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[timestamp]}}"
               }
