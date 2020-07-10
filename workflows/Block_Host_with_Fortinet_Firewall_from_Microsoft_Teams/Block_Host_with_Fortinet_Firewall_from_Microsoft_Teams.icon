@@ -1191,7 +1191,7 @@
             "parameters": {
               "input": {
                 "channel_name": "change_me",
-                "message_content": "🔎 Host {{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}} was found in whitelist 🔎<br>\n<br>\nBecause the host was found in the whitelist it was not added to the block list.",
+                "message_content": "🔎 Host {{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}} was found in whitelist. 🔎<br><br>Because the host was found in the whitelist it was not added to the block list.",
                 "team_name": "change_me"
               }
             },
