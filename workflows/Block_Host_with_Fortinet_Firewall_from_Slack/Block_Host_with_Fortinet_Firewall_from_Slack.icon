@@ -1646,7 +1646,7 @@
           },
           "e1214265-784e-4df2-85c6-43a20adf5ccc": {
             "nodeId": "e1214265-784e-4df2-85c6-43a20adf5ccc",
-            "name": "Host Already in FotiGate",
+            "name": "Host Already in FortiGate",
             "type": "join",
             "continueOnFailure": false,
             "isDisabled": false,
