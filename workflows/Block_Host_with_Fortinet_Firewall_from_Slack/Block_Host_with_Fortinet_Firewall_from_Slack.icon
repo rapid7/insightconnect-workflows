@@ -593,7 +593,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "⚠️The host {{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}} was not removed from the blocking group. ⚠️\n\nSee {{[$job].[URL]}} for more information.",
+                "message": "⚠️ The host {{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}} was not removed from the blocking group. ⚠️\n\nSee {{[$job].[URL]}} for more information.",
                 "recipient": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[message].[channel_id]}}",
                 "thread_ts": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[timestamp]}}"
               }
