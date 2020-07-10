@@ -2592,7 +2592,7 @@
             "parameters": {
               "input": {
                 "channel_name": "change_me",
-                "message_content": "⚠️Unable to add the host {{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}} to the blocking group. ⚠️<br>\n<br>\nSee {{[$job].[URL]}} for more information",
+                "message_content": "⚠️ Unable to add the host {{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}} to the blocking group. ⚠️<br><br>See {{[$job].[URL]}} for more information",
                 "team_name": "change_me"
               }
             },
