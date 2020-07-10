@@ -2,7 +2,7 @@
   "kom": {
     "komandVersion": "1.56.1-0-gd040f",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-07-09T19:58:21.594872656Z",
+    "exportedAt": "2020-07-10T15:37:37.555408381Z",
     "workflowVersions": [
       {
         "name": "Block Host with Fortinet Firewall from Slack",
@@ -11,13 +11,21 @@
         "description": "This workflow blocks or unblocks a host with Fortinet Firewall via Slack command and reports information back to Slack.",
         "graph": {
           "edges": {
+            "1005a369-061f-45fd-b405-2a323bfb2973": {
+              "id": "1005a369-061f-45fd-b405-2a323bfb2973",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "3a7c97aa-2324-4a41-9fc8-d9ea0f4c0dc3",
+              "toNodeId": ""
+            },
             "11ec5444-eceb-47b5-b4e0-20b31c9eaa42": {
               "id": "11ec5444-eceb-47b5-b4e0-20b31c9eaa42",
               "name": "Yes",
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "769171ab-e338-49db-9057-53f6da19c37a",
-              "toNodeId": ""
+              "toNodeId": "1ffdf0eb-caa2-44fc-81c5-eeea3960369b"
             },
             "17ef140b-006f-4490-ae2a-eecaf17d344d": {
               "id": "17ef140b-006f-4490-ae2a-eecaf17d344d",
@@ -59,6 +67,14 @@
               "fromNodeId": "e1214265-784e-4df2-85c6-43a20adf5ccc",
               "toNodeId": "fcc8fb43-cddf-4e7d-9a33-89e6f78240f8"
             },
+            "22f9c496-de33-43c2-b9be-fbc93230dd8d": {
+              "id": "22f9c496-de33-43c2-b9be-fbc93230dd8d",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "1ffdf0eb-caa2-44fc-81c5-eeea3960369b",
+              "toNodeId": ""
+            },
             "2722203f-23eb-4457-b3e4-4db68a62369d": {
               "id": "2722203f-23eb-4457-b3e4-4db68a62369d",
               "name": "No",
@@ -73,7 +89,7 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "26a9a0e4-3375-4229-b698-81f045ae8af8",
-              "toNodeId": ""
+              "toNodeId": "936ed547-527b-4184-85ea-f3ccfb4466b1"
             },
             "3b4b51f8-ceab-44e1-ab40-be277b85c25c": {
               "id": "3b4b51f8-ceab-44e1-ab40-be277b85c25c",
@@ -219,13 +235,21 @@
               "fromNodeId": "decb42d6-f84f-4d7a-9fb4-990e955b7c5e",
               "toNodeId": "d00d5c3b-0e54-468b-977b-cbbb21960ca1"
             },
+            "bbee6bc1-5e05-41b4-a82b-1f67bc0a6567": {
+              "id": "bbee6bc1-5e05-41b4-a82b-1f67bc0a6567",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "936ed547-527b-4184-85ea-f3ccfb4466b1",
+              "toNodeId": ""
+            },
             "c11d683b-1bcb-4f53-b4af-467a26d0a129": {
               "id": "c11d683b-1bcb-4f53-b4af-467a26d0a129",
               "name": "Yes",
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "7d17e566-e05c-449e-8c6c-7c20ccae3455",
-              "toNodeId": ""
+              "toNodeId": "3a7c97aa-2324-4a41-9fc8-d9ea0f4c0dc3"
             },
             "c4ce4909-04b0-482b-a753-2f5ef12c0a40": {
               "id": "c4ce4909-04b0-482b-a753-2f5ef12c0a40",
@@ -281,12 +305,20 @@
               "id": "0fecc5a7-267e-4fc1-a6d4-759caefc7345",
               "parentNodeId": ""
             },
+            "1ffdf0eb-caa2-44fc-81c5-eeea3960369b": {
+              "id": "1ffdf0eb-caa2-44fc-81c5-eeea3960369b",
+              "parentNodeId": ""
+            },
             "26a9a0e4-3375-4229-b698-81f045ae8af8": {
               "id": "26a9a0e4-3375-4229-b698-81f045ae8af8",
               "parentNodeId": ""
             },
             "328f4452-07ab-4569-b53e-38c7ad3ccba6": {
               "id": "328f4452-07ab-4569-b53e-38c7ad3ccba6",
+              "parentNodeId": ""
+            },
+            "3a7c97aa-2324-4a41-9fc8-d9ea0f4c0dc3": {
+              "id": "3a7c97aa-2324-4a41-9fc8-d9ea0f4c0dc3",
               "parentNodeId": ""
             },
             "41e91ba2-a546-46c0-9244-a3799bd9d216": {
@@ -315,6 +347,10 @@
             },
             "8e8fadef-5163-47c3-a329-bfd6c15e9f1d": {
               "id": "8e8fadef-5163-47c3-a329-bfd6c15e9f1d",
+              "parentNodeId": ""
+            },
+            "936ed547-527b-4184-85ea-f3ccfb4466b1": {
+              "id": "936ed547-527b-4184-85ea-f3ccfb4466b1",
               "parentNodeId": ""
             },
             "9fed5588-2be5-4114-928e-1eb0f8843c4e": {
@@ -418,6 +454,80 @@
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
             "connectionType": "NONE"
           },
+          "1ffdf0eb-caa2-44fc-81c5-eeea3960369b": {
+            "nodeId": "1ffdf0eb-caa2-44fc-81c5-eeea3960369b",
+            "name": "Add Host to be Blocked Failed Message",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": "⚠️Unable to add the host {{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}} to the blocking group. ⚠️\n\nSee {{[$job].[URL]}} for more information",
+                "recipient": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[message].[channel_id]}}",
+                "thread_ts": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[timestamp]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 4,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 3,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                },
+                "thread_ts": {
+                  "description": "Select timestamp output variable from parent message step",
+                  "order": 2,
+                  "title": "To post in a thread, select parent message timestamp",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
+          },
           "26a9a0e4-3375-4229-b698-81f045ae8af8": {
             "nodeId": "26a9a0e4-3375-4229-b698-81f045ae8af8",
             "name": "Add Host Failed",
@@ -473,6 +583,80 @@
             "outputJSONSchema": null,
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
             "connectionType": "NONE"
+          },
+          "3a7c97aa-2324-4a41-9fc8-d9ea0f4c0dc3": {
+            "nodeId": "3a7c97aa-2324-4a41-9fc8-d9ea0f4c0dc3",
+            "name": "Remove Host Failed Message",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": "⚠️The host {{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}} was not removed from the blocking group. ⚠️\n\nSee {{[$job].[URL]}} for more information.",
+                "recipient": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[message].[channel_id]}}",
+                "thread_ts": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[timestamp]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 4,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 3,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                },
+                "thread_ts": {
+                  "description": "Select timestamp output variable from parent message step",
+                  "order": 2,
+                  "title": "To post in a thread, select parent message timestamp",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
           },
           "41e91ba2-a546-46c0-9244-a3799bd9d216": {
             "nodeId": "41e91ba2-a546-46c0-9244-a3799bd9d216",
@@ -703,7 +887,7 @@
                 "attachments": [],
                 "message": "🔎Host {{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}} was found in whitelist 🔎\n\nBecause the host was found in the whitelist it was not added to the block list.",
                 "recipient": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[message].[channel_id]}}",
-                "thread_ts": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[message].[timestamp]}}"
+                "thread_ts": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[timestamp]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -879,6 +1063,80 @@
             "outputJSONSchema": null,
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/pattern-match.svg",
             "connectionType": "NONE"
+          },
+          "936ed547-527b-4184-85ea-f3ccfb4466b1": {
+            "nodeId": "936ed547-527b-4184-85ea-f3ccfb4466b1",
+            "name": "Add Host Action Failed Message",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": "⚠️ Unable to create the host {{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}} In the FortiGate firewall. ⚠️\n\nSee {{[$job].[URL]}} for more information.",
+                "recipient": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[message].[channel_id]}}",
+                "thread_ts": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[timestamp]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 4,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 3,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                },
+                "thread_ts": {
+                  "description": "Select timestamp output variable from parent message step",
+                  "order": 2,
+                  "title": "To post in a thread, select parent message timestamp",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
           },
           "9fed5588-2be5-4114-928e-1eb0f8843c4e": {
             "nodeId": "9fed5588-2be5-4114-928e-1eb0f8843c4e",
@@ -1515,25 +1773,25 @@
               "defaultEdgeId": "544960fe-1d9d-42a1-8b02-4d44dc614a46",
               "stepControlParams": [
                 {
-                  "edgeId": "544960fe-1d9d-42a1-8b02-4d44dc614a46",
-                  "expression": {},
-                  "expressionText": ""
-                },
-                {
                   "edgeId": "1d891611-5a5e-45e0-8f42-cf19aa7cc95c",
                   "expression": {
                     "left": {
                       "name": "328f4452-07ab-4569-b53e-38c7ad3ccba6.content",
                       "type": "variable"
                     },
-                    "op": "==",
+                    "op": "!=",
                     "right": {
                       "type": "literal",
-                      "value": "true"
+                      "value": ""
                     },
                     "type": "binary"
                   },
-                  "expressionText": "{{[328f4452-07ab-4569-b53e-38c7ad3ccba6].[content]}} == \"true\""
+                  "expressionText": "{{[328f4452-07ab-4569-b53e-38c7ad3ccba6].[content]}} != \"\""
+                },
+                {
+                  "edgeId": "544960fe-1d9d-42a1-8b02-4d44dc614a46",
+                  "expression": {},
+                  "expressionText": ""
                 }
               ]
             },
@@ -1559,7 +1817,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "address_object": "{{[b6be898d-28ee-4ead-93a1-ac177ced8973].[response_object].[mkey]}}",
+                "address_object": "{{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}}",
                 "group": "change_me"
               }
             },
