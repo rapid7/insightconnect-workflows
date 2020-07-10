@@ -850,7 +850,7 @@
           },
           "409a3332-ac2f-4ee6-a961-a7173a380d6f": {
             "nodeId": "409a3332-ac2f-4ee6-a961-a7173a380d6f",
-            "name": "Host Already in FotiGate",
+            "name": "Host Already in FortiGate",
             "type": "join",
             "continueOnFailure": false,
             "isDisabled": false,
