@@ -55,8 +55,8 @@ Plugins utilized by workflow:
 |Plugin|Version|Count|
 |----|----|--------|
 |HTML|1.2.1|1|
-|Fortinet FortiGate|4.0.0|3|
-|Microsoft Teams|2.0.4|6|
+|Fortinet FortiGate|4.0.3|4|
+|Microsoft Teams|2.0.5|9|
 
 ## Troubleshooting
 
@@ -64,6 +64,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.1.0 - Update workflow to handle block requests for address that already exists | Update workflow to send Teams message when a job failure has occurred
 * 1.0.2 - Help amendments
 * 1.0.1 - Update to make Microsoft Teams plugin the latest version
 * 1.0.0 - Initial workflow
