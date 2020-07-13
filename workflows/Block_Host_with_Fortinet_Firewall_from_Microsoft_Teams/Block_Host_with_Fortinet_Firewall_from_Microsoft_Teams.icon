@@ -2,7 +2,7 @@
   "kom": {
     "komandVersion": "1.56.1-0-gd040f",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-07-10T15:37:04.050211581Z",
+    "exportedAt": "2020-07-13T03:08:23.866300955Z",
     "workflowVersions": [
       {
         "name": "Block Host with Fortinet Firewall from Microsoft Teams",
@@ -445,7 +445,7 @@
             "parameters": {
               "input": {
                 "channel_name": "change_me",
-                "message_content": "⚠️ The host {{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}} was not removed from the blocking group. ⚠️<br><br>See {{[$job].[URL]}} for more information.",
+                "message_content": "⚠️The host {{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}} was not removed from the blocking group. ⚠️<br>\n<br>\nThis is often caused by trying to remove a host to the list that is not on the list.<br>\n<br>\nSee {{[$job].[URL]}} for more information.",
                 "team_name": "change_me"
               }
             },
@@ -850,7 +850,7 @@
           },
           "409a3332-ac2f-4ee6-a961-a7173a380d6f": {
             "nodeId": "409a3332-ac2f-4ee6-a961-a7173a380d6f",
-            "name": "Host Already in FortiGate",
+            "name": "Host Already in FotiGate",
             "type": "join",
             "continueOnFailure": false,
             "isDisabled": false,
@@ -1191,7 +1191,7 @@
             "parameters": {
               "input": {
                 "channel_name": "change_me",
-                "message_content": "🔎 Host {{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}} was found in whitelist. 🔎<br><br>Because the host was found in the whitelist it was not added to the block list.",
+                "message_content": "🔎 Host {{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}} was found in whitelist 🔎<br>\n<br>\nBecause the host was found in the whitelist it was not added to the block list.",
                 "team_name": "change_me"
               }
             },
@@ -1361,7 +1361,7 @@
             "parameters": {
               "input": {
                 "channel_name": "change_me",
-                "message_content": "⚠️ Unable to create the host {{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}} in the FortiGate firewall. ⚠️<br><br>See {{[$job].[URL]}} for more information.",
+                "message_content": "⚠️ Unable to create the host {{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}} In the FortiGate firewall. ⚠️<br>\n<br>\nSee {{[$job].[URL]}} for more information.",
                 "team_name": "change_me"
               }
             },
@@ -2592,7 +2592,7 @@
             "parameters": {
               "input": {
                 "channel_name": "change_me",
-                "message_content": "⚠️ Unable to add the host {{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}} to the blocking group. ⚠️<br><br>See {{[$job].[URL]}} for more information",
+                "message_content": "⚠️Unable to add the host {{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}} to the blocking group. ⚠️<br>\n<br>\nThis is often caused by trying to add a host to the list that is already on the list.<br>\n<br>\nSee {{[$job].[URL]}} for more information",
                 "team_name": "change_me"
               }
             },
