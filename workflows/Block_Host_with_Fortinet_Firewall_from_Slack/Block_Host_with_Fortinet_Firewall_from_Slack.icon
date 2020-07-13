@@ -2,7 +2,7 @@
   "kom": {
     "komandVersion": "1.56.1-0-gd040f",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-07-10T15:37:37.555408381Z",
+    "exportedAt": "2020-07-13T03:08:31.069138759Z",
     "workflowVersions": [
       {
         "name": "Block Host with Fortinet Firewall from Slack",
@@ -463,7 +463,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "⚠️ Unable to add the host {{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}} to the blocking group. ⚠️\n\nSee {{[$job].[URL]}} for more information",
+                "message": "⚠️Unable to add the host {{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}} to the blocking group. ⚠️\n\nThis is often caused by trying to add a host to the list that is already on the list.\n\nSee {{[$job].[URL]}} for more information",
                 "recipient": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[message].[channel_id]}}",
                 "thread_ts": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[timestamp]}}"
               }
@@ -593,7 +593,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "⚠️ The host {{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}} was not removed from the blocking group. ⚠️\n\nSee {{[$job].[URL]}} for more information.",
+                "message": "⚠️The host {{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}} was not removed from the blocking group. ⚠️\n\nThis is often caused by trying to remove a host to the list that is not on the list.\n\nSee {{[$job].[URL]}} for more information.",
                 "recipient": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[message].[channel_id]}}",
                 "thread_ts": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[timestamp]}}"
               }
@@ -1073,7 +1073,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "⚠️ Unable to create the host {{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}} in the FortiGate firewall. ⚠️\n\nSee {{[$job].[URL]}} for more information.",
+                "message": "⚠️ Unable to create the host {{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}} In the FortiGate firewall. ⚠️\n\nSee {{[$job].[URL]}} for more information.",
                 "recipient": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[message].[channel_id]}}",
                 "thread_ts": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[timestamp]}}"
               }
@@ -1646,7 +1646,7 @@
           },
           "e1214265-784e-4df2-85c6-43a20adf5ccc": {
             "nodeId": "e1214265-784e-4df2-85c6-43a20adf5ccc",
-            "name": "Host Already in FortiGate",
+            "name": "Host Already in FotiGate",
             "type": "join",
             "continueOnFailure": false,
             "isDisabled": false,
