@@ -5,7 +5,7 @@
     "exportedAt": "2020-03-30T23:51:55.318022022Z",
     "workflowVersions": [
       {
-        "name": "Blacklist Malicious Hashes with VirusTotal & Carbon Black Response",
+        "name": "Blacklist Malicious Hashes with VirusTotal & VMware Carbon Black EDR",
         "type": "runnable",
         "version": "",
         "description": "",

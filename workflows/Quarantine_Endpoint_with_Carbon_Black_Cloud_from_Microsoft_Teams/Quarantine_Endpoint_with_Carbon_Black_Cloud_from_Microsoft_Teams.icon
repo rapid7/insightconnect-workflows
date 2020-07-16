@@ -5,10 +5,10 @@
     "exportedAt": "2020-06-19T17:13:12.516246675Z",
     "workflowVersions": [
       {
-        "name": "Quarantine Endpoint with Carbon Black Cloud from Microsoft Teams",
+        "name": "Quarantine Endpoint with VMware Carbon Black Cloud from Microsoft Teams",
         "type": "runnable",
         "version": "",
-        "description": "Use the simplicity of Microsoft Teams to quarantine and unquarantine endpoints in the form of Device IDs, hostnames, or IP addresses with Carbon Black Cloud.",
+        "description": "Use the simplicity of Microsoft Teams to quarantine and unquarantine endpoints in the form of Device IDs, hostnames, or IP addresses with VMware Carbon Black Cloud.",
         "graph": {
           "edges": {
             "098c5494-2a6a-45fd-beb7-953e977f1dff": {

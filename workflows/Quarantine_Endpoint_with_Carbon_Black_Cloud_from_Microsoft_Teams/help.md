@@ -1,6 +1,6 @@
 # Description
 
-This workflow quarantines or unquarantines endpoints with Carbon Black Cloud via Microsoft Teams command and reports information back to Microsoft Teams.
+This workflow quarantines or unquarantines endpoints with VMware Carbon Black Cloud via Microsoft Teams command and reports information back to Microsoft Teams.
 This workflow supports endpoints in the form of Device IDs, hostnames, or IP addresses.
 
 Sample Slack Trigger Commands:
@@ -21,7 +21,7 @@ Sample Slack Trigger Commands:
 # Requirements
 
 * [Microsoft Teams](https://insightconnect.help.rapid7.com/docs/microsoft-teams)
-* Carbon Black Cloud account with [Automation API Access Settings configured](https://developer.carbonblack.com/reference/carbon-black-cloud/authentication/#creating-an-api-key)
+* VMware Carbon Black Cloud account with [Automation API Access Settings configured](https://developer.carbonblack.com/reference/carbon-black-cloud/authentication/#creating-an-api-key)
 
 # Documentation
 
@@ -49,12 +49,13 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.1 - Updated VMware Carbon Black branding
 * 1.0.0 - Initial workflow
 
 # Links
 
 ## References
 
-* [Carbon Black Cloud](https://www.carbonblack.com/products/vmware-carbon-black-cloud)
-* [Carbon Black Cloud plugin](https://extensions.rapid7.com/extension/carbon_black_cloud)
+* [VMware Carbon Black Cloud](https://www.carbonblack.com/products/vmware-carbon-black-cloud)
+* [VMware Carbon Black Cloud plugin](https://extensions.rapid7.com/extension/carbon_black_cloud)
 * [Microsoft Teams](https://teams.microsoft.com)
