@@ -5,10 +5,10 @@
     "exportedAt": "2020-06-19T19:58:27.6984336Z",
     "workflowVersions": [
       {
-        "name": "Quarantine Endpoint with Carbon Black Cloud from Slack",
+        "name": "Quarantine Endpoint with VMware Carbon Black Cloud from Slack",
         "type": "runnable",
         "version": "",
-        "description": "Use the simplicity of Slack to quarantine and unquarantine endpoints in the form of Device IDs, hostnames, or IP addresses with Carbon Black Cloud.",
+        "description": "Use the simplicity of Slack to quarantine and unquarantine endpoints in the form of Device IDs, hostnames, or IP addresses with VMware Carbon Black Cloud.",
         "graph": {
           "edges": {
             "098c5494-2a6a-45fd-beb7-953e977f1dff": {

@@ -1,17 +1,17 @@
 # Description
 
-This workflow automated the process of looking up an associated file hash in VirusTotal from an InsightIDR alert. InsightConnect then posts a user response prompt to the security channel in a synopsis of the incident. Based upon the details, the incident responder will either dismiss as a false positive or block the file with Carbon Black Response. 
+This workflow automated the process of looking up an associated file hash in VirusTotal from an InsightIDR alert. InsightConnect then posts a user response prompt to the security channel in a synopsis of the incident. Based upon the details, the incident responder will either dismiss as a false positive or block the file with VMware Carbon Black EDR. 
 
 # Key Features
 
 * Data enrichment with VirusTotal
-* File blacklist on endpoint with Carbon Black Response
+* File blacklist on endpoint with VMware Carbon Black EDR
 
 # Requirements
 
 * InsightConnect License
 * [Slack](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops)
-* Carbon Black Response URL and Account Credentials
+* VMware Carbon Black EDR URL and Account Credentials
 * VirusTotal API Key
 
 # Documentation
@@ -35,6 +35,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.2 - Updated VMware Carbon Black EDR branding
 * 1.0.1 - Updated documentation
 * 1.0.0 - Initial workflow
 

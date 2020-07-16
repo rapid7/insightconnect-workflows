@@ -1,6 +1,6 @@
 # Description
 
-This workflow quarantines or unquarantines endpoints with Carbon Black Cloud via Slack command and reports information back to Slack.
+This workflow quarantines or unquarantines endpoints with VMware Carbon Black Cloud via Slack command and reports information back to Slack.
 This workflow supports endpoints in the form of Device IDs, hostnames, or IP addresses.
 
 Sample Slack Trigger Commands:
@@ -21,7 +21,7 @@ Sample Slack Trigger Commands:
 # Requirements
 
 * [Slack](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops)
-* Carbon Black Cloud account with [Automation API Access Settings configured](https://developer.carbonblack.com/reference/carbon-black-cloud/authentication/#creating-an-api-key)
+* VMware Carbon Black Cloud account with [Automation API Access Settings configured](https://developer.carbonblack.com/reference/carbon-black-cloud/authentication/#creating-an-api-key)
 
 # Documentation
 
@@ -48,6 +48,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.2 - Updated VMware Carbon Black branding
 * 1.0.1 - Pass channel name from trigger to all subsequent steps so user only has to configure channel once
 * 1.0.0 - Initial workflow
 
@@ -55,6 +56,6 @@ _There is no troubleshooting information at this time_
 
 ## References
 
-* [Carbon Black Cloud](https://www.carbonblack.com/products/vmware-carbon-black-cloud)
-* [Carbon Black Cloud plugin](https://extensions.rapid7.com/extension/carbon_black_cloud)
+* [VMware Carbon Black Cloud](https://www.carbonblack.com/products/vmware-carbon-black-cloud)
+* [VMware Carbon Black Cloud plugin](https://extensions.rapid7.com/extension/carbon_black_cloud)
 * [Slack](https://slack.com)
