@@ -489,7 +489,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "matchChannel": "#integration-testing",
+                "matchChannel": "change_me",
                 "matchText": "quarantine-endpoint.*",
                 "type": "any"
               }
@@ -936,7 +936,7 @@
         "name": "Quarantine Message",
         "description": "This workflow will quarantine an endpoint in CylanceOPTICS from a `quarantine-endpoint` Slack command. This workflow supports endpoints in the form of IP address, MAC address, hostname, or device ID.",
         "input": {
-          "matchChannel": "#integration-testing",
+          "matchChannel": "change_me",
           "matchText": "quarantine-endpoint.*",
           "type": "any"
         },
