@@ -2,7 +2,7 @@
   "kom": {
     "komandVersion": "1.57.3-0-gde2e7",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-07-17T19:34:41.65671815Z",
+    "exportedAt": "2020-07-17T21:47:12.909149429Z",
     "workflowVersions": [
       {
         "name": "Quarantine Endpoint with CylanceOPTICS from Slack",
@@ -173,7 +173,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "⚠️The input could not be correctly parsed  ⚠️Your input was {{[afd380e8-b0f5-4328-a036-8520c4b0a6ea].[message].[body].[content]}}",
+                "message": "This workflow will quarantine (lockdown) and endpoint using CylanceOPTICS. To use this workflow provide a `quarantine-endpoint` command in Slack and a host to perform the lockdown on by its Hostname, IP address, Device ID or MAC address.\n\nFor example:\n\n* `@Rapid7 InsightConnect quarantine-endpoint 198.51.100.100`\n* `@Rapid7 InsightConnect quarantine-endpoint USER-DESKTOP`",
                 "recipient": "{{[afd380e8-b0f5-4328-a036-8520c4b0a6ea].[message].[channel]}}",
                 "thread_ts": "{{[afd380e8-b0f5-4328-a036-8520c4b0a6ea].[timestamp]}}"
               }
@@ -300,7 +300,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "The host {{[de5a776f-74a5-4c62-bcd8-c988f1b522c8].[host]}} was not quarantined. See job logs at {{[$job].[URL]}} for more information."
+                "content": "The host `{{[de5a776f-74a5-4c62-bcd8-c988f1b522c8].[host]}}` was not quarantined. This is likely because the host doesn't exist in Cylance or the connection to Cylance was not configured correctly. See the job details for more information:\n\n{{[$job].[URL]}}"
               },
               "type": "markdown"
             },
@@ -483,12 +483,13 @@
           "afd380e8-b0f5-4328-a036-8520c4b0a6ea": {
             "nodeId": "afd380e8-b0f5-4328-a036-8520c4b0a6ea",
             "name": "Quarantine Message",
+            "description": "This workflow will quarantine an endpoint in CylanceOPTICS from a `quarantine-endpoint` Slack command. This workflow supports endpoints in the form of IP address, MAC address, hostname, or device ID.",
             "type": "trigger",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "input": {
-                "matchChannel": "change_me",
+                "matchChannel": "#integration-testing",
                 "matchText": "quarantine-endpoint.*",
                 "type": "any"
               }
@@ -615,7 +616,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "The host {{[de5a776f-74a5-4c62-bcd8-c988f1b522c8].[host]}} was quarantined."
+                "content": "The host `{{[de5a776f-74a5-4c62-bcd8-c988f1b522c8].[host]}}` was quarantined."
               },
               "type": "markdown"
             },
@@ -851,7 +852,7 @@
           },
           "ed87a5e4-101d-4522-8971-d5260877fbc7": {
             "nodeId": "ed87a5e4-101d-4522-8971-d5260877fbc7",
-            "name": "Host not Quarantined Message",
+            "name": "Host Not Quarantined Message",
             "type": "action_chatops",
             "continueOnFailure": false,
             "isDisabled": false,
@@ -933,9 +934,9 @@
       {
         "id": "ef4a820d-78c8-4703-a430-a36a53f210b1",
         "name": "Quarantine Message",
-        "description": "Slack message received trigger",
+        "description": "This workflow will quarantine an endpoint in CylanceOPTICS from a `quarantine-endpoint` Slack command. This workflow supports endpoints in the form of IP address, MAC address, hostname, or device ID.",
         "input": {
-          "matchChannel": "change_me",
+          "matchChannel": "#integration-testing",
           "matchText": "quarantine-endpoint.*",
           "type": "any"
         },
