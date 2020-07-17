@@ -2,7 +2,7 @@ extension: workflow
 products: ["insightconnect"]
 name: Quarantine_Endpoint_with_CylanceOPTICS_from_Slack
 title: Quarantine Endpoint with CylanceOPTICS from Slack
-description: This workflow will quarantine an endpoint in CylanceOPTICS from a Slack command.
+description: This workflow will quarantine (lockdown) an endpoint in CylanceOPTICS from a Slack command.
 version: 1.0.0
 vendor: rapid7
 support: rapid7
