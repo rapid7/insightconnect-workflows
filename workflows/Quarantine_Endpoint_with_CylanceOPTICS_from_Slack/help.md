@@ -8,7 +8,7 @@ Sample Slack Trigger Commands:
 
 `@Rapid7 InsightConnect quarantine-endpoint USER-DESKTOP`
 
-In menu from the "CylancePROTECT" page in tab "CylanceOPTICS", the quarantined endpoints will show after choose tab "Devices". When the "Device Status" is "Locked Down", endpoint is quarantined.
+When you log into CylancePROTECT, choose "CylanceOPTICS" from the left side-bar menu. The quarantined endpoints can be found on the "Devices" tab. When the "Device Status" is set to "Locked Down", the endpoint is quarantined. Note that Cylance does not support undoing the lockdown from the API, as the network access is fully removed for the endpoint.
 
 
 # Key Features
