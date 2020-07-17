@@ -6,6 +6,7 @@ Sample Slack Trigger Commands:
 
 `@Rapid7 InsightConnect quarantine-endpoint 198.51.100.100`
 
+`@Rapid7 InsightConnect quarantine-endpoint USER-DESKTOP`
 In menu from the "CylancePROTECT" page in tab "CylanceOPTICS", the quarantined endpoints will show after choose tab "Devices". When the "Device Status" is "Locked Down", endpoint is quarantined.
 
 
