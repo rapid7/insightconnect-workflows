@@ -36,3 +36,5 @@ resources:
       title: Successful Quarantine Artifact
     - name: artifact2.png
       title: Successful Unquarantine Artifact
+    - name: cb_quarantine.png
+      title: Quarantine in Carbon Black Cloud
