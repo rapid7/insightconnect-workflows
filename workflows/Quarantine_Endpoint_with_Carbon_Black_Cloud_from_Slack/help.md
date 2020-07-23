@@ -7,12 +7,10 @@ Sample Slack Trigger Commands:
 
 `@Rapid7 InsightConnect quarantine-endpoint example-host`
 
-`@Rapid7 InsightConnect quarantine-endpoint 198.51.100.100`
+`@Rapid7 InsightConnect unquarantine-endpoint 198.51.100.100`
 
-`!unquarantine-endpoint 198.51.100.100`
-
-`!unquarantine-endpoint example-host`
-
+To check the device quarantine status in Carbon Black Cloud, log into the Carbon Black Cloud product web interface and choose the Dndpoints page under the Inventory menu item on the left sidebar. 
+Find the host by using a filter to search for its name or by selecting Quarantine from the Filter Status to display all quarantined hosts. Quarantined hosts will show a red restricted sign in their Status column.
 
 # Key Features
 
@@ -48,6 +46,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.3 - Fix issue where Slack threads were not used and improve error message and Slack post formatting
 * 1.0.2 - Updated VMware Carbon Black branding
 * 1.0.1 - Pass channel name from trigger to all subsequent steps so user only has to configure channel once
 * 1.0.0 - Initial workflow
