@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.53.3-0-gd1a07",
+    "komandVersion": "1.57.4-0-gb6404",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-06-19T19:58:27.6984336Z",
+    "exportedAt": "2020-07-23T18:55:37.424189348Z",
     "workflowVersions": [
       {
         "name": "Quarantine Endpoint with VMware Carbon Black Cloud from Slack",
@@ -131,13 +131,21 @@
               "fromNodeId": "587c18eb-3223-452c-aa0f-3ee5897bb06c",
               "toNodeId": "7df9e6c7-5fa3-411e-b457-2d2c9c907d33"
             },
+            "cf1a9bb0-8e2e-4efe-9690-31315b8a9ae3": {
+              "id": "cf1a9bb0-8e2e-4efe-9690-31315b8a9ae3",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "2a14c31c-f1a1-4e3d-b02c-4e6559ae0d9f",
+              "toNodeId": "de5a776f-74a5-4c62-bcd8-c988f1b522c8"
+            },
             "dc996ba4-7778-44ea-b9b2-0c51616fe65b": {
               "id": "dc996ba4-7778-44ea-b9b2-0c51616fe65b",
               "name": "",
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "afd380e8-b0f5-4328-a036-8520c4b0a6ea",
-              "toNodeId": "de5a776f-74a5-4c62-bcd8-c988f1b522c8"
+              "toNodeId": "2a14c31c-f1a1-4e3d-b02c-4e6559ae0d9f"
             },
             "f7eaccfc-591d-4bcb-a423-be0e8d0f3fe4": {
               "id": "f7eaccfc-591d-4bcb-a423-be0e8d0f3fe4",
@@ -151,6 +159,10 @@
           "nodes": {
             "2a12c00f-5486-4430-9918-293f0cb4503e": {
               "id": "2a12c00f-5486-4430-9918-293f0cb4503e",
+              "parentNodeId": ""
+            },
+            "2a14c31c-f1a1-4e3d-b02c-4e6559ae0d9f": {
+              "id": "2a14c31c-f1a1-4e3d-b02c-4e6559ae0d9f",
               "parentNodeId": ""
             },
             "2b6b654a-6f25-45cb-b5a6-c81ac32451c7": {
@@ -217,9 +229,83 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "⚠️The input could not be correctly parsed  ⚠️Your input was {{[afd380e8-b0f5-4328-a036-8520c4b0a6ea].[message].[body].[content]}}",
+                "message": "This workflow will quarantine or unquarantine an endpoint using Carbon Black Cloud. To use this workflow provide a `quarantine-endpoint` or `unquarantine-endpoint` command in Slack along with a host to perform the action on by its Hostname, IP address, or Device ID.\n\nFor example:\n\n* `@Rapid7 InsightConnect quarantine-endpoint 198.51.100.100`\n* `@Rapid7 InsightConnect unquarantine-endpoint USER-DESKTOP`\n",
                 "recipient": "{{[afd380e8-b0f5-4328-a036-8520c4b0a6ea].[message].[channel]}}",
-                "thread_ts": "{{[afd380e8-b0f5-4328-a036-8520c4b0a6ea].[message].[timestamp]}}"
+                "thread_ts": "{{[afd380e8-b0f5-4328-a036-8520c4b0a6ea].[timestamp]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 4,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 3,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                },
+                "thread_ts": {
+                  "description": "Select timestamp output variable from parent message step",
+                  "order": 2,
+                  "title": "To post in a thread, select parent message timestamp",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
+          },
+          "2a14c31c-f1a1-4e3d-b02c-4e6559ae0d9f": {
+            "nodeId": "2a14c31c-f1a1-4e3d-b02c-4e6559ae0d9f",
+            "name": "Post Workflow Running",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": "Request received! Running Carbon Black Cloud workflow...",
+                "recipient": "{{[afd380e8-b0f5-4328-a036-8520c4b0a6ea].[message].[channel]}}",
+                "thread_ts": "{{[afd380e8-b0f5-4328-a036-8520c4b0a6ea].[timestamp]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -290,7 +376,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "Host {{[de5a776f-74a5-4c62-bcd8-c988f1b522c8].[host]}} unquarantined"
+                "content": "Host `{{[de5a776f-74a5-4c62-bcd8-c988f1b522c8].[host]}}` unquarantined"
               },
               "type": "markdown"
             },
@@ -349,7 +435,7 @@
                 "attachments": [],
                 "message": "✅ {{[2b6b654a-6f25-45cb-b5a6-c81ac32451c7].[content]}} ✅",
                 "recipient": "{{[afd380e8-b0f5-4328-a036-8520c4b0a6ea].[message].[channel]}}",
-                "thread_ts": "{{[afd380e8-b0f5-4328-a036-8520c4b0a6ea].[message].[timestamp]}}"
+                "thread_ts": "{{[afd380e8-b0f5-4328-a036-8520c4b0a6ea].[timestamp]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -420,7 +506,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "The host {{[de5a776f-74a5-4c62-bcd8-c988f1b522c8].[host]}} was not quarantined. See job logs at {{[$job].[URL]}} for more information."
+                "content": "The host `{{[de5a776f-74a5-4c62-bcd8-c988f1b522c8].[host]}}` was not quarantined. This is likely because the host doesn't exist in Carbon Black CLoud or the connection was not configured correctly.\n\nSee job logs at {{[$job].[URL]}} for more information."
               },
               "type": "markdown"
             },
@@ -515,7 +601,7 @@
                 "type": "any"
               }
             },
-            "triggerId": "c4b83ff8-3b15-417b-acfb-2d4e7ec5cfd1",
+            "triggerId": "b19e6902-e526-41cb-8dff-91bc00f0d9d2",
             "defaultInputJSONSchema": {
               "properties": {
                 "matchChannel": {
@@ -637,7 +723,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "The host {{[de5a776f-74a5-4c62-bcd8-c988f1b522c8].[host]}} was quarantined."
+                "content": "The host `{{[de5a776f-74a5-4c62-bcd8-c988f1b522c8].[host]}}` was quarantined."
               },
               "type": "markdown"
             },
@@ -696,7 +782,7 @@
                 "attachments": [],
                 "message": "✅ {{[c2abc66a-4781-4a8d-a543-3195b26a9874].[content]}} ✅",
                 "recipient": "{{[afd380e8-b0f5-4328-a036-8520c4b0a6ea].[message].[channel]}}",
-                "thread_ts": "{{[afd380e8-b0f5-4328-a036-8520c4b0a6ea].[message].[timestamp]}}"
+                "thread_ts": "{{[afd380e8-b0f5-4328-a036-8520c4b0a6ea].[timestamp]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -846,7 +932,7 @@
                 "attachments": [],
                 "message": "⚠️ {{[7df9e6c7-5fa3-411e-b457-2d2c9c907d33].[content]}} ⚠️",
                 "recipient": "{{[afd380e8-b0f5-4328-a036-8520c4b0a6ea].[message].[channel]}}",
-                "thread_ts": "{{[afd380e8-b0f5-4328-a036-8520c4b0a6ea].[message].[timestamp]}}"
+                "thread_ts": "{{[afd380e8-b0f5-4328-a036-8520c4b0a6ea].[timestamp]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -989,7 +1075,7 @@
     ],
     "triggers": [
       {
-        "id": "c4b83ff8-3b15-417b-acfb-2d4e7ec5cfd1",
+        "id": "b19e6902-e526-41cb-8dff-91bc00f0d9d2",
         "name": "Quarantine Message",
         "description": "Slack message received trigger",
         "input": {
