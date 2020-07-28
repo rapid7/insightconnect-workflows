@@ -32,13 +32,20 @@ Sample Slack Trigger Commands:
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-Once the workflow has been imported, **Update the first step with the channel name to suit your Slack environment!** by editing the input with the preset text of `change_me` to match the channel to monitor.
+Once the workflow has been imported,
 
-After configuring the Slack steps, activate the workflow in order to trigger it.
- 
-An optional whitelist can be added to the Check Point `Add Host to be Blocked` action. To use this list add IP addresses or CIDR IP addresses in the following format `["198.51.100.100", "198.51.100.1/32"]`
+1. Update the first step with the channel name to suit your Slack environment! by editing the input with the preset text of `change_me` to match the channel to monitor.
+2. Update the preset text of `change_me` in the Group field to the Address Group you want to manage in the following steps:
 
-By default this workflow will automatically skip blocking private IP addresses. To block these, set the `Skip RFC 1918` option to false in the `Add Host to be Blocked` step.
+* **Add Host to Blocked Address Group**
+* **Remove Host from Block Group**
+
+After configuring those steps, activate the workflow and then issue a Slack command to trigger it. Note, that the Checkpoint API can take some time to respond to the request.
+
+Additional customization can be provided with the following options:
+
+1. An optional whitelist can be added to the Check Point `Add Host to be Blocked` action. To skip blocking these hosts, add IP addresses or CIDR IP addresses in the following format `["198.51.100.100", "198.51.100.1/32"]`
+2. By default this workflow will automatically skip blocking private IP addresses. To block these, set the `Skip RFC 1918` option to false in the `Add Host to be Blocked` step.
 
 ### Usage
 
@@ -62,6 +69,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.3 - Update Acknowledge Request step's message to mention Checkpoint
 * 1.0.2 - Pass channel name from trigger to all subsequent steps so user only has to configure channel once
 * 1.0.1 - Help amendments
 * 1.0.0 - Initial workflow

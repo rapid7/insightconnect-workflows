@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.51.1-0-g1c294",
+    "komandVersion": "1.57.5-0-g8957c",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-05-28T18:41:10.764054097Z",
+    "exportedAt": "2020-07-28T22:20:42.239473662Z",
     "workflowVersions": [
       {
         "name": "Check Host Block Status with Check Point Firewall from Slack",
@@ -18,6 +18,14 @@
               "parentNodeId": "",
               "fromNodeId": "f96f5847-f0f7-490c-8554-4e4559c7b243",
               "toNodeId": "22b0b82b-5215-4760-9539-7eed95b5f59d"
+            },
+            "1339574c-f312-4483-94ed-78fc6d84dfde": {
+              "id": "1339574c-f312-4483-94ed-78fc6d84dfde",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "7e1ed5e8-e5be-4cac-aa7e-7ba594f2a4d6",
+              "toNodeId": "58ef804c-7f4b-4787-be69-39eed3e92016"
             },
             "154e33c8-0e2e-48b2-bce4-d774a630b374": {
               "id": "154e33c8-0e2e-48b2-bce4-d774a630b374",
@@ -41,7 +49,7 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "eb45a27e-1a93-4580-b5dc-f48c252db9f3",
-              "toNodeId": "58ef804c-7f4b-4787-be69-39eed3e92016"
+              "toNodeId": "7e1ed5e8-e5be-4cac-aa7e-7ba594f2a4d6"
             },
             "5f1ccc19-18d6-4bfb-bca7-73655f23387c": {
               "id": "5f1ccc19-18d6-4bfb-bca7-73655f23387c",
@@ -101,6 +109,10 @@
               "id": "60772325-689a-485b-b66b-e6898e071d8a",
               "parentNodeId": ""
             },
+            "7e1ed5e8-e5be-4cac-aa7e-7ba594f2a4d6": {
+              "id": "7e1ed5e8-e5be-4cac-aa7e-7ba594f2a4d6",
+              "parentNodeId": ""
+            },
             "a3d5b7fb-2a0d-419e-bb41-461213fd5df1": {
               "id": "a3d5b7fb-2a0d-419e-bb41-461213fd5df1",
               "parentNodeId": ""
@@ -147,11 +159,12 @@
               "slugVendor": "rapid7",
               "slugName": "checkpoint_ngfw",
               "slugVersion": "2.0.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/checkpoint_ngfw/2.0.0/icon.png"
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/checkpoint_ngfw/2.0.1/icon.png"
             },
             "identifier": "check_if_address_in_group",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "address": "{{[58ef804c-7f4b-4787-be69-39eed3e92016].[ip]}}",
@@ -257,6 +270,80 @@
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
             "connectionType": "NONE"
           },
+          "7e1ed5e8-e5be-4cac-aa7e-7ba594f2a4d6": {
+            "nodeId": "7e1ed5e8-e5be-4cac-aa7e-7ba594f2a4d6",
+            "name": "Post Workflow Running",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": "Request received! Running Checkpoint workflow...",
+                "recipient": "{{[eb45a27e-1a93-4580-b5dc-f48c252db9f3].[message].[channel]}}",
+                "thread_ts": "{{[eb45a27e-1a93-4580-b5dc-f48c252db9f3].[timestamp]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 4,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 3,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                },
+                "thread_ts": {
+                  "description": "Select timestamp output variable from parent message step",
+                  "order": 2,
+                  "title": "To post in a thread, select parent message timestamp",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
+          },
           "a3d5b7fb-2a0d-419e-bb41-461213fd5df1": {
             "nodeId": "a3d5b7fb-2a0d-419e-bb41-461213fd5df1",
             "name": "IP Not Blocked Message",
@@ -344,7 +431,7 @@
                 "type": "any"
               }
             },
-            "triggerId": "b9c356b1-ad7d-416d-ba7e-0c016b5bbfd4",
+            "triggerId": "90bb6fba-75d1-4284-ad97-68331e220abf",
             "defaultInputJSONSchema": {
               "properties": {
                 "matchChannel": {
@@ -578,7 +665,7 @@
     ],
     "triggers": [
       {
-        "id": "b9c356b1-ad7d-416d-ba7e-0c016b5bbfd4",
+        "id": "90bb6fba-75d1-4284-ad97-68331e220abf",
         "name": "Check for IP Message",
         "description": "",
         "input": {
