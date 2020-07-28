@@ -22,7 +22,7 @@ Sample Slack Trigger Commands:
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
 Once the workflow has been imported, **Update the first step with the channel name to suit your Slack environment!** by editing the input with the preset text of `change_me` to match the channel to monitor.
-And then in the _Check for IP_ step edit the Address Group Name input from `change_me` to an appropriate address group to monitor.
+And then in the **Check for IP** step edit the Address Group Name input from `change_me` to an appropriate address group to monitor.
 
 To run the workflow, @ your Slackbot in the chosen channel or in a direct message along with the command "block-status <IP>". The workflow will post responses in a thread.
 

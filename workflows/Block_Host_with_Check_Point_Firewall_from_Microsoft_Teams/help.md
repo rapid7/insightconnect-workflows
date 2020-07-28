@@ -40,7 +40,7 @@ Once the workflow has been imported,
 * **Add Host to Blocked Address Group**
 * **Remove Host from Block Group**
 
-After configuring those steps, activate the workflow and then issue a Microsoft Teams command to trigger it. Note, that the Checkpoint API can take some time to respond to the request.
+After configuring those steps, activate the workflow and then issue a Microsoft Teams command to trigger it. Note, that the Check Point Firewall API can take some time to respond to the request.
 
 Additional customization can be provided with the following options:
 
@@ -71,7 +71,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
-* 1.0.3 - Update Acknowledge Request step's message to mention Checkpoint
+* 1.0.3 - Update Acknowledge Request step's message to mention Check Point
 * 1.0.2 - Help amendments
 * 1.0.1 - Update to make Microsoft Teams plugin the latest version
 * 1.0.0 - Initial workflow

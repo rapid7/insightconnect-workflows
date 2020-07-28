@@ -279,7 +279,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "Request received! Running Checkpoint workflow...",
+                "message": "Request received! Running Check Point workflow...",
                 "recipient": "{{[eb45a27e-1a93-4580-b5dc-f48c252db9f3].[message].[channel]}}",
                 "thread_ts": "{{[eb45a27e-1a93-4580-b5dc-f48c252db9f3].[timestamp]}}"
               }
