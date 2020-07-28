@@ -916,7 +916,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "Block/unblock request received! Processing request...",
+                "message": "Request received! Running Check Point workflow...",
                 "recipient": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[message].[channel]}}",
                 "thread_ts": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[timestamp]}}"
               }

@@ -979,7 +979,7 @@
             "parameters": {
               "input": {
                 "channel_name": "change_me",
-                "message_content": "Block/unblock request received! Processing request...",
+                "message_content": "Request received! Running Check Point workflow...",
                 "team_name": "change_me"
               }
             },

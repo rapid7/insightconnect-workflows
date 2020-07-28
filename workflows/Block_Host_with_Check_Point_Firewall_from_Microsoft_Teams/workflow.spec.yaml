@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Block_Host_with_Check_Point_Firewall_from_Microsoft_Teams
 title: "Block Host with Check Point Firewall from Microsoft Teams"
 description: Block or unblock a host with Check Point firewall via Microsoft Teams command and report information back to Microsoft Teams.
-version: 1.0.2
+version: 1.0.3
 vendor: rapid7
 support: rapid7
 status: []
