@@ -1,0 +1,480 @@
+{
+  "kom": {
+    "komandVersion": "1.58.0-0-g1aee8",
+    "komFileVersion": "2.0.0",
+    "exportedAt": "2020-08-02T18:31:40.530504096Z",
+    "workflowVersions": [
+      {
+        "name": "MDR Active Response Enable User with Active Directory [Editing Restrictions Apply]",
+        "type": "runnable",
+        "version": "",
+        "description": "",
+        "graph": {
+          "edges": {
+            "1b2a77e6-974c-40d7-b75f-d7f8a1d24e0a": {
+              "id": "1b2a77e6-974c-40d7-b75f-d7f8a1d24e0a",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "2789e9ac-4777-4f45-bdb3-cc5bc46da699",
+              "toNodeId": ""
+            },
+            "90b1ddb3-2d53-43b5-9dda-e655760f2c4b": {
+              "id": "90b1ddb3-2d53-43b5-9dda-e655760f2c4b",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "fbce41e8-c926-440f-8b83-7ca6c9e377f4",
+              "toNodeId": "dcdc8f86-1747-41f4-844a-95a547e08c3c"
+            },
+            "ce95e729-3214-4726-9887-2bba16f2f215": {
+              "id": "ce95e729-3214-4726-9887-2bba16f2f215",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "dcdc8f86-1747-41f4-844a-95a547e08c3c",
+              "toNodeId": "5dca0332-fb96-4a63-8a07-63a1ef7b1c62"
+            },
+            "e15db162-f146-4875-bb94-386612c74f9e": {
+              "id": "e15db162-f146-4875-bb94-386612c74f9e",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "5dca0332-fb96-4a63-8a07-63a1ef7b1c62",
+              "toNodeId": "2789e9ac-4777-4f45-bdb3-cc5bc46da699"
+            }
+          },
+          "nodes": {
+            "2789e9ac-4777-4f45-bdb3-cc5bc46da699": {
+              "id": "2789e9ac-4777-4f45-bdb3-cc5bc46da699",
+              "parentNodeId": ""
+            },
+            "5dca0332-fb96-4a63-8a07-63a1ef7b1c62": {
+              "id": "5dca0332-fb96-4a63-8a07-63a1ef7b1c62",
+              "parentNodeId": ""
+            },
+            "dcdc8f86-1747-41f4-844a-95a547e08c3c": {
+              "id": "dcdc8f86-1747-41f4-844a-95a547e08c3c",
+              "parentNodeId": ""
+            },
+            "fbce41e8-c926-440f-8b83-7ca6c9e377f4": {
+              "id": "fbce41e8-c926-440f-8b83-7ca6c9e377f4",
+              "parentNodeId": ""
+            }
+          }
+        },
+        "steps": {
+          "2789e9ac-4777-4f45-bdb3-cc5bc46da699": {
+            "nodeId": "2789e9ac-4777-4f45-bdb3-cc5bc46da699",
+            "name": "Post Success",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": "Enable user success: {{[5dca0332-fb96-4a63-8a07-63a1ef7b1c62].[$success]}}",
+                "recipient": "{{[fbce41e8-c926-440f-8b83-7ca6c9e377f4].[message].[channel_id]}}",
+                "thread_ts": "{{[fbce41e8-c926-440f-8b83-7ca6c9e377f4].[timestamp]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 4,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 3,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                },
+                "thread_ts": {
+                  "description": "Select timestamp output variable from parent message step",
+                  "order": 2,
+                  "title": "To post in a thread, select parent message timestamp",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
+          },
+          "5dca0332-fb96-4a63-8a07-63a1ef7b1c62": {
+            "nodeId": "5dca0332-fb96-4a63-8a07-63a1ef7b1c62",
+            "name": "Enable User",
+            "type": "action",
+            "plugin": {
+              "name": "Active Directory LDAP",
+              "slugVendor": "rapid7",
+              "slugName": "active_directory_ldap",
+              "slugVersion": "3.2.9",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/active_directory_ldap/3.2.9/icon.png"
+            },
+            "identifier": "enable_user",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "distinguished_name": "{{[dcdc8f86-1747-41f4-844a-95a547e08c3c].[dn]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "distinguished_name": {
+                  "description": "The distinguished name of the user to enable",
+                  "order": 1,
+                  "title": "Distinguished Name",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "distinguished_name"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "success": {
+                  "description": "Operation status",
+                  "order": 1,
+                  "title": "Success",
+                  "type": "boolean"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "dcdc8f86-1747-41f4-844a-95a547e08c3c": {
+            "nodeId": "dcdc8f86-1747-41f4-844a-95a547e08c3c",
+            "name": "Get DN",
+            "type": "pattern_match",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "captureAll": false,
+              "expressionText": "enable {{dn:/.*/}}",
+              "expressions": [
+                {
+                  "type": "text",
+                  "value": "enable "
+                },
+                {
+                  "type": "variable",
+                  "value": {
+                    "ident": "dn",
+                    "regex": ".*"
+                  }
+                }
+              ],
+              "ignoreCase": true,
+              "input": "{{[fbce41e8-c926-440f-8b83-7ca6c9e377f4].[message].[text]}}"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/pattern-match.svg",
+            "connectionType": "NONE"
+          },
+          "fbce41e8-c926-440f-8b83-7ca6c9e377f4": {
+            "nodeId": "fbce41e8-c926-440f-8b83-7ca6c9e377f4",
+            "name": "Enable User Trigger",
+            "type": "trigger",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "matchChannel": "#mdr_customer_test",
+                "matchText": "enable",
+                "type": "any"
+              }
+            },
+            "triggerId": "d2462038-3990-4879-9ff3-d579cefa4855",
+            "defaultInputJSONSchema": {
+              "properties": {
+                "matchChannel": {
+                  "description": "Regex to match for channel name",
+                  "order": 1,
+                  "title": "Match Channel",
+                  "type": "string"
+                },
+                "matchText": {
+                  "description": "Regex to match for Slack message content",
+                  "order": 2,
+                  "title": "Match Text",
+                  "type": "string"
+                },
+                "type": {
+                  "default": "any",
+                  "description": "Desired Slack channel type: direct message to Slack app, group chats, or all channels",
+                  "enum": [
+                    "any",
+                    "direct",
+                    "group"
+                  ],
+                  "order": 3,
+                  "title": "Type",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "type"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "message": {
+                  "properties": {
+                    "channel": {
+                      "description": "Channel name",
+                      "order": 3,
+                      "title": "Channel",
+                      "type": "string"
+                    },
+                    "channel_id": {
+                      "description": "Slack channel ID",
+                      "order": 4,
+                      "title": "Channel ID",
+                      "type": "string"
+                    },
+                    "text": {
+                      "description": "Text",
+                      "order": 5,
+                      "title": "Text",
+                      "type": "string"
+                    },
+                    "ts": {
+                      "description": "Timestamp",
+                      "order": 6,
+                      "title": "Ts",
+                      "type": "string"
+                    },
+                    "user": {
+                      "description": "User name",
+                      "order": 1,
+                      "title": "User",
+                      "type": "string"
+                    },
+                    "user_id": {
+                      "description": "Slack User ID",
+                      "order": 2,
+                      "title": "User ID",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Message",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "display_name": {
+                  "description": "User display name",
+                  "order": 4,
+                  "title": "Display Name",
+                  "type": "string"
+                },
+                "message": {
+                  "$ref": "#/definitions/message",
+                  "description": "Message",
+                  "order": 1,
+                  "title": "Message"
+                },
+                "timestamp": {
+                  "description": "Timestamp",
+                  "order": 3,
+                  "title": "Timestamp",
+                  "type": "string"
+                },
+                "type": {
+                  "description": "Message Type",
+                  "order": 2,
+                  "title": "Type",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/chatops.svg",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "message"
+          }
+        },
+        "tags": null,
+        "humanCostSeconds": 0,
+        "humanCostDisplayUnit": ""
+      }
+    ],
+    "triggers": [
+      {
+        "id": "d2462038-3990-4879-9ff3-d579cefa4855",
+        "name": "Enable User Trigger",
+        "description": "",
+        "input": {
+          "matchChannel": "#mdr_customer_test",
+          "matchText": "enable",
+          "type": "any"
+        },
+        "inputJsonSchema": {
+          "properties": {
+            "matchChannel": {
+              "description": "Regex to match for channel name",
+              "order": 1,
+              "title": "Match Channel",
+              "type": "string"
+            },
+            "matchText": {
+              "description": "Regex to match for Slack message content",
+              "order": 2,
+              "title": "Match Text",
+              "type": "string"
+            },
+            "type": {
+              "default": "any",
+              "description": "Desired Slack channel type: direct message to Slack app, group chats, or all channels",
+              "enum": [
+                "any",
+                "direct",
+                "group"
+              ],
+              "order": 3,
+              "title": "Type",
+              "type": "string"
+            }
+          },
+          "required": [
+            "type"
+          ],
+          "title": "Variables",
+          "type": "object"
+        },
+        "outputJsonSchema": {
+          "definitions": {
+            "message": {
+              "properties": {
+                "channel": {
+                  "description": "Channel name",
+                  "order": 3,
+                  "title": "Channel",
+                  "type": "string"
+                },
+                "channel_id": {
+                  "description": "Slack channel ID",
+                  "order": 4,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "text": {
+                  "description": "Text",
+                  "order": 5,
+                  "title": "Text",
+                  "type": "string"
+                },
+                "ts": {
+                  "description": "Timestamp",
+                  "order": 6,
+                  "title": "Ts",
+                  "type": "string"
+                },
+                "user": {
+                  "description": "User name",
+                  "order": 1,
+                  "title": "User",
+                  "type": "string"
+                },
+                "user_id": {
+                  "description": "Slack User ID",
+                  "order": 2,
+                  "title": "User ID",
+                  "type": "string"
+                }
+              },
+              "title": "Message",
+              "type": "object"
+            }
+          },
+          "properties": {
+            "display_name": {
+              "description": "User display name",
+              "order": 4,
+              "title": "Display Name",
+              "type": "string"
+            },
+            "message": {
+              "$ref": "#/definitions/message",
+              "description": "Message",
+              "order": 1,
+              "title": "Message"
+            },
+            "timestamp": {
+              "description": "Timestamp",
+              "order": 3,
+              "title": "Timestamp",
+              "type": "string"
+            },
+            "type": {
+              "description": "Message Type",
+              "order": 2,
+              "title": "Type",
+              "type": "string"
+            }
+          },
+          "title": "Variables",
+          "type": "object"
+        },
+        "tags": [],
+        "type": "trigger_chatops",
+        "chatOpsAppName": "slack",
+        "chatOpsIdentifier": "message"
+      }
+    ]
+  }
+}
