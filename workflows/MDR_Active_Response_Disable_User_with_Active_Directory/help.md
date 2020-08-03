@@ -8,8 +8,6 @@ This workflow is part of the MDR Active Response add-on and is required to disab
 * Send real-time updates to actions using your preferred communication methods: phone, email, Slack, and SMS.
 * Accelerate or cancel containment actions from your mobile or desktop devices via Slack.
 
-
-
 # Requirements
 
 * Active Directory LDAP
