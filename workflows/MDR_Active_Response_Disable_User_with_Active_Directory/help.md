@@ -5,7 +5,7 @@ This workflow is part of the MDR Active Response add-on and is required to disab
 # Key Features
 
 * Disable User with Active Directory
-* Send real-time updates to actions using your preferred communication methods: phone, email, Slack, and SMS.
+* Send real-time updates to actions using your preferred communication methods: email, Slack, and SMS.
 * Accelerate or cancel containment actions from your mobile or desktop devices via Slack.
 
 # Requirements
