@@ -13,7 +13,6 @@ This workflow is part of the MDR Active Response add-on and is required for you 
 * VMware Carbon Black EDR
 * Slack (ChatOps)
 
-
 # Documentation
 
 ## Setup
