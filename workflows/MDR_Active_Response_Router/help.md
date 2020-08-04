@@ -33,6 +33,15 @@ For Technical Details, please refer to the import MDR Active Response Asset Quar
 
 ## Troubleshooting
 
+|Plugin|Version|Count|
+|----|----|--------|
+|REST|3.0.3|5|
+|Python 3 Script|2.0.2|4|
+|Twilio|1.0.2|1|
+|Type Converter|1.5.1|1|
+|Microsoft Office 365 Email|4.1.4|1|
+|String Operations|1.3.0|2|
+
 _There is no troubleshooting information at this time_
 
 # Version History

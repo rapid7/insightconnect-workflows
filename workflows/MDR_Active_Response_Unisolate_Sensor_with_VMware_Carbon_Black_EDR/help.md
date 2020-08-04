@@ -21,6 +21,10 @@ Import the workflow from the Rapid7 Extension Library and proceed through the Im
  
 ## Technical Details
 
+|Plugin|Version|Count|
+|----|----|--------|
+|VMware Carbon Black EDR|3.1.10|1|
+
 For Technical details, refer to the MDR Containment Unisolate Sensor with Cb Response import instructions.
 
 ## Troubleshooting

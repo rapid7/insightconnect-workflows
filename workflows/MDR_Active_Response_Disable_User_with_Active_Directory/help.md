@@ -15,8 +15,6 @@ This workflow is part of the MDR Active Response add-on and is required to disab
 * Slack (ChatOps)
 * REST
 
-
-
 # Documentation
 
 ## Setup
@@ -25,6 +23,12 @@ Import the workflow from the Rapid7 Extension Library and proceed through the Im
  
 ## Technical Details
 
+|Plugin|Version|Count|
+|----|----|--------|
+|REST|3.0.3|1|
+|Python 3 Script|2.0.2|1|
+|Active Directory LDAP|3.2.9|1|
+
 For Technical details, refer to the MDR Containment Disable User with Active Directory import instructions. 
 
 ## Troubleshooting
@@ -32,6 +36,7 @@ For Technical details, refer to the MDR Containment Disable User with Active Dir
 _There is no troubleshooting information at this time_
 
 # Version History
+
 * 1.0.0 - Initial workflow
 
 # Links

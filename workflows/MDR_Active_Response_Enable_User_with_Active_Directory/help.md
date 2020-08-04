@@ -21,6 +21,10 @@ Import the workflow from the Rapid7 Extension Library and proceed through the Im
  
 ## Technical Details
 
+|Plugin|Version|Count|
+|----|----|--------|
+|Active Directory LDAP|3.2.9|1|
+
 For Technical details, refer to the MDR Containment Enable User with Active Directory import instructions.
 
 ## Troubleshooting

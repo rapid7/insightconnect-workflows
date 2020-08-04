@@ -28,6 +28,11 @@ For Technical details, refer to the MDR Containment Unquarantine Asset with Insi
 
 ## Troubleshooting
 
+|Plugin|Version|Count|
+|----|----|--------|
+|REST|3.0.3|1|
+|Python 3 Script|2.0.2|1|
+
 _There is no troubleshooting information at this time_
 
 # Version History
