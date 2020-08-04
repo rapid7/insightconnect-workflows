@@ -1,0 +1,832 @@
+{
+  "kom": {
+    "komandVersion": "1.58.0-0-g1aee8",
+    "komFileVersion": "2.0.0",
+    "exportedAt": "2020-08-02T18:31:45.429458855Z",
+    "workflowVersions": [
+      {
+        "name": "MDR Active Response Isolate Sensor with VMware Carbon Black EDR [Editing Restrictions Apply]",
+        "type": "runnable",
+        "version": "",
+        "description": "",
+        "graph": {
+          "edges": {
+            "1eedb582-28a8-4216-bcca-22d06626cd96": {
+              "id": "1eedb582-28a8-4216-bcca-22d06626cd96",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "7422e55c-efd7-4f39-af32-f5e2896c0042",
+              "toNodeId": "3177f2e3-c3d7-4715-9cca-e91d46bc2ed4"
+            },
+            "757959a8-4c35-43ec-bf03-b5222893cef7": {
+              "id": "757959a8-4c35-43ec-bf03-b5222893cef7",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "3177f2e3-c3d7-4715-9cca-e91d46bc2ed4",
+              "toNodeId": "b5842539-070a-4f28-807c-3d25f57c3fe1"
+            },
+            "879f55ff-2ffe-4d6d-8dc9-aea3447afa32": {
+              "id": "879f55ff-2ffe-4d6d-8dc9-aea3447afa32",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "07f7f03a-6762-45b3-ada9-8711c5e196d5",
+              "toNodeId": ""
+            },
+            "93d19eee-8324-41bd-a0a3-2ca0667b267a": {
+              "id": "93d19eee-8324-41bd-a0a3-2ca0667b267a",
+              "name": "",
+              "description": "",
+              "parentNodeId": "3177f2e3-c3d7-4715-9cca-e91d46bc2ed4",
+              "fromNodeId": "b6c8af63-1388-4ed6-9c6f-04296d476397",
+              "toNodeId": ""
+            },
+            "b72ae278-db86-46fc-814c-0909984efa7a": {
+              "id": "b72ae278-db86-46fc-814c-0909984efa7a",
+              "name": "",
+              "description": "",
+              "parentNodeId": "3177f2e3-c3d7-4715-9cca-e91d46bc2ed4",
+              "fromNodeId": "3177f2e3-c3d7-4715-9cca-e91d46bc2ed4",
+              "toNodeId": "b6c8af63-1388-4ed6-9c6f-04296d476397"
+            },
+            "c188e247-b813-43e8-90c1-8929dabf9309": {
+              "id": "c188e247-b813-43e8-90c1-8929dabf9309",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "919286d7-5a27-42e3-9e7c-d18a486be848",
+              "toNodeId": "07f7f03a-6762-45b3-ada9-8711c5e196d5"
+            },
+            "da00d361-e9fb-48a6-9df3-3422357612be": {
+              "id": "da00d361-e9fb-48a6-9df3-3422357612be",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "b5842539-070a-4f28-807c-3d25f57c3fe1",
+              "toNodeId": "919286d7-5a27-42e3-9e7c-d18a486be848"
+            }
+          },
+          "nodes": {
+            "07f7f03a-6762-45b3-ada9-8711c5e196d5": {
+              "id": "07f7f03a-6762-45b3-ada9-8711c5e196d5",
+              "parentNodeId": ""
+            },
+            "3177f2e3-c3d7-4715-9cca-e91d46bc2ed4": {
+              "id": "3177f2e3-c3d7-4715-9cca-e91d46bc2ed4",
+              "parentNodeId": ""
+            },
+            "7422e55c-efd7-4f39-af32-f5e2896c0042": {
+              "id": "7422e55c-efd7-4f39-af32-f5e2896c0042",
+              "parentNodeId": ""
+            },
+            "919286d7-5a27-42e3-9e7c-d18a486be848": {
+              "id": "919286d7-5a27-42e3-9e7c-d18a486be848",
+              "parentNodeId": ""
+            },
+            "b5842539-070a-4f28-807c-3d25f57c3fe1": {
+              "id": "b5842539-070a-4f28-807c-3d25f57c3fe1",
+              "parentNodeId": ""
+            },
+            "b6c8af63-1388-4ed6-9c6f-04296d476397": {
+              "id": "b6c8af63-1388-4ed6-9c6f-04296d476397",
+              "parentNodeId": "3177f2e3-c3d7-4715-9cca-e91d46bc2ed4"
+            }
+          }
+        },
+        "steps": {
+          "07f7f03a-6762-45b3-ada9-8711c5e196d5": {
+            "nodeId": "07f7f03a-6762-45b3-ada9-8711c5e196d5",
+            "name": "Send Update",
+            "type": "action",
+            "plugin": {
+              "name": "REST",
+              "slugVendor": "rapid7",
+              "slugName": "rest",
+              "slugVersion": "3.0.3",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rest/3.0.3/icon.png"
+            },
+            "identifier": "post",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "body": "{{[919286d7-5a27-42e3-9e7c-d18a486be848].[payload]}}",
+                "headers": {
+                  "x-api-key": "b591a43c-cc69-4465-855c-03f76f162bb6"
+                },
+                "route": "7a709395-190f-4497-9054-7cab8d41b468/events/execute"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "body": {
+                  "description": "Payload to submit to the server when making the REST call",
+                  "order": 3,
+                  "title": "Body",
+                  "type": "object"
+                },
+                "headers": {
+                  "description": "Headers to use for the request. These will override any default headers",
+                  "order": 2,
+                  "title": "Headers",
+                  "type": "object"
+                },
+                "route": {
+                  "description": "The route to append to the base URL e.g. /org/users",
+                  "order": 1,
+                  "title": "Route",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "route"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "body_object": {
+                  "description": "Response payload from the server as an object",
+                  "order": 1,
+                  "title": "Body Object",
+                  "type": "object"
+                },
+                "body_string": {
+                  "description": "Response payload from the server as a string",
+                  "order": 2,
+                  "title": "Body String",
+                  "type": "string"
+                },
+                "headers": {
+                  "description": "Response headers from the server",
+                  "order": 4,
+                  "title": "Headers",
+                  "type": "object"
+                },
+                "status": {
+                  "description": "Status code of the response from the server",
+                  "order": 3,
+                  "title": "Status",
+                  "type": "integer"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "3177f2e3-c3d7-4715-9cca-e91d46bc2ed4": {
+            "nodeId": "3177f2e3-c3d7-4715-9cca-e91d46bc2ed4",
+            "name": "Loop Assets",
+            "type": "loop",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "customOutput": [
+                {
+                  "input": {
+                    "expression": {
+                      "left": {
+                        "name": "b6c8af63-1388-4ed6-9c6f-04296d476397.$success",
+                        "type": "variable"
+                      },
+                      "op": "AND",
+                      "right": {
+                        "name": "b6c8af63-1388-4ed6-9c6f-04296d476397.success",
+                        "type": "variable"
+                      },
+                      "type": "binary"
+                    },
+                    "expressionText": "{{[b6c8af63-1388-4ed6-9c6f-04296d476397].[$success]}} and {{[b6c8af63-1388-4ed6-9c6f-04296d476397].[success]}}",
+                    "value": "{{[3177f2e3-c3d7-4715-9cca-e91d46bc2ed4].[$item].[name]}}",
+                    "valueType": "string"
+                  },
+                  "name": "Successful Isolations",
+                  "outputType": "array"
+                },
+                {
+                  "input": {
+                    "expression": {
+                      "left": {
+                        "expr": {
+                          "name": "b6c8af63-1388-4ed6-9c6f-04296d476397.$success",
+                          "type": "variable"
+                        },
+                        "op": "NOT",
+                        "type": "unary"
+                      },
+                      "op": "OR",
+                      "right": {
+                        "expr": {
+                          "name": "b6c8af63-1388-4ed6-9c6f-04296d476397.success",
+                          "type": "variable"
+                        },
+                        "op": "NOT",
+                        "type": "unary"
+                      },
+                      "type": "binary"
+                    },
+                    "expressionText": "not {{[b6c8af63-1388-4ed6-9c6f-04296d476397].[$success]}} or not {{[b6c8af63-1388-4ed6-9c6f-04296d476397].[success]}}",
+                    "value": "{{[3177f2e3-c3d7-4715-9cca-e91d46bc2ed4].[$item].[name]}}",
+                    "valueType": "string"
+                  },
+                  "name": "Unsuccessful Isolations",
+                  "outputType": "array"
+                }
+              ],
+              "innerEdgeId": "b72ae278-db86-46fc-814c-0909984efa7a",
+              "nextEdgeId": "757959a8-4c35-43ec-bf03-b5222893cef7",
+              "repeatVariable": "{{[7422e55c-efd7-4f39-af32-f5e2896c0042].[assets]}}"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": {
+              "properties": {
+                "Successful Isolations": {
+                  "description": "Custom output: \"Successful Isolations\"",
+                  "items": {
+                    "type": "string"
+                  },
+                  "title": "Successful Isolations",
+                  "type": "array"
+                },
+                "Unsuccessful Isolations": {
+                  "description": "Custom output: \"Unsuccessful Isolations\"",
+                  "items": {
+                    "type": "string"
+                  },
+                  "title": "Unsuccessful Isolations",
+                  "type": "array"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/loop.svg",
+            "connectionType": "NONE"
+          },
+          "7422e55c-efd7-4f39-af32-f5e2896c0042": {
+            "nodeId": "7422e55c-efd7-4f39-af32-f5e2896c0042",
+            "name": "New Isolation Event",
+            "type": "trigger",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "triggerId": "08afb2c4-baa9-4ad6-8c3c-83a6dbff6e4f",
+            "defaultInputJSONSchema": {
+              "definitions": {
+                "assets": {
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "payload": {
+                      "type": "object"
+                    }
+                  },
+                  "type": "object"
+                },
+                "customer": {
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "assets": {
+                  "items": {
+                    "$ref": "#/definitions/assets"
+                  },
+                  "type": "array"
+                },
+                "criticality": {
+                  "type": "string"
+                },
+                "cust_slack_channel": {
+                  "type": "string"
+                },
+                "cust_slack_timestamp": {
+                  "type": "string"
+                },
+                "customer": {
+                  "$ref": "#/definitions/customer"
+                },
+                "cutoff": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "evidence": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                },
+                "investigation_id": {
+                  "type": "string"
+                },
+                "remediations": {
+                  "type": "string"
+                },
+                "soc_slack_channel": {
+                  "type": "string"
+                },
+                "soc_slack_timestamp": {
+                  "type": "string"
+                },
+                "tagged": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                },
+                "timestamp": {
+                  "type": "string"
+                },
+                "trigger_user": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "assets": {
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "payload": {
+                      "type": "object"
+                    }
+                  },
+                  "type": "object"
+                },
+                "customer": {
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "assets": {
+                  "items": {
+                    "$ref": "#/definitions/assets"
+                  },
+                  "type": "array"
+                },
+                "criticality": {
+                  "type": "string"
+                },
+                "cust_slack_channel": {
+                  "type": "string"
+                },
+                "cust_slack_timestamp": {
+                  "type": "string"
+                },
+                "customer": {
+                  "$ref": "#/definitions/customer"
+                },
+                "cutoff": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "evidence": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                },
+                "investigation_id": {
+                  "type": "string"
+                },
+                "remediations": {
+                  "type": "string"
+                },
+                "soc_slack_channel": {
+                  "type": "string"
+                },
+                "soc_slack_timestamp": {
+                  "type": "string"
+                },
+                "tagged": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                },
+                "timestamp": {
+                  "type": "string"
+                },
+                "trigger_user": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/trigger-api.svg",
+            "connectionType": "NONE"
+          },
+          "919286d7-5a27-42e3-9e7c-d18a486be848": {
+            "nodeId": "919286d7-5a27-42e3-9e7c-d18a486be848",
+            "name": "Format Json",
+            "type": "action",
+            "plugin": {
+              "name": "Python 3 Script",
+              "slugVendor": "rapid7",
+              "slugName": "python_3_script",
+              "slugVersion": "2.0.2",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/python_3_script/2.0.2/icon.png"
+            },
+            "identifier": "run",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "function": "def run(params={}):\n    \n    return {\"payload\": {\"update\":'''Isolation was successful for: {{[3177f2e3-c3d7-4715-9cca-e91d46bc2ed4].[Successful Isolations]}}. Isolation was unsuccessful for: {{[3177f2e3-c3d7-4715-9cca-e91d46bc2ed4].[Unsuccessful Isolations]}}''',\n     \"soc_slack_timestamp\":\"{{[7422e55c-efd7-4f39-af32-f5e2896c0042].[soc_slack_timestamp]}}\",\n     \"soc_slack_channel\":\"{{[7422e55c-efd7-4f39-af32-f5e2896c0042].[soc_slack_channel]}}\"}}",
+                "input": {}
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "function": {
+                  "default": "def run(params={}):\\n    return {}",
+                  "description": "Function definition. Must be named `run`. Accepts the `input` object as params. Returns the dict as output",
+                  "displayType": "python",
+                  "format": "python",
+                  "order": 1,
+                  "title": "Function",
+                  "type": "string"
+                },
+                "input": {
+                  "description": "Input object to be passed as `params={}` to the `run` function",
+                  "order": 2,
+                  "title": "Input",
+                  "type": "object"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "result1": {
+                  "description": "Sample output result1 (delete or edit)",
+                  "order": 1,
+                  "title": "Result1",
+                  "type": "string"
+                },
+                "result2": {
+                  "description": "Sample output result2 (delete or edit)",
+                  "order": 2,
+                  "title": "Result2",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": {
+              "definitions": {},
+              "properties": {
+                "payload": {
+                  "description": "Sample output result1 (delete or edit)",
+                  "order": 1,
+                  "title": "Result1",
+                  "type": "object"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "b5842539-070a-4f28-807c-3d25f57c3fe1": {
+            "nodeId": "b5842539-070a-4f28-807c-3d25f57c3fe1",
+            "name": "Post Message",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": "The following isolations were successful: {{[3177f2e3-c3d7-4715-9cca-e91d46bc2ed4].[Successful Isolations]}}\n\nThe following isolations were unsuccessful: {{[3177f2e3-c3d7-4715-9cca-e91d46bc2ed4].[Unsuccessful Isolations]}}\n\nDo you want to undo quarantine?\nSteps to *undo a quarantined asset or user:*\n        \n1. Copy -\n        \n```@Rapid7 InsightConnect unisolate <hostname>```\n        \n2. Paste the above command into your slack channel to initiate the unquarantine action, replacing <hostname> with the hostname of an asset listed above.\n\n3. You can also log into your Cb Response console and remove the assets from isolation there!",
+                "recipient": "{{[7422e55c-efd7-4f39-af32-f5e2896c0042].[cust_slack_channel]}}",
+                "thread_ts": "{{[7422e55c-efd7-4f39-af32-f5e2896c0042].[cust_slack_timestamp]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 4,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 3,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                },
+                "thread_ts": {
+                  "description": "Select timestamp output variable from parent message step",
+                  "order": 2,
+                  "title": "To post in a thread, select parent message timestamp",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
+          },
+          "b6c8af63-1388-4ed6-9c6f-04296d476397": {
+            "nodeId": "b6c8af63-1388-4ed6-9c6f-04296d476397",
+            "name": "Isolate Sensor",
+            "type": "action",
+            "plugin": {
+              "name": "VMware Carbon Black EDR",
+              "slugVendor": "rapid7",
+              "slugName": "carbon_black_response",
+              "slugVersion": "3.1.10",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/carbon_black_response/3.1.10/icon.png"
+            },
+            "identifier": "isolate_sensor",
+            "continueOnFailure": true,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "hostname": "{{[3177f2e3-c3d7-4715-9cca-e91d46bc2ed4].[$item].[name]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "hostname": {
+                  "description": "Hostname of the sensor to isolate",
+                  "order": 1,
+                  "title": "Hostname",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "success": {
+                  "description": "Whether or not the isolation was successful",
+                  "order": 1,
+                  "title": "Success",
+                  "type": "boolean"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          }
+        },
+        "tags": null,
+        "humanCostSeconds": 0,
+        "humanCostDisplayUnit": ""
+      }
+    ],
+    "triggers": [
+      {
+        "id": "08afb2c4-baa9-4ad6-8c3c-83a6dbff6e4f",
+        "name": "New Isolation Event",
+        "description": "",
+        "input": null,
+        "inputJsonSchema": {
+          "definitions": {
+            "assets": {
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "payload": {
+                  "type": "object"
+                }
+              },
+              "type": "object"
+            },
+            "customer": {
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          },
+          "properties": {
+            "assets": {
+              "items": {
+                "$ref": "#/definitions/assets"
+              },
+              "type": "array"
+            },
+            "criticality": {
+              "type": "string"
+            },
+            "cust_slack_channel": {
+              "type": "string"
+            },
+            "cust_slack_timestamp": {
+              "type": "string"
+            },
+            "customer": {
+              "$ref": "#/definitions/customer"
+            },
+            "cutoff": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "evidence": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "investigation_id": {
+              "type": "string"
+            },
+            "remediations": {
+              "type": "string"
+            },
+            "soc_slack_channel": {
+              "type": "string"
+            },
+            "soc_slack_timestamp": {
+              "type": "string"
+            },
+            "tagged": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "timestamp": {
+              "type": "string"
+            },
+            "trigger_user": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "outputJsonSchema": {
+          "definitions": {
+            "assets": {
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "payload": {
+                  "type": "object"
+                }
+              },
+              "type": "object"
+            },
+            "customer": {
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          },
+          "properties": {
+            "assets": {
+              "items": {
+                "$ref": "#/definitions/assets"
+              },
+              "type": "array"
+            },
+            "criticality": {
+              "type": "string"
+            },
+            "cust_slack_channel": {
+              "type": "string"
+            },
+            "cust_slack_timestamp": {
+              "type": "string"
+            },
+            "customer": {
+              "$ref": "#/definitions/customer"
+            },
+            "cutoff": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "evidence": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "investigation_id": {
+              "type": "string"
+            },
+            "remediations": {
+              "type": "string"
+            },
+            "soc_slack_channel": {
+              "type": "string"
+            },
+            "soc_slack_timestamp": {
+              "type": "string"
+            },
+            "tagged": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "timestamp": {
+              "type": "string"
+            },
+            "trigger_user": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "tags": [],
+        "type": "trigger_api"
+      }
+    ]
+  }
+}

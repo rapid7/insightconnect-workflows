@@ -1,0 +1,3245 @@
+{
+  "kom": {
+    "komandVersion": "1.58.0-0-g1aee8",
+    "komFileVersion": "2.0.0",
+    "exportedAt": "2020-08-02T19:28:03.787727212Z",
+    "workflowVersions": [
+      {
+        "name": "MDR Active Response Router [Editing Restrictions Apply]",
+        "type": "runnable",
+        "version": "",
+        "description": "",
+        "graph": {
+          "edges": {
+            "037f8fd2-7ded-443b-9edc-ab7dc9d6c671": {
+              "id": "037f8fd2-7ded-443b-9edc-ab7dc9d6c671",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "129e5475-e9e4-4e50-9f32-a2dcb9ed9210",
+              "toNodeId": "36d02b74-141f-4487-873d-78dfb003a604"
+            },
+            "09a270f2-8f4d-4746-8738-2ee8d909b15f": {
+              "id": "09a270f2-8f4d-4746-8738-2ee8d909b15f",
+              "name": "Cb Response",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "e048159d-3d09-49ab-abd0-5508b514a4af",
+              "toNodeId": "78f11656-2abb-484d-8ecd-3943d395ffdc"
+            },
+            "10281f31-5d5d-41f9-86ce-42e4d244a9db": {
+              "id": "10281f31-5d5d-41f9-86ce-42e4d244a9db",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "7763493e-67ed-4232-add4-6c6d47ff5470",
+              "toNodeId": ""
+            },
+            "1809e16c-8ede-45ba-946a-1829a620e063": {
+              "id": "1809e16c-8ede-45ba-946a-1829a620e063",
+              "name": "",
+              "description": "",
+              "parentNodeId": "148276ff-d421-484e-a784-1be0e09a3b30",
+              "fromNodeId": "99bfa766-e0fd-4085-904f-6a8d7dec53dd",
+              "toNodeId": "1bd6a561-852a-4638-b9e8-5d6530d681bd"
+            },
+            "18cff454-1e03-4208-9ee8-dfda50b7763f": {
+              "id": "18cff454-1e03-4208-9ee8-dfda50b7763f",
+              "name": "",
+              "description": "",
+              "parentNodeId": "f791bb4b-6114-4f5f-a715-40b198d2eb7e",
+              "fromNodeId": "f791bb4b-6114-4f5f-a715-40b198d2eb7e",
+              "toNodeId": "8e7bd4ef-6eac-49aa-98d5-1eaf17448e02"
+            },
+            "1944c778-c384-47fa-9d1c-e195b7176e9b": {
+              "id": "1944c778-c384-47fa-9d1c-e195b7176e9b",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "4123d7e4-7d69-4d75-a8e8-4073f3e90fa1",
+              "toNodeId": "7e78394c-eb74-462d-8784-26c92a62541e"
+            },
+            "1b2b2d08-c6f6-4d09-b8ce-093c87170396": {
+              "id": "1b2b2d08-c6f6-4d09-b8ce-093c87170396",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "d29c0661-c591-4344-a5c2-54091402599a",
+              "toNodeId": ""
+            },
+            "2df2e4c2-e718-4bd2-a3cf-83f7356a0d9d": {
+              "id": "2df2e4c2-e718-4bd2-a3cf-83f7356a0d9d",
+              "name": "No",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "b8bfc14d-3a32-478e-9fd5-09184aae1045",
+              "toNodeId": "c0a7f940-692d-4542-a374-48e4e376c1d3"
+            },
+            "2fc916ac-7fa7-4d2c-a5ee-7b1eaaad9cd3": {
+              "id": "2fc916ac-7fa7-4d2c-a5ee-7b1eaaad9cd3",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "4c05495c-6c87-4f61-8e47-bc146a17a4c5",
+              "toNodeId": "f66dac2d-b0ba-40ec-b875-6cd9fe752164"
+            },
+            "3b137eac-d39f-43f2-877b-e4768ad7a5a2": {
+              "id": "3b137eac-d39f-43f2-877b-e4768ad7a5a2",
+              "name": "",
+              "description": "",
+              "parentNodeId": "148276ff-d421-484e-a784-1be0e09a3b30",
+              "fromNodeId": "1bd6a561-852a-4638-b9e8-5d6530d681bd",
+              "toNodeId": "fe8199ec-2aba-4771-a092-dd9305c71575"
+            },
+            "3b5996ae-eae7-4a76-a8dd-a94784bf612d": {
+              "id": "3b5996ae-eae7-4a76-a8dd-a94784bf612d",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "c0a7f940-692d-4542-a374-48e4e376c1d3",
+              "toNodeId": "deeec789-ff2e-4975-ae22-e219c0d1f7b6"
+            },
+            "413d87c4-fec9-4a7f-a5d3-9cd55555f6f1": {
+              "id": "413d87c4-fec9-4a7f-a5d3-9cd55555f6f1",
+              "name": "Yes",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "422d84e3-f151-4ecd-8fe0-9dd5c617e608",
+              "toNodeId": "39d3b534-e693-4c60-952d-506c90ae4592"
+            },
+            "41d1df73-cf72-40a6-8eef-65b7c587045f": {
+              "id": "41d1df73-cf72-40a6-8eef-65b7c587045f",
+              "name": "Yes",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "7e78394c-eb74-462d-8784-26c92a62541e",
+              "toNodeId": "7763493e-67ed-4232-add4-6c6d47ff5470"
+            },
+            "428f73b8-d769-4e9f-a066-76d3d0a4b26b": {
+              "id": "428f73b8-d769-4e9f-a066-76d3d0a4b26b",
+              "name": "Insight Agent",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "e048159d-3d09-49ab-abd0-5508b514a4af",
+              "toNodeId": "d402a774-7165-40ad-a8e0-6f91dbdd38d5"
+            },
+            "47f92097-46d6-4c56-88b1-ee98ffcc2042": {
+              "id": "47f92097-46d6-4c56-88b1-ee98ffcc2042",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "cbcc87aa-26c9-4e76-b527-fe9d043d661a",
+              "toNodeId": ""
+            },
+            "4a2839bf-41e3-491c-8462-9f566389a9f6": {
+              "id": "4a2839bf-41e3-491c-8462-9f566389a9f6",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "5fed2448-ee9c-4a82-9241-b2c3f8a759c3",
+              "toNodeId": "b8bfc14d-3a32-478e-9fd5-09184aae1045"
+            },
+            "4d7baec1-a8cd-4c72-be0d-7a8292abede8": {
+              "id": "4d7baec1-a8cd-4c72-be0d-7a8292abede8",
+              "name": "",
+              "description": "",
+              "parentNodeId": "148276ff-d421-484e-a784-1be0e09a3b30",
+              "fromNodeId": "fe8199ec-2aba-4771-a092-dd9305c71575",
+              "toNodeId": "f4318a46-9922-4ec1-a925-a1d4d45463cc"
+            },
+            "5a3a1b0e-e95f-44e0-a318-b72774371593": {
+              "id": "5a3a1b0e-e95f-44e0-a318-b72774371593",
+              "name": "Yes",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "b8bfc14d-3a32-478e-9fd5-09184aae1045",
+              "toNodeId": "129e5475-e9e4-4e50-9f32-a2dcb9ed9210"
+            },
+            "615c201f-f7a9-4058-be6d-7ff86ecbf7cc": {
+              "id": "615c201f-f7a9-4058-be6d-7ff86ecbf7cc",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "f4b6a105-998b-4c10-98e3-7aaf2b52ef7d",
+              "toNodeId": "4c05495c-6c87-4f61-8e47-bc146a17a4c5"
+            },
+            "6690be4f-07c5-4ee0-9843-bcd461056522": {
+              "id": "6690be4f-07c5-4ee0-9843-bcd461056522",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "a372775e-a1b2-42b4-a7f6-746c6d062d85",
+              "toNodeId": "636cb83f-66c5-4f38-b82c-581f3eaaef84"
+            },
+            "74002365-a7f9-4c63-a282-f0ffcc5537e3": {
+              "id": "74002365-a7f9-4c63-a282-f0ffcc5537e3",
+              "name": "No",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "c83548db-2cbb-4d61-889d-afa02e74a788",
+              "toNodeId": ""
+            },
+            "7546fc8e-8cb0-4796-82d7-7462dfac4ddb": {
+              "id": "7546fc8e-8cb0-4796-82d7-7462dfac4ddb",
+              "name": "",
+              "description": "",
+              "parentNodeId": "148276ff-d421-484e-a784-1be0e09a3b30",
+              "fromNodeId": "148276ff-d421-484e-a784-1be0e09a3b30",
+              "toNodeId": "99bfa766-e0fd-4085-904f-6a8d7dec53dd"
+            },
+            "7b1536b0-39cc-44ac-9a37-aabbcdd1f949": {
+              "id": "7b1536b0-39cc-44ac-9a37-aabbcdd1f949",
+              "name": "",
+              "description": "",
+              "parentNodeId": "f791bb4b-6114-4f5f-a715-40b198d2eb7e",
+              "fromNodeId": "c24a8084-f6b2-4002-bbc2-899165099425",
+              "toNodeId": ""
+            },
+            "7b3b8a15-78d0-4641-a646-f6d8be83a5cc": {
+              "id": "7b3b8a15-78d0-4641-a646-f6d8be83a5cc",
+              "name": "No",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "422d84e3-f151-4ecd-8fe0-9dd5c617e608",
+              "toNodeId": "9fe2b29c-bee9-44d9-93fb-1fd858e00357"
+            },
+            "7ff53a84-b01f-418f-8f93-3ef2465dee72": {
+              "id": "7ff53a84-b01f-418f-8f93-3ef2465dee72",
+              "name": "Yes",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "c83548db-2cbb-4d61-889d-afa02e74a788",
+              "toNodeId": "e048159d-3d09-49ab-abd0-5508b514a4af"
+            },
+            "80ca6849-a333-40eb-8ab8-8d3e9b164923": {
+              "id": "80ca6849-a333-40eb-8ab8-8d3e9b164923",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "deeec789-ff2e-4975-ae22-e219c0d1f7b6",
+              "toNodeId": "f4b6a105-998b-4c10-98e3-7aaf2b52ef7d"
+            },
+            "836bcce5-71fe-4987-992e-66e6fb1ed18e": {
+              "id": "836bcce5-71fe-4987-992e-66e6fb1ed18e",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "0dfa46ee-b724-4a59-84c3-1ff9cf2cbbf1",
+              "toNodeId": "2acc6c9d-5afa-49d8-bf8e-3c87da15c072"
+            },
+            "884e6fb4-f035-4816-bb23-5e54dd55f8a9": {
+              "id": "884e6fb4-f035-4816-bb23-5e54dd55f8a9",
+              "name": "",
+              "description": "",
+              "parentNodeId": "148276ff-d421-484e-a784-1be0e09a3b30",
+              "fromNodeId": "f4318a46-9922-4ec1-a925-a1d4d45463cc",
+              "toNodeId": ""
+            },
+            "89eb6831-49b4-48d5-a79c-8e399ce71366": {
+              "id": "89eb6831-49b4-48d5-a79c-8e399ce71366",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "e62603c6-a718-432b-bb4e-01651b37c9bb",
+              "toNodeId": ""
+            },
+            "909c95e0-1f02-453a-b816-f00f9662015d": {
+              "id": "909c95e0-1f02-453a-b816-f00f9662015d",
+              "name": "",
+              "description": "",
+              "parentNodeId": "f791bb4b-6114-4f5f-a715-40b198d2eb7e",
+              "fromNodeId": "8e7bd4ef-6eac-49aa-98d5-1eaf17448e02",
+              "toNodeId": "3c8d4acc-bc3f-41f9-b0cd-ed385ff7dd15"
+            },
+            "9daa8c84-6a46-4a9a-a286-6f16183590cf": {
+              "id": "9daa8c84-6a46-4a9a-a286-6f16183590cf",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "f791bb4b-6114-4f5f-a715-40b198d2eb7e",
+              "toNodeId": "e9f6ca9e-43bf-4bb0-8b50-b036b44a25dc"
+            },
+            "a287a144-c342-4fec-ba9b-dd43809b99e8": {
+              "id": "a287a144-c342-4fec-ba9b-dd43809b99e8",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "2acc6c9d-5afa-49d8-bf8e-3c87da15c072",
+              "toNodeId": "e62603c6-a718-432b-bb4e-01651b37c9bb"
+            },
+            "a4aaf6fd-7aae-481b-846a-221c136ccbbc": {
+              "id": "a4aaf6fd-7aae-481b-846a-221c136ccbbc",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "78f11656-2abb-484d-8ecd-3943d395ffdc",
+              "toNodeId": "cbcc87aa-26c9-4e76-b527-fe9d043d661a"
+            },
+            "a6939c56-28ee-4a1c-b820-1b3c68baa62c": {
+              "id": "a6939c56-28ee-4a1c-b820-1b3c68baa62c",
+              "name": "No",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "7e78394c-eb74-462d-8784-26c92a62541e",
+              "toNodeId": "148276ff-d421-484e-a784-1be0e09a3b30"
+            },
+            "a811597c-baf0-4d16-a070-eeabe1c7e5bb": {
+              "id": "a811597c-baf0-4d16-a070-eeabe1c7e5bb",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "f66dac2d-b0ba-40ec-b875-6cd9fe752164",
+              "toNodeId": "a372775e-a1b2-42b4-a7f6-746c6d062d85"
+            },
+            "ab6630a9-29be-4765-b1a8-ee9c32d1dbe5": {
+              "id": "ab6630a9-29be-4765-b1a8-ee9c32d1dbe5",
+              "name": "",
+              "description": "",
+              "parentNodeId": "f791bb4b-6114-4f5f-a715-40b198d2eb7e",
+              "fromNodeId": "3c8d4acc-bc3f-41f9-b0cd-ed385ff7dd15",
+              "toNodeId": "c24a8084-f6b2-4002-bbc2-899165099425"
+            },
+            "b47cd673-16df-48ef-b8b5-50415df45296": {
+              "id": "b47cd673-16df-48ef-b8b5-50415df45296",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "39d3b534-e693-4c60-952d-506c90ae4592",
+              "toNodeId": "e6843f81-3d76-4157-b6b2-45c20bc245a1"
+            },
+            "b621ea9f-2df4-40da-84b1-b74bbc6d89d5": {
+              "id": "b621ea9f-2df4-40da-84b1-b74bbc6d89d5",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "148276ff-d421-484e-a784-1be0e09a3b30",
+              "toNodeId": "f791bb4b-6114-4f5f-a715-40b198d2eb7e"
+            },
+            "b8e94794-9304-4cbf-ac77-e362f85f426c": {
+              "id": "b8e94794-9304-4cbf-ac77-e362f85f426c",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "e9f6ca9e-43bf-4bb0-8b50-b036b44a25dc",
+              "toNodeId": "5fed2448-ee9c-4a82-9241-b2c3f8a759c3"
+            },
+            "c152ea15-3eeb-4bdf-bbb5-bdb9f6e31343": {
+              "id": "c152ea15-3eeb-4bdf-bbb5-bdb9f6e31343",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "e6843f81-3d76-4157-b6b2-45c20bc245a1",
+              "toNodeId": "9fe2b29c-bee9-44d9-93fb-1fd858e00357"
+            },
+            "d4b0b7d7-cb7d-4d56-9e02-809cc074d830": {
+              "id": "d4b0b7d7-cb7d-4d56-9e02-809cc074d830",
+              "name": "Do Nothing",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "28091da0-5d5b-4604-9dfd-1bc68d44a4f8",
+              "toNodeId": "0dfa46ee-b724-4a59-84c3-1ff9cf2cbbf1"
+            },
+            "ec92f913-13d1-4532-8e23-f193e14457f3": {
+              "id": "ec92f913-13d1-4532-8e23-f193e14457f3",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "636cb83f-66c5-4f38-b82c-581f3eaaef84",
+              "toNodeId": "28091da0-5d5b-4604-9dfd-1bc68d44a4f8"
+            },
+            "ecdbc8cb-96ad-45d5-9f28-62626d9ee467": {
+              "id": "ecdbc8cb-96ad-45d5-9f28-62626d9ee467",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "9fe2b29c-bee9-44d9-93fb-1fd858e00357",
+              "toNodeId": "c83548db-2cbb-4d61-889d-afa02e74a788"
+            },
+            "ef712c30-4e42-4861-989a-ad70e9e645b0": {
+              "id": "ef712c30-4e42-4861-989a-ad70e9e645b0",
+              "name": "Yes",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "28091da0-5d5b-4604-9dfd-1bc68d44a4f8",
+              "toNodeId": "422d84e3-f151-4ecd-8fe0-9dd5c617e608"
+            },
+            "f112060e-9105-4567-8238-d0835d927ebb": {
+              "id": "f112060e-9105-4567-8238-d0835d927ebb",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "d402a774-7165-40ad-a8e0-6f91dbdd38d5",
+              "toNodeId": "d29c0661-c591-4344-a5c2-54091402599a"
+            },
+            "fe76c441-060e-45fa-a43a-d89bb7b7209d": {
+              "id": "fe76c441-060e-45fa-a43a-d89bb7b7209d",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "36d02b74-141f-4487-873d-78dfb003a604",
+              "toNodeId": "c0a7f940-692d-4542-a374-48e4e376c1d3"
+            }
+          },
+          "nodes": {
+            "0dfa46ee-b724-4a59-84c3-1ff9cf2cbbf1": {
+              "id": "0dfa46ee-b724-4a59-84c3-1ff9cf2cbbf1",
+              "parentNodeId": ""
+            },
+            "129e5475-e9e4-4e50-9f32-a2dcb9ed9210": {
+              "id": "129e5475-e9e4-4e50-9f32-a2dcb9ed9210",
+              "parentNodeId": ""
+            },
+            "148276ff-d421-484e-a784-1be0e09a3b30": {
+              "id": "148276ff-d421-484e-a784-1be0e09a3b30",
+              "parentNodeId": ""
+            },
+            "1bd6a561-852a-4638-b9e8-5d6530d681bd": {
+              "id": "1bd6a561-852a-4638-b9e8-5d6530d681bd",
+              "parentNodeId": "148276ff-d421-484e-a784-1be0e09a3b30"
+            },
+            "28091da0-5d5b-4604-9dfd-1bc68d44a4f8": {
+              "id": "28091da0-5d5b-4604-9dfd-1bc68d44a4f8",
+              "parentNodeId": ""
+            },
+            "2acc6c9d-5afa-49d8-bf8e-3c87da15c072": {
+              "id": "2acc6c9d-5afa-49d8-bf8e-3c87da15c072",
+              "parentNodeId": ""
+            },
+            "36d02b74-141f-4487-873d-78dfb003a604": {
+              "id": "36d02b74-141f-4487-873d-78dfb003a604",
+              "parentNodeId": ""
+            },
+            "39d3b534-e693-4c60-952d-506c90ae4592": {
+              "id": "39d3b534-e693-4c60-952d-506c90ae4592",
+              "parentNodeId": ""
+            },
+            "3c8d4acc-bc3f-41f9-b0cd-ed385ff7dd15": {
+              "id": "3c8d4acc-bc3f-41f9-b0cd-ed385ff7dd15",
+              "parentNodeId": "f791bb4b-6114-4f5f-a715-40b198d2eb7e"
+            },
+            "4123d7e4-7d69-4d75-a8e8-4073f3e90fa1": {
+              "id": "4123d7e4-7d69-4d75-a8e8-4073f3e90fa1",
+              "parentNodeId": ""
+            },
+            "422d84e3-f151-4ecd-8fe0-9dd5c617e608": {
+              "id": "422d84e3-f151-4ecd-8fe0-9dd5c617e608",
+              "parentNodeId": ""
+            },
+            "4c05495c-6c87-4f61-8e47-bc146a17a4c5": {
+              "id": "4c05495c-6c87-4f61-8e47-bc146a17a4c5",
+              "parentNodeId": ""
+            },
+            "5fed2448-ee9c-4a82-9241-b2c3f8a759c3": {
+              "id": "5fed2448-ee9c-4a82-9241-b2c3f8a759c3",
+              "parentNodeId": ""
+            },
+            "636cb83f-66c5-4f38-b82c-581f3eaaef84": {
+              "id": "636cb83f-66c5-4f38-b82c-581f3eaaef84",
+              "parentNodeId": ""
+            },
+            "7763493e-67ed-4232-add4-6c6d47ff5470": {
+              "id": "7763493e-67ed-4232-add4-6c6d47ff5470",
+              "parentNodeId": ""
+            },
+            "78f11656-2abb-484d-8ecd-3943d395ffdc": {
+              "id": "78f11656-2abb-484d-8ecd-3943d395ffdc",
+              "parentNodeId": ""
+            },
+            "7e78394c-eb74-462d-8784-26c92a62541e": {
+              "id": "7e78394c-eb74-462d-8784-26c92a62541e",
+              "parentNodeId": ""
+            },
+            "8e7bd4ef-6eac-49aa-98d5-1eaf17448e02": {
+              "id": "8e7bd4ef-6eac-49aa-98d5-1eaf17448e02",
+              "parentNodeId": "f791bb4b-6114-4f5f-a715-40b198d2eb7e"
+            },
+            "99bfa766-e0fd-4085-904f-6a8d7dec53dd": {
+              "id": "99bfa766-e0fd-4085-904f-6a8d7dec53dd",
+              "parentNodeId": "148276ff-d421-484e-a784-1be0e09a3b30"
+            },
+            "9fe2b29c-bee9-44d9-93fb-1fd858e00357": {
+              "id": "9fe2b29c-bee9-44d9-93fb-1fd858e00357",
+              "parentNodeId": ""
+            },
+            "a372775e-a1b2-42b4-a7f6-746c6d062d85": {
+              "id": "a372775e-a1b2-42b4-a7f6-746c6d062d85",
+              "parentNodeId": ""
+            },
+            "b8bfc14d-3a32-478e-9fd5-09184aae1045": {
+              "id": "b8bfc14d-3a32-478e-9fd5-09184aae1045",
+              "parentNodeId": ""
+            },
+            "c0a7f940-692d-4542-a374-48e4e376c1d3": {
+              "id": "c0a7f940-692d-4542-a374-48e4e376c1d3",
+              "parentNodeId": ""
+            },
+            "c24a8084-f6b2-4002-bbc2-899165099425": {
+              "id": "c24a8084-f6b2-4002-bbc2-899165099425",
+              "parentNodeId": "f791bb4b-6114-4f5f-a715-40b198d2eb7e"
+            },
+            "c83548db-2cbb-4d61-889d-afa02e74a788": {
+              "id": "c83548db-2cbb-4d61-889d-afa02e74a788",
+              "parentNodeId": ""
+            },
+            "cbcc87aa-26c9-4e76-b527-fe9d043d661a": {
+              "id": "cbcc87aa-26c9-4e76-b527-fe9d043d661a",
+              "parentNodeId": ""
+            },
+            "d29c0661-c591-4344-a5c2-54091402599a": {
+              "id": "d29c0661-c591-4344-a5c2-54091402599a",
+              "parentNodeId": ""
+            },
+            "d402a774-7165-40ad-a8e0-6f91dbdd38d5": {
+              "id": "d402a774-7165-40ad-a8e0-6f91dbdd38d5",
+              "parentNodeId": ""
+            },
+            "deeec789-ff2e-4975-ae22-e219c0d1f7b6": {
+              "id": "deeec789-ff2e-4975-ae22-e219c0d1f7b6",
+              "parentNodeId": ""
+            },
+            "e048159d-3d09-49ab-abd0-5508b514a4af": {
+              "id": "e048159d-3d09-49ab-abd0-5508b514a4af",
+              "parentNodeId": ""
+            },
+            "e62603c6-a718-432b-bb4e-01651b37c9bb": {
+              "id": "e62603c6-a718-432b-bb4e-01651b37c9bb",
+              "parentNodeId": ""
+            },
+            "e6843f81-3d76-4157-b6b2-45c20bc245a1": {
+              "id": "e6843f81-3d76-4157-b6b2-45c20bc245a1",
+              "parentNodeId": ""
+            },
+            "e9f6ca9e-43bf-4bb0-8b50-b036b44a25dc": {
+              "id": "e9f6ca9e-43bf-4bb0-8b50-b036b44a25dc",
+              "parentNodeId": ""
+            },
+            "f4318a46-9922-4ec1-a925-a1d4d45463cc": {
+              "id": "f4318a46-9922-4ec1-a925-a1d4d45463cc",
+              "parentNodeId": "148276ff-d421-484e-a784-1be0e09a3b30"
+            },
+            "f4b6a105-998b-4c10-98e3-7aaf2b52ef7d": {
+              "id": "f4b6a105-998b-4c10-98e3-7aaf2b52ef7d",
+              "parentNodeId": ""
+            },
+            "f66dac2d-b0ba-40ec-b875-6cd9fe752164": {
+              "id": "f66dac2d-b0ba-40ec-b875-6cd9fe752164",
+              "parentNodeId": ""
+            },
+            "f791bb4b-6114-4f5f-a715-40b198d2eb7e": {
+              "id": "f791bb4b-6114-4f5f-a715-40b198d2eb7e",
+              "parentNodeId": ""
+            },
+            "fe8199ec-2aba-4771-a092-dd9305c71575": {
+              "id": "fe8199ec-2aba-4771-a092-dd9305c71575",
+              "parentNodeId": "148276ff-d421-484e-a784-1be0e09a3b30"
+            }
+          }
+        },
+        "steps": {
+          "0dfa46ee-b724-4a59-84c3-1ff9cf2cbbf1": {
+            "nodeId": "0dfa46ee-b724-4a59-84c3-1ff9cf2cbbf1",
+            "name": "Format Do Nothing",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "{\"update\":\"The user has decided not to perform asset containment. Please follow up manually.\",\"soc_slack_timestamp\":\"{{[4123d7e4-7d69-4d75-a8e8-4073f3e90fa1].[soc_slack_timestamp]}}\",\"soc_slack_channel\":\"{{[4123d7e4-7d69-4d75-a8e8-4073f3e90fa1].[soc_slack_channel]}}\"}"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "129e5475-e9e4-4e50-9f32-a2dcb9ed9210": {
+            "nodeId": "129e5475-e9e4-4e50-9f32-a2dcb9ed9210",
+            "name": "Format Whitelist Body",
+            "type": "action",
+            "plugin": {
+              "name": "Python 3 Script",
+              "slugVendor": "rapid7",
+              "slugName": "python_3_script",
+              "slugVersion": "2.0.2",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/python_3_script/2.0.2/icon.png"
+            },
+            "identifier": "run",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "function": "def run(params={}):\n    \n    return {\"payload\": {\"update\":'''{{[e9f6ca9e-43bf-4bb0-8b50-b036b44a25dc].[content]}} {{[5fed2448-ee9c-4a82-9241-b2c3f8a759c3].[content]}}''',\n            \"soc_slack_timestamp\":\"{{[4123d7e4-7d69-4d75-a8e8-4073f3e90fa1].[soc_slack_timestamp]}}\",\n            \"soc_slack_channel\":\"{{[4123d7e4-7d69-4d75-a8e8-4073f3e90fa1].[soc_slack_channel]}}\"}}",
+                "input": {}
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "function": {
+                  "default": "def run(params={}):\\n    return {}",
+                  "description": "Function definition. Must be named `run`. Accepts the `input` object as params. Returns the dict as output",
+                  "displayType": "python",
+                  "format": "python",
+                  "order": 1,
+                  "title": "Function",
+                  "type": "string"
+                },
+                "input": {
+                  "description": "Input object to be passed as `params={}` to the `run` function",
+                  "order": 2,
+                  "title": "Input",
+                  "type": "object"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "result1": {
+                  "description": "Sample output result1 (delete or edit)",
+                  "order": 1,
+                  "title": "Result1",
+                  "type": "string"
+                },
+                "result2": {
+                  "description": "Sample output result2 (delete or edit)",
+                  "order": 2,
+                  "title": "Result2",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": {
+              "definitions": {},
+              "properties": {
+                "payload": {
+                  "description": "Sample output result1 (delete or edit)",
+                  "order": 1,
+                  "title": "Result1",
+                  "type": "object"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "148276ff-d421-484e-a784-1be0e09a3b30": {
+            "nodeId": "148276ff-d421-484e-a784-1be0e09a3b30",
+            "name": "Asset Loop",
+            "type": "loop",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "customOutput": [
+                {
+                  "input": {
+                    "expression": {
+                      "expr": {
+                        "name": "1bd6a561-852a-4638-b9e8-5d6530d681bd.found",
+                        "type": "variable"
+                      },
+                      "op": "NOT",
+                      "type": "unary"
+                    },
+                    "expressionText": "not {{[1bd6a561-852a-4638-b9e8-5d6530d681bd].[found]}}",
+                    "value": "{{[148276ff-d421-484e-a784-1be0e09a3b30].[$item]}}",
+                    "valueType": "object"
+                  },
+                  "name": "Asset Contain List",
+                  "outputType": "array"
+                },
+                {
+                  "input": {
+                    "expression": {
+                      "name": "1bd6a561-852a-4638-b9e8-5d6530d681bd.found",
+                      "type": "variable"
+                    },
+                    "expressionText": "{{[1bd6a561-852a-4638-b9e8-5d6530d681bd].[found]}}",
+                    "value": "{{[148276ff-d421-484e-a784-1be0e09a3b30].[$item].[name]}}",
+                    "valueType": "string"
+                  },
+                  "name": "Asset Whitelist",
+                  "outputType": "array"
+                },
+                {
+                  "input": {
+                    "expression": {
+                      "expr": {
+                        "name": "1bd6a561-852a-4638-b9e8-5d6530d681bd.found",
+                        "type": "variable"
+                      },
+                      "op": "NOT",
+                      "type": "unary"
+                    },
+                    "expressionText": "not {{[1bd6a561-852a-4638-b9e8-5d6530d681bd].[found]}}",
+                    "value": "{{[148276ff-d421-484e-a784-1be0e09a3b30].[$item].[name]}}",
+                    "valueType": "string"
+                  },
+                  "name": "Asset Contain List Hostnames Only",
+                  "outputType": "array"
+                }
+              ],
+              "innerEdgeId": "7546fc8e-8cb0-4796-82d7-7462dfac4ddb",
+              "nextEdgeId": "b621ea9f-2df4-40da-84b1-b74bbc6d89d5",
+              "repeatVariable": "{{[4123d7e4-7d69-4d75-a8e8-4073f3e90fa1].[containment_params].[assets]}}"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": {
+              "properties": {
+                "Asset Contain List": {
+                  "description": "Custom output: \"Asset Contain List\"",
+                  "items": {
+                    "properties": {},
+                    "type": "object"
+                  },
+                  "title": "Asset Contain List",
+                  "type": "array"
+                },
+                "Asset Contain List Hostnames Only": {
+                  "description": "Custom output: \"Asset Contain List Hostnames Only\"",
+                  "items": {
+                    "type": "string"
+                  },
+                  "title": "Asset Contain List Hostnames Only",
+                  "type": "array"
+                },
+                "Asset Whitelist": {
+                  "description": "Custom output: \"Asset Whitelist\"",
+                  "items": {
+                    "type": "string"
+                  },
+                  "title": "Asset Whitelist",
+                  "type": "array"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/loop.svg",
+            "connectionType": "NONE"
+          },
+          "1bd6a561-852a-4638-b9e8-5d6530d681bd": {
+            "nodeId": "1bd6a561-852a-4638-b9e8-5d6530d681bd",
+            "name": "Asset Lookup",
+            "type": "helpers",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "expression": {
+                "left": {
+                  "type": "literal",
+                  "value": "name"
+                },
+                "op": "=",
+                "right": {
+                  "name": "99bfa766-e0fd-4085-904f-6a8d7dec53dd.lower",
+                  "type": "variable"
+                },
+                "type": "binary"
+              },
+              "expressionText": "'name' = {{[99bfa766-e0fd-4085-904f-6a8d7dec53dd].[lower]}}"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/helper.svg",
+            "connectionType": "NONE",
+            "helperIdentifier": "lookup_global_artifacts",
+            "globalArtifact": {
+              "name": "Asset Exclude List",
+              "id": "11905ed4-e69d-4b1d-a443-93f3c699e03c",
+              "schema": {
+                "definitions": {
+                  "_ROOT_": {
+                    "properties": {
+                      "hostId": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      }
+                    },
+                    "type": "object"
+                  }
+                },
+                "properties": {
+                  "_ROOT_": {
+                    "items": {
+                      "$ref": "#/definitions/_ROOT_"
+                    },
+                    "type": "array"
+                  }
+                },
+                "title": "Top Level Object",
+                "type": "object"
+              }
+            }
+          },
+          "28091da0-5d5b-4604-9dfd-1bc68d44a4f8": {
+            "nodeId": "28091da0-5d5b-4604-9dfd-1bc68d44a4f8",
+            "name": "Proceed with Containment",
+            "type": "decision_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "attachments": null,
+              "message": "",
+              "messageType": "button",
+              "options": [
+                {
+                  "answer": "Yes",
+                  "buttonStyle": "primary",
+                  "confirmation": "Quarantine has begun. Your CA will follow up shortly!",
+                  "edgeId": "ef712c30-4e42-4861-989a-ad70e9e645b0",
+                  "isTimeoutOnly": false
+                },
+                {
+                  "answer": "Do Nothing",
+                  "buttonStyle": "danger",
+                  "confirmation": "Please investigate manually. Your CA will follow up shortly!",
+                  "edgeId": "d4b0b7d7-cb7d-4d56-9e02-809cc074d830",
+                  "isTimeoutOnly": false
+                }
+              ],
+              "question": "Would you like us to proceed with quarantine?",
+              "recipient": "{{[f4b6a105-998b-4c10-98e3-7aaf2b52ef7d].[channel_id]}}",
+              "threadTimestamp": "{{[f4b6a105-998b-4c10-98e3-7aaf2b52ef7d].[timestamp]}}",
+              "timeout": 600,
+              "timeoutDisplayUnit": "minutes",
+              "timeoutEdgeId": "ef712c30-4e42-4861-989a-ad70e9e645b0"
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "displayType": "bytes",
+                  "format": "bytes",
+                  "order": 3,
+                  "title": "Attachments",
+                  "type": "string"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 1,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "A channel (e.g. #channel) or username",
+                  "order": 2,
+                  "title": "Recipient",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "$success": {
+                  "description": "",
+                  "order": 8,
+                  "title": "$success",
+                  "type": "boolean"
+                },
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "display_name": {
+                  "description": "The slack display name for the user responding to the question",
+                  "order": 9,
+                  "title": "Display Name",
+                  "type": "string"
+                },
+                "message": {
+                  "description": "The message that was sent to slack",
+                  "order": 4,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "path": {
+                  "description": "The path taken",
+                  "order": 6,
+                  "title": "Path",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "The Channel name or User Name",
+                  "order": 3,
+                  "title": "Recipient",
+                  "type": "string"
+                },
+                "responding_user": {
+                  "description": "The slack username of the user responding to the question",
+                  "order": 7,
+                  "title": "Response User",
+                  "type": "string"
+                },
+                "response_question": {
+                  "description": "The response question that was sent to slack",
+                  "order": 5,
+                  "title": "Response Question",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_interactive_message"
+          },
+          "2acc6c9d-5afa-49d8-bf8e-3c87da15c072": {
+            "nodeId": "2acc6c9d-5afa-49d8-bf8e-3c87da15c072",
+            "name": "Convert to JSON 3",
+            "type": "action",
+            "plugin": {
+              "name": "Type Converter",
+              "slugVendor": "rapid7",
+              "slugName": "type_converter",
+              "slugVersion": "1.5.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/type_converter/1.5.1/icon.png"
+            },
+            "identifier": "string_to_object",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "input": "{{[0dfa46ee-b724-4a59-84c3-1ff9cf2cbbf1].[content]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "input": {
+                  "description": "Input variable",
+                  "order": 1,
+                  "title": "Input",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "input"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "output": {
+                  "description": "Type converted input",
+                  "order": 1,
+                  "title": "Output",
+                  "type": "object"
+                }
+              },
+              "required": [
+                "output"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR"
+          },
+          "36d02b74-141f-4487-873d-78dfb003a604": {
+            "nodeId": "36d02b74-141f-4487-873d-78dfb003a604",
+            "name": "Send Whitelist Update",
+            "type": "action",
+            "plugin": {
+              "name": "REST",
+              "slugVendor": "rapid7",
+              "slugName": "rest",
+              "slugVersion": "3.0.3",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rest/3.0.3/icon.png"
+            },
+            "identifier": "post",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "body": "{{[129e5475-e9e4-4e50-9f32-a2dcb9ed9210].[payload]}}",
+                "headers": {
+                  "x-api-key": "b591a43c-cc69-4465-855c-03f76f162bb6"
+                },
+                "route": "7a709395-190f-4497-9054-7cab8d41b468/events/execute"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "body": {
+                  "description": "Payload to submit to the server when making the REST call",
+                  "order": 3,
+                  "title": "Body",
+                  "type": "object"
+                },
+                "headers": {
+                  "description": "Headers to use for the request. These will override any default headers",
+                  "order": 2,
+                  "title": "Headers",
+                  "type": "object"
+                },
+                "route": {
+                  "description": "The route to append to the base URL e.g. /org/users",
+                  "order": 1,
+                  "title": "Route",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "route"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "body_object": {
+                  "description": "Response payload from the server as an object",
+                  "order": 1,
+                  "title": "Body Object",
+                  "type": "object"
+                },
+                "body_string": {
+                  "description": "Response payload from the server as a string",
+                  "order": 2,
+                  "title": "Body String",
+                  "type": "string"
+                },
+                "headers": {
+                  "description": "Response headers from the server",
+                  "order": 4,
+                  "title": "Headers",
+                  "type": "object"
+                },
+                "status": {
+                  "description": "Status code of the response from the server",
+                  "order": 3,
+                  "title": "Status",
+                  "type": "integer"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "39d3b534-e693-4c60-952d-506c90ae4592": {
+            "nodeId": "39d3b534-e693-4c60-952d-506c90ae4592",
+            "name": "Format User Body",
+            "type": "action",
+            "plugin": {
+              "name": "Python 3 Script",
+              "slugVendor": "rapid7",
+              "slugName": "python_3_script",
+              "slugVersion": "2.0.2",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/python_3_script/2.0.2/icon.png"
+            },
+            "identifier": "run",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "function": "def run(params={}):\n    \n    return {\"payload\": {\n        \"containment_params\": {\n            \"assets\":[],\n            \"run_containment\":\"{{[4123d7e4-7d69-4d75-a8e8-4073f3e90fa1].[containment_params].[run_containment]}}\",\n            \"users\": {{[f791bb4b-6114-4f5f-a715-40b198d2eb7e].[User Contain List]}}\n        },\n        \"criticality\": \"{{[4123d7e4-7d69-4d75-a8e8-4073f3e90fa1].[criticality]}}\",\n        \"customer\": {{[4123d7e4-7d69-4d75-a8e8-4073f3e90fa1].[customer]}},\n        \"cutoff\": \"{{[4123d7e4-7d69-4d75-a8e8-4073f3e90fa1].[cutoff]}}\",\n        \"description\": \"{{[4123d7e4-7d69-4d75-a8e8-4073f3e90fa1].[description]}}\",\n        \"evidence\": \"\",\n        \"investigation_id\": \"{{[4123d7e4-7d69-4d75-a8e8-4073f3e90fa1].[investigation_id]}}\",\n        \"remediations\": \"{{[4123d7e4-7d69-4d75-a8e8-4073f3e90fa1].[remediations]}}\",\n        \"soc_slack_channel\": \"{{[4123d7e4-7d69-4d75-a8e8-4073f3e90fa1].[soc_slack_channel]}}\",\n        \"soc_slack_timestamp\": \"{{[4123d7e4-7d69-4d75-a8e8-4073f3e90fa1].[soc_slack_timestamp]}}\",\n        \"cust_slack_timestamp\": \"{{[f4b6a105-998b-4c10-98e3-7aaf2b52ef7d].[timestamp]}}\",\n        \"cust_slack_channel\": \"{{[f4b6a105-998b-4c10-98e3-7aaf2b52ef7d].[channel_id]}}\",\n        \"tagged\": {{[4123d7e4-7d69-4d75-a8e8-4073f3e90fa1].[tagged]}},\n        \"timestamp\": \"{{[4123d7e4-7d69-4d75-a8e8-4073f3e90fa1].[timestamp]}}\",\n        \"trigger_user\": \"{{[4123d7e4-7d69-4d75-a8e8-4073f3e90fa1].[trigger_user]}}\", \n        \"cust_slack_channel\": \"{{[f4b6a105-998b-4c10-98e3-7aaf2b52ef7d].[channel_id]}}\"\n        }\n    }\n\t",
+                "input": {}
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "function": {
+                  "default": "def run(params={}):\\n    return {}",
+                  "description": "Function definition. Must be named `run`. Accepts the `input` object as params. Returns the dict as output",
+                  "displayType": "python",
+                  "format": "python",
+                  "order": 1,
+                  "title": "Function",
+                  "type": "string"
+                },
+                "input": {
+                  "description": "Input object to be passed as `params={}` to the `run` function",
+                  "order": 2,
+                  "title": "Input",
+                  "type": "object"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "result1": {
+                  "description": "Sample output result1 (delete or edit)",
+                  "order": 1,
+                  "title": "Result1",
+                  "type": "string"
+                },
+                "result2": {
+                  "description": "Sample output result2 (delete or edit)",
+                  "order": 2,
+                  "title": "Result2",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": {
+              "definitions": {},
+              "properties": {
+                "payload": {
+                  "description": "Sample output result1 (delete or edit)",
+                  "order": 1,
+                  "title": "Result1",
+                  "type": "object"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "3c8d4acc-bc3f-41f9-b0cd-ed385ff7dd15": {
+            "nodeId": "3c8d4acc-bc3f-41f9-b0cd-ed385ff7dd15",
+            "name": "Lookup User",
+            "type": "helpers",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "expression": {
+                "left": {
+                  "type": "literal",
+                  "value": "dn"
+                },
+                "op": "=",
+                "right": {
+                  "name": "8e7bd4ef-6eac-49aa-98d5-1eaf17448e02.lower",
+                  "type": "variable"
+                },
+                "type": "binary"
+              },
+              "expressionText": "'dn' = {{[8e7bd4ef-6eac-49aa-98d5-1eaf17448e02].[lower]}}"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/helper.svg",
+            "connectionType": "NONE",
+            "helperIdentifier": "lookup_global_artifacts",
+            "globalArtifact": {
+              "name": "User Exclude List",
+              "id": "cc3785cb-2ff2-484d-96ad-be864e2a8080",
+              "schema": {
+                "definitions": {
+                  "_ROOT_": {
+                    "properties": {
+                      "dn": {
+                        "type": "string"
+                      },
+                      "email": {
+                        "type": "string"
+                      }
+                    },
+                    "type": "object"
+                  }
+                },
+                "properties": {
+                  "_ROOT_": {
+                    "items": {
+                      "$ref": "#/definitions/_ROOT_"
+                    },
+                    "type": "array"
+                  }
+                },
+                "title": "Top Level Object",
+                "type": "object"
+              }
+            }
+          },
+          "4123d7e4-7d69-4d75-a8e8-4073f3e90fa1": {
+            "nodeId": "4123d7e4-7d69-4d75-a8e8-4073f3e90fa1",
+            "name": "New Containment Action",
+            "type": "trigger",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "triggerId": "307e4d4e-63b5-4cf0-a967-203bd7cda8ea",
+            "defaultInputJSONSchema": {
+              "definitions": {
+                "containment_params": {
+                  "properties": {
+                    "assets": {
+                      "items": {
+                        "$ref": "#/definitions/containment_params_assets"
+                      },
+                      "type": "array"
+                    },
+                    "run_containment": {
+                      "type": "boolean"
+                    },
+                    "users": {
+                      "items": {
+                        "$ref": "#/definitions/containment_params_users"
+                      },
+                      "type": "array"
+                    }
+                  },
+                  "type": "object"
+                },
+                "containment_params_assets": {
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "payload": {
+                      "type": "object"
+                    }
+                  },
+                  "type": "object"
+                },
+                "containment_params_users": {
+                  "properties": {
+                    "dn": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "userId": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "customer": {
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "containment_params": {
+                  "$ref": "#/definitions/containment_params"
+                },
+                "criticality": {
+                  "type": "string"
+                },
+                "cust_slack_channel": {
+                  "type": "string"
+                },
+                "cust_slack_timestamp": {
+                  "type": "string"
+                },
+                "customer": {
+                  "$ref": "#/definitions/customer"
+                },
+                "cutoff": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "evidence": {
+                  "type": "string"
+                },
+                "idr_url": {
+                  "type": "string"
+                },
+                "investigation_id": {
+                  "type": "string"
+                },
+                "remediations": {
+                  "type": "string"
+                },
+                "soc_slack_channel": {
+                  "type": "string"
+                },
+                "soc_slack_timestamp": {
+                  "type": "string"
+                },
+                "tagged": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                },
+                "timestamp": {
+                  "type": "string"
+                },
+                "trigger_user": {
+                  "type": "string"
+                },
+                "update": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "containment_params": {
+                  "properties": {
+                    "assets": {
+                      "items": {
+                        "$ref": "#/definitions/containment_params_assets"
+                      },
+                      "type": "array"
+                    },
+                    "run_containment": {
+                      "type": "boolean"
+                    },
+                    "users": {
+                      "items": {
+                        "$ref": "#/definitions/containment_params_users"
+                      },
+                      "type": "array"
+                    }
+                  },
+                  "type": "object"
+                },
+                "containment_params_assets": {
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "payload": {
+                      "type": "object"
+                    }
+                  },
+                  "type": "object"
+                },
+                "containment_params_users": {
+                  "properties": {
+                    "dn": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "userId": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "customer": {
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "containment_params": {
+                  "$ref": "#/definitions/containment_params"
+                },
+                "criticality": {
+                  "type": "string"
+                },
+                "cust_slack_channel": {
+                  "type": "string"
+                },
+                "cust_slack_timestamp": {
+                  "type": "string"
+                },
+                "customer": {
+                  "$ref": "#/definitions/customer"
+                },
+                "cutoff": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "evidence": {
+                  "type": "string"
+                },
+                "idr_url": {
+                  "type": "string"
+                },
+                "investigation_id": {
+                  "type": "string"
+                },
+                "remediations": {
+                  "type": "string"
+                },
+                "soc_slack_channel": {
+                  "type": "string"
+                },
+                "soc_slack_timestamp": {
+                  "type": "string"
+                },
+                "tagged": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                },
+                "timestamp": {
+                  "type": "string"
+                },
+                "trigger_user": {
+                  "type": "string"
+                },
+                "update": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/trigger-api.svg",
+            "connectionType": "NONE"
+          },
+          "422d84e3-f151-4ecd-8fe0-9dd5c617e608": {
+            "nodeId": "422d84e3-f151-4ecd-8fe0-9dd5c617e608",
+            "name": "Has Users to Contain",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "7b3b8a15-78d0-4641-a646-f6d8be83a5cc",
+              "stepControlParams": [
+                {
+                  "edgeId": "413d87c4-fec9-4a7f-a5d3-9cd55555f6f1",
+                  "expression": {
+                    "args": [
+                      {
+                        "name": "f791bb4b-6114-4f5f-a715-40b198d2eb7e.User Contain List",
+                        "type": "variable"
+                      }
+                    ],
+                    "name": "is_defined",
+                    "type": "function"
+                  },
+                  "expressionText": "is_defined({{[f791bb4b-6114-4f5f-a715-40b198d2eb7e].[User Contain List]}})"
+                },
+                {
+                  "edgeId": "7b3b8a15-78d0-4641-a646-f6d8be83a5cc",
+                  "expression": {},
+                  "expressionText": ""
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          },
+          "4c05495c-6c87-4f61-8e47-bc146a17a4c5": {
+            "nodeId": "4c05495c-6c87-4f61-8e47-bc146a17a4c5",
+            "name": "Add Evidence",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": "```Evidence\n\n{{[4123d7e4-7d69-4d75-a8e8-4073f3e90fa1].[evidence]}}```",
+                "recipient": "{{[f4b6a105-998b-4c10-98e3-7aaf2b52ef7d].[channel_id]}}",
+                "thread_ts": "{{[f4b6a105-998b-4c10-98e3-7aaf2b52ef7d].[timestamp]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 4,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 3,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                },
+                "thread_ts": {
+                  "description": "Select timestamp output variable from parent message step",
+                  "order": 2,
+                  "title": "To post in a thread, select parent message timestamp",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
+          },
+          "5fed2448-ee9c-4a82-9241-b2c3f8a759c3": {
+            "nodeId": "5fed2448-ee9c-4a82-9241-b2c3f8a759c3",
+            "name": "Format User Whitelist Message",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "{{#if [f791bb4b-6114-4f5f-a715-40b198d2eb7e].[User Whitelist]}}\nThe following users were whitelisted and will not be contained: {{[f791bb4b-6114-4f5f-a715-40b198d2eb7e].[User Whitelist]}}. Please investigate them thoroughly.\n{{else}}\nNo target users were whitelisted.\n{{/if}}"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "636cb83f-66c5-4f38-b82c-581f3eaaef84": {
+            "nodeId": "636cb83f-66c5-4f38-b82c-581f3eaaef84",
+            "name": "No Assets or Users",
+            "type": "filter",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "stepControlParam": {
+                "edgeId": "ec92f913-13d1-4532-8e23-f193e14457f3",
+                "expression": {
+                  "left": {
+                    "args": [
+                      {
+                        "name": "148276ff-d421-484e-a784-1be0e09a3b30.Asset Contain List",
+                        "type": "variable"
+                      }
+                    ],
+                    "name": "is_defined",
+                    "type": "function"
+                  },
+                  "op": "OR",
+                  "right": {
+                    "args": [
+                      {
+                        "name": "f791bb4b-6114-4f5f-a715-40b198d2eb7e.User Contain List",
+                        "type": "variable"
+                      }
+                    ],
+                    "name": "is_defined",
+                    "type": "function"
+                  },
+                  "type": "binary"
+                },
+                "expressionText": "is_defined({{[148276ff-d421-484e-a784-1be0e09a3b30].[Asset Contain List]}}) or is_defined({{[f791bb4b-6114-4f5f-a715-40b198d2eb7e].[User Contain List]}})"
+              },
+              "stopOnMatch": false
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/filter.svg",
+            "connectionType": "NONE"
+          },
+          "7763493e-67ed-4232-add4-6c6d47ff5470": {
+            "nodeId": "7763493e-67ed-4232-add4-6c6d47ff5470",
+            "name": "Post Update",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": "{{[4123d7e4-7d69-4d75-a8e8-4073f3e90fa1].[update]}}",
+                "recipient": "{{[4123d7e4-7d69-4d75-a8e8-4073f3e90fa1].[cust_slack_channel]}}",
+                "thread_ts": "{{[4123d7e4-7d69-4d75-a8e8-4073f3e90fa1].[cust_slack_timestamp]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 4,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 3,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                },
+                "thread_ts": {
+                  "description": "Select timestamp output variable from parent message step",
+                  "order": 2,
+                  "title": "To post in a thread, select parent message timestamp",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
+          },
+          "78f11656-2abb-484d-8ecd-3943d395ffdc": {
+            "nodeId": "78f11656-2abb-484d-8ecd-3943d395ffdc",
+            "name": "Format Cb Isolation",
+            "type": "action",
+            "plugin": {
+              "name": "Python 3 Script",
+              "slugVendor": "rapid7",
+              "slugName": "python_3_script",
+              "slugVersion": "2.0.2",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/python_3_script/2.0.2/icon.png"
+            },
+            "identifier": "run",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "function": "def run(params={}):\n    from ast import literal_eval\n    s = '''{{[148276ff-d421-484e-a784-1be0e09a3b30].[Asset Contain List]}}'''.replace(\"true\", \"True\").replace(\"false\", \"False\").replace(\"null\", \"None\")\n    assets = literal_eval(s)\n    #invocation_data = []\n    #for a in assets:\n        #invocation_data.append(a['payload'])\n    \n    return {\"payload\": {\"soc_slack_channel\": \"{{[4123d7e4-7d69-4d75-a8e8-4073f3e90fa1].[soc_slack_channel]}}\",\n                        \"customer\": {{[4123d7e4-7d69-4d75-a8e8-4073f3e90fa1].[customer]}},\n                        \"soc_slack_timestamp\": \"{{[4123d7e4-7d69-4d75-a8e8-4073f3e90fa1].[soc_slack_timestamp]}}\",\n                        \"cust_slack_channel\": \"{{[f4b6a105-998b-4c10-98e3-7aaf2b52ef7d].[channel_id]}}\",\n                        \"cust_slack_timestamp\": \"{{[f4b6a105-998b-4c10-98e3-7aaf2b52ef7d].[timestamp]}}\",\n                        \"agent_quarantine\": True,\n                        \"assets\": assets,\n                        \"update\": \"The customer has decided to proceed with quarantine. Attempting now...\"}}",
+                "input": {}
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "function": {
+                  "default": "def run(params={}):\\n    return {}",
+                  "description": "Function definition. Must be named `run`. Accepts the `input` object as params. Returns the dict as output",
+                  "displayType": "python",
+                  "format": "python",
+                  "order": 1,
+                  "title": "Function",
+                  "type": "string"
+                },
+                "input": {
+                  "description": "Input object to be passed as `params={}` to the `run` function",
+                  "order": 2,
+                  "title": "Input",
+                  "type": "object"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "result1": {
+                  "description": "Sample output result1 (delete or edit)",
+                  "order": 1,
+                  "title": "Result1",
+                  "type": "string"
+                },
+                "result2": {
+                  "description": "Sample output result2 (delete or edit)",
+                  "order": 2,
+                  "title": "Result2",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": {
+              "definitions": {},
+              "properties": {
+                "payload": {
+                  "description": "Sample output result1 (delete or edit)",
+                  "order": 1,
+                  "title": "Result1",
+                  "type": "object"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "7e78394c-eb74-462d-8784-26c92a62541e": {
+            "nodeId": "7e78394c-eb74-462d-8784-26c92a62541e",
+            "name": "Update for Thread",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "a6939c56-28ee-4a1c-b820-1b3c68baa62c",
+              "stepControlParams": [
+                {
+                  "edgeId": "a6939c56-28ee-4a1c-b820-1b3c68baa62c",
+                  "expression": {},
+                  "expressionText": ""
+                },
+                {
+                  "edgeId": "41d1df73-cf72-40a6-8eef-65b7c587045f",
+                  "expression": {
+                    "args": [
+                      {
+                        "name": "4123d7e4-7d69-4d75-a8e8-4073f3e90fa1.update",
+                        "type": "variable"
+                      }
+                    ],
+                    "name": "is_defined",
+                    "type": "function"
+                  },
+                  "expressionText": "is_defined({{[4123d7e4-7d69-4d75-a8e8-4073f3e90fa1].[update]}})"
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          },
+          "8e7bd4ef-6eac-49aa-98d5-1eaf17448e02": {
+            "nodeId": "8e7bd4ef-6eac-49aa-98d5-1eaf17448e02",
+            "name": "Lower User",
+            "type": "action",
+            "plugin": {
+              "name": "String Operations",
+              "slugVendor": "rapid7",
+              "slugName": "string",
+              "slugVersion": "1.3.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/string/1.3.0/icon.png"
+            },
+            "identifier": "lower",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "string": "{{[f791bb4b-6114-4f5f-a715-40b198d2eb7e].[$item].[dn]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "string": {
+                  "description": "String to convert e.g. USER=bob",
+                  "order": 1,
+                  "title": "String Input",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "string"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "lower": {
+                  "description": "Lowercase string",
+                  "order": 1,
+                  "title": "Lowercase",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR"
+          },
+          "99bfa766-e0fd-4085-904f-6a8d7dec53dd": {
+            "nodeId": "99bfa766-e0fd-4085-904f-6a8d7dec53dd",
+            "name": "Lower Asset",
+            "type": "action",
+            "plugin": {
+              "name": "String Operations",
+              "slugVendor": "rapid7",
+              "slugName": "string",
+              "slugVersion": "1.3.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/string/1.3.0/icon.png"
+            },
+            "identifier": "lower",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "string": "{{[148276ff-d421-484e-a784-1be0e09a3b30].[$item].[name]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "string": {
+                  "description": "String to convert e.g. USER=bob",
+                  "order": 1,
+                  "title": "String Input",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "string"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "lower": {
+                  "description": "Lowercase string",
+                  "order": 1,
+                  "title": "Lowercase",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR"
+          },
+          "9fe2b29c-bee9-44d9-93fb-1fd858e00357": {
+            "nodeId": "9fe2b29c-bee9-44d9-93fb-1fd858e00357",
+            "name": "Join User Containment",
+            "type": "join",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "decisionEdgeIds": [
+                "7b3b8a15-78d0-4641-a646-f6d8be83a5cc",
+                "c152ea15-3eeb-4bdf-bbb5-bdb9f6e31343"
+              ],
+              "variableSets": []
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": {
+              "properties": {},
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": {
+              "properties": {},
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "NONE"
+          },
+          "a372775e-a1b2-42b4-a7f6-746c6d062d85": {
+            "nodeId": "a372775e-a1b2-42b4-a7f6-746c6d062d85",
+            "name": "Send Text",
+            "type": "action",
+            "plugin": {
+              "name": "Twilio",
+              "slugVendor": "rapid7",
+              "slugName": "twilio",
+              "slugVersion": "1.0.2",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/twilio/1.0.2/icon.png"
+            },
+            "identifier": "send_sms",
+            "continueOnFailure": true,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "message": "Your Rapid7 Security team here. We identified a critical incident and will quarantine the affected assets and users: \nAssets: {{[148276ff-d421-484e-a784-1be0e09a3b30].[Asset Contain List Hostnames Only]}} \nUsers: {{[f791bb4b-6114-4f5f-a715-40b198d2eb7e].[User Contain List]}}\n\nThis will occur at [{{[4123d7e4-7d69-4d75-a8e8-4073f3e90fa1].[cutoff]}}] unless you tell us not to. \n\nThe following assets and users were whitelisted, but should be investigated properly: \nAssets: {{[148276ff-d421-484e-a784-1be0e09a3b30].[Asset Whitelist]}} \nUsers: {{[f791bb4b-6114-4f5f-a715-40b198d2eb7e].[User Whitelist]}}\n\nTo review the incident details and take action, see your Rapid7 MDR Containment channel in {{[f4b6a105-998b-4c10-98e3-7aaf2b52ef7d].[channel_id]}}.",
+                "to_number": "+4106600981"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "message": {
+                  "description": "Message to send",
+                  "order": 1,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "to_number": {
+                  "description": "Phone number to send SMS message",
+                  "order": 2,
+                  "title": "Number",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "message",
+                "to_number"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "message_sid": {
+                  "description": "Message SID",
+                  "order": 1,
+                  "title": "Message SID",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "b8bfc14d-3a32-478e-9fd5-09184aae1045": {
+            "nodeId": "b8bfc14d-3a32-478e-9fd5-09184aae1045",
+            "name": "Anything Whitelisted",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "2df2e4c2-e718-4bd2-a3cf-83f7356a0d9d",
+              "stepControlParams": [
+                {
+                  "edgeId": "2df2e4c2-e718-4bd2-a3cf-83f7356a0d9d",
+                  "expression": {},
+                  "expressionText": ""
+                },
+                {
+                  "edgeId": "5a3a1b0e-e95f-44e0-a318-b72774371593",
+                  "expression": {
+                    "left": {
+                      "args": [
+                        {
+                          "name": "148276ff-d421-484e-a784-1be0e09a3b30.Asset Whitelist",
+                          "type": "variable"
+                        }
+                      ],
+                      "name": "is_defined",
+                      "type": "function"
+                    },
+                    "op": "OR",
+                    "right": {
+                      "args": [
+                        {
+                          "name": "f791bb4b-6114-4f5f-a715-40b198d2eb7e.User Whitelist",
+                          "type": "variable"
+                        }
+                      ],
+                      "name": "is_defined",
+                      "type": "function"
+                    },
+                    "type": "binary"
+                  },
+                  "expressionText": "is_defined({{[148276ff-d421-484e-a784-1be0e09a3b30].[Asset Whitelist]}}) or is_defined({{[f791bb4b-6114-4f5f-a715-40b198d2eb7e].[User Whitelist]}})"
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          },
+          "c0a7f940-692d-4542-a374-48e4e376c1d3": {
+            "nodeId": "c0a7f940-692d-4542-a374-48e4e376c1d3",
+            "name": "Join Whitelist",
+            "type": "join",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "decisionEdgeIds": [
+                "2df2e4c2-e718-4bd2-a3cf-83f7356a0d9d",
+                "fe76c441-060e-45fa-a43a-d89bb7b7209d"
+              ],
+              "variableSets": []
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": {
+              "properties": {},
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": {
+              "properties": {},
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "NONE"
+          },
+          "c24a8084-f6b2-4002-bbc2-899165099425": {
+            "nodeId": "c24a8084-f6b2-4002-bbc2-899165099425",
+            "name": "User Lookup Result",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "\"{{[f791bb4b-6114-4f5f-a715-40b198d2eb7e].[$item].[dn]}}\""
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "c83548db-2cbb-4d61-889d-afa02e74a788": {
+            "nodeId": "c83548db-2cbb-4d61-889d-afa02e74a788",
+            "name": "Has Assets",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "74002365-a7f9-4c63-a282-f0ffcc5537e3",
+              "stepControlParams": [
+                {
+                  "edgeId": "74002365-a7f9-4c63-a282-f0ffcc5537e3",
+                  "expression": {},
+                  "expressionText": ""
+                },
+                {
+                  "edgeId": "7ff53a84-b01f-418f-8f93-3ef2465dee72",
+                  "expression": {
+                    "args": [
+                      {
+                        "name": "148276ff-d421-484e-a784-1be0e09a3b30.Asset Contain List",
+                        "type": "variable"
+                      }
+                    ],
+                    "name": "is_defined",
+                    "type": "function"
+                  },
+                  "expressionText": "is_defined({{[148276ff-d421-484e-a784-1be0e09a3b30].[Asset Contain List]}})"
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          },
+          "cbcc87aa-26c9-4e76-b527-fe9d043d661a": {
+            "nodeId": "cbcc87aa-26c9-4e76-b527-fe9d043d661a",
+            "name": "Perform Isolation",
+            "type": "action",
+            "plugin": {
+              "name": "REST",
+              "slugVendor": "rapid7",
+              "slugName": "rest",
+              "slugVersion": "3.0.3",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rest/3.0.3/icon.png"
+            },
+            "identifier": "post",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "body": "{{[78f11656-2abb-484d-8ecd-3943d395ffdc].[payload]}}",
+                "headers": {},
+                "route": "4cdadbbf-5f03-4bd3-8789-3acfe246f94d/events/execute"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "body": {
+                  "description": "Payload to submit to the server when making the REST call",
+                  "order": 3,
+                  "title": "Body",
+                  "type": "object"
+                },
+                "headers": {
+                  "description": "Headers to use for the request. These will override any default headers",
+                  "order": 2,
+                  "title": "Headers",
+                  "type": "object"
+                },
+                "route": {
+                  "description": "The route to append to the base URL e.g. /org/users",
+                  "order": 1,
+                  "title": "Route",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "route"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "body_object": {
+                  "description": "Response payload from the server as an object",
+                  "order": 1,
+                  "title": "Body Object",
+                  "type": "object"
+                },
+                "body_string": {
+                  "description": "Response payload from the server as a string",
+                  "order": 2,
+                  "title": "Body String",
+                  "type": "string"
+                },
+                "headers": {
+                  "description": "Response headers from the server",
+                  "order": 4,
+                  "title": "Headers",
+                  "type": "object"
+                },
+                "status": {
+                  "description": "Status code of the response from the server",
+                  "order": 3,
+                  "title": "Status",
+                  "type": "integer"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "d29c0661-c591-4344-a5c2-54091402599a": {
+            "nodeId": "d29c0661-c591-4344-a5c2-54091402599a",
+            "name": "Run Quarantine Action",
+            "type": "action",
+            "plugin": {
+              "name": "REST",
+              "slugVendor": "rapid7",
+              "slugName": "rest",
+              "slugVersion": "3.0.3",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rest/3.0.3/icon.png"
+            },
+            "identifier": "post",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "body": "{{[d402a774-7165-40ad-a8e0-6f91dbdd38d5].[payload]}}",
+                "headers": {
+                  "x-api-key": "b591a43c-cc69-4465-855c-03f76f162bb6"
+                },
+                "route": "7a709395-190f-4497-9054-7cab8d41b468/events/execute"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "body": {
+                  "description": "Payload to submit to the server when making the REST call",
+                  "order": 3,
+                  "title": "Body",
+                  "type": "object"
+                },
+                "headers": {
+                  "description": "Headers to use for the request. These will override any default headers",
+                  "order": 2,
+                  "title": "Headers",
+                  "type": "object"
+                },
+                "route": {
+                  "description": "The route to append to the base URL e.g. /org/users",
+                  "order": 1,
+                  "title": "Route",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "route"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "body_object": {
+                  "description": "Response payload from the server as an object",
+                  "order": 1,
+                  "title": "Body Object",
+                  "type": "object"
+                },
+                "body_string": {
+                  "description": "Response payload from the server as a string",
+                  "order": 2,
+                  "title": "Body String",
+                  "type": "string"
+                },
+                "headers": {
+                  "description": "Response headers from the server",
+                  "order": 4,
+                  "title": "Headers",
+                  "type": "object"
+                },
+                "status": {
+                  "description": "Status code of the response from the server",
+                  "order": 3,
+                  "title": "Status",
+                  "type": "integer"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "d402a774-7165-40ad-a8e0-6f91dbdd38d5": {
+            "nodeId": "d402a774-7165-40ad-a8e0-6f91dbdd38d5",
+            "name": "Format Agent Quarantine",
+            "type": "action",
+            "plugin": {
+              "name": "Python 3 Script",
+              "slugVendor": "rapid7",
+              "slugName": "python_3_script",
+              "slugVersion": "2.0.2",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/python_3_script/2.0.2/icon.png"
+            },
+            "identifier": "run",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "function": "def run(params={}):\n    from ast import literal_eval\n    s = '''{{[148276ff-d421-484e-a784-1be0e09a3b30].[Asset Contain List]}}'''.replace(\"true\", \"True\").replace(\"false\", \"False\").replace(\"null\", \"None\")\n    assets = literal_eval(s)\n    #invocation_data = []\n    #for a in assets:\n        #invocation_data.append(a['payload'])\n\n    #fix investigation id here\n    return {\"payload\": {\"soc_slack_channel\": \"{{[4123d7e4-7d69-4d75-a8e8-4073f3e90fa1].[soc_slack_channel]}}\",\n                        \"customer\": {{[4123d7e4-7d69-4d75-a8e8-4073f3e90fa1].[customer]}},\n                        \"soc_slack_timestamp\": \"{{[4123d7e4-7d69-4d75-a8e8-4073f3e90fa1].[soc_slack_timestamp]}}\",\n                        \"cust_slack_channel\": \"{{[f4b6a105-998b-4c10-98e3-7aaf2b52ef7d].[channel_id]}}\",\n                        \"cust_slack_timestamp\": \"{{[f4b6a105-998b-4c10-98e3-7aaf2b52ef7d].[timestamp]}}\",\n                        \"agent_quarantine\": True,\"investigation_id\": \"{{[4123d7e4-7d69-4d75-a8e8-4073f3e90fa1].[containment_params].[assets].[0].payload.investigationId}}\",\n                        \"assets\": assets,\"update\": \"The customer has decided to proceed with quarantine. Attempting now...\",\n                        \"cust_slack_channel\": \"{{[f4b6a105-998b-4c10-98e3-7aaf2b52ef7d].[channel_id]}}\", \"cust_slack_timestamp\": \"{{[f4b6a105-998b-4c10-98e3-7aaf2b52ef7d].[timestamp]}}\"}}",
+                "input": {}
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "function": {
+                  "default": "def run(params={}):\\n    return {}",
+                  "description": "Function definition. Must be named `run`. Accepts the `input` object as params. Returns the dict as output",
+                  "displayType": "python",
+                  "format": "python",
+                  "order": 1,
+                  "title": "Function",
+                  "type": "string"
+                },
+                "input": {
+                  "description": "Input object to be passed as `params={}` to the `run` function",
+                  "order": 2,
+                  "title": "Input",
+                  "type": "object"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "result1": {
+                  "description": "Sample output result1 (delete or edit)",
+                  "order": 1,
+                  "title": "Result1",
+                  "type": "string"
+                },
+                "result2": {
+                  "description": "Sample output result2 (delete or edit)",
+                  "order": 2,
+                  "title": "Result2",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": {
+              "definitions": {},
+              "properties": {
+                "payload": {
+                  "type": "object"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "deeec789-ff2e-4975-ae22-e219c0d1f7b6": {
+            "nodeId": "deeec789-ff2e-4975-ae22-e219c0d1f7b6",
+            "name": "Format Customer Alert",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "Hi @here, The Rapid7 Security team has identified a High criticality alert. \n\n:information_source: For evidence details, see the replies to this thread. :information_source:\n\nHere are the alert details: \n> {{[4123d7e4-7d69-4d75-a8e8-4073f3e90fa1].[description]}}\n\n{{#if [148276ff-d421-484e-a784-1be0e09a3b30].[Asset Whitelist]}}\n*The following assets were whitelisted: {{[148276ff-d421-484e-a784-1be0e09a3b30].[Asset Whitelist]}}*\n{{/if}}\n{{#if [f791bb4b-6114-4f5f-a715-40b198d2eb7e].[User Whitelist]}}\n*The following users were whitelisted: {{[f791bb4b-6114-4f5f-a715-40b198d2eb7e].[User Whitelist]}}*\n{{/if}}\n\n*We will proceed with the following containment actions at [{{[4123d7e4-7d69-4d75-a8e8-4073f3e90fa1].[cutoff]}}] unless you tell us not to:*\n\nRestrict the following assets: {{[148276ff-d421-484e-a784-1be0e09a3b30].[Asset Contain List Hostnames Only]}}\nRestrict the following users: {{[f791bb4b-6114-4f5f-a715-40b198d2eb7e].[User Contain List]}}\n\n{{#if [4123d7e4-7d69-4d75-a8e8-4073f3e90fa1].[remediations]}}\nWe also recommend that you complete the following remediation actions:\n> {{[4123d7e4-7d69-4d75-a8e8-4073f3e90fa1].[remediations]}}\n{{/if}}\n\nFor more details, please review this <{{[4123d7e4-7d69-4d75-a8e8-4073f3e90fa1].[idr_url]}}|InsightIDR Investigation>"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "e048159d-3d09-49ab-abd0-5508b514a4af": {
+            "nodeId": "e048159d-3d09-49ab-abd0-5508b514a4af",
+            "name": "Agent or Cb Quarantine",
+            "type": "decision_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "attachments": null,
+              "message": "NOTE: This will go away in production",
+              "messageType": "button",
+              "options": [
+                {
+                  "answer": "Insight Agent",
+                  "buttonStyle": "primary",
+                  "confirmation": "Awesome! Proceeding with agent quarantine.",
+                  "edgeId": "428f73b8-d769-4e9f-a066-76d3d0a4b26b",
+                  "isTimeoutOnly": false
+                },
+                {
+                  "answer": "Cb Response",
+                  "buttonStyle": "danger",
+                  "confirmation": "Sweet! Isolating sensor with Cb Response...",
+                  "edgeId": "09a270f2-8f4d-4746-8738-2ee8d909b15f",
+                  "isTimeoutOnly": false
+                }
+              ],
+              "question": "What should we leverage to perform agent quarantine?",
+              "recipient": "{{[f4b6a105-998b-4c10-98e3-7aaf2b52ef7d].[channel_id]}}",
+              "threadTimestamp": "{{[f4b6a105-998b-4c10-98e3-7aaf2b52ef7d].[timestamp]}}",
+              "timeout": 120,
+              "timeoutDisplayUnit": "minutes",
+              "timeoutEdgeId": "428f73b8-d769-4e9f-a066-76d3d0a4b26b"
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "displayType": "bytes",
+                  "format": "bytes",
+                  "order": 3,
+                  "title": "Attachments",
+                  "type": "string"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 1,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "A channel (e.g. #channel) or username",
+                  "order": 2,
+                  "title": "Recipient",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "$success": {
+                  "description": "",
+                  "order": 8,
+                  "title": "$success",
+                  "type": "boolean"
+                },
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "display_name": {
+                  "description": "The slack display name for the user responding to the question",
+                  "order": 9,
+                  "title": "Display Name",
+                  "type": "string"
+                },
+                "message": {
+                  "description": "The message that was sent to slack",
+                  "order": 4,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "path": {
+                  "description": "The path taken",
+                  "order": 6,
+                  "title": "Path",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "The Channel name or User Name",
+                  "order": 3,
+                  "title": "Recipient",
+                  "type": "string"
+                },
+                "responding_user": {
+                  "description": "The slack username of the user responding to the question",
+                  "order": 7,
+                  "title": "Response User",
+                  "type": "string"
+                },
+                "response_question": {
+                  "description": "The response question that was sent to slack",
+                  "order": 5,
+                  "title": "Response Question",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_interactive_message"
+          },
+          "e62603c6-a718-432b-bb4e-01651b37c9bb": {
+            "nodeId": "e62603c6-a718-432b-bb4e-01651b37c9bb",
+            "name": "Post Do Nothing",
+            "type": "action",
+            "plugin": {
+              "name": "REST",
+              "slugVendor": "rapid7",
+              "slugName": "rest",
+              "slugVersion": "3.0.3",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rest/3.0.3/icon.png"
+            },
+            "identifier": "post",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "body": "{{[2acc6c9d-5afa-49d8-bf8e-3c87da15c072].[output]}}",
+                "headers": {},
+                "route": "7a709395-190f-4497-9054-7cab8d41b468/events/execute"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "body": {
+                  "description": "Payload to submit to the server when making the REST call",
+                  "order": 3,
+                  "title": "Body",
+                  "type": "object"
+                },
+                "headers": {
+                  "description": "Headers to use for the request. These will override any default headers",
+                  "order": 2,
+                  "title": "Headers",
+                  "type": "object"
+                },
+                "route": {
+                  "description": "The route to append to the base URL e.g. /org/users",
+                  "order": 1,
+                  "title": "Route",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "route"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "body_object": {
+                  "description": "Response payload from the server as an object",
+                  "order": 1,
+                  "title": "Body Object",
+                  "type": "object"
+                },
+                "body_string": {
+                  "description": "Response payload from the server as a string",
+                  "order": 2,
+                  "title": "Body String",
+                  "type": "string"
+                },
+                "headers": {
+                  "description": "Response headers from the server",
+                  "order": 4,
+                  "title": "Headers",
+                  "type": "object"
+                },
+                "status": {
+                  "description": "Status code of the response from the server",
+                  "order": 3,
+                  "title": "Status",
+                  "type": "integer"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "e6843f81-3d76-4157-b6b2-45c20bc245a1": {
+            "nodeId": "e6843f81-3d76-4157-b6b2-45c20bc245a1",
+            "name": "Quarantine Users",
+            "type": "action",
+            "plugin": {
+              "name": "REST",
+              "slugVendor": "rapid7",
+              "slugName": "rest",
+              "slugVersion": "3.0.3",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rest/3.0.3/icon.png"
+            },
+            "identifier": "post",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "body": "{{[39d3b534-e693-4c60-952d-506c90ae4592].[payload]}}",
+                "headers": {},
+                "route": "66d9ae26-a121-48e6-b996-2624ccfd2085/events/execute"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "body": {
+                  "description": "Payload to submit to the server when making the REST call",
+                  "order": 3,
+                  "title": "Body",
+                  "type": "object"
+                },
+                "headers": {
+                  "description": "Headers to use for the request. These will override any default headers",
+                  "order": 2,
+                  "title": "Headers",
+                  "type": "object"
+                },
+                "route": {
+                  "description": "The route to append to the base URL e.g. /org/users",
+                  "order": 1,
+                  "title": "Route",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "route"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "body_object": {
+                  "description": "Response payload from the server as an object",
+                  "order": 1,
+                  "title": "Body Object",
+                  "type": "object"
+                },
+                "body_string": {
+                  "description": "Response payload from the server as a string",
+                  "order": 2,
+                  "title": "Body String",
+                  "type": "string"
+                },
+                "headers": {
+                  "description": "Response headers from the server",
+                  "order": 4,
+                  "title": "Headers",
+                  "type": "object"
+                },
+                "status": {
+                  "description": "Status code of the response from the server",
+                  "order": 3,
+                  "title": "Status",
+                  "type": "integer"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "e9f6ca9e-43bf-4bb0-8b50-b036b44a25dc": {
+            "nodeId": "e9f6ca9e-43bf-4bb0-8b50-b036b44a25dc",
+            "name": "Format Asset Whitelist Message",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "{{#if [148276ff-d421-484e-a784-1be0e09a3b30].[Asset Whitelist]}}\nThe following assets were whitelisted and will not be contained: {{[148276ff-d421-484e-a784-1be0e09a3b30].[Asset Whitelist]}}. Please investigate them thoroughly.\n{{else}}\nNo target assets were whitelisted.\n{{/if}}"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "f4318a46-9922-4ec1-a925-a1d4d45463cc": {
+            "nodeId": "f4318a46-9922-4ec1-a925-a1d4d45463cc",
+            "name": "Asset Lookup Result Names Only",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "{{[148276ff-d421-484e-a784-1be0e09a3b30].[$item].[name]}}"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "f4b6a105-998b-4c10-98e3-7aaf2b52ef7d": {
+            "nodeId": "f4b6a105-998b-4c10-98e3-7aaf2b52ef7d",
+            "name": "Post Alert",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": "{{[deeec789-ff2e-4975-ae22-e219c0d1f7b6].[content]}}",
+                "recipient": "#mdr_customer_test",
+                "thread_ts": ""
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 4,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 3,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                },
+                "thread_ts": {
+                  "description": "Select timestamp output variable from parent message step",
+                  "order": 2,
+                  "title": "To post in a thread, select parent message timestamp",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
+          },
+          "f66dac2d-b0ba-40ec-b875-6cd9fe752164": {
+            "nodeId": "f66dac2d-b0ba-40ec-b875-6cd9fe752164",
+            "name": "Send Containment Email",
+            "type": "action",
+            "plugin": {
+              "name": "Microsoft Office 365 Email",
+              "slugVendor": "rapid7",
+              "slugName": "microsoft_office365_email",
+              "slugVersion": "4.1.4",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_office365_email/4.1.4/icon.png"
+            },
+            "identifier": "send_email",
+            "continueOnFailure": true,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "attachment": {
+                  "content": "",
+                  "filename": ""
+                },
+                "bcc": [],
+                "body": "Hi, \n\nThe Rapid7 Security Team has identified a high criticality incident that requires immediate attention. In accordance with your Rapid7 Managed Services plan, the affected assets and users will be automatically quarantined at [{{[4123d7e4-7d69-4d75-a8e8-4073f3e90fa1].[cutoff]}}] unless you tell us not to. \n\nNext steps:\n1. Restrict the following hosts: {{[148276ff-d421-484e-a784-1be0e09a3b30].[Asset Contain List Hostnames Only]}}\n2. Restrict the following users: {{[f791bb4b-6114-4f5f-a715-40b198d2eb7e].[User Contain List]}}\n\nNOTE: The following users and assets were whitelisted, but should be investigated properly:\nAssets: {{[148276ff-d421-484e-a784-1be0e09a3b30].[Asset Whitelist]}}\nUsers: {{[f791bb4b-6114-4f5f-a715-40b198d2eb7e].[User Whitelist]}}\n\nWe also recommend that you complete the following remediation actions:\n{{[4123d7e4-7d69-4d75-a8e8-4073f3e90fa1].[remediations]}}\n\nTo review the incident details and take action, see your Rapid7 MDR Containment channel in {{[f4b6a105-998b-4c10-98e3-7aaf2b52ef7d].[channel_id]}}. \n\nFrom, \nThe Rapid7 Security Team \n",
+                "cc": [],
+                "email_from": "jschipp@komanddev.onmicrosoft.com",
+                "email_to": "jschipp@komanddev.onmicrosoft.com",
+                "is_html": false,
+                "subject": "Rapid7 SOC Alert"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "definitions": {
+                "file": {
+                  "description": "File Object",
+                  "properties": {
+                    "content": {
+                      "description": "File contents",
+                      "format": "bytes",
+                      "title": "Content",
+                      "type": "string"
+                    },
+                    "filename": {
+                      "description": "Name of file",
+                      "title": "Filename",
+                      "type": "string"
+                    }
+                  },
+                  "title": "File",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "attachment": {
+                  "$ref": "#/definitions/file",
+                  "description": "Attachment",
+                  "order": 8,
+                  "title": "Attachment"
+                },
+                "bcc": {
+                  "description": "Blind carbon copy recipients",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 6,
+                  "title": "BCC",
+                  "type": "array"
+                },
+                "body": {
+                  "description": "Body of the email",
+                  "order": 4,
+                  "title": "Body",
+                  "type": "string"
+                },
+                "cc": {
+                  "description": "Carbon copy recipients",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 7,
+                  "title": "CC",
+                  "type": "array"
+                },
+                "email_from": {
+                  "description": "Email address this email will be sent from",
+                  "order": 1,
+                  "title": "Email Sender",
+                  "type": "string"
+                },
+                "email_to": {
+                  "description": "Email address of recipients",
+                  "order": 2,
+                  "title": "Email To",
+                  "type": "string"
+                },
+                "is_html": {
+                  "description": "Is the body of this email HTML",
+                  "order": 5,
+                  "title": "Is HTML",
+                  "type": "boolean"
+                },
+                "subject": {
+                  "description": "Subject of the email",
+                  "order": 3,
+                  "title": "Subject",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "email_from",
+                "email_to",
+                "subject",
+                "body",
+                "is_html"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "success": {
+                  "description": "Success",
+                  "order": 1,
+                  "title": "Success",
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "success"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "f791bb4b-6114-4f5f-a715-40b198d2eb7e": {
+            "nodeId": "f791bb4b-6114-4f5f-a715-40b198d2eb7e",
+            "name": "User Loop",
+            "type": "loop",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "customOutput": [
+                {
+                  "input": {
+                    "expression": {
+                      "name": "3c8d4acc-bc3f-41f9-b0cd-ed385ff7dd15.found",
+                      "type": "variable"
+                    },
+                    "expressionText": "{{[3c8d4acc-bc3f-41f9-b0cd-ed385ff7dd15].[found]}}",
+                    "value": "{{[f791bb4b-6114-4f5f-a715-40b198d2eb7e].[$item].[dn]}}",
+                    "valueType": "string"
+                  },
+                  "name": "User Whitelist",
+                  "outputType": "array"
+                },
+                {
+                  "input": {
+                    "expression": {
+                      "expr": {
+                        "name": "3c8d4acc-bc3f-41f9-b0cd-ed385ff7dd15.found",
+                        "type": "variable"
+                      },
+                      "op": "NOT",
+                      "type": "unary"
+                    },
+                    "expressionText": "not {{[3c8d4acc-bc3f-41f9-b0cd-ed385ff7dd15].[found]}}",
+                    "value": "{{[f791bb4b-6114-4f5f-a715-40b198d2eb7e].[$item].[dn]}}",
+                    "valueType": "string"
+                  },
+                  "name": "User Contain List",
+                  "outputType": "array"
+                }
+              ],
+              "innerEdgeId": "18cff454-1e03-4208-9ee8-dfda50b7763f",
+              "nextEdgeId": "9daa8c84-6a46-4a9a-a286-6f16183590cf",
+              "repeatVariable": "{{[4123d7e4-7d69-4d75-a8e8-4073f3e90fa1].[containment_params].[users]}}"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": {
+              "properties": {
+                "User Contain List": {
+                  "description": "Custom output: \"User Contain List\"",
+                  "items": {
+                    "type": "string"
+                  },
+                  "title": "User Contain List",
+                  "type": "array"
+                },
+                "User Whitelist": {
+                  "description": "Custom output: \"User Whitelist\"",
+                  "items": {
+                    "type": "string"
+                  },
+                  "title": "User Whitelist",
+                  "type": "array"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/loop.svg",
+            "connectionType": "NONE"
+          },
+          "fe8199ec-2aba-4771-a092-dd9305c71575": {
+            "nodeId": "fe8199ec-2aba-4771-a092-dd9305c71575",
+            "name": "Asset Lookup Result",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "{\"name\": \"{{[148276ff-d421-484e-a784-1be0e09a3b30].[$item].name}}\", \"payload\": {{[148276ff-d421-484e-a784-1be0e09a3b30].[$item].[payload]}}}"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          }
+        },
+        "tags": null,
+        "humanCostSeconds": 0,
+        "humanCostDisplayUnit": ""
+      }
+    ],
+    "triggers": [
+      {
+        "id": "307e4d4e-63b5-4cf0-a967-203bd7cda8ea",
+        "name": "New Containment Action",
+        "description": "",
+        "input": null,
+        "inputJsonSchema": {
+          "definitions": {
+            "containment_params": {
+              "properties": {
+                "assets": {
+                  "items": {
+                    "$ref": "#/definitions/containment_params_assets"
+                  },
+                  "type": "array"
+                },
+                "run_containment": {
+                  "type": "boolean"
+                },
+                "users": {
+                  "items": {
+                    "$ref": "#/definitions/containment_params_users"
+                  },
+                  "type": "array"
+                }
+              },
+              "type": "object"
+            },
+            "containment_params_assets": {
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "payload": {
+                  "type": "object"
+                }
+              },
+              "type": "object"
+            },
+            "containment_params_users": {
+              "properties": {
+                "dn": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "userId": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "customer": {
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          },
+          "properties": {
+            "containment_params": {
+              "$ref": "#/definitions/containment_params"
+            },
+            "criticality": {
+              "type": "string"
+            },
+            "cust_slack_channel": {
+              "type": "string"
+            },
+            "cust_slack_timestamp": {
+              "type": "string"
+            },
+            "customer": {
+              "$ref": "#/definitions/customer"
+            },
+            "cutoff": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "evidence": {
+              "type": "string"
+            },
+            "idr_url": {
+              "type": "string"
+            },
+            "investigation_id": {
+              "type": "string"
+            },
+            "remediations": {
+              "type": "string"
+            },
+            "soc_slack_channel": {
+              "type": "string"
+            },
+            "soc_slack_timestamp": {
+              "type": "string"
+            },
+            "tagged": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "timestamp": {
+              "type": "string"
+            },
+            "trigger_user": {
+              "type": "string"
+            },
+            "update": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "outputJsonSchema": {
+          "definitions": {
+            "containment_params": {
+              "properties": {
+                "assets": {
+                  "items": {
+                    "$ref": "#/definitions/containment_params_assets"
+                  },
+                  "type": "array"
+                },
+                "run_containment": {
+                  "type": "boolean"
+                },
+                "users": {
+                  "items": {
+                    "$ref": "#/definitions/containment_params_users"
+                  },
+                  "type": "array"
+                }
+              },
+              "type": "object"
+            },
+            "containment_params_assets": {
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "payload": {
+                  "type": "object"
+                }
+              },
+              "type": "object"
+            },
+            "containment_params_users": {
+              "properties": {
+                "dn": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "userId": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "customer": {
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          },
+          "properties": {
+            "containment_params": {
+              "$ref": "#/definitions/containment_params"
+            },
+            "criticality": {
+              "type": "string"
+            },
+            "cust_slack_channel": {
+              "type": "string"
+            },
+            "cust_slack_timestamp": {
+              "type": "string"
+            },
+            "customer": {
+              "$ref": "#/definitions/customer"
+            },
+            "cutoff": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "evidence": {
+              "type": "string"
+            },
+            "idr_url": {
+              "type": "string"
+            },
+            "investigation_id": {
+              "type": "string"
+            },
+            "remediations": {
+              "type": "string"
+            },
+            "soc_slack_channel": {
+              "type": "string"
+            },
+            "soc_slack_timestamp": {
+              "type": "string"
+            },
+            "tagged": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "timestamp": {
+              "type": "string"
+            },
+            "trigger_user": {
+              "type": "string"
+            },
+            "update": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "tags": [],
+        "type": "trigger_api"
+      }
+    ]
+  }
+}

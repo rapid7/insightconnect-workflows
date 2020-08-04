@@ -1,0 +1,19 @@
+extension: workflow
+products: ["insightconnect"]
+name: MDR_Active_Response_Enable_User_with_Active_Directory
+title: MDR Active Response Enable User with Active Directory
+description: This workflow is part of the MDR Active Response add-on and is required to enable users with Active Directory. It allows you to reverse quarantine actions taken against a user in your environment.
+version: 1.0.0
+vendor: rapid7
+support: rapid7
+status: ["obsolete"]
+hub_tags:
+  use_cases: [threat_detection_and_response]
+  keywords: [mdr, containment, quarantine, active_response]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/MDR_Active_Response_Enable_User_with_Active_Directory
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+    - name: workflow1.png
+      title: Workflow View
