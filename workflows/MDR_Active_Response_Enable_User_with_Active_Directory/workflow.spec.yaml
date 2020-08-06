@@ -6,7 +6,7 @@ description: This workflow is part of the MDR Active Response add-on and is requ
 version: 1.0.0
 vendor: rapid7
 support: rapid7
-status: ["obsolete"]
+status: ["hidden"]
 hub_tags:
   use_cases: [threat_detection_and_response]
   keywords: [mdr, containment, quarantine, active_response]
