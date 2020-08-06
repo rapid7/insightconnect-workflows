@@ -1,0 +1,18 @@
+extension: workflow
+products: ["insightconnect"]
+name: Cloud_Plugins_Usability_Test
+title: "Cloud Plugins Usability Test Workflow"
+description: "This workflow is designed for usability testing for the Cloud Plugins feature."
+version: 1.0.0
+vendor: rapid7
+support: 
+status: [obsolete]
+status: []
+hub_tags:
+  use_cases: []
+  keywords: []
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Cloud_Plugins_Usability_Test
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+
