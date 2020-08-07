@@ -1,7 +1,6 @@
 # Description
 
 This workflow is designed for usability testing for the Cloud Plugins feature. It is not intended for operational use and merely tests the various plugins that are cloud-enabled as of August 6, 2020.
-Sample Slack Trigger Commands:
 
 # Key Features
 
