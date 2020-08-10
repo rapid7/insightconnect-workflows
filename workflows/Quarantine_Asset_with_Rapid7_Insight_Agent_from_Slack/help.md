@@ -14,7 +14,7 @@ For batches of assets, more than one IP can be specified
 
 # Key Features
 
-* Quickly respond to threats with slack. 
+* Quickly respond to threats from Slack. 
 * Keep users happy by getting them back online quickly
 
 # Requirements
