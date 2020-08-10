@@ -384,7 +384,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "matchChannel": "integration-testing",
+                "matchChannel": "change_me",
                 "matchText": "quarantine-endpoint | unquarantine-endpoint",
                 "type": "any"
               }
@@ -1439,7 +1439,7 @@
         "name": "Slack Quarantine Trigger",
         "description": "",
         "input": {
-          "matchChannel": "integration-testing",
+          "matchChannel": "change_me",
           "matchText": "quarantine-endpoint | unquarantine-endpoint",
           "type": "any"
         },
