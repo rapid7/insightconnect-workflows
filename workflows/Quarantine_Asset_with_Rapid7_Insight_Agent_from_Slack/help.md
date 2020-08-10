@@ -20,7 +20,7 @@ For batches of assets, more than one IP can be specified
 # Requirements
 
 * [Insight Agent](https://docs.rapid7.com/insight-agent/)
-* [Insight Platform](https://docs.rapid7.com/insight/managing-platform-api-keys/)
+* [Insight Platform API Key](https://docs.rapid7.com/insight/managing-platform-api-keys/)
 
 # Documentation
 
