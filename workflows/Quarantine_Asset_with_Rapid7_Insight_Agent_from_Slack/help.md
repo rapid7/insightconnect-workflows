@@ -10,7 +10,7 @@ Sample Slack Trigger Commands:
 
 For batches of assets, more than one IP can be specified
 
-`@Rapid7 unquarantine-endpoint 198.51.100.100 198.51.100.101 198.51.100.102"`
+`@Rapid7 InsightConnect unquarantine-endpoint 198.51.100.100 198.51.100.101 198.51.100.102"`
 
 # Key Features
 
