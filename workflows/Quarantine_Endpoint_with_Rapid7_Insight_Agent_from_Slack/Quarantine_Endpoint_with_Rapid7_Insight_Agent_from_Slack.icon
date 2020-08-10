@@ -5,7 +5,7 @@
     "exportedAt": "2020-08-10T14:53:16.850724853Z",
     "workflowVersions": [
       {
-        "name": "Quarantine Asset with Rapid7 Insight Agent from Slack",
+        "name": "Quarantine Endpoint with Rapid7 Insight Agent from Slack",
         "type": "runnable",
         "version": "",
         "description": "This workflow uses a Slack command to quarantine or unquarantine an endpoint monitored by the Insight Agent.",
