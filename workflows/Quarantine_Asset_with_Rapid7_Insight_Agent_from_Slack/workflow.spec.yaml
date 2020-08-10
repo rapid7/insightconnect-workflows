@@ -2,7 +2,7 @@ extension: workflow
 products: ["insightconnect"]
 name: Quarantine_Asset_with_Rapid7_Insight_Agent_from_Slack
 title: "Quarantine Asset with Rapid7 Insight Agent from Slack"
-description: "This workflow uses a Slack command to quarantine or unquarantine an Insight Agent."
+description: "This workflow uses a Slack command to quarantine or unquarantine an endpoint monitored by the Insight Agent."
 version: 1.0.0
 vendor: rapid7
 support: rapid7

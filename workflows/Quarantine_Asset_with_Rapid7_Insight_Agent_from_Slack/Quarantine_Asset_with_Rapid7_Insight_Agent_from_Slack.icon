@@ -8,7 +8,7 @@
         "name": "Quarantine Asset with Rapid7 Insight Agent from Slack",
         "type": "runnable",
         "version": "",
-        "description": "",
+        "description": "This workflow uses a Slack command to quarantine or unquarantine an endpoint monitored by the Insight Agent.",
         "graph": {
           "edges": {
             "0cc8708b-7ba7-450c-8ecf-2b82b4cb30dd": {
