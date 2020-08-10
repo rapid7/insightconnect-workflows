@@ -15,7 +15,7 @@ For batches of assets, more than one IP can be specified
 # Key Features
 
 * Quickly respond to threats by quarantining endpoints from Slack. 
-* Keep users happy by getting them back online quickly
+* Reduce the time it takes to contain an endpoint
 
 # Requirements
 
