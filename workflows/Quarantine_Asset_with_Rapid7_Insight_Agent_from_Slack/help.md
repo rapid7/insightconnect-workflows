@@ -1,6 +1,6 @@
 # Description
 
-This work flow allows for fast quarantine and unquarantine of asset that have an [Insight Agent](https://docs.rapid7.com/insight-agent/) installed on them. 
+This workflow allows for fast quarantine and unquarantine from Slack of an asset that has the [Insight Agent](https://docs.rapid7.com/insight-agent/) installed. 
 
 Sample Slack Trigger Commands:
 
