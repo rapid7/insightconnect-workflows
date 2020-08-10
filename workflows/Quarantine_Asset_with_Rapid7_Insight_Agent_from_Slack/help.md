@@ -4,7 +4,7 @@ This workflow allows for fast quarantine and unquarantine from Slack of an asset
 
 Sample Slack Trigger Commands:
 
-`@Rapid7 quarantine-endpoint 198.51.100.100"`
+`@Rapid7 InsightConnect quarantine-endpoint 198.51.100.100"`
 
 `@Rapid7 unquarantine-endpoint 198.51.100.100"`
 
