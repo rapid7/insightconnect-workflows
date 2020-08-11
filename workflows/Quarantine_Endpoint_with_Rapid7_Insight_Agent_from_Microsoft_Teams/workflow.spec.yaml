@@ -20,4 +20,4 @@ resources:
   - name: workflow_loop1.png
     title: Workflow Loop View
   - name: teams_flow1.png
-    title: Completed Workflow view in Microsoft Teams
+    title: Completed Workflow in Microsoft Teams
