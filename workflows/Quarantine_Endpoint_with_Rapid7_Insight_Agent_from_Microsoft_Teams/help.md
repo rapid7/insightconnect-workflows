@@ -38,6 +38,7 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
+|Microsoft Teams|2.2.0|6|
 |Rapid7 Insight Agent|1.0.0|3|
 
 ## Troubleshooting
