@@ -2,7 +2,7 @@
   "kom": {
     "komandVersion": "1.59.1-0-gf525c",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-08-11T19:14:58.505125223Z",
+    "exportedAt": "2020-08-12T13:37:11.599249781Z",
     "workflowVersions": [
       {
         "name": "Quarantine Endpoint with Rapid7 Insight Agent from Microsoft Teams",
@@ -244,9 +244,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "change_me",
+                "channel_name": "change-me",
                 "message_content": "^(!quarantine-endpoint|!unquarantine-endpoint)",
-                "team_name": "change_me"
+                "team_name": "change-me"
               }
             },
             "triggerId": "1a646955-aa65-401b-a2ea-ddfe17f3a88f",
@@ -1802,9 +1802,9 @@
             "isCloud": false,
             "parameters": {
               "input": {
-                "channel_name": "change_me",
+                "channel_name": "{{[25d61945-587e-45f0-aa08-8c7c1f829a5b].[channel_name]}}",
                 "message_content": "<b>✅&ensp;Quarantine action was successful&ensp;✅</b><br>\n<br>\nAsset: <code>{{[803f967b-09d7-4f09-b11f-7e32deba219f].[$item]}}</code>\n",
-                "team_name": "change_me",
+                "team_name": "{{[25d61945-587e-45f0-aa08-8c7c1f829a5b].[team_name]}}",
                 "thread_id": "{{[25d61945-587e-45f0-aa08-8c7c1f829a5b].[message].[id]}}"
               }
             },
@@ -2054,9 +2054,9 @@
         "name": "Microsoft Teams Quarantine Trigger",
         "description": "",
         "input": {
-          "channel_name": "change_me",
+          "channel_name": "change-me",
           "message_content": "^(!quarantine-endpoint|!unquarantine-endpoint)",
-          "team_name": "change_me"
+          "team_name": "change-me"
         },
         "inputJsonSchema": {
           "properties": {
