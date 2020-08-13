@@ -10,7 +10,7 @@ Sample Microsoft Teams Trigger Commands:
 
 For batches of assets, more than one IP can be specified
 
-`!unquarantine-endpoint 198.51.100.100 198.51.100.101 198.51.100.102"`
+`!unquarantine-endpoint 198.51.100.100 198.51.100.101 198.51.100.102`
 
 # Key Features
 
