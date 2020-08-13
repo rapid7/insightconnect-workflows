@@ -36,7 +36,8 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|InsightIDR|2.0.4|2|
+|Rapid7 InsightIDR|1.1.1|3|
+|Rapid7 Insight Agent|1.0.0|3|
 
 ## Troubleshooting
 
