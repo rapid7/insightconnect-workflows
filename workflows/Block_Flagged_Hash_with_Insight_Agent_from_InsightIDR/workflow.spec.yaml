@@ -1,7 +1,7 @@
 extension: workflow
 products: ["insightconnect", "InsightIDR"]
-name: Block_Domain_Account_with_Active_Directory_from_InsightIDR
-title: "Block Domain Account with Active Directory from InsightIDR"
+name: Block_Flagged_Hash_with_Insight_Agent_from_InsightIDR
+title: "Block Flagged Hash with Insight Agent from InsightIDR"
 description: Disable an Active Directory user from an InsightIDR Brute Force - Domain Account UBA alert.
 version: 1.0.0
 vendor: rapid7
@@ -12,18 +12,14 @@ hub_tags:
   keywords: [active_directory, ldap]
   features: []
 resources:
-  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Block_Domain_Account_with_Active_Directory_from_InsightIDR
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Block_Flagged_Hash_with_Insight_Agent_from_InsightIDR
   license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
   screenshots:
   - name: workflow1.png
     title: Workflow View Part 1
   - name: workflow2.png
     title: Workflow View Part 2
-  - name: workflow3.png
-    title: Workflow View Part 3
-  - name: teams1.png
-    title: Microsoft Teams Post and Response, Success
-  - name: teams2.png
-    title: Microsoft Teams Post and Response, Failure
   - name: artifact1.png
-    title: Successful Disabled Artifact
+    title: Review Artifact
+  - name: artifact2.png
+    title: Quarantine Actifact

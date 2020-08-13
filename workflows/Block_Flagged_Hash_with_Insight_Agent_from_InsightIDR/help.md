@@ -1,16 +1,16 @@
 # Description
 
-Disabling a compromised account can limit the scope of an attack and buy valuable time to investigate and contain the threat. This workflow disables a domain user account from an InsightIDR Brute Force - Domain Account UBA alert.
+Quarantining a compromised asset can limit the scope of an attack and buy valuable time to investigate and contain the threat. This workflow quarantines an asset that has an Insight agent on it from an InsightIDR Flagged Hash UBA alert.
 
 # Key Features
 
-* **Break the Kill Chain** - Credentials provide attackers with easy access to numerous targets. Disabling a compromised account or forcing a password reset can quickly and effectively interrupt an attacker’s kill chain.
-* **Buy Time to Investigate and Remediate** - In a pinch, disabling a user account can limit your threat exposure and buy your team valuable time to investigate and contain a threat. 
+* **Break the Kill Chain** - Quarantining an asset can quickly and effectively interrupt an attacker’s kill chain.
+* **Buy Time to Investigate and Remediate** - In a pinch, quarantining an asset can limit your threat exposure and buy your team valuable time to investigate and contain a threat. 
 
 # Requirements
 
 * InsightIDR
-* Active Directory connection
+* Insight Agent on the asset to be quarantined
 
 # Documentation
 
@@ -22,10 +22,13 @@ Once the workflow has been imported, **It is recommended that you add you add th
 
 Activate the workflow in order to trigger it.
 
+Log into IDR and go to the automation tab. From there go to Alert Triggers. Click on Create Alert Trigger.
+Select Custom InsightConnect Workflows, then Block Flagged Hash with Insight Agent from InsightIDR, then Flagged Hash on Asset
+This will set up the workflow to run any time a Flagged Hash on Asset is triggered
+
 # Usage
 
-
-To run the workflow, send a message to the specified Microsoft Teams channel starting with the command `!disable-user-ad`.
+The workflow will run automatically when a InsightIDR Flagged Hash UBA alert is created
 
 ## Technical Details
 
@@ -33,7 +36,6 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Active Directory LDAP|3.2.9|2|
 |InsightIDR|2.0.4|2|
 
 ## Troubleshooting
@@ -48,5 +50,4 @@ _There is no troubleshooting information at this time_
 
 ## References
 
-* [Active Directory LDAP](https://extensions.rapid7.com/extension/active_directory_ldap)
 * [InsightIDR](https://www.rapid7.com/products/insightidr/)
