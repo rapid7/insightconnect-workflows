@@ -221,7 +221,7 @@
               "input": {
                 "matchChannel": ".*",
                 "matchText": "enrich-url",
-                "type": "any"
+                "type": "direct"
               }
             },
             "triggerId": "1270942a-061a-415b-bc50-51d7c93a9734",

@@ -24,9 +24,9 @@ After import, activate the workflow in order to trigger it.
 
 ### Usage
 
-*This workflow will trigger in any direct messages to your Chatbot **or** any message in a channel directed @ your Chatbot. Note the Chatbot must be in the channel in order to trigger the workflow this way.*
+*To limit the risk of users sharing malicious URLs in Slack channels, this workflow will ONLY trigger on direct messages to your Chatbot.*
 
-To run the workflow, send a direct message to your InsightConnect Slack Chatbot or @ your Chatbot in a public channel starting with the command `enrich-url`.
+To run the workflow, send a direct message to your InsightConnect Slack Chatbot starting with the command `enrich-url`, followed by one or more URLs for enrichment.
 
 For example:
 
@@ -41,7 +41,7 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|ThreatCrowd|3.0.0|1|
+|Threat Crowd|3.0.0|1|
 
 ## Troubleshooting
 
@@ -55,5 +55,5 @@ _There is no troubleshooting information at this time_
 
 ## References
 
-* [Rapid7 Vulnerability Database](https://www.rapid7.com/db)
+* [Threat Crowd](https://www.threatcrowd.org/)
 * [Slack](https://slack.com)
