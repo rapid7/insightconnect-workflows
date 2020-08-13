@@ -244,9 +244,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "change-me",
+                "channel_name": "change_me",
                 "message_content": "^(!quarantine-endpoint|!unquarantine-endpoint)",
-                "team_name": "change-me"
+                "team_name": "change_me"
               }
             },
             "triggerId": "1a646955-aa65-401b-a2ea-ddfe17f3a88f",
@@ -2054,9 +2054,9 @@
         "name": "Microsoft Teams Quarantine Trigger",
         "description": "",
         "input": {
-          "channel_name": "change-me",
+          "channel_name": "change_me",
           "message_content": "^(!quarantine-endpoint|!unquarantine-endpoint)",
-          "team_name": "change-me"
+          "team_name": "change_me"
         },
         "inputJsonSchema": {
           "properties": {
