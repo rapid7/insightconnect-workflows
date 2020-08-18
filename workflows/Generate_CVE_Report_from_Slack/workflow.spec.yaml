@@ -19,10 +19,6 @@ resources:
     title: Slack Response 1
   - name: slack2.png
     title: Slack Response 2
-  - name: slack3.png
-    title: Slack Response 3
-  - name: summary.png
-    title: Job Summary
   - name: workflow1.png
     title: Workflow Part 1
   - name: workflow2.png
