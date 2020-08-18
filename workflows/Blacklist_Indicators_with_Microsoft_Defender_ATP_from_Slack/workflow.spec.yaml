@@ -2,7 +2,7 @@ extension: workflow
 products: ["insightconnect"]
 name: Blacklist_Indicators_with_Microsoft_Defender_ATP_from_Slack
 title: Blacklist Indicators with Microsoft Defender ATP from Slack
-description: Use the simplicity of Slack to blacklist and unblacklist indicators such as SHA1 hashes and IP addresses with Microsoft Defender ATP.
+description: Use the simplicity of Slack to blacklist and unblacklist indicators such as SHA1 hashes, SHA256 hashes, domains, URLS and IP addresses with Microsoft Defender ATP.
 version: 1.0.0
 vendor: rapid7
 support: rapid7
