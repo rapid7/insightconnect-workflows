@@ -44,8 +44,8 @@ Plugins utilized by workflow:
 |Plugin|Version|Count|
 |----|----|--------|
 |Rapid7 InsightVM|4.0.1|5|
-|Python 3 Script|2.0.2|1|
 |Rapid7 AttackerKB|1.0.1|1|
+|Python 3 Script|2.0.2|1|
 |Type Converter|1.6.0|1|
 |Base64|1.1.6|1|
 
