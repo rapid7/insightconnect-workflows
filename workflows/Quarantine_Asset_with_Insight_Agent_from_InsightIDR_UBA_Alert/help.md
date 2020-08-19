@@ -26,7 +26,7 @@ This workflow can be used with the following types of UBA alerts:
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-Once the workflow has been imported, **It is recommended that you add you add the appropriate emails to the `Block Domain Account Decision` step so that the appropriate people are alerted that action needs to be taken**
+Once the workflow has been imported, **it is recommended that you add the appropriate email addresses to the `Block Domain Account Decision` step so that the appropriate users are alerted that action needs to be taken**
 
 Activate the workflow in order to trigger it.
 
