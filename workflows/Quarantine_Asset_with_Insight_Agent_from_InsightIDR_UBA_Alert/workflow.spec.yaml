@@ -8,11 +8,11 @@ vendor: rapid7
 support: rapid7
 status: []
 hub_tags:
-  use_cases: [threat_detection_and_response, user_management]
-  keywords: [active_directory, ldap]
+  use_cases: [threat_detection_and_response]
+  keywords: [uba alert, uba, insightagent, insightidr, siem, agent, alert]
   features: []
 resources:
-  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Block_Flagged_Hash_with_Insight_Agent_from_InsightIDR
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Quarantine_Asset_with_Insight_Agent_from_InsightIDR_UBA_Alert
   license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
   screenshots:
   - name: workflow1.png
