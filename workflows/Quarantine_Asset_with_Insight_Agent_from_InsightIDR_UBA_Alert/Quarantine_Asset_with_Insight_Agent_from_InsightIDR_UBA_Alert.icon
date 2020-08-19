@@ -1,11 +1,11 @@
 {
   "kom": {
-    "komandVersion": "1.59.1-0-gf525c",
+    "komandVersion": "1.60.0-0-g82f99",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-08-13T13:36:00.647279967Z",
+    "exportedAt": "2020-08-19T17:45:27.644073303Z",
     "workflowVersions": [
       {
-        "name": "Block Flagged Hash with Insight Agent from InsightIDR",
+        "name": "Quarantine Asset with Insight Agent from InsightIDR UBA Alert",
         "type": "runnable",
         "version": "",
         "description": "",
@@ -21,8 +21,8 @@
             },
             "12a1c9e3-a11e-4968-ad92-7d582909c27d": {
               "id": "12a1c9e3-a11e-4968-ad92-7d582909c27d",
-              "name": "Quarantine Host but do not Close Investigation",
-              "description": "Quarantine the host but do not close the investigation. See the Review Alert artifact for more information on this asset.",
+              "name": "Quarantine, Don't Close Investigation",
+              "description": "Quarantine the asset but do not close the investigation. See the Review Alert artifact for more information on this asset.",
               "parentNodeId": "d6edc831-677b-4ef9-85f4-22f5730aa116",
               "fromNodeId": "3c572887-b9d1-4b5b-a2e9-5e527b69f08d",
               "toNodeId": "6d0c68bb-b8e7-48ef-9000-ac3a38a26b51"
@@ -34,22 +34,6 @@
               "parentNodeId": "",
               "fromNodeId": "44053416-5187-4dd5-b1c1-dac1ee72d260",
               "toNodeId": "b0cf53cc-64de-4906-95aa-dcca7a7d78d2"
-            },
-            "276c7f43-612c-48d0-bc4e-1ce9da7731fa": {
-              "id": "276c7f43-612c-48d0-bc4e-1ce9da7731fa",
-              "name": "",
-              "description": "",
-              "parentNodeId": "d6edc831-677b-4ef9-85f4-22f5730aa116",
-              "fromNodeId": "ff6dc64d-040e-4c02-aa8d-9428b6edb51a",
-              "toNodeId": "e3ef0f17-82ef-4a8b-971a-340781d7a845"
-            },
-            "3d745186-3f42-4620-a983-8f2261a2974a": {
-              "id": "3d745186-3f42-4620-a983-8f2261a2974a",
-              "name": "Quarantine Host and Close Investigation",
-              "description": "Quarantine the host and close the investigation. See the Review Alert artifact for more information on this asset.",
-              "parentNodeId": "d6edc831-677b-4ef9-85f4-22f5730aa116",
-              "fromNodeId": "3c572887-b9d1-4b5b-a2e9-5e527b69f08d",
-              "toNodeId": "ff6dc64d-040e-4c02-aa8d-9428b6edb51a"
             },
             "40282454-246c-4c91-8a00-3a8d2b5be855": {
               "id": "40282454-246c-4c91-8a00-3a8d2b5be855",
@@ -74,14 +58,6 @@
               "parentNodeId": "d6edc831-677b-4ef9-85f4-22f5730aa116",
               "fromNodeId": "8bc6ada7-5e8a-4e6f-9bb7-ca28e61018b6",
               "toNodeId": ""
-            },
-            "4a7bf7c5-e253-4e62-8c9d-349af5f540f0": {
-              "id": "4a7bf7c5-e253-4e62-8c9d-349af5f540f0",
-              "name": "",
-              "description": "",
-              "parentNodeId": "d6edc831-677b-4ef9-85f4-22f5730aa116",
-              "fromNodeId": "e3ef0f17-82ef-4a8b-971a-340781d7a845",
-              "toNodeId": "d2277893-d82f-4dc8-a8ae-af7b7d8677ca"
             },
             "4e30dd8d-c83c-49c1-ac1c-ae446774e4fe": {
               "id": "4e30dd8d-c83c-49c1-ac1c-ae446774e4fe",
@@ -115,18 +91,10 @@
               "fromNodeId": "a715b191-4195-441e-bbc4-ab2179556bcc",
               "toNodeId": "a93b064b-1479-4f2d-9a30-befb40d4cc46"
             },
-            "7391def2-7e55-4844-856b-086234360bff": {
-              "id": "7391def2-7e55-4844-856b-086234360bff",
-              "name": "",
-              "description": "",
-              "parentNodeId": "d6edc831-677b-4ef9-85f4-22f5730aa116",
-              "fromNodeId": "d2277893-d82f-4dc8-a8ae-af7b7d8677ca",
-              "toNodeId": ""
-            },
             "948e31fb-87ed-4a27-a4c9-8fc5169375f8": {
               "id": "948e31fb-87ed-4a27-a4c9-8fc5169375f8",
-              "name": "Do not Quarantine Host but Close Investigation",
-              "description": "Do not quarantine the host but close the investigation. See the Review Alert artifact for more information on this asset.",
+              "name": "Don't Quarantine, Close Investigation",
+              "description": "Do not quarantine the asset but close the investigation. See the Review Alert artifact for more information on this asset.",
               "parentNodeId": "d6edc831-677b-4ef9-85f4-22f5730aa116",
               "fromNodeId": "3c572887-b9d1-4b5b-a2e9-5e527b69f08d",
               "toNodeId": "43081142-144c-4eb6-a333-6ef002aca128"
@@ -173,8 +141,8 @@
             },
             "d25b2b5a-a453-4280-a148-c067dad2597a": {
               "id": "d25b2b5a-a453-4280-a148-c067dad2597a",
-              "name": "Do not Quarantine Host and do not Close Investigation",
-              "description": "Do not quarantine the host and do not close the investigation. See the Review Alert artifact for more information on this asset.",
+              "name": "Don't Quarantine, Don't Close Investigation",
+              "description": "Do not quarantine the asset and do not close the investigation. See the Review Alert artifact for more information on this asset.",
               "parentNodeId": "d6edc831-677b-4ef9-85f4-22f5730aa116",
               "fromNodeId": "3c572887-b9d1-4b5b-a2e9-5e527b69f08d",
               "toNodeId": "7b34d0e4-b6ad-466f-856b-05e19ddbf37a"
@@ -257,24 +225,12 @@
               "id": "b0cf53cc-64de-4906-95aa-dcca7a7d78d2",
               "parentNodeId": ""
             },
-            "d2277893-d82f-4dc8-a8ae-af7b7d8677ca": {
-              "id": "d2277893-d82f-4dc8-a8ae-af7b7d8677ca",
-              "parentNodeId": "d6edc831-677b-4ef9-85f4-22f5730aa116"
-            },
             "d6edc831-677b-4ef9-85f4-22f5730aa116": {
               "id": "d6edc831-677b-4ef9-85f4-22f5730aa116",
               "parentNodeId": ""
             },
-            "e3ef0f17-82ef-4a8b-971a-340781d7a845": {
-              "id": "e3ef0f17-82ef-4a8b-971a-340781d7a845",
-              "parentNodeId": "d6edc831-677b-4ef9-85f4-22f5730aa116"
-            },
             "e7d12c0c-0631-451b-9073-5b7180efd98d": {
               "id": "e7d12c0c-0631-451b-9073-5b7180efd98d",
-              "parentNodeId": "d6edc831-677b-4ef9-85f4-22f5730aa116"
-            },
-            "ff6dc64d-040e-4c02-aa8d-9428b6edb51a": {
-              "id": "ff6dc64d-040e-4c02-aa8d-9428b6edb51a",
               "parentNodeId": "d6edc831-677b-4ef9-85f4-22f5730aa116"
             }
           }
@@ -282,13 +238,13 @@
         "steps": {
           "23447678-9b4a-48e2-9561-98fc752d070d": {
             "nodeId": "23447678-9b4a-48e2-9561-98fc752d070d",
-            "name": "Do not Quarantine asset but Close Investigation Artifact",
+            "name": "Don't Quarantine, Close Investigation Artifact",
             "type": "artifact",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "The asset {{[d6edc831-677b-4ef9-85f4-22f5730aa116].[$item].[shortname]}} was not quarantined.\n\nThe Investigation {{[44053416-5187-4dd5-b1c1-dac1ee72d260].[name]}} was closed."
+                "content": "The asset {{[d6edc831-677b-4ef9-85f4-22f5730aa116].[$item].[shortname]}} was not quarantined.\n\nThe Investigation \"{{[43081142-144c-4eb6-a333-6ef002aca128].[investigation].[title]}}\" was closed."
               },
               "type": "markdown"
             },
@@ -300,21 +256,19 @@
           },
           "3c572887-b9d1-4b5b-a2e9-5e527b69f08d": {
             "nodeId": "3c572887-b9d1-4b5b-a2e9-5e527b69f08d",
-            "name": "Quarantine Host Decision",
+            "name": "Quarantine Asset Decision",
             "type": "human_decision",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "defaultEdgeId": "d25b2b5a-a453-4280-a148-c067dad2597a",
               "notifications": {
-                "artifactIds": [
-                  "956e192b-23aa-4b96-92f6-43035582abde"
-                ],
+                "artifactIds": null,
                 "userIdsForEmail": []
               },
               "stepControlParams": [
                 {
-                  "edgeId": "3d745186-3f42-4620-a983-8f2261a2974a",
+                  "edgeId": "12a1c9e3-a11e-4968-ad92-7d582909c27d",
                   "expression": {},
                   "expressionText": "",
                   "isTimeoutOnly": false,
@@ -333,16 +287,9 @@
                   "expressionText": "",
                   "isTimeoutOnly": false,
                   "nodeId": "3c572887-b9d1-4b5b-a2e9-5e527b69f08d"
-                },
-                {
-                  "edgeId": "12a1c9e3-a11e-4968-ad92-7d582909c27d",
-                  "expression": {},
-                  "expressionText": "",
-                  "isTimeoutOnly": false,
-                  "nodeId": "3c572887-b9d1-4b5b-a2e9-5e527b69f08d"
                 }
               ],
-              "timeout": 600,
+              "timeout": 21600,
               "timeoutDisplayUnit": "minutes",
               "timeoutEdgeId": "d25b2b5a-a453-4280-a148-c067dad2597a"
             },
@@ -360,8 +307,8 @@
               "name": "Rapid7 InsightIDR",
               "slugVendor": "rapid7",
               "slugName": "rapid7_insightidr",
-              "slugVersion": "1.1.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightidr/1.1.1/icon.png"
+              "slugVersion": "1.2.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightidr/1.2.0/icon.png"
             },
             "identifier": "set_status_of_investigation_action",
             "continueOnFailure": false,
@@ -516,7 +463,7 @@
           },
           "44053416-5187-4dd5-b1c1-dac1ee72d260": {
             "nodeId": "44053416-5187-4dd5-b1c1-dac1ee72d260",
-            "name": "Flagged Hash on Asset",
+            "name": "Asset Alert",
             "type": "trigger",
             "continueOnFailure": false,
             "isDisabled": false,
@@ -1121,13 +1068,13 @@
           },
           "528ae67a-47bc-4485-ba9b-038d36cb8e3f": {
             "nodeId": "528ae67a-47bc-4485-ba9b-038d36cb8e3f",
-            "name": "Do not close Investigation",
+            "name": "Don't close Investigation",
             "type": "artifact",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "The Investigation {{[44053416-5187-4dd5-b1c1-dac1ee72d260].[name]}} was not closed."
+                "content": "The Investigation \"{{[44053416-5187-4dd5-b1c1-dac1ee72d260].[name]}}\" was not closed."
               },
               "type": "markdown"
             },
@@ -1211,7 +1158,7 @@
           },
           "7b34d0e4-b6ad-466f-856b-05e19ddbf37a": {
             "nodeId": "7b34d0e4-b6ad-466f-856b-05e19ddbf37a",
-            "name": "Do not Quarantine asset and do not Close Investigation Artifact",
+            "name": "Don't Quarantine, Don't Close Investigation Artifact",
             "type": "artifact",
             "continueOnFailure": false,
             "isDisabled": false,
@@ -1229,7 +1176,7 @@
           },
           "8bc6ada7-5e8a-4e6f-9bb7-ca28e61018b6": {
             "nodeId": "8bc6ada7-5e8a-4e6f-9bb7-ca28e61018b6",
-            "name": "Quarantine Host Artifact",
+            "name": "Quarantine, Don't Close Investigation Artifact",
             "type": "artifact",
             "continueOnFailure": false,
             "isDisabled": false,
@@ -1291,8 +1238,8 @@
               "name": "Rapid7 InsightIDR",
               "slugVendor": "rapid7",
               "slugName": "rapid7_insightidr",
-              "slugVersion": "1.1.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightidr/1.1.1/icon.png"
+              "slugVersion": "1.2.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightidr/1.2.0/icon.png"
             },
             "identifier": "set_status_of_investigation_action",
             "continueOnFailure": false,
@@ -1453,7 +1400,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "The Investigation {{[44053416-5187-4dd5-b1c1-dac1ee72d260].[name]}} was closed."
+                "content": "The Investigation \"{{[44053416-5187-4dd5-b1c1-dac1ee72d260].[name]}}\" was closed."
               },
               "type": "markdown"
             },
@@ -1465,31 +1412,13 @@
           },
           "b0cf53cc-64de-4906-95aa-dcca7a7d78d2": {
             "nodeId": "b0cf53cc-64de-4906-95aa-dcca7a7d78d2",
-            "name": "Review Alert",
+            "name": "Review Alert InsightIDR ",
             "type": "artifact",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "InsightIDR Investigation link: {{[44053416-5187-4dd5-b1c1-dac1ee72d260].[link]}}\n\nInsightIDR Investigation ID: {{[44053416-5187-4dd5-b1c1-dac1ee72d260].[investigationId]}}\n\nInsight IDR Investigation Name: {{[44053416-5187-4dd5-b1c1-dac1ee72d260].[name]}}\n\n{{#each [44053416-5187-4dd5-b1c1-dac1ee72d260].[actors].[assets]}}\nAsset to Disable: {{shortname}}\n{{/each}}"
-              },
-              "type": "markdown"
-            },
-            "defaultInputJSONSchema": null,
-            "defaultOutputJSONSchema": null,
-            "outputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
-            "connectionType": "NONE"
-          },
-          "d2277893-d82f-4dc8-a8ae-af7b7d8677ca": {
-            "nodeId": "d2277893-d82f-4dc8-a8ae-af7b7d8677ca",
-            "name": "Quarantine Host and Close Investigation Artifact",
-            "type": "artifact",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "content": "The asset {{[d6edc831-677b-4ef9-85f4-22f5730aa116].[$item].[shortname]}} was quarantined.\n\nThe Investigation {{[44053416-5187-4dd5-b1c1-dac1ee72d260].[name]}} was closed."
+                "content": "Investigation Overview: {{[44053416-5187-4dd5-b1c1-dac1ee72d260].[name]}}\n\nInvestigation created at: {{[44053416-5187-4dd5-b1c1-dac1ee72d260].[timestamp]}}\n\nInvestigation link: {{[44053416-5187-4dd5-b1c1-dac1ee72d260].[link]}}\n\nInvestigation ID: {{[44053416-5187-4dd5-b1c1-dac1ee72d260].[investigationId]}}\n\n{{#each [44053416-5187-4dd5-b1c1-dac1ee72d260].[actors].[assets]}}\nAsset to quarantine: {{shortname}}\n{{/each}}"
               },
               "type": "markdown"
             },
@@ -1520,168 +1449,6 @@
             },
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/loop.svg",
             "connectionType": "NONE"
-          },
-          "e3ef0f17-82ef-4a8b-971a-340781d7a845": {
-            "nodeId": "e3ef0f17-82ef-4a8b-971a-340781d7a845",
-            "name": "Close Investigation After Quarantine",
-            "type": "action",
-            "plugin": {
-              "name": "Rapid7 InsightIDR",
-              "slugVendor": "rapid7",
-              "slugName": "rapid7_insightidr",
-              "slugVersion": "1.1.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightidr/1.1.1/icon.png"
-            },
-            "identifier": "set_status_of_investigation_action",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "isCloud": false,
-            "parameters": {
-              "input": {
-                "id": "{{[44053416-5187-4dd5-b1c1-dac1ee72d260].[investigationId]}}",
-                "status": "CLOSED"
-              }
-            },
-            "defaultInputJSONSchema": {
-              "properties": {
-                "id": {
-                  "description": "The ID of the investigation to change the status of",
-                  "order": 1,
-                  "title": "ID",
-                  "type": "string"
-                },
-                "status": {
-                  "default": "CLOSED",
-                  "description": "The new status for the investigation",
-                  "enum": [
-                    "OPEN",
-                    "CLOSED"
-                  ],
-                  "order": 2,
-                  "title": "Status",
-                  "type": "string"
-                }
-              },
-              "required": [
-                "id",
-                "status"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultOutputJSONSchema": {
-              "definitions": {
-                "alerts": {
-                  "properties": {
-                    "first_event_time": {
-                      "description": "The time the first event involved in this alert occurred",
-                      "order": 1,
-                      "title": "First Event Time",
-                      "type": "string"
-                    },
-                    "type": {
-                      "description": "Alert type",
-                      "order": 2,
-                      "title": "Type",
-                      "type": "string"
-                    },
-                    "type_description": {
-                      "description": "An optional description of this type of alert",
-                      "order": 3,
-                      "title": "Type Description",
-                      "type": "string"
-                    }
-                  },
-                  "title": "Alerts",
-                  "type": "object"
-                },
-                "assignee": {
-                  "properties": {
-                    "email": {
-                      "description": "The email of the assigned user",
-                      "order": 1,
-                      "title": "Email",
-                      "type": "string"
-                    },
-                    "name": {
-                      "description": "The name of the assigned user",
-                      "order": 2,
-                      "title": "Name",
-                      "type": "string"
-                    }
-                  },
-                  "title": "Assignee",
-                  "type": "object"
-                },
-                "investigation": {
-                  "properties": {
-                    "alerts": {
-                      "description": "The alerts involved in this investigation, if any",
-                      "items": {
-                        "$ref": "#/definitions/alerts"
-                      },
-                      "order": 2,
-                      "title": "Alerts",
-                      "type": "array"
-                    },
-                    "assignee": {
-                      "$ref": "#/definitions/assignee",
-                      "description": "The user assigned to this investigation, if any",
-                      "order": 1,
-                      "title": "Assignee"
-                    },
-                    "created_time": {
-                      "description": "The time the investigation was created as an ISO formatted timestamp",
-                      "order": 3,
-                      "title": "Created Time",
-                      "type": "string"
-                    },
-                    "id": {
-                      "description": "The ID of the investigation",
-                      "order": 4,
-                      "title": "ID",
-                      "type": "string"
-                    },
-                    "source": {
-                      "description": "The source of this investigation",
-                      "order": 5,
-                      "title": "Source",
-                      "type": "string"
-                    },
-                    "status": {
-                      "description": "The status of the investigation",
-                      "order": 6,
-                      "title": "Status",
-                      "type": "string"
-                    },
-                    "title": {
-                      "description": "Investigation title",
-                      "order": 7,
-                      "title": "Title",
-                      "type": "string"
-                    }
-                  },
-                  "title": "Investigation",
-                  "type": "object"
-                }
-              },
-              "properties": {
-                "investigation": {
-                  "$ref": "#/definitions/investigation",
-                  "description": "The investigation for which the status was set",
-                  "order": 1,
-                  "title": "Investigations"
-                }
-              },
-              "required": [
-                "investigation"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "outputJSONSchema": null,
-            "defaultImageData": "",
-            "connectionType": "CONNECTION"
           },
           "e7d12c0c-0631-451b-9073-5b7180efd98d": {
             "nodeId": "e7d12c0c-0631-451b-9073-5b7180efd98d",
@@ -1927,89 +1694,17 @@
             "outputJSONSchema": null,
             "defaultImageData": "",
             "connectionType": "CONNECTION"
-          },
-          "ff6dc64d-040e-4c02-aa8d-9428b6edb51a": {
-            "nodeId": "ff6dc64d-040e-4c02-aa8d-9428b6edb51a",
-            "name": "Quarantine Host and Close Investigation",
-            "type": "action",
-            "plugin": {
-              "name": "Rapid7 Insight Agent",
-              "slugVendor": "rapid7",
-              "slugName": "rapid7_insight_agent",
-              "slugVersion": "1.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insight_agent/1.0.0/icon.png"
-            },
-            "identifier": "quarantine",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "isCloud": false,
-            "parameters": {
-              "input": {
-                "agent_id": "{{[e7d12c0c-0631-451b-9073-5b7180efd98d].[agent].[id]}}",
-                "interval": 604800,
-                "quarantine_state": true
-              }
-            },
-            "defaultInputJSONSchema": {
-              "properties": {
-                "agent_id": {
-                  "description": "The ID of the agent on the device to quarantine",
-                  "order": 1,
-                  "title": "Agent ID",
-                  "type": "string"
-                },
-                "interval": {
-                  "default": 604800,
-                  "description": "Length of time in seconds to try to take action on a device. This is also called Advertisement Period",
-                  "order": 3,
-                  "title": "Interval",
-                  "type": "integer"
-                },
-                "quarantine_state": {
-                  "default": true,
-                  "description": "Set to true to quarantine a host, set to false to unquarantine",
-                  "order": 2,
-                  "title": "Quarantine State",
-                  "type": "boolean"
-                }
-              },
-              "required": [
-                "agent_id",
-                "quarantine_state",
-                "interval"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultOutputJSONSchema": {
-              "properties": {
-                "success": {
-                  "description": "Was operation successful",
-                  "order": 1,
-                  "title": "Success",
-                  "type": "boolean"
-                }
-              },
-              "required": [
-                "success"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "outputJSONSchema": null,
-            "defaultImageData": "",
-            "connectionType": "CONNECTION"
           }
         },
         "tags": null,
         "humanCostSeconds": 0,
-        "humanCostDisplayUnit": ""
+        "humanCostDisplayUnit": "minutes"
       }
     ],
     "triggers": [
       {
         "id": "f8a1c972-cbb3-4a6e-a8a1-78bfb33b21c7",
-        "name": "Flagged Hash on Asset",
+        "name": "Asset Alert",
         "description": "",
         "input": null,
         "inputJsonSchema": {
