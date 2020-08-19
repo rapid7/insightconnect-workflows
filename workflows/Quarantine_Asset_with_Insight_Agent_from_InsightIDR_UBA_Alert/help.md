@@ -37,7 +37,7 @@ This will set up the workflow to run any time the selected alert is triggered.
 
 # Usage
 
-The workflow will run automatically when the selected InsightIDR UBA alert is created
+The workflow will run automatically when the selected InsightIDR UBA alert is created.
 
 ## Technical Details
 
