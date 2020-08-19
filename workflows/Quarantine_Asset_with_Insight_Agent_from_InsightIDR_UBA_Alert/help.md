@@ -1,6 +1,6 @@
 # Description
 
-Quarantining a compromised asset can limit the scope of an attack and buy valuable time to investigate and contain the threat. This workflow quarantines an asset that has an Insight agent on it from an InsightIDR UBA alert.
+Quarantining a compromised asset can limit the scope of an attack and buy valuable time to investigate and contain the threat. This workflow triggers on an InsightIDR UBA alert to quarantine an asset with the Insight Agent.
 
 This workflow can be used with the following types of UBA alerts:
 
