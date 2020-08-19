@@ -5,10 +5,10 @@
     "exportedAt": "2020-08-19T17:45:27.644073303Z",
     "workflowVersions": [
       {
-        "name": "Quarantine Asset with Insight Agent from InsightIDR UBA Alert",
+        "name": "Quarantine asset with Insight Agent from InsightIDR UBA alert",
         "type": "runnable",
         "version": "",
-        "description": "",
+        "description": "Quarantine an Asset with Insight Agent from a InsightIDR UBA Alert",
         "graph": {
           "edges": {
             "1031f212-65a5-42e0-819b-cdfca7c65816": {

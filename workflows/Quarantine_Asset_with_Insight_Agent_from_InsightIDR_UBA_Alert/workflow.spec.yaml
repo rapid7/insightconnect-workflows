@@ -1,8 +1,8 @@
 extension: workflow
 products: ["insightconnect", "InsightIDR"]
-name: Block_Flagged_Hash_with_Insight_Agent_from_InsightIDR
-title: "Block Flagged Hash with Insight Agent from InsightIDR"
-description: Disable an Active Directory user from an InsightIDR Brute Force - Domain Account UBA alert.
+name: Quarantine_Asset_with_Insight_Agent_from_InsightIDR_UBA_Alert
+title: "Quarantine Asset with Insight Agent from InsightIDR UBA Alert"
+description: Quarantine an asset with Insight Agent from a InsightIDR UBA alert.
 version: 1.0.0
 vendor: rapid7
 support: rapid7
