@@ -2,7 +2,7 @@ extension: workflow
 products: ["insightconnect", "InsightIDR"]
 name: Quarantine_Asset_with_Insight_Agent_from_InsightIDR_UBA_Alert
 title: "Quarantine Asset with Insight Agent from InsightIDR UBA Alert"
-description: Quarantine an asset with Insight Agent from a InsightIDR UBA alert.
+description: Quarantine an asset with the Insight Agent from an InsightIDR UBA alert.
 version: 1.0.0
 vendor: rapid7
 support: rapid7
