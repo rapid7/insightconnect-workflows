@@ -1,6 +1,14 @@
 # Description
 
-Quarantining a compromised asset can limit the scope of an attack and buy valuable time to investigate and contain the threat. This workflow quarantines an asset that has an Insight agent on it from an InsightIDR Flagged Hash UBA alert.
+Quarantining a compromised asset can limit the scope of an attack and buy valuable time to investigate and contain the threat. This workflow quarantines an asset that has an Insight agent on it from an InsightIDR UBA alert.
+
+This workflow can be used with the following types of UBA alerts:
+
+`Brute Force - Local Account`
+
+`Flagged Hash on Asset`
+
+`Flagged Process on Asset`
 
 # Key Features
 
@@ -23,12 +31,13 @@ Once the workflow has been imported, **It is recommended that you add you add th
 Activate the workflow in order to trigger it.
 
 Log into IDR and go to the automation tab. From there go to Alert Triggers. Click on Create Alert Trigger.
-Select Custom InsightConnect Workflows, then Block Flagged Hash with Insight Agent from InsightIDR, then Flagged Hash on Asset
-This will set up the workflow to run any time a Flagged Hash on Asset is triggered
+Select Custom InsightConnect Workflows, then `Quarantine asset with Insight Agent from InsightIDR UBA Alert`,
+then chose they type of alert you would like to trigger on. For example: Flagged Hash on Asset.
+This will set up the workflow to run any time the selected alert is triggered.
 
 # Usage
 
-The workflow will run automatically when a InsightIDR Flagged Hash UBA alert is created
+The workflow will run automatically when the selected InsightIDR UBA alert is created
 
 ## Technical Details
 
