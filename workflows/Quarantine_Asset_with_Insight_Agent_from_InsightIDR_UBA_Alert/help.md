@@ -32,7 +32,7 @@ Activate the workflow in order to trigger it.
 
 Log into InsightIDR and go to the Automation tab, then Alert Triggers. Click on Create Alert Trigger.
 Select Custom InsightConnect Workflows, then `Quarantine asset with Insight Agent from InsightIDR UBA Alert`,
-then chose they type of alert you would like to trigger on. For example: Flagged Hash on Asset.
+then choose the type of alert you would like to trigger on. For example: Flagged Hash on Asset.
 This will set up the workflow to run any time the selected alert is triggered.
 
 # Usage
