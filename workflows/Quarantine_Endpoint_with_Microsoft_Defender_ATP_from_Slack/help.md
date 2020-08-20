@@ -1,6 +1,6 @@
 # Description
 
-This workflow will quarantine an endpoint in Microsoft Defender ATP from a Slack command. This workflow supports an endpoint in the form of an IP address.
+Quarantine an endpoint via IP address in Microsoft Defender ATP from a Slack command.
 
 Sample Slack Trigger Commands:
 
