@@ -2,7 +2,7 @@ extension: workflow
 products: ["insightconnect"]
 name: Quarantine_Endpoint_with_Microsoft_Defender_ATP_from_Slack
 title: Quarantine Endpoint with Microsoft Defender ATP from Slack
-description: "This workflow will quarantine (lockdown) an endpoint in Microsoft Defender ATP from a Slack command."
+description: "Quarantine (lockdown) an endpoint in Microsoft Defender ATP from a Slack command."
 version: 1.0.0
 vendor: rapid7
 support: rapid7
