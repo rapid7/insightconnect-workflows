@@ -2,7 +2,7 @@ extension: workflow
 products: ["insightconnect"]
 name: Blacklist_Indicators_with_Microsoft_Defender_ATP_from_Microsoft_Teams
 title: Blacklist Indicators with Microsoft Defender ATP from Microsoft Teams
-description: Use the simplicity of Microsoft Teams to blacklist and unblacklist indicators such as hashes, domains, URLs, and IP addresses with Microsoft Defender ATP.
+description: Blacklist and unblacklist indicators such as hashes, domains, URLs, and IP addresses with Microsoft Defender ATP from Microsoft Teams.
 version: 1.0.0
 vendor: rapid7
 support: rapid7
