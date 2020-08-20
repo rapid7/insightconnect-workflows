@@ -1,6 +1,6 @@
 # Description
 
-This workflow blacklists or unblacklists indicators with Microsoft Defender ATP via Microsoft Teams command and reports information back to Microsoft Teams.
+Blacklist or unblacklist indicators with Microsoft Defender ATP via Microsoft Teams command and report information back to Microsoft Teams.
 Indicators supported in this workflow are SHA1 hashes, SHA256 hashes, IPv4 addresses, IPv6 addresses, URLs and domains.
 
 **Note**: Microsoft Defender ATP does not support MD5 hashes. 
