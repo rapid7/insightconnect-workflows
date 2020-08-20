@@ -15,7 +15,7 @@ Sample Microsoft Teams Trigger Commands:
 
 `!unblacklist-indicators 9.9.9.9 aadroid.net CF80CD8AED482D5D1527D7DC72FCEFF84E6326592848447D2DC0B0E87DFC9A90`
 
-The indicators will show up in the "Indicators" list within Settings in the Microsoft Defender Security Center. They will be sorted by indicator type (file hash, IP addresses, URLS/Domains).
+The indicators will show up in the "Indicators" list within Settings in the Microsoft Defender Security Center. They will be sorted by indicator type (file hash, IP addresses, URLs/domains).
 
 # Key Features
 
