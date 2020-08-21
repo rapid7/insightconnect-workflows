@@ -1205,7 +1205,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "matchChannel": "change-me",
+                "matchChannel": "change_me",
                 "matchText": "blacklist-indicators|unblacklist-indicators",
                 "type": "any"
               }
