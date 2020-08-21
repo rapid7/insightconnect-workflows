@@ -34,7 +34,7 @@ The indicators will show up in the "Indicators" list within Settings in the Micr
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-Once the workflow has been imported, **Update the first step with the channel name to suit your Microsoft Teams environment!** by editing the input with the preset text of `change_me` to match the channel to monitor.
+Once the workflow has been imported, **each Microsoft Teams step will need the channel and team name updated to suit your Microsoft Teams environment!** Edit the input with the preset text of `change_me` in each Microsoft Teams step in the workflow.
 
 Additionally, in order to use the Microsoft Defender ATP blacklist action, create a connection using your Application ID, Directory ID and Secret Key from Microsoft Defender ATP. 
 You may also have to create a connection to Microsoft Teams, using your Secret Key, Application ID, Directory ID and username/password credentials
