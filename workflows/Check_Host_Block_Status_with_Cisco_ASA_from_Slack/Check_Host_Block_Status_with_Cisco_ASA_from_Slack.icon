@@ -559,7 +559,7 @@
             "parameters": {
               "input": {
                 "address": "{{[8ec756b6-1e90-41d2-b55d-f079bb84d9e5].[$item]}}",
-                "enable_search": true,
+                "enable_search": false,
                 "group": "change_me"
               }
             },

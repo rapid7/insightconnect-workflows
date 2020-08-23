@@ -1,7 +1,7 @@
 extension: workflow
 products: ["insightconnect"]
 name: Check_Host_Block_Status_with_Cisco_ASA_from_Microsoft_Teams
-title: "Check Host Block Status with Cisco ASA from Microsoft Teams"
+title: Check Host Block Status with Cisco ASA from Microsoft Teams
 description: Check if a host is blocked in Cisco ASA from Microsoft Teams.
 version: 1.0.0
 vendor: rapid7
@@ -29,3 +29,5 @@ resources:
     title: Artifact for IP Not Blocked
   - name: job1.png
     title: Successful Job Run
+  - name: cisco_asa.png
+    title: Cisco ASA Network Object Group

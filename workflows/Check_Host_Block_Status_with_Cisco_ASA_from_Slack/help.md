@@ -14,7 +14,7 @@ Sample Slack Trigger Commands:
 
 # Requirements
 
-* Slack connection
+* [Slack](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops)
 * Cisco ASA firewall username, password, URL, port and User Agent.
 
 # Documentation
@@ -50,4 +50,5 @@ _There is no troubleshooting information at this time_
 ## References
 
 * [Cisco ASA](https://www.cisco.com)
+* [Cisco ASA Extension](https://extensions.rapid7.com/extension/cisco_asa)
 * [Slack](https://slack.com)
