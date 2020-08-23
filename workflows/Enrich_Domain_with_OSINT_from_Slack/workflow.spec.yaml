@@ -1,0 +1,25 @@
+extension: workflow
+products: ["insightconnect"]
+name: Enrich_Domain_with_OSINT_from_Slack
+title: "Enrich Domain with OSINT from Slack"
+description: Enrich a potentially malicious domain with threat intelligence provided by Threat Crowd, Dig, and Whois from Slack.
+version: 1.0.0
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [data_enrichment, threat_detection_and_response]
+  keywords: [slack, chat, chatops, work_from_home]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Enrich_Domain_with_OSINT_from_Slack
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+  - name: slack.png
+    title: Slack Response
+  - name: summary.png
+    title: Job Summary
+  - name: workflow1.png
+    title: Workflow Part 1
+  - name: workflow2.png
+    title: Workflow Part 2
