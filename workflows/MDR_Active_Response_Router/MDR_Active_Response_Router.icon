@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.58.0-0-g1aee8",
+    "komandVersion": "1.60.1-0-g652e5",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-08-02T19:28:03.787727212Z",
+    "exportedAt": "2020-08-24T17:09:41.896561949Z",
     "workflowVersions": [
       {
         "name": "MDR Active Response Router [Editing Restrictions Apply]",
@@ -1440,16 +1440,38 @@
                 {
                   "edgeId": "413d87c4-fec9-4a7f-a5d3-9cd55555f6f1",
                   "expression": {
-                    "args": [
-                      {
-                        "name": "f791bb4b-6114-4f5f-a715-40b198d2eb7e.User Contain List",
-                        "type": "variable"
-                      }
-                    ],
-                    "name": "is_defined",
-                    "type": "function"
+                    "left": {
+                      "args": [
+                        {
+                          "name": "f791bb4b-6114-4f5f-a715-40b198d2eb7e.User Contain List",
+                          "type": "variable"
+                        }
+                      ],
+                      "name": "is_defined",
+                      "type": "function"
+                    },
+                    "op": "AND",
+                    "right": {
+                      "left": {
+                        "args": [
+                          {
+                            "name": "f791bb4b-6114-4f5f-a715-40b198d2eb7e.User Contain List",
+                            "type": "variable"
+                          }
+                        ],
+                        "name": "length",
+                        "type": "function"
+                      },
+                      "op": ">",
+                      "right": {
+                        "type": "literal",
+                        "value": 0
+                      },
+                      "type": "binary"
+                    },
+                    "type": "binary"
                   },
-                  "expressionText": "is_defined({{[f791bb4b-6114-4f5f-a715-40b198d2eb7e].[User Contain List]}})"
+                  "expressionText": "is_defined({{[f791bb4b-6114-4f5f-a715-40b198d2eb7e].[User Contain List]}}) and length({{[f791bb4b-6114-4f5f-a715-40b198d2eb7e].[User Contain List]}}) > 0"
                 },
                 {
                   "edgeId": "7b3b8a15-78d0-4641-a646-f6d8be83a5cc",
@@ -1567,29 +1589,73 @@
                 "edgeId": "ec92f913-13d1-4532-8e23-f193e14457f3",
                 "expression": {
                   "left": {
-                    "args": [
-                      {
-                        "name": "148276ff-d421-484e-a784-1be0e09a3b30.Asset Contain List",
-                        "type": "variable"
-                      }
-                    ],
-                    "name": "is_defined",
-                    "type": "function"
+                    "left": {
+                      "args": [
+                        {
+                          "name": "148276ff-d421-484e-a784-1be0e09a3b30.Asset Contain List",
+                          "type": "variable"
+                        }
+                      ],
+                      "name": "is_defined",
+                      "type": "function"
+                    },
+                    "op": "AND",
+                    "right": {
+                      "left": {
+                        "args": [
+                          {
+                            "name": "148276ff-d421-484e-a784-1be0e09a3b30.Asset Contain List",
+                            "type": "variable"
+                          }
+                        ],
+                        "name": "length",
+                        "type": "function"
+                      },
+                      "op": ">",
+                      "right": {
+                        "type": "literal",
+                        "value": 0
+                      },
+                      "type": "binary"
+                    },
+                    "type": "binary"
                   },
                   "op": "OR",
                   "right": {
-                    "args": [
-                      {
-                        "name": "f791bb4b-6114-4f5f-a715-40b198d2eb7e.User Contain List",
-                        "type": "variable"
-                      }
-                    ],
-                    "name": "is_defined",
-                    "type": "function"
+                    "left": {
+                      "args": [
+                        {
+                          "name": "f791bb4b-6114-4f5f-a715-40b198d2eb7e.User Contain List",
+                          "type": "variable"
+                        }
+                      ],
+                      "name": "is_defined",
+                      "type": "function"
+                    },
+                    "op": "AND",
+                    "right": {
+                      "left": {
+                        "args": [
+                          {
+                            "name": "f791bb4b-6114-4f5f-a715-40b198d2eb7e.User Contain List",
+                            "type": "variable"
+                          }
+                        ],
+                        "name": "length",
+                        "type": "function"
+                      },
+                      "op": ">",
+                      "right": {
+                        "type": "literal",
+                        "value": 0
+                      },
+                      "type": "binary"
+                    },
+                    "type": "binary"
                   },
                   "type": "binary"
                 },
-                "expressionText": "is_defined({{[148276ff-d421-484e-a784-1be0e09a3b30].[Asset Contain List]}}) or is_defined({{[f791bb4b-6114-4f5f-a715-40b198d2eb7e].[User Contain List]}})"
+                "expressionText": "(is_defined({{[148276ff-d421-484e-a784-1be0e09a3b30].[Asset Contain List]}}) and length({{[148276ff-d421-484e-a784-1be0e09a3b30].[Asset Contain List]}}) > 0) or (is_defined({{[f791bb4b-6114-4f5f-a715-40b198d2eb7e].[User Contain List]}}) and length({{[f791bb4b-6114-4f5f-a715-40b198d2eb7e].[User Contain List]}}) > 0)"
               },
               "stopOnMatch": false
             },
@@ -2085,16 +2151,38 @@
                 {
                   "edgeId": "7ff53a84-b01f-418f-8f93-3ef2465dee72",
                   "expression": {
-                    "args": [
-                      {
-                        "name": "148276ff-d421-484e-a784-1be0e09a3b30.Asset Contain List",
-                        "type": "variable"
-                      }
-                    ],
-                    "name": "is_defined",
-                    "type": "function"
+                    "left": {
+                      "args": [
+                        {
+                          "name": "148276ff-d421-484e-a784-1be0e09a3b30.Asset Contain List",
+                          "type": "variable"
+                        }
+                      ],
+                      "name": "is_defined",
+                      "type": "function"
+                    },
+                    "op": "AND",
+                    "right": {
+                      "left": {
+                        "args": [
+                          {
+                            "name": "148276ff-d421-484e-a784-1be0e09a3b30.Asset Contain List",
+                            "type": "variable"
+                          }
+                        ],
+                        "name": "length",
+                        "type": "function"
+                      },
+                      "op": ">",
+                      "right": {
+                        "type": "literal",
+                        "value": 0
+                      },
+                      "type": "binary"
+                    },
+                    "type": "binary"
                   },
-                  "expressionText": "is_defined({{[148276ff-d421-484e-a784-1be0e09a3b30].[Asset Contain List]}})"
+                  "expressionText": "is_defined({{[148276ff-d421-484e-a784-1be0e09a3b30].[Asset Contain List]}}) and length({{[148276ff-d421-484e-a784-1be0e09a3b30].[Asset Contain List]}}) > 0"
                 }
               ]
             },
@@ -2994,7 +3082,7 @@
         },
         "tags": null,
         "humanCostSeconds": 0,
-        "humanCostDisplayUnit": ""
+        "humanCostDisplayUnit": "minutes"
       }
     ],
     "triggers": [
