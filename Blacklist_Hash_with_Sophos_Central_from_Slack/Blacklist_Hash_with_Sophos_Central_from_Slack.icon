@@ -580,7 +580,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "✅🚧 Failed to blacklist `{{[b9ddf3f0-57e3-43f6-aba7-b6cc5f7854d6].[$item]}}` 🚧✅"
+                "content": "❌ Failed to blacklist `{{[b9ddf3f0-57e3-43f6-aba7-b6cc5f7854d6].[$item]}}` ❌"
               },
               "type": "markdown"
             },
