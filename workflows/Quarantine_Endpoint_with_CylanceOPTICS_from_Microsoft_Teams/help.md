@@ -1,6 +1,6 @@
 # Description
 
-Quarantine an endpoint in CylanceOPTICS from a Microsoft Teams command. This workflow supports endpoints in the form of IP address and MAC address.
+Quarantine an endpoint in CylanceOPTICS from a Microsoft Teams command. This workflow supports endpoints in the form of IP address and/or MAC address.
 
 More than one endpoint can be specified within a single command.
 
