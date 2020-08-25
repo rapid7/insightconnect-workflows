@@ -8,7 +8,7 @@
         "name": "Check Host Block Status with Cisco ASA from Slack",
         "type": "runnable",
         "version": "",
-        "description": "",
+        "description": "This workflow accepts a Slack command containing a host address. This host address will be checked against a pre-defined address group in a Cisco ASA firewall to determine if the IP address is present or not. It is assumed that this address group will be used to store host addresses for a block policy. A message with the results will be returned.",
         "graph": {
           "edges": {
             "1beb4aa0-e2df-4016-a528-cfc17eb4609e": {
@@ -242,7 +242,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "🚫 🚧 The host {{[8ec756b6-1e90-41d2-b55d-f079bb84d9e5].[$item]}} is blocked. 🚧🚫\n"
+                "content": "🚫 The host {{[8ec756b6-1e90-41d2-b55d-f079bb84d9e5].[$item]}} is blocked. 🚫\n"
               },
               "type": "markdown"
             },
@@ -260,7 +260,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "✅🚧 The host {{[8ec756b6-1e90-41d2-b55d-f079bb84d9e5].[$item]}} is not blocked. 🚧✅"
+                "content": "✅ The host {{[8ec756b6-1e90-41d2-b55d-f079bb84d9e5].[$item]}} is not blocked. ✅"
               },
               "type": "markdown"
             },

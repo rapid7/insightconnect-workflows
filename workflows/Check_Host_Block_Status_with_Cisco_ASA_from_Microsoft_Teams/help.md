@@ -5,12 +5,14 @@ This workflow accepts a Microsoft Teams command containing a list of hosts. Thes
 Sample Microsoft Teams Trigger Commands:
 
 `!block-status 198.51.100.100`
+
 `!block-status example.com`
+
 `!block-status 198.51.100.100 example.com`
 
 # Key Features
 
-* The ability to see if an IP address is currently blocked by the firewall
+* See if an IP address is currently blocked by the firewall
 
 # Requirements
 

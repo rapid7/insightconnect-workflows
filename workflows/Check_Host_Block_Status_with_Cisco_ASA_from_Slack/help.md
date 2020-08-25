@@ -1,16 +1,18 @@
 # Description
 
-This workflow accepts a Slack command containing an IP address. This IP address will be checked against a pre-defined address group in Fortinet to determine if the IP address is present or not. It is assumed that this address group will be used to store IP addresses for a block policy. A message with the results will be returned.
+This workflow accepts a Slack command containing an IP address. This IP address will be checked against a pre-defined address group in Cisco ASA to determine if the IP address is present or not. It is assumed that this address group will be used to store IP addresses for a block policy. A message with the results will be returned.
 
 Sample Slack Trigger Commands:
 
 `@Rapid7 InsightConnect !block-status 198.51.100.100`
+
 `@Rapid7 InsightConnect !block-status example.com`
+
 `@Rapid7 InsightConnect !block-status 198.51.100.100 example.com`
 
 # Key Features
 
-* The ability to see if an IP address is currently blocked by the firewall
+* See if an IP address is currently blocked by the firewall
 
 # Requirements
 
