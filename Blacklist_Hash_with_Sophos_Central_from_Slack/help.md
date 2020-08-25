@@ -1,6 +1,6 @@
 # Description
 
-This workflow blacklists a SHA256 globally with Sophos Central via Slack command and reports information back to Slack.
+Blacklist a SHA256 hash globally with Sophos Central via Slack command and report information back to Slack.
 
 Sample Slack Trigger Commands:
 
