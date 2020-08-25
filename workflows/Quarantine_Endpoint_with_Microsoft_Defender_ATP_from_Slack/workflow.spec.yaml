@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Quarantine_Endpoint_with_Microsoft_Defender_ATP_from_Slack
 title: Quarantine Endpoint with Microsoft Defender ATP from Slack
 description: "Quarantine (lockdown) an endpoint in Microsoft Defender ATP from a Slack command."
-version: 1.0.0
+version: 1.0.1
 vendor: rapid7
 support: rapid7
 status: []

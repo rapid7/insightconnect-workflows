@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Check_Host_Block_Status_with_Cisco_ASA_from_Slack
 title: Check Host Block Status with Cisco ASA from Slack
 description: Check if a host is blocked in Cisco ASA from Slack.
-version: 1.0.0
+version: 1.0.1
 vendor: rapid7
 support: rapid7
 status: []
