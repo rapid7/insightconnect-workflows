@@ -214,7 +214,7 @@
             "parameters": {
               "input": {
                 "channel_name": "{{[eb45a27e-1a93-4580-b5dc-f48c252db9f3].[channel_name]}}",
-                "message": "⚠️ There was an error with the workflow. Cisco ASA did not return results correctly. Check This URL for more information. ⚠️\n{{[$job].[URL]}}",
+                "message": "⚠️ There was an error with the workflow. Cisco ASA did not return results correctly. Check this URL for more information. ⚠️\n{{[$job].[URL]}}",
                 "team_name": "{{[eb45a27e-1a93-4580-b5dc-f48c252db9f3].[team_name]}}",
                 "thread_id": "{{[eb45a27e-1a93-4580-b5dc-f48c252db9f3].[message].[id]}}"
               }
