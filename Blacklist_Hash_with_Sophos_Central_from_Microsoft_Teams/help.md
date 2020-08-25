@@ -1,6 +1,6 @@
 # Description
 
-This workflow blacklists a SHA256 globally with Sophos Central via Microsoft Teams command and reports information back to Microsoft Teams.
+Blacklist a SHA256 hash globally with Sophos Central via Microsoft Teams command and report information back to Microsoft Teams.
 
 Sample Microsoft Teams Trigger Commands:
 
