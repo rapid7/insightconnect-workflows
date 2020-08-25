@@ -202,7 +202,7 @@
             "parameters": {
               "input": {
                 "channel_name": "{{[eb45a27e-1a93-4580-b5dc-f48c252db9f3].[channel_name]}}",
-                "message": "✅🚧 Failed to blacklist `{{[b9ddf3f0-57e3-43f6-aba7-b6cc5f7854d6].[$item]}}` 🚧✅",
+                "message": "❌ Failed to blacklist `{{[b9ddf3f0-57e3-43f6-aba7-b6cc5f7854d6].[$item]}}` ❌",
                 "team_name": "{{[eb45a27e-1a93-4580-b5dc-f48c252db9f3].[team_name]}}",
                 "thread_id": "{{[eb45a27e-1a93-4580-b5dc-f48c252db9f3].[message].[id]}}"
               }
