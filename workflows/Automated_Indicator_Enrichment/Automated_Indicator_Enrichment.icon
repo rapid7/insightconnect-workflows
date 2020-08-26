@@ -2,7 +2,7 @@
   "kom": {
     "komandVersion": "1.60.2-0-g80196",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-08-25T18:19:31.929890698Z",
+    "exportedAt": "2020-08-25T22:25:07.288229616Z",
     "workflowVersions": [
       {
         "name": "Automated Indicator Enrichment",
@@ -786,7 +786,7 @@
           },
           "66a5247a-6dd7-4afa-8bec-5e10410a2af9": {
             "nodeId": "66a5247a-6dd7-4afa-8bec-5e10410a2af9",
-            "name": "WhoIs Lookup",
+            "name": "Whois Lookup",
             "type": "action",
             "plugin": {
               "name": "WHOIS",
@@ -2126,8 +2126,8 @@
           }
         },
         "tags": null,
-        "humanCostSeconds": 0,
-        "humanCostDisplayUnit": ""
+        "humanCostSeconds": 300,
+        "humanCostDisplayUnit": "minutes"
       }
     ],
     "triggers": [
