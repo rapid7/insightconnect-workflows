@@ -46,7 +46,7 @@ Plugins utilized by workflow:
 |AbuseIPDB|5.0.3|1|
 |IPStack|2.0.0|1|
 |VirusTotal|6.0.3|1|
-|Whois|2.0.2|1|
+|WHOIS|2.0.2|1|
 
 ## Troubleshooting
 
