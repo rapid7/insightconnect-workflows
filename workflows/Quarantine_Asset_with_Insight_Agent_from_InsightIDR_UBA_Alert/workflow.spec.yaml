@@ -1,0 +1,25 @@
+extension: workflow
+products: ["insightconnect", "InsightIDR"]
+name: Quarantine_Asset_with_Insight_Agent_from_InsightIDR_UBA_Alert
+title: "Quarantine Asset with Insight Agent from InsightIDR UBA Alert"
+description: Quarantine an asset with the Insight Agent from an InsightIDR UBA alert.
+version: 1.0.0
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [threat_detection_and_response]
+  keywords: [uba alert, uba, insightagent, insightidr, siem, agent, alert]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Quarantine_Asset_with_Insight_Agent_from_InsightIDR_UBA_Alert
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+  - name: workflow1.png
+    title: Workflow View Part 1
+  - name: workflow2.png
+    title: Workflow View Part 2
+  - name: artifact1.png
+    title: Review Artifact
+  - name: artifact2.png
+    title: Quarantine Actifact

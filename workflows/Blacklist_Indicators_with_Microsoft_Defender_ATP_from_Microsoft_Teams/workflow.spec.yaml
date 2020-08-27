@@ -1,0 +1,27 @@
+extension: workflow
+products: ["insightconnect"]
+name: Blacklist_Indicators_with_Microsoft_Defender_ATP_from_Microsoft_Teams
+title: Blacklist Indicators with Microsoft Defender ATP from Microsoft Teams
+description: Blacklist and unblacklist indicators such as hashes, domains, URLs, and IP addresses with Microsoft Defender ATP from Microsoft Teams.
+version: 1.0.0
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [threat_detection_and_response]
+  keywords: [chat, chatops, edr, blacklist, containment, quarantine, work_from_home, microsoft teams, microsoft, windows, defender, atp]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Blacklist_Indicators_with_Microsoft_Defender_ATP_from_Microsoft_Teams
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+    - name: workflow1.png
+      title: Workflow View
+    - name: workflowloop.png
+      title: Workflow Loop View
+    - name: teams1.png
+      title: Blacklist Success on Teams
+    - name: teams2.png
+      title: Unlacklist Success on Teams
+    - name: windowsdefenderatp.png
+      title: Windows Defender ATP Success
