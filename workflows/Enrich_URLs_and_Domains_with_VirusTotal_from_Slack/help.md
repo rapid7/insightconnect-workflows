@@ -2,13 +2,19 @@
 
 Lookup and enrich suspicious URLs and domains with a simple Slack command. URL and domain analysis provided by VirusTotal is returned in a Slack thread.
 
+More than one URL or domain can be specified in a single command.
+
+*This workflow will only trigger in direct messages to your Slackbot. This is by design to avoid posting potentially malicious URLs in shared Slack channels.*
+
 Sample Slack Trigger Commands:
 
-`enrich-url example.com`
+`@Rapid7 InsightConnect enrich-url aadroid.net`
 
-`enrich-url www.example.com`
+`@Rapid7 InsightConnect enrich-url www.aadroid.net`
 
-`enrich-url https://www.example.com`
+`@Rapid7 InsightConnect enrich-url https://www.google.com`
+
+`@Rapid7 InsightConnect enrich-url aadroid.net google.com`
 
 # Key Features
 
@@ -31,14 +37,12 @@ After import, activate the workflow in order to trigger it.
 
 ### Usage
 
-*This workflow will only trigger in direct messages to your Slackbot. This is by design to avoid posting potentially malicious URLs in shared Slack channels.*
-
 To run the workflow, send a direct message to your InsightConnect Slack Chatbot starting with the command `enrich-url`. 
 
 For example:
 
-* `enrich-url badsite.com`
-* `enrich-url http://another.badsite.com`
+* `@Rapid7 InsightConnect enrich-url badsite.com`
+* `@Rapid7 InsightConnect enrich-url http://another.badsite.com`
 
 The workflow will post the results in a thread.
 
@@ -48,8 +52,7 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|ExtractIt|2.0.0|1|
-|VirusTotal|6.0.1|1|
+|VirusTotal|6.0.3|1|
 
 ## Troubleshooting
 
@@ -57,6 +60,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.1.0 - Add automatic indicator extraction
 * 1.0.5 - Updated trigger syntax and documentation
 * 1.0.4 - Updated documentation
 * 1.0.3 - Update workflow title to enrichment
