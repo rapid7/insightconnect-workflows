@@ -1,0 +1,25 @@
+extension: workflow
+products: ["insightconnect"]
+name: Slack_Chatbot_URL_Analysis_with_VirusTotal
+title: "Enrich URLs and Domains with VirusTotal from Slack"
+description: nrich potential indicators of compromise by getting VirusTotal reports for URLs and domains with a Microsoft Teams command.
+version: 1.0.5
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [threat_detection_and_response]
+  keywords: [chat, antivirus, slack, work_from_home, phishing]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Slack_Chatbot_VirusTotal_URL_Scan
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+  - name: workflow.png
+    title: Workflow View
+  - name: job1.png
+    title: Successful Workflow Job
+  - name: job2.png
+    title: Completed Job In Slack, One Result
+  - name: artifact1.png
+    title: Final Report Artifacts
