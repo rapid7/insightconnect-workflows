@@ -2,7 +2,7 @@
 
 This workflow automatically looks up IP addresses and URLs using open source threat intelligence via Slack command and reports information back to Slack.
 
-VirusTotal, Whois, AbuseIPDB and IPStack are all used to obtain information about the given indicator. 
+VirusTotal, Whois, AbuseIPDB, and IPStack are all used to obtain information about the given indicator. 
 
 Multiple indicators can be specified within a single command.
 
@@ -21,7 +21,7 @@ Sample Slack Trigger Commands:
 
 # Requirements
 
-* API and account credentials for
+* API and account credentials for the following:
     * [AbuseIPDB](https://docs.abuseipdb.com/#introduction)
     * [VirusTotal](https://developers.virustotal.com/v3.0/reference)
     * [IPStack](https://ipstack.com/documentation) 
