@@ -190,7 +190,7 @@
             "parameters": {
               "input": {
                 "channel_name": "{{[3f1ed13d-fd6d-4bc6-9c46-d17c5b52a1a5].[channel_name]}}",
-                "message_content": "🛑<b>Workflow did not execute</b>🛑<br>\nNo valid URL or domain was given! Please input the command and one or more URL/domain.\n",
+                "message_content": "🛑 <b>Workflow did not execute</b> 🛑<br>\nNo valid URL or domain was given! Please input the command and one or more URL/domain.\n",
                 "team_name": "{{[3f1ed13d-fd6d-4bc6-9c46-d17c5b52a1a5].[team_name]}}",
                 "thread_id": "{{[3f1ed13d-fd6d-4bc6-9c46-d17c5b52a1a5].[message].[id]}}"
               }
@@ -374,7 +374,7 @@
             "parameters": {
               "input": {
                 "channel_name": "{{[3f1ed13d-fd6d-4bc6-9c46-d17c5b52a1a5].[channel_name]}}",
-                "message_content": "📔URL Scan Report for <code>{{[85df348a-a6af-4134-8627-9abb90f80d2f].[$item]}}</code>📔<br>\n📌Summary: <br>\n<br>\n<i>VirusTotal</i><br>\n> Malicious: {{[e43c9613-59a2-40fa-9df9-61bcb941e08a].[malicious]}}<br>\n> Positives: {{[e43c9613-59a2-40fa-9df9-61bcb941e08a].[positives]}} / {{[e43c9613-59a2-40fa-9df9-61bcb941e08a].[total]}}<br>\n> Results permalink: <a href = {{[e43c9613-59a2-40fa-9df9-61bcb941e08a].[permalink]}}>{{[e43c9613-59a2-40fa-9df9-61bcb941e08a].[permalink]}}</a><br>",
+                "message_content": "📔 URL Scan Report for <code>{{[85df348a-a6af-4134-8627-9abb90f80d2f].[$item]}}</code> 📔<br>\n📌 Summary: <br>\n<br>\n<i>VirusTotal</i><br>\n> Malicious: {{[e43c9613-59a2-40fa-9df9-61bcb941e08a].[malicious]}}<br>\n> Positives: {{[e43c9613-59a2-40fa-9df9-61bcb941e08a].[positives]}} / {{[e43c9613-59a2-40fa-9df9-61bcb941e08a].[total]}}<br>\n> Results permalink: <a href = {{[e43c9613-59a2-40fa-9df9-61bcb941e08a].[permalink]}}>{{[e43c9613-59a2-40fa-9df9-61bcb941e08a].[permalink]}}</a><br>",
                 "team_name": "{{[3f1ed13d-fd6d-4bc6-9c46-d17c5b52a1a5].[team_name]}}",
                 "thread_id": "{{[3f1ed13d-fd6d-4bc6-9c46-d17c5b52a1a5].[message].[id]}}"
               }
@@ -1138,7 +1138,7 @@
             "parameters": {
               "input": {
                 "channel_name": "{{[3f1ed13d-fd6d-4bc6-9c46-d17c5b52a1a5].[channel_name]}}",
-                "message_content": "🚨The lookup for <code>{{[85df348a-a6af-4134-8627-9abb90f80d2f].[$item]}}</code> has failed. 🚨<br>\n\nSee the job for more info:<a href = {{[$job].[URL]}}> {{[$job].[URL]}}</a>\n",
+                "message_content": "🚨 The lookup for <code>{{[85df348a-a6af-4134-8627-9abb90f80d2f].[$item]}}</code> has failed. 🚨<br>\n\nSee the job for more info:<a href = {{[$job].[URL]}}> {{[$job].[URL]}}</a>\n",
                 "team_name": "{{[3f1ed13d-fd6d-4bc6-9c46-d17c5b52a1a5].[team_name]}}",
                 "thread_id": "{{[3f1ed13d-fd6d-4bc6-9c46-d17c5b52a1a5].[message].[id]}}"
               }

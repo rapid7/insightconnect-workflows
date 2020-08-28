@@ -2,7 +2,7 @@
 
 Lookup and enrich suspicious URLs and domains with a simple Microsoft Teams command. URL and domain analysis provided by VirusTotal is returned in a Microsoft Teams thread.
 
-More than one URL or domain can be specified in a single command.
+Multiple URLs or domains can be specified in a single command.
 
 Sample Microsoft Teams Trigger Commands:
 
