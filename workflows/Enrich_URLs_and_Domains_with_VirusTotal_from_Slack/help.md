@@ -60,6 +60,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.1.1 - Set continue on scan fail to true
 * 1.1.0 - Add automatic indicator extraction
 * 1.0.5 - Updated trigger syntax and documentation
 * 1.0.4 - Updated documentation
