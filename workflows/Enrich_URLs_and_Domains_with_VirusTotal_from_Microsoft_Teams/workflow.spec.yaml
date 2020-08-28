@@ -1,9 +1,9 @@
 extension: workflow
 products: ["insightconnect"]
-name: Microsoft_Teams_URL_Analysis
+name: Enrich_URLs_and_Domains_with_VirusTotal_from_Microsoft_Teams
 title: "Enrich URLs and Domains with VirusTotal from Microsoft Teams"
 description: Enrich potential indicators of compromise by getting VirusTotal reports for URLs and domains with a Microsoft Teams command.
-version: 1.0.4
+version: 1.1.0
 vendor: rapid7
 support: rapid7
 status: []
@@ -12,14 +12,14 @@ hub_tags:
   keywords: [chat, microsoft_teams, teams, virustotal, phishing, work_from_home]
   features: []
 resources:
-  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Microsoft_Teams_URL_Analysis
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Enrich_URLs_and_Domains_with_VirusTotal_from_Microsoft_Teams
   license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
   screenshots:
-  - name: workflow1.png
-    title: Workflow Top View
-  - name: workflow2.png
-    title: Workflow Bottom View
-  - name: teams_flow1.png
-    title: Sample Teams Message
-  - name: teams_flow2.png
-    title: Sample Teams Message Complete
+  - name: workflow.png
+    title: Workflow View
+  - name: workflowloop.png
+    title: Workflow Loop View
+  - name: microsoftteams.png
+    title: Successful Job in Microsoft Teams
+  - name: artifact.png
+    title: Final Report Artifact

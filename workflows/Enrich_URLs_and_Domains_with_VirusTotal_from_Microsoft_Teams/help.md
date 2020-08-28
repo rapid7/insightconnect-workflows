@@ -1,6 +1,18 @@
 # Description
 
-This workflow will scan a Microsoft Teams channel for a specific message. When the workflow detects a message matching that signature, it will automatically scan the URL in VirusTotal and return the results to Microsoft Teams.
+Lookup and enrich suspicious URLs and domains with a simple Microsoft Teams command. URL and domain analysis provided by VirusTotal is returned in a Microsoft Teams thread.
+
+Multiple URLs or domains can be specified in a single command.
+
+Sample Microsoft Teams Trigger Commands:
+
+`!enrich-url aadroid.net`
+
+`!enrich-url www.aadroid.net`
+
+`!enrich-url https://www.google.com`
+
+`!enrich-url aadroid.net google.com`
 
 # Key Features
 
@@ -40,10 +52,8 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Microsoft Teams|2.0.4|4|
-|String Operations|1.2.1|3|
-|HTML|1.2.1|1|
-|VirusTotal|6.0.1|2|
+|Microsoft Teams|2.2.0|6|
+|VirusTotal|6.0.3|1|
 
 ## Troubleshooting
 
@@ -51,6 +61,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.1.0 - Add automatic indicator extraction
 * 1.0.4 - Update to make Microsoft Teams plugin the latest version
 * 1.0.3 - Fix workflow syntax
 * 1.0.2 - Updated trigger syntax and documentation
