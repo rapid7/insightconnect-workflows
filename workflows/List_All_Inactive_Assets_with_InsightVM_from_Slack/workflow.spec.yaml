@@ -2,7 +2,7 @@ extension: workflow
 products: ["insightconnect", "insightvm"]
 name: List_All_Inactive_Assets_with_InsightVM_from_Slack
 title: "List All Inactive Assets with InsightVM from Slack"
-description: This workflow accepts a Slack command, and will return any inactive assets it finds in InsightVM
+description: This workflow accepts a Slack command, and will return any inactive assets it finds in InsightVM.
 version: 1.0.0
 vendor: rapid7
 support: rapid7
