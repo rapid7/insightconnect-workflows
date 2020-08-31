@@ -32,6 +32,8 @@ To run the workflow, send a direct message to your InsightConnect Slack Chatbot 
 For example, in a direct message to your Chatbot:
 * `@Rapid7 InsightConnect list-inactive`
 
+The workflow is set to list assets that haven't been scanned in 14 days. To edit this number, please change the input for the "Get Inactive Assets" step.
+
 ## Technical Details
 
 Plugins utilized by workflow:
