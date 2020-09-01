@@ -35,6 +35,7 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
+|Microsoft Teams|2.2.0|4|
 |Rapid7 InsightVM|4.2.1|1|
 
 ## Troubleshooting

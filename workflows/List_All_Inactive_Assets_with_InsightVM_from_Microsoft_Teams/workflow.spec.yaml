@@ -1,6 +1,6 @@
 extension: workflow
 products: ["insightconnect", "insightvm"]
-name: List_All_Inactive_Assets_with_InsightVM_from_Slack
+name: List_All_Inactive_Assets_with_InsightVM_from_Microsoft_Teams
 title: "List All Inactive Assets with InsightVM from Microsoft Teams"
 description: This workflow accepts a Microsoft Teams command, and will return any inactive assets it finds in InsightVM.
 version: 1.0.0
@@ -17,5 +17,5 @@ resources:
   screenshots:
   - name: workflow1.png
     title: Workflow View
-  - name: teams_flow1.png
+  - name: teams_flow.png
     title: Completed Job in Microsoft Teams
