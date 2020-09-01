@@ -16,7 +16,9 @@ resources:
   license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
   screenshots:
   - name: workflow1.png
-    title: Workflow View
+    title: Workflow View 1
+  - name: workflow2.png
+    title: Workflow View 2
   - name: teams1.png
     title: Quarantine Success
   - name: teams2.png

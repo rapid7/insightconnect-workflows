@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.60.2-0-g80196",
+    "komandVersion": "1.60.3-0-g2bc27",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-08-25T16:22:32.102216927Z",
+    "exportedAt": "2020-09-01T20:13:33.501123327Z",
     "workflowVersions": [
       {
         "name": "Quarantine Endpoint with Microsoft Defender ATP from Microsoft Teams",
@@ -19,21 +19,13 @@
               "fromNodeId": "1907d1ee-9f50-4f94-96e6-b4d172806f9f",
               "toNodeId": "3baeddc7-c7b0-4d43-9b7d-6c55abf77a26"
             },
-            "3bbde639-9e42-4764-90f6-21924e978b03": {
-              "id": "3bbde639-9e42-4764-90f6-21924e978b03",
+            "392c5a8a-ceb4-4ab8-81ba-67a5651822b8": {
+              "id": "392c5a8a-ceb4-4ab8-81ba-67a5651822b8",
               "name": "",
               "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "3e3e4ccd-0e8a-4166-a496-9fbeccb9b64e",
-              "toNodeId": "e6ea0047-7838-4ebb-b894-21b893bea4ca"
-            },
-            "4d2cff7f-efbf-4143-a792-b06cf5a10334": {
-              "id": "4d2cff7f-efbf-4143-a792-b06cf5a10334",
-              "name": "",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "e6ea0047-7838-4ebb-b894-21b893bea4ca",
-              "toNodeId": "1907d1ee-9f50-4f94-96e6-b4d172806f9f"
+              "parentNodeId": "1907d1ee-9f50-4f94-96e6-b4d172806f9f",
+              "fromNodeId": "93a57c6e-a0fb-405a-873f-583fb8be6823",
+              "toNodeId": ""
             },
             "63b98c85-4fa1-4f6c-8002-209c305b36de": {
               "id": "63b98c85-4fa1-4f6c-8002-209c305b36de",
@@ -65,7 +57,7 @@
               "description": "",
               "parentNodeId": "1907d1ee-9f50-4f94-96e6-b4d172806f9f",
               "fromNodeId": "a7c6b0ac-c4d3-4bc9-b74c-cbf08ed9e950",
-              "toNodeId": ""
+              "toNodeId": "93a57c6e-a0fb-405a-873f-583fb8be6823"
             },
             "837bf434-7208-41a8-93fd-626613e2404a": {
               "id": "837bf434-7208-41a8-93fd-626613e2404a",
@@ -91,13 +83,21 @@
               "fromNodeId": "4564d877-abbe-4d56-94ea-cce5714b2f4c",
               "toNodeId": "d7003791-c791-401c-8a7f-9080c5955672"
             },
+            "9777f73f-6a35-4bbc-bb7f-cbc8eaf7038c": {
+              "id": "9777f73f-6a35-4bbc-bb7f-cbc8eaf7038c",
+              "name": "",
+              "description": "",
+              "parentNodeId": "1907d1ee-9f50-4f94-96e6-b4d172806f9f",
+              "fromNodeId": "e1ae732e-b113-4027-89b9-54410ef993a0",
+              "toNodeId": ""
+            },
             "aa0d5c5a-4c99-4997-9041-107a1883c4a4": {
               "id": "aa0d5c5a-4c99-4997-9041-107a1883c4a4",
               "name": "",
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "66e72ff3-3233-4548-a618-31dfed6f2ee0",
-              "toNodeId": "3e3e4ccd-0e8a-4166-a496-9fbeccb9b64e"
+              "toNodeId": "1907d1ee-9f50-4f94-96e6-b4d172806f9f"
             },
             "b7ca28a7-72c9-41d5-92f5-a005bf731f00": {
               "id": "b7ca28a7-72c9-41d5-92f5-a005bf731f00",
@@ -113,7 +113,7 @@
               "description": "",
               "parentNodeId": "1907d1ee-9f50-4f94-96e6-b4d172806f9f",
               "fromNodeId": "6ba18d4a-a06d-479d-904c-feb26f9df2dc",
-              "toNodeId": ""
+              "toNodeId": "e1ae732e-b113-4027-89b9-54410ef993a0"
             },
             "db6f3c2e-52ed-46b7-9bfe-8b5795c41d6d": {
               "id": "db6f3c2e-52ed-46b7-9bfe-8b5795c41d6d",
@@ -157,10 +157,6 @@
               "id": "3baeddc7-c7b0-4d43-9b7d-6c55abf77a26",
               "parentNodeId": ""
             },
-            "3e3e4ccd-0e8a-4166-a496-9fbeccb9b64e": {
-              "id": "3e3e4ccd-0e8a-4166-a496-9fbeccb9b64e",
-              "parentNodeId": ""
-            },
             "44ca23fb-e705-4c0b-9c4b-c4a56654422f": {
               "id": "44ca23fb-e705-4c0b-9c4b-c4a56654422f",
               "parentNodeId": ""
@@ -177,6 +173,10 @@
               "id": "6ba18d4a-a06d-479d-904c-feb26f9df2dc",
               "parentNodeId": "1907d1ee-9f50-4f94-96e6-b4d172806f9f"
             },
+            "93a57c6e-a0fb-405a-873f-583fb8be6823": {
+              "id": "93a57c6e-a0fb-405a-873f-583fb8be6823",
+              "parentNodeId": "1907d1ee-9f50-4f94-96e6-b4d172806f9f"
+            },
             "a7c6b0ac-c4d3-4bc9-b74c-cbf08ed9e950": {
               "id": "a7c6b0ac-c4d3-4bc9-b74c-cbf08ed9e950",
               "parentNodeId": "1907d1ee-9f50-4f94-96e6-b4d172806f9f"
@@ -185,9 +185,9 @@
               "id": "d7003791-c791-401c-8a7f-9080c5955672",
               "parentNodeId": "1907d1ee-9f50-4f94-96e6-b4d172806f9f"
             },
-            "e6ea0047-7838-4ebb-b894-21b893bea4ca": {
-              "id": "e6ea0047-7838-4ebb-b894-21b893bea4ca",
-              "parentNodeId": ""
+            "e1ae732e-b113-4027-89b9-54410ef993a0": {
+              "id": "e1ae732e-b113-4027-89b9-54410ef993a0",
+              "parentNodeId": "1907d1ee-9f50-4f94-96e6-b4d172806f9f"
             },
             "e9d0e2fb-ca39-4016-b564-59fd96284400": {
               "id": "e9d0e2fb-ca39-4016-b564-59fd96284400",
@@ -204,8 +204,8 @@
               "name": "Microsoft Windows Defender ATP",
               "slugVendor": "rapid7",
               "slugName": "microsoft_atp",
-              "slugVersion": "4.4.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_atp/4.4.0/icon.png"
+              "slugVersion": "4.4.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_atp/4.4.1/icon.png"
             },
             "identifier": "isolate_machine",
             "continueOnFailure": false,
@@ -570,40 +570,6 @@
             "defaultImageData": "",
             "connectionType": "CONNECTION"
           },
-          "3e3e4ccd-0e8a-4166-a496-9fbeccb9b64e": {
-            "nodeId": "3e3e4ccd-0e8a-4166-a496-9fbeccb9b64e",
-            "name": "Extract Command",
-            "type": "pattern_match",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "captureAll": false,
-              "expressionText": "{{action:/.* /}}{{agent:/.*/}}",
-              "expressions": [
-                {
-                  "type": "variable",
-                  "value": {
-                    "ident": "action",
-                    "regex": ".* "
-                  }
-                },
-                {
-                  "type": "variable",
-                  "value": {
-                    "ident": "agent",
-                    "regex": ".*"
-                  }
-                }
-              ],
-              "ignoreCase": false,
-              "input": "{{[44ca23fb-e705-4c0b-9c4b-c4a56654422f].[message].[body].[content]}}"
-            },
-            "defaultInputJSONSchema": null,
-            "defaultOutputJSONSchema": null,
-            "outputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/pattern-match.svg",
-            "connectionType": "NONE"
-          },
           "44ca23fb-e705-4c0b-9c4b-c4a56654422f": {
             "nodeId": "44ca23fb-e705-4c0b-9c4b-c4a56654422f",
             "name": "Quarantine Request",
@@ -620,7 +586,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "change_me",
+                "channel_name": "integration-testing",
                 "message_content": "!quarantine-endpoint|!unquarantine-endpoint",
                 "team_name": "Integrations"
               }
@@ -1194,7 +1160,7 @@
             "parameters": {
               "input": {
                 "channel_name": "{{[44ca23fb-e705-4c0b-9c4b-c4a56654422f].[channel_name]}}",
-                "message": "Quarantine Action on {{[1907d1ee-9f50-4f94-96e6-b4d172806f9f].[$item]}} was successful. \n\n{{[4564d877-abbe-4d56-94ea-cce5714b2f4c].[Was Action Successful 2]}} was successful on {{[1907d1ee-9f50-4f94-96e6-b4d172806f9f].[$item]}}.\n",
+                "message": "{{[4564d877-abbe-4d56-94ea-cce5714b2f4c].[Was Action Successful 2]}} Action on {{[1907d1ee-9f50-4f94-96e6-b4d172806f9f].[$item]}} was successful.\n",
                 "team_name": "{{[44ca23fb-e705-4c0b-9c4b-c4a56654422f].[team_name]}}",
                 "thread_id": "{{[44ca23fb-e705-4c0b-9c4b-c4a56654422f].[message].[id]}}"
               }
@@ -1360,6 +1326,24 @@
             "defaultImageData": "",
             "connectionType": "CONNECTION"
           },
+          "93a57c6e-a0fb-405a-873f-583fb8be6823": {
+            "nodeId": "93a57c6e-a0fb-405a-873f-583fb8be6823",
+            "name": "Failed Artifact",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "{{[4564d877-abbe-4d56-94ea-cce5714b2f4c].[Was Action Successful 2]}} on {{[1907d1ee-9f50-4f94-96e6-b4d172806f9f].[$item]}} was not successful."
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
           "a7c6b0ac-c4d3-4bc9-b74c-cbf08ed9e950": {
             "nodeId": "a7c6b0ac-c4d3-4bc9-b74c-cbf08ed9e950",
             "name": "Quarantine Unsuccessful",
@@ -1378,7 +1362,7 @@
             "parameters": {
               "input": {
                 "channel_name": "{{[44ca23fb-e705-4c0b-9c4b-c4a56654422f].[channel_name]}}",
-                "message": "Failed to quarantine {{[1907d1ee-9f50-4f94-96e6-b4d172806f9f].[$item]}}. \n\n{{[4564d877-abbe-4d56-94ea-cce5714b2f4c].[Was Action Successful 2]}} was not successful on {{[1907d1ee-9f50-4f94-96e6-b4d172806f9f].[$item]}}",
+                "message": "Failed to quarantine {{[1907d1ee-9f50-4f94-96e6-b4d172806f9f].[$item]}}. \n\n{{[4564d877-abbe-4d56-94ea-cce5714b2f4c].[Was Action Successful 2]}} on {{[1907d1ee-9f50-4f94-96e6-b4d172806f9f].[$item]}} was not successful.",
                 "team_name": "{{[44ca23fb-e705-4c0b-9c4b-c4a56654422f].[team_name]}}",
                 "thread_id": "{{[44ca23fb-e705-4c0b-9c4b-c4a56654422f].[message].[id]}}"
               }
@@ -1574,15 +1558,15 @@
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
             "connectionType": "NONE"
           },
-          "e6ea0047-7838-4ebb-b894-21b893bea4ca": {
-            "nodeId": "e6ea0047-7838-4ebb-b894-21b893bea4ca",
-            "name": "Extracted Command",
+          "e1ae732e-b113-4027-89b9-54410ef993a0": {
+            "nodeId": "e1ae732e-b113-4027-89b9-54410ef993a0",
+            "name": "Success Artifact",
             "type": "artifact",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "Received command: {{[3e3e4ccd-0e8a-4166-a496-9fbeccb9b64e].[action]}}"
+                "content": "{{[4564d877-abbe-4d56-94ea-cce5714b2f4c].[Was Action Successful 2]}} Action on {{[1907d1ee-9f50-4f94-96e6-b4d172806f9f].[$item]}} was successful."
               },
               "type": "markdown"
             },
@@ -1600,8 +1584,8 @@
               "name": "Microsoft Windows Defender ATP",
               "slugVendor": "rapid7",
               "slugName": "microsoft_atp",
-              "slugVersion": "4.4.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_atp/4.4.0/icon.png"
+              "slugVersion": "4.4.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_atp/4.4.1/icon.png"
             },
             "identifier": "unisolate_machine",
             "continueOnFailure": false,
@@ -1723,7 +1707,7 @@
         "name": "Quarantine Request",
         "description": "",
         "input": {
-          "channel_name": "change_me",
+          "channel_name": "integration-testing",
           "message_content": "!quarantine-endpoint|!unquarantine-endpoint",
           "team_name": "Integrations"
         },
