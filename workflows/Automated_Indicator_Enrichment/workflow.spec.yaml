@@ -2,8 +2,8 @@ extension: workflow
 products: ["insightconnect"]
 name: Automated_Indicator_Enrichment
 title: "Automated Indicator Enrichment"
-description: "This workflow triggers from directly slack messaging the chatbot to \"!investigate\" the defined indicator. To date, this workflow supports automatically looking up URLs and IPs in open source threat intelligence such as VirusTotal and Whois. Lastly, the workflow will post back results to the specific user."
-version: 1.0.0
+description: "Lookup indicators such as IP addresses or URLs using open source threat intelligence from Slack."
+version: 1.1.0
 vendor: rapid7
 support: rapid7
 status: []
@@ -15,7 +15,14 @@ resources:
   source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Automated_Indicator_Enrichment
   license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
   screenshots:
-  - name: Automated_Indicator_Enrichment_Job.png
-    title: Example Job Output
-  - name: Automated_Indicator_Enrichment_Snapshot.png
+  - name: workflow.png
     title: Workflow View
+  - name: iploop.png
+    title: IP Loop Workflow View
+  - name: urlloop.png
+    title: URL Loop Workflow View
+  - name: slack.png
+    title: Example Slack Output
+  - name: artifact.png
+    title: Example Artifact Output
+
