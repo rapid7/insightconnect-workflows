@@ -19,7 +19,7 @@ Import the workflow from the Rapid7 Extension Library and proceed through the Im
 
 Once the workflow has been imported,
 
-Update the first step with the channel name to suit your Slack environment! by editing the input with the preset text of `change_me` to match the channel to monitor.
+Update the first step with the channel name to suit your Slack environment by editing the input with the preset text of `change_me` to match the channel to monitor.
 
 After import, activate the workflow in order to trigger it.
 
