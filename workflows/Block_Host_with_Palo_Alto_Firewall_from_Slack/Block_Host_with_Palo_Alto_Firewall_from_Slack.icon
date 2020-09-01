@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.50.1-0-gaec79",
+    "komandVersion": "1.60.3-0-g2bc27",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-05-22T18:41:22.771048852Z",
+    "exportedAt": "2020-09-01T18:27:38.032179155Z",
     "workflowVersions": [
       {
         "name": "Block Host with Palo Alto Firewall from Slack",
@@ -11,53 +11,85 @@
         "description": "Use the simplicity of a chat command in Slack to block or unblock a host in your Palo Alto Firewall.",
         "graph": {
           "edges": {
-            "08ec65ca-0094-48f7-ab18-1034c59ccbc8": {
-              "id": "08ec65ca-0094-48f7-ab18-1034c59ccbc8",
-              "name": "",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "983495e5-68d4-4145-949c-51c509e0d6c4",
-              "toNodeId": "8d029a16-4df5-48a4-a2b1-3ca98ccb4cef"
-            },
-            "3d13e6b2-5096-450c-8ad5-ef27a0aefcfb": {
-              "id": "3d13e6b2-5096-450c-8ad5-ef27a0aefcfb",
+            "099fa753-4993-4a08-b578-eaf6538102af": {
+              "id": "099fa753-4993-4a08-b578-eaf6538102af",
               "name": "Block Host",
               "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "e4ea28d6-006e-40fc-8a79-32f290e754c3",
-              "toNodeId": "7b2bd280-4565-4095-af97-de154b4426bf"
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
+              "fromNodeId": "252505b1-b1e2-4567-95da-cd01a0bb39f3",
+              "toNodeId": "19f60800-b02b-41c1-b82f-4ad72d556a1c"
             },
-            "4cb51ec4-138a-4d6c-a025-cebac2b390ed": {
-              "id": "4cb51ec4-138a-4d6c-a025-cebac2b390ed",
+            "19daedc2-9648-400b-b3dd-0ae3934b0d0f": {
+              "id": "19daedc2-9648-400b-b3dd-0ae3934b0d0f",
               "name": "",
               "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "c4a76c43-bac4-45ae-8ec3-65cec21fef13",
-              "toNodeId": "c89587c8-1f87-4f0c-9c45-4b1916a3c678"
-            },
-            "512cb87a-c70c-4ca9-ac04-d0197157f035": {
-              "id": "512cb87a-c70c-4ca9-ac04-d0197157f035",
-              "name": "",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "b4c8d5a0-88b7-480c-b8ca-f436d2df722d",
-              "toNodeId": "e4ea28d6-006e-40fc-8a79-32f290e754c3"
-            },
-            "67ef154f-cf25-4f17-8f4e-92d0e92d89e7": {
-              "id": "67ef154f-cf25-4f17-8f4e-92d0e92d89e7",
-              "name": "",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "40cadabe-71fa-4e45-8edb-3d375ae8c7bf",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
+              "fromNodeId": "3f170fd6-2826-45a7-856f-f19e80125d16",
               "toNodeId": ""
             },
-            "6c6b3ba0-6394-4401-a8c7-3ac2416be977": {
-              "id": "6c6b3ba0-6394-4401-a8c7-3ac2416be977",
+            "33271c34-d5ba-4164-93cb-14668dfb1be6": {
+              "id": "33271c34-d5ba-4164-93cb-14668dfb1be6",
+              "name": "",
+              "description": "",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
+              "fromNodeId": "d5b71fc2-89a4-4e45-96dc-b89521e10663",
+              "toNodeId": "66d66255-234a-42e3-9aa5-11d0cac8fc35"
+            },
+            "382fde22-4cfa-4a73-926f-778c045d36ce": {
+              "id": "382fde22-4cfa-4a73-926f-778c045d36ce",
+              "name": "",
+              "description": "",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
+              "fromNodeId": "ce6e79d3-239d-4c67-ba70-f690962e56a0",
+              "toNodeId": ""
+            },
+            "38bbe58a-b562-494c-92ca-097402ac1637": {
+              "id": "38bbe58a-b562-494c-92ca-097402ac1637",
               "name": "",
               "description": "",
               "parentNodeId": "",
-              "fromNodeId": "786cbab2-9f35-44f1-b2e9-a2c236cb5a37",
-              "toNodeId": "40cadabe-71fa-4e45-8edb-3d375ae8c7bf"
+              "fromNodeId": "71640fb0-fd89-4e3d-b356-dd502ae96c9b",
+              "toNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c"
+            },
+            "3c5f37c3-4f39-43ca-ade6-9e3861055474": {
+              "id": "3c5f37c3-4f39-43ca-ade6-9e3861055474",
+              "name": "",
+              "description": "",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
+              "fromNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
+              "toNodeId": "252505b1-b1e2-4567-95da-cd01a0bb39f3"
+            },
+            "4451475e-58dd-402d-bfb4-3d0d991ba796": {
+              "id": "4451475e-58dd-402d-bfb4-3d0d991ba796",
+              "name": "",
+              "description": "",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
+              "fromNodeId": "9986ec6b-8acf-4556-b100-4b64876ec273",
+              "toNodeId": ""
+            },
+            "4aaf1741-9541-4081-8691-d4b4fc5e9bcc": {
+              "id": "4aaf1741-9541-4081-8691-d4b4fc5e9bcc",
+              "name": "Yes",
+              "description": "",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
+              "fromNodeId": "5c03da19-5012-4bf4-bddd-e8e1ac58afd0",
+              "toNodeId": "486fa158-42a6-45cc-9060-dc9e64f78ab1"
+            },
+            "5c075c64-7589-46e1-b05a-cc9c369f91c9": {
+              "id": "5c075c64-7589-46e1-b05a-cc9c369f91c9",
+              "name": "Unblock Host",
+              "description": "",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
+              "fromNodeId": "252505b1-b1e2-4567-95da-cd01a0bb39f3",
+              "toNodeId": "4f830145-6dd0-4712-8feb-9aba7d5cc042"
+            },
+            "65e9268a-6149-4c80-80e4-673adbb2f693": {
+              "id": "65e9268a-6149-4c80-80e4-673adbb2f693",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "83a8e7c1-1f97-4467-b67c-9f1fbc189df1",
+              "toNodeId": ""
             },
             "766efd98-7cb1-40ad-a45e-ad0e3fd49485": {
               "id": "766efd98-7cb1-40ad-a45e-ad0e3fd49485",
@@ -65,186 +97,150 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "4d650a86-639d-4f34-8920-52d3c954152b",
-              "toNodeId": "c4a76c43-bac4-45ae-8ec3-65cec21fef13"
+              "toNodeId": "59de03bc-ff23-4ec8-bc3f-579deb153568"
             },
-            "8935f832-644a-432f-85d7-992b0061c594": {
-              "id": "8935f832-644a-432f-85d7-992b0061c594",
+            "7796023e-7fd6-44c8-92fc-b4755f0b0831": {
+              "id": "7796023e-7fd6-44c8-92fc-b4755f0b0831",
               "name": "",
               "description": "",
               "parentNodeId": "",
-              "fromNodeId": "17ba3e71-3cbd-4995-a0d4-0c3b8974ef15",
-              "toNodeId": "b4c8d5a0-88b7-480c-b8ca-f436d2df722d"
+              "fromNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
+              "toNodeId": "83a8e7c1-1f97-4467-b67c-9f1fbc189df1"
             },
-            "8bf59ba4-7dca-454a-b2e4-48c8ca656983": {
-              "id": "8bf59ba4-7dca-454a-b2e4-48c8ca656983",
-              "name": "Unblock Host",
+            "79f3a568-1211-464f-93bb-722f970503a6": {
+              "id": "79f3a568-1211-464f-93bb-722f970503a6",
+              "name": "",
               "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "e4ea28d6-006e-40fc-8a79-32f290e754c3",
-              "toNodeId": "13b66114-3d09-471f-b6f1-c4f996bbfc31"
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
+              "fromNodeId": "19f60800-b02b-41c1-b82f-4ad72d556a1c",
+              "toNodeId": "d5b71fc2-89a4-4e45-96dc-b89521e10663"
             },
-            "9b9c2746-b900-4847-b980-086d0e2521f6": {
-              "id": "9b9c2746-b900-4847-b980-086d0e2521f6",
+            "8a409b54-6b00-448c-91d3-a98949207c0f": {
+              "id": "8a409b54-6b00-448c-91d3-a98949207c0f",
+              "name": "",
+              "description": "",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
+              "fromNodeId": "486fa158-42a6-45cc-9060-dc9e64f78ab1",
+              "toNodeId": "9986ec6b-8acf-4556-b100-4b64876ec273"
+            },
+            "aa61f0cd-0af3-428e-a492-0bb4c08243bb": {
+              "id": "aa61f0cd-0af3-428e-a492-0bb4c08243bb",
+              "name": "",
+              "description": "",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
+              "fromNodeId": "d437ab08-6124-49f1-8450-541092718cdc",
+              "toNodeId": "5c03da19-5012-4bf4-bddd-e8e1ac58afd0"
+            },
+            "acc630f4-20de-42d6-983a-a6618f891543": {
+              "id": "acc630f4-20de-42d6-983a-a6618f891543",
               "name": "",
               "description": "",
               "parentNodeId": "",
-              "fromNodeId": "85241969-7636-4ddf-ab00-6bd220c28e51",
-              "toNodeId": "983495e5-68d4-4145-949c-51c509e0d6c4"
+              "fromNodeId": "59de03bc-ff23-4ec8-bc3f-579deb153568",
+              "toNodeId": "71640fb0-fd89-4e3d-b356-dd502ae96c9b"
             },
-            "a2040f8d-48bb-4a86-88c6-125a64d1a787": {
-              "id": "a2040f8d-48bb-4a86-88c6-125a64d1a787",
+            "d37ae7a6-0a72-417d-90ea-16cb4d26d168": {
+              "id": "d37ae7a6-0a72-417d-90ea-16cb4d26d168",
               "name": "",
               "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "c89587c8-1f87-4f0c-9c45-4b1916a3c678",
-              "toNodeId": "83782ee6-5362-4b81-8902-9d4904c8ecd8"
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
+              "fromNodeId": "4f830145-6dd0-4712-8feb-9aba7d5cc042",
+              "toNodeId": "d437ab08-6124-49f1-8450-541092718cdc"
             },
-            "abb87f31-e4e6-4120-bae7-5dceb3621d7e": {
-              "id": "abb87f31-e4e6-4120-bae7-5dceb3621d7e",
-              "name": "",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "13b66114-3d09-471f-b6f1-c4f996bbfc31",
-              "toNodeId": "8c18b523-d755-46d0-a37d-a3caf41e4b78"
-            },
-            "b5909a47-f97e-4ca1-93b7-7750509a046a": {
-              "id": "b5909a47-f97e-4ca1-93b7-7750509a046a",
+            "e4b6a364-09bd-4cbc-aedf-0ade1aeeb6cf": {
+              "id": "e4b6a364-09bd-4cbc-aedf-0ade1aeeb6cf",
               "name": "No",
               "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "95c927b8-9dba-4fb0-9c4c-882501926cea",
-              "toNodeId": "6dcb8377-8bd3-4e33-ba92-49e4cf101baa"
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
+              "fromNodeId": "5c03da19-5012-4bf4-bddd-e8e1ac58afd0",
+              "toNodeId": "ce6e79d3-239d-4c67-ba70-f690962e56a0"
             },
-            "cbf5ab61-fc89-4b4f-ab8e-842903c212a6": {
-              "id": "cbf5ab61-fc89-4b4f-ab8e-842903c212a6",
+            "f55cc36c-ff92-447a-85ec-20458a1e98fc": {
+              "id": "f55cc36c-ff92-447a-85ec-20458a1e98fc",
               "name": "",
               "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "8d029a16-4df5-48a4-a2b1-3ca98ccb4cef",
-              "toNodeId": ""
-            },
-            "d21dee55-5783-4574-996b-56c86d5745ec": {
-              "id": "d21dee55-5783-4574-996b-56c86d5745ec",
-              "name": "",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "6dcb8377-8bd3-4e33-ba92-49e4cf101baa",
-              "toNodeId": ""
-            },
-            "e1d845ed-6ad1-493a-9275-a822cb4e6ba2": {
-              "id": "e1d845ed-6ad1-493a-9275-a822cb4e6ba2",
-              "name": "Yes",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "95c927b8-9dba-4fb0-9c4c-882501926cea",
-              "toNodeId": "786cbab2-9f35-44f1-b2e9-a2c236cb5a37"
-            },
-            "eb01ead8-58c2-4064-b44c-9cbd5700ba3c": {
-              "id": "eb01ead8-58c2-4064-b44c-9cbd5700ba3c",
-              "name": "",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "7b2bd280-4565-4095-af97-de154b4426bf",
-              "toNodeId": "85241969-7636-4ddf-ab00-6bd220c28e51"
-            },
-            "edf8af0b-8b05-4284-9d01-d32f451ae5e0": {
-              "id": "edf8af0b-8b05-4284-9d01-d32f451ae5e0",
-              "name": "",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "8c18b523-d755-46d0-a37d-a3caf41e4b78",
-              "toNodeId": "95c927b8-9dba-4fb0-9c4c-882501926cea"
-            },
-            "f33fb385-16d8-46f8-9a1f-0ea5046a1898": {
-              "id": "f33fb385-16d8-46f8-9a1f-0ea5046a1898",
-              "name": "",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "83782ee6-5362-4b81-8902-9d4904c8ecd8",
-              "toNodeId": "17ba3e71-3cbd-4995-a0d4-0c3b8974ef15"
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
+              "fromNodeId": "66d66255-234a-42e3-9aa5-11d0cac8fc35",
+              "toNodeId": "3f170fd6-2826-45a7-856f-f19e80125d16"
             }
           },
           "nodes": {
-            "13b66114-3d09-471f-b6f1-c4f996bbfc31": {
-              "id": "13b66114-3d09-471f-b6f1-c4f996bbfc31",
-              "parentNodeId": ""
+            "19f60800-b02b-41c1-b82f-4ad72d556a1c": {
+              "id": "19f60800-b02b-41c1-b82f-4ad72d556a1c",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c"
             },
-            "17ba3e71-3cbd-4995-a0d4-0c3b8974ef15": {
-              "id": "17ba3e71-3cbd-4995-a0d4-0c3b8974ef15",
-              "parentNodeId": ""
+            "252505b1-b1e2-4567-95da-cd01a0bb39f3": {
+              "id": "252505b1-b1e2-4567-95da-cd01a0bb39f3",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c"
             },
-            "40cadabe-71fa-4e45-8edb-3d375ae8c7bf": {
-              "id": "40cadabe-71fa-4e45-8edb-3d375ae8c7bf",
-              "parentNodeId": ""
+            "3f170fd6-2826-45a7-856f-f19e80125d16": {
+              "id": "3f170fd6-2826-45a7-856f-f19e80125d16",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c"
+            },
+            "486fa158-42a6-45cc-9060-dc9e64f78ab1": {
+              "id": "486fa158-42a6-45cc-9060-dc9e64f78ab1",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c"
             },
             "4d650a86-639d-4f34-8920-52d3c954152b": {
               "id": "4d650a86-639d-4f34-8920-52d3c954152b",
               "parentNodeId": ""
             },
-            "6dcb8377-8bd3-4e33-ba92-49e4cf101baa": {
-              "id": "6dcb8377-8bd3-4e33-ba92-49e4cf101baa",
+            "4f830145-6dd0-4712-8feb-9aba7d5cc042": {
+              "id": "4f830145-6dd0-4712-8feb-9aba7d5cc042",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c"
+            },
+            "59de03bc-ff23-4ec8-bc3f-579deb153568": {
+              "id": "59de03bc-ff23-4ec8-bc3f-579deb153568",
               "parentNodeId": ""
             },
-            "786cbab2-9f35-44f1-b2e9-a2c236cb5a37": {
-              "id": "786cbab2-9f35-44f1-b2e9-a2c236cb5a37",
+            "5c03da19-5012-4bf4-bddd-e8e1ac58afd0": {
+              "id": "5c03da19-5012-4bf4-bddd-e8e1ac58afd0",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c"
+            },
+            "634ba1d9-2e69-4adf-b15b-1c32b1559e4c": {
+              "id": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
               "parentNodeId": ""
             },
-            "7b2bd280-4565-4095-af97-de154b4426bf": {
-              "id": "7b2bd280-4565-4095-af97-de154b4426bf",
+            "66d66255-234a-42e3-9aa5-11d0cac8fc35": {
+              "id": "66d66255-234a-42e3-9aa5-11d0cac8fc35",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c"
+            },
+            "71640fb0-fd89-4e3d-b356-dd502ae96c9b": {
+              "id": "71640fb0-fd89-4e3d-b356-dd502ae96c9b",
               "parentNodeId": ""
             },
-            "83782ee6-5362-4b81-8902-9d4904c8ecd8": {
-              "id": "83782ee6-5362-4b81-8902-9d4904c8ecd8",
+            "83a8e7c1-1f97-4467-b67c-9f1fbc189df1": {
+              "id": "83a8e7c1-1f97-4467-b67c-9f1fbc189df1",
               "parentNodeId": ""
             },
-            "85241969-7636-4ddf-ab00-6bd220c28e51": {
-              "id": "85241969-7636-4ddf-ab00-6bd220c28e51",
-              "parentNodeId": ""
+            "9986ec6b-8acf-4556-b100-4b64876ec273": {
+              "id": "9986ec6b-8acf-4556-b100-4b64876ec273",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c"
             },
-            "8c18b523-d755-46d0-a37d-a3caf41e4b78": {
-              "id": "8c18b523-d755-46d0-a37d-a3caf41e4b78",
-              "parentNodeId": ""
+            "ce6e79d3-239d-4c67-ba70-f690962e56a0": {
+              "id": "ce6e79d3-239d-4c67-ba70-f690962e56a0",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c"
             },
-            "8d029a16-4df5-48a4-a2b1-3ca98ccb4cef": {
-              "id": "8d029a16-4df5-48a4-a2b1-3ca98ccb4cef",
-              "parentNodeId": ""
+            "d437ab08-6124-49f1-8450-541092718cdc": {
+              "id": "d437ab08-6124-49f1-8450-541092718cdc",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c"
             },
-            "95c927b8-9dba-4fb0-9c4c-882501926cea": {
-              "id": "95c927b8-9dba-4fb0-9c4c-882501926cea",
-              "parentNodeId": ""
-            },
-            "983495e5-68d4-4145-949c-51c509e0d6c4": {
-              "id": "983495e5-68d4-4145-949c-51c509e0d6c4",
-              "parentNodeId": ""
-            },
-            "b4c8d5a0-88b7-480c-b8ca-f436d2df722d": {
-              "id": "b4c8d5a0-88b7-480c-b8ca-f436d2df722d",
-              "parentNodeId": ""
-            },
-            "c4a76c43-bac4-45ae-8ec3-65cec21fef13": {
-              "id": "c4a76c43-bac4-45ae-8ec3-65cec21fef13",
-              "parentNodeId": ""
-            },
-            "c89587c8-1f87-4f0c-9c45-4b1916a3c678": {
-              "id": "c89587c8-1f87-4f0c-9c45-4b1916a3c678",
-              "parentNodeId": ""
-            },
-            "e4ea28d6-006e-40fc-8a79-32f290e754c3": {
-              "id": "e4ea28d6-006e-40fc-8a79-32f290e754c3",
-              "parentNodeId": ""
+            "d5b71fc2-89a4-4e45-96dc-b89521e10663": {
+              "id": "d5b71fc2-89a4-4e45-96dc-b89521e10663",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c"
             }
           }
         },
         "steps": {
-          "13b66114-3d09-471f-b6f1-c4f996bbfc31": {
-            "nodeId": "13b66114-3d09-471f-b6f1-c4f996bbfc31",
-            "name": "Unblock Host Artifact",
+          "19f60800-b02b-41c1-b82f-4ad72d556a1c": {
+            "nodeId": "19f60800-b02b-41c1-b82f-4ad72d556a1c",
+            "name": "Block Host Command Received",
             "type": "artifact",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "Unblock Host Command Received"
+                "content": "Block Host Command Received\n\n{{[634ba1d9-2e69-4adf-b15b-1c32b1559e4c].[$item]}}"
               },
               "type": "markdown"
             },
@@ -254,34 +250,54 @@
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
             "connectionType": "NONE"
           },
-          "17ba3e71-3cbd-4995-a0d4-0c3b8974ef15": {
-            "nodeId": "17ba3e71-3cbd-4995-a0d4-0c3b8974ef15",
-            "name": "Command",
-            "type": "artifact",
+          "252505b1-b1e2-4567-95da-cd01a0bb39f3": {
+            "nodeId": "252505b1-b1e2-4567-95da-cd01a0bb39f3",
+            "name": "Which Command?",
+            "type": "automated_decision",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
-              "input": {
-                "content": "{{[c89587c8-1f87-4f0c-9c45-4b1916a3c678].[command]}}"
-              },
-              "type": "markdown"
+              "defaultEdgeId": "099fa753-4993-4a08-b578-eaf6538102af",
+              "stepControlParams": [
+                {
+                  "edgeId": "099fa753-4993-4a08-b578-eaf6538102af",
+                  "expression": {},
+                  "expressionText": ""
+                },
+                {
+                  "edgeId": "5c075c64-7589-46e1-b05a-cc9c369f91c9",
+                  "expression": {
+                    "left": {
+                      "name": "4d650a86-639d-4f34-8920-52d3c954152b.message.first_word",
+                      "type": "variable"
+                    },
+                    "op": "=",
+                    "right": {
+                      "type": "literal",
+                      "value": "unblock-host"
+                    },
+                    "type": "binary"
+                  },
+                  "expressionText": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[message].[first_word]}} = \"unblock-host\""
+                }
+              ]
             },
             "defaultInputJSONSchema": null,
             "defaultOutputJSONSchema": null,
             "outputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
             "connectionType": "NONE"
           },
-          "40cadabe-71fa-4e45-8edb-3d375ae8c7bf": {
-            "nodeId": "40cadabe-71fa-4e45-8edb-3d375ae8c7bf",
-            "name": "Workflow Success Message Unblock ",
+          "3f170fd6-2826-45a7-856f-f19e80125d16": {
+            "nodeId": "3f170fd6-2826-45a7-856f-f19e80125d16",
+            "name": "Workflow Success Message Block",
             "type": "action_chatops",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "🚨  *Workflow Success*  🚨\n\nUnblocked: {{[83782ee6-5362-4b81-8902-9d4904c8ecd8].[content]}}\n\n*Workflow Complete*  ✅\n",
+                "message": ":white_check_mark: *Block Host Success* :white_check_mark:\n\nBlocked: `{{[634ba1d9-2e69-4adf-b15b-1c32b1559e4c].[$item]}}`\n\n",
                 "recipient": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[message].[channel]}}",
                 "thread_ts": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[timestamp]}}"
               }
@@ -346,6 +362,86 @@
             "chatOpsAppName": "slack",
             "chatOpsIdentifier": "post_message"
           },
+          "486fa158-42a6-45cc-9060-dc9e64f78ab1": {
+            "nodeId": "486fa158-42a6-45cc-9060-dc9e64f78ab1",
+            "name": "Remove Address Object from Group",
+            "type": "action",
+            "plugin": {
+              "name": "Palo Alto Firewall",
+              "slugVendor": "rapid7",
+              "slugName": "palo_alto_pan_os",
+              "slugVersion": "6.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/6.0.0/icon.png"
+            },
+            "identifier": "remove_address_object_from_group",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "address_object": "{{[d437ab08-6124-49f1-8450-541092718cdc].[address_objects].[0]}}",
+                "device_name": "localhost.localdomain",
+                "group": "ICON Block List",
+                "virtual_system": "vsys1"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "address_object": {
+                  "description": "The name of the address object to remove",
+                  "order": 1,
+                  "title": "Address Object",
+                  "type": "string"
+                },
+                "device_name": {
+                  "default": "localhost.localdomain",
+                  "description": "Device name",
+                  "order": 3,
+                  "title": "Device Name",
+                  "type": "string"
+                },
+                "group": {
+                  "description": "Group name",
+                  "order": 2,
+                  "title": "Group",
+                  "type": "string"
+                },
+                "virtual_system": {
+                  "default": "vsys1",
+                  "description": "Virtual system name",
+                  "order": 4,
+                  "title": "Virtual System Name",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "address_object",
+                "group",
+                "device_name",
+                "virtual_system"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "success": {
+                  "description": "Was operation successful",
+                  "order": 1,
+                  "title": "Success",
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "success"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
           "4d650a86-639d-4f34-8920-52d3c954152b": {
             "nodeId": "4d650a86-639d-4f34-8920-52d3c954152b",
             "name": "Slack Trigger",
@@ -354,12 +450,12 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "matchChannel": "",
+                "matchChannel": "change_me",
                 "matchText": "block-host.*|unblock-host.*",
                 "type": "any"
               }
             },
-            "triggerId": "5a971cde-b970-479b-8cec-34699ad761af",
+            "triggerId": "098bc73d-62df-461c-8b61-dcff1ab51ae6",
             "defaultInputJSONSchema": {
               "properties": {
                 "matchChannel": {
@@ -395,6 +491,117 @@
             },
             "defaultOutputJSONSchema": {
               "definitions": {
+                "hashes": {
+                  "properties": {
+                    "md5_hashes": {
+                      "description": "MD5 hashes found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 1,
+                      "title": "MD5 Hashes",
+                      "type": "array"
+                    },
+                    "sha1_hashes": {
+                      "description": "SHA1 hashes found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "SHA1 Hashes",
+                      "type": "array"
+                    },
+                    "sha256_hashes": {
+                      "description": "SHA256 hashes found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 3,
+                      "title": "SHA256 Hashes",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Hashes",
+                  "type": "object"
+                },
+                "indicators": {
+                  "properties": {
+                    "domains": {
+                      "description": "Domains found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 1,
+                      "title": "Domains",
+                      "type": "array"
+                    },
+                    "email_addresses": {
+                      "description": "Email addresses found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 3,
+                      "title": "Email Addresses",
+                      "type": "array"
+                    },
+                    "hashes": {
+                      "$ref": "#/definitions/hashes",
+                      "description": "Hashes found within the message",
+                      "order": 4,
+                      "title": "Hashes"
+                    },
+                    "ip_addresses": {
+                      "$ref": "#/definitions/ip_addresses",
+                      "description": "IP addresses found within the message",
+                      "order": 6,
+                      "title": "IP Addresses"
+                    },
+                    "mac_addresses": {
+                      "description": "MAC addresses found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 5,
+                      "title": "MAC Addresses",
+                      "type": "array"
+                    },
+                    "urls": {
+                      "description": "URLs found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "URLs",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Indicators",
+                  "type": "object"
+                },
+                "ip_addresses": {
+                  "properties": {
+                    "ipv4_addresses": {
+                      "description": "IPv4 addresses found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 1,
+                      "title": "IPv4 Addresses",
+                      "type": "array"
+                    },
+                    "ipv6_addresses": {
+                      "description": "IPv6 addresses found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "IPv6 Addresses",
+                      "type": "array"
+                    }
+                  },
+                  "title": "IP Addresses",
+                  "type": "object"
+                },
                 "message": {
                   "properties": {
                     "channel": {
@@ -408,6 +615,18 @@
                       "order": 4,
                       "title": "Channel ID",
                       "type": "string"
+                    },
+                    "first_word": {
+                      "description": "First word of the message, for example a chat command (ignoring mentions)",
+                      "order": 5,
+                      "title": "First Word",
+                      "type": "string"
+                    },
+                    "indicators": {
+                      "$ref": "#/definitions/indicators",
+                      "description": "Potential threat indicators found within the message",
+                      "order": 6,
+                      "title": "Indicators"
                     },
                     "text": {
                       "description": "Text",
@@ -473,16 +692,34 @@
             "chatOpsAppName": "slack",
             "chatOpsIdentifier": "message"
           },
-          "6dcb8377-8bd3-4e33-ba92-49e4cf101baa": {
-            "nodeId": "6dcb8377-8bd3-4e33-ba92-49e4cf101baa",
-            "name": "Workflow Failed Message",
+          "4f830145-6dd0-4712-8feb-9aba7d5cc042": {
+            "nodeId": "4f830145-6dd0-4712-8feb-9aba7d5cc042",
+            "name": "Unblock Host Artifact2",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "Unblock Host Command Received"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "59de03bc-ff23-4ec8-bc3f-579deb153568": {
+            "nodeId": "59de03bc-ff23-4ec8-bc3f-579deb153568",
+            "name": "Command Message Received",
             "type": "action_chatops",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "*Workflow Failed*\n\nCould not find host \"{{[83782ee6-5362-4b81-8902-9d4904c8ecd8].[content]}}\" in block list\n\nMore information can be found here: \n{{[$job].[URL]}}\n\n*Workflow Failed* ❗",
+                "message": ":rocket: *Starting Workflow* :rocket:",
                 "recipient": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[message].[channel]}}",
                 "thread_ts": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[timestamp]}}"
               }
@@ -547,406 +784,25 @@
             "chatOpsAppName": "slack",
             "chatOpsIdentifier": "post_message"
           },
-          "786cbab2-9f35-44f1-b2e9-a2c236cb5a37": {
-            "nodeId": "786cbab2-9f35-44f1-b2e9-a2c236cb5a37",
-            "name": "Remove Address Object from Group",
-            "type": "action",
-            "plugin": {
-              "name": "Palo Alto Firewall",
-              "slugVendor": "rapid7",
-              "slugName": "palo_alto_pan_os",
-              "slugVersion": "6.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/5.1.1/icon.png"
-            },
-            "identifier": "remove_address_object_from_group",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "address_object": "{{[8c18b523-d755-46d0-a37d-a3caf41e4b78].[address_objects].[0]}}",
-                "device_name": "localhost.localdomain",
-                "group": "ICON Block List",
-                "virtual_system": "vsys1"
-              }
-            },
-            "defaultInputJSONSchema": {
-              "properties": {
-                "address_object": {
-                  "description": "The name of the address object to remove",
-                  "order": 1,
-                  "title": "Address Object",
-                  "type": "string"
-                },
-                "device_name": {
-                  "default": "localhost.localdomain",
-                  "description": "Device name",
-                  "order": 3,
-                  "title": "Device Name",
-                  "type": "string"
-                },
-                "group": {
-                  "description": "Group name",
-                  "order": 2,
-                  "title": "Group",
-                  "type": "string"
-                },
-                "virtual_system": {
-                  "default": "vsys1",
-                  "description": "Virtual system name",
-                  "order": 4,
-                  "title": "Virtual System Name",
-                  "type": "string"
-                }
-              },
-              "required": [
-                "group",
-                "device_name",
-                "virtual_system",
-                "address_object"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultOutputJSONSchema": {
-              "properties": {
-                "success": {
-                  "description": "Was operation successful",
-                  "order": 1,
-                  "title": "Success",
-                  "type": "boolean"
-                }
-              },
-              "required": [
-                "success"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "outputJSONSchema": null,
-            "defaultImageData": "",
-            "connectionType": "CONNECTION"
-          },
-          "7b2bd280-4565-4095-af97-de154b4426bf": {
-            "nodeId": "7b2bd280-4565-4095-af97-de154b4426bf",
-            "name": "Block Host Command Received",
-            "type": "artifact",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "content": "Block Host Command Received"
-              },
-              "type": "markdown"
-            },
-            "defaultInputJSONSchema": null,
-            "defaultOutputJSONSchema": null,
-            "outputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
-            "connectionType": "NONE"
-          },
-          "83782ee6-5362-4b81-8902-9d4904c8ecd8": {
-            "nodeId": "83782ee6-5362-4b81-8902-9d4904c8ecd8",
-            "name": "Host",
-            "type": "artifact",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "content": "{{[c89587c8-1f87-4f0c-9c45-4b1916a3c678].[host]}}"
-              },
-              "type": "markdown"
-            },
-            "defaultInputJSONSchema": null,
-            "defaultOutputJSONSchema": null,
-            "outputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
-            "connectionType": "NONE"
-          },
-          "85241969-7636-4ddf-ab00-6bd220c28e51": {
-            "nodeId": "85241969-7636-4ddf-ab00-6bd220c28e51",
-            "name": "Create Network Object",
-            "type": "action",
-            "plugin": {
-              "name": "Palo Alto Firewall",
-              "slugVendor": "rapid7",
-              "slugName": "palo_alto_pan_os",
-              "slugVersion": "6.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/5.1.1/icon.png"
-            },
-            "identifier": "set_address_object",
-            "continueOnFailure": true,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "address": "{{[83782ee6-5362-4b81-8902-9d4904c8ecd8].[content]}}",
-                "address_object": "{{[83782ee6-5362-4b81-8902-9d4904c8ecd8].[content]}}",
-                "description": "InsightConnect Created Address Object",
-                "tags": "",
-                "whitelist": [], 
-                "skip_rfc1918": true
-              }
-            },
-            "defaultInputJSONSchema": {
-              "properties": {
-                "address": {
-                  "description": "The IP address, network CIDR, or FQDN e.g. 192.168.1.1, 192.168.1.0/24, google.com google.com",
-                  "order": 1,
-                  "title": "Address",
-                  "type": "string"
-                },
-                "address_object": {
-                  "description": "The name of the address object",
-                  "order": 2,
-                  "title": "Address Object",
-                  "type": "string"
-                },
-                "description": {
-                  "description": "A description for the address object",
-                  "order": 3,
-                  "title": "Description",
-                  "type": "string"
-                },
-                "tags": {
-                  "description": "Tags for the address object. Use commas to separate multiple tags",
-                  "order": 4,
-                  "title": "Tags",
-                  "type": "string"
-                },
-                "whitelist": {
-                  "description": "This list contains a set of network objects that should not be blocked. This can include IPs, CIDR notation, or domains. It can not include an IP range (such as 10.0.0.0-10.0.0.10)",
-                  "items": {
-                    "type": "string"
-                  },
-                  "order": 5,
-                  "title": "Whitelist",
-                  "type": "array"
-                }
-              },
-              "required": [
-                "address",
-                "address_object"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultOutputJSONSchema": {
-              "properties": {
-                "code": {
-                  "description": "Response code from the firewall",
-                  "order": 2,
-                  "title": "Code",
-                  "type": "string"
-                },
-                "message": {
-                  "description": "A message with more detail about the status",
-                  "order": 3,
-                  "title": "Message",
-                  "type": "string"
-                },
-                "status": {
-                  "description": "The status of the requested operation e.g. success, error, etc",
-                  "order": 1,
-                  "title": "Status",
-                  "type": "string"
-                }
-              },
-              "title": "Variables",
-              "type": "object"
-            },
-            "outputJSONSchema": null,
-            "defaultImageData": "",
-            "connectionType": "CONNECTION"
-          },
-          "8c18b523-d755-46d0-a37d-a3caf41e4b78": {
-            "nodeId": "8c18b523-d755-46d0-a37d-a3caf41e4b78",
-            "name": "Check if IP in Group",
-            "type": "action",
-            "plugin": {
-              "name": "Palo Alto Firewall",
-              "slugVendor": "rapid7",
-              "slugName": "palo_alto_pan_os",
-              "slugVersion": "6.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/5.1.1/icon.png"
-            },
-            "identifier": "check_if_address_object_in_group",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "address": "{{[83782ee6-5362-4b81-8902-9d4904c8ecd8].[content]}}",
-                "device_name": "localhost.localdomain",
-                "enable_search": true,
-                "group": "ICON Block List",
-                "virtual_system": "vsys1"
-              }
-            },
-            "defaultInputJSONSchema": {
-              "properties": {
-                "address": {
-                  "description": "The Address Object name to check. If Enable Search is set to true then we search the addresses (IP, CIDR, doman) within the address object instead of matching the name",
-                  "order": 2,
-                  "title": "Address",
-                  "type": "string"
-                },
-                "device_name": {
-                  "default": "localhost.localdomain",
-                  "description": "Device name",
-                  "order": 4,
-                  "title": "Device Name",
-                  "type": "string"
-                },
-                "enable_search": {
-                  "default": false,
-                  "description": "When enabled, the Address input will accept a IP, CIDR, or domain name to search across the available Address Objects in the system. This is useful when you don’t know the Address Object by its name",
-                  "order": 3,
-                  "title": "Enable Search",
-                  "type": "boolean"
-                },
-                "group": {
-                  "description": "Group name",
-                  "order": 1,
-                  "title": "Group",
-                  "type": "string"
-                },
-                "virtual_system": {
-                  "default": "vsys1",
-                  "description": "Virtual system name",
-                  "order": 5,
-                  "title": "Virtual System Name",
-                  "type": "string"
-                }
-              },
-              "required": [
-                "enable_search",
-                "device_name",
-                "virtual_system",
-                "group",
-                "address"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultOutputJSONSchema": {
-              "properties": {
-                "address_objects": {
-                  "description": "The names of the address objects that match or contain address",
-                  "items": {
-                    "type": "string"
-                  },
-                  "order": 2,
-                  "title": "Address Objects",
-                  "type": "array"
-                },
-                "found": {
-                  "description": "Was address found in group",
-                  "order": 1,
-                  "title": "Found",
-                  "type": "boolean"
-                }
-              },
-              "required": [
-                "found"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "outputJSONSchema": null,
-            "defaultImageData": "",
-            "connectionType": "CONNECTION"
-          },
-          "8d029a16-4df5-48a4-a2b1-3ca98ccb4cef": {
-            "nodeId": "8d029a16-4df5-48a4-a2b1-3ca98ccb4cef",
-            "name": "Workflow Success Message Block",
-            "type": "action_chatops",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "attachments": [],
-                "message": "🚨  *Workflow Success* 🚨\n\nBlocked: {{[83782ee6-5362-4b81-8902-9d4904c8ecd8].[content]}}\n\n*Workflow Complete*  ✅\n\n",
-                "recipient": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[message].[channel]}}",
-                "thread_ts": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[timestamp]}}"
-              }
-            },
-            "defaultInputJSONSchema": {
-              "properties": {
-                "attachments": {
-                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
-                  "items": {
-                    "type": "object"
-                  },
-                  "order": 4,
-                  "title": "Attachments",
-                  "type": "array"
-                },
-                "message": {
-                  "description": "Message to send",
-                  "order": 3,
-                  "title": "Message",
-                  "type": "string"
-                },
-                "recipient": {
-                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
-                  "order": 1,
-                  "title": "Enter #channel or @username",
-                  "type": "string"
-                },
-                "thread_ts": {
-                  "description": "Select timestamp output variable from parent message step",
-                  "order": 2,
-                  "title": "To post in a thread, select parent message timestamp",
-                  "type": "string"
-                }
-              },
-              "required": [
-                "recipient"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultOutputJSONSchema": {
-              "properties": {
-                "channel_id": {
-                  "description": "ChannelID of successful message",
-                  "order": 1,
-                  "title": "Channel ID",
-                  "type": "string"
-                },
-                "timestamp": {
-                  "description": "Timestamp of successful message",
-                  "order": 2,
-                  "title": "Timestamp",
-                  "type": "string"
-                }
-              },
-              "title": "Variables",
-              "type": "object"
-            },
-            "outputJSONSchema": null,
-            "defaultImageData": "",
-            "connectionType": "NONE",
-            "chatOpsAppName": "slack",
-            "chatOpsIdentifier": "post_message"
-          },
-          "95c927b8-9dba-4fb0-9c4c-882501926cea": {
-            "nodeId": "95c927b8-9dba-4fb0-9c4c-882501926cea",
-            "name": "Is IP in Group",
+          "5c03da19-5012-4bf4-bddd-e8e1ac58afd0": {
+            "nodeId": "5c03da19-5012-4bf4-bddd-e8e1ac58afd0",
+            "name": "Is IP in Group?",
             "type": "automated_decision",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
-              "defaultEdgeId": "b5909a47-f97e-4ca1-93b7-7750509a046a",
+              "defaultEdgeId": "e4b6a364-09bd-4cbc-aedf-0ade1aeeb6cf",
               "stepControlParams": [
                 {
-                  "edgeId": "e1d845ed-6ad1-493a-9275-a822cb4e6ba2",
+                  "edgeId": "4aaf1741-9541-4081-8691-d4b4fc5e9bcc",
                   "expression": {
-                    "name": "8c18b523-d755-46d0-a37d-a3caf41e4b78.found",
+                    "name": "d437ab08-6124-49f1-8450-541092718cdc.found",
                     "type": "variable"
                   },
-                  "expressionText": "{{[8c18b523-d755-46d0-a37d-a3caf41e4b78].[found]}}"
+                  "expressionText": "{{[d437ab08-6124-49f1-8450-541092718cdc].[found]}}"
                 },
                 {
-                  "edgeId": "b5909a47-f97e-4ca1-93b7-7750509a046a",
+                  "edgeId": "e4b6a364-09bd-4cbc-aedf-0ade1aeeb6cf",
                   "expression": {},
                   "expressionText": ""
                 }
@@ -958,8 +814,30 @@
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
             "connectionType": "NONE"
           },
-          "983495e5-68d4-4145-949c-51c509e0d6c4": {
-            "nodeId": "983495e5-68d4-4145-949c-51c509e0d6c4",
+          "634ba1d9-2e69-4adf-b15b-1c32b1559e4c": {
+            "nodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
+            "name": "Block Host Loop",
+            "type": "loop",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "customOutput": [],
+              "innerEdgeId": "3c5f37c3-4f39-43ca-ade6-9e3861055474",
+              "nextEdgeId": "7796023e-7fd6-44c8-92fc-b4755f0b0831",
+              "repeatVariable": "{{[71640fb0-fd89-4e3d-b356-dd502ae96c9b].[combined_array]}}"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": {
+              "properties": {},
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/loop.svg",
+            "connectionType": "NONE"
+          },
+          "66d66255-234a-42e3-9aa5-11d0cac8fc35": {
+            "nodeId": "66d66255-234a-42e3-9aa5-11d0cac8fc35",
             "name": "Add Object to Group",
             "type": "action",
             "plugin": {
@@ -967,14 +845,15 @@
               "slugVendor": "rapid7",
               "slugName": "palo_alto_pan_os",
               "slugVersion": "6.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/5.1.1/icon.png"
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/6.0.0/icon.png"
             },
             "identifier": "add_address_object_to_group",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
-                "address_object": "{{[83782ee6-5362-4b81-8902-9d4904c8ecd8].[content]}}",
+                "address_object": "{{[634ba1d9-2e69-4adf-b15b-1c32b1559e4c].[$item]}}",
                 "device_name": "localhost.localdomain",
                 "group": "ICON Block List",
                 "virtual_system": "vsys1"
@@ -1047,16 +926,117 @@
             "defaultImageData": "",
             "connectionType": "CONNECTION"
           },
-          "b4c8d5a0-88b7-480c-b8ca-f436d2df722d": {
-            "nodeId": "b4c8d5a0-88b7-480c-b8ca-f436d2df722d",
-            "name": "Workflow Starting Message",
+          "71640fb0-fd89-4e3d-b356-dd502ae96c9b": {
+            "nodeId": "71640fb0-fd89-4e3d-b356-dd502ae96c9b",
+            "name": "Combine Indicators",
+            "type": "action",
+            "plugin": {
+              "name": "Type Converter",
+              "slugVendor": "rapid7",
+              "slugName": "type_converter",
+              "slugVersion": "1.6.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/type_converter/1.6.0/icon.png"
+            },
+            "identifier": "combine_arrays",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "array1": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[message].[indicators].[ip_addresses].[ipv4_addresses]}}",
+                "array2": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[message].[indicators].[ip_addresses].[ipv6_addresses]}}",
+                "array3": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[message].[indicators].[domains]}}",
+                "array4": [],
+                "array5": []
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "array1": {
+                  "description": "First array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "Array1",
+                  "type": "array"
+                },
+                "array2": {
+                  "description": "Second array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "Array2",
+                  "type": "array"
+                },
+                "array3": {
+                  "description": "Third array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 3,
+                  "title": "Array3",
+                  "type": "array"
+                },
+                "array4": {
+                  "description": "Fourth array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 4,
+                  "title": "Array4",
+                  "type": "array"
+                },
+                "array5": {
+                  "description": "Fifth array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 5,
+                  "title": "Array5",
+                  "type": "array"
+                }
+              },
+              "required": [
+                "array1",
+                "array2"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "combined_array": {
+                  "description": "Combined array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "Combined Array",
+                  "type": "array"
+                }
+              },
+              "required": [
+                "combined_array"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR"
+          },
+          "83a8e7c1-1f97-4467-b67c-9f1fbc189df1": {
+            "nodeId": "83a8e7c1-1f97-4467-b67c-9f1fbc189df1",
+            "name": "Workflow Complete Message",
             "type": "action_chatops",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "*Workflow Starting*\n\nCommand: {{[17ba3e71-3cbd-4995-a0d4-0c3b8974ef15].[content]}}\nHost: {{[83782ee6-5362-4b81-8902-9d4904c8ecd8].[content]}}\n\n",
+                "message": ":rocket: *Workflow Complete* :rocket:",
                 "recipient": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[message].[channel]}}",
                 "thread_ts": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[timestamp]}}"
               }
@@ -1121,152 +1101,369 @@
             "chatOpsAppName": "slack",
             "chatOpsIdentifier": "post_message"
           },
-          "c4a76c43-bac4-45ae-8ec3-65cec21fef13": {
-            "nodeId": "c4a76c43-bac4-45ae-8ec3-65cec21fef13",
-            "name": "Message Received",
-            "type": "artifact",
+          "9986ec6b-8acf-4556-b100-4b64876ec273": {
+            "nodeId": "9986ec6b-8acf-4556-b100-4b64876ec273",
+            "name": "Workflow Success Message Unblock",
+            "type": "action_chatops",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[message]}}"
-              },
-              "type": "markdown"
-            },
-            "defaultInputJSONSchema": null,
-            "defaultOutputJSONSchema": null,
-            "outputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
-            "connectionType": "NONE"
-          },
-          "c89587c8-1f87-4f0c-9c45-4b1916a3c678": {
-            "nodeId": "c89587c8-1f87-4f0c-9c45-4b1916a3c678",
-            "name": "Parse Slack Command",
-            "type": "action",
-            "plugin": {
-              "name": "Python 3 Script",
-              "slugVendor": "rapid7",
-              "slugName": "python_3_script",
-              "slugVersion": "2.0.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/python_3_script/2.0.1/icon.png"
-            },
-            "identifier": "run",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "function": "def run(params={}):\n\n    # Sometimes Slack will give us email in their linked form:\n    # <mailto:user@example.com>\n    # or\n    # <http://www.exmaple.com|example.com>\n    def parse_slack_tags(email):\n\n        if email.startswith(\"<\"):\n            # mailto link\n            if \"mailto:\" in email:\n                split_email = email.split(\":\")[1]\n                if \"|\" in split_email:\n                    return split_email.split(\"|\")[0]\n                return split_email\n\n            # http link\n            if \"http:\" in email:\n                split_email = email.split(\"|\")[1]\n                split_email = split_email.rstrip(\">\")\n                return split_email\n\n        return email\n\n    import shlex\n    input = params.get(\"input\")\n\n    # Sometimes slack gives us unicode spaces\n    input = input.replace(u'\\xa0', u' ')\n\n    # split our args\n    args = shlex.split(input)\n\n    # if you @ the bot, you will get the bot ID first in the message\n    # example: <asdfasdf> block_host 1.1.1.1\n    # a direct message will look like this\n    # block_host 1.1.1.1\n    args_count = len(args)\n    if args_count == 2:\n        host = parse_slack_tags(args[1])\n        command = parse_slack_tags(args[0])\n    else:\n        host = parse_slack_tags(args[2])\n        command = parse_slack_tags(args[1])\n\n\n    args_for_block_host = {\n        \"host\": host,\n        \"command\": command\n    }\n\n    return(args_for_block_host)",
-                "input": {
-                  "input": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[message].[text]}}"
-                }
+                "attachments": [],
+                "message": ":white_check_mark:  *Unblock Host Success*  :white_check_mark:\n\nUnblocked: `{{[634ba1d9-2e69-4adf-b15b-1c32b1559e4c].[$item]}}`\n",
+                "recipient": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[message].[channel]}}",
+                "thread_ts": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[timestamp]}}"
               }
             },
             "defaultInputJSONSchema": {
               "properties": {
-                "function": {
-                  "default": "def run(params={}):\\n    return {}",
-                  "description": "Function definition. Must be named `run`. Accepts the `input` object as params. Returns the dict as output",
-                  "displayType": "python",
-                  "format": "python",
-                  "order": 1,
-                  "title": "Function",
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 4,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 3,
+                  "title": "Message",
                   "type": "string"
                 },
-                "input": {
-                  "description": "Input object to be passed as `params={}` to the `run` function",
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                },
+                "thread_ts": {
+                  "description": "Select timestamp output variable from parent message step",
                   "order": 2,
-                  "title": "Input",
-                  "type": "object"
+                  "title": "To post in a thread, select parent message timestamp",
+                  "type": "string"
                 }
               },
+              "required": [
+                "recipient"
+              ],
               "title": "Variables",
               "type": "object"
             },
             "defaultOutputJSONSchema": {
               "properties": {
-                "result1": {
-                  "description": "Sample output result1 (delete or edit)",
+                "channel_id": {
+                  "description": "ChannelID of successful message",
                   "order": 1,
-                  "title": "Result1",
+                  "title": "Channel ID",
                   "type": "string"
                 },
-                "result2": {
-                  "description": "Sample output result2 (delete or edit)",
+                "timestamp": {
+                  "description": "Timestamp of successful message",
                   "order": 2,
-                  "title": "Result2",
+                  "title": "Timestamp",
                   "type": "string"
                 }
               },
               "title": "Variables",
               "type": "object"
             },
-            "outputJSONSchema": {
-              "definitions": {},
-              "properties": {
-                "command": {
-                  "type": "string"
-                },
-                "host": {
-                  "type": "string"
-                }
-              },
-              "title": "Variables",
-              "type": "object"
-            },
+            "outputJSONSchema": null,
             "defaultImageData": "",
-            "connectionType": "CONNECTION"
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
           },
-          "e4ea28d6-006e-40fc-8a79-32f290e754c3": {
-            "nodeId": "e4ea28d6-006e-40fc-8a79-32f290e754c3",
-            "name": "Type of command",
-            "type": "automated_decision",
+          "ce6e79d3-239d-4c67-ba70-f690962e56a0": {
+            "nodeId": "ce6e79d3-239d-4c67-ba70-f690962e56a0",
+            "name": "Workflow Failed Message",
+            "type": "action_chatops",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
-              "defaultEdgeId": "3d13e6b2-5096-450c-8ad5-ef27a0aefcfb",
-              "stepControlParams": [
-                {
-                  "edgeId": "3d13e6b2-5096-450c-8ad5-ef27a0aefcfb",
-                  "expression": {},
-                  "expressionText": ""
-                },
-                {
-                  "edgeId": "8bf59ba4-7dca-454a-b2e4-48c8ca656983",
-                  "expression": {
-                    "left": {
-                      "name": "17ba3e71-3cbd-4995-a0d4-0c3b8974ef15.content",
-                      "type": "variable"
-                    },
-                    "op": "=",
-                    "right": {
-                      "type": "literal",
-                      "value": "unblock-host"
-                    },
-                    "type": "binary"
-                  },
-                  "expressionText": "{{[17ba3e71-3cbd-4995-a0d4-0c3b8974ef15].[content]}} = \"unblock-host\""
-                }
-              ]
+              "input": {
+                "attachments": [],
+                "message": "❗*Unblock Failed*❗\n\nCould not find host `{{[634ba1d9-2e69-4adf-b15b-1c32b1559e4c].[$item]}}` in block list\n\nMore information can be found here: \n{{[$job].[URL]}}\n",
+                "recipient": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[message].[channel]}}",
+                "thread_ts": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[timestamp]}}"
+              }
             },
-            "defaultInputJSONSchema": null,
-            "defaultOutputJSONSchema": null,
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 4,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 3,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                },
+                "thread_ts": {
+                  "description": "Select timestamp output variable from parent message step",
+                  "order": 2,
+                  "title": "To post in a thread, select parent message timestamp",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
             "outputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
-            "connectionType": "NONE"
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
+          },
+          "d437ab08-6124-49f1-8450-541092718cdc": {
+            "nodeId": "d437ab08-6124-49f1-8450-541092718cdc",
+            "name": "Check if IP in Group",
+            "type": "action",
+            "plugin": {
+              "name": "Palo Alto Firewall",
+              "slugVendor": "rapid7",
+              "slugName": "palo_alto_pan_os",
+              "slugVersion": "6.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/6.0.0/icon.png"
+            },
+            "identifier": "check_if_address_object_in_group",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "address": "{{[634ba1d9-2e69-4adf-b15b-1c32b1559e4c].[$item]}}",
+                "device_name": "localhost.localdomain",
+                "enable_search": true,
+                "group": "ICON Block List",
+                "virtual_system": "vsys1"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "address": {
+                  "description": "The Address Object name to check. If Enable Search is set to true then we search the addresses (IP, CIDR, domain) within the address object instead of matching the name",
+                  "order": 2,
+                  "title": "Address",
+                  "type": "string"
+                },
+                "device_name": {
+                  "default": "localhost.localdomain",
+                  "description": "Device name",
+                  "order": 4,
+                  "title": "Device Name",
+                  "type": "string"
+                },
+                "enable_search": {
+                  "default": false,
+                  "description": "When enabled, the Address input will accept a IP, CIDR, or domain name to search across the available Address Objects in the system. This is useful when you don’t know the Address Object by its name",
+                  "order": 3,
+                  "title": "Enable Search",
+                  "type": "boolean"
+                },
+                "group": {
+                  "description": "Group name",
+                  "order": 1,
+                  "title": "Group",
+                  "type": "string"
+                },
+                "virtual_system": {
+                  "default": "vsys1",
+                  "description": "Virtual system name",
+                  "order": 5,
+                  "title": "Virtual System Name",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "enable_search",
+                "device_name",
+                "virtual_system",
+                "group",
+                "address"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "address_objects": {
+                  "description": "The names of the address objects that match or contain address",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "Address Objects",
+                  "type": "array"
+                },
+                "found": {
+                  "description": "Was address found in group",
+                  "order": 1,
+                  "title": "Found",
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "found"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "d5b71fc2-89a4-4e45-96dc-b89521e10663": {
+            "nodeId": "d5b71fc2-89a4-4e45-96dc-b89521e10663",
+            "name": "Create Network Object",
+            "type": "action",
+            "plugin": {
+              "name": "Palo Alto Firewall",
+              "slugVendor": "rapid7",
+              "slugName": "palo_alto_pan_os",
+              "slugVersion": "6.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/6.0.0/icon.png"
+            },
+            "identifier": "set_address_object",
+            "continueOnFailure": true,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "address": "{{[634ba1d9-2e69-4adf-b15b-1c32b1559e4c].[$item]}}",
+                "address_object": "{{[634ba1d9-2e69-4adf-b15b-1c32b1559e4c].[$item]}}",
+                "description": "InsightConnect Created Address Object",
+                "skip_rfc1918": true,
+                "tags": "",
+                "whitelist": []
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "address": {
+                  "description": "The IP address, network CIDR, or FQDN e.g. 192.168.1.1, 192.168.1.0/24, google.com google.com",
+                  "order": 1,
+                  "title": "Address",
+                  "type": "string"
+                },
+                "address_object": {
+                  "description": "The name of the address object",
+                  "order": 2,
+                  "title": "Address Object",
+                  "type": "string"
+                },
+                "description": {
+                  "description": "A description for the address object",
+                  "order": 3,
+                  "title": "Description",
+                  "type": "string"
+                },
+                "skip_rfc1918": {
+                  "default": false,
+                  "description": "Skip private IP addresses as defined in RFC 1918",
+                  "order": 5,
+                  "title": "Skip RFC 1918 (Private) IP Addresses",
+                  "type": "boolean"
+                },
+                "tags": {
+                  "description": "Tags for the address object. Use commas to separate multiple tags",
+                  "order": 4,
+                  "title": "Tags",
+                  "type": "string"
+                },
+                "whitelist": {
+                  "description": "This list contains a set of network objects that should not be blocked. This can include IPs, CIDR notation, or domains. It can not include an IP range (such as 10.0.0.0-10.0.0.10)",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 6,
+                  "title": "Whitelist",
+                  "type": "array"
+                }
+              },
+              "required": [
+                "skip_rfc1918",
+                "address",
+                "address_object"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "code": {
+                  "description": "Response code from the firewall",
+                  "order": 2,
+                  "title": "Code",
+                  "type": "string"
+                },
+                "message": {
+                  "description": "A message with more detail about the status",
+                  "order": 3,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "status": {
+                  "description": "The status of the requested operation e.g. success, error, etc",
+                  "order": 1,
+                  "title": "Status",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
           }
         },
         "tags": null,
-        "humanCostSeconds": 0,
-        "humanCostDisplayUnit": ""
+        "humanCostSeconds": 300,
+        "humanCostDisplayUnit": "minutes"
       }
     ],
     "triggers": [
       {
-        "id": "5a971cde-b970-479b-8cec-34699ad761af",
+        "id": "098bc73d-62df-461c-8b61-dcff1ab51ae6",
         "name": "Slack Trigger",
         "description": "",
         "input": {
-          "matchChannel": "",
+          "matchChannel": "change_me",
           "matchText": "block-host.*|unblock-host.*",
           "type": "any"
         },
@@ -1305,6 +1502,117 @@
         },
         "outputJsonSchema": {
           "definitions": {
+            "hashes": {
+              "properties": {
+                "md5_hashes": {
+                  "description": "MD5 hashes found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "MD5 Hashes",
+                  "type": "array"
+                },
+                "sha1_hashes": {
+                  "description": "SHA1 hashes found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "SHA1 Hashes",
+                  "type": "array"
+                },
+                "sha256_hashes": {
+                  "description": "SHA256 hashes found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 3,
+                  "title": "SHA256 Hashes",
+                  "type": "array"
+                }
+              },
+              "title": "Hashes",
+              "type": "object"
+            },
+            "indicators": {
+              "properties": {
+                "domains": {
+                  "description": "Domains found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "Domains",
+                  "type": "array"
+                },
+                "email_addresses": {
+                  "description": "Email addresses found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 3,
+                  "title": "Email Addresses",
+                  "type": "array"
+                },
+                "hashes": {
+                  "$ref": "#/definitions/hashes",
+                  "description": "Hashes found within the message",
+                  "order": 4,
+                  "title": "Hashes"
+                },
+                "ip_addresses": {
+                  "$ref": "#/definitions/ip_addresses",
+                  "description": "IP addresses found within the message",
+                  "order": 6,
+                  "title": "IP Addresses"
+                },
+                "mac_addresses": {
+                  "description": "MAC addresses found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 5,
+                  "title": "MAC Addresses",
+                  "type": "array"
+                },
+                "urls": {
+                  "description": "URLs found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "URLs",
+                  "type": "array"
+                }
+              },
+              "title": "Indicators",
+              "type": "object"
+            },
+            "ip_addresses": {
+              "properties": {
+                "ipv4_addresses": {
+                  "description": "IPv4 addresses found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "IPv4 Addresses",
+                  "type": "array"
+                },
+                "ipv6_addresses": {
+                  "description": "IPv6 addresses found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "IPv6 Addresses",
+                  "type": "array"
+                }
+              },
+              "title": "IP Addresses",
+              "type": "object"
+            },
             "message": {
               "properties": {
                 "channel": {
@@ -1318,6 +1626,18 @@
                   "order": 4,
                   "title": "Channel ID",
                   "type": "string"
+                },
+                "first_word": {
+                  "description": "First word of the message, for example a chat command (ignoring mentions)",
+                  "order": 5,
+                  "title": "First Word",
+                  "type": "string"
+                },
+                "indicators": {
+                  "$ref": "#/definitions/indicators",
+                  "description": "Potential threat indicators found within the message",
+                  "order": 6,
+                  "title": "Indicators"
                 },
                 "text": {
                   "description": "Text",
