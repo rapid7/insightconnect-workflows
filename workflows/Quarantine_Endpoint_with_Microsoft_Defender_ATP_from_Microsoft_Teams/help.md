@@ -36,7 +36,7 @@ Plugins utilized by workflow:
 |Plugin|Version|Count|
 |----|----|--------|
 |Microsoft Teams|2.2.0|5|
-|Microsoft Windows Defender ATP|4.4.0|2|
+|Microsoft Windows Defender ATP|4.4.1|2|
 
 ## Troubleshooting
 
