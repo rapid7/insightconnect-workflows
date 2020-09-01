@@ -22,11 +22,11 @@ This workflow is easy to test out for InsightIDR users who are new to InsightCon
 
 **This workflow requires an Insight Orchestrator and an API Key from VirusTotal!**
 
-If you have not yet deployed and activated an Orchestrator, then you'll need to either deploy the OVA or run the install script on a vanilla server. Start by visiting our Help docs here: https://docs.rapid7.com/insightconnect/install-and-activate-the-orchestrator
+If you have not yet deployed and activated an Orchestrator, then you'll need to either deploy the OVA or run the install script on a vanilla server. Start by [visiting our Help docs](https://docs.rapid7.com/insightconnect/install-and-activate-the-orchestrator).
 
 Once you have activated an Orchestrator, you'll need an API key from VirusTotal.
 
-1. Sign up for a free account here: https://www.virustotal.com/gui/join-us
+1. [Sign up for a free VirusTotal account](https://www.virustotal.com/gui/join-us)
 2. Log in and click on your user profile in the top right, then click on `API key`
 3. Copy your API key
 
