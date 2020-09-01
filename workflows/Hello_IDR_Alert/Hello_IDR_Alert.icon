@@ -1,0 +1,1197 @@
+{
+  "kom": {
+    "komandVersion": "1.60.2-0-g80196",
+    "komFileVersion": "2.0.0",
+    "exportedAt": "2020-08-31T21:24:19.158264742Z",
+    "workflowVersions": [
+      {
+        "name": "Hello IDR Alert",
+        "type": "runnable",
+        "version": "",
+        "description": "The Hello IDR Alert workflow is meant to introduce InsightIDR users to the InsightIDR User Behavior Analytics (UBA) Alert Trigger in InsightConnect and to help them run their first response workflow from an Investigation in InsightIDR.",
+        "graph": {
+          "edges": {
+            "4a847901-43f2-4d7a-a8ca-495fe8cac3e4": {
+              "id": "4a847901-43f2-4d7a-a8ca-495fe8cac3e4",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "1c857813-dc83-422e-84fc-46d619db4141",
+              "toNodeId": "a77ed7cc-0a20-40a0-8875-bea7433b64ee"
+            },
+            "be03afbd-e006-48eb-9bd7-ee15f639d1ce": {
+              "id": "be03afbd-e006-48eb-9bd7-ee15f639d1ce",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "a77ed7cc-0a20-40a0-8875-bea7433b64ee",
+              "toNodeId": ""
+            }
+          },
+          "nodes": {
+            "1c857813-dc83-422e-84fc-46d619db4141": {
+              "id": "1c857813-dc83-422e-84fc-46d619db4141",
+              "parentNodeId": ""
+            },
+            "a77ed7cc-0a20-40a0-8875-bea7433b64ee": {
+              "id": "a77ed7cc-0a20-40a0-8875-bea7433b64ee",
+              "parentNodeId": ""
+            }
+          }
+        },
+        "steps": {
+          "1c857813-dc83-422e-84fc-46d619db4141": {
+            "nodeId": "1c857813-dc83-422e-84fc-46d619db4141",
+            "name": "IDR Alert Trigger",
+            "type": "trigger",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "triggerId": "d77f84fe-a240-4e7e-a2f3-66a96e1b21e7",
+            "defaultInputJSONSchema": {
+              "definitions": {
+                "actor": {
+                  "properties": {
+                    "assets": {
+                      "description": "The assets that are part of the investigation",
+                      "items": {
+                        "$ref": "#/definitions/asset"
+                      },
+                      "order": 2,
+                      "title": "Assets",
+                      "type": "array"
+                    },
+                    "users": {
+                      "description": "The users that are part of the investigation",
+                      "items": {
+                        "$ref": "#/definitions/user"
+                      },
+                      "order": 1,
+                      "title": "Users",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Actor",
+                  "type": "object"
+                },
+                "asset": {
+                  "properties": {
+                    "assetId": {
+                      "description": "the ID of the asset",
+                      "order": 1,
+                      "title": "AssetId",
+                      "type": "string"
+                    },
+                    "fqdn": {
+                      "description": "The fully qualified domain name",
+                      "order": 3,
+                      "title": "Fqdn",
+                      "type": "string"
+                    },
+                    "shortname": {
+                      "description": "shortname of the asset",
+                      "order": 2,
+                      "title": "Shortname",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "shortname",
+                    "assetId"
+                  ],
+                  "title": "Asset",
+                  "type": "object"
+                },
+                "content": {
+                  "properties": {
+                    "domains": {
+                      "description": "A list of domains to check",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "Domains",
+                      "type": "array"
+                    },
+                    "ipAddresses": {
+                      "description": "A list of ip addresses to check",
+                      "items": {
+                        "$ref": "#/definitions/ipAddress"
+                      },
+                      "order": 3,
+                      "title": "IpAddresses",
+                      "type": "array"
+                    },
+                    "processes": {
+                      "description": "A list of processes to check",
+                      "items": {
+                        "$ref": "#/definitions/process"
+                      },
+                      "order": 4,
+                      "title": "Processes",
+                      "type": "array"
+                    },
+                    "urls": {
+                      "description": "A list of URLs to check",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 1,
+                      "title": "Urls",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Content",
+                  "type": "object"
+                },
+                "hash": {
+                  "properties": {
+                    "hash": {
+                      "description": "The actual hash",
+                      "order": 1,
+                      "title": "Hash",
+                      "type": "string"
+                    },
+                    "type": {
+                      "description": "The algorithm used to generate the hash",
+                      "order": 2,
+                      "title": "Type",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "hash",
+                    "type"
+                  ],
+                  "title": "Hash",
+                  "type": "object"
+                },
+                "ipAddress": {
+                  "properties": {
+                    "ip": {
+                      "description": "The raw IP",
+                      "order": 1,
+                      "title": "Ip",
+                      "type": "string"
+                    },
+                    "type": {
+                      "description": "Denotes if an IP is internal or external",
+                      "order": 2,
+                      "title": "Type",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "ip",
+                    "type"
+                  ],
+                  "title": "IpAddress",
+                  "type": "object"
+                },
+                "process": {
+                  "properties": {
+                    "assetId": {
+                      "description": "The asset id associated with the process",
+                      "order": 1,
+                      "title": "AssetId",
+                      "type": "string"
+                    },
+                    "cmdLine": {
+                      "description": "The raw value of the command line call used to invoke the process",
+                      "order": 5,
+                      "title": "CmdLine",
+                      "type": "string"
+                    },
+                    "hashes": {
+                      "description": "The list of hashes to check",
+                      "items": {
+                        "$ref": "#/definitions/hash"
+                      },
+                      "order": 3,
+                      "title": "Hashes",
+                      "type": "array"
+                    },
+                    "name": {
+                      "description": "The name of the process",
+                      "order": 4,
+                      "title": "Name",
+                      "type": "string"
+                    },
+                    "processId": {
+                      "description": "The PID from the running process on the asset",
+                      "order": 2,
+                      "title": "ProcessId",
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "assetId",
+                    "processId"
+                  ],
+                  "title": "Process",
+                  "type": "object"
+                },
+                "user": {
+                  "properties": {
+                    "distinguishedName": {
+                      "description": "The Active Directory distinguished name of the user",
+                      "order": 2,
+                      "title": "DistinguishedName",
+                      "type": "string"
+                    },
+                    "emails": {
+                      "description": "The email addresses associated with the user",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 3,
+                      "title": "Emails",
+                      "type": "array"
+                    },
+                    "name": {
+                      "description": "The name of the user, as '<firstname> <lastname>' if available, or account name otherwise",
+                      "order": 1,
+                      "title": "Name",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "emails"
+                  ],
+                  "title": "User",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "actors": {
+                  "$ref": "#/definitions/actor",
+                  "description": "The insightIDR actors that are part of the investigation",
+                  "order": 7,
+                  "title": "Actors"
+                },
+                "contents": {
+                  "$ref": "#/definitions/content",
+                  "description": "The contents to enrich",
+                  "order": 8,
+                  "title": "Contents"
+                },
+                "description": {
+                  "description": "The description of the alert",
+                  "order": 4,
+                  "title": "Description",
+                  "type": "string"
+                },
+                "investigationId": {
+                  "description": "The investigation id",
+                  "order": 6,
+                  "title": "InvestigationId",
+                  "type": "string"
+                },
+                "link": {
+                  "description": "The deep link to the investigation in insightIDR",
+                  "order": 5,
+                  "title": "Link",
+                  "type": "string"
+                },
+                "name": {
+                  "description": "The human-readable name of the alert",
+                  "order": 3,
+                  "title": "Name",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "The time the alert was triggered in ISO 8601 extended timestamp format",
+                  "order": 1,
+                  "title": "Timestamp",
+                  "type": "string"
+                },
+                "type": {
+                  "description": "The type of alert",
+                  "order": 2,
+                  "title": "Type",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "investigationId",
+                "actors",
+                "timestamp",
+                "type",
+                "name",
+                "description",
+                "link"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "actor": {
+                  "properties": {
+                    "assets": {
+                      "description": "The assets that are part of the investigation",
+                      "items": {
+                        "$ref": "#/definitions/asset"
+                      },
+                      "order": 2,
+                      "title": "Assets",
+                      "type": "array"
+                    },
+                    "users": {
+                      "description": "The users that are part of the investigation",
+                      "items": {
+                        "$ref": "#/definitions/user"
+                      },
+                      "order": 1,
+                      "title": "Users",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Actor",
+                  "type": "object"
+                },
+                "asset": {
+                  "properties": {
+                    "assetId": {
+                      "description": "the ID of the asset",
+                      "order": 1,
+                      "title": "AssetId",
+                      "type": "string"
+                    },
+                    "fqdn": {
+                      "description": "The fully qualified domain name",
+                      "order": 3,
+                      "title": "Fqdn",
+                      "type": "string"
+                    },
+                    "shortname": {
+                      "description": "shortname of the asset",
+                      "order": 2,
+                      "title": "Shortname",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "shortname",
+                    "assetId"
+                  ],
+                  "title": "Asset",
+                  "type": "object"
+                },
+                "content": {
+                  "properties": {
+                    "domains": {
+                      "description": "A list of domains to check",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "Domains",
+                      "type": "array"
+                    },
+                    "ipAddresses": {
+                      "description": "A list of ip addresses to check",
+                      "items": {
+                        "$ref": "#/definitions/ipAddress"
+                      },
+                      "order": 3,
+                      "title": "IpAddresses",
+                      "type": "array"
+                    },
+                    "processes": {
+                      "description": "A list of processes to check",
+                      "items": {
+                        "$ref": "#/definitions/process"
+                      },
+                      "order": 4,
+                      "title": "Processes",
+                      "type": "array"
+                    },
+                    "urls": {
+                      "description": "A list of URLs to check",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 1,
+                      "title": "Urls",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Content",
+                  "type": "object"
+                },
+                "hash": {
+                  "properties": {
+                    "hash": {
+                      "description": "The actual hash",
+                      "order": 1,
+                      "title": "Hash",
+                      "type": "string"
+                    },
+                    "type": {
+                      "description": "The algorithm used to generate the hash",
+                      "order": 2,
+                      "title": "Type",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "hash",
+                    "type"
+                  ],
+                  "title": "Hash",
+                  "type": "object"
+                },
+                "ipAddress": {
+                  "properties": {
+                    "ip": {
+                      "description": "The raw IP",
+                      "order": 1,
+                      "title": "Ip",
+                      "type": "string"
+                    },
+                    "type": {
+                      "description": "Denotes if an IP is internal or external",
+                      "order": 2,
+                      "title": "Type",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "ip",
+                    "type"
+                  ],
+                  "title": "IpAddress",
+                  "type": "object"
+                },
+                "process": {
+                  "properties": {
+                    "assetId": {
+                      "description": "The asset id associated with the process",
+                      "order": 1,
+                      "title": "AssetId",
+                      "type": "string"
+                    },
+                    "cmdLine": {
+                      "description": "The raw value of the command line call used to invoke the process",
+                      "order": 5,
+                      "title": "CmdLine",
+                      "type": "string"
+                    },
+                    "hashes": {
+                      "description": "The list of hashes to check",
+                      "items": {
+                        "$ref": "#/definitions/hash"
+                      },
+                      "order": 3,
+                      "title": "Hashes",
+                      "type": "array"
+                    },
+                    "name": {
+                      "description": "The name of the process",
+                      "order": 4,
+                      "title": "Name",
+                      "type": "string"
+                    },
+                    "processId": {
+                      "description": "The PID from the running process on the asset",
+                      "order": 2,
+                      "title": "ProcessId",
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "assetId",
+                    "processId"
+                  ],
+                  "title": "Process",
+                  "type": "object"
+                },
+                "user": {
+                  "properties": {
+                    "distinguishedName": {
+                      "description": "The Active Directory distinguished name of the user",
+                      "order": 2,
+                      "title": "DistinguishedName",
+                      "type": "string"
+                    },
+                    "emails": {
+                      "description": "The email addresses associated with the user",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 3,
+                      "title": "Emails",
+                      "type": "array"
+                    },
+                    "name": {
+                      "description": "The name of the user, as '<firstname> <lastname>' if available, or account name otherwise",
+                      "order": 1,
+                      "title": "Name",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "emails"
+                  ],
+                  "title": "User",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "actors": {
+                  "$ref": "#/definitions/actor",
+                  "description": "The insightIDR actors that are part of the investigation",
+                  "order": 7,
+                  "title": "Actors"
+                },
+                "contents": {
+                  "$ref": "#/definitions/content",
+                  "description": "The contents to enrich",
+                  "order": 8,
+                  "title": "Contents"
+                },
+                "description": {
+                  "description": "The description of the alert",
+                  "order": 4,
+                  "title": "Description",
+                  "type": "string"
+                },
+                "investigationId": {
+                  "description": "The investigation id",
+                  "order": 6,
+                  "title": "InvestigationId",
+                  "type": "string"
+                },
+                "link": {
+                  "description": "The deep link to the investigation in insightIDR",
+                  "order": 5,
+                  "title": "Link",
+                  "type": "string"
+                },
+                "name": {
+                  "description": "The human-readable name of the alert",
+                  "order": 3,
+                  "title": "Name",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "The time the alert was triggered in ISO 8601 extended timestamp format",
+                  "order": 1,
+                  "title": "Timestamp",
+                  "type": "string"
+                },
+                "type": {
+                  "description": "The type of alert",
+                  "order": 2,
+                  "title": "Type",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "investigationId",
+                "actors",
+                "timestamp",
+                "type",
+                "name",
+                "description",
+                "link"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/trigger-api-idr.svg",
+            "connectionType": "NONE"
+          },
+          "a77ed7cc-0a20-40a0-8875-bea7433b64ee": {
+            "nodeId": "a77ed7cc-0a20-40a0-8875-bea7433b64ee",
+            "name": "Alert Artifact",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "# The InsightIDR UBA Alert Trigger\n*Congratulations! You've successfully run a workflow using the InsightIDR User Behavior Analytics (UBA) Alert Trigger. This Artifact card will explain some of the variables you can use with this trigger. You can also view this information in InsightConnect on the Jobs page here: {{[$job].[URL]}}*\n\n## Standard Trigger Outputs\n* The IDR UBA Alert Trigger includes several outputs that will be present for any UBA alert\n* These trigger outputs may be used in Artifact cards like this and as inputs for subsequent workflow steps\n* The following variables will be present in every IDR UBA Alert:\n    * `name`: {{[1c857813-dc83-422e-84fc-46d619db4141].[name]}}\n    * `type`: {{[1c857813-dc83-422e-84fc-46d619db4141].[type]}}\n    * `timestamp`: {{[1c857813-dc83-422e-84fc-46d619db4141].[timestamp]}}\n    * `description`: {{[1c857813-dc83-422e-84fc-46d619db4141].[description]}}\n    * `link`: {{[1c857813-dc83-422e-84fc-46d619db4141].[link]}}\n    * `investigationId`: {{[1c857813-dc83-422e-84fc-46d619db4141].[investigationId]}}\n\n\n## Users\n* The `Users` array contains details of each User involved in the alert\n* Items from the `Users` array may be used in workflows that:\n    * Notify users of their involvement in a reported security incident via email, Slack, Teams, SMS, etc.\n    * Disable user accounts\n    * Reset user passwords\n* The `Users` array contains the following variables for each user  passed from the InsightIDR UBA Alert Trigger:\n    * `name`: {{[1c857813-dc83-422e-84fc-46d619db4141].[actors].[users].[0].[name]}}\n    * `distinguishedName`: {{[1c857813-dc83-422e-84fc-46d619db4141].[actors].[users].[0].[distinguishedName]}}\n    * `emails`: {{[1c857813-dc83-422e-84fc-46d619db4141].[actors].[users].[0].[emails]}}\n* In it's raw JSON format, the Users array looks like this:\n    * {{[1c857813-dc83-422e-84fc-46d619db4141].[actors].[users]}}\n\n*If there are no users in the Investigation, or no users are selected when running the workflow from the IDR investigation, then the Users array and all variables within it will be empty.*\n\n## Assets\n* The Assets array contains details of each asset involved in the alert\n* Items from the `Assets` array may be used in workflows that:\n    * Validate or correlate assets against a source of truth, such as Active Directory or a CMDB\n    * Quarantine assets using the Insight agent or third-party EDR solutions\n    * Stop vulnerable instances in cloud environments\n* The Assets array contains the following variables for each asset passed from the InsightIDR UBA Alert Trigger:\n    * `assetId` = {{[1c857813-dc83-422e-84fc-46d619db4141].[actors].[assets].[0].[assetId]}}\n    * `fqdn` = {{[1c857813-dc83-422e-84fc-46d619db4141].[actors].[assets].[0].[fqdn]}}\n    * `shortname` = {{[1c857813-dc83-422e-84fc-46d619db4141].[actors].[assets].[0].[shortname]}}\n* In it's raw JSON format, the Assets array looks like this:\n    * {{[1c857813-dc83-422e-84fc-46d619db4141].[actors].[assets]}}\n\n*If there are no assets in the Investigation, or no assets are selected when running the workflow from the IDR investigation, then the Assets array and all variables within it will be empty.*\n\n## Contents\n* The `Contents` array contains any indicators of compromise present in the alert\n* Items from the Contents array may be used in workflows that:\n    * Enrich indicators with third-party threat intelligence to validate a threat and collect additional intel on the threat actor\n    * Block malicious entities at the network or endpoint level\n    * Use sandboxes to visit and observe web destinations advertised in phishing campaigns\n\n* The `Contents` array contains the following variables:\n    * `urls`: {{[1c857813-dc83-422e-84fc-46d619db4141].[contents].[urls]}}\n    * `domains`: {{[1c857813-dc83-422e-84fc-46d619db4141].[contents].[domains]}}\n    * `processes`: {{[1c857813-dc83-422e-84fc-46d619db4141].[contents].[processes]}}\n    * `ipAddresses`: {{[1c857813-dc83-422e-84fc-46d619db4141].[contents].[ipAddresses]}}\n\n*If there are no indicators in the Investigation, or no indicators are selected when running the workflow from the IDR investigation, then the Contents array and all variables within it will be empty.*"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          }
+        },
+        "tags": null,
+        "humanCostSeconds": 0,
+        "humanCostDisplayUnit": "minutes"
+      }
+    ],
+    "triggers": [
+      {
+        "id": "d77f84fe-a240-4e7e-a2f3-66a96e1b21e7",
+        "name": "IDR Alert Trigger",
+        "description": "",
+        "input": null,
+        "inputJsonSchema": {
+          "definitions": {
+            "actor": {
+              "properties": {
+                "assets": {
+                  "description": "The assets that are part of the investigation",
+                  "items": {
+                    "$ref": "#/definitions/asset"
+                  },
+                  "order": 2,
+                  "title": "Assets",
+                  "type": "array"
+                },
+                "users": {
+                  "description": "The users that are part of the investigation",
+                  "items": {
+                    "$ref": "#/definitions/user"
+                  },
+                  "order": 1,
+                  "title": "Users",
+                  "type": "array"
+                }
+              },
+              "title": "Actor",
+              "type": "object"
+            },
+            "asset": {
+              "properties": {
+                "assetId": {
+                  "description": "the ID of the asset",
+                  "order": 1,
+                  "title": "AssetId",
+                  "type": "string"
+                },
+                "fqdn": {
+                  "description": "The fully qualified domain name",
+                  "order": 3,
+                  "title": "Fqdn",
+                  "type": "string"
+                },
+                "shortname": {
+                  "description": "shortname of the asset",
+                  "order": 2,
+                  "title": "Shortname",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "shortname",
+                "assetId"
+              ],
+              "title": "Asset",
+              "type": "object"
+            },
+            "content": {
+              "properties": {
+                "domains": {
+                  "description": "A list of domains to check",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "Domains",
+                  "type": "array"
+                },
+                "ipAddresses": {
+                  "description": "A list of ip addresses to check",
+                  "items": {
+                    "$ref": "#/definitions/ipAddress"
+                  },
+                  "order": 3,
+                  "title": "IpAddresses",
+                  "type": "array"
+                },
+                "processes": {
+                  "description": "A list of processes to check",
+                  "items": {
+                    "$ref": "#/definitions/process"
+                  },
+                  "order": 4,
+                  "title": "Processes",
+                  "type": "array"
+                },
+                "urls": {
+                  "description": "A list of URLs to check",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "Urls",
+                  "type": "array"
+                }
+              },
+              "title": "Content",
+              "type": "object"
+            },
+            "hash": {
+              "properties": {
+                "hash": {
+                  "description": "The actual hash",
+                  "order": 1,
+                  "title": "Hash",
+                  "type": "string"
+                },
+                "type": {
+                  "description": "The algorithm used to generate the hash",
+                  "order": 2,
+                  "title": "Type",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "hash",
+                "type"
+              ],
+              "title": "Hash",
+              "type": "object"
+            },
+            "ipAddress": {
+              "properties": {
+                "ip": {
+                  "description": "The raw IP",
+                  "order": 1,
+                  "title": "Ip",
+                  "type": "string"
+                },
+                "type": {
+                  "description": "Denotes if an IP is internal or external",
+                  "order": 2,
+                  "title": "Type",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "ip",
+                "type"
+              ],
+              "title": "IpAddress",
+              "type": "object"
+            },
+            "process": {
+              "properties": {
+                "assetId": {
+                  "description": "The asset id associated with the process",
+                  "order": 1,
+                  "title": "AssetId",
+                  "type": "string"
+                },
+                "cmdLine": {
+                  "description": "The raw value of the command line call used to invoke the process",
+                  "order": 5,
+                  "title": "CmdLine",
+                  "type": "string"
+                },
+                "hashes": {
+                  "description": "The list of hashes to check",
+                  "items": {
+                    "$ref": "#/definitions/hash"
+                  },
+                  "order": 3,
+                  "title": "Hashes",
+                  "type": "array"
+                },
+                "name": {
+                  "description": "The name of the process",
+                  "order": 4,
+                  "title": "Name",
+                  "type": "string"
+                },
+                "processId": {
+                  "description": "The PID from the running process on the asset",
+                  "order": 2,
+                  "title": "ProcessId",
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "assetId",
+                "processId"
+              ],
+              "title": "Process",
+              "type": "object"
+            },
+            "user": {
+              "properties": {
+                "distinguishedName": {
+                  "description": "The Active Directory distinguished name of the user",
+                  "order": 2,
+                  "title": "DistinguishedName",
+                  "type": "string"
+                },
+                "emails": {
+                  "description": "The email addresses associated with the user",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 3,
+                  "title": "Emails",
+                  "type": "array"
+                },
+                "name": {
+                  "description": "The name of the user, as '<firstname> <lastname>' if available, or account name otherwise",
+                  "order": 1,
+                  "title": "Name",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "emails"
+              ],
+              "title": "User",
+              "type": "object"
+            }
+          },
+          "properties": {
+            "actors": {
+              "$ref": "#/definitions/actor",
+              "description": "The insightIDR actors that are part of the investigation",
+              "order": 7,
+              "title": "Actors"
+            },
+            "contents": {
+              "$ref": "#/definitions/content",
+              "description": "The contents to enrich",
+              "order": 8,
+              "title": "Contents"
+            },
+            "description": {
+              "description": "The description of the alert",
+              "order": 4,
+              "title": "Description",
+              "type": "string"
+            },
+            "investigationId": {
+              "description": "The investigation id",
+              "order": 6,
+              "title": "InvestigationId",
+              "type": "string"
+            },
+            "link": {
+              "description": "The deep link to the investigation in insightIDR",
+              "order": 5,
+              "title": "Link",
+              "type": "string"
+            },
+            "name": {
+              "description": "The human-readable name of the alert",
+              "order": 3,
+              "title": "Name",
+              "type": "string"
+            },
+            "timestamp": {
+              "description": "The time the alert was triggered in ISO 8601 extended timestamp format",
+              "order": 1,
+              "title": "Timestamp",
+              "type": "string"
+            },
+            "type": {
+              "description": "The type of alert",
+              "order": 2,
+              "title": "Type",
+              "type": "string"
+            }
+          },
+          "required": [
+            "investigationId",
+            "actors",
+            "timestamp",
+            "type",
+            "name",
+            "description",
+            "link"
+          ],
+          "title": "Variables",
+          "type": "object"
+        },
+        "outputJsonSchema": {
+          "definitions": {
+            "actor": {
+              "properties": {
+                "assets": {
+                  "description": "The assets that are part of the investigation",
+                  "items": {
+                    "$ref": "#/definitions/asset"
+                  },
+                  "order": 2,
+                  "title": "Assets",
+                  "type": "array"
+                },
+                "users": {
+                  "description": "The users that are part of the investigation",
+                  "items": {
+                    "$ref": "#/definitions/user"
+                  },
+                  "order": 1,
+                  "title": "Users",
+                  "type": "array"
+                }
+              },
+              "title": "Actor",
+              "type": "object"
+            },
+            "asset": {
+              "properties": {
+                "assetId": {
+                  "description": "the ID of the asset",
+                  "order": 1,
+                  "title": "AssetId",
+                  "type": "string"
+                },
+                "fqdn": {
+                  "description": "The fully qualified domain name",
+                  "order": 3,
+                  "title": "Fqdn",
+                  "type": "string"
+                },
+                "shortname": {
+                  "description": "shortname of the asset",
+                  "order": 2,
+                  "title": "Shortname",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "shortname",
+                "assetId"
+              ],
+              "title": "Asset",
+              "type": "object"
+            },
+            "content": {
+              "properties": {
+                "domains": {
+                  "description": "A list of domains to check",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "Domains",
+                  "type": "array"
+                },
+                "ipAddresses": {
+                  "description": "A list of ip addresses to check",
+                  "items": {
+                    "$ref": "#/definitions/ipAddress"
+                  },
+                  "order": 3,
+                  "title": "IpAddresses",
+                  "type": "array"
+                },
+                "processes": {
+                  "description": "A list of processes to check",
+                  "items": {
+                    "$ref": "#/definitions/process"
+                  },
+                  "order": 4,
+                  "title": "Processes",
+                  "type": "array"
+                },
+                "urls": {
+                  "description": "A list of URLs to check",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "Urls",
+                  "type": "array"
+                }
+              },
+              "title": "Content",
+              "type": "object"
+            },
+            "hash": {
+              "properties": {
+                "hash": {
+                  "description": "The actual hash",
+                  "order": 1,
+                  "title": "Hash",
+                  "type": "string"
+                },
+                "type": {
+                  "description": "The algorithm used to generate the hash",
+                  "order": 2,
+                  "title": "Type",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "hash",
+                "type"
+              ],
+              "title": "Hash",
+              "type": "object"
+            },
+            "ipAddress": {
+              "properties": {
+                "ip": {
+                  "description": "The raw IP",
+                  "order": 1,
+                  "title": "Ip",
+                  "type": "string"
+                },
+                "type": {
+                  "description": "Denotes if an IP is internal or external",
+                  "order": 2,
+                  "title": "Type",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "ip",
+                "type"
+              ],
+              "title": "IpAddress",
+              "type": "object"
+            },
+            "process": {
+              "properties": {
+                "assetId": {
+                  "description": "The asset id associated with the process",
+                  "order": 1,
+                  "title": "AssetId",
+                  "type": "string"
+                },
+                "cmdLine": {
+                  "description": "The raw value of the command line call used to invoke the process",
+                  "order": 5,
+                  "title": "CmdLine",
+                  "type": "string"
+                },
+                "hashes": {
+                  "description": "The list of hashes to check",
+                  "items": {
+                    "$ref": "#/definitions/hash"
+                  },
+                  "order": 3,
+                  "title": "Hashes",
+                  "type": "array"
+                },
+                "name": {
+                  "description": "The name of the process",
+                  "order": 4,
+                  "title": "Name",
+                  "type": "string"
+                },
+                "processId": {
+                  "description": "The PID from the running process on the asset",
+                  "order": 2,
+                  "title": "ProcessId",
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "assetId",
+                "processId"
+              ],
+              "title": "Process",
+              "type": "object"
+            },
+            "user": {
+              "properties": {
+                "distinguishedName": {
+                  "description": "The Active Directory distinguished name of the user",
+                  "order": 2,
+                  "title": "DistinguishedName",
+                  "type": "string"
+                },
+                "emails": {
+                  "description": "The email addresses associated with the user",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 3,
+                  "title": "Emails",
+                  "type": "array"
+                },
+                "name": {
+                  "description": "The name of the user, as '<firstname> <lastname>' if available, or account name otherwise",
+                  "order": 1,
+                  "title": "Name",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "emails"
+              ],
+              "title": "User",
+              "type": "object"
+            }
+          },
+          "properties": {
+            "actors": {
+              "$ref": "#/definitions/actor",
+              "description": "The insightIDR actors that are part of the investigation",
+              "order": 7,
+              "title": "Actors"
+            },
+            "contents": {
+              "$ref": "#/definitions/content",
+              "description": "The contents to enrich",
+              "order": 8,
+              "title": "Contents"
+            },
+            "description": {
+              "description": "The description of the alert",
+              "order": 4,
+              "title": "Description",
+              "type": "string"
+            },
+            "investigationId": {
+              "description": "The investigation id",
+              "order": 6,
+              "title": "InvestigationId",
+              "type": "string"
+            },
+            "link": {
+              "description": "The deep link to the investigation in insightIDR",
+              "order": 5,
+              "title": "Link",
+              "type": "string"
+            },
+            "name": {
+              "description": "The human-readable name of the alert",
+              "order": 3,
+              "title": "Name",
+              "type": "string"
+            },
+            "timestamp": {
+              "description": "The time the alert was triggered in ISO 8601 extended timestamp format",
+              "order": 1,
+              "title": "Timestamp",
+              "type": "string"
+            },
+            "type": {
+              "description": "The type of alert",
+              "order": 2,
+              "title": "Type",
+              "type": "string"
+            }
+          },
+          "required": [
+            "investigationId",
+            "actors",
+            "timestamp",
+            "type",
+            "name",
+            "description",
+            "link"
+          ],
+          "title": "Variables",
+          "type": "object"
+        },
+        "tags": [],
+        "type": "trigger_api_idr"
+      }
+    ]
+  }
+}
