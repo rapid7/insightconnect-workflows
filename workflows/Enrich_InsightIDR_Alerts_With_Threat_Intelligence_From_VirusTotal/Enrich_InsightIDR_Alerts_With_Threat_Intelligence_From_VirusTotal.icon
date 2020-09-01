@@ -8,7 +8,7 @@
         "name": "Enrich InsightIDR Alerts with Threat Intelligence from VirusTotal",
         "type": "runnable",
         "version": "",
-        "description": "This workflow parses indicators (IPs, URLs, domains, and/or hashes) from an InsightIDR alert and adds threat intelligence from VirusTotal. This workflow requires a VirusTotal API key, which can be generated for free by creating an account on VirusTotal's website (https://virustotal.com)",
+        "description": "This workflow parses indicators (IP addresses, URLs, domains, and/or hashes) from an InsightIDR alert and adds threat intelligence from VirusTotal. This workflow requires a VirusTotal API key, which can be generated for free by creating an account on VirusTotal's website (https://virustotal.com)",
         "graph": {
           "edges": {
             "030e4053-950d-4e45-a8fe-5b7c3bff5404": {
