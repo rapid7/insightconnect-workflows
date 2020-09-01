@@ -1,6 +1,6 @@
 # Description
 
-Quickly look up inactive assets in [Rapid7 InsightVM](https://www.rapid7.com/products/insightvm/) using a slack command. This workflow helps teams share vulnerability intelligence through shared Slack channels.
+Quickly look up inactive assets in [Rapid7 InsightVM](https://www.rapid7.com/products/insightvm/) using a Slack command. This workflow helps teams share vulnerability intelligence through shared Slack channels.
 
 # Key Features
 
