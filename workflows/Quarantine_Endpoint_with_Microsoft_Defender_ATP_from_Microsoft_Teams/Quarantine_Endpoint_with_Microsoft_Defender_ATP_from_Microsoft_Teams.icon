@@ -2,7 +2,7 @@
   "kom": {
     "komandVersion": "1.60.3-0-g2bc27",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-09-01T20:13:33.501123327Z",
+    "exportedAt": "2020-09-01T21:06:24.461027912Z",
     "workflowVersions": [
       {
         "name": "Quarantine Endpoint with Microsoft Defender ATP from Microsoft Teams",
@@ -1707,7 +1707,7 @@
         "name": "Quarantine Request",
         "description": "",
         "input": {
-          "channel_name": "integration-testing",
+          "channel_name": "change-me",
           "message_content": "!quarantine-endpoint|!unquarantine-endpoint",
           "team_name": "Integrations"
         },
