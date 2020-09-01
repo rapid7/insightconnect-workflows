@@ -2,7 +2,7 @@
   "kom": {
     "komandVersion": "1.60.3-0-g2bc27",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-09-01T18:27:38.032179155Z",
+    "exportedAt": "2020-09-01T20:28:55.696337605Z",
     "workflowVersions": [
       {
         "name": "Block Host with Palo Alto Firewall from Slack",
@@ -450,7 +450,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "matchChannel": "change_me",
+                "matchChannel": "#integration-testing",
                 "matchText": "block-host.*|unblock-host.*",
                 "type": "any"
               }
@@ -1453,8 +1453,8 @@
           }
         },
         "tags": null,
-        "humanCostSeconds": 300,
-        "humanCostDisplayUnit": "minutes"
+        "humanCostSeconds": 0,
+        "humanCostDisplayUnit": ""
       }
     ],
     "triggers": [
@@ -1463,7 +1463,7 @@
         "name": "Slack Trigger",
         "description": "",
         "input": {
-          "matchChannel": "change_me",
+          "matchChannel": "#integration-testing",
           "matchText": "block-host.*|unblock-host.*",
           "type": "any"
         },
