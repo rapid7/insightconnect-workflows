@@ -2,11 +2,15 @@
 
 Use the simplicity of a chat command in Slack to block or unblock a host in your Palo Alto Firewall.
 
+Multiple hosts can be specified within one command.
+
 Sample Slack Trigger Commands:
 
-`block-host 198.51.100.100`
+`@Rapid7 InsightConnect block-host 198.51.100.100`
 
-`unblock-host 198.51.100.100`
+`@Rapid7 InsightConnect block-host 198.51.100.100 198.51.100.101`
+
+`@Rapid7 InsightConnect unblock-host 198.51.100.100`
 
 # Key Features
 
@@ -36,16 +40,14 @@ After import, activate the workflow in order to trigger it.
 
 *This workflow will trigger in any direct messages to your Chatbot **or** any message in a channel directed @ your Chatbot. Note the Chatbot must be in the channel in order to trigger the workflow this way.*
 
-To run the workflow in a direct message to the Rapid7 InsightConnect bot use `block-host <host>` or `unblock-host <host>`.
-
 For example:
-* `block-host 198.51.100.100`
+* `@Rapid7 InsightConnect block-host 198.51.100.100`
 
 You can also unblock a host. For example: 
-* `unblock-host 198.51.100.100`
+* `@Rapid7 InsightConnect unblock-host 198.51.100.100`
 
 You can also block and unblock domains:
-* `block-host www.example.com`
+* `@Rapid7 InsightConnect block-host www.example.com`
 
 The workflow will reply when it completes.
 
@@ -55,9 +57,8 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Palo Alto Firewall|6.0.0|4|
-|Python 3 Script|2.0.1|1|
-
+|Palo Alto Firewall|6.0.1|4|
+|Type Converter|1.6.0|1|
 
 ## Troubleshooting
 
@@ -65,6 +66,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.2.0 - Add automatic indicator extraction, allow for multiple hosts
 * 1.1.1 - Pass channel name from trigger to all subsequent steps so user only has to configure channel once
 * 1.1.0 - Update Palo Alto Firewall to latest version
 * 1.0.0 - Initial workflow
