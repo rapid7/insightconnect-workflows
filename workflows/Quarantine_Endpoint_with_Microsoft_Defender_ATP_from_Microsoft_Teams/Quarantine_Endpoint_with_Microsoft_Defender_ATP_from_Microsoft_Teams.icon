@@ -14,7 +14,7 @@
             "06d5a784-3178-47e0-a075-ceb156a286ad": {
               "id": "06d5a784-3178-47e0-a075-ceb156a286ad",
               "name": "",
-              "description": "",
+              "description": "Quarantine an endpoint via IP address in Microsoft Defender ATP from a Microsoft Teams command.",
               "parentNodeId": "",
               "fromNodeId": "1907d1ee-9f50-4f94-96e6-b4d172806f9f",
               "toNodeId": "3baeddc7-c7b0-4d43-9b7d-6c55abf77a26"
