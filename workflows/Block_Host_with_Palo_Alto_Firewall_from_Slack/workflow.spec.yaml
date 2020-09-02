@@ -25,3 +25,5 @@ resources:
     title: Unblock Success in Slack
   - name: unblock_failure.png
     title: Unblock Failure in Slack
+  - name: artifact.png
+    title: Block Success Artifact
