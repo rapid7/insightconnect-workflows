@@ -6,7 +6,7 @@ description: Learn to enrich a hash with threat intelligence from Thrat Crowd us
 version: 1.0.0
 vendor: rapid7
 support: rapid7
-status: []
+status: ["hidden"]
 hub_tags:
   use_cases: [threat_detection_and_response]
   keywords: [cloud-enabled, enrichment, hash, threat_intelligence, ioc, threatcrowd, api]
