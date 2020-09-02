@@ -1588,7 +1588,7 @@
               "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_atp/4.4.1/icon.png"
             },
             "identifier": "unisolate_machine",
-            "continueOnFailure": false,
+            "continueOnFailure": true,
             "isDisabled": false,
             "isCloud": false,
             "parameters": {
