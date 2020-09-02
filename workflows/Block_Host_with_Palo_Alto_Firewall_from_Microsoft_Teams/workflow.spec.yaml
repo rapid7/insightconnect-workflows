@@ -2,7 +2,7 @@ extension: workflow
 products: ["insightconnect"]
 name: Block_Host_with_Palo_Alto_Firewall_from_Microsoft_Teams
 title: "Block Host with Palo Alto Firewall from Microsoft Teams"
-description: "Block and unblock a host with a Palo Alto firewall from Microsoft Teams"
+description: "Block and unblock a host with a Palo Alto firewall from Microsoft Teams."
 version: 1.2.0
 vendor: rapid7
 support: rapid7
