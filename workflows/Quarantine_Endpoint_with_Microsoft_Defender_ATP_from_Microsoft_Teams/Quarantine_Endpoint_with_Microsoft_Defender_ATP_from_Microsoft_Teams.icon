@@ -586,9 +586,9 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "integration-testing",
+                "channel_name": "change_me",
                 "message_content": "!quarantine-endpoint|!unquarantine-endpoint",
-                "team_name": "Integrations"
+                "team_name": "change_me"
               }
             },
             "triggerId": "24121502-6f6a-4077-b09e-e28a8c76e963",
@@ -1707,9 +1707,9 @@
         "name": "Quarantine Request",
         "description": "",
         "input": {
-          "channel_name": "change-me",
+          "channel_name": "change_me",
           "message_content": "!quarantine-endpoint|!unquarantine-endpoint",
-          "team_name": "Integrations"
+          "team_name": "change_me"
         },
         "inputJsonSchema": {
           "properties": {
