@@ -20,8 +20,10 @@ resources:
   - name: workflow_loop.png
     title: Workflow Loop View
   - name: teams_block_success.png
-    title: Successful Host Block from Microsoft Teams
+    title: Block Success in Microsoft Teams
   - name: teams_unblock_success.png
-    title: Successful Host Unblock from Microsoft Teams
+    title: Unblock Success in Microsoft Teams
   - name: teams_unblock_failure.png
-    title: Failed Host Unblock from Microsoft Teams
+    title: Unblock Failure in Microsoft Teams
+  - name: artifact.png
+    title: Block Success Artifact
