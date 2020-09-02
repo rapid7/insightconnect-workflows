@@ -2,13 +2,13 @@
   "kom": {
     "komandVersion": "1.60.3-0-g2bc27",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-09-02T14:28:01.559608602Z",
+    "exportedAt": "2020-09-02T16:41:38.461252674Z",
     "workflowVersions": [
       {
         "name": "Block Host with Palo Alto Firewall from Microsoft Teams",
         "type": "runnable",
         "version": "",
-        "description": "Use the simplicity of a chat command in Microsoft Teams to block or unblock a host in your Palo Alto Firewall.",
+        "description": "Block and unblock a host with a Palo Alto firewall from Microsoft Teams.",
         "graph": {
           "edges": {
             "099fa753-4993-4a08-b578-eaf6538102af": {
@@ -17,7 +17,7 @@
               "description": "",
               "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
               "fromNodeId": "252505b1-b1e2-4567-95da-cd01a0bb39f3",
-              "toNodeId": "19f60800-b02b-41c1-b82f-4ad72d556a1c"
+              "toNodeId": "d5b71fc2-89a4-4e45-96dc-b89521e10663"
             },
             "2e3ba081-39ef-4108-88ef-615d76c705c8": {
               "id": "2e3ba081-39ef-4108-88ef-615d76c705c8",
@@ -26,6 +26,14 @@
               "parentNodeId": "",
               "fromNodeId": "4a8026c1-3645-47eb-b37d-643493a1875a",
               "toNodeId": "71640fb0-fd89-4e3d-b356-dd502ae96c9b"
+            },
+            "2e8ac11d-00cf-4747-9b91-65b8a9bd64c0": {
+              "id": "2e8ac11d-00cf-4747-9b91-65b8a9bd64c0",
+              "name": "",
+              "description": "",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
+              "fromNodeId": "d63265f3-95bb-470d-a126-0cbfd2dedba0",
+              "toNodeId": ""
             },
             "33271c34-d5ba-4164-93cb-14668dfb1be6": {
               "id": "33271c34-d5ba-4164-93cb-14668dfb1be6",
@@ -59,6 +67,14 @@
               "fromNodeId": "07c4984a-f089-405e-ae19-bf58b6fa2f25",
               "toNodeId": ""
             },
+            "4954c79f-f372-4a8b-bb7e-7bb1894ca289": {
+              "id": "4954c79f-f372-4a8b-bb7e-7bb1894ca289",
+              "name": "",
+              "description": "",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
+              "fromNodeId": "e23e257a-566d-49d3-94fa-1021b9f44e4e",
+              "toNodeId": ""
+            },
             "4aaf1741-9541-4081-8691-d4b4fc5e9bcc": {
               "id": "4aaf1741-9541-4081-8691-d4b4fc5e9bcc",
               "name": "Yes",
@@ -73,7 +89,7 @@
               "description": "",
               "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
               "fromNodeId": "066d589a-5d86-4b94-b8a2-2ae64bcfe811",
-              "toNodeId": ""
+              "toNodeId": "d63265f3-95bb-470d-a126-0cbfd2dedba0"
             },
             "5c075c64-7589-46e1-b05a-cc9c369f91c9": {
               "id": "5c075c64-7589-46e1-b05a-cc9c369f91c9",
@@ -81,7 +97,7 @@
               "description": "",
               "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
               "fromNodeId": "252505b1-b1e2-4567-95da-cd01a0bb39f3",
-              "toNodeId": "4f830145-6dd0-4712-8feb-9aba7d5cc042"
+              "toNodeId": "d437ab08-6124-49f1-8450-541092718cdc"
             },
             "766efd98-7cb1-40ad-a45e-ad0e3fd49485": {
               "id": "766efd98-7cb1-40ad-a45e-ad0e3fd49485",
@@ -99,14 +115,6 @@
               "fromNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
               "toNodeId": "07c4984a-f089-405e-ae19-bf58b6fa2f25"
             },
-            "79f3a568-1211-464f-93bb-722f970503a6": {
-              "id": "79f3a568-1211-464f-93bb-722f970503a6",
-              "name": "",
-              "description": "",
-              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
-              "fromNodeId": "19f60800-b02b-41c1-b82f-4ad72d556a1c",
-              "toNodeId": "d5b71fc2-89a4-4e45-96dc-b89521e10663"
-            },
             "8a409b54-6b00-448c-91d3-a98949207c0f": {
               "id": "8a409b54-6b00-448c-91d3-a98949207c0f",
               "name": "",
@@ -114,6 +122,14 @@
               "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
               "fromNodeId": "486fa158-42a6-45cc-9060-dc9e64f78ab1",
               "toNodeId": "7845bc1b-289f-463a-9f7e-fe503d22087b"
+            },
+            "8dfacee8-70a5-47d7-b455-93d037a07f77": {
+              "id": "8dfacee8-70a5-47d7-b455-93d037a07f77",
+              "name": "",
+              "description": "",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
+              "fromNodeId": "0418141f-fc59-49be-a1d6-c527bb6c0551",
+              "toNodeId": ""
             },
             "aa61f0cd-0af3-428e-a492-0bb4c08243bb": {
               "id": "aa61f0cd-0af3-428e-a492-0bb4c08243bb",
@@ -123,21 +139,13 @@
               "fromNodeId": "d437ab08-6124-49f1-8450-541092718cdc",
               "toNodeId": "5c03da19-5012-4bf4-bddd-e8e1ac58afd0"
             },
-            "d37ae7a6-0a72-417d-90ea-16cb4d26d168": {
-              "id": "d37ae7a6-0a72-417d-90ea-16cb4d26d168",
-              "name": "",
-              "description": "",
-              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
-              "fromNodeId": "4f830145-6dd0-4712-8feb-9aba7d5cc042",
-              "toNodeId": "d437ab08-6124-49f1-8450-541092718cdc"
-            },
             "d682be6b-80e8-44c4-a90c-81e4074aa201": {
               "id": "d682be6b-80e8-44c4-a90c-81e4074aa201",
               "name": "",
               "description": "",
               "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
               "fromNodeId": "fbbc091a-f8f8-47ce-8ecd-c44f3c1ab684",
-              "toNodeId": ""
+              "toNodeId": "0418141f-fc59-49be-a1d6-c527bb6c0551"
             },
             "e4b6a364-09bd-4cbc-aedf-0ade1aeeb6cf": {
               "id": "e4b6a364-09bd-4cbc-aedf-0ade1aeeb6cf",
@@ -153,7 +161,7 @@
               "description": "",
               "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
               "fromNodeId": "7845bc1b-289f-463a-9f7e-fe503d22087b",
-              "toNodeId": ""
+              "toNodeId": "e23e257a-566d-49d3-94fa-1021b9f44e4e"
             },
             "f55cc36c-ff92-447a-85ec-20458a1e98fc": {
               "id": "f55cc36c-ff92-447a-85ec-20458a1e98fc",
@@ -165,6 +173,10 @@
             }
           },
           "nodes": {
+            "0418141f-fc59-49be-a1d6-c527bb6c0551": {
+              "id": "0418141f-fc59-49be-a1d6-c527bb6c0551",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c"
+            },
             "066d589a-5d86-4b94-b8a2-2ae64bcfe811": {
               "id": "066d589a-5d86-4b94-b8a2-2ae64bcfe811",
               "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c"
@@ -172,10 +184,6 @@
             "07c4984a-f089-405e-ae19-bf58b6fa2f25": {
               "id": "07c4984a-f089-405e-ae19-bf58b6fa2f25",
               "parentNodeId": ""
-            },
-            "19f60800-b02b-41c1-b82f-4ad72d556a1c": {
-              "id": "19f60800-b02b-41c1-b82f-4ad72d556a1c",
-              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c"
             },
             "252505b1-b1e2-4567-95da-cd01a0bb39f3": {
               "id": "252505b1-b1e2-4567-95da-cd01a0bb39f3",
@@ -192,10 +200,6 @@
             "4d650a86-639d-4f34-8920-52d3c954152b": {
               "id": "4d650a86-639d-4f34-8920-52d3c954152b",
               "parentNodeId": ""
-            },
-            "4f830145-6dd0-4712-8feb-9aba7d5cc042": {
-              "id": "4f830145-6dd0-4712-8feb-9aba7d5cc042",
-              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c"
             },
             "5c03da19-5012-4bf4-bddd-e8e1ac58afd0": {
               "id": "5c03da19-5012-4bf4-bddd-e8e1ac58afd0",
@@ -225,6 +229,14 @@
               "id": "d5b71fc2-89a4-4e45-96dc-b89521e10663",
               "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c"
             },
+            "d63265f3-95bb-470d-a126-0cbfd2dedba0": {
+              "id": "d63265f3-95bb-470d-a126-0cbfd2dedba0",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c"
+            },
+            "e23e257a-566d-49d3-94fa-1021b9f44e4e": {
+              "id": "e23e257a-566d-49d3-94fa-1021b9f44e4e",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c"
+            },
             "fbbc091a-f8f8-47ce-8ecd-c44f3c1ab684": {
               "id": "fbbc091a-f8f8-47ce-8ecd-c44f3c1ab684",
               "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c"
@@ -232,6 +244,24 @@
           }
         },
         "steps": {
+          "0418141f-fc59-49be-a1d6-c527bb6c0551": {
+            "nodeId": "0418141f-fc59-49be-a1d6-c527bb6c0551",
+            "name": "Successful Block Artifact",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "Block Host Success\n\nBlocked: {{[634ba1d9-2e69-4adf-b15b-1c32b1559e4c].[$item]}}"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
           "066d589a-5d86-4b94-b8a2-2ae64bcfe811": {
             "nodeId": "066d589a-5d86-4b94-b8a2-2ae64bcfe811",
             "name": "Failed Unblock Message",
@@ -599,24 +629,6 @@
             "outputJSONSchema": null,
             "defaultImageData": "",
             "connectionType": "CONNECTION"
-          },
-          "19f60800-b02b-41c1-b82f-4ad72d556a1c": {
-            "nodeId": "19f60800-b02b-41c1-b82f-4ad72d556a1c",
-            "name": "Block Host Command Received",
-            "type": "artifact",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "content": "Block Host Command Received\n\n{{[634ba1d9-2e69-4adf-b15b-1c32b1559e4c].[$item]}}\n\n{{[4d650a86-639d-4f34-8920-52d3c954152b].[message].[first_word]}}"
-              },
-              "type": "markdown"
-            },
-            "defaultInputJSONSchema": null,
-            "defaultOutputJSONSchema": null,
-            "outputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
-            "connectionType": "NONE"
           },
           "252505b1-b1e2-4567-95da-cd01a0bb39f3": {
             "nodeId": "252505b1-b1e2-4567-95da-cd01a0bb39f3",
@@ -1233,24 +1245,6 @@
             "outputJSONSchema": null,
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg",
             "connectionType": "CONNECTION"
-          },
-          "4f830145-6dd0-4712-8feb-9aba7d5cc042": {
-            "nodeId": "4f830145-6dd0-4712-8feb-9aba7d5cc042",
-            "name": "Unblock Host Artifact",
-            "type": "artifact",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "content": "Unblock Host Command Received\n\n{{[4d650a86-639d-4f34-8920-52d3c954152b].[message].[first_word]}}"
-              },
-              "type": "markdown"
-            },
-            "defaultInputJSONSchema": null,
-            "defaultOutputJSONSchema": null,
-            "outputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
-            "connectionType": "NONE"
           },
           "5c03da19-5012-4bf4-bddd-e8e1ac58afd0": {
             "nodeId": "5c03da19-5012-4bf4-bddd-e8e1ac58afd0",
@@ -1880,6 +1874,42 @@
             "outputJSONSchema": null,
             "defaultImageData": "",
             "connectionType": "CONNECTION"
+          },
+          "d63265f3-95bb-470d-a126-0cbfd2dedba0": {
+            "nodeId": "d63265f3-95bb-470d-a126-0cbfd2dedba0",
+            "name": "Failed Unblock Artifact",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "Unblock Failed\n\nCould not find host {{[634ba1d9-2e69-4adf-b15b-1c32b1559e4c].[$item]}} in block list\n"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "e23e257a-566d-49d3-94fa-1021b9f44e4e": {
+            "nodeId": "e23e257a-566d-49d3-94fa-1021b9f44e4e",
+            "name": "Successful Unblock Artifact",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "Unblock Host Success\n\nUnblocked: {{[634ba1d9-2e69-4adf-b15b-1c32b1559e4c].[$item]}}\n"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
           },
           "fbbc091a-f8f8-47ce-8ecd-c44f3c1ab684": {
             "nodeId": "fbbc091a-f8f8-47ce-8ecd-c44f3c1ab684",
