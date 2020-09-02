@@ -2,9 +2,13 @@
 
 Use the simplicity of a chat command in Microsoft Teams to block or unblock a host in your Palo Alto Firewall.
 
+Multiple hosts can be specified within one command.
+
 Sample Microsoft Teams Trigger Commands:
 
 `!block-host 198.51.100.100`
+
+`!block-host 198.51.100.100 198.51.100.101`
 
 `!unblock-host 198.51.100.100`
 
@@ -56,11 +60,9 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Microsoft Teams|2.0.4|5|
-|Palo Alto Firewall|6.0.0|4|
-|String Operations|1.2.1|3|
-|HTML|1.2.1|1|
-
+|Palo Alto Firewall|6.0.1|4|
+|Type Converter|1.6.0|1|
+|Microsoft Teams|2.2.0|6|
 
 ## Troubleshooting
 
@@ -68,6 +70,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.2.0 - Add automatic indicator extraction, allow for multiple hosts
 * 1.1.1 - Update to make Microsoft Teams plugin the latest version
 * 1.1.0 - Update Palo Alto Firewall to latest version
 * 1.0.0 - Initial workflow

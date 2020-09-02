@@ -2,24 +2,26 @@ extension: workflow
 products: ["insightconnect"]
 name: Block_Host_with_Palo_Alto_Firewall_from_Microsoft_Teams
 title: "Block Host with Palo Alto Firewall from Microsoft Teams"
-description: "This workflow uses a Microsoft Teams command to block and unblock a host from a Palo Alto firewall."
-version: 1.1.1
+description: "Block and unblock a host with a Palo Alto firewall from Microsoft Teams"
+version: 1.2.0
 vendor: rapid7
 support: rapid7
 status: []
 hub_tags:
   use_cases: [threat_detection_and_response]
-  keywords:  [ransomware, containment, firewall, block, work_from_home, palo, alto]
+  keywords:  [ransomware, containment, firewall, block, work_from_home, palo, alto, microsoft_teams]
   features: []
 resources:
   source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Block_Host_with_Palo_Alto_Firewall_from_Microsoft_Teams
   license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
   screenshots:
-  - name: workflow1.png
-    title: Workflow View Top
-  - name: workflow2.png
-    title: Workflow View Middle
-  - name: workflow3.png
-    title: Workflow View Bottom
-  - name: teams_flow1.png
-    title: Sample Output from Teams
+  - name: workflow.png
+    title: Workflow View
+  - name: workflow_loop.png
+    title: Workflow Loop View
+  - name: teams_block_success.png
+    title: Successful Host Block from Microsoft Teams
+  - name: teams_unblock_success.png
+    title: Successful Host Unblock from Microsoft Teams
+  - name: teams_unblock_failure.png
+    title: Failed Host Unblock from Microsoft Teams
