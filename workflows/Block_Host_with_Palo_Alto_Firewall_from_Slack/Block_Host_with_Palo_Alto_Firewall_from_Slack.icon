@@ -273,7 +273,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "🚨*Workflow not executed* 🚨\n\nPlease input the correct command and one valid host (IP address or domain).",
+                "message": "🚨*Workflow not executed* 🚨\n\nPlease input the correct command and at least one valid host (IP address or domain).",
                 "recipient": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[message].[channel]}}",
                 "thread_ts": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[timestamp]}}"
               }
