@@ -1,14 +1,14 @@
 {
   "kom": {
-    "komandVersion": "1.60.3-0-g2bc27",
+    "komandVersion": "1.61.0-0-g0bf41",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-09-02T16:41:38.461252674Z",
+    "exportedAt": "2020-09-02T18:56:28.254529537Z",
     "workflowVersions": [
       {
         "name": "Block Host with Palo Alto Firewall from Microsoft Teams",
         "type": "runnable",
         "version": "",
-        "description": "Block and unblock a host with a Palo Alto firewall from Microsoft Teams.",
+        "description": "Use the simplicity of a chat command in Microsoft Teams to block or unblock a host in your Palo Alto Firewall.",
         "graph": {
           "edges": {
             "099fa753-4993-4a08-b578-eaf6538102af": {
@@ -18,6 +18,14 @@
               "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
               "fromNodeId": "252505b1-b1e2-4567-95da-cd01a0bb39f3",
               "toNodeId": "d5b71fc2-89a4-4e45-96dc-b89521e10663"
+            },
+            "12454751-cdcc-4807-b7e7-dc704510937f": {
+              "id": "12454751-cdcc-4807-b7e7-dc704510937f",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "8e6993f0-51db-4cc8-bc90-a4af31c92717",
+              "toNodeId": ""
             },
             "2e3ba081-39ef-4108-88ef-615d76c705c8": {
               "id": "2e3ba081-39ef-4108-88ef-615d76c705c8",
@@ -43,13 +51,21 @@
               "fromNodeId": "d5b71fc2-89a4-4e45-96dc-b89521e10663",
               "toNodeId": "66d66255-234a-42e3-9aa5-11d0cac8fc35"
             },
+            "37a6175e-8c2e-4aa0-9907-959453c2c797": {
+              "id": "37a6175e-8c2e-4aa0-9907-959453c2c797",
+              "name": "No",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "e2e66b4a-1591-4bb4-ac5b-278f2d186ede",
+              "toNodeId": "8e6993f0-51db-4cc8-bc90-a4af31c92717"
+            },
             "38bbe58a-b562-494c-92ca-097402ac1637": {
               "id": "38bbe58a-b562-494c-92ca-097402ac1637",
               "name": "",
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "71640fb0-fd89-4e3d-b356-dd502ae96c9b",
-              "toNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c"
+              "toNodeId": "e2e66b4a-1591-4bb4-ac5b-278f2d186ede"
             },
             "3c5f37c3-4f39-43ca-ade6-9e3861055474": {
               "id": "3c5f37c3-4f39-43ca-ade6-9e3861055474",
@@ -114,6 +130,14 @@
               "parentNodeId": "",
               "fromNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
               "toNodeId": "07c4984a-f089-405e-ae19-bf58b6fa2f25"
+            },
+            "843d1903-ee95-44f0-80ed-7033ff959a33": {
+              "id": "843d1903-ee95-44f0-80ed-7033ff959a33",
+              "name": "Yes",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "e2e66b4a-1591-4bb4-ac5b-278f2d186ede",
+              "toNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c"
             },
             "8a409b54-6b00-448c-91d3-a98949207c0f": {
               "id": "8a409b54-6b00-448c-91d3-a98949207c0f",
@@ -221,6 +245,10 @@
               "id": "7845bc1b-289f-463a-9f7e-fe503d22087b",
               "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c"
             },
+            "8e6993f0-51db-4cc8-bc90-a4af31c92717": {
+              "id": "8e6993f0-51db-4cc8-bc90-a4af31c92717",
+              "parentNodeId": ""
+            },
             "d437ab08-6124-49f1-8450-541092718cdc": {
               "id": "d437ab08-6124-49f1-8450-541092718cdc",
               "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c"
@@ -236,6 +264,10 @@
             "e23e257a-566d-49d3-94fa-1021b9f44e4e": {
               "id": "e23e257a-566d-49d3-94fa-1021b9f44e4e",
               "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c"
+            },
+            "e2e66b4a-1591-4bb4-ac5b-278f2d186ede": {
+              "id": "e2e66b4a-1591-4bb4-ac5b-278f2d186ede",
+              "parentNodeId": ""
             },
             "fbbc091a-f8f8-47ce-8ecd-c44f3c1ab684": {
               "id": "fbbc091a-f8f8-47ce-8ecd-c44f3c1ab684",
@@ -1406,8 +1438,8 @@
             "parameters": {
               "input": {
                 "array1": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[indicators].[ip_addresses].[ipv4_addresses]}}",
-                "array2": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[indicators].[ip_addresses].[ipv6_addresses]}}",
-                "array3": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[indicators].[domains]}}",
+                "array2": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[indicators].[domains]}}",
+                "array3": [],
                 "array4": [],
                 "array5": []
               }
@@ -1508,6 +1540,190 @@
               "input": {
                 "channel_name": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[channel_name]}}",
                 "message_content": "✅<b>Unblock Host Success</b> ✅<br>\n<br>\nUnblocked: <code>{{[634ba1d9-2e69-4adf-b15b-1c32b1559e4c].[$item]}}</code>\n",
+                "team_name": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[team_name]}}",
+                "thread_id": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[message].[id]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "channel_name": {
+                  "description": "Channel name",
+                  "order": 2,
+                  "title": "Channel Name",
+                  "type": "string"
+                },
+                "message_content": {
+                  "description": "HTML content to send",
+                  "order": 4,
+                  "title": "Message Content",
+                  "type": "string"
+                },
+                "team_name": {
+                  "description": "Team name",
+                  "order": 1,
+                  "title": "Team Name",
+                  "type": "string"
+                },
+                "thread_id": {
+                  "description": "To post in a thread, select parent message ID",
+                  "order": 3,
+                  "title": "Thread ID",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "team_name",
+                "channel_name",
+                "message_content"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "body": {
+                  "properties": {
+                    "content": {
+                      "description": "Content",
+                      "order": 1,
+                      "title": "Content",
+                      "type": "string"
+                    },
+                    "contentType": {
+                      "description": "Content type",
+                      "order": 2,
+                      "title": "Content Type",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Body",
+                  "type": "object"
+                },
+                "from": {
+                  "properties": {
+                    "user": {
+                      "$ref": "#/definitions/user",
+                      "description": "User",
+                      "order": 1,
+                      "title": "User"
+                    }
+                  },
+                  "title": "From",
+                  "type": "object"
+                },
+                "message": {
+                  "properties": {
+                    "body": {
+                      "$ref": "#/definitions/body",
+                      "description": "Body",
+                      "order": 1,
+                      "title": "Body"
+                    },
+                    "createdDateTime": {
+                      "description": "Created date time",
+                      "order": 3,
+                      "title": "Created Date Time",
+                      "type": "string"
+                    },
+                    "first_word": {
+                      "description": "Extracted first word from message (easy way to obtain a chat command)",
+                      "order": 9,
+                      "title": "First Word",
+                      "type": "string"
+                    },
+                    "from": {
+                      "$ref": "#/definitions/from",
+                      "description": "From",
+                      "order": 2,
+                      "title": "From"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 8,
+                      "title": "ID",
+                      "type": "string"
+                    },
+                    "importance": {
+                      "description": "Importance",
+                      "order": 5,
+                      "title": "Importance",
+                      "type": "string"
+                    },
+                    "locale": {
+                      "description": "Locale",
+                      "order": 7,
+                      "title": "Locale",
+                      "type": "string"
+                    },
+                    "messageType": {
+                      "description": "Message type",
+                      "order": 6,
+                      "title": "Message Type",
+                      "type": "string"
+                    },
+                    "webUrl": {
+                      "description": "Web URL",
+                      "order": 4,
+                      "title": "Web URL",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Message",
+                  "type": "object"
+                },
+                "user": {
+                  "properties": {
+                    "displayName": {
+                      "description": "Display name",
+                      "order": 1,
+                      "title": "Display name",
+                      "type": "string"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 2,
+                      "title": "ID",
+                      "type": "string"
+                    }
+                  },
+                  "title": "User",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "message": {
+                  "$ref": "#/definitions/message",
+                  "description": "The message object that was created",
+                  "order": 1,
+                  "title": "Message"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "8e6993f0-51db-4cc8-bc90-a4af31c92717": {
+            "nodeId": "8e6993f0-51db-4cc8-bc90-a4af31c92717",
+            "name": "No Valid Hosts Message",
+            "type": "action",
+            "plugin": {
+              "name": "Microsoft Teams",
+              "slugVendor": "rapid7",
+              "slugName": "microsoft_teams",
+              "slugVersion": "2.2.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.0/icon.png"
+            },
+            "identifier": "send_html_message",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "channel_name": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[channel_name]}}",
+                "message_content": "🚨<b>Workflow not executed</b> 🚨<br>\n<br>\nPlease input the correct command and at least one valid host (IP address or domain).",
                 "team_name": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[team_name]}}",
                 "thread_id": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[message].[id]}}"
               }
@@ -1909,6 +2125,50 @@
             "defaultOutputJSONSchema": null,
             "outputJSONSchema": null,
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "e2e66b4a-1591-4bb4-ac5b-278f2d186ede": {
+            "nodeId": "e2e66b4a-1591-4bb4-ac5b-278f2d186ede",
+            "name": "At Least 1 Valid Host?",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "843d1903-ee95-44f0-80ed-7033ff959a33",
+              "stepControlParams": [
+                {
+                  "edgeId": "843d1903-ee95-44f0-80ed-7033ff959a33",
+                  "expression": {},
+                  "expressionText": ""
+                },
+                {
+                  "edgeId": "37a6175e-8c2e-4aa0-9907-959453c2c797",
+                  "expression": {
+                    "left": {
+                      "args": [
+                        {
+                          "name": "71640fb0-fd89-4e3d-b356-dd502ae96c9b.combined_array",
+                          "type": "variable"
+                        }
+                      ],
+                      "name": "length",
+                      "type": "function"
+                    },
+                    "op": "=",
+                    "right": {
+                      "type": "literal",
+                      "value": 0
+                    },
+                    "type": "binary"
+                  },
+                  "expressionText": "length({{[71640fb0-fd89-4e3d-b356-dd502ae96c9b].[combined_array]}}) = 0"
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
             "connectionType": "NONE"
           },
           "fbbc091a-f8f8-47ce-8ecd-c44f3c1ab684": {
