@@ -8,7 +8,7 @@
         "name": "Quarantine Endpoint with Microsoft Defender ATP from Microsoft Teams",
         "type": "runnable",
         "version": "",
-        "description": "",
+        "description": "Quarantine an endpoint via IP address in Microsoft Defender ATP from a Microsoft Teams command.",
         "graph": {
           "edges": {
             "06d5a784-3178-47e0-a075-ceb156a286ad": {
