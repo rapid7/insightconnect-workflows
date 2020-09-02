@@ -2,7 +2,7 @@
   "kom": {
     "komandVersion": "1.61.0-0-g0bf41",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-09-02T18:36:57.989214007Z",
+    "exportedAt": "2020-09-02T20:08:32.972613174Z",
     "workflowVersions": [
       {
         "name": "Block Host with Palo Alto Firewall from Slack",
@@ -17,7 +17,7 @@
               "description": "",
               "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
               "fromNodeId": "252505b1-b1e2-4567-95da-cd01a0bb39f3",
-              "toNodeId": "19f60800-b02b-41c1-b82f-4ad72d556a1c"
+              "toNodeId": "d5b71fc2-89a4-4e45-96dc-b89521e10663"
             },
             "19daedc2-9648-400b-b3dd-0ae3934b0d0f": {
               "id": "19daedc2-9648-400b-b3dd-0ae3934b0d0f",
@@ -81,7 +81,7 @@
               "description": "",
               "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
               "fromNodeId": "252505b1-b1e2-4567-95da-cd01a0bb39f3",
-              "toNodeId": "4f830145-6dd0-4712-8feb-9aba7d5cc042"
+              "toNodeId": "d437ab08-6124-49f1-8450-541092718cdc"
             },
             "64bf267e-25b9-4600-9a90-b700c5fc9532": {
               "id": "64bf267e-25b9-4600-9a90-b700c5fc9532",
@@ -115,14 +115,6 @@
               "fromNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
               "toNodeId": "83a8e7c1-1f97-4467-b67c-9f1fbc189df1"
             },
-            "79f3a568-1211-464f-93bb-722f970503a6": {
-              "id": "79f3a568-1211-464f-93bb-722f970503a6",
-              "name": "",
-              "description": "",
-              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
-              "fromNodeId": "19f60800-b02b-41c1-b82f-4ad72d556a1c",
-              "toNodeId": "d5b71fc2-89a4-4e45-96dc-b89521e10663"
-            },
             "8a409b54-6b00-448c-91d3-a98949207c0f": {
               "id": "8a409b54-6b00-448c-91d3-a98949207c0f",
               "name": "",
@@ -155,14 +147,6 @@
               "fromNodeId": "f30393c6-4f10-4adf-b9cb-eef3f1bc5326",
               "toNodeId": "031c9dd7-cb0d-439b-a2a5-28c413b62f74"
             },
-            "d37ae7a6-0a72-417d-90ea-16cb4d26d168": {
-              "id": "d37ae7a6-0a72-417d-90ea-16cb4d26d168",
-              "name": "",
-              "description": "",
-              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
-              "fromNodeId": "4f830145-6dd0-4712-8feb-9aba7d5cc042",
-              "toNodeId": "d437ab08-6124-49f1-8450-541092718cdc"
-            },
             "e4b6a364-09bd-4cbc-aedf-0ade1aeeb6cf": {
               "id": "e4b6a364-09bd-4cbc-aedf-0ade1aeeb6cf",
               "name": "No",
@@ -193,10 +177,6 @@
               "id": "031c9dd7-cb0d-439b-a2a5-28c413b62f74",
               "parentNodeId": ""
             },
-            "19f60800-b02b-41c1-b82f-4ad72d556a1c": {
-              "id": "19f60800-b02b-41c1-b82f-4ad72d556a1c",
-              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c"
-            },
             "252505b1-b1e2-4567-95da-cd01a0bb39f3": {
               "id": "252505b1-b1e2-4567-95da-cd01a0bb39f3",
               "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c"
@@ -212,10 +192,6 @@
             "4d650a86-639d-4f34-8920-52d3c954152b": {
               "id": "4d650a86-639d-4f34-8920-52d3c954152b",
               "parentNodeId": ""
-            },
-            "4f830145-6dd0-4712-8feb-9aba7d5cc042": {
-              "id": "4f830145-6dd0-4712-8feb-9aba7d5cc042",
-              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c"
             },
             "59de03bc-ff23-4ec8-bc3f-579deb153568": {
               "id": "59de03bc-ff23-4ec8-bc3f-579deb153568",
@@ -337,24 +313,6 @@
             "connectionType": "NONE",
             "chatOpsAppName": "slack",
             "chatOpsIdentifier": "post_message"
-          },
-          "19f60800-b02b-41c1-b82f-4ad72d556a1c": {
-            "nodeId": "19f60800-b02b-41c1-b82f-4ad72d556a1c",
-            "name": "Block Host Command Received",
-            "type": "artifact",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "content": "Block Host Command Received\n\n{{[634ba1d9-2e69-4adf-b15b-1c32b1559e4c].[$item]}}"
-              },
-              "type": "markdown"
-            },
-            "defaultInputJSONSchema": null,
-            "defaultOutputJSONSchema": null,
-            "outputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
-            "connectionType": "NONE"
           },
           "252505b1-b1e2-4567-95da-cd01a0bb39f3": {
             "nodeId": "252505b1-b1e2-4567-95da-cd01a0bb39f3",
@@ -797,24 +755,6 @@
             "connectionType": "NONE",
             "chatOpsAppName": "slack",
             "chatOpsIdentifier": "message"
-          },
-          "4f830145-6dd0-4712-8feb-9aba7d5cc042": {
-            "nodeId": "4f830145-6dd0-4712-8feb-9aba7d5cc042",
-            "name": "Unblock Host Artifact",
-            "type": "artifact",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "content": "Unblock Host Command Received"
-              },
-              "type": "markdown"
-            },
-            "defaultInputJSONSchema": null,
-            "defaultOutputJSONSchema": null,
-            "outputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
-            "connectionType": "NONE"
           },
           "59de03bc-ff23-4ec8-bc3f-579deb153568": {
             "nodeId": "59de03bc-ff23-4ec8-bc3f-579deb153568",
