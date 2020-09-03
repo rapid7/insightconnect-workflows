@@ -364,7 +364,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "matchChannel": "integration-testing",
+                "matchChannel": "change_me",
                 "matchText": "delete-asset",
                 "type": "any"
               }
