@@ -6,7 +6,7 @@ Sample trigger commands:
 
 `delete-asset 12345`
 
-`delete-asset 12345 123456`
+`@Rapid7 InsightConnect delete-asset 12345 123456`
 
 # Key Features
 
