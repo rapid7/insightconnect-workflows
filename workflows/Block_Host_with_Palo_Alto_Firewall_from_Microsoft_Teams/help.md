@@ -62,7 +62,7 @@ Plugins utilized by workflow:
 |----|----|--------|
 |Palo Alto Firewall|6.0.1|4|
 |Type Converter|1.6.0|1|
-|Microsoft Teams|2.2.0|6|
+|Microsoft Teams|2.2.1|7|
 
 ## Troubleshooting
 

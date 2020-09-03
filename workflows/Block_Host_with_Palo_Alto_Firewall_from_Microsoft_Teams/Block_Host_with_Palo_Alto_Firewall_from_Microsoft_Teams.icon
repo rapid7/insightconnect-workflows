@@ -2,7 +2,7 @@
   "kom": {
     "komandVersion": "1.61.0-0-g0bf41",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-09-02T18:56:28.254529537Z",
+    "exportedAt": "2020-09-03T18:01:56.21659155Z",
     "workflowVersions": [
       {
         "name": "Block Host with Palo Alto Firewall from Microsoft Teams",
@@ -302,8 +302,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.2.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.0/icon.png"
+              "slugVersion": "2.2.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.1/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
@@ -486,8 +486,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.2.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.0/icon.png"
+              "slugVersion": "2.2.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.1/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
@@ -788,8 +788,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.2.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.0/icon.png"
+              "slugVersion": "2.2.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.1/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
@@ -972,8 +972,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.2.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.0/icon.png"
+              "slugVersion": "2.2.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.1/icon.png"
             },
             "identifier": "new_message_received",
             "continueOnFailure": false,
@@ -985,7 +985,7 @@
                 "team_name": "change_me"
               }
             },
-            "triggerId": "f3fe0fb4-8d44-4f96-abe5-72e2cea088e9",
+            "triggerId": "9e1d294b-9ade-4c36-b106-37a75fcc9f9d",
             "defaultInputJSONSchema": {
               "properties": {
                 "channel_name": {
@@ -1529,8 +1529,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.2.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.0/icon.png"
+              "slugVersion": "2.2.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.1/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
@@ -1713,8 +1713,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.2.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.0/icon.png"
+              "slugVersion": "2.2.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.1/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
@@ -2179,8 +2179,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.2.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.0/icon.png"
+              "slugVersion": "2.2.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.1/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
@@ -2363,7 +2363,7 @@
     ],
     "triggers": [
       {
-        "id": "f3fe0fb4-8d44-4f96-abe5-72e2cea088e9",
+        "id": "9e1d294b-9ade-4c36-b106-37a75fcc9f9d",
         "identifier": "new_message_received",
         "name": "Block Host Trigger",
         "description": "",
@@ -2666,8 +2666,8 @@
           "name": "Microsoft Teams",
           "slugVendor": "rapid7",
           "slugName": "microsoft_teams",
-          "slugVersion": "2.2.0",
-          "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.0/icon.png"
+          "slugVersion": "2.2.1",
+          "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.1/icon.png"
         }
       }
     ]
