@@ -1425,7 +1425,7 @@
             "parameters": {
               "input": {
                 "channel_name": "{{[25d61945-587e-45f0-aa08-8c7c1f829a5b].[channel_name]}}",
-                "message_content": "<b>Would you like to delete these assets?</b><br>\n<br>\Please copy and paste the following to delete these assets:</br>\n<code>!delete-asset-confirm \n{{#each [ec16fc09-fe2f-43f0-a753-11163c48e5a5].[ids]}}\n{{~this}} \n{{/each}}</code>",
+                "message_content": "<b>Would you like to delete these assets?</b><br>\n<br>\nPlease copy and paste the following to delete these assets:</br>\n<code>!delete-asset-confirm \n{{#each [ec16fc09-fe2f-43f0-a753-11163c48e5a5].[ids]}}\n{{~this}} \n{{/each}}</code>",
                 "team_name": "{{[25d61945-587e-45f0-aa08-8c7c1f829a5b].[team_name]}}",
                 "thread_id": "{{[25d61945-587e-45f0-aa08-8c7c1f829a5b].[message].[id]}}"
               }
