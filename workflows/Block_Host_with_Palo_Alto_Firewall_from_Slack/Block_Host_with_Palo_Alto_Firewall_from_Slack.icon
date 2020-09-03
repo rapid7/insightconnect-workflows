@@ -2,15 +2,23 @@
   "kom": {
     "komandVersion": "1.61.0-0-g0bf41",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-09-02T20:08:32.972613174Z",
+    "exportedAt": "2020-09-03T19:05:42.746721583Z",
     "workflowVersions": [
       {
         "name": "Block Host with Palo Alto Firewall from Slack",
         "type": "runnable",
         "version": "",
-        "description": "Use the simplicity of a chat command in Slack to block or unblock a host in your Palo Alto Firewall.",
+        "description": "Block and unblock a host with a Palo Alto firewall from Slack.",
         "graph": {
           "edges": {
+            "08376514-9a79-4a4e-b040-95068297daa0": {
+              "id": "08376514-9a79-4a4e-b040-95068297daa0",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "0ee9fb19-8a0e-42e4-be55-703f0c1b174f",
+              "toNodeId": "83a8e7c1-1f97-4467-b67c-9f1fbc189df1"
+            },
             "099fa753-4993-4a08-b578-eaf6538102af": {
               "id": "099fa753-4993-4a08-b578-eaf6538102af",
               "name": "Block Host",
@@ -113,7 +121,7 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
-              "toNodeId": "83a8e7c1-1f97-4467-b67c-9f1fbc189df1"
+              "toNodeId": "0ee9fb19-8a0e-42e4-be55-703f0c1b174f"
             },
             "8a409b54-6b00-448c-91d3-a98949207c0f": {
               "id": "8a409b54-6b00-448c-91d3-a98949207c0f",
@@ -175,6 +183,10 @@
           "nodes": {
             "031c9dd7-cb0d-439b-a2a5-28c413b62f74": {
               "id": "031c9dd7-cb0d-439b-a2a5-28c413b62f74",
+              "parentNodeId": ""
+            },
+            "0ee9fb19-8a0e-42e4-be55-703f0c1b174f": {
+              "id": "0ee9fb19-8a0e-42e4-be55-703f0c1b174f",
               "parentNodeId": ""
             },
             "252505b1-b1e2-4567-95da-cd01a0bb39f3": {
@@ -313,6 +325,65 @@
             "connectionType": "NONE",
             "chatOpsAppName": "slack",
             "chatOpsIdentifier": "post_message"
+          },
+          "0ee9fb19-8a0e-42e4-be55-703f0c1b174f": {
+            "nodeId": "0ee9fb19-8a0e-42e4-be55-703f0c1b174f",
+            "name": "Commit Changes",
+            "type": "action",
+            "plugin": {
+              "name": "Palo Alto Firewall",
+              "slugVendor": "rapid7",
+              "slugName": "palo_alto_pan_os",
+              "slugVersion": "6.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/6.0.0/icon.png"
+            },
+            "identifier": "commit",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "action": "commit-all",
+                "cmd": "<commit-all><shared-policy><validate-only></validate-only></shared-policy></commit-all>"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "action": {
+                  "default": "all",
+                  "description": "Commit action (Default: 'all')",
+                  "order": 2,
+                  "title": "Action",
+                  "type": "string"
+                },
+                "cmd": {
+                  "description": "XML specifying any commit arguments",
+                  "order": 1,
+                  "title": "CMD",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "cmd"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "response": {
+                  "description": "Response from the firewall",
+                  "order": 1,
+                  "title": "Response",
+                  "type": "object"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
           },
           "252505b1-b1e2-4567-95da-cd01a0bb39f3": {
             "nodeId": "252505b1-b1e2-4567-95da-cd01a0bb39f3",
@@ -519,7 +590,7 @@
                 "type": "any"
               }
             },
-            "triggerId": "098bc73d-62df-461c-8b61-dcff1ab51ae6",
+            "triggerId": "9da26f37-f2c5-4ecd-864f-d67a01a88de4",
             "defaultInputJSONSchema": {
               "properties": {
                 "matchChannel": {
@@ -1549,7 +1620,7 @@
     ],
     "triggers": [
       {
-        "id": "098bc73d-62df-461c-8b61-dcff1ab51ae6",
+        "id": "9da26f37-f2c5-4ecd-864f-d67a01a88de4",
         "name": "Slack Trigger",
         "description": "",
         "input": {
