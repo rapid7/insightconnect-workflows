@@ -1,6 +1,6 @@
 # Description
 
-Delete assets from InsightVM using a command from Slack
+Delete assets from InsightVM using a command from Slack.
 
 Sample trigger commands:
 
