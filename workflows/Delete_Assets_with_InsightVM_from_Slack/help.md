@@ -4,7 +4,7 @@ Delete assets from InsightVM using a command from Slack.
 
 Sample trigger commands:
 
-`delete-asset 12345`
+`@Rapid7 InsightConnect delete-asset 12345`
 
 `@Rapid7 InsightConnect delete-asset 12345 123456`
 
