@@ -57,7 +57,7 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Palo Alto Firewall|6.0.1|4|
+|Palo Alto Firewall|6.0.1|5|
 |Type Converter|1.6.0|1|
 
 ## Troubleshooting

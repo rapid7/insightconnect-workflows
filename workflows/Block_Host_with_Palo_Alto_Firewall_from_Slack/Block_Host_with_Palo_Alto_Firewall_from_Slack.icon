@@ -2,13 +2,13 @@
   "kom": {
     "komandVersion": "1.61.0-0-g0bf41",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-09-03T19:05:42.746721583Z",
+    "exportedAt": "2020-09-04T19:13:53.18059576Z",
     "workflowVersions": [
       {
         "name": "Block Host with Palo Alto Firewall from Slack",
         "type": "runnable",
         "version": "",
-        "description": "Block and unblock a host with a Palo Alto firewall from Slack.",
+        "description": "Use the simplicity of a chat command in Slack to block or unblock a host in your Palo Alto Firewall.",
         "graph": {
           "edges": {
             "08376514-9a79-4a4e-b040-95068297daa0": {
@@ -33,6 +33,14 @@
               "description": "",
               "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
               "fromNodeId": "3f170fd6-2826-45a7-856f-f19e80125d16",
+              "toNodeId": "0bd4c431-9fc0-49a1-bb34-e7caa137d6e5"
+            },
+            "3189c16a-365d-4a7a-b500-64f6146033a0": {
+              "id": "3189c16a-365d-4a7a-b500-64f6146033a0",
+              "name": "",
+              "description": "",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
+              "fromNodeId": "0bd4c431-9fc0-49a1-bb34-e7caa137d6e5",
               "toNodeId": ""
             },
             "33271c34-d5ba-4164-93cb-14668dfb1be6": {
@@ -49,7 +57,7 @@
               "description": "",
               "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
               "fromNodeId": "ce6e79d3-239d-4c67-ba70-f690962e56a0",
-              "toNodeId": ""
+              "toNodeId": "96cf2a82-cb44-48d6-8f1f-9b1656ab49f4"
             },
             "38bbe58a-b562-494c-92ca-097402ac1637": {
               "id": "38bbe58a-b562-494c-92ca-097402ac1637",
@@ -73,7 +81,7 @@
               "description": "",
               "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
               "fromNodeId": "9986ec6b-8acf-4556-b100-4b64876ec273",
-              "toNodeId": ""
+              "toNodeId": "7cbadd15-c9e0-4e39-afd1-dcd102feeef7"
             },
             "4aaf1741-9541-4081-8691-d4b4fc5e9bcc": {
               "id": "4aaf1741-9541-4081-8691-d4b4fc5e9bcc",
@@ -147,6 +155,14 @@
               "fromNodeId": "59de03bc-ff23-4ec8-bc3f-579deb153568",
               "toNodeId": "71640fb0-fd89-4e3d-b356-dd502ae96c9b"
             },
+            "b2d71324-9a58-455a-959d-c97bff19b2bc": {
+              "id": "b2d71324-9a58-455a-959d-c97bff19b2bc",
+              "name": "",
+              "description": "",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
+              "fromNodeId": "7cbadd15-c9e0-4e39-afd1-dcd102feeef7",
+              "toNodeId": ""
+            },
             "cf14ed07-f136-473d-b259-6dcdd0d87874": {
               "id": "cf14ed07-f136-473d-b259-6dcdd0d87874",
               "name": "No",
@@ -154,6 +170,14 @@
               "parentNodeId": "",
               "fromNodeId": "f30393c6-4f10-4adf-b9cb-eef3f1bc5326",
               "toNodeId": "031c9dd7-cb0d-439b-a2a5-28c413b62f74"
+            },
+            "d4ea1cf5-6f35-4265-a0f8-ee87082da5c1": {
+              "id": "d4ea1cf5-6f35-4265-a0f8-ee87082da5c1",
+              "name": "",
+              "description": "",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
+              "fromNodeId": "96cf2a82-cb44-48d6-8f1f-9b1656ab49f4",
+              "toNodeId": ""
             },
             "e4b6a364-09bd-4cbc-aedf-0ade1aeeb6cf": {
               "id": "e4b6a364-09bd-4cbc-aedf-0ade1aeeb6cf",
@@ -184,6 +208,10 @@
             "031c9dd7-cb0d-439b-a2a5-28c413b62f74": {
               "id": "031c9dd7-cb0d-439b-a2a5-28c413b62f74",
               "parentNodeId": ""
+            },
+            "0bd4c431-9fc0-49a1-bb34-e7caa137d6e5": {
+              "id": "0bd4c431-9fc0-49a1-bb34-e7caa137d6e5",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c"
             },
             "0ee9fb19-8a0e-42e4-be55-703f0c1b174f": {
               "id": "0ee9fb19-8a0e-42e4-be55-703f0c1b174f",
@@ -225,9 +253,17 @@
               "id": "71640fb0-fd89-4e3d-b356-dd502ae96c9b",
               "parentNodeId": ""
             },
+            "7cbadd15-c9e0-4e39-afd1-dcd102feeef7": {
+              "id": "7cbadd15-c9e0-4e39-afd1-dcd102feeef7",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c"
+            },
             "83a8e7c1-1f97-4467-b67c-9f1fbc189df1": {
               "id": "83a8e7c1-1f97-4467-b67c-9f1fbc189df1",
               "parentNodeId": ""
+            },
+            "96cf2a82-cb44-48d6-8f1f-9b1656ab49f4": {
+              "id": "96cf2a82-cb44-48d6-8f1f-9b1656ab49f4",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c"
             },
             "9986ec6b-8acf-4556-b100-4b64876ec273": {
               "id": "9986ec6b-8acf-4556-b100-4b64876ec273",
@@ -326,6 +362,24 @@
             "chatOpsAppName": "slack",
             "chatOpsIdentifier": "post_message"
           },
+          "0bd4c431-9fc0-49a1-bb34-e7caa137d6e5": {
+            "nodeId": "0bd4c431-9fc0-49a1-bb34-e7caa137d6e5",
+            "name": "Successful Block Artifact",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "Block Host Success\n\nBlocked: `{{[634ba1d9-2e69-4adf-b15b-1c32b1559e4c].[$item]}}`"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
           "0ee9fb19-8a0e-42e4-be55-703f0c1b174f": {
             "nodeId": "0ee9fb19-8a0e-42e4-be55-703f0c1b174f",
             "name": "Commit Changes",
@@ -334,8 +388,8 @@
               "name": "Palo Alto Firewall",
               "slugVendor": "rapid7",
               "slugName": "palo_alto_pan_os",
-              "slugVersion": "6.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/6.0.0/icon.png"
+              "slugVersion": "6.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/6.0.1/icon.png"
             },
             "identifier": "commit",
             "continueOnFailure": false,
@@ -505,8 +559,8 @@
               "name": "Palo Alto Firewall",
               "slugVendor": "rapid7",
               "slugName": "palo_alto_pan_os",
-              "slugVersion": "6.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/6.0.0/icon.png"
+              "slugVersion": "6.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/6.0.1/icon.png"
             },
             "identifier": "remove_address_object_from_group",
             "continueOnFailure": false,
@@ -961,8 +1015,8 @@
               "name": "Palo Alto Firewall",
               "slugVendor": "rapid7",
               "slugName": "palo_alto_pan_os",
-              "slugVersion": "6.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/6.0.0/icon.png"
+              "slugVersion": "6.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/6.0.1/icon.png"
             },
             "identifier": "add_address_object_to_group",
             "continueOnFailure": false,
@@ -1006,10 +1060,10 @@
                 }
               },
               "required": [
-                "device_name",
-                "virtual_system",
                 "address_object",
-                "group"
+                "group",
+                "device_name",
+                "virtual_system"
               ],
               "title": "Variables",
               "type": "object"
@@ -1062,7 +1116,7 @@
               "input": {
                 "array1": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[message].[indicators].[ip_addresses].[ipv4_addresses]}}",
                 "array2": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[message].[indicators].[domains]}}",
-                "array3": [],
+                "array3": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[message].[indicators].[ip_addresses].[ipv6_addresses]}}",
                 "array4": [],
                 "array5": []
               }
@@ -1144,6 +1198,24 @@
             "defaultImageData": "",
             "connectionType": "ORCHESTRATOR"
           },
+          "7cbadd15-c9e0-4e39-afd1-dcd102feeef7": {
+            "nodeId": "7cbadd15-c9e0-4e39-afd1-dcd102feeef7",
+            "name": "Successful Unblock Artifact",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "Unblock Host Success\n\nUnblocked: `{{[634ba1d9-2e69-4adf-b15b-1c32b1559e4c].[$item]}}`"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
           "83a8e7c1-1f97-4467-b67c-9f1fbc189df1": {
             "nodeId": "83a8e7c1-1f97-4467-b67c-9f1fbc189df1",
             "name": "Workflow Complete Message",
@@ -1217,6 +1289,24 @@
             "connectionType": "NONE",
             "chatOpsAppName": "slack",
             "chatOpsIdentifier": "post_message"
+          },
+          "96cf2a82-cb44-48d6-8f1f-9b1656ab49f4": {
+            "nodeId": "96cf2a82-cb44-48d6-8f1f-9b1656ab49f4",
+            "name": "Unblock Failed Artifact",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "Unblock Host Failure\n\n`{{[634ba1d9-2e69-4adf-b15b-1c32b1559e4c].[$item]}}`"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
           },
           "9986ec6b-8acf-4556-b100-4b64876ec273": {
             "nodeId": "9986ec6b-8acf-4556-b100-4b64876ec273",
@@ -1374,8 +1464,8 @@
               "name": "Palo Alto Firewall",
               "slugVendor": "rapid7",
               "slugName": "palo_alto_pan_os",
-              "slugVersion": "6.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/6.0.0/icon.png"
+              "slugVersion": "6.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/6.0.1/icon.png"
             },
             "identifier": "check_if_address_object_in_group",
             "continueOnFailure": false,
@@ -1427,11 +1517,11 @@
                 }
               },
               "required": [
+                "group",
+                "address",
                 "enable_search",
                 "device_name",
-                "virtual_system",
-                "group",
-                "address"
+                "virtual_system"
               ],
               "title": "Variables",
               "type": "object"
@@ -1472,8 +1562,8 @@
               "name": "Palo Alto Firewall",
               "slugVendor": "rapid7",
               "slugName": "palo_alto_pan_os",
-              "slugVersion": "6.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/6.0.0/icon.png"
+              "slugVersion": "6.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/6.0.1/icon.png"
             },
             "identifier": "set_address_object",
             "continueOnFailure": true,
