@@ -1,9 +1,9 @@
 extension: workflow
 products: ["insightconnect"]
-name: Open_Source_Indicator_Enrichment_with_Microsoft_Teams
-title: "Open Source Indicator Enrichment with Microsoft Teams"
+name: Enrich_Indicators_with_OSINT_from_Microsoft_Teams
+title: "Enrich Indicators with OSINT from Microsoft Teams"
 description: "Look up and enrich URLs, IP addresses, and hashes directly from Microsoft Teams using open source threat intelligence tools such as Dig, DNS, and Whois."
-version: 1.0.2
+version: 2.0.0
 vendor: rapid7
 support: rapid7
 status: []
@@ -12,7 +12,7 @@ hub_tags:
   keywords: [enrichment, teams, work_from_home, phishing]
   features: []
 resources:
-  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Open_Source_Indicator_Enrichment_With_Teams
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Enrich_Indicators_with_OSINT_from_Microsoft_Teams
   license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
   screenshots:
   - name: artifact1.png
@@ -23,6 +23,12 @@ resources:
     title: Example Artifact for IP Enrichment
   - name: workflow1.png
     title: Workflow View
+  - name: workflow2.png
+    title: Workflow View IP Loop
+  - name: workflow3.png
+    title: Workflow View URL Loop
+  - name: workflow4.png
+    title: Workflow View Hash Loop
   - name: teams1.png
     title: Example Microsoft Teams Output for URL Enrichment
   - name: teams2.png
@@ -30,4 +36,4 @@ resources:
   - name: teams3.png
     title: Example Microsoft Teams Output for IP Enrichment
   - name: teams4.png
-    title: Example Microsoft Teams Output for Help
+    title: Example Microsoft Teams Output for Invalid Indicator

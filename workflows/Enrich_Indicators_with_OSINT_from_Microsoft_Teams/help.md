@@ -4,11 +4,11 @@ Threat Intelligence doesn’t have to come with a cost. This workflow uses open-
 
 Sample Trigger Commands:
 
-`!investigate ip 8.8.8.8`
+`!enrich-indicator 8.8.8.8`
 
-`!investigate url badsite.com`
+`!enrich-indicator rapid7.com`
 
-`!investigate hash 36c5012e100c8e91221e9891cad37df0cac938cee1e8f69b6fdf99821cb05339`
+`!enrich-indicator 009f1e9b72cfb6daa3de82093a755bdb3685e0eb`
 
 # Key Features
 
@@ -37,7 +37,7 @@ After configuring the Teams steps, activate the workflow in order to trigger it.
 To run the workflow, send a message to the specified Microsoft Teams channel starting with the command `!enrich-indicator`. 
 
 Commands should be in the following format:
-`!enrich-indicator <indicator type> <indicator>`
+`!enrich-indicator <indicator>`
 
 `!enrich-indicator ip 8.8.8.8`
 `!enrich-indicator url badsite.com`
@@ -54,10 +54,11 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Dig|1.0.3|1|
-|Team Cymru MHR|1.0.3|1|
-|Microsoft Teams|2.0.4|7|
-|WHOIS|1.0.7|2|
+|Dig|1.0.5|1|
+|Team Cymru MHR|1.1.1|1|
+|Microsoft Teams|2.2.1|8|
+|WHOIS|2.0.2|2|
+|Type Converter|1.6.0|2|
 
 ## Troubleshooting
 
@@ -65,6 +66,7 @@ In some instances using copy & paste for `!enrich-indicator` commands may introd
 
 # Version History
 
+* 2.0.0 - Update workflow to use loop outputs
 * 1.0.2 - Update to make Microsoft Teams plugin the latest version
 * 1.0.1 - Updated trigger syntax and documentation
 * 1.0.0 - Initial workflow
