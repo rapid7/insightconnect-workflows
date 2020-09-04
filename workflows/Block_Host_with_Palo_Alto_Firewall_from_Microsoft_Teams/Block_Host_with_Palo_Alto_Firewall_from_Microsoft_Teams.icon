@@ -2,7 +2,7 @@
   "kom": {
     "komandVersion": "1.61.0-0-g0bf41",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-09-03T18:01:56.21659155Z",
+    "exportedAt": "2020-09-04T19:23:05.461578213Z",
     "workflowVersions": [
       {
         "name": "Block Host with Palo Alto Firewall from Microsoft Teams",
@@ -42,6 +42,14 @@
               "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
               "fromNodeId": "d63265f3-95bb-470d-a126-0cbfd2dedba0",
               "toNodeId": ""
+            },
+            "2f94ad67-9456-4a3e-b4a7-e14854ab69d8": {
+              "id": "2f94ad67-9456-4a3e-b4a7-e14854ab69d8",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "230a09b3-86a3-4fce-a6c3-f059e893827f",
+              "toNodeId": "07c4984a-f089-405e-ae19-bf58b6fa2f25"
             },
             "33271c34-d5ba-4164-93cb-14668dfb1be6": {
               "id": "33271c34-d5ba-4164-93cb-14668dfb1be6",
@@ -129,7 +137,7 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
-              "toNodeId": "07c4984a-f089-405e-ae19-bf58b6fa2f25"
+              "toNodeId": "230a09b3-86a3-4fce-a6c3-f059e893827f"
             },
             "843d1903-ee95-44f0-80ed-7033ff959a33": {
               "id": "843d1903-ee95-44f0-80ed-7033ff959a33",
@@ -207,6 +215,10 @@
             },
             "07c4984a-f089-405e-ae19-bf58b6fa2f25": {
               "id": "07c4984a-f089-405e-ae19-bf58b6fa2f25",
+              "parentNodeId": ""
+            },
+            "230a09b3-86a3-4fce-a6c3-f059e893827f": {
+              "id": "230a09b3-86a3-4fce-a6c3-f059e893827f",
               "parentNodeId": ""
             },
             "252505b1-b1e2-4567-95da-cd01a0bb39f3": {
@@ -662,6 +674,65 @@
             "defaultImageData": "",
             "connectionType": "CONNECTION"
           },
+          "230a09b3-86a3-4fce-a6c3-f059e893827f": {
+            "nodeId": "230a09b3-86a3-4fce-a6c3-f059e893827f",
+            "name": "Commit Changes",
+            "type": "action",
+            "plugin": {
+              "name": "Palo Alto Firewall",
+              "slugVendor": "rapid7",
+              "slugName": "palo_alto_pan_os",
+              "slugVersion": "6.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/6.0.1/icon.png"
+            },
+            "identifier": "commit",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "action": "commit-all",
+                "cmd": "<commit-all><shared-policy><validate-only></validate-only></shared-policy></commit-all>"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "action": {
+                  "default": "all",
+                  "description": "Commit action (Default: 'all')",
+                  "order": 2,
+                  "title": "Action",
+                  "type": "string"
+                },
+                "cmd": {
+                  "description": "XML specifying any commit arguments",
+                  "order": 1,
+                  "title": "CMD",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "cmd"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "response": {
+                  "description": "Response from the firewall",
+                  "order": 1,
+                  "title": "Response",
+                  "type": "object"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
           "252505b1-b1e2-4567-95da-cd01a0bb39f3": {
             "nodeId": "252505b1-b1e2-4567-95da-cd01a0bb39f3",
             "name": "Which Command?",
@@ -708,8 +779,8 @@
               "name": "Palo Alto Firewall",
               "slugVendor": "rapid7",
               "slugName": "palo_alto_pan_os",
-              "slugVersion": "6.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/6.0.0/icon.png"
+              "slugVersion": "6.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/6.0.1/icon.png"
             },
             "identifier": "remove_address_object_from_group",
             "continueOnFailure": false,
@@ -1137,6 +1208,15 @@
                       "order": 2,
                       "title": "URLs",
                       "type": "array"
+                    },
+                    "uuids": {
+                      "description": "Extracted UUIDs from message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 8,
+                      "title": "UUIDs",
+                      "type": "array"
                     }
                   },
                   "title": "Indicators",
@@ -1338,8 +1418,8 @@
               "name": "Palo Alto Firewall",
               "slugVendor": "rapid7",
               "slugName": "palo_alto_pan_os",
-              "slugVersion": "6.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/6.0.0/icon.png"
+              "slugVersion": "6.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/6.0.1/icon.png"
             },
             "identifier": "add_address_object_to_group",
             "continueOnFailure": false,
@@ -1383,10 +1463,10 @@
                 }
               },
               "required": [
-                "device_name",
-                "virtual_system",
                 "address_object",
-                "group"
+                "group",
+                "device_name",
+                "virtual_system"
               ],
               "title": "Variables",
               "type": "object"
@@ -1897,8 +1977,8 @@
               "name": "Palo Alto Firewall",
               "slugVendor": "rapid7",
               "slugName": "palo_alto_pan_os",
-              "slugVersion": "6.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/6.0.0/icon.png"
+              "slugVersion": "6.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/6.0.1/icon.png"
             },
             "identifier": "check_if_address_object_in_group",
             "continueOnFailure": false,
@@ -1950,11 +2030,11 @@
                 }
               },
               "required": [
+                "group",
+                "address",
                 "enable_search",
                 "device_name",
-                "virtual_system",
-                "group",
-                "address"
+                "virtual_system"
               ],
               "title": "Variables",
               "type": "object"
@@ -1995,8 +2075,8 @@
               "name": "Palo Alto Firewall",
               "slugVendor": "rapid7",
               "slugName": "palo_alto_pan_os",
-              "slugVersion": "6.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/6.0.0/icon.png"
+              "slugVersion": "6.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/6.0.1/icon.png"
             },
             "identifier": "set_address_object",
             "continueOnFailure": true,
@@ -2522,6 +2602,15 @@
                   },
                   "order": 2,
                   "title": "URLs",
+                  "type": "array"
+                },
+                "uuids": {
+                  "description": "Extracted UUIDs from message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 8,
+                  "title": "UUIDs",
                   "type": "array"
                 }
               },
