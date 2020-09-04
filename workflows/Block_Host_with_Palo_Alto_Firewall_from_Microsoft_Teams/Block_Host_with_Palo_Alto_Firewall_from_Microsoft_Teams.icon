@@ -2269,7 +2269,7 @@
             "parameters": {
               "input": {
                 "channel_name": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[channel_name]}}",
-                "message_content": "✅<b>Block Host Success</b> ✅<br>\n<br>\nBlocked: <code>{{[634ba1d9-2e69-4adf-b15b-1c32b1559e4c].[$item]}}</code>",
+                "message_content": "✅ <b>Block Host Success</b> ✅<br>\n<br>\nBlocked: <code>{{[634ba1d9-2e69-4adf-b15b-1c32b1559e4c].[$item]}}</code>",
                 "team_name": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[team_name]}}",
                 "thread_id": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[message].[id]}}"
               }
