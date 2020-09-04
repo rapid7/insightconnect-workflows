@@ -4,11 +4,11 @@ Threat Intelligence doesn’t have to come with a cost. This workflow uses open-
 
 Sample Slack Trigger Commands:
 
-`@Rapid7 InsightConnect enrich-indicator ip 8.8.8.8`
+`@Rapid7 InsightConnect enrich-indicator 8.8.8.8`
 
-`@Rapid7 InsightConnect enrich-indicator url badsite.com`
+`@Rapid7 InsightConnect enrich-indicator badsite.com`
 
-`@Rapid7 InsightConnect enrich-indicator hash 36c5012e100c8e91221e9891cad37df0cac938cee1e8f69b6fdf99821cb05339`
+`@Rapid7 InsightConnect enrich-indicator 36c5012e100c8e91221e9891cad37df0cac938cee1e8f69b6fdf99821cb05339`
 
 # Key Features
 
@@ -35,12 +35,10 @@ After import, activate the workflow in order to trigger it.
 To run the workflow, send a direct message to your InsightConnect Slack Chatbot starting with the command `enrich-indicator`.
 
 Commands should be in the following format:
-`enrich-indicator <indicator type> <indicator>`
-`enrich-indicator ip 8.8.8.8`
-`enrich-indicator url badsite.com`
-`enrich-indicator hash 009f1e9b72cfb6daa3de82093a755bdb3685e0eb`
-
-Use `enrich-indicator help` for more information and examples.
+`enrich-indicator <indicator>`
+`enrich-indicator 8.8.8.8`
+`enrich-indicator badsite.com`
+`enrich-indicator 009f1e9b72cfb6daa3de82093a755bdb3685e0eb`
 
 The workflow will post the results in a thread.
 
@@ -50,9 +48,10 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Dig|1.0.3|1|
-|Team Cymru MHR|1.0.3|1|
-|WHOIS|1.0.7|2|
+|Dig|1.0.5|1|
+|Team Cymru MHR|1.1.1|1|
+|WHOIS|2.0.2|2|
+|Type Converter|1.6.0|2|
 
 ## Troubleshooting
 
@@ -60,6 +59,7 @@ In some instances using copy & paste for `!enrich-indicator` commands many intro
 
 # Version History
 
+* 2.0.0 - Updated workflow to use loops instead of pattern match
 * 1.0.4 - Updated trigger syntax and documentation
 * 1.0.3 - Updated trigger syntax and documentation
 * 1.0.2 - Updated workflow title, description, and key features

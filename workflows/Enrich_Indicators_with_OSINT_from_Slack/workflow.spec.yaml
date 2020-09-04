@@ -1,9 +1,9 @@
 extension: workflow
 products: ["insightconnect"]
-name: Open_Source_Indicator_Enrichment_with_Slack
-title: "OSINT Indicator Enrichment with Slack"
+name: Enrich_Indicators_with_OSINT_from_Slack
+title: "Enrich Indicators with OSINT from Slack"
 description: "Use open source intelligence (OSINT) to look up and enrich URLs, IP addresses, and hashes directly from Slack."
-version: 1.0.4
+version: 2.0.0
 vendor: rapid7
 support: rapid7
 status: []
@@ -12,7 +12,7 @@ hub_tags:
   keywords: [enrichment, slack, url, ip, hash, ioc, chat, work_from_home, phishing]
   features: []
 resources:
-  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Open_Source_Indicator_Enrichment_With_Slack
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Enrich_Indicators_with_OSINT_from_Slack
   license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
   screenshots:
   - name: artifact1.png
@@ -23,11 +23,15 @@ resources:
     title: Example Artifact for Hash Enrichment
   - name: workflow1.png
     title: Workflow View
+  - name: workflow2.png
+    title: Workflow View IP Loop
+  - name: workflow3.png
+    title: Workflow View URL Loop
+  - name: workflow4.png
+    title: Workflow View Hash Loop
   - name: slack1.png
-    title: Example Slack Output for Help
-  - name: slack2.png
-    title: Example Slack Output for IP Enrichment
-  - name: slack3.png
-    title: Example Slack Output for Hash Enrichment
-  - name: slack4.png
     title: Example Slack Output for URL Enrichment
+  - name: slack2.png
+    title: Example Slack Output for Hash Enrichment
+  - name: slack3.png
+    title: Example Slack Output for IP Enrichment
