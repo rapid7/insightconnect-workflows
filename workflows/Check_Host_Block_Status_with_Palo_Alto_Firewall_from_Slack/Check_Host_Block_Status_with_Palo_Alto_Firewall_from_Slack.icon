@@ -2,7 +2,7 @@
   "kom": {
     "komandVersion": "1.61.0-0-g0bf41",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-09-03T13:54:29.216127271Z",
+    "exportedAt": "2020-09-04T14:19:52.794847883Z",
     "workflowVersions": [
       {
         "name": "Check Host Block Status with Palo Alto Firewall from Slack",
@@ -248,8 +248,8 @@
               "name": "Palo Alto Firewall",
               "slugVendor": "rapid7",
               "slugName": "palo_alto_pan_os",
-              "slugVersion": "6.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/6.0.0/icon.png"
+              "slugVersion": "6.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/6.0.1/icon.png"
             },
             "identifier": "check_if_address_object_in_group",
             "continueOnFailure": false,
@@ -301,11 +301,11 @@
                 }
               },
               "required": [
+                "group",
+                "address",
                 "enable_search",
                 "device_name",
-                "virtual_system",
-                "group",
-                "address"
+                "virtual_system"
               ],
               "title": "Variables",
               "type": "object"
@@ -436,7 +436,7 @@
           },
           "23a60fc2-a83b-456c-aed0-2dd0b2136079": {
             "nodeId": "23a60fc2-a83b-456c-aed0-2dd0b2136079",
-            "name": "Host Not Found",
+            "name": "Host Not Found Message",
             "type": "action_chatops",
             "continueOnFailure": false,
             "isDisabled": false,
@@ -1016,7 +1016,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "🚨*Workflow not executed* 🚨\n\nPlease input the command followed by at least one valid host (ip address or domain)",
+                "message": "🚨*Workflow not executed* 🚨\n\nPlease input the command followed by at least one valid host (ip address or domain).",
                 "recipient": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[message].[channel]}}",
                 "thread_ts": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[timestamp]}}"
               }
