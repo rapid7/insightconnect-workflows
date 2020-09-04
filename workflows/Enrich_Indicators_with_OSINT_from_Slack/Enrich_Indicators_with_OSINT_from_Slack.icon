@@ -2,7 +2,7 @@
   "kom": {
     "komandVersion": "1.61.0-0-g0bf41",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-09-03T14:12:34.43741602Z",
+    "exportedAt": "2020-09-04T18:50:46.848124082Z",
     "workflowVersions": [
       {
         "name": "Enrich Indicators with OSINT from Slack",
@@ -49,7 +49,7 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "0c725146-c493-4bcf-a3e8-5678e7c628a6",
-              "toNodeId": "8a1fb2a0-ddb6-43db-93ce-a8ab0878fe03"
+              "toNodeId": "9c259142-201d-4198-b792-b49bc374dded"
             },
             "46f4e80a-7bcf-48c3-8457-badc2ecfcc08": {
               "id": "46f4e80a-7bcf-48c3-8457-badc2ecfcc08",
@@ -57,6 +57,14 @@
               "description": "",
               "parentNodeId": "8a08a99a-62ae-45d5-a192-69360999a4aa",
               "fromNodeId": "f99aae67-fa8f-463c-b380-426d1445367c",
+              "toNodeId": ""
+            },
+            "52419002-0164-4f38-91d3-63e9ed32b25b": {
+              "id": "52419002-0164-4f38-91d3-63e9ed32b25b",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "1ef0de95-6cb4-4538-b02d-9888fb44f6b7",
               "toNodeId": ""
             },
             "537b6e2b-0c39-4eb6-884b-147c9bdac28f": {
@@ -163,6 +171,22 @@
               "fromNodeId": "e32ed28c-d828-4880-97da-44783044e906",
               "toNodeId": "9d51bed1-f205-4c6b-b7fc-e90872586d6d"
             },
+            "e731167c-a6a7-4552-86f3-6120eb7c787e": {
+              "id": "e731167c-a6a7-4552-86f3-6120eb7c787e",
+              "name": "No",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "9c259142-201d-4198-b792-b49bc374dded",
+              "toNodeId": "1ef0de95-6cb4-4538-b02d-9888fb44f6b7"
+            },
+            "ecc78c6c-a8ba-40c9-bc96-e263d2157493": {
+              "id": "ecc78c6c-a8ba-40c9-bc96-e263d2157493",
+              "name": "Yes",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "9c259142-201d-4198-b792-b49bc374dded",
+              "toNodeId": "8a1fb2a0-ddb6-43db-93ce-a8ab0878fe03"
+            },
             "fd088842-ab06-49d7-a82b-52b813dc6d13": {
               "id": "fd088842-ab06-49d7-a82b-52b813dc6d13",
               "name": "",
@@ -183,6 +207,10 @@
           "nodes": {
             "0c725146-c493-4bcf-a3e8-5678e7c628a6": {
               "id": "0c725146-c493-4bcf-a3e8-5678e7c628a6",
+              "parentNodeId": ""
+            },
+            "1ef0de95-6cb4-4538-b02d-9888fb44f6b7": {
+              "id": "1ef0de95-6cb4-4538-b02d-9888fb44f6b7",
               "parentNodeId": ""
             },
             "2b5fc056-91e9-4b1d-9524-a90815d2bf1f": {
@@ -219,6 +247,10 @@
             },
             "8a1fb2a0-ddb6-43db-93ce-a8ab0878fe03": {
               "id": "8a1fb2a0-ddb6-43db-93ce-a8ab0878fe03",
+              "parentNodeId": ""
+            },
+            "9c259142-201d-4198-b792-b49bc374dded": {
+              "id": "9c259142-201d-4198-b792-b49bc374dded",
               "parentNodeId": ""
             },
             "9d4f36eb-2826-4c05-8bdb-10c779b04cc3": {
@@ -267,7 +299,81 @@
                 "attachments": [],
                 "message": "🚀 Starting workflow 🚀",
                 "recipient": "{{[490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa].[message].[channel_id]}}",
-                "thread_ts": "{{[490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa].[timestamp]}}"
+                "thread_ts": "{{[490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa].[message].[ts]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 4,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 3,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                },
+                "thread_ts": {
+                  "description": "Select timestamp output variable from parent message step",
+                  "order": 2,
+                  "title": "To post in a thread, select parent message timestamp",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
+          },
+          "1ef0de95-6cb4-4538-b02d-9888fb44f6b7": {
+            "nodeId": "1ef0de95-6cb4-4538-b02d-9888fb44f6b7",
+            "name": "Invalid Input Message",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": "Your message was not correctly formatted.\nMessage format should be:\n!enrich-indicator <data>",
+                "recipient": "{{[490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa].[message].[channel_id]}}",
+                "thread_ts": "{{[490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa].[message].[ts]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -340,8 +446,8 @@
               "input": {
                 "attachments": [],
                 "message": "🚀  *Workflow Complete*  🚀 ",
-                "recipient": "{{[490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa].[message].[channel_id]}}",
-                "thread_ts": "{{[490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa].[message].[ts]}}"
+                "recipient": "change_me",
+                "thread_ts": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -506,8 +612,8 @@
               "input": {
                 "attachments": [],
                 "message": ":notebook_with_decorative_cover: Hash Analysis for {{[f4a2a805-c273-4a22-9624-23b5f8bc521a].[$item]}} :notebook_with_decorative_cover:\n\n_Cymru malware hash_\n>Malicious: {{[39efd3e8-876d-4fc5-afb3-3a6fb3c80ec6].[result].[detected]}}\n>Hash last seen: {{[39efd3e8-876d-4fc5-afb3-3a6fb3c80ec6].[result].[last_seen_utc]}}\n>Response Code {{[39efd3e8-876d-4fc5-afb3-3a6fb3c80ec6].[result].[response_code]}}",
-                "recipient": "{{[490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa].[message].[channel_id]}}",
-                "thread_ts": "{{[490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa].[message].[ts]}}"
+                "recipient": "change_me",
+                "thread_ts": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -580,8 +686,8 @@
               "input": {
                 "attachments": [],
                 "message": ":notebook_with_decorative_cover: IP Analysis for {{[9d51bed1-f205-4c6b-b7fc-e90872586d6d].[$item]}}:notebook_with_decorative_cover:\n\n_WhoIs_\n> Org Details\n> Reg Date : {{[7a5fe13c-8003-4f15-9ae6-507a2e4f549d].[regdate]}}\n> Org Name : {{[7a5fe13c-8003-4f15-9ae6-507a2e4f549d].[orgname]}}\n> Net Name : {{[7a5fe13c-8003-4f15-9ae6-507a2e4f549d].[netname]}}\n> Net Type : {{[7a5fe13c-8003-4f15-9ae6-507a2e4f549d].[nettype]}}\n> Net Range: {{[7a5fe13c-8003-4f15-9ae6-507a2e4f549d].[netrange]}}\n> Location Details\n> Address : {{[7a5fe13c-8003-4f15-9ae6-507a2e4f549d].[address]}}\n> City : {{[7a5fe13c-8003-4f15-9ae6-507a2e4f549d].[city]}}\n> Country : {{[7a5fe13c-8003-4f15-9ae6-507a2e4f549d].[country]}}\n\n_Dig_\n>Question Asked: {{[9d4f36eb-2826-4c05-8bdb-10c779b04cc3].[question]}}\n>Answer Received: {{[9d4f36eb-2826-4c05-8bdb-10c779b04cc3].[answer]}}\n>Query Status: {{[9d4f36eb-2826-4c05-8bdb-10c779b04cc3].[status]}}\n>Nameserver that Fulfilled Request: {{[9d4f36eb-2826-4c05-8bdb-10c779b04cc3].[nameserver]}}",
-                "recipient": "{{[490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa].[message].[channel_id]}}",
-                "thread_ts": "{{[490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa].[message].[ts]}}"
+                "recipient": "change_me",
+                "thread_ts": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -652,7 +758,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "matchChannel": "#integration-testing",
+                "matchChannel": "integration-testing",
                 "matchText": "enrich-indicator",
                 "type": "any"
               }
@@ -1182,6 +1288,160 @@
             "defaultImageData": "",
             "connectionType": "ORCHESTRATOR"
           },
+          "9c259142-201d-4198-b792-b49bc374dded": {
+            "nodeId": "9c259142-201d-4198-b792-b49bc374dded",
+            "name": "Valid Indicator",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "ecc78c6c-a8ba-40c9-bc96-e263d2157493",
+              "stepControlParams": [
+                {
+                  "edgeId": "ecc78c6c-a8ba-40c9-bc96-e263d2157493",
+                  "expression": {},
+                  "expressionText": ""
+                },
+                {
+                  "edgeId": "e731167c-a6a7-4552-86f3-6120eb7c787e",
+                  "expression": {
+                    "left": {
+                      "left": {
+                        "args": [
+                          {
+                            "name": "490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa.message.indicators.ip_addresses.ipv4_addresses",
+                            "type": "variable"
+                          }
+                        ],
+                        "name": "length",
+                        "type": "function"
+                      },
+                      "op": "=",
+                      "right": {
+                        "type": "literal",
+                        "value": 0
+                      },
+                      "type": "binary"
+                    },
+                    "op": "AND",
+                    "right": {
+                      "left": {
+                        "left": {
+                          "args": [
+                            {
+                              "name": "490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa.message.indicators.ip_addresses.ipv6_addresses",
+                              "type": "variable"
+                            }
+                          ],
+                          "name": "length",
+                          "type": "function"
+                        },
+                        "op": "=",
+                        "right": {
+                          "type": "literal",
+                          "value": 0
+                        },
+                        "type": "binary"
+                      },
+                      "op": "AND",
+                      "right": {
+                        "left": {
+                          "left": {
+                            "args": [
+                              {
+                                "name": "490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa.message.indicators.hashes.md5_hashes",
+                                "type": "variable"
+                              }
+                            ],
+                            "name": "length",
+                            "type": "function"
+                          },
+                          "op": "=",
+                          "right": {
+                            "type": "literal",
+                            "value": 0
+                          },
+                          "type": "binary"
+                        },
+                        "op": "AND",
+                        "right": {
+                          "left": {
+                            "left": {
+                              "args": [
+                                {
+                                  "name": "490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa.message.indicators.hashes.sha1_hashes",
+                                  "type": "variable"
+                                }
+                              ],
+                              "name": "length",
+                              "type": "function"
+                            },
+                            "op": "=",
+                            "right": {
+                              "type": "literal",
+                              "value": 0
+                            },
+                            "type": "binary"
+                          },
+                          "op": "AND",
+                          "right": {
+                            "left": {
+                              "left": {
+                                "args": [
+                                  {
+                                    "name": "490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa.message.indicators.hashes.sha256_hashes",
+                                    "type": "variable"
+                                  }
+                                ],
+                                "name": "length",
+                                "type": "function"
+                              },
+                              "op": "=",
+                              "right": {
+                                "type": "literal",
+                                "value": 0
+                              },
+                              "type": "binary"
+                            },
+                            "op": "AND",
+                            "right": {
+                              "left": {
+                                "args": [
+                                  {
+                                    "name": "490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa.message.indicators.domains",
+                                    "type": "variable"
+                                  }
+                                ],
+                                "name": "length",
+                                "type": "function"
+                              },
+                              "op": "=",
+                              "right": {
+                                "type": "literal",
+                                "value": 0
+                              },
+                              "type": "binary"
+                            },
+                            "type": "binary"
+                          },
+                          "type": "binary"
+                        },
+                        "type": "binary"
+                      },
+                      "type": "binary"
+                    },
+                    "type": "binary"
+                  },
+                  "expressionText": "length({{[490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa].[message].[indicators].[ip_addresses].[ipv4_addresses]}}) = 0 && length({{[490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa].[message].[indicators].[ip_addresses].[ipv6_addresses]}}) = 0 && length({{[490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa].[message].[indicators].[hashes].[md5_hashes]}}) = 0 && length({{[490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa].[message].[indicators].[hashes].[sha1_hashes]}}) = 0 && length({{[490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa].[message].[indicators].[hashes].[sha256_hashes]}}) = 0 && length({{[490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa].[message].[indicators].[domains]}}) = 0"
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          },
           "9d4f36eb-2826-4c05-8bdb-10c779b04cc3": {
             "nodeId": "9d4f36eb-2826-4c05-8bdb-10c779b04cc3",
             "name": "Dig Lookup Reverse DNS",
@@ -1608,8 +1868,8 @@
               "input": {
                 "attachments": [],
                 "message": ":notebook_with_decorative_cover: URL Analysis for {{[8a08a99a-62ae-45d5-a192-69360999a4aa].[$item]}} :notebook_with_decorative_cover:\n\n_WhoIs_\n> Org Details\n>Domain Name: {{[eea935fe-6765-4387-a070-1f5783a45cb8].[name]}}\n>Domain Registrar: {{[eea935fe-6765-4387-a070-1f5783a45cb8].[registrar]}}\n>Domain Creation Date: {{[eea935fe-6765-4387-a070-1f5783a45cb8].[creation_date]}}\n>Domain Last Updated: {{[eea935fe-6765-4387-a070-1f5783a45cb8].[last_updated]}}\n>Registrar Abuse Contact: {{[eea935fe-6765-4387-a070-1f5783a45cb8].[registrar_abuse_contact_email]}}",
-                "recipient": "{{[490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa].[message].[channel_id]}}",
-                "thread_ts": "{{[490ad2f5-fd65-4b36-82a3-41a4c8a7c9fa].[message].[ts]}}"
+                "recipient": "change_me",
+                "thread_ts": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -1674,8 +1934,8 @@
           }
         },
         "tags": null,
-        "humanCostSeconds": 300,
-        "humanCostDisplayUnit": "minutes"
+        "humanCostSeconds": 0,
+        "humanCostDisplayUnit": ""
       }
     ],
     "triggers": [
@@ -1684,7 +1944,7 @@
         "name": "Slack Trigger",
         "description": "",
         "input": {
-          "matchChannel": "change_me",
+          "matchChannel": "integration-testing",
           "matchText": "enrich-indicator",
           "type": "any"
         },
