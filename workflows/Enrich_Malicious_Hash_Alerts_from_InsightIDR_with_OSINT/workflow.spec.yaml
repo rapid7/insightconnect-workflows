@@ -15,11 +15,13 @@ resources:
   source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Enrich_Malicious_Hash_Alerts_from_InsightIDR_with_OSINT
   license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
   screenshots:
-  - name: slack.png
-    title: Slack Response
-  - name: workflow1.png
+  - name: investigation01.png
+    title: Investigation Overview
+  - name: investigation02.png
+    title: Investigation Result
+  - name: workflow01.png
     title: Workflow Part 1
-  - name: workflow2.png
+  - name: workflow02.png
     title: Workflow Part 2
-  - name: workflow3.png
+  - name: workflow03.png
     title: Workflow Part 3

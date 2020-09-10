@@ -9,7 +9,7 @@ Enrich a potentially malicious process hash with threat intelligence provided by
 
 # Requirements
 
-* [Slack](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops)
+* [InsightIDR](https://www.rapid7.com/products/insightidr/)
 
 # Documentation
 
@@ -21,16 +21,8 @@ After import, activate the workflow in order to trigger it.
 
 ### Usage
 
-*This workflow will trigger in any direct messages to your Chatbot **or** any message in a channel directed @ your Chatbot. Note the Chatbot must be in the channel in order to trigger the workflow this way.*
-
-To run the workflow, send a direct message to your InsightConnect Slack Chatbot or @ your Chatbot in a public channel starting with the command `enrich-hash`, followed by one or more hashes.
-
-For example:
-
-* `enrich-hash 86DD715A8D28788E68A575207D66DF34`
-* `enrich-hash 86DD715A8D28788E68A575207D66DF34 1cf7724052b5aba962bc6ba81743e2a9`
-
-The workflow will post the results in a thread.
+The workflow can be triggered automatically when an InsightIDR alert is raised or manually from the InsightIDR investigation.
+The results are accessible in the investigation timeline.
 
 ## Technical Details
 
@@ -55,4 +47,4 @@ _There is no troubleshooting information at this time_
 
 * [Threat Crowd](https://www.threatcrowd.org/)
 * [Team Cymru MHR](https://team-cymru.com/community-services/mhr/)
-* [Slack](https://slack.com)
+* [InsightIDR](https://www.rapid7.com/products/insightidr/)
