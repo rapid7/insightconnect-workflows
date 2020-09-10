@@ -30,8 +30,8 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Threat Crowd|3.0.0|2|
-|Team Cymru MHR|1.1.0|2|
+|Threat Crowd|3.0.0|1|
+|Team Cymru MHR|1.1.1|1|
 
 ## Troubleshooting
 
