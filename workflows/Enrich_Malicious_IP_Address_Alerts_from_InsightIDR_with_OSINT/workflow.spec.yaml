@@ -1,0 +1,25 @@
+extension: workflow
+products: ["insightconnect"]
+name: Enrich_Malicious_IP_Address_Alerts_from_InsightIDR_with_OSINT
+title: "Enrich Malicious IP Address Alerts from InsightIDR with OSINT"
+description: Enrich a potentially malicious IP address with threat intelligence provided by Threat Crowd and information from Dig and Whois.
+version: 1.0.0
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [data_enrichment, threat_detection_and_response]
+  keywords: [work_from_home]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Enrich_Malicious_IP_Address_Alerts_from_InsightIDR_with_OSINT
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+  - name: investigation1.png
+    title: Investigation Overview
+  - name: investigation2.png
+    title: Investigation Result
+  - name: workflow1.png
+    title: Workflow Part 1
+  - name: workflow2.png
+    title: Workflow Part 2
