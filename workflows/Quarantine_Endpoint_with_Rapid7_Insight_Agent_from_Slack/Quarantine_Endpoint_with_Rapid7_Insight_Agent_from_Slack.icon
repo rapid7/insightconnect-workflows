@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.59.1-0-gf525c",
+    "komandVersion": "1.61.1-0-ga6eb8",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-08-10T14:53:16.850724853Z",
+    "exportedAt": "2020-09-11T02:08:10.892527103Z",
     "workflowVersions": [
       {
         "name": "Quarantine Endpoint with Rapid7 Insight Agent from Slack",
@@ -384,12 +384,12 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "matchChannel": "change_me",
-                "matchText": "quarantine-endpoint | unquarantine-endpoint",
+                "matchChannel": "",
+                "matchText": "quarantine-insight-endpoint | unquarantine-insight-endpoint",
                 "type": "any"
               }
             },
-            "triggerId": "edf8c911-a812-41de-8a6c-dfb03fd8868a",
+            "triggerId": "26775112-ac85-4ee1-88b4-f35c45a765d5",
             "defaultInputJSONSchema": {
               "properties": {
                 "matchChannel": {
@@ -852,11 +852,11 @@
                     "op": "==",
                     "right": {
                       "type": "literal",
-                      "value": "unquarantine-endpoint"
+                      "value": "unquarantine-insight-endpoint"
                     },
                     "type": "binary"
                   },
-                  "expressionText": "{{[25d61945-587e-45f0-aa08-8c7c1f829a5b].[message].[first_word]}} == \"unquarantine-endpoint\""
+                  "expressionText": "{{[25d61945-587e-45f0-aa08-8c7c1f829a5b].[message].[first_word]}} == \"unquarantine-insight-endpoint\""
                 }
               ]
             },
@@ -1300,7 +1300,7 @@
               "input": {
                 "agent_id": "{{[a887cb4f-3055-40e2-ac17-ac56431a64fa].[agent].[id]}}",
                 "interval": 604800,
-                "quarantine_state": true
+                "quarantine_state": false
               }
             },
             "defaultInputJSONSchema": {
@@ -1435,12 +1435,12 @@
     ],
     "triggers": [
       {
-        "id": "edf8c911-a812-41de-8a6c-dfb03fd8868a",
+        "id": "26775112-ac85-4ee1-88b4-f35c45a765d5",
         "name": "Slack Quarantine Trigger",
         "description": "",
         "input": {
-          "matchChannel": "change_me",
-          "matchText": "quarantine-endpoint | unquarantine-endpoint",
+          "matchChannel": "",
+          "matchText": "quarantine-insight-endpoint | unquarantine-insight-endpoint",
           "type": "any"
         },
         "inputJsonSchema": {
