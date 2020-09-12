@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: MDR_Active_Response_Unquarantine_Asset_with_Insight_Agent
 title: MDR Active Response Unquarantine Asset with Insight Agent
 description: This workflow is part of the MDR Active Response add-on and is required for you to reverse quarantine actions taken against an asset in your environment.
-version: 1.0.0
+version: 1.0.1
 vendor: rapid7
 support: rapid7
 status: ["hidden"]
