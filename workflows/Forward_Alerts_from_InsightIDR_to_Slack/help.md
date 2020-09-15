@@ -17,7 +17,7 @@ This workflow forwards IDR alerts to a Slack channel.
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-After import, activate the workflow in order to trigger it.
+Once the workflow has been imported, **update the first step with the channel name to suit your Slack environment** by editing the input with the preset text of `change_me` to match the channel to monitor.
 
 After the workflow was activated [create a new alert trigger in InsightIDR](https://docs.rapid7.com/insightidr/alert-triggers#configure-alert-triggers) and select all alert types that should be forwarded to Slack.
 
