@@ -23,7 +23,7 @@ After the workflow was activated [create a new alert trigger in InsightIDR](http
 
 ### Usage
 
-You can also manually trigger this workflow from the investigation. To do this click the `Take Action` button and choose `Custom InsightConnect Workflows`. From the list select the imported workflow.
+You can also manually trigger this workflow from the investigation. To do this click the **Take Action** button and choose **Custom InsightConnect Workflows**. From the list select the imported workflow.
 
 ## Technical Details
 
