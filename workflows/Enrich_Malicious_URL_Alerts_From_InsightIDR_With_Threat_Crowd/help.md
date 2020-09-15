@@ -21,7 +21,7 @@ Import the workflow from the Rapid7 Extension Library and proceed through the Im
 
 ### Usage
 
-To run the workflow, open an Investigation in InsightIDR that includes a potentially malicious URL. Using the Take Action menu, select Custom InsightConnect Workflow, then select the `Enrich Malicious URL Alerts from InsightIDR with Threat Crowd` workflow. Select the URL from the investigation and Take Action.
+To run the workflow, open an Investigation in InsightIDR that includes a potentially malicious URL. Using the **Take Action** menu, select **Custom InsightConnect Workflow**, then select the `Enrich Malicious URL Alerts from InsightIDR with Threat Crowd` workflow. Select the URL from the investigation and Take Action.
 
 You may also set this workflow to run automatically by attaching it to one or more alert types in the Alert Triggers in the Automation tab of InsightIDR.
 
