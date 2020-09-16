@@ -1034,8 +1034,8 @@
               "name": "ServiceNow",
               "slugVendor": "rapid7",
               "slugName": "servicenow",
-              "slugVersion": "3.1.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/servicenow/3.1.1/icon.png"
+              "slugVersion": "4.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/servicenow/4.0.0/icon.png"
             },
             "identifier": "create_incident",
             "continueOnFailure": false,
@@ -1179,8 +1179,8 @@
               "name": "ServiceNow",
               "slugVendor": "rapid7",
               "slugName": "servicenow",
-              "slugVersion": "3.1.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/servicenow/3.1.1/icon.png"
+              "slugVersion": "4.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/servicenow/4.0.0/icon.png"
             },
             "identifier": "update_incident",
             "continueOnFailure": false,
@@ -1436,8 +1436,8 @@
               "name": "ServiceNow",
               "slugVendor": "rapid7",
               "slugName": "servicenow",
-              "slugVersion": "3.1.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/servicenow/3.1.1/icon.png"
+              "slugVersion": "4.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/servicenow/4.0.0/icon.png"
             },
             "identifier": "search_ci",
             "continueOnFailure": false,
