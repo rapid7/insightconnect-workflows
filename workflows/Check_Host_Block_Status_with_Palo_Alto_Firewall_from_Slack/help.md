@@ -14,7 +14,7 @@ Sample Slack Trigger Commands:
 
 # Key Features
 
-* The ability to see if an IP or domain is currently blocked by the firewall
+* The ability to see if an IP address or domain is currently blocked by the firewall
 
 # Requirements
 
