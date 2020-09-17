@@ -1,71 +1,127 @@
 {
   "kom": {
-    "komandVersion": "1.50.1-0-gaec79",
+    "komandVersion": "1.61.0-0-g0bf41",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-05-21T20:46:55.686913962Z",
+    "exportedAt": "2020-09-04T19:23:05.461578213Z",
     "workflowVersions": [
       {
         "name": "Block Host with Palo Alto Firewall from Microsoft Teams",
         "type": "runnable",
         "version": "",
-        "description": "",
+        "description": "Use the simplicity of a chat command in Microsoft Teams to block or unblock a host in your Palo Alto Firewall.",
         "graph": {
           "edges": {
-            "00f26916-43a3-418a-ab98-326391be9993": {
-              "id": "00f26916-43a3-418a-ab98-326391be9993",
-              "name": "",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "4448411f-10bf-4898-9b83-75555ce41c13",
-              "toNodeId": "b5baf6db-0d7d-4fd7-b146-00925635c7f2"
-            },
-            "08ec65ca-0094-48f7-ab18-1034c59ccbc8": {
-              "id": "08ec65ca-0094-48f7-ab18-1034c59ccbc8",
-              "name": "",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "983495e5-68d4-4145-949c-51c509e0d6c4",
-              "toNodeId": "7d54bed0-0fb7-4840-9f89-28737d307141"
-            },
-            "1c74ba92-5d6e-48db-9e2b-562a0d4cc026": {
-              "id": "1c74ba92-5d6e-48db-9e2b-562a0d4cc026",
-              "name": "",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "c14619d0-89e1-440d-ae65-f85970c06e15",
-              "toNodeId": "0fb40255-5bb0-4dee-8b74-7f3ac392bd7c"
-            },
-            "3292fd53-43d1-4460-b612-b85044c4c819": {
-              "id": "3292fd53-43d1-4460-b612-b85044c4c819",
-              "name": "",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "0fb40255-5bb0-4dee-8b74-7f3ac392bd7c",
-              "toNodeId": "1934a549-846f-4e68-b062-3d688e972ab2"
-            },
-            "355304b4-6277-4ffa-93b6-9a156dedc31c": {
-              "id": "355304b4-6277-4ffa-93b6-9a156dedc31c",
-              "name": "",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "92405a43-74cc-4a86-aa1e-595b54f0f374",
-              "toNodeId": ""
-            },
-            "3d13e6b2-5096-450c-8ad5-ef27a0aefcfb": {
-              "id": "3d13e6b2-5096-450c-8ad5-ef27a0aefcfb",
+            "099fa753-4993-4a08-b578-eaf6538102af": {
+              "id": "099fa753-4993-4a08-b578-eaf6538102af",
               "name": "Block Host",
               "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "e4ea28d6-006e-40fc-8a79-32f290e754c3",
-              "toNodeId": "7b2bd280-4565-4095-af97-de154b4426bf"
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
+              "fromNodeId": "252505b1-b1e2-4567-95da-cd01a0bb39f3",
+              "toNodeId": "d5b71fc2-89a4-4e45-96dc-b89521e10663"
             },
-            "6c6b3ba0-6394-4401-a8c7-3ac2416be977": {
-              "id": "6c6b3ba0-6394-4401-a8c7-3ac2416be977",
+            "12454751-cdcc-4807-b7e7-dc704510937f": {
+              "id": "12454751-cdcc-4807-b7e7-dc704510937f",
               "name": "",
               "description": "",
               "parentNodeId": "",
-              "fromNodeId": "786cbab2-9f35-44f1-b2e9-a2c236cb5a37",
-              "toNodeId": "8300c579-8aeb-405b-ae13-3bea6c68eb7e"
+              "fromNodeId": "8e6993f0-51db-4cc8-bc90-a4af31c92717",
+              "toNodeId": ""
+            },
+            "2e3ba081-39ef-4108-88ef-615d76c705c8": {
+              "id": "2e3ba081-39ef-4108-88ef-615d76c705c8",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "4a8026c1-3645-47eb-b37d-643493a1875a",
+              "toNodeId": "71640fb0-fd89-4e3d-b356-dd502ae96c9b"
+            },
+            "2e8ac11d-00cf-4747-9b91-65b8a9bd64c0": {
+              "id": "2e8ac11d-00cf-4747-9b91-65b8a9bd64c0",
+              "name": "",
+              "description": "",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
+              "fromNodeId": "d63265f3-95bb-470d-a126-0cbfd2dedba0",
+              "toNodeId": ""
+            },
+            "2f94ad67-9456-4a3e-b4a7-e14854ab69d8": {
+              "id": "2f94ad67-9456-4a3e-b4a7-e14854ab69d8",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "230a09b3-86a3-4fce-a6c3-f059e893827f",
+              "toNodeId": "07c4984a-f089-405e-ae19-bf58b6fa2f25"
+            },
+            "33271c34-d5ba-4164-93cb-14668dfb1be6": {
+              "id": "33271c34-d5ba-4164-93cb-14668dfb1be6",
+              "name": "",
+              "description": "",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
+              "fromNodeId": "d5b71fc2-89a4-4e45-96dc-b89521e10663",
+              "toNodeId": "66d66255-234a-42e3-9aa5-11d0cac8fc35"
+            },
+            "37a6175e-8c2e-4aa0-9907-959453c2c797": {
+              "id": "37a6175e-8c2e-4aa0-9907-959453c2c797",
+              "name": "No",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "e2e66b4a-1591-4bb4-ac5b-278f2d186ede",
+              "toNodeId": "8e6993f0-51db-4cc8-bc90-a4af31c92717"
+            },
+            "38bbe58a-b562-494c-92ca-097402ac1637": {
+              "id": "38bbe58a-b562-494c-92ca-097402ac1637",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "71640fb0-fd89-4e3d-b356-dd502ae96c9b",
+              "toNodeId": "e2e66b4a-1591-4bb4-ac5b-278f2d186ede"
+            },
+            "3c5f37c3-4f39-43ca-ade6-9e3861055474": {
+              "id": "3c5f37c3-4f39-43ca-ade6-9e3861055474",
+              "name": "",
+              "description": "",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
+              "fromNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
+              "toNodeId": "252505b1-b1e2-4567-95da-cd01a0bb39f3"
+            },
+            "41ef6e55-c82e-40e1-98cc-aad5ee5b14f1": {
+              "id": "41ef6e55-c82e-40e1-98cc-aad5ee5b14f1",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "07c4984a-f089-405e-ae19-bf58b6fa2f25",
+              "toNodeId": ""
+            },
+            "4954c79f-f372-4a8b-bb7e-7bb1894ca289": {
+              "id": "4954c79f-f372-4a8b-bb7e-7bb1894ca289",
+              "name": "",
+              "description": "",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
+              "fromNodeId": "e23e257a-566d-49d3-94fa-1021b9f44e4e",
+              "toNodeId": ""
+            },
+            "4aaf1741-9541-4081-8691-d4b4fc5e9bcc": {
+              "id": "4aaf1741-9541-4081-8691-d4b4fc5e9bcc",
+              "name": "Yes",
+              "description": "",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
+              "fromNodeId": "5c03da19-5012-4bf4-bddd-e8e1ac58afd0",
+              "toNodeId": "486fa158-42a6-45cc-9060-dc9e64f78ab1"
+            },
+            "56abc9d2-1bb3-41b3-975c-a3a6a90cf74c": {
+              "id": "56abc9d2-1bb3-41b3-975c-a3a6a90cf74c",
+              "name": "",
+              "description": "",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
+              "fromNodeId": "066d589a-5d86-4b94-b8a2-2ae64bcfe811",
+              "toNodeId": "d63265f3-95bb-470d-a126-0cbfd2dedba0"
+            },
+            "5c075c64-7589-46e1-b05a-cc9c369f91c9": {
+              "id": "5c075c64-7589-46e1-b05a-cc9c369f91c9",
+              "name": "Unblock Host",
+              "description": "",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
+              "fromNodeId": "252505b1-b1e2-4567-95da-cd01a0bb39f3",
+              "toNodeId": "d437ab08-6124-49f1-8450-541092718cdc"
             },
             "766efd98-7cb1-40ad-a45e-ad0e3fd49485": {
               "id": "766efd98-7cb1-40ad-a45e-ad0e3fd49485",
@@ -73,267 +129,174 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "4d650a86-639d-4f34-8920-52d3c954152b",
-              "toNodeId": "4448411f-10bf-4898-9b83-75555ce41c13"
+              "toNodeId": "4a8026c1-3645-47eb-b37d-643493a1875a"
             },
-            "7a188ee0-98bc-4945-b973-74e35f64b47d": {
-              "id": "7a188ee0-98bc-4945-b973-74e35f64b47d",
+            "7796023e-7fd6-44c8-92fc-b4755f0b0831": {
+              "id": "7796023e-7fd6-44c8-92fc-b4755f0b0831",
               "name": "",
               "description": "",
               "parentNodeId": "",
-              "fromNodeId": "8300c579-8aeb-405b-ae13-3bea6c68eb7e",
-              "toNodeId": ""
+              "fromNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
+              "toNodeId": "230a09b3-86a3-4fce-a6c3-f059e893827f"
             },
-            "8935f832-644a-432f-85d7-992b0061c594": {
-              "id": "8935f832-644a-432f-85d7-992b0061c594",
-              "name": "",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "17ba3e71-3cbd-4995-a0d4-0c3b8974ef15",
-              "toNodeId": "1aca3918-3c66-4a3f-ac52-d3e6ee38613b"
-            },
-            "8a364fc8-a042-41e6-93b5-f32a659d6bb3": {
-              "id": "8a364fc8-a042-41e6-93b5-f32a659d6bb3",
-              "name": "",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "b5baf6db-0d7d-4fd7-b146-00925635c7f2",
-              "toNodeId": "c14619d0-89e1-440d-ae65-f85970c06e15"
-            },
-            "8bf59ba4-7dca-454a-b2e4-48c8ca656983": {
-              "id": "8bf59ba4-7dca-454a-b2e4-48c8ca656983",
-              "name": "Unblock Host",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "e4ea28d6-006e-40fc-8a79-32f290e754c3",
-              "toNodeId": "13b66114-3d09-471f-b6f1-c4f996bbfc31"
-            },
-            "9b9c2746-b900-4847-b980-086d0e2521f6": {
-              "id": "9b9c2746-b900-4847-b980-086d0e2521f6",
-              "name": "",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "85241969-7636-4ddf-ab00-6bd220c28e51",
-              "toNodeId": "983495e5-68d4-4145-949c-51c509e0d6c4"
-            },
-            "abb87f31-e4e6-4120-bae7-5dceb3621d7e": {
-              "id": "abb87f31-e4e6-4120-bae7-5dceb3621d7e",
-              "name": "",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "13b66114-3d09-471f-b6f1-c4f996bbfc31",
-              "toNodeId": "8c18b523-d755-46d0-a37d-a3caf41e4b78"
-            },
-            "b5909a47-f97e-4ca1-93b7-7750509a046a": {
-              "id": "b5909a47-f97e-4ca1-93b7-7750509a046a",
-              "name": "No",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "95c927b8-9dba-4fb0-9c4c-882501926cea",
-              "toNodeId": "92405a43-74cc-4a86-aa1e-595b54f0f374"
-            },
-            "c9e28355-1cb1-4aca-b089-3ac607f58d2e": {
-              "id": "c9e28355-1cb1-4aca-b089-3ac607f58d2e",
-              "name": "",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "1aca3918-3c66-4a3f-ac52-d3e6ee38613b",
-              "toNodeId": "e4ea28d6-006e-40fc-8a79-32f290e754c3"
-            },
-            "cb205160-ba88-4b8d-9288-e27a1f88af74": {
-              "id": "cb205160-ba88-4b8d-9288-e27a1f88af74",
-              "name": "",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "7d54bed0-0fb7-4840-9f89-28737d307141",
-              "toNodeId": ""
-            },
-            "e1d845ed-6ad1-493a-9275-a822cb4e6ba2": {
-              "id": "e1d845ed-6ad1-493a-9275-a822cb4e6ba2",
+            "843d1903-ee95-44f0-80ed-7033ff959a33": {
+              "id": "843d1903-ee95-44f0-80ed-7033ff959a33",
               "name": "Yes",
               "description": "",
               "parentNodeId": "",
-              "fromNodeId": "95c927b8-9dba-4fb0-9c4c-882501926cea",
-              "toNodeId": "786cbab2-9f35-44f1-b2e9-a2c236cb5a37"
+              "fromNodeId": "e2e66b4a-1591-4bb4-ac5b-278f2d186ede",
+              "toNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c"
             },
-            "e44f72e2-4358-427e-9336-43968403c7a8": {
-              "id": "e44f72e2-4358-427e-9336-43968403c7a8",
+            "8a409b54-6b00-448c-91d3-a98949207c0f": {
+              "id": "8a409b54-6b00-448c-91d3-a98949207c0f",
               "name": "",
               "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "1934a549-846f-4e68-b062-3d688e972ab2",
-              "toNodeId": "83782ee6-5362-4b81-8902-9d4904c8ecd8"
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
+              "fromNodeId": "486fa158-42a6-45cc-9060-dc9e64f78ab1",
+              "toNodeId": "7845bc1b-289f-463a-9f7e-fe503d22087b"
             },
-            "eb01ead8-58c2-4064-b44c-9cbd5700ba3c": {
-              "id": "eb01ead8-58c2-4064-b44c-9cbd5700ba3c",
+            "8dfacee8-70a5-47d7-b455-93d037a07f77": {
+              "id": "8dfacee8-70a5-47d7-b455-93d037a07f77",
               "name": "",
               "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "7b2bd280-4565-4095-af97-de154b4426bf",
-              "toNodeId": "85241969-7636-4ddf-ab00-6bd220c28e51"
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
+              "fromNodeId": "0418141f-fc59-49be-a1d6-c527bb6c0551",
+              "toNodeId": ""
             },
-            "edf8af0b-8b05-4284-9d01-d32f451ae5e0": {
-              "id": "edf8af0b-8b05-4284-9d01-d32f451ae5e0",
+            "aa61f0cd-0af3-428e-a492-0bb4c08243bb": {
+              "id": "aa61f0cd-0af3-428e-a492-0bb4c08243bb",
               "name": "",
               "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "8c18b523-d755-46d0-a37d-a3caf41e4b78",
-              "toNodeId": "95c927b8-9dba-4fb0-9c4c-882501926cea"
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
+              "fromNodeId": "d437ab08-6124-49f1-8450-541092718cdc",
+              "toNodeId": "5c03da19-5012-4bf4-bddd-e8e1ac58afd0"
             },
-            "f33fb385-16d8-46f8-9a1f-0ea5046a1898": {
-              "id": "f33fb385-16d8-46f8-9a1f-0ea5046a1898",
+            "d682be6b-80e8-44c4-a90c-81e4074aa201": {
+              "id": "d682be6b-80e8-44c4-a90c-81e4074aa201",
               "name": "",
               "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "83782ee6-5362-4b81-8902-9d4904c8ecd8",
-              "toNodeId": "17ba3e71-3cbd-4995-a0d4-0c3b8974ef15"
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
+              "fromNodeId": "fbbc091a-f8f8-47ce-8ecd-c44f3c1ab684",
+              "toNodeId": "0418141f-fc59-49be-a1d6-c527bb6c0551"
+            },
+            "e4b6a364-09bd-4cbc-aedf-0ade1aeeb6cf": {
+              "id": "e4b6a364-09bd-4cbc-aedf-0ade1aeeb6cf",
+              "name": "No",
+              "description": "",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
+              "fromNodeId": "5c03da19-5012-4bf4-bddd-e8e1ac58afd0",
+              "toNodeId": "066d589a-5d86-4b94-b8a2-2ae64bcfe811"
+            },
+            "f0b0ef59-df5a-472b-9a12-e99504f4e8ce": {
+              "id": "f0b0ef59-df5a-472b-9a12-e99504f4e8ce",
+              "name": "",
+              "description": "",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
+              "fromNodeId": "7845bc1b-289f-463a-9f7e-fe503d22087b",
+              "toNodeId": "e23e257a-566d-49d3-94fa-1021b9f44e4e"
+            },
+            "f55cc36c-ff92-447a-85ec-20458a1e98fc": {
+              "id": "f55cc36c-ff92-447a-85ec-20458a1e98fc",
+              "name": "",
+              "description": "",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
+              "fromNodeId": "66d66255-234a-42e3-9aa5-11d0cac8fc35",
+              "toNodeId": "fbbc091a-f8f8-47ce-8ecd-c44f3c1ab684"
             }
           },
           "nodes": {
-            "0fb40255-5bb0-4dee-8b74-7f3ac392bd7c": {
-              "id": "0fb40255-5bb0-4dee-8b74-7f3ac392bd7c",
+            "0418141f-fc59-49be-a1d6-c527bb6c0551": {
+              "id": "0418141f-fc59-49be-a1d6-c527bb6c0551",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c"
+            },
+            "066d589a-5d86-4b94-b8a2-2ae64bcfe811": {
+              "id": "066d589a-5d86-4b94-b8a2-2ae64bcfe811",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c"
+            },
+            "07c4984a-f089-405e-ae19-bf58b6fa2f25": {
+              "id": "07c4984a-f089-405e-ae19-bf58b6fa2f25",
               "parentNodeId": ""
             },
-            "13b66114-3d09-471f-b6f1-c4f996bbfc31": {
-              "id": "13b66114-3d09-471f-b6f1-c4f996bbfc31",
+            "230a09b3-86a3-4fce-a6c3-f059e893827f": {
+              "id": "230a09b3-86a3-4fce-a6c3-f059e893827f",
               "parentNodeId": ""
             },
-            "17ba3e71-3cbd-4995-a0d4-0c3b8974ef15": {
-              "id": "17ba3e71-3cbd-4995-a0d4-0c3b8974ef15",
-              "parentNodeId": ""
+            "252505b1-b1e2-4567-95da-cd01a0bb39f3": {
+              "id": "252505b1-b1e2-4567-95da-cd01a0bb39f3",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c"
             },
-            "1934a549-846f-4e68-b062-3d688e972ab2": {
-              "id": "1934a549-846f-4e68-b062-3d688e972ab2",
-              "parentNodeId": ""
+            "486fa158-42a6-45cc-9060-dc9e64f78ab1": {
+              "id": "486fa158-42a6-45cc-9060-dc9e64f78ab1",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c"
             },
-            "1aca3918-3c66-4a3f-ac52-d3e6ee38613b": {
-              "id": "1aca3918-3c66-4a3f-ac52-d3e6ee38613b",
-              "parentNodeId": ""
-            },
-            "4448411f-10bf-4898-9b83-75555ce41c13": {
-              "id": "4448411f-10bf-4898-9b83-75555ce41c13",
+            "4a8026c1-3645-47eb-b37d-643493a1875a": {
+              "id": "4a8026c1-3645-47eb-b37d-643493a1875a",
               "parentNodeId": ""
             },
             "4d650a86-639d-4f34-8920-52d3c954152b": {
               "id": "4d650a86-639d-4f34-8920-52d3c954152b",
               "parentNodeId": ""
             },
-            "786cbab2-9f35-44f1-b2e9-a2c236cb5a37": {
-              "id": "786cbab2-9f35-44f1-b2e9-a2c236cb5a37",
+            "5c03da19-5012-4bf4-bddd-e8e1ac58afd0": {
+              "id": "5c03da19-5012-4bf4-bddd-e8e1ac58afd0",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c"
+            },
+            "634ba1d9-2e69-4adf-b15b-1c32b1559e4c": {
+              "id": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
               "parentNodeId": ""
             },
-            "7b2bd280-4565-4095-af97-de154b4426bf": {
-              "id": "7b2bd280-4565-4095-af97-de154b4426bf",
+            "66d66255-234a-42e3-9aa5-11d0cac8fc35": {
+              "id": "66d66255-234a-42e3-9aa5-11d0cac8fc35",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c"
+            },
+            "71640fb0-fd89-4e3d-b356-dd502ae96c9b": {
+              "id": "71640fb0-fd89-4e3d-b356-dd502ae96c9b",
               "parentNodeId": ""
             },
-            "7d54bed0-0fb7-4840-9f89-28737d307141": {
-              "id": "7d54bed0-0fb7-4840-9f89-28737d307141",
+            "7845bc1b-289f-463a-9f7e-fe503d22087b": {
+              "id": "7845bc1b-289f-463a-9f7e-fe503d22087b",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c"
+            },
+            "8e6993f0-51db-4cc8-bc90-a4af31c92717": {
+              "id": "8e6993f0-51db-4cc8-bc90-a4af31c92717",
               "parentNodeId": ""
             },
-            "8300c579-8aeb-405b-ae13-3bea6c68eb7e": {
-              "id": "8300c579-8aeb-405b-ae13-3bea6c68eb7e",
+            "d437ab08-6124-49f1-8450-541092718cdc": {
+              "id": "d437ab08-6124-49f1-8450-541092718cdc",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c"
+            },
+            "d5b71fc2-89a4-4e45-96dc-b89521e10663": {
+              "id": "d5b71fc2-89a4-4e45-96dc-b89521e10663",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c"
+            },
+            "d63265f3-95bb-470d-a126-0cbfd2dedba0": {
+              "id": "d63265f3-95bb-470d-a126-0cbfd2dedba0",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c"
+            },
+            "e23e257a-566d-49d3-94fa-1021b9f44e4e": {
+              "id": "e23e257a-566d-49d3-94fa-1021b9f44e4e",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c"
+            },
+            "e2e66b4a-1591-4bb4-ac5b-278f2d186ede": {
+              "id": "e2e66b4a-1591-4bb4-ac5b-278f2d186ede",
               "parentNodeId": ""
             },
-            "83782ee6-5362-4b81-8902-9d4904c8ecd8": {
-              "id": "83782ee6-5362-4b81-8902-9d4904c8ecd8",
-              "parentNodeId": ""
-            },
-            "85241969-7636-4ddf-ab00-6bd220c28e51": {
-              "id": "85241969-7636-4ddf-ab00-6bd220c28e51",
-              "parentNodeId": ""
-            },
-            "8c18b523-d755-46d0-a37d-a3caf41e4b78": {
-              "id": "8c18b523-d755-46d0-a37d-a3caf41e4b78",
-              "parentNodeId": ""
-            },
-            "92405a43-74cc-4a86-aa1e-595b54f0f374": {
-              "id": "92405a43-74cc-4a86-aa1e-595b54f0f374",
-              "parentNodeId": ""
-            },
-            "95c927b8-9dba-4fb0-9c4c-882501926cea": {
-              "id": "95c927b8-9dba-4fb0-9c4c-882501926cea",
-              "parentNodeId": ""
-            },
-            "983495e5-68d4-4145-949c-51c509e0d6c4": {
-              "id": "983495e5-68d4-4145-949c-51c509e0d6c4",
-              "parentNodeId": ""
-            },
-            "b5baf6db-0d7d-4fd7-b146-00925635c7f2": {
-              "id": "b5baf6db-0d7d-4fd7-b146-00925635c7f2",
-              "parentNodeId": ""
-            },
-            "c14619d0-89e1-440d-ae65-f85970c06e15": {
-              "id": "c14619d0-89e1-440d-ae65-f85970c06e15",
-              "parentNodeId": ""
-            },
-            "e4ea28d6-006e-40fc-8a79-32f290e754c3": {
-              "id": "e4ea28d6-006e-40fc-8a79-32f290e754c3",
-              "parentNodeId": ""
+            "fbbc091a-f8f8-47ce-8ecd-c44f3c1ab684": {
+              "id": "fbbc091a-f8f8-47ce-8ecd-c44f3c1ab684",
+              "parentNodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c"
             }
           }
         },
         "steps": {
-          "0fb40255-5bb0-4dee-8b74-7f3ac392bd7c": {
-            "nodeId": "0fb40255-5bb0-4dee-8b74-7f3ac392bd7c",
-            "name": "Trim Host",
-            "type": "action",
-            "plugin": {
-              "name": "String Operations",
-              "slugVendor": "rapid7",
-              "slugName": "string",
-              "slugVersion": "1.2.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/string/1.2.1/icon.png"
-            },
-            "identifier": "trim",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "string": "{{[c14619d0-89e1-440d-ae65-f85970c06e15].[list].[1]}}"
-              }
-            },
-            "defaultInputJSONSchema": {
-              "properties": {
-                "string": {
-                  "description": "String to trim",
-                  "order": 1,
-                  "title": "String Input",
-                  "type": "string"
-                }
-              },
-              "required": [
-                "string"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultOutputJSONSchema": {
-              "properties": {
-                "trimmed": {
-                  "description": "Trimmed string",
-                  "order": 1,
-                  "title": "Trimmed",
-                  "type": "string"
-                }
-              },
-              "required": [
-                "trimmed"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "outputJSONSchema": null,
-            "defaultImageData": "",
-            "connectionType": "ORCHESTRATOR"
-          },
-          "13b66114-3d09-471f-b6f1-c4f996bbfc31": {
-            "nodeId": "13b66114-3d09-471f-b6f1-c4f996bbfc31",
-            "name": "Unblock Host Artifact",
+          "0418141f-fc59-49be-a1d6-c527bb6c0551": {
+            "nodeId": "0418141f-fc59-49be-a1d6-c527bb6c0551",
+            "name": "Successful Block Artifact",
             "type": "artifact",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "Unblock Host Command Received"
+                "content": "Block Host Success\n\nBlocked: {{[634ba1d9-2e69-4adf-b15b-1c32b1559e4c].[$item]}}"
               },
               "type": "markdown"
             },
@@ -343,96 +306,27 @@
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
             "connectionType": "NONE"
           },
-          "17ba3e71-3cbd-4995-a0d4-0c3b8974ef15": {
-            "nodeId": "17ba3e71-3cbd-4995-a0d4-0c3b8974ef15",
-            "name": "Command",
-            "type": "artifact",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "content": "{{[1934a549-846f-4e68-b062-3d688e972ab2].[trimmed]}}"
-              },
-              "type": "markdown"
-            },
-            "defaultInputJSONSchema": null,
-            "defaultOutputJSONSchema": null,
-            "outputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
-            "connectionType": "NONE"
-          },
-          "1934a549-846f-4e68-b062-3d688e972ab2": {
-            "nodeId": "1934a549-846f-4e68-b062-3d688e972ab2",
-            "name": "Trim Command",
-            "type": "action",
-            "plugin": {
-              "name": "String Operations",
-              "slugVendor": "rapid7",
-              "slugName": "string",
-              "slugVersion": "1.2.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/string/1.2.1/icon.png"
-            },
-            "identifier": "trim",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "string": "{{[c14619d0-89e1-440d-ae65-f85970c06e15].[list].[0]}}"
-              }
-            },
-            "defaultInputJSONSchema": {
-              "properties": {
-                "string": {
-                  "description": "String to trim",
-                  "order": 1,
-                  "title": "String Input",
-                  "type": "string"
-                }
-              },
-              "required": [
-                "string"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultOutputJSONSchema": {
-              "properties": {
-                "trimmed": {
-                  "description": "Trimmed string",
-                  "order": 1,
-                  "title": "Trimmed",
-                  "type": "string"
-                }
-              },
-              "required": [
-                "trimmed"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "outputJSONSchema": null,
-            "defaultImageData": "",
-            "connectionType": "ORCHESTRATOR"
-          },
-          "1aca3918-3c66-4a3f-ac52-d3e6ee38613b": {
-            "nodeId": "1aca3918-3c66-4a3f-ac52-d3e6ee38613b",
-            "name": "Command Received Message",
+          "066d589a-5d86-4b94-b8a2-2ae64bcfe811": {
+            "nodeId": "066d589a-5d86-4b94-b8a2-2ae64bcfe811",
+            "name": "Failed Unblock Message",
             "type": "action",
             "plugin": {
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.0.4",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
+              "slugVersion": "2.2.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.1/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
-                "message_content": "<b>Command Received</b><br>\n<br>\nCommand: {{[17ba3e71-3cbd-4995-a0d4-0c3b8974ef15].[content]}}<br>\nHost: {{[83782ee6-5362-4b81-8902-9d4904c8ecd8].[content]}}<br>\n\n",
-                "team_name": "Komand-Test-Everyone"
+                "channel_name": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[channel_name]}}",
+                "message_content": "❗<b>Unblock Failed</b>❗<br>\n<br>\nCould not find host <code>{{[634ba1d9-2e69-4adf-b15b-1c32b1559e4c].[$item]}}</code> in block list<br>\n<br>\nMore information can be found here: <br>\n<a href = {{[$job].[URL]}}>{{[$job].[URL]}}</a>\n",
+                "team_name": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[team_name]}}",
+                "thread_id": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[message].[id]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -445,7 +339,7 @@
                 },
                 "message_content": {
                   "description": "HTML content to send",
-                  "order": 3,
+                  "order": 4,
                   "title": "Message Content",
                   "type": "string"
                 },
@@ -453,6 +347,12 @@
                   "description": "Team name",
                   "order": 1,
                   "title": "Team Name",
+                  "type": "string"
+                },
+                "thread_id": {
+                  "description": "To post in a thread, select parent message ID",
+                  "order": 3,
+                  "title": "Thread ID",
                   "type": "string"
                 }
               },
@@ -508,6 +408,12 @@
                       "description": "Created date time",
                       "order": 3,
                       "title": "Created Date Time",
+                      "type": "string"
+                    },
+                    "first_word": {
+                      "description": "Extracted first word from message (easy way to obtain a chat command)",
+                      "order": 9,
+                      "title": "First Word",
                       "type": "string"
                     },
                     "from": {
@@ -584,54 +490,181 @@
             "defaultImageData": "",
             "connectionType": "CONNECTION"
           },
-          "4448411f-10bf-4898-9b83-75555ce41c13": {
-            "nodeId": "4448411f-10bf-4898-9b83-75555ce41c13",
-            "name": "Strip HTML",
+          "07c4984a-f089-405e-ae19-bf58b6fa2f25": {
+            "nodeId": "07c4984a-f089-405e-ae19-bf58b6fa2f25",
+            "name": "Workflow Complete Message",
             "type": "action",
             "plugin": {
-              "name": "HTML",
+              "name": "Microsoft Teams",
               "slugVendor": "rapid7",
-              "slugName": "html",
-              "slugVersion": "1.2.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/html/1.2.1/icon.png"
+              "slugName": "microsoft_teams",
+              "slugVersion": "2.2.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.1/icon.png"
             },
-            "identifier": "text",
+            "identifier": "send_html_message",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
-                "doc": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[message].[body].[content]}}",
-                "remove_scripts": true
+                "channel_name": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[channel_name]}}",
+                "message_content": "🚀 <b>Workflow Complete</b> 🚀",
+                "team_name": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[team_name]}}",
+                "thread_id": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[message].[id]}}"
               }
             },
             "defaultInputJSONSchema": {
               "properties": {
-                "doc": {
-                  "description": "Document to transform",
-                  "order": 1,
-                  "title": "Document",
+                "channel_name": {
+                  "description": "Channel name",
+                  "order": 2,
+                  "title": "Channel Name",
                   "type": "string"
                 },
-                "remove_scripts": {
-                  "description": "Remove non-HTML scripts from the document",
-                  "order": 2,
-                  "title": "Remove Scripts",
-                  "type": "boolean"
+                "message_content": {
+                  "description": "HTML content to send",
+                  "order": 4,
+                  "title": "Message Content",
+                  "type": "string"
+                },
+                "team_name": {
+                  "description": "Team name",
+                  "order": 1,
+                  "title": "Team Name",
+                  "type": "string"
+                },
+                "thread_id": {
+                  "description": "To post in a thread, select parent message ID",
+                  "order": 3,
+                  "title": "Thread ID",
+                  "type": "string"
                 }
               },
               "required": [
-                "doc"
+                "team_name",
+                "channel_name",
+                "message_content"
               ],
               "title": "Variables",
               "type": "object"
             },
             "defaultOutputJSONSchema": {
+              "definitions": {
+                "body": {
+                  "properties": {
+                    "content": {
+                      "description": "Content",
+                      "order": 1,
+                      "title": "Content",
+                      "type": "string"
+                    },
+                    "contentType": {
+                      "description": "Content type",
+                      "order": 2,
+                      "title": "Content Type",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Body",
+                  "type": "object"
+                },
+                "from": {
+                  "properties": {
+                    "user": {
+                      "$ref": "#/definitions/user",
+                      "description": "User",
+                      "order": 1,
+                      "title": "User"
+                    }
+                  },
+                  "title": "From",
+                  "type": "object"
+                },
+                "message": {
+                  "properties": {
+                    "body": {
+                      "$ref": "#/definitions/body",
+                      "description": "Body",
+                      "order": 1,
+                      "title": "Body"
+                    },
+                    "createdDateTime": {
+                      "description": "Created date time",
+                      "order": 3,
+                      "title": "Created Date Time",
+                      "type": "string"
+                    },
+                    "first_word": {
+                      "description": "Extracted first word from message (easy way to obtain a chat command)",
+                      "order": 9,
+                      "title": "First Word",
+                      "type": "string"
+                    },
+                    "from": {
+                      "$ref": "#/definitions/from",
+                      "description": "From",
+                      "order": 2,
+                      "title": "From"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 8,
+                      "title": "ID",
+                      "type": "string"
+                    },
+                    "importance": {
+                      "description": "Importance",
+                      "order": 5,
+                      "title": "Importance",
+                      "type": "string"
+                    },
+                    "locale": {
+                      "description": "Locale",
+                      "order": 7,
+                      "title": "Locale",
+                      "type": "string"
+                    },
+                    "messageType": {
+                      "description": "Message type",
+                      "order": 6,
+                      "title": "Message Type",
+                      "type": "string"
+                    },
+                    "webUrl": {
+                      "description": "Web URL",
+                      "order": 4,
+                      "title": "Web URL",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Message",
+                  "type": "object"
+                },
+                "user": {
+                  "properties": {
+                    "displayName": {
+                      "description": "Display name",
+                      "order": 1,
+                      "title": "Display name",
+                      "type": "string"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 2,
+                      "title": "ID",
+                      "type": "string"
+                    }
+                  },
+                  "title": "User",
+                  "type": "object"
+                }
+              },
               "properties": {
-                "text": {
-                  "description": "String without HTML tags",
+                "message": {
+                  "$ref": "#/definitions/message",
+                  "description": "The message object that was created",
                   "order": 1,
-                  "title": "Text",
-                  "type": "string"
+                  "title": "Message"
                 }
               },
               "title": "Variables",
@@ -639,30 +672,391 @@
             },
             "outputJSONSchema": null,
             "defaultImageData": "",
-            "connectionType": "ORCHESTRATOR"
+            "connectionType": "CONNECTION"
+          },
+          "230a09b3-86a3-4fce-a6c3-f059e893827f": {
+            "nodeId": "230a09b3-86a3-4fce-a6c3-f059e893827f",
+            "name": "Commit Changes",
+            "type": "action",
+            "plugin": {
+              "name": "Palo Alto Firewall",
+              "slugVendor": "rapid7",
+              "slugName": "palo_alto_pan_os",
+              "slugVersion": "6.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/6.0.1/icon.png"
+            },
+            "identifier": "commit",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "action": "commit-all",
+                "cmd": "<commit-all><shared-policy><validate-only></validate-only></shared-policy></commit-all>"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "action": {
+                  "default": "all",
+                  "description": "Commit action (Default: 'all')",
+                  "order": 2,
+                  "title": "Action",
+                  "type": "string"
+                },
+                "cmd": {
+                  "description": "XML specifying any commit arguments",
+                  "order": 1,
+                  "title": "CMD",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "cmd"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "response": {
+                  "description": "Response from the firewall",
+                  "order": 1,
+                  "title": "Response",
+                  "type": "object"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "252505b1-b1e2-4567-95da-cd01a0bb39f3": {
+            "nodeId": "252505b1-b1e2-4567-95da-cd01a0bb39f3",
+            "name": "Which Command?",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "099fa753-4993-4a08-b578-eaf6538102af",
+              "stepControlParams": [
+                {
+                  "edgeId": "099fa753-4993-4a08-b578-eaf6538102af",
+                  "expression": {},
+                  "expressionText": ""
+                },
+                {
+                  "edgeId": "5c075c64-7589-46e1-b05a-cc9c369f91c9",
+                  "expression": {
+                    "left": {
+                      "name": "4d650a86-639d-4f34-8920-52d3c954152b.message.first_word",
+                      "type": "variable"
+                    },
+                    "op": "=",
+                    "right": {
+                      "type": "literal",
+                      "value": "!unblock-host"
+                    },
+                    "type": "binary"
+                  },
+                  "expressionText": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[message].[first_word]}} = \"!unblock-host\""
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          },
+          "486fa158-42a6-45cc-9060-dc9e64f78ab1": {
+            "nodeId": "486fa158-42a6-45cc-9060-dc9e64f78ab1",
+            "name": "Remove Address Object from Group",
+            "type": "action",
+            "plugin": {
+              "name": "Palo Alto Firewall",
+              "slugVendor": "rapid7",
+              "slugName": "palo_alto_pan_os",
+              "slugVersion": "6.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/6.0.1/icon.png"
+            },
+            "identifier": "remove_address_object_from_group",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "address_object": "{{[d437ab08-6124-49f1-8450-541092718cdc].[address_objects].[0]}}",
+                "device_name": "localhost.localdomain",
+                "group": "ICON Block List",
+                "virtual_system": "vsys1"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "address_object": {
+                  "description": "The name of the address object to remove",
+                  "order": 1,
+                  "title": "Address Object",
+                  "type": "string"
+                },
+                "device_name": {
+                  "default": "localhost.localdomain",
+                  "description": "Device name",
+                  "order": 3,
+                  "title": "Device Name",
+                  "type": "string"
+                },
+                "group": {
+                  "description": "Group name",
+                  "order": 2,
+                  "title": "Group",
+                  "type": "string"
+                },
+                "virtual_system": {
+                  "default": "vsys1",
+                  "description": "Virtual system name",
+                  "order": 4,
+                  "title": "Virtual System Name",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "address_object",
+                "group",
+                "device_name",
+                "virtual_system"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "success": {
+                  "description": "Was operation successful",
+                  "order": 1,
+                  "title": "Success",
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "success"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "4a8026c1-3645-47eb-b37d-643493a1875a": {
+            "nodeId": "4a8026c1-3645-47eb-b37d-643493a1875a",
+            "name": "Command Message Received",
+            "type": "action",
+            "plugin": {
+              "name": "Microsoft Teams",
+              "slugVendor": "rapid7",
+              "slugName": "microsoft_teams",
+              "slugVersion": "2.2.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.1/icon.png"
+            },
+            "identifier": "send_html_message",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "channel_name": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[channel_name]}}",
+                "message_content": "🚀 <b>Starting Workflow</b> 🚀",
+                "team_name": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[team_name]}}",
+                "thread_id": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[message].[id]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "channel_name": {
+                  "description": "Channel name",
+                  "order": 2,
+                  "title": "Channel Name",
+                  "type": "string"
+                },
+                "message_content": {
+                  "description": "HTML content to send",
+                  "order": 4,
+                  "title": "Message Content",
+                  "type": "string"
+                },
+                "team_name": {
+                  "description": "Team name",
+                  "order": 1,
+                  "title": "Team Name",
+                  "type": "string"
+                },
+                "thread_id": {
+                  "description": "To post in a thread, select parent message ID",
+                  "order": 3,
+                  "title": "Thread ID",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "team_name",
+                "channel_name",
+                "message_content"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "body": {
+                  "properties": {
+                    "content": {
+                      "description": "Content",
+                      "order": 1,
+                      "title": "Content",
+                      "type": "string"
+                    },
+                    "contentType": {
+                      "description": "Content type",
+                      "order": 2,
+                      "title": "Content Type",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Body",
+                  "type": "object"
+                },
+                "from": {
+                  "properties": {
+                    "user": {
+                      "$ref": "#/definitions/user",
+                      "description": "User",
+                      "order": 1,
+                      "title": "User"
+                    }
+                  },
+                  "title": "From",
+                  "type": "object"
+                },
+                "message": {
+                  "properties": {
+                    "body": {
+                      "$ref": "#/definitions/body",
+                      "description": "Body",
+                      "order": 1,
+                      "title": "Body"
+                    },
+                    "createdDateTime": {
+                      "description": "Created date time",
+                      "order": 3,
+                      "title": "Created Date Time",
+                      "type": "string"
+                    },
+                    "first_word": {
+                      "description": "Extracted first word from message (easy way to obtain a chat command)",
+                      "order": 9,
+                      "title": "First Word",
+                      "type": "string"
+                    },
+                    "from": {
+                      "$ref": "#/definitions/from",
+                      "description": "From",
+                      "order": 2,
+                      "title": "From"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 8,
+                      "title": "ID",
+                      "type": "string"
+                    },
+                    "importance": {
+                      "description": "Importance",
+                      "order": 5,
+                      "title": "Importance",
+                      "type": "string"
+                    },
+                    "locale": {
+                      "description": "Locale",
+                      "order": 7,
+                      "title": "Locale",
+                      "type": "string"
+                    },
+                    "messageType": {
+                      "description": "Message type",
+                      "order": 6,
+                      "title": "Message Type",
+                      "type": "string"
+                    },
+                    "webUrl": {
+                      "description": "Web URL",
+                      "order": 4,
+                      "title": "Web URL",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Message",
+                  "type": "object"
+                },
+                "user": {
+                  "properties": {
+                    "displayName": {
+                      "description": "Display name",
+                      "order": 1,
+                      "title": "Display name",
+                      "type": "string"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 2,
+                      "title": "ID",
+                      "type": "string"
+                    }
+                  },
+                  "title": "User",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "message": {
+                  "$ref": "#/definitions/message",
+                  "description": "The message object that was created",
+                  "order": 1,
+                  "title": "Message"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
           },
           "4d650a86-639d-4f34-8920-52d3c954152b": {
             "nodeId": "4d650a86-639d-4f34-8920-52d3c954152b",
-            "name": "Teams Trigger",
+            "name": "Block Host Trigger",
             "type": "trigger",
             "plugin": {
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.0.4",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
+              "slugVersion": "2.2.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.1/icon.png"
             },
             "identifier": "new_message_received",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
+                "channel_name": "change_me",
                 "message_content": "^!block-host.*|^!unblock-host.*",
-                "team_name": "Komand-Test-Everyone"
+                "team_name": "change_me"
               }
             },
-            "triggerId": "3c8308eb-b93b-400f-84fb-4365f37a9b14",
+            "triggerId": "9e1d294b-9ade-4c36-b106-37a75fcc9f9d",
             "defaultInputJSONSchema": {
               "properties": {
                 "channel_name": {
@@ -723,6 +1117,135 @@
                   "title": "From",
                   "type": "object"
                 },
+                "hashes": {
+                  "properties": {
+                    "md5_hashes": {
+                      "description": "Extracted MD5 Hashes from message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 1,
+                      "title": "MD5 Hashes",
+                      "type": "array"
+                    },
+                    "sha1_hashes": {
+                      "description": "Extracted SHA1 hashes from message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "SHA1 Hashes",
+                      "type": "array"
+                    },
+                    "sha256_hashes": {
+                      "description": "Extracted SHA256 hashes from message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 3,
+                      "title": "SHA256 Hashes",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Hashes",
+                  "type": "object"
+                },
+                "indicators": {
+                  "properties": {
+                    "cves": {
+                      "description": "Extracted CVEs from message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 7,
+                      "title": "CVEs",
+                      "type": "array"
+                    },
+                    "domains": {
+                      "description": "Extracted domains from message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 1,
+                      "title": "Domains",
+                      "type": "array"
+                    },
+                    "email_addresses": {
+                      "description": "Extracted email addresses from message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 3,
+                      "title": "Email Addresses",
+                      "type": "array"
+                    },
+                    "hashes": {
+                      "$ref": "#/definitions/hashes",
+                      "description": "Extracted hashes from message",
+                      "order": 4,
+                      "title": "Hashes"
+                    },
+                    "ip_addresses": {
+                      "$ref": "#/definitions/ip_addresses",
+                      "description": "Extracted IP addresses from message",
+                      "order": 5,
+                      "title": "IP Addressses"
+                    },
+                    "mac_addresses": {
+                      "description": "Extracted MAC addresses from message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 6,
+                      "title": "MAC Addresses",
+                      "type": "array"
+                    },
+                    "urls": {
+                      "description": "Extracted URLs from message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "URLs",
+                      "type": "array"
+                    },
+                    "uuids": {
+                      "description": "Extracted UUIDs from message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 8,
+                      "title": "UUIDs",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Indicators",
+                  "type": "object"
+                },
+                "ip_addresses": {
+                  "properties": {
+                    "ipv4_addresses": {
+                      "description": "Extracted IPv4 addressses from message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 1,
+                      "title": "IPv4 Addressses",
+                      "type": "array"
+                    },
+                    "ipv6_addresses": {
+                      "description": "Extracted IPv6 addresses from message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "IPv6 Addressses",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Ip Addresses",
+                  "type": "object"
+                },
                 "message": {
                   "properties": {
                     "body": {
@@ -735,6 +1258,12 @@
                       "description": "Created date time",
                       "order": 3,
                       "title": "Created Date Time",
+                      "type": "string"
+                    },
+                    "first_word": {
+                      "description": "Extracted first word from message (easy way to obtain a chat command)",
+                      "order": 9,
+                      "title": "First Word",
                       "type": "string"
                     },
                     "from": {
@@ -797,11 +1326,29 @@
                 }
               },
               "properties": {
+                "channel_name": {
+                  "description": "Name of the channel where the message was posted",
+                  "order": 3,
+                  "title": "Channel Name",
+                  "type": "string"
+                },
+                "indicators": {
+                  "$ref": "#/definitions/indicators",
+                  "description": "The indicators object that was extracted from message",
+                  "order": 2,
+                  "title": "Indicators"
+                },
                 "message": {
                   "$ref": "#/definitions/message",
                   "description": "The message object that was created",
                   "order": 1,
                   "title": "Message"
+                },
+                "team_name": {
+                  "description": "Name of the team to which the channel is assigned to",
+                  "order": 4,
+                  "title": "Team Name",
+                  "type": "string"
                 }
               },
               "title": "Variables",
@@ -811,23 +1358,76 @@
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg",
             "connectionType": "CONNECTION"
           },
-          "786cbab2-9f35-44f1-b2e9-a2c236cb5a37": {
-            "nodeId": "786cbab2-9f35-44f1-b2e9-a2c236cb5a37",
-            "name": "Remove Address Object from Group",
+          "5c03da19-5012-4bf4-bddd-e8e1ac58afd0": {
+            "nodeId": "5c03da19-5012-4bf4-bddd-e8e1ac58afd0",
+            "name": "Is IP in Group?",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "e4b6a364-09bd-4cbc-aedf-0ade1aeeb6cf",
+              "stepControlParams": [
+                {
+                  "edgeId": "4aaf1741-9541-4081-8691-d4b4fc5e9bcc",
+                  "expression": {
+                    "name": "d437ab08-6124-49f1-8450-541092718cdc.found",
+                    "type": "variable"
+                  },
+                  "expressionText": "{{[d437ab08-6124-49f1-8450-541092718cdc].[found]}}"
+                },
+                {
+                  "edgeId": "e4b6a364-09bd-4cbc-aedf-0ade1aeeb6cf",
+                  "expression": {},
+                  "expressionText": ""
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          },
+          "634ba1d9-2e69-4adf-b15b-1c32b1559e4c": {
+            "nodeId": "634ba1d9-2e69-4adf-b15b-1c32b1559e4c",
+            "name": "Block Host Loop",
+            "type": "loop",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "customOutput": [],
+              "innerEdgeId": "3c5f37c3-4f39-43ca-ade6-9e3861055474",
+              "nextEdgeId": "7796023e-7fd6-44c8-92fc-b4755f0b0831",
+              "repeatVariable": "{{[71640fb0-fd89-4e3d-b356-dd502ae96c9b].[combined_array]}}"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": {
+              "properties": {},
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/loop.svg",
+            "connectionType": "NONE"
+          },
+          "66d66255-234a-42e3-9aa5-11d0cac8fc35": {
+            "nodeId": "66d66255-234a-42e3-9aa5-11d0cac8fc35",
+            "name": "Add Object to Group",
             "type": "action",
             "plugin": {
               "name": "Palo Alto Firewall",
               "slugVendor": "rapid7",
               "slugName": "palo_alto_pan_os",
-              "slugVersion": "6.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/5.1.1/icon.png"
+              "slugVersion": "6.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/6.0.1/icon.png"
             },
-            "identifier": "remove_address_object_from_group",
+            "identifier": "add_address_object_to_group",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
-                "address_object": "{{[8c18b523-d755-46d0-a37d-a3caf41e4b78].[address_objects].[0]}}",
+                "address_object": "{{[634ba1d9-2e69-4adf-b15b-1c32b1559e4c].[$item]}}",
                 "device_name": "localhost.localdomain",
                 "group": "ICON Block List",
                 "virtual_system": "vsys1"
@@ -836,7 +1436,7 @@
             "defaultInputJSONSchema": {
               "properties": {
                 "address_object": {
-                  "description": "The name of the address object to remove",
+                  "description": "The name of the address object to add",
                   "order": 1,
                   "title": "Address Object",
                   "type": "string"
@@ -863,16 +1463,25 @@
                 }
               },
               "required": [
+                "address_object",
                 "group",
                 "device_name",
-                "virtual_system",
-                "address_object"
+                "virtual_system"
               ],
               "title": "Variables",
               "type": "object"
             },
             "defaultOutputJSONSchema": {
               "properties": {
+                "address_objects": {
+                  "description": "Address objects currently in group",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "Address Objects",
+                  "type": "array"
+                },
                 "success": {
                   "description": "Was operation successful",
                   "order": 1,
@@ -881,7 +1490,8 @@
                 }
               },
               "required": [
-                "success"
+                "success",
+                "address_objects"
               ],
               "title": "Variables",
               "type": "object"
@@ -890,43 +1500,128 @@
             "defaultImageData": "",
             "connectionType": "CONNECTION"
           },
-          "7b2bd280-4565-4095-af97-de154b4426bf": {
-            "nodeId": "7b2bd280-4565-4095-af97-de154b4426bf",
-            "name": "Block Host Command Received",
-            "type": "artifact",
+          "71640fb0-fd89-4e3d-b356-dd502ae96c9b": {
+            "nodeId": "71640fb0-fd89-4e3d-b356-dd502ae96c9b",
+            "name": "Combine Indicators",
+            "type": "action",
+            "plugin": {
+              "name": "Type Converter",
+              "slugVendor": "rapid7",
+              "slugName": "type_converter",
+              "slugVersion": "1.6.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/type_converter/1.6.0/icon.png"
+            },
+            "identifier": "combine_arrays",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
-                "content": "Block Host Command Received"
-              },
-              "type": "markdown"
+                "array1": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[indicators].[ip_addresses].[ipv4_addresses]}}",
+                "array2": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[indicators].[domains]}}",
+                "array3": [],
+                "array4": [],
+                "array5": []
+              }
             },
-            "defaultInputJSONSchema": null,
-            "defaultOutputJSONSchema": null,
+            "defaultInputJSONSchema": {
+              "properties": {
+                "array1": {
+                  "description": "First array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "Array1",
+                  "type": "array"
+                },
+                "array2": {
+                  "description": "Second array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "Array2",
+                  "type": "array"
+                },
+                "array3": {
+                  "description": "Third array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 3,
+                  "title": "Array3",
+                  "type": "array"
+                },
+                "array4": {
+                  "description": "Fourth array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 4,
+                  "title": "Array4",
+                  "type": "array"
+                },
+                "array5": {
+                  "description": "Fifth array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 5,
+                  "title": "Array5",
+                  "type": "array"
+                }
+              },
+              "required": [
+                "array1",
+                "array2"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "combined_array": {
+                  "description": "Combined array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "Combined Array",
+                  "type": "array"
+                }
+              },
+              "required": [
+                "combined_array"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
             "outputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
-            "connectionType": "NONE"
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR"
           },
-          "7d54bed0-0fb7-4840-9f89-28737d307141": {
-            "nodeId": "7d54bed0-0fb7-4840-9f89-28737d307141",
-            "name": "Workflow Success Block",
+          "7845bc1b-289f-463a-9f7e-fe503d22087b": {
+            "nodeId": "7845bc1b-289f-463a-9f7e-fe503d22087b",
+            "name": "Successful Unblock Message",
             "type": "action",
             "plugin": {
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.0.4",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
+              "slugVersion": "2.2.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.1/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
-                "message_content": "🚨  <b>Workflow Success</b>  🚨<br>\n<br>\nBlocked: {{[83782ee6-5362-4b81-8902-9d4904c8ecd8].[content]}}<br>\n<br>\n<b>Workflow Complete</b>✅\n\n",
-                "team_name": "Komand-Test-Everyone"
+                "channel_name": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[channel_name]}}",
+                "message_content": "✅<b>Unblock Host Success</b> ✅<br>\n<br>\nUnblocked: <code>{{[634ba1d9-2e69-4adf-b15b-1c32b1559e4c].[$item]}}</code>\n",
+                "team_name": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[team_name]}}",
+                "thread_id": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[message].[id]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -939,7 +1634,7 @@
                 },
                 "message_content": {
                   "description": "HTML content to send",
-                  "order": 3,
+                  "order": 4,
                   "title": "Message Content",
                   "type": "string"
                 },
@@ -947,6 +1642,12 @@
                   "description": "Team name",
                   "order": 1,
                   "title": "Team Name",
+                  "type": "string"
+                },
+                "thread_id": {
+                  "description": "To post in a thread, select parent message ID",
+                  "order": 3,
+                  "title": "Thread ID",
                   "type": "string"
                 }
               },
@@ -1002,6 +1703,12 @@
                       "description": "Created date time",
                       "order": 3,
                       "title": "Created Date Time",
+                      "type": "string"
+                    },
+                    "first_word": {
+                      "description": "Extracted first word from message (easy way to obtain a chat command)",
+                      "order": 9,
+                      "title": "First Word",
                       "type": "string"
                     },
                     "from": {
@@ -1078,25 +1785,27 @@
             "defaultImageData": "",
             "connectionType": "CONNECTION"
           },
-          "8300c579-8aeb-405b-ae13-3bea6c68eb7e": {
-            "nodeId": "8300c579-8aeb-405b-ae13-3bea6c68eb7e",
-            "name": "Workflow Success Unblock",
+          "8e6993f0-51db-4cc8-bc90-a4af31c92717": {
+            "nodeId": "8e6993f0-51db-4cc8-bc90-a4af31c92717",
+            "name": "No Valid Hosts Message",
             "type": "action",
             "plugin": {
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.0.4",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
+              "slugVersion": "2.2.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.1/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
-                "message_content": "🚨  <b>Workflow Success</b>  🚨<br>\n<br>\nUnblocked: {{[83782ee6-5362-4b81-8902-9d4904c8ecd8].[content]}}<br>\n<br>\n<b>Workflow Complete</b>✅\n",
-                "team_name": "Komand-Test-Everyone"
+                "channel_name": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[channel_name]}}",
+                "message_content": "🚨<b>Workflow not executed</b> 🚨<br>\n<br>\nPlease input the correct command and at least one valid host (IP address or domain).",
+                "team_name": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[team_name]}}",
+                "thread_id": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[message].[id]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -1109,7 +1818,7 @@
                 },
                 "message_content": {
                   "description": "HTML content to send",
-                  "order": 3,
+                  "order": 4,
                   "title": "Message Content",
                   "type": "string"
                 },
@@ -1117,6 +1826,12 @@
                   "description": "Team name",
                   "order": 1,
                   "title": "Team Name",
+                  "type": "string"
+                },
+                "thread_id": {
+                  "description": "To post in a thread, select parent message ID",
+                  "order": 3,
+                  "title": "Thread ID",
                   "type": "string"
                 }
               },
@@ -1172,6 +1887,12 @@
                       "description": "Created date time",
                       "order": 3,
                       "title": "Created Date Time",
+                      "type": "string"
+                    },
+                    "first_word": {
+                      "description": "Extracted first word from message (easy way to obtain a chat command)",
+                      "order": 9,
+                      "title": "First Word",
                       "type": "string"
                     },
                     "from": {
@@ -1248,46 +1969,127 @@
             "defaultImageData": "",
             "connectionType": "CONNECTION"
           },
-          "83782ee6-5362-4b81-8902-9d4904c8ecd8": {
-            "nodeId": "83782ee6-5362-4b81-8902-9d4904c8ecd8",
-            "name": "Host",
-            "type": "artifact",
+          "d437ab08-6124-49f1-8450-541092718cdc": {
+            "nodeId": "d437ab08-6124-49f1-8450-541092718cdc",
+            "name": "Check if IP in Group",
+            "type": "action",
+            "plugin": {
+              "name": "Palo Alto Firewall",
+              "slugVendor": "rapid7",
+              "slugName": "palo_alto_pan_os",
+              "slugVersion": "6.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/6.0.1/icon.png"
+            },
+            "identifier": "check_if_address_object_in_group",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
-                "content": "{{[0fb40255-5bb0-4dee-8b74-7f3ac392bd7c].[trimmed]}}"
-              },
-              "type": "markdown"
+                "address": "{{[634ba1d9-2e69-4adf-b15b-1c32b1559e4c].[$item]}}",
+                "device_name": "localhost.localdomain",
+                "enable_search": true,
+                "group": "ICON Block List",
+                "virtual_system": "vsys1"
+              }
             },
-            "defaultInputJSONSchema": null,
-            "defaultOutputJSONSchema": null,
+            "defaultInputJSONSchema": {
+              "properties": {
+                "address": {
+                  "description": "The Address Object name to check. If Enable Search is set to true then we search the addresses (IP, CIDR, domain) within the address object instead of matching the name",
+                  "order": 2,
+                  "title": "Address",
+                  "type": "string"
+                },
+                "device_name": {
+                  "default": "localhost.localdomain",
+                  "description": "Device name",
+                  "order": 4,
+                  "title": "Device Name",
+                  "type": "string"
+                },
+                "enable_search": {
+                  "default": false,
+                  "description": "When enabled, the Address input will accept a IP, CIDR, or domain name to search across the available Address Objects in the system. This is useful when you don’t know the Address Object by its name",
+                  "order": 3,
+                  "title": "Enable Search",
+                  "type": "boolean"
+                },
+                "group": {
+                  "description": "Group name",
+                  "order": 1,
+                  "title": "Group",
+                  "type": "string"
+                },
+                "virtual_system": {
+                  "default": "vsys1",
+                  "description": "Virtual system name",
+                  "order": 5,
+                  "title": "Virtual System Name",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "group",
+                "address",
+                "enable_search",
+                "device_name",
+                "virtual_system"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "address_objects": {
+                  "description": "The names of the address objects that match or contain address",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "Address Objects",
+                  "type": "array"
+                },
+                "found": {
+                  "description": "Was address found in group",
+                  "order": 1,
+                  "title": "Found",
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "found"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
             "outputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
-            "connectionType": "NONE"
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
           },
-          "85241969-7636-4ddf-ab00-6bd220c28e51": {
-            "nodeId": "85241969-7636-4ddf-ab00-6bd220c28e51",
+          "d5b71fc2-89a4-4e45-96dc-b89521e10663": {
+            "nodeId": "d5b71fc2-89a4-4e45-96dc-b89521e10663",
             "name": "Create Network Object",
             "type": "action",
             "plugin": {
               "name": "Palo Alto Firewall",
               "slugVendor": "rapid7",
               "slugName": "palo_alto_pan_os",
-              "slugVersion": "6.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/5.1.1/icon.png"
+              "slugVersion": "6.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/6.0.1/icon.png"
             },
             "identifier": "set_address_object",
             "continueOnFailure": true,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
-                "address": "{{[83782ee6-5362-4b81-8902-9d4904c8ecd8].[content]}}",
-                "address_object": "{{[83782ee6-5362-4b81-8902-9d4904c8ecd8].[content]}}",
+                "address": "{{[634ba1d9-2e69-4adf-b15b-1c32b1559e4c].[$item]}}",
+                "address_object": "{{[634ba1d9-2e69-4adf-b15b-1c32b1559e4c].[$item]}}",
                 "description": "InsightConnect Created Address Object",
+                "skip_rfc1918": true,
                 "tags": "",
-                "whitelist": [],
-                "skip_rfc1918": true
+                "whitelist": []
               }
             },
             "defaultInputJSONSchema": {
@@ -1310,6 +2112,13 @@
                   "title": "Description",
                   "type": "string"
                 },
+                "skip_rfc1918": {
+                  "default": false,
+                  "description": "Skip private IP addresses as defined in RFC 1918",
+                  "order": 5,
+                  "title": "Skip RFC 1918 (Private) IP Addresses",
+                  "type": "boolean"
+                },
                 "tags": {
                   "description": "Tags for the address object. Use commas to separate multiple tags",
                   "order": 4,
@@ -1321,12 +2130,13 @@
                   "items": {
                     "type": "string"
                   },
-                  "order": 5,
+                  "order": 6,
                   "title": "Whitelist",
                   "type": "array"
                 }
               },
               "required": [
+                "skip_rfc1918",
                 "address",
                 "address_object"
               ],
@@ -1361,122 +2171,107 @@
             "defaultImageData": "",
             "connectionType": "CONNECTION"
           },
-          "8c18b523-d755-46d0-a37d-a3caf41e4b78": {
-            "nodeId": "8c18b523-d755-46d0-a37d-a3caf41e4b78",
-            "name": "Check if IP in Group",
-            "type": "action",
-            "plugin": {
-              "name": "Palo Alto Firewall",
-              "slugVendor": "rapid7",
-              "slugName": "palo_alto_pan_os",
-              "slugVersion": "6.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/5.1.1/icon.png"
-            },
-            "identifier": "check_if_address_object_in_group",
+          "d63265f3-95bb-470d-a126-0cbfd2dedba0": {
+            "nodeId": "d63265f3-95bb-470d-a126-0cbfd2dedba0",
+            "name": "Failed Unblock Artifact",
+            "type": "artifact",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "input": {
-                "address": "{{[83782ee6-5362-4b81-8902-9d4904c8ecd8].[content]}}",
-                "device_name": "localhost.localdomain",
-                "enable_search": true,
-                "group": "ICON Block List",
-                "virtual_system": "vsys1"
-              }
-            },
-            "defaultInputJSONSchema": {
-              "properties": {
-                "address": {
-                  "description": "The Address Object name to check. If Enable Search is set to true then we search the addresses (IP, CIDR, doman) within the address object instead of matching the name",
-                  "order": 2,
-                  "title": "Address",
-                  "type": "string"
-                },
-                "device_name": {
-                  "default": "localhost.localdomain",
-                  "description": "Device name",
-                  "order": 4,
-                  "title": "Device Name",
-                  "type": "string"
-                },
-                "enable_search": {
-                  "default": false,
-                  "description": "When enabled, the Address input will accept a IP, CIDR, or domain name to search across the available Address Objects in the system. This is useful when you don’t know the Address Object by its name",
-                  "order": 3,
-                  "title": "Enable Search",
-                  "type": "boolean"
-                },
-                "group": {
-                  "description": "Group name",
-                  "order": 1,
-                  "title": "Group",
-                  "type": "string"
-                },
-                "virtual_system": {
-                  "default": "vsys1",
-                  "description": "Virtual system name",
-                  "order": 5,
-                  "title": "Virtual System Name",
-                  "type": "string"
-                }
+                "content": "Unblock Failed\n\nCould not find host {{[634ba1d9-2e69-4adf-b15b-1c32b1559e4c].[$item]}} in block list\n"
               },
-              "required": [
-                "enable_search",
-                "device_name",
-                "virtual_system",
-                "group",
-                "address"
-              ],
-              "title": "Variables",
-              "type": "object"
+              "type": "markdown"
             },
-            "defaultOutputJSONSchema": {
-              "properties": {
-                "address_objects": {
-                  "description": "The names of the address objects that match or contain address",
-                  "items": {
-                    "type": "string"
-                  },
-                  "order": 2,
-                  "title": "Address Objects",
-                  "type": "array"
-                },
-                "found": {
-                  "description": "Was address found in group",
-                  "order": 1,
-                  "title": "Found",
-                  "type": "boolean"
-                }
-              },
-              "required": [
-                "found"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
             "outputJSONSchema": null,
-            "defaultImageData": "",
-            "connectionType": "CONNECTION"
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
           },
-          "92405a43-74cc-4a86-aa1e-595b54f0f374": {
-            "nodeId": "92405a43-74cc-4a86-aa1e-595b54f0f374",
-            "name": "Workflow Error IP not in Group",
+          "e23e257a-566d-49d3-94fa-1021b9f44e4e": {
+            "nodeId": "e23e257a-566d-49d3-94fa-1021b9f44e4e",
+            "name": "Successful Unblock Artifact",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "Unblock Host Success\n\nUnblocked: {{[634ba1d9-2e69-4adf-b15b-1c32b1559e4c].[$item]}}\n"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "e2e66b4a-1591-4bb4-ac5b-278f2d186ede": {
+            "nodeId": "e2e66b4a-1591-4bb4-ac5b-278f2d186ede",
+            "name": "At Least 1 Valid Host?",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "843d1903-ee95-44f0-80ed-7033ff959a33",
+              "stepControlParams": [
+                {
+                  "edgeId": "843d1903-ee95-44f0-80ed-7033ff959a33",
+                  "expression": {},
+                  "expressionText": ""
+                },
+                {
+                  "edgeId": "37a6175e-8c2e-4aa0-9907-959453c2c797",
+                  "expression": {
+                    "left": {
+                      "args": [
+                        {
+                          "name": "71640fb0-fd89-4e3d-b356-dd502ae96c9b.combined_array",
+                          "type": "variable"
+                        }
+                      ],
+                      "name": "length",
+                      "type": "function"
+                    },
+                    "op": "=",
+                    "right": {
+                      "type": "literal",
+                      "value": 0
+                    },
+                    "type": "binary"
+                  },
+                  "expressionText": "length({{[71640fb0-fd89-4e3d-b356-dd502ae96c9b].[combined_array]}}) = 0"
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          },
+          "fbbc091a-f8f8-47ce-8ecd-c44f3c1ab684": {
+            "nodeId": "fbbc091a-f8f8-47ce-8ecd-c44f3c1ab684",
+            "name": "Successful Block Message",
             "type": "action",
             "plugin": {
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.0.4",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
+              "slugVersion": "2.2.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.1/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
-                "channel_name": "Komand Test Channel",
-                "message_content": "<b>Workflow Failed</b><br>\n<br>\nCould not find host \"{{[83782ee6-5362-4b81-8902-9d4904c8ecd8].[content]}}\" in block list<br> \n<br>\n<b>Workflow Failed</b> ❗",
-                "team_name": "Komand-Test-Everyone"
+                "channel_name": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[channel_name]}}",
+                "message_content": "✅ <b>Block Host Success</b> ✅<br>\n<br>\nBlocked: <code>{{[634ba1d9-2e69-4adf-b15b-1c32b1559e4c].[$item]}}</code>",
+                "team_name": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[team_name]}}",
+                "thread_id": "{{[4d650a86-639d-4f34-8920-52d3c954152b].[message].[id]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -1489,7 +2284,7 @@
                 },
                 "message_content": {
                   "description": "HTML content to send",
-                  "order": 3,
+                  "order": 4,
                   "title": "Message Content",
                   "type": "string"
                 },
@@ -1497,6 +2292,12 @@
                   "description": "Team name",
                   "order": 1,
                   "title": "Team Name",
+                  "type": "string"
+                },
+                "thread_id": {
+                  "description": "To post in a thread, select parent message ID",
+                  "order": 3,
+                  "title": "Thread ID",
                   "type": "string"
                 }
               },
@@ -1552,6 +2353,12 @@
                       "description": "Created date time",
                       "order": 3,
                       "title": "Created Date Time",
+                      "type": "string"
+                    },
+                    "first_word": {
+                      "description": "Extracted first word from message (easy way to obtain a chat command)",
+                      "order": 9,
+                      "title": "First Word",
                       "type": "string"
                     },
                     "from": {
@@ -1627,259 +2434,23 @@
             "outputJSONSchema": null,
             "defaultImageData": "",
             "connectionType": "CONNECTION"
-          },
-          "95c927b8-9dba-4fb0-9c4c-882501926cea": {
-            "nodeId": "95c927b8-9dba-4fb0-9c4c-882501926cea",
-            "name": "Is IP in Group",
-            "type": "automated_decision",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "defaultEdgeId": "b5909a47-f97e-4ca1-93b7-7750509a046a",
-              "stepControlParams": [
-                {
-                  "edgeId": "e1d845ed-6ad1-493a-9275-a822cb4e6ba2",
-                  "expression": {
-                    "name": "8c18b523-d755-46d0-a37d-a3caf41e4b78.found",
-                    "type": "variable"
-                  },
-                  "expressionText": "{{[8c18b523-d755-46d0-a37d-a3caf41e4b78].[found]}}"
-                },
-                {
-                  "edgeId": "b5909a47-f97e-4ca1-93b7-7750509a046a",
-                  "expression": {},
-                  "expressionText": ""
-                }
-              ]
-            },
-            "defaultInputJSONSchema": null,
-            "defaultOutputJSONSchema": null,
-            "outputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
-            "connectionType": "NONE"
-          },
-          "983495e5-68d4-4145-949c-51c509e0d6c4": {
-            "nodeId": "983495e5-68d4-4145-949c-51c509e0d6c4",
-            "name": "Add Object to Group",
-            "type": "action",
-            "plugin": {
-              "name": "Palo Alto Firewall",
-              "slugVendor": "rapid7",
-              "slugName": "palo_alto_pan_os",
-              "slugVersion": "6.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/5.1.1/icon.png"
-            },
-            "identifier": "add_address_object_to_group",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "address_object": "{{[83782ee6-5362-4b81-8902-9d4904c8ecd8].[content]}}",
-                "device_name": "localhost.localdomain",
-                "group": "ICON Block List",
-                "virtual_system": "vsys1", 
-                "skip_rfc1918": true
-              }
-            },
-            "defaultInputJSONSchema": {
-              "properties": {
-                "address_object": {
-                  "description": "The name of the address object to add",
-                  "order": 1,
-                  "title": "Address Object",
-                  "type": "string"
-                },
-                "device_name": {
-                  "default": "localhost.localdomain",
-                  "description": "Device name",
-                  "order": 3,
-                  "title": "Device Name",
-                  "type": "string"
-                },
-                "group": {
-                  "description": "Group name",
-                  "order": 2,
-                  "title": "Group",
-                  "type": "string"
-                },
-                "virtual_system": {
-                  "default": "vsys1",
-                  "description": "Virtual system name",
-                  "order": 4,
-                  "title": "Virtual System Name",
-                  "type": "string"
-                }
-              },
-              "required": [
-                "device_name",
-                "virtual_system",
-                "address_object",
-                "group"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultOutputJSONSchema": {
-              "properties": {
-                "address_objects": {
-                  "description": "Address objects currently in group",
-                  "items": {
-                    "type": "string"
-                  },
-                  "order": 2,
-                  "title": "Address Objects",
-                  "type": "array"
-                },
-                "success": {
-                  "description": "Was operation successful",
-                  "order": 1,
-                  "title": "Success",
-                  "type": "boolean"
-                }
-              },
-              "required": [
-                "success",
-                "address_objects"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "outputJSONSchema": null,
-            "defaultImageData": "",
-            "connectionType": "CONNECTION"
-          },
-          "b5baf6db-0d7d-4fd7-b146-00925635c7f2": {
-            "nodeId": "b5baf6db-0d7d-4fd7-b146-00925635c7f2",
-            "name": "Command Received",
-            "type": "artifact",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "content": "{{[4448411f-10bf-4898-9b83-75555ce41c13].[text]}}"
-              },
-              "type": "markdown"
-            },
-            "defaultInputJSONSchema": null,
-            "defaultOutputJSONSchema": null,
-            "outputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
-            "connectionType": "NONE"
-          },
-          "c14619d0-89e1-440d-ae65-f85970c06e15": {
-            "nodeId": "c14619d0-89e1-440d-ae65-f85970c06e15",
-            "name": "Split Command",
-            "type": "action",
-            "plugin": {
-              "name": "String Operations",
-              "slugVendor": "rapid7",
-              "slugName": "string",
-              "slugVersion": "1.2.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/string/1.2.1/icon.png"
-            },
-            "identifier": "split_to_list",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "delimiter": " ",
-                "string": "{{[4448411f-10bf-4898-9b83-75555ce41c13].[text]}}"
-              }
-            },
-            "defaultInputJSONSchema": {
-              "properties": {
-                "delimiter": {
-                  "description": "The character used to split the string into slices for the list. The default is a newline, if not provided by the user",
-                  "order": 2,
-                  "title": "Delimiter",
-                  "type": "string"
-                },
-                "string": {
-                  "description": "String to convert e.g. Sentence one\nSentence two",
-                  "order": 1,
-                  "title": "String Input",
-                  "type": "string"
-                }
-              },
-              "required": [
-                "string"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultOutputJSONSchema": {
-              "properties": {
-                "list": {
-                  "description": "List of string components",
-                  "items": {
-                    "type": "string"
-                  },
-                  "order": 1,
-                  "title": "List",
-                  "type": "array"
-                }
-              },
-              "title": "Variables",
-              "type": "object"
-            },
-            "outputJSONSchema": null,
-            "defaultImageData": "",
-            "connectionType": "ORCHESTRATOR"
-          },
-          "e4ea28d6-006e-40fc-8a79-32f290e754c3": {
-            "nodeId": "e4ea28d6-006e-40fc-8a79-32f290e754c3",
-            "name": "Type of command",
-            "type": "automated_decision",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "defaultEdgeId": "3d13e6b2-5096-450c-8ad5-ef27a0aefcfb",
-              "stepControlParams": [
-                {
-                  "edgeId": "3d13e6b2-5096-450c-8ad5-ef27a0aefcfb",
-                  "expression": {},
-                  "expressionText": ""
-                },
-                {
-                  "edgeId": "8bf59ba4-7dca-454a-b2e4-48c8ca656983",
-                  "expression": {
-                    "left": {
-                      "name": "17ba3e71-3cbd-4995-a0d4-0c3b8974ef15.content",
-                      "type": "variable"
-                    },
-                    "op": "=",
-                    "right": {
-                      "type": "literal",
-                      "value": "!unblock-host"
-                    },
-                    "type": "binary"
-                  },
-                  "expressionText": "{{[17ba3e71-3cbd-4995-a0d4-0c3b8974ef15].[content]}} = \"!unblock-host\""
-                }
-              ]
-            },
-            "defaultInputJSONSchema": null,
-            "defaultOutputJSONSchema": null,
-            "outputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
-            "connectionType": "NONE"
           }
         },
         "tags": null,
-        "humanCostSeconds": 0,
-        "humanCostDisplayUnit": ""
+        "humanCostSeconds": 300,
+        "humanCostDisplayUnit": "minutes"
       }
     ],
     "triggers": [
       {
-        "id": "3c8308eb-b93b-400f-84fb-4365f37a9b14",
+        "id": "9e1d294b-9ade-4c36-b106-37a75fcc9f9d",
         "identifier": "new_message_received",
-        "name": "Teams Trigger",
+        "name": "Block Host Trigger",
         "description": "",
         "input": {
-          "channel_name": "Komand Test Channel",
+          "channel_name": "change_me",
           "message_content": "^!block-host.*|^!unblock-host.*",
-          "team_name": "Komand-Test-Everyone"
+          "team_name": "change_me"
         },
         "inputJsonSchema": {
           "properties": {
@@ -1941,6 +2512,135 @@
               "title": "From",
               "type": "object"
             },
+            "hashes": {
+              "properties": {
+                "md5_hashes": {
+                  "description": "Extracted MD5 Hashes from message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "MD5 Hashes",
+                  "type": "array"
+                },
+                "sha1_hashes": {
+                  "description": "Extracted SHA1 hashes from message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "SHA1 Hashes",
+                  "type": "array"
+                },
+                "sha256_hashes": {
+                  "description": "Extracted SHA256 hashes from message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 3,
+                  "title": "SHA256 Hashes",
+                  "type": "array"
+                }
+              },
+              "title": "Hashes",
+              "type": "object"
+            },
+            "indicators": {
+              "properties": {
+                "cves": {
+                  "description": "Extracted CVEs from message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 7,
+                  "title": "CVEs",
+                  "type": "array"
+                },
+                "domains": {
+                  "description": "Extracted domains from message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "Domains",
+                  "type": "array"
+                },
+                "email_addresses": {
+                  "description": "Extracted email addresses from message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 3,
+                  "title": "Email Addresses",
+                  "type": "array"
+                },
+                "hashes": {
+                  "$ref": "#/definitions/hashes",
+                  "description": "Extracted hashes from message",
+                  "order": 4,
+                  "title": "Hashes"
+                },
+                "ip_addresses": {
+                  "$ref": "#/definitions/ip_addresses",
+                  "description": "Extracted IP addresses from message",
+                  "order": 5,
+                  "title": "IP Addressses"
+                },
+                "mac_addresses": {
+                  "description": "Extracted MAC addresses from message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 6,
+                  "title": "MAC Addresses",
+                  "type": "array"
+                },
+                "urls": {
+                  "description": "Extracted URLs from message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "URLs",
+                  "type": "array"
+                },
+                "uuids": {
+                  "description": "Extracted UUIDs from message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 8,
+                  "title": "UUIDs",
+                  "type": "array"
+                }
+              },
+              "title": "Indicators",
+              "type": "object"
+            },
+            "ip_addresses": {
+              "properties": {
+                "ipv4_addresses": {
+                  "description": "Extracted IPv4 addressses from message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "IPv4 Addressses",
+                  "type": "array"
+                },
+                "ipv6_addresses": {
+                  "description": "Extracted IPv6 addresses from message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "IPv6 Addressses",
+                  "type": "array"
+                }
+              },
+              "title": "Ip Addresses",
+              "type": "object"
+            },
             "message": {
               "properties": {
                 "body": {
@@ -1953,6 +2653,12 @@
                   "description": "Created date time",
                   "order": 3,
                   "title": "Created Date Time",
+                  "type": "string"
+                },
+                "first_word": {
+                  "description": "Extracted first word from message (easy way to obtain a chat command)",
+                  "order": 9,
+                  "title": "First Word",
                   "type": "string"
                 },
                 "from": {
@@ -2015,11 +2721,29 @@
             }
           },
           "properties": {
+            "channel_name": {
+              "description": "Name of the channel where the message was posted",
+              "order": 3,
+              "title": "Channel Name",
+              "type": "string"
+            },
+            "indicators": {
+              "$ref": "#/definitions/indicators",
+              "description": "The indicators object that was extracted from message",
+              "order": 2,
+              "title": "Indicators"
+            },
             "message": {
               "$ref": "#/definitions/message",
               "description": "The message object that was created",
               "order": 1,
               "title": "Message"
+            },
+            "team_name": {
+              "description": "Name of the team to which the channel is assigned to",
+              "order": 4,
+              "title": "Team Name",
+              "type": "string"
             }
           },
           "title": "Variables",
@@ -2031,8 +2755,8 @@
           "name": "Microsoft Teams",
           "slugVendor": "rapid7",
           "slugName": "microsoft_teams",
-          "slugVersion": "2.0.4",
-          "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
+          "slugVersion": "2.2.1",
+          "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.1/icon.png"
         }
       }
     ]
