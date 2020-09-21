@@ -2,11 +2,11 @@ extension: workflow
 products: ["insightconnect"]
 name: Enrich_Hash_With_Threat_Intelligence_From_Threat_Crowd
 title: "Enrich Hash with Threat Intelligence from Threat Crowd"
-description: Learn to enrich a hash with threat intelligence from Thrat Crowd using an API trigger.
-version: 1.0.0
+description: Learn to enrich a hash with threat intelligence from Threat Crowd using an API trigger.
+version: 1.0.1
 vendor: rapid7
 support: rapid7
-status: ["hidden"]
+status: []
 hub_tags:
   use_cases: [threat_detection_and_response]
   keywords: [cloud-enabled, enrichment, hash, threat_intelligence, ioc, threatcrowd, api]
