@@ -2,7 +2,7 @@
   "kom": {
     "komandVersion": "1.61.3-0-g16082",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-09-21T15:59:00.664234899Z",
+    "exportedAt": "2020-09-21T18:20:59.609012156Z",
     "workflowVersions": [
       {
         "name": "Manage Hosts with Darktrace from Slack",
@@ -547,7 +547,7 @@
           },
           "3fa7a1a5-d916-4a9d-ab8e-bb90e9a7fb95": {
             "nodeId": "3fa7a1a5-d916-4a9d-ab8e-bb90e9a7fb95",
-            "name": "Failure Post",
+            "name": "Success Post",
             "type": "action_chatops",
             "continueOnFailure": false,
             "isDisabled": false,
@@ -621,7 +621,7 @@
           },
           "4806ffed-86a6-46b9-8410-8412179e34ff": {
             "nodeId": "4806ffed-86a6-46b9-8410-8412179e34ff",
-            "name": "Success Post",
+            "name": "Failure Post",
             "type": "action_chatops",
             "continueOnFailure": false,
             "isDisabled": false,
@@ -1081,13 +1081,13 @@
           },
           "bd5a9cf3-07cf-4534-a370-456236a76fa3": {
             "nodeId": "bd5a9cf3-07cf-4534-a370-456236a76fa3",
-            "name": "Watched Domains Failure",
+            "name": "Watched Domains Success",
             "type": "artifact",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "❌ Failed to perform action `{{[b9ddf3f0-57e3-43f6-aba7-b6cc5f7854d6].[$item]}}` ❌"
+                "content": "{{#if [31cdb634-0e41-4c36-bf59-41958052e482].[Adding Domain?]}}\n\n✅ Successfully added `{{[b9ddf3f0-57e3-43f6-aba7-b6cc5f7854d6].[$item]}}` ✅\n\nAdded: {{[31cdb634-0e41-4c36-bf59-41958052e482].[Added/Removed Domains]}}\nUpdated: {{[31cdb634-0e41-4c36-bf59-41958052e482].[Updated Domains]}}\n\n{{else}}\n✅ Successfully removed `{{[b9ddf3f0-57e3-43f6-aba7-b6cc5f7854d6].[$item]}}` ✅\n\n{{/if}}\n"
               },
               "type": "markdown"
             },
@@ -1121,11 +1121,11 @@
                     "op": "==",
                     "right": {
                       "type": "literal",
-                      "value": true
+                      "value": false
                     },
                     "type": "binary"
                   },
-                  "expressionText": "{{[31cdb634-0e41-4c36-bf59-41958052e482].[Successful Action]}} == true"
+                  "expressionText": "{{[31cdb634-0e41-4c36-bf59-41958052e482].[Successful Action]}} == false"
                 }
               ]
             },
@@ -1461,13 +1461,13 @@
           },
           "fba78937-a5bb-49f7-b66e-9c6cff55fde6": {
             "nodeId": "fba78937-a5bb-49f7-b66e-9c6cff55fde6",
-            "name": "Watched Domains Success",
+            "name": "Watched Domains Failure",
             "type": "artifact",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "{{#if [31cdb634-0e41-4c36-bf59-41958052e482].[Adding Domain?]}}\n\n✅ Successfully added `{{[b9ddf3f0-57e3-43f6-aba7-b6cc5f7854d6].[$item]}}` ✅\n\nAdded: {{[31cdb634-0e41-4c36-bf59-41958052e482].[Added/Removed Domains]}}\nUpdated: {{[31cdb634-0e41-4c36-bf59-41958052e482].[Updated Domains]}}\n\n{{else}}\n✅ Successfully removed `{{[b9ddf3f0-57e3-43f6-aba7-b6cc5f7854d6].[$item]}}` ✅\n\n{{/if}}\n"
+                "content": "❌ Failed to perform action `{{[b9ddf3f0-57e3-43f6-aba7-b6cc5f7854d6].[$item]}}` ❌"
               },
               "type": "markdown"
             },
@@ -1480,7 +1480,7 @@
         },
         "tags": null,
         "humanCostSeconds": 300,
-        "humanCostDisplayUnit": "seconds"
+        "humanCostDisplayUnit": "minutes"
       }
     ],
     "triggers": [
