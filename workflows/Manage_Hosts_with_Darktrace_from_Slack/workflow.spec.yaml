@@ -25,3 +25,5 @@ resources:
       title: Host Successfully Removed from Slack
     - name: slack_failure.png
       title: Command Failure in Slack
+    - name: artifact.png
+      title: Artifact Example
