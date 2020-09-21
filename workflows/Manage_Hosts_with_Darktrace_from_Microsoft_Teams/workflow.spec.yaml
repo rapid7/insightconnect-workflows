@@ -1,0 +1,29 @@
+extension: workflow
+products: ["insightconnect"]
+name: Manage_Hosts_with_Darktrace_from_Microsoft_Teams
+title: Manage Hosts with Darktrace from Microsoft Teams
+description: Add or remove hosts in the Darktrace watched domains list from Microsoft Teams.
+version: 1.0.0
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [threat_detection_and_response]
+  keywords: [edr, endpoint, darktrace, work_from_home, microsoft_teams]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Manage_Hosts_with_Darktrace_from_Microsoft_Teams
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+    - name: workflow.png
+      title: Workflow View
+    - name: workflow_loop.png
+      title: Workflow Loop View
+    - name: teams_add_success.png
+      title: Host Successfully Added from Microsoft Teams
+    - name: teams_remove_success.png
+      title: Host Successfully Removed from Microsoft Teams
+    - name: teams_failure.png
+      title: Command Failure in Microsoft Teams
+    - name: artifact.png
+      title: Artifact Example
