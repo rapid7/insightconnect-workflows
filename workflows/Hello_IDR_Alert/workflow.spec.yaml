@@ -3,7 +3,7 @@ products: ["insightconnect", "insightidr"]
 name: Hello_IDR_Alert
 title: "Hello IDR Alert"
 description: Learn to use the InsightIDR UBA Alert Trigger.
-version: 1.0.0
+version: 1.0.1
 vendor: rapid7
 support: rapid7
 status: ["hidden"]
