@@ -8,7 +8,7 @@
         "name": "Manage Hosts with Darktrace from Slack",
         "type": "runnable",
         "version": "",
-        "description": "",
+        "description": "Add or remove hosts in the Darktrace watched domains list from Slack.",
         "graph": {
           "edges": {
             "1e390a90-8dbb-48ea-a622-4139bd9c93d8": {
