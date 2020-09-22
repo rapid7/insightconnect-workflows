@@ -2,7 +2,7 @@
 
 This workflow is meant to introduce InsightIDR users to workflows using the Orchestrator, Connections, Loop Steps, and Join Steps. It uses the IDR UBA Alert trigger and automatically identifies the type of indicator of compromise (IP address, URL, domain, or hash) that is present in the alert, looks up the indicator in VirusTotal, and produces an Artifact card that provides a summary of the findings, including a link back to the results in VirusTotal.
 
-This workflow is easy to test out for InsightIDR users who are new to InsightConnect and automation workflows.
+To use this workflow, import and activate it in InsightConnect. Then, open an Investigation in InsightIDR and use the Take Action menu to find your Custom InsightConnect Workflow and run it! Note the workflow will only be available in investigations that include either an external IP address, URL, Domain, or process.
 
 # Key Features
 
@@ -59,6 +59,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.1 - Updated artifacts
 * 1.0.0 - Initial workflow
 
 # Links
