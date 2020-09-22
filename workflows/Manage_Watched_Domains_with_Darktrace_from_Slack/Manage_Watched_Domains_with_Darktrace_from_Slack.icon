@@ -1,14 +1,14 @@
 {
   "kom": {
     "komandVersion": "1.61.3-0-g16082",
-    "komFileVersion": "2.0.0",
-    "exportedAt": "2020-09-21T18:20:59.609012156Z",
+    "komFileVersion": "1.0.0",
+    "exportedAt": "2020-09-22T18:06:11.08364593Z",
     "workflowVersions": [
       {
-        "name": "Manage Hosts with Darktrace from Slack",
+        "name": "Manage Watched Domains with Darktrace from Slack",
         "type": "runnable",
         "version": "",
-        "description": "Add or remove hosts in the Darktrace watched domains list from Slack.",
+        "description": "Add or remove domains and IP addresses in the Darktrace watched domains list from Slack.",
         "graph": {
           "edges": {
             "1e390a90-8dbb-48ea-a622-4139bd9c93d8": {
