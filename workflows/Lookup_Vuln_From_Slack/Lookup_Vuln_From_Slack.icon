@@ -1471,8 +1471,8 @@
           }
         },
         "tags": null,
-        "humanCostSeconds": 0,
-        "humanCostDisplayUnit": ""
+        "humanCostSeconds": 300,
+        "humanCostDisplayUnit": "minutes"
       }
     ],
     "triggers": [
