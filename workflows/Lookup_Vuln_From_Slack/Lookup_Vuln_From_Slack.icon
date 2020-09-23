@@ -2,7 +2,7 @@
   "kom": {
     "komandVersion": "1.62.0-0-g716d3",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-09-23T21:23:55.611378029Z",
+    "exportedAt": "2020-09-23T21:49:30.093047177Z",
     "workflowVersions": [
       {
         "name": "Lookup Vulnerability from Slack",
@@ -1471,15 +1471,15 @@
           }
         },
         "tags": null,
-        "humanCostSeconds": 300,
-        "humanCostDisplayUnit": "minutes"
+        "humanCostSeconds": 0,
+        "humanCostDisplayUnit": ""
       }
     ],
     "triggers": [
       {
         "id": "1f531da7-291f-4303-a4fa-a81b804654d3",
         "name": "lookup-vulnerability Trigger",
-        "description": "Trigger this workflow by entering a Slack command in the following format:\n\"@Rapid7 InsightConnect lookup-vuln CVE-XXXX-XXXX\"\nOR\n\"@Rapid7 InsightConnect lookup-vuln heartbleed\"",
+        "description": "Trigger this workflow by entering a Slack command in the following format:\n\"@Rapid7 InsightConnect lookup-vulnerability CVE-XXXX-XXXX\"\nOR\n\"@Rapid7 InsightConnect lookup-vulnerability heartbleed\"",
         "input": {
           "matchChannel": "change_me",
           "matchText": "lookup-vulnerability",
