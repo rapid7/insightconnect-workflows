@@ -2,6 +2,8 @@
 
 The Hello IDR Alert workflow is meant to introduce InsightIDR users to the InsightIDR User Behavior Analytics (UBA) Alert Trigger in InsightConnect and to help them run their first response workflow from an Investigation in InsightIDR.
 
+To use this workflow, import and activate it in InsightConnect. Then, open an Investigation in InsightIDR and use the Take Action menu to find your Custom InsightConnect Workflow and run it!
+
 # Key Features
 
 * Learn how to run response workflows from an InsightIDR Investigation
@@ -43,6 +45,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.1 - Updated artifact
 * 1.0.0 - Initial workflow
 
 # Links
