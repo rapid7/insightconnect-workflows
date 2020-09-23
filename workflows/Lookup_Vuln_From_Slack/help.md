@@ -39,9 +39,7 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Rapid7 Vulnerability & Exploit Database|2.0.3|3|
-|Type Converter|1.6.0|1|
-|Basename|1.1.0|2|
+|Rapid7 Vulnerability & Exploit Database|2.0.3|2|
 
 ## Troubleshooting
 
