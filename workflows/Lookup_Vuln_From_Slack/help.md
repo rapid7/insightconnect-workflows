@@ -40,7 +40,7 @@ Plugins utilized by workflow:
 |Plugin|Version|Count|
 |----|----|--------|
 |Rapid7 Vulnerability & Exploit Database|2.0.3|3|
-|Type Converter|1.5.1|2|
+|Type Converter|1.6.0|2|
 |Basename|1.0.1|2|
 |URL Extractor|1.0.3|1|
 
@@ -50,6 +50,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.1.4 - Updated workflow to work with v1.6.0 of the Type Converter
 * 1.1.3 - Updated trigger syntax, updated Rapid7 Vuln DB plugin, updated documentation
 * 1.1.2 - Updated documentation
 * 1.1.1 - Updated plugin versions in help.md
