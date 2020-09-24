@@ -2,7 +2,7 @@
   "kom": {
     "komandVersion": "1.62.0-0-g716d3",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-09-24T19:08:30.069861655Z",
+    "exportedAt": "2020-09-24T19:35:09.798726343Z",
     "workflowVersions": [
       {
         "name": "Check Host Block Status with Fortinet Firewall from Microsoft Teams",
@@ -259,7 +259,7 @@
               "input": {
                 "address": "{{[67025537-07fb-49c8-95ce-d12c9e8e8842].[ip]}}",
                 "enable_search": true,
-                "group": "change_me"
+                "group": "Test Group"
               }
             },
             "defaultInputJSONSchema": {
@@ -1323,8 +1323,8 @@
           }
         },
         "tags": null,
-        "humanCostSeconds": 300,
-        "humanCostDisplayUnit": "minutes"
+        "humanCostSeconds": 0,
+        "humanCostDisplayUnit": ""
       }
     ],
     "triggers": [
