@@ -259,7 +259,7 @@
               "input": {
                 "address": "{{[67025537-07fb-49c8-95ce-d12c9e8e8842].[ip]}}",
                 "enable_search": true,
-                "group": "Test Group"
+                "group": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -1323,8 +1323,8 @@
           }
         },
         "tags": null,
-        "humanCostSeconds": 0,
-        "humanCostDisplayUnit": ""
+        "humanCostSeconds": 300,
+        "humanCostDisplayUnit": "minutes"
       }
     ],
     "triggers": [
