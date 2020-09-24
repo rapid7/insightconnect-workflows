@@ -494,7 +494,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "matchChannel": "#integration-testing",
+                "matchChannel": "change_me",
                 "matchText": "block-status",
                 "type": "any"
               }
