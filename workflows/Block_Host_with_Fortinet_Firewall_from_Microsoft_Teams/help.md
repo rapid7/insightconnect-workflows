@@ -54,9 +54,9 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|HTML|1.2.1|1|
-|Fortinet FortiGate|4.0.3|4|
-|Microsoft Teams|2.0.5|9|
+|HTML|1.2.2|1|
+|Fortinet FortiGate|5.0.0|4|
+|Microsoft Teams|2.2.1|9|
 
 ## Troubleshooting
 
