@@ -692,7 +692,7 @@
             "parameters": {
               "input": {
                 "address_object": "{{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}}",
-                "group": "Test Group"
+                "group": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -761,7 +761,7 @@
             "parameters": {
               "input": {
                 "address_object": "{{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}}",
-                "group": "Test Group"
+                "group": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -3216,8 +3216,8 @@
           }
         },
         "tags": null,
-        "humanCostSeconds": 0,
-        "humanCostDisplayUnit": ""
+        "humanCostSeconds": 300,
+        "humanCostDisplayUnit": "minutes"
       }
     ],
     "triggers": [
