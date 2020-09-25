@@ -2,7 +2,7 @@
   "kom": {
     "komandVersion": "1.62.0-0-g716d3",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-09-25T15:54:37.394284328Z",
+    "exportedAt": "2020-09-25T16:05:09.461556237Z",
     "workflowVersions": [
       {
         "name": "Block Host with Fortinet Firewall from Microsoft Teams",
@@ -81,7 +81,7 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "0fecc5a7-267e-4fc1-a6d4-759caefc7345",
-              "toNodeId": "f0d97e50-c413-4c03-aeaf-33479fa3e682"
+              "toNodeId": "4ade2824-a5a9-4e2e-9314-0b636751e9be"
             },
             "49a60ab8-b896-4bd4-8086-adeea1beebcc": {
               "id": "49a60ab8-b896-4bd4-8086-adeea1beebcc",
@@ -99,14 +99,6 @@
               "fromNodeId": "5dc60d63-ed88-4691-a548-59021b2c6171",
               "toNodeId": ""
             },
-            "536a3b42-56da-480e-afbd-c9842d1909f0": {
-              "id": "536a3b42-56da-480e-afbd-c9842d1909f0",
-              "name": "",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "92608df4-200e-4fda-af21-1cc1ddf0eb3a",
-              "toNodeId": "41e91ba2-a546-46c0-9244-a3799bd9d216"
-            },
             "5383371b-9c6b-4680-b010-9df19480c7ef": {
               "id": "5383371b-9c6b-4680-b010-9df19480c7ef",
               "name": "",
@@ -121,7 +113,7 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "8e8fadef-5163-47c3-a329-bfd6c15e9f1d",
-              "toNodeId": "92608df4-200e-4fda-af21-1cc1ddf0eb3a"
+              "toNodeId": "41e91ba2-a546-46c0-9244-a3799bd9d216"
             },
             "5dc92b17-6a99-4578-bf9c-b3bf165d9c17": {
               "id": "5dc92b17-6a99-4578-bf9c-b3bf165d9c17",
@@ -194,14 +186,6 @@
               "parentNodeId": "",
               "fromNodeId": "41e91ba2-a546-46c0-9244-a3799bd9d216",
               "toNodeId": "e9b1856c-bb86-4f4d-9de5-5a2802ff526d"
-            },
-            "8d3dbf11-0791-416e-a154-daeb238a3a4d": {
-              "id": "8d3dbf11-0791-416e-a154-daeb238a3a4d",
-              "name": "",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "f0d97e50-c413-4c03-aeaf-33479fa3e682",
-              "toNodeId": "4ade2824-a5a9-4e2e-9314-0b636751e9be"
             },
             "8d4e218f-ade9-421a-8a4c-db41d9186a09": {
               "id": "8d4e218f-ade9-421a-8a4c-db41d9186a09",
@@ -389,10 +373,6 @@
               "id": "8e8fadef-5163-47c3-a329-bfd6c15e9f1d",
               "parentNodeId": ""
             },
-            "92608df4-200e-4fda-af21-1cc1ddf0eb3a": {
-              "id": "92608df4-200e-4fda-af21-1cc1ddf0eb3a",
-              "parentNodeId": ""
-            },
             "9fed5588-2be5-4114-928e-1eb0f8843c4e": {
               "id": "9fed5588-2be5-4114-928e-1eb0f8843c4e",
               "parentNodeId": ""
@@ -443,10 +423,6 @@
             },
             "efc0e7bd-692b-43fd-9018-dbdc1695f7e1": {
               "id": "efc0e7bd-692b-43fd-9018-dbdc1695f7e1",
-              "parentNodeId": ""
-            },
-            "f0d97e50-c413-4c03-aeaf-33479fa3e682": {
-              "id": "f0d97e50-c413-4c03-aeaf-33479fa3e682",
               "parentNodeId": ""
             }
           }
@@ -692,7 +668,7 @@
             "parameters": {
               "input": {
                 "address_object": "{{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}}",
-                "group": "Test Group"
+                "group": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -761,7 +737,7 @@
             "parameters": {
               "input": {
                 "address_object": "{{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}}",
-                "group": "Test Group"
+                "group": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -1010,7 +986,7 @@
               "input": {
                 "fqdn_filter": "",
                 "name_filter": "{{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}}",
-                "subnet_filter": "{{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}}"
+                "subnet_filter": ""
               }
             },
             "defaultInputJSONSchema": {
@@ -1524,10 +1500,10 @@
             "isCloud": false,
             "parameters": {
               "input": {
-                "channel_name": "change_me",
+                "channel_name": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[channel_name]}}",
                 "message_content": "🔎 Host {{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}} was found in whitelist 🔎<br>\n<br>\nBecause the host was found in the whitelist it was not added to the block list.",
-                "team_name": "change_me",
-                "thread_id": "change_me"
+                "team_name": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[team_name]}}",
+                "thread_id": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[message].[id]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -1708,10 +1684,10 @@
             "isCloud": false,
             "parameters": {
               "input": {
-                "channel_name": "change_me",
+                "channel_name": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[channel_name]}}",
                 "message_content": "⚠️ Unable to create the host {{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}} In the FortiGate firewall. ⚠️<br>\n<br>\nSee {{[$job].[URL]}} for more information.",
-                "team_name": "change_me",
-                "thread_id": "change_me"
+                "team_name": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[team_name]}}",
+                "thread_id": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[message].[id]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -2034,24 +2010,6 @@
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/pattern-match.svg",
             "connectionType": "NONE"
           },
-          "92608df4-200e-4fda-af21-1cc1ddf0eb3a": {
-            "nodeId": "92608df4-200e-4fda-af21-1cc1ddf0eb3a",
-            "name": "host and action artifact",
-            "type": "artifact",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "content": "{{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[action]}}\n{{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}}"
-              },
-              "type": "markdown"
-            },
-            "defaultInputJSONSchema": null,
-            "defaultOutputJSONSchema": null,
-            "outputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
-            "connectionType": "NONE"
-          },
           "9fed5588-2be5-4114-928e-1eb0f8843c4e": {
             "nodeId": "9fed5588-2be5-4114-928e-1eb0f8843c4e",
             "name": "Host in Whitelist",
@@ -2107,10 +2065,10 @@
             "isCloud": false,
             "parameters": {
               "input": {
-                "channel_name": "change_me",
+                "channel_name": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[channel_name]}}",
                 "message_content": "⚠️{{[d00d5c3b-0e54-468b-977b-cbbb21960ca1].[content]}} ⚠️",
-                "team_name": "change_me",
-                "thread_id": "change_me"
+                "team_name": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[team_name]}}",
+                "thread_id": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[message].[id]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -3029,10 +2987,10 @@
             "isCloud": false,
             "parameters": {
               "input": {
-                "channel_name": "change_me",
+                "channel_name": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[channel_name]}}",
                 "message_content": "⚠️Unable to add the host {{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}} to the blocking group. ⚠️<br>\n<br>\nThis is often caused by trying to add a host to the list that is already on the list.<br>\n<br>\nSee {{[$job].[URL]}} for more information",
-                "team_name": "change_me",
-                "thread_id": "change_me"
+                "team_name": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[team_name]}}",
+                "thread_id": "{{[4bacdaed-cdf2-42dc-b24a-ccbef8dce9bd].[message].[id]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -3195,24 +3153,6 @@
             "outputJSONSchema": null,
             "defaultImageData": "",
             "connectionType": "CONNECTION"
-          },
-          "f0d97e50-c413-4c03-aeaf-33479fa3e682": {
-            "nodeId": "f0d97e50-c413-4c03-aeaf-33479fa3e682",
-            "name": "artifact",
-            "type": "artifact",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "content": "{{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}}"
-              },
-              "type": "markdown"
-            },
-            "defaultInputJSONSchema": null,
-            "defaultOutputJSONSchema": null,
-            "outputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
-            "connectionType": "NONE"
           }
         },
         "tags": null,
