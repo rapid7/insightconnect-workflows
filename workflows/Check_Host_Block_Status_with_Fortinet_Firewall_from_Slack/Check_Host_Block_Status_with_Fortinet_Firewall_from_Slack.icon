@@ -256,7 +256,7 @@
               "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/fortinet_fortigate/5.0.0/icon.png"
             },
             "identifier": "check_if_address_in_group",
-            "continueOnFailure": false,
+            "continueOnFailure": true,
             "isDisabled": false,
             "isCloud": false,
             "parameters": {
