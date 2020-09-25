@@ -28,7 +28,7 @@ After import, activate the workflow in order to trigger it.
 To run the workflow, send a direct message to your InsightConnect Slack Chatbot or @ your Chatbot in a public channel starting with the command `lookup-vuln`.
 
 For example, in a direct message to your Chatbot:
-* `lookup-vulnerability CVE-2020-0674`
+* `lookup-vuln CVE-2020-0674`
 
 Or in a channel including your Chatbot:
 * `@Rapid7 InsightConnect lookup-vuln bluekeep`
