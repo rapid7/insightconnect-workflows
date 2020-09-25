@@ -276,7 +276,7 @@
               "expressions": [
                 {
                   "type": "text",
-                  "value": "edit-me\\s+"
+                  "value": "lookup-vuln\\s+"
                 },
                 {
                   "type": "variable",
