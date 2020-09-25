@@ -25,7 +25,7 @@ After import, activate the workflow in order to trigger it.
 
 *This workflow will trigger in any direct messages to your Chatbot **or** any message in a channel directed @ your Chatbot. Note the Chatbot must be in the channel in order to trigger the workflow this way.*
 
-To run the workflow, send a direct message to your InsightConnect Slack Chatbot or @ your Chatbot in a public channel starting with the command `lookup-vulnerability`.
+To run the workflow, send a direct message to your InsightConnect Slack Chatbot or @ your Chatbot in a public channel starting with the command `lookup-vuln`.
 
 For example, in a direct message to your Chatbot:
 * `lookup-vulnerability CVE-2020-0674`
