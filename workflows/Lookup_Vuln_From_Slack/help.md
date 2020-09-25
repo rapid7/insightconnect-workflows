@@ -31,7 +31,7 @@ For example, in a direct message to your Chatbot:
 * `lookup-vulnerability CVE-2020-0674`
 
 Or in a channel including your Chatbot:
-* `@Rapid7 InsightConnect lookup-vulnerability bluekeep`
+* `@Rapid7 InsightConnect lookup-vuln bluekeep`
 
 ## Technical Details
 
