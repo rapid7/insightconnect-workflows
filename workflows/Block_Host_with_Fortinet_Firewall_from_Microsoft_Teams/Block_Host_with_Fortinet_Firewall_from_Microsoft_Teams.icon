@@ -2,7 +2,7 @@
   "kom": {
     "komandVersion": "1.62.0-0-g716d3",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-09-24T18:13:02.71221854Z",
+    "exportedAt": "2020-09-25T15:54:37.394284328Z",
     "workflowVersions": [
       {
         "name": "Block Host with Fortinet Firewall from Microsoft Teams",
@@ -692,7 +692,7 @@
             "parameters": {
               "input": {
                 "address_object": "{{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}}",
-                "group": "change_me"
+                "group": "Test Group"
               }
             },
             "defaultInputJSONSchema": {
@@ -761,7 +761,7 @@
             "parameters": {
               "input": {
                 "address_object": "{{[8e8fadef-5163-47c3-a329-bfd6c15e9f1d].[host]}}",
-                "group": "change_me"
+                "group": "Test Group"
               }
             },
             "defaultInputJSONSchema": {
@@ -3216,8 +3216,8 @@
           }
         },
         "tags": null,
-        "humanCostSeconds": 300,
-        "humanCostDisplayUnit": "minutes"
+        "humanCostSeconds": 0,
+        "humanCostDisplayUnit": ""
       }
     ],
     "triggers": [
