@@ -272,7 +272,7 @@
             "isDisabled": false,
             "parameters": {
               "captureAll": false,
-              "expressionText": "edit-me\\s+{{argument:/.*/}}",
+              "expressionText": "lookup-vuln\\s+{{argument:/.*/}}",
               "expressions": [
                 {
                   "type": "text",
