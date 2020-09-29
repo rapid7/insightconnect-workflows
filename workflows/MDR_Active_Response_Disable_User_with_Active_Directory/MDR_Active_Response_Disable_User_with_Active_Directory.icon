@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.58.0-0-g1aee8",
+    "komandVersion": "1.63.0-0-g466c4",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-08-02T18:31:37.479595118Z",
+    "exportedAt": "2020-09-29T18:18:43.672322858Z",
     "workflowVersions": [
       {
         "name": "MDR Active Response Disable User with Active Directory [Editing Restrictions Apply]",
@@ -259,8 +259,8 @@
               "name": "Active Directory LDAP",
               "slugVendor": "rapid7",
               "slugName": "active_directory_ldap",
-              "slugVersion": "3.2.9",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/active_directory_ldap/3.2.9/icon.png"
+              "slugVersion": "3.2.10",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/active_directory_ldap/3.2.10/icon.png"
             },
             "identifier": "disable_user",
             "continueOnFailure": false,
