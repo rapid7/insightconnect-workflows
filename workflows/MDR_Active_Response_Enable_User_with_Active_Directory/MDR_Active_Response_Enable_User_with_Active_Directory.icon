@@ -2,7 +2,7 @@
   "kom": {
     "komandVersion": "1.63.0-0-g466c4",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-09-29T18:18:45.394619223Z",
+    "exportedAt": "2020-09-29T18:57:03.668564756Z",
     "workflowVersions": [
       {
         "name": "MDR Active Response Enable User with Active Directory [Editing Restrictions Apply]",
@@ -146,8 +146,8 @@
               "name": "Active Directory LDAP",
               "slugVendor": "rapid7",
               "slugName": "active_directory_ldap",
-              "slugVersion": "3.2.10",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/active_directory_ldap/3.2.10/icon.png"
+              "slugVersion": "4.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/active_directory_ldap/4.0.0/icon.png"
             },
             "identifier": "enable_user",
             "continueOnFailure": false,
