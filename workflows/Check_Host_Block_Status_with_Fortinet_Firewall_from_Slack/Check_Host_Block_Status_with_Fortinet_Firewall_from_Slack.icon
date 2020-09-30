@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.55.1-0-g08754",
+    "komandVersion": "1.63.0-0-g466c4",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-07-07T17:46:58.805990603Z",
+    "exportedAt": "2020-09-30T17:21:24.601003369Z",
     "workflowVersions": [
       {
         "name": "Check Host Block Status with Fortinet Firewall from Slack",
@@ -13,7 +13,7 @@
           "edges": {
             "09a27550-6a65-4cad-93f5-ebe35f54f46f": {
               "id": "09a27550-6a65-4cad-93f5-ebe35f54f46f",
-              "name": "IP is in Address Group",
+              "name": "Address is in Address Group",
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "f96f5847-f0f7-490c-8554-4e4559c7b243",
@@ -101,7 +101,7 @@
             },
             "f601f6d0-6833-4114-9908-f5182bb828e2": {
               "id": "f601f6d0-6833-4114-9908-f5182bb828e2",
-              "name": "IP is not in Address Group",
+              "name": "Address is not in Address Group",
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "f96f5847-f0f7-490c-8554-4e4559c7b243",
@@ -228,13 +228,13 @@
           },
           "22b0b82b-5215-4760-9539-7eed95b5f59d": {
             "nodeId": "22b0b82b-5215-4760-9539-7eed95b5f59d",
-            "name": "IP Blocked ",
+            "name": "Address Blocked ",
             "type": "artifact",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "🚫 🚧 The IP {{[58ef804c-7f4b-4787-be69-39eed3e92016].[ip]}} is blocked. 🚧🚫\n"
+                "content": "🚫 🚧 The Address {{[58ef804c-7f4b-4787-be69-39eed3e92016].[address]}} is blocked. 🚧🚫\n"
               },
               "type": "markdown"
             },
@@ -246,21 +246,22 @@
           },
           "3afc85cf-1e97-4afb-9e93-ca9fc617e62f": {
             "nodeId": "3afc85cf-1e97-4afb-9e93-ca9fc617e62f",
-            "name": "Check for IP",
+            "name": "Check for Address",
             "type": "action",
             "plugin": {
               "name": "Fortinet FortiGate",
               "slugVendor": "rapid7",
               "slugName": "fortinet_fortigate",
-              "slugVersion": "4.0.3",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/fortinet_fortigate/4.0.3/icon.png"
+              "slugVersion": "5.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/fortinet_fortigate/5.0.0/icon.png"
             },
             "identifier": "check_if_address_in_group",
             "continueOnFailure": true,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
-                "address": "{{[58ef804c-7f4b-4787-be69-39eed3e92016].[ip]}}",
+                "address": "{{[58ef804c-7f4b-4787-be69-39eed3e92016].[address]}}",
                 "enable_search": true,
                 "group": "change_me"
               }
@@ -314,8 +315,8 @@
                 }
               },
               "required": [
-                "address_objects",
-                "found"
+                "found",
+                "address_objects"
               ],
               "title": "Variables",
               "type": "object"
@@ -326,13 +327,13 @@
           },
           "58ef804c-7f4b-4787-be69-39eed3e92016": {
             "nodeId": "58ef804c-7f4b-4787-be69-39eed3e92016",
-            "name": "Extract IP",
+            "name": "Extract Address",
             "type": "pattern_match",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "captureAll": false,
-              "expressionText": "block-status {{ip:/.*/}}",
+              "expressionText": "block-status {{address:/.*/}}",
               "expressions": [
                 {
                   "type": "text",
@@ -341,7 +342,7 @@
                 {
                   "type": "variable",
                   "value": {
-                    "ident": "ip",
+                    "ident": "address",
                     "regex": ".*"
                   }
                 }
@@ -357,13 +358,13 @@
           },
           "60772325-689a-485b-b66b-e6898e071d8a": {
             "nodeId": "60772325-689a-485b-b66b-e6898e071d8a",
-            "name": "IP Not Blocked ",
+            "name": "Address Not Blocked ",
             "type": "artifact",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "✅🚧The IP {{[58ef804c-7f4b-4787-be69-39eed3e92016].[ip]}} is not blocked. 🚧✅"
+                "content": "✅🚧The Address {{[58ef804c-7f4b-4787-be69-39eed3e92016].[address]}} is not blocked. 🚧✅"
               },
               "type": "markdown"
             },
@@ -375,7 +376,7 @@
           },
           "a3d5b7fb-2a0d-419e-bb41-461213fd5df1": {
             "nodeId": "a3d5b7fb-2a0d-419e-bb41-461213fd5df1",
-            "name": "IP Not Blocked Message",
+            "name": "Address Not Blocked Message",
             "type": "action_chatops",
             "continueOnFailure": false,
             "isDisabled": false,
@@ -487,7 +488,7 @@
           },
           "eb45a27e-1a93-4580-b5dc-f48c252db9f3": {
             "nodeId": "eb45a27e-1a93-4580-b5dc-f48c252db9f3",
-            "name": "Check for IP Message",
+            "name": "Check for Address Message",
             "type": "trigger",
             "continueOnFailure": false,
             "isDisabled": false,
@@ -498,7 +499,7 @@
                 "type": "any"
               }
             },
-            "triggerId": "0db88efa-4b2f-4bb1-9596-d0c1e0cfa63a",
+            "triggerId": "b5d22100-7fa0-415d-90f7-69370c25643a",
             "defaultInputJSONSchema": {
               "properties": {
                 "matchChannel": {
@@ -534,6 +535,117 @@
             },
             "defaultOutputJSONSchema": {
               "definitions": {
+                "hashes": {
+                  "properties": {
+                    "md5_hashes": {
+                      "description": "MD5 hashes found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 1,
+                      "title": "MD5 Hashes",
+                      "type": "array"
+                    },
+                    "sha1_hashes": {
+                      "description": "SHA1 hashes found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "SHA1 Hashes",
+                      "type": "array"
+                    },
+                    "sha256_hashes": {
+                      "description": "SHA256 hashes found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 3,
+                      "title": "SHA256 Hashes",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Hashes",
+                  "type": "object"
+                },
+                "indicators": {
+                  "properties": {
+                    "domains": {
+                      "description": "Domains found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 1,
+                      "title": "Domains",
+                      "type": "array"
+                    },
+                    "email_addresses": {
+                      "description": "Email addresses found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 3,
+                      "title": "Email Addresses",
+                      "type": "array"
+                    },
+                    "hashes": {
+                      "$ref": "#/definitions/hashes",
+                      "description": "Hashes found within the message",
+                      "order": 4,
+                      "title": "Hashes"
+                    },
+                    "ip_addresses": {
+                      "$ref": "#/definitions/ip_addresses",
+                      "description": "IP addresses found within the message",
+                      "order": 6,
+                      "title": "IP Addresses"
+                    },
+                    "mac_addresses": {
+                      "description": "MAC addresses found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 5,
+                      "title": "MAC Addresses",
+                      "type": "array"
+                    },
+                    "urls": {
+                      "description": "URLs found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "URLs",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Indicators",
+                  "type": "object"
+                },
+                "ip_addresses": {
+                  "properties": {
+                    "ipv4_addresses": {
+                      "description": "IPv4 addresses found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 1,
+                      "title": "IPv4 Addresses",
+                      "type": "array"
+                    },
+                    "ipv6_addresses": {
+                      "description": "IPv6 addresses found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "IPv6 Addresses",
+                      "type": "array"
+                    }
+                  },
+                  "title": "IP Addresses",
+                  "type": "object"
+                },
                 "message": {
                   "properties": {
                     "channel": {
@@ -547,6 +659,18 @@
                       "order": 4,
                       "title": "Channel ID",
                       "type": "string"
+                    },
+                    "first_word": {
+                      "description": "First word of the message, for example a chat command (ignoring mentions)",
+                      "order": 5,
+                      "title": "First Word",
+                      "type": "string"
+                    },
+                    "indicators": {
+                      "$ref": "#/definitions/indicators",
+                      "description": "Potential threat indicators found within the message",
+                      "order": 6,
+                      "title": "Indicators"
                     },
                     "text": {
                       "description": "Text",
@@ -614,7 +738,7 @@
           },
           "f96f5847-f0f7-490c-8554-4e4559c7b243": {
             "nodeId": "f96f5847-f0f7-490c-8554-4e4559c7b243",
-            "name": "IP Found",
+            "name": "Address Found",
             "type": "automated_decision",
             "continueOnFailure": false,
             "isDisabled": false,
@@ -652,7 +776,7 @@
           },
           "fad41bc0-b7b7-4419-8263-bdcc64d1a909": {
             "nodeId": "fad41bc0-b7b7-4419-8263-bdcc64d1a909",
-            "name": "IP Blocked Message",
+            "name": "Address Blocked Message",
             "type": "action_chatops",
             "continueOnFailure": false,
             "isDisabled": false,
@@ -726,14 +850,14 @@
           }
         },
         "tags": null,
-        "humanCostSeconds": 0,
-        "humanCostDisplayUnit": ""
+        "humanCostSeconds": 300,
+        "humanCostDisplayUnit": "minutes"
       }
     ],
     "triggers": [
       {
-        "id": "0db88efa-4b2f-4bb1-9596-d0c1e0cfa63a",
-        "name": "Check for IP Message",
+        "id": "b5d22100-7fa0-415d-90f7-69370c25643a",
+        "name": "Check for Address Message",
         "description": "",
         "input": {
           "matchChannel": "change_me",
@@ -775,6 +899,117 @@
         },
         "outputJsonSchema": {
           "definitions": {
+            "hashes": {
+              "properties": {
+                "md5_hashes": {
+                  "description": "MD5 hashes found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "MD5 Hashes",
+                  "type": "array"
+                },
+                "sha1_hashes": {
+                  "description": "SHA1 hashes found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "SHA1 Hashes",
+                  "type": "array"
+                },
+                "sha256_hashes": {
+                  "description": "SHA256 hashes found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 3,
+                  "title": "SHA256 Hashes",
+                  "type": "array"
+                }
+              },
+              "title": "Hashes",
+              "type": "object"
+            },
+            "indicators": {
+              "properties": {
+                "domains": {
+                  "description": "Domains found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "Domains",
+                  "type": "array"
+                },
+                "email_addresses": {
+                  "description": "Email addresses found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 3,
+                  "title": "Email Addresses",
+                  "type": "array"
+                },
+                "hashes": {
+                  "$ref": "#/definitions/hashes",
+                  "description": "Hashes found within the message",
+                  "order": 4,
+                  "title": "Hashes"
+                },
+                "ip_addresses": {
+                  "$ref": "#/definitions/ip_addresses",
+                  "description": "IP addresses found within the message",
+                  "order": 6,
+                  "title": "IP Addresses"
+                },
+                "mac_addresses": {
+                  "description": "MAC addresses found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 5,
+                  "title": "MAC Addresses",
+                  "type": "array"
+                },
+                "urls": {
+                  "description": "URLs found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "URLs",
+                  "type": "array"
+                }
+              },
+              "title": "Indicators",
+              "type": "object"
+            },
+            "ip_addresses": {
+              "properties": {
+                "ipv4_addresses": {
+                  "description": "IPv4 addresses found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "IPv4 Addresses",
+                  "type": "array"
+                },
+                "ipv6_addresses": {
+                  "description": "IPv6 addresses found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "IPv6 Addresses",
+                  "type": "array"
+                }
+              },
+              "title": "IP Addresses",
+              "type": "object"
+            },
             "message": {
               "properties": {
                 "channel": {
@@ -788,6 +1023,18 @@
                   "order": 4,
                   "title": "Channel ID",
                   "type": "string"
+                },
+                "first_word": {
+                  "description": "First word of the message, for example a chat command (ignoring mentions)",
+                  "order": 5,
+                  "title": "First Word",
+                  "type": "string"
+                },
+                "indicators": {
+                  "$ref": "#/definitions/indicators",
+                  "description": "Potential threat indicators found within the message",
+                  "order": 6,
+                  "title": "Indicators"
                 },
                 "text": {
                   "description": "Text",
