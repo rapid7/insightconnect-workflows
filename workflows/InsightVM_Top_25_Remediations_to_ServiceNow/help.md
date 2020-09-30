@@ -26,10 +26,10 @@ Plugins utilized by workflow:
 |Plugin|Version|Count|
 |----|----|--------|
 |Advanced Regex|1.0.1|1|
-|Rapid7 InsightVM|3.6.0|1|
+|Rapid7 InsightVM|4.0.0|1|
 |Base64|1.1.3|3|
 |Timers|2.0.4|1|
-|ServiceNow|3.1.1|3|
+|ServiceNow|4.0.0|3|
 |Storage|1.0.1|3|
 
 ## Troubleshooting
@@ -38,8 +38,9 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.3 - Updated ServiceNow plugin to version 4.0.0
 * 1.0.2 - Updated documentation
-* 1.0.1 - Change 'Clean Fix' step to handle solutions with a missing fix and updatetd InsightVM plugin to version 4.0.0
+* 1.0.1 - Change 'Clean Fix' step to handle solutions with a missing fix and updated InsightVM plugin to version 4.0.0
 * 1.0.0 - Initial workflow
 
 # Links

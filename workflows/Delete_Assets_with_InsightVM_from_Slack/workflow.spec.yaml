@@ -1,0 +1,23 @@
+extension: workflow
+products: ["insightconnect"]
+name: Delete_Assets_with_InsightVM_from_Slack
+title: "Delete Assets with InsightVM from Slack"
+description: "Delete assets from InsightVM using only a Slack command."
+version: 1.0.0
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [threat_detection_and_response]
+  keywords: [work_from_home, insightvm, slack]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Delete_Assets_with_InsightVM_from_Slack
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+  - name: workflow1.png
+    title: Workflow Outer View
+  - name: workflow2.png
+    title: Workflow Inner View
+  - name: slack_flow1.png
+    title: Completed Job in Slack with Skip and Delete

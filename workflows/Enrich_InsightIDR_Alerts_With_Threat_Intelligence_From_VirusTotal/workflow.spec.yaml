@@ -2,8 +2,8 @@ extension: workflow
 products: ["insightconnect", "insightidr"]
 name: Enrich_InsightIDR_Alerts_With_Threat_Intelligence_From_VirusTotal
 title: "Enrich InsightIDR Alerts with Threat Intelligence from VirusTotal"
-description: Learn to enrich indicators of compromise with threat intelligence from VirusTotal using the IDR Alert Trigger.
-version: 1.0.0
+description: Enrich indicators of compromise with threat intelligence from VirusTotal using the IDR Alert Trigger.
+version: 1.0.1
 vendor: rapid7
 support: rapid7
 status: []

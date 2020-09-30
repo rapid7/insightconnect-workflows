@@ -2,8 +2,8 @@ extension: workflow
 products: ["insightconnect", "insightvm"]
 name: Lookup_Vuln_From_Slack
 title: "Lookup Vulnerability from Slack"
-description: This workflow accepts a Slack command, looks up the vulnerability in Rapid7's vulnerability database, and posts the vulnerability details back to the same Slack channel.
-version: 1.1.3
+description: "This workflow accepts a Slack command, looks up the vulnerability in Rapid7's vulnerability database, and posts the vulnerability details back to the same Slack channel."
+version: 1.1.4
 vendor: rapid7
 support: rapid7
 status: []
@@ -21,7 +21,9 @@ resources:
     title: Workflow Execution in Slack, Multiple Results
   - name: workflow.png
     title: Workflow View
+  - name: workflow2.png
+    title: Workflow Loop View
   - name: job.png
-    title: Completed Job In Slack, Multiple Results
+    title: Completed Job in Slack, Multiple Results
   - name: artifact1.png
     title: Final Report Artifact

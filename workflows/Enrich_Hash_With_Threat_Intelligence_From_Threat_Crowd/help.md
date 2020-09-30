@@ -2,9 +2,11 @@
 
 This workflow is meant to introduce InsightIDR users to plugins, actions, and workflow tests. It uses an API trigger, which accepts a single string input, to lookup a hash in Threat Crowd, a free-to-use threat intelligence service. This workflow is easy to test out for users who are new to InsightConnect and automation workflows.
 
+To try this workflow, simple click Test when editing the workflow and paste a hash into the input field. Here's a sample hash to use as an input: `02914C82CDFC5504242B4C47B09FCEC1`
+
 # Key Features
 
-* Learn how to Test a workflow!
+* Learn how to Test a workflow
 * Learn how to use the API Trigger
 * See how third-party threat intelligence can help your incident investigations
 
@@ -54,6 +56,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.1 - Updated Artifact
 * 1.0.0 - Initial workflow
 
 # Links

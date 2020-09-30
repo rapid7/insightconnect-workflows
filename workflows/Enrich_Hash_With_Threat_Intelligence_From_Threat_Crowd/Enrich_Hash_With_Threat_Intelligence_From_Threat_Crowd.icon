@@ -1,14 +1,14 @@
 {
   "kom": {
-    "komandVersion": "1.60.2-0-g80196",
+    "komandVersion": "1.61.3-0-g16082",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-08-31T22:21:20.111444483Z",
+    "exportedAt": "2020-09-21T22:23:25.978931103Z",
     "workflowVersions": [
       {
         "name": "Enrich Hash with Threat Intelligence from Threat Crowd",
         "type": "runnable",
         "version": "",
-        "description": "This workflow uses an API trigger to accept and lookup an MD5, SHA1, or SHA256 hash and enriches it with threat intelligence from Threat Crowd. \n\nTo try this workflow, simple click Test when editing the workflow and paste a hash into the input field.\n\nThe results are printed to an Artifact card.",
+        "description": "This workflow uses an API trigger to accept and lookup an MD5, SHA1, or SHA256 hash and enriches it with threat intelligence from Threat Crowd. \n\nTo try this workflow, simple click Test when editing the workflow and paste a hash into the input field. Here's a sample hash to use as an input: 02914C82CDFC5504242B4C47B09FCEC1\n\nThe results are printed to an Artifact card.",
         "graph": {
           "edges": {
             "30c1b237-0b0a-4bcd-b78d-a251c18d62bb": {
@@ -60,7 +60,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "## Threat Crowd Hash Analysis\n*Report for `{{[4a28ddc2-2a84-499a-ac24-4b3ef76b80df].[hash]}}`*\n* Found in Threat Crowd Dataset: `{{[b6c3c8c6-1034-4c3f-8120-cfb2d8e4fc49].[found]}}`\n* Associated Domain(s): {{#each [b6c3c8c6-1034-4c3f-8120-cfb2d8e4fc49].[domains]}} `{{this}}`, {{/each}}\n* Associated IP Address(es): {{#each [b6c3c8c6-1034-4c3f-8120-cfb2d8e4fc49].[ips]}}  `{{this}}`, {{/each}}\n* Associated Malware(s): {{#each [b6c3c8c6-1034-4c3f-8120-cfb2d8e4fc49].[scans]}} `{{this}}`, {{/each}}\n* Full Threat Crowd Report: `{{[b6c3c8c6-1034-4c3f-8120-cfb2d8e4fc49].[permalink]}}`"
+                "content": "## Threat Crowd Hash Analysis\n*Report for `{{[4a28ddc2-2a84-499a-ac24-4b3ef76b80df].[hash]}}`*\n* Found in Threat Crowd Dataset: `{{[b6c3c8c6-1034-4c3f-8120-cfb2d8e4fc49].[found]}}`\n* Associated Domain(s): {{#each [b6c3c8c6-1034-4c3f-8120-cfb2d8e4fc49].[domains]}} `{{this}}`, {{/each}}\n* Associated IP Address(es): {{#each [b6c3c8c6-1034-4c3f-8120-cfb2d8e4fc49].[ips]}}  `{{this}}`, {{/each}}\n* Associated Malware(s): {{#each [b6c3c8c6-1034-4c3f-8120-cfb2d8e4fc49].[scans]}} `{{this}}`, {{/each}}\n* Full Threat Crowd Report: [{{[b6c3c8c6-1034-4c3f-8120-cfb2d8e4fc49].[permalink]}}]({{[b6c3c8c6-1034-4c3f-8120-cfb2d8e4fc49].[permalink]}})\n\n## Up Next\nHead on back to the **[Discover](#/home?loadDiscover=1)** tab to try your next workflow!"
               },
               "type": "markdown"
             },

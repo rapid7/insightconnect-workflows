@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: MDR_Active_Response_Enable_User_with_Active_Directory
 title: MDR Active Response Enable User with Active Directory
 description: This workflow is part of the MDR Active Response add-on and is required to enable users with Active Directory. It allows you to reverse quarantine actions taken against a user in your environment.
-version: 1.0.0
+version: 1.0.1
 vendor: rapid7
 support: rapid7
 status: ["hidden"]
