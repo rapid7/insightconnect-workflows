@@ -45,7 +45,7 @@ Plugins utilized by workflow:
 |Plugin|Version|Count|
 |----|----|--------|
 |Microsoft Teams|2.0.4|4|
-|Active Directory LDAP|3.2.8|2|
+|Active Directory LDAP|4.0.0|2|
 
 ## Troubleshooting
 
@@ -53,6 +53,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.3 - Update Active Directory LDAP to version 4.0.0
 * 1.0.2 - Update to make Microsoft Teams plugin the latest version
 * 1.0.1 - Updated trigger syntax and documentation
 * 1.0.0 - Initial workflow
