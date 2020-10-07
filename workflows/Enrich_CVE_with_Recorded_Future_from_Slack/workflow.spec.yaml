@@ -20,8 +20,10 @@ resources:
     - name: workflow_loop.png
       title: Workflow Loop View
     - name: enrich_success.png
-      title: CVE Enrich Failure in Slack
+      title: Slack message for CVE Enrich Success
     - name: enrich_failure.png
-      title: CVE Enrich Success in Slack
+      title: Slack message for CVE Enrich Failure
     - name: artifact.png
-      title: CVE Enrich Artifact
+      title: Artifact for Successful CVE Enrichment
+    - name: job.png
+      title: Successful Job Run
