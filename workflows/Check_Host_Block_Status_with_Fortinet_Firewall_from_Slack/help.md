@@ -42,7 +42,6 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
-
 * 2.0.0 - Update workflow to fix issue where addresses were not being correctly parsed | Update to version 5.0.0 of FortiGate
 * 1.1.3 - Update Fortinet FortiGate to latest version
 * 1.1.2 - Update Fortinet FortiGate to latest version | Added a new message if Fortinet FortiGate action fails
