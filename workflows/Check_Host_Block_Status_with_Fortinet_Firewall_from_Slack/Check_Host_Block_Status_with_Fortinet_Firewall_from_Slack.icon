@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.62.0-0-g716d3",
+    "komandVersion": "1.63.0-0-g466c4",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-09-24T20:23:32.544952745Z",
+    "exportedAt": "2020-09-30T17:21:24.601003369Z",
     "workflowVersions": [
       {
         "name": "Check Host Block Status with Fortinet Firewall from Slack",
@@ -13,7 +13,7 @@
           "edges": {
             "09a27550-6a65-4cad-93f5-ebe35f54f46f": {
               "id": "09a27550-6a65-4cad-93f5-ebe35f54f46f",
-              "name": "IP is in Address Group",
+              "name": "Address is in Address Group",
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "f96f5847-f0f7-490c-8554-4e4559c7b243",
@@ -101,7 +101,7 @@
             },
             "f601f6d0-6833-4114-9908-f5182bb828e2": {
               "id": "f601f6d0-6833-4114-9908-f5182bb828e2",
-              "name": "IP is not in Address Group",
+              "name": "Address is not in Address Group",
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "f96f5847-f0f7-490c-8554-4e4559c7b243",
@@ -228,13 +228,13 @@
           },
           "22b0b82b-5215-4760-9539-7eed95b5f59d": {
             "nodeId": "22b0b82b-5215-4760-9539-7eed95b5f59d",
-            "name": "IP Blocked ",
+            "name": "Address Blocked ",
             "type": "artifact",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "🚫 🚧 The IP {{[58ef804c-7f4b-4787-be69-39eed3e92016].[ip]}} is blocked. 🚧🚫\n"
+                "content": "🚫 🚧 The Address {{[58ef804c-7f4b-4787-be69-39eed3e92016].[address]}} is blocked. 🚧🚫\n"
               },
               "type": "markdown"
             },
@@ -246,7 +246,7 @@
           },
           "3afc85cf-1e97-4afb-9e93-ca9fc617e62f": {
             "nodeId": "3afc85cf-1e97-4afb-9e93-ca9fc617e62f",
-            "name": "Check for IP",
+            "name": "Check for Address",
             "type": "action",
             "plugin": {
               "name": "Fortinet FortiGate",
@@ -261,7 +261,7 @@
             "isCloud": false,
             "parameters": {
               "input": {
-                "address": "{{[58ef804c-7f4b-4787-be69-39eed3e92016].[ip]}}",
+                "address": "{{[58ef804c-7f4b-4787-be69-39eed3e92016].[address]}}",
                 "enable_search": true,
                 "group": "change_me"
               }
@@ -327,13 +327,13 @@
           },
           "58ef804c-7f4b-4787-be69-39eed3e92016": {
             "nodeId": "58ef804c-7f4b-4787-be69-39eed3e92016",
-            "name": "Extract IP",
+            "name": "Extract Address",
             "type": "pattern_match",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "captureAll": false,
-              "expressionText": "block-status {{ip:/.*/}}",
+              "expressionText": "block-status {{address:/.*/}}",
               "expressions": [
                 {
                   "type": "text",
@@ -342,7 +342,7 @@
                 {
                   "type": "variable",
                   "value": {
-                    "ident": "ip",
+                    "ident": "address",
                     "regex": ".*"
                   }
                 }
@@ -358,13 +358,13 @@
           },
           "60772325-689a-485b-b66b-e6898e071d8a": {
             "nodeId": "60772325-689a-485b-b66b-e6898e071d8a",
-            "name": "IP Not Blocked ",
+            "name": "Address Not Blocked ",
             "type": "artifact",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "✅🚧The IP {{[58ef804c-7f4b-4787-be69-39eed3e92016].[ip]}} is not blocked. 🚧✅"
+                "content": "✅🚧The Address {{[58ef804c-7f4b-4787-be69-39eed3e92016].[address]}} is not blocked. 🚧✅"
               },
               "type": "markdown"
             },
@@ -376,7 +376,7 @@
           },
           "a3d5b7fb-2a0d-419e-bb41-461213fd5df1": {
             "nodeId": "a3d5b7fb-2a0d-419e-bb41-461213fd5df1",
-            "name": "IP Not Blocked Message",
+            "name": "Address Not Blocked Message",
             "type": "action_chatops",
             "continueOnFailure": false,
             "isDisabled": false,
@@ -488,7 +488,7 @@
           },
           "eb45a27e-1a93-4580-b5dc-f48c252db9f3": {
             "nodeId": "eb45a27e-1a93-4580-b5dc-f48c252db9f3",
-            "name": "Check for IP Message",
+            "name": "Check for Address Message",
             "type": "trigger",
             "continueOnFailure": false,
             "isDisabled": false,
@@ -499,7 +499,7 @@
                 "type": "any"
               }
             },
-            "triggerId": "ae0f3c51-ff07-487e-86cc-ed054a073af2",
+            "triggerId": "b5d22100-7fa0-415d-90f7-69370c25643a",
             "defaultInputJSONSchema": {
               "properties": {
                 "matchChannel": {
@@ -738,7 +738,7 @@
           },
           "f96f5847-f0f7-490c-8554-4e4559c7b243": {
             "nodeId": "f96f5847-f0f7-490c-8554-4e4559c7b243",
-            "name": "IP Found",
+            "name": "Address Found",
             "type": "automated_decision",
             "continueOnFailure": false,
             "isDisabled": false,
@@ -776,7 +776,7 @@
           },
           "fad41bc0-b7b7-4419-8263-bdcc64d1a909": {
             "nodeId": "fad41bc0-b7b7-4419-8263-bdcc64d1a909",
-            "name": "IP Blocked Message",
+            "name": "Address Blocked Message",
             "type": "action_chatops",
             "continueOnFailure": false,
             "isDisabled": false,
@@ -856,8 +856,8 @@
     ],
     "triggers": [
       {
-        "id": "ae0f3c51-ff07-487e-86cc-ed054a073af2",
-        "name": "Check for IP Message",
+        "id": "b5d22100-7fa0-415d-90f7-69370c25643a",
+        "name": "Check for Address Message",
         "description": "",
         "input": {
           "matchChannel": "change_me",
