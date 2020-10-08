@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Force_Password_Reset_in_Active_Directory_With_Slack
 title: "Force Password Reset in Active Directory from Slack"
 description: "Force an Active Directory user password reset with a command in Slack."
-version: 1.0.3
+version: 1.0.4
 vendor: rapid7
 support: rapid7
 status: []
