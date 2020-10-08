@@ -1,6 +1,6 @@
 # Description
 
-This workflow returns enriched CVE details by performing a vulnerability lookup with Recorded Future.
+Use the simplicity of a chat command in Slack to get enriched details about a vulnerability using your Recorded Future.
 
 Sample Slack Trigger Commands:
 
@@ -21,7 +21,7 @@ Sample Slack Trigger Commands:
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-Once the workflow has been imported, update the first step with the channel name to suit your Slack environment by editing the input with the preset text of `change_me` to match the channel to monitor.
+Once the workflow has been imported, **Update the first step with the channel name to suit your Slack environment!** by editing the input with the preset text of `change_me` to match the channel to monitor.
 
 After configuring those steps, activate the workflow and then issue a Slack command to trigger it. 
 

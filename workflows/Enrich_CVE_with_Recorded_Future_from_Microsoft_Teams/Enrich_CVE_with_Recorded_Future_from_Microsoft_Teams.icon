@@ -1,0 +1,2537 @@
+{
+  "kom": {
+    "komandVersion": "1.64.0-0-gda317",
+    "komFileVersion": "2.0.0",
+    "exportedAt": "2020-10-08T19:30:59.683643571Z",
+    "workflowVersions": [
+      {
+        "name": "Enrich CVE with Recorded Future from Microsoft Teams",
+        "type": "runnable",
+        "version": "",
+        "description": "Returns detailed information about the CVE provided.",
+        "graph": {
+          "edges": {
+            "098eecc6-3650-4dd8-85e1-5c852b7c6b78": {
+              "id": "098eecc6-3650-4dd8-85e1-5c852b7c6b78",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "1264bbb0-a068-46a1-b8b7-1f92d9e5df15",
+              "toNodeId": "03ddce6f-ddf5-4b12-ae04-d49517df9d3e"
+            },
+            "30cfac55-ce87-4f57-813a-4826605e8089": {
+              "id": "30cfac55-ce87-4f57-813a-4826605e8089",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "b7fe530a-2c2c-4935-83ba-1a6e37b53ffd",
+              "toNodeId": ""
+            },
+            "4f9b2478-c89d-477b-b3e5-bb9bccc6a7a2": {
+              "id": "4f9b2478-c89d-477b-b3e5-bb9bccc6a7a2",
+              "name": "Success",
+              "description": "CVE Look-up was successful",
+              "parentNodeId": "c6d061a1-96c7-411e-9033-58dcc382214c",
+              "fromNodeId": "5d75c084-9bdf-4767-95df-fd6c635da872",
+              "toNodeId": "25e5f001-aa71-449e-8cc9-c283a82a5273"
+            },
+            "50aea4bf-b6c0-48d3-a59d-c99f64e997ea": {
+              "id": "50aea4bf-b6c0-48d3-a59d-c99f64e997ea",
+              "name": "Failure",
+              "description": "CVE Look-up failed",
+              "parentNodeId": "c6d061a1-96c7-411e-9033-58dcc382214c",
+              "fromNodeId": "5d75c084-9bdf-4767-95df-fd6c635da872",
+              "toNodeId": "70fa280e-29f0-4a72-bd9f-0dd81f58d7cf"
+            },
+            "663b7021-e9ef-43fb-967f-bc1377c5598e": {
+              "id": "663b7021-e9ef-43fb-967f-bc1377c5598e",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "1d0b6c14-ec40-43c8-80b4-0d1fdfc677a0",
+              "toNodeId": "1264bbb0-a068-46a1-b8b7-1f92d9e5df15"
+            },
+            "6e5175bb-f893-49a9-a494-f5ad829f505a": {
+              "id": "6e5175bb-f893-49a9-a494-f5ad829f505a",
+              "name": "",
+              "description": "",
+              "parentNodeId": "c6d061a1-96c7-411e-9033-58dcc382214c",
+              "fromNodeId": "1bee5620-ed03-4332-9c31-829d0a369ed2",
+              "toNodeId": "5d75c084-9bdf-4767-95df-fd6c635da872"
+            },
+            "935bd2aa-f2c1-4239-a68e-5836c6452998": {
+              "id": "935bd2aa-f2c1-4239-a68e-5836c6452998",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "163c0912-9fde-40fb-bcaf-4d963d6f112f",
+              "toNodeId": ""
+            },
+            "97533627-3693-40d6-8013-557cbe8d820c": {
+              "id": "97533627-3693-40d6-8013-557cbe8d820c",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "c6d061a1-96c7-411e-9033-58dcc382214c",
+              "toNodeId": "163c0912-9fde-40fb-bcaf-4d963d6f112f"
+            },
+            "d008a795-05de-4d37-8569-365c235461ab": {
+              "id": "d008a795-05de-4d37-8569-365c235461ab",
+              "name": "",
+              "description": "",
+              "parentNodeId": "c6d061a1-96c7-411e-9033-58dcc382214c",
+              "fromNodeId": "25e5f001-aa71-449e-8cc9-c283a82a5273",
+              "toNodeId": "77929cd8-7346-4a1a-b626-71b5a422e970"
+            },
+            "d370a1a5-fd27-41c4-a8d2-625e8917bc69": {
+              "id": "d370a1a5-fd27-41c4-a8d2-625e8917bc69",
+              "name": "",
+              "description": "",
+              "parentNodeId": "c6d061a1-96c7-411e-9033-58dcc382214c",
+              "fromNodeId": "c6d061a1-96c7-411e-9033-58dcc382214c",
+              "toNodeId": "1bee5620-ed03-4332-9c31-829d0a369ed2"
+            },
+            "de06c519-e59c-482a-a41f-04dd23a582c4": {
+              "id": "de06c519-e59c-482a-a41f-04dd23a582c4",
+              "name": "",
+              "description": "",
+              "parentNodeId": "c6d061a1-96c7-411e-9033-58dcc382214c",
+              "fromNodeId": "f8880e52-cd60-4116-9111-12f5f0e7af13",
+              "toNodeId": ""
+            },
+            "e454b5da-b1f2-4bdb-a2d4-1e425c72cb8e": {
+              "id": "e454b5da-b1f2-4bdb-a2d4-1e425c72cb8e",
+              "name": "",
+              "description": "",
+              "parentNodeId": "c6d061a1-96c7-411e-9033-58dcc382214c",
+              "fromNodeId": "70fa280e-29f0-4a72-bd9f-0dd81f58d7cf",
+              "toNodeId": ""
+            },
+            "e94f2c81-8cf7-49b4-be32-66a0a6f8e592": {
+              "id": "e94f2c81-8cf7-49b4-be32-66a0a6f8e592",
+              "name": "",
+              "description": "",
+              "parentNodeId": "c6d061a1-96c7-411e-9033-58dcc382214c",
+              "fromNodeId": "77929cd8-7346-4a1a-b626-71b5a422e970",
+              "toNodeId": "f8880e52-cd60-4116-9111-12f5f0e7af13"
+            },
+            "f4a2212d-f033-4abf-9a24-47079bc772f5": {
+              "id": "f4a2212d-f033-4abf-9a24-47079bc772f5",
+              "name": "CVE Found",
+              "description": "Pass in the CVE to Recorded Future and returned enriched information",
+              "parentNodeId": "",
+              "fromNodeId": "03ddce6f-ddf5-4b12-ae04-d49517df9d3e",
+              "toNodeId": "c6d061a1-96c7-411e-9033-58dcc382214c"
+            },
+            "f8e5c466-4397-44df-bf84-1aa0f64ed5ee": {
+              "id": "f8e5c466-4397-44df-bf84-1aa0f64ed5ee",
+              "name": "CVE Not Found",
+              "description": "Notify user that no valid CVE was provided in the Slack message",
+              "parentNodeId": "",
+              "fromNodeId": "03ddce6f-ddf5-4b12-ae04-d49517df9d3e",
+              "toNodeId": "b7fe530a-2c2c-4935-83ba-1a6e37b53ffd"
+            }
+          },
+          "nodes": {
+            "03ddce6f-ddf5-4b12-ae04-d49517df9d3e": {
+              "id": "03ddce6f-ddf5-4b12-ae04-d49517df9d3e",
+              "parentNodeId": ""
+            },
+            "1264bbb0-a068-46a1-b8b7-1f92d9e5df15": {
+              "id": "1264bbb0-a068-46a1-b8b7-1f92d9e5df15",
+              "parentNodeId": ""
+            },
+            "163c0912-9fde-40fb-bcaf-4d963d6f112f": {
+              "id": "163c0912-9fde-40fb-bcaf-4d963d6f112f",
+              "parentNodeId": ""
+            },
+            "1bee5620-ed03-4332-9c31-829d0a369ed2": {
+              "id": "1bee5620-ed03-4332-9c31-829d0a369ed2",
+              "parentNodeId": "c6d061a1-96c7-411e-9033-58dcc382214c"
+            },
+            "1d0b6c14-ec40-43c8-80b4-0d1fdfc677a0": {
+              "id": "1d0b6c14-ec40-43c8-80b4-0d1fdfc677a0",
+              "parentNodeId": ""
+            },
+            "25e5f001-aa71-449e-8cc9-c283a82a5273": {
+              "id": "25e5f001-aa71-449e-8cc9-c283a82a5273",
+              "parentNodeId": "c6d061a1-96c7-411e-9033-58dcc382214c"
+            },
+            "5d75c084-9bdf-4767-95df-fd6c635da872": {
+              "id": "5d75c084-9bdf-4767-95df-fd6c635da872",
+              "parentNodeId": "c6d061a1-96c7-411e-9033-58dcc382214c"
+            },
+            "70fa280e-29f0-4a72-bd9f-0dd81f58d7cf": {
+              "id": "70fa280e-29f0-4a72-bd9f-0dd81f58d7cf",
+              "parentNodeId": "c6d061a1-96c7-411e-9033-58dcc382214c"
+            },
+            "77929cd8-7346-4a1a-b626-71b5a422e970": {
+              "id": "77929cd8-7346-4a1a-b626-71b5a422e970",
+              "parentNodeId": "c6d061a1-96c7-411e-9033-58dcc382214c"
+            },
+            "b7fe530a-2c2c-4935-83ba-1a6e37b53ffd": {
+              "id": "b7fe530a-2c2c-4935-83ba-1a6e37b53ffd",
+              "parentNodeId": ""
+            },
+            "c6d061a1-96c7-411e-9033-58dcc382214c": {
+              "id": "c6d061a1-96c7-411e-9033-58dcc382214c",
+              "parentNodeId": ""
+            },
+            "f8880e52-cd60-4116-9111-12f5f0e7af13": {
+              "id": "f8880e52-cd60-4116-9111-12f5f0e7af13",
+              "parentNodeId": "c6d061a1-96c7-411e-9033-58dcc382214c"
+            }
+          }
+        },
+        "steps": {
+          "03ddce6f-ddf5-4b12-ae04-d49517df9d3e": {
+            "nodeId": "03ddce6f-ddf5-4b12-ae04-d49517df9d3e",
+            "name": "Validate CVE Provided",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "f8e5c466-4397-44df-bf84-1aa0f64ed5ee",
+              "stepControlParams": [
+                {
+                  "edgeId": "f4a2212d-f033-4abf-9a24-47079bc772f5",
+                  "expression": {
+                    "name": "1d0b6c14-ec40-43c8-80b4-0d1fdfc677a0.indicators.cves",
+                    "type": "variable"
+                  },
+                  "expressionText": "{{[1d0b6c14-ec40-43c8-80b4-0d1fdfc677a0].[indicators].[cves]}}"
+                },
+                {
+                  "edgeId": "f8e5c466-4397-44df-bf84-1aa0f64ed5ee",
+                  "expression": {},
+                  "expressionText": ""
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          },
+          "1264bbb0-a068-46a1-b8b7-1f92d9e5df15": {
+            "nodeId": "1264bbb0-a068-46a1-b8b7-1f92d9e5df15",
+            "name": "Starting Workflow Notification",
+            "type": "action",
+            "plugin": {
+              "name": "Microsoft Teams",
+              "slugVendor": "rapid7",
+              "slugName": "microsoft_teams",
+              "slugVersion": "2.2.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.1/icon.png"
+            },
+            "identifier": "send_html_message",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "channel_name": "{{[1d0b6c14-ec40-43c8-80b4-0d1fdfc677a0].[channel_name]}}",
+                "message_content": "🚀 <b>Starting Recorded Future Enrich CVE Workflow!</b> 🚀",
+                "team_name": "{{[1d0b6c14-ec40-43c8-80b4-0d1fdfc677a0].[team_name]}}",
+                "thread_id": "{{[1d0b6c14-ec40-43c8-80b4-0d1fdfc677a0].[message].[id]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "channel_name": {
+                  "description": "Channel name",
+                  "order": 2,
+                  "title": "Channel Name",
+                  "type": "string"
+                },
+                "message_content": {
+                  "description": "HTML content to send",
+                  "order": 4,
+                  "title": "Message Content",
+                  "type": "string"
+                },
+                "team_name": {
+                  "description": "Team name",
+                  "order": 1,
+                  "title": "Team Name",
+                  "type": "string"
+                },
+                "thread_id": {
+                  "description": "To post in a thread, select parent message ID",
+                  "order": 3,
+                  "title": "Thread ID",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "team_name",
+                "channel_name",
+                "message_content"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "body": {
+                  "properties": {
+                    "content": {
+                      "description": "Content",
+                      "order": 1,
+                      "title": "Content",
+                      "type": "string"
+                    },
+                    "contentType": {
+                      "description": "Content type",
+                      "order": 2,
+                      "title": "Content Type",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Body",
+                  "type": "object"
+                },
+                "from": {
+                  "properties": {
+                    "user": {
+                      "$ref": "#/definitions/user",
+                      "description": "User",
+                      "order": 1,
+                      "title": "User"
+                    }
+                  },
+                  "title": "From",
+                  "type": "object"
+                },
+                "message": {
+                  "properties": {
+                    "body": {
+                      "$ref": "#/definitions/body",
+                      "description": "Body",
+                      "order": 1,
+                      "title": "Body"
+                    },
+                    "createdDateTime": {
+                      "description": "Created date time",
+                      "order": 3,
+                      "title": "Created Date Time",
+                      "type": "string"
+                    },
+                    "first_word": {
+                      "description": "Extracted first word from message (easy way to obtain a chat command)",
+                      "order": 9,
+                      "title": "First Word",
+                      "type": "string"
+                    },
+                    "from": {
+                      "$ref": "#/definitions/from",
+                      "description": "From",
+                      "order": 2,
+                      "title": "From"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 8,
+                      "title": "ID",
+                      "type": "string"
+                    },
+                    "importance": {
+                      "description": "Importance",
+                      "order": 5,
+                      "title": "Importance",
+                      "type": "string"
+                    },
+                    "locale": {
+                      "description": "Locale",
+                      "order": 7,
+                      "title": "Locale",
+                      "type": "string"
+                    },
+                    "messageType": {
+                      "description": "Message type",
+                      "order": 6,
+                      "title": "Message Type",
+                      "type": "string"
+                    },
+                    "webUrl": {
+                      "description": "Web URL",
+                      "order": 4,
+                      "title": "Web URL",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Message",
+                  "type": "object"
+                },
+                "user": {
+                  "properties": {
+                    "displayName": {
+                      "description": "Display name",
+                      "order": 1,
+                      "title": "Display name",
+                      "type": "string"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 2,
+                      "title": "ID",
+                      "type": "string"
+                    }
+                  },
+                  "title": "User",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "message": {
+                  "$ref": "#/definitions/message",
+                  "description": "The message object that was created",
+                  "order": 1,
+                  "title": "Message"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "163c0912-9fde-40fb-bcaf-4d963d6f112f": {
+            "nodeId": "163c0912-9fde-40fb-bcaf-4d963d6f112f",
+            "name": "Post Success",
+            "type": "action",
+            "plugin": {
+              "name": "Microsoft Teams",
+              "slugVendor": "rapid7",
+              "slugName": "microsoft_teams",
+              "slugVersion": "2.2.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.1/icon.png"
+            },
+            "identifier": "send_html_message",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "channel_name": "{{[1d0b6c14-ec40-43c8-80b4-0d1fdfc677a0].[channel_name]}}",
+                "message_content": "✅ <b>Workflow complete</b> ✅",
+                "team_name": "{{[1d0b6c14-ec40-43c8-80b4-0d1fdfc677a0].[team_name]}}",
+                "thread_id": "{{[1d0b6c14-ec40-43c8-80b4-0d1fdfc677a0].[message].[id]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "channel_name": {
+                  "description": "Channel name",
+                  "order": 2,
+                  "title": "Channel Name",
+                  "type": "string"
+                },
+                "message_content": {
+                  "description": "HTML content to send",
+                  "order": 4,
+                  "title": "Message Content",
+                  "type": "string"
+                },
+                "team_name": {
+                  "description": "Team name",
+                  "order": 1,
+                  "title": "Team Name",
+                  "type": "string"
+                },
+                "thread_id": {
+                  "description": "To post in a thread, select parent message ID",
+                  "order": 3,
+                  "title": "Thread ID",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "team_name",
+                "channel_name",
+                "message_content"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "body": {
+                  "properties": {
+                    "content": {
+                      "description": "Content",
+                      "order": 1,
+                      "title": "Content",
+                      "type": "string"
+                    },
+                    "contentType": {
+                      "description": "Content type",
+                      "order": 2,
+                      "title": "Content Type",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Body",
+                  "type": "object"
+                },
+                "from": {
+                  "properties": {
+                    "user": {
+                      "$ref": "#/definitions/user",
+                      "description": "User",
+                      "order": 1,
+                      "title": "User"
+                    }
+                  },
+                  "title": "From",
+                  "type": "object"
+                },
+                "message": {
+                  "properties": {
+                    "body": {
+                      "$ref": "#/definitions/body",
+                      "description": "Body",
+                      "order": 1,
+                      "title": "Body"
+                    },
+                    "createdDateTime": {
+                      "description": "Created date time",
+                      "order": 3,
+                      "title": "Created Date Time",
+                      "type": "string"
+                    },
+                    "first_word": {
+                      "description": "Extracted first word from message (easy way to obtain a chat command)",
+                      "order": 9,
+                      "title": "First Word",
+                      "type": "string"
+                    },
+                    "from": {
+                      "$ref": "#/definitions/from",
+                      "description": "From",
+                      "order": 2,
+                      "title": "From"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 8,
+                      "title": "ID",
+                      "type": "string"
+                    },
+                    "importance": {
+                      "description": "Importance",
+                      "order": 5,
+                      "title": "Importance",
+                      "type": "string"
+                    },
+                    "locale": {
+                      "description": "Locale",
+                      "order": 7,
+                      "title": "Locale",
+                      "type": "string"
+                    },
+                    "messageType": {
+                      "description": "Message type",
+                      "order": 6,
+                      "title": "Message Type",
+                      "type": "string"
+                    },
+                    "webUrl": {
+                      "description": "Web URL",
+                      "order": 4,
+                      "title": "Web URL",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Message",
+                  "type": "object"
+                },
+                "user": {
+                  "properties": {
+                    "displayName": {
+                      "description": "Display name",
+                      "order": 1,
+                      "title": "Display name",
+                      "type": "string"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 2,
+                      "title": "ID",
+                      "type": "string"
+                    }
+                  },
+                  "title": "User",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "message": {
+                  "$ref": "#/definitions/message",
+                  "description": "The message object that was created",
+                  "order": 1,
+                  "title": "Message"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "1bee5620-ed03-4332-9c31-829d0a369ed2": {
+            "nodeId": "1bee5620-ed03-4332-9c31-829d0a369ed2",
+            "name": "Enrich CVE Vulnerability",
+            "type": "action",
+            "plugin": {
+              "name": "Recorded Future",
+              "slugVendor": "rapid7",
+              "slugName": "recorded_future",
+              "slugVersion": "2.2.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/recorded_future/2.2.0/icon.png"
+            },
+            "identifier": "lookup_vulnerability",
+            "continueOnFailure": true,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "id": "{{[c6d061a1-96c7-411e-9033-58dcc382214c].[$item]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "id": {
+                  "description": "CVE or RF ID",
+                  "order": 1,
+                  "title": "Id",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "analystNote": {
+                  "properties": {
+                    "attributes": {
+                      "$ref": "#/definitions/attributes",
+                      "order": 1,
+                      "title": "Attributes"
+                    },
+                    "id": {
+                      "order": 2,
+                      "title": "Id",
+                      "type": "string"
+                    },
+                    "source": {
+                      "$ref": "#/definitions/labels",
+                      "order": 3,
+                      "title": "Source"
+                    }
+                  },
+                  "title": "AnalystNote",
+                  "type": "object"
+                },
+                "attributes": {
+                  "properties": {
+                    "context_entities": {
+                      "items": {
+                        "$ref": "#/definitions/context_entities"
+                      },
+                      "order": 1,
+                      "title": "Context Entities",
+                      "type": "array"
+                    },
+                    "labels": {
+                      "items": {
+                        "$ref": "#/definitions/labels"
+                      },
+                      "order": 2,
+                      "title": "Labels",
+                      "type": "array"
+                    },
+                    "note_entities": {
+                      "items": {
+                        "$ref": "#/definitions/labels"
+                      },
+                      "order": 3,
+                      "title": "Note Entities",
+                      "type": "array"
+                    },
+                    "published": {
+                      "order": 4,
+                      "title": "Published",
+                      "type": "string"
+                    },
+                    "text": {
+                      "order": 5,
+                      "title": "Text",
+                      "type": "string"
+                    },
+                    "title": {
+                      "order": 6,
+                      "title": "Title",
+                      "type": "string"
+                    },
+                    "topic": {
+                      "$ref": "#/definitions/context_entities",
+                      "order": 7,
+                      "title": "Topic"
+                    },
+                    "validated_on": {
+                      "order": 8,
+                      "title": "Validated On",
+                      "type": "string"
+                    },
+                    "validation_urls": {
+                      "items": {
+                        "$ref": "#/definitions/labels"
+                      },
+                      "order": 9,
+                      "title": "Validation Urls",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Attributes",
+                  "type": "object"
+                },
+                "context_entities": {
+                  "properties": {
+                    "description": {
+                      "order": 1,
+                      "title": "Description",
+                      "type": "string"
+                    },
+                    "id": {
+                      "order": 2,
+                      "title": "Id",
+                      "type": "string"
+                    },
+                    "name": {
+                      "order": 3,
+                      "title": "Name",
+                      "type": "string"
+                    },
+                    "type": {
+                      "order": 4,
+                      "title": "Type",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Context Entities",
+                  "type": "object"
+                },
+                "counts": {
+                  "properties": {
+                    "count": {
+                      "order": 1,
+                      "title": "Count",
+                      "type": "integer"
+                    },
+                    "date": {
+                      "order": 2,
+                      "title": "Date",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Counts",
+                  "type": "object"
+                },
+                "cvss": {
+                  "properties": {
+                    "accessComplexity": {
+                      "order": 3,
+                      "title": "Access Complexity",
+                      "type": "string"
+                    },
+                    "accessVector": {
+                      "order": 9,
+                      "title": "Access Vector",
+                      "type": "string"
+                    },
+                    "authentication": {
+                      "order": 4,
+                      "title": "Authentication",
+                      "type": "string"
+                    },
+                    "availability": {
+                      "order": 8,
+                      "title": "Availability",
+                      "type": "string"
+                    },
+                    "confidentiality": {
+                      "order": 1,
+                      "title": "Confidentiality",
+                      "type": "string"
+                    },
+                    "integrity": {
+                      "order": 7,
+                      "title": "Integrity",
+                      "type": "string"
+                    },
+                    "lastModified": {
+                      "order": 2,
+                      "title": "Last Modified",
+                      "type": "string"
+                    },
+                    "published": {
+                      "order": 6,
+                      "title": "Published",
+                      "type": "string"
+                    },
+                    "score": {
+                      "order": 5,
+                      "title": "Score",
+                      "type": "number"
+                    },
+                    "version": {
+                      "order": 10,
+                      "title": "Version",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Cvss",
+                  "type": "object"
+                },
+                "cvssv3": {
+                  "properties": {
+                    "attackComplexity": {
+                      "order": 1,
+                      "title": "AttackComplexity",
+                      "type": "string"
+                    },
+                    "attackVector": {
+                      "order": 2,
+                      "title": "AttackVector",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Cvssv3",
+                  "type": "object"
+                },
+                "entities": {
+                  "properties": {
+                    "count": {
+                      "order": 1,
+                      "title": "Count",
+                      "type": "integer"
+                    },
+                    "entity": {
+                      "$ref": "#/definitions/entity",
+                      "order": 2,
+                      "title": "Entity"
+                    }
+                  },
+                  "title": "Entities",
+                  "type": "object"
+                },
+                "entity": {
+                  "properties": {
+                    "description": {
+                      "order": 4,
+                      "title": "Description",
+                      "type": "string"
+                    },
+                    "id": {
+                      "order": 1,
+                      "title": "Id",
+                      "type": "string"
+                    },
+                    "name": {
+                      "order": 2,
+                      "title": "Name",
+                      "type": "string"
+                    },
+                    "type": {
+                      "order": 3,
+                      "title": "Type",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Entity",
+                  "type": "object"
+                },
+                "evidenceDetails": {
+                  "properties": {
+                    "criticality": {
+                      "order": 1,
+                      "title": "Criticality",
+                      "type": "number"
+                    },
+                    "criticalityLabel": {
+                      "order": 2,
+                      "title": "Criticality Label",
+                      "type": "string"
+                    },
+                    "evidenceString": {
+                      "order": 3,
+                      "title": "Evidence String",
+                      "type": "string"
+                    },
+                    "rule": {
+                      "order": 4,
+                      "title": "Rule",
+                      "type": "string"
+                    },
+                    "timestamp": {
+                      "order": 5,
+                      "title": "Timestamp",
+                      "type": "string"
+                    }
+                  },
+                  "title": "EvidenceDetails",
+                  "type": "object"
+                },
+                "labels": {
+                  "properties": {
+                    "id": {
+                      "order": 1,
+                      "title": "Id",
+                      "type": "string"
+                    },
+                    "name": {
+                      "order": 2,
+                      "title": "Name",
+                      "type": "string"
+                    },
+                    "type": {
+                      "order": 3,
+                      "title": "Type",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Labels",
+                  "type": "object"
+                },
+                "metrics": {
+                  "properties": {
+                    "type": {
+                      "order": 1,
+                      "title": "Type",
+                      "type": "string"
+                    },
+                    "value": {
+                      "order": 2,
+                      "title": "Value",
+                      "type": "number"
+                    }
+                  },
+                  "title": "Metrics",
+                  "type": "object"
+                },
+                "rawrisk": {
+                  "properties": {
+                    "rule": {
+                      "description": "Rule",
+                      "order": 1,
+                      "title": "Rule",
+                      "type": "string"
+                    },
+                    "timestamp": {
+                      "description": "Timestamp",
+                      "order": 2,
+                      "title": "Timestamp",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Rawrisk",
+                  "type": "object"
+                },
+                "relatedEntities": {
+                  "properties": {
+                    "entities": {
+                      "items": {
+                        "$ref": "#/definitions/entities"
+                      },
+                      "order": 1,
+                      "title": "Entities",
+                      "type": "array"
+                    },
+                    "type": {
+                      "order": 2,
+                      "title": "Type",
+                      "type": "string"
+                    }
+                  },
+                  "title": "RelatedEntities",
+                  "type": "object"
+                },
+                "risk": {
+                  "properties": {
+                    "criticality": {
+                      "order": 1,
+                      "title": "Criticality",
+                      "type": "number"
+                    },
+                    "criticalityLabel": {
+                      "order": 2,
+                      "title": "Criticality Label",
+                      "type": "string"
+                    },
+                    "evidenceDetails": {
+                      "items": {
+                        "$ref": "#/definitions/evidenceDetails"
+                      },
+                      "order": 3,
+                      "title": "Evidence Details",
+                      "type": "array"
+                    },
+                    "riskSummary": {
+                      "order": 4,
+                      "title": "Risk Summary",
+                      "type": "string"
+                    },
+                    "rules": {
+                      "order": 5,
+                      "title": "Rules",
+                      "type": "integer"
+                    },
+                    "score": {
+                      "order": 6,
+                      "title": "Score",
+                      "type": "integer"
+                    }
+                  },
+                  "title": "Risk",
+                  "type": "object"
+                },
+                "sightings": {
+                  "properties": {
+                    "fragment": {
+                      "order": 1,
+                      "title": "Fragment",
+                      "type": "string"
+                    },
+                    "published": {
+                      "order": 2,
+                      "title": "Published",
+                      "type": "string"
+                    },
+                    "source": {
+                      "order": 3,
+                      "title": "Source",
+                      "type": "string"
+                    },
+                    "title": {
+                      "order": 4,
+                      "title": "Title",
+                      "type": "string"
+                    },
+                    "type": {
+                      "order": 5,
+                      "title": "Type",
+                      "type": "string"
+                    },
+                    "url": {
+                      "order": 6,
+                      "title": "Url",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Sightings",
+                  "type": "object"
+                },
+                "timestamps": {
+                  "properties": {
+                    "firstSeen": {
+                      "order": 1,
+                      "title": "First Seen",
+                      "type": "string"
+                    },
+                    "lastSeen": {
+                      "order": 2,
+                      "title": "Last Seen",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Timestamps",
+                  "type": "object"
+                },
+                "vulnerability_search_data": {
+                  "properties": {
+                    "analystNotes": {
+                      "items": {
+                        "$ref": "#/definitions/analystNote"
+                      },
+                      "order": 18,
+                      "title": "Analyst Notes",
+                      "type": "array"
+                    },
+                    "commonNames": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 15,
+                      "title": "CommonNames",
+                      "type": "array"
+                    },
+                    "counts": {
+                      "items": {
+                        "$ref": "#/definitions/counts"
+                      },
+                      "order": 1,
+                      "title": "Counts",
+                      "type": "array"
+                    },
+                    "cpe": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 3,
+                      "title": "Cpe",
+                      "type": "array"
+                    },
+                    "cvss": {
+                      "$ref": "#/definitions/cvss",
+                      "order": 2,
+                      "title": "Cvss"
+                    },
+                    "cvssv3": {
+                      "$ref": "#/definitions/cvssv3",
+                      "order": 16,
+                      "title": "Cvssv3"
+                    },
+                    "entity": {
+                      "$ref": "#/definitions/entity",
+                      "order": 5,
+                      "title": "Entity"
+                    },
+                    "hashAlgorithm": {
+                      "order": 6,
+                      "title": "Hash Algorithm",
+                      "type": "string"
+                    },
+                    "intelCard": {
+                      "order": 7,
+                      "title": "Intel Card",
+                      "type": "string"
+                    },
+                    "metrics": {
+                      "items": {
+                        "$ref": "#/definitions/metrics"
+                      },
+                      "order": 8,
+                      "title": "Metrics",
+                      "type": "array"
+                    },
+                    "nvdDescription": {
+                      "order": 4,
+                      "title": "NVD Description",
+                      "type": "string"
+                    },
+                    "rawrisk": {
+                      "items": {
+                        "$ref": "#/definitions/rawrisk"
+                      },
+                      "order": 14,
+                      "title": "Rawrisk",
+                      "type": "array"
+                    },
+                    "relatedEntities": {
+                      "items": {
+                        "$ref": "#/definitions/relatedEntities"
+                      },
+                      "order": 9,
+                      "title": "Related Entities",
+                      "type": "array"
+                    },
+                    "relatedLinks": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 17,
+                      "title": "RelatedLinks",
+                      "type": "array"
+                    },
+                    "risk": {
+                      "$ref": "#/definitions/risk",
+                      "order": 10,
+                      "title": "Risk"
+                    },
+                    "sightings": {
+                      "items": {
+                        "$ref": "#/definitions/sightings"
+                      },
+                      "order": 11,
+                      "title": "Sightings",
+                      "type": "array"
+                    },
+                    "threatLists": {
+                      "items": {
+                        "type": "object"
+                      },
+                      "order": 12,
+                      "title": "Threat Lists",
+                      "type": "array"
+                    },
+                    "timestamps": {
+                      "$ref": "#/definitions/timestamps",
+                      "order": 13,
+                      "title": "Timestamps"
+                    }
+                  },
+                  "title": "Vulnerability Search Data",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "data": {
+                  "$ref": "#/definitions/vulnerability_search_data",
+                  "description": "Data",
+                  "order": 1,
+                  "title": "Data"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "1d0b6c14-ec40-43c8-80b4-0d1fdfc677a0": {
+            "nodeId": "1d0b6c14-ec40-43c8-80b4-0d1fdfc677a0",
+            "name": "Enrich CVE Request",
+            "description": "Microsoft Teams message that triggers enrichment of the CVE provided",
+            "type": "trigger",
+            "plugin": {
+              "name": "Microsoft Teams",
+              "slugVendor": "rapid7",
+              "slugName": "microsoft_teams",
+              "slugVersion": "2.2.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.1/icon.png"
+            },
+            "identifier": "new_message_received",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "channel_name": "change_me",
+                "message_content": "!enrich-cve",
+                "team_name": "change_me"
+              }
+            },
+            "triggerId": "6fe44622-398a-46e4-8c5f-c1e6fe179e4a",
+            "defaultInputJSONSchema": {
+              "properties": {
+                "channel_name": {
+                  "description": "Channel",
+                  "order": 2,
+                  "title": "Channel Name",
+                  "type": "string"
+                },
+                "message_content": {
+                  "description": "Regex to match new messages against",
+                  "order": 3,
+                  "title": "Message Content",
+                  "type": "string"
+                },
+                "team_name": {
+                  "description": "Team name",
+                  "order": 1,
+                  "title": "Team Name",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "team_name",
+                "channel_name"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "body": {
+                  "properties": {
+                    "content": {
+                      "description": "Content",
+                      "order": 1,
+                      "title": "Content",
+                      "type": "string"
+                    },
+                    "contentType": {
+                      "description": "Content type",
+                      "order": 2,
+                      "title": "Content Type",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Body",
+                  "type": "object"
+                },
+                "from": {
+                  "properties": {
+                    "user": {
+                      "$ref": "#/definitions/user",
+                      "description": "User",
+                      "order": 1,
+                      "title": "User"
+                    }
+                  },
+                  "title": "From",
+                  "type": "object"
+                },
+                "hashes": {
+                  "properties": {
+                    "md5_hashes": {
+                      "description": "Extracted MD5 Hashes from message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 1,
+                      "title": "MD5 Hashes",
+                      "type": "array"
+                    },
+                    "sha1_hashes": {
+                      "description": "Extracted SHA1 hashes from message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "SHA1 Hashes",
+                      "type": "array"
+                    },
+                    "sha256_hashes": {
+                      "description": "Extracted SHA256 hashes from message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 3,
+                      "title": "SHA256 Hashes",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Hashes",
+                  "type": "object"
+                },
+                "indicators": {
+                  "properties": {
+                    "cves": {
+                      "description": "Extracted CVEs from message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 7,
+                      "title": "CVEs",
+                      "type": "array"
+                    },
+                    "domains": {
+                      "description": "Extracted domains from message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 1,
+                      "title": "Domains",
+                      "type": "array"
+                    },
+                    "email_addresses": {
+                      "description": "Extracted email addresses from message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 3,
+                      "title": "Email Addresses",
+                      "type": "array"
+                    },
+                    "hashes": {
+                      "$ref": "#/definitions/hashes",
+                      "description": "Extracted hashes from message",
+                      "order": 4,
+                      "title": "Hashes"
+                    },
+                    "ip_addresses": {
+                      "$ref": "#/definitions/ip_addresses",
+                      "description": "Extracted IP addresses from message",
+                      "order": 5,
+                      "title": "IP Addressses"
+                    },
+                    "mac_addresses": {
+                      "description": "Extracted MAC addresses from message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 6,
+                      "title": "MAC Addresses",
+                      "type": "array"
+                    },
+                    "urls": {
+                      "description": "Extracted URLs from message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "URLs",
+                      "type": "array"
+                    },
+                    "uuids": {
+                      "description": "Extracted UUIDs from message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 8,
+                      "title": "UUIDs",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Indicators",
+                  "type": "object"
+                },
+                "ip_addresses": {
+                  "properties": {
+                    "ipv4_addresses": {
+                      "description": "Extracted IPv4 addressses from message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 1,
+                      "title": "IPv4 Addressses",
+                      "type": "array"
+                    },
+                    "ipv6_addresses": {
+                      "description": "Extracted IPv6 addresses from message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "IPv6 Addressses",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Ip Addresses",
+                  "type": "object"
+                },
+                "message": {
+                  "properties": {
+                    "body": {
+                      "$ref": "#/definitions/body",
+                      "description": "Body",
+                      "order": 1,
+                      "title": "Body"
+                    },
+                    "createdDateTime": {
+                      "description": "Created date time",
+                      "order": 3,
+                      "title": "Created Date Time",
+                      "type": "string"
+                    },
+                    "first_word": {
+                      "description": "Extracted first word from message (easy way to obtain a chat command)",
+                      "order": 9,
+                      "title": "First Word",
+                      "type": "string"
+                    },
+                    "from": {
+                      "$ref": "#/definitions/from",
+                      "description": "From",
+                      "order": 2,
+                      "title": "From"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 8,
+                      "title": "ID",
+                      "type": "string"
+                    },
+                    "importance": {
+                      "description": "Importance",
+                      "order": 5,
+                      "title": "Importance",
+                      "type": "string"
+                    },
+                    "locale": {
+                      "description": "Locale",
+                      "order": 7,
+                      "title": "Locale",
+                      "type": "string"
+                    },
+                    "messageType": {
+                      "description": "Message type",
+                      "order": 6,
+                      "title": "Message Type",
+                      "type": "string"
+                    },
+                    "webUrl": {
+                      "description": "Web URL",
+                      "order": 4,
+                      "title": "Web URL",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Message",
+                  "type": "object"
+                },
+                "user": {
+                  "properties": {
+                    "displayName": {
+                      "description": "Display name",
+                      "order": 1,
+                      "title": "Display name",
+                      "type": "string"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 2,
+                      "title": "ID",
+                      "type": "string"
+                    }
+                  },
+                  "title": "User",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "channel_name": {
+                  "description": "Name of the channel where the message was posted",
+                  "order": 3,
+                  "title": "Channel Name",
+                  "type": "string"
+                },
+                "indicators": {
+                  "$ref": "#/definitions/indicators",
+                  "description": "The indicators object that was extracted from message",
+                  "order": 2,
+                  "title": "Indicators"
+                },
+                "message": {
+                  "$ref": "#/definitions/message",
+                  "description": "The message object that was created",
+                  "order": 1,
+                  "title": "Message"
+                },
+                "team_name": {
+                  "description": "Name of the team to which the channel is assigned to",
+                  "order": 4,
+                  "title": "Team Name",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg",
+            "connectionType": "CONNECTION"
+          },
+          "25e5f001-aa71-449e-8cc9-c283a82a5273": {
+            "nodeId": "25e5f001-aa71-449e-8cc9-c283a82a5273",
+            "name": "Enriched CVE Report",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "## Description\n\n**CVE**: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[entity].[name]}}\n\n**Type**: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[entity].[type]}}\n\n**Description**: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[entity].[description]}}\n\n**First Seen**: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[timestamps].[firstSeen]}}\n\n**Last Seen**: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[timestamps].[lastSeen]}}\n\n\n## Risk\n\n**Risk**: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[risk].[score]}}\n\n**Severity**: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[risk].[criticalityLabel]}}\n\n\n### CVSS\n**Integrity Impact**: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[cvssv3].[integrityImpact]}}\n\n**Confidentiality Impact**: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[cvssv3].[confidentialityImpact]}}\n\n**Exploitability Score**: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[cvssv3].[exploitabilityScore]}}\n\n**Modified**: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[cvssv3].[modified]}}\n\n**Base Severity**: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[cvssv3].[baseSeverity]}}\n\n**Base Score**: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[cvssv3].[baseScore]}}\n\n**Impact Score**: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[cvssv3].[impactScore]}}\n\n**Attack Vector**: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[cvssv3].[attackVector]}}\n\n**Attack Complexity**: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[cvssv3].[attackComplexity]}}\n\n**Created**: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[cvssv3].[created]}}\n\n**Availability Impact**: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[cvssv3].[availabilityImpact]}}\n"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "5d75c084-9bdf-4767-95df-fd6c635da872": {
+            "nodeId": "5d75c084-9bdf-4767-95df-fd6c635da872",
+            "name": "Look-up successful",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "50aea4bf-b6c0-48d3-a59d-c99f64e997ea",
+              "stepControlParams": [
+                {
+                  "edgeId": "4f9b2478-c89d-477b-b3e5-bb9bccc6a7a2",
+                  "expression": {
+                    "name": "1bee5620-ed03-4332-9c31-829d0a369ed2.$success",
+                    "type": "variable"
+                  },
+                  "expressionText": "{{[1bee5620-ed03-4332-9c31-829d0a369ed2].[$success]}}"
+                },
+                {
+                  "edgeId": "50aea4bf-b6c0-48d3-a59d-c99f64e997ea",
+                  "expression": {},
+                  "expressionText": ""
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          },
+          "70fa280e-29f0-4a72-bd9f-0dd81f58d7cf": {
+            "nodeId": "70fa280e-29f0-4a72-bd9f-0dd81f58d7cf",
+            "name": "CVE Enrich Failure",
+            "type": "action",
+            "plugin": {
+              "name": "Microsoft Teams",
+              "slugVendor": "rapid7",
+              "slugName": "microsoft_teams",
+              "slugVersion": "2.2.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.1/icon.png"
+            },
+            "identifier": "send_html_message",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "channel_name": "{{[1d0b6c14-ec40-43c8-80b4-0d1fdfc677a0].[channel_name]}}",
+                "message_content": "🚨 <br>Look-up for {{[c6d061a1-96c7-411e-9033-58dcc382214c].[$item]}} failed!</br> 🚨",
+                "team_name": "{{[1d0b6c14-ec40-43c8-80b4-0d1fdfc677a0].[team_name]}}",
+                "thread_id": "{{[1d0b6c14-ec40-43c8-80b4-0d1fdfc677a0].[message].[id]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "channel_name": {
+                  "description": "Channel name",
+                  "order": 2,
+                  "title": "Channel Name",
+                  "type": "string"
+                },
+                "message_content": {
+                  "description": "HTML content to send",
+                  "order": 4,
+                  "title": "Message Content",
+                  "type": "string"
+                },
+                "team_name": {
+                  "description": "Team name",
+                  "order": 1,
+                  "title": "Team Name",
+                  "type": "string"
+                },
+                "thread_id": {
+                  "description": "To post in a thread, select parent message ID",
+                  "order": 3,
+                  "title": "Thread ID",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "team_name",
+                "channel_name",
+                "message_content"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "body": {
+                  "properties": {
+                    "content": {
+                      "description": "Content",
+                      "order": 1,
+                      "title": "Content",
+                      "type": "string"
+                    },
+                    "contentType": {
+                      "description": "Content type",
+                      "order": 2,
+                      "title": "Content Type",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Body",
+                  "type": "object"
+                },
+                "from": {
+                  "properties": {
+                    "user": {
+                      "$ref": "#/definitions/user",
+                      "description": "User",
+                      "order": 1,
+                      "title": "User"
+                    }
+                  },
+                  "title": "From",
+                  "type": "object"
+                },
+                "message": {
+                  "properties": {
+                    "body": {
+                      "$ref": "#/definitions/body",
+                      "description": "Body",
+                      "order": 1,
+                      "title": "Body"
+                    },
+                    "createdDateTime": {
+                      "description": "Created date time",
+                      "order": 3,
+                      "title": "Created Date Time",
+                      "type": "string"
+                    },
+                    "first_word": {
+                      "description": "Extracted first word from message (easy way to obtain a chat command)",
+                      "order": 9,
+                      "title": "First Word",
+                      "type": "string"
+                    },
+                    "from": {
+                      "$ref": "#/definitions/from",
+                      "description": "From",
+                      "order": 2,
+                      "title": "From"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 8,
+                      "title": "ID",
+                      "type": "string"
+                    },
+                    "importance": {
+                      "description": "Importance",
+                      "order": 5,
+                      "title": "Importance",
+                      "type": "string"
+                    },
+                    "locale": {
+                      "description": "Locale",
+                      "order": 7,
+                      "title": "Locale",
+                      "type": "string"
+                    },
+                    "messageType": {
+                      "description": "Message type",
+                      "order": 6,
+                      "title": "Message Type",
+                      "type": "string"
+                    },
+                    "webUrl": {
+                      "description": "Web URL",
+                      "order": 4,
+                      "title": "Web URL",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Message",
+                  "type": "object"
+                },
+                "user": {
+                  "properties": {
+                    "displayName": {
+                      "description": "Display name",
+                      "order": 1,
+                      "title": "Display name",
+                      "type": "string"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 2,
+                      "title": "ID",
+                      "type": "string"
+                    }
+                  },
+                  "title": "User",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "message": {
+                  "$ref": "#/definitions/message",
+                  "description": "The message object that was created",
+                  "order": 1,
+                  "title": "Message"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "77929cd8-7346-4a1a-b626-71b5a422e970": {
+            "nodeId": "77929cd8-7346-4a1a-b626-71b5a422e970",
+            "name": "Convert Artifact to HTML",
+            "type": "action",
+            "plugin": {
+              "name": "Markdown",
+              "slugVendor": "rapid7",
+              "slugName": "markdown",
+              "slugVersion": "3.1.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/markdown/3.1.0/icon.png"
+            },
+            "identifier": "markdown_to_html",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "markdown": "",
+                "markdown_string": "{{[25e5f001-aa71-449e-8cc9-c283a82a5273].[content]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "markdown": {
+                  "description": "Markdown content represented in base64",
+                  "displayType": "bytes",
+                  "format": "bytes",
+                  "order": 1,
+                  "title": "Markdown Bytes",
+                  "type": "string"
+                },
+                "markdown_string": {
+                  "description": "Markdown content as a string",
+                  "order": 2,
+                  "title": "Markdown String",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "html": {
+                  "description": "HTML data as bytes",
+                  "displayType": "bytes",
+                  "format": "bytes",
+                  "order": 1,
+                  "title": "HTML",
+                  "type": "string"
+                },
+                "html_string": {
+                  "description": "HTML data",
+                  "order": 2,
+                  "title": "HTML",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR"
+          },
+          "b7fe530a-2c2c-4935-83ba-1a6e37b53ffd": {
+            "nodeId": "b7fe530a-2c2c-4935-83ba-1a6e37b53ffd",
+            "name": "No Valid CVE Provided",
+            "type": "action",
+            "plugin": {
+              "name": "Microsoft Teams",
+              "slugVendor": "rapid7",
+              "slugName": "microsoft_teams",
+              "slugVersion": "2.2.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.1/icon.png"
+            },
+            "identifier": "send_html_message",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "channel_name": "{{[1d0b6c14-ec40-43c8-80b4-0d1fdfc677a0].[channel_name]}}",
+                "message_content": "​​​​​​​🚨 <b>CVE provided is not a valid CVE - please validate and try again</b> ​​​​​​🚨",
+                "team_name": "{{[1d0b6c14-ec40-43c8-80b4-0d1fdfc677a0].[team_name]}}",
+                "thread_id": "{{[1d0b6c14-ec40-43c8-80b4-0d1fdfc677a0].[message].[id]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "channel_name": {
+                  "description": "Channel name",
+                  "order": 2,
+                  "title": "Channel Name",
+                  "type": "string"
+                },
+                "message_content": {
+                  "description": "HTML content to send",
+                  "order": 4,
+                  "title": "Message Content",
+                  "type": "string"
+                },
+                "team_name": {
+                  "description": "Team name",
+                  "order": 1,
+                  "title": "Team Name",
+                  "type": "string"
+                },
+                "thread_id": {
+                  "description": "To post in a thread, select parent message ID",
+                  "order": 3,
+                  "title": "Thread ID",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "team_name",
+                "channel_name",
+                "message_content"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "body": {
+                  "properties": {
+                    "content": {
+                      "description": "Content",
+                      "order": 1,
+                      "title": "Content",
+                      "type": "string"
+                    },
+                    "contentType": {
+                      "description": "Content type",
+                      "order": 2,
+                      "title": "Content Type",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Body",
+                  "type": "object"
+                },
+                "from": {
+                  "properties": {
+                    "user": {
+                      "$ref": "#/definitions/user",
+                      "description": "User",
+                      "order": 1,
+                      "title": "User"
+                    }
+                  },
+                  "title": "From",
+                  "type": "object"
+                },
+                "message": {
+                  "properties": {
+                    "body": {
+                      "$ref": "#/definitions/body",
+                      "description": "Body",
+                      "order": 1,
+                      "title": "Body"
+                    },
+                    "createdDateTime": {
+                      "description": "Created date time",
+                      "order": 3,
+                      "title": "Created Date Time",
+                      "type": "string"
+                    },
+                    "first_word": {
+                      "description": "Extracted first word from message (easy way to obtain a chat command)",
+                      "order": 9,
+                      "title": "First Word",
+                      "type": "string"
+                    },
+                    "from": {
+                      "$ref": "#/definitions/from",
+                      "description": "From",
+                      "order": 2,
+                      "title": "From"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 8,
+                      "title": "ID",
+                      "type": "string"
+                    },
+                    "importance": {
+                      "description": "Importance",
+                      "order": 5,
+                      "title": "Importance",
+                      "type": "string"
+                    },
+                    "locale": {
+                      "description": "Locale",
+                      "order": 7,
+                      "title": "Locale",
+                      "type": "string"
+                    },
+                    "messageType": {
+                      "description": "Message type",
+                      "order": 6,
+                      "title": "Message Type",
+                      "type": "string"
+                    },
+                    "webUrl": {
+                      "description": "Web URL",
+                      "order": 4,
+                      "title": "Web URL",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Message",
+                  "type": "object"
+                },
+                "user": {
+                  "properties": {
+                    "displayName": {
+                      "description": "Display name",
+                      "order": 1,
+                      "title": "Display name",
+                      "type": "string"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 2,
+                      "title": "ID",
+                      "type": "string"
+                    }
+                  },
+                  "title": "User",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "message": {
+                  "$ref": "#/definitions/message",
+                  "description": "The message object that was created",
+                  "order": 1,
+                  "title": "Message"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "c6d061a1-96c7-411e-9033-58dcc382214c": {
+            "nodeId": "c6d061a1-96c7-411e-9033-58dcc382214c",
+            "name": "Enrich each CVE",
+            "type": "loop",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "customOutput": [],
+              "innerEdgeId": "d370a1a5-fd27-41c4-a8d2-625e8917bc69",
+              "nextEdgeId": "97533627-3693-40d6-8013-557cbe8d820c",
+              "repeatVariable": "{{[1d0b6c14-ec40-43c8-80b4-0d1fdfc677a0].[indicators].[cves]}}"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": {
+              "properties": {},
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/loop.svg",
+            "connectionType": "NONE"
+          },
+          "f8880e52-cd60-4116-9111-12f5f0e7af13": {
+            "nodeId": "f8880e52-cd60-4116-9111-12f5f0e7af13",
+            "name": "Post Enriched CVE Report",
+            "type": "action",
+            "plugin": {
+              "name": "Microsoft Teams",
+              "slugVendor": "rapid7",
+              "slugName": "microsoft_teams",
+              "slugVersion": "2.2.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.1/icon.png"
+            },
+            "identifier": "send_html_message",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "channel_name": "{{[1d0b6c14-ec40-43c8-80b4-0d1fdfc677a0].[channel_name]}}",
+                "message_content": "📔 <b>Enriched CVE Report</b> 📔<br>\n{{[77929cd8-7346-4a1a-b626-71b5a422e970].[html_string]}}",
+                "team_name": "{{[1d0b6c14-ec40-43c8-80b4-0d1fdfc677a0].[team_name]}}",
+                "thread_id": "{{[1d0b6c14-ec40-43c8-80b4-0d1fdfc677a0].[message].[id]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "channel_name": {
+                  "description": "Channel name",
+                  "order": 2,
+                  "title": "Channel Name",
+                  "type": "string"
+                },
+                "message_content": {
+                  "description": "HTML content to send",
+                  "order": 4,
+                  "title": "Message Content",
+                  "type": "string"
+                },
+                "team_name": {
+                  "description": "Team name",
+                  "order": 1,
+                  "title": "Team Name",
+                  "type": "string"
+                },
+                "thread_id": {
+                  "description": "To post in a thread, select parent message ID",
+                  "order": 3,
+                  "title": "Thread ID",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "team_name",
+                "channel_name",
+                "message_content"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "body": {
+                  "properties": {
+                    "content": {
+                      "description": "Content",
+                      "order": 1,
+                      "title": "Content",
+                      "type": "string"
+                    },
+                    "contentType": {
+                      "description": "Content type",
+                      "order": 2,
+                      "title": "Content Type",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Body",
+                  "type": "object"
+                },
+                "from": {
+                  "properties": {
+                    "user": {
+                      "$ref": "#/definitions/user",
+                      "description": "User",
+                      "order": 1,
+                      "title": "User"
+                    }
+                  },
+                  "title": "From",
+                  "type": "object"
+                },
+                "message": {
+                  "properties": {
+                    "body": {
+                      "$ref": "#/definitions/body",
+                      "description": "Body",
+                      "order": 1,
+                      "title": "Body"
+                    },
+                    "createdDateTime": {
+                      "description": "Created date time",
+                      "order": 3,
+                      "title": "Created Date Time",
+                      "type": "string"
+                    },
+                    "first_word": {
+                      "description": "Extracted first word from message (easy way to obtain a chat command)",
+                      "order": 9,
+                      "title": "First Word",
+                      "type": "string"
+                    },
+                    "from": {
+                      "$ref": "#/definitions/from",
+                      "description": "From",
+                      "order": 2,
+                      "title": "From"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 8,
+                      "title": "ID",
+                      "type": "string"
+                    },
+                    "importance": {
+                      "description": "Importance",
+                      "order": 5,
+                      "title": "Importance",
+                      "type": "string"
+                    },
+                    "locale": {
+                      "description": "Locale",
+                      "order": 7,
+                      "title": "Locale",
+                      "type": "string"
+                    },
+                    "messageType": {
+                      "description": "Message type",
+                      "order": 6,
+                      "title": "Message Type",
+                      "type": "string"
+                    },
+                    "webUrl": {
+                      "description": "Web URL",
+                      "order": 4,
+                      "title": "Web URL",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Message",
+                  "type": "object"
+                },
+                "user": {
+                  "properties": {
+                    "displayName": {
+                      "description": "Display name",
+                      "order": 1,
+                      "title": "Display name",
+                      "type": "string"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 2,
+                      "title": "ID",
+                      "type": "string"
+                    }
+                  },
+                  "title": "User",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "message": {
+                  "$ref": "#/definitions/message",
+                  "description": "The message object that was created",
+                  "order": 1,
+                  "title": "Message"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          }
+        },
+        "tags": null,
+        "humanCostSeconds": 0,
+        "humanCostDisplayUnit": ""
+      }
+    ],
+    "triggers": [
+      {
+        "id": "6fe44622-398a-46e4-8c5f-c1e6fe179e4a",
+        "identifier": "new_message_received",
+        "name": "Enrich CVE Request",
+        "description": "Microsoft Teams message that triggers enrichment of the CVE provided",
+        "input": {
+          "channel_name": "change_me",
+          "message_content": "!enrich-cve",
+          "team_name": "change_me"
+        },
+        "inputJsonSchema": {
+          "properties": {
+            "channel_name": {
+              "description": "Channel",
+              "order": 2,
+              "title": "Channel Name",
+              "type": "string"
+            },
+            "message_content": {
+              "description": "Regex to match new messages against",
+              "order": 3,
+              "title": "Message Content",
+              "type": "string"
+            },
+            "team_name": {
+              "description": "Team name",
+              "order": 1,
+              "title": "Team Name",
+              "type": "string"
+            }
+          },
+          "required": [
+            "team_name",
+            "channel_name"
+          ],
+          "title": "Variables",
+          "type": "object"
+        },
+        "outputJsonSchema": {
+          "definitions": {
+            "body": {
+              "properties": {
+                "content": {
+                  "description": "Content",
+                  "order": 1,
+                  "title": "Content",
+                  "type": "string"
+                },
+                "contentType": {
+                  "description": "Content type",
+                  "order": 2,
+                  "title": "Content Type",
+                  "type": "string"
+                }
+              },
+              "title": "Body",
+              "type": "object"
+            },
+            "from": {
+              "properties": {
+                "user": {
+                  "$ref": "#/definitions/user",
+                  "description": "User",
+                  "order": 1,
+                  "title": "User"
+                }
+              },
+              "title": "From",
+              "type": "object"
+            },
+            "hashes": {
+              "properties": {
+                "md5_hashes": {
+                  "description": "Extracted MD5 Hashes from message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "MD5 Hashes",
+                  "type": "array"
+                },
+                "sha1_hashes": {
+                  "description": "Extracted SHA1 hashes from message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "SHA1 Hashes",
+                  "type": "array"
+                },
+                "sha256_hashes": {
+                  "description": "Extracted SHA256 hashes from message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 3,
+                  "title": "SHA256 Hashes",
+                  "type": "array"
+                }
+              },
+              "title": "Hashes",
+              "type": "object"
+            },
+            "indicators": {
+              "properties": {
+                "cves": {
+                  "description": "Extracted CVEs from message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 7,
+                  "title": "CVEs",
+                  "type": "array"
+                },
+                "domains": {
+                  "description": "Extracted domains from message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "Domains",
+                  "type": "array"
+                },
+                "email_addresses": {
+                  "description": "Extracted email addresses from message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 3,
+                  "title": "Email Addresses",
+                  "type": "array"
+                },
+                "hashes": {
+                  "$ref": "#/definitions/hashes",
+                  "description": "Extracted hashes from message",
+                  "order": 4,
+                  "title": "Hashes"
+                },
+                "ip_addresses": {
+                  "$ref": "#/definitions/ip_addresses",
+                  "description": "Extracted IP addresses from message",
+                  "order": 5,
+                  "title": "IP Addressses"
+                },
+                "mac_addresses": {
+                  "description": "Extracted MAC addresses from message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 6,
+                  "title": "MAC Addresses",
+                  "type": "array"
+                },
+                "urls": {
+                  "description": "Extracted URLs from message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "URLs",
+                  "type": "array"
+                },
+                "uuids": {
+                  "description": "Extracted UUIDs from message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 8,
+                  "title": "UUIDs",
+                  "type": "array"
+                }
+              },
+              "title": "Indicators",
+              "type": "object"
+            },
+            "ip_addresses": {
+              "properties": {
+                "ipv4_addresses": {
+                  "description": "Extracted IPv4 addressses from message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "IPv4 Addressses",
+                  "type": "array"
+                },
+                "ipv6_addresses": {
+                  "description": "Extracted IPv6 addresses from message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "IPv6 Addressses",
+                  "type": "array"
+                }
+              },
+              "title": "Ip Addresses",
+              "type": "object"
+            },
+            "message": {
+              "properties": {
+                "body": {
+                  "$ref": "#/definitions/body",
+                  "description": "Body",
+                  "order": 1,
+                  "title": "Body"
+                },
+                "createdDateTime": {
+                  "description": "Created date time",
+                  "order": 3,
+                  "title": "Created Date Time",
+                  "type": "string"
+                },
+                "first_word": {
+                  "description": "Extracted first word from message (easy way to obtain a chat command)",
+                  "order": 9,
+                  "title": "First Word",
+                  "type": "string"
+                },
+                "from": {
+                  "$ref": "#/definitions/from",
+                  "description": "From",
+                  "order": 2,
+                  "title": "From"
+                },
+                "id": {
+                  "description": "ID",
+                  "order": 8,
+                  "title": "ID",
+                  "type": "string"
+                },
+                "importance": {
+                  "description": "Importance",
+                  "order": 5,
+                  "title": "Importance",
+                  "type": "string"
+                },
+                "locale": {
+                  "description": "Locale",
+                  "order": 7,
+                  "title": "Locale",
+                  "type": "string"
+                },
+                "messageType": {
+                  "description": "Message type",
+                  "order": 6,
+                  "title": "Message Type",
+                  "type": "string"
+                },
+                "webUrl": {
+                  "description": "Web URL",
+                  "order": 4,
+                  "title": "Web URL",
+                  "type": "string"
+                }
+              },
+              "title": "Message",
+              "type": "object"
+            },
+            "user": {
+              "properties": {
+                "displayName": {
+                  "description": "Display name",
+                  "order": 1,
+                  "title": "Display name",
+                  "type": "string"
+                },
+                "id": {
+                  "description": "ID",
+                  "order": 2,
+                  "title": "ID",
+                  "type": "string"
+                }
+              },
+              "title": "User",
+              "type": "object"
+            }
+          },
+          "properties": {
+            "channel_name": {
+              "description": "Name of the channel where the message was posted",
+              "order": 3,
+              "title": "Channel Name",
+              "type": "string"
+            },
+            "indicators": {
+              "$ref": "#/definitions/indicators",
+              "description": "The indicators object that was extracted from message",
+              "order": 2,
+              "title": "Indicators"
+            },
+            "message": {
+              "$ref": "#/definitions/message",
+              "description": "The message object that was created",
+              "order": 1,
+              "title": "Message"
+            },
+            "team_name": {
+              "description": "Name of the team to which the channel is assigned to",
+              "order": 4,
+              "title": "Team Name",
+              "type": "string"
+            }
+          },
+          "title": "Variables",
+          "type": "object"
+        },
+        "tags": [],
+        "type": "trigger_plugin",
+        "plugin": {
+          "name": "Microsoft Teams",
+          "slugVendor": "rapid7",
+          "slugName": "microsoft_teams",
+          "slugVersion": "2.2.1",
+          "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.1/icon.png"
+        }
+      }
+    ]
+  }
+}

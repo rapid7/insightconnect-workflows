@@ -5,7 +5,7 @@
     "exportedAt": "2020-10-06T21:18:07.417970845Z",
     "workflowVersions": [
       {
-        "name": "Enrich CVE with RecordedFuture from Slack",
+        "name": "Enrich CVE with Recorded Future from Slack",
         "type": "runnable",
         "version": "",
         "description": "Returns detailed information about the CVE provided.",
@@ -110,7 +110,7 @@
             "f4a2212d-f033-4abf-9a24-47079bc772f5": {
               "id": "f4a2212d-f033-4abf-9a24-47079bc772f5",
               "name": "CVE Found",
-              "description": "Pass in the CVE to RecordedFuture and returned enriched information",
+              "description": "Pass in the CVE to Recorded Future and returned enriched information",
               "parentNodeId": "",
               "fromNodeId": "03ddce6f-ddf5-4b12-ae04-d49517df9d3e",
               "toNodeId": "c6d061a1-96c7-411e-9033-58dcc382214c"
@@ -1242,7 +1242,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": ":exclamation: CVE provided is not a valid CVE - please validate and try again :exclamation: ",
+                "message": ":exclamation: CVE provided is not a valid CVE - please validate and try again :exclamation:",
                 "recipient": "{{[1d0b6c14-ec40-43c8-80b4-0d1fdfc677a0].[message].[channel_id]}}",
                 "thread_ts": "{{[1d0b6c14-ec40-43c8-80b4-0d1fdfc677a0].[timestamp]}}"
               }
@@ -1412,7 +1412,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": ":exclamation: *Look-up for {{[c6d061a1-96c7-411e-9033-58dcc382214c].[$item]}} failed!* :exclamation:\n{{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data]}}",
+                "message": ":exclamation: *Look-up for {{[c6d061a1-96c7-411e-9033-58dcc382214c].[$item]}} failed!* :exclamation:",
                 "recipient": "{{[1d0b6c14-ec40-43c8-80b4-0d1fdfc677a0].[message].[channel_id]}}",
                 "thread_ts": "{{[1d0b6c14-ec40-43c8-80b4-0d1fdfc677a0].[timestamp]}}"
               }
@@ -1486,7 +1486,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": ":rocket: Starting RecordedFuture Enrich CVE Workflow! :rocket:",
+                "message": ":rocket: Starting Recorded Future Enrich CVE Workflow! :rocket:",
                 "recipient": "{{[1d0b6c14-ec40-43c8-80b4-0d1fdfc677a0].[message].[channel]}}",
                 "thread_ts": "{{[1d0b6c14-ec40-43c8-80b4-0d1fdfc677a0].[timestamp]}}"
               }
