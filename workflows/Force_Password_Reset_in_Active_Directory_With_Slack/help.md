@@ -47,7 +47,7 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Active Directory LDAP|4.0.0|2|
+|Active Directory LDAP|4.0.1|2|
 
 ## Troubleshooting
 
@@ -55,7 +55,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
-* 1.0.4 - Update Active Directory LDAP to version 4.0.0
+* 1.0.4 - Update Active Directory LDAP to version 4.0.1
 * 1.0.3 - Updated trigger syntax and documentation
 * 1.0.2 - Updated trigger syntax and documentation
 * 1.0.1 - Updated documentation
