@@ -43,6 +43,8 @@ Plugins utilized by workflow:
 |Plugin|Version|Count|
 |----|----|--------|
 |Recorded Future|2.2.0|1|
+|Microsoft Teams|2.2.1|6|
+|Markdown|3.1.0|1|
 
 ## Troubleshooting
 
