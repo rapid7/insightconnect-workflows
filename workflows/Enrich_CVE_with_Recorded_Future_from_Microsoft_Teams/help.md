@@ -1,10 +1,10 @@
 # Description
 
-Use the simplicity of a chat command in Microsoft Teams to get enriched details about a vulnerability using your Recorded Future.
+Use the simplicity of a chat command in Microsoft Teams to get enriched details about a vulnerability using Recorded Future.
 
 Sample Microsoft Teams Trigger Commands:
 
-`!enrich-cve CVE-2019-0708`
+`!enrich-cve CVE-2019-0708` or `!enrich-cve cve-2019-0708`
 
 # Key Features
 
@@ -29,7 +29,7 @@ After configuring those steps, activate the workflow and then issue a Microsoft 
 
 *This workflow will only trigger in the channel specified in the Microsoft Teams workflow steps.*
 
-To run the workflow, send a message to the specified Microsoft Teams channel starting with the command `!block-host` and then provide the CVE ID of the vulnerability you would like to get more details on.
+To run the workflow, send a message to the configured Microsoft Teams channel starting with the command `!enrich-cve` and then provide the CVE ID, in upper or lowercase format, of the vulnerability you would like to get more details on.
 
 For example:
 * `!enrich-cve CVE-2019-0708`

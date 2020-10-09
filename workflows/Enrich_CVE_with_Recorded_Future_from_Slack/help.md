@@ -1,6 +1,6 @@
 # Description
 
-Use the simplicity of a chat command in Slack to get enriched details about a vulnerability using your Recorded Future.
+Use the simplicity of a chat command in Slack to get enriched details about a vulnerability using Recorded Future.
 
 Sample Slack Trigger Commands:
 
@@ -29,7 +29,7 @@ After configuring those steps, activate the workflow and then issue a Slack comm
 
 *This workflow will only trigger in the channel specified in the ChatOps workflow steps.*
 
-To run the workflow, send a message to the specified Slack channel starting with the command `@Rapid7 InsightConnect enrich-cve` and then provide the CVE ID of the vulnerability you would like to get more details on.
+To run the workflow, send a message to the specified Slack channel starting with the command `@Rapid7 InsightConnect enrich-cve` and then provide the CVE ID, in upper or lowercase format, of the vulnerability you would like to get more details on.
 
 Your chat bot will reply to the message thread when the workflow completes.
 
