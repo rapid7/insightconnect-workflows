@@ -378,8 +378,8 @@
               "name": "VirusTotal",
               "slugVendor": "rapid7",
               "slugName": "virustotal",
-              "slugVersion": "6.0.3",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/virustotal/6.0.3/icon.png"
+              "slugVersion": "6.0.4",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/virustotal/6.0.4/icon.png"
             },
             "identifier": "lookup_hashes",
             "continueOnFailure": false,
@@ -670,8 +670,8 @@
               "name": "VirusTotal",
               "slugVendor": "rapid7",
               "slugName": "virustotal",
-              "slugVersion": "6.0.3",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/virustotal/6.0.3/icon.png"
+              "slugVersion": "6.0.4",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/virustotal/6.0.4/icon.png"
             },
             "identifier": "scan_url_report",
             "continueOnFailure": false,
@@ -1401,8 +1401,8 @@
               "name": "VirusTotal",
               "slugVendor": "rapid7",
               "slugName": "virustotal",
-              "slugVersion": "6.0.3",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/virustotal/6.0.3/icon.png"
+              "slugVersion": "6.0.4",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/virustotal/6.0.4/icon.png"
             },
             "identifier": "domain_report",
             "continueOnFailure": false,
@@ -1785,8 +1785,8 @@
               "name": "VirusTotal",
               "slugVendor": "rapid7",
               "slugName": "virustotal",
-              "slugVersion": "6.0.3",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/virustotal/6.0.3/icon.png"
+              "slugVersion": "6.0.4",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/virustotal/6.0.4/icon.png"
             },
             "identifier": "ip_address_report",
             "continueOnFailure": false,
