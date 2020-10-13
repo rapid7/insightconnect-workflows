@@ -1,7 +1,7 @@
 # Description
 
 This workflow quarantines or unquarantines endpoints with CrowdStrike Falcon via Slack command and reports information back to Slack.
-This workflow supports endpoints in the form of Device IDs, hostnames, or IP addresses.
+This workflow supports endpoints in the form of Device IDs, hostnames, or external IP addresses.
 
 Sample Slack Trigger Commands:
 
