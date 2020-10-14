@@ -1730,7 +1730,7 @@
             "parameters": {
               "input": {
                 "matchChannel": "change_me",
-                "matchText": "!block-host.*|!unblock-host.*",
+                "matchText": "block-host|unblock-host",
                 "type": "any"
               }
             },
