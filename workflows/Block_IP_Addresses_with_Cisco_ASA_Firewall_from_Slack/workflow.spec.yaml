@@ -17,7 +17,8 @@ hub_tags:
   - chatops
   - work_from_home
   - slack
-  - cisco_asa
+  - cisco
+  - asa
   features: []
 resources:
   source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Block_IP_Addresses_with_Cisco_ASA_Firewall_from_Slack
