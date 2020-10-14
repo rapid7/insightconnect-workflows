@@ -871,7 +871,7 @@
                     "op": "contains",
                     "right": {
                       "type": "literal",
-                      "value": "!unblock-host"
+                      "value": "unblock-host"
                     },
                     "type": "binary"
                   },
