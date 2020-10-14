@@ -1061,7 +1061,7 @@
           },
           "995881dc-5dae-432c-9ef2-36e6796ecbbd": {
             "nodeId": "995881dc-5dae-432c-9ef2-36e6796ecbbd",
-            "name": "Check if IP address is in group",
+            "name": "Check if IP Address in Group",
             "type": "action",
             "plugin": {
               "name": "Cisco Adaptive Security Appliance",
