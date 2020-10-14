@@ -19,7 +19,7 @@ Sample Slack Trigger Commands:
 # Requirements
 
 * [Slack](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops)
-* Cisco ASA credentials
+* Cisco ASA device with credentials and the REST API enabled
 
 # Documentation
 
