@@ -4,7 +4,7 @@ This workflow blocks or unblocks a IPv4 and IPv6 addresses with Cisco ASA via Sl
 
 Sample Slack Trigger Commands:
 
-`@Rapid7 InsightConnect !block-host 198.51.100.100`
+`@Rapid7 InsightConnect block-host 198.51.100.100`
 
 `@Rapid7 InsightConnect !unblock-host 198.51.100.100`
 
