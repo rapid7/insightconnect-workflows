@@ -811,7 +811,7 @@
           },
           "599da421-0216-4ca1-a29b-4ff34bbf9925": {
             "nodeId": "599da421-0216-4ca1-a29b-4ff34bbf9925",
-            "name": "Cisco ASA failure",
+            "name": "Cisco ASA Failure",
             "type": "automated_decision",
             "continueOnFailure": false,
             "isDisabled": false,
