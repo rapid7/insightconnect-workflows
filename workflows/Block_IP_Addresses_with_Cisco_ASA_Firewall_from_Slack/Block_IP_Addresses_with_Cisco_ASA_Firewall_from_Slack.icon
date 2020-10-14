@@ -949,7 +949,7 @@
           },
           "8cb78e8e-37bc-4741-88cc-f1ba446fa680": {
             "nodeId": "8cb78e8e-37bc-4741-88cc-f1ba446fa680",
-            "name": "IP address found",
+            "name": "IP Address Found",
             "type": "automated_decision",
             "continueOnFailure": false,
             "isDisabled": false,
