@@ -1197,7 +1197,7 @@
           },
           "a18318ff-f4ce-432b-8274-2f46b977d066": {
             "nodeId": "a18318ff-f4ce-432b-8274-2f46b977d066",
-            "name": "Unblocked IP addresses",
+            "name": "Unblocked IP Addresses",
             "type": "loop",
             "continueOnFailure": false,
             "isDisabled": false,
