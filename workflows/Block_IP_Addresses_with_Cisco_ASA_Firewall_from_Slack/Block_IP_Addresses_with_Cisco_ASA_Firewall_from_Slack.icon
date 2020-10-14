@@ -1367,7 +1367,7 @@
           },
           "cf261d42-9c6f-434e-a232-df3a70ed7710": {
             "nodeId": "cf261d42-9c6f-434e-a232-df3a70ed7710",
-            "name": "IP is blocked message",
+            "name": "IP is Blocked Message",
             "type": "action_chatops",
             "continueOnFailure": false,
             "isDisabled": false,
