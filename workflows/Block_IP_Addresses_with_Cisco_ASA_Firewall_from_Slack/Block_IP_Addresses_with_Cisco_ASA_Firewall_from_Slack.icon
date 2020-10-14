@@ -849,7 +849,7 @@
           },
           "6ce912c0-e236-487e-bc1b-54cdc1ff2a17": {
             "nodeId": "6ce912c0-e236-487e-bc1b-54cdc1ff2a17",
-            "name": "Block or Ublock",
+            "name": "Block or Unblock",
             "type": "automated_decision",
             "continueOnFailure": false,
             "isDisabled": false,
