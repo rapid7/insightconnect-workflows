@@ -1,7 +1,7 @@
 extension: workflow
 products:
 - insightconnect
-name: Block_IP_Addresses_with_Cisco_ASA_Firewall_from_Slack
+name: Block_Host_with_Cisco_ASA_Firewall_from_Slack
 title: Block Host with Cisco ASA Firewall from Slack
 description: This workflow blocks or unblocks a IPv4 and IPv6 addresses with Cisco ASA via Slack
   command and reports information back to Slack.
