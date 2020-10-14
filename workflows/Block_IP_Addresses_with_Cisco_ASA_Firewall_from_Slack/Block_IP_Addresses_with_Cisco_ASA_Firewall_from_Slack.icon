@@ -987,7 +987,7 @@
           },
           "958871a5-1d38-4eb6-b6c4-1fc77a3d2ca3": {
             "nodeId": "958871a5-1d38-4eb6-b6c4-1fc77a3d2ca3",
-            "name": "Cisco ASA failure message",
+            "name": "Cisco ASA Failure Message",
             "type": "action_chatops",
             "continueOnFailure": false,
             "isDisabled": false,
