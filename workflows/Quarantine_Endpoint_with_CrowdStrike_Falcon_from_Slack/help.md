@@ -45,7 +45,7 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|CrowdStrike Falcon|2.2.0|2|
+|CrowdStrike Falcon|2.2.0|3|
 
 ## Troubleshooting
 
