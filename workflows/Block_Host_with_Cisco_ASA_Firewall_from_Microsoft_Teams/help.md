@@ -4,13 +4,13 @@ This workflow blocks or unblocks a IPv4 and IPv6 addresses with Cisco ASA via Mi
 
 Sample Slack Trigger Commands:
 
-`@Rapid7 InsightConnect !block-host 198.51.100.100`
+`!block-host 198.51.100.100`
 
-`@Rapid7 InsightConnect !unblock-host 198.51.100.100`
+`!unblock-host 198.51.100.100`
 
-`@Rapid7 InsightConnect !block-host 198.51.100.0 2001:db8:85a3:8d3:1319:8a2e:370:7348`
+`!block-host 198.51.100.0 2001:db8:85a3:8d3:1319:8a2e:370:7348`
 
-`@Rapid7 InsightConnect !unblock-host 198.51.100.0 2001:db8:85a3:8d3:1319:8a2e:370:7348`
+`!unblock-host 198.51.100.0 2001:db8:85a3:8d3:1319:8a2e:370:7348`
 
 # Key Features
 
