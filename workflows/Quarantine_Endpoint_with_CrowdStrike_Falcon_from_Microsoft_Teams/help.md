@@ -1,13 +1,17 @@
 # Description
 
 This workflow quarantines or unquarantines endpoints with CrowdStrike Falcon via Microsoft Teams command and reports information back to the message thread.
-This workflow supports endpoints in the form of Device IDs, hostnames, or external IP addresses.
+This workflow supports endpoints in the form of Device IDs, hostnames, external IP addresses or MAC addresses.
 
 Sample Microsoft Teams Trigger Commands:
 
 `!quarantine-endpoint example-host`
 
 `!unquarantine-endpoint 198.51.100.100`
+
+`!quarantine-endpoint f5b83fa335f44c38b456fb94d515f196`
+
+`!unquarantine-endpoint 00-50-56-94-6c-3d`
 
 To check the device quarantine status in CrowdStrike Falcon, log into the CrowdStrike Falcon product web interface and choose the Host Management page under the Hosts section from the menu.
 Find the host name on the list and check the Status column for the quarantine status. 
@@ -40,6 +44,8 @@ To run the workflow, send a message to the configured Microsoft Teams channel st
 For example:
 * `!quarantine-endpoint example-host`
 * `!unquarantine-endpoint 198.51.100.100`
+* `!quarantine-endpoint f5b83fa335f44c38b456fb94d515f196`
+* `!unquarantine-endpoint 00-50-56-94-6c-3d`
 
 The workflow will reply when it completes.
 

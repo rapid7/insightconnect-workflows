@@ -30,7 +30,7 @@
             "0d3870c2-f9f4-46c3-bf1d-5d540cad84f4": {
               "id": "0d3870c2-f9f4-46c3-bf1d-5d540cad84f4",
               "name": "True",
-              "description": "The un-quarantine action was successful.",
+              "description": "The unquarantine action was successful.",
               "parentNodeId": "",
               "fromNodeId": "6562148f-51eb-4eb9-9a69-acf486f343d0",
               "toNodeId": "2b6b654a-6f25-45cb-b5a6-c81ac32451c7"
@@ -78,7 +78,7 @@
             "26f5bf19-83a4-4e2b-8984-8eef71b69b3c": {
               "id": "26f5bf19-83a4-4e2b-8984-8eef71b69b3c",
               "name": "False",
-              "description": "The un-quarantine action failed.",
+              "description": "The unquarantine action failed.",
               "parentNodeId": "",
               "fromNodeId": "6562148f-51eb-4eb9-9a69-acf486f343d0",
               "toNodeId": "3e1b20ef-ad34-4d26-9b3a-76703f063926"
@@ -654,7 +654,7 @@
           },
           "6562148f-51eb-4eb9-9a69-acf486f343d0": {
             "nodeId": "6562148f-51eb-4eb9-9a69-acf486f343d0",
-            "name": "Un-quarantine Successful",
+            "name": "Unquarantine Successful",
             "type": "automated_decision",
             "continueOnFailure": false,
             "isDisabled": false,
