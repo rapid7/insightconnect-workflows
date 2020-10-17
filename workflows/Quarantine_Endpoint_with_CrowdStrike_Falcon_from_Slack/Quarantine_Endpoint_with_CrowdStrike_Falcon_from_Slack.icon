@@ -636,7 +636,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": ":heavy_check_mark: {{[2b6b654a-6f25-45cb-b5a6-c81ac32451c7].[content]}}  :heavy_check_mark:",
+                "message": ":white_check_mark: {{[2b6b654a-6f25-45cb-b5a6-c81ac32451c7].[content]}} :white_check_mark:",
                 "recipient": "{{[afd380e8-b0f5-4328-a036-8520c4b0a6ea].[message].[channel]}}",
                 "thread_ts": "{{[afd380e8-b0f5-4328-a036-8520c4b0a6ea].[timestamp]}}"
               }
@@ -2747,7 +2747,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": ":heavy_check_mark: {{[c2abc66a-4781-4a8d-a543-3195b26a9874].[content]}}  :heavy_check_mark: ",
+                "message": ":white_check_mark: {{[c2abc66a-4781-4a8d-a543-3195b26a9874].[content]}} :white_check_mark:",
                 "recipient": "{{[afd380e8-b0f5-4328-a036-8520c4b0a6ea].[message].[channel]}}",
                 "thread_ts": "{{[afd380e8-b0f5-4328-a036-8520c4b0a6ea].[timestamp]}}"
               }
