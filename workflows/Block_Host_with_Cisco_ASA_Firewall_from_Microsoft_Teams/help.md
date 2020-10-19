@@ -1,6 +1,6 @@
 # Description
 
-This workflow blocks or unblocks a IPv4 and IPv6 addresses with Cisco ASA via Microsoft Teams command and reports information back to Microsoft Teams.
+This workflow blocks or unblocks IPv4 and IPv6 addresses with Cisco ASA via Microsoft Teams command and reports information back to Microsoft Teams.
 
 Sample Slack Trigger Commands:
 
