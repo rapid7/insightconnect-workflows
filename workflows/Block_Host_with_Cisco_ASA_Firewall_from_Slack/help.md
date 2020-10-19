@@ -38,7 +38,6 @@ After configuring the Slack steps, activate the workflow in order to trigger it.
 
 To run the workflow, send a message to the specified Slack channel starting with the command `@Rapid7 InsightConnect block-host` or `@Rapid7 InsightConnect unblock-host` followed with an IPv4 or IPv6 address to take action on.
 
-
 Your chat bot will reply when the workflow completes.
 
 ## Technical Details
