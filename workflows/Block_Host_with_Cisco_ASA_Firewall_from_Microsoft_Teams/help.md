@@ -38,7 +38,6 @@ After configuring the Microsoft Teams steps, activate the workflow in order to t
 
 To run the workflow, send a message to the specified Microsoft Teams channel starting with the command `!block-host` or `!unblock-host`.
 
-
 Your chat bot will reply when the workflow completes.
 
 ## Technical Details
@@ -50,7 +49,6 @@ Plugins utilized by workflow:
 |Cisco Adaptive Security Appliance|1.4.1|5|
 |Type Converter|1.6.0|1|
 |Microsoft Teams|2.2.1|8|
-
 
 ## Troubleshooting
 
