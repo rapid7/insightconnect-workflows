@@ -49,7 +49,6 @@ Plugins utilized by workflow:
 |Cisco Adaptive Security Appliance|1.4.1|5|
 |Type Converter|1.6.0|1|
 
-
 ## Troubleshooting
 
 _There is no troubleshooting information at this time_
