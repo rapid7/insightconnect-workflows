@@ -1,6 +1,6 @@
 # Description
 
-This workflow blocks or unblocks a IPv4 and IPv6 addresses with Cisco ASA via Slack command and reports information back to Slack.
+This workflow blocks or unblocks IPv4 and IPv6 addresses with Cisco ASA via Slack command and reports information back to Slack.
 
 Sample Slack Trigger Commands:
 
