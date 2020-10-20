@@ -1,6 +1,8 @@
 # Description
 
-This workflow blocks or unblocks IPv4 and IPv6 addresses with Cisco ASA via Slack command and reports information back to Slack.
+This workflow blocks or unblocks a IPv4 and IPv6 addresses with Cisco ASA via Slack command and reports information back to Slack.
+The workflow works by adding and removing address objects from an existing network group tied to a Deny firewall policy in your Cisco ASA Firewall.
+When an address is added to the group, it's blocked; when an address is removed from a group, it's unblocked. These are best practices for automating the blocking of hosts.
 
 Sample Slack Trigger Commands:
 
@@ -27,17 +29,44 @@ Sample Slack Trigger Commands:
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-Once the workflow has been imported, **Update the first step with the channel name to suit your Slack environment!** by editing the input with the preset text of `change_me` to match the channel to monitor.
+Once the workflow has been imported,
 
-After configuring the Slack steps, activate the workflow in order to trigger it.
+1. Update the first step with the channel name to suit your Slack environment by editing the input with the preset text of `change_me` to match the channel to monitor. Leave empty to run in all channels where the Slack bot is a member
+2. Update the preset text of `change_me` in the `Group` field to the Network Group you want the workflow to manage in the following steps:
+
+* **Block IP Address**
+* **Block IP**
+* **Check if IP Address in Group**
+* **Unblock IP Addresses**
+
+Additional customization can be provided with the following options:
+
+1. An optional whitelist can be added to the Cisco `Create Address Object` action. To skip blocking any specified important hosts, add their IP addresses or CIDR network addresses in the following list format `["198.51.100.100", "198.51.100.1/32"]`
+2. By default this workflow will automatically skip blocking private IP addresses. To remove this safety check, set the `Skip Private Addresses` option to false in the `Create Address Object` step.
+
+After configuring the Slack steps, activate the workflow.
 
 ### Usage
 
-*This workflow will only trigger in the channel specified in the Slack workflow steps.*
+*This workflow will only trigger in the channel specified in the Slack workflow steps, or from any channel if left empty.*
 
-To run the workflow, send a message to the specified Slack channel starting with the command `@Rapid7 InsightConnect block-host` or `@Rapid7 InsightConnect unblock-host` followed with an IPv4 or IPv6 address to take action on.
+To run the workflow, send a formatted message to the specified Slack channel. Your chat bot will reply when the workflow completes.
 
-Your chat bot will reply when the workflow completes.
+Examples shown below
+
+To block a host:
+* `@Rapid7 InsightConnect block-host 198.51.100.100`
+* `@Rapid7 InsightConnect block-host 2001:db8:8:4::2`
+
+To unblock a host:
+* `@Rapid7 InsightConnect unblock-host 198.51.100.100`
+* `@Rapid7 InsightConnect unblock-host 2001:db8:8:4::2`
+
+You can also block and unblock multiple hosts in a single command:
+* `@Rapid7 InsightConnect block-host 198.51.100.100 2001:db8:8:4::2 198.51.100.101`
+* `@Rapid7 InsightConnect unblock-host 198.51.100.0 2001:db8:8:4::2 198.51.100.101`
+
+The workflow will reply in Slack as it runs.
 
 ## Technical Details
 

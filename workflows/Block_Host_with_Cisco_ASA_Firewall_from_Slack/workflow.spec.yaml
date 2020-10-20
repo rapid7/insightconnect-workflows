@@ -5,7 +5,7 @@ name: Block_Host_with_Cisco_ASA_Firewall_from_Slack
 title: Block Host with Cisco ASA Firewall from Slack
 description: This workflow blocks or unblocks IPv4 and IPv6 addresses with Cisco ASA via Slack
   command and reports information back to Slack.
-version: 1.0.0
+version: 1.0.1
 vendor: rapid7
 support: rapid7
 status: []
