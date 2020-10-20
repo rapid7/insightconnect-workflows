@@ -24,10 +24,10 @@ Once the workflow has been imported,
 1. Update the first step with the channel name to suit your Slack environment by editing the input with the preset text of `change_me` to match the channel to monitor. Leave empty to run in all channels where the Slack bot is a member
 2. Update the preset text of `change_me` in the `Group` field to the Network Group you want the workflow to manage in the following steps:
 
-* **Block IP Address
-* **Block IP
-* **Check if IP Address in Group
-* **Unblock IP Addresses
+* **Block IP Address**
+* **Block IP**
+* **Check if IP Address in Group**
+* **Unblock IP Addresses**
 
 Additional customization can be provided with the following options:
 
