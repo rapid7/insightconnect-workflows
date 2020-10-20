@@ -8,7 +8,7 @@
         "name": "Block Host with Cisco ASA Firewall from Microsoft Teams",
         "type": "runnable",
         "version": "",
-        "description": "This workflow blocks or unblocks an IPv4 or IPv6 addresses with Cisco ASA via Microsoft Teams command and reports information back to Microsoft Teams .",
+        "description": "This workflow blocks or unblocks an IPv4 or IPv6 addresses with Cisco ASA via Microsoft Teams command and reports information back to Microsoft Teams.",
         "graph": {
           "edges": {
             "06696506-4659-4ac9-b5f1-4a88798a096c": {
