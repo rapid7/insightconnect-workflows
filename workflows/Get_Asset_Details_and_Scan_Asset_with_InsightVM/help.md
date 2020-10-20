@@ -81,3 +81,5 @@ _There is no troubleshooting information at this time_
 
 ## References
 
+* [InsightVM API Documentation](https://help.rapid7.com/insightvm/en-us/api/index.html)
+* [InsightConnect Help Documentation](https://docs.rapid7.com/insightconnect/)
