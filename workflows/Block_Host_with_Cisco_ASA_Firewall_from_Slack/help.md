@@ -38,11 +38,11 @@ After configuring the Slack steps, activate the workflow in order to trigger it.
 
 ### Usage
 
-*This workflow will only trigger in the channel specified in the Slack workflow steps.*
+*This workflow will only trigger in the channel specified in the Slack workflow steps, or from any channel if left empty.*
 
-To run the workflow, send a message to the specified Slack channel. Your chat bot will reply when the workflow completes.
+To run the workflow, send a formatted message to the specified Slack channel. Your chat bot will reply when the workflow completes.
 
-Example show below
+Examples shown below
 
 To block a host:
 * `@Rapid7 InsightConnect block-host 198.51.100.100`
