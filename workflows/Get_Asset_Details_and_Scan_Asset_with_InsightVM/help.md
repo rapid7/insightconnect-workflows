@@ -25,8 +25,6 @@ By default, the scanning step of this workflow is disabled. By simply configurin
 
 Import the workflow and proceed through the Import Workflow wizard in InsightConnect. Import plugins and create connections during the import process as necessary.
 
-## Readme
-
 *This workflow can be activated immediately without enabling the Scan Asset step. If this is done, then the workflow will only collect host details; it will not start a scan of the target IP address.*
 
 When configured to include the Scan Asset step, this workflow utilizes existing InsightVM (or Nexpose) sites and scan engines to run ad hoc single-asset scans. These ad hoc scans will not skip the scan engine queue. As such, if a scan engine is running a scheduled scan, then the scan triggered by this workflow will be added to the back of the scan engine queue.
@@ -71,7 +69,6 @@ Plugins utilized by workflow:
 |----|----|--------|
 |Rapid7 InsightVM|4.2.0|2|
 
-
 ## Troubleshooting
 
 _There is no troubleshooting information at this time_
@@ -83,5 +80,4 @@ _There is no troubleshooting information at this time_
 # Links
 
 ## References
-
 
