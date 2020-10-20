@@ -1,6 +1,8 @@
 # Description
 
-This workflow blocks or unblocks a IPv4 and IPv6 addresses with Cisco ASA via Slack command and reports information back to Slack. The workflow works by adding and removing address objects from a network group in your Cisco ASA Firewall. Before using this workflow, you will need to setup a policy on your firewall that blocks IPs from hosts listed in group, such a deny-all.
+This workflow blocks or unblocks a IPv4 and IPv6 addresses with Cisco ASA via Slack command and reports information back to Slack.
+The workflow works by adding and removing address objects from an existing network group tied to a Deny firewall policy in your Cisco ASA Firewall.
+When an address is added to the group, it's blocked; when an address is removed from a group, it's unblocked. These are best practices for automating the blocking of hosts.
 
 # Key Features
 
