@@ -985,7 +985,7 @@
             "parameters": {
               "input": {
                 "address": "{{[3e3020b6-0ae4-4739-b40b-9ee2a854e716].[$item]}}",
-                "group": "InsightConnect_Block_List"
+                "group": "change_me"
               }
             },
             "defaultInputJSONSchema": {
