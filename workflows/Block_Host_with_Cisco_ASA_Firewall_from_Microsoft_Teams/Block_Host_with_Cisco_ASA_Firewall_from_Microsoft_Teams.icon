@@ -2447,7 +2447,7 @@
             "parameters": {
               "input": {
                 "address": "{{[a18318ff-f4ce-432b-8274-2f46b977d066].[$item]}}",
-                "group": "InsightConnect_Block_List"
+                "group": "change_me"
               }
             },
             "defaultInputJSONSchema": {
