@@ -69,7 +69,6 @@ Plugins utilized by workflow:
 |----|----|--------|
 |Rapid7 InsightVM|4.2.0|2|
 
-
 ## Troubleshooting
 
 _There is no troubleshooting information at this time_
@@ -81,5 +80,4 @@ _There is no troubleshooting information at this time_
 # Links
 
 ## References
-
 
