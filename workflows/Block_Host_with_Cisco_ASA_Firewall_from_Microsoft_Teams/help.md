@@ -31,7 +31,6 @@ Once the workflow has been imported, **Update the first step with the channel na
 
 After configuring the Microsoft Teams steps, activate the workflow in order to trigger it.
 
-
 ### Usage
 
 *This workflow will only trigger in the channel specified in the Microsoft Teams workflow steps.*
