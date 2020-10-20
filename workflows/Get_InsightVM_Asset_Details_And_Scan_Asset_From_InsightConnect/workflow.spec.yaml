@@ -1,6 +1,6 @@
 extension: workflow
 products: ["insightconnect", "insightvm"]
-name: Get_InsightVM_Asset_Details_And_Scan_Asset_From_InsightConnect
+name: Get_InsightVM_Asset_Details_and_Scan_Asset_from_InsightConnect
 title: "Get InsightVM Asset Details and Scan Asset from InsightConnect"
 description: "Fetch host details and scan target asset on-demand using the workflow Run."
 version: 1.0.0
