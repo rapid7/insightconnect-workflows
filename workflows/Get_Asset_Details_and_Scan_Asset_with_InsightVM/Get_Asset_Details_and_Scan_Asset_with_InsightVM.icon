@@ -5,7 +5,7 @@
     "exportedAt": "2020-09-23T23:01:14.154627725Z",
     "workflowVersions": [
       {
-        "name": "Get InsightVM Asset Details and Scan Asset from InsightConnect",
+        "name": "Get Asset Details and Scan Asset with InsightVM",
         "type": "runnable",
         "version": "",
         "description": "This workflow uses an API trigger to search InsightVM for an asset by IP address and return details of that asset in an Artifact. This workflow can be easily updated to include scanning the target asset by adding a Site ID to the Scan Asset step. See workflow documentation on the Extension Library for more details.",
