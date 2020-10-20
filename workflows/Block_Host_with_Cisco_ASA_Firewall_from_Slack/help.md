@@ -4,6 +4,16 @@ This workflow blocks or unblocks a IPv4 and IPv6 addresses with Cisco ASA via Sl
 The workflow works by adding and removing address objects from an existing network group tied to a Deny firewall policy in your Cisco ASA Firewall.
 When an address is added to the group, it's blocked; when an address is removed from a group, it's unblocked. These are best practices for automating the blocking of hosts.
 
+Sample Slack Trigger Commands:
+
+`@Rapid7 InsightConnect block-host 198.51.100.100`
+
+`@Rapid7 InsightConnect unblock-host 198.51.100.100`
+
+`@Rapid7 InsightConnect block-host 198.51.100.0 2001:db8:8:4::2`
+
+`@Rapid7 InsightConnect unblock-host 198.51.100.0 2001:db8:8:4::2`
+
 # Key Features
 
 * Block and unblock IPv4 and IPv6 addresses
