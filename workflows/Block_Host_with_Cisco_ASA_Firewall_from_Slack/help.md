@@ -41,10 +41,10 @@ Once the workflow has been imported,
 
 Additional customization can be provided with the following options:
 
-1. An optional whitelist can be added to the Cisco `Create Address Object` action. To skip blocking these hosts, add IP addresses or CIDR IP addresses in the following format `["198.51.100.100", "198.51.100.1/32"]`
-2. By default this workflow will automatically skip blocking private IP addresses. To block these, set the `Skip Private Addresses` option to false in the `Create Address Object` step.
+1. An optional whitelist can be added to the Cisco `Create Address Object` action. To skip blocking any specified important hosts, add their IP addresses or CIDR network addresses in the following list format `["198.51.100.100", "198.51.100.1/32"]`
+2. By default this workflow will automatically skip blocking private IP addresses. To remove this safety check, set the `Skip Private Addresses` option to false in the `Create Address Object` step.
 
-After configuring the Slack steps, activate the workflow in order to trigger it.
+After configuring the Slack steps, activate the workflow.
 
 ### Usage
 
