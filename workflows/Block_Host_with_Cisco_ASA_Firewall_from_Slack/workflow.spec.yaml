@@ -36,7 +36,3 @@ resources:
       title: Slack Message for Block Action
     - name: slack_message3.png
       title: Slack Message for Unblock Action
-    - name: artifact1.png
-      title: Artifact for Block Action
-    - name: artifact2.png
-      title: Artifact for Unblock Action

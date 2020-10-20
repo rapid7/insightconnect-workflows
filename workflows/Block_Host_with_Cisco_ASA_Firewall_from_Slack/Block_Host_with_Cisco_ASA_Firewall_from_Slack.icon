@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.64.1-0-g9ce84",
+    "komandVersion": "1.65.0-0-g6376e",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-10-16T15:41:52.778031986Z",
+    "exportedAt": "2020-10-20T18:05:58.709317879Z",
     "workflowVersions": [
       {
         "name": "Block Host with Cisco ASA Firewall from Slack",
@@ -149,7 +149,7 @@
             },
             "796d06a4-d526-4fc7-8496-82f1122b3a6d": {
               "id": "796d06a4-d526-4fc7-8496-82f1122b3a6d",
-              "name": "IP is not in Address Group",
+              "name": "IP is Not in Address Group",
               "description": "",
               "parentNodeId": "3e3020b6-0ae4-4739-b40b-9ee2a854e716",
               "fromNodeId": "8cb78e8e-37bc-4741-88cc-f1ba446fa680",
@@ -490,7 +490,7 @@
           },
           "25467f45-79e7-4305-ab48-bb349888f4cd": {
             "nodeId": "25467f45-79e7-4305-ab48-bb349888f4cd",
-            "name": "IP is blocked",
+            "name": "IP is Blocked",
             "type": "artifact",
             "continueOnFailure": false,
             "isDisabled": false,
@@ -582,7 +582,7 @@
           },
           "3e3020b6-0ae4-4739-b40b-9ee2a854e716": {
             "nodeId": "3e3020b6-0ae4-4739-b40b-9ee2a854e716",
-            "name": "Loop over IP addresses to block and unblock",
+            "name": "Loop Over IP Addresses to Block and Unblock",
             "type": "loop",
             "continueOnFailure": false,
             "isDisabled": false,
@@ -604,7 +604,7 @@
           },
           "3fe668dc-5325-48d8-a4c6-a1594d1c17db": {
             "nodeId": "3fe668dc-5325-48d8-a4c6-a1594d1c17db",
-            "name": "Blocked IP addresses",
+            "name": "Blocked IP Addresses",
             "type": "join",
             "continueOnFailure": false,
             "isDisabled": false,
@@ -631,7 +631,7 @@
           },
           "44de0f65-a55b-44ed-b947-3b7038634105": {
             "nodeId": "44de0f65-a55b-44ed-b947-3b7038634105",
-            "name": "Check is empty",
+            "name": "Check is Empty",
             "type": "automated_decision",
             "continueOnFailure": false,
             "isDisabled": false,
@@ -1569,7 +1569,7 @@
           },
           "e4251ab8-6705-4681-a95f-98a1fa2b2e50": {
             "nodeId": "e4251ab8-6705-4681-a95f-98a1fa2b2e50",
-            "name": "IP address unblocked",
+            "name": "IP Address Unblocked",
             "type": "artifact",
             "continueOnFailure": false,
             "isDisabled": false,
