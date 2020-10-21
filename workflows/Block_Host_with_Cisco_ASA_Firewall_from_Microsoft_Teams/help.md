@@ -46,7 +46,6 @@ Additional customization can be provided with the following options:
 
 After configuring the Microsoft Teams steps, activate the workflow.
 
-
 ### Usage
 
 *This workflow will only trigger in the channel specified in the Microsoft Teams workflow steps, or from any channel if left empty.*
