@@ -3,7 +3,7 @@ products: ["insightconnect", "InsightIDR"]
 name: Disable_Domain_User_with_Active_Directory_from_InsightIDR_UBA_Alert
 title: "Disable Domain User with Active Directory from InsightIDR UBA Alert"
 description: Disable a Domain User with Active Directory from an InsightIDR UBA Alert.
-version: 1.0.1
+version: 1.0.2
 vendor: rapid7
 support: rapid7
 status: []
