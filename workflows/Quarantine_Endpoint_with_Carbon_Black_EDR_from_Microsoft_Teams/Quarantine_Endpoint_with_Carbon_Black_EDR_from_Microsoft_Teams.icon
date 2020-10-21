@@ -1062,7 +1062,7 @@
               "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/carbon_black_response/3.1.10/icon.png"
             },
             "identifier": "unisolate_sensor",
-            "continueOnFailure": false,
+            "continueOnFailure": true,
             "isDisabled": false,
             "isCloud": false,
             "parameters": {
