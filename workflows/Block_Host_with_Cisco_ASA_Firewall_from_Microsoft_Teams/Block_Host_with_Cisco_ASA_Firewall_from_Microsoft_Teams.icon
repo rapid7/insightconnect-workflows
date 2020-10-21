@@ -429,7 +429,7 @@
               "input": {
                 "address": "{{[3e3020b6-0ae4-4739-b40b-9ee2a854e716].[$item]}}",
                 "address_object": "{{[3e3020b6-0ae4-4739-b40b-9ee2a854e716].[$item]}}",
-                "skip_private_addresses": false,
+                "skip_private_addresses": true,
                 "whitelist": []
               }
             },
@@ -985,7 +985,7 @@
             "parameters": {
               "input": {
                 "address": "{{[3e3020b6-0ae4-4739-b40b-9ee2a854e716].[$item]}}",
-                "group": "InsightConnect_Block_List"
+                "group": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -1307,7 +1307,7 @@
             "parameters": {
               "input": {
                 "address": "{{[3e3020b6-0ae4-4739-b40b-9ee2a854e716].[$item]}}",
-                "group": "InsightConnect_Block_List"
+                "group": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -1408,7 +1408,7 @@
               "input": {
                 "address": "{{[3e3020b6-0ae4-4739-b40b-9ee2a854e716].[$item]}}",
                 "enable_search": false,
-                "group": "InsightConnect_Block_List"
+                "group": "change_me"
               }
             },
             "defaultInputJSONSchema": {
@@ -2447,7 +2447,7 @@
             "parameters": {
               "input": {
                 "address": "{{[a18318ff-f4ce-432b-8274-2f46b977d066].[$item]}}",
-                "group": "InsightConnect_Block_List"
+                "group": "change_me"
               }
             },
             "defaultInputJSONSchema": {
