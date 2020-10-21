@@ -50,7 +50,7 @@ Plugins utilized by workflow:
 |Plugin|Version|Count|
 |----|----|--------|
 |VMware Carbon Black EDR|3.1.10|2|
-|Microsoft Teams|2.2.1|7|
+|Microsoft Teams|2.2.1|6|
 |HTML|1.2.2|1|
 |Markdown|3.1.0|2|
 
