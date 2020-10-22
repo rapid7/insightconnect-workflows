@@ -490,7 +490,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": ":x: Action: `{{[de5a776f-74a5-4c62-bcd8-c988f1b522c8].[action]}}` on the host `{{[de5a776f-74a5-4c62-bcd8-c988f1b522c8].[host]}}` was unsuccessful. :x:\n\nThis could be because the host name is incorrect or the host doesn't exist within Carbon Black EDR.\n\nSee job logs at {{[$job].[URL]}} for more information.",
+                "message": ":x: Action: `{{[de5a776f-74a5-4c62-bcd8-c988f1b522c8].[action]}}` on the host `{{[de5a776f-74a5-4c62-bcd8-c988f1b522c8].[host]}}` was unsuccessful. :x:\n\nThis could be because the hostname is incorrect or the host doesn't exist within Carbon Black EDR.\n\nSee job logs at {{[$job].[URL]}} for more information.",
                 "recipient": "{{[afd380e8-b0f5-4328-a036-8520c4b0a6ea].[message].[channel]}}",
                 "thread_ts": "{{[afd380e8-b0f5-4328-a036-8520c4b0a6ea].[timestamp]}}"
               }
