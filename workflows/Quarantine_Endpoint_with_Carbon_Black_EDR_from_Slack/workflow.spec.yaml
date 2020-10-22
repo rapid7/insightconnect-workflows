@@ -25,7 +25,5 @@ resources:
       title: Quarantine Artifact
     - name: artifact2.png
       title: Unquarantine Artifact
-    - name: job.png
-      title: Successful Job Run
     - name: carbon_black_edr_quarantine.png
       title: Quarantine in Carbon Black EDR
