@@ -1,6 +1,6 @@
 # Description
 
-This workflow blocks or unblocks a IPv4 and IPv6 addresses with Cisco ASA via Microsoft Teams command and reports information back to Microsoft Teams.
+This workflow blocks or unblocks IPv4 and IPv6 addresses with Cisco ASA via Microsoft Teams command and reports information back to Microsoft Teams.
 The workflow works by adding and removing address objects from an existing network group tied to a Deny firewall policy in your Cisco ASA Firewall.
 When an address is added to the group, it's blocked; when an address is removed from a group, it's unblocked. These are best practices for automating the blocking of hosts.
 
