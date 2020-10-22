@@ -10,7 +10,7 @@ Sample Slack Trigger Commands:
 `@Rapid7 InsightConnect unquarantine-endpoint example-host`
 
 To check the device quarantine status in Carbon Black EDR, log into the Carbon Black EDR product web interface and choose the Sensors under the Manage section from the left hand side menu.
-Find the host name on the list and check the Status column for the quarantine status. 
+Find the hostname on the list and check the Status column for the quarantine status. 
 
 # Key Features
 
