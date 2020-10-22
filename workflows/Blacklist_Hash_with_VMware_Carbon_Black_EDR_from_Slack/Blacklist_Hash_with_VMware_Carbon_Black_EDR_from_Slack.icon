@@ -228,7 +228,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "This workflow will blacklist MD5 hashes globally in Carbon Black EDR. To use this workflow provide a blacklist or command in Slack and a hash to perform the command on.\n\nFor example:\n\n* `@Rapid7 InsightConnect blacklist-hash 9de5069c5afe602b2ea0a04b66beb2c0`"
+                "content": "This workflow will blacklist MD5 hashes globally in Carbon Black EDR. To use this workflow provide the blacklist-hash command in Slack and an MD5 hash to perform the command on.\n\nFor example:\n\n* `@Rapid7 InsightConnect blacklist-hash 9de5069c5afe602b2ea0a04b66beb2c0`"
               },
               "type": "markdown"
             },
