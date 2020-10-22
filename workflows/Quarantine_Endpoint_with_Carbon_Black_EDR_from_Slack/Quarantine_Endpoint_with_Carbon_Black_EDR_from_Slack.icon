@@ -297,7 +297,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": ":exclamation: The input could not be correctly parsed. :exclamation:\n\nThis workflow will quarantine or unquarantine an endpoint using Carbon Black EDR. To use this workflow provide a `quarantine-endpoint` or `unquarantine-endpoint` command in Slack along with a host to perform the action on by its Hostname.\n\nFor example:\n\n* `@Rapid7 InsightConnect quarantine-endpoint USER-DESKTOP`\n* `@Rapid7 InsightConnect unquarantine-endpoint USER-DESKTOP`\n",
+                "message": ":exclamation: The input could not be correctly parsed. :exclamation:\n\nThis workflow will quarantine or unquarantine an endpoint using Carbon Black EDR. To use this workflow provide a `quarantine-endpoint` or `unquarantine-endpoint` command in Slack along with a host to perform the action on by its hostname.\n\nFor example:\n\n* `@Rapid7 InsightConnect quarantine-endpoint USER-DESKTOP`\n* `@Rapid7 InsightConnect unquarantine-endpoint USER-DESKTOP`\n",
                 "recipient": "{{[afd380e8-b0f5-4328-a036-8520c4b0a6ea].[message].[channel]}}",
                 "thread_ts": "{{[afd380e8-b0f5-4328-a036-8520c4b0a6ea].[timestamp]}}"
               }
