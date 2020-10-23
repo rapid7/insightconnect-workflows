@@ -20,10 +20,8 @@ resources:
     - name: slack1.png
       title: Successful Blacklist Request
     - name: slack2.png
-      title: Usage
-    - name: slack3.png
       title: Failed Blacklist Request
-    - name: slack4.png
+    - name: slack3.png
       title: Failed Blacklist Request
     - name: artifact.png
       title: Blacklisted Hash in Carbon Black EDR

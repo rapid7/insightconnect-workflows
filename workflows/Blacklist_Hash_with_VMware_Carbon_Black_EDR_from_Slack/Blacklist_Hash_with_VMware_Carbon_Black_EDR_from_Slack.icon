@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.65.1-0-g0d88d",
+    "komandVersion": "1.65.2-0-gfd118",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-10-22T18:30:40.381497174Z",
+    "exportedAt": "2020-10-23T15:09:03.018279907Z",
     "workflowVersions": [
       {
         "name": "Blacklist Hash with VMware Carbon Black EDR from Slack",
@@ -35,14 +35,6 @@
               "fromNodeId": "2cb3d3dd-451a-4d3d-ad5e-fc443b43c6eb",
               "toNodeId": "e6c47cbc-e881-4038-9ce0-c42bf87453c9"
             },
-            "5a68524a-a79e-42d6-8569-0334cb4aa988": {
-              "id": "5a68524a-a79e-42d6-8569-0334cb4aa988",
-              "name": "",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "341534c3-934d-4dd1-a0ad-3c588c27fc56",
-              "toNodeId": ""
-            },
             "5d6113b2-6398-45d3-adc9-1d9c25c0f0d1": {
               "id": "5d6113b2-6398-45d3-adc9-1d9c25c0f0d1",
               "name": "",
@@ -59,29 +51,13 @@
               "fromNodeId": "2cabd377-38a3-4a8c-b2c5-355d842841fb",
               "toNodeId": "2cb3d3dd-451a-4d3d-ad5e-fc443b43c6eb"
             },
-            "6e3d5a03-30cb-47bc-8b9b-b3d8f2079153": {
-              "id": "6e3d5a03-30cb-47bc-8b9b-b3d8f2079153",
-              "name": "",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "19a25c50-657d-4a7e-bb3d-18a7460eaf16",
-              "toNodeId": "341534c3-934d-4dd1-a0ad-3c588c27fc56"
-            },
-            "7574be74-8c35-417a-8652-14d25559cd7a": {
-              "id": "7574be74-8c35-417a-8652-14d25559cd7a",
-              "name": "",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "a62306f8-17fb-4ab7-8228-348bd1433df7",
-              "toNodeId": "825132c4-cdf7-416d-9eb2-9008f4b3f686"
-            },
             "7763d506-31a9-44e2-9da0-96278d198e5c": {
               "id": "7763d506-31a9-44e2-9da0-96278d198e5c",
               "name": "",
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "6bf1d4a9-cc6c-4991-8a1d-e4efbb763efc",
-              "toNodeId": "a62306f8-17fb-4ab7-8228-348bd1433df7"
+              "toNodeId": "2cabd377-38a3-4a8c-b2c5-355d842841fb"
             },
             "81bc15e7-f7a0-4ecb-b8f5-4c7759e9600e": {
               "id": "81bc15e7-f7a0-4ecb-b8f5-4c7759e9600e",
@@ -99,14 +75,6 @@
               "fromNodeId": "e6c47cbc-e881-4038-9ce0-c42bf87453c9",
               "toNodeId": "d7bd4b5e-49b4-41b1-a672-dd370e4cb35c"
             },
-            "aabcc6d6-604c-444d-a02b-ae28dcefae5e": {
-              "id": "aabcc6d6-604c-444d-a02b-ae28dcefae5e",
-              "name": "Yes",
-              "description": "Hash is provided",
-              "parentNodeId": "",
-              "fromNodeId": "825132c4-cdf7-416d-9eb2-9008f4b3f686",
-              "toNodeId": "2cabd377-38a3-4a8c-b2c5-355d842841fb"
-            },
             "ac0f540f-65b2-489c-bcdd-568500aa82ea": {
               "id": "ac0f540f-65b2-489c-bcdd-568500aa82ea",
               "name": "",
@@ -114,14 +82,6 @@
               "parentNodeId": "",
               "fromNodeId": "c6b577e3-9857-4c0e-9c30-f1efe042f5a5",
               "toNodeId": "6bf1d4a9-cc6c-4991-8a1d-e4efbb763efc"
-            },
-            "b211a73f-6936-447b-8bf7-2b8492d52050": {
-              "id": "b211a73f-6936-447b-8bf7-2b8492d52050",
-              "name": "No",
-              "description": "Hash was not provided",
-              "parentNodeId": "",
-              "fromNodeId": "825132c4-cdf7-416d-9eb2-9008f4b3f686",
-              "toNodeId": "19a25c50-657d-4a7e-bb3d-18a7460eaf16"
             },
             "b6d82049-672f-4b42-9c2f-ae4a71fceadf": {
               "id": "b6d82049-672f-4b42-9c2f-ae4a71fceadf",
@@ -157,10 +117,6 @@
             }
           },
           "nodes": {
-            "19a25c50-657d-4a7e-bb3d-18a7460eaf16": {
-              "id": "19a25c50-657d-4a7e-bb3d-18a7460eaf16",
-              "parentNodeId": ""
-            },
             "2cabd377-38a3-4a8c-b2c5-355d842841fb": {
               "id": "2cabd377-38a3-4a8c-b2c5-355d842841fb",
               "parentNodeId": ""
@@ -169,24 +125,12 @@
               "id": "2cb3d3dd-451a-4d3d-ad5e-fc443b43c6eb",
               "parentNodeId": ""
             },
-            "341534c3-934d-4dd1-a0ad-3c588c27fc56": {
-              "id": "341534c3-934d-4dd1-a0ad-3c588c27fc56",
-              "parentNodeId": ""
-            },
             "6bf1d4a9-cc6c-4991-8a1d-e4efbb763efc": {
               "id": "6bf1d4a9-cc6c-4991-8a1d-e4efbb763efc",
               "parentNodeId": ""
             },
-            "825132c4-cdf7-416d-9eb2-9008f4b3f686": {
-              "id": "825132c4-cdf7-416d-9eb2-9008f4b3f686",
-              "parentNodeId": ""
-            },
             "888fa9cc-d716-4f4d-bf98-819068a031a6": {
               "id": "888fa9cc-d716-4f4d-bf98-819068a031a6",
-              "parentNodeId": ""
-            },
-            "a62306f8-17fb-4ab7-8228-348bd1433df7": {
-              "id": "a62306f8-17fb-4ab7-8228-348bd1433df7",
               "parentNodeId": ""
             },
             "c6b577e3-9857-4c0e-9c30-f1efe042f5a5": {
@@ -220,24 +164,6 @@
           }
         },
         "steps": {
-          "19a25c50-657d-4a7e-bb3d-18a7460eaf16": {
-            "nodeId": "19a25c50-657d-4a7e-bb3d-18a7460eaf16",
-            "name": "Usage",
-            "type": "artifact",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "content": "This workflow will blacklist MD5 hashes globally in Carbon Black EDR. To use this workflow provide the blacklist-hash command in Slack and an MD5 hash to perform the command on.\n\nFor example:\n\n* `@Rapid7 InsightConnect blacklist-hash 9de5069c5afe602b2ea0a04b66beb2c0`"
-              },
-              "type": "markdown"
-            },
-            "defaultInputJSONSchema": null,
-            "defaultOutputJSONSchema": null,
-            "outputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
-            "connectionType": "NONE"
-          },
           "2cabd377-38a3-4a8c-b2c5-355d842841fb": {
             "nodeId": "2cabd377-38a3-4a8c-b2c5-355d842841fb",
             "name": "Check for MD5 Hash",
@@ -250,24 +176,10 @@
                 {
                   "edgeId": "609bedb0-4ffc-4d2d-9847-caf90378fc97",
                   "expression": {
-                    "left": {
-                      "args": [
-                        {
-                          "name": "a62306f8-17fb-4ab7-8228-348bd1433df7.hash",
-                          "type": "variable"
-                        }
-                      ],
-                      "name": "length",
-                      "type": "function"
-                    },
-                    "op": "=",
-                    "right": {
-                      "type": "literal",
-                      "value": 32
-                    },
-                    "type": "binary"
+                    "name": "c6b577e3-9857-4c0e-9c30-f1efe042f5a5.message.indicators.hashes.md5_hashes",
+                    "type": "variable"
                   },
-                  "expressionText": "length({{[a62306f8-17fb-4ab7-8228-348bd1433df7].[hash]}}) = 32"
+                  "expressionText": "{{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[message].[indicators].[hashes].[md5_hashes]}}"
                 },
                 {
                   "edgeId": "d08741ea-4f02-4476-8dfc-fe56c82712db",
@@ -299,7 +211,7 @@
             "isCloud": false,
             "parameters": {
               "input": {
-                "md5_hash": "{{[a62306f8-17fb-4ab7-8228-348bd1433df7].[hash]}}"
+                "md5_hash": "{{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[message].[indicators].[hashes].[md5_hashes].[0]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -332,80 +244,6 @@
             "outputJSONSchema": null,
             "defaultImageData": "",
             "connectionType": "CONNECTION"
-          },
-          "341534c3-934d-4dd1-a0ad-3c588c27fc56": {
-            "nodeId": "341534c3-934d-4dd1-a0ad-3c588c27fc56",
-            "name": "Post Usage",
-            "type": "action_chatops",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "attachments": [],
-                "message": ":book: *Usage* :book:\n\n{{[19a25c50-657d-4a7e-bb3d-18a7460eaf16].[content]}}",
-                "recipient": "{{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[message].[channel]}}",
-                "thread_ts": "{{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[timestamp]}}"
-              }
-            },
-            "defaultInputJSONSchema": {
-              "properties": {
-                "attachments": {
-                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
-                  "items": {
-                    "type": "object"
-                  },
-                  "order": 4,
-                  "title": "Attachments",
-                  "type": "array"
-                },
-                "message": {
-                  "description": "Message to send",
-                  "order": 3,
-                  "title": "Message",
-                  "type": "string"
-                },
-                "recipient": {
-                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
-                  "order": 1,
-                  "title": "Enter #channel or @username",
-                  "type": "string"
-                },
-                "thread_ts": {
-                  "description": "Select timestamp output variable from parent message step",
-                  "order": 2,
-                  "title": "To post in a thread, select parent message timestamp",
-                  "type": "string"
-                }
-              },
-              "required": [
-                "recipient"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultOutputJSONSchema": {
-              "properties": {
-                "channel_id": {
-                  "description": "ChannelID of successful message",
-                  "order": 1,
-                  "title": "Channel ID",
-                  "type": "string"
-                },
-                "timestamp": {
-                  "description": "Timestamp of successful message",
-                  "order": 2,
-                  "title": "Timestamp",
-                  "type": "string"
-                }
-              },
-              "title": "Variables",
-              "type": "object"
-            },
-            "outputJSONSchema": null,
-            "defaultImageData": "",
-            "connectionType": "NONE",
-            "chatOpsAppName": "slack",
-            "chatOpsIdentifier": "post_message"
           },
           "6bf1d4a9-cc6c-4991-8a1d-e4efbb763efc": {
             "nodeId": "6bf1d4a9-cc6c-4991-8a1d-e4efbb763efc",
@@ -481,44 +319,6 @@
             "chatOpsAppName": "slack",
             "chatOpsIdentifier": "post_message"
           },
-          "825132c4-cdf7-416d-9eb2-9008f4b3f686": {
-            "nodeId": "825132c4-cdf7-416d-9eb2-9008f4b3f686",
-            "name": "Hash Provided",
-            "type": "automated_decision",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "defaultEdgeId": "aabcc6d6-604c-444d-a02b-ae28dcefae5e",
-              "stepControlParams": [
-                {
-                  "edgeId": "aabcc6d6-604c-444d-a02b-ae28dcefae5e",
-                  "expression": {},
-                  "expressionText": ""
-                },
-                {
-                  "edgeId": "b211a73f-6936-447b-8bf7-2b8492d52050",
-                  "expression": {
-                    "left": {
-                      "name": "a62306f8-17fb-4ab7-8228-348bd1433df7.$matched",
-                      "type": "variable"
-                    },
-                    "op": "=",
-                    "right": {
-                      "type": "literal",
-                      "value": false
-                    },
-                    "type": "binary"
-                  },
-                  "expressionText": "{{[a62306f8-17fb-4ab7-8228-348bd1433df7].[$matched]}} = false"
-                }
-              ]
-            },
-            "defaultInputJSONSchema": null,
-            "defaultOutputJSONSchema": null,
-            "outputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
-            "connectionType": "NONE"
-          },
           "888fa9cc-d716-4f4d-bf98-819068a031a6": {
             "nodeId": "888fa9cc-d716-4f4d-bf98-819068a031a6",
             "name": "Post Help",
@@ -593,48 +393,6 @@
             "chatOpsAppName": "slack",
             "chatOpsIdentifier": "post_message"
           },
-          "a62306f8-17fb-4ab7-8228-348bd1433df7": {
-            "nodeId": "a62306f8-17fb-4ab7-8228-348bd1433df7",
-            "name": "Extract Command",
-            "type": "pattern_match",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "captureAll": false,
-              "expressionText": "<.*> {{action:/.*/}} {{hash:/.*/}}",
-              "expressions": [
-                {
-                  "type": "text",
-                  "value": "<.*> "
-                },
-                {
-                  "type": "variable",
-                  "value": {
-                    "ident": "action",
-                    "regex": ".*"
-                  }
-                },
-                {
-                  "type": "text",
-                  "value": " "
-                },
-                {
-                  "type": "variable",
-                  "value": {
-                    "ident": "hash",
-                    "regex": ".*"
-                  }
-                }
-              ],
-              "ignoreCase": false,
-              "input": "{{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[message].[text]}}"
-            },
-            "defaultInputJSONSchema": null,
-            "defaultOutputJSONSchema": null,
-            "outputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/pattern-match.svg",
-            "connectionType": "NONE"
-          },
           "c6b577e3-9857-4c0e-9c30-f1efe042f5a5": {
             "nodeId": "c6b577e3-9857-4c0e-9c30-f1efe042f5a5",
             "name": "Blacklist Request",
@@ -644,7 +402,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "matchChannel": "change_me",
+                "matchChannel": "#integration-testing",
                 "matchText": "blacklist-hash",
                 "type": "any"
               }
@@ -968,7 +726,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": ":rotating_light: Hash action successfully executed! :rotating_light:\n\n`{{[a62306f8-17fb-4ab7-8228-348bd1433df7].[hash]}}` "
+                "content": ":rotating_light: Hash action successfully executed! :rotating_light:\n\n`{{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[message].[indicators].[hashes].[md5_hashes].[0]}}` "
               },
               "type": "markdown"
             },
@@ -1060,7 +818,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "The blacklist action failed for `{{[a62306f8-17fb-4ab7-8228-348bd1433df7].[hash]}}`.\n\nWe're only able to blacklist a hash that is not already in the list. Double-check that the hash is not already in the blacklist. Please check the job details for more information.\n\n{{[$job].[URL]}}"
+                "content": "The blacklist action failed for `{{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[message].[indicators].[hashes].[md5_hashes].[0]}}`.\n\nWe're only able to blacklist a hash that is not already in the list. Double-check that the hash is not already in the blacklist. Please check the job details for more information.\n\n{{[$job].[URL]}}"
               },
               "type": "markdown"
             },
@@ -1138,7 +896,7 @@
         "name": "Blacklist Request",
         "description": "Slack message that triggers if a blacklist-hash command is found",
         "input": {
-          "matchChannel": "change_me",
+          "matchChannel": "#integration-testing",
           "matchText": "blacklist-hash",
           "type": "any"
         },
