@@ -2,10 +2,10 @@
   "kom": {
     "komandVersion": "1.65.2-0-gfd118",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-10-23T15:09:03.018279907Z",
+    "exportedAt": "2020-10-23T15:16:23.757097622Z",
     "workflowVersions": [
       {
-        "name": "Blacklist Hash with VMware Carbon Black EDR from Slack",
+        "name": "Blacklist Hash VMware Carbon Black EDR from Slack",
         "type": "runnable",
         "version": "",
         "description": "This workflow will blacklist a MD5 hash globally in Carbon Black EDR from a Slack command.",
@@ -402,7 +402,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "matchChannel": "#integration-testing",
+                "matchChannel": "change_me",
                 "matchText": "blacklist-hash",
                 "type": "any"
               }
@@ -896,7 +896,7 @@
         "name": "Blacklist Request",
         "description": "Slack message that triggers if a blacklist-hash command is found",
         "input": {
-          "matchChannel": "#integration-testing",
+          "matchChannel": "change_me",
           "matchText": "blacklist-hash",
           "type": "any"
         },
