@@ -4,7 +4,7 @@ This workflow is meant to serve as a simple introduction to InsightConnect. It u
 
 # Key Features
 
-* Learn how to use InsightConnect
+* Learn how to use InsightConnect 
 * Learn how to import a workflow
 * Learn how to test a workflow
 * Learn what a Job is in InsightConnect
