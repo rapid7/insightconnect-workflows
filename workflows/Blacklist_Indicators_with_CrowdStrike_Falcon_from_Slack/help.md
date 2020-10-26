@@ -1,6 +1,6 @@
 # Description
 
-Use the simplicity of a chat command in Slack to block an indicator such as IPv6, IPv4, MD5 hash, SHA256 and domain in your Crowdstrike Falcon.
+Use the simplicity of a chat command in Slack to block indicators such as IPv4 and IPv6 address, MD5 and SHA256 hashes, and domains in CrowdStrike Falcon.
 
 Multiple indicators can be specified within one command.
 
@@ -64,6 +64,6 @@ _There is no troubleshooting information at this time_
 
 ## References
 
-* [Crowdstrike](https://www.crowdstrike.com/)
-* [Crowdstrike Falcon API](https://falcon.crowdstrike.com/support/documentation)
+* [CrowdStrike](https://www.crowdstrike.com/)
+* [CrowdStrike Falcon API](https://falcon.crowdstrike.com/support/documentation)
 * [Slack](https://slack.com)
