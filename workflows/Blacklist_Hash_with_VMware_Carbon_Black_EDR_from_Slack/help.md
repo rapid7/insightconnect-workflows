@@ -1,10 +1,10 @@
 # Description
 
-This workflow blacklists a MD5 hash globally with VMware Carbon Black EDR via Slack command and reports information back to Slack.
+This workflow blacklists a MD5 hashes globally with VMware Carbon Black EDR via Slack command and reports information back to Slack.
 
 Sample Slack Trigger Commands:
 
-`@Rapid7 InsightConnect blacklist-hash 9de5069c5afe602b2ea0a04b66beb2c0`
+`@Rapid7 InsightConnect blacklist-hash 9de5069c5afe602b2ea0a04b66beb2c0 797f9b92b71795fb9c0ecb4709c30f59`
 
 The hashes will show up in the Banned Hashes list in VMware Carbon Black EDR.
 
