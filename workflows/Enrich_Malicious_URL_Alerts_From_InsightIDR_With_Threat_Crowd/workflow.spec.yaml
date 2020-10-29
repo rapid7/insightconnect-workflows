@@ -3,7 +3,7 @@ products: ["insightconnect", "insightidr"]
 name: Enrich_Malicious_URL_Alerts_From_InsightIDR_With_Threat_Crowd
 title: "Enrich Malicious URL Alerts from InsightIDR with Threat Crowd"
 description: Enrich a potentially malicious IP address with open source threat intelligence from Slack.
-version: 1.0.0
+version: 1.1.0
 vendor: rapid7
 support: rapid7
 status: []

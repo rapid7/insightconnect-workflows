@@ -1155,7 +1155,7 @@
             "connectionType": "NONE",
             "helperIdentifier": "append_global_artifacts",
             "globalArtifact": {
-              "name": "Shivani test",
+              "name": "URL Blocklist",
               "id": "8d883ab9-de31-4184-af47-3b3e145d597e",
               "schema": {
                 "definitions": {},
@@ -1241,7 +1241,7 @@
             "connectionType": "NONE",
             "helperIdentifier": "lookup_global_artifacts",
             "globalArtifact": {
-              "name": "Shivani test",
+              "name": "URL Blocklist",
               "id": "8d883ab9-de31-4184-af47-3b3e145d597e",
               "schema": {
                 "definitions": {},
