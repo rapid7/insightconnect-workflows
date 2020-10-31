@@ -765,7 +765,7 @@
           },
           "623555cf-c4f4-4daa-ae80-40d0b253ade8": {
             "nodeId": "623555cf-c4f4-4daa-ae80-40d0b253ade8",
-            "name": "Output Message",
+            "name": "Disable Success Message",
             "type": "action_chatops",
             "continueOnFailure": false,
             "isDisabled": false,
