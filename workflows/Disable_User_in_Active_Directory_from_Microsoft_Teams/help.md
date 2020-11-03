@@ -2,9 +2,12 @@
 
 Disabling a compromised account can limit the scope of an attack and buy valuable time to investigate and contain the threat. This workflow disables a domain user account with a command in Microsoft Teams.
 
-Sample Slack Trigger Commands:
+Sample Microsoft Teams Trigger Commands:
 
 `!disable-user-ad <exampleuser>`
+
+`!enable-user-ad <exampleuser>`
+
 
 # Key Features
 
@@ -31,9 +34,11 @@ After configuring the Teams steps, activate the workflow in order to trigger it.
 
 *This workflow will only trigger in the channel specified in the Microsoft Teams workflow steps.*
 
-To run the workflow, send a message to the specified Microsoft Teams channel starting with the command `!disable-user-ad`.
+To run the workflow, send a message to the specified Microsoft Teams channel starting with the command `!disable-user-ad` or `!disable-user-ad`.
 
 Commands should be in the following format:
+
+`!disable-user-ad jdoe`
 
 `!disable-user-ad jdoe`
 
@@ -46,7 +51,7 @@ Plugins utilized by workflow:
 |Plugin|Version|Count|
 |----|----|--------|
 |Active Directory LDAP|4.0.1|2|
-|Microsoft Teams|2.0.4|4|
+|Microsoft Teams|3.0.1|6|
 
 ## Troubleshooting
 
@@ -54,6 +59,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.1.0 - New functionality - Enable AD User
 * 1.0.3 - Update Active Directory LDAP to version 4.0.1
 * 1.0.2 - Update to Microsoft Teams to make plugin the latest version
 * 1.0.1 - Update trigger syntax, documentation, workflow name, and input parameters
