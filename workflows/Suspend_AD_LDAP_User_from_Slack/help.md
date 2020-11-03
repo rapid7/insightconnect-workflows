@@ -40,7 +40,7 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Active Directory LDAP|4.0.3|3|
+|Active Directory LDAP|4.0.2|3|
 
 ## Troubleshooting
 

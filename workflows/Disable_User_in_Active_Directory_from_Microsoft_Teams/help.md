@@ -50,8 +50,9 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Active Directory LDAP|4.0.1|2|
+|Active Directory LDAP|4.0.2|3|
 |Microsoft Teams|3.0.1|6|
+|HTML|1.2.2|1|
 
 ## Troubleshooting
 
