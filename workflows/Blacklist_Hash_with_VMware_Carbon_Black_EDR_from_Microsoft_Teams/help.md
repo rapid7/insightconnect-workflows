@@ -1,10 +1,11 @@
 # Description
 
-This workflow blacklists a MD5 hash globally with VMware Carbon Black EDR via Microsoft Teams command and reports information back to Microsoft Teams.
+This workflow blacklists an MD5 hash globally with VMware Carbon Black EDR via Microsoft Teams command and reports information back to Microsoft Teams.
 
 Sample Microsoft Teams Trigger Commands:
 
 `!blacklist-hash 9de5069c5afe602b2ea0a04b66beb2c0`
+`!blacklist-hash 9de5069c5afe602b2ea0a04b66beb2c0 654e7909e7766ca9943a87485773afdf`
 
 The hashes will show up in the Banned Hashes list in VMware Carbon Black EDR.
 
@@ -35,7 +36,8 @@ Plugins utilized by workflow:
 |Plugin|Version|Count|
 |----|----|--------|
 |VMware Carbon Black EDR|3.1.10|1|
-|Microsoft Teams|2.3.1|6|
+|Microsoft Teams|3.0.1|6|
+|Markdown|3.1.0|2|
 
 ## Troubleshooting
 

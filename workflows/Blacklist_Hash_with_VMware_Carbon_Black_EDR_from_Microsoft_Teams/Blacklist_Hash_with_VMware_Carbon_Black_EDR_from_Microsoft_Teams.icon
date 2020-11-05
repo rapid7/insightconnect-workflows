@@ -1,11 +1,11 @@
 {
   "kom": {
-    "komandVersion": "1.65.2-0-gfd118",
+    "komandVersion": "1.67.0-0-gbd094",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-10-25T00:59:16.240297152Z",
+    "exportedAt": "2020-11-05T22:21:21.179605047Z",
     "workflowVersions": [
       {
-        "name": "Blacklist Hash VMware Carbon Black EDR from Microsoft Teams",
+        "name": "Blacklist Hash with VMware Carbon Black EDR from Microsoft Teams",
         "type": "runnable",
         "version": "",
         "description": "This workflow will blacklist a MD5 hash globally in Carbon Black EDR from a Microsoft Teams command.",
@@ -19,6 +19,14 @@
               "fromNodeId": "4c4d72a9-6bc4-477c-bd11-0c4afea80f7b",
               "toNodeId": ""
             },
+            "068186df-8f50-4c65-bb5e-4a6a3997a9e0": {
+              "id": "068186df-8f50-4c65-bb5e-4a6a3997a9e0",
+              "name": "",
+              "description": "",
+              "parentNodeId": "d5ab6071-ef7c-4f3f-a2f0-b64e4ec998eb",
+              "fromNodeId": "8894756e-3f7d-4644-bad5-927ed3fc9a9d",
+              "toNodeId": ""
+            },
             "113b97b8-7b49-4be9-b697-66b5ab250721": {
               "id": "113b97b8-7b49-4be9-b697-66b5ab250721",
               "name": "",
@@ -27,29 +35,37 @@
               "fromNodeId": "d8c61628-dcdf-4699-a3e9-fc21041b405f",
               "toNodeId": "2cabd377-38a3-4a8c-b2c5-355d842841fb"
             },
-            "1240fb80-67ef-49b3-853b-0106e87189bf": {
-              "id": "1240fb80-67ef-49b3-853b-0106e87189bf",
+            "13c5934b-b863-453e-8a89-b29dda96d2a9": {
+              "id": "13c5934b-b863-453e-8a89-b29dda96d2a9",
+              "name": "",
+              "description": "",
+              "parentNodeId": "d5ab6071-ef7c-4f3f-a2f0-b64e4ec998eb",
+              "fromNodeId": "075b6cf2-9ac5-4249-97aa-bb51e3afa6ef",
+              "toNodeId": "fc6d1258-fce5-48b8-8787-22938182aaf9"
+            },
+            "2fe3bbe0-ee66-462d-8d79-98347c46447c": {
+              "id": "2fe3bbe0-ee66-462d-8d79-98347c46447c",
+              "name": "Success",
+              "description": "",
+              "parentNodeId": "d5ab6071-ef7c-4f3f-a2f0-b64e4ec998eb",
+              "fromNodeId": "fc6d1258-fce5-48b8-8787-22938182aaf9",
+              "toNodeId": "f9681650-4f09-4ff3-92b1-1ba2eff5d6af"
+            },
+            "521a7635-ea35-4f15-b754-e6837cae0363": {
+              "id": "521a7635-ea35-4f15-b754-e6837cae0363",
+              "name": "",
+              "description": "",
+              "parentNodeId": "d5ab6071-ef7c-4f3f-a2f0-b64e4ec998eb",
+              "fromNodeId": "fb6806a7-774d-45d3-a79d-edcace307208",
+              "toNodeId": "c0ce0837-efe4-42a1-9ed8-e21cd5021332"
+            },
+            "528c8845-2eb3-463a-9d2b-60957d5c7daa": {
+              "id": "528c8845-2eb3-463a-9d2b-60957d5c7daa",
               "name": "Failure",
               "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "e6c47cbc-e881-4038-9ce0-c42bf87453c9",
-              "toNodeId": "66a51564-ec8c-4b40-b992-6525beef53e2"
-            },
-            "147c55ec-42ef-43e1-af91-a44c4d353980": {
-              "id": "147c55ec-42ef-43e1-af91-a44c4d353980",
-              "name": "",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "66a51564-ec8c-4b40-b992-6525beef53e2",
-              "toNodeId": "c866c6c2-f5b0-4820-b669-18b6ee1b725e"
-            },
-            "4c9e4960-9cb2-4554-95f0-cc874edd2a62": {
-              "id": "4c9e4960-9cb2-4554-95f0-cc874edd2a62",
-              "name": "",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "2cb3d3dd-451a-4d3d-ad5e-fc443b43c6eb",
-              "toNodeId": "e6c47cbc-e881-4038-9ce0-c42bf87453c9"
+              "parentNodeId": "d5ab6071-ef7c-4f3f-a2f0-b64e4ec998eb",
+              "fromNodeId": "fc6d1258-fce5-48b8-8787-22938182aaf9",
+              "toNodeId": "fb6806a7-774d-45d3-a79d-edcace307208"
             },
             "59a3dcce-e570-45bd-b14e-2225316e1492": {
               "id": "59a3dcce-e570-45bd-b14e-2225316e1492",
@@ -59,37 +75,37 @@
               "fromNodeId": "ec1a27dc-8dd3-480c-b5ac-4e09a1c25954",
               "toNodeId": ""
             },
+            "5f446e0c-8f9e-4366-802a-c21be1bc8631": {
+              "id": "5f446e0c-8f9e-4366-802a-c21be1bc8631",
+              "name": "",
+              "description": "",
+              "parentNodeId": "d5ab6071-ef7c-4f3f-a2f0-b64e4ec998eb",
+              "fromNodeId": "bea86dd3-cd8b-46ba-a3ba-eb5e4cd7cde5",
+              "toNodeId": ""
+            },
             "609bedb0-4ffc-4d2d-9847-caf90378fc97": {
               "id": "609bedb0-4ffc-4d2d-9847-caf90378fc97",
               "name": "Correct Hash",
               "description": "If the length of the hash is 32 characters then take the MD5 path",
               "parentNodeId": "",
               "fromNodeId": "2cabd377-38a3-4a8c-b2c5-355d842841fb",
-              "toNodeId": "2cb3d3dd-451a-4d3d-ad5e-fc443b43c6eb"
+              "toNodeId": "d5ab6071-ef7c-4f3f-a2f0-b64e4ec998eb"
             },
-            "6ae3eb52-76ea-45dd-87eb-ac841a42d377": {
-              "id": "6ae3eb52-76ea-45dd-87eb-ac841a42d377",
+            "62c18380-06cd-49a2-902d-fd0d9fcb1a46": {
+              "id": "62c18380-06cd-49a2-902d-fd0d9fcb1a46",
               "name": "",
               "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "a40a2a55-5034-4f82-8303-79406a40d0cf",
-              "toNodeId": "c866c6c2-f5b0-4820-b669-18b6ee1b725e"
+              "parentNodeId": "d5ab6071-ef7c-4f3f-a2f0-b64e4ec998eb",
+              "fromNodeId": "d5ab6071-ef7c-4f3f-a2f0-b64e4ec998eb",
+              "toNodeId": "075b6cf2-9ac5-4249-97aa-bb51e3afa6ef"
             },
-            "980432e1-7477-454c-83da-f3a7ee03d3e7": {
-              "id": "980432e1-7477-454c-83da-f3a7ee03d3e7",
-              "name": "Success",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "e6c47cbc-e881-4038-9ce0-c42bf87453c9",
-              "toNodeId": "a40a2a55-5034-4f82-8303-79406a40d0cf"
-            },
-            "a433c43b-8f8c-48bb-a83e-75b4e5b9fbc6": {
-              "id": "a433c43b-8f8c-48bb-a83e-75b4e5b9fbc6",
+            "77929fa6-588b-4eb8-8f71-481b9a507766": {
+              "id": "77929fa6-588b-4eb8-8f71-481b9a507766",
               "name": "",
               "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "c866c6c2-f5b0-4820-b669-18b6ee1b725e",
-              "toNodeId": "ec1a27dc-8dd3-480c-b5ac-4e09a1c25954"
+              "parentNodeId": "d5ab6071-ef7c-4f3f-a2f0-b64e4ec998eb",
+              "fromNodeId": "f9681650-4f09-4ff3-92b1-1ba2eff5d6af",
+              "toNodeId": "a33bc71a-fbd2-4a7b-9c63-f2faba2f6a76"
             },
             "ac0f540f-65b2-489c-bcdd-568500aa82ea": {
               "id": "ac0f540f-65b2-489c-bcdd-568500aa82ea",
@@ -106,85 +122,95 @@
               "parentNodeId": "",
               "fromNodeId": "2cabd377-38a3-4a8c-b2c5-355d842841fb",
               "toNodeId": "4c4d72a9-6bc4-477c-bd11-0c4afea80f7b"
+            },
+            "e1068d02-6ed3-4c26-b888-7cf4a47fba3d": {
+              "id": "e1068d02-6ed3-4c26-b888-7cf4a47fba3d",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "d5ab6071-ef7c-4f3f-a2f0-b64e4ec998eb",
+              "toNodeId": "ec1a27dc-8dd3-480c-b5ac-4e09a1c25954"
+            },
+            "e611e952-c73f-47c6-b448-005de25270db": {
+              "id": "e611e952-c73f-47c6-b448-005de25270db",
+              "name": "",
+              "description": "",
+              "parentNodeId": "d5ab6071-ef7c-4f3f-a2f0-b64e4ec998eb",
+              "fromNodeId": "a33bc71a-fbd2-4a7b-9c63-f2faba2f6a76",
+              "toNodeId": "8894756e-3f7d-4644-bad5-927ed3fc9a9d"
+            },
+            "f0325789-92b7-4da5-b312-b2437964981c": {
+              "id": "f0325789-92b7-4da5-b312-b2437964981c",
+              "name": "",
+              "description": "",
+              "parentNodeId": "d5ab6071-ef7c-4f3f-a2f0-b64e4ec998eb",
+              "fromNodeId": "c0ce0837-efe4-42a1-9ed8-e21cd5021332",
+              "toNodeId": "bea86dd3-cd8b-46ba-a3ba-eb5e4cd7cde5"
             }
           },
           "nodes": {
+            "075b6cf2-9ac5-4249-97aa-bb51e3afa6ef": {
+              "id": "075b6cf2-9ac5-4249-97aa-bb51e3afa6ef",
+              "parentNodeId": "d5ab6071-ef7c-4f3f-a2f0-b64e4ec998eb"
+            },
             "2cabd377-38a3-4a8c-b2c5-355d842841fb": {
               "id": "2cabd377-38a3-4a8c-b2c5-355d842841fb",
-              "parentNodeId": ""
-            },
-            "2cb3d3dd-451a-4d3d-ad5e-fc443b43c6eb": {
-              "id": "2cb3d3dd-451a-4d3d-ad5e-fc443b43c6eb",
               "parentNodeId": ""
             },
             "4c4d72a9-6bc4-477c-bd11-0c4afea80f7b": {
               "id": "4c4d72a9-6bc4-477c-bd11-0c4afea80f7b",
               "parentNodeId": ""
             },
-            "66a51564-ec8c-4b40-b992-6525beef53e2": {
-              "id": "66a51564-ec8c-4b40-b992-6525beef53e2",
-              "parentNodeId": ""
+            "8894756e-3f7d-4644-bad5-927ed3fc9a9d": {
+              "id": "8894756e-3f7d-4644-bad5-927ed3fc9a9d",
+              "parentNodeId": "d5ab6071-ef7c-4f3f-a2f0-b64e4ec998eb"
             },
-            "a40a2a55-5034-4f82-8303-79406a40d0cf": {
-              "id": "a40a2a55-5034-4f82-8303-79406a40d0cf",
-              "parentNodeId": ""
+            "a33bc71a-fbd2-4a7b-9c63-f2faba2f6a76": {
+              "id": "a33bc71a-fbd2-4a7b-9c63-f2faba2f6a76",
+              "parentNodeId": "d5ab6071-ef7c-4f3f-a2f0-b64e4ec998eb"
+            },
+            "bea86dd3-cd8b-46ba-a3ba-eb5e4cd7cde5": {
+              "id": "bea86dd3-cd8b-46ba-a3ba-eb5e4cd7cde5",
+              "parentNodeId": "d5ab6071-ef7c-4f3f-a2f0-b64e4ec998eb"
+            },
+            "c0ce0837-efe4-42a1-9ed8-e21cd5021332": {
+              "id": "c0ce0837-efe4-42a1-9ed8-e21cd5021332",
+              "parentNodeId": "d5ab6071-ef7c-4f3f-a2f0-b64e4ec998eb"
             },
             "c6b577e3-9857-4c0e-9c30-f1efe042f5a5": {
               "id": "c6b577e3-9857-4c0e-9c30-f1efe042f5a5",
               "parentNodeId": ""
             },
-            "c866c6c2-f5b0-4820-b669-18b6ee1b725e": {
-              "id": "c866c6c2-f5b0-4820-b669-18b6ee1b725e",
+            "d5ab6071-ef7c-4f3f-a2f0-b64e4ec998eb": {
+              "id": "d5ab6071-ef7c-4f3f-a2f0-b64e4ec998eb",
               "parentNodeId": ""
             },
             "d8c61628-dcdf-4699-a3e9-fc21041b405f": {
               "id": "d8c61628-dcdf-4699-a3e9-fc21041b405f",
               "parentNodeId": ""
             },
-            "e6c47cbc-e881-4038-9ce0-c42bf87453c9": {
-              "id": "e6c47cbc-e881-4038-9ce0-c42bf87453c9",
-              "parentNodeId": ""
-            },
             "ec1a27dc-8dd3-480c-b5ac-4e09a1c25954": {
               "id": "ec1a27dc-8dd3-480c-b5ac-4e09a1c25954",
               "parentNodeId": ""
+            },
+            "f9681650-4f09-4ff3-92b1-1ba2eff5d6af": {
+              "id": "f9681650-4f09-4ff3-92b1-1ba2eff5d6af",
+              "parentNodeId": "d5ab6071-ef7c-4f3f-a2f0-b64e4ec998eb"
+            },
+            "fb6806a7-774d-45d3-a79d-edcace307208": {
+              "id": "fb6806a7-774d-45d3-a79d-edcace307208",
+              "parentNodeId": "d5ab6071-ef7c-4f3f-a2f0-b64e4ec998eb"
+            },
+            "fc6d1258-fce5-48b8-8787-22938182aaf9": {
+              "id": "fc6d1258-fce5-48b8-8787-22938182aaf9",
+              "parentNodeId": "d5ab6071-ef7c-4f3f-a2f0-b64e4ec998eb"
             }
           }
         },
         "steps": {
-          "2cabd377-38a3-4a8c-b2c5-355d842841fb": {
-            "nodeId": "2cabd377-38a3-4a8c-b2c5-355d842841fb",
-            "name": "Check for MD5 Hash",
-            "type": "automated_decision",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "defaultEdgeId": "d08741ea-4f02-4476-8dfc-fe56c82712db",
-              "stepControlParams": [
-                {
-                  "edgeId": "609bedb0-4ffc-4d2d-9847-caf90378fc97",
-                  "expression": {
-                    "name": "c6b577e3-9857-4c0e-9c30-f1efe042f5a5.indicators.hashes.md5_hashes",
-                    "type": "variable"
-                  },
-                  "expressionText": "{{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[indicators].[hashes].[md5_hashes]}}"
-                },
-                {
-                  "edgeId": "d08741ea-4f02-4476-8dfc-fe56c82712db",
-                  "expression": {},
-                  "expressionText": ""
-                }
-              ]
-            },
-            "defaultInputJSONSchema": null,
-            "defaultOutputJSONSchema": null,
-            "outputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
-            "connectionType": "NONE"
-          },
-          "2cb3d3dd-451a-4d3d-ad5e-fc443b43c6eb": {
-            "nodeId": "2cb3d3dd-451a-4d3d-ad5e-fc443b43c6eb",
-            "name": "Blacklist Hash",
+          "075b6cf2-9ac5-4249-97aa-bb51e3afa6ef": {
+            "nodeId": "075b6cf2-9ac5-4249-97aa-bb51e3afa6ef",
+            "name": "Blacklist MD5 Hash",
             "type": "action",
             "plugin": {
               "name": "VMware Carbon Black EDR",
@@ -199,7 +225,7 @@
             "isCloud": false,
             "parameters": {
               "input": {
-                "md5_hash": "{{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[indicators].[hashes].[md5_hashes].[0]}}"
+                "md5_hash": "{{[d5ab6071-ef7c-4f3f-a2f0-b64e4ec998eb].[$item]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -233,25 +259,55 @@
             "defaultImageData": "",
             "connectionType": "CONNECTION"
           },
+          "2cabd377-38a3-4a8c-b2c5-355d842841fb": {
+            "nodeId": "2cabd377-38a3-4a8c-b2c5-355d842841fb",
+            "name": "Check for MD5 Hash",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "d08741ea-4f02-4476-8dfc-fe56c82712db",
+              "stepControlParams": [
+                {
+                  "edgeId": "609bedb0-4ffc-4d2d-9847-caf90378fc97",
+                  "expression": {
+                    "name": "c6b577e3-9857-4c0e-9c30-f1efe042f5a5.indicators.hashes.md5_hashes",
+                    "type": "variable"
+                  },
+                  "expressionText": "{{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[indicators].[hashes].[md5_hashes]}}"
+                },
+                {
+                  "edgeId": "d08741ea-4f02-4476-8dfc-fe56c82712db",
+                  "expression": {},
+                  "expressionText": ""
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          },
           "4c4d72a9-6bc4-477c-bd11-0c4afea80f7b": {
             "nodeId": "4c4d72a9-6bc4-477c-bd11-0c4afea80f7b",
-            "name": "Carbon Black EDR Failure Message Incorect Hash",
+            "name": "Carbon Black EDR Failure Message Incorrect Hash",
             "type": "action",
             "plugin": {
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.3.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.3.1/icon.png"
+              "slugVersion": "3.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.0.1/icon.png"
             },
-            "identifier": "send_message",
+            "identifier": "send_html_message",
             "continueOnFailure": false,
             "isDisabled": false,
             "isCloud": false,
             "parameters": {
               "input": {
                 "channel_name": "{{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[channel_name]}}",
-                "message": "Carbon Black EDR requires a MD5 hash but it was not provided. Please run this workflow again with a MD5 hash.\n\nFor example:\n\n* `!blacklist-hash 9de5069c5afe602b2ea0a04b66beb2c0`",
+                "message_content": "Carbon Black EDR requires a MD5 hash but it was not provided. Please run this workflow again with a MD5 hash.",
                 "team_name": "{{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[team_name]}}",
                 "thread_id": "{{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[message].[id]}}"
               }
@@ -259,15 +315,15 @@
             "defaultInputJSONSchema": {
               "properties": {
                 "channel_name": {
-                  "description": "Channel",
+                  "description": "Channel name",
                   "order": 2,
                   "title": "Channel Name",
                   "type": "string"
                 },
-                "message": {
-                  "description": "Message to send",
+                "message_content": {
+                  "description": "HTML content to send",
                   "order": 4,
-                  "title": "Message",
+                  "title": "Message Content",
                   "type": "string"
                 },
                 "team_name": {
@@ -284,9 +340,9 @@
                 }
               },
               "required": [
+                "message_content",
                 "team_name",
-                "channel_name",
-                "message"
+                "channel_name"
               ],
               "title": "Variables",
               "type": "object"
@@ -389,6 +445,10 @@
                       "type": "array"
                     }
                   },
+                  "required": [
+                    "first_word",
+                    "words"
+                  ],
                   "title": "Message",
                   "type": "object"
                 },
@@ -426,25 +486,25 @@
             "defaultImageData": "",
             "connectionType": "CONNECTION"
           },
-          "66a51564-ec8c-4b40-b992-6525beef53e2": {
-            "nodeId": "66a51564-ec8c-4b40-b992-6525beef53e2",
-            "name": "Carbon Black EDR Failure Message",
+          "8894756e-3f7d-4644-bad5-927ed3fc9a9d": {
+            "nodeId": "8894756e-3f7d-4644-bad5-927ed3fc9a9d",
+            "name": "Blacklist MD5 Hash Success Message",
             "type": "action",
             "plugin": {
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.3.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.3.1/icon.png"
+              "slugVersion": "3.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.0.1/icon.png"
             },
-            "identifier": "send_message",
+            "identifier": "send_html_message",
             "continueOnFailure": false,
             "isDisabled": false,
             "isCloud": false,
             "parameters": {
               "input": {
                 "channel_name": "{{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[channel_name]}}",
-                "message": "⚠️ The blacklist action failed for `{{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[indicators].[hashes].[md5_hashes].[0]}}`. ⚠️\n\n\nWe're only able to blacklist a hash that is not already in the list. Double-check that the hash is not already in the blacklist. Please check the job details for more information.\n\n{{[$job].[URL]}}",
+                "message_content": "{{[a33bc71a-fbd2-4a7b-9c63-f2faba2f6a76].[html_string]}}",
                 "team_name": "{{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[team_name]}}",
                 "thread_id": "{{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[message].[id]}}"
               }
@@ -452,15 +512,15 @@
             "defaultInputJSONSchema": {
               "properties": {
                 "channel_name": {
-                  "description": "Channel",
+                  "description": "Channel name",
                   "order": 2,
                   "title": "Channel Name",
                   "type": "string"
                 },
-                "message": {
-                  "description": "Message to send",
+                "message_content": {
+                  "description": "HTML content to send",
                   "order": 4,
-                  "title": "Message",
+                  "title": "Message Content",
                   "type": "string"
                 },
                 "team_name": {
@@ -477,9 +537,9 @@
                 }
               },
               "required": [
+                "message_content",
                 "team_name",
-                "channel_name",
-                "message"
+                "channel_name"
               ],
               "title": "Variables",
               "type": "object"
@@ -582,6 +642,10 @@
                       "type": "array"
                     }
                   },
+                  "required": [
+                    "first_word",
+                    "words"
+                  ],
                   "title": "Message",
                   "type": "object"
                 },
@@ -619,25 +683,90 @@
             "defaultImageData": "",
             "connectionType": "CONNECTION"
           },
-          "a40a2a55-5034-4f82-8303-79406a40d0cf": {
-            "nodeId": "a40a2a55-5034-4f82-8303-79406a40d0cf",
-            "name": "Carbon Black EDR Success Message",
+          "a33bc71a-fbd2-4a7b-9c63-f2faba2f6a76": {
+            "nodeId": "a33bc71a-fbd2-4a7b-9c63-f2faba2f6a76",
+            "name": "Blacklist Success Artifact to HTML",
+            "type": "action",
+            "plugin": {
+              "name": "Markdown",
+              "slugVendor": "rapid7",
+              "slugName": "markdown",
+              "slugVersion": "3.1.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/markdown/3.1.0/icon.png"
+            },
+            "identifier": "markdown_to_html",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "markdown": "",
+                "markdown_string": "{{[f9681650-4f09-4ff3-92b1-1ba2eff5d6af].[content]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "markdown": {
+                  "description": "Markdown content represented in base64",
+                  "displayType": "bytes",
+                  "format": "bytes",
+                  "order": 1,
+                  "title": "Markdown Bytes",
+                  "type": "string"
+                },
+                "markdown_string": {
+                  "description": "Markdown content as a string",
+                  "order": 2,
+                  "title": "Markdown String",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "html": {
+                  "description": "HTML data as bytes",
+                  "displayType": "bytes",
+                  "format": "bytes",
+                  "order": 1,
+                  "title": "HTML",
+                  "type": "string"
+                },
+                "html_string": {
+                  "description": "HTML data",
+                  "order": 2,
+                  "title": "HTML",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR"
+          },
+          "bea86dd3-cd8b-46ba-a3ba-eb5e4cd7cde5": {
+            "nodeId": "bea86dd3-cd8b-46ba-a3ba-eb5e4cd7cde5",
+            "name": "Blacklist MD5 Hash Failure Message",
             "type": "action",
             "plugin": {
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.3.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.3.1/icon.png"
+              "slugVersion": "3.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.0.1/icon.png"
             },
-            "identifier": "send_message",
+            "identifier": "send_html_message",
             "continueOnFailure": false,
             "isDisabled": false,
             "isCloud": false,
             "parameters": {
               "input": {
                 "channel_name": "{{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[channel_name]}}",
-                "message": "✅  Blacklist Hash action successfully executed for {{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[indicators].[hashes].[md5_hashes].[0]}} ! ✅ \n",
+                "message_content": "{{[c0ce0837-efe4-42a1-9ed8-e21cd5021332].[html_string]}}",
                 "team_name": "{{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[team_name]}}",
                 "thread_id": "{{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[message].[id]}}"
               }
@@ -645,15 +774,15 @@
             "defaultInputJSONSchema": {
               "properties": {
                 "channel_name": {
-                  "description": "Channel",
+                  "description": "Channel name",
                   "order": 2,
                   "title": "Channel Name",
                   "type": "string"
                 },
-                "message": {
-                  "description": "Message to send",
+                "message_content": {
+                  "description": "HTML content to send",
                   "order": 4,
-                  "title": "Message",
+                  "title": "Message Content",
                   "type": "string"
                 },
                 "team_name": {
@@ -670,9 +799,9 @@
                 }
               },
               "required": [
+                "message_content",
                 "team_name",
-                "channel_name",
-                "message"
+                "channel_name"
               ],
               "title": "Variables",
               "type": "object"
@@ -775,6 +904,10 @@
                       "type": "array"
                     }
                   },
+                  "required": [
+                    "first_word",
+                    "words"
+                  ],
                   "title": "Message",
                   "type": "object"
                 },
@@ -811,18 +944,83 @@
             "outputJSONSchema": null,
             "defaultImageData": "",
             "connectionType": "CONNECTION"
+          },
+          "c0ce0837-efe4-42a1-9ed8-e21cd5021332": {
+            "nodeId": "c0ce0837-efe4-42a1-9ed8-e21cd5021332",
+            "name": "Convert Blacklist Failure Artifact to HTML",
+            "type": "action",
+            "plugin": {
+              "name": "Markdown",
+              "slugVendor": "rapid7",
+              "slugName": "markdown",
+              "slugVersion": "3.1.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/markdown/3.1.0/icon.png"
+            },
+            "identifier": "markdown_to_html",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "markdown": "",
+                "markdown_string": "{{[fb6806a7-774d-45d3-a79d-edcace307208].[content]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "markdown": {
+                  "description": "Markdown content represented in base64",
+                  "displayType": "bytes",
+                  "format": "bytes",
+                  "order": 1,
+                  "title": "Markdown Bytes",
+                  "type": "string"
+                },
+                "markdown_string": {
+                  "description": "Markdown content as a string",
+                  "order": 2,
+                  "title": "Markdown String",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "html": {
+                  "description": "HTML data as bytes",
+                  "displayType": "bytes",
+                  "format": "bytes",
+                  "order": 1,
+                  "title": "HTML",
+                  "type": "string"
+                },
+                "html_string": {
+                  "description": "HTML data",
+                  "order": 2,
+                  "title": "HTML",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR"
           },
           "c6b577e3-9857-4c0e-9c30-f1efe042f5a5": {
             "nodeId": "c6b577e3-9857-4c0e-9c30-f1efe042f5a5",
             "name": "Blacklist Request",
-            "description": "Message that triggers if a !blacklist-hash command is found",
+            "description": "Message that triggers if a `!blacklist-hash` command is found",
             "type": "trigger",
             "plugin": {
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.3.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.3.1/icon.png"
+              "slugVersion": "3.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.0.1/icon.png"
             },
             "identifier": "new_message_received",
             "continueOnFailure": false,
@@ -834,7 +1032,7 @@
                 "team_name": "change_me"
               }
             },
-            "triggerId": "eb9e98c5-6fc9-4625-8a69-91be34dc7fcf",
+            "triggerId": "dd567f04-1882-4959-8dff-1aa6ec22ae2d",
             "defaultInputJSONSchema": {
               "properties": {
                 "channel_name": {
@@ -857,8 +1055,8 @@
                 }
               },
               "required": [
-                "channel_name",
-                "team_name"
+                "team_name",
+                "channel_name"
               ],
               "title": "Variables",
               "type": "object"
@@ -1090,6 +1288,10 @@
                       "type": "array"
                     }
                   },
+                  "required": [
+                    "first_word",
+                    "words"
+                  ],
                   "title": "Message",
                   "type": "object"
                 },
@@ -1145,31 +1347,26 @@
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg",
             "connectionType": "CONNECTION"
           },
-          "c866c6c2-f5b0-4820-b669-18b6ee1b725e": {
-            "nodeId": "c866c6c2-f5b0-4820-b669-18b6ee1b725e",
-            "name": "Workflow Complete Message",
-            "type": "join",
+          "d5ab6071-ef7c-4f3f-a2f0-b64e4ec998eb": {
+            "nodeId": "d5ab6071-ef7c-4f3f-a2f0-b64e4ec998eb",
+            "name": "Blacklist Hash Loop",
+            "type": "loop",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
-              "decisionEdgeIds": [
-                "147c55ec-42ef-43e1-af91-a44c4d353980",
-                "6ae3eb52-76ea-45dd-87eb-ac841a42d377"
-              ],
-              "variableSets": []
+              "customOutput": [],
+              "innerEdgeId": "62c18380-06cd-49a2-902d-fd0d9fcb1a46",
+              "nextEdgeId": "e1068d02-6ed3-4c26-b888-7cf4a47fba3d",
+              "repeatVariable": "{{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[indicators].[hashes].[md5_hashes]}}"
             },
             "defaultInputJSONSchema": null,
-            "defaultOutputJSONSchema": {
-              "properties": {},
-              "title": "Variables",
-              "type": "object"
-            },
+            "defaultOutputJSONSchema": null,
             "outputJSONSchema": {
               "properties": {},
               "title": "Variables",
               "type": "object"
             },
-            "defaultImageData": "",
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/loop.svg",
             "connectionType": "NONE"
           },
           "d8c61628-dcdf-4699-a3e9-fc21041b405f": {
@@ -1180,8 +1377,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.3.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.3.1/icon.png"
+              "slugVersion": "3.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.0.1/icon.png"
             },
             "identifier": "send_message",
             "continueOnFailure": false,
@@ -1328,6 +1525,10 @@
                       "type": "array"
                     }
                   },
+                  "required": [
+                    "first_word",
+                    "words"
+                  ],
                   "title": "Message",
                   "type": "object"
                 },
@@ -1365,44 +1566,6 @@
             "defaultImageData": "",
             "connectionType": "CONNECTION"
           },
-          "e6c47cbc-e881-4038-9ce0-c42bf87453c9": {
-            "nodeId": "e6c47cbc-e881-4038-9ce0-c42bf87453c9",
-            "name": "Check Blacklist Result",
-            "type": "automated_decision",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "defaultEdgeId": "980432e1-7477-454c-83da-f3a7ee03d3e7",
-              "stepControlParams": [
-                {
-                  "edgeId": "1240fb80-67ef-49b3-853b-0106e87189bf",
-                  "expression": {
-                    "left": {
-                      "name": "2cb3d3dd-451a-4d3d-ad5e-fc443b43c6eb.$success",
-                      "type": "variable"
-                    },
-                    "op": "!=",
-                    "right": {
-                      "type": "literal",
-                      "value": true
-                    },
-                    "type": "binary"
-                  },
-                  "expressionText": "{{[2cb3d3dd-451a-4d3d-ad5e-fc443b43c6eb].[$success]}} != true"
-                },
-                {
-                  "edgeId": "980432e1-7477-454c-83da-f3a7ee03d3e7",
-                  "expression": {},
-                  "expressionText": ""
-                }
-              ]
-            },
-            "defaultInputJSONSchema": null,
-            "defaultOutputJSONSchema": null,
-            "outputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
-            "connectionType": "NONE"
-          },
           "ec1a27dc-8dd3-480c-b5ac-4e09a1c25954": {
             "nodeId": "ec1a27dc-8dd3-480c-b5ac-4e09a1c25954",
             "name": "Carbon Black EDR Workflow Complete Message",
@@ -1411,8 +1574,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.3.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.3.1/icon.png"
+              "slugVersion": "3.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.0.1/icon.png"
             },
             "identifier": "send_message",
             "continueOnFailure": false,
@@ -1559,6 +1722,10 @@
                       "type": "array"
                     }
                   },
+                  "required": [
+                    "first_word",
+                    "words"
+                  ],
                   "title": "Message",
                   "type": "object"
                 },
@@ -1595,6 +1762,80 @@
             "outputJSONSchema": null,
             "defaultImageData": "",
             "connectionType": "CONNECTION"
+          },
+          "f9681650-4f09-4ff3-92b1-1ba2eff5d6af": {
+            "nodeId": "f9681650-4f09-4ff3-92b1-1ba2eff5d6af",
+            "name": "Blacklist Succes Artifact",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "✅  **Blacklist Hash action successfully executed for `{{[d5ab6071-ef7c-4f3f-a2f0-b64e4ec998eb].[$item]}}`!** ✅ "
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "fb6806a7-774d-45d3-a79d-edcace307208": {
+            "nodeId": "fb6806a7-774d-45d3-a79d-edcace307208",
+            "name": "Blacklist Hash Failure",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "⚠️ **The blacklist action failed for `{{[d5ab6071-ef7c-4f3f-a2f0-b64e4ec998eb].[$item]}}`** ⚠️\nWe're only able to blacklist a hash that is not already in the list. Double-check that the hash is not already in the blacklist. Please check the job details for more information."
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "fc6d1258-fce5-48b8-8787-22938182aaf9": {
+            "nodeId": "fc6d1258-fce5-48b8-8787-22938182aaf9",
+            "name": "Check Blacklist MD5 Hash Result",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "2fe3bbe0-ee66-462d-8d79-98347c46447c",
+              "stepControlParams": [
+                {
+                  "edgeId": "2fe3bbe0-ee66-462d-8d79-98347c46447c",
+                  "expression": {},
+                  "expressionText": ""
+                },
+                {
+                  "edgeId": "528c8845-2eb3-463a-9d2b-60957d5c7daa",
+                  "expression": {
+                    "left": {
+                      "name": "075b6cf2-9ac5-4249-97aa-bb51e3afa6ef.$success",
+                      "type": "variable"
+                    },
+                    "op": "!=",
+                    "right": {
+                      "type": "literal",
+                      "value": true
+                    },
+                    "type": "binary"
+                  },
+                  "expressionText": "{{[075b6cf2-9ac5-4249-97aa-bb51e3afa6ef].[$success]}} != true"
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
           }
         },
         "tags": null,
@@ -1604,10 +1845,10 @@
     ],
     "triggers": [
       {
-        "id": "eb9e98c5-6fc9-4625-8a69-91be34dc7fcf",
+        "id": "dd567f04-1882-4959-8dff-1aa6ec22ae2d",
         "identifier": "new_message_received",
         "name": "Blacklist Request",
-        "description": "Message that triggers if a !blacklist-hash command is found",
+        "description": "Message that triggers if a `!blacklist-hash` command is found",
         "input": {
           "channel_name": "change_me",
           "message_content": "!blacklist-hash",
@@ -1635,8 +1876,8 @@
             }
           },
           "required": [
-            "channel_name",
-            "team_name"
+            "team_name",
+            "channel_name"
           ],
           "title": "Variables",
           "type": "object"
@@ -1868,6 +2109,10 @@
                   "type": "array"
                 }
               },
+              "required": [
+                "first_word",
+                "words"
+              ],
               "title": "Message",
               "type": "object"
             },
@@ -1925,8 +2170,8 @@
           "name": "Microsoft Teams",
           "slugVendor": "rapid7",
           "slugName": "microsoft_teams",
-          "slugVersion": "2.3.1",
-          "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.3.1/icon.png"
+          "slugVersion": "3.0.1",
+          "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.0.1/icon.png"
         }
       }
     ]
