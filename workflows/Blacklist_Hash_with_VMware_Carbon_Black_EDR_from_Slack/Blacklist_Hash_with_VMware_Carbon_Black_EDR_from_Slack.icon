@@ -365,7 +365,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "🚀 Request received! Running Carbon Black EDR workflow... 🚀",
+                "message": "🚀 Request received! Running VMware Carbon Black EDR workflow... 🚀",
                 "recipient": "{{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[message].[channel]}}",
                 "thread_ts": "{{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[timestamp]}}"
               }
