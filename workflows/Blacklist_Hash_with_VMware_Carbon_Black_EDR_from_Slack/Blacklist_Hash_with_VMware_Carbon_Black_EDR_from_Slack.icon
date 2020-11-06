@@ -563,7 +563,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": ":rotating_light: Hash action successfully executed for `{{[cbfdb9ff-28e2-4e9e-a643-7605ca1c279e].[$item]}}` :rotating_light:"
+                "content": ":rotating_light: Blacklist hash action successfully executed for `{{[cbfdb9ff-28e2-4e9e-a643-7605ca1c279e].[$item]}}` :rotating_light:"
               },
               "type": "markdown"
             },
