@@ -2,7 +2,7 @@
   "kom": {
     "komandVersion": "1.67.0-0-gbd094",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-11-05T22:21:21.179605047Z",
+    "exportedAt": "2020-11-06T01:09:09.556739071Z",
     "workflowVersions": [
       {
         "name": "Blacklist Hash with VMware Carbon Black EDR from Microsoft Teams",
@@ -1032,7 +1032,7 @@
                 "team_name": "change_me"
               }
             },
-            "triggerId": "dd567f04-1882-4959-8dff-1aa6ec22ae2d",
+            "triggerId": "6d3747d3-4f01-4b03-b9cf-9aa7f2ded1cd",
             "defaultInputJSONSchema": {
               "properties": {
                 "channel_name": {
@@ -1765,7 +1765,7 @@
           },
           "f9681650-4f09-4ff3-92b1-1ba2eff5d6af": {
             "nodeId": "f9681650-4f09-4ff3-92b1-1ba2eff5d6af",
-            "name": "Blacklist Succes Artifact",
+            "name": "Blacklist Success Artifact",
             "type": "artifact",
             "continueOnFailure": false,
             "isDisabled": false,
@@ -1845,7 +1845,7 @@
     ],
     "triggers": [
       {
-        "id": "dd567f04-1882-4959-8dff-1aa6ec22ae2d",
+        "id": "6d3747d3-4f01-4b03-b9cf-9aa7f2ded1cd",
         "identifier": "new_message_received",
         "name": "Blacklist Request",
         "description": "Message that triggers if a `!blacklist-hash` command is found",
