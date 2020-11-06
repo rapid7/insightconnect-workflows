@@ -8,7 +8,7 @@
         "name": "Blacklist Hash with VMware Carbon Black EDR from Slack",
         "type": "runnable",
         "version": "",
-        "description": "This workflow will blacklist a MD5 hash globally in Carbon Black EDR from a Slack command.",
+        "description": "This workflow will blacklist an MD5 hash globally in VMware Carbon Black EDR from a Slack command.",
         "graph": {
           "edges": {
             "2a694a8e-6a3a-4461-b00f-e1e51bdbd72d": {
