@@ -1002,7 +1002,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "Carbon Black EDR requires a MD5 hash but it was not provided. Please run this workflow again with a MD5 hash.\n\nFor example:\n\n* `@Rapid7 InsightConnect blacklist-hash 9de5069c5afe602b2ea0a04b66beb2c0`\n"
+                "content": "VMware Carbon Black EDR requires an MD5 hash but one was not provided. Please run this workflow again with an MD5 hash.\n\nFor example:\n\n* `@Rapid7 InsightConnect blacklist-hash 9de5069c5afe602b2ea0a04b66beb2c0`\n"
               },
               "type": "markdown"
             },
