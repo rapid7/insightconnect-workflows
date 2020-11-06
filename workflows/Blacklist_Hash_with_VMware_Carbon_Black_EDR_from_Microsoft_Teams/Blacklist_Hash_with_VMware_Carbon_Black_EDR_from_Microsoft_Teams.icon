@@ -1771,7 +1771,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "✅  **Blacklist Hash action successfully executed for `{{[d5ab6071-ef7c-4f3f-a2f0-b64e4ec998eb].[$item]}}`!** ✅ "
+                "content": "✅ **Blacklist Hash action successfully executed for `{{[d5ab6071-ef7c-4f3f-a2f0-b64e4ec998eb].[$item]}}`!** ✅ "
               },
               "type": "markdown"
             },
