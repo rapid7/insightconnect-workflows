@@ -1,6 +1,6 @@
 # Description
 
-This workflow blacklists a MD5 hashes globally with VMware Carbon Black EDR via Slack command and reports information back to Slack.
+This workflow blacklists MD5 hashes globally with VMware Carbon Black EDR via Slack command and reports information back to Slack.
 
 Sample Slack Trigger Commands:
 
