@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.61.3-0-g16082",
+    "komandVersion": "1.67.0-0-gbd094",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-09-21T22:36:55.101846457Z",
+    "exportedAt": "2020-11-07T20:02:51.963263761Z",
     "workflowVersions": [
       {
         "name": "Enrich InsightIDR Alerts with Threat Intelligence from VirusTotal",
@@ -41,7 +41,7 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "ba8bae4b-ae24-47c9-b635-3ebb9b6a934a",
-              "toNodeId": "cf276e84-d2d1-4bc2-b490-d455202cd77e"
+              "toNodeId": "f6c5881d-3b2e-4217-b531-80dca5efef74"
             },
             "32146a4b-3f16-4613-879a-6c298a980553": {
               "id": "32146a4b-3f16-4613-879a-6c298a980553",
@@ -130,6 +130,14 @@
               "parentNodeId": "",
               "fromNodeId": "cf276e84-d2d1-4bc2-b490-d455202cd77e",
               "toNodeId": "39db1de6-6f97-45df-80c9-e27e05cbfbd6"
+            },
+            "8347291e-5a56-468d-8e95-d033fbcf1ee4": {
+              "id": "8347291e-5a56-468d-8e95-d033fbcf1ee4",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "f6c5881d-3b2e-4217-b531-80dca5efef74",
+              "toNodeId": "cf276e84-d2d1-4bc2-b490-d455202cd77e"
             },
             "8423c541-da72-452c-982b-c96b1ec860d2": {
               "id": "8423c541-da72-452c-982b-c96b1ec860d2",
@@ -283,6 +291,10 @@
             },
             "df6d7d6e-ac6f-4941-b7db-9cbdaba3125c": {
               "id": "df6d7d6e-ac6f-4941-b7db-9cbdaba3125c",
+              "parentNodeId": ""
+            },
+            "f6c5881d-3b2e-4217-b531-80dca5efef74": {
+              "id": "f6c5881d-3b2e-4217-b531-80dca5efef74",
               "parentNodeId": ""
             },
             "f70411be-06b4-4c73-b16d-7b045486c7cb": {
@@ -834,7 +846,7 @@
             "type": "trigger",
             "continueOnFailure": false,
             "isDisabled": false,
-            "triggerId": "32fe9b16-1a8a-4051-80ac-ed9986b23c80",
+            "triggerId": "59ab0fa1-42b6-43fa-bc64-8b60d95435d4",
             "defaultInputJSONSchema": {
               "definitions": {
                 "actor": {
@@ -1853,7 +1865,7 @@
                       "description": "Autonomous system number",
                       "order": 5,
                       "title": "ASN",
-                      "type": "integer"
+                      "type": "string"
                     },
                     "country": {
                       "description": "Country",
@@ -2208,6 +2220,24 @@
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/loop.svg",
             "connectionType": "NONE"
           },
+          "f6c5881d-3b2e-4217-b531-80dca5efef74": {
+            "nodeId": "f6c5881d-3b2e-4217-b531-80dca5efef74",
+            "name": "Alert Information Artifact",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "**IDR Alert Contents**:\nURLs: {{[ba8bae4b-ae24-47c9-b635-3ebb9b6a934a].[contents].[urls]}}\nDomains: {{[ba8bae4b-ae24-47c9-b635-3ebb9b6a934a].[contents].[domains]}}\nProcesses: {{[ba8bae4b-ae24-47c9-b635-3ebb9b6a934a].[contents].[processes]}}\nIP Addresses: {{[ba8bae4b-ae24-47c9-b635-3ebb9b6a934a].[contents].[ipAddresses]}}\n\n"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
           "f70411be-06b4-4c73-b16d-7b045486c7cb": {
             "nodeId": "f70411be-06b4-4c73-b16d-7b045486c7cb",
             "name": "IP Addresses Artifact",
@@ -2234,7 +2264,7 @@
     ],
     "triggers": [
       {
-        "id": "32fe9b16-1a8a-4051-80ac-ed9986b23c80",
+        "id": "59ab0fa1-42b6-43fa-bc64-8b60d95435d4",
         "name": "IDR Alert",
         "description": "",
         "input": null,
