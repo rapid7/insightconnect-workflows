@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.39.1-0-g39b69",
+    "komandVersion": "1.67.0-0-gbd094",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2019-10-15T16:14:00.11149268Z",
+    "exportedAt": "2020-11-06T00:55:04.180918286Z",
     "workflowVersions": [
       {
         "name": "Look Up IPs with RecordedFuture",
@@ -130,6 +130,7 @@
             },
             "defaultInputJSONSchema": null,
             "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
             "connectionType": "NONE"
           },
@@ -147,6 +148,7 @@
             },
             "defaultInputJSONSchema": null,
             "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
             "connectionType": "NONE"
           },
@@ -156,7 +158,7 @@
             "type": "trigger",
             "continueOnFailure": false,
             "isDisabled": false,
-            "triggerId": "0fdb342a-9f79-4176-81d7-87088d53242c",
+            "triggerId": "2a748182-180b-41da-9700-5b06894808a1",
             "defaultInputJSONSchema": {
               "definitions": {
                 "actor": {
@@ -711,6 +713,7 @@
               "title": "Variables",
               "type": "object"
             },
+            "outputJSONSchema": null,
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/trigger-api-idr.svg",
             "connectionType": "NONE"
           },
@@ -728,6 +731,7 @@
             },
             "defaultInputJSONSchema": null,
             "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
             "connectionType": "NONE"
           },
@@ -765,6 +769,7 @@
             },
             "defaultInputJSONSchema": null,
             "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
             "connectionType": "NONE"
           },
@@ -775,12 +780,18 @@
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
+              "customOutput": [],
               "innerEdgeId": "5035eff5-a5c1-46a4-9305-f7dcea09a5d5",
               "nextEdgeId": "b7ebf383-93ef-4a24-abb6-47e2eb6c29e4",
-              "repeatVariable": "[6d916e4a-7612-47db-a110-b93c6c6b7bae].[contents].[ipAddresses]"
+              "repeatVariable": "{{[6d916e4a-7612-47db-a110-b93c6c6b7bae].[contents].[ipAddresses]}}"
             },
             "defaultInputJSONSchema": null,
             "defaultOutputJSONSchema": null,
+            "outputJSONSchema": {
+              "properties": {},
+              "title": "Variables",
+              "type": "object"
+            },
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/loop.svg",
             "connectionType": "NONE"
           },
@@ -792,22 +803,17 @@
               "name": "Recorded Future",
               "slugVendor": "rapid7",
               "slugName": "recorded_future",
-              "slugVersion": "1.5.2",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/recorded_future/1.5.2/icon.png"
+              "slugVersion": "4.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/recorded_future/4.0.0/icon.png"
             },
             "identifier": "lookup_IP_address",
-            "continueOnFailure": true,
+            "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "IP_address": "{{[ae3964ca-f924-4b71-935a-355f257baa50].[$item].[ip]}}",
-                "comment": "Rapid7",
-                "fields": [
-                  "risk",
-                  "entity",
-                  "location",
-                  "intelCard"
-                ]
+                "comment": ""
               }
             },
             "defaultInputJSONSchema": {
@@ -820,18 +826,9 @@
                 },
                 "comment": {
                   "description": "Add comment to IP address lookup for Recorded Future",
-                  "order": 3,
+                  "order": 2,
                   "title": "Comment",
                   "type": "string"
-                },
-                "fields": {
-                  "description": "List of fields to include with results e.g [\"sightings\", \"threatLists\", \"analystNotes\", \"counts\", \"entity\", \"intelCard\", \"metrics\", \"relatedEntities\", \"riskyCIDRIPs\",\"risk\", \"location\", \"timestamps\"]",
-                  "items": {
-                    "type": "string"
-                  },
-                  "order": 2,
-                  "title": "Fields",
-                  "type": "array"
                 }
               },
               "required": [
@@ -882,6 +879,24 @@
                   "title": "Counts",
                   "type": "object"
                 },
+                "enterpriseLists": {
+                  "properties": {
+                    "added": {
+                      "description": "Added",
+                      "order": 1,
+                      "title": "Added",
+                      "type": "string"
+                    },
+                    "list": {
+                      "$ref": "#/definitions/list",
+                      "description": "List",
+                      "order": 2,
+                      "title": "List"
+                    }
+                  },
+                  "title": "EnterpriseLists",
+                  "type": "object"
+                },
                 "entities": {
                   "properties": {
                     "count": {
@@ -929,7 +944,7 @@
                     "criticality": {
                       "order": 1,
                       "title": "Criticality",
-                      "type": "integer"
+                      "type": "number"
                     },
                     "criticalityLabel": {
                       "order": 2,
@@ -977,6 +992,30 @@
                     }
                   },
                   "title": "Ip",
+                  "type": "object"
+                },
+                "list": {
+                  "properties": {
+                    "id": {
+                      "description": "ID",
+                      "order": 1,
+                      "title": "ID",
+                      "type": "string"
+                    },
+                    "name": {
+                      "description": "Name",
+                      "order": 2,
+                      "title": "Name",
+                      "type": "string"
+                    },
+                    "type": {
+                      "description": "Type",
+                      "order": 3,
+                      "title": "Type",
+                      "type": "string"
+                    }
+                  },
+                  "title": "List",
                   "type": "object"
                 },
                 "location": {
@@ -1043,7 +1082,7 @@
                     "value": {
                       "order": 2,
                       "title": "Value",
-                      "type": "integer"
+                      "type": "number"
                     }
                   },
                   "title": "Metrics",
@@ -1073,7 +1112,7 @@
                     "criticality": {
                       "order": 1,
                       "title": "Criticality",
-                      "type": "integer"
+                      "type": "number"
                     },
                     "criticalityLabel": {
                       "order": 2,
@@ -1161,6 +1200,36 @@
                   "title": "Sightings",
                   "type": "object"
                 },
+                "threatLists": {
+                  "properties": {
+                    "description": {
+                      "description": "Description",
+                      "order": 1,
+                      "title": "Description",
+                      "type": "string"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 2,
+                      "title": "ID",
+                      "type": "string"
+                    },
+                    "name": {
+                      "description": "Name",
+                      "order": 3,
+                      "title": "Name",
+                      "type": "string"
+                    },
+                    "type": {
+                      "description": "Type",
+                      "order": 4,
+                      "title": "Type",
+                      "type": "string"
+                    }
+                  },
+                  "title": "ThreatLists",
+                  "type": "object"
+                },
                 "timestamps": {
                   "properties": {
                     "firstSeen": {
@@ -1197,6 +1266,15 @@
                   "title": "Counts",
                   "type": "array"
                 },
+                "enterpriseLists": {
+                  "description": "Enterprise lists",
+                  "items": {
+                    "$ref": "#/definitions/enterpriseLists"
+                  },
+                  "order": 13,
+                  "title": "Enterprise Lists",
+                  "type": "array"
+                },
                 "entity": {
                   "$ref": "#/definitions/entity",
                   "description": "Entity",
@@ -1205,7 +1283,7 @@
                 },
                 "found": {
                   "description": "Has the IP been found in Recorded Future",
-                  "order": 13,
+                  "order": 14,
                   "title": "Found",
                   "type": "boolean"
                 },
@@ -1266,7 +1344,7 @@
                 "threatLists": {
                   "description": "Threat lists",
                   "items": {
-                    "type": "string"
+                    "$ref": "#/definitions/threatLists"
                   },
                   "order": 9,
                   "title": "Threat Lists",
@@ -1282,6 +1360,7 @@
               "title": "Variables",
               "type": "object"
             },
+            "outputJSONSchema": null,
             "defaultImageData": "",
             "connectionType": "CONNECTION"
           }
@@ -1293,7 +1372,7 @@
     ],
     "triggers": [
       {
-        "id": "0fdb342a-9f79-4176-81d7-87088d53242c",
+        "id": "2a748182-180b-41da-9700-5b06894808a1",
         "name": "InsightIDR Event",
         "description": "",
         "input": null,

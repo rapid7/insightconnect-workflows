@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.39.1-0-g39b69",
+    "komandVersion": "1.67.0-0-gbd094",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2019-10-15T16:13:58.264213365Z",
+    "exportedAt": "2020-11-05T23:52:09.54729794Z",
     "workflowVersions": [
       {
         "name": "Look Up Domains with RecordedFuture",
@@ -97,6 +97,11 @@
             },
             "defaultInputJSONSchema": null,
             "defaultOutputJSONSchema": null,
+            "outputJSONSchema": {
+              "properties": {},
+              "title": "Variables",
+              "type": "object"
+            },
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/loop.svg",
             "connectionType": "NONE"
           },
@@ -106,7 +111,7 @@
             "type": "trigger",
             "continueOnFailure": false,
             "isDisabled": false,
-            "triggerId": "9d821160-dd09-4bce-b75e-76db4ee3c589",
+            "triggerId": "5628a498-43c1-42f9-9943-f104d85e1f7d",
             "defaultInputJSONSchema": {
               "definitions": {
                 "actor": {
@@ -661,6 +666,7 @@
               "title": "Variables",
               "type": "object"
             },
+            "outputJSONSchema": null,
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/trigger-api-idr.svg",
             "connectionType": "NONE"
           },
@@ -678,6 +684,7 @@
             },
             "defaultInputJSONSchema": null,
             "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
             "connectionType": "NONE"
           },
@@ -695,6 +702,7 @@
             },
             "defaultInputJSONSchema": null,
             "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
             "connectionType": "NONE"
           },
@@ -706,29 +714,24 @@
               "name": "Recorded Future",
               "slugVendor": "rapid7",
               "slugName": "recorded_future",
-              "slugVersion": "1.5.2",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/recorded_future/1.5.2/icon.png"
+              "slugVersion": "4.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/recorded_future/4.0.0/icon.png"
             },
             "identifier": "lookup_domain",
-            "continueOnFailure": true,
+            "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
-                "comment": "Rapid7",
-                "domain": "{{[15c6e272-1b4f-4fa8-982a-0e1af67742d3].[$item]}}",
-                "fields": [
-                  "risk",
-                  "entity",
-                  "intelCard",
-                  "timestamps"
-                ]
+                "comment": "",
+                "domain": "{{[15c6e272-1b4f-4fa8-982a-0e1af67742d3].[$item]}}"
               }
             },
             "defaultInputJSONSchema": {
               "properties": {
                 "comment": {
                   "description": "Add a comment to a domain",
-                  "order": 3,
+                  "order": 2,
                   "title": "Comment",
                   "type": "string"
                 },
@@ -737,15 +740,6 @@
                   "order": 1,
                   "title": "Domain",
                   "type": "string"
-                },
-                "fields": {
-                  "description": "List of fields to include with results e.g [\"sightings\", \"threatLists\", \"analystNotes\", \"counts\", \"entity\", \"intelCard\", \"metrics\", \"relatedEntities\" , \"risk\" , \"timestamps\"]",
-                  "items": {
-                    "type": "string"
-                  },
-                  "order": 2,
-                  "title": "Fields",
-                  "type": "array"
                 }
               },
               "required": [
@@ -770,6 +764,24 @@
                     }
                   },
                   "title": "Counts",
+                  "type": "object"
+                },
+                "enterpriseLists": {
+                  "properties": {
+                    "added": {
+                      "description": "Added",
+                      "order": 1,
+                      "title": "Added",
+                      "type": "string"
+                    },
+                    "list": {
+                      "$ref": "#/definitions/list",
+                      "description": "List",
+                      "order": 2,
+                      "title": "List"
+                    }
+                  },
+                  "title": "EnterpriseLists",
                   "type": "object"
                 },
                 "entities": {
@@ -819,7 +831,7 @@
                     "criticality": {
                       "order": 1,
                       "title": "Criticality",
-                      "type": "integer"
+                      "type": "number"
                     },
                     "criticalityLabel": {
                       "order": 2,
@@ -845,6 +857,30 @@
                   "title": "EvidenceDetails",
                   "type": "object"
                 },
+                "list": {
+                  "properties": {
+                    "id": {
+                      "description": "ID",
+                      "order": 1,
+                      "title": "ID",
+                      "type": "string"
+                    },
+                    "name": {
+                      "description": "Name",
+                      "order": 2,
+                      "title": "Name",
+                      "type": "string"
+                    },
+                    "type": {
+                      "description": "Type",
+                      "order": 3,
+                      "title": "Type",
+                      "type": "string"
+                    }
+                  },
+                  "title": "List",
+                  "type": "object"
+                },
                 "metrics": {
                   "properties": {
                     "type": {
@@ -855,7 +891,7 @@
                     "value": {
                       "order": 2,
                       "title": "Value",
-                      "type": "integer"
+                      "type": "number"
                     }
                   },
                   "title": "Metrics",
@@ -885,7 +921,7 @@
                     "criticality": {
                       "order": 1,
                       "title": "Criticality",
-                      "type": "integer"
+                      "type": "number"
                     },
                     "criticalityLabel": {
                       "order": 2,
@@ -991,6 +1027,15 @@
                   "title": "Counts",
                   "type": "array"
                 },
+                "enterpriseLists": {
+                  "description": "Enterprise lists",
+                  "items": {
+                    "$ref": "#/definitions/enterpriseLists"
+                  },
+                  "order": 11,
+                  "title": "Enterprise Lists",
+                  "type": "array"
+                },
                 "entity": {
                   "$ref": "#/definitions/entity",
                   "description": "Entity",
@@ -1055,6 +1100,7 @@
               "title": "Variables",
               "type": "object"
             },
+            "outputJSONSchema": null,
             "defaultImageData": "",
             "connectionType": "CONNECTION"
           }
@@ -1066,7 +1112,7 @@
     ],
     "triggers": [
       {
-        "id": "9d821160-dd09-4bce-b75e-76db4ee3c589",
+        "id": "5628a498-43c1-42f9-9943-f104d85e1f7d",
         "name": "InsightIDR Event",
         "description": "",
         "input": null,
