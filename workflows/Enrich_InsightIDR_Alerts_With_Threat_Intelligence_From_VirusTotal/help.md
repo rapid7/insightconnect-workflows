@@ -59,6 +59,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.3 - Added alert summary artifact
 * 1.0.2 - Update workflow to use VirusTotal 6.0.4 plugin which fixes an issue returning ASNs
 * 1.0.1 - Updated artifacts
 * 1.0.0 - Initial workflow
