@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Disable_User_in_Active_Directory_from_Microsoft_Teams
 title: "Disable User in Active Directory from Microsoft Teams"
 description: Disable Active Directory users from Microsoft Teams.
-version: 1.0.3
+version: 1.1.0
 vendor: rapid7
 support: rapid7
 status: []
@@ -16,14 +16,14 @@ resources:
   license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
   screenshots:
   - name: workflow1.png
-    title: Workflow View Part 1
+    title: Workflow View
   - name: workflow2.png
-    title: Workflow View Part 2
-  - name: workflow3.png
-    title: Workflow View Part 3
+    title: Workflow Loop View
   - name: teams1.png
-    title: Microsoft Teams Post and Response, Success
+    title: Microsoft Teams Disable Message Success
   - name: teams2.png
-    title: Microsoft Teams Post and Response, Failure
+    title: Microsoft Teams Enable Message Success
   - name: artifact1.png
-    title: Successful Disabled Artifact
+    title: User Disabled Successfully Artifact
+  - name: artifact2.png
+    title: User Enabled Successfully Artifact

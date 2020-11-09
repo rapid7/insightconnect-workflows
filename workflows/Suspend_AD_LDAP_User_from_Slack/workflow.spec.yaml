@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Suspend_AD_LDAP_User_from_Slack
 title: "Suspend AD LDAP User from Slack"
 description: Suspend Active Directory LDAP users from Slack.
-version: 1.0.1
+version: 1.1.0
 vendor: rapid7
 support: rapid7
 status: []
@@ -16,16 +16,14 @@ resources:
   license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
   screenshots:
   - name: workflow1.png
-    title: Workflow View Part 1
+    title: Workflow View
   - name: workflow2.png
-    title: Workflow View Part 2
-  - name: workflow3.png
-    title: Workflow View Part 3
+    title: Workflow Loop View
   - name: slack1.png
-    title: Slack Post and Response, Success
+    title: Slack Disable Message Success
   - name: slack2.png
-    title: Slack Post and Response, Failure
-  - name: job1.png
-    title: Successful Job Run
+    title: Slack Enable Message Success
   - name: artifact1.png
-    title: Successful Suspension Artifact
+    title: User Disabled Successfully Artifact
+  - name: artifact2.png
+    title: User Enabled Successfully Artifact
