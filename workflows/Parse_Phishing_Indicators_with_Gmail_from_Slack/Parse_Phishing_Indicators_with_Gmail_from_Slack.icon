@@ -632,7 +632,7 @@
               "input": {
                 "attachments": [],
                 "message": "📨  Email Received: Beginning Analysis 📨\n\nFrom: {{[a87bab8a-835c-4cec-ae7c-68dab0355e9f].[email].[sender]}}\nSubject: {{[a87bab8a-835c-4cec-ae7c-68dab0355e9f].[email].[subject]}}",
-                "recipient": "#chamge_me",
+                "recipient": "change_me",
                 "thread_ts": ""
               }
             },
