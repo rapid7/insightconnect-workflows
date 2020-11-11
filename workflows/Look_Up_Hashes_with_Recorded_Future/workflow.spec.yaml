@@ -3,7 +3,7 @@ products: [insightconnect, insightidr]
 name: Look_Up_Hashes_with_Recorded_Future
 title: "Look Up Hashes with Recorded Future"
 description: "This workflow enriches an IDR alert by performing a lookup on all hashes in the investigation with Recorded Future."
-version: 1.0.0
+version: 1.1.0
 vendor: rapid7
 support: rapid7
 status: []

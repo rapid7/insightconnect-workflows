@@ -3,7 +3,7 @@ products: [insightconnect, insightidr]
 name: Look_Up_URLs_with_Recorded_Future
 title: "Look Up URLs with Recorded Future"
 description: "This workflow enriches an IDR alert by performing a lookup on all URLs in the investigation with Recorded Future."
-version: 1.0.0
+version: 1.1.0
 vendor: rapid7
 support: rapid7
 status: []
