@@ -39,6 +39,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.1 - Fix change_me typo in Slack `recipient` input field
 * 1.0.0 - Initial workflow
 
 # Links
