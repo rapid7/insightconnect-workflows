@@ -1,4 +1,4 @@
-# Description 
+# Description
 
 This workflow is meant to serve as a simple introduction to InsightConnect. It uses an API trigger, which accepts one `message` input, to produce an Artifact containing the message and a link to the workflow job.
 
