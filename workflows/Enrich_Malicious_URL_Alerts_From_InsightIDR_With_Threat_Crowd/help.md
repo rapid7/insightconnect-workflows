@@ -39,6 +39,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.1.0 - Updated Global Artifact
 * 1.0.0 - Initial workflow
 
 # Links
