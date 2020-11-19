@@ -53,7 +53,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
-* 1.1.0 - Use the automatic extraction functionality instead of 'Pattern Match' to extract a username | Update Microsoft Teams to version 3.1.0 | Update Active Directory LDAP to version 4.0.3 | Improve a messages in workflow | Add link to AD LDAP connection configuration in Requirements | Update screenshots
+* 1.1.0 - Use the automatic extraction functionality instead of 'Pattern Match' to extract a username | Update Microsoft Teams to version 3.1.0 | Update Active Directory LDAP to version 4.0.3 | Improve workflow messaging | Add link to AD LDAP connection configuration in Requirements | Update screenshots
 * 1.0.3 - Update Active Directory LDAP to version 4.0.1
 * 1.0.2 - Update to make Microsoft Teams plugin the latest version
 * 1.0.1 - Updated trigger syntax and documentation
