@@ -15,7 +15,7 @@ Sample Slack command:
 # Requirements
 
 * [Slack](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops)
-* Microsoft Active Directory
+* [Microsoft Active Directory](https://extensions.rapid7.com/extension/active_directory_ldap)
 
 # Documentation
 
@@ -47,7 +47,7 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Active Directory LDAP|4.0.1|2|
+|Active Directory LDAP|4.0.3|2|
 
 ## Troubleshooting
 
@@ -55,6 +55,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.1.0 - Use the automatic extraction functionality instead of 'Pattern Match' to extract a username | Update Active Directory LDAP to version 4.0.3 | Improve workflow messaging | Add link to AD LDAP connection configuration in Requirements | Update screenshots
 * 1.0.4 - Update Active Directory LDAP to version 4.0.1
 * 1.0.3 - Updated trigger syntax and documentation
 * 1.0.2 - Updated trigger syntax and documentation
@@ -66,3 +67,4 @@ _There is no troubleshooting information at this time_
 ## References
 
 [Slack](https://slack.com)
+[Active Directory LDAP](https://extensions.rapid7.com/extension/active_directory_ldap)

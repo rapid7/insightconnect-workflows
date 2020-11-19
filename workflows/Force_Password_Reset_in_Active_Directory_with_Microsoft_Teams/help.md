@@ -15,7 +15,7 @@ Sample Microsoft Teams command:
 # Requirements
 
 * [Microsoft Teams](https://insightconnect.help.rapid7.com/docs/microsoft-teams)
-* Microsoft Active Directory
+* [Microsoft Active Directory](https://extensions.rapid7.com/extension/active_directory_ldap)
 
 # Documentation
 
@@ -44,8 +44,8 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Microsoft Teams|2.0.4|4|
-|Active Directory LDAP|4.0.1|2|
+|Microsoft Teams|3.1.0|5|
+|Active Directory LDAP|4.0.3|2|
 
 ## Troubleshooting
 
@@ -53,6 +53,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.1.0 - Use the automatic extraction functionality instead of 'Pattern Match' to extract a username | Update Microsoft Teams to version 3.1.0 | Update Active Directory LDAP to version 4.0.3 | Improve workflow messaging | Add link to AD LDAP connection configuration in Requirements | Update screenshots
 * 1.0.3 - Update Active Directory LDAP to version 4.0.1
 * 1.0.2 - Update to make Microsoft Teams plugin the latest version
 * 1.0.1 - Updated trigger syntax and documentation
@@ -63,3 +64,4 @@ _There is no troubleshooting information at this time_
 ## References
 
 * [Microsoft Teams](https://teams.microsoft.com)
+* [Active Directory LDAP](https://extensions.rapid7.com/extension/active_directory_ldap)
