@@ -1,0 +1,1173 @@
+{
+  "kom": {
+    "komandVersion": "1.69.2-0-gaf0d9",
+    "komFileVersion": "2.0.0",
+    "exportedAt": "2020-11-20T00:20:29.210655362Z",
+    "workflowVersions": [
+      {
+        "name": "Send Remediated Vulnerabilities Message in Microsoft Teams from InsightVM",
+        "type": "runnable",
+        "version": "",
+        "description": "This workflow sends a message in Microsoft Teams when vulnerabilities are remediated in InsightVM.",
+        "graph": {
+          "edges": {
+            "4d5a930a-353e-4dbc-a223-ee9557a35796": {
+              "id": "4d5a930a-353e-4dbc-a223-ee9557a35796",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "66d19c74-9ba7-4ace-9592-83742e0029a3",
+              "toNodeId": "d70a66a2-09a6-4411-ba67-6d920c7849f1"
+            },
+            "4dc0a0bf-1e04-4edd-891a-d252aec5a5f8": {
+              "id": "4dc0a0bf-1e04-4edd-891a-d252aec5a5f8",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "42fa5e5a-74c3-4725-8672-8aa2aac8d12c",
+              "toNodeId": ""
+            },
+            "745d5481-f7b3-4921-bf6e-0127dfd81591": {
+              "id": "745d5481-f7b3-4921-bf6e-0127dfd81591",
+              "name": "",
+              "description": "",
+              "parentNodeId": "d70a66a2-09a6-4411-ba67-6d920c7849f1",
+              "fromNodeId": "d70a66a2-09a6-4411-ba67-6d920c7849f1",
+              "toNodeId": "783a991e-ddf1-4b8d-8af5-21425e879e51"
+            },
+            "a80b01e4-dee0-410b-8968-3cf525be41c7": {
+              "id": "a80b01e4-dee0-410b-8968-3cf525be41c7",
+              "name": "",
+              "description": "",
+              "parentNodeId": "d70a66a2-09a6-4411-ba67-6d920c7849f1",
+              "fromNodeId": "783a991e-ddf1-4b8d-8af5-21425e879e51",
+              "toNodeId": "fa22ff16-8091-42a5-8234-377ac4809ec4"
+            },
+            "be353de1-d7f7-4e9e-a896-976e783e4bea": {
+              "id": "be353de1-d7f7-4e9e-a896-976e783e4bea",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "d70a66a2-09a6-4411-ba67-6d920c7849f1",
+              "toNodeId": "42fa5e5a-74c3-4725-8672-8aa2aac8d12c"
+            },
+            "eebbc825-d580-4422-ba8e-4dff83dacad3": {
+              "id": "eebbc825-d580-4422-ba8e-4dff83dacad3",
+              "name": "",
+              "description": "",
+              "parentNodeId": "d70a66a2-09a6-4411-ba67-6d920c7849f1",
+              "fromNodeId": "fa22ff16-8091-42a5-8234-377ac4809ec4",
+              "toNodeId": ""
+            }
+          },
+          "nodes": {
+            "42fa5e5a-74c3-4725-8672-8aa2aac8d12c": {
+              "id": "42fa5e5a-74c3-4725-8672-8aa2aac8d12c",
+              "parentNodeId": ""
+            },
+            "66d19c74-9ba7-4ace-9592-83742e0029a3": {
+              "id": "66d19c74-9ba7-4ace-9592-83742e0029a3",
+              "parentNodeId": ""
+            },
+            "783a991e-ddf1-4b8d-8af5-21425e879e51": {
+              "id": "783a991e-ddf1-4b8d-8af5-21425e879e51",
+              "parentNodeId": "d70a66a2-09a6-4411-ba67-6d920c7849f1"
+            },
+            "d70a66a2-09a6-4411-ba67-6d920c7849f1": {
+              "id": "d70a66a2-09a6-4411-ba67-6d920c7849f1",
+              "parentNodeId": ""
+            },
+            "fa22ff16-8091-42a5-8234-377ac4809ec4": {
+              "id": "fa22ff16-8091-42a5-8234-377ac4809ec4",
+              "parentNodeId": "d70a66a2-09a6-4411-ba67-6d920c7849f1"
+            }
+          }
+        },
+        "steps": {
+          "42fa5e5a-74c3-4725-8672-8aa2aac8d12c": {
+            "nodeId": "42fa5e5a-74c3-4725-8672-8aa2aac8d12c",
+            "name": "Post To Teams",
+            "type": "action",
+            "plugin": {
+              "name": "Microsoft Teams",
+              "slugVendor": "rapid7",
+              "slugName": "microsoft_teams",
+              "slugVersion": "2.2.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.1/icon.png"
+            },
+            "identifier": "send_html_message",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "channel_name": "change_me",
+                "message_content": "<h1>New Vulnerabilities Remediated!</h1><br />\n<h2>Asset:</h2> \n<ul><li><b>Hostname: </b>{{[66d19c74-9ba7-4ace-9592-83742e0029a3].[summary].[host_name]}}</li>\n<li><b>IP Address:</b> {{[66d19c74-9ba7-4ace-9592-83742e0029a3].[summary].[ip]}}</li>\n<li><b>Operating System:</b> {{[66d19c74-9ba7-4ace-9592-83742e0029a3].[summary].[operating_system]}}</li>\n<li><b>Last Scanned:</b> {{[66d19c74-9ba7-4ace-9592-83742e0029a3].[summary].[last_scanned]}}</li>\n</ul>\n<br />\n<h2>Vulnerabilities Remediated:</h2><br />\n<ul>{{#each [66d19c74-9ba7-4ace-9592-83742e0029a3].[changes].[asset_vulnerabilities_remediated]}}\n  <li>{{this}}</li>\n{{/each}}</ul>\n <br />\n<h2>{{[d70a66a2-09a6-4411-ba67-6d920c7849f1].[Total Risk Count]}} Total Vulnerabilities Remediated</h2><br />\n<ul><li>{{[d70a66a2-09a6-4411-ba67-6d920c7849f1].[Low Risk Count]}} Low Risks</li>\n<li>{{[d70a66a2-09a6-4411-ba67-6d920c7849f1].[Medium Risk Count]}} Medium Risks</li>\n<li>{{[d70a66a2-09a6-4411-ba67-6d920c7849f1].[High Risk Count]}} High Risks</li>\n<li>{{[d70a66a2-09a6-4411-ba67-6d920c7849f1].[Critical Risk Count]}} Critical Risks</li></ul>",
+                "team_name": "change_me",
+                "thread_id": ""
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "channel_name": {
+                  "description": "Channel name",
+                  "order": 2,
+                  "title": "Channel Name",
+                  "type": "string"
+                },
+                "message_content": {
+                  "description": "HTML content to send",
+                  "order": 4,
+                  "title": "Message Content",
+                  "type": "string"
+                },
+                "team_name": {
+                  "description": "Team name",
+                  "order": 1,
+                  "title": "Team Name",
+                  "type": "string"
+                },
+                "thread_id": {
+                  "description": "To post in a thread, select parent message ID",
+                  "order": 3,
+                  "title": "Thread ID",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "team_name",
+                "channel_name",
+                "message_content"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "body": {
+                  "properties": {
+                    "content": {
+                      "description": "Content",
+                      "order": 1,
+                      "title": "Content",
+                      "type": "string"
+                    },
+                    "contentType": {
+                      "description": "Content type",
+                      "order": 2,
+                      "title": "Content Type",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Body",
+                  "type": "object"
+                },
+                "from": {
+                  "properties": {
+                    "user": {
+                      "$ref": "#/definitions/user",
+                      "description": "User",
+                      "order": 1,
+                      "title": "User"
+                    }
+                  },
+                  "title": "From",
+                  "type": "object"
+                },
+                "message": {
+                  "properties": {
+                    "body": {
+                      "$ref": "#/definitions/body",
+                      "description": "Body",
+                      "order": 1,
+                      "title": "Body"
+                    },
+                    "createdDateTime": {
+                      "description": "Created date time",
+                      "order": 3,
+                      "title": "Created Date Time",
+                      "type": "string"
+                    },
+                    "first_word": {
+                      "description": "Extracted first word from message (easy way to obtain a chat command)",
+                      "order": 9,
+                      "title": "First Word",
+                      "type": "string"
+                    },
+                    "from": {
+                      "$ref": "#/definitions/from",
+                      "description": "From",
+                      "order": 2,
+                      "title": "From"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 8,
+                      "title": "ID",
+                      "type": "string"
+                    },
+                    "importance": {
+                      "description": "Importance",
+                      "order": 5,
+                      "title": "Importance",
+                      "type": "string"
+                    },
+                    "locale": {
+                      "description": "Locale",
+                      "order": 7,
+                      "title": "Locale",
+                      "type": "string"
+                    },
+                    "messageType": {
+                      "description": "Message type",
+                      "order": 6,
+                      "title": "Message Type",
+                      "type": "string"
+                    },
+                    "webUrl": {
+                      "description": "Web URL",
+                      "order": 4,
+                      "title": "Web URL",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Message",
+                  "type": "object"
+                },
+                "user": {
+                  "properties": {
+                    "displayName": {
+                      "description": "Display name",
+                      "order": 1,
+                      "title": "Display name",
+                      "type": "string"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 2,
+                      "title": "ID",
+                      "type": "string"
+                    }
+                  },
+                  "title": "User",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "message": {
+                  "$ref": "#/definitions/message",
+                  "description": "The message object that was created",
+                  "order": 1,
+                  "title": "Message"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "66d19c74-9ba7-4ace-9592-83742e0029a3": {
+            "nodeId": "66d19c74-9ba7-4ace-9592-83742e0029a3",
+            "name": "InsightVM Trigger",
+            "type": "trigger",
+            "identifier": "vulnerabilities_remediated",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "triggerId": "da62ff81-e02b-4f13-9dd8-4928d5c0028b",
+            "defaultInputJSONSchema": {
+              "definitions": {
+                "changes": {
+                  "properties": {
+                    "asset_vulnerabilities_remediated": {
+                      "description": "Object containing details of vulnerabilities remediated",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 1,
+                      "title": "asset_vulnerabilities_remediated",
+                      "type": "array"
+                    }
+                  },
+                  "type": "object"
+                },
+                "summary": {
+                  "properties": {
+                    "agent_id": {
+                      "description": "Identifier of agent that is on the asset",
+                      "order": 4,
+                      "title": "agent_id",
+                      "type": "string"
+                    },
+                    "critical_vulnerability_count": {
+                      "description": "Number of critical vulnerabilities on the asset",
+                      "order": 9,
+                      "title": "critical_vulnerability_count",
+                      "type": "number"
+                    },
+                    "host_name": {
+                      "description": "Asset hostname",
+                      "order": 5,
+                      "title": "host_name",
+                      "type": "string"
+                    },
+                    "ip": {
+                      "description": "Asset ip address",
+                      "order": 1,
+                      "title": "ip",
+                      "type": "string"
+                    },
+                    "last_assessed_for_policy": {
+                      "description": "Epoch time millis of last policy assessment",
+                      "order": 12,
+                      "title": "last_assessed_for_policy",
+                      "type": "number"
+                    },
+                    "last_assessed_for_vulnerability": {
+                      "description": "Epoch time millis of last vulnerability assessment",
+                      "order": 11,
+                      "title": "last_assessed_for_vulnerability",
+                      "type": "number"
+                    },
+                    "last_scanned": {
+                      "description": "Epoch time millis of last scanned",
+                      "order": 7,
+                      "title": "last_scanned",
+                      "type": "number"
+                    },
+                    "mac": {
+                      "description": "Asset mac address",
+                      "order": 3,
+                      "title": "mac",
+                      "type": "string"
+                    },
+                    "moderate_vulnerability_count": {
+                      "description": "Number of moderate vulnerabilities on the asset",
+                      "order": 10,
+                      "title": "moderate_vulnerability_count",
+                      "type": "number"
+                    },
+                    "operating_system": {
+                      "description": "Asset operating system",
+                      "order": 2,
+                      "title": "operating_system",
+                      "type": "string"
+                    },
+                    "services_count": {
+                      "description": "Number of services on the asset",
+                      "order": 6,
+                      "title": "services_count",
+                      "type": "number"
+                    },
+                    "severe_vulnerability_count": {
+                      "description": "Number of severe vulnerabilities on the asset",
+                      "order": 8,
+                      "title": "severe_vulnerability_count",
+                      "type": "number"
+                    },
+                    "vulnerability_count": {
+                      "description": "Total vulnerability count",
+                      "order": 13,
+                      "title": "vulnerability_count",
+                      "type": "number"
+                    }
+                  },
+                  "title": "summary",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "changes": {
+                  "$ref": "#/definitions/changes",
+                  "description": "Object containing details of vulnerabilities remediated",
+                  "order": 2,
+                  "title": "changes"
+                },
+                "id": {
+                  "description": "Asset ID",
+                  "order": 3,
+                  "title": "id",
+                  "type": "string"
+                },
+                "summary": {
+                  "$ref": "#/definitions/summary",
+                  "description": "Object containing details of asset found",
+                  "order": 1,
+                  "title": "summary"
+                }
+              },
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "changes": {
+                  "properties": {
+                    "asset_vulnerabilities_remediated": {
+                      "description": "Object containing details of vulnerabilities remediated",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 1,
+                      "title": "asset_vulnerabilities_remediated",
+                      "type": "array"
+                    }
+                  },
+                  "type": "object"
+                },
+                "summary": {
+                  "properties": {
+                    "agent_id": {
+                      "description": "Identifier of agent that is on the asset",
+                      "order": 4,
+                      "title": "agent_id",
+                      "type": "string"
+                    },
+                    "critical_vulnerability_count": {
+                      "description": "Number of critical vulnerabilities on the asset",
+                      "order": 9,
+                      "title": "critical_vulnerability_count",
+                      "type": "number"
+                    },
+                    "host_name": {
+                      "description": "Asset hostname",
+                      "order": 5,
+                      "title": "host_name",
+                      "type": "string"
+                    },
+                    "ip": {
+                      "description": "Asset ip address",
+                      "order": 1,
+                      "title": "ip",
+                      "type": "string"
+                    },
+                    "last_assessed_for_policy": {
+                      "description": "Epoch time millis of last policy assessment",
+                      "order": 12,
+                      "title": "last_assessed_for_policy",
+                      "type": "number"
+                    },
+                    "last_assessed_for_vulnerability": {
+                      "description": "Epoch time millis of last vulnerability assessment",
+                      "order": 11,
+                      "title": "last_assessed_for_vulnerability",
+                      "type": "number"
+                    },
+                    "last_scanned": {
+                      "description": "Epoch time millis of last scanned",
+                      "order": 7,
+                      "title": "last_scanned",
+                      "type": "number"
+                    },
+                    "mac": {
+                      "description": "Asset mac address",
+                      "order": 3,
+                      "title": "mac",
+                      "type": "string"
+                    },
+                    "moderate_vulnerability_count": {
+                      "description": "Number of moderate vulnerabilities on the asset",
+                      "order": 10,
+                      "title": "moderate_vulnerability_count",
+                      "type": "number"
+                    },
+                    "operating_system": {
+                      "description": "Asset operating system",
+                      "order": 2,
+                      "title": "operating_system",
+                      "type": "string"
+                    },
+                    "services_count": {
+                      "description": "Number of services on the asset",
+                      "order": 6,
+                      "title": "services_count",
+                      "type": "number"
+                    },
+                    "severe_vulnerability_count": {
+                      "description": "Number of severe vulnerabilities on the asset",
+                      "order": 8,
+                      "title": "severe_vulnerability_count",
+                      "type": "number"
+                    },
+                    "vulnerability_count": {
+                      "description": "Total vulnerability count",
+                      "order": 13,
+                      "title": "vulnerability_count",
+                      "type": "number"
+                    }
+                  },
+                  "title": "summary",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "changes": {
+                  "$ref": "#/definitions/changes",
+                  "description": "Object containing details of vulnerabilities remediated",
+                  "order": 2,
+                  "title": "changes"
+                },
+                "id": {
+                  "description": "Asset ID",
+                  "order": 3,
+                  "title": "id",
+                  "type": "string"
+                },
+                "summary": {
+                  "$ref": "#/definitions/summary",
+                  "description": "Object containing details of asset found",
+                  "order": 1,
+                  "title": "summary"
+                }
+              },
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/trigger-api-vm.svg",
+            "connectionType": "NONE"
+          },
+          "783a991e-ddf1-4b8d-8af5-21425e879e51": {
+            "nodeId": "783a991e-ddf1-4b8d-8af5-21425e879e51",
+            "name": "Get Vulnerability Content",
+            "type": "action",
+            "plugin": {
+              "name": "Rapid7 Vulnerability & Exploit Database",
+              "slugVendor": "rapid7",
+              "slugName": "rapid7_vulndb",
+              "slugVersion": "2.0.3",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_vulndb/2.0.3/icon.png"
+            },
+            "identifier": "get_content",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "identifier": "{{[d70a66a2-09a6-4411-ba67-6d920c7849f1].[$item]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "identifier": {
+                  "description": "Rapid7 vulnerability/module identifier",
+                  "order": 1,
+                  "title": "Identifier",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "identifier"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "content": {
+                  "properties": {
+                    "alternate_ids": {
+                      "description": "List of alternative identifiers for the vulnerability",
+                      "order": 12,
+                      "title": "Alternative Identifiers",
+                      "type": "string"
+                    },
+                    "architectures": {
+                      "description": "List of applicable architectures for the module",
+                      "order": 4,
+                      "title": "architectures",
+                      "type": "string"
+                    },
+                    "authors": {
+                      "description": "List of module authors",
+                      "order": 7,
+                      "title": "Authors",
+                      "type": "string"
+                    },
+                    "content_type": {
+                      "description": "Type of returned content for module or vulnerability",
+                      "order": 3,
+                      "title": "Content type",
+                      "type": "string"
+                    },
+                    "description": {
+                      "description": "Brief summary of the returned content",
+                      "order": 2,
+                      "title": "Description",
+                      "type": "string"
+                    },
+                    "published_at": {
+                      "description": "Published date of vulnerability",
+                      "order": 5,
+                      "title": "Published_at",
+                      "type": "string"
+                    },
+                    "rank": {
+                      "description": "Rank of module",
+                      "order": 8,
+                      "title": "Rank",
+                      "type": "integer"
+                    },
+                    "references": {
+                      "description": "List of references",
+                      "order": 6,
+                      "title": "References",
+                      "type": "string"
+                    },
+                    "reliability": {
+                      "description": "Reliability of module",
+                      "order": 9,
+                      "title": "Reliability",
+                      "type": "string"
+                    },
+                    "severity": {
+                      "description": "Severity of vulnerability",
+                      "order": 10,
+                      "title": "Severity",
+                      "type": "string"
+                    },
+                    "solutions": {
+                      "description": "List of possible solutions for the vulnerability",
+                      "order": 11,
+                      "title": "Solutions",
+                      "type": "string"
+                    },
+                    "title": {
+                      "description": "Title of Vulnerability",
+                      "order": 1,
+                      "title": "Title",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Content",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "content_result": {
+                  "$ref": "#/definitions/content",
+                  "description": "Content record for the vulnerability or module",
+                  "order": 1,
+                  "title": "Result"
+                }
+              },
+              "required": [
+                "content_result"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR"
+          },
+          "d70a66a2-09a6-4411-ba67-6d920c7849f1": {
+            "nodeId": "d70a66a2-09a6-4411-ba67-6d920c7849f1",
+            "name": "Get Vulnerability Details",
+            "type": "loop",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "customOutput": [
+                {
+                  "input": {
+                    "expression": {
+                      "left": {
+                        "left": {
+                          "name": "fa22ff16-8091-42a5-8234-377ac4809ec4.output",
+                          "type": "variable"
+                        },
+                        "op": ">",
+                        "right": {
+                          "type": "literal",
+                          "value": 0
+                        },
+                        "type": "binary"
+                      },
+                      "op": "AND",
+                      "right": {
+                        "left": {
+                          "name": "fa22ff16-8091-42a5-8234-377ac4809ec4.output",
+                          "type": "variable"
+                        },
+                        "op": "<",
+                        "right": {
+                          "type": "literal",
+                          "value": 4
+                        },
+                        "type": "binary"
+                      },
+                      "type": "binary"
+                    },
+                    "expressionText": "{{[fa22ff16-8091-42a5-8234-377ac4809ec4].[output]}} > 0 && {{[fa22ff16-8091-42a5-8234-377ac4809ec4].[output]}} < 4"
+                  },
+                  "name": "Low Risk Count",
+                  "outputType": "count"
+                },
+                {
+                  "input": {
+                    "expression": {
+                      "left": {
+                        "left": {
+                          "name": "fa22ff16-8091-42a5-8234-377ac4809ec4.output",
+                          "type": "variable"
+                        },
+                        "op": ">=",
+                        "right": {
+                          "type": "literal",
+                          "value": 4
+                        },
+                        "type": "binary"
+                      },
+                      "op": "AND",
+                      "right": {
+                        "left": {
+                          "name": "fa22ff16-8091-42a5-8234-377ac4809ec4.output",
+                          "type": "variable"
+                        },
+                        "op": "<",
+                        "right": {
+                          "type": "literal",
+                          "value": 7
+                        },
+                        "type": "binary"
+                      },
+                      "type": "binary"
+                    },
+                    "expressionText": "{{[fa22ff16-8091-42a5-8234-377ac4809ec4].[output]}} >= 4 && {{[fa22ff16-8091-42a5-8234-377ac4809ec4].[output]}} < 7"
+                  },
+                  "name": "Medium Risk Count",
+                  "outputType": "count"
+                },
+                {
+                  "input": {
+                    "expression": {
+                      "left": {
+                        "left": {
+                          "name": "fa22ff16-8091-42a5-8234-377ac4809ec4.output",
+                          "type": "variable"
+                        },
+                        "op": ">=",
+                        "right": {
+                          "type": "literal",
+                          "value": 7
+                        },
+                        "type": "binary"
+                      },
+                      "op": "AND",
+                      "right": {
+                        "left": {
+                          "name": "fa22ff16-8091-42a5-8234-377ac4809ec4.output",
+                          "type": "variable"
+                        },
+                        "op": "<",
+                        "right": {
+                          "type": "literal",
+                          "value": 9
+                        },
+                        "type": "binary"
+                      },
+                      "type": "binary"
+                    },
+                    "expressionText": "{{[fa22ff16-8091-42a5-8234-377ac4809ec4].[output]}} >= 7 && {{[fa22ff16-8091-42a5-8234-377ac4809ec4].[output]}} < 9"
+                  },
+                  "name": "High Risk Count",
+                  "outputType": "count"
+                },
+                {
+                  "input": {
+                    "expression": {
+                      "left": {
+                        "name": "fa22ff16-8091-42a5-8234-377ac4809ec4.output",
+                        "type": "variable"
+                      },
+                      "op": ">=",
+                      "right": {
+                        "type": "literal",
+                        "value": 9
+                      },
+                      "type": "binary"
+                    },
+                    "expressionText": "{{[fa22ff16-8091-42a5-8234-377ac4809ec4].[output]}} >= 9"
+                  },
+                  "name": "Critical Risk Count",
+                  "outputType": "count"
+                },
+                {
+                  "input": {
+                    "expression": {
+                      "left": {
+                        "type": "literal",
+                        "value": 1
+                      },
+                      "op": "==",
+                      "right": {
+                        "type": "literal",
+                        "value": 1
+                      },
+                      "type": "binary"
+                    },
+                    "expressionText": "1 == 1"
+                  },
+                  "name": "Total Risk Count",
+                  "outputType": "count"
+                }
+              ],
+              "innerEdgeId": "745d5481-f7b3-4921-bf6e-0127dfd81591",
+              "nextEdgeId": "be353de1-d7f7-4e9e-a896-976e783e4bea",
+              "repeatVariable": "{{[66d19c74-9ba7-4ace-9592-83742e0029a3].[changes].[asset_vulnerabilities_remediated]}}"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": {
+              "properties": {
+                "Critical Risk Count": {
+                  "description": "Custom output: \"Critical Risk Count\"",
+                  "title": "Critical Risk Count",
+                  "type": "integer"
+                },
+                "High Risk Count": {
+                  "description": "Custom output: \"High Risk Count\"",
+                  "title": "High Risk Count",
+                  "type": "integer"
+                },
+                "Low Risk Count": {
+                  "description": "Custom output: \"Low Risk Count\"",
+                  "title": "Low Risk Count",
+                  "type": "integer"
+                },
+                "Medium Risk Count": {
+                  "description": "Custom output: \"Medium Risk Count\"",
+                  "title": "Medium Risk Count",
+                  "type": "integer"
+                },
+                "Total Risk Count": {
+                  "description": "Custom output: \"Total Risk Count\"",
+                  "title": "Total Risk Count",
+                  "type": "integer"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/loop.svg",
+            "connectionType": "NONE"
+          },
+          "fa22ff16-8091-42a5-8234-377ac4809ec4": {
+            "nodeId": "fa22ff16-8091-42a5-8234-377ac4809ec4",
+            "name": "Vulnerability Severity Type Conversion",
+            "type": "action",
+            "plugin": {
+              "name": "Type Converter",
+              "slugVendor": "rapid7",
+              "slugName": "type_converter",
+              "slugVersion": "1.6.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/type_converter/1.6.0/icon.png"
+            },
+            "identifier": "string_to_float",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "input": "{{[783a991e-ddf1-4b8d-8af5-21425e879e51].[content_result].[severity]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "input": {
+                  "description": "Type converted input",
+                  "order": 1,
+                  "title": "Input",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "input"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "output": {
+                  "description": "Type converted output",
+                  "order": 1,
+                  "title": "Output",
+                  "type": "number"
+                }
+              },
+              "required": [
+                "output"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR"
+          }
+        },
+        "tags": null,
+        "humanCostSeconds": 300,
+        "humanCostDisplayUnit": "minutes"
+      }
+    ],
+    "triggers": [
+      {
+        "id": "da62ff81-e02b-4f13-9dd8-4928d5c0028b",
+        "identifier": "vulnerabilities_remediated",
+        "name": "InsightVM Trigger",
+        "description": "",
+        "input": null,
+        "inputJsonSchema": {
+          "definitions": {
+            "changes": {
+              "properties": {
+                "asset_vulnerabilities_remediated": {
+                  "description": "Object containing details of vulnerabilities remediated",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "asset_vulnerabilities_remediated",
+                  "type": "array"
+                }
+              },
+              "type": "object"
+            },
+            "summary": {
+              "properties": {
+                "agent_id": {
+                  "description": "Identifier of agent that is on the asset",
+                  "order": 4,
+                  "title": "agent_id",
+                  "type": "string"
+                },
+                "critical_vulnerability_count": {
+                  "description": "Number of critical vulnerabilities on the asset",
+                  "order": 9,
+                  "title": "critical_vulnerability_count",
+                  "type": "number"
+                },
+                "host_name": {
+                  "description": "Asset hostname",
+                  "order": 5,
+                  "title": "host_name",
+                  "type": "string"
+                },
+                "ip": {
+                  "description": "Asset ip address",
+                  "order": 1,
+                  "title": "ip",
+                  "type": "string"
+                },
+                "last_assessed_for_policy": {
+                  "description": "Epoch time millis of last policy assessment",
+                  "order": 12,
+                  "title": "last_assessed_for_policy",
+                  "type": "number"
+                },
+                "last_assessed_for_vulnerability": {
+                  "description": "Epoch time millis of last vulnerability assessment",
+                  "order": 11,
+                  "title": "last_assessed_for_vulnerability",
+                  "type": "number"
+                },
+                "last_scanned": {
+                  "description": "Epoch time millis of last scanned",
+                  "order": 7,
+                  "title": "last_scanned",
+                  "type": "number"
+                },
+                "mac": {
+                  "description": "Asset mac address",
+                  "order": 3,
+                  "title": "mac",
+                  "type": "string"
+                },
+                "moderate_vulnerability_count": {
+                  "description": "Number of moderate vulnerabilities on the asset",
+                  "order": 10,
+                  "title": "moderate_vulnerability_count",
+                  "type": "number"
+                },
+                "operating_system": {
+                  "description": "Asset operating system",
+                  "order": 2,
+                  "title": "operating_system",
+                  "type": "string"
+                },
+                "services_count": {
+                  "description": "Number of services on the asset",
+                  "order": 6,
+                  "title": "services_count",
+                  "type": "number"
+                },
+                "severe_vulnerability_count": {
+                  "description": "Number of severe vulnerabilities on the asset",
+                  "order": 8,
+                  "title": "severe_vulnerability_count",
+                  "type": "number"
+                },
+                "vulnerability_count": {
+                  "description": "Total vulnerability count",
+                  "order": 13,
+                  "title": "vulnerability_count",
+                  "type": "number"
+                }
+              },
+              "title": "summary",
+              "type": "object"
+            }
+          },
+          "properties": {
+            "changes": {
+              "$ref": "#/definitions/changes",
+              "description": "Object containing details of vulnerabilities remediated",
+              "order": 2,
+              "title": "changes"
+            },
+            "id": {
+              "description": "Asset ID",
+              "order": 3,
+              "title": "id",
+              "type": "string"
+            },
+            "summary": {
+              "$ref": "#/definitions/summary",
+              "description": "Object containing details of asset found",
+              "order": 1,
+              "title": "summary"
+            }
+          },
+          "type": "object"
+        },
+        "outputJsonSchema": {
+          "definitions": {
+            "changes": {
+              "properties": {
+                "asset_vulnerabilities_remediated": {
+                  "description": "Object containing details of vulnerabilities remediated",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "asset_vulnerabilities_remediated",
+                  "type": "array"
+                }
+              },
+              "type": "object"
+            },
+            "summary": {
+              "properties": {
+                "agent_id": {
+                  "description": "Identifier of agent that is on the asset",
+                  "order": 4,
+                  "title": "agent_id",
+                  "type": "string"
+                },
+                "critical_vulnerability_count": {
+                  "description": "Number of critical vulnerabilities on the asset",
+                  "order": 9,
+                  "title": "critical_vulnerability_count",
+                  "type": "number"
+                },
+                "host_name": {
+                  "description": "Asset hostname",
+                  "order": 5,
+                  "title": "host_name",
+                  "type": "string"
+                },
+                "ip": {
+                  "description": "Asset ip address",
+                  "order": 1,
+                  "title": "ip",
+                  "type": "string"
+                },
+                "last_assessed_for_policy": {
+                  "description": "Epoch time millis of last policy assessment",
+                  "order": 12,
+                  "title": "last_assessed_for_policy",
+                  "type": "number"
+                },
+                "last_assessed_for_vulnerability": {
+                  "description": "Epoch time millis of last vulnerability assessment",
+                  "order": 11,
+                  "title": "last_assessed_for_vulnerability",
+                  "type": "number"
+                },
+                "last_scanned": {
+                  "description": "Epoch time millis of last scanned",
+                  "order": 7,
+                  "title": "last_scanned",
+                  "type": "number"
+                },
+                "mac": {
+                  "description": "Asset mac address",
+                  "order": 3,
+                  "title": "mac",
+                  "type": "string"
+                },
+                "moderate_vulnerability_count": {
+                  "description": "Number of moderate vulnerabilities on the asset",
+                  "order": 10,
+                  "title": "moderate_vulnerability_count",
+                  "type": "number"
+                },
+                "operating_system": {
+                  "description": "Asset operating system",
+                  "order": 2,
+                  "title": "operating_system",
+                  "type": "string"
+                },
+                "services_count": {
+                  "description": "Number of services on the asset",
+                  "order": 6,
+                  "title": "services_count",
+                  "type": "number"
+                },
+                "severe_vulnerability_count": {
+                  "description": "Number of severe vulnerabilities on the asset",
+                  "order": 8,
+                  "title": "severe_vulnerability_count",
+                  "type": "number"
+                },
+                "vulnerability_count": {
+                  "description": "Total vulnerability count",
+                  "order": 13,
+                  "title": "vulnerability_count",
+                  "type": "number"
+                }
+              },
+              "title": "summary",
+              "type": "object"
+            }
+          },
+          "properties": {
+            "changes": {
+              "$ref": "#/definitions/changes",
+              "description": "Object containing details of vulnerabilities remediated",
+              "order": 2,
+              "title": "changes"
+            },
+            "id": {
+              "description": "Asset ID",
+              "order": 3,
+              "title": "id",
+              "type": "string"
+            },
+            "summary": {
+              "$ref": "#/definitions/summary",
+              "description": "Object containing details of asset found",
+              "order": 1,
+              "title": "summary"
+            }
+          },
+          "type": "object"
+        },
+        "tags": [],
+        "type": "trigger_api_vm_webhook"
+      }
+    ]
+  }
+}
