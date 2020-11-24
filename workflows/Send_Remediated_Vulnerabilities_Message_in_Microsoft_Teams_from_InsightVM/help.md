@@ -51,6 +51,7 @@ Experiencing delays? InsightVM Events are delivered to InsightConnect from Insig
 
 # Version History
 
+* 1.0.1 - Fix quote issue in spec file
 * 1.0.0 - Initial workflow
 
 # Links
