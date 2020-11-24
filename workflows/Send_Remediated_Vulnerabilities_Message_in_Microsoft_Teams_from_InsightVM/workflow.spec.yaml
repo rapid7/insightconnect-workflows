@@ -1,5 +1,5 @@
 extension: workflow
-products: ["insightconnect", “insightvm”]
+products: ["insightconnect", "insightvm"]
 name: Send_Remediated_Vulnerabilities_Message_in_Microsoft_Teams_from_InsightVM
 title: Send Remediated Vulnerabilities Message in Microsoft Teams from InsightVM
 description: This workflow sends a message in Microsoft Teams when vulnerabilities are remediated in InsightVM.
@@ -20,7 +20,7 @@ resources:
     - name: workflow1.png
       title: Workflow Builder View
     - name: workflow2.png
-      title: Workflow Builder View - Loop Step
+      title: Workflow Loop Step
     - name: job.png
       title: Successful Workflow Job
     - name: test.png
