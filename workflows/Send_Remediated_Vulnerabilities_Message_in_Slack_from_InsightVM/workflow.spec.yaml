@@ -1,5 +1,5 @@
 extension: workflow
-products: ["insightconnect", “insightvm”]
+products: ["insightconnect", "insightvm"]
 name: Send_Remediated_Vulnerabilities_Message_in_Slack_from_InsightVM
 title: Send Remediated Vulnerabilities Message in Slack from InsightVM
 description: This workflow sends a message in Slack when vulnerabilities are remediated in InsightVM.
