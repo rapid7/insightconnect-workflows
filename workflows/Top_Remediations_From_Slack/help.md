@@ -60,7 +60,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
-* 1.1.2 - Updated plugins and documentation
+* 1.1.2 - Updated documentation, and plugins to the latest version
 * 1.1.1 - Updated spec files
 * 1.1.0 - Workflow updated to support different types (asset, group, site, or tag). Updated documentation.
 * 1.0.0 - Initial workflow
