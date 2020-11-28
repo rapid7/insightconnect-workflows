@@ -49,7 +49,7 @@ Plugins utilized by workflow:
 |Rapid7 InsightVM|4.8.1|2|
 |Microsoft Teams|3.1.0|5|
 |HTML|1.2.2|1|
-|Type Converter|1.6.0|2|
+|Type Converter|1.6.0|1|
 
 ## Troubleshooting
 
