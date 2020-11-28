@@ -2,6 +2,10 @@
 
 Lookup the top 10 remediation steps from InsightVM for a given host, asset group, site, or tag from a Slack message. The workflow returns the top 10 remediation steps for the specified entity in a Slack thread, making it easy to identify top risk-reducing actions and share with your team in Slack!
 
+Sample Slack command:
+
+`top-remediations asset hostname123`
+
 # Key Features
 
 * Lookup the top risk-reducing remediation steps for any InsightVM asset, asset group, site, or tag
@@ -47,8 +51,8 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Rapid7 InsightVM|4.0.0|5|
-|Type Converter|1.5.1|1|
+|Rapid7 InsightVM|4.8.1|5|
+|Type Converter|1.6.0|1|
 
 ## Troubleshooting
 
@@ -56,6 +60,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.1.2 - Updated plugins and documentation
 * 1.1.1 - Updated spec files
 * 1.1.0 - Workflow updated to support different types (asset, group, site, or tag). Updated documentation.
 * 1.0.0 - Initial workflow

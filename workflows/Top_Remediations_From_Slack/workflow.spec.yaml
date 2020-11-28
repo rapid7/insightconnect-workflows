@@ -3,7 +3,7 @@ products: ["insightconnect", "insightvm"]
 name: Top_Remediations_From_Slack
 title: "Lookup Top Remediations with InsightVM from Slack"
 description: Lookup and receive the top 10 remediation steps from InsightVM for a given host, asset group, site, or tag from a Slack message.
-version: 1.1.1
+version: 1.1.2
 vendor: rapid7
 support: rapid7
 status: []
