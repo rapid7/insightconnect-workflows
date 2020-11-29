@@ -1,9 +1,9 @@
 extension: workflow
 products: ["insightconnect", "insightidr"]
 name: Malicious_Hash_Remediation_with_Cb_Response
-title: "Malicious Hash Remediation with Cb Response"
-description: "This workflow triggers off of InsightIDR's Malicious Hash on Asset alerts and does a lookup of the hash with Team Cymru before banning it with Cb Response"
-version: 1.0.1
+title: Malicious Hash Remediation with Cb Response
+description: This workflow triggers off of InsightIDR's Malicious Hash on Asset alerts and does a lookup of the hash with Team Cymru before banning it with Cb Response.
+version: 1.0.2
 vendor: rapid7
 support: rapid7
 status: []
@@ -15,9 +15,13 @@ resources:
   source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Malicious_Hash_Remediation_with_Cb_Response
   license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
   screenshots:
+  - name: workflow1.png
+    title: Workflow View
+  - name: workflow2.png
+    title: Workflow Loop View
   - name: slack1.png
     title: Slack Prompt
   - name: slack2.png
     title: Slack Prompt Response
-  - name: workflow1.png
-    title: Workflow View
+  - name: artifact.png
+    title: Successful Workflow Artifact
