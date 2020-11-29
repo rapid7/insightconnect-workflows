@@ -8,7 +8,7 @@
         "name": "Malicious Hash Remediation with Cb Response",
         "type": "runnable",
         "version": "",
-        "description": "",
+        "description": "This workflow triggers off of InsightIDR's Malicious Hash on Asset alerts and does a lookup of the hash with Team Cymru before banning it with Cb Response",
         "graph": {
           "edges": {
             "01d92548-f642-4ca9-b613-7f0da06e4607": {
