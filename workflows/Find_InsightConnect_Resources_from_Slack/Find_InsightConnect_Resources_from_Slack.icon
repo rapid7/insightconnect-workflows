@@ -704,7 +704,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "matchChannel": "",
+                "matchChannel": "change_me",
                 "matchText": "icon-start|icon-help",
                 "type": "any"
               }
