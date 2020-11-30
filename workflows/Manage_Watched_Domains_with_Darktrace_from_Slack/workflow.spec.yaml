@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Manage_Watched_Domains_with_Darktrace_from_Slack
 title: Manage Watched Domains with Darktrace from Slack
 description: Add or remove domains and IP addresses in the Darktrace watched domains list from Slack.
-version: 1.0.0
+version: 1.0.1
 vendor: rapid7
 support: rapid7
 status: []

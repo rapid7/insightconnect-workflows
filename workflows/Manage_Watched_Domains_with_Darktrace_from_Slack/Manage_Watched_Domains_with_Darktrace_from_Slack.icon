@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.61.3-0-g16082",
-    "komFileVersion": "1.0.0",
-    "exportedAt": "2020-09-22T18:06:11.08364593Z",
+    "komandVersion": "1.69.2-0-gaf0d9",
+    "komFileVersion": "2.0.0",
+    "exportedAt": "2020-11-30T16:42:13.198276739Z",
     "workflowVersions": [
       {
         "name": "Manage Watched Domains with Darktrace from Slack",
@@ -698,14 +698,14 @@
             "name": "Add Watched Domains",
             "type": "action",
             "plugin": {
-              "name": "DarkTrace",
+              "name": "Darktrace",
               "slugVendor": "rapid7",
               "slugName": "darktrace",
-              "slugVersion": "1.1.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/darktrace/1.1.0/icon.png"
+              "slugVersion": "2.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/darktrace/2.0.1/icon.png"
             },
             "identifier": "update_watched_domains",
-            "continueOnFailure": false,
+            "continueOnFailure": true,
             "isDisabled": false,
             "isCloud": false,
             "parameters": {
@@ -958,11 +958,11 @@
             "name": "Remove Watched Domains",
             "type": "action",
             "plugin": {
-              "name": "DarkTrace",
+              "name": "Darktrace",
               "slugVendor": "rapid7",
               "slugName": "darktrace",
-              "slugVersion": "1.1.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/darktrace/1.1.0/icon.png"
+              "slugVersion": "2.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/darktrace/2.0.1/icon.png"
             },
             "identifier": "update_watched_domains",
             "continueOnFailure": true,
@@ -1222,7 +1222,7 @@
                 "type": "any"
               }
             },
-            "triggerId": "281581e6-2d6b-4933-bca8-3e4894a0739f",
+            "triggerId": "4e1db22d-5853-4017-a8fb-0811858c8420",
             "defaultInputJSONSchema": {
               "properties": {
                 "matchChannel": {
@@ -1307,20 +1307,20 @@
                       "items": {
                         "type": "string"
                       },
-                      "order": 3,
+                      "order": 4,
                       "title": "Email Addresses",
                       "type": "array"
                     },
                     "hashes": {
                       "$ref": "#/definitions/hashes",
                       "description": "Hashes found within the message",
-                      "order": 4,
+                      "order": 5,
                       "title": "Hashes"
                     },
                     "ip_addresses": {
                       "$ref": "#/definitions/ip_addresses",
                       "description": "IP addresses found within the message",
-                      "order": 6,
+                      "order": 7,
                       "title": "IP Addresses"
                     },
                     "mac_addresses": {
@@ -1328,8 +1328,17 @@
                       "items": {
                         "type": "string"
                       },
-                      "order": 5,
+                      "order": 6,
                       "title": "MAC Addresses",
+                      "type": "array"
+                    },
+                    "parent_domains": {
+                      "description": "Parent domains found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "Parent Domains",
                       "type": "array"
                     },
                     "urls": {
@@ -1337,7 +1346,7 @@
                       "items": {
                         "type": "string"
                       },
-                      "order": 2,
+                      "order": 3,
                       "title": "URLs",
                       "type": "array"
                     }
@@ -1392,7 +1401,7 @@
                     "indicators": {
                       "$ref": "#/definitions/indicators",
                       "description": "Potential threat indicators found within the message",
-                      "order": 6,
+                      "order": 7,
                       "title": "Indicators"
                     },
                     "text": {
@@ -1418,6 +1427,15 @@
                       "order": 2,
                       "title": "User ID",
                       "type": "string"
+                    },
+                    "words": {
+                      "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 6,
+                      "title": "Words",
+                      "type": "array"
                     }
                   },
                   "title": "Message",
@@ -1485,7 +1503,7 @@
     ],
     "triggers": [
       {
-        "id": "281581e6-2d6b-4933-bca8-3e4894a0739f",
+        "id": "4e1db22d-5853-4017-a8fb-0811858c8420",
         "name": "Check Host Message Received",
         "description": "",
         "input": {
@@ -1577,20 +1595,20 @@
                   "items": {
                     "type": "string"
                   },
-                  "order": 3,
+                  "order": 4,
                   "title": "Email Addresses",
                   "type": "array"
                 },
                 "hashes": {
                   "$ref": "#/definitions/hashes",
                   "description": "Hashes found within the message",
-                  "order": 4,
+                  "order": 5,
                   "title": "Hashes"
                 },
                 "ip_addresses": {
                   "$ref": "#/definitions/ip_addresses",
                   "description": "IP addresses found within the message",
-                  "order": 6,
+                  "order": 7,
                   "title": "IP Addresses"
                 },
                 "mac_addresses": {
@@ -1598,8 +1616,17 @@
                   "items": {
                     "type": "string"
                   },
-                  "order": 5,
+                  "order": 6,
                   "title": "MAC Addresses",
+                  "type": "array"
+                },
+                "parent_domains": {
+                  "description": "Parent domains found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "Parent Domains",
                   "type": "array"
                 },
                 "urls": {
@@ -1607,7 +1634,7 @@
                   "items": {
                     "type": "string"
                   },
-                  "order": 2,
+                  "order": 3,
                   "title": "URLs",
                   "type": "array"
                 }
@@ -1662,7 +1689,7 @@
                 "indicators": {
                   "$ref": "#/definitions/indicators",
                   "description": "Potential threat indicators found within the message",
-                  "order": 6,
+                  "order": 7,
                   "title": "Indicators"
                 },
                 "text": {
@@ -1688,6 +1715,15 @@
                   "order": 2,
                   "title": "User ID",
                   "type": "string"
+                },
+                "words": {
+                  "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 6,
+                  "title": "Words",
+                  "type": "array"
                 }
               },
               "title": "Message",
