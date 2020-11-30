@@ -1369,7 +1369,7 @@
         "name": "Slack Trigger",
         "description": "@Rapid7 InsightConnect icon-start; or\n@Rapid7 InsightConnect icon-help",
         "input": {
-          "matchChannel": "",
+          "matchChannel": "change_me",
           "matchText": "icon-start|icon-help",
           "type": "any"
         },
