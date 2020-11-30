@@ -24,7 +24,7 @@ Follow the [Configure Slack for ChatOps](https://docs.rapid7.com/insightconnect/
 
 _This workflow will trigger in any direct messages to the InsightConnect app, or any message in a channel directed @ the InsightConnect app. The app must first be invited to the channel in order to trigger the workflow this way._
 
-To run the workflow, send a direct message to your InsightConnect Slack app or @ the app in a channel starting with the command `icon-start`.
+To run the workflow, send a direct message to your InsightConnect Slack app or @ the app in a channel starting with the command `icon-start` for example `@Rapid7 InsightConnect icon-start` or `@Rapid7 InsightConnect icon-help` to follow along with the interactive Slack buttons to find the resources best for your needs.
 
 For example, in a direct message with the InsightConnect app:
 
