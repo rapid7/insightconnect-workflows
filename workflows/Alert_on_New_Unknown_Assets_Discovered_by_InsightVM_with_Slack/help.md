@@ -29,7 +29,7 @@ Once the workflow has been imported, open the workflow, and view the `Asset Foun
 
 After subscribing to the asset found webhook event, return to the workflow editor, and open the `Find Hostname` step. In the “Search Base” field, enter the appropriate Search Base for your domain. For example, if your domain is `acme.com` then the Search Base would be `DC=acme,DC=com`. Save your changes.
 
-Finally, open the `Send Warning to Slack` step. Change the `#change_me    ` input for the channel name, replacing it with the name of a channel where you would like to receive unknown Windows device notifications. Save your changes.
+Finally, open the `Send Warning to Slack` step. Change the `#change_me` input for the channel name, replacing it with the name of a channel where you would like to receive unknown Windows device notifications. Save your changes.
 
 Once you’ve subscribed to the InsightVM webhook event, updated the Active Directory search base, and changed the Slack channel name, your workflow is ready to be activated!
 
