@@ -2,6 +2,12 @@
 
 Search InsightVM for hosts with a particular vulnerability present directly from Slack. Receive a summary of the vulnerability and all affected assets in a thread.
 
+Sample Slack command:
+
+`lookup-vuln-hosts <vulnerability>`
+
+`lookup-vuln-hosts CVE-2019-0708`
+
 # Key Features
 
 * Identify vulnerable hosts
@@ -18,15 +24,23 @@ Search InsightVM for hosts with a particular vulnerability present directly from
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-After import, activate the workflow in order to trigger it.
+Once the workflow has been imported, **first Slack step will need the channel name updated to suit your Slack environment!** Edit the input with the preset text of `change_me` in first Slack step in the workflow. There is also a Settings step which can be edited to change the maximum number of vulnerabilities and maximum hosts listed per vulnerability which are returned. The defaults are 50 vulnerabilities and 10 assets per vulnerability.
 
-There is a settings step which can be edited to change the maximum number of vulnerabilities and maximum hosts listed per vulnerability which are returned.  The defaults are 50 vulnerabilities and 10 assets per vulnerability.
+After configuring the Slack and Setting steps, activate the workflow in order to trigger it.
 
 ### Usage
 
 *This workflow will trigger in any direct messages to your Chatbot **or** any message in a channel directed @ your Chatbot. Note the Chatbot must be in the channel in order to trigger the workflow this way.*
 
 To run the workflow, send a direct message to your InsightConnect Slack Chatbot or @ your Chatbot in a public channel starting with the command `lookup-vuln-hosts`.
+
+Commands should be in the following format: `lookup-vuln-hosts <vulnerability>`
+
+`<vulnerability>` in the command can be any InsightVM vulnerability reference including the following:
+* KB Number
+* CVE ID
+* Nexpose ID
+* Other references InsightVM knows
 
 For example, in a direct message to your Chatbot:
 * `lookup-vuln-hosts bluekeep`
@@ -44,8 +58,8 @@ Plugins utilized by workflow:
 |----|----|--------|
 |CSV|1.1.5|1|
 |Rapid7 Vulnerability & Exploit Database|2.0.3|1|
-|Type Converter|1.5.1|3|
-|Rapid7 InsightVM|4.0.0|5|
+|Type Converter|1.6.0|3|
+|Rapid7 InsightVM|4.8.1|5|
 
 ## Troubleshooting
 
@@ -53,6 +67,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.1.0 - Use the automatic extraction functionality instead of 'Pattern Match' step to extract a vulnerability | Improve workflow messaging | Improve documentation | Update screenshots | Update Rapid7 InsightVM to version 4.8.1 | Update Type Converter to version 1.6.0
 * 1.0.0 - Initial workflow
 
 # Links

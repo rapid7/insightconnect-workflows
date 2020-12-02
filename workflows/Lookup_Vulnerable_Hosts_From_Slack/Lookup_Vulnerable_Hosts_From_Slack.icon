@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.51.0-0-ge64bd",
+    "komandVersion": "1.69.2-0-gaf0d9",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-05-27T18:50:18.303917349Z",
+    "exportedAt": "2020-11-27T09:11:50.017531847Z",
     "workflowVersions": [
       {
         "name": "Lookup Vulnerable Hosts from Slack",
@@ -59,14 +59,6 @@
               "fromNodeId": "c760fe51-5590-4129-949f-6caff63ef3b6",
               "toNodeId": "2da85341-69e4-4009-a565-f5206e4a957b"
             },
-            "1c6ca850-5c1d-44bf-becb-a8955e67513f": {
-              "id": "1c6ca850-5c1d-44bf-becb-a8955e67513f",
-              "name": "",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "320f400b-ada3-4f7c-8f57-9b583c6a3b46",
-              "toNodeId": "bbf37066-6157-4c03-b44e-780fb223445d"
-            },
             "1f327e80-c913-4bf4-bb5d-08e6be449b36": {
               "id": "1f327e80-c913-4bf4-bb5d-08e6be449b36",
               "name": "",
@@ -121,7 +113,7 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "24960792-15a3-4df7-b872-d61dc21c4aab",
-              "toNodeId": "ea5a238b-e930-4b91-b8bc-3f6d44ba273b"
+              "toNodeId": "f6c1722f-af46-4ea2-8171-51de7cfaeb13"
             },
             "360a2b6a-8c82-45ce-9b04-26e7edd6747a": {
               "id": "360a2b6a-8c82-45ce-9b04-26e7edd6747a",
@@ -169,7 +161,7 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "a106410d-01bb-4fe6-aebf-4481868efd99",
-              "toNodeId": "320f400b-ada3-4f7c-8f57-9b583c6a3b46"
+              "toNodeId": "bbf37066-6157-4c03-b44e-780fb223445d"
             },
             "599b303e-e117-4e70-814b-c62030bda71b": {
               "id": "599b303e-e117-4e70-814b-c62030bda71b",
@@ -273,7 +265,7 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "7e9c87e4-ba06-40ad-ad26-ea05ec7c10f0",
-              "toNodeId": "da2ea19b-42d4-43a7-90e5-63bddedf8068"
+              "toNodeId": "3b76c3e3-61d0-4358-b2e0-21504a890868"
             },
             "a7556330-e50d-4738-8f9a-253d026a34d9": {
               "id": "a7556330-e50d-4738-8f9a-253d026a34d9",
@@ -290,6 +282,14 @@
               "parentNodeId": "db592e51-daa5-44e6-9084-3439b7f09b85",
               "fromNodeId": "0d3be19c-3f06-4db1-81df-0958ec44ed30",
               "toNodeId": ""
+            },
+            "add624ad-9a88-4442-96d0-d46725c2bb77": {
+              "id": "add624ad-9a88-4442-96d0-d46725c2bb77",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "f6c1722f-af46-4ea2-8171-51de7cfaeb13",
+              "toNodeId": "ea5a238b-e930-4b91-b8bc-3f6d44ba273b"
             },
             "b6efd95f-c8e7-4200-93b8-a16baf5e4e45": {
               "id": "b6efd95f-c8e7-4200-93b8-a16baf5e4e45",
@@ -313,7 +313,7 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "bbf37066-6157-4c03-b44e-780fb223445d",
-              "toNodeId": "581dd5cc-9454-4244-9f73-9f4c92a54eb7"
+              "toNodeId": "05d485d0-0b48-41bb-943e-e589f4126141"
             },
             "c7118104-f71c-4d00-8bde-01c9f5a4ac06": {
               "id": "c7118104-f71c-4d00-8bde-01c9f5a4ac06",
@@ -322,6 +322,14 @@
               "parentNodeId": "",
               "fromNodeId": "9f271d1c-aa6d-425d-97e8-2b45449a2eba",
               "toNodeId": "027079bd-2f07-4a81-802c-9285225031da"
+            },
+            "ca2779af-148d-4a3c-bbf1-09071a01d4ed": {
+              "id": "ca2779af-148d-4a3c-bbf1-09071a01d4ed",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "3b76c3e3-61d0-4358-b2e0-21504a890868",
+              "toNodeId": "da2ea19b-42d4-43a7-90e5-63bddedf8068"
             },
             "da308bf0-3f51-4f1e-977b-af9f4070a0cc": {
               "id": "da308bf0-3f51-4f1e-977b-af9f4070a0cc",
@@ -354,6 +362,14 @@
               "parentNodeId": "",
               "fromNodeId": "ea5a238b-e930-4b91-b8bc-3f6d44ba273b",
               "toNodeId": ""
+            },
+            "fc3655e5-500d-4b49-b067-62749ee842c4": {
+              "id": "fc3655e5-500d-4b49-b067-62749ee842c4",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "05d485d0-0b48-41bb-943e-e589f4126141",
+              "toNodeId": "581dd5cc-9454-4244-9f73-9f4c92a54eb7"
             }
           },
           "nodes": {
@@ -363,6 +379,10 @@
             },
             "053214d3-42db-45b5-a31b-8e1b0d349a47": {
               "id": "053214d3-42db-45b5-a31b-8e1b0d349a47",
+              "parentNodeId": ""
+            },
+            "05d485d0-0b48-41bb-943e-e589f4126141": {
+              "id": "05d485d0-0b48-41bb-943e-e589f4126141",
               "parentNodeId": ""
             },
             "0d368b5b-d7d0-4041-be73-b1db53a3895a": {
@@ -381,8 +401,8 @@
               "id": "2da85341-69e4-4009-a565-f5206e4a957b",
               "parentNodeId": "7e9c87e4-ba06-40ad-ad26-ea05ec7c10f0"
             },
-            "320f400b-ada3-4f7c-8f57-9b583c6a3b46": {
-              "id": "320f400b-ada3-4f7c-8f57-9b583c6a3b46",
+            "3b76c3e3-61d0-4358-b2e0-21504a890868": {
+              "id": "3b76c3e3-61d0-4358-b2e0-21504a890868",
               "parentNodeId": ""
             },
             "3f6935b0-fd23-4af2-8c9f-8d488b967a1f": {
@@ -485,6 +505,10 @@
               "id": "f5e695d1-3626-4610-842d-bf80da0f7f1b",
               "parentNodeId": ""
             },
+            "f6c1722f-af46-4ea2-8171-51de7cfaeb13": {
+              "id": "f6c1722f-af46-4ea2-8171-51de7cfaeb13",
+              "parentNodeId": ""
+            },
             "fb358b1f-bc73-40fb-94bd-e8cc542b1a1f": {
               "id": "fb358b1f-bc73-40fb-94bd-e8cc542b1a1f",
               "parentNodeId": "db592e51-daa5-44e6-9084-3439b7f09b85"
@@ -494,7 +518,7 @@
         "steps": {
           "027079bd-2f07-4a81-802c-9285225031da": {
             "nodeId": "027079bd-2f07-4a81-802c-9285225031da",
-            "name": "Did we get too many results?",
+            "name": "Did We Get Too Many Results?",
             "type": "automated_decision",
             "continueOnFailure": false,
             "isDisabled": false,
@@ -538,7 +562,7 @@
           },
           "053214d3-42db-45b5-a31b-8e1b0d349a47": {
             "nodeId": "053214d3-42db-45b5-a31b-8e1b0d349a47",
-            "name": "IDs to Process",
+            "name": "IDs To Process",
             "type": "join",
             "continueOnFailure": false,
             "isDisabled": false,
@@ -596,9 +620,27 @@
             "defaultImageData": "",
             "connectionType": "NONE"
           },
+          "05d485d0-0b48-41bb-943e-e589f4126141": {
+            "nodeId": "05d485d0-0b48-41bb-943e-e589f4126141",
+            "name": "Malformed Command Output",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "The given command is malformed."
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
           "0d368b5b-d7d0-4041-be73-b1db53a3895a": {
             "nodeId": "0d368b5b-d7d0-4041-be73-b1db53a3895a",
-            "name": "Extract Vulnerability IDs from VulnDB",
+            "name": "Extract Vulnerability IDs From VulnDB",
             "type": "loop",
             "continueOnFailure": false,
             "isDisabled": false,
@@ -726,12 +768,13 @@
               "name": "Rapid7 InsightVM",
               "slugVendor": "rapid7",
               "slugName": "rapid7_insightvm",
-              "slugVersion": "4.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/4.0.0/icon.png"
+              "slugVersion": "4.8.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/4.8.1/icon.png"
             },
             "identifier": "get_vulnerability_affected_assets",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "vulnerability_id": "{{[7e9c87e4-ba06-40ad-ad26-ea05ec7c10f0].[$item].[nexpose_id]}}"
@@ -804,44 +847,27 @@
             "defaultImageData": "",
             "connectionType": "CONNECTION"
           },
-          "320f400b-ada3-4f7c-8f57-9b583c6a3b46": {
-            "nodeId": "320f400b-ada3-4f7c-8f57-9b583c6a3b46",
-            "name": "Extract Vulnerability",
-            "type": "pattern_match",
+          "3b76c3e3-61d0-4358-b2e0-21504a890868": {
+            "nodeId": "3b76c3e3-61d0-4358-b2e0-21504a890868",
+            "name": "Success Output",
+            "type": "artifact",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
-              "captureAll": false,
-              "expressionText": "lookup-vuln-hosts\\s+{{vulnerability:/\\S+/}}.*",
-              "expressions": [
-                {
-                  "type": "text",
-                  "value": "lookup-vuln-hosts\\s+"
-                },
-                {
-                  "type": "variable",
-                  "value": {
-                    "ident": "vulnerability",
-                    "regex": "\\S+"
-                  }
-                },
-                {
-                  "type": "text",
-                  "value": ".*"
-                }
-              ],
-              "ignoreCase": true,
-              "input": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[text]}}"
+              "input": {
+                "content": "Lookup Vulnerable Hosts for `{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[words].[1]}}` successfully completed! "
+              },
+              "type": "markdown"
             },
             "defaultInputJSONSchema": null,
             "defaultOutputJSONSchema": null,
             "outputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/pattern-match.svg",
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
             "connectionType": "NONE"
           },
           "3f6935b0-fd23-4af2-8c9f-8d488b967a1f": {
             "nodeId": "3f6935b0-fd23-4af2-8c9f-8d488b967a1f",
-            "name": "Is count 0?",
+            "name": "Is Count 0?",
             "type": "automated_decision",
             "continueOnFailure": false,
             "isDisabled": false,
@@ -958,7 +984,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "*Malformed Command*\nCommand should be:\n!affected-assets <vulnerability>\n\n<vulnerability> in the command can be any InsightVM vulnerability reference including the following:\n* kb number\n* cve\n* nexpose id\n* other references InsightVM knows\n\nIn some cases, the alternate ID will correspond to multiple vulnerabilities in InsightVM.  In this case, results for each vulnerability will be returned separately.",
+                "message": "{{[05d485d0-0b48-41bb-943e-e589f4126141].[content]}}\n\nCommand should be:\nlookup-vuln-hosts <vulnerability>\n\n<vulnerability> in the command can be any InsightVM vulnerability reference including the following:\n* kb number\n* cve\n* nexpose id\n* other references InsightVM knows\n\nIn some cases, the alternate ID will correspond to multiple vulnerabilities in InsightVM.  In this case, results for each vulnerability will be returned separately.\n\nWorkflow Complete.",
                 "recipient": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[channel_id]}}",
                 "thread_ts": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[ts]}}"
               }
@@ -1037,6 +1063,7 @@
             "identifier": "to_json",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "csv": "{{[739f03c2-ff98-4e0a-b1a6-f95f240556a8].[report].[content]}}",
@@ -1196,16 +1223,17 @@
               "name": "Rapid7 InsightVM",
               "slugVendor": "rapid7",
               "slugName": "rapid7_insightvm",
-              "slugVersion": "4.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/4.0.0/icon.png"
+              "slugVersion": "4.8.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/4.8.1/icon.png"
             },
             "identifier": "generate_adhoc_sql_report",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "filters": "{}",
-                "query": "with prep as (select vulnerability_id,lower(reference) as reference from dim_vulnerability_reference)\nselect nexpose_id from prep join dim_vulnerability using (vulnerability_id) where reference=lower('{{[320f400b-ada3-4f7c-8f57-9b583c6a3b46].[vulnerability]}}')",
+                "query": "with prep as (select vulnerability_id,lower(reference) as reference from dim_vulnerability_reference)\nselect nexpose_id from prep join dim_vulnerability using (vulnerability_id) where reference=lower('{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[words].[1]}}')",
                 "scope": "tags",
                 "scope_ids": [
                   1
@@ -1254,8 +1282,8 @@
                 }
               },
               "required": [
-                "query",
-                "scope"
+                "scope",
+                "query"
               ],
               "title": "Variables",
               "type": "object"
@@ -1371,7 +1399,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "Searching for `{{[320f400b-ada3-4f7c-8f57-9b583c6a3b46].[vulnerability]}}` vulnerabilities...",
+                "message": "Searching for `{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[words].[1]}}` vulnerabilities...",
                 "recipient": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[channel_id]}}",
                 "thread_ts": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[ts]}}"
               }
@@ -1468,7 +1496,7 @@
           },
           "9f271d1c-aa6d-425d-97e8-2b45449a2eba": {
             "nodeId": "9f271d1c-aa6d-425d-97e8-2b45449a2eba",
-            "name": "Lookup Vuln in VulnDB",
+            "name": "Lookup Vuln In VulnDB",
             "type": "action",
             "plugin": {
               "name": "Rapid7 Vulnerability & Exploit Database",
@@ -1480,10 +1508,11 @@
             "identifier": "search_db",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "database": "Vulnerability Database",
-                "search": "{{[320f400b-ada3-4f7c-8f57-9b583c6a3b46].[vulnerability]}}"
+                "search": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[words].[1]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -1580,7 +1609,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "Command to run:\n@Rapid7 InsightConnect lookup-vuln-assets <vulnerability>\n\n### Details\n<vulnerability> in the command can be any InsightVM vulnerability reference including the following:\n* KB Number\n* CVE ID\n* Nexpose ID\n* Other references InsightVM knows\n\nIn some cases, the alternate ID will correspond to multiple vulnerabilities InsightVM references.  In this case, the workflow will return results for each vulnerability separately.\n\n## Please note - the Get Vulnerable Assets step is expected to fail when using an alternate identifier or when there are no assets vulnerable to the vulnerability"
+                "content": "Command to run:\n@Rapid7 InsightConnect lookup-vuln-hosts <vulnerability>\n\n### Details\n<vulnerability> in the command can be any InsightVM vulnerability reference including the following:\n* KB Number\n* CVE ID\n* Nexpose ID\n* Other references InsightVM knows\n\nIn some cases, the alternate ID will correspond to multiple vulnerabilities InsightVM references.  In this case, the workflow will return results for each vulnerability separately.\n\n## Please note - the Get Vulnerable Assets step is expected to fail when using an alternate identifier or when there are no assets vulnerable to the vulnerability"
               },
               "type": "markdown"
             },
@@ -1598,15 +1627,16 @@
               "name": "Rapid7 InsightVM",
               "slugVendor": "rapid7",
               "slugName": "rapid7_insightvm",
-              "slugVersion": "4.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/4.0.0/icon.png"
+              "slugVersion": "4.8.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/4.8.1/icon.png"
             },
             "identifier": "get_vulnerability_affected_assets",
             "continueOnFailure": true,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
-                "vulnerability_id": "{{[320f400b-ada3-4f7c-8f57-9b583c6a3b46].[vulnerability]}}"
+                "vulnerability_id": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[words].[1]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -1678,19 +1708,19 @@
           },
           "aba0b6ae-4529-4827-a085-aeb46aa6affe": {
             "nodeId": "aba0b6ae-4529-4827-a085-aeb46aa6affe",
-            "name": "lookup-vuln-hosts Trigger",
+            "name": "Lookup Vulnerable Hosts Trigger",
             "description": "Trigger this workflow using the lookup-vuln-hosts command:\n\nlookup-vuln-hosts bluekeep\nlookup-vuln-hosts CVE-2019-0708",
             "type": "trigger",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "input": {
-                "matchChannel": "",
+                "matchChannel": "change_me",
                 "matchText": "lookup-vuln-hosts\\s+\\S+",
                 "type": "any"
               }
             },
-            "triggerId": "be95e214-5649-4ff2-8b1f-090b3a81c36f",
+            "triggerId": "f7f9066f-2e62-4650-ac04-fdf583833751",
             "defaultInputJSONSchema": {
               "properties": {
                 "matchChannel": {
@@ -1726,6 +1756,126 @@
             },
             "defaultOutputJSONSchema": {
               "definitions": {
+                "hashes": {
+                  "properties": {
+                    "md5_hashes": {
+                      "description": "MD5 hashes found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 1,
+                      "title": "MD5 Hashes",
+                      "type": "array"
+                    },
+                    "sha1_hashes": {
+                      "description": "SHA1 hashes found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "SHA1 Hashes",
+                      "type": "array"
+                    },
+                    "sha256_hashes": {
+                      "description": "SHA256 hashes found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 3,
+                      "title": "SHA256 Hashes",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Hashes",
+                  "type": "object"
+                },
+                "indicators": {
+                  "properties": {
+                    "domains": {
+                      "description": "Domains found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 1,
+                      "title": "Domains",
+                      "type": "array"
+                    },
+                    "email_addresses": {
+                      "description": "Email addresses found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 4,
+                      "title": "Email Addresses",
+                      "type": "array"
+                    },
+                    "hashes": {
+                      "$ref": "#/definitions/hashes",
+                      "description": "Hashes found within the message",
+                      "order": 5,
+                      "title": "Hashes"
+                    },
+                    "ip_addresses": {
+                      "$ref": "#/definitions/ip_addresses",
+                      "description": "IP addresses found within the message",
+                      "order": 7,
+                      "title": "IP Addresses"
+                    },
+                    "mac_addresses": {
+                      "description": "MAC addresses found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 6,
+                      "title": "MAC Addresses",
+                      "type": "array"
+                    },
+                    "parent_domains": {
+                      "description": "Parent domains found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "Parent Domains",
+                      "type": "array"
+                    },
+                    "urls": {
+                      "description": "URLs found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 3,
+                      "title": "URLs",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Indicators",
+                  "type": "object"
+                },
+                "ip_addresses": {
+                  "properties": {
+                    "ipv4_addresses": {
+                      "description": "IPv4 addresses found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 1,
+                      "title": "IPv4 Addresses",
+                      "type": "array"
+                    },
+                    "ipv6_addresses": {
+                      "description": "IPv6 addresses found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "IPv6 Addresses",
+                      "type": "array"
+                    }
+                  },
+                  "title": "IP Addresses",
+                  "type": "object"
+                },
                 "message": {
                   "properties": {
                     "channel": {
@@ -1739,6 +1889,18 @@
                       "order": 4,
                       "title": "Channel ID",
                       "type": "string"
+                    },
+                    "first_word": {
+                      "description": "First word of the message, for example a chat command (ignoring mentions)",
+                      "order": 5,
+                      "title": "First Word",
+                      "type": "string"
+                    },
+                    "indicators": {
+                      "$ref": "#/definitions/indicators",
+                      "description": "Potential threat indicators found within the message",
+                      "order": 7,
+                      "title": "Indicators"
                     },
                     "text": {
                       "description": "Text",
@@ -1763,6 +1925,15 @@
                       "order": 2,
                       "title": "User ID",
                       "type": "string"
+                    },
+                    "words": {
+                      "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 6,
+                      "title": "Words",
+                      "type": "array"
                     }
                   },
                   "title": "Message",
@@ -1806,7 +1977,7 @@
           },
           "b10fffe3-10c1-43fe-86cb-1d089e261ec8": {
             "nodeId": "b10fffe3-10c1-43fe-86cb-1d089e261ec8",
-            "name": "count",
+            "name": "Count",
             "type": "loop",
             "continueOnFailure": false,
             "isDisabled": false,
@@ -1864,10 +2035,10 @@
                 {
                   "edgeId": "b6efd95f-c8e7-4200-93b8-a16baf5e4e45",
                   "expression": {
-                    "name": "320f400b-ada3-4f7c-8f57-9b583c6a3b46.$matched",
+                    "name": "aba0b6ae-4529-4827-a085-aeb46aa6affe.message.words.1",
                     "type": "variable"
                   },
-                  "expressionText": "{{[320f400b-ada3-4f7c-8f57-9b583c6a3b46].[$matched]}}"
+                  "expressionText": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[words].[1]}}"
                 },
                 {
                   "edgeId": "ba5a8004-0d56-429a-9f01-067d529f8703",
@@ -1890,12 +2061,13 @@
               "name": "Rapid7 InsightVM",
               "slugVendor": "rapid7",
               "slugName": "rapid7_insightvm",
-              "slugVersion": "4.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/4.0.0/icon.png"
+              "slugVersion": "4.8.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/4.8.1/icon.png"
             },
             "identifier": "get_vulnerability",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "id": "{{[7e9c87e4-ba06-40ad-ad26-ea05ec7c10f0].[$item].[nexpose_id]}}"
@@ -2323,7 +2495,7 @@
           },
           "cef2135a-e641-4c80-8a7b-a0cf5fc464e0": {
             "nodeId": "cef2135a-e641-4c80-8a7b-a0cf5fc464e0",
-            "name": "Vulnerability Found with Alternate Identifiers?",
+            "name": "Vulnerability Found With Alternate Identifiers?",
             "type": "automated_decision",
             "continueOnFailure": false,
             "isDisabled": false,
@@ -2374,7 +2546,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "Workflow Complete. See details in InsightConnect here:\n{{[$job].[URL]}}",
+                "message": "{{[3b76c3e3-61d0-4358-b2e0-21504a890868].[content]}}\n\nWorkflow Complete. See details in InsightConnect here:\n{{[$job].[URL]}}",
                 "recipient": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[channel_id]}}",
                 "thread_ts": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[ts]}}"
               }
@@ -2447,12 +2619,13 @@
               "name": "Type Converter",
               "slugVendor": "rapid7",
               "slugName": "type_converter",
-              "slugVersion": "1.5.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/type_converter/1.5.1/icon.png"
+              "slugVersion": "1.6.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/type_converter/1.6.0/icon.png"
             },
             "identifier": "string_to_object",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "input": "{\"nexpose_id\":\"{{[0d368b5b-d7d0-4041-be73-b1db53a3895a].[$item].[identifier]}}\"}"
@@ -2535,21 +2708,22 @@
           },
           "e19ba80b-5d1a-4646-bcdb-3844a9dd04cf": {
             "nodeId": "e19ba80b-5d1a-4646-bcdb-3844a9dd04cf",
-            "name": "make string",
+            "name": "Make String",
             "type": "action",
             "plugin": {
               "name": "Type Converter",
               "slugVendor": "rapid7",
               "slugName": "type_converter",
-              "slugVersion": "1.5.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/type_converter/1.5.1/icon.png"
+              "slugVersion": "1.6.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/type_converter/1.6.0/icon.png"
             },
             "identifier": "string_to_object",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
-                "input": "{\"array\":[{\"nexpose_id\":\"{{[320f400b-ada3-4f7c-8f57-9b583c6a3b46].[vulnerability]}}\"}]}"
+                "input": "{\"array\":[{\"nexpose_id\":\"{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[words].[1]}}\"}]}"
               }
             },
             "defaultInputJSONSchema": {
@@ -2627,12 +2801,13 @@
               "name": "Type Converter",
               "slugVendor": "rapid7",
               "slugName": "type_converter",
-              "slugVersion": "1.5.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/type_converter/1.5.1/icon.png"
+              "slugVersion": "1.6.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/type_converter/1.6.0/icon.png"
             },
             "identifier": "string_to_object",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "input": "{\"max hosts\":10,\"max vulnerabilities\":50}"
@@ -2705,7 +2880,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "_ Your query did not return any vulnerabilities - even in the Rapid7 VulnDB available at <https://www.rapid7.com/db|Rapid7 VulnDB> _",
+                "message": "{{[f6c1722f-af46-4ea2-8171-51de7cfaeb13].[content]}}\n\n_ Your query did not return any vulnerabilities - even in the Rapid7 VulnDB available at <https://www.rapid7.com/db|Rapid7 VulnDB> _\n\nWorkflow Complete.",
                 "recipient": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[channel_id]}}",
                 "thread_ts": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[ts]}}"
               }
@@ -2779,7 +2954,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "_Your search for vulnerability {{[320f400b-ada3-4f7c-8f57-9b583c6a3b46].[vulnerability]}} is too broad and returned more than {{[e2a8436f-da58-4b85-9173-fd294bfb057d].[output].[max vulnerabilities]}} vulnerabilities.  Please try a narrower search.  Here is a search your may find helpful: <https://www.rapid7.com/db/?q={{[320f400b-ada3-4f7c-8f57-9b583c6a3b46].[vulnerability]}}&type=nexpose|Rapid7 VulnDB Search> _",
+                "message": "_Your search for vulnerability {{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[words].[1]}} is too broad and returned more than {{[e2a8436f-da58-4b85-9173-fd294bfb057d].[output].[max vulnerabilities]}} vulnerabilities.  Please try a narrower search.  Here is a search your may find helpful: <https://www.rapid7.com/db/?q={{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[words].[1]}}&type=nexpose|Rapid7 VulnDB Search> _",
                 "recipient": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[channel_id]}}",
                 "thread_ts": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[ts]}}"
               }
@@ -2844,6 +3019,24 @@
             "chatOpsAppName": "slack",
             "chatOpsIdentifier": "post_message"
           },
+          "f6c1722f-af46-4ea2-8171-51de7cfaeb13": {
+            "nodeId": "f6c1722f-af46-4ea2-8171-51de7cfaeb13",
+            "name": "Not Found Output",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "Vulnerable Hosts for `{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[words].[1]}}` not found."
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
           "fb358b1f-bc73-40fb-94bd-e8cc542b1a1f": {
             "nodeId": "fb358b1f-bc73-40fb-94bd-e8cc542b1a1f",
             "name": "Asset Information",
@@ -2852,12 +3045,13 @@
               "name": "Rapid7 InsightVM",
               "slugVendor": "rapid7",
               "slugName": "rapid7_insightvm",
-              "slugVersion": "4.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/4.0.0/icon.png"
+              "slugVersion": "4.8.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/4.8.1/icon.png"
             },
             "identifier": "get_asset",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "id": "{{[db592e51-daa5-44e6-9084-3439b7f09b85].[$item]}}"
@@ -3761,11 +3955,11 @@
     ],
     "triggers": [
       {
-        "id": "be95e214-5649-4ff2-8b1f-090b3a81c36f",
-        "name": "lookup-vuln-hosts Trigger",
+        "id": "f7f9066f-2e62-4650-ac04-fdf583833751",
+        "name": "Lookup Vulnerable Hosts Trigger",
         "description": "Trigger this workflow using the lookup-vuln-hosts command:\n\nlookup-vuln-hosts bluekeep\nlookup-vuln-hosts CVE-2019-0708",
         "input": {
-          "matchChannel": "",
+          "matchChannel": "change_me",
           "matchText": "lookup-vuln-hosts\\s+\\S+",
           "type": "any"
         },
@@ -3804,6 +3998,126 @@
         },
         "outputJsonSchema": {
           "definitions": {
+            "hashes": {
+              "properties": {
+                "md5_hashes": {
+                  "description": "MD5 hashes found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "MD5 Hashes",
+                  "type": "array"
+                },
+                "sha1_hashes": {
+                  "description": "SHA1 hashes found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "SHA1 Hashes",
+                  "type": "array"
+                },
+                "sha256_hashes": {
+                  "description": "SHA256 hashes found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 3,
+                  "title": "SHA256 Hashes",
+                  "type": "array"
+                }
+              },
+              "title": "Hashes",
+              "type": "object"
+            },
+            "indicators": {
+              "properties": {
+                "domains": {
+                  "description": "Domains found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "Domains",
+                  "type": "array"
+                },
+                "email_addresses": {
+                  "description": "Email addresses found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 4,
+                  "title": "Email Addresses",
+                  "type": "array"
+                },
+                "hashes": {
+                  "$ref": "#/definitions/hashes",
+                  "description": "Hashes found within the message",
+                  "order": 5,
+                  "title": "Hashes"
+                },
+                "ip_addresses": {
+                  "$ref": "#/definitions/ip_addresses",
+                  "description": "IP addresses found within the message",
+                  "order": 7,
+                  "title": "IP Addresses"
+                },
+                "mac_addresses": {
+                  "description": "MAC addresses found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 6,
+                  "title": "MAC Addresses",
+                  "type": "array"
+                },
+                "parent_domains": {
+                  "description": "Parent domains found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "Parent Domains",
+                  "type": "array"
+                },
+                "urls": {
+                  "description": "URLs found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 3,
+                  "title": "URLs",
+                  "type": "array"
+                }
+              },
+              "title": "Indicators",
+              "type": "object"
+            },
+            "ip_addresses": {
+              "properties": {
+                "ipv4_addresses": {
+                  "description": "IPv4 addresses found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "IPv4 Addresses",
+                  "type": "array"
+                },
+                "ipv6_addresses": {
+                  "description": "IPv6 addresses found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "IPv6 Addresses",
+                  "type": "array"
+                }
+              },
+              "title": "IP Addresses",
+              "type": "object"
+            },
             "message": {
               "properties": {
                 "channel": {
@@ -3817,6 +4131,18 @@
                   "order": 4,
                   "title": "Channel ID",
                   "type": "string"
+                },
+                "first_word": {
+                  "description": "First word of the message, for example a chat command (ignoring mentions)",
+                  "order": 5,
+                  "title": "First Word",
+                  "type": "string"
+                },
+                "indicators": {
+                  "$ref": "#/definitions/indicators",
+                  "description": "Potential threat indicators found within the message",
+                  "order": 7,
+                  "title": "Indicators"
                 },
                 "text": {
                   "description": "Text",
@@ -3841,6 +4167,15 @@
                   "order": 2,
                   "title": "User ID",
                   "type": "string"
+                },
+                "words": {
+                  "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 6,
+                  "title": "Words",
+                  "type": "array"
                 }
               },
               "title": "Message",
