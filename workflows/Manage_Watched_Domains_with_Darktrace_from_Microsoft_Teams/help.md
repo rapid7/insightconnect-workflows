@@ -6,9 +6,9 @@ Multiple hosts can be specified in one command.
 
 Sample Microsoft Teams Trigger Commands:
 
-`!add-domain 1.1.1.1 google.com`
+`!add-host 1.1.1.1 google.com`
 
-`!remove-domain rapid7.com`
+`!remove-host rapid7.com`
 
 # Key Features
 

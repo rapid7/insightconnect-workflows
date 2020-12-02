@@ -6,9 +6,9 @@ Multiple hosts can be specified in one command.
 
 Sample Slack Trigger Commands:
 
-`@Rapid7 InsightConnect add-domain 1.1.1.1 google.com`
+`@Rapid7 InsightConnect add-host 1.1.1.1 google.com`
 
-`@Rapid7 InsightConnect remove-domain rapid7.com`
+`@Rapid7 InsightConnect remove-host rapid7.com`
 
 # Key Features
 
