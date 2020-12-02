@@ -62,8 +62,8 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Microsoft Office 365 Email|4.1.1|3|
-|Python 3 Script|2.0.1|2|
+|Microsoft Office 365 Email|5.0.0|3|
+|Python 3 Script|2.0.2|2|
 
 ## Troubleshooting
 
@@ -71,6 +71,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.7 - Fix bug with incorrect email address extraction when using command message directed to Chatbot in the channel | Fix manual deletion of emails | Update Microsoft Office 365 Email to version 5.0.0 | Update Python 3 Script to version 2.0.2
 * 1.0.6 - Updated trigger syntax and documentation
 * 1.0.5 - Updated documentation
 * 1.0.4 - Update to remove join step
