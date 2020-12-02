@@ -39,7 +39,7 @@ Navigate to Insight IDR's alert triggers page at `#/automation/alerts` and click
 |----|----|--------|
 |Microsoft Office365 Email Security|2.2.1|1|
 |ExtractIt|2.0.0|1|
-|Rapid7 InsightIDR|1.1.0|2|
+|Rapid7 InsightIDR|1.3.0|2|
 
 ## Troubleshooting
 
