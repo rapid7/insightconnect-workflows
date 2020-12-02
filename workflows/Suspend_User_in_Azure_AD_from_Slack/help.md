@@ -1,10 +1,12 @@
 # Description
 
-Disabling a compromised account can limit the scope of an attack and buy valuable time to investigate and contain the threat. This workflow disables an Azure AD account with a simple Slack command.
+Disabling a compromised account can limit the scope of an attack and buy valuable time to investigate and contain the threat. This workflow disables or enables an Azure AD account with a simple Slack command.
 
 Sample Slack Trigger Commands:
 
 `@Rapid7 InsightConnect disable-user-azure user@example.com`
+
+`@Rapid7 InsightConnect enable-user-azure user@example.com`
 
 # Key Features
 
@@ -23,13 +25,25 @@ Sample Slack Trigger Commands:
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-After import, activate the workflow in order to trigger it.
+Once the workflow has been imported, **first Slack step will need the channel name updated to suit your Slack environment!** Edit the input with the preset text of `change_me` in first Slack step in the workflow.
+
+After configuring the Slack step, activate the workflow in order to trigger it.
 
 ### Usage
 
 *This workflow will trigger in any direct messages to your Chatbot **or** any message in a channel directed @ your Chatbot. Note the Chatbot must be in the channel in order to trigger the workflow this way.*
 
-To run the workflow, send a direct message to your InsightConnect Slack Chatbot or @ your Chatbot in a public channel starting with the command `disable-user-azure <user_email>`. The workflow will reply when it has completed.
+To run the workflow, send a direct message to your InsightConnect Slack Chatbot or @ your Chatbot in a public channel starting with the command `disable-user-azure` or `enable-user-azure`.
+
+For example, in a direct message to your Chatbot:
+* `disable-user-azure user@example.com`
+* `enable-user-azure user@example.com`
+
+Or in a channel including your Chatbot:
+* `@Rapid7 InsightConnect disable-user-azure user@example.com`
+* `@Rapid7 InsightConnect enable-user-azure user@example.com`
+
+The workflow will acknowledge the request and reply when it has completed.
 
 ## Technical Details
 
@@ -37,8 +51,7 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|ExtractIt|2.0.0|1|
-|Azure AD Admin|1.4.1|1|
+|Azure AD Admin|2.2.3|2|
 
 ## Troubleshooting
 
@@ -46,6 +59,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.1.0 - Add Enable User functionality | Use the automatic extraction functionality instead of ExtractIt step to extract an email address | Improve workflow messaging | Improve documentation | Update screenshots | Update Azure AD Admin to version 2.2.3
 * 1.0.4 - Updated documentation
 * 1.0.3 - Updated trigger syntax, workflow name, and documentation
 * 1.0.2 - Updated trigger syntax and documentation

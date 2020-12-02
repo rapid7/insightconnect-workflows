@@ -1,10 +1,12 @@
 # Description
 
-Disabling a compromised account can limit the scope of an attack and buy valuable time to investigate and contain the threat. This workflow disables an Azure account straight from Microsoft Teams.
+Disabling a compromised account can limit the scope of an attack and buy valuable time to investigate and contain the threat. This workflow disables or enables an Azure AD account straight from Microsoft Teams.
 
 Sample Trigger Commands:
 
 `!disable-user-azure user@example.com`
+
+`!enable-user-azure user@example.com`
 
 # Key Features
 
@@ -23,20 +25,21 @@ Sample Trigger Commands:
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-Once the workflow has been imported, **each Microsoft Teams step will need the team name and channel name updated to suit your Teams environment!** Edit the input with the preset text of `change_me` in each Teams step in the workflow.
+Once the workflow has been imported, **first Microsoft Teams step will need the team name and channel name updated to suit your Teams environment!** Edit the input with the preset text of `change_me` in first Teams step in the workflow.
 
-After configuring the Teams steps, activate the workflow in order to trigger it.
+After configuring the Teams step, activate the workflow in order to trigger it.
 
 ### Usage
 
 *This workflow will only trigger in the channel specified in the Microsoft Teams workflow steps.*
 
-To run the workflow, send a message to the specified Microsoft Teams channel starting with the command `!disable-user-azure`. 
+To run the workflow, send a message to the specified Microsoft Teams channel starting with the command `!disable-user-azure` or `!enable-user-azure`. 
 
 For example:
 * `!disable-user-azure user@example.com`
+* `!enable-user-azure user@example.com`
 
-Your chat bot will reply when the workflow completes.
+The workflow will acknowledge the request and reply when it has completed.
 
 ## Technical Details
 
@@ -44,10 +47,8 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Microsoft Teams|2.0.4|4|
-|ExtractIt|2.0.0|1|
-|HTML|1.2.1|1|
-|Azure AD Admin|1.4.1|1|
+|Microsoft Teams|3.1.0|6|
+|Azure AD Admin|2.2.3|2|
 
 ## Troubleshooting
 
@@ -55,6 +56,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.1.0 - Add Enable User functionality | Use the automatic extraction functionality instead of ExtractIt step to extract an email address | Remove HTML step | Improve workflow messaging | Improve documentation | Update screenshots | Update Azure AD Admin to version 2.2.3 | Update Microsoft Teams to version 3.1.0
 * 1.0.4 - Update to make Microsoft Teams plugin the latest version
 * 1.0.3 - Updated trigger syntax and documentation
 * 1.0.2 - Updated trigger syntax and documentation
