@@ -52,6 +52,7 @@ Experiencing delays? InsightVM Events are delivered to InsightConnect from Insig
 
 # Version History
 
+* 1.0.1 - Fix unicode double quote issue
 * 1.0.0 - Initial workflow
 
 # Links
