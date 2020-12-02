@@ -6,9 +6,9 @@ Multiple hosts can be specified in one command.
 
 Sample Microsoft Teams Trigger Commands:
 
-`!add-domain 1.1.1.1 google.com`
+`!add-host 1.1.1.1 google.com`
 
-`!remove-domain rapid7.com`
+`!remove-host rapid7.com`
 
 # Key Features
 
@@ -36,8 +36,8 @@ Plugins utilized by workflow:
 |Plugin|Version|Count|
 |----|----|--------|
 |Type Converter|1.6.0|1|
-|DarkTrace|1.1.0|2|
-|Microsoft Teams|2.2.1|6|
+|Darktrace|2.0.1|2|
+|Microsoft Teams|3.1.0|6|
 
 ## Troubleshooting
 
@@ -45,6 +45,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.1 - Update Darktrace plugin
 * 1.0.0 - Initial workflow
 
 # Links

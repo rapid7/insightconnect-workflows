@@ -6,9 +6,9 @@ Multiple hosts can be specified in one command.
 
 Sample Slack Trigger Commands:
 
-`@Rapid7 InsightConnect add-domain 1.1.1.1 google.com`
+`@Rapid7 InsightConnect add-host 1.1.1.1 google.com`
 
-`@Rapid7 InsightConnect remove-domain rapid7.com`
+`@Rapid7 InsightConnect remove-host rapid7.com`
 
 # Key Features
 
@@ -36,7 +36,7 @@ Plugins utilized by workflow:
 |Plugin|Version|Count|
 |----|----|--------|
 |Type Converter|1.6.0|1|
-|DarkTrace|1.1.0|2|
+|Darktrace|2.0.1|2|
 
 ## Troubleshooting
 
@@ -44,6 +44,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.1 - Update Darktrace plugin
 * 1.0.0 - Initial workflow
 
 # Links

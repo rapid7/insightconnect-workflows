@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.61.3-0-g16082",
-    "komFileVersion": "1.0.0",
-    "exportedAt": "2020-09-22T19:05:18.990215955Z",
+    "komandVersion": "1.69.2-0-gaf0d9",
+    "komFileVersion": "2.0.0",
+    "exportedAt": "2020-11-30T18:28:39.048646998Z",
     "workflowVersions": [
       {
         "name": "Manage Watched Domains with Darktrace from Microsoft Teams",
@@ -476,14 +476,14 @@
             "name": "Add Watched Domains",
             "type": "action",
             "plugin": {
-              "name": "DarkTrace",
+              "name": "Darktrace",
               "slugVendor": "rapid7",
               "slugName": "darktrace",
-              "slugVersion": "1.1.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/darktrace/1.1.0/icon.png"
+              "slugVersion": "2.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/darktrace/2.0.1/icon.png"
             },
             "identifier": "update_watched_domains",
-            "continueOnFailure": false,
+            "continueOnFailure": true,
             "isDisabled": false,
             "isCloud": false,
             "parameters": {
@@ -665,8 +665,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.2.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.1/icon.png"
+              "slugVersion": "3.1.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
@@ -675,7 +675,7 @@
             "parameters": {
               "input": {
                 "channel_name": "{{[eb45a27e-1a93-4580-b5dc-f48c252db9f3].[channel_name]}}",
-                "message_content": "🚀&ensp;<b>Starting Worklow</b>&ensp;🚀",
+                "message_content": "🚀&ensp;<b>Starting Workflow</b>&ensp;🚀",
                 "team_name": "{{[eb45a27e-1a93-4580-b5dc-f48c252db9f3].[team_name]}}",
                 "thread_id": "{{[eb45a27e-1a93-4580-b5dc-f48c252db9f3].[message].[id]}}"
               }
@@ -802,8 +802,21 @@
                       "order": 4,
                       "title": "Web URL",
                       "type": "string"
+                    },
+                    "words": {
+                      "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 10,
+                      "title": "Words",
+                      "type": "array"
                     }
                   },
+                  "required": [
+                    "words",
+                    "first_word"
+                  ],
                   "title": "Message",
                   "type": "object"
                 },
@@ -849,8 +862,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.2.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.1/icon.png"
+              "slugVersion": "3.1.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
@@ -986,8 +999,21 @@
                       "order": 4,
                       "title": "Web URL",
                       "type": "string"
+                    },
+                    "words": {
+                      "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 10,
+                      "title": "Words",
+                      "type": "array"
                     }
                   },
+                  "required": [
+                    "words",
+                    "first_word"
+                  ],
                   "title": "Message",
                   "type": "object"
                 },
@@ -1030,11 +1056,11 @@
             "name": "Remove Watched Domains",
             "type": "action",
             "plugin": {
-              "name": "DarkTrace",
+              "name": "Darktrace",
               "slugVendor": "rapid7",
               "slugName": "darktrace",
-              "slugVersion": "1.1.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/darktrace/1.1.0/icon.png"
+              "slugVersion": "2.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/darktrace/2.0.1/icon.png"
             },
             "identifier": "update_watched_domains",
             "continueOnFailure": true,
@@ -1215,8 +1241,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.2.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.1/icon.png"
+              "slugVersion": "3.1.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
@@ -1352,8 +1378,21 @@
                       "order": 4,
                       "title": "Web URL",
                       "type": "string"
+                    },
+                    "words": {
+                      "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 10,
+                      "title": "Words",
+                      "type": "array"
                     }
                   },
+                  "required": [
+                    "words",
+                    "first_word"
+                  ],
                   "title": "Message",
                   "type": "object"
                 },
@@ -1399,8 +1438,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.2.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.1/icon.png"
+              "slugVersion": "3.1.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
@@ -1536,8 +1575,21 @@
                       "order": 4,
                       "title": "Web URL",
                       "type": "string"
+                    },
+                    "words": {
+                      "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 10,
+                      "title": "Words",
+                      "type": "array"
                     }
                   },
+                  "required": [
+                    "words",
+                    "first_word"
+                  ],
                   "title": "Message",
                   "type": "object"
                 },
@@ -1583,8 +1635,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.2.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.1/icon.png"
+              "slugVersion": "3.1.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
@@ -1720,8 +1772,21 @@
                       "order": 4,
                       "title": "Web URL",
                       "type": "string"
+                    },
+                    "words": {
+                      "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 10,
+                      "title": "Words",
+                      "type": "array"
                     }
                   },
+                  "required": [
+                    "words",
+                    "first_word"
+                  ],
                   "title": "Message",
                   "type": "object"
                 },
@@ -1767,8 +1832,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.2.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.1/icon.png"
+              "slugVersion": "3.1.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
             },
             "identifier": "new_message_received",
             "continueOnFailure": false,
@@ -1780,7 +1845,7 @@
                 "team_name": "change_me"
               }
             },
-            "triggerId": "5652b161-a286-47a5-a61e-8ec4d372128e",
+            "triggerId": "0ee3e1e1-0518-4fa4-b133-88fc175b2a00",
             "defaultInputJSONSchema": {
               "properties": {
                 "channel_name": {
@@ -2025,8 +2090,21 @@
                       "order": 4,
                       "title": "Web URL",
                       "type": "string"
+                    },
+                    "words": {
+                      "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 10,
+                      "title": "Words",
+                      "type": "array"
                     }
                   },
+                  "required": [
+                    "words",
+                    "first_word"
+                  ],
                   "title": "Message",
                   "type": "object"
                 },
@@ -2108,7 +2186,7 @@
     ],
     "triggers": [
       {
-        "id": "5652b161-a286-47a5-a61e-8ec4d372128e",
+        "id": "0ee3e1e1-0518-4fa4-b133-88fc175b2a00",
         "identifier": "new_message_received",
         "name": "Check Host Message Received",
         "description": "",
@@ -2361,8 +2439,21 @@
                   "order": 4,
                   "title": "Web URL",
                   "type": "string"
+                },
+                "words": {
+                  "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 10,
+                  "title": "Words",
+                  "type": "array"
                 }
               },
+              "required": [
+                "words",
+                "first_word"
+              ],
               "title": "Message",
               "type": "object"
             },
@@ -2420,8 +2511,8 @@
           "name": "Microsoft Teams",
           "slugVendor": "rapid7",
           "slugName": "microsoft_teams",
-          "slugVersion": "2.2.1",
-          "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.1/icon.png"
+          "slugVersion": "3.1.0",
+          "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
         }
       }
     ]
