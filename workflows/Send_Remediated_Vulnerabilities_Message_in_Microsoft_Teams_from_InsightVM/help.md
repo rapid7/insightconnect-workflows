@@ -1,6 +1,6 @@
 # Description
 
-This workflow listens for InsightVM Webhook Events for newly remediated vulnerabilities and notifies a Microsoft Teams channel of which vulnerabilities were remediated. It also includes asset information to easily identify which system the vulnerabilities were remediated from.
+This workflow listens for InsightVM Webhook Events for newly remediated vulnerabilities and notifies a Microsoft Teams channel of remediated vulnerabilities with a CVSS risk score greater than 4. It also includes asset information to easily identify which system the vulnerabilities were remediated from.
 
 This notification helps Security and IT teams raise the visibility of newly patched vulnerabilities. This heightened awareness can improve cross-functional team communication and performance.
 
@@ -31,6 +31,12 @@ Return to the workflow editor and open the `Post To Teams` step. In the input fi
 
 After configuring the Microsoft Teams step, activate the workflow. Any newly remediated vulnerability will generate a webhook event, triggering your workflow and delivering a message to the specified Microsoft Teams channel!
 
+### Adjusting the Vulnerability Filter
+
+By default, the workflow posts notifications for all vulnerabilities with a risk score greater than 4. This filter logic may be adjusted by opening the `Get Vulnerabilities Loop` step, clicking `Configure Loop` in the top right, and editing the pre-set value of `4` in **both** loop outputs' `Matching expression` fields. 
+
+See InsightConnect's Help Documentation for more information on [using loop steps](https://docs.rapid7.com/insightconnect/loop-step/#use-a-loop-step) and on [loop outputs](https://docs.rapid7.com/insightconnect/introduction-to-loop-outputs/#course-5-introduction-to-loop-data-and-loop-outputs).
+
 ## Usage
 
 This workflow is triggered automatically by InsightVM’s Vulnerabilities Remediated Webhook Event. This occurs anytime an asset is scanned in InsightVM and pre-existing vulnerabilities disappear and anytime a vulnerability exception is approved.
@@ -51,6 +57,7 @@ Experiencing delays? InsightVM Events are delivered to InsightConnect from Insig
 
 # Version History
 
+* 1.1.0 - Added restriction to only post when remediated vulnerability CVSS score is greater than 4
 * 1.0.1 - Fix quote issue in spec file
 * 1.0.0 - Initial workflow
 

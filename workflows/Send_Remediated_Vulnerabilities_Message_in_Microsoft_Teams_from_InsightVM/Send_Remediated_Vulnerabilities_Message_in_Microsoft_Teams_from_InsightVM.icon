@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.69.2-0-gaf0d9",
+    "komandVersion": "1.70.0-0-g96f18",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-11-20T00:20:29.210655362Z",
+    "exportedAt": "2020-12-02T02:01:12.198852203Z",
     "workflowVersions": [
       {
         "name": "Send Remediated Vulnerabilities Message in Microsoft Teams from InsightVM",
@@ -35,6 +35,14 @@
               "fromNodeId": "d70a66a2-09a6-4411-ba67-6d920c7849f1",
               "toNodeId": "783a991e-ddf1-4b8d-8af5-21425e879e51"
             },
+            "87593d81-0d2b-430c-bac2-01b4784066db": {
+              "id": "87593d81-0d2b-430c-bac2-01b4784066db",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "8e4b8997-05af-4317-9be2-a5cc5be36587",
+              "toNodeId": "42fa5e5a-74c3-4725-8672-8aa2aac8d12c"
+            },
             "a80b01e4-dee0-410b-8968-3cf525be41c7": {
               "id": "a80b01e4-dee0-410b-8968-3cf525be41c7",
               "name": "",
@@ -49,7 +57,7 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "d70a66a2-09a6-4411-ba67-6d920c7849f1",
-              "toNodeId": "42fa5e5a-74c3-4725-8672-8aa2aac8d12c"
+              "toNodeId": "8e4b8997-05af-4317-9be2-a5cc5be36587"
             },
             "eebbc825-d580-4422-ba8e-4dff83dacad3": {
               "id": "eebbc825-d580-4422-ba8e-4dff83dacad3",
@@ -72,6 +80,10 @@
             "783a991e-ddf1-4b8d-8af5-21425e879e51": {
               "id": "783a991e-ddf1-4b8d-8af5-21425e879e51",
               "parentNodeId": "d70a66a2-09a6-4411-ba67-6d920c7849f1"
+            },
+            "8e4b8997-05af-4317-9be2-a5cc5be36587": {
+              "id": "8e4b8997-05af-4317-9be2-a5cc5be36587",
+              "parentNodeId": ""
             },
             "d70a66a2-09a6-4411-ba67-6d920c7849f1": {
               "id": "d70a66a2-09a6-4411-ba67-6d920c7849f1",
@@ -102,7 +114,7 @@
             "parameters": {
               "input": {
                 "channel_name": "change_me",
-                "message_content": "<h1>New Vulnerabilities Remediated!</h1><br />\n<h2>Asset:</h2> \n<ul><li><b>Hostname: </b>{{[66d19c74-9ba7-4ace-9592-83742e0029a3].[summary].[host_name]}}</li>\n<li><b>IP Address:</b> {{[66d19c74-9ba7-4ace-9592-83742e0029a3].[summary].[ip]}}</li>\n<li><b>Operating System:</b> {{[66d19c74-9ba7-4ace-9592-83742e0029a3].[summary].[operating_system]}}</li>\n<li><b>Last Scanned:</b> {{[66d19c74-9ba7-4ace-9592-83742e0029a3].[summary].[last_scanned]}}</li>\n</ul>\n<br />\n<h2>Vulnerabilities Remediated:</h2><br />\n<ul>{{#each [66d19c74-9ba7-4ace-9592-83742e0029a3].[changes].[asset_vulnerabilities_remediated]}}\n  <li>{{this}}</li>\n{{/each}}</ul>\n <br />\n<h2>{{[d70a66a2-09a6-4411-ba67-6d920c7849f1].[Total Risk Count]}} Total Vulnerabilities Remediated</h2><br />\n<ul><li>{{[d70a66a2-09a6-4411-ba67-6d920c7849f1].[Low Risk Count]}} Low Risks</li>\n<li>{{[d70a66a2-09a6-4411-ba67-6d920c7849f1].[Medium Risk Count]}} Medium Risks</li>\n<li>{{[d70a66a2-09a6-4411-ba67-6d920c7849f1].[High Risk Count]}} High Risks</li>\n<li>{{[d70a66a2-09a6-4411-ba67-6d920c7849f1].[Critical Risk Count]}} Critical Risks</li></ul>",
+                "message_content": "<h1>New Vulnerabilities Remediated!</h1><br />\n<h2>Asset:</h2> \n<ul><li><b>Hostname: </b>{{[66d19c74-9ba7-4ace-9592-83742e0029a3].[summary].[host_name]}}</li>\n<li><b>IP Address:</b> {{[66d19c74-9ba7-4ace-9592-83742e0029a3].[summary].[ip]}}</li>\n<li><b>Operating System:</b> {{[66d19c74-9ba7-4ace-9592-83742e0029a3].[summary].[operating_system]}}</li>\n<li><b>Last Scanned:</b> {{[66d19c74-9ba7-4ace-9592-83742e0029a3].[summary].[last_scanned]}}</li>\n</ul>\n<br />\n<h2>Vulnerabilities Remediated:</h2><br />\n<ul>{{#each [d70a66a2-09a6-4411-ba67-6d920c7849f1].[Vulns]}}\n  <li>{{this}}</li>\n{{/each}}</ul>\n <br />\n<h2>{{[66d19c74-9ba7-4ace-9592-83742e0029a3].[summary].[vulnerability_count]}} Total Vulnerabilities Remediated</h2><br />\n<ul><li>{{[66d19c74-9ba7-4ace-9592-83742e0029a3].[summary].[moderate_vulnerability_count]}} Moderate Risks</li>\n<li>{{[66d19c74-9ba7-4ace-9592-83742e0029a3].[summary].[severe_vulnerability_count]}} Severe Risks</li>\n<li>{{[66d19c74-9ba7-4ace-9592-83742e0029a3].[summary].[critical_vulnerability_count]}} Critical Risks</li></ul>",
                 "team_name": "change_me",
                 "thread_id": ""
               }
@@ -275,7 +287,7 @@
             "identifier": "vulnerabilities_remediated",
             "continueOnFailure": false,
             "isDisabled": false,
-            "triggerId": "da62ff81-e02b-4f13-9dd8-4928d5c0028b",
+            "triggerId": "3581fe4e-8902-46dd-8060-1c642d2ed934",
             "defaultInputJSONSchema": {
               "definitions": {
                 "changes": {
@@ -660,6 +672,37 @@
             "defaultImageData": "",
             "connectionType": "ORCHESTRATOR"
           },
+          "8e4b8997-05af-4317-9be2-a5cc5be36587": {
+            "nodeId": "8e4b8997-05af-4317-9be2-a5cc5be36587",
+            "name": "Vulnerabilities Remediated with Risk > 4?",
+            "type": "filter",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "stepControlParam": {
+                "edgeId": "87593d81-0d2b-430c-bac2-01b4784066db",
+                "expression": {
+                  "left": {
+                    "name": "d70a66a2-09a6-4411-ba67-6d920c7849f1.Risk Threshold",
+                    "type": "variable"
+                  },
+                  "op": "=",
+                  "right": {
+                    "type": "literal",
+                    "value": false
+                  },
+                  "type": "binary"
+                },
+                "expressionText": "{{[d70a66a2-09a6-4411-ba67-6d920c7849f1].[Risk Threshold]}} = false"
+              },
+              "stopOnMatch": true
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/filter.svg",
+            "connectionType": "NONE"
+          },
           "d70a66a2-09a6-4411-ba67-6d920c7849f1": {
             "nodeId": "d70a66a2-09a6-4411-ba67-6d920c7849f1",
             "name": "Get Vulnerability Details",
@@ -672,144 +715,42 @@
                   "input": {
                     "expression": {
                       "left": {
-                        "left": {
-                          "name": "fa22ff16-8091-42a5-8234-377ac4809ec4.output",
-                          "type": "variable"
-                        },
-                        "op": ">",
-                        "right": {
-                          "type": "literal",
-                          "value": 0
-                        },
-                        "type": "binary"
+                        "name": "fa22ff16-8091-42a5-8234-377ac4809ec4.output",
+                        "type": "variable"
                       },
-                      "op": "AND",
+                      "op": ">",
                       "right": {
-                        "left": {
-                          "name": "fa22ff16-8091-42a5-8234-377ac4809ec4.output",
-                          "type": "variable"
-                        },
-                        "op": "<",
-                        "right": {
-                          "type": "literal",
-                          "value": 4
-                        },
-                        "type": "binary"
+                        "type": "literal",
+                        "value": 4
                       },
                       "type": "binary"
                     },
-                    "expressionText": "{{[fa22ff16-8091-42a5-8234-377ac4809ec4].[output]}} > 0 && {{[fa22ff16-8091-42a5-8234-377ac4809ec4].[output]}} < 4"
+                    "expressionText": "{{[fa22ff16-8091-42a5-8234-377ac4809ec4].[output]}} > 4",
+                    "value": "{{[783a991e-ddf1-4b8d-8af5-21425e879e51].[content_result].[title]}}",
+                    "valueType": "string"
                   },
-                  "name": "Low Risk Count",
-                  "outputType": "count"
+                  "name": "Vulns",
+                  "outputType": "array"
                 },
                 {
                   "input": {
-                    "expression": {
-                      "left": {
-                        "left": {
-                          "name": "fa22ff16-8091-42a5-8234-377ac4809ec4.output",
-                          "type": "variable"
-                        },
-                        "op": ">=",
-                        "right": {
-                          "type": "literal",
-                          "value": 4
-                        },
-                        "type": "binary"
-                      },
-                      "op": "AND",
-                      "right": {
-                        "left": {
-                          "name": "fa22ff16-8091-42a5-8234-377ac4809ec4.output",
-                          "type": "variable"
-                        },
-                        "op": "<",
-                        "right": {
-                          "type": "literal",
-                          "value": 7
-                        },
-                        "type": "binary"
-                      },
-                      "type": "binary"
-                    },
-                    "expressionText": "{{[fa22ff16-8091-42a5-8234-377ac4809ec4].[output]}} >= 4 && {{[fa22ff16-8091-42a5-8234-377ac4809ec4].[output]}} < 7"
-                  },
-                  "name": "Medium Risk Count",
-                  "outputType": "count"
-                },
-                {
-                  "input": {
-                    "expression": {
-                      "left": {
-                        "left": {
-                          "name": "fa22ff16-8091-42a5-8234-377ac4809ec4.output",
-                          "type": "variable"
-                        },
-                        "op": ">=",
-                        "right": {
-                          "type": "literal",
-                          "value": 7
-                        },
-                        "type": "binary"
-                      },
-                      "op": "AND",
-                      "right": {
-                        "left": {
-                          "name": "fa22ff16-8091-42a5-8234-377ac4809ec4.output",
-                          "type": "variable"
-                        },
-                        "op": "<",
-                        "right": {
-                          "type": "literal",
-                          "value": 9
-                        },
-                        "type": "binary"
-                      },
-                      "type": "binary"
-                    },
-                    "expressionText": "{{[fa22ff16-8091-42a5-8234-377ac4809ec4].[output]}} >= 7 && {{[fa22ff16-8091-42a5-8234-377ac4809ec4].[output]}} < 9"
-                  },
-                  "name": "High Risk Count",
-                  "outputType": "count"
-                },
-                {
-                  "input": {
+                    "condition": "any",
                     "expression": {
                       "left": {
                         "name": "fa22ff16-8091-42a5-8234-377ac4809ec4.output",
                         "type": "variable"
                       },
-                      "op": ">=",
+                      "op": ">",
                       "right": {
                         "type": "literal",
-                        "value": 9
+                        "value": 4
                       },
                       "type": "binary"
                     },
-                    "expressionText": "{{[fa22ff16-8091-42a5-8234-377ac4809ec4].[output]}} >= 9"
+                    "expressionText": "{{[fa22ff16-8091-42a5-8234-377ac4809ec4].[output]}} > 4"
                   },
-                  "name": "Critical Risk Count",
-                  "outputType": "count"
-                },
-                {
-                  "input": {
-                    "expression": {
-                      "left": {
-                        "type": "literal",
-                        "value": 1
-                      },
-                      "op": "==",
-                      "right": {
-                        "type": "literal",
-                        "value": 1
-                      },
-                      "type": "binary"
-                    },
-                    "expressionText": "1 == 1"
-                  },
-                  "name": "Total Risk Count",
-                  "outputType": "count"
+                  "name": "Risk Threshold",
+                  "outputType": "boolean"
                 }
               ],
               "innerEdgeId": "745d5481-f7b3-4921-bf6e-0127dfd81591",
@@ -820,30 +761,18 @@
             "defaultOutputJSONSchema": null,
             "outputJSONSchema": {
               "properties": {
-                "Critical Risk Count": {
-                  "description": "Custom output: \"Critical Risk Count\"",
-                  "title": "Critical Risk Count",
-                  "type": "integer"
+                "Risk Threshold": {
+                  "description": "Custom output: \"Risk Threshold\"",
+                  "title": "Risk Threshold",
+                  "type": "boolean"
                 },
-                "High Risk Count": {
-                  "description": "Custom output: \"High Risk Count\"",
-                  "title": "High Risk Count",
-                  "type": "integer"
-                },
-                "Low Risk Count": {
-                  "description": "Custom output: \"Low Risk Count\"",
-                  "title": "Low Risk Count",
-                  "type": "integer"
-                },
-                "Medium Risk Count": {
-                  "description": "Custom output: \"Medium Risk Count\"",
-                  "title": "Medium Risk Count",
-                  "type": "integer"
-                },
-                "Total Risk Count": {
-                  "description": "Custom output: \"Total Risk Count\"",
-                  "title": "Total Risk Count",
-                  "type": "integer"
+                "Vulns": {
+                  "description": "Custom output: \"Vulns\"",
+                  "items": {
+                    "type": "string"
+                  },
+                  "title": "Vulns",
+                  "type": "array"
                 }
               },
               "title": "Variables",
@@ -914,7 +843,7 @@
     ],
     "triggers": [
       {
-        "id": "da62ff81-e02b-4f13-9dd8-4928d5c0028b",
+        "id": "3581fe4e-8902-46dd-8060-1c642d2ed934",
         "identifier": "vulnerabilities_remediated",
         "name": "InsightVM Trigger",
         "description": "",
