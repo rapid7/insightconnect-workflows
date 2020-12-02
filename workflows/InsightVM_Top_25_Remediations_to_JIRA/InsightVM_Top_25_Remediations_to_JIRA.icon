@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.51.2-0-gfd7dc",
+    "komandVersion": "1.70.0-0-g96f18",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-05-29T16:51:59.563922173Z",
+    "exportedAt": "2020-12-02T19:30:04.617294319Z",
     "workflowVersions": [
       {
         "name": "Create Solution-Based Tickets with Jira from InsightVM",
@@ -41,7 +41,7 @@
               "description": "",
               "parentNodeId": "20f9c1dc-72f2-4d23-b60d-e260d4930cbf",
               "fromNodeId": "11e727fe-9568-423c-9394-276721397ffa",
-              "toNodeId": "9dfc598f-7e9b-4310-a18d-7d664825541c"
+              "toNodeId": "be661151-8ef2-43ab-8b8a-4519acbd58e8"
             },
             "1eb9efd3-2e8a-4dfc-b47c-62d929f31326": {
               "id": "1eb9efd3-2e8a-4dfc-b47c-62d929f31326",
@@ -57,7 +57,7 @@
               "description": "",
               "parentNodeId": "20f9c1dc-72f2-4d23-b60d-e260d4930cbf",
               "fromNodeId": "0a9ef592-3310-4abd-973e-12de63d82b95",
-              "toNodeId": "e5fcc9eb-f4cb-490f-a7e3-ad7767a763c6"
+              "toNodeId": "2aa84e2a-34df-4f68-b9a3-e92a6cb947e4"
             },
             "25b2eeae-a796-49eb-b70e-10267481aee9": {
               "id": "25b2eeae-a796-49eb-b70e-10267481aee9",
@@ -99,13 +99,13 @@
               "fromNodeId": "86b4f173-7132-436c-b8e9-56201ce7103f",
               "toNodeId": "db3634ac-3978-4920-97c9-f980b91f03b8"
             },
-            "4a429399-b8c4-45fa-adba-62426b7ed8c2": {
-              "id": "4a429399-b8c4-45fa-adba-62426b7ed8c2",
+            "47afad60-d781-4ad0-b83f-4da3ef9dbc08": {
+              "id": "47afad60-d781-4ad0-b83f-4da3ef9dbc08",
               "name": "",
               "description": "",
               "parentNodeId": "20f9c1dc-72f2-4d23-b60d-e260d4930cbf",
-              "fromNodeId": "9dfc598f-7e9b-4310-a18d-7d664825541c",
-              "toNodeId": "81688941-366f-4a93-a8f2-4e707f9678f4"
+              "fromNodeId": "b08ff170-86bb-477a-b938-83ece954e7c7",
+              "toNodeId": "fd3e209f-edd4-4550-a505-55db2efb82d4"
             },
             "60c46dc4-e2da-4f47-8e43-b585a72b5d7a": {
               "id": "60c46dc4-e2da-4f47-8e43-b585a72b5d7a",
@@ -123,13 +123,13 @@
               "fromNodeId": "a8c24b71-0d5b-44aa-bd52-1587fb5844ed",
               "toNodeId": "0ec4df0a-2ff7-4300-98f9-ed6c7488795a"
             },
-            "7b32ec91-a3d1-4e9f-8bba-30c8447c6efc": {
-              "id": "7b32ec91-a3d1-4e9f-8bba-30c8447c6efc",
+            "78e50d98-396a-4490-baa3-00c8ab033979": {
+              "id": "78e50d98-396a-4490-baa3-00c8ab033979",
               "name": "",
               "description": "",
               "parentNodeId": "20f9c1dc-72f2-4d23-b60d-e260d4930cbf",
-              "fromNodeId": "05c9327f-0888-4e34-8553-2b9a83df24a5",
-              "toNodeId": "fd3e209f-edd4-4550-a505-55db2efb82d4"
+              "fromNodeId": "be661151-8ef2-43ab-8b8a-4519acbd58e8",
+              "toNodeId": "81688941-366f-4a93-a8f2-4e707f9678f4"
             },
             "81324bf6-1913-4a7f-9230-608928ceebab": {
               "id": "81324bf6-1913-4a7f-9230-608928ceebab",
@@ -162,14 +162,6 @@
               "parentNodeId": "20f9c1dc-72f2-4d23-b60d-e260d4930cbf",
               "fromNodeId": "b700e2d1-c85c-47c9-a4ab-e3892bacff63",
               "toNodeId": "92fc137e-7d53-4c95-bdc7-3b4712634515"
-            },
-            "9fad4443-0a46-4c95-b3f7-9e79323e665a": {
-              "id": "9fad4443-0a46-4c95-b3f7-9e79323e665a",
-              "name": "",
-              "description": "",
-              "parentNodeId": "20f9c1dc-72f2-4d23-b60d-e260d4930cbf",
-              "fromNodeId": "e5fcc9eb-f4cb-490f-a7e3-ad7767a763c6",
-              "toNodeId": "b700e2d1-c85c-47c9-a4ab-e3892bacff63"
             },
             "a82cdfe7-4c72-4478-8cf5-446d8c1738f5": {
               "id": "a82cdfe7-4c72-4478-8cf5-446d8c1738f5",
@@ -227,20 +219,24 @@
               "fromNodeId": "4e9bff90-cdac-4f96-98d8-ac2a28bc9d11",
               "toNodeId": ""
             },
+            "f4667426-35a6-4e50-8621-c4d7aeb67c5a": {
+              "id": "f4667426-35a6-4e50-8621-c4d7aeb67c5a",
+              "name": "",
+              "description": "",
+              "parentNodeId": "20f9c1dc-72f2-4d23-b60d-e260d4930cbf",
+              "fromNodeId": "2aa84e2a-34df-4f68-b9a3-e92a6cb947e4",
+              "toNodeId": "b700e2d1-c85c-47c9-a4ab-e3892bacff63"
+            },
             "f5eb9d1a-76a6-4c7a-9038-aad3f30ecf94": {
               "id": "f5eb9d1a-76a6-4c7a-9038-aad3f30ecf94",
               "name": "",
               "description": "",
               "parentNodeId": "20f9c1dc-72f2-4d23-b60d-e260d4930cbf",
               "fromNodeId": "708023ac-b42f-457b-925f-4a864fbc8566",
-              "toNodeId": "05c9327f-0888-4e34-8553-2b9a83df24a5"
+              "toNodeId": "b08ff170-86bb-477a-b938-83ece954e7c7"
             }
           },
           "nodes": {
-            "05c9327f-0888-4e34-8553-2b9a83df24a5": {
-              "id": "05c9327f-0888-4e34-8553-2b9a83df24a5",
-              "parentNodeId": "20f9c1dc-72f2-4d23-b60d-e260d4930cbf"
-            },
             "0a9ef592-3310-4abd-973e-12de63d82b95": {
               "id": "0a9ef592-3310-4abd-973e-12de63d82b95",
               "parentNodeId": "20f9c1dc-72f2-4d23-b60d-e260d4930cbf"
@@ -256,6 +252,10 @@
             "20f9c1dc-72f2-4d23-b60d-e260d4930cbf": {
               "id": "20f9c1dc-72f2-4d23-b60d-e260d4930cbf",
               "parentNodeId": ""
+            },
+            "2aa84e2a-34df-4f68-b9a3-e92a6cb947e4": {
+              "id": "2aa84e2a-34df-4f68-b9a3-e92a6cb947e4",
+              "parentNodeId": "20f9c1dc-72f2-4d23-b60d-e260d4930cbf"
             },
             "34d46670-e794-4325-8fd1-39a82c3fc2ca": {
               "id": "34d46670-e794-4325-8fd1-39a82c3fc2ca",
@@ -293,10 +293,6 @@
               "id": "92fc137e-7d53-4c95-bdc7-3b4712634515",
               "parentNodeId": "20f9c1dc-72f2-4d23-b60d-e260d4930cbf"
             },
-            "9dfc598f-7e9b-4310-a18d-7d664825541c": {
-              "id": "9dfc598f-7e9b-4310-a18d-7d664825541c",
-              "parentNodeId": "20f9c1dc-72f2-4d23-b60d-e260d4930cbf"
-            },
             "a45b33bf-747a-41ef-af22-96579d90e2a5": {
               "id": "a45b33bf-747a-41ef-af22-96579d90e2a5",
               "parentNodeId": "20f9c1dc-72f2-4d23-b60d-e260d4930cbf"
@@ -313,8 +309,16 @@
               "id": "abd1e993-3ba7-420f-a3ea-cfc778145414",
               "parentNodeId": "20f9c1dc-72f2-4d23-b60d-e260d4930cbf"
             },
+            "b08ff170-86bb-477a-b938-83ece954e7c7": {
+              "id": "b08ff170-86bb-477a-b938-83ece954e7c7",
+              "parentNodeId": "20f9c1dc-72f2-4d23-b60d-e260d4930cbf"
+            },
             "b700e2d1-c85c-47c9-a4ab-e3892bacff63": {
               "id": "b700e2d1-c85c-47c9-a4ab-e3892bacff63",
+              "parentNodeId": "20f9c1dc-72f2-4d23-b60d-e260d4930cbf"
+            },
+            "be661151-8ef2-43ab-8b8a-4519acbd58e8": {
+              "id": "be661151-8ef2-43ab-8b8a-4519acbd58e8",
               "parentNodeId": "20f9c1dc-72f2-4d23-b60d-e260d4930cbf"
             },
             "d38a0b1e-73dd-455b-804b-693738f9b67a": {
@@ -329,10 +333,6 @@
               "id": "db3634ac-3978-4920-97c9-f980b91f03b8",
               "parentNodeId": ""
             },
-            "e5fcc9eb-f4cb-490f-a7e3-ad7767a763c6": {
-              "id": "e5fcc9eb-f4cb-490f-a7e3-ad7767a763c6",
-              "parentNodeId": "20f9c1dc-72f2-4d23-b60d-e260d4930cbf"
-            },
             "fd3e209f-edd4-4550-a505-55db2efb82d4": {
               "id": "fd3e209f-edd4-4550-a505-55db2efb82d4",
               "parentNodeId": "20f9c1dc-72f2-4d23-b60d-e260d4930cbf"
@@ -340,204 +340,6 @@
           }
         },
         "steps": {
-          "05c9327f-0888-4e34-8553-2b9a83df24a5": {
-            "nodeId": "05c9327f-0888-4e34-8553-2b9a83df24a5",
-            "name": "Search for Existing Issue",
-            "type": "action",
-            "plugin": {
-              "name": "Jira",
-              "slugVendor": "rapid7",
-              "slugName": "jira",
-              "slugVersion": "4.0.2",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/jira/4.0.2/icon.png"
-            },
-            "identifier": "find_issues",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "get_attachments": false,
-                "jql": "project = \"change_me\" AND summary ~ {{[708023ac-b42f-457b-925f-4a864fbc8566].[patchTitle]}} AND status != \"Done\"",
-                "max": 10
-              }
-            },
-            "defaultInputJSONSchema": {
-              "properties": {
-                "get_attachments": {
-                  "default": false,
-                  "description": "Get attachments from issue",
-                  "order": 3,
-                  "title": "Get Attachments",
-                  "type": "boolean"
-                },
-                "jql": {
-                  "description": "JQL search string to use",
-                  "order": 1,
-                  "title": "JQL",
-                  "type": "string"
-                },
-                "max": {
-                  "default": 10,
-                  "description": "Max results to return",
-                  "order": 2,
-                  "title": "Max",
-                  "type": "integer"
-                }
-              },
-              "required": [
-                "jql",
-                "max"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultOutputJSONSchema": {
-              "definitions": {
-                "file": {
-                  "description": "File Object",
-                  "properties": {
-                    "content": {
-                      "description": "File contents",
-                      "format": "bytes",
-                      "title": "Content",
-                      "type": "string"
-                    },
-                    "filename": {
-                      "description": "Name of file",
-                      "title": "Filename",
-                      "type": "string"
-                    }
-                  },
-                  "title": "File",
-                  "type": "object"
-                },
-                "issue": {
-                  "properties": {
-                    "assignee": {
-                      "description": "Assigned User",
-                      "order": 11,
-                      "title": "Assignee",
-                      "type": "string"
-                    },
-                    "attachments": {
-                      "description": "Attachments",
-                      "items": {
-                        "$ref": "#/definitions/file"
-                      },
-                      "order": 15,
-                      "title": "Attachments",
-                      "type": "array"
-                    },
-                    "created_at": {
-                      "description": "Created At",
-                      "order": 12,
-                      "title": "Created At",
-                      "type": "string"
-                    },
-                    "description": {
-                      "description": "Description",
-                      "order": 7,
-                      "title": "Description",
-                      "type": "string"
-                    },
-                    "fields": {
-                      "description": "Full list of fields",
-                      "order": 16,
-                      "title": "Fields",
-                      "type": "object"
-                    },
-                    "id": {
-                      "description": "Issue ID",
-                      "order": 1,
-                      "title": "Id",
-                      "type": "string"
-                    },
-                    "key": {
-                      "description": "Issue Key",
-                      "order": 3,
-                      "title": "Key",
-                      "type": "string"
-                    },
-                    "labels": {
-                      "description": "Labels",
-                      "items": {
-                        "type": "string"
-                      },
-                      "order": 9,
-                      "title": "Labels",
-                      "type": "array"
-                    },
-                    "project": {
-                      "description": "Project",
-                      "order": 2,
-                      "title": "Project",
-                      "type": "string"
-                    },
-                    "reporter": {
-                      "description": "Reporting User",
-                      "order": 10,
-                      "title": "Reporter",
-                      "type": "string"
-                    },
-                    "resolution": {
-                      "description": "Resolution",
-                      "order": 8,
-                      "title": "Resolution",
-                      "type": "string"
-                    },
-                    "resolved_at": {
-                      "description": "Resolved At",
-                      "order": 14,
-                      "title": "Resolved At",
-                      "type": "string"
-                    },
-                    "status": {
-                      "description": "Status",
-                      "order": 4,
-                      "title": "Status",
-                      "type": "string"
-                    },
-                    "summary": {
-                      "description": "Summary",
-                      "order": 6,
-                      "title": "Summary",
-                      "type": "string"
-                    },
-                    "updated_at": {
-                      "description": "Updated At",
-                      "order": 13,
-                      "title": "Updated At",
-                      "type": "string"
-                    },
-                    "url": {
-                      "description": "Issue URL",
-                      "order": 5,
-                      "title": "Url",
-                      "type": "string"
-                    }
-                  },
-                  "title": "Issue",
-                  "type": "object"
-                }
-              },
-              "properties": {
-                "issues": {
-                  "description": "The list of found issues",
-                  "items": {
-                    "$ref": "#/definitions/issue"
-                  },
-                  "order": 1,
-                  "title": "Issues",
-                  "type": "array"
-                }
-              },
-              "title": "Variables",
-              "type": "object"
-            },
-            "outputJSONSchema": null,
-            "defaultImageData": "",
-            "connectionType": "CONNECTION"
-          },
           "0a9ef592-3310-4abd-973e-12de63d82b95": {
             "nodeId": "0a9ef592-3310-4abd-973e-12de63d82b95",
             "name": "Issue Details",
@@ -564,12 +366,13 @@
               "name": "Base64",
               "slugVendor": "rapid7",
               "slugName": "base64",
-              "slugVersion": "1.1.4",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/base64/1.1.4/icon.png"
+              "slugVersion": "1.1.6",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/base64/1.1.6/icon.png"
             },
             "identifier": "decode",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "base64": "{{[a8c24b71-0d5b-44aa-bd52-1587fb5844ed].[value]}}",
@@ -663,1019 +466,21 @@
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/loop.svg",
             "connectionType": "NONE"
           },
-          "34d46670-e794-4325-8fd1-39a82c3fc2ca": {
-            "nodeId": "34d46670-e794-4325-8fd1-39a82c3fc2ca",
-            "name": "Encode Update Report",
-            "type": "action",
-            "plugin": {
-              "name": "Base64",
-              "slugVendor": "rapid7",
-              "slugName": "base64",
-              "slugVersion": "1.1.4",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/base64/1.1.4/icon.png"
-            },
-            "identifier": "encode",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "content": "{{[81688941-366f-4a93-a8f2-4e707f9678f4].[content]}}"
-              }
-            },
-            "defaultInputJSONSchema": {
-              "properties": {
-                "content": {
-                  "description": "Data to encode",
-                  "order": 1,
-                  "title": "Content",
-                  "type": "string"
-                }
-              },
-              "required": [
-                "content"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultOutputJSONSchema": {
-              "properties": {
-                "data": {
-                  "description": "Encoded data result",
-                  "displayType": "bytes",
-                  "format": "bytes",
-                  "order": 1,
-                  "title": "Encoded Data",
-                  "type": "string"
-                }
-              },
-              "required": [
-                "data"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "outputJSONSchema": null,
-            "defaultImageData": "",
-            "connectionType": "ORCHESTRATOR"
-          },
-          "4e9bff90-cdac-4f96-98d8-ac2a28bc9d11": {
-            "nodeId": "4e9bff90-cdac-4f96-98d8-ac2a28bc9d11",
-            "name": "Report",
-            "type": "artifact",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "content": "# Activity Report\n{{#each [6c282281-7438-4b61-8c1c-5e5486fceb92].[$outputs]}}\n{{[0ec4df0a-2ff7-4300-98f9-ed6c7488795a].[data]}}\n{{/each}}"
-              },
-              "type": "markdown"
-            },
-            "defaultInputJSONSchema": null,
-            "defaultOutputJSONSchema": null,
-            "outputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
-            "connectionType": "NONE"
-          },
-          "51702c57-dc67-405e-b9df-0c9fa66719ec": {
-            "nodeId": "51702c57-dc67-405e-b9df-0c9fa66719ec",
-            "name": "Clean Fix",
-            "type": "action",
-            "plugin": {
-              "name": "Advanced Regex",
-              "slugVendor": "rapid7",
-              "slugName": "advanced_regex",
-              "slugVersion": "1.0.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/advanced_regex/1.0.1/icon.png"
-            },
-            "identifier": "replace",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "ascii": false,
-                "dotall": false,
-                "ignorecase": false,
-                "in_regex": "((<\\/?p>)*\\\\n\\s*\\\\n\\s*(<\\/?p>)*\\s*)|((<\\/?p>)*\\\\n\\s*(<\\/?p>)*)",
-                "in_string": "{{#if [20f9c1dc-72f2-4d23-b60d-e260d4930cbf].[$item].[fix]}}{{[20f9c1dc-72f2-4d23-b60d-e260d4930cbf].[$item].[fix]}}{{else}} {{/if}}",
-                "max_replace": 0,
-                "multiline": false,
-                "replace_string": "\\n"
-              }
-            },
-            "defaultInputJSONSchema": {
-              "properties": {
-                "ascii": {
-                  "default": false,
-                  "description": "Make \\w \\W \\b \\B follow ASCII rules",
-                  "order": 8,
-                  "title": "ASCII",
-                  "type": "boolean"
-                },
-                "dotall": {
-                  "default": false,
-                  "description": "Make . match newline",
-                  "order": 7,
-                  "title": "Dot All",
-                  "type": "boolean"
-                },
-                "ignorecase": {
-                  "default": false,
-                  "description": "Make regex non-case sensitive",
-                  "order": 5,
-                  "title": "Ignore Case",
-                  "type": "boolean"
-                },
-                "in_regex": {
-                  "description": "Regex to match",
-                  "order": 3,
-                  "title": "Regex",
-                  "type": "string"
-                },
-                "in_string": {
-                  "description": "Input string",
-                  "order": 1,
-                  "title": "Input String",
-                  "type": "string"
-                },
-                "max_replace": {
-                  "default": 0,
-                  "description": "Max occurences to replace - if zero all will be replaced",
-                  "order": 4,
-                  "title": "Max Replace",
-                  "type": "integer"
-                },
-                "multiline": {
-                  "default": false,
-                  "description": "Make begin/end consider each line",
-                  "order": 6,
-                  "title": "Multiline",
-                  "type": "boolean"
-                },
-                "replace_string": {
-                  "description": "The string to replace matches with",
-                  "order": 2,
-                  "title": "New String",
-                  "type": "string"
-                }
-              },
-              "required": [
-                "in_string",
-                "replace_string",
-                "in_regex"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultOutputJSONSchema": {
-              "properties": {
-                "result": {
-                  "description": "The result of the replace operation",
-                  "order": 1,
-                  "title": "Result String",
-                  "type": "string"
-                }
-              },
-              "required": [
-                "result"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "outputJSONSchema": null,
-            "defaultImageData": "",
-            "connectionType": "ORCHESTRATOR"
-          },
-          "54d1078f-4c9b-4ba5-bed5-ad96280cdd75": {
-            "nodeId": "54d1078f-4c9b-4ba5-bed5-ad96280cdd75",
-            "name": "Issue Title",
-            "type": "artifact",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "content": "IVM Top Remediation: {{[20f9c1dc-72f2-4d23-b60d-e260d4930cbf].[$item].[summary]}} - {{[abd1e993-3ba7-420f-a3ea-cfc778145414].[content]}}"
-              },
-              "type": "markdown"
-            },
-            "defaultInputJSONSchema": null,
-            "defaultOutputJSONSchema": null,
-            "outputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
-            "connectionType": "NONE"
-          },
-          "6c282281-7438-4b61-8c1c-5e5486fceb92": {
-            "nodeId": "6c282281-7438-4b61-8c1c-5e5486fceb92",
-            "name": "Extract Reports",
-            "type": "loop",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "innerEdgeId": "25b2eeae-a796-49eb-b70e-10267481aee9",
-              "nextEdgeId": "1907ea83-e9ce-4cc2-9bec-19a0cc5747c0",
-              "repeatVariable": "{{[20f9c1dc-72f2-4d23-b60d-e260d4930cbf].[$outputs]}}"
-            },
-            "defaultInputJSONSchema": null,
-            "defaultOutputJSONSchema": null,
-            "outputJSONSchema": {
-              "properties": {},
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/loop.svg",
-            "connectionType": "NONE"
-          },
-          "708023ac-b42f-457b-925f-4a864fbc8566": {
-            "nodeId": "708023ac-b42f-457b-925f-4a864fbc8566",
-            "name": "Extract Patch Title from Key",
-            "type": "pattern_match",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "captureAll": false,
-              "expressionText": "key:{{patchTitle:/.*/}}",
-              "expressions": [
-                {
-                  "type": "text",
-                  "value": "key:"
-                },
-                {
-                  "type": "variable",
-                  "value": {
-                    "ident": "patchTitle",
-                    "regex": ".*"
-                  }
-                }
-              ],
-              "ignoreCase": true,
-              "input": "{{[abd1e993-3ba7-420f-a3ea-cfc778145414].[content]}}"
-            },
-            "defaultInputJSONSchema": null,
-            "defaultOutputJSONSchema": null,
-            "outputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/pattern-match.svg",
-            "connectionType": "NONE"
-          },
-          "81688941-366f-4a93-a8f2-4e707f9678f4": {
-            "nodeId": "81688941-366f-4a93-a8f2-4e707f9678f4",
-            "name": "Issue Updated",
-            "type": "artifact",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "content": "## Ticket Updated\n\n**Remediation:** {{[20f9c1dc-72f2-4d23-b60d-e260d4930cbf].[$item].[summary]}}\n\n**Update**\n{{[11e727fe-9568-423c-9394-276721397ffa].[content]}}"
-              },
-              "type": "markdown"
-            },
-            "defaultInputJSONSchema": null,
-            "defaultOutputJSONSchema": null,
-            "outputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
-            "connectionType": "NONE"
-          },
-          "86b4f173-7132-436c-b8e9-56201ce7103f": {
-            "nodeId": "86b4f173-7132-436c-b8e9-56201ce7103f",
-            "name": "Daily Sync",
-            "type": "trigger",
-            "plugin": {
-              "name": "Timers",
-              "slugVendor": "rapid7",
-              "slugName": "timers",
-              "slugVersion": "2.0.4",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/timers/2.0.4/icon.png"
-            },
-            "identifier": "daily",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "message": "",
-                "times_in_utc": "12:00:00"
-              }
-            },
-            "triggerId": "3ef4109f-4916-4064-9430-d09f55971c9c",
-            "defaultInputJSONSchema": {
-              "properties": {
-                "message": {
-                  "description": "The message to send (optional)",
-                  "order": 2,
-                  "title": "Message",
-                  "type": "string"
-                },
-                "times_in_utc": {
-                  "description": "A comma-separated list of UTC times when you want the trigger to occur, e.g. 15:04,01:00,5:00",
-                  "order": 1,
-                  "title": "Time in UTC",
-                  "type": "string"
-                }
-              },
-              "required": [
-                "times_in_utc"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultOutputJSONSchema": {
-              "properties": {
-                "message": {
-                  "description": "Message",
-                  "order": 1,
-                  "title": "Message",
-                  "type": "string"
-                },
-                "time": {
-                  "description": "Time",
-                  "order": 2,
-                  "title": "Time",
-                  "type": "string"
-                }
-              },
-              "title": "Variables",
-              "type": "object"
-            },
-            "outputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg",
-            "connectionType": "ORCHESTRATOR"
-          },
-          "92fc137e-7d53-4c95-bdc7-3b4712634515": {
-            "nodeId": "92fc137e-7d53-4c95-bdc7-3b4712634515",
-            "name": "Encode Creation Report",
-            "type": "action",
-            "plugin": {
-              "name": "Base64",
-              "slugVendor": "rapid7",
-              "slugName": "base64",
-              "slugVersion": "1.1.4",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/base64/1.1.4/icon.png"
-            },
-            "identifier": "encode",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "content": "{{[b700e2d1-c85c-47c9-a4ab-e3892bacff63].[content]}}"
-              }
-            },
-            "defaultInputJSONSchema": {
-              "properties": {
-                "content": {
-                  "description": "Data to encode",
-                  "order": 1,
-                  "title": "Content",
-                  "type": "string"
-                }
-              },
-              "required": [
-                "content"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultOutputJSONSchema": {
-              "properties": {
-                "data": {
-                  "description": "Encoded data result",
-                  "displayType": "bytes",
-                  "format": "bytes",
-                  "order": 1,
-                  "title": "Encoded Data",
-                  "type": "string"
-                }
-              },
-              "required": [
-                "data"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "outputJSONSchema": null,
-            "defaultImageData": "",
-            "connectionType": "ORCHESTRATOR"
-          },
-          "9dfc598f-7e9b-4310-a18d-7d664825541c": {
-            "nodeId": "9dfc598f-7e9b-4310-a18d-7d664825541c",
-            "name": "Update Remediation Issue",
-            "type": "action",
-            "plugin": {
-              "name": "Jira",
-              "slugVendor": "rapid7",
-              "slugName": "jira",
-              "slugVersion": "4.0.2",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/jira/4.0.2/icon.png"
-            },
-            "identifier": "comment_issue",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "comment": "{{[11e727fe-9568-423c-9394-276721397ffa].[content]}}",
-                "id": "{{[fd3e209f-edd4-4550-a505-55db2efb82d4].[content]}}"
-              }
-            },
-            "defaultInputJSONSchema": {
-              "properties": {
-                "comment": {
-                  "description": "Comment to add",
-                  "order": 2,
-                  "title": "Comment",
-                  "type": "string"
-                },
-                "id": {
-                  "description": "Issue ID",
-                  "order": 1,
-                  "title": "ID",
-                  "type": "string"
-                }
-              },
-              "required": [
-                "id",
-                "comment"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultOutputJSONSchema": {
-              "properties": {
-                "comment_id": {
-                  "description": "Comment ID",
-                  "order": 1,
-                  "title": "Comment ID",
-                  "type": "string"
-                }
-              },
-              "title": "Variables",
-              "type": "object"
-            },
-            "outputJSONSchema": null,
-            "defaultImageData": "",
-            "connectionType": "CONNECTION"
-          },
-          "a45b33bf-747a-41ef-af22-96579d90e2a5": {
-            "nodeId": "a45b33bf-747a-41ef-af22-96579d90e2a5",
-            "name": "Issue Summary",
-            "type": "artifact",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "content": "{{[20f9c1dc-72f2-4d23-b60d-e260d4930cbf].[$item].[summary]}}\n\nSteps\n{{[51702c57-dc67-405e-b9df-0c9fa66719ec].[result]}}"
-              },
-              "type": "markdown"
-            },
-            "defaultInputJSONSchema": null,
-            "defaultOutputJSONSchema": null,
-            "outputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
-            "connectionType": "NONE"
-          },
-          "a8c24b71-0d5b-44aa-bd52-1587fb5844ed": {
-            "nodeId": "a8c24b71-0d5b-44aa-bd52-1587fb5844ed",
-            "name": "Retrieve Report",
-            "type": "action",
-            "plugin": {
-              "name": "Storage",
-              "slugVendor": "rapid7",
-              "slugName": "storage",
-              "slugVersion": "1.0.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/storage/1.0.1/icon.png"
-            },
-            "identifier": "retrieve",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "variable_name": "{{[$job].[URL]}}{{[6c282281-7438-4b61-8c1c-5e5486fceb92].[$item].[abd1e993-3ba7-420f-a3ea-cfc778145414].[content]}}"
-              }
-            },
-            "defaultInputJSONSchema": {
-              "properties": {
-                "variable_name": {
-                  "description": "Variable to get value from",
-                  "order": 1,
-                  "title": "Variable Name",
-                  "type": "string"
-                }
-              },
-              "required": [
-                "variable_name"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultOutputJSONSchema": {
-              "properties": {
-                "value": {
-                  "description": "Value",
-                  "order": 1,
-                  "title": "Variable Value",
-                  "type": "string"
-                }
-              },
-              "required": [
-                "value"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "outputJSONSchema": null,
-            "defaultImageData": "",
-            "connectionType": "ORCHESTRATOR"
-          },
-          "ab9b02a9-97d1-4ae2-8262-280f4f12fa9d": {
-            "nodeId": "ab9b02a9-97d1-4ae2-8262-280f4f12fa9d",
-            "name": "Update or Create?",
-            "type": "automated_decision",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "defaultEdgeId": "30523fd1-5882-4c37-8feb-cb20fcd5377b",
-              "stepControlParams": [
-                {
-                  "edgeId": "30523fd1-5882-4c37-8feb-cb20fcd5377b",
-                  "expression": {},
-                  "expressionText": ""
-                },
-                {
-                  "edgeId": "c14b9590-09c3-44a2-9db5-0edb8ba85704",
-                  "expression": {
-                    "left": {
-                      "name": "fd3e209f-edd4-4550-a505-55db2efb82d4.content",
-                      "type": "variable"
-                    },
-                    "op": "!=",
-                    "right": {
-                      "type": "literal",
-                      "value": ""
-                    },
-                    "type": "binary"
-                  },
-                  "expressionText": "{{[fd3e209f-edd4-4550-a505-55db2efb82d4].[content]}} != \"\""
-                }
-              ]
-            },
-            "defaultInputJSONSchema": null,
-            "defaultOutputJSONSchema": null,
-            "outputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
-            "connectionType": "NONE"
-          },
-          "abd1e993-3ba7-420f-a3ea-cfc778145414": {
-            "nodeId": "abd1e993-3ba7-420f-a3ea-cfc778145414",
-            "name": "TicketKey",
-            "type": "artifact",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "content": "Key:{{[20f9c1dc-72f2-4d23-b60d-e260d4930cbf].[$item].[nexposeId]}}"
-              },
-              "type": "markdown"
-            },
-            "defaultInputJSONSchema": null,
-            "defaultOutputJSONSchema": null,
-            "outputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
-            "connectionType": "NONE"
-          },
-          "b700e2d1-c85c-47c9-a4ab-e3892bacff63": {
-            "nodeId": "b700e2d1-c85c-47c9-a4ab-e3892bacff63",
-            "name": "Issue Created",
-            "type": "artifact",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "content": "## Ticket Created\n\n**Title:** {{[54d1078f-4c9b-4ba5-bed5-ad96280cdd75].[content]}}\n\n**Summary:** {{[a45b33bf-747a-41ef-af22-96579d90e2a5].[content]}}\n\n**Details:** {{[0a9ef592-3310-4abd-973e-12de63d82b95].[content]}}"
-              },
-              "type": "markdown"
-            },
-            "defaultInputJSONSchema": null,
-            "defaultOutputJSONSchema": null,
-            "outputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
-            "connectionType": "NONE"
-          },
-          "d38a0b1e-73dd-455b-804b-693738f9b67a": {
-            "nodeId": "d38a0b1e-73dd-455b-804b-693738f9b67a",
-            "name": "Store Creation Report",
-            "type": "action",
-            "plugin": {
-              "name": "Storage",
-              "slugVendor": "rapid7",
-              "slugName": "storage",
-              "slugVersion": "1.0.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/storage/1.0.1/icon.png"
-            },
-            "identifier": "store",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "variable_name": "{{[$job].[URL]}}{{[abd1e993-3ba7-420f-a3ea-cfc778145414].[content]}}",
-                "variable_value": "{{[92fc137e-7d53-4c95-bdc7-3b4712634515].[data]}}"
-              }
-            },
-            "defaultInputJSONSchema": {
-              "properties": {
-                "variable_name": {
-                  "description": "Name of the variable to store",
-                  "order": 1,
-                  "title": "Variable Name",
-                  "type": "string"
-                },
-                "variable_value": {
-                  "description": "Value of the variable to store",
-                  "order": 2,
-                  "title": "Variable Value",
-                  "type": "string"
-                }
-              },
-              "required": [
-                "variable_value",
-                "variable_name"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultOutputJSONSchema": {
-              "properties": {
-                "success": {
-                  "description": "Was operation successful",
-                  "order": 1,
-                  "title": "Success",
-                  "type": "boolean"
-                }
-              },
-              "required": [
-                "success"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "outputJSONSchema": null,
-            "defaultImageData": "",
-            "connectionType": "ORCHESTRATOR"
-          },
-          "d75e3379-575a-47f7-afac-e882eb65da02": {
-            "nodeId": "d75e3379-575a-47f7-afac-e882eb65da02",
-            "name": "Store Update Report",
-            "type": "action",
-            "plugin": {
-              "name": "Storage",
-              "slugVendor": "rapid7",
-              "slugName": "storage",
-              "slugVersion": "1.0.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/storage/1.0.1/icon.png"
-            },
-            "identifier": "store",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "variable_name": "{{[$job].[URL]}}{{[abd1e993-3ba7-420f-a3ea-cfc778145414].[content]}}",
-                "variable_value": "{{[34d46670-e794-4325-8fd1-39a82c3fc2ca].[data]}}"
-              }
-            },
-            "defaultInputJSONSchema": {
-              "properties": {
-                "variable_name": {
-                  "description": "Name of the variable to store",
-                  "order": 1,
-                  "title": "Variable Name",
-                  "type": "string"
-                },
-                "variable_value": {
-                  "description": "Value of the variable to store",
-                  "order": 2,
-                  "title": "Variable Value",
-                  "type": "string"
-                }
-              },
-              "required": [
-                "variable_value",
-                "variable_name"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultOutputJSONSchema": {
-              "properties": {
-                "success": {
-                  "description": "Was operation successful",
-                  "order": 1,
-                  "title": "Success",
-                  "type": "boolean"
-                }
-              },
-              "required": [
-                "success"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "outputJSONSchema": null,
-            "defaultImageData": "",
-            "connectionType": "ORCHESTRATOR"
-          },
-          "db3634ac-3978-4920-97c9-f980b91f03b8": {
-            "nodeId": "db3634ac-3978-4920-97c9-f980b91f03b8",
-            "name": "Top 25 Remediations",
-            "type": "action",
-            "plugin": {
-              "name": "Rapid7 InsightVM",
-              "slugVendor": "rapid7",
-              "slugName": "rapid7_insightvm",
-              "slugVersion": "4.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/4.0.0/icon.png"
-            },
-            "identifier": "top_remediations",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "asset_limit": 0,
-                "limit": 25,
-                "scope": "none",
-                "scope_ids": [],
-                "vulnerability_limit": 0
-              }
-            },
-            "defaultInputJSONSchema": {
-              "properties": {
-                "asset_limit": {
-                  "description": "The amount of assets to be returned with each top remediation; this can be used to reduce message size and processing time",
-                  "order": 4,
-                  "title": "Asset Limit",
-                  "type": "integer"
-                },
-                "limit": {
-                  "default": 25,
-                  "description": "Number of remediations for which tickets should be generated",
-                  "enum": [
-                    10,
-                    25,
-                    50,
-                    100
-                  ],
-                  "order": 1,
-                  "title": "Limit",
-                  "type": "integer"
-                },
-                "scope": {
-                  "default": "none",
-                  "description": "Scope context for generated report; if set remediations will be scoped by each in scope ID, e.g Site ID, Tag ID, Asset Group ID",
-                  "enum": [
-                    "none",
-                    "assets",
-                    "assetGroups",
-                    "sites",
-                    "tags",
-                    "scan"
-                  ],
-                  "order": 2,
-                  "title": "Scope",
-                  "type": "string"
-                },
-                "scope_ids": {
-                  "default": [],
-                  "description": "Scope IDs for which tickets should be generated, by default all are included",
-                  "items": {
-                    "type": "integer"
-                  },
-                  "order": 3,
-                  "title": "Scope IDs",
-                  "type": "array"
-                },
-                "vulnerability_limit": {
-                  "description": "The amount of vulnerabilities to be returned with each top remediation; this can be used to reduce message size and processing time",
-                  "order": 5,
-                  "title": "Vulnerability Limit",
-                  "type": "integer"
-                }
-              },
-              "required": [
-                "limit",
-                "scope"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultOutputJSONSchema": {
-              "definitions": {
-                "remediation": {
-                  "properties": {
-                    "assetCount": {
-                      "description": "The number of assets that require the solution to be applied",
-                      "order": 5,
-                      "title": "Asset Count",
-                      "type": "integer"
-                    },
-                    "assets": {
-                      "description": "The assets that require the solution to be applied",
-                      "items": {
-                        "$ref": "#/definitions/remediation_asset"
-                      },
-                      "order": 8,
-                      "title": "Assets",
-                      "type": "array"
-                    },
-                    "fix": {
-                      "description": "The steps that are part of the fix this solution prescribes",
-                      "order": 4,
-                      "title": "Fix",
-                      "type": "string"
-                    },
-                    "nexposeId": {
-                      "description": "The identifier of the solution within InsightVM/Nexpose",
-                      "order": 2,
-                      "title": "Rapid7 Solution ID",
-                      "type": "string"
-                    },
-                    "riskScore": {
-                      "description": "The risk score that is reduced by performing the solution",
-                      "order": 7,
-                      "title": "Risk Score",
-                      "type": "integer"
-                    },
-                    "solutionId": {
-                      "description": "The identifier of the solution",
-                      "order": 1,
-                      "title": "Solution ID",
-                      "type": "integer"
-                    },
-                    "summary": {
-                      "description": "Remediation summary",
-                      "order": 3,
-                      "title": "Summary",
-                      "type": "string"
-                    },
-                    "vulnerabilities": {
-                      "description": "The vulnerabilities that would be remediated",
-                      "items": {
-                        "$ref": "#/definitions/remediation_vulnerability"
-                      },
-                      "order": 9,
-                      "title": "Vulnerabilities",
-                      "type": "array"
-                    },
-                    "vulnerabilityCount": {
-                      "description": "The number of vulnerabilities that would be remediated",
-                      "order": 6,
-                      "title": "Vulnerability Count",
-                      "type": "integer"
-                    }
-                  },
-                  "required": [
-                    "nexposeId",
-                    "summary",
-                    "assetCount",
-                    "vulnerabilityCount",
-                    "riskScore",
-                    "assets",
-                    "solutionId",
-                    "vulnerabilities"
-                  ],
-                  "title": "Remediation",
-                  "type": "object"
-                },
-                "remediation_asset": {
-                  "properties": {
-                    "criticalityTag": {
-                      "description": "The criticality tag assigned to the asset",
-                      "order": 7,
-                      "title": "Criticality Tag",
-                      "type": "string"
-                    },
-                    "hostName": {
-                      "description": "Primary host name (local or FQDN) of the asset",
-                      "order": 2,
-                      "title": "Hostname",
-                      "type": "string"
-                    },
-                    "id": {
-                      "description": "Identifier of the asset",
-                      "order": 1,
-                      "title": "ID",
-                      "type": "integer"
-                    },
-                    "ip": {
-                      "description": "Primary IPv4 or IPv6 address of the asset",
-                      "order": 3,
-                      "title": "IP",
-                      "type": "string"
-                    },
-                    "mac": {
-                      "description": "Media Access Control (MAC) address, e.g. AF:12:BC:5A:F7:48",
-                      "order": 4,
-                      "title": "MAC",
-                      "type": "string"
-                    },
-                    "os": {
-                      "description": "Full description of the operating system of the asset",
-                      "order": 5,
-                      "title": "OS",
-                      "type": "string"
-                    },
-                    "riskScore": {
-                      "description": "Risk score (with criticality adjustments) of the asset",
-                      "order": 6,
-                      "title": "Risk Score",
-                      "type": "number"
-                    }
-                  },
-                  "required": [
-                    "id",
-                    "ip"
-                  ],
-                  "title": "Remediation Asset",
-                  "type": "object"
-                },
-                "remediation_vulnerability": {
-                  "properties": {
-                    "cvssScore": {
-                      "description": "The CVSS score of the vulnerability",
-                      "order": 4,
-                      "title": "CVSS Score",
-                      "type": "string"
-                    },
-                    "description": {
-                      "description": "The description of the vulnerability",
-                      "order": 3,
-                      "title": "Description",
-                      "type": "string"
-                    },
-                    "id": {
-                      "description": "Identifier of the vulnerability",
-                      "order": 1,
-                      "title": "ID",
-                      "type": "integer"
-                    },
-                    "riskScore": {
-                      "description": "The risk score of the vulnerability",
-                      "order": 6,
-                      "title": "Risk Score",
-                      "type": "integer"
-                    },
-                    "severity": {
-                      "description": "The severity of the vulnerability",
-                      "order": 5,
-                      "title": "Severity",
-                      "type": "integer"
-                    },
-                    "title": {
-                      "description": "The title of the vulnerability",
-                      "order": 2,
-                      "title": "Title",
-                      "type": "string"
-                    }
-                  },
-                  "required": [
-                    "riskScore",
-                    "id",
-                    "title",
-                    "description",
-                    "cvssScore",
-                    "severity"
-                  ],
-                  "title": "Remediation Vulnerability",
-                  "type": "object"
-                }
-              },
-              "properties": {
-                "remediations": {
-                  "description": "List of top remediations",
-                  "items": {
-                    "$ref": "#/definitions/remediation"
-                  },
-                  "order": 1,
-                  "title": "Remediations",
-                  "type": "array"
-                }
-              },
-              "required": [
-                "remediations"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "outputJSONSchema": null,
-            "defaultImageData": "",
-            "connectionType": "CONNECTION"
-          },
-          "e5fcc9eb-f4cb-490f-a7e3-ad7767a763c6": {
-            "nodeId": "e5fcc9eb-f4cb-490f-a7e3-ad7767a763c6",
+          "2aa84e2a-34df-4f68-b9a3-e92a6cb947e4": {
+            "nodeId": "2aa84e2a-34df-4f68-b9a3-e92a6cb947e4",
             "name": "Create Remediation Issue",
             "type": "action",
             "plugin": {
               "name": "Jira",
               "slugVendor": "rapid7",
               "slugName": "jira",
-              "slugVersion": "4.0.2",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/jira/4.0.2/icon.png"
+              "slugVersion": "6.0.3",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/jira/6.0.3/icon.png"
             },
             "identifier": "create_issue",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "attachment_bytes": "",
@@ -1694,13 +499,13 @@
                   "displayType": "bytes",
                   "format": "bytes",
                   "order": 6,
-                  "title": "Attachment bytes",
+                  "title": "Attachment Bytes",
                   "type": "string"
                 },
                 "attachment_filename": {
                   "description": "Attachment filename",
                   "order": 7,
-                  "title": "Attachment filename",
+                  "title": "Attachment Filename",
                   "type": "string"
                 },
                 "description": {
@@ -1886,6 +691,1211 @@
             "defaultImageData": "",
             "connectionType": "CONNECTION"
           },
+          "34d46670-e794-4325-8fd1-39a82c3fc2ca": {
+            "nodeId": "34d46670-e794-4325-8fd1-39a82c3fc2ca",
+            "name": "Encode Update Report",
+            "type": "action",
+            "plugin": {
+              "name": "Base64",
+              "slugVendor": "rapid7",
+              "slugName": "base64",
+              "slugVersion": "1.1.6",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/base64/1.1.6/icon.png"
+            },
+            "identifier": "encode",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "content": "{{[81688941-366f-4a93-a8f2-4e707f9678f4].[content]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "content": {
+                  "description": "Data to encode",
+                  "order": 1,
+                  "title": "Content",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "content"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "data": {
+                  "description": "Encoded data result",
+                  "displayType": "bytes",
+                  "format": "bytes",
+                  "order": 1,
+                  "title": "Encoded Data",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "data"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR"
+          },
+          "4e9bff90-cdac-4f96-98d8-ac2a28bc9d11": {
+            "nodeId": "4e9bff90-cdac-4f96-98d8-ac2a28bc9d11",
+            "name": "Report",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "# Activity Report\n{{#each [6c282281-7438-4b61-8c1c-5e5486fceb92].[$outputs]}}\n{{[0ec4df0a-2ff7-4300-98f9-ed6c7488795a].[data]}}\n{{/each}}"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "51702c57-dc67-405e-b9df-0c9fa66719ec": {
+            "nodeId": "51702c57-dc67-405e-b9df-0c9fa66719ec",
+            "name": "Clean Fix",
+            "type": "action",
+            "plugin": {
+              "name": "Advanced Regex",
+              "slugVendor": "rapid7",
+              "slugName": "advanced_regex",
+              "slugVersion": "1.0.3",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/advanced_regex/1.0.3/icon.png"
+            },
+            "identifier": "replace",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "ascii": false,
+                "dotall": false,
+                "ignorecase": false,
+                "in_regex": "((<\\/?p>)*\\\\n\\s*\\\\n\\s*(<\\/?p>)*\\s*)|((<\\/?p>)*\\\\n\\s*(<\\/?p>)*)",
+                "in_string": "{{#if [20f9c1dc-72f2-4d23-b60d-e260d4930cbf].[$item].[fix]}}{{[20f9c1dc-72f2-4d23-b60d-e260d4930cbf].[$item].[fix]}}{{else}} {{/if}}",
+                "max_replace": 0,
+                "multiline": false,
+                "replace_string": "\\n"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "ascii": {
+                  "default": false,
+                  "description": "Make \\w \\W \\b \\B follow ASCII rules",
+                  "order": 8,
+                  "title": "ASCII",
+                  "type": "boolean"
+                },
+                "dotall": {
+                  "default": false,
+                  "description": "Make . match newline",
+                  "order": 7,
+                  "title": "Dot All",
+                  "type": "boolean"
+                },
+                "ignorecase": {
+                  "default": false,
+                  "description": "Make regex non-case sensitive",
+                  "order": 5,
+                  "title": "Ignore Case",
+                  "type": "boolean"
+                },
+                "in_regex": {
+                  "description": "Regex to match",
+                  "order": 3,
+                  "title": "Regex",
+                  "type": "string"
+                },
+                "in_string": {
+                  "description": "Input string",
+                  "order": 1,
+                  "title": "Input String",
+                  "type": "string"
+                },
+                "max_replace": {
+                  "default": 0,
+                  "description": "Max occurrences to replace - if zero all will be replaced",
+                  "order": 4,
+                  "title": "Max Replace",
+                  "type": "integer"
+                },
+                "multiline": {
+                  "default": false,
+                  "description": "Make begin/end consider each line",
+                  "order": 6,
+                  "title": "Multiline",
+                  "type": "boolean"
+                },
+                "replace_string": {
+                  "description": "The string to replace matches with",
+                  "order": 2,
+                  "title": "New String",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "in_string",
+                "in_regex"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "result": {
+                  "description": "The result of the replace operation",
+                  "order": 1,
+                  "title": "Result String",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "result"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR"
+          },
+          "54d1078f-4c9b-4ba5-bed5-ad96280cdd75": {
+            "nodeId": "54d1078f-4c9b-4ba5-bed5-ad96280cdd75",
+            "name": "Issue Title",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "IVM Top Remediation: {{[20f9c1dc-72f2-4d23-b60d-e260d4930cbf].[$item].[summary]}} - {{[abd1e993-3ba7-420f-a3ea-cfc778145414].[content]}}"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "6c282281-7438-4b61-8c1c-5e5486fceb92": {
+            "nodeId": "6c282281-7438-4b61-8c1c-5e5486fceb92",
+            "name": "Extract Reports",
+            "type": "loop",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "innerEdgeId": "25b2eeae-a796-49eb-b70e-10267481aee9",
+              "nextEdgeId": "1907ea83-e9ce-4cc2-9bec-19a0cc5747c0",
+              "repeatVariable": "{{[20f9c1dc-72f2-4d23-b60d-e260d4930cbf].[$outputs]}}"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": {
+              "properties": {},
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/loop.svg",
+            "connectionType": "NONE"
+          },
+          "708023ac-b42f-457b-925f-4a864fbc8566": {
+            "nodeId": "708023ac-b42f-457b-925f-4a864fbc8566",
+            "name": "Extract Patch Title from Key",
+            "type": "pattern_match",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "captureAll": false,
+              "expressionText": "key:{{patchTitle:/.*/}}",
+              "expressions": [
+                {
+                  "type": "text",
+                  "value": "key:"
+                },
+                {
+                  "type": "variable",
+                  "value": {
+                    "ident": "patchTitle",
+                    "regex": ".*"
+                  }
+                }
+              ],
+              "ignoreCase": true,
+              "input": "{{[abd1e993-3ba7-420f-a3ea-cfc778145414].[content]}}"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/pattern-match.svg",
+            "connectionType": "NONE"
+          },
+          "81688941-366f-4a93-a8f2-4e707f9678f4": {
+            "nodeId": "81688941-366f-4a93-a8f2-4e707f9678f4",
+            "name": "Issue Updated",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "## Ticket Updated\n\n**Remediation:** {{[20f9c1dc-72f2-4d23-b60d-e260d4930cbf].[$item].[summary]}}\n\n**Update**\n{{[11e727fe-9568-423c-9394-276721397ffa].[content]}}"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "86b4f173-7132-436c-b8e9-56201ce7103f": {
+            "nodeId": "86b4f173-7132-436c-b8e9-56201ce7103f",
+            "name": "Daily Sync",
+            "type": "trigger",
+            "plugin": {
+              "name": "Timers",
+              "slugVendor": "rapid7",
+              "slugName": "timers",
+              "slugVersion": "2.0.4",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/timers/2.0.4/icon.png"
+            },
+            "identifier": "daily",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "message": "",
+                "times_in_utc": "12:00:00"
+              }
+            },
+            "triggerId": "f0cc23b3-d563-4f51-825a-689c50cde72b",
+            "defaultInputJSONSchema": {
+              "properties": {
+                "message": {
+                  "description": "The message to send (optional)",
+                  "order": 2,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "times_in_utc": {
+                  "description": "A comma-separated list of UTC times when you want the trigger to occur, e.g. 15:04,01:00,5:00",
+                  "order": 1,
+                  "title": "Time in UTC",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "times_in_utc"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "message": {
+                  "description": "Message",
+                  "order": 1,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "time": {
+                  "description": "Time",
+                  "order": 2,
+                  "title": "Time",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg",
+            "connectionType": "ORCHESTRATOR"
+          },
+          "92fc137e-7d53-4c95-bdc7-3b4712634515": {
+            "nodeId": "92fc137e-7d53-4c95-bdc7-3b4712634515",
+            "name": "Encode Creation Report",
+            "type": "action",
+            "plugin": {
+              "name": "Base64",
+              "slugVendor": "rapid7",
+              "slugName": "base64",
+              "slugVersion": "1.1.6",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/base64/1.1.6/icon.png"
+            },
+            "identifier": "encode",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "content": "{{[b700e2d1-c85c-47c9-a4ab-e3892bacff63].[content]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "content": {
+                  "description": "Data to encode",
+                  "order": 1,
+                  "title": "Content",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "content"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "data": {
+                  "description": "Encoded data result",
+                  "displayType": "bytes",
+                  "format": "bytes",
+                  "order": 1,
+                  "title": "Encoded Data",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "data"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR"
+          },
+          "a45b33bf-747a-41ef-af22-96579d90e2a5": {
+            "nodeId": "a45b33bf-747a-41ef-af22-96579d90e2a5",
+            "name": "Issue Summary",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "{{[20f9c1dc-72f2-4d23-b60d-e260d4930cbf].[$item].[summary]}}\n\nSteps\n{{[51702c57-dc67-405e-b9df-0c9fa66719ec].[result]}}"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "a8c24b71-0d5b-44aa-bd52-1587fb5844ed": {
+            "nodeId": "a8c24b71-0d5b-44aa-bd52-1587fb5844ed",
+            "name": "Retrieve Report",
+            "type": "action",
+            "plugin": {
+              "name": "Storage",
+              "slugVendor": "rapid7",
+              "slugName": "storage",
+              "slugVersion": "1.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/storage/1.0.1/icon.png"
+            },
+            "identifier": "retrieve",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "variable_name": "{{[$job].[URL]}}{{[6c282281-7438-4b61-8c1c-5e5486fceb92].[$item].[abd1e993-3ba7-420f-a3ea-cfc778145414].[content]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "variable_name": {
+                  "description": "Variable to get value from",
+                  "order": 1,
+                  "title": "Variable Name",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "variable_name"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "value": {
+                  "description": "Value",
+                  "order": 1,
+                  "title": "Variable Value",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "value"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR"
+          },
+          "ab9b02a9-97d1-4ae2-8262-280f4f12fa9d": {
+            "nodeId": "ab9b02a9-97d1-4ae2-8262-280f4f12fa9d",
+            "name": "Update or Create?",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "30523fd1-5882-4c37-8feb-cb20fcd5377b",
+              "stepControlParams": [
+                {
+                  "edgeId": "30523fd1-5882-4c37-8feb-cb20fcd5377b",
+                  "expression": {},
+                  "expressionText": ""
+                },
+                {
+                  "edgeId": "c14b9590-09c3-44a2-9db5-0edb8ba85704",
+                  "expression": {
+                    "left": {
+                      "name": "fd3e209f-edd4-4550-a505-55db2efb82d4.content",
+                      "type": "variable"
+                    },
+                    "op": "!=",
+                    "right": {
+                      "type": "literal",
+                      "value": ""
+                    },
+                    "type": "binary"
+                  },
+                  "expressionText": "{{[fd3e209f-edd4-4550-a505-55db2efb82d4].[content]}} != \"\""
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          },
+          "abd1e993-3ba7-420f-a3ea-cfc778145414": {
+            "nodeId": "abd1e993-3ba7-420f-a3ea-cfc778145414",
+            "name": "TicketKey",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "Key:{{[20f9c1dc-72f2-4d23-b60d-e260d4930cbf].[$item].[nexposeId]}}"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "b08ff170-86bb-477a-b938-83ece954e7c7": {
+            "nodeId": "b08ff170-86bb-477a-b938-83ece954e7c7",
+            "name": "Search for Existing Issue",
+            "type": "action",
+            "plugin": {
+              "name": "Jira",
+              "slugVendor": "rapid7",
+              "slugName": "jira",
+              "slugVersion": "6.0.3",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/jira/6.0.3/icon.png"
+            },
+            "identifier": "find_issues",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "get_attachments": false,
+                "jql": "project = \"change_me\" AND summary ~ {{[708023ac-b42f-457b-925f-4a864fbc8566].[patchTitle]}} AND status != \"Done\"",
+                "max": 10
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "get_attachments": {
+                  "default": false,
+                  "description": "Get attachments from issue",
+                  "order": 3,
+                  "title": "Get Attachments",
+                  "type": "boolean"
+                },
+                "jql": {
+                  "description": "JQL search string to use",
+                  "order": 1,
+                  "title": "JQL",
+                  "type": "string"
+                },
+                "max": {
+                  "default": 10,
+                  "description": "Max results to return",
+                  "order": 2,
+                  "title": "Max",
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "jql",
+                "max"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "file": {
+                  "description": "File Object",
+                  "properties": {
+                    "content": {
+                      "description": "File contents",
+                      "format": "bytes",
+                      "title": "Content",
+                      "type": "string"
+                    },
+                    "filename": {
+                      "description": "Name of file",
+                      "title": "Filename",
+                      "type": "string"
+                    }
+                  },
+                  "title": "File",
+                  "type": "object"
+                },
+                "issue": {
+                  "properties": {
+                    "assignee": {
+                      "description": "Assigned User",
+                      "order": 11,
+                      "title": "Assignee",
+                      "type": "string"
+                    },
+                    "attachments": {
+                      "description": "Attachments",
+                      "items": {
+                        "$ref": "#/definitions/file"
+                      },
+                      "order": 15,
+                      "title": "Attachments",
+                      "type": "array"
+                    },
+                    "created_at": {
+                      "description": "Created At",
+                      "order": 12,
+                      "title": "Created At",
+                      "type": "string"
+                    },
+                    "description": {
+                      "description": "Description",
+                      "order": 7,
+                      "title": "Description",
+                      "type": "string"
+                    },
+                    "fields": {
+                      "description": "Full list of fields",
+                      "order": 16,
+                      "title": "Fields",
+                      "type": "object"
+                    },
+                    "id": {
+                      "description": "Issue ID",
+                      "order": 1,
+                      "title": "Id",
+                      "type": "string"
+                    },
+                    "key": {
+                      "description": "Issue Key",
+                      "order": 3,
+                      "title": "Key",
+                      "type": "string"
+                    },
+                    "labels": {
+                      "description": "Labels",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 9,
+                      "title": "Labels",
+                      "type": "array"
+                    },
+                    "project": {
+                      "description": "Project",
+                      "order": 2,
+                      "title": "Project",
+                      "type": "string"
+                    },
+                    "reporter": {
+                      "description": "Reporting User",
+                      "order": 10,
+                      "title": "Reporter",
+                      "type": "string"
+                    },
+                    "resolution": {
+                      "description": "Resolution",
+                      "order": 8,
+                      "title": "Resolution",
+                      "type": "string"
+                    },
+                    "resolved_at": {
+                      "description": "Resolved At",
+                      "order": 14,
+                      "title": "Resolved At",
+                      "type": "string"
+                    },
+                    "status": {
+                      "description": "Status",
+                      "order": 4,
+                      "title": "Status",
+                      "type": "string"
+                    },
+                    "summary": {
+                      "description": "Summary",
+                      "order": 6,
+                      "title": "Summary",
+                      "type": "string"
+                    },
+                    "updated_at": {
+                      "description": "Updated At",
+                      "order": 13,
+                      "title": "Updated At",
+                      "type": "string"
+                    },
+                    "url": {
+                      "description": "Issue URL",
+                      "order": 5,
+                      "title": "Url",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Issue",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "issues": {
+                  "description": "The list of found issues",
+                  "items": {
+                    "$ref": "#/definitions/issue"
+                  },
+                  "order": 1,
+                  "title": "Issues",
+                  "type": "array"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "b700e2d1-c85c-47c9-a4ab-e3892bacff63": {
+            "nodeId": "b700e2d1-c85c-47c9-a4ab-e3892bacff63",
+            "name": "Issue Created",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "## Ticket Created\n\n**Title:** {{[54d1078f-4c9b-4ba5-bed5-ad96280cdd75].[content]}}\n\n**Summary:** {{[a45b33bf-747a-41ef-af22-96579d90e2a5].[content]}}\n\n**Details:** {{[0a9ef592-3310-4abd-973e-12de63d82b95].[content]}}"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "be661151-8ef2-43ab-8b8a-4519acbd58e8": {
+            "nodeId": "be661151-8ef2-43ab-8b8a-4519acbd58e8",
+            "name": "Update Remediation Issue",
+            "type": "action",
+            "plugin": {
+              "name": "Jira",
+              "slugVendor": "rapid7",
+              "slugName": "jira",
+              "slugVersion": "6.0.3",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/jira/6.0.3/icon.png"
+            },
+            "identifier": "comment_issue",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "comment": "{{[11e727fe-9568-423c-9394-276721397ffa].[content]}}",
+                "id": "{{[fd3e209f-edd4-4550-a505-55db2efb82d4].[content]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "comment": {
+                  "description": "Comment to add",
+                  "order": 2,
+                  "title": "Comment",
+                  "type": "string"
+                },
+                "id": {
+                  "description": "Issue ID",
+                  "order": 1,
+                  "title": "ID",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "comment"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "comment_id": {
+                  "description": "Comment ID",
+                  "order": 1,
+                  "title": "Comment ID",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "d38a0b1e-73dd-455b-804b-693738f9b67a": {
+            "nodeId": "d38a0b1e-73dd-455b-804b-693738f9b67a",
+            "name": "Store Creation Report",
+            "type": "action",
+            "plugin": {
+              "name": "Storage",
+              "slugVendor": "rapid7",
+              "slugName": "storage",
+              "slugVersion": "1.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/storage/1.0.1/icon.png"
+            },
+            "identifier": "store",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "variable_name": "{{[$job].[URL]}}{{[abd1e993-3ba7-420f-a3ea-cfc778145414].[content]}}",
+                "variable_value": "{{[92fc137e-7d53-4c95-bdc7-3b4712634515].[data]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "variable_name": {
+                  "description": "Name of the variable to store",
+                  "order": 1,
+                  "title": "Variable Name",
+                  "type": "string"
+                },
+                "variable_value": {
+                  "description": "Value of the variable to store",
+                  "order": 2,
+                  "title": "Variable Value",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "variable_value",
+                "variable_name"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "success": {
+                  "description": "Was operation successful",
+                  "order": 1,
+                  "title": "Success",
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "success"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR"
+          },
+          "d75e3379-575a-47f7-afac-e882eb65da02": {
+            "nodeId": "d75e3379-575a-47f7-afac-e882eb65da02",
+            "name": "Store Update Report",
+            "type": "action",
+            "plugin": {
+              "name": "Storage",
+              "slugVendor": "rapid7",
+              "slugName": "storage",
+              "slugVersion": "1.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/storage/1.0.1/icon.png"
+            },
+            "identifier": "store",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "variable_name": "{{[$job].[URL]}}{{[abd1e993-3ba7-420f-a3ea-cfc778145414].[content]}}",
+                "variable_value": "{{[34d46670-e794-4325-8fd1-39a82c3fc2ca].[data]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "variable_name": {
+                  "description": "Name of the variable to store",
+                  "order": 1,
+                  "title": "Variable Name",
+                  "type": "string"
+                },
+                "variable_value": {
+                  "description": "Value of the variable to store",
+                  "order": 2,
+                  "title": "Variable Value",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "variable_value",
+                "variable_name"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "success": {
+                  "description": "Was operation successful",
+                  "order": 1,
+                  "title": "Success",
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "success"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR"
+          },
+          "db3634ac-3978-4920-97c9-f980b91f03b8": {
+            "nodeId": "db3634ac-3978-4920-97c9-f980b91f03b8",
+            "name": "Top 25 Remediations",
+            "type": "action",
+            "plugin": {
+              "name": "Rapid7 InsightVM",
+              "slugVendor": "rapid7",
+              "slugName": "rapid7_insightvm",
+              "slugVersion": "4.8.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/4.8.1/icon.png"
+            },
+            "identifier": "top_remediations",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "asset_limit": 0,
+                "limit": 25,
+                "scope": "none",
+                "scope_ids": [],
+                "vulnerability_limit": 0
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "asset_limit": {
+                  "description": "The amount of assets to be returned with each top remediation; this can be used to reduce message size and processing time",
+                  "order": 4,
+                  "title": "Asset Limit",
+                  "type": "integer"
+                },
+                "limit": {
+                  "default": 25,
+                  "description": "Number of remediations for which tickets should be generated",
+                  "enum": [
+                    10,
+                    25,
+                    50,
+                    100
+                  ],
+                  "order": 1,
+                  "title": "Limit",
+                  "type": "integer"
+                },
+                "scope": {
+                  "default": "none",
+                  "description": "Scope context for generated report; if set remediations will be scoped by each in scope ID, e.g Site ID, Tag ID, Asset Group ID",
+                  "enum": [
+                    "none",
+                    "assets",
+                    "assetGroups",
+                    "sites",
+                    "tags",
+                    "scan"
+                  ],
+                  "order": 2,
+                  "title": "Scope",
+                  "type": "string"
+                },
+                "scope_ids": {
+                  "default": [],
+                  "description": "Scope IDs for which tickets should be generated, by default all are included",
+                  "items": {
+                    "type": "integer"
+                  },
+                  "order": 3,
+                  "title": "Scope IDs",
+                  "type": "array"
+                },
+                "vulnerability_limit": {
+                  "description": "The amount of vulnerabilities to be returned with each top remediation; this can be used to reduce message size and processing time",
+                  "order": 5,
+                  "title": "Vulnerability Limit",
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "limit",
+                "scope"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "remediation": {
+                  "properties": {
+                    "assetCount": {
+                      "description": "The number of assets that require the solution to be applied",
+                      "order": 5,
+                      "title": "Asset Count",
+                      "type": "integer"
+                    },
+                    "assets": {
+                      "description": "The assets that require the solution to be applied",
+                      "items": {
+                        "$ref": "#/definitions/remediation_asset"
+                      },
+                      "order": 8,
+                      "title": "Assets",
+                      "type": "array"
+                    },
+                    "fix": {
+                      "description": "The steps that are part of the fix this solution prescribes",
+                      "order": 4,
+                      "title": "Fix",
+                      "type": "string"
+                    },
+                    "nexposeId": {
+                      "description": "The identifier of the solution within InsightVM/Nexpose",
+                      "order": 2,
+                      "title": "Rapid7 Solution ID",
+                      "type": "string"
+                    },
+                    "riskScore": {
+                      "description": "The risk score that is reduced by performing the solution",
+                      "order": 7,
+                      "title": "Risk Score",
+                      "type": "integer"
+                    },
+                    "solutionId": {
+                      "description": "The identifier of the solution",
+                      "order": 1,
+                      "title": "Solution ID",
+                      "type": "integer"
+                    },
+                    "summary": {
+                      "description": "Remediation summary",
+                      "order": 3,
+                      "title": "Summary",
+                      "type": "string"
+                    },
+                    "vulnerabilities": {
+                      "description": "The vulnerabilities that would be remediated",
+                      "items": {
+                        "$ref": "#/definitions/remediation_vulnerability"
+                      },
+                      "order": 9,
+                      "title": "Vulnerabilities",
+                      "type": "array"
+                    },
+                    "vulnerabilityCount": {
+                      "description": "The number of vulnerabilities that would be remediated",
+                      "order": 6,
+                      "title": "Vulnerability Count",
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "assetCount",
+                    "nexposeId",
+                    "summary",
+                    "vulnerabilityCount",
+                    "riskScore",
+                    "assets",
+                    "vulnerabilities",
+                    "solutionId"
+                  ],
+                  "title": "Remediation",
+                  "type": "object"
+                },
+                "remediation_asset": {
+                  "properties": {
+                    "criticalityTag": {
+                      "description": "The criticality tag assigned to the asset",
+                      "order": 7,
+                      "title": "Criticality Tag",
+                      "type": "string"
+                    },
+                    "hostName": {
+                      "description": "Primary host name (local or FQDN) of the asset",
+                      "order": 2,
+                      "title": "Hostname",
+                      "type": "string"
+                    },
+                    "id": {
+                      "description": "Identifier of the asset",
+                      "order": 1,
+                      "title": "ID",
+                      "type": "integer"
+                    },
+                    "ip": {
+                      "description": "Primary IPv4 or IPv6 address of the asset",
+                      "order": 3,
+                      "title": "IP",
+                      "type": "string"
+                    },
+                    "mac": {
+                      "description": "Media Access Control (MAC) address, e.g. AF:12:BC:5A:F7:48",
+                      "order": 4,
+                      "title": "MAC",
+                      "type": "string"
+                    },
+                    "os": {
+                      "description": "Full description of the operating system of the asset",
+                      "order": 5,
+                      "title": "OS",
+                      "type": "string"
+                    },
+                    "riskScore": {
+                      "description": "Risk score (with criticality adjustments) of the asset",
+                      "order": 6,
+                      "title": "Risk Score",
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "ip"
+                  ],
+                  "title": "Remediation Asset",
+                  "type": "object"
+                },
+                "remediation_vulnerability": {
+                  "properties": {
+                    "cvssScore": {
+                      "description": "The CVSS score of the vulnerability",
+                      "order": 4,
+                      "title": "CVSS Score",
+                      "type": "string"
+                    },
+                    "description": {
+                      "description": "The description of the vulnerability",
+                      "order": 3,
+                      "title": "Description",
+                      "type": "string"
+                    },
+                    "id": {
+                      "description": "Identifier of the vulnerability",
+                      "order": 1,
+                      "title": "ID",
+                      "type": "integer"
+                    },
+                    "riskScore": {
+                      "description": "The risk score of the vulnerability",
+                      "order": 6,
+                      "title": "Risk Score",
+                      "type": "integer"
+                    },
+                    "severity": {
+                      "description": "The severity of the vulnerability",
+                      "order": 5,
+                      "title": "Severity",
+                      "type": "integer"
+                    },
+                    "title": {
+                      "description": "The title of the vulnerability",
+                      "order": 2,
+                      "title": "Title",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "description",
+                    "cvssScore",
+                    "severity",
+                    "riskScore",
+                    "id",
+                    "title"
+                  ],
+                  "title": "Remediation Vulnerability",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "remediations": {
+                  "description": "List of top remediations",
+                  "items": {
+                    "$ref": "#/definitions/remediation"
+                  },
+                  "order": 1,
+                  "title": "Remediations",
+                  "type": "array"
+                }
+              },
+              "required": [
+                "remediations"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
           "fd3e209f-edd4-4550-a505-55db2efb82d4": {
             "nodeId": "fd3e209f-edd4-4550-a505-55db2efb82d4",
             "name": "Existing Ticket Identifier",
@@ -1894,7 +1904,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "{{[05c9327f-0888-4e34-8553-2b9a83df24a5].[issues].[0].[id]}}"
+                "content": "{{[b08ff170-86bb-477a-b938-83ece954e7c7].[issues].[0].[id]}}"
               },
               "type": "markdown"
             },
@@ -1912,7 +1922,7 @@
     ],
     "triggers": [
       {
-        "id": "3ef4109f-4916-4064-9430-d09f55971c9c",
+        "id": "f0cc23b3-d563-4f51-825a-689c50cde72b",
         "identifier": "daily",
         "name": "Daily Sync",
         "description": "Trigger the workflow once a day at the specified time.",

@@ -29,11 +29,11 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Advanced Regex|1.0.1|1|
-|Rapid7 InsightVM|4.0.0|1|
-|Base64|1.1.4|3|
+|Advanced Regex|1.0.3|1|
+|Rapid7 InsightVM|4.8.1|1|
+|Base64|1.1.6|3|
 |Timers|2.0.4|1|
-|Jira|4.0.2|3|
+|Jira|6.0.3|3|
 |Storage|1.0.1|3|
 
 ## Troubleshooting
@@ -42,6 +42,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.4 - Update all plugins used by the workflow.
 * 1.0.3 - Updated workflow to better identify and update existing tickets
 * 1.0.2 - Updated documentation
 * 1.0.1 - Fix filename
