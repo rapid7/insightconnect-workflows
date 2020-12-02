@@ -1,14 +1,14 @@
 {
   "kom": {
-    "komandVersion": "1.39.1-0-g39b69",
+    "komandVersion": "1.70.0-0-g96f18",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2019-10-15T06:53:42.504270679Z",
+    "exportedAt": "2020-12-02T21:48:30.222492211Z",
     "workflowVersions": [
       {
         "name": "Spearphishing Remediation with Office365",
         "type": "runnable",
         "version": "",
-        "description": "",
+        "description": "IDR provides built-in machine learning based detections of spearphishing attempts through DNS queries to spoofed domains. On alert generation, this workflow automatically deletes true positive phishing emails across all user inboxes, and also immediately creates a block domain transport rule in Office365 Security & Compliance Center",
         "graph": {
           "edges": {
             "178c6c88-a375-4711-8878-0728bbbce423": {
@@ -17,7 +17,7 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "c2447438-5b6d-4d16-adfa-cc74d3c51f58",
-              "toNodeId": ""
+              "toNodeId": "f3e7ca90-b788-4623-a002-b5425bec04a9"
             },
             "411c4530-b394-4afe-8ebc-a4782ac37af8": {
               "id": "411c4530-b394-4afe-8ebc-a4782ac37af8",
@@ -27,21 +27,21 @@
               "fromNodeId": "085c9ffa-55de-4f4a-a5b6-a4a42abdb63c",
               "toNodeId": "f302ffdc-fea8-4842-9842-22aa0f23c5c1"
             },
-            "4e981610-b035-4838-87c3-ac6105bf205d": {
-              "id": "4e981610-b035-4838-87c3-ac6105bf205d",
+            "52027f60-62f6-47e1-915d-475eb982ad08": {
+              "id": "52027f60-62f6-47e1-915d-475eb982ad08",
               "name": "",
               "description": "",
               "parentNodeId": "",
-              "fromNodeId": "b13b74c8-4252-4653-a549-650863b7067c",
-              "toNodeId": "b13ad9c7-80a7-4654-bf2e-4cc781d3ac6e"
+              "fromNodeId": "a8891a6b-32df-4f08-9948-ce5b973b7d6c",
+              "toNodeId": "085c9ffa-55de-4f4a-a5b6-a4a42abdb63c"
             },
-            "6676b62a-48af-47a6-956f-b97b928c5727": {
-              "id": "6676b62a-48af-47a6-956f-b97b928c5727",
+            "5787cc84-bf9c-4579-9243-8105bf10c1fb": {
+              "id": "5787cc84-bf9c-4579-9243-8105bf10c1fb",
               "name": "",
               "description": "",
               "parentNodeId": "",
-              "fromNodeId": "1c467a59-1216-4665-a417-1cff72137a8b",
-              "toNodeId": "16e05672-4aaf-47a5-a145-56e267e65eb7"
+              "fromNodeId": "dacc5d8c-e7e7-4198-8e85-c6873f05e2cc",
+              "toNodeId": "c43761b8-bc4a-48e8-a325-08c07ec867dd"
             },
             "76bc5532-cea8-4362-b3e7-d4e8f52efbf0": {
               "id": "76bc5532-cea8-4362-b3e7-d4e8f52efbf0",
@@ -49,7 +49,31 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "6738364e-d8a9-417a-a8da-ed390c42fe82",
-              "toNodeId": "085c9ffa-55de-4f4a-a5b6-a4a42abdb63c"
+              "toNodeId": "a8891a6b-32df-4f08-9948-ce5b973b7d6c"
+            },
+            "7e723f41-4e36-42b5-98d5-ba2f4189d259": {
+              "id": "7e723f41-4e36-42b5-98d5-ba2f4189d259",
+              "name": "",
+              "description": "",
+              "parentNodeId": "dacc5d8c-e7e7-4198-8e85-c6873f05e2cc",
+              "fromNodeId": "6a074809-e076-411c-85f4-b943632c8dc9",
+              "toNodeId": ""
+            },
+            "80aef9e3-69c5-4445-8e33-62858dc2def0": {
+              "id": "80aef9e3-69c5-4445-8e33-62858dc2def0",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "8bd3de34-46a3-4cec-8652-d1ca6f0b674b",
+              "toNodeId": "dacc5d8c-e7e7-4198-8e85-c6873f05e2cc"
+            },
+            "99dcdd94-d83d-4d93-99aa-38091363f561": {
+              "id": "99dcdd94-d83d-4d93-99aa-38091363f561",
+              "name": "",
+              "description": "",
+              "parentNodeId": "dacc5d8c-e7e7-4198-8e85-c6873f05e2cc",
+              "fromNodeId": "dacc5d8c-e7e7-4198-8e85-c6873f05e2cc",
+              "toNodeId": "6a074809-e076-411c-85f4-b943632c8dc9"
             },
             "aa6b85cc-7e4b-4d5f-9cf6-a7f9117596ac": {
               "id": "aa6b85cc-7e4b-4d5f-9cf6-a7f9117596ac",
@@ -59,37 +83,13 @@
               "fromNodeId": "c43761b8-bc4a-48e8-a325-08c07ec867dd",
               "toNodeId": "c2447438-5b6d-4d16-adfa-cc74d3c51f58"
             },
-            "b9781744-2d0b-4c86-b88d-927d8fcc074c": {
-              "id": "b9781744-2d0b-4c86-b88d-927d8fcc074c",
-              "name": "",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "d1e8b84b-4180-40bd-941e-f64f1c7515e4",
-              "toNodeId": "9986f254-e41a-4c30-bc18-9ab34db2ad96"
-            },
-            "c343dbe8-286f-4026-bf5d-061c0735af3a": {
-              "id": "c343dbe8-286f-4026-bf5d-061c0735af3a",
-              "name": "",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "9986f254-e41a-4c30-bc18-9ab34db2ad96",
-              "toNodeId": "b13b74c8-4252-4653-a549-650863b7067c"
-            },
             "c9d6bbae-1edf-4231-8f9f-0384b50888d1": {
               "id": "c9d6bbae-1edf-4231-8f9f-0384b50888d1",
               "name": "Remediate",
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "085c9ffa-55de-4f4a-a5b6-a4a42abdb63c",
-              "toNodeId": "d1e8b84b-4180-40bd-941e-f64f1c7515e4"
-            },
-            "d46f044f-3bd5-49aa-bc5f-fc28a10c8438": {
-              "id": "d46f044f-3bd5-49aa-bc5f-fc28a10c8438",
-              "name": "",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "16e05672-4aaf-47a5-a145-56e267e65eb7",
-              "toNodeId": "c43761b8-bc4a-48e8-a325-08c07ec867dd"
+              "toNodeId": "8bd3de34-46a3-4cec-8652-d1ca6f0b674b"
             },
             "d87fec4f-dda0-45a2-9bd1-d7f83e2d4d7e": {
               "id": "d87fec4f-dda0-45a2-9bd1-d7f83e2d4d7e",
@@ -99,13 +99,13 @@
               "fromNodeId": "f302ffdc-fea8-4842-9842-22aa0f23c5c1",
               "toNodeId": ""
             },
-            "e2935726-6b08-4b4b-93c9-2a1116228efd": {
-              "id": "e2935726-6b08-4b4b-93c9-2a1116228efd",
+            "d929389e-047e-4fef-9923-c6d8f64c24ac": {
+              "id": "d929389e-047e-4fef-9923-c6d8f64c24ac",
               "name": "",
               "description": "",
               "parentNodeId": "",
-              "fromNodeId": "b13ad9c7-80a7-4654-bf2e-4cc781d3ac6e",
-              "toNodeId": "1c467a59-1216-4665-a417-1cff72137a8b"
+              "fromNodeId": "f3e7ca90-b788-4623-a002-b5425bec04a9",
+              "toNodeId": ""
             },
             "fe62d634-f02a-47b1-a5b3-fd77c3a9a4ac": {
               "id": "fe62d634-f02a-47b1-a5b3-fd77c3a9a4ac",
@@ -121,28 +121,20 @@
               "id": "085c9ffa-55de-4f4a-a5b6-a4a42abdb63c",
               "parentNodeId": ""
             },
-            "16e05672-4aaf-47a5-a145-56e267e65eb7": {
-              "id": "16e05672-4aaf-47a5-a145-56e267e65eb7",
-              "parentNodeId": ""
-            },
-            "1c467a59-1216-4665-a417-1cff72137a8b": {
-              "id": "1c467a59-1216-4665-a417-1cff72137a8b",
-              "parentNodeId": ""
-            },
             "6738364e-d8a9-417a-a8da-ed390c42fe82": {
               "id": "6738364e-d8a9-417a-a8da-ed390c42fe82",
               "parentNodeId": ""
             },
-            "9986f254-e41a-4c30-bc18-9ab34db2ad96": {
-              "id": "9986f254-e41a-4c30-bc18-9ab34db2ad96",
+            "6a074809-e076-411c-85f4-b943632c8dc9": {
+              "id": "6a074809-e076-411c-85f4-b943632c8dc9",
+              "parentNodeId": "dacc5d8c-e7e7-4198-8e85-c6873f05e2cc"
+            },
+            "8bd3de34-46a3-4cec-8652-d1ca6f0b674b": {
+              "id": "8bd3de34-46a3-4cec-8652-d1ca6f0b674b",
               "parentNodeId": ""
             },
-            "b13ad9c7-80a7-4654-bf2e-4cc781d3ac6e": {
-              "id": "b13ad9c7-80a7-4654-bf2e-4cc781d3ac6e",
-              "parentNodeId": ""
-            },
-            "b13b74c8-4252-4653-a549-650863b7067c": {
-              "id": "b13b74c8-4252-4653-a549-650863b7067c",
+            "a8891a6b-32df-4f08-9948-ce5b973b7d6c": {
+              "id": "a8891a6b-32df-4f08-9948-ce5b973b7d6c",
               "parentNodeId": ""
             },
             "c2447438-5b6d-4d16-adfa-cc74d3c51f58": {
@@ -153,12 +145,16 @@
               "id": "c43761b8-bc4a-48e8-a325-08c07ec867dd",
               "parentNodeId": ""
             },
-            "d1e8b84b-4180-40bd-941e-f64f1c7515e4": {
-              "id": "d1e8b84b-4180-40bd-941e-f64f1c7515e4",
+            "dacc5d8c-e7e7-4198-8e85-c6873f05e2cc": {
+              "id": "dacc5d8c-e7e7-4198-8e85-c6873f05e2cc",
               "parentNodeId": ""
             },
             "f302ffdc-fea8-4842-9842-22aa0f23c5c1": {
               "id": "f302ffdc-fea8-4842-9842-22aa0f23c5c1",
+              "parentNodeId": ""
+            },
+            "f3e7ca90-b788-4623-a002-b5425bec04a9": {
+              "id": "f3e7ca90-b788-4623-a002-b5425bec04a9",
               "parentNodeId": ""
             }
           }
@@ -198,7 +194,7 @@
                 }
               ],
               "question": "Would you like to remediate automatically, close the investigation, or do nothing?",
-              "recipient": "#testing123",
+              "recipient": "change_me",
               "timeout": 600,
               "timeoutDisplayUnit": "minutes",
               "timeoutEdgeId": "fe62d634-f02a-47b1-a5b3-fd77c3a9a4ac"
@@ -246,6 +242,12 @@
                   "title": "Channel ID",
                   "type": "string"
                 },
+                "display_name": {
+                  "description": "The slack display name for the user responding to the question",
+                  "order": 9,
+                  "title": "Display Name",
+                  "type": "string"
+                },
                 "message": {
                   "description": "The message that was sent to slack",
                   "order": 4,
@@ -267,7 +269,7 @@
                 "responding_user": {
                   "description": "The slack username of the user responding to the question",
                   "order": 7,
-                  "title": "Response Question",
+                  "title": "Response User",
                   "type": "string"
                 },
                 "response_question": {
@@ -286,154 +288,11 @@
               "title": "Variables",
               "type": "object"
             },
+            "outputJSONSchema": null,
             "defaultImageData": "",
             "connectionType": "NONE",
             "chatOpsAppName": "slack",
             "chatOpsIdentifier": "post_interactive_message"
-          },
-          "16e05672-4aaf-47a5-a145-56e267e65eb7": {
-            "nodeId": "16e05672-4aaf-47a5-a145-56e267e65eb7",
-            "name": "Mass Purge Email",
-            "type": "action",
-            "plugin": {
-              "name": "Microsoft Office365 Email Security",
-              "slugVendor": "rapid7",
-              "slugName": "microsoft_office365_email_security",
-              "slugVersion": "2.2.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_office365_email_security/2.2.0/icon.png"
-            },
-            "identifier": "mass_search_and_purge",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "compliance_search_name": "Spearphishing - {{[6738364e-d8a9-417a-a8da-ed390c42fe82].[investigationId]}}",
-                "content_match_query": "from:{{[d1e8b84b-4180-40bd-941e-f64f1c7515e4].[sender]}}",
-                "delete_items": true,
-                "query_timeout": 60
-              }
-            },
-            "defaultInputJSONSchema": {
-              "properties": {
-                "compliance_search_name": {
-                  "description": "Name of compliance search",
-                  "order": 1,
-                  "title": "Compliance Search Name",
-                  "type": "string"
-                },
-                "content_match_query": {
-                  "description": "This parameter uses a text search string or a query that's formatted by using the Keyword Query Language (KQL). For more information about KQL, see Keyword Query Language syntax reference (https://go.microsoft.com/fwlink/p/?linkid=269603)",
-                  "order": 2,
-                  "title": "Content Match Query",
-                  "type": "string"
-                },
-                "delete_items": {
-                  "default": false,
-                  "description": "The script only executes the delete action if this parameter is true",
-                  "order": 4,
-                  "title": "Delete Items",
-                  "type": "boolean"
-                },
-                "query_timeout": {
-                  "default": 60,
-                  "description": "Query timeout in minutes",
-                  "order": 3,
-                  "title": "Query Timeout",
-                  "type": "integer"
-                }
-              },
-              "required": [
-                "compliance_search_name",
-                "content_match_query"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultOutputJSONSchema": {
-              "properties": {
-                "success": {
-                  "description": "Success",
-                  "order": 1,
-                  "title": "Success",
-                  "type": "boolean"
-                }
-              },
-              "required": [
-                "success"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultImageData": "",
-            "connectionType": "CONNECTION"
-          },
-          "1c467a59-1216-4665-a417-1cff72137a8b": {
-            "nodeId": "1c467a59-1216-4665-a417-1cff72137a8b",
-            "name": "Get DateTime",
-            "type": "action",
-            "plugin": {
-              "name": "Datetime",
-              "slugVendor": "rapid7",
-              "slugName": "datetime",
-              "slugVersion": "2.0.4",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/datetime/2.0.4/icon.png"
-            },
-            "identifier": "get_datetime",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "format_string": "%d/%m/%Y",
-                "use_rfc3339_format": false
-              }
-            },
-            "defaultInputJSONSchema": {
-              "properties": {
-                "format_string": {
-                  "default": "%d %b %Y %H:%M:%S",
-                  "description": "Format string for the output. Example: %H:%M:%S or %d/%m/%Y",
-                  "order": 1,
-                  "title": "Format String",
-                  "type": "string"
-                },
-                "use_rfc3339_format": {
-                  "description": "Use RFC3339 format (eg. 2017-10-24T18:27:36.23Z). This is the most compatible date format for timestamp manipulation. Enabling this will override the format string input",
-                  "order": 2,
-                  "title": "Use RFC3339 Format",
-                  "type": "boolean"
-                }
-              },
-              "required": [
-                "use_rfc3339_format",
-                "format_string"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultOutputJSONSchema": {
-              "properties": {
-                "datetime": {
-                  "description": "Datetime",
-                  "order": 1,
-                  "title": "Datetime",
-                  "type": "string"
-                },
-                "epoch_timestamp": {
-                  "description": "Epoch timestamp",
-                  "order": 2,
-                  "title": "Epoch Timestamp",
-                  "type": "integer"
-                }
-              },
-              "required": [
-                "datetime",
-                "epoch_timestamp"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultImageData": "",
-            "connectionType": "ORCHESTRATOR"
           },
           "6738364e-d8a9-417a-a8da-ed390c42fe82": {
             "nodeId": "6738364e-d8a9-417a-a8da-ed390c42fe82",
@@ -442,7 +301,7 @@
             "type": "trigger",
             "continueOnFailure": false,
             "isDisabled": false,
-            "triggerId": "81b6c16e-7d05-4f2f-b0c5-b1b8d44fd222",
+            "triggerId": "04c84ae2-44f6-414b-ac20-ee615a535463",
             "defaultInputJSONSchema": {
               "definitions": {
                 "actor": {
@@ -997,164 +856,160 @@
               "title": "Variables",
               "type": "object"
             },
+            "outputJSONSchema": null,
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/trigger-api-idr.svg",
             "connectionType": "NONE"
           },
-          "9986f254-e41a-4c30-bc18-9ab34db2ad96": {
-            "nodeId": "9986f254-e41a-4c30-bc18-9ab34db2ad96",
-            "name": "Get Domain",
-            "type": "pattern_match",
+          "6a074809-e076-411c-85f4-b943632c8dc9": {
+            "nodeId": "6a074809-e076-411c-85f4-b943632c8dc9",
+            "name": "Block Domain in O365",
+            "type": "action",
+            "plugin": {
+              "name": "Microsoft Office365 Email Security",
+              "slugVendor": "rapid7",
+              "slugName": "microsoft_office365_email_security",
+              "slugVersion": "2.2.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_office365_email_security/2.2.1/icon.png"
+            },
+            "identifier": "block_sender_transport_rule",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "domain_or_email_to_block": "{{[dacc5d8c-e7e7-4198-8e85-c6873f05e2cc].[$item]}}",
+                "transport_rule_name": "InsightConnect Block List"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "domain_or_email_to_block": {
+                  "description": "Domain or email address to block",
+                  "order": 1,
+                  "title": "Domain or Email to Block",
+                  "type": "string"
+                },
+                "transport_rule_name": {
+                  "default": "InsightConnect Block List",
+                  "description": "Transport rule name",
+                  "order": 2,
+                  "title": "Transport Rule Name",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "transport_rule_name",
+                "domain_or_email_to_block"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "result": {
+                  "description": "Result",
+                  "order": 1,
+                  "title": "Result",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "result"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "8bd3de34-46a3-4cec-8652-d1ca6f0b674b": {
+            "nodeId": "8bd3de34-46a3-4cec-8652-d1ca6f0b674b",
+            "name": "Parse Domains",
+            "type": "action",
+            "plugin": {
+              "name": "ExtractIt",
+              "slugVendor": "rapid7",
+              "slugName": "extractit",
+              "slugVersion": "2.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/extractit/2.0.0/icon.png"
+            },
+            "identifier": "domain_extractor",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "file": "",
+                "str": "{{[6738364e-d8a9-417a-a8da-ed390c42fe82].[description]}}",
+                "subdomain": false
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "file": {
+                  "description": "Input file as bytes",
+                  "displayType": "bytes",
+                  "format": "bytes",
+                  "order": 2,
+                  "title": "File",
+                  "type": "string"
+                },
+                "str": {
+                  "description": "Input string",
+                  "order": 1,
+                  "title": "String",
+                  "type": "string"
+                },
+                "subdomain": {
+                  "description": "Include subdomain in result",
+                  "order": 3,
+                  "title": "Subdomain",
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "subdomain"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "domains": {
+                  "description": "List of extracted Domain names",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "Domain Names",
+                  "type": "array"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR"
+          },
+          "a8891a6b-32df-4f08-9948-ce5b973b7d6c": {
+            "nodeId": "a8891a6b-32df-4f08-9948-ce5b973b7d6c",
+            "name": "InsightIDR Alert Summary",
+            "type": "artifact",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
-              "captureAll": false,
-              "expressionText": "^(?:.*://)?(?:www\\.)?{{domain:/[^:\\/]*/}}.*$",
-              "expressions": [
-                {
-                  "type": "text",
-                  "value": "^(?:.*://)?(?:www\\.)?"
-                },
-                {
-                  "type": "variable",
-                  "value": {
-                    "ident": "domain",
-                    "regex": "[^:\\/]*"
-                  }
-                },
-                {
-                  "type": "text",
-                  "value": ".*$"
-                }
-              ],
-              "ignoreCase": false,
-              "input": "{{[d1e8b84b-4180-40bd-941e-f64f1c7515e4].[url]}}"
+              "input": {
+                "content": "#### Name\n{{[6738364e-d8a9-417a-a8da-ed390c42fe82].[name]}}\n\n#### Type\n{{[6738364e-d8a9-417a-a8da-ed390c42fe82].[type]}}\n\n#### Description\n{{[6738364e-d8a9-417a-a8da-ed390c42fe82].[description]}}\n\n"
+              },
+              "type": "markdown"
             },
             "defaultInputJSONSchema": null,
             "defaultOutputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/pattern-match.svg",
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
             "connectionType": "NONE"
-          },
-          "b13ad9c7-80a7-4654-bf2e-4cc781d3ac6e": {
-            "nodeId": "b13ad9c7-80a7-4654-bf2e-4cc781d3ac6e",
-            "name": "Block Sender",
-            "type": "action",
-            "plugin": {
-              "name": "Microsoft Office365 Email Security",
-              "slugVendor": "rapid7",
-              "slugName": "microsoft_office365_email_security",
-              "slugVersion": "2.2.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_office365_email_security/2.2.0/icon.png"
-            },
-            "identifier": "block_sender_transport_rule",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "domain_or_email_to_block": "{{[d1e8b84b-4180-40bd-941e-f64f1c7515e4].[sender]}}",
-                "transport_rule_name": "{{[d1e8b84b-4180-40bd-941e-f64f1c7515e4].[sender]}}"
-              }
-            },
-            "defaultInputJSONSchema": {
-              "properties": {
-                "domain_or_email_to_block": {
-                  "description": "Domain or email address to block",
-                  "order": 1,
-                  "title": "Domain or Email to Block",
-                  "type": "string"
-                },
-                "transport_rule_name": {
-                  "default": "InsightConnect Block List",
-                  "description": "Transport rule name",
-                  "order": 2,
-                  "title": "Transport Rule Name",
-                  "type": "string"
-                }
-              },
-              "required": [
-                "domain_or_email_to_block",
-                "transport_rule_name"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultOutputJSONSchema": {
-              "properties": {
-                "result": {
-                  "description": "Result",
-                  "order": 1,
-                  "title": "Result",
-                  "type": "string"
-                }
-              },
-              "required": [
-                "result"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultImageData": "",
-            "connectionType": "CONNECTION"
-          },
-          "b13b74c8-4252-4653-a549-650863b7067c": {
-            "nodeId": "b13b74c8-4252-4653-a549-650863b7067c",
-            "name": "Block Domain",
-            "type": "action",
-            "plugin": {
-              "name": "Microsoft Office365 Email Security",
-              "slugVendor": "rapid7",
-              "slugName": "microsoft_office365_email_security",
-              "slugVersion": "2.2.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_office365_email_security/2.2.0/icon.png"
-            },
-            "identifier": "block_sender_transport_rule",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "domain_or_email_to_block": "{{[9986f254-e41a-4c30-bc18-9ab34db2ad96].[domain]}}",
-                "transport_rule_name": "{{[9986f254-e41a-4c30-bc18-9ab34db2ad96].[domain]}}"
-              }
-            },
-            "defaultInputJSONSchema": {
-              "properties": {
-                "domain_or_email_to_block": {
-                  "description": "Domain or email address to block",
-                  "order": 1,
-                  "title": "Domain or Email to Block",
-                  "type": "string"
-                },
-                "transport_rule_name": {
-                  "default": "InsightConnect Block List",
-                  "description": "Transport rule name",
-                  "order": 2,
-                  "title": "Transport Rule Name",
-                  "type": "string"
-                }
-              },
-              "required": [
-                "domain_or_email_to_block",
-                "transport_rule_name"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultOutputJSONSchema": {
-              "properties": {
-                "result": {
-                  "description": "Result",
-                  "order": 1,
-                  "title": "Result",
-                  "type": "string"
-                }
-              },
-              "required": [
-                "result"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultImageData": "",
-            "connectionType": "CONNECTION"
           },
           "c2447438-5b6d-4d16-adfa-cc74d3c51f58": {
             "nodeId": "c2447438-5b6d-4d16-adfa-cc74d3c51f58",
@@ -1164,12 +1019,13 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "# Investigation {{[6738364e-d8a9-417a-a8da-ed390c42fe82].[investigationId]}} Closed!\n\nThe malicious URL, {{[d1e8b84b-4180-40bd-941e-f64f1c7515e4].[url]}}, was detected.\n\nThe following remediations were performed:\nBlock domain -- {{[9986f254-e41a-4c30-bc18-9ab34db2ad96].[domain]}}\nBlock sender -- {{[d1e8b84b-4180-40bd-941e-f64f1c7515e4].[sender]}}\nMass purge emails with query -- from:{{[d1e8b84b-4180-40bd-941e-f64f1c7515e4].[sender]}}"
+                "content": "## Investigation {{[6738364e-d8a9-417a-a8da-ed390c42fe82].[investigationId]}} Closed!\n\n### Investigation URL\n{{[6738364e-d8a9-417a-a8da-ed390c42fe82].[link]}}\n\n### Malicious URLs detected:\n{{#each [8bd3de34-46a3-4cec-8652-d1ca6f0b674b].[domains]}}\n{{this}}\n{{/each}}\n\n### Remediations performed:\nBlock domain:\n{{#each [8bd3de34-46a3-4cec-8652-d1ca6f0b674b].[domains]}}\n{{this}}\n{{/each}}\n"
               },
               "type": "markdown"
             },
             "defaultInputJSONSchema": null,
             "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
             "connectionType": "NONE"
           },
@@ -1181,12 +1037,13 @@
               "name": "Rapid7 InsightIDR",
               "slugVendor": "rapid7",
               "slugName": "rapid7_insightidr",
-              "slugVersion": "1.1.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightidr/1.1.0/icon.png"
+              "slugVersion": "1.3.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightidr/1.3.0/icon.png"
             },
             "identifier": "set_status_of_investigation_action",
-            "continueOnFailure": false,
+            "continueOnFailure": true,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "id": "{{[6738364e-d8a9-417a-a8da-ed390c42fe82].[investigationId]}}",
@@ -1330,52 +1187,30 @@
               "title": "Variables",
               "type": "object"
             },
+            "outputJSONSchema": null,
             "defaultImageData": "",
             "connectionType": "CONNECTION"
           },
-          "d1e8b84b-4180-40bd-941e-f64f1c7515e4": {
-            "nodeId": "d1e8b84b-4180-40bd-941e-f64f1c7515e4",
-            "name": "Get Sender and URL",
-            "type": "pattern_match",
+          "dacc5d8c-e7e7-4198-8e85-c6873f05e2cc": {
+            "nodeId": "dacc5d8c-e7e7-4198-8e85-c6873f05e2cc",
+            "name": "Domain Loop",
+            "type": "loop",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
-              "captureAll": false,
-              "expressionText": "suspicious link {{url:/[\\S]*/}} from sender {{sender:/[a-z0-9._%+\\-]+@[a-z0-9.\\-]+\\.[a-z]{2,4}/}}.",
-              "expressions": [
-                {
-                  "type": "text",
-                  "value": "suspicious link "
-                },
-                {
-                  "type": "variable",
-                  "value": {
-                    "ident": "url",
-                    "regex": "[\\S]*"
-                  }
-                },
-                {
-                  "type": "text",
-                  "value": " from sender "
-                },
-                {
-                  "type": "variable",
-                  "value": {
-                    "ident": "sender",
-                    "regex": "[a-z0-9._%+\\-]+@[a-z0-9.\\-]+\\.[a-z]{2,4}"
-                  }
-                },
-                {
-                  "type": "text",
-                  "value": "."
-                }
-              ],
-              "ignoreCase": false,
-              "input": "{{[6738364e-d8a9-417a-a8da-ed390c42fe82].[description]}}"
+              "customOutput": [],
+              "innerEdgeId": "99dcdd94-d83d-4d93-99aa-38091363f561",
+              "nextEdgeId": "5787cc84-bf9c-4579-9243-8105bf10c1fb",
+              "repeatVariable": "{{[8bd3de34-46a3-4cec-8652-d1ca6f0b674b].[domains]}}"
             },
             "defaultInputJSONSchema": null,
             "defaultOutputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/pattern-match.svg",
+            "outputJSONSchema": {
+              "properties": {},
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/loop.svg",
             "connectionType": "NONE"
           },
           "f302ffdc-fea8-4842-9842-22aa0f23c5c1": {
@@ -1386,12 +1221,13 @@
               "name": "Rapid7 InsightIDR",
               "slugVendor": "rapid7",
               "slugName": "rapid7_insightidr",
-              "slugVersion": "1.1.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightidr/1.1.0/icon.png"
+              "slugVersion": "1.3.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightidr/1.3.0/icon.png"
             },
             "identifier": "set_status_of_investigation_action",
-            "continueOnFailure": false,
+            "continueOnFailure": true,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "id": "{{[6738364e-d8a9-417a-a8da-ed390c42fe82].[investigationId]}}",
@@ -1535,8 +1371,83 @@
               "title": "Variables",
               "type": "object"
             },
+            "outputJSONSchema": null,
             "defaultImageData": "",
             "connectionType": "CONNECTION"
+          },
+          "f3e7ca90-b788-4623-a002-b5425bec04a9": {
+            "nodeId": "f3e7ca90-b788-4623-a002-b5425bec04a9",
+            "name": "Final confirmation",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": "{{[c2447438-5b6d-4d16-adfa-cc74d3c51f58].[content]}}",
+                "recipient": "{{[085c9ffa-55de-4f4a-a5b6-a4a42abdb63c].[channel_id]}}",
+                "thread_ts": "{{[085c9ffa-55de-4f4a-a5b6-a4a42abdb63c].[timestamp]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 4,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 3,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                },
+                "thread_ts": {
+                  "description": "Select timestamp output variable from parent message step",
+                  "order": 2,
+                  "title": "To post in a thread, select parent message timestamp",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
           }
         },
         "tags": null,
@@ -1546,7 +1457,7 @@
     ],
     "triggers": [
       {
-        "id": "81b6c16e-7d05-4f2f-b0c5-b1b8d44fd222",
+        "id": "04c84ae2-44f6-414b-ac20-ee615a535463",
         "name": "Spearphishing Alert",
         "description": "New Spearphishing URL Detected",
         "input": null,
