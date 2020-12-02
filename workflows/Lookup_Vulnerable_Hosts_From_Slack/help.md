@@ -67,7 +67,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
-* 1.1.0 - Use the automatic extraction functionality instead of 'Pattern Match' step to extract a vulnerability | Improve workflow messaging | Improve documentation | Update screenshots | Update Rapid7 InsightVM to version 4.8.1 | Update Type Converter to version 1.6.0
+* 1.1.0 - Use the automatic extraction functionality instead of Pattern Match step to extract a vulnerability | Improve workflow messaging | Improve documentation | Update screenshots | Update Rapid7 InsightVM to version 4.8.1 | Update Type Converter to version 1.6.0
 * 1.0.0 - Initial workflow
 
 # Links
