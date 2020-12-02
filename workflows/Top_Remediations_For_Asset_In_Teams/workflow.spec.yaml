@@ -19,5 +19,3 @@ resources:
     title: Workflow View
   - name: teams.png
     title: Workflow Success Microsoft Teams Message
-  - name: artifact.png
-    title: Successful Workflow Artifact
