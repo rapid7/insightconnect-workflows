@@ -15,9 +15,9 @@ resources:
   source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Top_Remediations_From_Slack
   license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
   screenshots:
-  - name: execution1.png
-    title: Workflow Execution in Slack
   - name: workflow1.png
     title: Workflow View
+  - name: execution1.png
+    title: Workflow Execution in Slack
   - name: job1.png
     title: Successful Workflow Job
