@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.70.0-0-g96f18",
+    "komandVersion": "1.71.0-0-g80553",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-12-02T02:01:12.198852203Z",
+    "exportedAt": "2020-12-03T16:29:36.176692588Z",
     "workflowVersions": [
       {
         "name": "Send Remediated Vulnerabilities Message in Microsoft Teams from InsightVM",
@@ -683,7 +683,7 @@
                 "edgeId": "87593d81-0d2b-430c-bac2-01b4784066db",
                 "expression": {
                   "left": {
-                    "name": "d70a66a2-09a6-4411-ba67-6d920c7849f1.Risk Threshold",
+                    "name": "d70a66a2-09a6-4411-ba67-6d920c7849f1.Any over Risk Threshold?",
                     "type": "variable"
                   },
                   "op": "=",
@@ -693,7 +693,7 @@
                   },
                   "type": "binary"
                 },
-                "expressionText": "{{[d70a66a2-09a6-4411-ba67-6d920c7849f1].[Risk Threshold]}} = false"
+                "expressionText": "{{[d70a66a2-09a6-4411-ba67-6d920c7849f1].[Any over Risk Threshold?]}} = false"
               },
               "stopOnMatch": true
             },
@@ -749,7 +749,7 @@
                     },
                     "expressionText": "{{[fa22ff16-8091-42a5-8234-377ac4809ec4].[output]}} > 4"
                   },
-                  "name": "Risk Threshold",
+                  "name": "Any over Risk Threshold?",
                   "outputType": "boolean"
                 }
               ],
@@ -761,9 +761,9 @@
             "defaultOutputJSONSchema": null,
             "outputJSONSchema": {
               "properties": {
-                "Risk Threshold": {
-                  "description": "Custom output: \"Risk Threshold\"",
-                  "title": "Risk Threshold",
+                "Any over Risk Threshold?": {
+                  "description": "Custom output: \"Any over Risk Threshold?\"",
+                  "title": "Any over Risk Threshold?",
                   "type": "boolean"
                 },
                 "Vulns": {
