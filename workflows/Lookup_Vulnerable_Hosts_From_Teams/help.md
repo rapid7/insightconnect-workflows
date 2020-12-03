@@ -24,7 +24,7 @@ Sample Microsoft Teams command:
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-Once the workflow has been imported, **first Microsoft Teams step will need the team name and channel name updated to suit your Teams environment!** Edit the input with the preset text of `change_me` in first Microsoft Teams step in the workflow. There is also an optional Settings step which can be edited to change the maximum number of vulnerabilities and maximum hosts listed per vulnerability which are returned. The defaults are 50 vulnerabilities and 10 assets per vulnerability.
+Once the workflow has been imported, **the first Microsoft Teams step will need the team name and channel name updated to suit your Teams environment!** Edit the input with the preset text of `change_me` in first Microsoft Teams step in the workflow. There is also an optional Settings step which can be edited to change the maximum number of vulnerabilities and maximum hosts listed per vulnerability which are returned. The defaults are 50 vulnerabilities and 10 assets per vulnerability.
 
 After configuring the Microsoft Teams and Setting steps, activate the workflow in order to trigger it.
 
