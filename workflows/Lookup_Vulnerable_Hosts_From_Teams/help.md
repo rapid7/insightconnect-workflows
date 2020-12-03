@@ -66,7 +66,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
-* 1.1.0 - Use the automatic extraction functionality instead of 'Pattern Match' step to extract a vulnerability | Remove HTML step | Add max vulnerabilities parameter in Setting step | Remove team name and channel name parameters from Setting step | Improve workflow messaging | Improve documentation | Update screenshots | Update Rapid7 InsightVM to version 4.8.1 | Update Microsoft Teams to version 3.1.0 | Update Type Converter to version 1.6.0
+* 1.1.0 - Use the automatic extraction functionality instead of Pattern Match step to extract a vulnerability | Remove HTML step | Add max vulnerabilities parameter in Setting step | Remove team name and channel name parameters from Setting step | Improve workflow messaging | Improve documentation | Update screenshots | Update Rapid7 InsightVM to version 4.8.1 | Update Microsoft Teams to version 3.1.0 | Update Type Converter to version 1.6.0
 * 1.0.1 - Update to make Microsoft Teams plugin the latest version
 * 1.0.0 - Initial workflow
 

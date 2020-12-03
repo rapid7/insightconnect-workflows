@@ -17,8 +17,12 @@ resources:
   screenshots:
   - name: artifact.png
     title: Artifact View
-  - name: teams.png
-    title: Example Microsoft Teams Job Input and Output
+  - name: teams_cve_id.png
+    title: Example Slack Job Input and Output for CVE ID
+  - name: teams_nexpose_id.png
+    title: Example Slack Job Input and Output for Nexpose ID
+  - name: teams_kb_number.png
+    title: Example Slack Job Input and Output for KB Number
   - name: workflow.png
     title: Workflow View
   - name: workflow1.png
