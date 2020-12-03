@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.70.0-0-g96f18",
+    "komandVersion": "1.71.0-0-g80553",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-12-02T21:48:30.222492211Z",
+    "exportedAt": "2020-12-03T21:47:52.692573109Z",
     "workflowVersions": [
       {
         "name": "Spearphishing Remediation with Office365",
@@ -1384,7 +1384,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "{{[c2447438-5b6d-4d16-adfa-cc74d3c51f58].[content]}}",
+                "message": ":rocket: Workflow Complete! :rocket:\n\n:white_check_mark: *Investigation {{[6738364e-d8a9-417a-a8da-ed390c42fe82].[investigationId]}} Closed!* :white_check_mark: \n\n:mag: *Investigation URL* :mag:\n{{[6738364e-d8a9-417a-a8da-ed390c42fe82].[link]}}\n\n*Malicious URLs detected:*\n{{#each [8bd3de34-46a3-4cec-8652-d1ca6f0b674b].[domains]}}\n{{this}}\n{{/each}}\n\n*Remediations performed:*\nBlock domain:\n{{#each [8bd3de34-46a3-4cec-8652-d1ca6f0b674b].[domains]}}\n{{this}}\n{{/each}}\n",
                 "recipient": "{{[085c9ffa-55de-4f4a-a5b6-a4a42abdb63c].[channel_id]}}",
                 "thread_ts": "{{[085c9ffa-55de-4f4a-a5b6-a4a42abdb63c].[timestamp]}}"
               }
