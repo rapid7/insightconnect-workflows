@@ -3,7 +3,7 @@ products: ["insightconnect", "insightvm"]
 name: Send_Remediated_Vulnerabilities_Message_in_Microsoft_Teams_from_InsightVM
 title: Send Remediated Vulnerabilities Message in Microsoft Teams from InsightVM
 description: This workflow sends a message in Microsoft Teams when vulnerabilities are remediated in InsightVM.
-version: 1.1.0
+version: 2.0.0
 vendor: rapid7
 support: rapid7
 status: []

@@ -57,7 +57,7 @@ Experiencing delays? InsightVM Events are delivered to InsightConnect from Insig
 
 # Version History
 
-* 1.1.0 - Added restriction to only post when remediated vulnerability CVSS score is greater than 4
+* 2.0.0 - Added restriction to only post when remediated vulnerability CVSS score is greater than 4
 * 1.0.1 - Fix quote issue in spec file
 * 1.0.0 - Initial workflow
 
