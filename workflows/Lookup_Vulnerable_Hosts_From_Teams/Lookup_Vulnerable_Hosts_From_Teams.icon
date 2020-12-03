@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.51.1-0-g1c294",
+    "komandVersion": "1.69.2-0-gaf0d9",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-05-28T20:36:28.634674518Z",
+    "exportedAt": "2020-11-26T12:13:22.062233222Z",
     "workflowVersions": [
       {
         "name": "Lookup Vulnerable Hosts from Teams",
@@ -58,14 +58,6 @@
               "parentNodeId": "",
               "fromNodeId": "7f8e9fef-d3eb-44bb-810f-ed95fa08fc3a",
               "toNodeId": "a5434f0d-592d-4815-8fe9-8719e47ddc43"
-            },
-            "1c6ca850-5c1d-44bf-becb-a8955e67513f": {
-              "id": "1c6ca850-5c1d-44bf-becb-a8955e67513f",
-              "name": "",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "320f400b-ada3-4f7c-8f57-9b583c6a3b46",
-              "toNodeId": "bbf37066-6157-4c03-b44e-780fb223445d"
             },
             "1f327e80-c913-4bf4-bb5d-08e6be449b36": {
               "id": "1f327e80-c913-4bf4-bb5d-08e6be449b36",
@@ -129,7 +121,7 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "24960792-15a3-4df7-b872-d61dc21c4aab",
-              "toNodeId": "54fc682b-13f6-4dff-9203-eda074930a20"
+              "toNodeId": "2871ca0d-3061-4778-8407-8702d09330c9"
             },
             "360a2b6a-8c82-45ce-9b04-26e7edd6747a": {
               "id": "360a2b6a-8c82-45ce-9b04-26e7edd6747a",
@@ -187,13 +179,21 @@
               "fromNodeId": "3f6935b0-fd23-4af2-8c9f-8d488b967a1f",
               "toNodeId": "db592e51-daa5-44e6-9084-3439b7f09b85"
             },
+            "59007793-f200-450c-8580-5a0038461eee": {
+              "id": "59007793-f200-450c-8580-5a0038461eee",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "2871ca0d-3061-4778-8407-8702d09330c9",
+              "toNodeId": "54fc682b-13f6-4dff-9203-eda074930a20"
+            },
             "5981c960-9a62-4f14-8bea-2aa0d871abd2": {
               "id": "5981c960-9a62-4f14-8bea-2aa0d871abd2",
               "name": "",
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "a106410d-01bb-4fe6-aebf-4481868efd99",
-              "toNodeId": "c87511b7-9abd-4be9-a2b5-7fedcb8a7d70"
+              "toNodeId": "bbf37066-6157-4c03-b44e-780fb223445d"
             },
             "599b303e-e117-4e70-814b-c62030bda71b": {
               "id": "599b303e-e117-4e70-814b-c62030bda71b",
@@ -297,7 +297,7 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "7e9c87e4-ba06-40ad-ad26-ea05ec7c10f0",
-              "toNodeId": "d599008b-dfa4-480b-b370-626dda54dc9e"
+              "toNodeId": "cc723082-ec9b-4e32-84d3-05e2c2acdae0"
             },
             "a7556330-e50d-4738-8f9a-253d026a34d9": {
               "id": "a7556330-e50d-4738-8f9a-253d026a34d9",
@@ -329,7 +329,7 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "bbf37066-6157-4c03-b44e-780fb223445d",
-              "toNodeId": "674a674b-acec-4bf5-920e-b0fda77e8e86"
+              "toNodeId": "9295505f-2274-435f-a6ca-b55e3b525f71"
             },
             "c7118104-f71c-4d00-8bde-01c9f5a4ac06": {
               "id": "c7118104-f71c-4d00-8bde-01c9f5a4ac06",
@@ -347,6 +347,14 @@
               "fromNodeId": "716883b8-7e02-47c7-b261-5791dd1b838f",
               "toNodeId": ""
             },
+            "d8fba0c0-2b48-4528-8698-74529fd67593": {
+              "id": "d8fba0c0-2b48-4528-8698-74529fd67593",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "cc723082-ec9b-4e32-84d3-05e2c2acdae0",
+              "toNodeId": "d599008b-dfa4-480b-b370-626dda54dc9e"
+            },
             "da308bf0-3f51-4f1e-977b-af9f4070a0cc": {
               "id": "da308bf0-3f51-4f1e-977b-af9f4070a0cc",
               "name": "",
@@ -355,13 +363,13 @@
               "fromNodeId": "053214d3-42db-45b5-a31b-8e1b0d349a47",
               "toNodeId": "24960792-15a3-4df7-b872-d61dc21c4aab"
             },
-            "ecfb9775-4d3c-4a6d-b1a2-04ec0b902ee8": {
-              "id": "ecfb9775-4d3c-4a6d-b1a2-04ec0b902ee8",
+            "ea10f0d6-3f63-4230-bca4-c35f2ad364df": {
+              "id": "ea10f0d6-3f63-4230-bca4-c35f2ad364df",
               "name": "",
               "description": "",
               "parentNodeId": "",
-              "fromNodeId": "c87511b7-9abd-4be9-a2b5-7fedcb8a7d70",
-              "toNodeId": "320f400b-ada3-4f7c-8f57-9b583c6a3b46"
+              "fromNodeId": "9295505f-2274-435f-a6ca-b55e3b525f71",
+              "toNodeId": "674a674b-acec-4bf5-920e-b0fda77e8e86"
             }
           },
           "nodes": {
@@ -381,6 +389,10 @@
               "id": "24960792-15a3-4df7-b872-d61dc21c4aab",
               "parentNodeId": ""
             },
+            "2871ca0d-3061-4778-8407-8702d09330c9": {
+              "id": "2871ca0d-3061-4778-8407-8702d09330c9",
+              "parentNodeId": ""
+            },
             "2da85341-69e4-4009-a565-f5206e4a957b": {
               "id": "2da85341-69e4-4009-a565-f5206e4a957b",
               "parentNodeId": "7e9c87e4-ba06-40ad-ad26-ea05ec7c10f0"
@@ -388,10 +400,6 @@
             "3070b398-e684-471b-ade0-57f4bea6195c": {
               "id": "3070b398-e684-471b-ade0-57f4bea6195c",
               "parentNodeId": "db592e51-daa5-44e6-9084-3439b7f09b85"
-            },
-            "320f400b-ada3-4f7c-8f57-9b583c6a3b46": {
-              "id": "320f400b-ada3-4f7c-8f57-9b583c6a3b46",
-              "parentNodeId": ""
             },
             "3f6935b0-fd23-4af2-8c9f-8d488b967a1f": {
               "id": "3f6935b0-fd23-4af2-8c9f-8d488b967a1f",
@@ -437,6 +445,10 @@
               "id": "91f352b5-30eb-4abc-a491-82d860f5de1b",
               "parentNodeId": ""
             },
+            "9295505f-2274-435f-a6ca-b55e3b525f71": {
+              "id": "9295505f-2274-435f-a6ca-b55e3b525f71",
+              "parentNodeId": ""
+            },
             "9f271d1c-aa6d-425d-97e8-2b45449a2eba": {
               "id": "9f271d1c-aa6d-425d-97e8-2b45449a2eba",
               "parentNodeId": ""
@@ -465,13 +477,13 @@
               "id": "c760fe51-5590-4129-949f-6caff63ef3b6",
               "parentNodeId": "7e9c87e4-ba06-40ad-ad26-ea05ec7c10f0"
             },
-            "c87511b7-9abd-4be9-a2b5-7fedcb8a7d70": {
-              "id": "c87511b7-9abd-4be9-a2b5-7fedcb8a7d70",
-              "parentNodeId": ""
-            },
             "c8f054ac-027f-4183-bf23-a56c692d9e51": {
               "id": "c8f054ac-027f-4183-bf23-a56c692d9e51",
               "parentNodeId": "db592e51-daa5-44e6-9084-3439b7f09b85"
+            },
+            "cc723082-ec9b-4e32-84d3-05e2c2acdae0": {
+              "id": "cc723082-ec9b-4e32-84d3-05e2c2acdae0",
+              "parentNodeId": ""
             },
             "cef2135a-e641-4c80-8a7b-a0cf5fc464e0": {
               "id": "cef2135a-e641-4c80-8a7b-a0cf5fc464e0",
@@ -506,7 +518,7 @@
         "steps": {
           "027079bd-2f07-4a81-802c-9285225031da": {
             "nodeId": "027079bd-2f07-4a81-802c-9285225031da",
-            "name": "Did we get too many results?",
+            "name": "Did We Get Too Many Results?",
             "type": "automated_decision",
             "continueOnFailure": false,
             "isDisabled": false,
@@ -533,12 +545,12 @@
                     },
                     "op": "<=",
                     "right": {
-                      "type": "literal",
-                      "value": 50
+                      "name": "7688a93d-120d-4ca1-b995-46f923398468.output.max vulnerabilities",
+                      "type": "variable"
                     },
                     "type": "binary"
                   },
-                  "expressionText": "length({{[9f271d1c-aa6d-425d-97e8-2b45449a2eba].[search_results]}}) <= 50"
+                  "expressionText": "length({{[9f271d1c-aa6d-425d-97e8-2b45449a2eba].[search_results]}}) <= {{[7688a93d-120d-4ca1-b995-46f923398468].[output].[max vulnerabilities]}}"
                 }
               ]
             },
@@ -550,7 +562,7 @@
           },
           "053214d3-42db-45b5-a31b-8e1b0d349a47": {
             "nodeId": "053214d3-42db-45b5-a31b-8e1b0d349a47",
-            "name": "IDs to Process",
+            "name": "IDs To Process",
             "type": "join",
             "continueOnFailure": false,
             "isDisabled": false,
@@ -694,6 +706,24 @@
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
             "connectionType": "NONE"
           },
+          "2871ca0d-3061-4778-8407-8702d09330c9": {
+            "nodeId": "2871ca0d-3061-4778-8407-8702d09330c9",
+            "name": "Not Found Output",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "Vulnerable Hosts for `{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[words].[1]}}` not found."
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
           "2da85341-69e4-4009-a565-f5206e4a957b": {
             "nodeId": "2da85341-69e4-4009-a565-f5206e4a957b",
             "name": "Get Impacted Assets",
@@ -702,12 +732,13 @@
               "name": "Rapid7 InsightVM",
               "slugVendor": "rapid7",
               "slugName": "rapid7_insightvm",
-              "slugVersion": "4.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/4.0.0/icon.png"
+              "slugVersion": "4.8.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/4.8.1/icon.png"
             },
             "identifier": "get_vulnerability_affected_assets",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "vulnerability_id": "{{[7e9c87e4-ba06-40ad-ad26-ea05ec7c10f0].[$item].[nexpose_id]}}"
@@ -816,41 +847,6 @@
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/break.svg",
             "connectionType": "NONE"
           },
-          "320f400b-ada3-4f7c-8f57-9b583c6a3b46": {
-            "nodeId": "320f400b-ada3-4f7c-8f57-9b583c6a3b46",
-            "name": "Extract Vulnerability",
-            "type": "pattern_match",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "captureAll": false,
-              "expressionText": "!lookup-vuln-hosts\\s+{{vulnerability:/\\S+/}}.*",
-              "expressions": [
-                {
-                  "type": "text",
-                  "value": "!lookup-vuln-hosts\\s+"
-                },
-                {
-                  "type": "variable",
-                  "value": {
-                    "ident": "vulnerability",
-                    "regex": "\\S+"
-                  }
-                },
-                {
-                  "type": "text",
-                  "value": ".*"
-                }
-              ],
-              "ignoreCase": true,
-              "input": "{{[c87511b7-9abd-4be9-a2b5-7fedcb8a7d70].[text]}}"
-            },
-            "defaultInputJSONSchema": null,
-            "defaultOutputJSONSchema": null,
-            "outputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/pattern-match.svg",
-            "connectionType": "NONE"
-          },
           "3f6935b0-fd23-4af2-8c9f-8d488b967a1f": {
             "nodeId": "3f6935b0-fd23-4af2-8c9f-8d488b967a1f",
             "name": "Is count 0?",
@@ -895,17 +891,19 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.0.4",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
+              "slugVersion": "3.1.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
-                "channel_name": "{{[7688a93d-120d-4ca1-b995-46f923398468].[output].[channel]}}",
-                "message_content": "<html>\nVulnerability Found:\n<b>{{[c760fe51-5590-4129-949f-6caff63ef3b6].[vulnerability].[title]}}</b>\n<i>Severity:</i> {{[c760fe51-5590-4129-949f-6caff63ef3b6].[vulnerability].[severity]}}\n<i>CVSS:</i> V2:{{[c760fe51-5590-4129-949f-6caff63ef3b6].[vulnerability].[cvss].[v2].[score]}} {{#if [c760fe51-5590-4129-949f-6caff63ef3b6].[vulnerability].[cvss].[v3].[score]}} |  V3:{{[c760fe51-5590-4129-949f-6caff63ef3b6].[vulnerability].[cvss].[v3].[score]}}{{/if}}\n<i>Risk Score:</i> {{[c760fe51-5590-4129-949f-6caff63ef3b6].[vulnerability].[riskScore]}}\n<i>Assets Impacted: {{#if [b10fffe3-10c1-43fe-86cb-1d089e261ec8].[count]}}{{[b10fffe3-10c1-43fe-86cb-1d089e261ec8].[count]}}{{else}}None{{/if}}</i>\n</html>",
-                "team_name": "{{[7688a93d-120d-4ca1-b995-46f923398468].[output].[team]}}"
+                "channel_name": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[channel_name]}}",
+                "message_content": "<html>\nVulnerability Found:<br>\n<b>{{[c760fe51-5590-4129-949f-6caff63ef3b6].[vulnerability].[title]}}</b><br>\n<i>Severity:</i> {{[c760fe51-5590-4129-949f-6caff63ef3b6].[vulnerability].[severity]}}<br>\n<i>CVSS:</i> V2:{{[c760fe51-5590-4129-949f-6caff63ef3b6].[vulnerability].[cvss].[v2].[score]}} {{#if [c760fe51-5590-4129-949f-6caff63ef3b6].[vulnerability].[cvss].[v3].[score]}} |  V3:{{[c760fe51-5590-4129-949f-6caff63ef3b6].[vulnerability].[cvss].[v3].[score]}}{{/if}}<br>\n<i>Risk Score:</i> {{[c760fe51-5590-4129-949f-6caff63ef3b6].[vulnerability].[riskScore]}}<br>\n<i>Assets Impacted: {{#if [b10fffe3-10c1-43fe-86cb-1d089e261ec8].[count]}}{{[b10fffe3-10c1-43fe-86cb-1d089e261ec8].[count]}}{{else}}None{{/if}}</i><br>\n</html>",
+                "team_name": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[team_name]}}",
+                "thread_id": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[id]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -918,7 +916,7 @@
                 },
                 "message_content": {
                   "description": "HTML content to send",
-                  "order": 3,
+                  "order": 4,
                   "title": "Message Content",
                   "type": "string"
                 },
@@ -926,6 +924,12 @@
                   "description": "Team name",
                   "order": 1,
                   "title": "Team Name",
+                  "type": "string"
+                },
+                "thread_id": {
+                  "description": "To post in a thread, select parent message ID",
+                  "order": 3,
+                  "title": "Thread ID",
                   "type": "string"
                 }
               },
@@ -983,6 +987,12 @@
                       "title": "Created Date Time",
                       "type": "string"
                     },
+                    "first_word": {
+                      "description": "Extracted first word from message (easy way to obtain a chat command)",
+                      "order": 9,
+                      "title": "First Word",
+                      "type": "string"
+                    },
                     "from": {
                       "$ref": "#/definitions/from",
                       "description": "From",
@@ -1018,8 +1028,21 @@
                       "order": 4,
                       "title": "Web URL",
                       "type": "string"
+                    },
+                    "words": {
+                      "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 10,
+                      "title": "Words",
+                      "type": "array"
                     }
                   },
+                  "required": [
+                    "words",
+                    "first_word"
+                  ],
                   "title": "Message",
                   "type": "object"
                 },
@@ -1065,31 +1088,33 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.0.4",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
+              "slugVersion": "3.1.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
             },
-            "identifier": "send_message",
+            "identifier": "send_html_message",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
-                "channel_name": "{{[7688a93d-120d-4ca1-b995-46f923398468].[output].[channel]}}",
-                "message": "Your query did not return any vulnerabilities - even in the Rapid7 VulnDB available at <https://www.rapid7.com/db|Rapid7 VulnDB> ",
-                "team_name": "{{[7688a93d-120d-4ca1-b995-46f923398468].[output].[team]}}"
+                "channel_name": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[channel_name]}}",
+                "message_content": "Vulnerable Hosts for <code>{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[words].[1]}}</code> not found.<br>\n<br>\nYour query did not return any vulnerabilities - even in the Rapid7 VulnDB available at <https://www.rapid7.com/db|Rapid7 VulnDB> <br>\n<br>\nWorkflow Complete.",
+                "team_name": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[team_name]}}",
+                "thread_id": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[id]}}"
               }
             },
             "defaultInputJSONSchema": {
               "properties": {
                 "channel_name": {
-                  "description": "Channel",
+                  "description": "Channel name",
                   "order": 2,
                   "title": "Channel Name",
                   "type": "string"
                 },
-                "message": {
-                  "description": "Message to send",
-                  "order": 3,
-                  "title": "Message",
+                "message_content": {
+                  "description": "HTML content to send",
+                  "order": 4,
+                  "title": "Message Content",
                   "type": "string"
                 },
                 "team_name": {
@@ -1097,12 +1122,18 @@
                   "order": 1,
                   "title": "Team Name",
                   "type": "string"
+                },
+                "thread_id": {
+                  "description": "To post in a thread, select parent message ID",
+                  "order": 3,
+                  "title": "Thread ID",
+                  "type": "string"
                 }
               },
               "required": [
+                "team_name",
                 "channel_name",
-                "message",
-                "team_name"
+                "message_content"
               ],
               "title": "Variables",
               "type": "object"
@@ -1153,6 +1184,12 @@
                       "title": "Created Date Time",
                       "type": "string"
                     },
+                    "first_word": {
+                      "description": "Extracted first word from message (easy way to obtain a chat command)",
+                      "order": 9,
+                      "title": "First Word",
+                      "type": "string"
+                    },
                     "from": {
                       "$ref": "#/definitions/from",
                       "description": "From",
@@ -1188,8 +1225,21 @@
                       "order": 4,
                       "title": "Web URL",
                       "type": "string"
+                    },
+                    "words": {
+                      "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 10,
+                      "title": "Words",
+                      "type": "array"
                     }
                   },
+                  "required": [
+                    "words",
+                    "first_word"
+                  ],
                   "title": "Message",
                   "type": "object"
                 },
@@ -1241,6 +1291,7 @@
             "identifier": "to_json",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "csv": "{{[739f03c2-ff98-4e0a-b1a6-f95f240556a8].[report].[content]}}",
@@ -1326,187 +1377,19 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.0.4",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
-            },
-            "identifier": "send_message",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "channel_name": "{{[7688a93d-120d-4ca1-b995-46f923398468].[output].[channel]}}",
-                "message": "*Malformed Command*\nCommand should be:\n!affected-assets <vulnerability>\n\n<vulnerability> in the command can be any InsightVM vulnerability reference including the following:\n* kb number\n* cve\n* nexpose id\n* other references InsightVM knows\n\nIn some cases, the alternate ID will correspond to multiple vulnerabilities in InsightVM.  In this case, results for each vulnerability will be returned separately.",
-                "team_name": "{{[7688a93d-120d-4ca1-b995-46f923398468].[output].[team]}}"
-              }
-            },
-            "defaultInputJSONSchema": {
-              "properties": {
-                "channel_name": {
-                  "description": "Channel",
-                  "order": 2,
-                  "title": "Channel Name",
-                  "type": "string"
-                },
-                "message": {
-                  "description": "Message to send",
-                  "order": 3,
-                  "title": "Message",
-                  "type": "string"
-                },
-                "team_name": {
-                  "description": "Team name",
-                  "order": 1,
-                  "title": "Team Name",
-                  "type": "string"
-                }
-              },
-              "required": [
-                "channel_name",
-                "message",
-                "team_name"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultOutputJSONSchema": {
-              "definitions": {
-                "body": {
-                  "properties": {
-                    "content": {
-                      "description": "Content",
-                      "order": 1,
-                      "title": "Content",
-                      "type": "string"
-                    },
-                    "contentType": {
-                      "description": "Content type",
-                      "order": 2,
-                      "title": "Content Type",
-                      "type": "string"
-                    }
-                  },
-                  "title": "Body",
-                  "type": "object"
-                },
-                "from": {
-                  "properties": {
-                    "user": {
-                      "$ref": "#/definitions/user",
-                      "description": "User",
-                      "order": 1,
-                      "title": "User"
-                    }
-                  },
-                  "title": "From",
-                  "type": "object"
-                },
-                "message": {
-                  "properties": {
-                    "body": {
-                      "$ref": "#/definitions/body",
-                      "description": "Body",
-                      "order": 1,
-                      "title": "Body"
-                    },
-                    "createdDateTime": {
-                      "description": "Created date time",
-                      "order": 3,
-                      "title": "Created Date Time",
-                      "type": "string"
-                    },
-                    "from": {
-                      "$ref": "#/definitions/from",
-                      "description": "From",
-                      "order": 2,
-                      "title": "From"
-                    },
-                    "id": {
-                      "description": "ID",
-                      "order": 8,
-                      "title": "ID",
-                      "type": "string"
-                    },
-                    "importance": {
-                      "description": "Importance",
-                      "order": 5,
-                      "title": "Importance",
-                      "type": "string"
-                    },
-                    "locale": {
-                      "description": "Locale",
-                      "order": 7,
-                      "title": "Locale",
-                      "type": "string"
-                    },
-                    "messageType": {
-                      "description": "Message type",
-                      "order": 6,
-                      "title": "Message Type",
-                      "type": "string"
-                    },
-                    "webUrl": {
-                      "description": "Web URL",
-                      "order": 4,
-                      "title": "Web URL",
-                      "type": "string"
-                    }
-                  },
-                  "title": "Message",
-                  "type": "object"
-                },
-                "user": {
-                  "properties": {
-                    "displayName": {
-                      "description": "Display name",
-                      "order": 1,
-                      "title": "Display name",
-                      "type": "string"
-                    },
-                    "id": {
-                      "description": "ID",
-                      "order": 2,
-                      "title": "ID",
-                      "type": "string"
-                    }
-                  },
-                  "title": "User",
-                  "type": "object"
-                }
-              },
-              "properties": {
-                "message": {
-                  "$ref": "#/definitions/message",
-                  "description": "The message object that was created",
-                  "order": 1,
-                  "title": "Message"
-                }
-              },
-              "title": "Variables",
-              "type": "object"
-            },
-            "outputJSONSchema": null,
-            "defaultImageData": "",
-            "connectionType": "CONNECTION"
-          },
-          "716883b8-7e02-47c7-b261-5791dd1b838f": {
-            "nodeId": "716883b8-7e02-47c7-b261-5791dd1b838f",
-            "name": "Report Asset Details",
-            "type": "action",
-            "plugin": {
-              "name": "Microsoft Teams",
-              "slugVendor": "rapid7",
-              "slugName": "microsoft_teams",
-              "slugVersion": "2.0.4",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
+              "slugVersion": "3.1.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
-                "channel_name": "{{[7688a93d-120d-4ca1-b995-46f923398468].[output].[channel]}}",
-                "message_content": "<html>\n<b>Vulnerable Assets</b>\n<ul>{{#each [db592e51-daa5-44e6-9084-3439b7f09b85].[Asset Information]}}\n<li> {{this}}\n{{/each}}</ul>\n</html>",
-                "team_name": "{{[7688a93d-120d-4ca1-b995-46f923398468].[output].[team]}}"
+                "channel_name": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[channel_name]}}",
+                "message_content": "{{[9295505f-2274-435f-a6ca-b55e3b525f71].[content]}}\n\nCommand should be:\n!lookup-vuln-hosts <vulnerability>\n\n<vulnerability> in the command can be any InsightVM vulnerability reference including the following:\n* kb number\n* cve\n* nexpose id\n* other references InsightVM knows\n\nIn some cases, the alternate ID will correspond to multiple vulnerabilities in InsightVM.  In this case, results for each vulnerability will be returned separately.\n\nWorkflow Complete.",
+                "team_name": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[team_name]}}",
+                "thread_id": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[id]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -1519,7 +1402,7 @@
                 },
                 "message_content": {
                   "description": "HTML content to send",
-                  "order": 3,
+                  "order": 4,
                   "title": "Message Content",
                   "type": "string"
                 },
@@ -1527,6 +1410,12 @@
                   "description": "Team name",
                   "order": 1,
                   "title": "Team Name",
+                  "type": "string"
+                },
+                "thread_id": {
+                  "description": "To post in a thread, select parent message ID",
+                  "order": 3,
+                  "title": "Thread ID",
                   "type": "string"
                 }
               },
@@ -1584,6 +1473,12 @@
                       "title": "Created Date Time",
                       "type": "string"
                     },
+                    "first_word": {
+                      "description": "Extracted first word from message (easy way to obtain a chat command)",
+                      "order": 9,
+                      "title": "First Word",
+                      "type": "string"
+                    },
                     "from": {
                       "$ref": "#/definitions/from",
                       "description": "From",
@@ -1619,8 +1514,218 @@
                       "order": 4,
                       "title": "Web URL",
                       "type": "string"
+                    },
+                    "words": {
+                      "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 10,
+                      "title": "Words",
+                      "type": "array"
                     }
                   },
+                  "required": [
+                    "words",
+                    "first_word"
+                  ],
+                  "title": "Message",
+                  "type": "object"
+                },
+                "user": {
+                  "properties": {
+                    "displayName": {
+                      "description": "Display name",
+                      "order": 1,
+                      "title": "Display name",
+                      "type": "string"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 2,
+                      "title": "ID",
+                      "type": "string"
+                    }
+                  },
+                  "title": "User",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "message": {
+                  "$ref": "#/definitions/message",
+                  "description": "The message object that was created",
+                  "order": 1,
+                  "title": "Message"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "716883b8-7e02-47c7-b261-5791dd1b838f": {
+            "nodeId": "716883b8-7e02-47c7-b261-5791dd1b838f",
+            "name": "Report Asset Details",
+            "type": "action",
+            "plugin": {
+              "name": "Microsoft Teams",
+              "slugVendor": "rapid7",
+              "slugName": "microsoft_teams",
+              "slugVersion": "3.1.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
+            },
+            "identifier": "send_html_message",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "channel_name": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[channel_name]}}",
+                "message_content": "<html>\n<b>Vulnerable Assets</b>\n<ul>{{#each [db592e51-daa5-44e6-9084-3439b7f09b85].[Asset Information]}}\n<li> {{this}}\n{{/each}}</ul>\n</html>",
+                "team_name": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[team_name]}}",
+                "thread_id": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[id]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "channel_name": {
+                  "description": "Channel name",
+                  "order": 2,
+                  "title": "Channel Name",
+                  "type": "string"
+                },
+                "message_content": {
+                  "description": "HTML content to send",
+                  "order": 4,
+                  "title": "Message Content",
+                  "type": "string"
+                },
+                "team_name": {
+                  "description": "Team name",
+                  "order": 1,
+                  "title": "Team Name",
+                  "type": "string"
+                },
+                "thread_id": {
+                  "description": "To post in a thread, select parent message ID",
+                  "order": 3,
+                  "title": "Thread ID",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "team_name",
+                "channel_name",
+                "message_content"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "body": {
+                  "properties": {
+                    "content": {
+                      "description": "Content",
+                      "order": 1,
+                      "title": "Content",
+                      "type": "string"
+                    },
+                    "contentType": {
+                      "description": "Content type",
+                      "order": 2,
+                      "title": "Content Type",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Body",
+                  "type": "object"
+                },
+                "from": {
+                  "properties": {
+                    "user": {
+                      "$ref": "#/definitions/user",
+                      "description": "User",
+                      "order": 1,
+                      "title": "User"
+                    }
+                  },
+                  "title": "From",
+                  "type": "object"
+                },
+                "message": {
+                  "properties": {
+                    "body": {
+                      "$ref": "#/definitions/body",
+                      "description": "Body",
+                      "order": 1,
+                      "title": "Body"
+                    },
+                    "createdDateTime": {
+                      "description": "Created date time",
+                      "order": 3,
+                      "title": "Created Date Time",
+                      "type": "string"
+                    },
+                    "first_word": {
+                      "description": "Extracted first word from message (easy way to obtain a chat command)",
+                      "order": 9,
+                      "title": "First Word",
+                      "type": "string"
+                    },
+                    "from": {
+                      "$ref": "#/definitions/from",
+                      "description": "From",
+                      "order": 2,
+                      "title": "From"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 8,
+                      "title": "ID",
+                      "type": "string"
+                    },
+                    "importance": {
+                      "description": "Importance",
+                      "order": 5,
+                      "title": "Importance",
+                      "type": "string"
+                    },
+                    "locale": {
+                      "description": "Locale",
+                      "order": 7,
+                      "title": "Locale",
+                      "type": "string"
+                    },
+                    "messageType": {
+                      "description": "Message type",
+                      "order": 6,
+                      "title": "Message Type",
+                      "type": "string"
+                    },
+                    "webUrl": {
+                      "description": "Web URL",
+                      "order": 4,
+                      "title": "Web URL",
+                      "type": "string"
+                    },
+                    "words": {
+                      "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 10,
+                      "title": "Words",
+                      "type": "array"
+                    }
+                  },
+                  "required": [
+                    "words",
+                    "first_word"
+                  ],
                   "title": "Message",
                   "type": "object"
                 },
@@ -1666,16 +1771,17 @@
               "name": "Rapid7 InsightVM",
               "slugVendor": "rapid7",
               "slugName": "rapid7_insightvm",
-              "slugVersion": "4.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/4.0.0/icon.png"
+              "slugVersion": "4.8.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/4.8.1/icon.png"
             },
             "identifier": "generate_adhoc_sql_report",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "filters": "{}",
-                "query": "with prep as (select vulnerability_id,lower(reference) as reference from dim_vulnerability_reference)\nselect nexpose_id from prep join dim_vulnerability using (vulnerability_id) where reference=lower('{{[320f400b-ada3-4f7c-8f57-9b583c6a3b46].[vulnerability]}}')",
+                "query": "with prep as (select vulnerability_id,lower(reference) as reference from dim_vulnerability_reference)\nselect nexpose_id from prep join dim_vulnerability using (vulnerability_id) where reference=lower('{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[words].[1]}}')",
                 "scope": "tags",
                 "scope_ids": [
                   1
@@ -1724,8 +1830,8 @@
                 }
               },
               "required": [
-                "query",
-                "scope"
+                "scope",
+                "query"
               ],
               "title": "Variables",
               "type": "object"
@@ -1818,15 +1924,16 @@
               "name": "Type Converter",
               "slugVendor": "rapid7",
               "slugName": "type_converter",
-              "slugVersion": "1.5.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/type_converter/1.5.1/icon.png"
+              "slugVersion": "1.6.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/type_converter/1.6.0/icon.png"
             },
             "identifier": "string_to_object",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
-                "input": "{\"team\": \"change_me\",\"channel\":\"change_me\",\"max hosts\":100}"
+                "input": "{\"max hosts\":10,\"max vulnerabilities\":50}"
               }
             },
             "defaultInputJSONSchema": {
@@ -1863,16 +1970,14 @@
               "definitions": {
                 "output": {
                   "properties": {
-                    "channel": {
-                      "type": "string"
-                    },
                     "max hosts": {
                       "type": "integer"
                     },
-                    "team": {
-                      "type": "string"
+                    "max vulnerabilities": {
+                      "type": "integer"
                     }
                   },
+                  "title": "Output",
                   "type": "object"
                 }
               },
@@ -1920,31 +2025,33 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.0.4",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
+              "slugVersion": "3.1.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
             },
-            "identifier": "send_message",
+            "identifier": "send_html_message",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
-                "channel_name": "{{[7688a93d-120d-4ca1-b995-46f923398468].[output].[channel]}}",
-                "message": "Searching for `{{[320f400b-ada3-4f7c-8f57-9b583c6a3b46].[vulnerability]}}` vulnerabilities...",
-                "team_name": "{{[7688a93d-120d-4ca1-b995-46f923398468].[output].[team]}}"
+                "channel_name": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[channel_name]}}",
+                "message_content": "Searching for <code>{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[words].[1]}}</code> vulnerabilities...",
+                "team_name": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[team_name]}}",
+                "thread_id": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[id]}}"
               }
             },
             "defaultInputJSONSchema": {
               "properties": {
                 "channel_name": {
-                  "description": "Channel",
+                  "description": "Channel name",
                   "order": 2,
                   "title": "Channel Name",
                   "type": "string"
                 },
-                "message": {
-                  "description": "Message to send",
-                  "order": 3,
-                  "title": "Message",
+                "message_content": {
+                  "description": "HTML content to send",
+                  "order": 4,
+                  "title": "Message Content",
                   "type": "string"
                 },
                 "team_name": {
@@ -1952,12 +2059,18 @@
                   "order": 1,
                   "title": "Team Name",
                   "type": "string"
+                },
+                "thread_id": {
+                  "description": "To post in a thread, select parent message ID",
+                  "order": 3,
+                  "title": "Thread ID",
+                  "type": "string"
                 }
               },
               "required": [
+                "team_name",
                 "channel_name",
-                "message",
-                "team_name"
+                "message_content"
               ],
               "title": "Variables",
               "type": "object"
@@ -2008,6 +2121,12 @@
                       "title": "Created Date Time",
                       "type": "string"
                     },
+                    "first_word": {
+                      "description": "Extracted first word from message (easy way to obtain a chat command)",
+                      "order": 9,
+                      "title": "First Word",
+                      "type": "string"
+                    },
                     "from": {
                       "$ref": "#/definitions/from",
                       "description": "From",
@@ -2043,8 +2162,21 @@
                       "order": 4,
                       "title": "Web URL",
                       "type": "string"
+                    },
+                    "words": {
+                      "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 10,
+                      "title": "Words",
+                      "type": "array"
                     }
                   },
+                  "required": [
+                    "words",
+                    "first_word"
+                  ],
                   "title": "Message",
                   "type": "object"
                 },
@@ -2112,9 +2244,27 @@
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
             "connectionType": "NONE"
           },
+          "9295505f-2274-435f-a6ca-b55e3b525f71": {
+            "nodeId": "9295505f-2274-435f-a6ca-b55e3b525f71",
+            "name": "Malformed Command Output",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "The given command is malformed."
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
           "9f271d1c-aa6d-425d-97e8-2b45449a2eba": {
             "nodeId": "9f271d1c-aa6d-425d-97e8-2b45449a2eba",
-            "name": "Lookup Vuln in VulnDB",
+            "name": "Lookup Vuln In VulnDB",
             "type": "action",
             "plugin": {
               "name": "Rapid7 Vulnerability & Exploit Database",
@@ -2126,10 +2276,11 @@
             "identifier": "search_db",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "database": "Vulnerability Database",
-                "search": "{{[320f400b-ada3-4f7c-8f57-9b583c6a3b46].[vulnerability]}}"
+                "search": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[words].[1]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -2226,7 +2377,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "Command to run:\n!lookup-vuln-assets <vulnerability>\n\n### Details\n<vulnerability> in the command can be any InsightVM vulnerability reference including the following:\n* KB Number\n* CVE ID\n* Nexpose ID\n* Other references InsightVM knows\n\nIn some cases, the alternate ID will correspond to multiple vulnerabilities InsightVM references.  In this case, the workflow will return results for each vulnerability separately.\n\n## Please note - the Get Vulnerable Assets step is expected to fail when using an alternate identifier or when there are no assets vulnerable to the vulnerability"
+                "content": "Command to run:\n!lookup-vuln-hosts <vulnerability>\n\n### Details\n<vulnerability> in the command can be any InsightVM vulnerability reference including the following:\n* KB Number\n* CVE ID\n* Nexpose ID\n* Other references InsightVM knows\n\nIn some cases, the alternate ID will correspond to multiple vulnerabilities InsightVM references.  In this case, the workflow will return results for each vulnerability separately.\n\n## Please note - the Get Vulnerable Assets step is expected to fail when using an alternate identifier or when there are no assets vulnerable to the vulnerability"
               },
               "type": "markdown"
             },
@@ -2244,15 +2395,16 @@
               "name": "Rapid7 InsightVM",
               "slugVendor": "rapid7",
               "slugName": "rapid7_insightvm",
-              "slugVersion": "4.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/4.0.0/icon.png"
+              "slugVersion": "4.8.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/4.8.1/icon.png"
             },
             "identifier": "get_vulnerability_affected_assets",
             "continueOnFailure": true,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
-                "vulnerability_id": "{{[320f400b-ada3-4f7c-8f57-9b583c6a3b46].[vulnerability]}}"
+                "vulnerability_id": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[words].[1]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -2324,15 +2476,15 @@
           },
           "aba0b6ae-4529-4827-a085-aeb46aa6affe": {
             "nodeId": "aba0b6ae-4529-4827-a085-aeb46aa6affe",
-            "name": "!lookup-vuln-hosts Trigger",
+            "name": "Lookup Vulnerable Hosts Trigger",
             "description": "Trigger this workflow using the lookup-vuln-hosts command:\n\n!lookup-vuln-hosts bluekeep\n!lookup-vuln-hosts CVE-2019-0708",
             "type": "trigger",
             "plugin": {
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.0.4",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
+              "slugVersion": "3.1.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
             },
             "identifier": "new_message_received",
             "continueOnFailure": false,
@@ -2344,7 +2496,7 @@
                 "team_name": "change_me"
               }
             },
-            "triggerId": "ab442ba5-50f4-47e2-a40e-cbcf61383fe8",
+            "triggerId": "d13b79dd-251b-4e06-8df7-96c252c7ad48",
             "defaultInputJSONSchema": {
               "properties": {
                 "channel_name": {
@@ -2405,6 +2557,135 @@
                   "title": "From",
                   "type": "object"
                 },
+                "hashes": {
+                  "properties": {
+                    "md5_hashes": {
+                      "description": "Extracted MD5 Hashes from message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 1,
+                      "title": "MD5 Hashes",
+                      "type": "array"
+                    },
+                    "sha1_hashes": {
+                      "description": "Extracted SHA1 hashes from message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "SHA1 Hashes",
+                      "type": "array"
+                    },
+                    "sha256_hashes": {
+                      "description": "Extracted SHA256 hashes from message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 3,
+                      "title": "SHA256 Hashes",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Hashes",
+                  "type": "object"
+                },
+                "indicators": {
+                  "properties": {
+                    "cves": {
+                      "description": "Extracted CVEs from message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 7,
+                      "title": "CVEs",
+                      "type": "array"
+                    },
+                    "domains": {
+                      "description": "Extracted domains from message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 1,
+                      "title": "Domains",
+                      "type": "array"
+                    },
+                    "email_addresses": {
+                      "description": "Extracted email addresses from message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 3,
+                      "title": "Email Addresses",
+                      "type": "array"
+                    },
+                    "hashes": {
+                      "$ref": "#/definitions/hashes",
+                      "description": "Extracted hashes from message",
+                      "order": 4,
+                      "title": "Hashes"
+                    },
+                    "ip_addresses": {
+                      "$ref": "#/definitions/ip_addresses",
+                      "description": "Extracted IP addresses from message",
+                      "order": 5,
+                      "title": "IP Addressses"
+                    },
+                    "mac_addresses": {
+                      "description": "Extracted MAC addresses from message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 6,
+                      "title": "MAC Addresses",
+                      "type": "array"
+                    },
+                    "urls": {
+                      "description": "Extracted URLs from message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "URLs",
+                      "type": "array"
+                    },
+                    "uuids": {
+                      "description": "Extracted UUIDs from message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 8,
+                      "title": "UUIDs",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Indicators",
+                  "type": "object"
+                },
+                "ip_addresses": {
+                  "properties": {
+                    "ipv4_addresses": {
+                      "description": "Extracted IPv4 addressses from message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 1,
+                      "title": "IPv4 Addressses",
+                      "type": "array"
+                    },
+                    "ipv6_addresses": {
+                      "description": "Extracted IPv6 addresses from message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "IPv6 Addressses",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Ip Addresses",
+                  "type": "object"
+                },
                 "message": {
                   "properties": {
                     "body": {
@@ -2417,6 +2698,12 @@
                       "description": "Created date time",
                       "order": 3,
                       "title": "Created Date Time",
+                      "type": "string"
+                    },
+                    "first_word": {
+                      "description": "Extracted first word from message (easy way to obtain a chat command)",
+                      "order": 9,
+                      "title": "First Word",
                       "type": "string"
                     },
                     "from": {
@@ -2454,8 +2741,21 @@
                       "order": 4,
                       "title": "Web URL",
                       "type": "string"
+                    },
+                    "words": {
+                      "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 10,
+                      "title": "Words",
+                      "type": "array"
                     }
                   },
+                  "required": [
+                    "words",
+                    "first_word"
+                  ],
                   "title": "Message",
                   "type": "object"
                 },
@@ -2479,11 +2779,29 @@
                 }
               },
               "properties": {
+                "channel_name": {
+                  "description": "Name of the channel where the message was posted",
+                  "order": 3,
+                  "title": "Channel Name",
+                  "type": "string"
+                },
+                "indicators": {
+                  "$ref": "#/definitions/indicators",
+                  "description": "The indicators object that was extracted from message",
+                  "order": 2,
+                  "title": "Indicators"
+                },
                 "message": {
                   "$ref": "#/definitions/message",
                   "description": "The message object that was created",
                   "order": 1,
                   "title": "Message"
+                },
+                "team_name": {
+                  "description": "Name of the team to which the channel is assigned to",
+                  "order": 4,
+                  "title": "Team Name",
+                  "type": "string"
                 }
               },
               "title": "Variables",
@@ -2553,10 +2871,10 @@
                 {
                   "edgeId": "b6efd95f-c8e7-4200-93b8-a16baf5e4e45",
                   "expression": {
-                    "name": "320f400b-ada3-4f7c-8f57-9b583c6a3b46.$matched",
+                    "name": "aba0b6ae-4529-4827-a085-aeb46aa6affe.message.words.1",
                     "type": "variable"
                   },
-                  "expressionText": "{{[320f400b-ada3-4f7c-8f57-9b583c6a3b46].[$matched]}}"
+                  "expressionText": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[words].[1]}}"
                 },
                 {
                   "edgeId": "ba5a8004-0d56-429a-9f01-067d529f8703",
@@ -2579,12 +2897,13 @@
               "name": "Rapid7 InsightVM",
               "slugVendor": "rapid7",
               "slugName": "rapid7_insightvm",
-              "slugVersion": "4.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/4.0.0/icon.png"
+              "slugVersion": "4.8.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/4.8.1/icon.png"
             },
             "identifier": "get_vulnerability",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "id": "{{[7e9c87e4-ba06-40ad-ad26-ea05ec7c10f0].[$item].[nexpose_id]}}"
@@ -2992,63 +3311,6 @@
             "defaultImageData": "",
             "connectionType": "CONNECTION"
           },
-          "c87511b7-9abd-4be9-a2b5-7fedcb8a7d70": {
-            "nodeId": "c87511b7-9abd-4be9-a2b5-7fedcb8a7d70",
-            "name": "Clean Teams Message",
-            "type": "action",
-            "plugin": {
-              "name": "HTML",
-              "slugVendor": "rapid7",
-              "slugName": "html",
-              "slugVersion": "1.2.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/html/1.2.1/icon.png"
-            },
-            "identifier": "text",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "doc": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[body].[content]}}",
-                "remove_scripts": true
-              }
-            },
-            "defaultInputJSONSchema": {
-              "properties": {
-                "doc": {
-                  "description": "Document to transform",
-                  "order": 1,
-                  "title": "Document",
-                  "type": "string"
-                },
-                "remove_scripts": {
-                  "description": "Remove non-HTML scripts from the document",
-                  "order": 2,
-                  "title": "Remove Scripts",
-                  "type": "boolean"
-                }
-              },
-              "required": [
-                "doc"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultOutputJSONSchema": {
-              "properties": {
-                "text": {
-                  "description": "String without HTML tags",
-                  "order": 1,
-                  "title": "Text",
-                  "type": "string"
-                }
-              },
-              "title": "Variables",
-              "type": "object"
-            },
-            "outputJSONSchema": null,
-            "defaultImageData": "",
-            "connectionType": "ORCHESTRATOR"
-          },
           "c8f054ac-027f-4183-bf23-a56c692d9e51": {
             "nodeId": "c8f054ac-027f-4183-bf23-a56c692d9e51",
             "name": "Asset Reference",
@@ -3067,9 +3329,27 @@
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
             "connectionType": "NONE"
           },
+          "cc723082-ec9b-4e32-84d3-05e2c2acdae0": {
+            "nodeId": "cc723082-ec9b-4e32-84d3-05e2c2acdae0",
+            "name": "Success Output",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "Lookup Vulnerable Hosts for `{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[words].[1]}}` successfully completed! "
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
           "cef2135a-e641-4c80-8a7b-a0cf5fc464e0": {
             "nodeId": "cef2135a-e641-4c80-8a7b-a0cf5fc464e0",
-            "name": "Vulnerability Found with Alternate Identifiers?",
+            "name": "Vulnerability Found With Alternate Identifiers?",
             "type": "automated_decision",
             "continueOnFailure": false,
             "isDisabled": false,
@@ -3119,31 +3399,33 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.0.4",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
+              "slugVersion": "3.1.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
             },
-            "identifier": "send_message",
+            "identifier": "send_html_message",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
-                "channel_name": "{{[7688a93d-120d-4ca1-b995-46f923398468].[output].[channel]}}",
-                "message": "Workflow Complete. See details in InsightConnect here:\n{{[$job].[URL]}}",
-                "team_name": "{{[7688a93d-120d-4ca1-b995-46f923398468].[output].[team]}}"
+                "channel_name": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[channel_name]}}",
+                "message_content": "Lookup Vulnerable Hosts for <code>{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[words].[1]}}</code> successfully completed! <br>\n<br>\nWorkflow Complete. See details in InsightConnect here:\n<a>{{[$job].[URL]}}</a>",
+                "team_name": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[team_name]}}",
+                "thread_id": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[id]}}"
               }
             },
             "defaultInputJSONSchema": {
               "properties": {
                 "channel_name": {
-                  "description": "Channel",
+                  "description": "Channel name",
                   "order": 2,
                   "title": "Channel Name",
                   "type": "string"
                 },
-                "message": {
-                  "description": "Message to send",
-                  "order": 3,
-                  "title": "Message",
+                "message_content": {
+                  "description": "HTML content to send",
+                  "order": 4,
+                  "title": "Message Content",
                   "type": "string"
                 },
                 "team_name": {
@@ -3151,12 +3433,18 @@
                   "order": 1,
                   "title": "Team Name",
                   "type": "string"
+                },
+                "thread_id": {
+                  "description": "To post in a thread, select parent message ID",
+                  "order": 3,
+                  "title": "Thread ID",
+                  "type": "string"
                 }
               },
               "required": [
+                "team_name",
                 "channel_name",
-                "message",
-                "team_name"
+                "message_content"
               ],
               "title": "Variables",
               "type": "object"
@@ -3207,6 +3495,12 @@
                       "title": "Created Date Time",
                       "type": "string"
                     },
+                    "first_word": {
+                      "description": "Extracted first word from message (easy way to obtain a chat command)",
+                      "order": 9,
+                      "title": "First Word",
+                      "type": "string"
+                    },
                     "from": {
                       "$ref": "#/definitions/from",
                       "description": "From",
@@ -3242,8 +3536,21 @@
                       "order": 4,
                       "title": "Web URL",
                       "type": "string"
+                    },
+                    "words": {
+                      "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 10,
+                      "title": "Words",
+                      "type": "array"
                     }
                   },
+                  "required": [
+                    "words",
+                    "first_word"
+                  ],
                   "title": "Message",
                   "type": "object"
                 },
@@ -3289,12 +3596,13 @@
               "name": "Type Converter",
               "slugVendor": "rapid7",
               "slugName": "type_converter",
-              "slugVersion": "1.5.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/type_converter/1.5.1/icon.png"
+              "slugVersion": "1.6.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/type_converter/1.6.0/icon.png"
             },
             "identifier": "string_to_object",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "input": "{\"nexpose_id\":\"{{[0d368b5b-d7d0-4041-be73-b1db53a3895a].[$item].[identifier]}}\"}"
@@ -3377,21 +3685,22 @@
           },
           "e19ba80b-5d1a-4646-bcdb-3844a9dd04cf": {
             "nodeId": "e19ba80b-5d1a-4646-bcdb-3844a9dd04cf",
-            "name": "make string",
+            "name": "Make String",
             "type": "action",
             "plugin": {
               "name": "Type Converter",
               "slugVendor": "rapid7",
               "slugName": "type_converter",
-              "slugVersion": "1.5.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/type_converter/1.5.1/icon.png"
+              "slugVersion": "1.6.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/type_converter/1.6.0/icon.png"
             },
             "identifier": "string_to_object",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
-                "input": "{\"array\":[{\"nexpose_id\":\"{{[320f400b-ada3-4f7c-8f57-9b583c6a3b46].[vulnerability]}}\"}]}"
+                "input": "{\"array\":[{\"nexpose_id\":\"{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[words].[1]}}\"}]}"
               }
             },
             "defaultInputJSONSchema": {
@@ -3469,17 +3778,19 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.0.4",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
+              "slugVersion": "3.1.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
             },
             "identifier": "send_message",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
-                "channel_name": "{{[7688a93d-120d-4ca1-b995-46f923398468].[output].[channel]}}",
-                "message": "Your search for vulnerability {{[320f400b-ada3-4f7c-8f57-9b583c6a3b46].[vulnerability]}} is too broad and returned more than 50 vulnerabilities.  Please try a narrower search.  Here is a search your may find helpful: <https://www.rapid7.com/db/?q={{[320f400b-ada3-4f7c-8f57-9b583c6a3b46].[vulnerability]}}&type=nexpose|Rapid7 VulnDB Search> ",
-                "team_name": "{{[7688a93d-120d-4ca1-b995-46f923398468].[output].[team]}}"
+                "channel_name": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[channel_name]}}",
+                "message": "Your search for vulnerability {{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[words].[1]}} is too broad and returned more than {{[7688a93d-120d-4ca1-b995-46f923398468].[output].[max vulnerabilities]}} vulnerabilities.  Please try a narrower search.  Here is a search your may find helpful: <https://www.rapid7.com/db/?q={{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[words].[1]}}&type=nexpose|Rapid7 VulnDB Search> ",
+                "team_name": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[team_name]}}",
+                "thread_id": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[id]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -3492,7 +3803,7 @@
                 },
                 "message": {
                   "description": "Message to send",
-                  "order": 3,
+                  "order": 4,
                   "title": "Message",
                   "type": "string"
                 },
@@ -3501,12 +3812,18 @@
                   "order": 1,
                   "title": "Team Name",
                   "type": "string"
+                },
+                "thread_id": {
+                  "description": "To post in a thread, select parent message ID",
+                  "order": 3,
+                  "title": "Thread ID",
+                  "type": "string"
                 }
               },
               "required": [
+                "team_name",
                 "channel_name",
-                "message",
-                "team_name"
+                "message"
               ],
               "title": "Variables",
               "type": "object"
@@ -3557,6 +3874,12 @@
                       "title": "Created Date Time",
                       "type": "string"
                     },
+                    "first_word": {
+                      "description": "Extracted first word from message (easy way to obtain a chat command)",
+                      "order": 9,
+                      "title": "First Word",
+                      "type": "string"
+                    },
                     "from": {
                       "$ref": "#/definitions/from",
                       "description": "From",
@@ -3592,8 +3915,21 @@
                       "order": 4,
                       "title": "Web URL",
                       "type": "string"
+                    },
+                    "words": {
+                      "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 10,
+                      "title": "Words",
+                      "type": "array"
                     }
                   },
+                  "required": [
+                    "words",
+                    "first_word"
+                  ],
                   "title": "Message",
                   "type": "object"
                 },
@@ -3639,12 +3975,13 @@
               "name": "Rapid7 InsightVM",
               "slugVendor": "rapid7",
               "slugName": "rapid7_insightvm",
-              "slugVersion": "4.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/4.0.0/icon.png"
+              "slugVersion": "4.8.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/4.8.1/icon.png"
             },
             "identifier": "get_asset",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "id": "{{[db592e51-daa5-44e6-9084-3439b7f09b85].[$item]}}"
@@ -4548,9 +4885,9 @@
     ],
     "triggers": [
       {
-        "id": "ab442ba5-50f4-47e2-a40e-cbcf61383fe8",
+        "id": "d13b79dd-251b-4e06-8df7-96c252c7ad48",
         "identifier": "new_message_received",
-        "name": "!lookup-vuln-hosts Trigger",
+        "name": "Lookup Vulnerable Hosts Trigger",
         "description": "Trigger this workflow using the lookup-vuln-hosts command:\n\n!lookup-vuln-hosts bluekeep\n!lookup-vuln-hosts CVE-2019-0708",
         "input": {
           "channel_name": "change_me",
@@ -4617,6 +4954,135 @@
               "title": "From",
               "type": "object"
             },
+            "hashes": {
+              "properties": {
+                "md5_hashes": {
+                  "description": "Extracted MD5 Hashes from message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "MD5 Hashes",
+                  "type": "array"
+                },
+                "sha1_hashes": {
+                  "description": "Extracted SHA1 hashes from message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "SHA1 Hashes",
+                  "type": "array"
+                },
+                "sha256_hashes": {
+                  "description": "Extracted SHA256 hashes from message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 3,
+                  "title": "SHA256 Hashes",
+                  "type": "array"
+                }
+              },
+              "title": "Hashes",
+              "type": "object"
+            },
+            "indicators": {
+              "properties": {
+                "cves": {
+                  "description": "Extracted CVEs from message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 7,
+                  "title": "CVEs",
+                  "type": "array"
+                },
+                "domains": {
+                  "description": "Extracted domains from message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "Domains",
+                  "type": "array"
+                },
+                "email_addresses": {
+                  "description": "Extracted email addresses from message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 3,
+                  "title": "Email Addresses",
+                  "type": "array"
+                },
+                "hashes": {
+                  "$ref": "#/definitions/hashes",
+                  "description": "Extracted hashes from message",
+                  "order": 4,
+                  "title": "Hashes"
+                },
+                "ip_addresses": {
+                  "$ref": "#/definitions/ip_addresses",
+                  "description": "Extracted IP addresses from message",
+                  "order": 5,
+                  "title": "IP Addressses"
+                },
+                "mac_addresses": {
+                  "description": "Extracted MAC addresses from message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 6,
+                  "title": "MAC Addresses",
+                  "type": "array"
+                },
+                "urls": {
+                  "description": "Extracted URLs from message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "URLs",
+                  "type": "array"
+                },
+                "uuids": {
+                  "description": "Extracted UUIDs from message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 8,
+                  "title": "UUIDs",
+                  "type": "array"
+                }
+              },
+              "title": "Indicators",
+              "type": "object"
+            },
+            "ip_addresses": {
+              "properties": {
+                "ipv4_addresses": {
+                  "description": "Extracted IPv4 addressses from message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "IPv4 Addressses",
+                  "type": "array"
+                },
+                "ipv6_addresses": {
+                  "description": "Extracted IPv6 addresses from message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "IPv6 Addressses",
+                  "type": "array"
+                }
+              },
+              "title": "Ip Addresses",
+              "type": "object"
+            },
             "message": {
               "properties": {
                 "body": {
@@ -4629,6 +5095,12 @@
                   "description": "Created date time",
                   "order": 3,
                   "title": "Created Date Time",
+                  "type": "string"
+                },
+                "first_word": {
+                  "description": "Extracted first word from message (easy way to obtain a chat command)",
+                  "order": 9,
+                  "title": "First Word",
                   "type": "string"
                 },
                 "from": {
@@ -4666,8 +5138,21 @@
                   "order": 4,
                   "title": "Web URL",
                   "type": "string"
+                },
+                "words": {
+                  "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 10,
+                  "title": "Words",
+                  "type": "array"
                 }
               },
+              "required": [
+                "words",
+                "first_word"
+              ],
               "title": "Message",
               "type": "object"
             },
@@ -4691,11 +5176,29 @@
             }
           },
           "properties": {
+            "channel_name": {
+              "description": "Name of the channel where the message was posted",
+              "order": 3,
+              "title": "Channel Name",
+              "type": "string"
+            },
+            "indicators": {
+              "$ref": "#/definitions/indicators",
+              "description": "The indicators object that was extracted from message",
+              "order": 2,
+              "title": "Indicators"
+            },
             "message": {
               "$ref": "#/definitions/message",
               "description": "The message object that was created",
               "order": 1,
               "title": "Message"
+            },
+            "team_name": {
+              "description": "Name of the team to which the channel is assigned to",
+              "order": 4,
+              "title": "Team Name",
+              "type": "string"
             }
           },
           "title": "Variables",
@@ -4707,8 +5210,8 @@
           "name": "Microsoft Teams",
           "slugVendor": "rapid7",
           "slugName": "microsoft_teams",
-          "slugVersion": "2.0.4",
-          "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
+          "slugVersion": "3.1.0",
+          "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
         }
       }
     ]
