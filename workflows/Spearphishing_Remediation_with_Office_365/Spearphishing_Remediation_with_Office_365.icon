@@ -1041,7 +1041,7 @@
               "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightidr/1.3.0/icon.png"
             },
             "identifier": "set_status_of_investigation_action",
-            "continueOnFailure": true,
+            "continueOnFailure": false,
             "isDisabled": false,
             "isCloud": false,
             "parameters": {
@@ -1225,7 +1225,7 @@
               "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightidr/1.3.0/icon.png"
             },
             "identifier": "set_status_of_investigation_action",
-            "continueOnFailure": true,
+            "continueOnFailure": false,
             "isDisabled": false,
             "isCloud": false,
             "parameters": {
