@@ -1,9 +1,9 @@
 extension: workflow
 products: ["insightconnect", "insightvm"]
 name: Lookup_Vulnerable_Hosts_From_Teams
-title: "Lookup Vulnerable Hosts from Microsoft Teams"
+title: Lookup Vulnerable Hosts from Microsoft Teams
 description: Lookup vulnerability details and identify affected hosts with a Microsoft Teams message message trigger.
-version: 1.0.1
+version: 1.1.0
 vendor: rapid7
 support: rapid7
 status: []
@@ -15,5 +15,25 @@ resources:
   source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Lookup_Vulnerable_Hosts_From_Teams
   license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
   screenshots:
+  - name: artifact.png
+    title: Artifact View
+  - name: teams_cve_id.png
+    title: Example Slack Job Input and Output for CVE ID
+  - name: teams_nexpose_id.png
+    title: Example Slack Job Input and Output for Nexpose ID
+  - name: teams_kb_number.png
+    title: Example Slack Job Input and Output for KB Number
   - name: workflow.png
-    title: Workflow View 
+    title: Workflow View
+  - name: workflow1.png
+    title: Workflow View Part 1
+  - name: workflow2.png
+    title: Workflow View Part 2
+  - name: workflow3.png
+    title: Workflow View Part 3
+  - name: workflow4.png
+    title: Workflow View Extract Vulnerability IDs from VulnDB Loop
+  - name: workflow5.png
+    title: Workflow View Process Vulnerabilities Loop
+  - name: workflow6.png
+    title: Workflow View Get Asset Information Loop

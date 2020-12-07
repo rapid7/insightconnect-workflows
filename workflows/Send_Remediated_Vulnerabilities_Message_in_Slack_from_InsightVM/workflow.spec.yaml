@@ -1,0 +1,25 @@
+extension: workflow
+products: ["insightconnect", "insightvm"]
+name: Send_Remediated_Vulnerabilities_Message_in_Slack_from_InsightVM
+title: Send Remediated Vulnerabilities Message in Slack from InsightVM
+description: This workflow sends a message in Slack when vulnerabilities are remediated in InsightVM.
+version: 1.0.0
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [vulnerability_management, remediation_management, alerting_and_notifications]
+  keywords: [chat, slack, cloud_enabled]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Send_Remediated_Vulnerabilities_Message_in_Slack_from_InsightVM
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+    - name: slack_output.png
+      title: New Vulnerabilities Remediated Message in Slack
+    - name: workflow1.png
+      title: Workflow Builder View
+    - name: workflow2.png
+      title: Workflow Builder View - Loop Step
+    - name: job.png
+      title: Successful Workflow Job

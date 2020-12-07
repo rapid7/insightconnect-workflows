@@ -1,9 +1,9 @@
 extension: workflow
 products: ["insightconnect"]
 name: Suspend_User_in_Azure_AD_from_Microsoft_Teams
-title: "Disable User in Azure AD from Microsoft Teams"
-description: "Disable user accounts in Azure AD from Microsoft Teams."
-version: 1.0.4
+title: Disable User in Azure AD from Microsoft Teams
+description: Disable or enable user account in Azure AD from Microsoft Teams.
+version: 1.1.0
 vendor: rapid7
 support: rapid7
 status: []
@@ -15,8 +15,21 @@ resources:
   source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Suspend_User_in_Azure_AD_from_Microsoft_Teams
   license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
   screenshots:
-  - name: workflow1.png
+  - name: workflow.png
     title: Workflow View
-  - name: teams_flow1.png
-    title: Microsoft Teams Post, Response, and Success
-  
+  - name: disable_success.png
+    title: Microsoft Teams Post and Response, Success 1
+  - name: disable_failure.png
+    title: Microsoft Teams Post and Response, Failure 1
+  - name: enable_success.png
+    title: Microsoft Teams Post and Response, Success 2
+  - name: enable_failure.png
+    title: Microsoft Teams Post and Response, Failure 2
+  - name: artifact_disable.png
+    title: Artifact View 1
+  - name: artifact_enable.png
+    title: Artifact View 2
+  - name: azure_ad_artifact_disable.png
+    title: Azure AD Artifact View 1
+  - name: azure_ad_artifact_enable.png
+    title: Azure AD Artifact View 2

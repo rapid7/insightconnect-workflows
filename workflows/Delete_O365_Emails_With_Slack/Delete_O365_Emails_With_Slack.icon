@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.48.4-0-g02625",
+    "komandVersion": "1.70.0-0-g96f18",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-04-17T17:13:10.422609812Z",
+    "exportedAt": "2020-12-02T17:15:25.617436723Z",
     "workflowVersions": [
       {
         "name": "Find and Delete Emails in Office 365 from Slack",
@@ -510,12 +510,13 @@
               "name": "Python 3 Script",
               "slugVendor": "rapid7",
               "slugName": "python_3_script",
-              "slugVersion": "2.0.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/python_3_script/2.0.1/icon.png"
+              "slugVersion": "2.0.2",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/python_3_script/2.0.2/icon.png"
             },
             "identifier": "run",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "function": "def run(params={}):\n    return {\"email_list_count\": len(params.get(\"email_list\"))}",
@@ -587,16 +588,17 @@
               "name": "Microsoft Office 365 Email",
               "slugVendor": "rapid7",
               "slugName": "microsoft_office365_email",
-              "slugVersion": "4.1.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_office365_email/4.1.1/icon.png"
+              "slugVersion": "5.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_office365_email/5.0.0/icon.png"
             },
             "identifier": "delete_email",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "email_id": "{{[8fc20935-4fe1-465d-b962-52011ff78f82].[$item].[id]}}",
-                "mailbox_id": "{{[75c4e364-f202-469e-bcb3-4140fe36e205].[email]}}"
+                "mailbox_id": "{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[indicators].[email_addresses].[0]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -608,7 +610,7 @@
                   "type": "string"
                 },
                 "mailbox_id": {
-                  "description": "User mailbox ID to delete from e.g. user@example.com",
+                  "description": "User mailbox ID to delete from",
                   "order": 2,
                   "title": "Mailbox ID",
                   "type": "string"
@@ -716,6 +718,12 @@
                   "title": "Channel ID",
                   "type": "string"
                 },
+                "display_name": {
+                  "description": "The slack display name for the user responding to the question",
+                  "order": 9,
+                  "title": "Display Name",
+                  "type": "string"
+                },
                 "message": {
                   "description": "The message that was sent to slack",
                   "order": 4,
@@ -737,7 +745,7 @@
                 "responding_user": {
                   "description": "The slack username of the user responding to the question",
                   "order": 7,
-                  "title": "Response Question",
+                  "title": "Response User",
                   "type": "string"
                 },
                 "response_question": {
@@ -918,7 +926,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "Target mailbox: \"{{[75c4e364-f202-469e-bcb3-4140fe36e205].[email]}}\"\n\nFrom: \"{{[75c4e364-f202-469e-bcb3-4140fe36e205].[from]}}\"\nSubject: \"{{[75c4e364-f202-469e-bcb3-4140fe36e205].[subject]}}\"\nBody: \"{{[75c4e364-f202-469e-bcb3-4140fe36e205].[body]}}\"\n\nDelete: \"{{[75c4e364-f202-469e-bcb3-4140fe36e205].[delete]}}\""
+                "content": "Target mailbox: \"{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[indicators].[email_addresses].[0]}}\"\n\nFrom: \"{{[75c4e364-f202-469e-bcb3-4140fe36e205].[from]}}\"\nSubject: \"{{[75c4e364-f202-469e-bcb3-4140fe36e205].[subject]}}\"\nBody: \"{{[75c4e364-f202-469e-bcb3-4140fe36e205].[body]}}\"\n\nDelete: \"{{[75c4e364-f202-469e-bcb3-4140fe36e205].[delete]}}\""
               },
               "type": "markdown"
             },
@@ -980,12 +988,13 @@
               "name": "Python 3 Script",
               "slugVendor": "rapid7",
               "slugName": "python_3_script",
-              "slugVersion": "2.0.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/python_3_script/2.0.1/icon.png"
+              "slugVersion": "2.0.2",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/python_3_script/2.0.2/icon.png"
             },
             "identifier": "run",
             "continueOnFailure": true,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "function": "def run(params={}):\n\n    # Sometimes Slack will give us email in their linked form:\n    # <mailto:user@example.com>\n    # or\n    # <http://www.exmaple.com|example.com>\n    def parse_email(email):\n\n        if email.startswith(\"<\"):\n            # mailto link\n            if \"mailto:\" in email:\n                split_email = email.split(\":\")[1]\n                if \"|\" in split_email:\n                    return split_email.split(\"|\")[0]\n                return split_email\n\n            # http link\n            if \"http:\" in email:\n                split_email = email.split(\"|\")[1]\n                split_email = split_email.rstrip(\">\")\n                return split_email\n\n        return email\n\n    import shlex\n    input = params.get(\"input\")\n\n    # Sometimes slack gives us unicode spaces\n    input = input.replace(u'\\xa0', u' ')\n\n    # split our args \n    args = shlex.split(input)\n\n    # get the recipient email and clean it up\n    email = parse_email(args[1])    \n    args_for_delete_email = {\n        \"email\": email\n    }\n\n    # parse args\n    for i in range(1, len(args)):\n        split_args = args[i].split('=')\n        if split_args[0].lower() == \"subject\":\n            args_for_delete_email[\"subject\"] = split_args[1]\n        if split_args[0].lower() == \"body\":\n            args_for_delete_email[\"body\"] = split_args[1]\n        if split_args[0].lower() == \"from\":\n            args_for_delete_email[\"from\"] = parse_email(split_args[1])\n        if split_args[0].lower() == \"delete\":\n            args_for_delete_email[\"delete\"] = True if split_args[1][0].lower() == 't' else False\n\n    return(args_for_delete_email)",
@@ -1072,16 +1081,17 @@
               "name": "Microsoft Office 365 Email",
               "slugVendor": "rapid7",
               "slugName": "microsoft_office365_email",
-              "slugVersion": "4.1.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_office365_email/4.1.1/icon.png"
+              "slugVersion": "5.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_office365_email/5.0.0/icon.png"
             },
             "identifier": "delete_email",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
-                "email_id": "{{[c1be2795-8756-4862-ad94-1d7d2fe751ea].[$item]}}",
-                "mailbox_id": "{{[75c4e364-f202-469e-bcb3-4140fe36e205].[email]}}"
+                "email_id": "{{[c1be2795-8756-4862-ad94-1d7d2fe751ea].[$item].[id]}}",
+                "mailbox_id": "{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[indicators].[email_addresses].[0]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -1093,7 +1103,7 @@
                   "type": "string"
                 },
                 "mailbox_id": {
-                  "description": "User mailbox ID to delete from e.g. user@example.com",
+                  "description": "User mailbox ID to delete from",
                   "order": 2,
                   "title": "Mailbox ID",
                   "type": "string"
@@ -1134,7 +1144,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "Starting an email search with the following: \n\n{{[546b32d7-cbbf-45af-84aa-7f8d64ec20dd].[content]}}\n\n",
+                "message": "Starting an email search with the following:\n\n{{[546b32d7-cbbf-45af-84aa-7f8d64ec20dd].[content]}}",
                 "recipient": "@{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[user]}}",
                 "thread_ts": "{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[timestamp]}}"
               }
@@ -1214,16 +1224,7 @@
             "defaultInputJSONSchema": null,
             "defaultOutputJSONSchema": null,
             "outputJSONSchema": {
-              "properties": {
-                "$outputs": {
-                  "items": {
-                    "properties": {},
-                    "type": "object"
-                  },
-                  "title": "$outputs",
-                  "type": "array"
-                }
-              },
+              "properties": {},
               "title": "Variables",
               "type": "object"
             },
@@ -1286,12 +1287,12 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "matchChannel": "",
+                "matchChannel": "change_me",
                 "matchText": "find-email",
                 "type": "any"
               }
             },
-            "triggerId": "28cd7e2c-8430-4e94-85fd-43f71f75a7e9",
+            "triggerId": "369b8edd-bf1d-49c7-8bb0-c70555f303f9",
             "defaultInputJSONSchema": {
               "properties": {
                 "matchChannel": {
@@ -1327,6 +1328,126 @@
             },
             "defaultOutputJSONSchema": {
               "definitions": {
+                "hashes": {
+                  "properties": {
+                    "md5_hashes": {
+                      "description": "MD5 hashes found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 1,
+                      "title": "MD5 Hashes",
+                      "type": "array"
+                    },
+                    "sha1_hashes": {
+                      "description": "SHA1 hashes found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "SHA1 Hashes",
+                      "type": "array"
+                    },
+                    "sha256_hashes": {
+                      "description": "SHA256 hashes found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 3,
+                      "title": "SHA256 Hashes",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Hashes",
+                  "type": "object"
+                },
+                "indicators": {
+                  "properties": {
+                    "domains": {
+                      "description": "Domains found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 1,
+                      "title": "Domains",
+                      "type": "array"
+                    },
+                    "email_addresses": {
+                      "description": "Email addresses found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 4,
+                      "title": "Email Addresses",
+                      "type": "array"
+                    },
+                    "hashes": {
+                      "$ref": "#/definitions/hashes",
+                      "description": "Hashes found within the message",
+                      "order": 5,
+                      "title": "Hashes"
+                    },
+                    "ip_addresses": {
+                      "$ref": "#/definitions/ip_addresses",
+                      "description": "IP addresses found within the message",
+                      "order": 7,
+                      "title": "IP Addresses"
+                    },
+                    "mac_addresses": {
+                      "description": "MAC addresses found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 6,
+                      "title": "MAC Addresses",
+                      "type": "array"
+                    },
+                    "parent_domains": {
+                      "description": "Parent domains found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "Parent Domains",
+                      "type": "array"
+                    },
+                    "urls": {
+                      "description": "URLs found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 3,
+                      "title": "URLs",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Indicators",
+                  "type": "object"
+                },
+                "ip_addresses": {
+                  "properties": {
+                    "ipv4_addresses": {
+                      "description": "IPv4 addresses found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 1,
+                      "title": "IPv4 Addresses",
+                      "type": "array"
+                    },
+                    "ipv6_addresses": {
+                      "description": "IPv6 addresses found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "IPv6 Addresses",
+                      "type": "array"
+                    }
+                  },
+                  "title": "IP Addresses",
+                  "type": "object"
+                },
                 "message": {
                   "properties": {
                     "channel": {
@@ -1340,6 +1461,18 @@
                       "order": 4,
                       "title": "Channel ID",
                       "type": "string"
+                    },
+                    "first_word": {
+                      "description": "First word of the message, for example a chat command (ignoring mentions)",
+                      "order": 5,
+                      "title": "First Word",
+                      "type": "string"
+                    },
+                    "indicators": {
+                      "$ref": "#/definitions/indicators",
+                      "description": "Potential threat indicators found within the message",
+                      "order": 7,
+                      "title": "Indicators"
                     },
                     "text": {
                       "description": "Text",
@@ -1364,6 +1497,15 @@
                       "order": 2,
                       "title": "User ID",
                       "type": "string"
+                    },
+                    "words": {
+                      "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 6,
+                      "title": "Words",
+                      "type": "array"
                     }
                   },
                   "title": "Message",
@@ -1438,16 +1580,7 @@
             "defaultInputJSONSchema": null,
             "defaultOutputJSONSchema": null,
             "outputJSONSchema": {
-              "properties": {
-                "$outputs": {
-                  "items": {
-                    "properties": {},
-                    "type": "object"
-                  },
-                  "title": "$outputs",
-                  "type": "array"
-                }
-              },
+              "properties": {},
               "title": "Variables",
               "type": "object"
             },
@@ -1536,7 +1669,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "Mailbox Scanned: {{[75c4e364-f202-469e-bcb3-4140fe36e205].[email]}}\nNumber of emails found: {{[16077c2b-e376-4221-9100-687972fa5956].[email_list_count]}}"
+                "content": "Mailbox Scanned: {{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[indicators].[email_addresses].[0]}}\nNumber of emails found: {{[16077c2b-e376-4221-9100-687972fa5956].[email_list_count]}}"
               },
               "type": "markdown"
             },
@@ -1702,17 +1835,18 @@
               "name": "Microsoft Office 365 Email",
               "slugVendor": "rapid7",
               "slugName": "microsoft_office365_email",
-              "slugVersion": "4.1.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_office365_email/4.1.1/icon.png"
+              "slugVersion": "5.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_office365_email/5.0.0/icon.png"
             },
             "identifier": "get_email_from_user",
             "continueOnFailure": true,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "body_contains": "{{[75c4e364-f202-469e-bcb3-4140fe36e205].[body]}}",
                 "from_contains": "{{[75c4e364-f202-469e-bcb3-4140fe36e205].[from]}}",
-                "mailbox_id": "{{[75c4e364-f202-469e-bcb3-4140fe36e205].[email]}}",
+                "mailbox_id": "{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[indicators].[email_addresses].[0]}}",
                 "max_number_to_return": 250,
                 "subject_contains": "{{[75c4e364-f202-469e-bcb3-4140fe36e205].[subject]}}"
               }
@@ -1732,7 +1866,7 @@
                   "type": "string"
                 },
                 "mailbox_id": {
-                  "description": "Target user to retrieve email from e.g. user@example.com",
+                  "description": "Target user to retrieve email from",
                   "order": 1,
                   "title": "Mailbox ID",
                   "type": "string"
@@ -2150,11 +2284,11 @@
     ],
     "triggers": [
       {
-        "id": "28cd7e2c-8430-4e94-85fd-43f71f75a7e9",
+        "id": "369b8edd-bf1d-49c7-8bb0-c70555f303f9",
         "name": "Delete Email Trigger",
         "description": "",
         "input": {
-          "matchChannel": "",
+          "matchChannel": "change_me",
           "matchText": "find-email",
           "type": "any"
         },
@@ -2193,6 +2327,126 @@
         },
         "outputJsonSchema": {
           "definitions": {
+            "hashes": {
+              "properties": {
+                "md5_hashes": {
+                  "description": "MD5 hashes found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "MD5 Hashes",
+                  "type": "array"
+                },
+                "sha1_hashes": {
+                  "description": "SHA1 hashes found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "SHA1 Hashes",
+                  "type": "array"
+                },
+                "sha256_hashes": {
+                  "description": "SHA256 hashes found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 3,
+                  "title": "SHA256 Hashes",
+                  "type": "array"
+                }
+              },
+              "title": "Hashes",
+              "type": "object"
+            },
+            "indicators": {
+              "properties": {
+                "domains": {
+                  "description": "Domains found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "Domains",
+                  "type": "array"
+                },
+                "email_addresses": {
+                  "description": "Email addresses found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 4,
+                  "title": "Email Addresses",
+                  "type": "array"
+                },
+                "hashes": {
+                  "$ref": "#/definitions/hashes",
+                  "description": "Hashes found within the message",
+                  "order": 5,
+                  "title": "Hashes"
+                },
+                "ip_addresses": {
+                  "$ref": "#/definitions/ip_addresses",
+                  "description": "IP addresses found within the message",
+                  "order": 7,
+                  "title": "IP Addresses"
+                },
+                "mac_addresses": {
+                  "description": "MAC addresses found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 6,
+                  "title": "MAC Addresses",
+                  "type": "array"
+                },
+                "parent_domains": {
+                  "description": "Parent domains found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "Parent Domains",
+                  "type": "array"
+                },
+                "urls": {
+                  "description": "URLs found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 3,
+                  "title": "URLs",
+                  "type": "array"
+                }
+              },
+              "title": "Indicators",
+              "type": "object"
+            },
+            "ip_addresses": {
+              "properties": {
+                "ipv4_addresses": {
+                  "description": "IPv4 addresses found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "IPv4 Addresses",
+                  "type": "array"
+                },
+                "ipv6_addresses": {
+                  "description": "IPv6 addresses found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "IPv6 Addresses",
+                  "type": "array"
+                }
+              },
+              "title": "IP Addresses",
+              "type": "object"
+            },
             "message": {
               "properties": {
                 "channel": {
@@ -2206,6 +2460,18 @@
                   "order": 4,
                   "title": "Channel ID",
                   "type": "string"
+                },
+                "first_word": {
+                  "description": "First word of the message, for example a chat command (ignoring mentions)",
+                  "order": 5,
+                  "title": "First Word",
+                  "type": "string"
+                },
+                "indicators": {
+                  "$ref": "#/definitions/indicators",
+                  "description": "Potential threat indicators found within the message",
+                  "order": 7,
+                  "title": "Indicators"
                 },
                 "text": {
                   "description": "Text",
@@ -2230,6 +2496,15 @@
                   "order": 2,
                   "title": "User ID",
                   "type": "string"
+                },
+                "words": {
+                  "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 6,
+                  "title": "Words",
+                  "type": "array"
                 }
               },
               "title": "Message",
