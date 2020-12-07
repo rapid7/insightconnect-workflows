@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.49.2-0-gafb52",
+    "komandVersion": "1.71.0-0-g80553",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-04-26T18:31:45.223907718Z",
+    "exportedAt": "2020-12-04T13:53:56.469509685Z",
     "workflowVersions": [
       {
         "name": "Purge Office 365 Emails with Slack",
@@ -17,7 +17,31 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "97076139-2861-47f1-b2e2-c996d0700dea",
-              "toNodeId": "b32c0576-b7d9-4e20-bf10-25e8e28a13e9"
+              "toNodeId": "66a6faa7-ba31-4c73-aacb-c29e25670cd0"
+            },
+            "0e8c7b71-e8c7-454c-94bb-927c27bc206b": {
+              "id": "0e8c7b71-e8c7-454c-94bb-927c27bc206b",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "aabc7da4-7d8d-408d-89de-a8463ddea1cd",
+              "toNodeId": "859f6cbd-845f-4ccb-b6d2-2c604dcbdb13"
+            },
+            "1051e8fe-1213-4d45-a689-e76771805026": {
+              "id": "1051e8fe-1213-4d45-a689-e76771805026",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "9c4261d8-17bd-4714-a3dc-473c5a8396ba",
+              "toNodeId": "e6ac7a96-f98f-470e-9b07-055e0f036f24"
+            },
+            "12e0de5b-e74a-41fc-8322-e4cb88f0db61": {
+              "id": "12e0de5b-e74a-41fc-8322-e4cb88f0db61",
+              "name": "No",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "66a6faa7-ba31-4c73-aacb-c29e25670cd0",
+              "toNodeId": "459b0b8d-0eb9-476f-8220-4302b2936f3e"
             },
             "17a8bb25-ae6b-44dc-9f8d-1b89cbadb236": {
               "id": "17a8bb25-ae6b-44dc-9f8d-1b89cbadb236",
@@ -27,13 +51,13 @@
               "fromNodeId": "7543b4f8-2cce-4653-be9a-92c35fa9f0f0",
               "toNodeId": ""
             },
-            "1ce1ab79-8288-4f44-a219-27b17b59999c": {
-              "id": "1ce1ab79-8288-4f44-a219-27b17b59999c",
-              "name": "No",
+            "1ab8d3df-dca6-4d05-afe4-3316f8a0b92e": {
+              "id": "1ab8d3df-dca6-4d05-afe4-3316f8a0b92e",
+              "name": "",
               "description": "",
               "parentNodeId": "",
-              "fromNodeId": "b32c0576-b7d9-4e20-bf10-25e8e28a13e9",
-              "toNodeId": "48c09c4e-90a1-463a-9234-2726fd72ade0"
+              "fromNodeId": "b16cdf6d-7009-493a-951a-f6e1cd2fbaff",
+              "toNodeId": "3fe29b9e-80e4-497a-99ed-a5487fe637fc"
             },
             "23f3e134-061a-4e3b-9049-43e6133a6e8c": {
               "id": "23f3e134-061a-4e3b-9049-43e6133a6e8c",
@@ -41,15 +65,15 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "9dfbea14-3d78-4fbb-937b-88d4c9b277d8",
-              "toNodeId": "75c4e364-f202-469e-bcb3-4140fe36e205"
+              "toNodeId": "bcf81982-79c0-439f-9aa6-d5661f8f94cf"
             },
-            "25ba90b1-90f5-46ba-8025-78a15ec39ce8": {
-              "id": "25ba90b1-90f5-46ba-8025-78a15ec39ce8",
+            "360bf724-7386-4c91-8454-2bd0d3d09c0c": {
+              "id": "360bf724-7386-4c91-8454-2bd0d3d09c0c",
               "name": "",
               "description": "",
               "parentNodeId": "",
-              "fromNodeId": "cb270db6-6dfb-4328-8b59-2f714aaa4763",
-              "toNodeId": ""
+              "fromNodeId": "9b1dd437-3f79-4e41-9b51-0443453f00ae",
+              "toNodeId": "863cd109-44c2-4928-9855-9d012170d27a"
             },
             "369501e7-c422-4b9c-8e1c-732631cf351e": {
               "id": "369501e7-c422-4b9c-8e1c-732631cf351e",
@@ -57,7 +81,7 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "689e857a-48fd-4ae6-a26b-4713217e0b0d",
-              "toNodeId": "96789089-da8d-4397-a8ca-757467bd383f"
+              "toNodeId": "f8fc9f0c-1947-456b-b38e-0f0dbebd9673"
             },
             "3daf7970-48af-49f3-a0ea-96dcc4da28f1": {
               "id": "3daf7970-48af-49f3-a0ea-96dcc4da28f1",
@@ -66,6 +90,14 @@
               "parentNodeId": "",
               "fromNodeId": "ac12622d-e616-46d3-9e72-38ec2318c644",
               "toNodeId": "108dd5e7-348c-4093-939a-ed33bc3af030"
+            },
+            "401f4ba1-8558-44eb-93fc-5e5176c3da2d": {
+              "id": "401f4ba1-8558-44eb-93fc-5e5176c3da2d",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "863cd109-44c2-4928-9855-9d012170d27a",
+              "toNodeId": "aabc7da4-7d8d-408d-89de-a8463ddea1cd"
             },
             "42f7cf4d-3217-41bf-b3a5-379141760257": {
               "id": "42f7cf4d-3217-41bf-b3a5-379141760257",
@@ -83,13 +115,45 @@
               "fromNodeId": "28b13b59-a02c-4faa-b69f-ce13ad921410",
               "toNodeId": "afd9fd25-487a-4eee-b291-1ce335a02f1d"
             },
+            "48d9bbbd-6979-41aa-b658-6bcd958063fb": {
+              "id": "48d9bbbd-6979-41aa-b658-6bcd958063fb",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "6a2f7a49-15b4-430a-a049-a064fd270e52",
+              "toNodeId": ""
+            },
+            "49ee0815-232e-4d12-b395-b0837182c13c": {
+              "id": "49ee0815-232e-4d12-b395-b0837182c13c",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "459b0b8d-0eb9-476f-8220-4302b2936f3e",
+              "toNodeId": "7fc2b163-3253-4a97-9385-9fea07277f5d"
+            },
+            "4ec97d9d-c027-4046-bed0-d0f4d7154117": {
+              "id": "4ec97d9d-c027-4046-bed0-d0f4d7154117",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "bcf81982-79c0-439f-9aa6-d5661f8f94cf",
+              "toNodeId": "9b1dd437-3f79-4e41-9b51-0443453f00ae"
+            },
+            "528fd1e7-f21c-4c47-be27-fe9924cbc20c": {
+              "id": "528fd1e7-f21c-4c47-be27-fe9924cbc20c",
+              "name": "Yes",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "4584ec18-9cae-42c0-bfce-c368309ee68d",
+              "toNodeId": "ac12622d-e616-46d3-9e72-38ec2318c644"
+            },
             "52c779bb-9b3a-4d26-b4da-cacd3784aa30": {
               "id": "52c779bb-9b3a-4d26-b4da-cacd3784aa30",
               "name": "",
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "afd9fd25-487a-4eee-b291-1ce335a02f1d",
-              "toNodeId": "cebde365-c83a-4ff6-bd70-e88bb82c8a6d"
+              "toNodeId": "4584ec18-9cae-42c0-bfce-c368309ee68d"
             },
             "55cc9089-bdf8-4805-b824-4c4dd6fe1b21": {
               "id": "55cc9089-bdf8-4805-b824-4c4dd6fe1b21",
@@ -97,31 +161,39 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "108dd5e7-348c-4093-939a-ed33bc3af030",
-              "toNodeId": "3fe29b9e-80e4-497a-99ed-a5487fe637fc"
+              "toNodeId": "b16cdf6d-7009-493a-951a-f6e1cd2fbaff"
             },
-            "5ac62729-a8fb-4143-ad5f-d0bdd2cb081e": {
-              "id": "5ac62729-a8fb-4143-ad5f-d0bdd2cb081e",
+            "57bde814-91f9-47ff-8a9b-9fbf06fc9144": {
+              "id": "57bde814-91f9-47ff-8a9b-9fbf06fc9144",
               "name": "",
               "description": "",
               "parentNodeId": "",
-              "fromNodeId": "ada69091-7eb5-404b-8ce5-5b8420e11ca3",
-              "toNodeId": "4ea6adf6-4bb6-4018-b6af-cf45e6e3e267"
+              "fromNodeId": "11648fdc-85cb-460d-adc6-83c516fb046f",
+              "toNodeId": "6a2f7a49-15b4-430a-a049-a064fd270e52"
             },
-            "61bef5bf-5fb7-4e4b-aa21-6057ccc70c24": {
-              "id": "61bef5bf-5fb7-4e4b-aa21-6057ccc70c24",
-              "name": "",
+            "5fffc74e-008c-4687-9887-d7a222a61eaf": {
+              "id": "5fffc74e-008c-4687-9887-d7a222a61eaf",
+              "name": "No",
               "description": "",
               "parentNodeId": "",
-              "fromNodeId": "75c4e364-f202-469e-bcb3-4140fe36e205",
-              "toNodeId": "9108708f-fe22-4f2a-869b-7ba004878a27"
+              "fromNodeId": "4584ec18-9cae-42c0-bfce-c368309ee68d",
+              "toNodeId": "9c4261d8-17bd-4714-a3dc-473c5a8396ba"
             },
-            "941adb16-50af-4c10-9763-600d35c2d92f": {
-              "id": "941adb16-50af-4c10-9763-600d35c2d92f",
+            "74162d4a-7e1f-4eac-bc05-8675a59f464c": {
+              "id": "74162d4a-7e1f-4eac-bc05-8675a59f464c",
               "name": "Yes",
               "description": "",
               "parentNodeId": "",
-              "fromNodeId": "9108708f-fe22-4f2a-869b-7ba004878a27",
-              "toNodeId": "ad5289eb-110e-4ac2-9ee8-b2bd30ffa455"
+              "fromNodeId": "66a6faa7-ba31-4c73-aacb-c29e25670cd0",
+              "toNodeId": "11648fdc-85cb-460d-adc6-83c516fb046f"
+            },
+            "8e09f191-4fb3-4050-80f6-1166e3acf297": {
+              "id": "8e09f191-4fb3-4050-80f6-1166e3acf297",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "e61ca5e7-4978-4208-b4ed-6968f95f371e",
+              "toNodeId": "7543b4f8-2cce-4653-be9a-92c35fa9f0f0"
             },
             "9e5e9b40-518b-41a2-9a3f-75e81d34e899": {
               "id": "9e5e9b40-518b-41a2-9a3f-75e81d34e899",
@@ -147,6 +219,14 @@
               "fromNodeId": "3fe29b9e-80e4-497a-99ed-a5487fe637fc",
               "toNodeId": ""
             },
+            "ab40bb24-8e0a-469d-9613-06ccce308d34": {
+              "id": "ab40bb24-8e0a-469d-9613-06ccce308d34",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "859f6cbd-845f-4ccb-b6d2-2c604dcbdb13",
+              "toNodeId": "4ea6adf6-4bb6-4018-b6af-cf45e6e3e267"
+            },
             "b17aca14-6a4f-46a3-82e7-e4fecffc6da4": {
               "id": "b17aca14-6a4f-46a3-82e7-e4fecffc6da4",
               "name": "Yes",
@@ -154,22 +234,6 @@
               "parentNodeId": "",
               "fromNodeId": "ac12622d-e616-46d3-9e72-38ec2318c644",
               "toNodeId": "f1ba86e9-b4c2-41c9-999c-252742274ea9"
-            },
-            "c1d455fb-47ec-48fd-9ffb-830d817cf8de": {
-              "id": "c1d455fb-47ec-48fd-9ffb-830d817cf8de",
-              "name": "",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "e7efa02a-2323-48fd-92ef-d5f197f4c150",
-              "toNodeId": ""
-            },
-            "c35a649f-3cb7-463b-aa43-eac62325d534": {
-              "id": "c35a649f-3cb7-463b-aa43-eac62325d534",
-              "name": "No",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "9108708f-fe22-4f2a-869b-7ba004878a27",
-              "toNodeId": "cb270db6-6dfb-4328-8b59-2f714aaa4763"
             },
             "c9101a2f-047e-4e1e-bb04-fa3a7f2b5b00": {
               "id": "c9101a2f-047e-4e1e-bb04-fa3a7f2b5b00",
@@ -179,21 +243,29 @@
               "fromNodeId": "f1ba86e9-b4c2-41c9-999c-252742274ea9",
               "toNodeId": "689e857a-48fd-4ae6-a26b-4713217e0b0d"
             },
-            "c98bfce9-286b-4476-88ce-25fd2e1e9a8e": {
-              "id": "c98bfce9-286b-4476-88ce-25fd2e1e9a8e",
+            "ca056bba-bb8c-42d9-b2f4-8e1801dab996": {
+              "id": "ca056bba-bb8c-42d9-b2f4-8e1801dab996",
               "name": "",
               "description": "",
               "parentNodeId": "",
-              "fromNodeId": "48c09c4e-90a1-463a-9234-2726fd72ade0",
+              "fromNodeId": "7fc2b163-3253-4a97-9385-9fea07277f5d",
               "toNodeId": ""
             },
-            "cb7c2eb8-c42f-4548-a6e1-a5c89d73449b": {
-              "id": "cb7c2eb8-c42f-4548-a6e1-a5c89d73449b",
+            "cd48209c-c7a3-41be-a215-fa41126fff07": {
+              "id": "cd48209c-c7a3-41be-a215-fa41126fff07",
               "name": "",
               "description": "",
               "parentNodeId": "",
-              "fromNodeId": "cebde365-c83a-4ff6-bd70-e88bb82c8a6d",
-              "toNodeId": "ac12622d-e616-46d3-9e72-38ec2318c644"
+              "fromNodeId": "f8fc9f0c-1947-456b-b38e-0f0dbebd9673",
+              "toNodeId": "96789089-da8d-4397-a8ca-757467bd383f"
+            },
+            "d00071ae-8a75-458a-a983-feecc941b935": {
+              "id": "d00071ae-8a75-458a-a983-feecc941b935",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "e6ac7a96-f98f-470e-9b07-055e0f036f24",
+              "toNodeId": ""
             },
             "d13de5d6-ea32-4837-aebe-59145a20f0da": {
               "id": "d13de5d6-ea32-4837-aebe-59145a20f0da",
@@ -201,23 +273,7 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "689e857a-48fd-4ae6-a26b-4713217e0b0d",
-              "toNodeId": "7543b4f8-2cce-4653-be9a-92c35fa9f0f0"
-            },
-            "e52f75fb-4d23-41be-936e-37886e43a55d": {
-              "id": "e52f75fb-4d23-41be-936e-37886e43a55d",
-              "name": "",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "ad5289eb-110e-4ac2-9ee8-b2bd30ffa455",
-              "toNodeId": "ada69091-7eb5-404b-8ce5-5b8420e11ca3"
-            },
-            "e7d8b2b4-8285-4885-bb59-9080bb791a42": {
-              "id": "e7d8b2b4-8285-4885-bb59-9080bb791a42",
-              "name": "Yes",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "b32c0576-b7d9-4e20-bf10-25e8e28a13e9",
-              "toNodeId": "e7efa02a-2323-48fd-92ef-d5f197f4c150"
+              "toNodeId": "e61ca5e7-4978-4208-b4ed-6968f95f371e"
             },
             "e9dca260-cb4b-4f48-afcd-3704f38d947e": {
               "id": "e9dca260-cb4b-4f48-afcd-3704f38d947e",
@@ -233,6 +289,10 @@
               "id": "108dd5e7-348c-4093-939a-ed33bc3af030",
               "parentNodeId": ""
             },
+            "11648fdc-85cb-460d-adc6-83c516fb046f": {
+              "id": "11648fdc-85cb-460d-adc6-83c516fb046f",
+              "parentNodeId": ""
+            },
             "28b13b59-a02c-4faa-b69f-ce13ad921410": {
               "id": "28b13b59-a02c-4faa-b69f-ce13ad921410",
               "parentNodeId": ""
@@ -241,28 +301,44 @@
               "id": "3fe29b9e-80e4-497a-99ed-a5487fe637fc",
               "parentNodeId": ""
             },
-            "48c09c4e-90a1-463a-9234-2726fd72ade0": {
-              "id": "48c09c4e-90a1-463a-9234-2726fd72ade0",
+            "4584ec18-9cae-42c0-bfce-c368309ee68d": {
+              "id": "4584ec18-9cae-42c0-bfce-c368309ee68d",
+              "parentNodeId": ""
+            },
+            "459b0b8d-0eb9-476f-8220-4302b2936f3e": {
+              "id": "459b0b8d-0eb9-476f-8220-4302b2936f3e",
               "parentNodeId": ""
             },
             "4ea6adf6-4bb6-4018-b6af-cf45e6e3e267": {
               "id": "4ea6adf6-4bb6-4018-b6af-cf45e6e3e267",
               "parentNodeId": ""
             },
+            "66a6faa7-ba31-4c73-aacb-c29e25670cd0": {
+              "id": "66a6faa7-ba31-4c73-aacb-c29e25670cd0",
+              "parentNodeId": ""
+            },
             "689e857a-48fd-4ae6-a26b-4713217e0b0d": {
               "id": "689e857a-48fd-4ae6-a26b-4713217e0b0d",
+              "parentNodeId": ""
+            },
+            "6a2f7a49-15b4-430a-a049-a064fd270e52": {
+              "id": "6a2f7a49-15b4-430a-a049-a064fd270e52",
               "parentNodeId": ""
             },
             "7543b4f8-2cce-4653-be9a-92c35fa9f0f0": {
               "id": "7543b4f8-2cce-4653-be9a-92c35fa9f0f0",
               "parentNodeId": ""
             },
-            "75c4e364-f202-469e-bcb3-4140fe36e205": {
-              "id": "75c4e364-f202-469e-bcb3-4140fe36e205",
+            "7fc2b163-3253-4a97-9385-9fea07277f5d": {
+              "id": "7fc2b163-3253-4a97-9385-9fea07277f5d",
               "parentNodeId": ""
             },
-            "9108708f-fe22-4f2a-869b-7ba004878a27": {
-              "id": "9108708f-fe22-4f2a-869b-7ba004878a27",
+            "859f6cbd-845f-4ccb-b6d2-2c604dcbdb13": {
+              "id": "859f6cbd-845f-4ccb-b6d2-2c604dcbdb13",
+              "parentNodeId": ""
+            },
+            "863cd109-44c2-4928-9855-9d012170d27a": {
+              "id": "863cd109-44c2-4928-9855-9d012170d27a",
               "parentNodeId": ""
             },
             "96789089-da8d-4397-a8ca-757467bd383f": {
@@ -273,6 +349,14 @@
               "id": "97076139-2861-47f1-b2e2-c996d0700dea",
               "parentNodeId": ""
             },
+            "9b1dd437-3f79-4e41-9b51-0443453f00ae": {
+              "id": "9b1dd437-3f79-4e41-9b51-0443453f00ae",
+              "parentNodeId": ""
+            },
+            "9c4261d8-17bd-4714-a3dc-473c5a8396ba": {
+              "id": "9c4261d8-17bd-4714-a3dc-473c5a8396ba",
+              "parentNodeId": ""
+            },
             "9dfbea14-3d78-4fbb-937b-88d4c9b277d8": {
               "id": "9dfbea14-3d78-4fbb-937b-88d4c9b277d8",
               "parentNodeId": ""
@@ -281,40 +365,40 @@
               "id": "a91152dd-eeaf-4d50-9924-ee20e1a5fb98",
               "parentNodeId": ""
             },
+            "aabc7da4-7d8d-408d-89de-a8463ddea1cd": {
+              "id": "aabc7da4-7d8d-408d-89de-a8463ddea1cd",
+              "parentNodeId": ""
+            },
             "ac12622d-e616-46d3-9e72-38ec2318c644": {
               "id": "ac12622d-e616-46d3-9e72-38ec2318c644",
-              "parentNodeId": ""
-            },
-            "ad5289eb-110e-4ac2-9ee8-b2bd30ffa455": {
-              "id": "ad5289eb-110e-4ac2-9ee8-b2bd30ffa455",
-              "parentNodeId": ""
-            },
-            "ada69091-7eb5-404b-8ce5-5b8420e11ca3": {
-              "id": "ada69091-7eb5-404b-8ce5-5b8420e11ca3",
               "parentNodeId": ""
             },
             "afd9fd25-487a-4eee-b291-1ce335a02f1d": {
               "id": "afd9fd25-487a-4eee-b291-1ce335a02f1d",
               "parentNodeId": ""
             },
-            "b32c0576-b7d9-4e20-bf10-25e8e28a13e9": {
-              "id": "b32c0576-b7d9-4e20-bf10-25e8e28a13e9",
+            "b16cdf6d-7009-493a-951a-f6e1cd2fbaff": {
+              "id": "b16cdf6d-7009-493a-951a-f6e1cd2fbaff",
               "parentNodeId": ""
             },
-            "cb270db6-6dfb-4328-8b59-2f714aaa4763": {
-              "id": "cb270db6-6dfb-4328-8b59-2f714aaa4763",
+            "bcf81982-79c0-439f-9aa6-d5661f8f94cf": {
+              "id": "bcf81982-79c0-439f-9aa6-d5661f8f94cf",
               "parentNodeId": ""
             },
-            "cebde365-c83a-4ff6-bd70-e88bb82c8a6d": {
-              "id": "cebde365-c83a-4ff6-bd70-e88bb82c8a6d",
+            "e61ca5e7-4978-4208-b4ed-6968f95f371e": {
+              "id": "e61ca5e7-4978-4208-b4ed-6968f95f371e",
               "parentNodeId": ""
             },
-            "e7efa02a-2323-48fd-92ef-d5f197f4c150": {
-              "id": "e7efa02a-2323-48fd-92ef-d5f197f4c150",
+            "e6ac7a96-f98f-470e-9b07-055e0f036f24": {
+              "id": "e6ac7a96-f98f-470e-9b07-055e0f036f24",
               "parentNodeId": ""
             },
             "f1ba86e9-b4c2-41c9-999c-252742274ea9": {
               "id": "f1ba86e9-b4c2-41c9-999c-252742274ea9",
+              "parentNodeId": ""
+            },
+            "f8fc9f0c-1947-456b-b38e-0f0dbebd9673": {
+              "id": "f8fc9f0c-1947-456b-b38e-0f0dbebd9673",
               "parentNodeId": ""
             }
           }
@@ -396,6 +480,12 @@
                   "title": "Channel ID",
                   "type": "string"
                 },
+                "display_name": {
+                  "description": "The slack display name for the user responding to the question",
+                  "order": 9,
+                  "title": "Display Name",
+                  "type": "string"
+                },
                 "message": {
                   "description": "The message that was sent to slack",
                   "order": 4,
@@ -417,7 +507,7 @@
                 "responding_user": {
                   "description": "The slack username of the user responding to the question",
                   "order": 7,
-                  "title": "Response Question",
+                  "title": "Response User",
                   "type": "string"
                 },
                 "response_question": {
@@ -442,6 +532,24 @@
             "chatOpsAppName": "slack",
             "chatOpsIdentifier": "post_interactive_message"
           },
+          "11648fdc-85cb-460d-adc6-83c516fb046f": {
+            "nodeId": "11648fdc-85cb-460d-adc6-83c516fb046f",
+            "name": "Manual Purge Success Output",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "The compliance results were successfully purged."
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
           "28b13b59-a02c-4faa-b69f-ce13ad921410": {
             "nodeId": "28b13b59-a02c-4faa-b69f-ce13ad921410",
             "name": "Compliance Search",
@@ -456,10 +564,11 @@
             "identifier": "email_compliance_search",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "compliance_search_name": "{{[4ea6adf6-4bb6-4018-b6af-cf45e6e3e267].[content]}}",
-                "content_match_query": "{{[ad5289eb-110e-4ac2-9ee8-b2bd30ffa455].[query_string]}}",
+                "content_match_query": "{{[859f6cbd-845f-4ccb-b6d2-2c604dcbdb13].[content]}}",
                 "query_timeout": 60
               }
             },
@@ -537,7 +646,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "Compliance search was not purged. \n\nWorkflow Complete",
+                "message": "{{[b16cdf6d-7009-493a-951a-f6e1cd2fbaff].[content]}}\n\n:heavy_check_mark: *Workflow Complete!*",
                 "recipient": "@{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[user]}}",
                 "thread_ts": "{{[108dd5e7-348c-4093-939a-ed33bc3af030].[timestamp]}}"
               }
@@ -602,17 +711,151 @@
             "chatOpsAppName": "slack",
             "chatOpsIdentifier": "post_message"
           },
-          "48c09c4e-90a1-463a-9234-2726fd72ade0": {
-            "nodeId": "48c09c4e-90a1-463a-9234-2726fd72ade0",
-            "name": "Manual Purge Failed",
+          "4584ec18-9cae-42c0-bfce-c368309ee68d": {
+            "nodeId": "4584ec18-9cae-42c0-bfce-c368309ee68d",
+            "name": "Emails Found?",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "5fffc74e-008c-4687-9887-d7a222a61eaf",
+              "stepControlParams": [
+                {
+                  "edgeId": "528fd1e7-f21c-4c47-be27-fe9924cbc20c",
+                  "expression": {
+                    "left": {
+                      "name": "28b13b59-a02c-4faa-b69f-ce13ad921410.emails_found",
+                      "type": "variable"
+                    },
+                    "op": ">",
+                    "right": {
+                      "type": "literal",
+                      "value": 0
+                    },
+                    "type": "binary"
+                  },
+                  "expressionText": "{{[28b13b59-a02c-4faa-b69f-ce13ad921410].[emails_found]}} > 0"
+                },
+                {
+                  "edgeId": "5fffc74e-008c-4687-9887-d7a222a61eaf",
+                  "expression": {},
+                  "expressionText": ""
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          },
+          "459b0b8d-0eb9-476f-8220-4302b2936f3e": {
+            "nodeId": "459b0b8d-0eb9-476f-8220-4302b2936f3e",
+            "name": "Manual Purge Failed Output",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "Failed to purge the compliance results."
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "4ea6adf6-4bb6-4018-b6af-cf45e6e3e267": {
+            "nodeId": "4ea6adf6-4bb6-4018-b6af-cf45e6e3e267",
+            "name": "Compliance Search Name",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "InsightConnect Search for {{#if [bcf81982-79c0-439f-9aa6-d5661f8f94cf].[subject]}}{{[bcf81982-79c0-439f-9aa6-d5661f8f94cf].[subject]}}{{/if}} {{#if [9b1dd437-3f79-4e41-9b51-0443453f00ae].[body]}}{{[9b1dd437-3f79-4e41-9b51-0443453f00ae].[body]}}{{/if}} {{#if [9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[indicators].[email_addresses].[0]}}{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[indicators].[email_addresses].[0]}}{{else if [863cd109-44c2-4928-9855-9d012170d27a].[from]}}{{[863cd109-44c2-4928-9855-9d012170d27a].[from]}}{{/if}}"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "66a6faa7-ba31-4c73-aacb-c29e25670cd0": {
+            "nodeId": "66a6faa7-ba31-4c73-aacb-c29e25670cd0",
+            "name": "Was manual purge successful? ",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "12e0de5b-e74a-41fc-8322-e4cb88f0db61",
+              "stepControlParams": [
+                {
+                  "edgeId": "12e0de5b-e74a-41fc-8322-e4cb88f0db61",
+                  "expression": {},
+                  "expressionText": ""
+                },
+                {
+                  "edgeId": "74162d4a-7e1f-4eac-bc05-8675a59f464c",
+                  "expression": {
+                    "name": "97076139-2861-47f1-b2e2-c996d0700dea.$success",
+                    "type": "variable"
+                  },
+                  "expressionText": "{{[97076139-2861-47f1-b2e2-c996d0700dea].[$success]}}"
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          },
+          "689e857a-48fd-4ae6-a26b-4713217e0b0d": {
+            "nodeId": "689e857a-48fd-4ae6-a26b-4713217e0b0d",
+            "name": "Was Delete Successful?",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "369501e7-c422-4b9c-8e1c-732631cf351e",
+              "stepControlParams": [
+                {
+                  "edgeId": "d13de5d6-ea32-4837-aebe-59145a20f0da",
+                  "expression": {
+                    "name": "f1ba86e9-b4c2-41c9-999c-252742274ea9.$success",
+                    "type": "variable"
+                  },
+                  "expressionText": "{{[f1ba86e9-b4c2-41c9-999c-252742274ea9].[$success]}}"
+                },
+                {
+                  "edgeId": "369501e7-c422-4b9c-8e1c-732631cf351e",
+                  "expression": {},
+                  "expressionText": ""
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          },
+          "6a2f7a49-15b4-430a-a049-a064fd270e52": {
+            "nodeId": "6a2f7a49-15b4-430a-a049-a064fd270e52",
+            "name": "Manual Purge Success",
             "type": "action_chatops",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "Failed to purge compliance search. \n\nMore information can be found here: \n{{[$job].[URL]}}\n\nWorkflow Complete",
-                "recipient": "{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[user]}}@",
+                "message": "{{[11648fdc-85cb-460d-adc6-83c516fb046f].[content]}}\n\n:heavy_check_mark: *Workflow Complete!*",
+                "recipient": "@{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[user]}}",
                 "thread_ts": "{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[timestamp]}}"
               }
             },
@@ -676,64 +919,16 @@
             "chatOpsAppName": "slack",
             "chatOpsIdentifier": "post_message"
           },
-          "4ea6adf6-4bb6-4018-b6af-cf45e6e3e267": {
-            "nodeId": "4ea6adf6-4bb6-4018-b6af-cf45e6e3e267",
-            "name": "Compliance Search Name",
-            "type": "artifact",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "content": "InsightConnect Search for {{[75c4e364-f202-469e-bcb3-4140fe36e205].[from]}} {{[75c4e364-f202-469e-bcb3-4140fe36e205].[subject]}} {{[75c4e364-f202-469e-bcb3-4140fe36e205].[body]}}"
-              },
-              "type": "markdown"
-            },
-            "defaultInputJSONSchema": null,
-            "defaultOutputJSONSchema": null,
-            "outputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
-            "connectionType": "NONE"
-          },
-          "689e857a-48fd-4ae6-a26b-4713217e0b0d": {
-            "nodeId": "689e857a-48fd-4ae6-a26b-4713217e0b0d",
-            "name": "Was Delete Successful?",
-            "type": "automated_decision",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "defaultEdgeId": "369501e7-c422-4b9c-8e1c-732631cf351e",
-              "stepControlParams": [
-                {
-                  "edgeId": "d13de5d6-ea32-4837-aebe-59145a20f0da",
-                  "expression": {
-                    "name": "f1ba86e9-b4c2-41c9-999c-252742274ea9.$success",
-                    "type": "variable"
-                  },
-                  "expressionText": "{{[f1ba86e9-b4c2-41c9-999c-252742274ea9].[$success]}}"
-                },
-                {
-                  "edgeId": "369501e7-c422-4b9c-8e1c-732631cf351e",
-                  "expression": {},
-                  "expressionText": ""
-                }
-              ]
-            },
-            "defaultInputJSONSchema": null,
-            "defaultOutputJSONSchema": null,
-            "outputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
-            "connectionType": "NONE"
-          },
           "7543b4f8-2cce-4653-be9a-92c35fa9f0f0": {
             "nodeId": "7543b4f8-2cce-4653-be9a-92c35fa9f0f0",
-            "name": "Workflow Success",
+            "name": "Purge Success",
             "type": "action_chatops",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "The compliance search was successfully purged!\n\nWorkflow Complete",
+                "message": "{{[e61ca5e7-4978-4208-b4ed-6968f95f371e].[content]}}\n\n:heavy_check_mark: *Workflow Complete!*",
                 "recipient": "@{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[user]}}",
                 "thread_ts": "@{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[timestamp]}}"
               }
@@ -798,135 +993,143 @@
             "chatOpsAppName": "slack",
             "chatOpsIdentifier": "post_message"
           },
-          "75c4e364-f202-469e-bcb3-4140fe36e205": {
-            "nodeId": "75c4e364-f202-469e-bcb3-4140fe36e205",
-            "name": "Parse Args",
-            "type": "action",
-            "plugin": {
-              "name": "Python 3 Script",
-              "slugVendor": "rapid7",
-              "slugName": "python_3_script",
-              "slugVersion": "2.0.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/python_3_script/2.0.1/icon.png"
-            },
-            "identifier": "run",
-            "continueOnFailure": true,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "function": "def run(params={}):\n\n    # Sometimes Slack will give us email in their linked form:\n    # <mailto:user@example.com>\n    # or\n    # <http://www.exmaple.com|example.com>\n    def parse_email(email):\n\n        if email.startswith(\"<\"):\n            # mailto link\n            if \"mailto:\" in email:\n                split_email = email.split(\":\")[1]\n                if \"|\" in split_email:\n                    return split_email.split(\"|\")[0]\n                return split_email\n\n            # http link\n            if \"http:\" in email:\n                split_email = email.split(\"|\")[1]\n                split_email = split_email.rstrip(\">\")\n                return split_email\n\n        return email\n\n    import shlex\n    input = params.get(\"input\")\n\n    # Sometimes slack gives us unicode spaces\n    input = input.replace(u'\\xa0', u' ')\n\n    # split our args\n    args = shlex.split(input)\n\n    # setup\n    args_for_delete_email = {\"delete\": False}\n\n    # parse args\n    for i in range(1, len(args)):\n        split_args = args[i].split('=')\n        if split_args[0].lower() == \"subject\":\n            args_for_delete_email[\"subject\"] = split_args[1]\n        if split_args[0].lower() == \"body\":\n            args_for_delete_email[\"body\"] = split_args[1]\n        if split_args[0].lower() == \"from\":\n            args_for_delete_email[\"from\"] = parse_email(split_args[1])\n        if split_args[0].lower() == \"delete\":\n            args_for_delete_email[\"delete\"] = True if split_args[1][0].lower() == 't' else False\n\n    # Make sure we have at least one search criteria specified\n    if len(args_for_delete_email.keys()) <= 1:\n        raise Exception(\"No arguments specified. A body, subject, and/or from must be specified\")\n\n    return(args_for_delete_email)",
-                "input": {
-                  "input": "{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[text]}}"
-                }
-              }
-            },
-            "defaultInputJSONSchema": {
-              "properties": {
-                "function": {
-                  "default": "def run(params={}):\\n    return {}",
-                  "description": "Function definition. Must be named `run`. Accepts the `input` object as params. Returns the dict as output",
-                  "displayType": "python",
-                  "format": "python",
-                  "order": 1,
-                  "title": "Function",
-                  "type": "string"
-                },
-                "input": {
-                  "description": "Input object to be passed as `params={}` to the `run` function",
-                  "order": 2,
-                  "title": "Input",
-                  "type": "object"
-                }
-              },
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultOutputJSONSchema": {
-              "properties": {
-                "result1": {
-                  "description": "Sample output result1 (delete or edit)",
-                  "order": 1,
-                  "title": "Result1",
-                  "type": "string"
-                },
-                "result2": {
-                  "description": "Sample output result2 (delete or edit)",
-                  "order": 2,
-                  "title": "Result2",
-                  "type": "string"
-                }
-              },
-              "title": "Variables",
-              "type": "object"
-            },
-            "outputJSONSchema": {
-              "definitions": {},
-              "properties": {
-                "body": {
-                  "description": "Sample output result1 (delete or edit)",
-                  "order": 1,
-                  "title": "Result1",
-                  "type": "string"
-                },
-                "delete": {
-                  "type": "boolean"
-                },
-                "from": {
-                  "type": "string"
-                },
-                "subject": {
-                  "description": "Sample output result2 (delete or edit)",
-                  "order": 2,
-                  "title": "Result2",
-                  "type": "string"
-                }
-              },
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultImageData": "",
-            "connectionType": "CONNECTION"
-          },
-          "9108708f-fe22-4f2a-869b-7ba004878a27": {
-            "nodeId": "9108708f-fe22-4f2a-869b-7ba004878a27",
-            "name": "Was parsing successful",
-            "type": "automated_decision",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "defaultEdgeId": "c35a649f-3cb7-463b-aa43-eac62325d534",
-              "stepControlParams": [
-                {
-                  "edgeId": "941adb16-50af-4c10-9763-600d35c2d92f",
-                  "expression": {
-                    "name": "75c4e364-f202-469e-bcb3-4140fe36e205.$success",
-                    "type": "variable"
-                  },
-                  "expressionText": "{{[75c4e364-f202-469e-bcb3-4140fe36e205].[$success]}}"
-                },
-                {
-                  "edgeId": "c35a649f-3cb7-463b-aa43-eac62325d534",
-                  "expression": {},
-                  "expressionText": ""
-                }
-              ]
-            },
-            "defaultInputJSONSchema": null,
-            "defaultOutputJSONSchema": null,
-            "outputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
-            "connectionType": "NONE"
-          },
-          "96789089-da8d-4397-a8ca-757467bd383f": {
-            "nodeId": "96789089-da8d-4397-a8ca-757467bd383f",
-            "name": "Workflow Failed",
+          "7fc2b163-3253-4a97-9385-9fea07277f5d": {
+            "nodeId": "7fc2b163-3253-4a97-9385-9fea07277f5d",
+            "name": "Manual Purge Failed",
             "type": "action_chatops",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "Workflow failed to purge search results!\n\nMore information can be found here: \n{{[$job].[URL]}}\n\nWorkflow Complete",
+                "message": "{{[459b0b8d-0eb9-476f-8220-4302b2936f3e].[content]}}\n\nMore information can be found here: \n{{[$job].[URL]}}\n\n:heavy_check_mark: *Workflow Complete!*",
+                "recipient": "@{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[user]}}",
+                "thread_ts": "{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[timestamp]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 4,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 3,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                },
+                "thread_ts": {
+                  "description": "Select timestamp output variable from parent message step",
+                  "order": 2,
+                  "title": "To post in a thread, select parent message timestamp",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
+          },
+          "859f6cbd-845f-4ccb-b6d2-2c604dcbdb13": {
+            "nodeId": "859f6cbd-845f-4ccb-b6d2-2c604dcbdb13",
+            "name": "Query",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "{{#if [bcf81982-79c0-439f-9aa6-d5661f8f94cf].[subject]}}subject:\"{{[bcf81982-79c0-439f-9aa6-d5661f8f94cf].[subject]}}\"{{/if}} {{#if [9b1dd437-3f79-4e41-9b51-0443453f00ae].[body]}}body:\"{{[9b1dd437-3f79-4e41-9b51-0443453f00ae].[body]}}\"{{/if}} {{#if [9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[indicators].[email_addresses].[0]}}from:\"{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[indicators].[email_addresses].[0]}}\"{{else if [863cd109-44c2-4928-9855-9d012170d27a].[from]}}from:\"{{[863cd109-44c2-4928-9855-9d012170d27a].[from]}}\"{{/if}}"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "863cd109-44c2-4928-9855-9d012170d27a": {
+            "nodeId": "863cd109-44c2-4928-9855-9d012170d27a",
+            "name": "Extract From Argument",
+            "type": "pattern_match",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "captureAll": false,
+              "expressionText": "from=\"{{from:/.+?/}}\"",
+              "expressions": [
+                {
+                  "type": "text",
+                  "value": "from=\""
+                },
+                {
+                  "type": "variable",
+                  "value": {
+                    "ident": "from",
+                    "regex": ".+?"
+                  }
+                },
+                {
+                  "type": "text",
+                  "value": "\""
+                }
+              ],
+              "ignoreCase": true,
+              "input": "{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[text]}}"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/pattern-match.svg",
+            "connectionType": "NONE"
+          },
+          "96789089-da8d-4397-a8ca-757467bd383f": {
+            "nodeId": "96789089-da8d-4397-a8ca-757467bd383f",
+            "name": "Purge Failed",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": "{{[f8fc9f0c-1947-456b-b38e-0f0dbebd9673].[content]}}\n\nMore information can be found here: \n{{[$job].[URL]}}\n\n:heavy_check_mark: *Workflow Complete!*",
                 "recipient": "@{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[user]}}",
                 "thread_ts": "{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[timestamp]}}"
               }
@@ -1005,6 +1208,7 @@
             "identifier": "mass_purge",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "compliance_search_name": "{{[4ea6adf6-4bb6-4018-b6af-cf45e6e3e267].[content]}}",
@@ -1052,6 +1256,59 @@
             "defaultImageData": "",
             "connectionType": "CONNECTION"
           },
+          "9b1dd437-3f79-4e41-9b51-0443453f00ae": {
+            "nodeId": "9b1dd437-3f79-4e41-9b51-0443453f00ae",
+            "name": "Extract Body Argument",
+            "type": "pattern_match",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "captureAll": false,
+              "expressionText": "body=\"{{body:/.+?/}}\"",
+              "expressions": [
+                {
+                  "type": "text",
+                  "value": "body=\""
+                },
+                {
+                  "type": "variable",
+                  "value": {
+                    "ident": "body",
+                    "regex": ".+?"
+                  }
+                },
+                {
+                  "type": "text",
+                  "value": "\""
+                }
+              ],
+              "ignoreCase": true,
+              "input": "{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[text]}}"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/pattern-match.svg",
+            "connectionType": "NONE"
+          },
+          "9c4261d8-17bd-4714-a3dc-473c5a8396ba": {
+            "nodeId": "9c4261d8-17bd-4714-a3dc-473c5a8396ba",
+            "name": "Emails Not Found",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "No emails found for the query: `{{[859f6cbd-845f-4ccb-b6d2-2c604dcbdb13].[content]}}`"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
           "9dfbea14-3d78-4fbb-937b-88d4c9b277d8": {
             "nodeId": "9dfbea14-3d78-4fbb-937b-88d4c9b277d8",
             "name": "Purge Email Trigger",
@@ -1060,12 +1317,12 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "matchChannel": "",
+                "matchChannel": "change_me",
                 "matchText": "delete-emails",
                 "type": "any"
               }
             },
-            "triggerId": "fc64b903-9045-4d0b-ba3c-62a725a17f9a",
+            "triggerId": "5461cb63-333a-4314-8dc7-6aa034b8b52e",
             "defaultInputJSONSchema": {
               "properties": {
                 "matchChannel": {
@@ -1101,6 +1358,126 @@
             },
             "defaultOutputJSONSchema": {
               "definitions": {
+                "hashes": {
+                  "properties": {
+                    "md5_hashes": {
+                      "description": "MD5 hashes found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 1,
+                      "title": "MD5 Hashes",
+                      "type": "array"
+                    },
+                    "sha1_hashes": {
+                      "description": "SHA1 hashes found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "SHA1 Hashes",
+                      "type": "array"
+                    },
+                    "sha256_hashes": {
+                      "description": "SHA256 hashes found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 3,
+                      "title": "SHA256 Hashes",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Hashes",
+                  "type": "object"
+                },
+                "indicators": {
+                  "properties": {
+                    "domains": {
+                      "description": "Domains found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 1,
+                      "title": "Domains",
+                      "type": "array"
+                    },
+                    "email_addresses": {
+                      "description": "Email addresses found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 4,
+                      "title": "Email Addresses",
+                      "type": "array"
+                    },
+                    "hashes": {
+                      "$ref": "#/definitions/hashes",
+                      "description": "Hashes found within the message",
+                      "order": 5,
+                      "title": "Hashes"
+                    },
+                    "ip_addresses": {
+                      "$ref": "#/definitions/ip_addresses",
+                      "description": "IP addresses found within the message",
+                      "order": 7,
+                      "title": "IP Addresses"
+                    },
+                    "mac_addresses": {
+                      "description": "MAC addresses found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 6,
+                      "title": "MAC Addresses",
+                      "type": "array"
+                    },
+                    "parent_domains": {
+                      "description": "Parent domains found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "Parent Domains",
+                      "type": "array"
+                    },
+                    "urls": {
+                      "description": "URLs found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 3,
+                      "title": "URLs",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Indicators",
+                  "type": "object"
+                },
+                "ip_addresses": {
+                  "properties": {
+                    "ipv4_addresses": {
+                      "description": "IPv4 addresses found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 1,
+                      "title": "IPv4 Addresses",
+                      "type": "array"
+                    },
+                    "ipv6_addresses": {
+                      "description": "IPv6 addresses found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "IPv6 Addresses",
+                      "type": "array"
+                    }
+                  },
+                  "title": "IP Addresses",
+                  "type": "object"
+                },
                 "message": {
                   "properties": {
                     "channel": {
@@ -1114,6 +1491,18 @@
                       "order": 4,
                       "title": "Channel ID",
                       "type": "string"
+                    },
+                    "first_word": {
+                      "description": "First word of the message, for example a chat command (ignoring mentions)",
+                      "order": 5,
+                      "title": "First Word",
+                      "type": "string"
+                    },
+                    "indicators": {
+                      "$ref": "#/definitions/indicators",
+                      "description": "Potential threat indicators found within the message",
+                      "order": 7,
+                      "title": "Indicators"
                     },
                     "text": {
                       "description": "Text",
@@ -1138,6 +1527,15 @@
                       "order": 2,
                       "title": "User ID",
                       "type": "string"
+                    },
+                    "words": {
+                      "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 6,
+                      "title": "Words",
+                      "type": "array"
                     }
                   },
                   "title": "Message",
@@ -1188,7 +1586,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "{{[4ea6adf6-4bb6-4018-b6af-cf45e6e3e267].[content]}}\n\nThis can take up to 60 minutes depending on the size of your organization. ",
+                "message": ":mag: *Beginning Compliance Search* :mag:\n\nInsightConnect Search for \n{{#if [bcf81982-79c0-439f-9aa6-d5661f8f94cf].[subject]}}\nsubject: `\"{{[bcf81982-79c0-439f-9aa6-d5661f8f94cf].[subject]}}\"`\n{{/if}}\n{{#if [9b1dd437-3f79-4e41-9b51-0443453f00ae].[body]}}\nbody: `\"{{[9b1dd437-3f79-4e41-9b51-0443453f00ae].[body]}}\"`\n{{/if}}\n{{#if [9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[indicators].[email_addresses].[0]}}\nfrom: `\"{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[indicators].[email_addresses].[0]}}\"`\n{{else if [863cd109-44c2-4928-9855-9d012170d27a].[from]}}\nfrom: `\"{{[863cd109-44c2-4928-9855-9d012170d27a].[from]}}\"`\n{{/if}}\n\nThis can take up to 60 minutes depending on the size of your organization.",
                 "recipient": "@{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[user]}}",
                 "thread_ts": "{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[timestamp]}}"
               }
@@ -1252,6 +1650,37 @@
             "connectionType": "NONE",
             "chatOpsAppName": "slack",
             "chatOpsIdentifier": "post_message"
+          },
+          "aabc7da4-7d8d-408d-89de-a8463ddea1cd": {
+            "nodeId": "aabc7da4-7d8d-408d-89de-a8463ddea1cd",
+            "name": "Extract Delete Argument",
+            "type": "pattern_match",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "captureAll": false,
+              "expressionText": "delete={{delete:/true/}}",
+              "expressions": [
+                {
+                  "type": "text",
+                  "value": "delete="
+                },
+                {
+                  "type": "variable",
+                  "value": {
+                    "ident": "delete",
+                    "regex": "true"
+                  }
+                }
+              ],
+              "ignoreCase": true,
+              "input": "{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[text]}}"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/pattern-match.svg",
+            "connectionType": "NONE"
           },
           "ac12622d-e616-46d3-9e72-38ec2318c644": {
             "nodeId": "ac12622d-e616-46d3-9e72-38ec2318c644",
@@ -1263,17 +1692,17 @@
               "defaultEdgeId": "3daf7970-48af-49f3-a0ea-96dcc4da28f1",
               "stepControlParams": [
                 {
-                  "edgeId": "b17aca14-6a4f-46a3-82e7-e4fecffc6da4",
-                  "expression": {
-                    "name": "75c4e364-f202-469e-bcb3-4140fe36e205.delete",
-                    "type": "variable"
-                  },
-                  "expressionText": "{{[75c4e364-f202-469e-bcb3-4140fe36e205].[delete]}}"
-                },
-                {
                   "edgeId": "3daf7970-48af-49f3-a0ea-96dcc4da28f1",
                   "expression": {},
                   "expressionText": ""
+                },
+                {
+                  "edgeId": "b17aca14-6a4f-46a3-82e7-e4fecffc6da4",
+                  "expression": {
+                    "name": "aabc7da4-7d8d-408d-89de-a8463ddea1cd.$matched",
+                    "type": "variable"
+                  },
+                  "expressionText": "{{[aabc7da4-7d8d-408d-89de-a8463ddea1cd].[$matched]}}"
                 }
               ]
             },
@@ -1281,99 +1710,6 @@
             "defaultOutputJSONSchema": null,
             "outputJSONSchema": null,
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
-            "connectionType": "NONE"
-          },
-          "ad5289eb-110e-4ac2-9ee8-b2bd30ffa455": {
-            "nodeId": "ad5289eb-110e-4ac2-9ee8-b2bd30ffa455",
-            "name": "Create Query String",
-            "type": "action",
-            "plugin": {
-              "name": "Python 3 Script",
-              "slugVendor": "rapid7",
-              "slugName": "python_3_script",
-              "slugVersion": "2.0.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/python_3_script/2.0.1/icon.png"
-            },
-            "identifier": "run",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "function": "def run(params={}):\n    query_string = \"\"\n    \n    \n\n    if params.get(\"body\"):\n        query_string+=f'body:\\\"{params.get(\"body\")}\\\" '\n\n    if params.get(\"from\"):\n        query_string+=f'from:\\\"{params.get(\"from\")}\\\" '\n\n    if params.get(\"subject\"):\n        query_string += f'subject:\\\"{params.get(\"subject\")}\\\" '\n\n    return {\"query_string\": query_string.strip()}",
-                "input": "{{[75c4e364-f202-469e-bcb3-4140fe36e205]}}"
-              }
-            },
-            "defaultInputJSONSchema": {
-              "properties": {
-                "function": {
-                  "default": "def run(params={}):\\n    return {}",
-                  "description": "Function definition. Must be named `run`. Accepts the `input` object as params. Returns the dict as output",
-                  "displayType": "python",
-                  "format": "python",
-                  "order": 1,
-                  "title": "Function",
-                  "type": "string"
-                },
-                "input": {
-                  "description": "Input object to be passed as `params={}` to the `run` function",
-                  "order": 2,
-                  "title": "Input",
-                  "type": "object"
-                }
-              },
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultOutputJSONSchema": {
-              "properties": {
-                "result1": {
-                  "description": "Sample output result1 (delete or edit)",
-                  "order": 1,
-                  "title": "Result1",
-                  "type": "string"
-                },
-                "result2": {
-                  "description": "Sample output result2 (delete or edit)",
-                  "order": 2,
-                  "title": "Result2",
-                  "type": "string"
-                }
-              },
-              "title": "Variables",
-              "type": "object"
-            },
-            "outputJSONSchema": {
-              "definitions": {},
-              "properties": {
-                "query_string": {
-                  "description": "Sample output result1 (delete or edit)",
-                  "order": 1,
-                  "title": "Result1",
-                  "type": "string"
-                }
-              },
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultImageData": "",
-            "connectionType": "CONNECTION"
-          },
-          "ada69091-7eb5-404b-8ce5-5b8420e11ca3": {
-            "nodeId": "ada69091-7eb5-404b-8ce5-5b8420e11ca3",
-            "name": "Purge Command Elements",
-            "type": "artifact",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "input": {
-                "content": "From: \"{{[75c4e364-f202-469e-bcb3-4140fe36e205].[from]}}\"\nSubject: \"{{[75c4e364-f202-469e-bcb3-4140fe36e205].[subject]}}\"\nBody: \"{{[75c4e364-f202-469e-bcb3-4140fe36e205].[body]}}\"\nDelete: \"{{[75c4e364-f202-469e-bcb3-4140fe36e205].[delete]}}\"\n\nQuery String: \"{{[ad5289eb-110e-4ac2-9ee8-b2bd30ffa455].[query_string]}}\""
-              },
-              "type": "markdown"
-            },
-            "defaultInputJSONSchema": null,
-            "defaultOutputJSONSchema": null,
-            "outputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
             "connectionType": "NONE"
           },
           "afd9fd25-487a-4eee-b291-1ce335a02f1d": {
@@ -1385,7 +1721,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "Compliance Search Complete\n\nEmails Found: {{[28b13b59-a02c-4faa-b69f-ce13ad921410].[emails_found]}}\nNumber of Users Affected: {{[28b13b59-a02c-4faa-b69f-ce13ad921410].[affected_users]}}\n\nFor more information: \n{{[$job].[URL]}}",
+                "message": ":mag: *Compliance Search Complete* :mag:\n\nEmails Found: {{[28b13b59-a02c-4faa-b69f-ce13ad921410].[emails_found]}}\nNumber of Users Affected: {{[28b13b59-a02c-4faa-b69f-ce13ad921410].[affected_users]}}\n\nFor more information: \n{{[$job].[URL]}}",
                 "recipient": "@{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[user]}}",
                 "thread_ts": "{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[timestamp]}}"
               }
@@ -1450,151 +1786,87 @@
             "chatOpsAppName": "slack",
             "chatOpsIdentifier": "post_message"
           },
-          "b32c0576-b7d9-4e20-bf10-25e8e28a13e9": {
-            "nodeId": "b32c0576-b7d9-4e20-bf10-25e8e28a13e9",
-            "name": "Was manual purge successful? ",
-            "type": "automated_decision",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "defaultEdgeId": "1ce1ab79-8288-4f44-a219-27b17b59999c",
-              "stepControlParams": [
-                {
-                  "edgeId": "e7d8b2b4-8285-4885-bb59-9080bb791a42",
-                  "expression": {
-                    "name": "97076139-2861-47f1-b2e2-c996d0700dea.$success",
-                    "type": "variable"
-                  },
-                  "expressionText": "{{[97076139-2861-47f1-b2e2-c996d0700dea].[$success]}}"
-                },
-                {
-                  "edgeId": "1ce1ab79-8288-4f44-a219-27b17b59999c",
-                  "expression": {},
-                  "expressionText": ""
-                }
-              ]
-            },
-            "defaultInputJSONSchema": null,
-            "defaultOutputJSONSchema": null,
-            "outputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
-            "connectionType": "NONE"
-          },
-          "cb270db6-6dfb-4328-8b59-2f714aaa4763": {
-            "nodeId": "cb270db6-6dfb-4328-8b59-2f714aaa4763",
-            "name": "Parsing Failed Message",
-            "type": "action_chatops",
+          "b16cdf6d-7009-493a-951a-f6e1cd2fbaff": {
+            "nodeId": "b16cdf6d-7009-493a-951a-f6e1cd2fbaff",
+            "name": "Not Purged Output",
+            "type": "artifact",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "input": {
-                "attachments": [],
-                "message": "Something went wrong with delete-email. \n\nThe message received was: \n{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[text]}}",
-                "recipient": "@{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[user]}}",
-                "thread_ts": "{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[timestamp]}}"
-              }
-            },
-            "defaultInputJSONSchema": {
-              "properties": {
-                "attachments": {
-                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
-                  "items": {
-                    "type": "object"
-                  },
-                  "order": 4,
-                  "title": "Attachments",
-                  "type": "array"
-                },
-                "message": {
-                  "description": "Message to send",
-                  "order": 3,
-                  "title": "Message",
-                  "type": "string"
-                },
-                "recipient": {
-                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
-                  "order": 1,
-                  "title": "Enter #channel or @username",
-                  "type": "string"
-                },
-                "thread_ts": {
-                  "description": "Select timestamp output variable from parent message step",
-                  "order": 2,
-                  "title": "To post in a thread, select parent message timestamp",
-                  "type": "string"
-                }
+                "content": "The compliance results were not purged."
               },
-              "required": [
-                "recipient"
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "bcf81982-79c0-439f-9aa6-d5661f8f94cf": {
+            "nodeId": "bcf81982-79c0-439f-9aa6-d5661f8f94cf",
+            "name": "Extract Subject Argument",
+            "type": "pattern_match",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "captureAll": false,
+              "expressionText": "subject=\"{{subject:/.+?/}}\"",
+              "expressions": [
+                {
+                  "type": "text",
+                  "value": "subject=\""
+                },
+                {
+                  "type": "variable",
+                  "value": {
+                    "ident": "subject",
+                    "regex": ".+?"
+                  }
+                },
+                {
+                  "type": "text",
+                  "value": "\""
+                }
               ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultOutputJSONSchema": {
-              "properties": {
-                "channel_id": {
-                  "description": "ChannelID of successful message",
-                  "order": 1,
-                  "title": "Channel ID",
-                  "type": "string"
-                },
-                "timestamp": {
-                  "description": "Timestamp of successful message",
-                  "order": 2,
-                  "title": "Timestamp",
-                  "type": "string"
-                }
-              },
-              "title": "Variables",
-              "type": "object"
-            },
-            "outputJSONSchema": null,
-            "defaultImageData": "",
-            "connectionType": "NONE",
-            "chatOpsAppName": "slack",
-            "chatOpsIdentifier": "post_message"
-          },
-          "cebde365-c83a-4ff6-bd70-e88bb82c8a6d": {
-            "nodeId": "cebde365-c83a-4ff6-bd70-e88bb82c8a6d",
-            "name": "Nothing to Purge",
-            "type": "filter",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "stepControlParam": {
-                "edgeId": "cb7c2eb8-c42f-4548-a6e1-a5c89d73449b",
-                "expression": {
-                  "left": {
-                    "name": "28b13b59-a02c-4faa-b69f-ce13ad921410.emails_found",
-                    "type": "variable"
-                  },
-                  "op": "=",
-                  "right": {
-                    "type": "literal",
-                    "value": 0
-                  },
-                  "type": "binary"
-                },
-                "expressionText": "{{[28b13b59-a02c-4faa-b69f-ce13ad921410].[emails_found]}} = 0"
-              },
-              "stopOnMatch": true
+              "ignoreCase": true,
+              "input": "{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[text]}}"
             },
             "defaultInputJSONSchema": null,
             "defaultOutputJSONSchema": null,
             "outputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/filter.svg",
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/pattern-match.svg",
             "connectionType": "NONE"
           },
-          "e7efa02a-2323-48fd-92ef-d5f197f4c150": {
-            "nodeId": "e7efa02a-2323-48fd-92ef-d5f197f4c150",
-            "name": "Manual Purge Success",
+          "e61ca5e7-4978-4208-b4ed-6968f95f371e": {
+            "nodeId": "e61ca5e7-4978-4208-b4ed-6968f95f371e",
+            "name": "Purge Success Output",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "The compliance results were successfully purged."
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "e6ac7a96-f98f-470e-9b07-055e0f036f24": {
+            "nodeId": "e6ac7a96-f98f-470e-9b07-055e0f036f24",
+            "name": "Emails Not Found Message",
             "type": "action_chatops",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "Compliance Search was successfully purged.\n\nWorkflow Complete",
+                "message": "{{[9c4261d8-17bd-4714-a3dc-473c5a8396ba].[content]}}\n\n:heavy_check_mark: *Workflow Complete!*",
                 "recipient": "@{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[message].[user]}}",
                 "thread_ts": "{{[9dfbea14-3d78-4fbb-937b-88d4c9b277d8].[timestamp]}}"
               }
@@ -1673,6 +1945,7 @@
             "identifier": "mass_purge",
             "continueOnFailure": true,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "compliance_search_name": "{{[4ea6adf6-4bb6-4018-b6af-cf45e6e3e267].[content]}}",
@@ -1719,6 +1992,24 @@
             "outputJSONSchema": null,
             "defaultImageData": "",
             "connectionType": "CONNECTION"
+          },
+          "f8fc9f0c-1947-456b-b38e-0f0dbebd9673": {
+            "nodeId": "f8fc9f0c-1947-456b-b38e-0f0dbebd9673",
+            "name": "Purge Failed Output",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "Failed to purge the compliance results."
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
           }
         },
         "tags": null,
@@ -1728,11 +2019,11 @@
     ],
     "triggers": [
       {
-        "id": "fc64b903-9045-4d0b-ba3c-62a725a17f9a",
+        "id": "5461cb63-333a-4314-8dc7-6aa034b8b52e",
         "name": "Purge Email Trigger",
         "description": "",
         "input": {
-          "matchChannel": "",
+          "matchChannel": "change_me",
           "matchText": "delete-emails",
           "type": "any"
         },
@@ -1771,6 +2062,126 @@
         },
         "outputJsonSchema": {
           "definitions": {
+            "hashes": {
+              "properties": {
+                "md5_hashes": {
+                  "description": "MD5 hashes found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "MD5 Hashes",
+                  "type": "array"
+                },
+                "sha1_hashes": {
+                  "description": "SHA1 hashes found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "SHA1 Hashes",
+                  "type": "array"
+                },
+                "sha256_hashes": {
+                  "description": "SHA256 hashes found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 3,
+                  "title": "SHA256 Hashes",
+                  "type": "array"
+                }
+              },
+              "title": "Hashes",
+              "type": "object"
+            },
+            "indicators": {
+              "properties": {
+                "domains": {
+                  "description": "Domains found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "Domains",
+                  "type": "array"
+                },
+                "email_addresses": {
+                  "description": "Email addresses found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 4,
+                  "title": "Email Addresses",
+                  "type": "array"
+                },
+                "hashes": {
+                  "$ref": "#/definitions/hashes",
+                  "description": "Hashes found within the message",
+                  "order": 5,
+                  "title": "Hashes"
+                },
+                "ip_addresses": {
+                  "$ref": "#/definitions/ip_addresses",
+                  "description": "IP addresses found within the message",
+                  "order": 7,
+                  "title": "IP Addresses"
+                },
+                "mac_addresses": {
+                  "description": "MAC addresses found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 6,
+                  "title": "MAC Addresses",
+                  "type": "array"
+                },
+                "parent_domains": {
+                  "description": "Parent domains found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "Parent Domains",
+                  "type": "array"
+                },
+                "urls": {
+                  "description": "URLs found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 3,
+                  "title": "URLs",
+                  "type": "array"
+                }
+              },
+              "title": "Indicators",
+              "type": "object"
+            },
+            "ip_addresses": {
+              "properties": {
+                "ipv4_addresses": {
+                  "description": "IPv4 addresses found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "IPv4 Addresses",
+                  "type": "array"
+                },
+                "ipv6_addresses": {
+                  "description": "IPv6 addresses found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "IPv6 Addresses",
+                  "type": "array"
+                }
+              },
+              "title": "IP Addresses",
+              "type": "object"
+            },
             "message": {
               "properties": {
                 "channel": {
@@ -1784,6 +2195,18 @@
                   "order": 4,
                   "title": "Channel ID",
                   "type": "string"
+                },
+                "first_word": {
+                  "description": "First word of the message, for example a chat command (ignoring mentions)",
+                  "order": 5,
+                  "title": "First Word",
+                  "type": "string"
+                },
+                "indicators": {
+                  "$ref": "#/definitions/indicators",
+                  "description": "Potential threat indicators found within the message",
+                  "order": 7,
+                  "title": "Indicators"
                 },
                 "text": {
                   "description": "Text",
@@ -1808,6 +2231,15 @@
                   "order": 2,
                   "title": "User ID",
                   "type": "string"
+                },
+                "words": {
+                  "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 6,
+                  "title": "Words",
+                  "type": "array"
                 }
               },
               "title": "Message",

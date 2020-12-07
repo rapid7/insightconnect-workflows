@@ -29,6 +29,8 @@ Sample Slack Trigger Commands:
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
+Once the workflow is successfully imported, edit the first Slack step to reflect your channel name.
+
 Activate the workflow in order to trigger with a Slack command.
 
 ### Usage
@@ -45,11 +47,11 @@ You can also trigger this workflow from any channel by referencing Rapid7 Insigh
 
 This will kick off the workflow and prompt you when the search is completed. If any emails are found that match the criteria, you can choose the delete button in Slack to delete them.
 
-Search criteria can be 'body', 'subject', or 'from' lines in the email. For example:
+Search criteria can be 'body', 'subject' or 'from' lines in the email. For example:
 
-`delete-emails subject="A phishy email" from="example.com" body="Click here for free stuff" `
+`delete-emails subject="A phishy email" from="example.com" body="Click here for free stuff"`
 
-Any combination of 'body', 'subject', and 'from' can be used. At least one search item must be given.
+Any combination of 'body', 'subject' and 'from' can be used. At least one search item must be given.
 
 If you'd like the workflow to just delete emails without prompting, you can also use 'delete=true'. For example:
 
@@ -62,7 +64,6 @@ Plugins utilized by workflow:
 |Plugin|Version|Count|
 |----|----|--------|
 |Microsoft Office365 Email Security|2.2.1|3|
-|Python 3 Script|2.0.1|2|
 
 ## Troubleshooting
 
@@ -70,6 +71,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.1.0 - Replace a Python script with Pattern Match steps for argument values extraction | Remove Python script for preparing a query | Improve workflow messaging | Update screenshots
 * 1.0.3 - Change trigger command from `purge-email` to `delete-emails`
 * 1.0.2 - Changed content search query to use double quotes | Workflow no longer prompts a manual purge when 0 emails are found | Trigger no longer requires an exclamation mark | Updated documentation
 * 1.0.1 - Updated documentation
