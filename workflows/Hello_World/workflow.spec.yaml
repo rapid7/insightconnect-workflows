@@ -2,7 +2,7 @@ extension: workflow
 products: ["insightconnect"]
 name: Hello_World
 title: "Hello World"
-description: Learn how to import and test workflows in InsightConnect!
+description: Learn how to import and test workflows in InsightConnect 🚀.
 version: 1.0.1
 vendor: rapid7
 support: rapid7
