@@ -44,11 +44,11 @@ To trigger this workflow, send the following command to the channel being monito
 
 This will kick off the workflow and prompt you when the search is completed.
 
-Search criteria can be 'body', 'subject' or 'from' lines in the email. For example:
+Search criteria can be 'body', 'subject', or 'from' lines in the email. For example:
 
 `!delete-emails subject="A phishy email" from="example.com" body="Click here for free stuff"`
 
-Any combination of 'body', 'subject' and 'from' can be used. At least one search item must be given.
+Any combination of 'body', 'subject', and 'from' can be used. At least one search item must be given.
 
 If you'd like the workflow to delete emails you can use 'delete=true'. For example:
 

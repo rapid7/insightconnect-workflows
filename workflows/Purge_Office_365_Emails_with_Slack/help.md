@@ -47,11 +47,11 @@ You can also trigger this workflow from any channel by referencing Rapid7 Insigh
 
 This will kick off the workflow and prompt you when the search is completed. If any emails are found that match the criteria, you can choose the delete button in Slack to delete them.
 
-Search criteria can be 'body', 'subject' or 'from' lines in the email. For example:
+Search criteria can be 'body', 'subject', or 'from' lines in the email. For example:
 
 `delete-emails subject="A phishy email" from="example.com" body="Click here for free stuff"`
 
-Any combination of 'body', 'subject' and 'from' can be used. At least one search item must be given.
+Any combination of 'body', 'subject', and 'from' can be used. At least one search item must be given.
 
 If you'd like the workflow to just delete emails without prompting, you can also use 'delete=true'. For example:
 
