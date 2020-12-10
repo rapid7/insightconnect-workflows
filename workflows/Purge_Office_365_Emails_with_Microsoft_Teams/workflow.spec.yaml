@@ -1,9 +1,9 @@
 extension: workflow
 products: ["insightconnect"]
 name: Purge_Office_365_Emails_with_Microsoft_Teams
-title: "Purge Emails in Office365 with Microsoft Teams"
+title: Purge Emails in Office365 with Microsoft Teams
 description: "This workflow will delete all emails in an Office365 tenant matching given search criteria from an organization using a command issued from Microsoft Teams."
-version: 1.0.5
+version: 1.1.0
 vendor: rapid7
 support: rapid7
 status: []
@@ -15,9 +15,17 @@ resources:
   source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Purge_Office_365_Emails_with_Microsoft_Teams
   license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
   screenshots:
+  - name: workflow.png
+    title: Workflow View
   - name: workflow1.png
-    title: Workflow 1
+    title: Workflow View Part 1
   - name: workflow2.png
-    title: Workflow 2
+    title: Workflow View Part 2
+  - name: workflow3.png
+    title: Workflow View Part 3
   - name: teams_flow1.png
-    title: Example Teams Output
+    title: Completed Job in Microsoft Teams with Valid Subject Argument
+  - name: teams_flow2.png
+    title: Completed Job in Microsoft Teams with Valid Subject and Body Arguments
+  - name: teams_not_found.png
+    title: Completed Job in Microsoft Teams with Emails Not Found
