@@ -1,9 +1,9 @@
 extension: workflow
 products: ["insightconnect"]
 name: Purge_Office_365_Emails_with_Slack
-title: "Purge Office 365 Emails with Slack"
+title: Purge Office 365 Emails with Slack
 description: "This workflow uses a Slack command to purge all emails in an organization matching the provided search criteria."
-version: 1.0.3
+version: 1.1.0
 vendor: rapid7
 support: rapid7
 status: []
@@ -15,9 +15,19 @@ resources:
   source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Purge_Office_365_Emails_with_Slack
   license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
   screenshots:
+  - name: workflow.png
+    title: Workflow View
   - name: workflow1.png
-    title: Workflow 1
+    title: Workflow View Part 1
   - name: workflow2.png
-    title: Workflow 2
+    title: Workflow View Part 2
+  - name: workflow3.png
+    title: Workflow View Part 3
+  - name: sample_command.png
+    title: Sample Slack Command
   - name: slack_flow1.png
-    title: Completed Job In Slack with Valid Input
+    title: Completed Job in Slack with Valid Subject Argument
+  - name: slack_flow2.png
+    title: Completed Job in Slack with Valid Subject and Body Arguments
+  - name: slack_not_found.png
+    title: Completed Job in Slack with Emails Not Found
