@@ -15,8 +15,7 @@ This workflow enriches an IDR alert by performing a lookup on all domains, hashe
 
 ## Setup
 
-* Download the workflow or clone the repository `git clone https://github.com/rapid7/insightconnet-workflows.git`
-* Login to InsightConnect, and “Import” the .icon file into the workflow builder
+* Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 * Configure the connections for the Cb Response plugin
 * Activate your workflow
 * Navigate to IDR's alert triggers page at #/automation/alerts
