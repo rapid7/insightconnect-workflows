@@ -2,7 +2,7 @@
   "kom": {
     "komandVersion": "1.72.0-0-ge9d34",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-12-14T19:11:46.96420067Z",
+    "exportedAt": "2020-12-14T19:50:14.291959457Z",
     "workflowVersions": [
       {
         "name": "Blacklist URLs with Zscaler from Slack",
@@ -18,6 +18,14 @@
               "parentNodeId": "",
               "fromNodeId": "6a82581d-621a-469c-a200-5f9bf1cde746",
               "toNodeId": "6c2b1cae-13b4-4798-9625-b17ba6c13fc5"
+            },
+            "2a88780d-2b3f-4440-9d65-ae2b7ee167e0": {
+              "id": "2a88780d-2b3f-4440-9d65-ae2b7ee167e0",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "4b08e92a-f4a6-40c3-bbbc-dcbf9bde908b",
+              "toNodeId": "3fa7a1a5-d916-4a9d-ab8e-bb90e9a7fb95"
             },
             "3cd4a21c-f063-46e1-8d2b-28d79950eb5f": {
               "id": "3cd4a21c-f063-46e1-8d2b-28d79950eb5f",
@@ -49,7 +57,7 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "cb5fe979-2556-488e-81ee-396202b9068b",
-              "toNodeId": "3fa7a1a5-d916-4a9d-ab8e-bb90e9a7fb95"
+              "toNodeId": "4b08e92a-f4a6-40c3-bbbc-dcbf9bde908b"
             },
             "5d36bb72-6ed4-4dfc-a291-45eed5b70c79": {
               "id": "5d36bb72-6ed4-4dfc-a291-45eed5b70c79",
@@ -139,6 +147,10 @@
             },
             "4806ffed-86a6-46b9-8410-8412179e34ff": {
               "id": "4806ffed-86a6-46b9-8410-8412179e34ff",
+              "parentNodeId": ""
+            },
+            "4b08e92a-f4a6-40c3-bbbc-dcbf9bde908b": {
+              "id": "4b08e92a-f4a6-40c3-bbbc-dcbf9bde908b",
               "parentNodeId": ""
             },
             "5d5f989b-df38-42cf-8123-f6a09cca7646": {
@@ -307,7 +319,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": ":white_check_mark: Requested URL(s) were successfully blacklisted/unblacklisted!\n",
+                "message": "{{#equal [eb45a27e-1a93-4580-b5dc-f48c252db9f3].[message].[first_word] \"blacklist-url\"}}\n:white_check_mark: The requested URLs were successfully blacklisted!\n{{/equal}}\n{{#equal [eb45a27e-1a93-4580-b5dc-f48c252db9f3].[message].[first_word] \"unblacklist-url\"}}\n:white_check_mark: The requested URLs were successfully unblacklisted!\n{{/equal}}",
                 "recipient": "{{[eb45a27e-1a93-4580-b5dc-f48c252db9f3].[message].[channel]}}",
                 "thread_ts": "{{[eb45a27e-1a93-4580-b5dc-f48c252db9f3].[timestamp]}}"
               }
@@ -381,7 +393,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": ":interrobang: Failed to blacklist/unblacklist the requested URL(s)! Check the following URL for more info: {{[$job].[URL]}}",
+                "message": "{{#equal [eb45a27e-1a93-4580-b5dc-f48c252db9f3].[message].[first_word] \"blacklist-url\"}}\n:interrobang: Failed to blacklist the requested URL(s)! Check the following URL for more info: {{[$job].[URL]}}\n{{/equal}}\n{{#equal [eb45a27e-1a93-4580-b5dc-f48c252db9f3].[message].[first_word] \"unblacklist-url\"}}\n:interrobang: Failed to unblacklist the requested URL(s)! Check the following URL for more info: {{[$job].[URL]}}\n{{/equal}}\n\n\n",
                 "recipient": "{{[eb45a27e-1a93-4580-b5dc-f48c252db9f3].[message].[channel]}}",
                 "thread_ts": "{{[eb45a27e-1a93-4580-b5dc-f48c252db9f3].[timestamp]}}"
               }
@@ -445,6 +457,24 @@
             "connectionType": "NONE",
             "chatOpsAppName": "slack",
             "chatOpsIdentifier": "post_message"
+          },
+          "4b08e92a-f4a6-40c3-bbbc-dcbf9bde908b": {
+            "nodeId": "4b08e92a-f4a6-40c3-bbbc-dcbf9bde908b",
+            "name": "Processed URLs",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "{{#equal [eb45a27e-1a93-4580-b5dc-f48c252db9f3].[message].[first_word] \"blacklist-url\"}}\n**The following URLs were blacklisted:**\n{{/equal}}\n{{#equal [eb45a27e-1a93-4580-b5dc-f48c252db9f3].[message].[first_word] \"unblacklist-url\"}}\n**The following URLs were unblacklisted:**\n{{/equal}}\n\n{{#each [eb45a27e-1a93-4580-b5dc-f48c252db9f3].[message].[indicators].[domains]}}\n* {{.}}\n{{/each}}"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
           },
           "5d5f989b-df38-42cf-8123-f6a09cca7646": {
             "nodeId": "5d5f989b-df38-42cf-8123-f6a09cca7646",
