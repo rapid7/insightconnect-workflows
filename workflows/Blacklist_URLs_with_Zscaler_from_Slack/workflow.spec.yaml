@@ -1,0 +1,27 @@
+extension: workflow
+products: ["insightconnect"]
+name: Blacklist_URLs_with_Zscaler_from_Slack
+title: Blacklist URLs with Zscaler from Slack
+description: This workflow uses a Slack command to blacklist URLs in Zscaler
+version: 1.0.0
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [threat_detection_and_response]
+  keywords:  [block, zscaler, slack]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Blacklist_URLs_with_Zscaler_from_Slack
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+  - name: workflow.png
+    title: Workflow View
+  - name: artifact_blacklist.png
+    title: Blacklist Artifact
+  - name: artifact_unblacklist.png
+    title: Unblacklist Artifact
+  - name: slack_blacklist.png
+    title: Blacklist Success in Slack
+  - name: slack_unblacklist.png
+    title: Unblacklist Success in Slack

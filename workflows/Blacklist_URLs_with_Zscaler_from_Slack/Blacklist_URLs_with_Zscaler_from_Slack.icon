@@ -808,7 +808,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "matchChannel": "demo_zscaler",
+                "matchChannel": "change_me",
                 "matchText": "blacklist-url|unblacklist-url",
                 "type": "any"
               }
@@ -1080,7 +1080,7 @@
         "name": "Check Blacklist Message Received",
         "description": "",
         "input": {
-          "matchChannel": "demo_zscaler",
+          "matchChannel": "change_me",
           "matchText": "blacklist-url|unblacklist-url",
           "type": "any"
         },
