@@ -6,6 +6,8 @@ Multiple indicators can be specified within one command.
 
 Sample Slack Trigger Commands:
 
+`@Rapid7 InsightConnect blacklist-url example.com`
+
 `@Rapid7 InsightConnect blacklist-url example.com example2.com`
 
 # Key Features
