@@ -28,9 +28,12 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Rapid7 InsightVM|4.0.0|6|
-|Trend Micro Deep Security|2.2.0|4|
+|Rapid7 InsightVM|4.8.1|5|
+|Trend Micro Deep Security|2.2.1|4|
 |Advanced Regex|1.0.3|1|
+|Python 3 Script|2.0.2|5|
+|Type Converter|1.6.1|1|
+|Base64|1.1.6|1|
 
 ## Troubleshooting
 
@@ -38,6 +41,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.1.0 - Improve the job run time
 * 1.0.3 - Revert and rename workflow file to fix import failure
 * 1.0.2 - Rename workflow file to fix import failure
 * 1.0.1 - Fix issue in name which caused workflow to fail import from Extension Library
