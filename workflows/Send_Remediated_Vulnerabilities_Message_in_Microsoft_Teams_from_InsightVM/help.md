@@ -47,7 +47,7 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Microsoft Teams|2.2.1|1|
+|Microsoft Teams|3.1.0|1|
 |Type Converter|1.6.0|1|
 |Rapid7 Vulnerability & Exploit Database|2.0.3|1|
 
@@ -57,6 +57,7 @@ Experiencing delays? InsightVM Events are delivered to InsightConnect from Insig
 
 # Version History
 
+* 2.0.1 - Update Microsoft Teams to version 3.1.0
 * 2.0.0 - Added restriction to only post when remediated vulnerability CVSS score is greater than 4
 * 1.0.1 - Fix quote issue in spec file
 * 1.0.0 - Initial workflow

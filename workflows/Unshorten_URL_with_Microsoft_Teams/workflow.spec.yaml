@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Unshorten_URL_with_Microsoft_Teams
 title: "Unshorten URL from Microsoft Teams"
 description:  Unshorten a URL with a message in Microsoft Teams.
-version: 1.0.2
+version: 1.1.0
 vendor: rapid7
 support: rapid7
 status: []

@@ -3,7 +3,7 @@ products: ["insightconnect", "insightvm"]
 name: Lookup_Vuln_From_Teams
 title: "Lookup Vulnerability from Microsoft Teams"
 description: This workflow accepts a Microsoft Teams command, looks up the vulnerability in Rapid7's vulnerability database, and posts the vulnerability details back to the same Teams channel.
-version: 1.0.3
+version: 1.1.0
 vendor: rapid7
 support: rapid7
 status: []

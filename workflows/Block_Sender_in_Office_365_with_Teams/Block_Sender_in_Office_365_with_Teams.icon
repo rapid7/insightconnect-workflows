@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.48.2-0-g4eb3f",
+    "komandVersion": "1.72.0-0-ge9d34",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-04-10T16:51:38.661140872Z",
+    "exportedAt": "2020-12-10T19:44:23.570514406Z",
     "workflowVersions": [
       {
         "name": "Block Sender in Office 365 with Microsoft Teams",
@@ -220,8 +220,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.0.4",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
+              "slugVersion": "3.1.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
             },
             "identifier": "new_message_received",
             "continueOnFailure": false,
@@ -233,7 +233,7 @@
                 "team_name": "change_me"
               }
             },
-            "triggerId": "15ba1072-78ba-4d31-a258-5a11d6835347",
+            "triggerId": "cb3dd164-30ac-41fc-ae5e-c0279ed3d77c",
             "defaultInputJSONSchema": {
               "properties": {
                 "channel_name": {
@@ -294,6 +294,135 @@
                   "title": "From",
                   "type": "object"
                 },
+                "hashes": {
+                  "properties": {
+                    "md5_hashes": {
+                      "description": "Extracted MD5 Hashes from message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 1,
+                      "title": "MD5 Hashes",
+                      "type": "array"
+                    },
+                    "sha1_hashes": {
+                      "description": "Extracted SHA1 hashes from message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "SHA1 Hashes",
+                      "type": "array"
+                    },
+                    "sha256_hashes": {
+                      "description": "Extracted SHA256 hashes from message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 3,
+                      "title": "SHA256 Hashes",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Hashes",
+                  "type": "object"
+                },
+                "indicators": {
+                  "properties": {
+                    "cves": {
+                      "description": "Extracted CVEs from message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 7,
+                      "title": "CVEs",
+                      "type": "array"
+                    },
+                    "domains": {
+                      "description": "Extracted domains from message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 1,
+                      "title": "Domains",
+                      "type": "array"
+                    },
+                    "email_addresses": {
+                      "description": "Extracted email addresses from message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 3,
+                      "title": "Email Addresses",
+                      "type": "array"
+                    },
+                    "hashes": {
+                      "$ref": "#/definitions/hashes",
+                      "description": "Extracted hashes from message",
+                      "order": 4,
+                      "title": "Hashes"
+                    },
+                    "ip_addresses": {
+                      "$ref": "#/definitions/ip_addresses",
+                      "description": "Extracted IP addresses from message",
+                      "order": 5,
+                      "title": "IP Addressses"
+                    },
+                    "mac_addresses": {
+                      "description": "Extracted MAC addresses from message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 6,
+                      "title": "MAC Addresses",
+                      "type": "array"
+                    },
+                    "urls": {
+                      "description": "Extracted URLs from message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "URLs",
+                      "type": "array"
+                    },
+                    "uuids": {
+                      "description": "Extracted UUIDs from message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 8,
+                      "title": "UUIDs",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Indicators",
+                  "type": "object"
+                },
+                "ip_addresses": {
+                  "properties": {
+                    "ipv4_addresses": {
+                      "description": "Extracted IPv4 addressses from message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 1,
+                      "title": "IPv4 Addressses",
+                      "type": "array"
+                    },
+                    "ipv6_addresses": {
+                      "description": "Extracted IPv6 addresses from message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "IPv6 Addressses",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Ip Addresses",
+                  "type": "object"
+                },
                 "message": {
                   "properties": {
                     "body": {
@@ -306,6 +435,12 @@
                       "description": "Created date time",
                       "order": 3,
                       "title": "Created Date Time",
+                      "type": "string"
+                    },
+                    "first_word": {
+                      "description": "Extracted first word from message (easy way to obtain a chat command)",
+                      "order": 9,
+                      "title": "First Word",
                       "type": "string"
                     },
                     "from": {
@@ -343,8 +478,21 @@
                       "order": 4,
                       "title": "Web URL",
                       "type": "string"
+                    },
+                    "words": {
+                      "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 10,
+                      "title": "Words",
+                      "type": "array"
                     }
                   },
+                  "required": [
+                    "words",
+                    "first_word"
+                  ],
                   "title": "Message",
                   "type": "object"
                 },
@@ -368,11 +516,29 @@
                 }
               },
               "properties": {
+                "channel_name": {
+                  "description": "Name of the channel where the message was posted",
+                  "order": 3,
+                  "title": "Channel Name",
+                  "type": "string"
+                },
+                "indicators": {
+                  "$ref": "#/definitions/indicators",
+                  "description": "The indicators object that was extracted from message",
+                  "order": 2,
+                  "title": "Indicators"
+                },
                 "message": {
                   "$ref": "#/definitions/message",
                   "description": "The message object that was created",
                   "order": 1,
                   "title": "Message"
+                },
+                "team_name": {
+                  "description": "Name of the team to which the channel is assigned to",
+                  "order": 4,
+                  "title": "Team Name",
+                  "type": "string"
                 }
               },
               "title": "Variables",
@@ -390,17 +556,19 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.0.4",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
+              "slugVersion": "3.1.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
-                "channel_name": "change_me",
+                "channel_name": "{{[19362930-2849-479d-9a29-06619513980b].[channel_name]}}",
                 "message_content": "Attempting to block:\"{{[edfd27a8-76f3-48c9-b383-7f976e999b0d].[content]}}\"",
-                "team_name": "change_me"
+                "team_name": "{{[19362930-2849-479d-9a29-06619513980b].[team_name]}}",
+                "thread_id": "{{[19362930-2849-479d-9a29-06619513980b].[message].[id]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -413,7 +581,7 @@
                 },
                 "message_content": {
                   "description": "HTML content to send",
-                  "order": 3,
+                  "order": 4,
                   "title": "Message Content",
                   "type": "string"
                 },
@@ -421,6 +589,12 @@
                   "description": "Team name",
                   "order": 1,
                   "title": "Team Name",
+                  "type": "string"
+                },
+                "thread_id": {
+                  "description": "To post in a thread, select parent message ID",
+                  "order": 3,
+                  "title": "Thread ID",
                   "type": "string"
                 }
               },
@@ -478,6 +652,12 @@
                       "title": "Created Date Time",
                       "type": "string"
                     },
+                    "first_word": {
+                      "description": "Extracted first word from message (easy way to obtain a chat command)",
+                      "order": 9,
+                      "title": "First Word",
+                      "type": "string"
+                    },
                     "from": {
                       "$ref": "#/definitions/from",
                       "description": "From",
@@ -513,8 +693,21 @@
                       "order": 4,
                       "title": "Web URL",
                       "type": "string"
+                    },
+                    "words": {
+                      "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 10,
+                      "title": "Words",
+                      "type": "array"
                     }
                   },
+                  "required": [
+                    "words",
+                    "first_word"
+                  ],
                   "title": "Message",
                   "type": "object"
                 },
@@ -656,6 +849,7 @@
             "identifier": "split_to_list",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "delimiter": " ",
@@ -710,17 +904,19 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.0.4",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
+              "slugVersion": "3.1.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
-                "channel_name": "change_me",
-                "message_content": "The email or domain provided does not appear to be valid. <br>\n\"{{[edfd27a8-76f3-48c9-b383-7f976e999b0d].[content]}}\"<br>\n<b>Workflow Complete.</b>\n\n\n",
-                "team_name": "change_me"
+                "channel_name": "{{[19362930-2849-479d-9a29-06619513980b].[channel_name]}}",
+                "message_content": "The email or domain provided does not appear to be valid. <br>\n\"{{[edfd27a8-76f3-48c9-b383-7f976e999b0d].[content]}}\"<br>\n<b>Workflow Complete.</b>",
+                "team_name": "{{[19362930-2849-479d-9a29-06619513980b].[team_name]}}",
+                "thread_id": "{{[19362930-2849-479d-9a29-06619513980b].[message].[id]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -733,7 +929,7 @@
                 },
                 "message_content": {
                   "description": "HTML content to send",
-                  "order": 3,
+                  "order": 4,
                   "title": "Message Content",
                   "type": "string"
                 },
@@ -741,6 +937,12 @@
                   "description": "Team name",
                   "order": 1,
                   "title": "Team Name",
+                  "type": "string"
+                },
+                "thread_id": {
+                  "description": "To post in a thread, select parent message ID",
+                  "order": 3,
+                  "title": "Thread ID",
                   "type": "string"
                 }
               },
@@ -798,6 +1000,12 @@
                       "title": "Created Date Time",
                       "type": "string"
                     },
+                    "first_word": {
+                      "description": "Extracted first word from message (easy way to obtain a chat command)",
+                      "order": 9,
+                      "title": "First Word",
+                      "type": "string"
+                    },
                     "from": {
                       "$ref": "#/definitions/from",
                       "description": "From",
@@ -833,8 +1041,21 @@
                       "order": 4,
                       "title": "Web URL",
                       "type": "string"
+                    },
+                    "words": {
+                      "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 10,
+                      "title": "Words",
+                      "type": "array"
                     }
                   },
+                  "required": [
+                    "words",
+                    "first_word"
+                  ],
                   "title": "Message",
                   "type": "object"
                 },
@@ -907,7 +1128,7 @@
             "name": "Block Sender Transport Rule",
             "type": "action",
             "plugin": {
-              "name": "Microsoft Office 365 Email Security",
+              "name": "Microsoft Office365 Email Security",
               "slugVendor": "rapid7",
               "slugName": "microsoft_office365_email_security",
               "slugVersion": "2.2.1",
@@ -916,6 +1137,7 @@
             "identifier": "block_sender_transport_rule",
             "continueOnFailure": true,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "domain_or_email_to_block": "{{[edfd27a8-76f3-48c9-b383-7f976e999b0d].[content]}}",
@@ -972,17 +1194,19 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.0.4",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
+              "slugVersion": "3.1.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
-                "channel_name": "change_me",
-                "message_content": "<b>Block Failed</b><br>\n\"{{[edfd27a8-76f3-48c9-b383-7f976e999b0d].[content]}}\"<br>\n<br>\n<b>Workflow Complete</b>\n",
-                "team_name": "change_me"
+                "channel_name": "{{[19362930-2849-479d-9a29-06619513980b].[channel_name]}}",
+                "message_content": "<b>Block Failed</b><br>\n\"{{[edfd27a8-76f3-48c9-b383-7f976e999b0d].[content]}}\"<br>\n<br>\n<b>Workflow Complete</b>",
+                "team_name": "{{[19362930-2849-479d-9a29-06619513980b].[team_name]}}",
+                "thread_id": "{{[19362930-2849-479d-9a29-06619513980b].[message].[id]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -995,7 +1219,7 @@
                 },
                 "message_content": {
                   "description": "HTML content to send",
-                  "order": 3,
+                  "order": 4,
                   "title": "Message Content",
                   "type": "string"
                 },
@@ -1003,6 +1227,12 @@
                   "description": "Team name",
                   "order": 1,
                   "title": "Team Name",
+                  "type": "string"
+                },
+                "thread_id": {
+                  "description": "To post in a thread, select parent message ID",
+                  "order": 3,
+                  "title": "Thread ID",
                   "type": "string"
                 }
               },
@@ -1060,6 +1290,12 @@
                       "title": "Created Date Time",
                       "type": "string"
                     },
+                    "first_word": {
+                      "description": "Extracted first word from message (easy way to obtain a chat command)",
+                      "order": 9,
+                      "title": "First Word",
+                      "type": "string"
+                    },
                     "from": {
                       "$ref": "#/definitions/from",
                       "description": "From",
@@ -1095,8 +1331,21 @@
                       "order": 4,
                       "title": "Web URL",
                       "type": "string"
+                    },
+                    "words": {
+                      "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 10,
+                      "title": "Words",
+                      "type": "array"
                     }
                   },
+                  "required": [
+                    "words",
+                    "first_word"
+                  ],
                   "title": "Message",
                   "type": "object"
                 },
@@ -1142,17 +1391,19 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.0.4",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
+              "slugVersion": "3.1.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
-                "channel_name": "change_me",
+                "channel_name": "{{[19362930-2849-479d-9a29-06619513980b].[channel_name]}}",
                 "message_content": "<b>Block Successful</b><br>\n\"{{[edfd27a8-76f3-48c9-b383-7f976e999b0d].[content]}}\"<br>\n<br>\n<b>Workflow Completed<b>",
-                "team_name": "change_me"
+                "team_name": "{{[19362930-2849-479d-9a29-06619513980b].[team_name]}}",
+                "thread_id": "{{[19362930-2849-479d-9a29-06619513980b].[message].[id]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -1165,7 +1416,7 @@
                 },
                 "message_content": {
                   "description": "HTML content to send",
-                  "order": 3,
+                  "order": 4,
                   "title": "Message Content",
                   "type": "string"
                 },
@@ -1173,6 +1424,12 @@
                   "description": "Team name",
                   "order": 1,
                   "title": "Team Name",
+                  "type": "string"
+                },
+                "thread_id": {
+                  "description": "To post in a thread, select parent message ID",
+                  "order": 3,
+                  "title": "Thread ID",
                   "type": "string"
                 }
               },
@@ -1230,6 +1487,12 @@
                       "title": "Created Date Time",
                       "type": "string"
                     },
+                    "first_word": {
+                      "description": "Extracted first word from message (easy way to obtain a chat command)",
+                      "order": 9,
+                      "title": "First Word",
+                      "type": "string"
+                    },
                     "from": {
                       "$ref": "#/definitions/from",
                       "description": "From",
@@ -1265,8 +1528,21 @@
                       "order": 4,
                       "title": "Web URL",
                       "type": "string"
+                    },
+                    "words": {
+                      "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 10,
+                      "title": "Words",
+                      "type": "array"
                     }
                   },
+                  "required": [
+                    "words",
+                    "first_word"
+                  ],
                   "title": "Message",
                   "type": "object"
                 },
@@ -1318,6 +1594,7 @@
             "identifier": "text",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "doc": "{{[19362930-2849-479d-9a29-06619513980b].[message].[body].[content]}}",
@@ -1405,7 +1682,7 @@
     ],
     "triggers": [
       {
-        "id": "15ba1072-78ba-4d31-a258-5a11d6835347",
+        "id": "cb3dd164-30ac-41fc-ae5e-c0279ed3d77c",
         "identifier": "new_message_received",
         "name": "Block Sender Trigger",
         "description": "",
@@ -1474,6 +1751,135 @@
               "title": "From",
               "type": "object"
             },
+            "hashes": {
+              "properties": {
+                "md5_hashes": {
+                  "description": "Extracted MD5 Hashes from message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "MD5 Hashes",
+                  "type": "array"
+                },
+                "sha1_hashes": {
+                  "description": "Extracted SHA1 hashes from message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "SHA1 Hashes",
+                  "type": "array"
+                },
+                "sha256_hashes": {
+                  "description": "Extracted SHA256 hashes from message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 3,
+                  "title": "SHA256 Hashes",
+                  "type": "array"
+                }
+              },
+              "title": "Hashes",
+              "type": "object"
+            },
+            "indicators": {
+              "properties": {
+                "cves": {
+                  "description": "Extracted CVEs from message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 7,
+                  "title": "CVEs",
+                  "type": "array"
+                },
+                "domains": {
+                  "description": "Extracted domains from message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "Domains",
+                  "type": "array"
+                },
+                "email_addresses": {
+                  "description": "Extracted email addresses from message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 3,
+                  "title": "Email Addresses",
+                  "type": "array"
+                },
+                "hashes": {
+                  "$ref": "#/definitions/hashes",
+                  "description": "Extracted hashes from message",
+                  "order": 4,
+                  "title": "Hashes"
+                },
+                "ip_addresses": {
+                  "$ref": "#/definitions/ip_addresses",
+                  "description": "Extracted IP addresses from message",
+                  "order": 5,
+                  "title": "IP Addressses"
+                },
+                "mac_addresses": {
+                  "description": "Extracted MAC addresses from message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 6,
+                  "title": "MAC Addresses",
+                  "type": "array"
+                },
+                "urls": {
+                  "description": "Extracted URLs from message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "URLs",
+                  "type": "array"
+                },
+                "uuids": {
+                  "description": "Extracted UUIDs from message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 8,
+                  "title": "UUIDs",
+                  "type": "array"
+                }
+              },
+              "title": "Indicators",
+              "type": "object"
+            },
+            "ip_addresses": {
+              "properties": {
+                "ipv4_addresses": {
+                  "description": "Extracted IPv4 addressses from message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "IPv4 Addressses",
+                  "type": "array"
+                },
+                "ipv6_addresses": {
+                  "description": "Extracted IPv6 addresses from message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "IPv6 Addressses",
+                  "type": "array"
+                }
+              },
+              "title": "Ip Addresses",
+              "type": "object"
+            },
             "message": {
               "properties": {
                 "body": {
@@ -1486,6 +1892,12 @@
                   "description": "Created date time",
                   "order": 3,
                   "title": "Created Date Time",
+                  "type": "string"
+                },
+                "first_word": {
+                  "description": "Extracted first word from message (easy way to obtain a chat command)",
+                  "order": 9,
+                  "title": "First Word",
                   "type": "string"
                 },
                 "from": {
@@ -1523,8 +1935,21 @@
                   "order": 4,
                   "title": "Web URL",
                   "type": "string"
+                },
+                "words": {
+                  "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 10,
+                  "title": "Words",
+                  "type": "array"
                 }
               },
+              "required": [
+                "words",
+                "first_word"
+              ],
               "title": "Message",
               "type": "object"
             },
@@ -1548,11 +1973,29 @@
             }
           },
           "properties": {
+            "channel_name": {
+              "description": "Name of the channel where the message was posted",
+              "order": 3,
+              "title": "Channel Name",
+              "type": "string"
+            },
+            "indicators": {
+              "$ref": "#/definitions/indicators",
+              "description": "The indicators object that was extracted from message",
+              "order": 2,
+              "title": "Indicators"
+            },
             "message": {
               "$ref": "#/definitions/message",
               "description": "The message object that was created",
               "order": 1,
               "title": "Message"
+            },
+            "team_name": {
+              "description": "Name of the team to which the channel is assigned to",
+              "order": 4,
+              "title": "Team Name",
+              "type": "string"
             }
           },
           "title": "Variables",
@@ -1564,8 +2007,8 @@
           "name": "Microsoft Teams",
           "slugVendor": "rapid7",
           "slugName": "microsoft_teams",
-          "slugVersion": "2.0.4",
-          "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
+          "slugVersion": "3.1.0",
+          "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
         }
       }
     ]

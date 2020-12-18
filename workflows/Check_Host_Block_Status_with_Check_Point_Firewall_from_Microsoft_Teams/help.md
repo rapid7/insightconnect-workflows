@@ -21,7 +21,7 @@ Sample Microsoft Teams Trigger Commands:
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-In the _Check for IP Message_, _IP Blocked Message_, and _IP Not Blocked Message_ steps change the Team Name and Channel Name input from `change_me` to an appropriate team and channel.
+Once the workflow has been imported, **the first Microsoft Teams step will need the team name and channel name updated to suit your Microsoft Teams environment!** Edit the input with the preset text of `change_me` in the first Microsoft Teams step in the workflow.
 
 In the _Check for IP_ step edit the Address Group Name input from `change_me` to an appropriate address group.
 
@@ -35,7 +35,7 @@ Plugins utilized by workflow:
 |----|----|--------|
 |Check Point NGFW|2.0.1|1|
 |HTML|1.2.1|1|
-|Microsoft Teams|2.0.4|3|
+|Microsoft Teams|3.1.0|3|
 
 ## Troubleshooting
 
@@ -43,6 +43,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.2.0 - Replace the preset text of "change_me" with automatic team and channel name extraction in all Microsoft Teams steps except the first one | Update Microsoft Teams to version 3.1.0 | Update documentation
 * 1.1.1 - Update to make the Microsoft Teams plugin the latest version
 * 1.1.0 - Update to make the Check Point NGFW plugin the latest version
 * 1.0.0 - Initial workflow

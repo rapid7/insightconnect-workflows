@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Quarantine_Endpoint_with_CrowdStrike_Falcon_from_Microsoft_Teams
 title: Quarantine Endpoint with CrowdStrike Falcon from Microsoft Teams
 description: Use the simplicity of Microsoft Teams to quarantine and unquarantine endpoints in the form of Device IDs, hostnames, external IP addresses, or MAC addresses with CrowdStrike Falcon.
-version: 1.0.0
+version: 1.0.1
 vendor: rapid7
 support: rapid7
 status: []

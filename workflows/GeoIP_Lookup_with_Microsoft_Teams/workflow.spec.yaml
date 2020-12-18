@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: GeoIP_Lookup_with_Microsoft_Teams
 title: "Geolocate IP Address with IPStack from Microsoft Teams"
 description: Geolocate an IP address using IPStack's geoip database with a simple Microsoft Teams command.
-version: 1.0.1
+version: 1.1.0
 vendor: rapid7
 support: rapid7
 status: []
@@ -16,9 +16,9 @@ resources:
   license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
   screenshots:
   - name: teams1.png
-    title: Completed Job In Microsoft Teams with Valid Input
+    title: Completed Job in Microsoft Teams with Valid Input
   - name: teams2.png
-    title: Completed Job In Microsoft Teams with Invalid input
+    title: Completed Job in Microsoft Teams with Invalid Input
   - name: artifact1.png
     title: Artifacts
   - name: job1.png

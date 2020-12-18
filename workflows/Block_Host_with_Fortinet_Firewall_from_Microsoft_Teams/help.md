@@ -32,9 +32,9 @@ Sample Microsoft Teams Trigger Commands:
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-Once the workflow has been imported, **each Microsoft Teams step will need the team name and channel name updated to suit your Teams environment!** Edit the input with the preset text of `change_me` in each Teams step in the workflow.
+Once the workflow has been imported, **the first Microsoft Teams step will need the team name and channel name updated to suit your Microsoft Teams environment!** Edit the input with the preset text of `change_me` in the first Microsoft Teams step in the workflow.
 
-After configuring the Teams steps, activate the workflow in order to trigger it.
+After configuring the Microsoft Teams steps, activate the workflow in order to trigger it.
  
 An optional whitelist can be added to the FortiGate `Add Host to be Blocked` action. To use this list add IP addresses or domains in the following format `["198.51.100.100", "example.com", "198.51.100.1"]`
 
@@ -56,7 +56,7 @@ Plugins utilized by workflow:
 |----|----|--------|
 |HTML|1.2.2|1|
 |Fortinet FortiGate|5.0.0|4|
-|Microsoft Teams|2.2.1|9|
+|Microsoft Teams|3.1.0|9|
 
 ## Troubleshooting
 
@@ -64,6 +64,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.1.2 - Update Microsoft Teams to version 3.1.0 | Update documentation
 * 1.1.1 - Update plugins to latest versions
 * 1.1.0 - Update workflow to handle block requests for address that already exists | Update workflow to send Teams message when a job failure has occurred
 * 1.0.2 - Help amendments

@@ -1,9 +1,9 @@
 extension: workflow
 products: ["insightconnect"]
 name: Enrich_URL_with_urlscanio_from_Microsoft_Teams
-title: "Enrich URL with urlscan.io from Microsoft Teams"
+title: "Enrich URL with Urlscan.io from Microsoft Teams"
 description: Retrieve the full URLScan.io report of a URL using a command issued from Microsoft Teams.
-version: 1.0.1
+version: 1.1.0
 vendor: rapid7
 support: rapid7
 status: []
@@ -24,8 +24,8 @@ resources:
   - name: workflow2.png
     title: Workflow View
   - name: teams1.png
-    title: Completed Job In Microsoft Teams with Valid Input
+    title: Completed Job in Microsoft Teams with Valid Input
   - name: teams2.png
-    title: Completed Job In Microsoft Teams with Invalid Input
+    title: Completed Job in Microsoft Teams with Invalid Input
   - name: artifact1.png
     title: Final Report Artifact

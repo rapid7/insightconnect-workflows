@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Revoke_User_Session_in_Azure_AD_with_Microsoft_Teams
 title: "Revoke User Session in Azure AD from Microsoft Teams"
 description: "Revoke a user session forcing them to log in after their next page refresh with a command from Microsoft Teams."
-version: 1.0.2
+version: 1.1.0
 vendor: rapid7
 support: rapid7
 status: []

@@ -1,14 +1,14 @@
 {
   "kom": {
-    "komandVersion": "1.49.2-0-gafb52",
+    "komandVersion": "1.72.0-0-ge9d34",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-04-24T18:06:37.027860782Z",
+    "exportedAt": "2020-12-16T17:29:20.47936619Z",
     "workflowVersions": [
       {
         "name": "Post Exchange Phishing Alerts to Microsoft Teams",
         "type": "runnable",
         "version": "",
-        "description": "This workflow will dissect an email and return all potential malicious indicators to Microsoft Teams in a message.",
+        "description": "# Description\n\nThis workflow will dissect an email and return all potential malicious indicators to Microsoft Teams in a message. \n\n# Key Features\n\n* Automatically post potential malicious indicators to Microsoft Teams\n\n# Requirements\n\nThe following connections will need to be setup: \n\n* [Microsoft Exchange](https://insightconnect.help.rapid7.com/docs/microsoft-exchange)\n* [Microsoft Teams](https://insightconnect.help.rapid7.com/docs/microsoft-teams)\n\n# Documentation\n\n## Setup\n\nImport the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect.\nImport plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.\n\nOnce the workflow is successfully imported, edit each Microsoft Teams step to target the channel you would like\nindicators posted to. Change the Email Received trigger inputs to monitor the mailbox and folder where phishing\nemails will be sent. \n\n## Technical Details\n\nPlugins utilized by workflow:\n\n|Plugin|Version|Count|\n|----|----|--------|\n|ExtractIt|2.0.0|4|\n|HashIt|2.0.3|1|\n|String Operations|1.2.1|1|\n|Python 3 Script|2.0.1|1|\n|Microsoft Exchange|5.2.0|1|\n|Microsoft Teams|2.0.4|2|\n\n## Troubleshooting\n\n_There is no troubleshooting information at this time_\n\n# Version History\n\n* 1.0.2 - Update to make Microsoft Teams plugin the latest version\n* 1.0.1 - Change Microsoft Teams input fields to match new standards\n* 1.0.0 - Initial workflow\n\n# Links\n\n## References\n\n* [Microsoft Exchange](https://www.microsoft.com/en-us/microsoft-365/exchange/email)\n* [Microsoft Exchange Setup Guide](https://insightconnect.help.rapid7.com/docs/microsoft-exchange)\n* [Microsoft Teams](https://www.microsoft.com/en-us/microsoft-365/microsoft-teams/group-chat-software)\n* [Microsoft Teams Setup Guide](https://insightconnect.help.rapid7.com/docs/microsoft-teams)\n",
         "graph": {
           "edges": {
             "0b47b07b-24f3-447d-8d26-7c6d91786c09": {
@@ -227,16 +227,7 @@
             "defaultInputJSONSchema": null,
             "defaultOutputJSONSchema": null,
             "outputJSONSchema": {
-              "properties": {
-                "$outputs": {
-                  "items": {
-                    "properties": {},
-                    "type": "object"
-                  },
-                  "title": "$outputs",
-                  "type": "array"
-                }
-              },
+              "properties": {},
               "title": "Variables",
               "type": "object"
             },
@@ -258,16 +249,7 @@
             "defaultInputJSONSchema": null,
             "defaultOutputJSONSchema": null,
             "outputJSONSchema": {
-              "properties": {
-                "$outputs": {
-                  "items": {
-                    "properties": {},
-                    "type": "object"
-                  },
-                  "title": "$outputs",
-                  "type": "array"
-                }
-              },
+              "properties": {},
               "title": "Variables",
               "type": "object"
             },
@@ -288,6 +270,7 @@
             "identifier": "domain_extractor",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "file": "",
@@ -357,6 +340,7 @@
             "identifier": "run",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "function": "def run(params={}):\n    import ast\n\n    if '{{[86311e53-2af3-4ca3-857e-562f43d7d082].[list]}}':\n        list1 = '{{[86311e53-2af3-4ca3-857e-562f43d7d082].[list]}}'\n        list1 = ast.literal_eval(list1)\n    else:\n        list1 = []\n\n    out_list = list(set(list1))\n    out_list.sort()\n    return {\"list\": out_list}",
@@ -461,7 +445,7 @@
                 "subject_query": ""
               }
             },
-            "triggerId": "720d1520-7ffc-4c05-857c-fe7c2456379b",
+            "triggerId": "bcbfbaa0-0b39-4b49-b665-54cfd75f9bc2",
             "defaultInputJSONSchema": {
               "properties": {
                 "flatten_attachments": {
@@ -736,6 +720,7 @@
             "identifier": "url_extractor",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "file": "",
@@ -795,6 +780,7 @@
             "identifier": "split_to_list",
             "continueOnFailure": true,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "delimiter": "\n",
@@ -855,6 +841,7 @@
             "identifier": "domain_extractor",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "file": "",
@@ -924,6 +911,7 @@
             "identifier": "url_extractor",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "file": "",
@@ -977,17 +965,19 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.0.4",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
+              "slugVersion": "3.1.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "channel_name": "change_me",
                 "message_content": "📨  Email Received: Beginning Analysis 📨<br>\n<b>From:</b> {{[6a008e1f-33e2-476d-b292-c98d5faeb1db].[email].[sender]}}<br>\n<b>Subject:</b> {{[6a008e1f-33e2-476d-b292-c98d5faeb1db].[email].[subject]}}\n",
-                "team_name": "change_me"
+                "team_name": "change_me",
+                "thread_id": ""
               }
             },
             "defaultInputJSONSchema": {
@@ -1000,7 +990,7 @@
                 },
                 "message_content": {
                   "description": "HTML content to send",
-                  "order": 3,
+                  "order": 4,
                   "title": "Message Content",
                   "type": "string"
                 },
@@ -1008,6 +998,12 @@
                   "description": "Team name",
                   "order": 1,
                   "title": "Team Name",
+                  "type": "string"
+                },
+                "thread_id": {
+                  "description": "To post in a thread, select parent message ID",
+                  "order": 3,
+                  "title": "Thread ID",
                   "type": "string"
                 }
               },
@@ -1065,6 +1061,12 @@
                       "title": "Created Date Time",
                       "type": "string"
                     },
+                    "first_word": {
+                      "description": "Extracted first word from message (easy way to obtain a chat command)",
+                      "order": 9,
+                      "title": "First Word",
+                      "type": "string"
+                    },
                     "from": {
                       "$ref": "#/definitions/from",
                       "description": "From",
@@ -1100,8 +1102,21 @@
                       "order": 4,
                       "title": "Web URL",
                       "type": "string"
+                    },
+                    "words": {
+                      "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 10,
+                      "title": "Words",
+                      "type": "array"
                     }
                   },
+                  "required": [
+                    "words",
+                    "first_word"
+                  ],
                   "title": "Message",
                   "type": "object"
                 },
@@ -1153,6 +1168,7 @@
             "identifier": "string",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "string": "{{[2d570d0d-f790-4b39-8b8b-052eecde2871].[$item].[content]}}"
@@ -1251,17 +1267,19 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.0.4",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.0.4/icon.png"
+              "slugVersion": "3.1.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "channel_name": "change_me",
                 "message_content": "{{[bf712037-937a-4f6c-8817-22e1801e0bac].[content]}}",
-                "team_name": "change_me"
+                "team_name": "change_me",
+                "thread_id": "{{[9b8a02bc-0127-498b-9ebf-19fb53208542].[message].[id]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -1274,7 +1292,7 @@
                 },
                 "message_content": {
                   "description": "HTML content to send",
-                  "order": 3,
+                  "order": 4,
                   "title": "Message Content",
                   "type": "string"
                 },
@@ -1282,6 +1300,12 @@
                   "description": "Team name",
                   "order": 1,
                   "title": "Team Name",
+                  "type": "string"
+                },
+                "thread_id": {
+                  "description": "To post in a thread, select parent message ID",
+                  "order": 3,
+                  "title": "Thread ID",
                   "type": "string"
                 }
               },
@@ -1339,6 +1363,12 @@
                       "title": "Created Date Time",
                       "type": "string"
                     },
+                    "first_word": {
+                      "description": "Extracted first word from message (easy way to obtain a chat command)",
+                      "order": 9,
+                      "title": "First Word",
+                      "type": "string"
+                    },
                     "from": {
                       "$ref": "#/definitions/from",
                       "description": "From",
@@ -1374,8 +1404,21 @@
                       "order": 4,
                       "title": "Web URL",
                       "type": "string"
+                    },
+                    "words": {
+                      "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 10,
+                      "title": "Words",
+                      "type": "array"
                     }
                   },
+                  "required": [
+                    "words",
+                    "first_word"
+                  ],
                   "title": "Message",
                   "type": "object"
                 },
@@ -1421,7 +1464,7 @@
     ],
     "triggers": [
       {
-        "id": "720d1520-7ffc-4c05-857c-fe7c2456379b",
+        "id": "bcbfbaa0-0b39-4b49-b665-54cfd75f9bc2",
         "identifier": "email_received",
         "name": "Email Received",
         "description": "",

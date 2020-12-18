@@ -23,11 +23,11 @@ Sample Microsoft Teams command:
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-Once the workflow has been imported, **each Microsoft Teams step will need the team name and channel name updated to suit your Teams environment!** Edit the input with the preset text of `change_me` in each Teams step in the workflow.
+Once the workflow has been imported, **the first Microsoft Teams step will need the team name and channel name updated to suit your Microsoft Teams environment!** Edit the input with the preset text of `change_me` in the first Microsoft Teams step in the workflow.
 
-In addition to updating the Teams steps, the `Find DN` step will need the Search Base field to be defined. Edit the workflow, open the `Find DN` step, and provide the appropriate Search Base for your domain. For example, if your domain is `acme.com` then the Search Base would be `DC=acme,DC=com`.
+In addition to updating the Teams step, the `Find DN` step will need the Search Base field to be defined. Edit the workflow, open the `Find DN` step, and provide the appropriate Search Base for your domain. For example, if your domain is `acme.com` then the Search Base would be `DC=acme,DC=com`.
 
-After configuring the Teams steps and the `Find DN` step, activate the workflow in order to trigger it.
+After configuring the Teams step and the `Find DN` step, activate the workflow in order to trigger it.
 
 ### Usage
 
@@ -53,6 +53,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.1.1 - Update documentation
 * 1.1.0 - Use the automatic extraction functionality instead of 'Pattern Match' to extract a username | Update Microsoft Teams to version 3.1.0 | Update Active Directory LDAP to version 4.0.3 | Improve workflow messaging | Add link to AD LDAP connection configuration in Requirements | Update screenshots
 * 1.0.3 - Update Active Directory LDAP to version 4.0.1
 * 1.0.2 - Update to make Microsoft Teams plugin the latest version

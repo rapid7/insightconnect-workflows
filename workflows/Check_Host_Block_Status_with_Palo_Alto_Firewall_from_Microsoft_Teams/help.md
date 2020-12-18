@@ -27,7 +27,7 @@ Sample Microsoft Teams Trigger Commands:
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-In the Microsoft Teams steps change the Team and Channel from `change_me` to the channel you would like to monitor.
+Once the workflow has been imported, **the first Microsoft Teams step will need the team name and channel name updated to suit your Microsoft Teams environment!** Edit the input with the preset text of `change_me` in the first Microsoft Teams step in the workflow.
 
 To run the workflow, enter a message such as `!block-status 198.51.100.100`. 
 
@@ -43,7 +43,7 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Microsoft Teams|2.2.1|6|
+|Microsoft Teams|3.1.0|6|
 |Type Converter|1.6.0|1|
 |Palo Alto Firewall|6.0.1|1|
 
@@ -54,6 +54,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.2.1 - Update Microsoft Teams to version 3.1.0 | Update documentation
 * 1.2.0 - Add automatic indicator extraction, allow for multiple hosts
 * 1.1.1 - Update Microsoft Teams to the latest version
 * 1.1.0 - Update Palo Alto Firewall to latest version

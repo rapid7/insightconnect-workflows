@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Quarantine_Endpoint_with_Carbon_Black_Cloud_from_Microsoft_Teams
 title: Quarantine Endpoint with VMware Carbon Black Cloud from Microsoft Teams
 description: Use the simplicity of Microsoft Teams to quarantine and unquarantine endpoints in the form of Device IDs, hostnames, or IP addresses with VMware Carbon Black Cloud.
-version: 1.0.1
+version: 1.1.0
 vendor: rapid7
 support: rapid7
 status: []
