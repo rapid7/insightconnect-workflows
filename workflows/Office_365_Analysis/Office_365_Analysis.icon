@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.39.1-0-g39b69",
+    "komandVersion": "1.73.0-0-g930f9",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2019-10-14T14:52:28.085185371Z",
+    "exportedAt": "2020-12-17T22:38:44.28567507Z",
     "workflowVersions": [
       {
         "name": "Office 365 Analysis",
@@ -532,12 +532,13 @@
               "name": "Storage",
               "slugVendor": "rapid7",
               "slugName": "storage",
-              "slugVersion": "1.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg"
+              "slugVersion": "1.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/storage/1.0.1/icon.png"
             },
             "identifier": "store",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "variable_name": "{{[20c2237a-ec86-4eeb-987e-d6e222c6d7e0].[content]}}",
@@ -560,8 +561,8 @@
                 }
               },
               "required": [
-                "variable_name",
-                "variable_value"
+                "variable_value",
+                "variable_name"
               ],
               "title": "Variables",
               "type": "object"
@@ -581,7 +582,8 @@
               "title": "Variables",
               "type": "object"
             },
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg",
+            "outputJSONSchema": null,
+            "defaultImageData": "",
             "connectionType": "ORCHESTRATOR"
           },
           "0df75dc8-0336-43c3-b3d7-18f080a89f19": {
@@ -610,6 +612,7 @@
             },
             "defaultInputJSONSchema": null,
             "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
             "connectionType": "NONE"
           },
@@ -626,6 +629,11 @@
             },
             "defaultInputJSONSchema": null,
             "defaultOutputJSONSchema": null,
+            "outputJSONSchema": {
+              "properties": {},
+              "title": "Variables",
+              "type": "object"
+            },
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/loop.svg",
             "connectionType": "NONE"
           },
@@ -637,8 +645,8 @@
               "name": "Microsoft Office 365 Email",
               "slugVendor": "rapid7",
               "slugName": "microsoft_office365_email",
-              "slugVersion": "4.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_office365_email/4.0.0/icon.png"
+              "slugVersion": "5.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_office365_email/5.0.0/icon.png"
             },
             "identifier": "email_received",
             "continueOnFailure": false,
@@ -652,7 +660,7 @@
                 "subject_query": ""
               }
             },
-            "triggerId": "29c420dd-552a-4615-a944-93bc203c9796",
+            "triggerId": "a9ceac88-5a75-4920-9d01-1e2a46d4be87",
             "defaultInputJSONSchema": {
               "properties": {
                 "flatten_attachments": {
@@ -1074,6 +1082,7 @@
               "title": "Variables",
               "type": "object"
             },
+            "outputJSONSchema": null,
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg",
             "connectionType": "CONNECTION"
           },
@@ -1085,12 +1094,13 @@
               "name": "VirusTotal",
               "slugVendor": "rapid7",
               "slugName": "virustotal",
-              "slugVersion": "5.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/virustotal/5.0.0/icon.png"
+              "slugVersion": "6.0.4",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/virustotal/6.0.4/icon.png"
             },
             "identifier": "scan_url_report",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "url": "{{[f70e0bf7-cac7-4467-be3e-5fa3735ee28f].[$item]}}"
@@ -1180,6 +1190,7 @@
               "title": "Variables",
               "type": "object"
             },
+            "outputJSONSchema": null,
             "defaultImageData": "",
             "connectionType": "CONNECTION"
           },
@@ -1197,6 +1208,7 @@
             },
             "defaultInputJSONSchema": null,
             "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
             "connectionType": "NONE"
           },
@@ -1214,6 +1226,7 @@
             },
             "defaultInputJSONSchema": null,
             "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
             "connectionType": "NONE"
           },
@@ -1225,12 +1238,13 @@
               "name": "Basename",
               "slugVendor": "rapid7",
               "slugName": "basename",
-              "slugVersion": "1.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/basename/1.0.0/icon.png"
+              "slugVersion": "1.1.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/basename/1.1.0/icon.png"
             },
             "identifier": "basename",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "path": "{{[$job].[URL]}}"
@@ -1263,6 +1277,7 @@
               "title": "Variables",
               "type": "object"
             },
+            "outputJSONSchema": null,
             "defaultImageData": "",
             "connectionType": "ORCHESTRATOR"
           },
@@ -1280,6 +1295,7 @@
             },
             "defaultInputJSONSchema": null,
             "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
             "connectionType": "NONE"
           },
@@ -1297,6 +1313,7 @@
             },
             "defaultInputJSONSchema": null,
             "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
             "connectionType": "NONE"
           },
@@ -1308,12 +1325,13 @@
               "name": "VirusTotal",
               "slugVendor": "rapid7",
               "slugName": "virustotal",
-              "slugVersion": "5.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/virustotal/5.0.0/icon.png"
+              "slugVersion": "6.0.4",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/virustotal/6.0.4/icon.png"
             },
             "identifier": "scan_url",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "url": "{{[f70e0bf7-cac7-4467-be3e-5fa3735ee28f].[$item]}}"
@@ -1373,6 +1391,7 @@
               "title": "Variables",
               "type": "object"
             },
+            "outputJSONSchema": null,
             "defaultImageData": "",
             "connectionType": "CONNECTION"
           },
@@ -1390,6 +1409,7 @@
             },
             "defaultInputJSONSchema": null,
             "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
             "connectionType": "NONE"
           },
@@ -1407,6 +1427,7 @@
             },
             "defaultInputJSONSchema": null,
             "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
             "connectionType": "NONE"
           },
@@ -1423,6 +1444,11 @@
             },
             "defaultInputJSONSchema": null,
             "defaultOutputJSONSchema": null,
+            "outputJSONSchema": {
+              "properties": {},
+              "title": "Variables",
+              "type": "object"
+            },
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/loop.svg",
             "connectionType": "NONE"
           },
@@ -1440,6 +1466,7 @@
             },
             "defaultInputJSONSchema": null,
             "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
             "connectionType": "NONE"
           },
@@ -1451,12 +1478,13 @@
               "name": "ExtractIt",
               "slugVendor": "rapid7",
               "slugName": "extractit",
-              "slugVersion": "1.1.6",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/extractit/1.1.6/icon.png"
+              "slugVersion": "2.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/extractit/2.0.0/icon.png"
             },
             "identifier": "url_extractor",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "file": "",
@@ -1498,6 +1526,7 @@
               "title": "Variables",
               "type": "object"
             },
+            "outputJSONSchema": null,
             "defaultImageData": "",
             "connectionType": "ORCHESTRATOR"
           },
@@ -1527,6 +1556,7 @@
             },
             "defaultInputJSONSchema": null,
             "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
             "connectionType": "NONE"
           },
@@ -1538,12 +1568,13 @@
               "name": "Microsoft Office365 Email Security",
               "slugVendor": "rapid7",
               "slugName": "microsoft_office365_email_security",
-              "slugVersion": "2.1.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_office365_email_security/2.1.0/icon.png"
+              "slugVersion": "2.2.2",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_office365_email_security/2.2.2/icon.png"
             },
             "identifier": "mass_search_and_purge",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "compliance_search_name": "Search for {{[17edb1e0-ffca-4ff7-ad48-adbd19429a29].[icon_email].[flattened_attached_emails].[0].[subject]}}",
@@ -1603,6 +1634,7 @@
               "title": "Variables",
               "type": "object"
             },
+            "outputJSONSchema": null,
             "defaultImageData": "",
             "connectionType": "CONNECTION"
           },
@@ -1640,6 +1672,7 @@
             },
             "defaultInputJSONSchema": null,
             "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
             "connectionType": "NONE"
           },
@@ -1657,6 +1690,7 @@
             },
             "defaultInputJSONSchema": null,
             "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
             "connectionType": "NONE"
           },
@@ -1686,6 +1720,7 @@
             },
             "defaultInputJSONSchema": null,
             "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
             "connectionType": "NONE"
           },
@@ -1697,12 +1732,13 @@
               "name": "Microsoft Office 365 Email",
               "slugVendor": "rapid7",
               "slugName": "microsoft_office365_email",
-              "slugVersion": "4.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_office365_email/4.0.0/icon.png"
+              "slugVersion": "5.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_office365_email/5.0.0/icon.png"
             },
             "identifier": "send_email",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "attachment": {
@@ -1820,6 +1856,7 @@
               "title": "Variables",
               "type": "object"
             },
+            "outputJSONSchema": null,
             "defaultImageData": "",
             "connectionType": "CONNECTION"
           },
@@ -1831,12 +1868,13 @@
               "name": "Storage",
               "slugVendor": "rapid7",
               "slugName": "storage",
-              "slugVersion": "1.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg"
+              "slugVersion": "1.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/storage/1.0.1/icon.png"
             },
             "identifier": "store",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "variable_name": "{{[20c2237a-ec86-4eeb-987e-d6e222c6d7e0].[content]}}",
@@ -1859,8 +1897,8 @@
                 }
               },
               "required": [
-                "variable_name",
-                "variable_value"
+                "variable_value",
+                "variable_name"
               ],
               "title": "Variables",
               "type": "object"
@@ -1880,7 +1918,8 @@
               "title": "Variables",
               "type": "object"
             },
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg",
+            "outputJSONSchema": null,
+            "defaultImageData": "",
             "connectionType": "ORCHESTRATOR"
           },
           "823eb1a5-9ebf-405f-9324-572605d6dd68": {
@@ -1897,6 +1936,7 @@
             },
             "defaultInputJSONSchema": null,
             "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
             "connectionType": "NONE"
           },
@@ -1926,6 +1966,7 @@
             },
             "defaultInputJSONSchema": null,
             "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/break.svg",
             "connectionType": "NONE"
           },
@@ -1943,6 +1984,7 @@
             },
             "defaultInputJSONSchema": null,
             "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
             "connectionType": "NONE"
           },
@@ -1954,12 +1996,13 @@
               "name": "Storage",
               "slugVendor": "rapid7",
               "slugName": "storage",
-              "slugVersion": "1.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg"
+              "slugVersion": "1.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/storage/1.0.1/icon.png"
             },
             "identifier": "store",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "variable_name": "{{[20c2237a-ec86-4eeb-987e-d6e222c6d7e0].[content]}}",
@@ -1975,15 +2018,15 @@
                   "type": "string"
                 },
                 "variable_value": {
-                  "description": "Name of the variable to store",
+                  "description": "Value of the variable to store",
                   "order": 2,
                   "title": "Variable Value",
                   "type": "string"
                 }
               },
               "required": [
-                "variable_name",
-                "variable_value"
+                "variable_value",
+                "variable_name"
               ],
               "title": "Variables",
               "type": "object"
@@ -2003,7 +2046,8 @@
               "title": "Variables",
               "type": "object"
             },
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg",
+            "outputJSONSchema": null,
+            "defaultImageData": "",
             "connectionType": "ORCHESTRATOR"
           },
           "a783f2be-fcf7-4f47-a4b5-8167ce048c1d": {
@@ -2032,6 +2076,7 @@
             },
             "defaultInputJSONSchema": null,
             "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/break.svg",
             "connectionType": "NONE"
           },
@@ -2043,12 +2088,13 @@
               "name": "Storage",
               "slugVendor": "rapid7",
               "slugName": "storage",
-              "slugVersion": "1.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg"
+              "slugVersion": "1.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/storage/1.0.1/icon.png"
             },
             "identifier": "retrieve",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "variable_name": "{{[20c2237a-ec86-4eeb-987e-d6e222c6d7e0].[content]}}"
@@ -2084,7 +2130,8 @@
               "title": "Variables",
               "type": "object"
             },
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg",
+            "outputJSONSchema": null,
+            "defaultImageData": "",
             "connectionType": "ORCHESTRATOR"
           },
           "aaebce98-efac-456a-b2a9-2eacbf70858a": {
@@ -2113,6 +2160,7 @@
             },
             "defaultInputJSONSchema": null,
             "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/break.svg",
             "connectionType": "NONE"
           },
@@ -2124,12 +2172,13 @@
               "name": "HashIt",
               "slugVendor": "rapid7",
               "slugName": "hashit",
-              "slugVersion": "2.0.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/hashit/2.0.1/icon.png"
+              "slugVersion": "2.0.4",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/hashit/2.0.4/icon.png"
             },
             "identifier": "bytes",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "bytes": "{{[5476f0ac-2e67-40c5-a2b9-e26dd2fba99d].[$item].[content]}}"
@@ -2182,6 +2231,7 @@
               "title": "Variables",
               "type": "object"
             },
+            "outputJSONSchema": null,
             "defaultImageData": "",
             "connectionType": "ORCHESTRATOR"
           },
@@ -2193,12 +2243,13 @@
               "name": "Hybrid Analysis",
               "slugVendor": "rapid7",
               "slugName": "hybrid_analysis",
-              "slugVersion": "2.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/hybrid_analysis/2.0.0/icon.png"
+              "slugVersion": "2.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/hybrid_analysis/2.0.1/icon.png"
             },
             "identifier": "lookup_hash",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "hash": "{{[b56a1357-8ddb-43b5-af81-6592c15e30e4].[sha256]}}"
@@ -2379,6 +2430,7 @@
               "title": "Variables",
               "type": "object"
             },
+            "outputJSONSchema": null,
             "defaultImageData": "",
             "connectionType": "CONNECTION"
           },
@@ -2390,12 +2442,13 @@
               "name": "Storage",
               "slugVendor": "rapid7",
               "slugName": "storage",
-              "slugVersion": "1.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg"
+              "slugVersion": "1.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/storage/1.0.1/icon.png"
             },
             "identifier": "retrieve",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "variable_name": "{{[20c2237a-ec86-4eeb-987e-d6e222c6d7e0].[content]}}"
@@ -2431,7 +2484,8 @@
               "title": "Variables",
               "type": "object"
             },
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg",
+            "outputJSONSchema": null,
+            "defaultImageData": "",
             "connectionType": "ORCHESTRATOR"
           },
           "e44548ff-3920-4b39-a193-c8edb4f6c117": {
@@ -2442,12 +2496,13 @@
               "name": "Microsoft Office365 Email Security",
               "slugVendor": "rapid7",
               "slugName": "microsoft_office365_email_security",
-              "slugVersion": "2.1.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_office365_email_security/2.1.0/icon.png"
+              "slugVersion": "2.2.2",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_office365_email_security/2.2.2/icon.png"
             },
             "identifier": "block_sender_transport_rule",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "domain_or_email_to_block": "{{[17edb1e0-ffca-4ff7-ad48-adbd19429a29].[icon_email].[flattened_attached_emails].[0].[sender]}}",
@@ -2492,6 +2547,7 @@
               "title": "Variables",
               "type": "object"
             },
+            "outputJSONSchema": null,
             "defaultImageData": "",
             "connectionType": "CONNECTION"
           },
@@ -2529,6 +2585,7 @@
             },
             "defaultInputJSONSchema": null,
             "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
             "connectionType": "NONE"
           },
@@ -2546,6 +2603,7 @@
             },
             "defaultInputJSONSchema": null,
             "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
             "connectionType": "NONE"
           },
@@ -2562,6 +2620,11 @@
             },
             "defaultInputJSONSchema": null,
             "defaultOutputJSONSchema": null,
+            "outputJSONSchema": {
+              "properties": {},
+              "title": "Variables",
+              "type": "object"
+            },
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/loop.svg",
             "connectionType": "NONE"
           }
@@ -2573,7 +2636,7 @@
     ],
     "triggers": [
       {
-        "id": "29c420dd-552a-4615-a944-93bc203c9796",
+        "id": "a9ceac88-5a75-4920-9d01-1e2a46d4be87",
         "identifier": "email_received",
         "name": "Office 365 New Email Trigger",
         "description": "",
@@ -3011,8 +3074,8 @@
           "name": "Microsoft Office 365 Email",
           "slugVendor": "rapid7",
           "slugName": "microsoft_office365_email",
-          "slugVersion": "4.0.0",
-          "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_office365_email/4.0.0/icon.png"
+          "slugVersion": "5.0.0",
+          "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_office365_email/5.0.0/icon.png"
         }
       }
     ]
