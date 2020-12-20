@@ -15,6 +15,7 @@ Sample Microsoft Teams Trigger Commands:
 # Requirements
 
 * [Microsoft Teams](https://insightconnect.help.rapid7.com/docs/microsoft-teams)
+* InsightConnect License
 * Azure AD connection
 
 # Documentation
