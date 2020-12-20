@@ -23,9 +23,9 @@ Sample Microsoft Teams Trigger Commands:
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-Once the workflow has been imported, **each Microsoft Teams step will need the team name and channel name updated to suit your Teams environment!** Edit the input with the preset text of `change_me` in each Teams step in the workflow.
+Once the workflow has been imported, **the first Microsoft Teams step will need the team name and channel name updated to suit your Teams environment!** Edit the input with the preset text of `change_me` in the first Microsoft Teams step in the workflow.
 
-After configuring the Teams steps and the `Find DN` step, activate the workflow in order to trigger it.
+After configuring the Teams step, activate the workflow in order to trigger it.
 
 ### Usage
 
@@ -42,9 +42,8 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Microsoft Teams|2.0.4|2|
-|ExtractIt|2.0.0|1|
-|Azure AD Admin|2.1.1|1|
+|Microsoft Teams|3.1.0|5|
+|Azure AD Admin|2.2.3|1|
 
 ## Troubleshooting
 
@@ -52,6 +51,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.6 - Update to newest plugin versions | Update the message formatting and error handling | Update documentation
 * 1.0.5 - Update to make Microsoft Teams plugin the latest version
 * 1.0.4 - Update to newest plugin versions | Update to message formatting
 * 1.0.3 - Update to fix trigger syntax and documentation
