@@ -1,6 +1,6 @@
 # Description
 
-This workflow creates solution-based issues in JIRA for each of the top 25 remediations in InsightVM. If there is already an issue open for a given remediation, the workflow updates the existing issue with a current list of impacted assets.
+This workflow checks assets scanned in the last 30 days. For each of the 25 assets with the highest vulnerability score, it creates one solution-based issue in JIRA per vulnerability found. These tickets list the asset(s) affected. If there is already an issue open for a given remediation, the workflow updates the existing issue with a current list of impacted assets.
 
 # Key Features
 
@@ -38,10 +38,11 @@ Plugins utilized by workflow:
 
 ## Troubleshooting
 
-_There is no troubleshooting information at this time_
+This workflow runs daily at 12:00 UTC. Adjust the time as necessary to suit your organization's needs by changing input in "Time in UTC." We recommend running this workflow during off-hours, as it is data and CPU intensive.
 
 # Version History
 
+* 1.1.0 - 
 * 1.0.4 - Update all plugins used by the workflow.
 * 1.0.3 - Updated workflow to better identify and update existing tickets
 * 1.0.2 - Updated documentation
