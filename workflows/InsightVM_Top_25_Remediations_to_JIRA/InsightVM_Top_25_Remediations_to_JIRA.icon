@@ -2469,7 +2469,7 @@
           },
           "cddd299e-9778-4c55-9c8e-c664ed1ed69b": {
             "nodeId": "cddd299e-9778-4c55-9c8e-c664ed1ed69b",
-            "name": "extract IDs",
+            "name": "Extract IDs",
             "type": "loop",
             "continueOnFailure": false,
             "isDisabled": false,
