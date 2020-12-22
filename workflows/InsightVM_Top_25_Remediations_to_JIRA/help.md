@@ -29,7 +29,7 @@ Note: Editing any of the following can significantly increase or decrease the ti
 
 By default, this workflow gets assets scanned in the last 30 days. To alter the limit from 30 days to a different number, edit the `Get Assets Scanned in the Last 30 Days` step. Find the input variable {"match":"all","filters":[{"field":"last-scan-date","operator":"is-within-the-last","value":30}]}. Change the number 30 within this variable to fit the needs of your organization.
 
-To change the limit for number of assets scanned, go to the `Top 25 Remediations` step. Edit the `Asset Limit` field. To change the limit number of vulnerabilities found, you can edit the `Vulnerability limit` Field
+To change the limit for number of assets scanned, go to the `Top 25 Remediations` step. Edit the `Asset Limit` field. The `Vulnerability Limit` field can be adjusted to limit the number of vulnerabilities.
 
 ## Technical Details
 
