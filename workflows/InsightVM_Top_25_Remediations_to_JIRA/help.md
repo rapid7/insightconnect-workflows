@@ -23,7 +23,7 @@ Once the workflow has been downloaded, login to InsightConnect and “Import” 
 * In the "Process Remediations" loop, change the "Search for Existing Issue" step's JQL input. "change_me" must be the name of the project in JIRA that will be searched for issues. 
 * In the "Process Remediations" loop, change the "Create Issue" step's Project input. "change_me" must be the ID of the project in JIRA where the issue will be created.
 
-This workflow runs daily at 12:00 UTC. Adjust the time as necessary to suit your organization's needs by changing input in "Time in UTC." We recommend running this workflow during off-hours, as it is data and CPU intensive.
+This workflow runs daily at 12:00 UTC. Adjust the time as necessary to suit your organization's needs by changing input in "Time in UTC." It is recommended to run this workflow during off-hours, as it is data and CPU-intensive.
 
 Note: Editing any of the following may negatively impact the runtime duration of the workflow.
 
