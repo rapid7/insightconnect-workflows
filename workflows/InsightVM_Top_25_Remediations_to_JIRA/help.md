@@ -25,7 +25,7 @@ Once the workflow has been downloaded, login to InsightConnect and “Import” 
 
 This workflow runs daily at 12:00 UTC. Adjust the time as necessary to suit your organization's needs by changing input in "Time in UTC." We recommend running this workflow during off-hours, as it is data and CPU intensive.
 
-Note: Editing any of the following can significantly increase or decrease the time this workflow takes to run.
+Note: Editing any of the following may negatively impact the runtime duration of the workflow.
 
 By default, this workflow gets assets scanned in the last 30 days. To alter the limit from 30 days to a different number, edit the `Get Assets Scanned in the Last 30 Days` step. Find the input variable {"match":"all","filters":[{"field":"last-scan-date","operator":"is-within-the-last","value":30}]}. Change the number 30 within this variable to fit the needs of your organization.
 
