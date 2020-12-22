@@ -2920,7 +2920,7 @@
           },
           "efed15db-7070-4608-8781-8b9f33019701": {
             "nodeId": "efed15db-7070-4608-8781-8b9f33019701",
-            "name": "Extraction step",
+            "name": "Extraction Step",
             "type": "pattern_match",
             "continueOnFailure": false,
             "isDisabled": false,
