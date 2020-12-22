@@ -1,6 +1,6 @@
 # Description
 
-This workflow checks assets scanned in the last 30 days. For each of the 25 assets with the highest vulnerability score, it creates one solution-based issue in JIRA per vulnerability found. These tickets list the asset(s) affected. If there is already an issue open for a given remediation, the workflow updates the existing issue with a current list of impacted assets.
+This workflow checks assets scanned in the last 30 days. For each of the 25 assets with the highest vulnerability score, it creates one solution-based issue in Jira per vulnerability found. These tickets list the asset(s) affected. If there is already an issue open for a given remediation, the workflow updates the existing issue with a current list of impacted assets.
 
 # Key Features
 
