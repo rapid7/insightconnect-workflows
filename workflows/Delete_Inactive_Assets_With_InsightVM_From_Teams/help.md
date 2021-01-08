@@ -30,8 +30,8 @@ Once you have found the Group ID, move on to configure the Get Inactive Assets s
 ### InsightConnect
 
 Once the workflow has been imported:
-1. Update the first step with the team name and channel name to suit your Microsoft Teams environment by editing the input with the preset text of change_me to match the team and channel to monitor.
-2. Edit the `Get Inactive Assets` step. Insert the `Group ID` into the first input field, replacing the `INSERT_GROUP_ID`, and save the step.
+1. Update the first step with the team name and channel name to suit your Microsoft Teams environment by editing the input with the preset text of `change_me` to match the team and channel to monitor.
+2. Edit the `Get Inactive Assets` step. Insert the `Group ID` into the first input field, replacing the existing number, and save the step.
 3. Activate the workflow in order to trigger it.
 
 ## Technical Details
