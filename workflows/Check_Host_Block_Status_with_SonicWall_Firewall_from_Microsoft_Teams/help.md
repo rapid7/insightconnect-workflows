@@ -39,7 +39,7 @@ Plugins utilized by workflow:
 |----|----|--------|
 |SonicWall Firewall|1.3.0|1|
 |Type Converter|1.6.1|1|
-|Microsoft Teams|3.1.0|7|
+|Microsoft Teams|3.1.0|6|
 
 ## Troubleshooting
 
