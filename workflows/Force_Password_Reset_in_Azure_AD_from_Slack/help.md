@@ -24,6 +24,8 @@ Sample Slack Trigger Commands:
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
+Once the workflow has been imported, **the first Slack step will need the channel name updated to suit your Slack environment!** Edit the input with the preset text of `change_me` in the first Slack step in the workflow.
+
 After importing, activate the workflow in order to trigger it.
 
 ### Usage
@@ -46,8 +48,7 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|ExtractIt|2.0.0|1|
-|Azure AD Admin|1.4.1|1|
+|Azure AD Admin|2.2.3|1|
 
 ## Troubleshooting
 
@@ -55,6 +56,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.4 - Update to newest plugin versions | Update the message formatting and error handling | Update documentation
 * 1.0.3 - Updated documentation
 * 1.0.2 - Set "change_me" items in workflow input
 * 1.0.1 - Updated documentation
