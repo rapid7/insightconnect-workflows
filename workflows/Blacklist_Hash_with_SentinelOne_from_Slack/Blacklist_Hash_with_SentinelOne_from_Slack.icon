@@ -1,14 +1,14 @@
 {
   "kom": {
-    "komandVersion": "1.53.3-0-gd1a07",
+    "komandVersion": "1.75.0-0-g0b8f4",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-06-18T16:02:13.754072311Z",
+    "exportedAt": "2021-01-20T19:25:33.048111164Z",
     "workflowVersions": [
       {
         "name": "Blacklist Hash with SentinelOne from Slack",
         "type": "runnable",
         "version": "",
-        "description": "Use the simplicity of Slack to blacklist and unblacklist SHA1 hashes globally with SentinelOne.",
+        "description": "# Description\n\nThis workflow blacklists or unblacklists a SHA1 globally for all operating systems with SentinelOne via Slack command and reports information back to Slack.\n\nSample Slack Trigger Commands:\n\n`@Rapid7 InsightConnect blacklist-hash 02699626f388ed830012e5b787640e71c56d42d8`\n\n`@Rapid7 InsightConnect unblacklist-hash 02699626f388ed830012e5b787640e71c56d42d8`\n\nThe hashes will show up on the \"Blacklist\" tab from the \"Sentinels\" page on the main menu in the SentinelOne console.\n\n# Key Features\n\n* Blacklist a hash globally\n\n# Requirements\n\n* [Slack](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops)\n* SentinelOne account with permission to manage blacklist\n\n# Documentation\n\n## Setup\n\nImport the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.\n\nOnce the workflow has been imported, **Update the first step with the channel name to suit your Slack environment!** by editing the input with the preset text of `change_me` to match the channel to monitor.\n\nAfter configuring the Slack steps, activate the workflow in order to trigger it.\n \n## Technical Details\n\nPlugins utilized by workflow:\n\n|Plugin|Version|Count|\n|----|----|--------|\n|SentinelOne|1.4.0|2|\n\n## Troubleshooting\n\n_There is no troubleshooting information at this time_\n\n# Version History\n\n* 1.0.2 - Pass channel name from trigger to all subsequent steps so user only has to configure channel once\n* 1.0.1 - Add Job URL to failure messages\n* 1.0.0 - Initial workflow\n\n# Links\n\n## References\n\n* [SentinelOne](https://www.sentinelone.com/)\n* [SentinelOne plugin](https://extensions.rapid7.com/extension/sentinelone)\n* [Slack](https://slack.com)\n",
         "graph": {
           "edges": {
             "013f1bed-57f4-44bf-8ea7-36f73e62343a": {
@@ -416,12 +416,13 @@
               "name": "SentinelOne",
               "slugVendor": "rapid7",
               "slugName": "sentinelone",
-              "slugVersion": "1.4.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/sentinelone/1.4.0/icon.png"
+              "slugVersion": "5.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/sentinelone/5.0.0/icon.png"
             },
             "identifier": "blacklist",
-            "continueOnFailure": true,
+            "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "blacklist_state": true,
@@ -735,12 +736,13 @@
               "name": "SentinelOne",
               "slugVendor": "rapid7",
               "slugName": "sentinelone",
-              "slugVersion": "1.4.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/sentinelone/1.4.0/icon.png"
+              "slugVersion": "5.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/sentinelone/5.0.0/icon.png"
             },
             "identifier": "blacklist",
-            "continueOnFailure": true,
+            "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "blacklist_state": false,
@@ -940,13 +942,29 @@
                   "edgeId": "680e60b9-5c6e-49a8-8d17-9da0d23d1f42",
                   "expression": {
                     "left": {
-                      "name": "a62306f8-17fb-4ab7-8228-348bd1433df7.action",
-                      "type": "variable"
+                      "left": {
+                        "name": "a62306f8-17fb-4ab7-8228-348bd1433df7.action",
+                        "type": "variable"
+                      },
+                      "op": "=",
+                      "right": {
+                        "type": "literal",
+                        "value": "unblacklist-hash"
+                      },
+                      "type": "binary"
                     },
-                    "op": "=",
+                    "op": "OR",
                     "right": {
-                      "type": "literal",
-                      "value": "unblacklist-hash"
+                      "left": {
+                        "name": "a62306f8-17fb-4ab7-8228-348bd1433df7.action",
+                        "type": "variable"
+                      },
+                      "op": "=",
+                      "right": {
+                        "type": "literal",
+                        "value": "!unblacklist-hash"
+                      },
+                      "type": "binary"
                     },
                     "type": "binary"
                   },
@@ -1021,7 +1039,7 @@
                 "type": "any"
               }
             },
-            "triggerId": "d0b21506-e44c-488e-95c0-7c065362766b",
+            "triggerId": "e9480d59-a487-4509-bfd8-a5abf840c3e9",
             "defaultInputJSONSchema": {
               "properties": {
                 "matchChannel": {
@@ -1057,6 +1075,126 @@
             },
             "defaultOutputJSONSchema": {
               "definitions": {
+                "hashes": {
+                  "properties": {
+                    "md5_hashes": {
+                      "description": "MD5 hashes found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 1,
+                      "title": "MD5 Hashes",
+                      "type": "array"
+                    },
+                    "sha1_hashes": {
+                      "description": "SHA1 hashes found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "SHA1 Hashes",
+                      "type": "array"
+                    },
+                    "sha256_hashes": {
+                      "description": "SHA256 hashes found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 3,
+                      "title": "SHA256 Hashes",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Hashes",
+                  "type": "object"
+                },
+                "indicators": {
+                  "properties": {
+                    "domains": {
+                      "description": "Domains found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 1,
+                      "title": "Domains",
+                      "type": "array"
+                    },
+                    "email_addresses": {
+                      "description": "Email addresses found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 4,
+                      "title": "Email Addresses",
+                      "type": "array"
+                    },
+                    "hashes": {
+                      "$ref": "#/definitions/hashes",
+                      "description": "Hashes found within the message",
+                      "order": 5,
+                      "title": "Hashes"
+                    },
+                    "ip_addresses": {
+                      "$ref": "#/definitions/ip_addresses",
+                      "description": "IP addresses found within the message",
+                      "order": 7,
+                      "title": "IP Addresses"
+                    },
+                    "mac_addresses": {
+                      "description": "MAC addresses found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 6,
+                      "title": "MAC Addresses",
+                      "type": "array"
+                    },
+                    "parent_domains": {
+                      "description": "Parent domains found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "Parent Domains",
+                      "type": "array"
+                    },
+                    "urls": {
+                      "description": "URLs found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 3,
+                      "title": "URLs",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Indicators",
+                  "type": "object"
+                },
+                "ip_addresses": {
+                  "properties": {
+                    "ipv4_addresses": {
+                      "description": "IPv4 addresses found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 1,
+                      "title": "IPv4 Addresses",
+                      "type": "array"
+                    },
+                    "ipv6_addresses": {
+                      "description": "IPv6 addresses found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "IPv6 Addresses",
+                      "type": "array"
+                    }
+                  },
+                  "title": "IP Addresses",
+                  "type": "object"
+                },
                 "message": {
                   "properties": {
                     "channel": {
@@ -1070,6 +1208,18 @@
                       "order": 4,
                       "title": "Channel ID",
                       "type": "string"
+                    },
+                    "first_word": {
+                      "description": "First word of the message, for example a chat command (ignoring mentions)",
+                      "order": 5,
+                      "title": "First Word",
+                      "type": "string"
+                    },
+                    "indicators": {
+                      "$ref": "#/definitions/indicators",
+                      "description": "Potential threat indicators found within the message",
+                      "order": 7,
+                      "title": "Indicators"
                     },
                     "text": {
                       "description": "Text",
@@ -1094,6 +1244,15 @@
                       "order": 2,
                       "title": "User ID",
                       "type": "string"
+                    },
+                    "words": {
+                      "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 6,
+                      "title": "Words",
+                      "type": "array"
                     }
                   },
                   "title": "Message",
@@ -1378,12 +1537,15 @@
         },
         "tags": null,
         "humanCostSeconds": 0,
-        "humanCostDisplayUnit": ""
+        "humanCostDisplayUnit": "",
+        "parameters": {
+          "definitionSchema": null
+        }
       }
     ],
     "triggers": [
       {
-        "id": "d0b21506-e44c-488e-95c0-7c065362766b",
+        "id": "e9480d59-a487-4509-bfd8-a5abf840c3e9",
         "name": "Blacklist Request",
         "description": "Slack message that triggers if a blacklist-hash command is found",
         "input": {
@@ -1426,6 +1588,126 @@
         },
         "outputJsonSchema": {
           "definitions": {
+            "hashes": {
+              "properties": {
+                "md5_hashes": {
+                  "description": "MD5 hashes found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "MD5 Hashes",
+                  "type": "array"
+                },
+                "sha1_hashes": {
+                  "description": "SHA1 hashes found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "SHA1 Hashes",
+                  "type": "array"
+                },
+                "sha256_hashes": {
+                  "description": "SHA256 hashes found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 3,
+                  "title": "SHA256 Hashes",
+                  "type": "array"
+                }
+              },
+              "title": "Hashes",
+              "type": "object"
+            },
+            "indicators": {
+              "properties": {
+                "domains": {
+                  "description": "Domains found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "Domains",
+                  "type": "array"
+                },
+                "email_addresses": {
+                  "description": "Email addresses found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 4,
+                  "title": "Email Addresses",
+                  "type": "array"
+                },
+                "hashes": {
+                  "$ref": "#/definitions/hashes",
+                  "description": "Hashes found within the message",
+                  "order": 5,
+                  "title": "Hashes"
+                },
+                "ip_addresses": {
+                  "$ref": "#/definitions/ip_addresses",
+                  "description": "IP addresses found within the message",
+                  "order": 7,
+                  "title": "IP Addresses"
+                },
+                "mac_addresses": {
+                  "description": "MAC addresses found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 6,
+                  "title": "MAC Addresses",
+                  "type": "array"
+                },
+                "parent_domains": {
+                  "description": "Parent domains found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "Parent Domains",
+                  "type": "array"
+                },
+                "urls": {
+                  "description": "URLs found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 3,
+                  "title": "URLs",
+                  "type": "array"
+                }
+              },
+              "title": "Indicators",
+              "type": "object"
+            },
+            "ip_addresses": {
+              "properties": {
+                "ipv4_addresses": {
+                  "description": "IPv4 addresses found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "IPv4 Addresses",
+                  "type": "array"
+                },
+                "ipv6_addresses": {
+                  "description": "IPv6 addresses found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "IPv6 Addresses",
+                  "type": "array"
+                }
+              },
+              "title": "IP Addresses",
+              "type": "object"
+            },
             "message": {
               "properties": {
                 "channel": {
@@ -1439,6 +1721,18 @@
                   "order": 4,
                   "title": "Channel ID",
                   "type": "string"
+                },
+                "first_word": {
+                  "description": "First word of the message, for example a chat command (ignoring mentions)",
+                  "order": 5,
+                  "title": "First Word",
+                  "type": "string"
+                },
+                "indicators": {
+                  "$ref": "#/definitions/indicators",
+                  "description": "Potential threat indicators found within the message",
+                  "order": 7,
+                  "title": "Indicators"
                 },
                 "text": {
                   "description": "Text",
@@ -1463,6 +1757,15 @@
                   "order": 2,
                   "title": "User ID",
                   "type": "string"
+                },
+                "words": {
+                  "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 6,
+                  "title": "Words",
+                  "type": "array"
                 }
               },
               "title": "Message",

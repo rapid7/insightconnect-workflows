@@ -35,7 +35,7 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|SentinelOne|1.4.0|2|
+|SentinelOne|5.0.0|2|
 
 ## Troubleshooting
 
@@ -43,6 +43,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.3 - Update to use latest SentinelOne plugin
 * 1.0.2 - Pass channel name from trigger to all subsequent steps so user only has to configure channel once
 * 1.0.1 - Add Job URL to failure messages
 * 1.0.0 - Initial workflow
