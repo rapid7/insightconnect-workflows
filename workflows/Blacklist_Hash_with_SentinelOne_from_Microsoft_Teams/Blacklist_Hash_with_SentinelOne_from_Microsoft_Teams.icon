@@ -498,8 +498,8 @@
               "name": "SentinelOne",
               "slugVendor": "rapid7",
               "slugName": "sentinelone",
-              "slugVersion": "1.4.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/sentinelone/1.4.0/icon.png"
+              "slugVersion": "5.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/sentinelone/5.0.0/icon.png"
             },
             "identifier": "blacklist",
             "continueOnFailure": true,
@@ -1123,8 +1123,8 @@
               "name": "SentinelOne",
               "slugVendor": "rapid7",
               "slugName": "sentinelone",
-              "slugVersion": "1.4.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/sentinelone/1.4.0/icon.png"
+              "slugVersion": "5.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/sentinelone/5.0.0/icon.png"
             },
             "identifier": "blacklist",
             "continueOnFailure": true,
