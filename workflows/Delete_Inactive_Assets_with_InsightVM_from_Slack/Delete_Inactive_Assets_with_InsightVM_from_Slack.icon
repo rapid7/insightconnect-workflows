@@ -1460,7 +1460,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "matchChannel": "#change_me",
+                "matchChannel": "change_me",
                 "matchText": "!delete_inactive_assets",
                 "type": "any"
               }
