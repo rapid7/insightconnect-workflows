@@ -2,7 +2,7 @@ extension: workflow
 products: ["insightconnect", "insightvm"]
 name: Delete_Inactive_Assets_with_InsightVM_from_Slack
 title: "Delete Inactive Assets with InsightVM from Slack"
-description: Quickly look up inactive assets in Rapid7 InsightVM from Slack, and make a decision to delete them. This workflow helps teams maintain a clean and accurate count of assets in their environment through shared Microsoft Teams channels.
+description: Quickly look up inactive assets in Rapid7 InsightVM from Slack, and make a decision to delete them. This workflow helps teams maintain a clean and accurate count of assets in their environment through shared Slack channels.
 version: 1.0.0
 vendor: rapid7
 support: rapid7
