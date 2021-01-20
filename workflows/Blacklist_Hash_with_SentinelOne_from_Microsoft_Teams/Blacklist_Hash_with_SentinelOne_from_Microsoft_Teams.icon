@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.53.3-0-gd1a07",
+    "komandVersion": "1.75.0-0-g0b8f4",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-06-22T00:39:50.829070156Z",
+    "exportedAt": "2021-01-20T19:36:52.602670705Z",
     "workflowVersions": [
       {
         "name": "Blacklist Hash with SentinelOne from Microsoft Teams",
@@ -504,6 +504,7 @@
             "identifier": "blacklist",
             "continueOnFailure": true,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "blacklist_state": true,
@@ -574,6 +575,7 @@
             "identifier": "send_html_message",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "channel_name": "change_me",
@@ -762,6 +764,7 @@
             "identifier": "send_html_message",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "channel_name": "change_me",
@@ -959,6 +962,7 @@
             "identifier": "send_html_message",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "channel_name": "change_me",
@@ -1129,6 +1133,7 @@
             "identifier": "blacklist",
             "continueOnFailure": true,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "blacklist_state": false,
@@ -1331,6 +1336,7 @@
             "identifier": "send_message",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "channel_name": "change_me",
@@ -1501,6 +1507,7 @@
             "identifier": "send_html_message",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "channel_name": "change_me",
@@ -1671,6 +1678,7 @@
             "identifier": "send_html_message",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "channel_name": "change_me",
@@ -1848,7 +1856,7 @@
                 "team_name": "change_me"
               }
             },
-            "triggerId": "2375d60a-8335-41ef-b273-5df2bc953cfa",
+            "triggerId": "c667799b-dfec-4407-b715-7dd439660856",
             "defaultInputJSONSchema": {
               "properties": {
                 "channel_name": {
@@ -2085,6 +2093,7 @@
             "identifier": "send_html_message",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "channel_name": "change_me",
@@ -2262,12 +2271,15 @@
         },
         "tags": null,
         "humanCostSeconds": 0,
-        "humanCostDisplayUnit": ""
+        "humanCostDisplayUnit": "",
+        "parameters": {
+          "definitionSchema": null
+        }
       }
     ],
     "triggers": [
       {
-        "id": "2375d60a-8335-41ef-b273-5df2bc953cfa",
+        "id": "c667799b-dfec-4407-b715-7dd439660856",
         "identifier": "new_message_received",
         "name": "Blacklist Request",
         "description": "",
