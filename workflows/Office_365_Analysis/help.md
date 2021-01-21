@@ -34,14 +34,15 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Basename|1.0.0|1|
-|ExtractIt|1.1.6|1|
-|HashIt|2.0.1|1|
-|Hybrid Analysis|2.0.0|1|
-|Microsoft Office 365 Email|4.0.0|3|
-|Microsoft Office 365 Email Security|2.1.0|2|
-|Storage|1.0.0|5|
-|VirusTotal|5.0.0|2|
+|Datetime|2.2.0|2|
+|ExtractIt|2.0.0|3|
+|HashIt|2.0.4|1|
+|Hybrid Analysis|2.0.1|1|
+|Microsoft Office 365 Email|4.0.0|1|
+|Microsoft Office 365 Email|5.0.0|1|
+|Microsoft Office365 Email Security|2.2.3|2|
+|WHOIS|3.0.0|1|
+|VirusTotal|6.0.4|3|
 
 ## Troubleshooting
 
