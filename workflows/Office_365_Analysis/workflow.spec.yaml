@@ -18,15 +18,15 @@ resources:
   - name: workflow1.png
     title: Workflow View
   - name: workflow2.png
-    title: Workflow View - Analysis Loop
+    title: Workflow Analysis Loop View
   - name: workflow3.png
-    title: Workflow View - URL Analysis Loop
+    title: Workflow URL Analysis Loop View
   - name: workflow4.png
-    title: Workflow View - Domain Lookup Loop
+    title: Workflow Domain Lookup Loop View
   - name: workflow5.png
-    title: Workflow View - Attached File Loop
+    title: Workflow Attached File Loop View
   - name: workflow6.png
-    title: Workflow View - Remediation Loop
+    title: Workflow Remediation Loop View
   - name: artifact1.png
     title: Email Not Malicious Artifact
   - name: artifact2.png
