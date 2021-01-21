@@ -1,14 +1,14 @@
 {
   "kom": {
-    "komandVersion": "1.53.3-0-gd1a07",
+    "komandVersion": "1.74.0-0-g83ccb",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-06-19T20:03:08.4172334Z",
+    "exportedAt": "2021-01-20T14:51:10.260273247Z",
     "workflowVersions": [
       {
         "name": "Quarantine Endpoint with SentinelOne from Slack",
         "type": "runnable",
         "version": "",
-        "description": "This workflow will Quarantine an endpoint in SentinelOne from a Slack command.",
+        "description": "# Description\n\nThis workflow will quarantine and unquarantine an endpoint in SentinelOne from a Slack command. This workflow supports endpoints in the form of Agent IDs, hostnames, MAC addresses, or IP addresses.\n\nSample Slack Trigger Commands:\n\n`@Rapid7 InsightConnect quarantine-endpoint 198.51.100.100`\n\n`@Rapid7 InsightConnect unquarantine-endpoint 198.51.100.100`\n\nUnder the \"Endpoints\" tab from the \"Sentinels\" page on the main menu in the SentinelOne console, the quarantined endpoint will show \"Network status\" as \"Disabled\" after being quarantined.\n\n# Key Features\n\n* Quarantine endpoints\n\n# Requirements\n\n* [Slack](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops)\n* SentinelOne account with permission to manage endpoints\n\n# Documentation\n\n## Setup\n\nImport the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.\n\nOnce the workflow has been imported, **Update the first step with the channel name to suit your Slack environment!** by editing the input with the preset text of `change_me` to match the channel to monitor.\n\nAfter configuring the Slack steps, activate the workflow in order to trigger it.\n \n## Technical Details\n\nPlugins utilized by workflow:\n\n|Plugin|Version|Count|\n|----|----|--------|\n|SentinelOne|1.4.0|2|\n\n## Troubleshooting\n\n_There is no troubleshooting information at this time_\n\n# Version History\n\n* 1.0.2 - Pass channel name from trigger to all subsequent steps so user only has to configure channel once\n* 1.0.1 - Update product vendor text in Slack post\n* 1.0.0 - Initial workflow\n\n# Links\n\n## References\n\n* [SentinelOne](https://www.sentinelone.com/)\n* [SentinelOne plugin](https://extensions.rapid7.com/extension/sentinelone)\n* [Slack](https://slack.com)\n",
         "graph": {
           "edges": {
             "02a2ee9b-b14a-457c-9ddf-880529751293": {
@@ -17,7 +17,7 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "649d9537-1db1-4fba-9b11-1802808cf29f",
-              "toNodeId": "0daf7cf6-a18e-40d3-8716-8fbfd7a52cf9"
+              "toNodeId": "1c26b26e-efe6-4096-a8bb-190937e30569"
             },
             "07eb57b6-c1c4-435b-a0a3-529732a9e24f": {
               "id": "07eb57b6-c1c4-435b-a0a3-529732a9e24f",
@@ -123,14 +123,6 @@
               "fromNodeId": "af8b346d-cd64-4101-9adf-426c2531d9a0",
               "toNodeId": "465d5b8e-ee10-4bc2-9366-a419b07dff01"
             },
-            "c075bd43-18d5-47fa-820e-12ea48bfca70": {
-              "id": "c075bd43-18d5-47fa-820e-12ea48bfca70",
-              "name": "",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "0daf7cf6-a18e-40d3-8716-8fbfd7a52cf9",
-              "toNodeId": "1c26b26e-efe6-4096-a8bb-190937e30569"
-            },
             "cebd40e8-d0a4-4a23-aba8-7fa4db99b2d1": {
               "id": "cebd40e8-d0a4-4a23-aba8-7fa4db99b2d1",
               "name": "",
@@ -203,10 +195,6 @@
             },
             "0b834813-5c61-4734-a8a6-c0d5b4929708": {
               "id": "0b834813-5c61-4734-a8a6-c0d5b4929708",
-              "parentNodeId": ""
-            },
-            "0daf7cf6-a18e-40d3-8716-8fbfd7a52cf9": {
-              "id": "0daf7cf6-a18e-40d3-8716-8fbfd7a52cf9",
               "parentNodeId": ""
             },
             "1c26b26e-efe6-4096-a8bb-190937e30569": {
@@ -424,44 +412,6 @@
             "chatOpsAppName": "slack",
             "chatOpsIdentifier": "post_message"
           },
-          "0daf7cf6-a18e-40d3-8716-8fbfd7a52cf9": {
-            "nodeId": "0daf7cf6-a18e-40d3-8716-8fbfd7a52cf9",
-            "name": "Extract Command",
-            "type": "pattern_match",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "captureAll": false,
-              "expressionText": "<.*> {{action:/.* /}}{{agent:/.*/}}",
-              "expressions": [
-                {
-                  "type": "text",
-                  "value": "<.*> "
-                },
-                {
-                  "type": "variable",
-                  "value": {
-                    "ident": "action",
-                    "regex": ".* "
-                  }
-                },
-                {
-                  "type": "variable",
-                  "value": {
-                    "ident": "agent",
-                    "regex": ".*"
-                  }
-                }
-              ],
-              "ignoreCase": false,
-              "input": "{{[4b8da5e7-5581-4b1b-83de-1c3df275a29d].[message].[text]}}"
-            },
-            "defaultInputJSONSchema": null,
-            "defaultOutputJSONSchema": null,
-            "outputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/pattern-match.svg",
-            "connectionType": "NONE"
-          },
           "1c26b26e-efe6-4096-a8bb-190937e30569": {
             "nodeId": "1c26b26e-efe6-4096-a8bb-190937e30569",
             "name": "Endpoint Provided",
@@ -480,17 +430,23 @@
                   "edgeId": "5be8ffea-9157-49ee-90a5-2d6954f8353a",
                   "expression": {
                     "left": {
-                      "name": "0daf7cf6-a18e-40d3-8716-8fbfd7a52cf9.$matched",
-                      "type": "variable"
+                      "args": [
+                        {
+                          "name": "4b8da5e7-5581-4b1b-83de-1c3df275a29d.message.indicators.ip_addresses.ipv4_addresses",
+                          "type": "variable"
+                        }
+                      ],
+                      "name": "length",
+                      "type": "function"
                     },
-                    "op": "=",
+                    "op": ">",
                     "right": {
                       "type": "literal",
-                      "value": true
+                      "value": 0
                     },
                     "type": "binary"
                   },
-                  "expressionText": "{{[0daf7cf6-a18e-40d3-8716-8fbfd7a52cf9].[$matched]}} = true"
+                  "expressionText": "length({{[4b8da5e7-5581-4b1b-83de-1c3df275a29d].[message].[indicators].[ip_addresses].[ipv4_addresses]}})>0"
                 }
               ]
             },
@@ -656,7 +612,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "The specified endpoint was successfully quarantined!\n\n`{{[0daf7cf6-a18e-40d3-8716-8fbfd7a52cf9].[agent]}}`"
+                "content": "The specified endpoint was successfully quarantined!\n\n`{{[4b8da5e7-5581-4b1b-83de-1c3df275a29d].[message].[words].[1]}}`"
               },
               "type": "markdown"
             },
@@ -674,7 +630,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "The quarantine action failed for `{{[0daf7cf6-a18e-40d3-8716-8fbfd7a52cf9].[agent]}}`.\n\nSomething went wrong while quarantining. Please check the job details for more information. \n\n{{[$job].[URL]}}"
+                "content": "The quarantine action failed for `{{[4b8da5e7-5581-4b1b-83de-1c3df275a29d].[message].[words].[1]}}`.\n\nSomething went wrong while quarantining. Please check the job details for more information. \n\n{{[$job].[URL]}}"
               },
               "type": "markdown"
             },
@@ -693,12 +649,12 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "matchChannel": "change_me",
-                "matchText": "quarantine-endpoint|unquarantine-endpoint",
+                "matchChannel": "",
+                "matchText": "quarantine-sent-endpoint|unquarantine-sent-endpoint",
                 "type": "any"
               }
             },
-            "triggerId": "a5adee20-da9e-4355-a0d2-a748bd204fa7",
+            "triggerId": "6f0c6b23-fb77-41ff-af2b-8a77686e79eb",
             "defaultInputJSONSchema": {
               "properties": {
                 "matchChannel": {
@@ -734,6 +690,126 @@
             },
             "defaultOutputJSONSchema": {
               "definitions": {
+                "hashes": {
+                  "properties": {
+                    "md5_hashes": {
+                      "description": "MD5 hashes found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 1,
+                      "title": "MD5 Hashes",
+                      "type": "array"
+                    },
+                    "sha1_hashes": {
+                      "description": "SHA1 hashes found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "SHA1 Hashes",
+                      "type": "array"
+                    },
+                    "sha256_hashes": {
+                      "description": "SHA256 hashes found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 3,
+                      "title": "SHA256 Hashes",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Hashes",
+                  "type": "object"
+                },
+                "indicators": {
+                  "properties": {
+                    "domains": {
+                      "description": "Domains found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 1,
+                      "title": "Domains",
+                      "type": "array"
+                    },
+                    "email_addresses": {
+                      "description": "Email addresses found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 4,
+                      "title": "Email Addresses",
+                      "type": "array"
+                    },
+                    "hashes": {
+                      "$ref": "#/definitions/hashes",
+                      "description": "Hashes found within the message",
+                      "order": 5,
+                      "title": "Hashes"
+                    },
+                    "ip_addresses": {
+                      "$ref": "#/definitions/ip_addresses",
+                      "description": "IP addresses found within the message",
+                      "order": 7,
+                      "title": "IP Addresses"
+                    },
+                    "mac_addresses": {
+                      "description": "MAC addresses found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 6,
+                      "title": "MAC Addresses",
+                      "type": "array"
+                    },
+                    "parent_domains": {
+                      "description": "Parent domains found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "Parent Domains",
+                      "type": "array"
+                    },
+                    "urls": {
+                      "description": "URLs found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 3,
+                      "title": "URLs",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Indicators",
+                  "type": "object"
+                },
+                "ip_addresses": {
+                  "properties": {
+                    "ipv4_addresses": {
+                      "description": "IPv4 addresses found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 1,
+                      "title": "IPv4 Addresses",
+                      "type": "array"
+                    },
+                    "ipv6_addresses": {
+                      "description": "IPv6 addresses found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "IPv6 Addresses",
+                      "type": "array"
+                    }
+                  },
+                  "title": "IP Addresses",
+                  "type": "object"
+                },
                 "message": {
                   "properties": {
                     "channel": {
@@ -747,6 +823,18 @@
                       "order": 4,
                       "title": "Channel ID",
                       "type": "string"
+                    },
+                    "first_word": {
+                      "description": "First word of the message, for example a chat command (ignoring mentions)",
+                      "order": 5,
+                      "title": "First Word",
+                      "type": "string"
+                    },
+                    "indicators": {
+                      "$ref": "#/definitions/indicators",
+                      "description": "Potential threat indicators found within the message",
+                      "order": 7,
+                      "title": "Indicators"
                     },
                     "text": {
                       "description": "Text",
@@ -771,6 +859,15 @@
                       "order": 2,
                       "title": "User ID",
                       "type": "string"
+                    },
+                    "words": {
+                      "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 6,
+                      "title": "Words",
+                      "type": "array"
                     }
                   },
                   "title": "Message",
@@ -820,7 +917,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "The specified endpoint was successfully unquarantined!\n\n`{{[0daf7cf6-a18e-40d3-8716-8fbfd7a52cf9].[agent]}}`"
+                "content": "The specified endpoint was successfully unquarantined!\n\n`{{[4b8da5e7-5581-4b1b-83de-1c3df275a29d].[message].[words].[1]}}`"
               },
               "type": "markdown"
             },
@@ -917,17 +1014,17 @@
                   "edgeId": "0863240b-1df4-4799-8efc-5dfeab43828f",
                   "expression": {
                     "left": {
-                      "name": "0daf7cf6-a18e-40d3-8716-8fbfd7a52cf9.action",
+                      "name": "4b8da5e7-5581-4b1b-83de-1c3df275a29d.message.first_word",
                       "type": "variable"
                     },
-                    "op": "=",
+                    "op": "contains",
                     "right": {
                       "type": "literal",
-                      "value": "unquarantine-endpoint "
+                      "value": "unquarantine"
                     },
                     "type": "binary"
                   },
-                  "expressionText": "{{[0daf7cf6-a18e-40d3-8716-8fbfd7a52cf9].[action]}} = \"unquarantine-endpoint \""
+                  "expressionText": "{{[4b8da5e7-5581-4b1b-83de-1c3df275a29d].[message].[first_word]}} contains \"unquarantine\""
                 },
                 {
                   "edgeId": "d45f5de0-63b8-46c9-b853-480494e5ee0d",
@@ -950,15 +1047,17 @@
               "name": "SentinelOne",
               "slugVendor": "rapid7",
               "slugName": "sentinelone",
-              "slugVersion": "1.4.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/sentinelone/1.4.0/icon.png"
+              "slugVersion": "5.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/sentinelone/5.0.0/icon.png"
             },
             "identifier": "quarantine",
-            "continueOnFailure": true,
+            "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
-                "agent": "{{[0daf7cf6-a18e-40d3-8716-8fbfd7a52cf9].[agent]}}",
+                "agent": "{{[4b8da5e7-5581-4b1b-83de-1c3df275a29d].[message].[words].[1]}}",
+                "case_sensitive": true,
                 "quarantine_state": false,
                 "whitelist": []
               }
@@ -970,6 +1069,13 @@
                   "order": 1,
                   "title": "Agent",
                   "type": "string"
+                },
+                "case_sensitive": {
+                  "default": true,
+                  "description": "Looks up the specified Agent in a case-sensitive manner. Setting this value to false may result in longer run times and unintended results",
+                  "order": 4,
+                  "title": "Case Sensitive",
+                  "type": "boolean"
                 },
                 "quarantine_state": {
                   "description": "True to quarantine host, false to unquarantine host",
@@ -989,7 +1095,8 @@
               },
               "required": [
                 "agent",
-                "quarantine_state"
+                "quarantine_state",
+                "case_sensitive"
               ],
               "title": "Variables",
               "type": "object"
@@ -1191,7 +1298,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "The unquarantine action failed for `{{[0daf7cf6-a18e-40d3-8716-8fbfd7a52cf9].[agent]}}`.\n\nSomething went wrong while unquarantining. Please check the job details for more information. \n\n{{[$job].[URL]}}"
+                "content": "The unquarantine action failed for `{{[4b8da5e7-5581-4b1b-83de-1c3df275a29d].[message].[words].[1]}}`.\n\nSomething went wrong while unquarantining. Please check the job details for more information. \n\n{{[$job].[URL]}}"
               },
               "type": "markdown"
             },
@@ -1227,15 +1334,17 @@
               "name": "SentinelOne",
               "slugVendor": "rapid7",
               "slugName": "sentinelone",
-              "slugVersion": "1.4.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/sentinelone/1.4.0/icon.png"
+              "slugVersion": "5.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/sentinelone/5.0.0/icon.png"
             },
             "identifier": "quarantine",
-            "continueOnFailure": true,
+            "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
-                "agent": "{{[0daf7cf6-a18e-40d3-8716-8fbfd7a52cf9].[agent]}}",
+                "agent": "{{[4b8da5e7-5581-4b1b-83de-1c3df275a29d].[message].[words].[1]}}",
+                "case_sensitive": true,
                 "quarantine_state": true,
                 "whitelist": []
               }
@@ -1247,6 +1356,13 @@
                   "order": 1,
                   "title": "Agent",
                   "type": "string"
+                },
+                "case_sensitive": {
+                  "default": true,
+                  "description": "Looks up the specified Agent in a case-sensitive manner. Setting this value to false may result in longer run times and unintended results",
+                  "order": 4,
+                  "title": "Case Sensitive",
+                  "type": "boolean"
                 },
                 "quarantine_state": {
                   "description": "True to quarantine host, false to unquarantine host",
@@ -1266,7 +1382,8 @@
               },
               "required": [
                 "agent",
-                "quarantine_state"
+                "quarantine_state",
+                "case_sensitive"
               ],
               "title": "Variables",
               "type": "object"
@@ -1313,17 +1430,20 @@
         },
         "tags": null,
         "humanCostSeconds": 0,
-        "humanCostDisplayUnit": ""
+        "humanCostDisplayUnit": "",
+        "parameters": {
+          "definitionSchema": null
+        }
       }
     ],
     "triggers": [
       {
-        "id": "a5adee20-da9e-4355-a0d2-a748bd204fa7",
+        "id": "6f0c6b23-fb77-41ff-af2b-8a77686e79eb",
         "name": "Quarantine Request",
         "description": "Slack message that triggers if a quarantine-endpoint or unquarantine-endpoint command is found.",
         "input": {
-          "matchChannel": "change_me",
-          "matchText": "quarantine-endpoint|unquarantine-endpoint",
+          "matchChannel": "",
+          "matchText": "quarantine-sent-endpoint|unquarantine-sent-endpoint",
           "type": "any"
         },
         "inputJsonSchema": {
@@ -1361,6 +1481,126 @@
         },
         "outputJsonSchema": {
           "definitions": {
+            "hashes": {
+              "properties": {
+                "md5_hashes": {
+                  "description": "MD5 hashes found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "MD5 Hashes",
+                  "type": "array"
+                },
+                "sha1_hashes": {
+                  "description": "SHA1 hashes found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "SHA1 Hashes",
+                  "type": "array"
+                },
+                "sha256_hashes": {
+                  "description": "SHA256 hashes found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 3,
+                  "title": "SHA256 Hashes",
+                  "type": "array"
+                }
+              },
+              "title": "Hashes",
+              "type": "object"
+            },
+            "indicators": {
+              "properties": {
+                "domains": {
+                  "description": "Domains found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "Domains",
+                  "type": "array"
+                },
+                "email_addresses": {
+                  "description": "Email addresses found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 4,
+                  "title": "Email Addresses",
+                  "type": "array"
+                },
+                "hashes": {
+                  "$ref": "#/definitions/hashes",
+                  "description": "Hashes found within the message",
+                  "order": 5,
+                  "title": "Hashes"
+                },
+                "ip_addresses": {
+                  "$ref": "#/definitions/ip_addresses",
+                  "description": "IP addresses found within the message",
+                  "order": 7,
+                  "title": "IP Addresses"
+                },
+                "mac_addresses": {
+                  "description": "MAC addresses found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 6,
+                  "title": "MAC Addresses",
+                  "type": "array"
+                },
+                "parent_domains": {
+                  "description": "Parent domains found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "Parent Domains",
+                  "type": "array"
+                },
+                "urls": {
+                  "description": "URLs found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 3,
+                  "title": "URLs",
+                  "type": "array"
+                }
+              },
+              "title": "Indicators",
+              "type": "object"
+            },
+            "ip_addresses": {
+              "properties": {
+                "ipv4_addresses": {
+                  "description": "IPv4 addresses found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "IPv4 Addresses",
+                  "type": "array"
+                },
+                "ipv6_addresses": {
+                  "description": "IPv6 addresses found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "IPv6 Addresses",
+                  "type": "array"
+                }
+              },
+              "title": "IP Addresses",
+              "type": "object"
+            },
             "message": {
               "properties": {
                 "channel": {
@@ -1374,6 +1614,18 @@
                   "order": 4,
                   "title": "Channel ID",
                   "type": "string"
+                },
+                "first_word": {
+                  "description": "First word of the message, for example a chat command (ignoring mentions)",
+                  "order": 5,
+                  "title": "First Word",
+                  "type": "string"
+                },
+                "indicators": {
+                  "$ref": "#/definitions/indicators",
+                  "description": "Potential threat indicators found within the message",
+                  "order": 7,
+                  "title": "Indicators"
                 },
                 "text": {
                   "description": "Text",
@@ -1398,6 +1650,15 @@
                   "order": 2,
                   "title": "User ID",
                   "type": "string"
+                },
+                "words": {
+                  "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 6,
+                  "title": "Words",
+                  "type": "array"
                 }
               },
               "title": "Message",
