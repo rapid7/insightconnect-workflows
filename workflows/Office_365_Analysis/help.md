@@ -10,16 +10,21 @@ This workflow is designed to automatically analyze incoming emails to determine 
 
 # Requirements
 
-API and account credentials for
+API and account credentials for:
 
 * Microsoft Office365
 * VirusTotal
+* Hybrid Analysis
 
 # Documentation
 
 ## Setup
 
-Once the workflow has been downloaded, login to InsightConnect and “Import” it into the workflow builder. Once imported, you will initially be prompted to configure the connections for each of the plugins.
+Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
+
+Once the workflow has been imported. **update the first step with the mailbox and subject to suit your environment** by editing the input with the preset text of `change_me`.
+
+Additionally, update the predefined `change_me` inputs in _Send Notification Email_ - you can specify the sender of the notification email and who should be notified. The **Email To** field accepts a list of email addresses, so if you wish you can add multiple mailboxes to notify. 
 
 The remediation steps are disabled due to their destructive nature. To use them, they must be manually enabled after importing the workflow.
 
@@ -44,6 +49,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.1.0 - Workflow improvements | Support for nested EML attachments | Domain headers analysis
 * 1.0.1 - Update workflow title to enrichment
 * 1.0.0 - Initial workflow
 
@@ -52,3 +58,5 @@ _There is no troubleshooting information at this time_
 ## References
 
 * [Microsoft Office365](https://www.office.com)
+* [VirusTotal](https://www.virustotal.com)
+* [Hybrid Analysis](https://www.hybrid-analysis.com/)

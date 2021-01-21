@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Office_365_Analysis
 title: "Office 365 Enrichment"
 description: "This workflow is designed to automatically analyze incoming emails to determine if they are malicious. This workflow assumes a user is using their report phishing button to send an email to an administrative account with the suspicious email attached. The workflow will then analyze any URLs or files in the attached email to find malicious links. If any malicious indicators are found the email will be remediated across the organization."
-version: 1.0.1
+version: 1.1.0
 vendor: rapid7
 support: rapid7
 status: []
@@ -15,17 +15,23 @@ resources:
   source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Office_365_Analysis
   license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
   screenshots:
-  - name: Artifacts1.png
-    title: Artifact Example 1
-  - name: Artifacts2.png
-    title: Artifact Example 2
-  - name: Artifacts3.png
-    title: Artifact Example 3
-  - name: InsightConnect1.png
-    title: Workflow Example 1
-  - name: InsightConnect2.png
-    title: Workflow Example 2
-  - name: InsightConnect3.png
-    title: Workflow Example 3
-  - name: InsightConnect4.png
-    title: Workflow Example 4 with Optional Remediation
+  - name: workflow1.png
+    title: Workflow View
+  - name: workflow2.png
+    title: Workflow View - Analysis Loop
+  - name: workflow3.png
+    title: Workflow View - URL Analysis Loop
+  - name: workflow4.png
+    title: Workflow View - Domain Lookup Loop
+  - name: workflow5.png
+    title: Workflow View - Attached File Loop
+  - name: workflow6.png
+    title: Workflow View - Remediation Loop
+  - name: artifact1.png
+    title: Email Not Malicious Artifact
+  - name: artifact2.png
+    title: Malicious Email Artifact
+  - name: artifact2.png
+    title: Malicious Email Artifact
+  - name: notification1.png
+    title: Malicious Email Notification
