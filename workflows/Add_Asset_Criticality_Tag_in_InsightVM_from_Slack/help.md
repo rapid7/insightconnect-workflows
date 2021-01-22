@@ -1,6 +1,6 @@
 # Description
 
-Set criticality tag from Slack with interactive Slack message.
+Sets criticality tag from Slack with an interactive Slack message.
 
 Sample Slack Trigger Commands:
 
