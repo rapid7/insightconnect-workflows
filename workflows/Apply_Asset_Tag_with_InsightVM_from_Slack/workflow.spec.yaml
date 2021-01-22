@@ -2,7 +2,7 @@ extension: workflow
 products: ["insightconnect"]
 name: Apply_Asset_Tag_with_InsightVM_from_Slack
 title: "Apply Asset Tag with InsightVM from Slack"
-description: This workflow enables you to set asset tags in InsightVM from Slack.
+description: This workflow enables you to set asset tags in InsightVM from Slack
 version: 1.0.0
 vendor: rapid7
 support: rapid7
