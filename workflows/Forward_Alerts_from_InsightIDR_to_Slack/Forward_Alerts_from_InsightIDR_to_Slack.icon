@@ -1,14 +1,14 @@
 {
   "kom": {
-    "komandVersion": "1.60.1-0-g652e5",
+    "komandVersion": "1.75.0-0-g0b8f4",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-08-23T16:17:43.558059154Z",
+    "exportedAt": "2021-01-22T15:39:40.237979504Z",
     "workflowVersions": [
       {
         "name": "Forward Alerts from InsightIDR to Slack",
         "type": "runnable",
         "version": "",
-        "description": "",
+        "description": "# Description\n\nThis workflow forwards IDR alerts to a Slack channel.\n\n# Key Features\n\n* Send IDR alert to Slack channel\n\n# Requirements\n\n* [Slack](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops)\n* [InsightIDR](https://www.rapid7.com/products/insightidr/)\n\n# Documentation\n\n## Setup\n\nImport the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.\n\nOnce the workflow has been imported, **update the last step with the channel name to suit your Slack environment** by editing the input with the preset text of `change_me` to match the channel to monitor.\n\nAfter the workflow was activated [create a new alert trigger in InsightIDR](https://docs.rapid7.com/insightidr/alert-triggers#configure-alert-triggers) and select all alert types that should be forwarded to Slack.\n\n### Usage\n\nYou can also manually trigger this workflow from the investigation. To do this click the **Take Action** button and choose **Custom InsightConnect Workflows**. From the list select the imported workflow.\n\n## Technical Details\n\nBy default this workflow forwards the IDR Alerts to the Slack channel `#secops`. This can be changed in the last workflow step.\n\n## Troubleshooting\n\n_There is no troubleshooting information at this time_\n\n# Version History\n\n* 1.0.0 - Initial workflow\n\n# Links\n\n## References\n\n* [Slack](https://slack.com)\n* [InsightIDR](https://www.rapid7.com/products/insightidr/)\n",
         "graph": {
           "edges": {
             "21035f0c-fefb-4782-9624-551deafd65ba": {
@@ -54,7 +54,7 @@
         "steps": {
           "ae7a8dd7-b8b0-48d8-8f6f-c79e0e322b47": {
             "nodeId": "ae7a8dd7-b8b0-48d8-8f6f-c79e0e322b47",
-            "name": "Send Event to Slack #secops",
+            "name": "Send Event to Slack",
             "type": "action_chatops",
             "continueOnFailure": false,
             "isDisabled": false,
@@ -62,7 +62,7 @@
               "input": {
                 "attachments": [],
                 "message": "{{[af7df902-9020-4025-82fa-3891acf3d6e4].[content]}}",
-                "recipient": "#secops",
+                "recipient": "#change_me",
                 "thread_ts": ""
               }
             },
@@ -712,7 +712,10 @@
         },
         "tags": null,
         "humanCostSeconds": 1200,
-        "humanCostDisplayUnit": "minutes"
+        "humanCostDisplayUnit": "minutes",
+        "parameters": {
+          "definitionSchema": null
+        }
       }
     ],
     "triggers": [
