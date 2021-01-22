@@ -1,7 +1,7 @@
 extension: workflow
 products: ["insightconnect"]
-name: Add_Asset_Criticality_Tag_in_InsightVM_from_Slack
-title: "Add Asset Criticality Tag in InsightVM from Slack"
+name: Add_Asset_Criticality_Tag_with_InsightVM_from_Slack
+title: "Add Asset Criticality Tag with InsightVM from Slack"
 description: Set criticality tag from Slack with interactive slack message.
 version: 1.0.0
 vendor: rapid7
