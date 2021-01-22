@@ -1,16 +1,24 @@
 {
   "kom": {
-    "komandVersion": "1.61.1-0-ga6eb8",
+    "komandVersion": "1.75.0-0-g0b8f4",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-09-10T14:27:38.964438816Z",
+    "exportedAt": "2021-01-22T20:11:26.565380481Z",
     "workflowVersions": [
       {
-        "name": "Add Asset Criticality Tag in InsightVM from Slack",
+        "name": "Add Asset Criticality Tag with InsightVM from Slack",
         "type": "runnable",
         "version": "",
-        "description": "",
+        "description": "# Description\n\nSets criticality tag from Slack with an interactive Slack message.\n\nSample Slack Trigger Commands:\n\n`@Rapid7 InsightConnect crit-tag-asset <hostname>`",
         "graph": {
           "edges": {
+            "006ba7ef-94c3-4ceb-aa56-6abdc74c8721": {
+              "id": "006ba7ef-94c3-4ceb-aa56-6abdc74c8721",
+              "name": "timeout",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "c04bf71a-bef9-4df2-b81c-70f624a996bb",
+              "toNodeId": ""
+            },
             "12add100-c615-45e1-864f-a9d855e53b00": {
               "id": "12add100-c615-45e1-864f-a9d855e53b00",
               "name": "",
@@ -18,14 +26,6 @@
               "parentNodeId": "",
               "fromNodeId": "e2178aa8-6831-480f-9503-a8505720a9ae",
               "toNodeId": "0a1f4c70-5d81-42d0-a0e9-9401464dff32"
-            },
-            "13e45016-65db-4ad4-945b-6e81bca2fd94": {
-              "id": "13e45016-65db-4ad4-945b-6e81bca2fd94",
-              "name": "",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "02d13118-6fe6-4766-b72b-e051b2bfde15",
-              "toNodeId": "7e971728-bf70-4917-8a7e-0821c424cbda"
             },
             "1a3f24c5-386c-4866-8cd6-a3123110b8f3": {
               "id": "1a3f24c5-386c-4866-8cd6-a3123110b8f3",
@@ -49,7 +49,7 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "e37bb114-90d9-4b90-9395-373ba43fbca7",
-              "toNodeId": "02d13118-6fe6-4766-b72b-e051b2bfde15"
+              "toNodeId": "7e971728-bf70-4917-8a7e-0821c424cbda"
             },
             "47b233f3-a6f5-4aee-96ba-92904f4cc8fa": {
               "id": "47b233f3-a6f5-4aee-96ba-92904f4cc8fa",
@@ -57,7 +57,7 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "27d0bae4-c42f-4eee-9b2b-b3e7a5476bab",
-              "toNodeId": "9b908cea-5ffc-40b7-ba2b-cf06b84e7246"
+              "toNodeId": "d2a7b5b2-f0a0-4502-940d-174c847591ed"
             },
             "4cc97390-a6ac-40ac-a4eb-91f2a8099631": {
               "id": "4cc97390-a6ac-40ac-a4eb-91f2a8099631",
@@ -66,14 +66,6 @@
               "parentNodeId": "",
               "fromNodeId": "cd8b89e4-0576-4ae0-aa37-1ae435721556",
               "toNodeId": ""
-            },
-            "6f3e0982-8eda-4419-81ce-291548732bfa": {
-              "id": "6f3e0982-8eda-4419-81ce-291548732bfa",
-              "name": "",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "9b908cea-5ffc-40b7-ba2b-cf06b84e7246",
-              "toNodeId": "d2a7b5b2-f0a0-4502-940d-174c847591ed"
             },
             "80b85ff9-5bd4-4625-b1f6-daf24162b93b": {
               "id": "80b85ff9-5bd4-4625-b1f6-daf24162b93b",
@@ -165,10 +157,6 @@
             }
           },
           "nodes": {
-            "02d13118-6fe6-4766-b72b-e051b2bfde15": {
-              "id": "02d13118-6fe6-4766-b72b-e051b2bfde15",
-              "parentNodeId": ""
-            },
             "04352684-ef7a-440f-9df3-be4c54f419af": {
               "id": "04352684-ef7a-440f-9df3-be4c54f419af",
               "parentNodeId": ""
@@ -187,10 +175,6 @@
             },
             "7e971728-bf70-4917-8a7e-0821c424cbda": {
               "id": "7e971728-bf70-4917-8a7e-0821c424cbda",
-              "parentNodeId": ""
-            },
-            "9b908cea-5ffc-40b7-ba2b-cf06b84e7246": {
-              "id": "9b908cea-5ffc-40b7-ba2b-cf06b84e7246",
               "parentNodeId": ""
             },
             "c04bf71a-bef9-4df2-b81c-70f624a996bb": {
@@ -220,43 +204,6 @@
           }
         },
         "steps": {
-          "02d13118-6fe6-4766-b72b-e051b2bfde15": {
-            "nodeId": "02d13118-6fe6-4766-b72b-e051b2bfde15",
-            "name": "Check for Timeout",
-            "type": "filter",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "stepControlParam": {
-                "edgeId": "13e45016-65db-4ad4-945b-6e81bca2fd94",
-                "expression": {
-                  "left": {
-                    "args": [
-                      {
-                        "name": "e37bb114-90d9-4b90-9395-373ba43fbca7.Responding User",
-                        "type": "variable"
-                      }
-                    ],
-                    "name": "length",
-                    "type": "function"
-                  },
-                  "op": ">",
-                  "right": {
-                    "type": "literal",
-                    "value": 0
-                  },
-                  "type": "binary"
-                },
-                "expressionText": "length({{[e37bb114-90d9-4b90-9395-373ba43fbca7].[Responding User]}}) > 0"
-              },
-              "stopOnMatch": false
-            },
-            "defaultInputJSONSchema": null,
-            "defaultOutputJSONSchema": null,
-            "outputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/filter.svg",
-            "connectionType": "NONE"
-          },
           "04352684-ef7a-440f-9df3-be4c54f419af": {
             "nodeId": "04352684-ef7a-440f-9df3-be4c54f419af",
             "name": "Search Asset by Hostname",
@@ -265,8 +212,8 @@
               "name": "Rapid7 InsightVM",
               "slugVendor": "rapid7",
               "slugName": "rapid7_insightvm",
-              "slugVersion": "4.0.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/4.0.1/icon.png"
+              "slugVersion": "4.8.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/4.8.1/icon.png"
             },
             "identifier": "asset_search",
             "continueOnFailure": false,
@@ -279,11 +226,13 @@
                     {
                       "field": "host-name",
                       "operator": "starts-with",
-                      "value": "{{[9b908cea-5ffc-40b7-ba2b-cf06b84e7246].[param].[1]}}"
+                      "value": "{{[27d0bae4-c42f-4eee-9b2b-b3e7a5476bab].[message].[words].[1]}}"
                     }
                   ],
                   "match": "all"
-                }
+                },
+                "size": 0,
+                "sort_criteria": {}
               }
             },
             "defaultInputJSONSchema": {
@@ -292,6 +241,19 @@
                   "description": "Tag search criteria - options documentation: https://help.rapid7.com/insightvm/en-us/api/#section/Responses/SearchCriteria",
                   "order": 1,
                   "title": "Search Criteria",
+                  "type": "object"
+                },
+                "size": {
+                  "default": 0,
+                  "description": "The number of records to retrieve. If blank or '0' all assets that match the search will be returned",
+                  "order": 2,
+                  "title": "Size",
+                  "type": "number"
+                },
+                "sort_criteria": {
+                  "description": "JSON object for sorting by criteria. Multiple criteria can be specified with an order of 'asc' (ascending) or 'desc' (descending)",
+                  "order": 3,
+                  "title": "Sort Criteria",
                   "type": "object"
                 }
               },
@@ -1255,7 +1217,7 @@
           },
           "27d0bae4-c42f-4eee-9b2b-b3e7a5476bab": {
             "nodeId": "27d0bae4-c42f-4eee-9b2b-b3e7a5476bab",
-            "name": "Trigger on Keyword: crit-tag-asset",
+            "name": "Trigger on Keyword crit-tag-asset",
             "type": "trigger",
             "continueOnFailure": false,
             "isDisabled": false,
@@ -1266,7 +1228,7 @@
                 "type": "any"
               }
             },
-            "triggerId": "fa4eb85f-8908-4cf9-b3df-716d42bd77a0",
+            "triggerId": "fcd90f91-7b3e-4278-9f9d-78dfc6a209f4",
             "defaultInputJSONSchema": {
               "properties": {
                 "matchChannel": {
@@ -1351,20 +1313,20 @@
                       "items": {
                         "type": "string"
                       },
-                      "order": 3,
+                      "order": 4,
                       "title": "Email Addresses",
                       "type": "array"
                     },
                     "hashes": {
                       "$ref": "#/definitions/hashes",
                       "description": "Hashes found within the message",
-                      "order": 4,
+                      "order": 5,
                       "title": "Hashes"
                     },
                     "ip_addresses": {
                       "$ref": "#/definitions/ip_addresses",
                       "description": "IP addresses found within the message",
-                      "order": 6,
+                      "order": 7,
                       "title": "IP Addresses"
                     },
                     "mac_addresses": {
@@ -1372,8 +1334,17 @@
                       "items": {
                         "type": "string"
                       },
-                      "order": 5,
+                      "order": 6,
                       "title": "MAC Addresses",
+                      "type": "array"
+                    },
+                    "parent_domains": {
+                      "description": "Parent domains found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "Parent Domains",
                       "type": "array"
                     },
                     "urls": {
@@ -1381,7 +1352,7 @@
                       "items": {
                         "type": "string"
                       },
-                      "order": 2,
+                      "order": 3,
                       "title": "URLs",
                       "type": "array"
                     }
@@ -1436,7 +1407,7 @@
                     "indicators": {
                       "$ref": "#/definitions/indicators",
                       "description": "Potential threat indicators found within the message",
-                      "order": 6,
+                      "order": 7,
                       "title": "Indicators"
                     },
                     "text": {
@@ -1462,6 +1433,15 @@
                       "order": 2,
                       "title": "User ID",
                       "type": "string"
+                    },
+                    "words": {
+                      "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 6,
+                      "title": "Words",
+                      "type": "array"
                     }
                   },
                   "title": "Message",
@@ -1585,8 +1565,8 @@
               "name": "Type Converter",
               "slugVendor": "rapid7",
               "slugName": "type_converter",
-              "slugVersion": "1.6.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/type_converter/1.6.0/icon.png"
+              "slugVersion": "1.6.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/type_converter/1.6.1/icon.png"
             },
             "identifier": "string_to_integer",
             "continueOnFailure": false,
@@ -1638,33 +1618,6 @@
             "defaultImageData": "",
             "connectionType": "ORCHESTRATOR"
           },
-          "9b908cea-5ffc-40b7-ba2b-cf06b84e7246": {
-            "nodeId": "9b908cea-5ffc-40b7-ba2b-cf06b84e7246",
-            "name": "Extract Parameters",
-            "type": "pattern_match",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "captureAll": true,
-              "expressionText": "{{param:/\\S*/}}",
-              "expressions": [
-                {
-                  "type": "variable",
-                  "value": {
-                    "ident": "param",
-                    "regex": "\\S*"
-                  }
-                }
-              ],
-              "ignoreCase": true,
-              "input": "{{[27d0bae4-c42f-4eee-9b2b-b3e7a5476bab].[message].[text]}}"
-            },
-            "defaultInputJSONSchema": null,
-            "defaultOutputJSONSchema": null,
-            "outputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/pattern-match.svg",
-            "connectionType": "NONE"
-          },
           "c04bf71a-bef9-4df2-b81c-70f624a996bb": {
             "nodeId": "c04bf71a-bef9-4df2-b81c-70f624a996bb",
             "name": "Ask for Criticality Tag",
@@ -1710,6 +1663,11 @@
                   "confirmation": "OK! Assigning tag ... :hourglass_flowing_sand:",
                   "edgeId": "d393e806-538a-43f3-a902-2ca70b5e711f",
                   "isTimeoutOnly": false
+                },
+                {
+                  "answer": "timeout",
+                  "edgeId": "006ba7ef-94c3-4ceb-aa56-6abdc74c8721",
+                  "isTimeoutOnly": true
                 }
               ],
               "question": "Which criticality tag do you want to assign?",
@@ -1717,7 +1675,7 @@
               "threadTimestamp": "{{[27d0bae4-c42f-4eee-9b2b-b3e7a5476bab].[timestamp]}}",
               "timeout": 60,
               "timeoutDisplayUnit": "minutes",
-              "timeoutEdgeId": "1d530971-e0c4-4ffa-82ab-9e5dd4bb0d15"
+              "timeoutEdgeId": "006ba7ef-94c3-4ceb-aa56-6abdc74c8721"
             },
             "defaultInputJSONSchema": {
               "properties": {
@@ -1908,7 +1866,7 @@
                     "left": {
                       "args": [
                         {
-                          "name": "9b908cea-5ffc-40b7-ba2b-cf06b84e7246.param",
+                          "name": "27d0bae4-c42f-4eee-9b2b-b3e7a5476bab.message.words",
                           "type": "variable"
                         }
                       ],
@@ -1922,7 +1880,7 @@
                     },
                     "type": "binary"
                   },
-                  "expressionText": "length({{[9b908cea-5ffc-40b7-ba2b-cf06b84e7246].[param]}}) = 2"
+                  "expressionText": "length({{[27d0bae4-c42f-4eee-9b2b-b3e7a5476bab].[message].[words]}}) = 2"
                 }
               ]
             },
@@ -1940,8 +1898,8 @@
               "name": "Rapid7 InsightVM",
               "slugVendor": "rapid7",
               "slugName": "rapid7_insightvm",
-              "slugVersion": "4.0.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/4.0.1/icon.png"
+              "slugVersion": "4.8.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/4.8.1/icon.png"
             },
             "identifier": "tag_asset",
             "continueOnFailure": false,
@@ -2147,13 +2105,16 @@
         },
         "tags": null,
         "humanCostSeconds": 1200,
-        "humanCostDisplayUnit": "minutes"
+        "humanCostDisplayUnit": "minutes",
+        "parameters": {
+          "definitionSchema": null
+        }
       }
     ],
     "triggers": [
       {
-        "id": "fa4eb85f-8908-4cf9-b3df-716d42bd77a0",
-        "name": "Trigger on Keyword: crit-tag-asset",
+        "id": "fcd90f91-7b3e-4278-9f9d-78dfc6a209f4",
+        "name": "Trigger on Keyword crit-tag-asset",
         "description": "",
         "input": {
           "matchChannel": ".*",
@@ -2244,20 +2205,20 @@
                   "items": {
                     "type": "string"
                   },
-                  "order": 3,
+                  "order": 4,
                   "title": "Email Addresses",
                   "type": "array"
                 },
                 "hashes": {
                   "$ref": "#/definitions/hashes",
                   "description": "Hashes found within the message",
-                  "order": 4,
+                  "order": 5,
                   "title": "Hashes"
                 },
                 "ip_addresses": {
                   "$ref": "#/definitions/ip_addresses",
                   "description": "IP addresses found within the message",
-                  "order": 6,
+                  "order": 7,
                   "title": "IP Addresses"
                 },
                 "mac_addresses": {
@@ -2265,8 +2226,17 @@
                   "items": {
                     "type": "string"
                   },
-                  "order": 5,
+                  "order": 6,
                   "title": "MAC Addresses",
+                  "type": "array"
+                },
+                "parent_domains": {
+                  "description": "Parent domains found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "Parent Domains",
                   "type": "array"
                 },
                 "urls": {
@@ -2274,7 +2244,7 @@
                   "items": {
                     "type": "string"
                   },
-                  "order": 2,
+                  "order": 3,
                   "title": "URLs",
                   "type": "array"
                 }
@@ -2329,7 +2299,7 @@
                 "indicators": {
                   "$ref": "#/definitions/indicators",
                   "description": "Potential threat indicators found within the message",
-                  "order": 6,
+                  "order": 7,
                   "title": "Indicators"
                 },
                 "text": {
@@ -2355,6 +2325,15 @@
                   "order": 2,
                   "title": "User ID",
                   "type": "string"
+                },
+                "words": {
+                  "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 6,
+                  "title": "Words",
+                  "type": "array"
                 }
               },
               "title": "Message",
