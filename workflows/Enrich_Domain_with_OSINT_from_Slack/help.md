@@ -8,7 +8,7 @@ Sample Slack Trigger Commands:
 
 # Key Features
 
-* ThreadCrowd URL Lookup
+* Threat Crowd URL Lookup
 * Dig Lookup
 * WHOIS Lookup
 
