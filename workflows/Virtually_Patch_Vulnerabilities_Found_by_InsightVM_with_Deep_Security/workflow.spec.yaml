@@ -16,21 +16,19 @@ resources:
   license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
   screenshots:
   - name: workflow01.png
-    title: Get Assets
+    title: Workflow 1
   - name: workflow02.png
-    title: Get All CVEs
+    title: Workflow 2
   - name: workflow03.png
-    title: Check Hostname
+    title: Workflow 3
   - name: workflow04.png
-    title: Search Asset in Deep Security
+    title: Workflow 4
   - name: workflow05.png
-    title: Search for IPS Rules by CVE
+    title: Workflow 5
   - name: workflow06.png
-    title: Deploy Rules 
+    title: Workflow 6
   - name: workflow07.png
-    title: Generate List of Protected Vulnerabilities
-  - name: workflow08.png
-    title: Create and Approve Exceptions
+    title: Workflow 7
   - name: artifact01.png
     title: Report Artifact Sucessful Assignment of One Rule
   - name: artifact02.png

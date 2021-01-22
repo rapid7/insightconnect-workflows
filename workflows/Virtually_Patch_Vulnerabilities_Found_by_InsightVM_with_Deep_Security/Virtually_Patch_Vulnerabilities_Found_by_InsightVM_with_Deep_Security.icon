@@ -1,24 +1,16 @@
 {
   "kom": {
-    "komandVersion": "1.72.0-0-ge9d34",
+    "komandVersion": "1.75.0-0-g0b8f4",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-12-16T16:48:45.815665723Z",
+    "exportedAt": "2021-01-22T20:36:31.358560907Z",
     "workflowVersions": [
       {
         "name": "Virtually Patch Vulnerabilities Found by InsightVM with Deep Security",
         "type": "runnable",
         "version": "",
-        "description": "This workflow checks if there are new scan results available in Rapid7 InsightVM and will search for matching IPS/virtual patching rules in Trend Micro Deep Security.\nIf a vulnerability can be protected by Trend Micro Deep Security then the rule will be assigned to the asset and an exception will be created in Rapid7 InsightVM.",
+        "description": "# Description\n\nAutomatically protect your assets against exploitation of vulnerabilities found by InsightVM with Deep Security Virtual Patching (IPS).\n\n# Key Features\n\n* Search IPS rules for every found vulnerability\n* Find matching assets in Deep Security\n* Assign the IPS rules to the Deep Security assets\n* Set exceptions for protected vulnerabilities in InsightVM\n\n# Requirements\n\n* Rapid7 InsightConnect\n* Rapid7 InsightVM\n* Trend Micro Deep Security (Intrusion Prevention Module)\n\n# Documentation\n\n## Setup\n\nImport the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.\n\n\n## Technical Details\n\nPlugins utilized by workflow:\n\n|Plugin|Version|Count|\n|----|----|--------|\n|Rapid7 InsightVM|4.8.1|5|\n|Trend Micro Deep Security|2.2.1|4|\n|Advanced Regex|1.0.3|1|\n|Python 3 Script|2.0.2|5|\n|Type Converter|1.6.1|1|\n|Base64|1.1.6|1|\n\n## Troubleshooting\n\n_There is no troubleshooting information at this time_\n\n# Version History\n\n* 1.1.0 - Improve the job run time\n* 1.0.3 - Revert and rename workflow file to fix import failure\n* 1.0.2 - Rename workflow file to fix import failure\n* 1.0.1 - Fix issue in name which caused workflow to fail import from Extension Library\n* 1.0.0 - Initial workflow\n\n# Links\n\n## References\n\n* [Rapid7 InsightVM](https://www.rapid7.com/products/insightvm/)\n* [Trend Micro Deep Security](https://www.trendmicro.com/en_us/business/products/hybrid-cloud/deep-security.html)\n* [Rapid7 InsightConnect](https://www.rapid7.com/products/insightconnect/)\n* [Rapid7 Vulnerability Database](https://www.rapid7.com/db)\n* [Rapid7 InsightVM - InsightConnect Plugin](https://extensions.rapid7.com/extension/rapid7_insightvm)\n* [Trend Micro Deep Security - InsightConnect Plugin](https://extensions.rapid7.com/extension/trendmicro_deepsecurity)\n",
         "graph": {
           "edges": {
-            "0391d046-fb1d-4cc3-8442-1b040a5b5538": {
-              "id": "0391d046-fb1d-4cc3-8442-1b040a5b5538",
-              "name": "",
-              "description": "",
-              "parentNodeId": "47fd6682-93dc-4370-8f04-426b9f977737",
-              "fromNodeId": "20f4323a-93e5-4400-8c77-cfadc3215c9c",
-              "toNodeId": ""
-            },
             "0687143c-8096-475a-82d6-3fd6572976f8": {
               "id": "0687143c-8096-475a-82d6-3fd6572976f8",
               "name": "",
@@ -27,29 +19,29 @@
               "fromNodeId": "89d7ec9f-d138-4fac-addd-d47e103f9677",
               "toNodeId": "5ba09430-c569-41a4-b10e-712476e8ad08"
             },
-            "10dc6a14-a411-4d6f-ab2a-0d27b2fd3399": {
-              "id": "10dc6a14-a411-4d6f-ab2a-0d27b2fd3399",
-              "name": "",
+            "1498803b-1dcc-49dd-a603-4f0953f45aac": {
+              "id": "1498803b-1dcc-49dd-a603-4f0953f45aac",
+              "name": "nothing found",
               "description": "",
               "parentNodeId": "8e5093ef-4293-42d6-9e9b-4aec2d278c91",
-              "fromNodeId": "47fd6682-93dc-4370-8f04-426b9f977737",
-              "toNodeId": ""
+              "fromNodeId": "1dcd947a-c8bf-406c-ba22-3904cff4cfa0",
+              "toNodeId": "1be74860-6cb8-468c-a754-68c6809eb50d"
             },
-            "16f74809-c84a-43e7-81c6-82e00b49c4a7": {
-              "id": "16f74809-c84a-43e7-81c6-82e00b49c4a7",
-              "name": "",
+            "1bf47d7b-70fe-4350-9528-0ad367eb7efa": {
+              "id": "1bf47d7b-70fe-4350-9528-0ad367eb7efa",
+              "name": "Vulnerabilities present",
               "description": "",
               "parentNodeId": "8e5093ef-4293-42d6-9e9b-4aec2d278c91",
-              "fromNodeId": "5fd87c21-a29a-42c5-bc75-df0b0d5a7869",
-              "toNodeId": "8ee2fb8a-cffb-45ae-8afe-cfe4d988eae5"
+              "fromNodeId": "1be74860-6cb8-468c-a754-68c6809eb50d",
+              "toNodeId": "da08f421-8914-45fb-8984-99a11eec8ac8"
             },
-            "1e533b53-7dab-4cbb-8200-9c139e594816": {
-              "id": "1e533b53-7dab-4cbb-8200-9c139e594816",
+            "1d6c8e16-b215-41cd-82c7-f05049281b92": {
+              "id": "1d6c8e16-b215-41cd-82c7-f05049281b92",
               "name": "",
               "description": "",
-              "parentNodeId": "8e5093ef-4293-42d6-9e9b-4aec2d278c91",
-              "fromNodeId": "9f7e19b5-6deb-4751-ac21-11a9e0119635",
-              "toNodeId": "d4695c05-f0a3-434d-ad0e-40846cc30772"
+              "parentNodeId": "",
+              "fromNodeId": "f8a9ce1c-a58d-4395-83c0-53c9414f4351",
+              "toNodeId": "02b2075d-eb70-4456-8b20-921209b4df7c"
             },
             "22d406b6-bd48-4128-b303-69423093c753": {
               "id": "22d406b6-bd48-4128-b303-69423093c753",
@@ -59,29 +51,37 @@
               "fromNodeId": "5ba09430-c569-41a4-b10e-712476e8ad08",
               "toNodeId": "40100b9c-79da-4894-a3ab-809fcd6f0f7e"
             },
-            "464346c7-c931-4709-afc3-09b01d93eda3": {
-              "id": "464346c7-c931-4709-afc3-09b01d93eda3",
-              "name": "",
-              "description": "",
-              "parentNodeId": "47fd6682-93dc-4370-8f04-426b9f977737",
-              "fromNodeId": "d10b76fa-9996-4952-9bb8-bd9034730b12",
-              "toNodeId": "20f4323a-93e5-4400-8c77-cfadc3215c9c"
-            },
-            "4fe4a15e-7fc8-4005-9be6-2e04668307f7": {
-              "id": "4fe4a15e-7fc8-4005-9be6-2e04668307f7",
+            "2ac1e48e-0833-4f26-af85-988a1d521f3f": {
+              "id": "2ac1e48e-0833-4f26-af85-988a1d521f3f",
               "name": "",
               "description": "",
               "parentNodeId": "",
-              "fromNodeId": "441921c2-6bcf-4b4b-975a-08ce345a4de9",
-              "toNodeId": "5f656d71-5cd1-4d12-84d6-7e2e57ff7656"
+              "fromNodeId": "1435263f-64e3-40b2-b6ca-a49313d26468",
+              "toNodeId": "8e5093ef-4293-42d6-9e9b-4aec2d278c91"
             },
-            "50f36c83-c684-431d-92e1-b3ed474316b8": {
-              "id": "50f36c83-c684-431d-92e1-b3ed474316b8",
+            "3c513f4a-2774-4a6d-935e-32cdbb42069c": {
+              "id": "3c513f4a-2774-4a6d-935e-32cdbb42069c",
               "name": "",
               "description": "",
               "parentNodeId": "8e5093ef-4293-42d6-9e9b-4aec2d278c91",
-              "fromNodeId": "50728850-3be2-4184-b766-ce04f3708ea5",
-              "toNodeId": "f9654a4e-1189-4ec4-9702-7f0f8d93e75b"
+              "fromNodeId": "0e430408-e589-4fd4-b80e-4cd7ba2a6a03",
+              "toNodeId": ""
+            },
+            "47c29452-ccab-425d-a296-c4b164da1e38": {
+              "id": "47c29452-ccab-425d-a296-c4b164da1e38",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "7f39c9ad-3cbe-4e12-801f-9811ca223a2a",
+              "toNodeId": "cc076920-1457-421f-b290-6c0c415e31cc"
+            },
+            "52fa5e62-8281-40e1-9660-0909d4200efe": {
+              "id": "52fa5e62-8281-40e1-9660-0909d4200efe",
+              "name": "",
+              "description": "",
+              "parentNodeId": "8e5093ef-4293-42d6-9e9b-4aec2d278c91",
+              "fromNodeId": "52e3dbc1-5386-43c8-b1f4-55765c8b4d3a",
+              "toNodeId": "256effb8-575a-4565-a5e9-901ae18b7d17"
             },
             "53ab768b-cf8f-4f09-ac01-c59e5cbd3c39": {
               "id": "53ab768b-cf8f-4f09-ac01-c59e5cbd3c39",
@@ -89,7 +89,31 @@
               "description": "",
               "parentNodeId": "8e5093ef-4293-42d6-9e9b-4aec2d278c91",
               "fromNodeId": "6f5ba517-fb17-42a8-8264-135b05ee0bfd",
-              "toNodeId": "89d7ec9f-d138-4fac-addd-d47e103f9677"
+              "toNodeId": "f17ecc6b-783c-49e6-b1a6-49ab2e0946b2"
+            },
+            "63f4d6d7-c69f-4c3f-841f-3f895728b464": {
+              "id": "63f4d6d7-c69f-4c3f-841f-3f895728b464",
+              "name": "No Rules",
+              "description": "",
+              "parentNodeId": "8e5093ef-4293-42d6-9e9b-4aec2d278c91",
+              "fromNodeId": "95d758d7-5538-415c-965d-09a4bf23ed5e",
+              "toNodeId": "0e430408-e589-4fd4-b80e-4cd7ba2a6a03"
+            },
+            "6bffbc81-99a8-447c-af75-9e4717694931": {
+              "id": "6bffbc81-99a8-447c-af75-9e4717694931",
+              "name": "",
+              "description": "",
+              "parentNodeId": "40826fbe-d5f2-4638-bce7-3b39631d1bd3",
+              "fromNodeId": "40826fbe-d5f2-4638-bce7-3b39631d1bd3",
+              "toNodeId": "249b1b29-ae03-4b41-a0a6-2807aa3d639a"
+            },
+            "6ca5ff85-2c60-442c-bf45-a5f4d8daa73c": {
+              "id": "6ca5ff85-2c60-442c-bf45-a5f4d8daa73c",
+              "name": "",
+              "description": "",
+              "parentNodeId": "8e5093ef-4293-42d6-9e9b-4aec2d278c91",
+              "fromNodeId": "9adcd58c-da41-46ee-ac8d-39f5d48b07c2",
+              "toNodeId": "95d758d7-5538-415c-965d-09a4bf23ed5e"
             },
             "6e7dc084-a5c1-451e-a82f-68fbc97cb37e": {
               "id": "6e7dc084-a5c1-451e-a82f-68fbc97cb37e",
@@ -107,13 +131,29 @@
               "fromNodeId": "69616d3a-9bce-4c17-a2ea-62f100408be1",
               "toNodeId": ""
             },
-            "7a4d75e3-dfe0-48c1-b0c4-e65539108ed4": {
-              "id": "7a4d75e3-dfe0-48c1-b0c4-e65539108ed4",
+            "75e3a8a7-cd86-4ad5-817d-e824551a9830": {
+              "id": "75e3a8a7-cd86-4ad5-817d-e824551a9830",
               "name": "",
               "description": "",
               "parentNodeId": "",
-              "fromNodeId": "21e706fc-106b-4f1d-9f7e-3e591909539f",
-              "toNodeId": "8e5093ef-4293-42d6-9e9b-4aec2d278c91"
+              "fromNodeId": "02b2075d-eb70-4456-8b20-921209b4df7c",
+              "toNodeId": "1435263f-64e3-40b2-b6ca-a49313d26468"
+            },
+            "7e78e155-d91b-401d-9d2a-8e35a0ea284b": {
+              "id": "7e78e155-d91b-401d-9d2a-8e35a0ea284b",
+              "name": "",
+              "description": "",
+              "parentNodeId": "8e5093ef-4293-42d6-9e9b-4aec2d278c91",
+              "fromNodeId": "0b38c2c3-fbe1-48b4-9b2b-f28b42d7cd78",
+              "toNodeId": "89d7ec9f-d138-4fac-addd-d47e103f9677"
+            },
+            "7ed0d376-e79f-451d-ac38-8fdc2d671592": {
+              "id": "7ed0d376-e79f-451d-ac38-8fdc2d671592",
+              "name": "",
+              "description": "",
+              "parentNodeId": "8e5093ef-4293-42d6-9e9b-4aec2d278c91",
+              "fromNodeId": "256effb8-575a-4565-a5e9-901ae18b7d17",
+              "toNodeId": "40826fbe-d5f2-4638-bce7-3b39631d1bd3"
             },
             "82860682-a8c1-4f45-b732-fae977e781d7": {
               "id": "82860682-a8c1-4f45-b732-fae977e781d7",
@@ -121,15 +161,31 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "a2e467b7-d327-4a87-aed2-50a884128720",
-              "toNodeId": "cfc882cf-afbe-46af-8001-a2ffb9b9ad13"
+              "toNodeId": "f1cbaf18-d270-49e1-aa47-503106f992a6"
             },
-            "980236a5-c0e3-46e6-819b-186dffb18b97": {
-              "id": "980236a5-c0e3-46e6-819b-186dffb18b97",
-              "name": "Rules Found",
+            "8dfbceb3-deab-4097-85f5-54320778c8eb": {
+              "id": "8dfbceb3-deab-4097-85f5-54320778c8eb",
+              "name": "continue",
               "description": "",
               "parentNodeId": "8e5093ef-4293-42d6-9e9b-4aec2d278c91",
-              "fromNodeId": "dfb40c0d-8f46-44bc-b6c7-dabbc71617ee",
-              "toNodeId": "9f7e19b5-6deb-4751-ac21-11a9e0119635"
+              "fromNodeId": "1dcd947a-c8bf-406c-ba22-3904cff4cfa0",
+              "toNodeId": "0b38c2c3-fbe1-48b4-9b2b-f28b42d7cd78"
+            },
+            "940c0621-56f3-4350-b0e4-bb836ef593f2": {
+              "id": "940c0621-56f3-4350-b0e4-bb836ef593f2",
+              "name": "",
+              "description": "",
+              "parentNodeId": "8e5093ef-4293-42d6-9e9b-4aec2d278c91",
+              "fromNodeId": "1c6f6b18-1a43-4142-8216-08331b247f2f",
+              "toNodeId": "52e3dbc1-5386-43c8-b1f4-55765c8b4d3a"
+            },
+            "96d353b8-9213-492e-a83d-46250fe54829": {
+              "id": "96d353b8-9213-492e-a83d-46250fe54829",
+              "name": "",
+              "description": "",
+              "parentNodeId": "8e5093ef-4293-42d6-9e9b-4aec2d278c91",
+              "fromNodeId": "da08f421-8914-45fb-8984-99a11eec8ac8",
+              "toNodeId": ""
             },
             "a1fd8b4e-fbf3-4241-8158-b712f91da719": {
               "id": "a1fd8b4e-fbf3-4241-8158-b712f91da719",
@@ -139,13 +195,13 @@
               "fromNodeId": "8e5093ef-4293-42d6-9e9b-4aec2d278c91",
               "toNodeId": ""
             },
-            "a315f662-4d15-48c6-9f03-6f3b2bb5d13e": {
-              "id": "a315f662-4d15-48c6-9f03-6f3b2bb5d13e",
+            "a20f502e-9d65-46c2-af20-430a2b55d47a": {
+              "id": "a20f502e-9d65-46c2-af20-430a2b55d47a",
               "name": "",
               "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "cfc882cf-afbe-46af-8001-a2ffb9b9ad13",
-              "toNodeId": "441921c2-6bcf-4b4b-975a-08ce345a4de9"
+              "parentNodeId": "40826fbe-d5f2-4638-bce7-3b39631d1bd3",
+              "fromNodeId": "26d28c63-da55-45e4-9a8b-2976040d4516",
+              "toNodeId": ""
             },
             "aba8145b-9908-4e43-93fb-93d07517b4b9": {
               "id": "aba8145b-9908-4e43-93fb-93d07517b4b9",
@@ -154,6 +210,14 @@
               "parentNodeId": "8e5093ef-4293-42d6-9e9b-4aec2d278c91",
               "fromNodeId": "418d2858-b0ec-4d0b-b238-9d0f7eadcd52",
               "toNodeId": "0131ed50-9d8d-49dc-befc-bab4e2a2f7f8"
+            },
+            "ac76327f-8a87-454c-a81f-a488ce71484f": {
+              "id": "ac76327f-8a87-454c-a81f-a488ce71484f",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "f1cbaf18-d270-49e1-aa47-503106f992a6",
+              "toNodeId": "f8a9ce1c-a58d-4395-83c0-53c9414f4351"
             },
             "ae41fe2a-5bfc-4984-adfd-0f4f2fe78506": {
               "id": "ae41fe2a-5bfc-4984-adfd-0f4f2fe78506",
@@ -169,7 +233,7 @@
               "description": "",
               "parentNodeId": "8e5093ef-4293-42d6-9e9b-4aec2d278c91",
               "fromNodeId": "40100b9c-79da-4894-a3ab-809fcd6f0f7e",
-              "toNodeId": "5fd87c21-a29a-42c5-bc75-df0b0d5a7869"
+              "toNodeId": "9adcd58c-da41-46ee-ac8d-39f5d48b07c2"
             },
             "b60d0a95-ca1f-4657-ba5b-58cdfb6b0afe": {
               "id": "b60d0a95-ca1f-4657-ba5b-58cdfb6b0afe",
@@ -195,29 +259,37 @@
               "fromNodeId": "ab54df2c-c300-4649-b805-a3845efe7a1d",
               "toNodeId": "877536f9-b731-4215-9d63-397bd5cd5ce7"
             },
-            "bed5fd7a-3817-4ab8-94e7-4cb95a1156d6": {
-              "id": "bed5fd7a-3817-4ab8-94e7-4cb95a1156d6",
-              "name": "No Rules",
-              "description": "",
-              "parentNodeId": "8e5093ef-4293-42d6-9e9b-4aec2d278c91",
-              "fromNodeId": "dfb40c0d-8f46-44bc-b6c7-dabbc71617ee",
-              "toNodeId": ""
-            },
             "c790327d-9b36-479e-9d1c-5f83a169b4b6": {
               "id": "c790327d-9b36-479e-9d1c-5f83a169b4b6",
               "name": "",
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "cd4cc555-b09e-40e3-9779-6b8087adf770",
-              "toNodeId": "cc076920-1457-421f-b290-6c0c415e31cc"
+              "toNodeId": "7f39c9ad-3cbe-4e12-801f-9811ca223a2a"
             },
-            "ceea802c-a316-4349-b52a-7e427031ab42": {
-              "id": "ceea802c-a316-4349-b52a-7e427031ab42",
+            "c81d5435-8115-4be0-98c0-3ecc4610a693": {
+              "id": "c81d5435-8115-4be0-98c0-3ecc4610a693",
               "name": "",
               "description": "",
-              "parentNodeId": "47fd6682-93dc-4370-8f04-426b9f977737",
-              "fromNodeId": "47fd6682-93dc-4370-8f04-426b9f977737",
-              "toNodeId": "d10b76fa-9996-4952-9bb8-bd9034730b12"
+              "parentNodeId": "8e5093ef-4293-42d6-9e9b-4aec2d278c91",
+              "fromNodeId": "f17ecc6b-783c-49e6-b1a6-49ab2e0946b2",
+              "toNodeId": "1dcd947a-c8bf-406c-ba22-3904cff4cfa0"
+            },
+            "c9db80e9-3909-4a05-bf69-23b6b31e7550": {
+              "id": "c9db80e9-3909-4a05-bf69-23b6b31e7550",
+              "name": "",
+              "description": "",
+              "parentNodeId": "40826fbe-d5f2-4638-bce7-3b39631d1bd3",
+              "fromNodeId": "249b1b29-ae03-4b41-a0a6-2807aa3d639a",
+              "toNodeId": "26d28c63-da55-45e4-9a8b-2976040d4516"
+            },
+            "cc9ce2cc-4721-4132-b354-48a3e8c2c7f9": {
+              "id": "cc9ce2cc-4721-4132-b354-48a3e8c2c7f9",
+              "name": "Rules Found",
+              "description": "",
+              "parentNodeId": "8e5093ef-4293-42d6-9e9b-4aec2d278c91",
+              "fromNodeId": "95d758d7-5538-415c-965d-09a4bf23ed5e",
+              "toNodeId": "12d2c682-31db-45be-9702-fd7ace048ae4"
             },
             "d51d9151-669c-4f0f-bcac-21e1ae007541": {
               "id": "d51d9151-669c-4f0f-bcac-21e1ae007541",
@@ -227,13 +299,13 @@
               "fromNodeId": "418d2858-b0ec-4d0b-b238-9d0f7eadcd52",
               "toNodeId": "40100b9c-79da-4894-a3ab-809fcd6f0f7e"
             },
-            "da416d24-145e-450b-9127-60c3f53a1681": {
-              "id": "da416d24-145e-450b-9127-60c3f53a1681",
+            "d754ca62-b52c-4320-b075-903440ff926d": {
+              "id": "d754ca62-b52c-4320-b075-903440ff926d",
               "name": "",
               "description": "",
               "parentNodeId": "8e5093ef-4293-42d6-9e9b-4aec2d278c91",
-              "fromNodeId": "f9654a4e-1189-4ec4-9702-7f0f8d93e75b",
-              "toNodeId": "47fd6682-93dc-4370-8f04-426b9f977737"
+              "fromNodeId": "12d2c682-31db-45be-9702-fd7ace048ae4",
+              "toNodeId": "1c6f6b18-1a43-4142-8216-08331b247f2f"
             },
             "db30aefe-584e-44ec-b7ea-314f5139e52b": {
               "id": "db30aefe-584e-44ec-b7ea-314f5139e52b",
@@ -251,29 +323,21 @@
               "fromNodeId": "cc076920-1457-421f-b290-6c0c415e31cc",
               "toNodeId": "a2e467b7-d327-4a87-aed2-50a884128720"
             },
-            "f1dd6ce4-b720-4d81-9438-cf15686ea39e": {
-              "id": "f1dd6ce4-b720-4d81-9438-cf15686ea39e",
-              "name": "",
+            "f34cd148-0ae3-4552-a0f0-426357163c85": {
+              "id": "f34cd148-0ae3-4552-a0f0-426357163c85",
+              "name": "No Vulnerabilities",
               "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "5f656d71-5cd1-4d12-84d6-7e2e57ff7656",
-              "toNodeId": "21e706fc-106b-4f1d-9f7e-3e591909539f"
+              "parentNodeId": "8e5093ef-4293-42d6-9e9b-4aec2d278c91",
+              "fromNodeId": "1be74860-6cb8-468c-a754-68c6809eb50d",
+              "toNodeId": ""
             },
-            "f3b52315-b2f9-41b9-846e-8253ac7f53d3": {
-              "id": "f3b52315-b2f9-41b9-846e-8253ac7f53d3",
+            "fe1553ad-1789-423a-8c8a-8e6589587dd8": {
+              "id": "fe1553ad-1789-423a-8c8a-8e6589587dd8",
               "name": "",
               "description": "",
               "parentNodeId": "8e5093ef-4293-42d6-9e9b-4aec2d278c91",
-              "fromNodeId": "d4695c05-f0a3-434d-ad0e-40846cc30772",
-              "toNodeId": "50728850-3be2-4184-b766-ce04f3708ea5"
-            },
-            "f96f87b1-d5c4-4391-a45a-333f28492f39": {
-              "id": "f96f87b1-d5c4-4391-a45a-333f28492f39",
-              "name": "",
-              "description": "",
-              "parentNodeId": "8e5093ef-4293-42d6-9e9b-4aec2d278c91",
-              "fromNodeId": "8ee2fb8a-cffb-45ae-8afe-cfe4d988eae5",
-              "toNodeId": "dfb40c0d-8f46-44bc-b6c7-dabbc71617ee"
+              "fromNodeId": "40826fbe-d5f2-4638-bce7-3b39631d1bd3",
+              "toNodeId": ""
             }
           },
           "nodes": {
@@ -281,44 +345,68 @@
               "id": "0131ed50-9d8d-49dc-befc-bab4e2a2f7f8",
               "parentNodeId": "8e5093ef-4293-42d6-9e9b-4aec2d278c91"
             },
-            "20f4323a-93e5-4400-8c77-cfadc3215c9c": {
-              "id": "20f4323a-93e5-4400-8c77-cfadc3215c9c",
-              "parentNodeId": "47fd6682-93dc-4370-8f04-426b9f977737"
-            },
-            "21e706fc-106b-4f1d-9f7e-3e591909539f": {
-              "id": "21e706fc-106b-4f1d-9f7e-3e591909539f",
+            "02b2075d-eb70-4456-8b20-921209b4df7c": {
+              "id": "02b2075d-eb70-4456-8b20-921209b4df7c",
               "parentNodeId": ""
+            },
+            "0b38c2c3-fbe1-48b4-9b2b-f28b42d7cd78": {
+              "id": "0b38c2c3-fbe1-48b4-9b2b-f28b42d7cd78",
+              "parentNodeId": "8e5093ef-4293-42d6-9e9b-4aec2d278c91"
+            },
+            "0e430408-e589-4fd4-b80e-4cd7ba2a6a03": {
+              "id": "0e430408-e589-4fd4-b80e-4cd7ba2a6a03",
+              "parentNodeId": "8e5093ef-4293-42d6-9e9b-4aec2d278c91"
+            },
+            "12d2c682-31db-45be-9702-fd7ace048ae4": {
+              "id": "12d2c682-31db-45be-9702-fd7ace048ae4",
+              "parentNodeId": "8e5093ef-4293-42d6-9e9b-4aec2d278c91"
+            },
+            "1435263f-64e3-40b2-b6ca-a49313d26468": {
+              "id": "1435263f-64e3-40b2-b6ca-a49313d26468",
+              "parentNodeId": ""
+            },
+            "1be74860-6cb8-468c-a754-68c6809eb50d": {
+              "id": "1be74860-6cb8-468c-a754-68c6809eb50d",
+              "parentNodeId": "8e5093ef-4293-42d6-9e9b-4aec2d278c91"
+            },
+            "1c6f6b18-1a43-4142-8216-08331b247f2f": {
+              "id": "1c6f6b18-1a43-4142-8216-08331b247f2f",
+              "parentNodeId": "8e5093ef-4293-42d6-9e9b-4aec2d278c91"
+            },
+            "1dcd947a-c8bf-406c-ba22-3904cff4cfa0": {
+              "id": "1dcd947a-c8bf-406c-ba22-3904cff4cfa0",
+              "parentNodeId": "8e5093ef-4293-42d6-9e9b-4aec2d278c91"
+            },
+            "249b1b29-ae03-4b41-a0a6-2807aa3d639a": {
+              "id": "249b1b29-ae03-4b41-a0a6-2807aa3d639a",
+              "parentNodeId": "40826fbe-d5f2-4638-bce7-3b39631d1bd3"
+            },
+            "256effb8-575a-4565-a5e9-901ae18b7d17": {
+              "id": "256effb8-575a-4565-a5e9-901ae18b7d17",
+              "parentNodeId": "8e5093ef-4293-42d6-9e9b-4aec2d278c91"
+            },
+            "26d28c63-da55-45e4-9a8b-2976040d4516": {
+              "id": "26d28c63-da55-45e4-9a8b-2976040d4516",
+              "parentNodeId": "40826fbe-d5f2-4638-bce7-3b39631d1bd3"
             },
             "40100b9c-79da-4894-a3ab-809fcd6f0f7e": {
               "id": "40100b9c-79da-4894-a3ab-809fcd6f0f7e",
+              "parentNodeId": "8e5093ef-4293-42d6-9e9b-4aec2d278c91"
+            },
+            "40826fbe-d5f2-4638-bce7-3b39631d1bd3": {
+              "id": "40826fbe-d5f2-4638-bce7-3b39631d1bd3",
               "parentNodeId": "8e5093ef-4293-42d6-9e9b-4aec2d278c91"
             },
             "418d2858-b0ec-4d0b-b238-9d0f7eadcd52": {
               "id": "418d2858-b0ec-4d0b-b238-9d0f7eadcd52",
               "parentNodeId": "8e5093ef-4293-42d6-9e9b-4aec2d278c91"
             },
-            "441921c2-6bcf-4b4b-975a-08ce345a4de9": {
-              "id": "441921c2-6bcf-4b4b-975a-08ce345a4de9",
-              "parentNodeId": ""
-            },
-            "47fd6682-93dc-4370-8f04-426b9f977737": {
-              "id": "47fd6682-93dc-4370-8f04-426b9f977737",
-              "parentNodeId": "8e5093ef-4293-42d6-9e9b-4aec2d278c91"
-            },
-            "50728850-3be2-4184-b766-ce04f3708ea5": {
-              "id": "50728850-3be2-4184-b766-ce04f3708ea5",
+            "52e3dbc1-5386-43c8-b1f4-55765c8b4d3a": {
+              "id": "52e3dbc1-5386-43c8-b1f4-55765c8b4d3a",
               "parentNodeId": "8e5093ef-4293-42d6-9e9b-4aec2d278c91"
             },
             "5ba09430-c569-41a4-b10e-712476e8ad08": {
               "id": "5ba09430-c569-41a4-b10e-712476e8ad08",
-              "parentNodeId": "8e5093ef-4293-42d6-9e9b-4aec2d278c91"
-            },
-            "5f656d71-5cd1-4d12-84d6-7e2e57ff7656": {
-              "id": "5f656d71-5cd1-4d12-84d6-7e2e57ff7656",
-              "parentNodeId": ""
-            },
-            "5fd87c21-a29a-42c5-bc75-df0b0d5a7869": {
-              "id": "5fd87c21-a29a-42c5-bc75-df0b0d5a7869",
               "parentNodeId": "8e5093ef-4293-42d6-9e9b-4aec2d278c91"
             },
             "69616d3a-9bce-4c17-a2ea-62f100408be1": {
@@ -328,6 +416,10 @@
             "6f5ba517-fb17-42a8-8264-135b05ee0bfd": {
               "id": "6f5ba517-fb17-42a8-8264-135b05ee0bfd",
               "parentNodeId": "8e5093ef-4293-42d6-9e9b-4aec2d278c91"
+            },
+            "7f39c9ad-3cbe-4e12-801f-9811ca223a2a": {
+              "id": "7f39c9ad-3cbe-4e12-801f-9811ca223a2a",
+              "parentNodeId": ""
             },
             "877536f9-b731-4215-9d63-397bd5cd5ce7": {
               "id": "877536f9-b731-4215-9d63-397bd5cd5ce7",
@@ -341,12 +433,12 @@
               "id": "8e5093ef-4293-42d6-9e9b-4aec2d278c91",
               "parentNodeId": ""
             },
-            "8ee2fb8a-cffb-45ae-8afe-cfe4d988eae5": {
-              "id": "8ee2fb8a-cffb-45ae-8afe-cfe4d988eae5",
+            "95d758d7-5538-415c-965d-09a4bf23ed5e": {
+              "id": "95d758d7-5538-415c-965d-09a4bf23ed5e",
               "parentNodeId": "8e5093ef-4293-42d6-9e9b-4aec2d278c91"
             },
-            "9f7e19b5-6deb-4751-ac21-11a9e0119635": {
-              "id": "9f7e19b5-6deb-4751-ac21-11a9e0119635",
+            "9adcd58c-da41-46ee-ac8d-39f5d48b07c2": {
+              "id": "9adcd58c-da41-46ee-ac8d-39f5d48b07c2",
               "parentNodeId": "8e5093ef-4293-42d6-9e9b-4aec2d278c91"
             },
             "a2e467b7-d327-4a87-aed2-50a884128720": {
@@ -365,25 +457,21 @@
               "id": "cd4cc555-b09e-40e3-9779-6b8087adf770",
               "parentNodeId": ""
             },
-            "cfc882cf-afbe-46af-8001-a2ffb9b9ad13": {
-              "id": "cfc882cf-afbe-46af-8001-a2ffb9b9ad13",
+            "da08f421-8914-45fb-8984-99a11eec8ac8": {
+              "id": "da08f421-8914-45fb-8984-99a11eec8ac8",
+              "parentNodeId": "8e5093ef-4293-42d6-9e9b-4aec2d278c91"
+            },
+            "f17ecc6b-783c-49e6-b1a6-49ab2e0946b2": {
+              "id": "f17ecc6b-783c-49e6-b1a6-49ab2e0946b2",
+              "parentNodeId": "8e5093ef-4293-42d6-9e9b-4aec2d278c91"
+            },
+            "f1cbaf18-d270-49e1-aa47-503106f992a6": {
+              "id": "f1cbaf18-d270-49e1-aa47-503106f992a6",
               "parentNodeId": ""
             },
-            "d10b76fa-9996-4952-9bb8-bd9034730b12": {
-              "id": "d10b76fa-9996-4952-9bb8-bd9034730b12",
-              "parentNodeId": "47fd6682-93dc-4370-8f04-426b9f977737"
-            },
-            "d4695c05-f0a3-434d-ad0e-40846cc30772": {
-              "id": "d4695c05-f0a3-434d-ad0e-40846cc30772",
-              "parentNodeId": "8e5093ef-4293-42d6-9e9b-4aec2d278c91"
-            },
-            "dfb40c0d-8f46-44bc-b6c7-dabbc71617ee": {
-              "id": "dfb40c0d-8f46-44bc-b6c7-dabbc71617ee",
-              "parentNodeId": "8e5093ef-4293-42d6-9e9b-4aec2d278c91"
-            },
-            "f9654a4e-1189-4ec4-9702-7f0f8d93e75b": {
-              "id": "f9654a4e-1189-4ec4-9702-7f0f8d93e75b",
-              "parentNodeId": "8e5093ef-4293-42d6-9e9b-4aec2d278c91"
+            "f8a9ce1c-a58d-4395-83c0-53c9414f4351": {
+              "id": "f8a9ce1c-a58d-4395-83c0-53c9414f4351",
+              "parentNodeId": ""
             }
           }
         },
@@ -406,8 +494,655 @@
             "defaultImageData": "https://eu.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
             "connectionType": "NONE"
           },
-          "20f4323a-93e5-4400-8c77-cfadc3215c9c": {
-            "nodeId": "20f4323a-93e5-4400-8c77-cfadc3215c9c",
+          "02b2075d-eb70-4456-8b20-921209b4df7c": {
+            "nodeId": "02b2075d-eb70-4456-8b20-921209b4df7c",
+            "name": "Decode",
+            "type": "action",
+            "plugin": {
+              "name": "Base64",
+              "slugVendor": "rapid7",
+              "slugName": "base64",
+              "slugVersion": "1.1.6",
+              "imageData": "https://eu.cdn-assets.connect.insight.rapid7.com/icons/rapid7/base64/1.1.6/icon.png"
+            },
+            "identifier": "decode",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "base64": "{{[f8a9ce1c-a58d-4395-83c0-53c9414f4351].[report].[content]}}",
+                "errors": "nothing"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "base64": {
+                  "description": "Data to decode",
+                  "displayType": "bytes",
+                  "format": "bytes",
+                  "order": 1,
+                  "title": "Base64",
+                  "type": "string"
+                },
+                "errors": {
+                  "default": "nothing",
+                  "description": "How errors should be handled when decoding Base64",
+                  "enum": [
+                    "replace",
+                    "ignore",
+                    "nothing"
+                  ],
+                  "order": 2,
+                  "title": "Errors",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "base64"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "data": {
+                  "description": "Decoded data result",
+                  "order": 1,
+                  "title": "Decoded Data",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "data"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR"
+          },
+          "0b38c2c3-fbe1-48b4-9b2b-f28b42d7cd78": {
+            "nodeId": "0b38c2c3-fbe1-48b4-9b2b-f28b42d7cd78",
+            "name": "Access Asset Vulnerability IDs",
+            "type": "action",
+            "plugin": {
+              "name": "Python 3 Script",
+              "slugVendor": "rapid7",
+              "slugName": "python_3_script",
+              "slugVersion": "2.0.2",
+              "imageData": "https://eu.cdn-assets.connect.insight.rapid7.com/icons/rapid7/python_3_script/2.0.2/icon.png"
+            },
+            "identifier": "run",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "function": "def run(params={}):\n    asset = params.get(\"{{[8e5093ef-4293-42d6-9e9b-4aec2d278c91].[$item].[id]}}\")\n    #result = asset[\"vulnids\"]\n    result = asset.get(\"vulnids\")\n    return {\"result\": result}",
+                "input": "{{[1435263f-64e3-40b2-b6ca-a49313d26468].[result]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "function": {
+                  "default": "def run(params={}):\\n    return {}",
+                  "description": "Function definition. Must be named `run`. Accepts the `input` object as params. Returns the dict as output",
+                  "displayType": "python",
+                  "format": "python",
+                  "order": 1,
+                  "title": "Function",
+                  "type": "string"
+                },
+                "input": {
+                  "description": "Input object to be passed as `params={}` to the `run` function",
+                  "order": 2,
+                  "title": "Input",
+                  "type": "object"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "result1": {
+                  "description": "Sample output result1 (delete or edit)",
+                  "order": 1,
+                  "title": "Result1",
+                  "type": "string"
+                },
+                "result2": {
+                  "description": "Sample output result2 (delete or edit)",
+                  "order": 2,
+                  "title": "Result2",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": {
+              "definitions": {},
+              "properties": {
+                "result": {
+                  "description": "Sample output result1 (delete or edit)",
+                  "items": {
+                    "type": "collection"
+                  },
+                  "order": 1,
+                  "title": "Result1",
+                  "type": "array"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "0e430408-e589-4fd4-b80e-4cd7ba2a6a03": {
+            "nodeId": "0e430408-e589-4fd4-b80e-4cd7ba2a6a03",
+            "name": "No IPS rule",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": true,
+            "parameters": {
+              "input": {
+                "content": "{{[\"Get Vulnerability Details\"].[vulnerability].[title]}}"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://eu.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "12d2c682-31db-45be-9702-fd7ace048ae4": {
+            "nodeId": "12d2c682-31db-45be-9702-fd7ace048ae4",
+            "name": "Convert ID to Integer",
+            "type": "action",
+            "plugin": {
+              "name": "Type Converter",
+              "slugVendor": "rapid7",
+              "slugName": "type_converter",
+              "slugVersion": "1.6.1",
+              "imageData": "https://eu.cdn-assets.connect.insight.rapid7.com/icons/rapid7/type_converter/1.6.1/icon.png"
+            },
+            "identifier": "string_to_integer",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "input": "{{[40100b9c-79da-4894-a3ab-809fcd6f0f7e].[DS asset ID].[0]}}",
+                "strip": false
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "input": {
+                  "description": "Input variable",
+                  "order": 1,
+                  "title": "Input",
+                  "type": "string"
+                },
+                "strip": {
+                  "description": "Strip whitespace",
+                  "order": 2,
+                  "title": "Strip",
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "input"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "output": {
+                  "description": "Type converted input",
+                  "order": 1,
+                  "title": "Output",
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "output"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR"
+          },
+          "1435263f-64e3-40b2-b6ca-a49313d26468": {
+            "nodeId": "1435263f-64e3-40b2-b6ca-a49313d26468",
+            "name": "Convert to Dictionary and List of Assets",
+            "type": "action",
+            "plugin": {
+              "name": "Python 3 Script",
+              "slugVendor": "rapid7",
+              "slugName": "python_3_script",
+              "slugVersion": "2.0.2",
+              "imageData": "https://eu.cdn-assets.connect.insight.rapid7.com/icons/rapid7/python_3_script/2.0.2/icon.png"
+            },
+            "identifier": "run",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "function": "def run(params={}):    \n    \n    # Get input parameter\n    input = params.get('input')\n    \n    # Remove CSV header and quotation marks \n    lines = input.replace('\"',\"\").split(\"\\n\")\n    del lines[0]\n\n    # Initialize the output\n    result = []\n    collection = {}\n    assets = set()\n    \n    for line in lines:\n        splitted_line = line.split(\",\")                     # Split by comma\n        splitted_line = list(filter(None, splitted_line))   # Filter empty items        \n        print(splitted_line)\n        if len(splitted_line) > 2:                  # Only process vulnerabilities with CVEs\n            asset_id = splitted_line[0]             # Extract asset ID\n            vuln_id = splitted_line[1]              # Extract vulnerability ID\n            cves = splitted_line[2:]                # Extract list of CVEs by removing the vulnerability ID\n            cves = [cve.strip() for cve in cves]    # Remove whitespace\n        \n            if asset_id not in collection:\n                collection[asset_id] = {\n                    \"vulnids\": {},\n                    \"cves\": []\n                }\n\n            if vuln_id != \"\":\n                collection[asset_id][\"vulnids\"][vuln_id] = cves\n            if cves[0] != \"\":\n                collection[asset_id][\"cves\"].extend(cves)\n\n            assets.add(int(asset_id))\n\n    return {\"result\": collection,\n            \"assets\": list(assets)}",
+                "input": {
+                  "input": "{{[02b2075d-eb70-4456-8b20-921209b4df7c].[data]}}"
+                }
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "function": {
+                  "default": "def run(params={}):\\n    return {}",
+                  "description": "Function definition. Must be named `run`. Accepts the `input` object as params. Returns the dict as output",
+                  "displayType": "python",
+                  "format": "python",
+                  "order": 1,
+                  "title": "Function",
+                  "type": "string"
+                },
+                "input": {
+                  "description": "Input object to be passed as `params={}` to the `run` function",
+                  "order": 2,
+                  "title": "Input",
+                  "type": "object"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "result1": {
+                  "description": "Sample output result1 (delete or edit)",
+                  "order": 1,
+                  "title": "Result1",
+                  "type": "string"
+                },
+                "result2": {
+                  "description": "Sample output result2 (delete or edit)",
+                  "order": 2,
+                  "title": "Result2",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": {
+              "definitions": {},
+              "properties": {
+                "Assets": {
+                  "description": "Sample output result1 (delete or edit)",
+                  "items": {
+                    "type": "integer"
+                  },
+                  "order": 1,
+                  "title": "Result1",
+                  "type": "array"
+                },
+                "result": {
+                  "description": "Sample output result2 (delete or edit)",
+                  "order": 2,
+                  "title": "Result2",
+                  "type": "collection"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "1be74860-6cb8-468c-a754-68c6809eb50d": {
+            "nodeId": "1be74860-6cb8-468c-a754-68c6809eb50d",
+            "name": "Check Total Vulnerabilities",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "f34cd148-0ae3-4552-a0f0-426357163c85",
+              "stepControlParams": [
+                {
+                  "edgeId": "f34cd148-0ae3-4552-a0f0-426357163c85",
+                  "expression": {},
+                  "expressionText": ""
+                },
+                {
+                  "edgeId": "1bf47d7b-70fe-4350-9528-0ad367eb7efa",
+                  "expression": {
+                    "left": {
+                      "name": "8e5093ef-4293-42d6-9e9b-4aec2d278c91.$item.vulnerabilities.total",
+                      "type": "variable"
+                    },
+                    "op": ">",
+                    "right": {
+                      "type": "literal",
+                      "value": 0
+                    },
+                    "type": "binary"
+                  },
+                  "expressionText": "{{[8e5093ef-4293-42d6-9e9b-4aec2d278c91].[$item].[vulnerabilities].[total]}} > 0"
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://eu.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          },
+          "1c6f6b18-1a43-4142-8216-08331b247f2f": {
+            "nodeId": "1c6f6b18-1a43-4142-8216-08331b247f2f",
+            "name": "Deploy to Computer",
+            "type": "action",
+            "plugin": {
+              "name": "Trend Micro Deep Security",
+              "slugVendor": "rapid7",
+              "slugName": "trendmicro_deepsecurity",
+              "slugVersion": "2.2.1",
+              "imageData": "https://eu.cdn-assets.connect.insight.rapid7.com/icons/rapid7/trendmicro_deepsecurity/2.2.1/icon.png"
+            },
+            "identifier": "deploy_rules",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "computer_or_policy": "computer",
+                "id": "{{[12d2c682-31db-45be-9702-fd7ace048ae4].[output]}}",
+                "rules": "{{[9adcd58c-da41-46ee-ac8d-39f5d48b07c2].[ips_rules]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "computer_or_policy": {
+                  "description": "Target for rule assignment",
+                  "enum": [
+                    "computer",
+                    "policy"
+                  ],
+                  "order": 1,
+                  "title": "Target",
+                  "type": "string"
+                },
+                "id": {
+                  "description": "ID of the target computer or policy",
+                  "order": 2,
+                  "title": "ID",
+                  "type": "integer"
+                },
+                "rules": {
+                  "description": "IPS rules to assign",
+                  "items": {
+                    "type": "integer"
+                  },
+                  "order": 3,
+                  "title": "IPS Rules",
+                  "type": "array"
+                }
+              },
+              "required": [
+                "computer_or_policy",
+                "id",
+                "rules"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "rules_assigned": {
+                  "description": "All IPS rules currently assigned",
+                  "items": {
+                    "type": "integer"
+                  },
+                  "order": 1,
+                  "title": "Rules Assigned",
+                  "type": "array"
+                },
+                "rules_not_assigned": {
+                  "description": "Unassigned IPS rules",
+                  "items": {
+                    "type": "integer"
+                  },
+                  "order": 2,
+                  "title": "Not Assigned Rules",
+                  "type": "array"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "1dcd947a-c8bf-406c-ba22-3904cff4cfa0": {
+            "nodeId": "1dcd947a-c8bf-406c-ba22-3904cff4cfa0",
+            "name": "Found Asset in SQL result?",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "8dfbceb3-deab-4097-85f5-54320778c8eb",
+              "stepControlParams": [
+                {
+                  "edgeId": "1498803b-1dcc-49dd-a603-4f0953f45aac",
+                  "expression": {
+                    "left": {
+                      "name": "f17ecc6b-783c-49e6-b1a6-49ab2e0946b2.result",
+                      "type": "variable"
+                    },
+                    "op": "=",
+                    "right": {
+                      "type": "literal",
+                      "value": ""
+                    },
+                    "type": "binary"
+                  },
+                  "expressionText": "{{[f17ecc6b-783c-49e6-b1a6-49ab2e0946b2].[result]}} = \"\""
+                },
+                {
+                  "edgeId": "8dfbceb3-deab-4097-85f5-54320778c8eb",
+                  "expression": {},
+                  "expressionText": ""
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://eu.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          },
+          "249b1b29-ae03-4b41-a0a6-2807aa3d639a": {
+            "nodeId": "249b1b29-ae03-4b41-a0a6-2807aa3d639a",
+            "name": "Create Exception",
+            "type": "action",
+            "plugin": {
+              "name": "Rapid7 InsightVM",
+              "slugVendor": "rapid7",
+              "slugName": "rapid7_insightvm",
+              "slugVersion": "4.8.1",
+              "imageData": "https://eu.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/4.8.1/icon.png"
+            },
+            "identifier": "create_exception",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "comment": "Protected by Trend Micro Deep Security",
+                "expiration": "",
+                "key": "",
+                "port": 0,
+                "reason": "Compensating Control",
+                "scope": "{{[8e5093ef-4293-42d6-9e9b-4aec2d278c91].[$item].[id]}}",
+                "type": "Asset",
+                "vulnerability": "{{[40826fbe-d5f2-4638-bce7-3b39631d1bd3].[$item]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "comment": {
+                  "default": "Exception created with InsightConnect",
+                  "description": "Comment to include in the vulnerability exception submission",
+                  "order": 5,
+                  "title": "Comment",
+                  "type": "string"
+                },
+                "expiration": {
+                  "description": "The date the vulnerability exception expires",
+                  "displayType": "date",
+                  "format": "date-time",
+                  "order": 4,
+                  "title": "Expiration",
+                  "type": "string"
+                },
+                "key": {
+                  "description": "The key to identify a specific instance if the type is Instance",
+                  "order": 7,
+                  "title": "Vulnerability Key",
+                  "type": "string"
+                },
+                "port": {
+                  "description": "The port the vulnerability appears on if the type is Instance",
+                  "order": 8,
+                  "title": "Vulnerability Port",
+                  "type": "integer"
+                },
+                "reason": {
+                  "description": "Reason for the exception",
+                  "enum": [
+                    "False Positive",
+                    "Compensating Control",
+                    "Acceptable Use",
+                    "Acceptable Risk",
+                    "Other"
+                  ],
+                  "order": 6,
+                  "title": "Reason",
+                  "type": "string"
+                },
+                "scope": {
+                  "description": "The ID of the scope the vulnerability exception applies to.  May be empty if type is Global",
+                  "order": 3,
+                  "title": "Scope ID",
+                  "type": "integer"
+                },
+                "type": {
+                  "description": "The type of vulnerability exception to create",
+                  "enum": [
+                    "Global",
+                    "Site",
+                    "Asset",
+                    "Asset Group",
+                    "Instance"
+                  ],
+                  "order": 1,
+                  "title": "Exception Type",
+                  "type": "string"
+                },
+                "vulnerability": {
+                  "description": "The vulnerability this exception applies to",
+                  "order": 2,
+                  "title": "Vulnerability",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "type",
+                "vulnerability",
+                "comment",
+                "reason"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "link": {
+                  "properties": {
+                    "href": {
+                      "description": "A hypertext reference, which is either a URI (see RFC 3986) or URI template (see RFC 6570)",
+                      "order": 1,
+                      "title": "URL",
+                      "type": "string"
+                    },
+                    "rel": {
+                      "description": "Link relation type following RFC 5988",
+                      "order": 2,
+                      "title": "Rel",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Link",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "id": {
+                  "description": "The vulnerability exception that was created",
+                  "order": 1,
+                  "title": "Created Exception ID",
+                  "type": "integer"
+                },
+                "links": {
+                  "description": "Hypermedia links to corresponding or related resources",
+                  "items": {
+                    "$ref": "#/definitions/link"
+                  },
+                  "order": 2,
+                  "title": "Links",
+                  "type": "array"
+                }
+              },
+              "required": [
+                "links",
+                "id"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "256effb8-575a-4565-a5e9-901ae18b7d17": {
+            "nodeId": "256effb8-575a-4565-a5e9-901ae18b7d17",
+            "name": "Rules deployed",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "Rules deployed!\n\nIVM ID: {{[8e5093ef-4293-42d6-9e9b-4aec2d278c91].[$item].[id]}}\nIVM Hostname: {{[8e5093ef-4293-42d6-9e9b-4aec2d278c91].[$item].[hostName]}}\nDS Asset ID: {{[40100b9c-79da-4894-a3ab-809fcd6f0f7e].[DS asset ID]}}\n\nAssigned\n{{[1c6f6b18-1a43-4142-8216-08331b247f2f].[rules_assigned]}}\n\nFailed to assign\n{{[1c6f6b18-1a43-4142-8216-08331b247f2f].[rules_not_assigned]}}\n\nProtected vulnerability IDs\n{{[52e3dbc1-5386-43c8-b1f4-55765c8b4d3a].[vulnids]}}\n\nMatched CVEs\n{{[9adcd58c-da41-46ee-ac8d-39f5d48b07c2].[matched_cves]}}\n\nMissed CVEs\n{{[9adcd58c-da41-46ee-ac8d-39f5d48b07c2].[missed_cves]}}"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://eu.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "26d28c63-da55-45e4-9a8b-2976040d4516": {
+            "nodeId": "26d28c63-da55-45e4-9a8b-2976040d4516",
             "name": "Approve Exception",
             "type": "action",
             "plugin": {
@@ -418,13 +1153,13 @@
               "imageData": "https://eu.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/4.8.1/icon.png"
             },
             "identifier": "review_exception",
-            "continueOnFailure": true,
+            "continueOnFailure": false,
             "isDisabled": false,
             "isCloud": false,
             "parameters": {
               "input": {
-                "comment": "Exception automatically approved by Rapid7 InsightConnect",
-                "exception": "{{[d10b76fa-9996-4952-9bb8-bd9034730b12].[id]}}",
+                "comment": "Automatically approved by InsightConnect",
+                "exception": "{{[249b1b29-ae03-4b41-a0a6-2807aa3d639a].[id]}}",
                 "review": "Approved"
               }
             },
@@ -502,84 +1237,6 @@
             "defaultImageData": "",
             "connectionType": "CONNECTION"
           },
-          "21e706fc-106b-4f1d-9f7e-3e591909539f": {
-            "nodeId": "21e706fc-106b-4f1d-9f7e-3e591909539f",
-            "name": "Convert to Dictionary",
-            "type": "action",
-            "plugin": {
-              "name": "Python 3 Script",
-              "slugVendor": "rapid7",
-              "slugName": "python_3_script",
-              "slugVersion": "2.0.2",
-              "imageData": "https://eu.cdn-assets.connect.insight.rapid7.com/icons/rapid7/python_3_script/2.0.2/icon.png"
-            },
-            "identifier": "run",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "isCloud": false,
-            "parameters": {
-              "input": {
-                "function": "def run(params={}):    \n    \n    # Get input parameter\n    input = params.get('input')\n    \n    # Remove CSV header and quotation marks \n    lines = input.replace('\"',\"\").split(\"\\n\")\n    del lines[0]\n\n    # Initialize the output\n    result = []\n    collection = {}\n    \n    for line in lines:\n        splitted_line = line.split(\",\")\t\t\t# Split by comma\n        if len(splitted_line) > 2:\n            asset_id = splitted_line[0]             # Extract asset ID\n            vuln_id = splitted_line[1]              # Extract vulnerability ID\n            cves = splitted_line[2:]                # Extract CVEs by removing the vulnerability ID\n            cves = [cve.strip() for cve in cves]    # Remove whitespace\n        \n            if asset_id not in collection:\n                collection[asset_id] = {\n                    \"vulnids\": {},\n                    \"cves\": []\n                }\n\n            if vuln_id != \"\":\n                collection[asset_id][\"vulnids\"][vuln_id] = cves\n            if cves[0] != \"\":\n                collection[asset_id][\"cves\"].extend(cves)\n    \n    return {\"result\": collection}\n\n\n\n\n  # Initialize the outputs\n    result = {}\n    result[\"cves\"] = []\n    result[\"vulnids\"] = {}\n\n    for line in lines:\n        splitted_line = line.split(\",\")\t\t\t# Split by comma\n        cves = splitted_line[1:]                # Extract CVEs by removing the vulnerability ID\n        cves = [cve.strip() for cve in cves]    # Remove whitespace\n        result[\"cves\"].extend(cves)             # Collect all CVEs in result_cves             \n        result[\"vulnids\"][splitted_line[0]] = cves # Create an entry for this vulnerability ID\n\n    before = len(result[\"cves\"])\n    result[\"cves\"] = list(dict.fromkeys(result[\"cves\"])) # Remove duplicates\n    after = len(result[\"cves\"])\n    if before > after:\n        print(\"Removed some duplicates from the CVE list\")",
-                "input": {
-                  "input": "{{[5f656d71-5cd1-4d12-84d6-7e2e57ff7656].[data]}}"
-                }
-              }
-            },
-            "defaultInputJSONSchema": {
-              "properties": {
-                "function": {
-                  "default": "def run(params={}):\\n    return {}",
-                  "description": "Function definition. Must be named `run`. Accepts the `input` object as params. Returns the dict as output",
-                  "displayType": "python",
-                  "format": "python",
-                  "order": 1,
-                  "title": "Function",
-                  "type": "string"
-                },
-                "input": {
-                  "description": "Input object to be passed as `params={}` to the `run` function",
-                  "order": 2,
-                  "title": "Input",
-                  "type": "object"
-                }
-              },
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultOutputJSONSchema": {
-              "properties": {
-                "result1": {
-                  "description": "Sample output result1 (delete or edit)",
-                  "order": 1,
-                  "title": "Result1",
-                  "type": "string"
-                },
-                "result2": {
-                  "description": "Sample output result2 (delete or edit)",
-                  "order": 2,
-                  "title": "Result2",
-                  "type": "string"
-                }
-              },
-              "title": "Variables",
-              "type": "object"
-            },
-            "outputJSONSchema": {
-              "definitions": {},
-              "properties": {
-                "result": {
-                  "description": "Sample output result1 (delete or edit)",
-                  "order": 1,
-                  "title": "Result1",
-                  "type": "collection"
-                }
-              },
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultImageData": "",
-            "connectionType": "CONNECTION"
-          },
           "40100b9c-79da-4894-a3ab-809fcd6f0f7e": {
             "nodeId": "40100b9c-79da-4894-a3ab-809fcd6f0f7e",
             "name": "Asset Found",
@@ -638,6 +1295,28 @@
             "defaultImageData": "",
             "connectionType": "NONE"
           },
+          "40826fbe-d5f2-4638-bce7-3b39631d1bd3": {
+            "nodeId": "40826fbe-d5f2-4638-bce7-3b39631d1bd3",
+            "name": "for each vulnerability ID",
+            "type": "loop",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "customOutput": [],
+              "innerEdgeId": "6bffbc81-99a8-447c-af75-9e4717694931",
+              "nextEdgeId": "fe1553ad-1789-423a-8c8a-8e6589587dd8",
+              "repeatVariable": "{{[52e3dbc1-5386-43c8-b1f4-55765c8b4d3a].[vulnids]}}"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": {
+              "properties": {},
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "https://eu.cdn-assets.connect.insight.rapid7.com/step-type-icons/loop.svg",
+            "connectionType": "NONE"
+          },
           "418d2858-b0ec-4d0b-b238-9d0f7eadcd52": {
             "nodeId": "418d2858-b0ec-4d0b-b238-9d0f7eadcd52",
             "name": "Check if Asset was Found by Hostname",
@@ -682,182 +1361,9 @@
             "defaultImageData": "https://eu.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
             "connectionType": "NONE"
           },
-          "441921c2-6bcf-4b4b-975a-08ce345a4de9": {
-            "nodeId": "441921c2-6bcf-4b4b-975a-08ce345a4de9",
-            "name": "Get All CVEs of All Assets",
-            "type": "action",
-            "plugin": {
-              "name": "Rapid7 InsightVM",
-              "slugVendor": "rapid7",
-              "slugName": "rapid7_insightvm",
-              "slugVersion": "4.8.1",
-              "imageData": "https://eu.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/4.8.1/icon.png"
-            },
-            "identifier": "generate_adhoc_sql_report",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "isCloud": false,
-            "parameters": {
-              "input": {
-                "filters": "{}",
-                "query": "SELECT DISTINCT on(asset_id, vulnerability_id) asset_id, dim_vulnerability.nexpose_id, dvr.references\nFROM fact_asset_scan_vulnerability_instance favi\nJOIN dim_asset da USING (asset_id)\nJOIN dim_vulnerability USING (vulnerability_id)\nJOIN dim_site_asset USING (asset_id)\nJOIN dim_site USING (site_id)\nLEFT JOIN (SELECT vulnerability_id, string_agg(DISTINCT reference, ', ') as references FROM dim_vulnerability_reference\nWHERE reference LIKE 'CVE%'GROUP BY vulnerability_id) dvr USING (vulnerability_id)\nLEFT JOIN dim_asset_vulnerability_solution USING (asset_id, vulnerability_id)\nLEFT JOIN dim_solution ds USING (solution_id)\nGROUP BY asset_id, vulnerability_id, dvr.references, dim_vulnerability.nexpose_id",
-                "scope": "assets",
-                "scope_ids": "{{[cfc882cf-afbe-46af-8001-a2ffb9b9ad13].[result]}}"
-              }
-            },
-            "defaultInputJSONSchema": {
-              "properties": {
-                "filters": {
-                  "default": "{}",
-                  "description": "Filters in JSON format to be applied to the contents of the report; review InsightVM API documentation for filter options",
-                  "order": 4,
-                  "title": "Report Filters",
-                  "type": "string"
-                },
-                "query": {
-                  "description": "Reporting Data Model SQL query",
-                  "order": 1,
-                  "title": "Query",
-                  "type": "string"
-                },
-                "scope": {
-                  "default": "none",
-                  "description": "Scope context for generated report; if set, remediations will be scoped by each in scope ID, e.g Site ID, Tag ID, Asset Group ID; scan scope only supports single scan ID as input",
-                  "enum": [
-                    "none",
-                    "assets",
-                    "assetGroups",
-                    "sites",
-                    "tags",
-                    "scan"
-                  ],
-                  "order": 2,
-                  "title": "Scope",
-                  "type": "string"
-                },
-                "scope_ids": {
-                  "default": [],
-                  "description": "Scope IDs for which tickets should be generated, by default all are included",
-                  "items": {
-                    "type": "integer"
-                  },
-                  "order": 3,
-                  "title": "Scope IDs",
-                  "type": "array"
-                }
-              },
-              "required": [
-                "query",
-                "scope"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultOutputJSONSchema": {
-              "definitions": {
-                "configuration": {
-                  "properties": {
-                    "name": {
-                      "description": "Name of the configuration value",
-                      "order": 1,
-                      "title": "Name",
-                      "type": "string"
-                    },
-                    "value": {
-                      "description": "Configuration value",
-                      "order": 2,
-                      "title": "Value",
-                      "type": "string"
-                    }
-                  },
-                  "title": "Configuration",
-                  "type": "object"
-                },
-                "file": {
-                  "properties": {
-                    "attributes": {
-                      "description": "Attributes detected on the file",
-                      "items": {
-                        "$ref": "#/definitions/configuration"
-                      },
-                      "order": 1,
-                      "title": "Attributes",
-                      "type": "array"
-                    },
-                    "content": {
-                      "description": "Contents of the file",
-                      "displayType": "bytes",
-                      "format": "bytes",
-                      "order": 5,
-                      "title": "Contents",
-                      "type": "string"
-                    },
-                    "name": {
-                      "description": "Name of the file",
-                      "order": 2,
-                      "title": "Name",
-                      "type": "string"
-                    },
-                    "size": {
-                      "description": "Size of the regular file (in bytes). If the file is a directory, no value is returned",
-                      "order": 3,
-                      "title": "Size",
-                      "type": "integer"
-                    },
-                    "type": {
-                      "description": "Type of the file, e.g. file or directory",
-                      "order": 4,
-                      "title": "Type",
-                      "type": "string"
-                    }
-                  },
-                  "title": "File",
-                  "type": "object"
-                }
-              },
-              "properties": {
-                "report": {
-                  "$ref": "#/definitions/file",
-                  "description": "Base64 encoded file making up the report",
-                  "order": 1,
-                  "title": "Base64 Encoded Report"
-                }
-              },
-              "required": [
-                "report"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "outputJSONSchema": null,
-            "defaultImageData": "",
-            "connectionType": "CONNECTION"
-          },
-          "47fd6682-93dc-4370-8f04-426b9f977737": {
-            "nodeId": "47fd6682-93dc-4370-8f04-426b9f977737",
-            "name": "For Each Protected Vulnerability ID",
-            "type": "loop",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "customOutput": [],
-              "innerEdgeId": "ceea802c-a316-4349-b52a-7e427031ab42",
-              "nextEdgeId": "10dc6a14-a411-4d6f-ab2a-0d27b2fd3399",
-              "repeatVariable": "{{[f9654a4e-1189-4ec4-9702-7f0f8d93e75b].[vulnids]}}"
-            },
-            "defaultInputJSONSchema": null,
-            "defaultOutputJSONSchema": null,
-            "outputJSONSchema": {
-              "properties": {},
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultImageData": "https://eu.cdn-assets.connect.insight.rapid7.com/step-type-icons/loop.svg",
-            "connectionType": "NONE"
-          },
-          "50728850-3be2-4184-b766-ce04f3708ea5": {
-            "nodeId": "50728850-3be2-4184-b766-ce04f3708ea5",
-            "name": "Access Asset Vulnerability IDs",
+          "52e3dbc1-5386-43c8-b1f4-55765c8b4d3a": {
+            "nodeId": "52e3dbc1-5386-43c8-b1f4-55765c8b4d3a",
+            "name": "Generate List of Protected Vulnerability IDs",
             "type": "action",
             "plugin": {
               "name": "Python 3 Script",
@@ -872,8 +1378,11 @@
             "isCloud": false,
             "parameters": {
               "input": {
-                "function": "def run(params={}):\n    asset = params.get(\"{{[8e5093ef-4293-42d6-9e9b-4aec2d278c91].[$item].[id]}}\")\n    result = asset[\"vulnids\"]\n    return {\"result\": result}",
-                "input": "{{[21e706fc-106b-4f1d-9f7e-3e591909539f].[result]}}"
+                "function": "def run(params={}):\n    \n\t# Get input parameter\n\tprotected_cves = params.get('cves')\n\tvulnids = params.get('vulnids')\n    \n\t# Initialize result\n\tresult = {}\n\tresult[\"vulnids\"] = []    \n    \n\t# Find vulnerability ID for CVEs protected by Deep Security\n\tfor cve in protected_cves:\n\t\tfor vulnerability_id, cves in vulnids.items():\n\t\t\tif cve in cves:\n\t\t\t\tresult[\"vulnids\"].append(vulnerability_id)\n    \n\treturn result",
+                "input": {
+                  "cves": "{{[9adcd58c-da41-46ee-ac8d-39f5d48b07c2].[matched_cves]}}",
+                  "vulnids": "{{[0b38c2c3-fbe1-48b4-9b2b-f28b42d7cd78].[result]}}"
+                }
               }
             },
             "defaultInputJSONSchema": {
@@ -918,10 +1427,10 @@
             "outputJSONSchema": {
               "definitions": {},
               "properties": {
-                "result": {
+                "vulnids": {
                   "description": "Sample output result1 (delete or edit)",
                   "items": {
-                    "type": "collection"
+                    "type": "string"
                   },
                   "order": 1,
                   "title": "Result1",
@@ -978,156 +1487,6 @@
             "defaultImageData": "https://eu.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
             "connectionType": "NONE"
           },
-          "5f656d71-5cd1-4d12-84d6-7e2e57ff7656": {
-            "nodeId": "5f656d71-5cd1-4d12-84d6-7e2e57ff7656",
-            "name": "Decode",
-            "type": "action",
-            "plugin": {
-              "name": "Base64",
-              "slugVendor": "rapid7",
-              "slugName": "base64",
-              "slugVersion": "1.1.6",
-              "imageData": "https://eu.cdn-assets.connect.insight.rapid7.com/icons/rapid7/base64/1.1.6/icon.png"
-            },
-            "identifier": "decode",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "isCloud": false,
-            "parameters": {
-              "input": {
-                "base64": "{{[441921c2-6bcf-4b4b-975a-08ce345a4de9].[report].[content]}}",
-                "errors": "nothing"
-              }
-            },
-            "defaultInputJSONSchema": {
-              "properties": {
-                "base64": {
-                  "description": "Data to decode",
-                  "displayType": "bytes",
-                  "format": "bytes",
-                  "order": 1,
-                  "title": "Base64",
-                  "type": "string"
-                },
-                "errors": {
-                  "default": "nothing",
-                  "description": "How errors should be handled when decoding Base64",
-                  "enum": [
-                    "replace",
-                    "ignore",
-                    "nothing"
-                  ],
-                  "order": 2,
-                  "title": "Errors",
-                  "type": "string"
-                }
-              },
-              "required": [
-                "base64"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultOutputJSONSchema": {
-              "properties": {
-                "data": {
-                  "description": "Decoded data result",
-                  "order": 1,
-                  "title": "Decoded Data",
-                  "type": "string"
-                }
-              },
-              "required": [
-                "data"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "outputJSONSchema": null,
-            "defaultImageData": "",
-            "connectionType": "ORCHESTRATOR"
-          },
-          "5fd87c21-a29a-42c5-bc75-df0b0d5a7869": {
-            "nodeId": "5fd87c21-a29a-42c5-bc75-df0b0d5a7869",
-            "name": "Access Asset CVEs",
-            "type": "action",
-            "plugin": {
-              "name": "Python 3 Script",
-              "slugVendor": "rapid7",
-              "slugName": "python_3_script",
-              "slugVersion": "2.0.2",
-              "imageData": "https://eu.cdn-assets.connect.insight.rapid7.com/icons/rapid7/python_3_script/2.0.2/icon.png"
-            },
-            "identifier": "run",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "isCloud": false,
-            "parameters": {
-              "input": {
-                "function": "def run(params={}):\n    input = params.get('input')\n    result = input[\"{{[8e5093ef-4293-42d6-9e9b-4aec2d278c91].[$item].[id]}}\"][\"cves\"]\n    return {\"result\": result}",
-                "input": {
-                  "input": "{{[21e706fc-106b-4f1d-9f7e-3e591909539f].[result]}}"
-                }
-              }
-            },
-            "defaultInputJSONSchema": {
-              "properties": {
-                "function": {
-                  "default": "def run(params={}):\\n    return {}",
-                  "description": "Function definition. Must be named `run`. Accepts the `input` object as params. Returns the dict as output",
-                  "displayType": "python",
-                  "format": "python",
-                  "order": 1,
-                  "title": "Function",
-                  "type": "string"
-                },
-                "input": {
-                  "description": "Input object to be passed as `params={}` to the `run` function",
-                  "order": 2,
-                  "title": "Input",
-                  "type": "object"
-                }
-              },
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultOutputJSONSchema": {
-              "properties": {
-                "result1": {
-                  "description": "Sample output result1 (delete or edit)",
-                  "order": 1,
-                  "title": "Result1",
-                  "type": "string"
-                },
-                "result2": {
-                  "description": "Sample output result2 (delete or edit)",
-                  "order": 2,
-                  "title": "Result2",
-                  "type": "string"
-                }
-              },
-              "title": "Variables",
-              "type": "object"
-            },
-            "outputJSONSchema": {
-              "definitions": {},
-              "properties": {
-                "result": {
-                  "description": "Sample output result1 (delete or edit)",
-                  "items": {
-                    "type": "string"
-                  },
-                  "order": 1,
-                  "title": "Result1",
-                  "type": "array"
-                }
-              },
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultImageData": "",
-            "connectionType": "CONNECTION"
-          },
           "69616d3a-9bce-4c17-a2ea-62f100408be1": {
             "nodeId": "69616d3a-9bce-4c17-a2ea-62f100408be1",
             "name": "Asset without Hostname",
@@ -1136,7 +1495,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "{{[8e5093ef-4293-42d6-9e9b-4aec2d278c91].[$item]}}"
+                "content": "ID: {{[8e5093ef-4293-42d6-9e9b-4aec2d278c91].[$item].[id]}}\nIP: {{[8e5093ef-4293-42d6-9e9b-4aec2d278c91].[$item].[ip]}}\nOS: {{[8e5093ef-4293-42d6-9e9b-4aec2d278c91].[$item].[os]}}\n\nHostnames: {{[8e5093ef-4293-42d6-9e9b-4aec2d278c91].[$item].[hostNames]}}\n\nSystem Name: {{[8e5093ef-4293-42d6-9e9b-4aec2d278c91].[$item].[osFingerprint].[systemName]}}\nType: {{[8e5093ef-4293-42d6-9e9b-4aec2d278c91].[$item].[osFingerprint].[type]}}\nDescription: {{[8e5093ef-4293-42d6-9e9b-4aec2d278c91].[$item].[osFingerprint].[description]}}\n"
               },
               "type": "markdown"
             },
@@ -1180,6 +1539,37 @@
             "defaultOutputJSONSchema": null,
             "outputJSONSchema": null,
             "defaultImageData": "https://eu.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          },
+          "7f39c9ad-3cbe-4e12-801f-9811ca223a2a": {
+            "nodeId": "7f39c9ad-3cbe-4e12-801f-9811ca223a2a",
+            "name": "Filter Sites",
+            "type": "filter",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "stepControlParam": {
+                "edgeId": "47c29452-ccab-425d-a296-c4b164da1e38",
+                "expression": {
+                  "left": {
+                    "name": "cd4cc555-b09e-40e3-9779-6b8087adf770.scan.siteName",
+                    "type": "variable"
+                  },
+                  "op": "=~",
+                  "right": {
+                    "regexp": ".*(Site-Without-DeepSecurity|Rapid7 Insight Agents).*",
+                    "type": "regexp"
+                  },
+                  "type": "binary"
+                },
+                "expressionText": "{{[cd4cc555-b09e-40e3-9779-6b8087adf770].[scan].[siteName]}} =~ /.*(Site-Without-DeepSecurity|Rapid7 Insight Agents).*/"
+              },
+              "stopOnMatch": true
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://eu.cdn-assets.connect.insight.rapid7.com/step-type-icons/filter.svg",
             "connectionType": "NONE"
           },
           "877536f9-b731-4215-9d63-397bd5cd5ce7": {
@@ -1474,8 +1864,52 @@
             "defaultImageData": "https://eu.cdn-assets.connect.insight.rapid7.com/step-type-icons/loop.svg",
             "connectionType": "NONE"
           },
-          "8ee2fb8a-cffb-45ae-8afe-cfe4d988eae5": {
-            "nodeId": "8ee2fb8a-cffb-45ae-8afe-cfe4d988eae5",
+          "95d758d7-5538-415c-965d-09a4bf23ed5e": {
+            "nodeId": "95d758d7-5538-415c-965d-09a4bf23ed5e",
+            "name": "Check if Rules are Available",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "cc9ce2cc-4721-4132-b354-48a3e8c2c7f9",
+              "stepControlParams": [
+                {
+                  "edgeId": "63f4d6d7-c69f-4c3f-841f-3f895728b464",
+                  "expression": {
+                    "left": {
+                      "args": [
+                        {
+                          "name": "9adcd58c-da41-46ee-ac8d-39f5d48b07c2.ips_rules",
+                          "type": "variable"
+                        }
+                      ],
+                      "name": "length",
+                      "type": "function"
+                    },
+                    "op": "=",
+                    "right": {
+                      "type": "literal",
+                      "value": 0
+                    },
+                    "type": "binary"
+                  },
+                  "expressionText": "(length({{[9adcd58c-da41-46ee-ac8d-39f5d48b07c2].[ips_rules]}}) = 0)"
+                },
+                {
+                  "edgeId": "cc9ce2cc-4721-4132-b354-48a3e8c2c7f9",
+                  "expression": {},
+                  "expressionText": ""
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://eu.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          },
+          "9adcd58c-da41-46ee-ac8d-39f5d48b07c2": {
+            "nodeId": "9adcd58c-da41-46ee-ac8d-39f5d48b07c2",
             "name": "Search for IPS Rules in Deep Security",
             "type": "action",
             "plugin": {
@@ -1491,7 +1925,7 @@
             "isCloud": false,
             "parameters": {
               "input": {
-                "vulnerabilities": "{{[5fd87c21-a29a-42c5-bc75-df0b0d5a7869].[result]}}"
+                "vulnerabilities": "{{[f17ecc6b-783c-49e6-b1a6-49ab2e0946b2].[result]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -1548,67 +1982,6 @@
             "outputJSONSchema": null,
             "defaultImageData": "",
             "connectionType": "CONNECTION"
-          },
-          "9f7e19b5-6deb-4751-ac21-11a9e0119635": {
-            "nodeId": "9f7e19b5-6deb-4751-ac21-11a9e0119635",
-            "name": "Convert ID to Integer",
-            "type": "action",
-            "plugin": {
-              "name": "Type Converter",
-              "slugVendor": "rapid7",
-              "slugName": "type_converter",
-              "slugVersion": "1.6.1",
-              "imageData": "https://eu.cdn-assets.connect.insight.rapid7.com/icons/rapid7/type_converter/1.6.1/icon.png"
-            },
-            "identifier": "string_to_integer",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "isCloud": false,
-            "parameters": {
-              "input": {
-                "input": "{{[40100b9c-79da-4894-a3ab-809fcd6f0f7e].[DS asset ID].[0]}}",
-                "strip": false
-              }
-            },
-            "defaultInputJSONSchema": {
-              "properties": {
-                "input": {
-                  "description": "Input variable",
-                  "order": 1,
-                  "title": "Input",
-                  "type": "string"
-                },
-                "strip": {
-                  "description": "Strip whitespace",
-                  "order": 2,
-                  "title": "Strip",
-                  "type": "boolean"
-                }
-              },
-              "required": [
-                "input"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultOutputJSONSchema": {
-              "properties": {
-                "output": {
-                  "description": "Type converted input",
-                  "order": 1,
-                  "title": "Output",
-                  "type": "integer"
-                }
-              },
-              "required": [
-                "output"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "outputJSONSchema": null,
-            "defaultImageData": "",
-            "connectionType": "ORCHESTRATOR"
           },
           "a2e467b7-d327-4a87-aed2-50a884128720": {
             "nodeId": "a2e467b7-d327-4a87-aed2-50a884128720",
@@ -2646,6 +3019,7 @@
           "cd4cc555-b09e-40e3-9779-6b8087adf770": {
             "nodeId": "cd4cc555-b09e-40e3-9779-6b8087adf770",
             "name": "Check for Finished Scans",
+            "description": "Check every 6h if there are finished scans in InsightVM",
             "type": "trigger",
             "plugin": {
               "name": "Rapid7 InsightVM",
@@ -2659,7 +3033,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "frequency": 5,
+                "frequency": 360,
                 "most_recent_scan": true,
                 "site_name_filter": ".*",
                 "status_filter": [
@@ -2667,7 +3041,7 @@
                 ]
               }
             },
-            "triggerId": "c32acb8c-9a05-4c0e-a612-ab83664aac4d",
+            "triggerId": "0f8c80cd-0ab8-4300-8c01-d28d4b1f83f3",
             "defaultInputJSONSchema": {
               "properties": {
                 "frequency": {
@@ -2889,8 +3263,107 @@
             "defaultImageData": "https://eu.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg",
             "connectionType": "CONNECTION"
           },
-          "cfc882cf-afbe-46af-8001-a2ffb9b9ad13": {
-            "nodeId": "cfc882cf-afbe-46af-8001-a2ffb9b9ad13",
+          "da08f421-8914-45fb-8984-99a11eec8ac8": {
+            "nodeId": "da08f421-8914-45fb-8984-99a11eec8ac8",
+            "name": "Asset not found in SQL report",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "This Asset has vulnerabilities, but they didn't show up in the SQL report.\nPlease check:\n\n{{[8e5093ef-4293-42d6-9e9b-4aec2d278c91].[$item].[hostName]}}\nID: {{[8e5093ef-4293-42d6-9e9b-4aec2d278c91].[$item].[id]}}\n{{[8e5093ef-4293-42d6-9e9b-4aec2d278c91].[$item].[vulnerabilities]}}"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://eu.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "f17ecc6b-783c-49e6-b1a6-49ab2e0946b2": {
+            "nodeId": "f17ecc6b-783c-49e6-b1a6-49ab2e0946b2",
+            "name": "Access Asset CVEs",
+            "type": "action",
+            "plugin": {
+              "name": "Python 3 Script",
+              "slugVendor": "rapid7",
+              "slugName": "python_3_script",
+              "slugVersion": "2.0.2",
+              "imageData": "https://eu.cdn-assets.connect.insight.rapid7.com/icons/rapid7/python_3_script/2.0.2/icon.png"
+            },
+            "identifier": "run",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "function": "def run(params={}):\n    input = params.get('input')    \n     \n    result = input.get(\"{{[8e5093ef-4293-42d6-9e9b-4aec2d278c91].[$item].[id]}}\",\"\")\n    \n    if result:\n        result = result.get(\"cves\", \"\")\n\n    return {\"result\": result}",
+                "input": {
+                  "input": "{{[1435263f-64e3-40b2-b6ca-a49313d26468].[result]}}"
+                }
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "function": {
+                  "default": "def run(params={}):\\n    return {}",
+                  "description": "Function definition. Must be named `run`. Accepts the `input` object as params. Returns the dict as output",
+                  "displayType": "python",
+                  "format": "python",
+                  "order": 1,
+                  "title": "Function",
+                  "type": "string"
+                },
+                "input": {
+                  "description": "Input object to be passed as `params={}` to the `run` function",
+                  "order": 2,
+                  "title": "Input",
+                  "type": "object"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "result1": {
+                  "description": "Sample output result1 (delete or edit)",
+                  "order": 1,
+                  "title": "Result1",
+                  "type": "string"
+                },
+                "result2": {
+                  "description": "Sample output result2 (delete or edit)",
+                  "order": 2,
+                  "title": "Result2",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": {
+              "definitions": {},
+              "properties": {
+                "result": {
+                  "description": "Sample output result1 (delete or edit)",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "Result1",
+                  "type": "array"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "f1cbaf18-d270-49e1-aa47-503106f992a6": {
+            "nodeId": "f1cbaf18-d270-49e1-aa47-503106f992a6",
             "name": "Extract Asset IDs",
             "type": "action",
             "plugin": {
@@ -2970,9 +3443,9 @@
             "defaultImageData": "",
             "connectionType": "CONNECTION"
           },
-          "d10b76fa-9996-4952-9bb8-bd9034730b12": {
-            "nodeId": "d10b76fa-9996-4952-9bb8-bd9034730b12",
-            "name": "Create Exception for Asset",
+          "f8a9ce1c-a58d-4395-83c0-53c9414f4351": {
+            "nodeId": "f8a9ce1c-a58d-4395-83c0-53c9414f4351",
+            "name": "Get Vulnerabilities Without Exception of Scanned Assets ",
             "type": "action",
             "plugin": {
               "name": "Rapid7 InsightVM",
@@ -2981,374 +3454,163 @@
               "slugVersion": "4.8.1",
               "imageData": "https://eu.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/4.8.1/icon.png"
             },
-            "identifier": "create_exception",
-            "continueOnFailure": true,
+            "identifier": "generate_adhoc_sql_report",
+            "continueOnFailure": false,
             "isDisabled": false,
             "isCloud": false,
             "parameters": {
               "input": {
-                "comment": "Protected by Trend Micro Deep Security",
-                "expiration": "",
-                "key": "",
-                "port": 0,
-                "reason": "Compensating Control",
-                "scope": "{{[8e5093ef-4293-42d6-9e9b-4aec2d278c91].[$item].[id]}}",
-                "type": "Asset",
-                "vulnerability": "{{[47fd6682-93dc-4370-8f04-426b9f977737].[$item]}}"
+                "filters": "{}",
+                "query": "select da.asset_id, dv.nexpose_id, dvr.references\n FROM fact_asset_vulnerability_finding favf\n JOIN dim_vulnerability dv USING (vulnerability_id)\n JOIN dim_asset da USING (asset_id)\nLEFT JOIN (SELECT vulnerability_id, string_agg(DISTINCT reference, ', ') as references FROM dim_vulnerability_reference\nWHERE reference LIKE 'CVE%'GROUP BY vulnerability_id) dvr USING (vulnerability_id)\nGROUP BY da.asset_id, dv.nexpose_id, dvr.references",
+                "scope": "assets",
+                "scope_ids": "{{[f1cbaf18-d270-49e1-aa47-503106f992a6].[result]}}"
               }
             },
             "defaultInputJSONSchema": {
               "properties": {
-                "comment": {
-                  "default": "Exception created with InsightConnect",
-                  "description": "Comment to include in the vulnerability exception submission",
-                  "order": 5,
-                  "title": "Comment",
-                  "type": "string"
-                },
-                "expiration": {
-                  "description": "The date the vulnerability exception expires",
-                  "displayType": "date",
-                  "format": "date-time",
+                "filters": {
+                  "default": "{}",
+                  "description": "Filters in JSON format to be applied to the contents of the report; review InsightVM API documentation for filter options",
                   "order": 4,
-                  "title": "Expiration",
+                  "title": "Report Filters",
                   "type": "string"
                 },
-                "key": {
-                  "description": "The key to identify a specific instance if the type is Instance",
-                  "order": 7,
-                  "title": "Vulnerability Key",
-                  "type": "string"
-                },
-                "port": {
-                  "description": "The port the vulnerability appears on if the type is Instance",
-                  "order": 8,
-                  "title": "Vulnerability Port",
-                  "type": "integer"
-                },
-                "reason": {
-                  "description": "Reason for the exception",
-                  "enum": [
-                    "False Positive",
-                    "Compensating Control",
-                    "Acceptable Use",
-                    "Acceptable Risk",
-                    "Other"
-                  ],
-                  "order": 6,
-                  "title": "Reason",
+                "query": {
+                  "description": "Reporting Data Model SQL query",
+                  "order": 1,
+                  "title": "Query",
                   "type": "string"
                 },
                 "scope": {
-                  "description": "The ID of the scope the vulnerability exception applies to.  May be empty if type is Global",
-                  "order": 3,
-                  "title": "Scope ID",
-                  "type": "integer"
-                },
-                "type": {
-                  "description": "The type of vulnerability exception to create",
+                  "default": "none",
+                  "description": "Scope context for generated report; if set, remediations will be scoped by each in scope ID, e.g Site ID, Tag ID, Asset Group ID; scan scope only supports single scan ID as input",
                   "enum": [
-                    "Global",
-                    "Site",
-                    "Asset",
-                    "Asset Group",
-                    "Instance"
+                    "none",
+                    "assets",
+                    "assetGroups",
+                    "sites",
+                    "tags",
+                    "scan"
                   ],
-                  "order": 1,
-                  "title": "Exception Type",
+                  "order": 2,
+                  "title": "Scope",
                   "type": "string"
                 },
-                "vulnerability": {
-                  "description": "The vulnerability this exception applies to",
-                  "order": 2,
-                  "title": "Vulnerability",
-                  "type": "string"
+                "scope_ids": {
+                  "default": [],
+                  "description": "Scope IDs for which tickets should be generated, by default all are included",
+                  "items": {
+                    "type": "integer"
+                  },
+                  "order": 3,
+                  "title": "Scope IDs",
+                  "type": "array"
                 }
               },
               "required": [
-                "type",
-                "vulnerability",
-                "comment",
-                "reason"
+                "query",
+                "scope"
               ],
               "title": "Variables",
               "type": "object"
             },
             "defaultOutputJSONSchema": {
               "definitions": {
-                "link": {
+                "configuration": {
                   "properties": {
-                    "href": {
-                      "description": "A hypertext reference, which is either a URI (see RFC 3986) or URI template (see RFC 6570)",
+                    "name": {
+                      "description": "Name of the configuration value",
                       "order": 1,
-                      "title": "URL",
+                      "title": "Name",
                       "type": "string"
                     },
-                    "rel": {
-                      "description": "Link relation type following RFC 5988",
+                    "value": {
+                      "description": "Configuration value",
                       "order": 2,
-                      "title": "Rel",
+                      "title": "Value",
                       "type": "string"
                     }
                   },
-                  "title": "Link",
+                  "title": "Configuration",
+                  "type": "object"
+                },
+                "file": {
+                  "properties": {
+                    "attributes": {
+                      "description": "Attributes detected on the file",
+                      "items": {
+                        "$ref": "#/definitions/configuration"
+                      },
+                      "order": 1,
+                      "title": "Attributes",
+                      "type": "array"
+                    },
+                    "content": {
+                      "description": "Contents of the file",
+                      "displayType": "bytes",
+                      "format": "bytes",
+                      "order": 5,
+                      "title": "Contents",
+                      "type": "string"
+                    },
+                    "name": {
+                      "description": "Name of the file",
+                      "order": 2,
+                      "title": "Name",
+                      "type": "string"
+                    },
+                    "size": {
+                      "description": "Size of the regular file (in bytes). If the file is a directory, no value is returned",
+                      "order": 3,
+                      "title": "Size",
+                      "type": "integer"
+                    },
+                    "type": {
+                      "description": "Type of the file, e.g. file or directory",
+                      "order": 4,
+                      "title": "Type",
+                      "type": "string"
+                    }
+                  },
+                  "title": "File",
                   "type": "object"
                 }
               },
               "properties": {
-                "id": {
-                  "description": "The vulnerability exception that was created",
+                "report": {
+                  "$ref": "#/definitions/file",
+                  "description": "Base64 encoded file making up the report",
                   "order": 1,
-                  "title": "Created Exception ID",
-                  "type": "integer"
-                },
-                "links": {
-                  "description": "Hypermedia links to corresponding or related resources",
-                  "items": {
-                    "$ref": "#/definitions/link"
-                  },
-                  "order": 2,
-                  "title": "Links",
-                  "type": "array"
+                  "title": "Base64 Encoded Report"
                 }
               },
               "required": [
-                "links",
-                "id"
+                "report"
               ],
               "title": "Variables",
               "type": "object"
             },
             "outputJSONSchema": null,
-            "defaultImageData": "",
-            "connectionType": "CONNECTION"
-          },
-          "d4695c05-f0a3-434d-ad0e-40846cc30772": {
-            "nodeId": "d4695c05-f0a3-434d-ad0e-40846cc30772",
-            "name": "Deploy Rules to Computer ",
-            "type": "action",
-            "plugin": {
-              "name": "Trend Micro Deep Security",
-              "slugVendor": "rapid7",
-              "slugName": "trendmicro_deepsecurity",
-              "slugVersion": "2.2.1",
-              "imageData": "https://eu.cdn-assets.connect.insight.rapid7.com/icons/rapid7/trendmicro_deepsecurity/2.2.1/icon.png"
-            },
-            "identifier": "deploy_rules",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "isCloud": false,
-            "parameters": {
-              "input": {
-                "computer_or_policy": "computer",
-                "id": "{{[9f7e19b5-6deb-4751-ac21-11a9e0119635].[output]}}",
-                "rules": "{{[8ee2fb8a-cffb-45ae-8afe-cfe4d988eae5].[ips_rules]}}"
-              }
-            },
-            "defaultInputJSONSchema": {
-              "properties": {
-                "computer_or_policy": {
-                  "description": "Target for rule assignment",
-                  "enum": [
-                    "computer",
-                    "policy"
-                  ],
-                  "order": 1,
-                  "title": "Target",
-                  "type": "string"
-                },
-                "id": {
-                  "description": "ID of the target computer or policy",
-                  "order": 2,
-                  "title": "ID",
-                  "type": "integer"
-                },
-                "rules": {
-                  "description": "IPS rules to assign",
-                  "items": {
-                    "type": "integer"
-                  },
-                  "order": 3,
-                  "title": "IPS Rules",
-                  "type": "array"
-                }
-              },
-              "required": [
-                "computer_or_policy",
-                "id",
-                "rules"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultOutputJSONSchema": {
-              "properties": {
-                "rules_assigned": {
-                  "description": "All IPS rules currently assigned",
-                  "items": {
-                    "type": "integer"
-                  },
-                  "order": 1,
-                  "title": "Rules Assigned",
-                  "type": "array"
-                },
-                "rules_not_assigned": {
-                  "description": "Unassigned IPS rules",
-                  "items": {
-                    "type": "integer"
-                  },
-                  "order": 2,
-                  "title": "Not Assigned Rules",
-                  "type": "array"
-                }
-              },
-              "title": "Variables",
-              "type": "object"
-            },
-            "outputJSONSchema": null,
-            "defaultImageData": "",
-            "connectionType": "CONNECTION"
-          },
-          "dfb40c0d-8f46-44bc-b6c7-dabbc71617ee": {
-            "nodeId": "dfb40c0d-8f46-44bc-b6c7-dabbc71617ee",
-            "name": "Rules found?",
-            "type": "automated_decision",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "defaultEdgeId": "980236a5-c0e3-46e6-819b-186dffb18b97",
-              "stepControlParams": [
-                {
-                  "edgeId": "980236a5-c0e3-46e6-819b-186dffb18b97",
-                  "expression": {},
-                  "expressionText": ""
-                },
-                {
-                  "edgeId": "bed5fd7a-3817-4ab8-94e7-4cb95a1156d6",
-                  "expression": {
-                    "left": {
-                      "args": [
-                        {
-                          "name": "8ee2fb8a-cffb-45ae-8afe-cfe4d988eae5.ips_rules",
-                          "type": "variable"
-                        }
-                      ],
-                      "name": "length",
-                      "type": "function"
-                    },
-                    "op": "=",
-                    "right": {
-                      "type": "literal",
-                      "value": 0
-                    },
-                    "type": "binary"
-                  },
-                  "expressionText": "(length({{[8ee2fb8a-cffb-45ae-8afe-cfe4d988eae5].[ips_rules]}}) = 0)"
-                }
-              ]
-            },
-            "defaultInputJSONSchema": null,
-            "defaultOutputJSONSchema": null,
-            "outputJSONSchema": null,
-            "defaultImageData": "https://eu.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
-            "connectionType": "NONE"
-          },
-          "f9654a4e-1189-4ec4-9702-7f0f8d93e75b": {
-            "nodeId": "f9654a4e-1189-4ec4-9702-7f0f8d93e75b",
-            "name": "Generate List of Protected Vulnerability IDs",
-            "type": "action",
-            "plugin": {
-              "name": "Python 3 Script",
-              "slugVendor": "rapid7",
-              "slugName": "python_3_script",
-              "slugVersion": "2.0.2",
-              "imageData": "https://eu.cdn-assets.connect.insight.rapid7.com/icons/rapid7/python_3_script/2.0.2/icon.png"
-            },
-            "identifier": "run",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "isCloud": false,
-            "parameters": {
-              "input": {
-                "function": "def run(params={}):\n    \n\t# Get input parameter\n\tprotected_cves = params.get('cves')\n\tvulnids = params.get('vulnids')\n    \n\t# Initialize result\n\tresult = {}\n\tresult[\"vulnids\"] = []    \n    \n\t# Find vulnerability ID for CVEs protected by Deep Security\n\tfor cve in protected_cves:\n\t\tfor vulnerability_id, cves in vulnids.items():\n\t\t\tif cve in cves:\n\t\t\t\tresult[\"vulnids\"].append(vulnerability_id)\n    \n\treturn result",
-                "input": {
-                  "cves": "{{[8ee2fb8a-cffb-45ae-8afe-cfe4d988eae5].[matched_cves]}}",
-                  "vulnids": "{{[50728850-3be2-4184-b766-ce04f3708ea5].[result]}}"
-                }
-              }
-            },
-            "defaultInputJSONSchema": {
-              "properties": {
-                "function": {
-                  "default": "def run(params={}):\\n    return {}",
-                  "description": "Function definition. Must be named `run`. Accepts the `input` object as params. Returns the dict as output",
-                  "displayType": "python",
-                  "format": "python",
-                  "order": 1,
-                  "title": "Function",
-                  "type": "string"
-                },
-                "input": {
-                  "description": "Input object to be passed as `params={}` to the `run` function",
-                  "order": 2,
-                  "title": "Input",
-                  "type": "object"
-                }
-              },
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultOutputJSONSchema": {
-              "properties": {
-                "result1": {
-                  "description": "Sample output result1 (delete or edit)",
-                  "order": 1,
-                  "title": "Result1",
-                  "type": "string"
-                },
-                "result2": {
-                  "description": "Sample output result2 (delete or edit)",
-                  "order": 2,
-                  "title": "Result2",
-                  "type": "string"
-                }
-              },
-              "title": "Variables",
-              "type": "object"
-            },
-            "outputJSONSchema": {
-              "definitions": {},
-              "properties": {
-                "vulnids": {
-                  "description": "Sample output result1 (delete or edit)",
-                  "items": {
-                    "type": "string"
-                  },
-                  "order": 1,
-                  "title": "Result1",
-                  "type": "array"
-                }
-              },
-              "title": "Variables",
-              "type": "object"
-            },
             "defaultImageData": "",
             "connectionType": "CONNECTION"
           }
         },
         "tags": null,
-        "humanCostSeconds": 60,
-        "humanCostDisplayUnit": ""
+        "humanCostSeconds": 3600,
+        "humanCostDisplayUnit": "minutes",
+        "parameters": {
+          "definitionSchema": null
+        }
       }
     ],
     "triggers": [
       {
-        "id": "c32acb8c-9a05-4c0e-a612-ab83664aac4d",
+        "id": "0f8c80cd-0ab8-4300-8c01-d28d4b1f83f3",
         "identifier": "new_scans",
         "name": "Check for Finished Scans",
-        "description": "",
+        "description": "Check every 6h if there are finished scans in InsightVM",
         "input": {
-          "frequency": 5,
+          "frequency": 360,
           "most_recent_scan": true,
           "site_name_filter": ".*",
           "status_filter": [
