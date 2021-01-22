@@ -21,7 +21,7 @@ Sample Slack Trigger Commands:
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-After import, activate the workflow in order to trigger it.
+After the workflow has been import, activate the it in order to enable the ability to trigger it.
 
 ### Usage
 
