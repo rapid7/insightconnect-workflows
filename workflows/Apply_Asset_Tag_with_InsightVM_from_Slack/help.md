@@ -42,8 +42,8 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Rapid7 InsightVM|4.0.1|4|
-|Type Converter|1.6.0|2|
+|Rapid7 InsightVM|4.8.1|4|
+|Type Converter|1.6.1|2|
 
 ## Troubleshooting
 
