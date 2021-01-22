@@ -2,7 +2,7 @@
   "kom": {
     "komandVersion": "1.75.0-0-g0b8f4",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2021-01-22T13:41:13.368761423Z",
+    "exportedAt": "2021-01-22T13:53:09.072249738Z",
     "workflowVersions": [
       {
         "name": "Apply Asset Tag with InsightVM from Slack",
@@ -11,6 +11,14 @@
         "description": "# Description\n\nThis workflow enables you to set asset tags in InsightVM from Slack.\n\nSample Slack Trigger Commands:\n\n`@Rapid7 InsightConnect tag-asset <hostname> <tag>`\n\n# Key Features\n\n* Set Asset Tag in Rapid7 InsightVM\n\n# Requirements\n\n* [Slack](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops)\n* [Rapid7 InsightVM](https://www.rapid7.com/products/insightvm/)",
         "graph": {
           "edges": {
+            "0bb276f2-6494-49f2-8d0c-109e11e58574": {
+              "id": "0bb276f2-6494-49f2-8d0c-109e11e58574",
+              "name": "timeout",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "dbf42ef9-0d17-4332-8f60-47950ada1aba",
+              "toNodeId": ""
+            },
             "0bf8e840-1bb1-4405-a6a2-95d3dbc2311f": {
               "id": "0bf8e840-1bb1-4405-a6a2-95d3dbc2311f",
               "name": "timeout",
@@ -35,21 +43,13 @@
               "fromNodeId": "e2178aa8-6831-480f-9503-a8505720a9ae",
               "toNodeId": "0a1f4c70-5d81-42d0-a0e9-9401464dff32"
             },
-            "13e45016-65db-4ad4-945b-6e81bca2fd94": {
-              "id": "13e45016-65db-4ad4-945b-6e81bca2fd94",
-              "name": "",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "02d13118-6fe6-4766-b72b-e051b2bfde15",
-              "toNodeId": "c1234b3e-7973-4224-aaad-5d70c2e67deb"
-            },
             "15df3211-63b1-4305-a769-4f159d94bf57": {
               "id": "15df3211-63b1-4305-a769-4f159d94bf57",
               "name": "",
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "4323f607-9370-464f-8f38-412f01059d07",
-              "toNodeId": "02d13118-6fe6-4766-b72b-e051b2bfde15"
+              "toNodeId": "c1234b3e-7973-4224-aaad-5d70c2e67deb"
             },
             "1a3f24c5-386c-4866-8cd6-a3123110b8f3": {
               "id": "1a3f24c5-386c-4866-8cd6-a3123110b8f3",
@@ -114,14 +114,6 @@
               "parentNodeId": "",
               "fromNodeId": "cd8b89e4-0576-4ae0-aa37-1ae435721556",
               "toNodeId": ""
-            },
-            "50943fcc-0622-4e2b-8064-f473c73046ad": {
-              "id": "50943fcc-0622-4e2b-8064-f473c73046ad",
-              "name": "",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "d5aa645b-f7fc-4b4c-a959-dcbb30427e87",
-              "toNodeId": "028570c0-90ad-443d-b2bb-3f577ff1f9a1"
             },
             "6552d518-3de4-4934-bb0c-afd92f3b1a2d": {
               "id": "6552d518-3de4-4934-bb0c-afd92f3b1a2d",
@@ -209,7 +201,7 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "c99e7b29-e74f-4dd6-a942-ff6643a79048",
-              "toNodeId": "d5aa645b-f7fc-4b4c-a959-dcbb30427e87"
+              "toNodeId": "028570c0-90ad-443d-b2bb-3f577ff1f9a1"
             },
             "b401dd78-a33b-4e7d-b2bd-adbff260fda3": {
               "id": "b401dd78-a33b-4e7d-b2bd-adbff260fda3",
@@ -289,10 +281,6 @@
               "id": "028570c0-90ad-443d-b2bb-3f577ff1f9a1",
               "parentNodeId": ""
             },
-            "02d13118-6fe6-4766-b72b-e051b2bfde15": {
-              "id": "02d13118-6fe6-4766-b72b-e051b2bfde15",
-              "parentNodeId": ""
-            },
             "04352684-ef7a-440f-9df3-be4c54f419af": {
               "id": "04352684-ef7a-440f-9df3-be4c54f419af",
               "parentNodeId": ""
@@ -351,10 +339,6 @@
             },
             "d2df5fbc-e481-4fad-9a6b-3abab0a866f8": {
               "id": "d2df5fbc-e481-4fad-9a6b-3abab0a866f8",
-              "parentNodeId": ""
-            },
-            "d5aa645b-f7fc-4b4c-a959-dcbb30427e87": {
-              "id": "d5aa645b-f7fc-4b4c-a959-dcbb30427e87",
               "parentNodeId": ""
             },
             "dbf42ef9-0d17-4332-8f60-47950ada1aba": {
@@ -465,43 +449,6 @@
             "outputJSONSchema": null,
             "defaultImageData": "",
             "connectionType": "CONNECTION"
-          },
-          "02d13118-6fe6-4766-b72b-e051b2bfde15": {
-            "nodeId": "02d13118-6fe6-4766-b72b-e051b2bfde15",
-            "name": "Check for Timeout",
-            "type": "filter",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "stepControlParam": {
-                "edgeId": "13e45016-65db-4ad4-945b-6e81bca2fd94",
-                "expression": {
-                  "left": {
-                    "args": [
-                      {
-                        "name": "4323f607-9370-464f-8f38-412f01059d07.Responding User",
-                        "type": "variable"
-                      }
-                    ],
-                    "name": "length",
-                    "type": "function"
-                  },
-                  "op": ">",
-                  "right": {
-                    "type": "literal",
-                    "value": 0
-                  },
-                  "type": "binary"
-                },
-                "expressionText": "length({{[4323f607-9370-464f-8f38-412f01059d07].[Responding User]}}) > 0"
-              },
-              "stopOnMatch": false
-            },
-            "defaultInputJSONSchema": null,
-            "defaultOutputJSONSchema": null,
-            "outputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/filter.svg",
-            "connectionType": "NONE"
           },
           "04352684-ef7a-440f-9df3-be4c54f419af": {
             "nodeId": "04352684-ef7a-440f-9df3-be4c54f419af",
@@ -2429,7 +2376,7 @@
               "decisionEdgeIds": [
                 "ff81e5c1-7d15-4117-b91e-654f09baf8af",
                 "b401dd78-a33b-4e7d-b2bd-adbff260fda3",
-                "13e45016-65db-4ad4-945b-6e81bca2fd94"
+                "15df3211-63b1-4305-a769-4f159d94bf57"
               ],
               "variableSets": [
                 {
@@ -2438,7 +2385,7 @@
                   "name": "Tag ID",
                   "type": "integer",
                   "variables": {
-                    "13e45016-65db-4ad4-945b-6e81bca2fd94": "{{[4323f607-9370-464f-8f38-412f01059d07].[Tag ID]}}",
+                    "15df3211-63b1-4305-a769-4f159d94bf57": "{{[4323f607-9370-464f-8f38-412f01059d07].[Tag ID]}}",
                     "b401dd78-a33b-4e7d-b2bd-adbff260fda3": "{{[77461658-9933-4b45-aa82-c84aedd57beb].[tags].[0].[id]}}",
                     "ff81e5c1-7d15-4117-b91e-654f09baf8af": "{{[028570c0-90ad-443d-b2bb-3f577ff1f9a1].[id]}}"
                   }
@@ -2449,7 +2396,7 @@
                   "name": "Asset ID",
                   "type": "integer",
                   "variables": {
-                    "13e45016-65db-4ad4-945b-6e81bca2fd94": "{{[04352684-ef7a-440f-9df3-be4c54f419af].[assets].[0].[id]}}",
+                    "15df3211-63b1-4305-a769-4f159d94bf57": "{{[04352684-ef7a-440f-9df3-be4c54f419af].[assets].[0].[id]}}",
                     "b401dd78-a33b-4e7d-b2bd-adbff260fda3": "{{[04352684-ef7a-440f-9df3-be4c54f419af].[assets].[0].[id]}}",
                     "ff81e5c1-7d15-4117-b91e-654f09baf8af": "{{[04352684-ef7a-440f-9df3-be4c54f419af].[assets].[0].[id]}}"
                   }
@@ -2757,43 +2704,6 @@
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
             "connectionType": "NONE"
           },
-          "d5aa645b-f7fc-4b4c-a959-dcbb30427e87": {
-            "nodeId": "d5aa645b-f7fc-4b4c-a959-dcbb30427e87",
-            "name": "Check for Timeout2",
-            "type": "filter",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "stepControlParam": {
-                "edgeId": "50943fcc-0622-4e2b-8064-f473c73046ad",
-                "expression": {
-                  "left": {
-                    "args": [
-                      {
-                        "name": "c99e7b29-e74f-4dd6-a942-ff6643a79048.responding_user",
-                        "type": "variable"
-                      }
-                    ],
-                    "name": "length",
-                    "type": "function"
-                  },
-                  "op": ">",
-                  "right": {
-                    "type": "literal",
-                    "value": 0
-                  },
-                  "type": "binary"
-                },
-                "expressionText": "length({{[c99e7b29-e74f-4dd6-a942-ff6643a79048].[responding_user]}}) > 0"
-              },
-              "stopOnMatch": false
-            },
-            "defaultInputJSONSchema": null,
-            "defaultOutputJSONSchema": null,
-            "outputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/filter.svg",
-            "connectionType": "NONE"
-          },
           "dbf42ef9-0d17-4332-8f60-47950ada1aba": {
             "nodeId": "dbf42ef9-0d17-4332-8f60-47950ada1aba",
             "name": "Ask for tag type",
@@ -2825,6 +2735,11 @@
                   "confirmation": "OK!",
                   "edgeId": "3d6864b6-6209-44e4-b392-c8659dbacffe",
                   "isTimeoutOnly": false
+                },
+                {
+                  "answer": "timeout",
+                  "edgeId": "0bb276f2-6494-49f2-8d0c-109e11e58574",
+                  "isTimeoutOnly": true
                 }
               ],
               "question": "Please choose the type:",
@@ -2832,7 +2747,7 @@
               "threadTimestamp": "{{[27d0bae4-c42f-4eee-9b2b-b3e7a5476bab].[timestamp]}}",
               "timeout": 60,
               "timeoutDisplayUnit": "minutes",
-              "timeoutEdgeId": "1c9a102c-f304-47bd-9a07-01d59635f6bf"
+              "timeoutEdgeId": "0bb276f2-6494-49f2-8d0c-109e11e58574"
             },
             "defaultInputJSONSchema": {
               "properties": {
