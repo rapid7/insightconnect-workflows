@@ -2,13 +2,13 @@
   "kom": {
     "komandVersion": "1.75.0-0-g0b8f4",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2021-01-22T13:36:29.629167511Z",
+    "exportedAt": "2021-01-22T13:41:13.368761423Z",
     "workflowVersions": [
       {
         "name": "Apply Asset Tag with InsightVM from Slack",
         "type": "runnable",
         "version": "",
-        "description": "This workflow enables you to set asset tags in InsightVM from Slack.\n\nSample Slack Trigger Commands:\n\n`@Rapid7 InsightConnect tag-asset <hostname> <tag>`",
+        "description": "# Description\n\nThis workflow enables you to set asset tags in InsightVM from Slack.\n\nSample Slack Trigger Commands:\n\n`@Rapid7 InsightConnect tag-asset <hostname> <tag>`\n\n# Key Features\n\n* Set Asset Tag in Rapid7 InsightVM\n\n# Requirements\n\n* [Slack](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops)\n* [Rapid7 InsightVM](https://www.rapid7.com/products/insightvm/)",
         "graph": {
           "edges": {
             "0bf8e840-1bb1-4405-a6a2-95d3dbc2311f": {
