@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.61.1-0-ga6eb8",
+    "komandVersion": "1.75.0-0-g0b8f4",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-09-10T13:18:36.960961928Z",
+    "exportedAt": "2021-01-22T16:39:21.748261752Z",
     "workflowVersions": [
       {
         "name": "Enrich Malicious IP Address Alerts from InsightIDR with OSINT",
@@ -104,8 +104,8 @@
               "name": "WHOIS",
               "slugVendor": "rapid7",
               "slugName": "whois",
-              "slugVersion": "2.0.2",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/whois/2.0.2/icon.png"
+              "slugVersion": "3.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/whois/3.0.0/icon.png"
             },
             "identifier": "address",
             "continueOnFailure": false,
@@ -113,7 +113,8 @@
             "isCloud": false,
             "parameters": {
               "input": {
-                "address": "{{[89a74ee5-095f-4681-b270-90919d3dbace].[$item].[ip]}}"
+                "address": "{{[89a74ee5-095f-4681-b270-90919d3dbace].[$item].[ip]}}",
+                "registrar": "Autodetect"
               }
             },
             "defaultInputJSONSchema": {
@@ -122,6 +123,20 @@
                   "description": "IP to Lookup",
                   "order": 1,
                   "title": "Address",
+                  "type": "string"
+                },
+                "registrar": {
+                  "default": "Autodetect",
+                  "description": "Domain Registrar",
+                  "enum": [
+                    "Autodetect",
+                    "RIPE",
+                    "ARIN",
+                    "LACNIC",
+                    "APNIC"
+                  ],
+                  "order": 2,
+                  "title": "Registrar",
                   "type": "string"
                 }
               },
@@ -994,11 +1009,11 @@
             "name": "Reverse DNS Lookup",
             "type": "action",
             "plugin": {
-              "name": "Dig",
+              "name": "DNS",
               "slugVendor": "rapid7",
               "slugName": "dig",
-              "slugVersion": "1.0.5",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/dig/1.0.5/icon.png"
+              "slugVersion": "2.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/dig/2.0.0/icon.png"
             },
             "identifier": "reverse",
             "continueOnFailure": false,
@@ -1040,7 +1055,7 @@
                   "type": "string"
                 },
                 "fulloutput": {
-                  "description": "Full Dig output",
+                  "description": "Full DNS output",
                   "order": 1,
                   "title": "Full Output",
                   "type": "string"
@@ -1073,8 +1088,11 @@
           }
         },
         "tags": null,
-        "humanCostSeconds": 300,
-        "humanCostDisplayUnit": "minutes"
+        "humanCostSeconds": 0,
+        "humanCostDisplayUnit": "",
+        "parameters": {
+          "definitionSchema": null
+        }
       }
     ],
     "triggers": [

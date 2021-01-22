@@ -4,7 +4,7 @@ Enrich a potentially malicious IP address with threat intelligence provided by T
 
 # Key Features
 
-* ThreadCrowd Lookup
+* Threat Crowd Lookup
 
 # Requirements
 
