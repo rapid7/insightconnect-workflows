@@ -27,7 +27,7 @@ After the workflow has been import, activate the it in order to enable the abili
 
 *This workflow will trigger in any direct messages to your Chatbot **or** any message in a channel directed @ your Chatbot. Note the Chatbot must be in the channel in order to trigger the workflow this way.*
 
-To run the workflow, send a direct message to your InsightConnect Slack Chatbot or @ your Chatbot in a public channel starting with the command `crit-tag-asset`.
+To trigger the workflow, send a direct message to your InsightConnect Slack Chatbot or @ your Chatbot in a public channel starting with the command `crit-tag-asset`.
 
 For example:
 
