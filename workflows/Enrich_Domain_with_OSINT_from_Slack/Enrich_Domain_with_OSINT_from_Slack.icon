@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.60.1-0-g652e5",
+    "komandVersion": "1.75.0-0-g0b8f4",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-08-23T14:27:40.372761062Z",
+    "exportedAt": "2021-01-22T14:56:38.418958718Z",
     "workflowVersions": [
       {
         "name": "Enrich Domain with OSINT from Slack",
@@ -43,13 +43,37 @@
               "fromNodeId": "3df60850-d730-4d56-a7b4-e2a233c17ae5",
               "toNodeId": ""
             },
+            "67afe11d-a845-4ad5-8fce-eeb4abb1d045": {
+              "id": "67afe11d-a845-4ad5-8fce-eeb4abb1d045",
+              "name": "continue",
+              "description": "",
+              "parentNodeId": "89a74ee5-095f-4681-b270-90919d3dbace",
+              "fromNodeId": "2319b09d-6c1e-4aac-b555-5ec81b96fff8",
+              "toNodeId": "ad6f309a-b15d-48a3-93ef-ea3bf0f1a143"
+            },
+            "6bed4594-225d-437a-903d-165e7c30f59b": {
+              "id": "6bed4594-225d-437a-903d-165e7c30f59b",
+              "name": "failure",
+              "description": "",
+              "parentNodeId": "89a74ee5-095f-4681-b270-90919d3dbace",
+              "fromNodeId": "2319b09d-6c1e-4aac-b555-5ec81b96fff8",
+              "toNodeId": "49577dab-ee95-4c5d-a077-07b00756d580"
+            },
             "79a6dc43-4271-46c8-b46f-f6e64ff95b05": {
               "id": "79a6dc43-4271-46c8-b46f-f6e64ff95b05",
               "name": "",
               "description": "",
               "parentNodeId": "89a74ee5-095f-4681-b270-90919d3dbace",
               "fromNodeId": "a1f630ec-751b-45c0-a6e3-3450bb156aa0",
-              "toNodeId": "ad6f309a-b15d-48a3-93ef-ea3bf0f1a143"
+              "toNodeId": "2319b09d-6c1e-4aac-b555-5ec81b96fff8"
+            },
+            "7f393eaf-2ccd-409b-8b58-14a2f0bd94e7": {
+              "id": "7f393eaf-2ccd-409b-8b58-14a2f0bd94e7",
+              "name": "",
+              "description": "",
+              "parentNodeId": "89a74ee5-095f-4681-b270-90919d3dbace",
+              "fromNodeId": "49577dab-ee95-4c5d-a077-07b00756d580",
+              "toNodeId": ""
             },
             "d97c22fa-8ccb-4fda-8859-b8e65ce3d33b": {
               "id": "d97c22fa-8ccb-4fda-8859-b8e65ce3d33b",
@@ -85,8 +109,16 @@
             }
           },
           "nodes": {
+            "2319b09d-6c1e-4aac-b555-5ec81b96fff8": {
+              "id": "2319b09d-6c1e-4aac-b555-5ec81b96fff8",
+              "parentNodeId": "89a74ee5-095f-4681-b270-90919d3dbace"
+            },
             "3df60850-d730-4d56-a7b4-e2a233c17ae5": {
               "id": "3df60850-d730-4d56-a7b4-e2a233c17ae5",
+              "parentNodeId": "89a74ee5-095f-4681-b270-90919d3dbace"
+            },
+            "49577dab-ee95-4c5d-a077-07b00756d580": {
+              "id": "49577dab-ee95-4c5d-a077-07b00756d580",
               "parentNodeId": "89a74ee5-095f-4681-b270-90919d3dbace"
             },
             "89a74ee5-095f-4681-b270-90919d3dbace": {
@@ -120,6 +152,52 @@
           }
         },
         "steps": {
+          "2319b09d-6c1e-4aac-b555-5ec81b96fff8": {
+            "nodeId": "2319b09d-6c1e-4aac-b555-5ec81b96fff8",
+            "name": "check steps",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "6bed4594-225d-437a-903d-165e7c30f59b",
+              "stepControlParams": [
+                {
+                  "edgeId": "67afe11d-a845-4ad5-8fce-eeb4abb1d045",
+                  "expression": {
+                    "left": {
+                      "name": "caa73569-0389-4b4b-aebc-9b0c67883690.$success",
+                      "type": "variable"
+                    },
+                    "op": "AND",
+                    "right": {
+                      "left": {
+                        "name": "9fc873e9-8dc0-4487-aef5-a2ba3af74f6d.$success",
+                        "type": "variable"
+                      },
+                      "op": "AND",
+                      "right": {
+                        "name": "caa73569-0389-4b4b-aebc-9b0c67883690.$success",
+                        "type": "variable"
+                      },
+                      "type": "binary"
+                    },
+                    "type": "binary"
+                  },
+                  "expressionText": "{{[caa73569-0389-4b4b-aebc-9b0c67883690].[$success]}} AND {{[9fc873e9-8dc0-4487-aef5-a2ba3af74f6d].[$success]}} AND {{[caa73569-0389-4b4b-aebc-9b0c67883690].[$success]}}"
+                },
+                {
+                  "edgeId": "6bed4594-225d-437a-903d-165e7c30f59b",
+                  "expression": {},
+                  "expressionText": ""
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          },
           "3df60850-d730-4d56-a7b4-e2a233c17ae5": {
             "nodeId": "3df60850-d730-4d56-a7b4-e2a233c17ae5",
             "name": "Send Result",
@@ -130,8 +208,82 @@
               "input": {
                 "attachments": [],
                 "message": "{{[ad6f309a-b15d-48a3-93ef-ea3bf0f1a143].[content]}}",
-                "recipient": "{{[fa2fab86-d15d-4f2c-9bcb-59ce90a2fc9a].[channel_id]}}",
-                "thread_ts": "{{[fa2fab86-d15d-4f2c-9bcb-59ce90a2fc9a].[timestamp]}}"
+                "recipient": "{{[971f0534-2a8d-4489-86d3-6d381e17f54b].[message].[channel_id]}}",
+                "thread_ts": "{{[971f0534-2a8d-4489-86d3-6d381e17f54b].[timestamp]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 4,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 3,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                },
+                "thread_ts": {
+                  "description": "Select timestamp output variable from parent message step",
+                  "order": 2,
+                  "title": "To post in a thread, select parent message timestamp",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
+          },
+          "49577dab-ee95-4c5d-a077-07b00756d580": {
+            "nodeId": "49577dab-ee95-4c5d-a077-07b00756d580",
+            "name": "Job Failed",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": "Workflow step failed!\nPlease check job details at\n{{[$job].[URL]}}\n",
+                "recipient": "{{[971f0534-2a8d-4489-86d3-6d381e17f54b].[message].[channel_id]}}",
+                "thread_ts": "{{[971f0534-2a8d-4489-86d3-6d381e17f54b].[timestamp]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -237,7 +389,7 @@
           },
           "971f0534-2a8d-4489-86d3-6d381e17f54b": {
             "nodeId": "971f0534-2a8d-4489-86d3-6d381e17f54b",
-            "name": "Trigger on Keyword: enrich-domain",
+            "name": "Trigger on Keyword enrich-domain",
             "type": "trigger",
             "continueOnFailure": false,
             "isDisabled": false,
@@ -333,20 +485,20 @@
                       "items": {
                         "type": "string"
                       },
-                      "order": 3,
+                      "order": 4,
                       "title": "Email Addresses",
                       "type": "array"
                     },
                     "hashes": {
                       "$ref": "#/definitions/hashes",
                       "description": "Hashes found within the message",
-                      "order": 4,
+                      "order": 5,
                       "title": "Hashes"
                     },
                     "ip_addresses": {
                       "$ref": "#/definitions/ip_addresses",
                       "description": "IP addresses found within the message",
-                      "order": 6,
+                      "order": 7,
                       "title": "IP Addresses"
                     },
                     "mac_addresses": {
@@ -354,8 +506,17 @@
                       "items": {
                         "type": "string"
                       },
-                      "order": 5,
+                      "order": 6,
                       "title": "MAC Addresses",
+                      "type": "array"
+                    },
+                    "parent_domains": {
+                      "description": "Parent domains found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "Parent Domains",
                       "type": "array"
                     },
                     "urls": {
@@ -363,7 +524,7 @@
                       "items": {
                         "type": "string"
                       },
-                      "order": 2,
+                      "order": 3,
                       "title": "URLs",
                       "type": "array"
                     }
@@ -418,7 +579,7 @@
                     "indicators": {
                       "$ref": "#/definitions/indicators",
                       "description": "Potential threat indicators found within the message",
-                      "order": 6,
+                      "order": 7,
                       "title": "Indicators"
                     },
                     "text": {
@@ -444,6 +605,15 @@
                       "order": 2,
                       "title": "User ID",
                       "type": "string"
+                    },
+                    "words": {
+                      "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 6,
+                      "title": "Words",
+                      "type": "array"
                     }
                   },
                   "title": "Message",
@@ -490,14 +660,14 @@
             "name": "DNS Lookup",
             "type": "action",
             "plugin": {
-              "name": "Dig",
+              "name": "DNS",
               "slugVendor": "rapid7",
               "slugName": "dig",
-              "slugVersion": "1.0.5",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/dig/1.0.5/icon.png"
+              "slugVersion": "2.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/dig/2.0.0/icon.png"
             },
             "identifier": "forward",
-            "continueOnFailure": false,
+            "continueOnFailure": true,
             "isDisabled": false,
             "isCloud": false,
             "parameters": {
@@ -563,7 +733,7 @@
                   "type": "string"
                 },
                 "fulloutput": {
-                  "description": "Full Dig output",
+                  "description": "Full DNS output",
                   "order": 1,
                   "title": "Full Output",
                   "type": "string"
@@ -608,11 +778,11 @@
               "name": "WHOIS",
               "slugVendor": "rapid7",
               "slugName": "whois",
-              "slugVersion": "2.0.2",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/whois/2.0.2/icon.png"
+              "slugVersion": "3.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/whois/3.0.0/icon.png"
             },
             "identifier": "domain",
-            "continueOnFailure": false,
+            "continueOnFailure": true,
             "isDisabled": false,
             "isCloud": false,
             "parameters": {
@@ -761,7 +931,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "*Intel on URL:* `{{[89a74ee5-095f-4681-b270-90919d3dbace].[$item]}}`\n\n*ThreatCrowd rating:* \n`{{[caa73569-0389-4b4b-aebc-9b0c67883690].[malicious]}}`\n<{{[caa73569-0389-4b4b-aebc-9b0c67883690].[permalink]}}|More details>\n\n*WHOIS Information*\nName: `{{[a1f630ec-751b-45c0-a6e3-3450bb156aa0].[name]}}`\n{{#if [a1f630ec-751b-45c0-a6e3-3450bb156aa0].[registrar]}}\nRegistrar: `{{[a1f630ec-751b-45c0-a6e3-3450bb156aa0].[registrar]}}`\n{{/if}}\n{{#if [a1f630ec-751b-45c0-a6e3-3450bb156aa0].[dnssec]}}\nDNSSEC: `{{[a1f630ec-751b-45c0-a6e3-3450bb156aa0].[dnssec]}}`\n{{/if}}\n{{#if [a1f630ec-751b-45c0-a6e3-3450bb156aa0].[last_updated]}}\nLast updated: `{{[a1f630ec-751b-45c0-a6e3-3450bb156aa0].[last_updated]}}`\n{{/if}}\n{{#if [a1f630ec-751b-45c0-a6e3-3450bb156aa0].[creation_date]}}\nCreation date: `{{[a1f630ec-751b-45c0-a6e3-3450bb156aa0].[creation_date]}}`\n{{/if}}\n{{#if [a1f630ec-751b-45c0-a6e3-3450bb156aa0].[expiration_date]}}\nExpiration date: `{{[a1f630ec-751b-45c0-a6e3-3450bb156aa0].[expiration_date]}}`\n{{/if}}\n\nNameservers:\n{{#each [a1f630ec-751b-45c0-a6e3-3450bb156aa0].[name_servers]}}\n{{this}}\n{{/each}}\n\n{{#if [a1f630ec-751b-45c0-a6e3-3450bb156aa0].[domain_status]}}\nDomain status:\n{{#each [a1f630ec-751b-45c0-a6e3-3450bb156aa0].[domain_status]}}\n`{{this}}`\n{{/each}}\n{{/if}}\n\nRegistrant:\n{{#if [a1f630ec-751b-45c0-a6e3-3450bb156aa0].[registrant_cc]}}\nCC: `{{[a1f630ec-751b-45c0-a6e3-3450bb156aa0].[registrant_cc]}}`\n{{/if}}\n{{#if [a1f630ec-751b-45c0-a6e3-3450bb156aa0].[registrar_url]}}\nURL: `{{[a1f630ec-751b-45c0-a6e3-3450bb156aa0].[registrar_url]}}`\n{{/if}}\n{{#if [a1f630ec-751b-45c0-a6e3-3450bb156aa0].[registrant_name]}}\nName: `{{[a1f630ec-751b-45c0-a6e3-3450bb156aa0].[registrant_name]}}`\n{{/if}}\n{{#if [a1f630ec-751b-45c0-a6e3-3450bb156aa0].[registrar_iana_id]}}\nIANA ID: `{{[a1f630ec-751b-45c0-a6e3-3450bb156aa0].[registrar_iana_id]}}`\n{{/if}}\n{{#if [a1f630ec-751b-45c0-a6e3-3450bb156aa0].[registry_domain_id]}}\nDomain ID: `{{[a1f630ec-751b-45c0-a6e3-3450bb156aa0].[registry_domain_id]}}`\n{{/if}}\n{{#if [a1f630ec-751b-45c0-a6e3-3450bb156aa0].[registrar_whois_server]}}\nWHOIS Server: `{{[a1f630ec-751b-45c0-a6e3-3450bb156aa0].[registrar_whois_server]}}`\n{{/if}}\n{{#if [a1f630ec-751b-45c0-a6e3-3450bb156aa0].[registrar_abuse_contact_email]}}\nAbuse email: `{{[a1f630ec-751b-45c0-a6e3-3450bb156aa0].[registrar_abuse_contact_email]}}`\n{{/if}}\n{{#if [a1f630ec-751b-45c0-a6e3-3450bb156aa0].[registrar_abuse_contact_phone]}}\nAbuse phone: `{{[a1f630ec-751b-45c0-a6e3-3450bb156aa0].[registrar_abuse_contact_phone]}}`\n{{/if}}\n\n*DNS Information*\n{{#if [9fc873e9-8dc0-4487-aef5-a2ba3af74f6d].[question]}}\nQuestion: `{{[9fc873e9-8dc0-4487-aef5-a2ba3af74f6d].[question]}}`\n{{/if}}\n{{#if [9fc873e9-8dc0-4487-aef5-a2ba3af74f6d].[answer]}}\nAnswer: `{{[9fc873e9-8dc0-4487-aef5-a2ba3af74f6d].[answer]}}`\n{{/if}}\n{{#if [9fc873e9-8dc0-4487-aef5-a2ba3af74f6d].[status]}}\nStatus: `{{[9fc873e9-8dc0-4487-aef5-a2ba3af74f6d].[status]}}`\n{{/if}}\n{{#if [9fc873e9-8dc0-4487-aef5-a2ba3af74f6d].[nameserver]}}\nNameserver: `{{[9fc873e9-8dc0-4487-aef5-a2ba3af74f6d].[nameserver]}}`\n{{/if}}"
+                "content": "*Intel on URL:* `{{[89a74ee5-095f-4681-b270-90919d3dbace].[$item]}}`\n\n*ThreatCrowd rating:* \n`{{[caa73569-0389-4b4b-aebc-9b0c67883690].[malicious]}}`\n<{{[caa73569-0389-4b4b-aebc-9b0c67883690].[permalink]}}|More details>\n\n*WHOIS Information*\nName: `{{[a1f630ec-751b-45c0-a6e3-3450bb156aa0].[name]}}`\n{{#if [a1f630ec-751b-45c0-a6e3-3450bb156aa0].[registrar]}}\nRegistrar: `{{[a1f630ec-751b-45c0-a6e3-3450bb156aa0].[registrar]}}`\n{{/if}}\n{{#if [a1f630ec-751b-45c0-a6e3-3450bb156aa0].[dnssec]}}\nDNSSEC: `{{[a1f630ec-751b-45c0-a6e3-3450bb156aa0].[dnssec]}}`\n{{/if}}\n{{#if [a1f630ec-751b-45c0-a6e3-3450bb156aa0].[last_updated]}}\nLast updated: `{{[a1f630ec-751b-45c0-a6e3-3450bb156aa0].[last_updated]}}`\n{{/if}}\n{{#if [a1f630ec-751b-45c0-a6e3-3450bb156aa0].[creation_date]}}\nCreation date: `{{[a1f630ec-751b-45c0-a6e3-3450bb156aa0].[creation_date]}}`\n{{/if}}\n{{#if [a1f630ec-751b-45c0-a6e3-3450bb156aa0].[expiration_date]}}\nExpiration date: `{{[a1f630ec-751b-45c0-a6e3-3450bb156aa0].[expiration_date]}}`\n{{/if}}\n\nNameservers:\n{{#each [a1f630ec-751b-45c0-a6e3-3450bb156aa0].[name_servers]}}\n{{this}}\n{{/each}}\n\n{{#if [a1f630ec-751b-45c0-a6e3-3450bb156aa0].[domain_status]}}\nDomain status:\n{{#each [a1f630ec-751b-45c0-a6e3-3450bb156aa0].[domain_status]}}\n`{{this}}`\n{{/each}}\n{{/if}}\n\nRegistrant:\n{{#if [a1f630ec-751b-45c0-a6e3-3450bb156aa0].[registrant_cc]}}\nCC: `{{[a1f630ec-751b-45c0-a6e3-3450bb156aa0].[registrant_cc]}}`\n{{/if}}\n{{#if [a1f630ec-751b-45c0-a6e3-3450bb156aa0].[registrar_url]}}\nURL: `{{[a1f630ec-751b-45c0-a6e3-3450bb156aa0].[registrar_url]}}`\n{{/if}}\n{{#if [a1f630ec-751b-45c0-a6e3-3450bb156aa0].[registrant_name]}}\nName: `{{[a1f630ec-751b-45c0-a6e3-3450bb156aa0].[registrant_name]}}`\n{{/if}}\n{{#if [a1f630ec-751b-45c0-a6e3-3450bb156aa0].[registrar_iana_id]}}\nIANA ID: `{{[a1f630ec-751b-45c0-a6e3-3450bb156aa0].[registrar_iana_id]}}`\n{{/if}}\n{{#if [a1f630ec-751b-45c0-a6e3-3450bb156aa0].[registry_domain_id]}}\nDomain ID: `{{[a1f630ec-751b-45c0-a6e3-3450bb156aa0].[registry_domain_id]}}`\n{{/if}}\n{{#if [a1f630ec-751b-45c0-a6e3-3450bb156aa0].[registrar_whois_server]}}\nWHOIS Server: `{{[a1f630ec-751b-45c0-a6e3-3450bb156aa0].[registrar_whois_server]}}`\n{{/if}}\n{{#if [a1f630ec-751b-45c0-a6e3-3450bb156aa0].[registrar_abuse_contact_email]}}\nAbuse email: `{{[a1f630ec-751b-45c0-a6e3-3450bb156aa0].[registrar_abuse_contact_email]}}`\n{{/if}}\n{{#if [a1f630ec-751b-45c0-a6e3-3450bb156aa0].[registrar_abuse_contact_phone]}}\nAbuse phone: `{{[a1f630ec-751b-45c0-a6e3-3450bb156aa0].[registrar_abuse_contact_phone]}}`\n{{/if}}\n\n*DNS Information*\n{{#if [9fc873e9-8dc0-4487-aef5-a2ba3af74f6d].[question]}}\nQuestion: `{{[9fc873e9-8dc0-4487-aef5-a2ba3af74f6d].[question]}}`\n{{/if}}\n{{#if [9fc873e9-8dc0-4487-aef5-a2ba3af74f6d].[answer]}}\nAnswer: `{{[9fc873e9-8dc0-4487-aef5-a2ba3af74f6d].[answer]}}`\n{{/if}}\n{{#if [9fc873e9-8dc0-4487-aef5-a2ba3af74f6d].[status]}}\nStatus: `{{[9fc873e9-8dc0-4487-aef5-a2ba3af74f6d].[status]}}`\n{{/if}}\n{{#if [9fc873e9-8dc0-4487-aef5-a2ba3af74f6d].[nameserver]}}\nNameserver: `{{[9fc873e9-8dc0-4487-aef5-a2ba3af74f6d].[nameserver]}}`\n{{/if}}\n\n"
               },
               "type": "markdown"
             },
@@ -783,7 +953,7 @@
               "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/threatcrowd/3.0.0/icon.png"
             },
             "identifier": "domain",
-            "continueOnFailure": false,
+            "continueOnFailure": true,
             "isDisabled": false,
             "isCloud": false,
             "parameters": {
@@ -979,13 +1149,16 @@
         },
         "tags": null,
         "humanCostSeconds": 0,
-        "humanCostDisplayUnit": ""
+        "humanCostDisplayUnit": "",
+        "parameters": {
+          "definitionSchema": null
+        }
       }
     ],
     "triggers": [
       {
         "id": "9c9863fb-7885-4f70-91e1-99a656984b0e",
-        "name": "Trigger on Keyword: enrich-domain",
+        "name": "Trigger on Keyword enrich-domain",
         "description": "",
         "input": {
           "matchChannel": ".*",
@@ -1076,20 +1249,20 @@
                   "items": {
                     "type": "string"
                   },
-                  "order": 3,
+                  "order": 4,
                   "title": "Email Addresses",
                   "type": "array"
                 },
                 "hashes": {
                   "$ref": "#/definitions/hashes",
                   "description": "Hashes found within the message",
-                  "order": 4,
+                  "order": 5,
                   "title": "Hashes"
                 },
                 "ip_addresses": {
                   "$ref": "#/definitions/ip_addresses",
                   "description": "IP addresses found within the message",
-                  "order": 6,
+                  "order": 7,
                   "title": "IP Addresses"
                 },
                 "mac_addresses": {
@@ -1097,8 +1270,17 @@
                   "items": {
                     "type": "string"
                   },
-                  "order": 5,
+                  "order": 6,
                   "title": "MAC Addresses",
+                  "type": "array"
+                },
+                "parent_domains": {
+                  "description": "Parent domains found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "Parent Domains",
                   "type": "array"
                 },
                 "urls": {
@@ -1106,7 +1288,7 @@
                   "items": {
                     "type": "string"
                   },
-                  "order": 2,
+                  "order": 3,
                   "title": "URLs",
                   "type": "array"
                 }
@@ -1161,7 +1343,7 @@
                 "indicators": {
                   "$ref": "#/definitions/indicators",
                   "description": "Potential threat indicators found within the message",
-                  "order": 6,
+                  "order": 7,
                   "title": "Indicators"
                 },
                 "text": {
@@ -1187,6 +1369,15 @@
                   "order": 2,
                   "title": "User ID",
                   "type": "string"
+                },
+                "words": {
+                  "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 6,
+                  "title": "Words",
+                  "type": "array"
                 }
               },
               "title": "Message",

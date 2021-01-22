@@ -37,6 +37,8 @@ For example:
 
 The workflow will post the results in a thread.
 
+You can change this behaviour by changing the "Type" field in the trigger step. 
+
 ## Technical Details
 
 Plugins utilized by workflow:
@@ -44,8 +46,8 @@ Plugins utilized by workflow:
 |Plugin|Version|Count|
 |----|----|--------|
 |Threat Crowd|3.0.0|1|
-|Dig|1.0.5|1|
-|WHOIS|2.0.2|1|
+|DNS|2.0.0|1|
+|WHOIS|3.0.0|1|
 
 ## Troubleshooting
 
