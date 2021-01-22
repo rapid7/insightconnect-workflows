@@ -4,7 +4,7 @@ Enrich a potentially malicious process hash with threat intelligence provided by
 
 # Key Features
 
-* ThreadCrowd Lookup
+* Threat Crowd Lookup
 * Team Cymru MHR Lookup
 
 # Requirements

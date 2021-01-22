@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.61.1-0-ga6eb8",
+    "komandVersion": "1.75.0-0-g0b8f4",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-09-10T12:30:55.274047153Z",
+    "exportedAt": "2021-01-22T16:19:39.408206067Z",
     "workflowVersions": [
       {
         "name": "Enrich Malicious Hash Alerts from InsightIDR with OSINT",
@@ -813,7 +813,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "`{{[5944997d-5a24-4d64-a728-4410068303cd].[$item].[hash]}}`\nThreatCrowd: {{#if [d1673700-f9e8-4756-a11e-a4ddc64af9f3].[found]}}found :biohazard_sign:{{else}}not found{{/if}}\nTeam Cymru MHR: {{#if [47177122-dd02-4f13-894c-5b5e2739144c].[result].[found]}}found :biohazard_sign:{{else}}not found{{/if}}\n\n\n"
+                "content": "Results for hash: `{{[5944997d-5a24-4d64-a728-4410068303cd].[$item].[hash]}}`\nThreatCrowd: {{#if [d1673700-f9e8-4756-a11e-a4ddc64af9f3].[found]}}found{{else}}not found{{/if}}\nTeam Cymru MHR: {{#if [47177122-dd02-4f13-894c-5b5e2739144c].[result].[found]}}found{{else}}not found{{/if}}\n\n\n"
               },
               "type": "markdown"
             },
@@ -952,7 +952,10 @@
         },
         "tags": null,
         "humanCostSeconds": 0,
-        "humanCostDisplayUnit": ""
+        "humanCostDisplayUnit": "",
+        "parameters": {
+          "definitionSchema": null
+        }
       }
     ],
     "triggers": [
