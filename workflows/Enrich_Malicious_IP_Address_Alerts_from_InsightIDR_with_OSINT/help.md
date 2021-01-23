@@ -30,8 +30,8 @@ Plugins utilized by workflow:
 |Plugin|Version|Count|
 |----|----|--------|
 |Threat Crowd|3.0.0|1|
-|Dig|1.0.5|1|
-|Whois|2.0.2|1|
+|DNS|2.0.0|1|
+|WHOIS|3.0.0|1|
 
 ## Troubleshooting
 
