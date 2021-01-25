@@ -71,7 +71,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
-* 1.0.4 - Update to make Microsoft Teams plugin the latest version
+* 1.0.4 - Update workflow to use version 3.1.0 of the Microsoft Teams plugin
 * 1.0.3 - Update Acknowledge Request step's message to mention Check Point
 * 1.0.2 - Help amendments
 * 1.0.1 - Update to make Microsoft Teams plugin the latest version
