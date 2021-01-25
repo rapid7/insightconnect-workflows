@@ -2,7 +2,7 @@
   "kom": {
     "komandVersion": "1.75.0-0-g0b8f4",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2021-01-22T21:55:31.490403329Z",
+    "exportedAt": "2021-01-22T22:36:19.410082543Z",
     "workflowVersions": [
       {
         "name": "Blacklist Hash with SentinelOne from Slack",
@@ -801,32 +801,66 @@
                   "expression": {
                     "left": {
                       "left": {
-                        "name": "c6b577e3-9857-4c0e-9c30-f1efe042f5a5.message.first_word",
-                        "type": "variable"
+                        "args": [
+                          {
+                            "name": "c6b577e3-9857-4c0e-9c30-f1efe042f5a5.message.indicators.hashes.md5_hashes",
+                            "type": "variable"
+                          }
+                        ],
+                        "name": "length",
+                        "type": "function"
                       },
-                      "op": "==",
+                      "op": ">",
                       "right": {
                         "type": "literal",
-                        "value": "blacklist-hash"
+                        "value": 0
                       },
                       "type": "binary"
                     },
                     "op": "OR",
                     "right": {
                       "left": {
-                        "name": "c6b577e3-9857-4c0e-9c30-f1efe042f5a5.message.first_word",
-                        "type": "variable"
+                        "left": {
+                          "args": [
+                            {
+                              "name": "c6b577e3-9857-4c0e-9c30-f1efe042f5a5.message.indicators.hashes.sha1_hashes",
+                              "type": "variable"
+                            }
+                          ],
+                          "name": "length",
+                          "type": "function"
+                        },
+                        "op": ">",
+                        "right": {
+                          "type": "literal",
+                          "value": 0
+                        },
+                        "type": "binary"
                       },
-                      "op": "==",
+                      "op": "OR",
                       "right": {
-                        "type": "literal",
-                        "value": "unblacklist-hash"
+                        "left": {
+                          "args": [
+                            {
+                              "name": "c6b577e3-9857-4c0e-9c30-f1efe042f5a5.message.indicators.hashes.sha256_hashes",
+                              "type": "variable"
+                            }
+                          ],
+                          "name": "length",
+                          "type": "function"
+                        },
+                        "op": ">",
+                        "right": {
+                          "type": "literal",
+                          "value": 0
+                        },
+                        "type": "binary"
                       },
                       "type": "binary"
                     },
                     "type": "binary"
                   },
-                  "expressionText": "{{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[message].[first_word]}} == \"blacklist-hash\" or {{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[message].[first_word]}} == \"unblacklist-hash\""
+                  "expressionText": "length({{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[message].[indicators].[hashes].[md5_hashes]}}) > 0 OR length({{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[message].[indicators].[hashes].[sha1_hashes]}}) > 0 OR length({{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[message].[indicators].[hashes].[sha256_hashes]}}) > 0 "
                 },
                 {
                   "edgeId": "b211a73f-6936-447b-8bf7-2b8492d52050",

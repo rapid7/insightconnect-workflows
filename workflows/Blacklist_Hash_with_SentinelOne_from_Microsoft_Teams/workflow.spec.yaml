@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Blacklist_Hash_with_SentinelOne_from_Microsoft_Teams
 title: Blacklist Hash with SentinelOne from Microsoft Teams
 description: Use the simplicity of Microsoft Teams to blacklist and unblacklist hashes with SentinelOne.
-version: 1.0.1
+version: 1.1.0
 vendor: rapid7
 support: rapid7
 status: []
