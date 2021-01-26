@@ -1,14 +1,14 @@
 {
   "kom": {
-    "komandVersion": "1.53.3-0-gd1a07",
+    "komandVersion": "1.75.0-0-g0b8f4",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-06-18T16:02:13.754072311Z",
+    "exportedAt": "2021-01-22T22:36:19.410082543Z",
     "workflowVersions": [
       {
         "name": "Blacklist Hash with SentinelOne from Slack",
         "type": "runnable",
         "version": "",
-        "description": "Use the simplicity of Slack to blacklist and unblacklist SHA1 hashes globally with SentinelOne.",
+        "description": "# Description\n\nThis workflow blacklists or unblacklists a SHA1 globally for all operating systems with SentinelOne via Slack command and reports information back to Slack.\n\nSample Slack Trigger Commands:\n\n`@Rapid7 InsightConnect blacklist-hash 02699626f388ed830012e5b787640e71c56d42d8`\n\n`@Rapid7 InsightConnect unblacklist-hash 02699626f388ed830012e5b787640e71c56d42d8`\n\nThe hashes will show up on the \"Blacklist\" tab from the \"Sentinels\" page on the main menu in the SentinelOne console.\n\n# Key Features\n\n* Blacklist a hash globally\n\n# Requirements\n\n* [Slack](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops)\n* SentinelOne account with permission to manage blacklist\n\n# Documentation\n\n## Setup\n\nImport the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.\n\nOnce the workflow has been imported, **Update the first step with the channel name to suit your Slack environment!** by editing the input with the preset text of `change_me` to match the channel to monitor.\n\nAfter configuring the Slack steps, activate the workflow in order to trigger it.\n \n## Technical Details\n\nPlugins utilized by workflow:\n\n|Plugin|Version|Count|\n|----|----|--------|\n|SentinelOne|1.4.0|2|\n\n## Troubleshooting\n\n_There is no troubleshooting information at this time_\n\n# Version History\n\n* 1.0.2 - Pass channel name from trigger to all subsequent steps so user only has to configure channel once\n* 1.0.1 - Add Job URL to failure messages\n* 1.0.0 - Initial workflow\n\n# Links\n\n## References\n\n* [SentinelOne](https://www.sentinelone.com/)\n* [SentinelOne plugin](https://extensions.rapid7.com/extension/sentinelone)\n* [Slack](https://slack.com)\n",
         "graph": {
           "edges": {
             "013f1bed-57f4-44bf-8ea7-36f73e62343a": {
@@ -115,21 +115,13 @@
               "fromNodeId": "19a25c50-657d-4a7e-bb3d-18a7460eaf16",
               "toNodeId": "341534c3-934d-4dd1-a0ad-3c588c27fc56"
             },
-            "7574be74-8c35-417a-8652-14d25559cd7a": {
-              "id": "7574be74-8c35-417a-8652-14d25559cd7a",
-              "name": "",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "a62306f8-17fb-4ab7-8228-348bd1433df7",
-              "toNodeId": "825132c4-cdf7-416d-9eb2-9008f4b3f686"
-            },
             "7763d506-31a9-44e2-9da0-96278d198e5c": {
               "id": "7763d506-31a9-44e2-9da0-96278d198e5c",
               "name": "",
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "6bf1d4a9-cc6c-4991-8a1d-e4efbb763efc",
-              "toNodeId": "a62306f8-17fb-4ab7-8228-348bd1433df7"
+              "toNodeId": "825132c4-cdf7-416d-9eb2-9008f4b3f686"
             },
             "81bc15e7-f7a0-4ecb-b8f5-4c7759e9600e": {
               "id": "81bc15e7-f7a0-4ecb-b8f5-4c7759e9600e",
@@ -273,10 +265,6 @@
               "id": "908bb645-77fa-4808-a25d-e386d1f4dd8d",
               "parentNodeId": ""
             },
-            "a62306f8-17fb-4ab7-8228-348bd1433df7": {
-              "id": "a62306f8-17fb-4ab7-8228-348bd1433df7",
-              "parentNodeId": ""
-            },
             "c6b577e3-9857-4c0e-9c30-f1efe042f5a5": {
               "id": "c6b577e3-9857-4c0e-9c30-f1efe042f5a5",
               "parentNodeId": ""
@@ -379,21 +367,21 @@
                     "left": {
                       "args": [
                         {
-                          "name": "a62306f8-17fb-4ab7-8228-348bd1433df7.hash",
+                          "name": "c6b577e3-9857-4c0e-9c30-f1efe042f5a5.message.indicators.hashes.sha1_hashes",
                           "type": "variable"
                         }
                       ],
                       "name": "length",
                       "type": "function"
                     },
-                    "op": "=",
+                    "op": ">",
                     "right": {
                       "type": "literal",
-                      "value": 40
+                      "value": 0
                     },
                     "type": "binary"
                   },
-                  "expressionText": "length({{[a62306f8-17fb-4ab7-8228-348bd1433df7].[hash]}}) = 40"
+                  "expressionText": "length({{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[message].[indicators].[hashes].[sha1_hashes]}}) > 0"
                 },
                 {
                   "edgeId": "d08741ea-4f02-4476-8dfc-fe56c82712db",
@@ -416,17 +404,18 @@
               "name": "SentinelOne",
               "slugVendor": "rapid7",
               "slugName": "sentinelone",
-              "slugVersion": "1.4.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/sentinelone/1.4.0/icon.png"
+              "slugVersion": "5.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/sentinelone/5.0.0/icon.png"
             },
             "identifier": "blacklist",
-            "continueOnFailure": true,
+            "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "blacklist_state": true,
                 "description": "Hash Blacklisted from InsightConnect",
-                "hash": "{{[a62306f8-17fb-4ab7-8228-348bd1433df7].[hash]}}"
+                "hash": "{{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[message].[indicators].[hashes].[sha1_hashes].[0]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -735,17 +724,18 @@
               "name": "SentinelOne",
               "slugVendor": "rapid7",
               "slugName": "sentinelone",
-              "slugVersion": "1.4.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/sentinelone/1.4.0/icon.png"
+              "slugVersion": "5.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/sentinelone/5.0.0/icon.png"
             },
             "identifier": "blacklist",
-            "continueOnFailure": true,
+            "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "blacklist_state": false,
                 "description": "Hash Blacklisted from InsightConnect",
-                "hash": "{{[a62306f8-17fb-4ab7-8228-348bd1433df7].[hash]}}"
+                "hash": "{{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[message].[indicators].[hashes].[sha1_hashes].[0]}}"
               }
             },
             "defaultInputJSONSchema": {
@@ -804,28 +794,78 @@
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
-              "defaultEdgeId": "aabcc6d6-604c-444d-a02b-ae28dcefae5e",
+              "defaultEdgeId": "b211a73f-6936-447b-8bf7-2b8492d52050",
               "stepControlParams": [
                 {
                   "edgeId": "aabcc6d6-604c-444d-a02b-ae28dcefae5e",
-                  "expression": {},
-                  "expressionText": ""
-                },
-                {
-                  "edgeId": "b211a73f-6936-447b-8bf7-2b8492d52050",
                   "expression": {
                     "left": {
-                      "name": "a62306f8-17fb-4ab7-8228-348bd1433df7.$matched",
-                      "type": "variable"
+                      "left": {
+                        "args": [
+                          {
+                            "name": "c6b577e3-9857-4c0e-9c30-f1efe042f5a5.message.indicators.hashes.md5_hashes",
+                            "type": "variable"
+                          }
+                        ],
+                        "name": "length",
+                        "type": "function"
+                      },
+                      "op": ">",
+                      "right": {
+                        "type": "literal",
+                        "value": 0
+                      },
+                      "type": "binary"
                     },
-                    "op": "=",
+                    "op": "OR",
                     "right": {
-                      "type": "literal",
-                      "value": false
+                      "left": {
+                        "left": {
+                          "args": [
+                            {
+                              "name": "c6b577e3-9857-4c0e-9c30-f1efe042f5a5.message.indicators.hashes.sha1_hashes",
+                              "type": "variable"
+                            }
+                          ],
+                          "name": "length",
+                          "type": "function"
+                        },
+                        "op": ">",
+                        "right": {
+                          "type": "literal",
+                          "value": 0
+                        },
+                        "type": "binary"
+                      },
+                      "op": "OR",
+                      "right": {
+                        "left": {
+                          "args": [
+                            {
+                              "name": "c6b577e3-9857-4c0e-9c30-f1efe042f5a5.message.indicators.hashes.sha256_hashes",
+                              "type": "variable"
+                            }
+                          ],
+                          "name": "length",
+                          "type": "function"
+                        },
+                        "op": ">",
+                        "right": {
+                          "type": "literal",
+                          "value": 0
+                        },
+                        "type": "binary"
+                      },
+                      "type": "binary"
                     },
                     "type": "binary"
                   },
-                  "expressionText": "{{[a62306f8-17fb-4ab7-8228-348bd1433df7].[$matched]}} = false"
+                  "expressionText": "length({{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[message].[indicators].[hashes].[md5_hashes]}}) > 0 OR length({{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[message].[indicators].[hashes].[sha1_hashes]}}) > 0 OR length({{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[message].[indicators].[hashes].[sha256_hashes]}}) > 0 "
+                },
+                {
+                  "edgeId": "b211a73f-6936-447b-8bf7-2b8492d52050",
+                  "expression": {},
+                  "expressionText": ""
                 }
               ]
             },
@@ -843,7 +883,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "The unblacklist action failed for `{{[a62306f8-17fb-4ab7-8228-348bd1433df7].[hash]}}`.\n\nWe're only able to unblacklist a previously blacklisted hash. Double-check that the hash was previously blacklisted. Please check the job details for more information.\n\n{{[$job].[URL]}}"
+                "content": "The unblacklist action failed for `{{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[message].[indicators].[hashes].[sha1_hashes].[0]}}`.\n\nPlease check the job details for more information.\n\n{{[$job].[URL]}}"
               },
               "type": "markdown"
             },
@@ -940,7 +980,7 @@
                   "edgeId": "680e60b9-5c6e-49a8-8d17-9da0d23d1f42",
                   "expression": {
                     "left": {
-                      "name": "a62306f8-17fb-4ab7-8228-348bd1433df7.action",
+                      "name": "c6b577e3-9857-4c0e-9c30-f1efe042f5a5.message.first_word",
                       "type": "variable"
                     },
                     "op": "=",
@@ -950,7 +990,7 @@
                     },
                     "type": "binary"
                   },
-                  "expressionText": "{{[a62306f8-17fb-4ab7-8228-348bd1433df7].[action]}} = \"unblacklist-hash\" OR {{[a62306f8-17fb-4ab7-8228-348bd1433df7].[action]}} = \"!unblacklist-hash\""
+                  "expressionText": "{{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[message].[first_word]}} = \"unblacklist-hash\""
                 },
                 {
                   "edgeId": "d99b3d44-5e90-4082-a791-2137cfdcbd57",
@@ -963,48 +1003,6 @@
             "defaultOutputJSONSchema": null,
             "outputJSONSchema": null,
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
-            "connectionType": "NONE"
-          },
-          "a62306f8-17fb-4ab7-8228-348bd1433df7": {
-            "nodeId": "a62306f8-17fb-4ab7-8228-348bd1433df7",
-            "name": "Extract Command",
-            "type": "pattern_match",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "captureAll": false,
-              "expressionText": "<.*> {{action:/.*/}} {{hash:/.*/}}",
-              "expressions": [
-                {
-                  "type": "text",
-                  "value": "<.*> "
-                },
-                {
-                  "type": "variable",
-                  "value": {
-                    "ident": "action",
-                    "regex": ".*"
-                  }
-                },
-                {
-                  "type": "text",
-                  "value": " "
-                },
-                {
-                  "type": "variable",
-                  "value": {
-                    "ident": "hash",
-                    "regex": ".*"
-                  }
-                }
-              ],
-              "ignoreCase": false,
-              "input": "{{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[message].[text]}}"
-            },
-            "defaultInputJSONSchema": null,
-            "defaultOutputJSONSchema": null,
-            "outputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/pattern-match.svg",
             "connectionType": "NONE"
           },
           "c6b577e3-9857-4c0e-9c30-f1efe042f5a5": {
@@ -1021,7 +1019,7 @@
                 "type": "any"
               }
             },
-            "triggerId": "d0b21506-e44c-488e-95c0-7c065362766b",
+            "triggerId": "9095114e-087b-4393-ac7f-ccd9260934b0",
             "defaultInputJSONSchema": {
               "properties": {
                 "matchChannel": {
@@ -1057,6 +1055,126 @@
             },
             "defaultOutputJSONSchema": {
               "definitions": {
+                "hashes": {
+                  "properties": {
+                    "md5_hashes": {
+                      "description": "MD5 hashes found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 1,
+                      "title": "MD5 Hashes",
+                      "type": "array"
+                    },
+                    "sha1_hashes": {
+                      "description": "SHA1 hashes found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "SHA1 Hashes",
+                      "type": "array"
+                    },
+                    "sha256_hashes": {
+                      "description": "SHA256 hashes found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 3,
+                      "title": "SHA256 Hashes",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Hashes",
+                  "type": "object"
+                },
+                "indicators": {
+                  "properties": {
+                    "domains": {
+                      "description": "Domains found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 1,
+                      "title": "Domains",
+                      "type": "array"
+                    },
+                    "email_addresses": {
+                      "description": "Email addresses found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 4,
+                      "title": "Email Addresses",
+                      "type": "array"
+                    },
+                    "hashes": {
+                      "$ref": "#/definitions/hashes",
+                      "description": "Hashes found within the message",
+                      "order": 5,
+                      "title": "Hashes"
+                    },
+                    "ip_addresses": {
+                      "$ref": "#/definitions/ip_addresses",
+                      "description": "IP addresses found within the message",
+                      "order": 7,
+                      "title": "IP Addresses"
+                    },
+                    "mac_addresses": {
+                      "description": "MAC addresses found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 6,
+                      "title": "MAC Addresses",
+                      "type": "array"
+                    },
+                    "parent_domains": {
+                      "description": "Parent domains found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "Parent Domains",
+                      "type": "array"
+                    },
+                    "urls": {
+                      "description": "URLs found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 3,
+                      "title": "URLs",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Indicators",
+                  "type": "object"
+                },
+                "ip_addresses": {
+                  "properties": {
+                    "ipv4_addresses": {
+                      "description": "IPv4 addresses found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 1,
+                      "title": "IPv4 Addresses",
+                      "type": "array"
+                    },
+                    "ipv6_addresses": {
+                      "description": "IPv6 addresses found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "IPv6 Addresses",
+                      "type": "array"
+                    }
+                  },
+                  "title": "IP Addresses",
+                  "type": "object"
+                },
                 "message": {
                   "properties": {
                     "channel": {
@@ -1070,6 +1188,18 @@
                       "order": 4,
                       "title": "Channel ID",
                       "type": "string"
+                    },
+                    "first_word": {
+                      "description": "First word of the message, for example a chat command (ignoring mentions)",
+                      "order": 5,
+                      "title": "First Word",
+                      "type": "string"
+                    },
+                    "indicators": {
+                      "$ref": "#/definitions/indicators",
+                      "description": "Potential threat indicators found within the message",
+                      "order": 7,
+                      "title": "Indicators"
                     },
                     "text": {
                       "description": "Text",
@@ -1094,6 +1224,15 @@
                       "order": 2,
                       "title": "User ID",
                       "type": "string"
+                    },
+                    "words": {
+                      "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 6,
+                      "title": "Words",
+                      "type": "array"
                     }
                   },
                   "title": "Message",
@@ -1217,7 +1356,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": ":rotating_light: Hash action successfully executed! :rotating_light:\n\n`{{[a62306f8-17fb-4ab7-8228-348bd1433df7].[hash]}}` "
+                "content": ":rotating_light: Hash action successfully executed! :rotating_light:\n\n`{{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[message].[indicators].[hashes].[sha1_hashes].[0]}}` "
               },
               "type": "markdown"
             },
@@ -1309,7 +1448,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "The blacklist action failed for `{{[a62306f8-17fb-4ab7-8228-348bd1433df7].[hash]}}`.\n\nWe're only able to unblacklist a hash that is not already in the list. Double-check that the hash is not already in the blacklist. Please check the job details for more information.\n\n{{[$job].[URL]}}"
+                "content": "The blacklist action failed for `{{[c6b577e3-9857-4c0e-9c30-f1efe042f5a5].[message].[indicators].[hashes].[sha1_hashes].[0]}}`.\n\nPlease check the job details for more information.\n\n{{[$job].[URL]}}"
               },
               "type": "markdown"
             },
@@ -1378,12 +1517,15 @@
         },
         "tags": null,
         "humanCostSeconds": 0,
-        "humanCostDisplayUnit": ""
+        "humanCostDisplayUnit": "",
+        "parameters": {
+          "definitionSchema": null
+        }
       }
     ],
     "triggers": [
       {
-        "id": "d0b21506-e44c-488e-95c0-7c065362766b",
+        "id": "9095114e-087b-4393-ac7f-ccd9260934b0",
         "name": "Blacklist Request",
         "description": "Slack message that triggers if a blacklist-hash command is found",
         "input": {
@@ -1426,6 +1568,126 @@
         },
         "outputJsonSchema": {
           "definitions": {
+            "hashes": {
+              "properties": {
+                "md5_hashes": {
+                  "description": "MD5 hashes found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "MD5 Hashes",
+                  "type": "array"
+                },
+                "sha1_hashes": {
+                  "description": "SHA1 hashes found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "SHA1 Hashes",
+                  "type": "array"
+                },
+                "sha256_hashes": {
+                  "description": "SHA256 hashes found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 3,
+                  "title": "SHA256 Hashes",
+                  "type": "array"
+                }
+              },
+              "title": "Hashes",
+              "type": "object"
+            },
+            "indicators": {
+              "properties": {
+                "domains": {
+                  "description": "Domains found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "Domains",
+                  "type": "array"
+                },
+                "email_addresses": {
+                  "description": "Email addresses found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 4,
+                  "title": "Email Addresses",
+                  "type": "array"
+                },
+                "hashes": {
+                  "$ref": "#/definitions/hashes",
+                  "description": "Hashes found within the message",
+                  "order": 5,
+                  "title": "Hashes"
+                },
+                "ip_addresses": {
+                  "$ref": "#/definitions/ip_addresses",
+                  "description": "IP addresses found within the message",
+                  "order": 7,
+                  "title": "IP Addresses"
+                },
+                "mac_addresses": {
+                  "description": "MAC addresses found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 6,
+                  "title": "MAC Addresses",
+                  "type": "array"
+                },
+                "parent_domains": {
+                  "description": "Parent domains found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "Parent Domains",
+                  "type": "array"
+                },
+                "urls": {
+                  "description": "URLs found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 3,
+                  "title": "URLs",
+                  "type": "array"
+                }
+              },
+              "title": "Indicators",
+              "type": "object"
+            },
+            "ip_addresses": {
+              "properties": {
+                "ipv4_addresses": {
+                  "description": "IPv4 addresses found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "IPv4 Addresses",
+                  "type": "array"
+                },
+                "ipv6_addresses": {
+                  "description": "IPv6 addresses found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "IPv6 Addresses",
+                  "type": "array"
+                }
+              },
+              "title": "IP Addresses",
+              "type": "object"
+            },
             "message": {
               "properties": {
                 "channel": {
@@ -1439,6 +1701,18 @@
                   "order": 4,
                   "title": "Channel ID",
                   "type": "string"
+                },
+                "first_word": {
+                  "description": "First word of the message, for example a chat command (ignoring mentions)",
+                  "order": 5,
+                  "title": "First Word",
+                  "type": "string"
+                },
+                "indicators": {
+                  "$ref": "#/definitions/indicators",
+                  "description": "Potential threat indicators found within the message",
+                  "order": 7,
+                  "title": "Indicators"
                 },
                 "text": {
                   "description": "Text",
@@ -1463,6 +1737,15 @@
                   "order": 2,
                   "title": "User ID",
                   "type": "string"
+                },
+                "words": {
+                  "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 6,
+                  "title": "Words",
+                  "type": "array"
                 }
               },
               "title": "Message",
