@@ -2948,7 +2948,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "## Attached Email Analysis\n\n(This artifact can be removed) \n\nThis loop will analyze any each of the attached emails and look for any malicious indicators - these include any malicious URLs found within these emails, any attached files to these emails and if the email comes from a domains that is younger than 30 days. This will be the best indicators of a suspicious email. If any are found this email will be marked as malicious. "
+                "content": "## Attached Email Analysis\n\n(This artifact can be removed) \n\nThis loop will analyze any each of the attached emails and look for any malicious indicators - these include any malicious URLs found within these emails, any attached files to these emails and if the email comes from a domains that is younger than 30 days. These will be the best indicators of a suspicious email. If any are found this email will be marked as malicious. "
               },
               "type": "markdown"
             },
