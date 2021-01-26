@@ -1184,7 +1184,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "# Remediation Goes Here\n\n(this artifact can be removed)\n\nAt this point in the workflow, we've established we have a malicious email. \n\nRemediation steps go on this branch of the flow. They can be email notifications, slack notifications for human follow up. Remediation can also go further and block the sender and delete the email from your organization. \n\nIn this example, I will send a notification via email, and use the Office Admin plugin to both delete the email and block the sender from our organization. "
+                "content": "# Remediation Goes Here\n\n(this artifact can be removed)\n\nAt this point in the workflow, we've established we have a malicious email. \n\nRemediation steps go on this branch of the flow. They can be email notifications, Slack notifications for human follow up. Remediation can also go further and block the sender and delete the email from your organization. \n\nIn this example, I will send a notification via email, and use the Office Admin plugin to both delete the email and block the sender from our organization. "
               },
               "type": "markdown"
             },
