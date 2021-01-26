@@ -22,7 +22,7 @@ API and account credentials for:
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-Once the workflow has been imported. **update the first step with the mailbox and subject to suit your environment** by editing the input with the preset text of `change_me`.
+Once the workflow has been imported, **update the first step with the mailbox and subject to suit your environment** by editing the input with the preset text of `change_me`.
 
 Additionally, update the predefined `change_me` inputs in _Send Notification Email_ - you can specify the sender of the notification email and who should be notified. The **Email To** field accepts a list of email addresses, so if you wish you can add multiple mailboxes to notify. 
 
