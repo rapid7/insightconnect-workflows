@@ -1,9 +1,9 @@
 extension: workflow
 products: ["insightconnect", "insightvm"]
 name: Virtually_Patch_Vulnerabilities_Found_by_InsightVM_with_Deep_Security
-title: "Virtually Patch Vulnerabilities found by InsightVM with Deep Security"
+title: "Virtually Patch Vulnerabilities Found by InsightVM with Deep Security"
 description: Automatically protect your assets against exploitation of vulnerabilities found by InsightVM with Deep Security virtual patching.
-version: 1.0.3
+version: 1.1.0
 vendor: rapid7
 support: rapid7
 status: []
@@ -15,18 +15,20 @@ resources:
   source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Virtually_Patch_Vulnerabilities_Found_by_InsightVM_with_Deep_Security
   license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
   screenshots:
-  - name: workflow01.png
-    title: Workflow Get Assets
-  - name: workflow02.png
-    title: Workflow Check Hosname
-  - name: workflow03.png
-    title: Workflow Extract Hosname from FQDN
-  - name: workflow04.png
-    title: Workflow Get Vulnerabilities
-  - name: workflow05.png
-    title: Workflow Search for IPS Rules by CVE
-  - name: workflow06.png
-    title: Workflow Deploy Rules and Set Exceptions 
+  - name: workflow1.png
+    title: Workflow 1
+  - name: workflow2.png
+    title: Workflow 2
+  - name: workflow3.png
+    title: Workflow 3
+  - name: workflow4.png
+    title: Workflow 4
+  - name: workflow5.png
+    title: Workflow 5
+  - name: workflow6.png
+    title: Workflow 6
+  - name: workflow7.png
+    title: Workflow 7
   - name: artifact01.png
     title: Report Artifact Sucessful Assignment of One Rule
   - name: artifact02.png
