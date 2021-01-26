@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.75.0-0-g0b8f4",
+    "komandVersion": "1.76.0-0-g002d2",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2021-01-22T20:36:31.358560907Z",
+    "exportedAt": "2021-01-26T13:55:58.096630625Z",
     "workflowVersions": [
       {
         "name": "Virtually Patch Vulnerabilities Found by InsightVM with Deep Security",
