@@ -489,7 +489,7 @@
             "parameters": {
               "input": {
                 "channel_name": "{{[eb45a27e-1a93-4580-b5dc-f48c252db9f3].[channel_name]}}",
-                "message_content": "✅🚧 The Address {{[77fed0f5-99fc-41d6-9c96-45f39dbecc84].[$item]}} is not blocked. 🚧✅",
+                "message_content": "✅🚧 The address {{[77fed0f5-99fc-41d6-9c96-45f39dbecc84].[$item]}} is not blocked. 🚧✅",
                 "team_name": "{{[eb45a27e-1a93-4580-b5dc-f48c252db9f3].[team_name]}}",
                 "thread_id": "{{[eb45a27e-1a93-4580-b5dc-f48c252db9f3].[message].[id]}}"
               }
