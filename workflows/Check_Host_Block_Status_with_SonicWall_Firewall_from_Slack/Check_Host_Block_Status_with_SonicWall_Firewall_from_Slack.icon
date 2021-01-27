@@ -8,7 +8,7 @@
         "name": "Check Host Block Status with SonicWall Firewall from Slack",
         "type": "runnable",
         "version": "",
-        "description": "This workflow accepts a Slack command containing a list of IP address or domains. This IP address will be checked against a pre-defined address group in SonicWall to determine if the IP address is present or not. It is assumed that this address group will be used to store IP addresses for a block policy. A message with the results will be returned.",
+        "description": "This workflow accepts a Slack command containing a list of IP addresses or domains. Each item will be checked against a pre-defined address group in SonicWall to determine if that item is present or not. It is assumed that this address group will be used to store IP addresses for a block policy. A message with the results will be returned.",
         "graph": {
           "edges": {
             "14987bd6-bbcf-4706-b83a-fd8b8626c67c": {
