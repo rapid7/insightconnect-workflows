@@ -8,7 +8,7 @@
         "name": "Check Host Block Status with SonicWall Firewall from Microsoft Teams",
         "type": "runnable",
         "version": "",
-        "description": "This workflow accepts a Microsoft Teams command containing a list of IP address or domains. This IP address will be checked against a pre-defined address group in SonicWall to determine if the IP address is present or not. It is assumed that this address group will be used to store IP addresses for a block policy. A message with the results will be returned.",
+        "description": "This workflow accepts a Microsoft Teams command containing a list of IP address or domains. Each IP address or domain will be checked against a pre-defined address group in SonicWall to determine if that item is present or not. It is assumed that this address group will be used to store IP addresses for a block policy. A message with the results will be returned.",
         "graph": {
           "edges": {
             "19ada3e9-769f-43af-b028-2c906b029b79": {
