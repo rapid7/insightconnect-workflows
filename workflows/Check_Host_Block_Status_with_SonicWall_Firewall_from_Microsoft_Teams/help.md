@@ -10,7 +10,7 @@ Sample Microsoft Teams Trigger Commands:
 
 # Key Features
 
-* The ability to see if an IP is currently blocked by the firewall
+* The ability to see if an IP address is currently blocked by the firewall
 
 # Requirements
 
