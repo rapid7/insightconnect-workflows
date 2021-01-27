@@ -192,7 +192,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "🚫🚧 The Address {{[77fed0f5-99fc-41d6-9c96-45f39dbecc84].[$item]}} is blocked. 🚧🚫"
+                "content": "🚫🚧 The address {{[77fed0f5-99fc-41d6-9c96-45f39dbecc84].[$item]}} is blocked. 🚧🚫"
               },
               "type": "markdown"
             },
