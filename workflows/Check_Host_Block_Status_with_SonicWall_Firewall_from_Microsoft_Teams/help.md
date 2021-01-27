@@ -1,6 +1,6 @@
 # Description
 
-This workflow accepts a Microsoft Teams command containing a list of IP address or domains. This provided list will be checked against a pre-defined address group in SonicWall to determine if the IP address or domain is present or not. It is assumed that this address group will be used to store IP addresses for a block policy. A reply with the results will be returned.
+This workflow accepts a Microsoft Teams command containing a list of IP addresses or domains. This provided list will be checked against a pre-defined address group in SonicWall to determine if the IP address or domain is present or not. It is assumed that this address group will be used to store IP addresses for a block policy. A reply with the results will be returned.
 
 Sample Microsoft Teams Trigger Commands:
 
