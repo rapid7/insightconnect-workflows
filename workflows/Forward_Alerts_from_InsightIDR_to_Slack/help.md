@@ -27,7 +27,7 @@ You can also manually trigger this workflow from the investigation. To do this c
 
 ## Technical Details
 
-By default this workflow forwards the IDR Alerts to the Slack channel `#secops`. This can be changed in the last workflow step.
+By default this workflow forwards the IDR Alerts to the Slack channel `#change_me`. This can be changed in the last workflow step.
 
 ## Troubleshooting
 
