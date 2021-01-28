@@ -34,13 +34,13 @@ Import the workflow from the Rapid7 Extension Library and proceed through the Im
 
 Once the workflow has been imported,
 
-1. Update the first step with the channel name to suit your Microsoft Teams environment by editing the input with the preset text of `change_me` to match the channel to monitor.
+1. Update the first step with the channel name to suit your Microsoft Teams environment! by editing the input with the preset text of `change_me` to match the channel to monitor.
 2. Update the preset text of `change_me` in the Group field to the Address Group you want to manage in the following steps:
 
 * **Add Host to Blocked Address Group**
 * **Remove Host from Block Group**
 
-After configuring the first Microsoft Teams step, activate the workflow and then issue a Microsoft Teams command to trigger it. Note, that the Check Point Firewall API can take some time to respond to the request.
+After configuring those steps, activate the workflow and then issue a Microsoft Teams command to trigger it. Note, that the Check Point Firewall API can take some time to respond to the request.
 
 Additional customization can be provided with the following options:
 
@@ -49,7 +49,7 @@ Additional customization can be provided with the following options:
 
 ### Usage
 
-*This workflow will only trigger in the channel specified in the Microsoft Teams workflow steps, or from any channel if left empty.*
+*This workflow will only trigger in the channel specified in the Microsoft Teams workflow steps.*
 
 To run the workflow, send a message to the specified Microsoft Teams channel starting with the command `!block-host` or `!unblock-host`.
 
@@ -61,7 +61,7 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|HTML|1.2.1|1|
+|HTML|1.2.2|1|
 |Check Point NGFW|2.0.1|3|
 |Microsoft Teams|3.1.0|11|
 
@@ -71,7 +71,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
-* 1.1.0 - Replace the preset text of "change_me" with automatic team and channel name extraction in all Microsoft Teams steps except the first one | Update Microsoft Teams to version 3.1.0 | Update documentation
+* 1.0.4 - Update workflow to use version 3.1.0 of the Microsoft Teams plugin
 * 1.0.3 - Update Acknowledge Request step's message to mention Check Point
 * 1.0.2 - Help amendments
 * 1.0.1 - Update to make Microsoft Teams plugin the latest version

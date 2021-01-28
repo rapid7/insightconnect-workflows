@@ -1,14 +1,14 @@
 {
   "kom": {
-    "komandVersion": "1.71.0-0-g80553",
+    "komandVersion": "1.75.0-0-g0b8f4",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-12-09T18:50:06.600974876Z",
+    "exportedAt": "2021-01-25T14:07:20.434893278Z",
     "workflowVersions": [
       {
         "name": "Block Host with Check Point Firewall from Microsoft Teams",
         "type": "runnable",
         "version": "",
-        "description": "Block or unblock a host with Check Point firewall via Microsoft Teams command and report information back to Microsoft Teams.",
+        "description": "# Description\n\nThis workflow blocks or unblocks a host with Check Point Firewall via Microsoft Teams command and reports information back to Microsoft Teams.\n\nSample Microsoft Teams Trigger Commands:\n\n`!block-host 198.51.100.100`\n\n`!block-host 198.51.100.100/32`\n\n`!block-host 198.51.100.0/24`\n\n`!unblock-host 198.51.100.100`\n\n`!unblock-host 198.51.100.100/32`\n\n`!unblock-host 198.51.100.0/24`\n\n# Key Features\n\n* Block and unblock hosts \n\n# Requirements\n\n* [Microsoft Teams](https://insightconnect.help.rapid7.com/docs/microsoft-teams)\n* Check Point firewall\n* Check Point username and password\n\n# Documentation\n\n## Setup\n\nImport the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.\n\nOnce the workflow has been imported,\n\n1. Update the first step with the channel name to suit your Microsoft Teams environment! by editing the input with the preset text of `change_me` to match the channel to monitor.\n2. Update the preset text of `change_me` in the Group field to the Address Group you want to manage in the following steps:\n\n* **Add Host to Blocked Address Group**\n* **Remove Host from Block Group**\n\nAfter configuring those steps, activate the workflow and then issue a Microsoft Teams command to trigger it. Note, that the Check Point Firewall API can take some time to respond to the request.\n\nAdditional customization can be provided with the following options:\n\n1. An optional whitelist can be added to the Check Point `Add Host to be Blocked` action. To skip blocking these hosts, add IP addresses or CIDR IP addresses in the following format `[\"198.51.100.100\", \"198.51.100.1/32\"]`\n2. By default this workflow will automatically skip blocking private IP addresses. To block these, set the `Skip RFC 1918` option to false in the `Add Host to be Blocked` step.\n\n### Usage\n\n*This workflow will only trigger in the channel specified in the Microsoft Teams workflow steps.*\n\nTo run the workflow, send a message to the specified Microsoft Teams channel starting with the command `!block-host` or `!unblock-host`.\n\nYour chat bot will reply when the workflow completes.\n\n## Technical Details\n\nPlugins utilized by workflow:\n\n|Plugin|Version|Count|\n|----|----|--------|\n|HTML|1.2.1|1|\n|Check Point NGFW|2.0.1|3|\n|Microsoft Teams|2.0.4|11|\n\n## Troubleshooting\n\n_There is no troubleshooting information at this time_\n\n# Version History\n\n* 1.0.3 - Update Acknowledge Request step's message to mention Check Point\n* 1.0.2 - Help amendments\n* 1.0.1 - Update to make Microsoft Teams plugin the latest version\n* 1.0.0 - Initial workflow\n\n# Links\n\n## References\n\n* [Check Point](https://www.checkpoint.com/)\n* [Microsoft Teams](https://teams.microsoft.com)\n",
         "graph": {
           "edges": {
             "17d352ea-d1dd-407c-9fec-489d886f2ce0": {
@@ -815,7 +815,7 @@
                 "team_name": "change_me"
               }
             },
-            "triggerId": "4590a64b-15bc-4085-a173-38fd9d7a1e60",
+            "triggerId": "f301ca27-593c-41c5-ab77-642e74194c12",
             "defaultInputJSONSchema": {
               "properties": {
                 "channel_name": {
@@ -2481,8 +2481,8 @@
               "name": "HTML",
               "slugVendor": "rapid7",
               "slugName": "html",
-              "slugVersion": "1.2.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/html/1.2.1/icon.png"
+              "slugVersion": "1.2.2",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/html/1.2.2/icon.png"
             },
             "identifier": "text",
             "continueOnFailure": false,
@@ -3611,12 +3611,15 @@
         },
         "tags": null,
         "humanCostSeconds": 0,
-        "humanCostDisplayUnit": ""
+        "humanCostDisplayUnit": "",
+        "parameters": {
+          "definitionSchema": null
+        }
       }
     ],
     "triggers": [
       {
-        "id": "4590a64b-15bc-4085-a173-38fd9d7a1e60",
+        "id": "f301ca27-593c-41c5-ab77-642e74194c12",
         "identifier": "new_message_received",
         "name": "Block Request",
         "description": "",
