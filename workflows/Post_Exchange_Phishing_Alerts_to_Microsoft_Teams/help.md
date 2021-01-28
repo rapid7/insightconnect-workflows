@@ -35,7 +35,7 @@ Plugins utilized by workflow:
 |String Operations|1.2.1|1|
 |Python 3 Script|2.0.1|1|
 |Microsoft Exchange|5.2.0|1|
-|Microsoft Teams|2.0.4|2|
+|Microsoft Teams|3.1.0|2|
 
 ## Troubleshooting
 
@@ -43,6 +43,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.3 - Update Microsoft Teams to version 3.1.0
 * 1.0.2 - Update to make Microsoft Teams plugin the latest version
 * 1.0.1 - Change Microsoft Teams input fields to match new standards
 * 1.0.0 - Initial workflow

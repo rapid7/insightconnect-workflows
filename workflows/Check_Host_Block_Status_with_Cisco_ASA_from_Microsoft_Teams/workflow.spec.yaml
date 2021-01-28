@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Check_Host_Block_Status_with_Cisco_ASA_from_Microsoft_Teams
 title: Check Host Block Status with Cisco ASA from Microsoft Teams
 description: Check if a host is blocked in Cisco ASA from Microsoft Teams.
-version: 1.0.0
+version: 1.0.1
 vendor: rapid7
 support: rapid7
 status: []

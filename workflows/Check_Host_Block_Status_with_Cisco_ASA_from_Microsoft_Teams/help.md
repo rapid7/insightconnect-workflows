@@ -25,11 +25,11 @@ Sample Microsoft Teams Trigger Commands:
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-In the _Check Host Message Received_ steps change the Team Name and Channel Name input from `change_me` to an appropriate team and channel.
+Once the workflow has been imported, **the first Microsoft Teams step will need the team name and channel name updated to suit your Microsoft Teams environment!** Edit the input with the preset text of `change_me` in the first Microsoft Teams step in the workflow.
 
 In the _Check Host Block Status_ step edit the Group input from `change_me` to an appropriate address group.
 
-To run the workflow,  Use the command "!block-status <host_address>". The workflow will post responses in the channel.
+To run the workflow,  Use the command `!block-status <host_address>`. The workflow will post responses in the channel.
 
 ## Technical Details
 
@@ -37,7 +37,7 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Microsoft Teams|2.2.0|6|
+|Microsoft Teams|3.1.0|6|
 |Cisco Adaptive Security Appliance|1.3.0|1|
 |Type Converter|1.6.0|1|
 
@@ -47,6 +47,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.1 - Update Microsoft Teams to version 3.1.0 | Update documentation
 * 1.0.0 - Initial workflow
 
 # Links

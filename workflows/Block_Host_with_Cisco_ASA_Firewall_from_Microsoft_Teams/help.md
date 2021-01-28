@@ -78,7 +78,7 @@ Plugins utilized by workflow:
 |----|----|--------|
 |Cisco Adaptive Security Appliance|1.4.1|5|
 |Type Converter|1.6.0|1|
-|Microsoft Teams|2.2.1|8|
+|Microsoft Teams|3.1.0|8|
 
 ## Troubleshooting
 
@@ -89,6 +89,7 @@ The REST API server must be installed and enabled on the Cisco ASA device this p
 
 # Version History
 
+* 1.0.1 - Update Microsoft Teams to version 3.1.0
 * 1.0.0 - Initial workflow
 
 # Links

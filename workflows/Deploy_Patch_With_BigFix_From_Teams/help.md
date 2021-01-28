@@ -21,7 +21,7 @@ The following connections will need to be setup:
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-Once the workflow has been imported, **each Microsoft Teams step will need the team name and channel name updated to suit your Teams environment!** Edit the input with the preset text of `Dream Team` and `change_me` in each Teams step in the workflow.
+Once the workflow has been imported, **the first Microsoft Teams step will need the team name and channel name updated to suit your Microsoft Teams environment!** Edit the input with the preset text of `change_me` in the first Microsoft Teams step in the workflow.
 
 After import, activate the workflow in order to trigger it.
 
@@ -44,7 +44,7 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Microsoft Teams|2.0.4|6|
+|Microsoft Teams|3.1.0|6|
 |HTML|1.2.1|1|
 |BigFix|7.0.0|2|
 
@@ -54,6 +54,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 2.1.0 - Replace the preset text of "change_me" with automatic team and channel name extraction in all Microsoft Teams steps except the first one | Update Microsoft Teams to version 3.1.0 | Update documentation
 * 2.0.0 - Updated workflow to use newly branded "HCL BigFix" plugin
 * 1.0.1 - Update to make Microsoft Teams plugin the latest version 
 * 1.0.0 - Initial workflow

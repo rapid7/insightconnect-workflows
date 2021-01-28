@@ -23,17 +23,14 @@ Sample Teams Trigger Commands:
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-Once the workflow has been imported, each Microsoft Teams step will need the team name and channel name updated to suit your Teams environment (edit the input with the preset text of `change_me`).
-The following are the 5 Microsoft Teams steps:
-- _!enrich-url Trigger_
-- _Print No URL Found_
-- _Print Failed to get Scan ID_
-- _Print Failed to get Report_
-- _Print URLScan Report_
+Once the workflow has been imported, **the first Microsoft Teams step will need the team name and channel name updated to suit your Microsoft Teams environment!** Edit the input with the preset text of `change_me` in the first Microsoft Teams step in the workflow.
 
-# Usage
+After configuring the Microsoft Teams steps, activate the workflow in order to trigger it.
+
+## Usage
 
 *This workflow will only trigger in the channel specified in the Microsoft Teams workflow steps.*
+
 To run the workflow, send a message to the specified Microsoft Teams channel starting with the command `!enrich-url`.
 For example:
 * `!enrich-url badsite.com`
@@ -46,7 +43,7 @@ Plugins utilized by workflow:
 |Plugin|Version|Count|
 |----|----|--------|
 |ExtractIt|2.0.0|1|
-|Microsoft Teams|2.0.4|5|
+|Microsoft Teams|3.1.0|5|
 |Python 3 Script|2.0.1|1|
 |Sleep|1.0.2|1|
 |urlscan.io|2.1.4|2|
@@ -57,6 +54,7 @@ If a URL is submitted but no report is generated, urlscan.io may have blackliste
 
 # Version History
 
+* 1.1.0 - Replace the preset text of "change_me" with automatic team and channel name extraction in all Microsoft Teams steps except the first one | Update Microsoft Teams to version 3.1.0 | Update documentation
 * 1.0.1 - Update to make Microsoft Teams plugin the latest version
 * 1.0.0 - Initial workflow
 

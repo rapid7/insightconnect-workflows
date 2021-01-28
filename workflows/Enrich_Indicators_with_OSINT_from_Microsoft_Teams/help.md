@@ -26,9 +26,9 @@ Sample Trigger Commands:
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-Once the workflow has been imported, **each Microsoft Teams step will need the team name and channel name updated to suit your Teams environment!** Edit the input with the preset text of `change_me` in each Teams step in the workflow.
+Once the workflow has been imported, **the first Microsoft Teams step will need the team name and channel name updated to suit your Microsoft Teams environment!** Edit the input with the preset text of `change_me` in the first Microsoft Teams step in the workflow.
 
-After configuring the Teams steps, activate the workflow in order to trigger it.
+After configuring the Microsoft Teams steps, activate the workflow in order to trigger it.
 
 ### Usage
 
@@ -56,7 +56,7 @@ Plugins utilized by workflow:
 |----|----|--------|
 |Dig|1.0.5|1|
 |Team Cymru MHR|1.1.1|1|
-|Microsoft Teams|2.2.1|8|
+|Microsoft Teams|3.1.0|8|
 |WHOIS|2.0.2|2|
 |Type Converter|1.6.0|2|
 
@@ -66,6 +66,7 @@ In some instances using copy & paste for `!enrich-indicator` commands may introd
 
 # Version History
 
+* 2.0.1 - Update Microsoft Teams to version 3.1.0 | Update documentation
 * 2.0.0 - Update workflow to use loop outputs
 * 1.0.2 - Update to make Microsoft Teams plugin the latest version
 * 1.0.1 - Updated trigger syntax and documentation

@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Delete_Assets_with_InsightVM_from_Microsoft_Teams
 title: "Delete Assets with InsightVM from Microsoft Teams"
 description: "Delete assets from InsightVM using only a Microsoft Teams command."
-version: 1.0.0
+version: 1.0.1
 vendor: rapid7
 support: rapid7
 status: []

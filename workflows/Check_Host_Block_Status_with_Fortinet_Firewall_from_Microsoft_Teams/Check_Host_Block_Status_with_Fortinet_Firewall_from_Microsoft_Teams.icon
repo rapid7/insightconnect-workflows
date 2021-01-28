@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.62.0-0-g716d3",
+    "komandVersion": "1.72.0-0-ge9d34",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-09-24T19:35:09.798726343Z",
+    "exportedAt": "2020-12-10T20:38:21.935339749Z",
     "workflowVersions": [
       {
         "name": "Check Host Block Status with Fortinet Firewall from Microsoft Teams",
@@ -329,8 +329,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.2.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.1/icon.png"
+              "slugVersion": "3.1.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
@@ -338,9 +338,9 @@
             "isCloud": false,
             "parameters": {
               "input": {
-                "channel_name": "change_me",
+                "channel_name": "{{[f8671c10-b8f2-441d-b6e3-c98d10469fda].[channel_name]}}",
                 "message_content": "{{[0291a406-7bfa-4ca2-9de5-c2e635541d11].[content]}}",
-                "team_name": "change_me",
+                "team_name": "{{[f8671c10-b8f2-441d-b6e3-c98d10469fda].[team_name]}}",
                 "thread_id": "{{[f8671c10-b8f2-441d-b6e3-c98d10469fda].[message].[id]}}"
               }
             },
@@ -466,8 +466,21 @@
                       "order": 4,
                       "title": "Web URL",
                       "type": "string"
+                    },
+                    "words": {
+                      "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 10,
+                      "title": "Words",
+                      "type": "array"
                     }
                   },
+                  "required": [
+                    "words",
+                    "first_word"
+                  ],
                   "title": "Message",
                   "type": "object"
                 },
@@ -638,8 +651,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.2.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.1/icon.png"
+              "slugVersion": "3.1.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
@@ -647,9 +660,9 @@
             "isCloud": false,
             "parameters": {
               "input": {
-                "channel_name": "change_me",
+                "channel_name": "{{[f8671c10-b8f2-441d-b6e3-c98d10469fda].[channel_name]}}",
                 "message_content": "{{[8d73f510-1fb3-4cec-8611-edd9c2394056].[content]}}",
-                "team_name": "change_me",
+                "team_name": "{{[f8671c10-b8f2-441d-b6e3-c98d10469fda].[team_name]}}",
                 "thread_id": "{{[f8671c10-b8f2-441d-b6e3-c98d10469fda].[message].[id]}}"
               }
             },
@@ -775,8 +788,21 @@
                       "order": 4,
                       "title": "Web URL",
                       "type": "string"
+                    },
+                    "words": {
+                      "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 10,
+                      "title": "Words",
+                      "type": "array"
                     }
                   },
+                  "required": [
+                    "words",
+                    "first_word"
+                  ],
                   "title": "Message",
                   "type": "object"
                 },
@@ -822,8 +848,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.2.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.1/icon.png"
+              "slugVersion": "3.1.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
@@ -831,9 +857,9 @@
             "isCloud": false,
             "parameters": {
               "input": {
-                "channel_name": "change_me",
+                "channel_name": "{{[f8671c10-b8f2-441d-b6e3-c98d10469fda].[channel_name]}}",
                 "message_content": "⚠️ There was an error with the workflow. FortiGate did not return results correctly. Check This URL for more information. ⚠️\n<br>{{[$job].[URL]}}\"",
-                "team_name": "change_me",
+                "team_name": "{{[f8671c10-b8f2-441d-b6e3-c98d10469fda].[team_name]}}",
                 "thread_id": "{{[f8671c10-b8f2-441d-b6e3-c98d10469fda].[message].[id]}}"
               }
             },
@@ -959,8 +985,21 @@
                       "order": 4,
                       "title": "Web URL",
                       "type": "string"
+                    },
+                    "words": {
+                      "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 10,
+                      "title": "Words",
+                      "type": "array"
                     }
                   },
+                  "required": [
+                    "words",
+                    "first_word"
+                  ],
                   "title": "Message",
                   "type": "object"
                 },
@@ -1006,8 +1045,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.2.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.1/icon.png"
+              "slugVersion": "3.1.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
             },
             "identifier": "new_message_received",
             "continueOnFailure": false,
@@ -1019,7 +1058,7 @@
                 "team_name": "change_me"
               }
             },
-            "triggerId": "f77a1bac-2b97-4fa5-bb9d-03ec36d6d03f",
+            "triggerId": "a16c1ff6-6669-4190-975b-8df42b00eaba",
             "defaultInputJSONSchema": {
               "properties": {
                 "channel_name": {
@@ -1264,8 +1303,21 @@
                       "order": 4,
                       "title": "Web URL",
                       "type": "string"
+                    },
+                    "words": {
+                      "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 10,
+                      "title": "Words",
+                      "type": "array"
                     }
                   },
+                  "required": [
+                    "words",
+                    "first_word"
+                  ],
                   "title": "Message",
                   "type": "object"
                 },
@@ -1329,7 +1381,7 @@
     ],
     "triggers": [
       {
-        "id": "f77a1bac-2b97-4fa5-bb9d-03ec36d6d03f",
+        "id": "a16c1ff6-6669-4190-975b-8df42b00eaba",
         "identifier": "new_message_received",
         "name": "Check for IP Message",
         "description": "",
@@ -1582,8 +1634,21 @@
                   "order": 4,
                   "title": "Web URL",
                   "type": "string"
+                },
+                "words": {
+                  "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 10,
+                  "title": "Words",
+                  "type": "array"
                 }
               },
+              "required": [
+                "words",
+                "first_word"
+              ],
               "title": "Message",
               "type": "object"
             },
@@ -1641,8 +1706,8 @@
           "name": "Microsoft Teams",
           "slugVendor": "rapid7",
           "slugName": "microsoft_teams",
-          "slugVersion": "2.2.1",
-          "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.1/icon.png"
+          "slugVersion": "3.1.0",
+          "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
         }
       }
     ]

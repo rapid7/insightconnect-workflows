@@ -3,7 +3,7 @@ products: ["insightconnect", "insightvm"]
 name: Scan_Asset_With_InsightVM_From_Teams
 title: "Scan Asset with InsightVM from Microsoft Teams"
 description: Scan an asset and receive vulnerability and risk statistics with a Microsoft Teams message.
-version: 1.0.0
+version: 1.1.0
 vendor: rapid7
 support: community
 status: []

@@ -29,7 +29,7 @@ Sample Slack Trigger Commands:
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-Once the workflow has been imported, **each Microsoft Teams step will need the channel name, and team name updated to suit your Microsoft Teams environment!** Edit the input with the preset text of `change_me` in each Microsoft Teams step in the workflow.
+Once the workflow has been imported, **the first Microsoft Teams step will need the channel name, and team name updated to suit your Microsoft Teams environment!** Edit the input with the preset text of `change_me` in the first Microsoft Teams step in the workflow.
 
 After configuring the Microsoft Teams steps, activate the workflow in order to trigger it.
  
@@ -41,7 +41,7 @@ Plugins utilized by workflow:
 |----|----|--------|
 |Carbon Black Cloud|1.0.1|2|
 |HTML|1.2.1|1|
-|Microsoft Teams|2.0.5|5|
+|Microsoft Teams|3.1.0|5|
 
 ## Troubleshooting
 
@@ -49,6 +49,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.1.0 - Replace the preset text of "change_me" with automatic team and channel name extraction in all Microsoft Teams steps except the first one | Update Microsoft Teams to version 3.1.0 | Update documentation
 * 1.0.1 - Updated VMware Carbon Black branding
 * 1.0.0 - Initial workflow
 

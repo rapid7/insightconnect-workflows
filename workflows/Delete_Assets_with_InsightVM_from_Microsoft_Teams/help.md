@@ -53,7 +53,7 @@ Plugins utilized by workflow:
 |Type Converter|1.6.0|2|
 |Rapid7 InsightVM|4.2.1|2|
 |String Operations|1.3.1|1|
-|Microsoft Teams|2.2.0|8|
+|Microsoft Teams|3.1.0|8|
 
 ## Troubleshooting
 
@@ -61,6 +61,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.1 - Update Microsoft Teams to version 3.1.0
 * 1.0.0 - Initial workflow
 
 # Links

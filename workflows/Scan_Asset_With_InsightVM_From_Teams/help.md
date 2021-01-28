@@ -56,10 +56,9 @@ Import the workflow from the Rapid7 Extension Library and proceed through the Im
 Once the workflow has been imported, the following steps will need to be edited to reflect your Microsoft Teams and InsightVM configurations:
 
 1. The `scan-asset Trigger` step will need the Team Name and Channel Name inputs updated to reflect your Microsoft Teams environment. Edit the inputs with the preset text of `change_me`.
-2. The subsequent `Settings` artifact will need the same Team Name and Channel Name changes. Edit the inputs with the preset text of `change_me`.
-3. In the `Remediations Loop`, the `Scan Asset` step will need the `Site ID` input updated to reflect your newly created InsightVM (or Nexpose) site. Edit the input with the preset text of `change_me`.
+2. In the `Remediations Loop`, the `Scan Asset` step will need the `Site ID` input updated to reflect your newly created InsightVM (or Nexpose) site. Edit the input with the preset text of `change_me`.
 
-After updating the Microsoft Teams Trigger, the Settings artifact, and the InsightVM scan steps, activate the workflow in order to trigger it.
+After updating the Microsoft Teams Trigger and the InsightVM scan steps, activate the workflow in order to trigger it.
 
 ## Technical Details
 
@@ -67,10 +66,10 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Microsoft Teams|2.0.4|11|
+|Microsoft Teams|3.1.0|11|
 |HTML|1.2.1|1|
 |Rapid7 InsightVM|4.0.1|5|
-|Type Converter|1.5.1|2|
+|Type Converter|1.5.1|1|
 |Timers|2.0.4|3|
 
 ## Troubleshooting
@@ -79,6 +78,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.1.0 - Replace the Settings step with automatic team and channel name extraction in all Microsoft Teams steps except the first one | Update Microsoft Teams to version 3.1.0 | Update documentation
 * 1.0.0 - Initial workflow
 
 # Links

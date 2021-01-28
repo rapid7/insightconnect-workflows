@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Blacklist_Hash_with_Sophos_Central_from_Microsoft_Teams
 title: Blacklist Hash with Sophos Central from Microsoft Teams
 description: Use the simplicity of Microsoft Teams to blacklist hashes with Sophos Central.
-version: 1.0.0
+version: 1.0.1
 vendor: rapid7
 support: rapid7
 status: []

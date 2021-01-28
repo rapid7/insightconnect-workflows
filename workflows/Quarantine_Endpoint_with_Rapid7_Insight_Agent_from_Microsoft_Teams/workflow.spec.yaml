@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Quarantine_Endpoint_with_Rapid7_Insight_Agent_from_Microsoft_Teams
 title: "Quarantine Endpoint with Rapid7 Insight Agent from Microsoft Teams"
 description: "This workflow uses a Microsoft Teams command to quarantine or unquarantine an endpoint monitored by the Insight Agent."
-version: 1.0.0
+version: 1.0.1
 vendor: rapid7
 support: rapid7
 status: []

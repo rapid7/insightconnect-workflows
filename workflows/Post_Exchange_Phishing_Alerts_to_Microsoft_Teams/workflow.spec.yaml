@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Post_Exchange_Phishing_Alerts_to_Microsoft_Teams
 title: "Post Exchange Phishing Alerts to Microsoft Teams"
 description: "This workflow will dissect an email and return all potential malicious indicators to Microsoft Teams in a message."
-version: 1.0.2
+version: 1.0.3
 vendor: rapid7
 support: rapid7
 status: []

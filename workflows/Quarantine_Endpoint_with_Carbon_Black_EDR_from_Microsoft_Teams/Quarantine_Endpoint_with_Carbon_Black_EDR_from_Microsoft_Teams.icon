@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.65.1-0-g0d88d",
+    "komandVersion": "1.72.0-0-ge9d34",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-10-21T19:02:11.892879032Z",
+    "exportedAt": "2020-12-15T14:20:28.682186548Z",
     "workflowVersions": [
       {
         "name": "Quarantine Endpoint with Carbon Black EDR from Microsoft Teams",
@@ -394,8 +394,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.2.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.1/icon.png"
+              "slugVersion": "3.1.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
@@ -437,9 +437,9 @@
                 }
               },
               "required": [
+                "team_name",
                 "channel_name",
-                "message_content",
-                "team_name"
+                "message_content"
               ],
               "title": "Variables",
               "type": "object"
@@ -543,7 +543,8 @@
                     }
                   },
                   "required": [
-                    "words"
+                    "words",
+                    "first_word"
                   ],
                   "title": "Message",
                   "type": "object"
@@ -666,8 +667,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.2.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.1/icon.png"
+              "slugVersion": "3.1.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
@@ -709,9 +710,9 @@
                 }
               },
               "required": [
+                "team_name",
                 "channel_name",
-                "message_content",
-                "team_name"
+                "message_content"
               ],
               "title": "Variables",
               "type": "object"
@@ -815,7 +816,8 @@
                     }
                   },
                   "required": [
-                    "words"
+                    "words",
+                    "first_word"
                   ],
                   "title": "Message",
                   "type": "object"
@@ -862,8 +864,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.2.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.1/icon.png"
+              "slugVersion": "3.1.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
@@ -905,9 +907,9 @@
                 }
               },
               "required": [
+                "team_name",
                 "channel_name",
-                "message_content",
-                "team_name"
+                "message_content"
               ],
               "title": "Variables",
               "type": "object"
@@ -1011,7 +1013,8 @@
                     }
                   },
                   "required": [
-                    "words"
+                    "words",
+                    "first_word"
                   ],
                   "title": "Message",
                   "type": "object"
@@ -1107,8 +1110,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.2.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.1/icon.png"
+              "slugVersion": "3.1.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
             },
             "identifier": "new_message_received",
             "continueOnFailure": false,
@@ -1120,7 +1123,7 @@
                 "team_name": "change_me"
               }
             },
-            "triggerId": "7595bd5f-1867-4169-afa1-0552efa36bca",
+            "triggerId": "96ea0e09-d813-43c4-8c48-5ae6d9cf3d45",
             "defaultInputJSONSchema": {
               "properties": {
                 "channel_name": {
@@ -1377,7 +1380,8 @@
                     }
                   },
                   "required": [
-                    "words"
+                    "words",
+                    "first_word"
                   ],
                   "title": "Message",
                   "type": "object"
@@ -1442,8 +1446,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.2.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.1/icon.png"
+              "slugVersion": "3.1.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
@@ -1485,9 +1489,9 @@
                 }
               },
               "required": [
+                "team_name",
                 "channel_name",
-                "message_content",
-                "team_name"
+                "message_content"
               ],
               "title": "Variables",
               "type": "object"
@@ -1591,7 +1595,8 @@
                     }
                   },
                   "required": [
-                    "words"
+                    "words",
+                    "first_word"
                   ],
                   "title": "Message",
                   "type": "object"
@@ -1728,8 +1733,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "2.2.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.1/icon.png"
+              "slugVersion": "3.1.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
@@ -1771,9 +1776,9 @@
                 }
               },
               "required": [
+                "team_name",
                 "channel_name",
-                "message_content",
-                "team_name"
+                "message_content"
               ],
               "title": "Variables",
               "type": "object"
@@ -1877,7 +1882,8 @@
                     }
                   },
                   "required": [
-                    "words"
+                    "words",
+                    "first_word"
                   ],
                   "title": "Message",
                   "type": "object"
@@ -2133,7 +2139,7 @@
     ],
     "triggers": [
       {
-        "id": "7595bd5f-1867-4169-afa1-0552efa36bca",
+        "id": "96ea0e09-d813-43c4-8c48-5ae6d9cf3d45",
         "identifier": "new_message_received",
         "name": "Quarantine Request",
         "description": "Microsoft Teams message that triggers the workflow to Quarantine/Unquarantine a host using Carbon Black EDR",
@@ -2398,7 +2404,8 @@
                 }
               },
               "required": [
-                "words"
+                "words",
+                "first_word"
               ],
               "title": "Message",
               "type": "object"
@@ -2457,8 +2464,8 @@
           "name": "Microsoft Teams",
           "slugVendor": "rapid7",
           "slugName": "microsoft_teams",
-          "slugVersion": "2.2.1",
-          "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/2.2.1/icon.png"
+          "slugVersion": "3.1.0",
+          "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
         }
       }
     ]

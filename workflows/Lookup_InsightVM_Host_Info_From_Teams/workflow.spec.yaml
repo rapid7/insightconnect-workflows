@@ -3,7 +3,7 @@ products: ["insightconnect", "insightvm"]
 name: Lookup_InsightVM_Host_Info_From_Teams
 title: "Lookup InsightVM Host Info from Microsoft Teams"
 description: Lookup a host, including IP, MAC, last assessment date, vulnerability statistics, and running services, from a Microsoft Teams message.
-version: 1.0.2
+version: 1.1.0
 vendor: rapid7
 support: rapid7
 status: []

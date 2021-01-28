@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Quarantine_Endpoint_with_SentinelOne_from_Microsoft_Teams
 title: Quarantine Endpoint with SentinelOne from Microsoft Teams
 description: This workflow will quarantine an endpoint in SentinelOne from a Microsoft Teams command.
-version: 1.0.0
+version: 1.1.0
 vendor: rapid7
 support: rapid7
 status: []

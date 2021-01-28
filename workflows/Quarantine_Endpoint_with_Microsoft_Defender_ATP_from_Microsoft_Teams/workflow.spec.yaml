@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Quarantine_Endpoint_with_Microsoft_Defender_ATP_from_Microsoft_Teams
 title: "Quarantine Endpoint with Microsoft Defender ATP from Microsoft Teams"
 description: "Quarantine an endpoint in Microsoft Defender ATP from a Microsoft Teams command."
-version: 1.0.0
+version: 1.0.1
 vendor: rapid7
 support: rapid7
 status: []

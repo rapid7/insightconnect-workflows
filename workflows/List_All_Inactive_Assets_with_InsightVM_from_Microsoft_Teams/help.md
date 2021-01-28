@@ -35,7 +35,7 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Microsoft Teams|2.2.0|4|
+|Microsoft Teams|3.1.0|4|
 |Rapid7 InsightVM|4.2.1|1|
 
 ## Troubleshooting
@@ -44,6 +44,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.1 - Update Microsoft Teams to version 3.1.0
 * 1.0.0 - Initial workflow
 
 # Links
