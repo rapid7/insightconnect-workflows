@@ -2,7 +2,7 @@
   "kom": {
     "komandVersion": "1.76.5-0-gd5c45",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2021-01-28T18:40:41.775292271Z",
+    "exportedAt": "2021-02-01T19:25:40.725052494Z",
     "workflowVersions": [
       {
         "name": "Find Indicator In DNS Logs with InsightIDR from Slack",
@@ -67,6 +67,14 @@
               "fromNodeId": "27bacf93-dabd-48b0-945a-26b1232cc3ec",
               "toNodeId": "80f7c21b-cac4-45db-992b-c5c3e5513f80"
             },
+            "5988b72f-6974-4148-b31d-aeb1f3c41aed": {
+              "id": "5988b72f-6974-4148-b31d-aeb1f3c41aed",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "1277a183-26ee-4e75-a31d-cc5e7f6c40a5",
+              "toNodeId": "f951907f-d93e-47ec-ab28-cee1f19b42cb"
+            },
             "60477a68-fbfb-4d35-8afb-5d80729c002a": {
               "id": "60477a68-fbfb-4d35-8afb-5d80729c002a",
               "name": "One to Five",
@@ -82,6 +90,14 @@
               "parentNodeId": "27bacf93-dabd-48b0-945a-26b1232cc3ec",
               "fromNodeId": "a4c3a046-5f0c-447c-be8d-e5579fa75a5b",
               "toNodeId": ""
+            },
+            "85fd64d2-3295-4065-be2e-467555e33694": {
+              "id": "85fd64d2-3295-4065-be2e-467555e33694",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "29dbebc6-4af2-4855-bad4-42c057a42960",
+              "toNodeId": "b944a98b-e659-49e3-acb2-ee238f9894f3"
             },
             "909decad-9ff7-475f-960c-15c21b90eeb0": {
               "id": "909decad-9ff7-475f-960c-15c21b90eeb0",
@@ -105,7 +121,7 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "b944a98b-e659-49e3-acb2-ee238f9894f3",
-              "toNodeId": "f951907f-d93e-47ec-ab28-cee1f19b42cb"
+              "toNodeId": "1277a183-26ee-4e75-a31d-cc5e7f6c40a5"
             },
             "9a64078a-ece0-4e52-a34e-0bbac2577370": {
               "id": "9a64078a-ece0-4e52-a34e-0bbac2577370",
@@ -153,16 +169,24 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "6bf17bc9-594d-4c5e-ac75-d1d0f620d25c",
-              "toNodeId": "b944a98b-e659-49e3-acb2-ee238f9894f3"
+              "toNodeId": "29dbebc6-4af2-4855-bad4-42c057a42960"
             }
           },
           "nodes": {
+            "1277a183-26ee-4e75-a31d-cc5e7f6c40a5": {
+              "id": "1277a183-26ee-4e75-a31d-cc5e7f6c40a5",
+              "parentNodeId": ""
+            },
             "1a8d0499-47d4-4a45-8ca0-f251716f3c6d": {
               "id": "1a8d0499-47d4-4a45-8ca0-f251716f3c6d",
               "parentNodeId": ""
             },
             "27bacf93-dabd-48b0-945a-26b1232cc3ec": {
               "id": "27bacf93-dabd-48b0-945a-26b1232cc3ec",
+              "parentNodeId": ""
+            },
+            "29dbebc6-4af2-4855-bad4-42c057a42960": {
+              "id": "29dbebc6-4af2-4855-bad4-42c057a42960",
               "parentNodeId": ""
             },
             "3fdd083a-9e12-4bcb-ad06-105d33493e9b": {
@@ -220,6 +244,80 @@
           }
         },
         "steps": {
+          "1277a183-26ee-4e75-a31d-cc5e7f6c40a5": {
+            "nodeId": "1277a183-26ee-4e75-a31d-cc5e7f6c40a5",
+            "name": "Workflow Started Message",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": "🚀  *Workflow Started*  🚀 \n{{[b944a98b-e659-49e3-acb2-ee238f9894f3].[content]}}",
+                "recipient": "#{{[7e40a65b-2683-4028-a7c3-d0b2921862e4].[message].[channel]}}",
+                "thread_ts": "{{[7e40a65b-2683-4028-a7c3-d0b2921862e4].[message].[ts]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 4,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 3,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                },
+                "thread_ts": {
+                  "description": "Select timestamp output variable from parent message step",
+                  "order": 2,
+                  "title": "To post in a thread, select parent message timestamp",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
+          },
           "1a8d0499-47d4-4a45-8ca0-f251716f3c6d": {
             "nodeId": "1a8d0499-47d4-4a45-8ca0-f251716f3c6d",
             "name": "Convert to Date",
@@ -333,6 +431,76 @@
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/loop.svg",
             "connectionType": "NONE"
           },
+          "29dbebc6-4af2-4855-bad4-42c057a42960": {
+            "nodeId": "29dbebc6-4af2-4855-bad4-42c057a42960",
+            "name": "Get Domain",
+            "type": "action",
+            "plugin": {
+              "name": "ExtractIt",
+              "slugVendor": "rapid7",
+              "slugName": "extractit",
+              "slugVersion": "2.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/extractit/2.0.0/icon.png"
+            },
+            "identifier": "domain_extractor",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "file": "",
+                "str": "{{[7e40a65b-2683-4028-a7c3-d0b2921862e4].[message].[words].[1]}}",
+                "subdomain": false
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "file": {
+                  "description": "Input file as bytes",
+                  "displayType": "bytes",
+                  "format": "bytes",
+                  "order": 2,
+                  "title": "File",
+                  "type": "string"
+                },
+                "str": {
+                  "description": "Input string",
+                  "order": 1,
+                  "title": "String",
+                  "type": "string"
+                },
+                "subdomain": {
+                  "description": "Include subdomain in result",
+                  "order": 3,
+                  "title": "Subdomain",
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "subdomain"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "domains": {
+                  "description": "List of extracted Domain names",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "Domain Names",
+                  "type": "array"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR"
+          },
           "3fdd083a-9e12-4bcb-ad06-105d33493e9b": {
             "nodeId": "3fdd083a-9e12-4bcb-ad06-105d33493e9b",
             "name": "Report Summary",
@@ -342,7 +510,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "⚠️. *The URL was found in the DNS logs* ⚠️\n{{[b944a98b-e659-49e3-acb2-ee238f9894f3].[content]}}\n\nThe URL was found to be visited more than five times. \n\nAsset details can be found at:\n{{[$job].[URL]}}",
+                "message": "⚠️  *The URL was found in the DNS logs* ⚠️\n\nThe URL was found to be visited more than five times. \n\nAsset details can be found at:\n{{[$job].[URL]}}",
                 "recipient": "#{{[7e40a65b-2683-4028-a7c3-d0b2921862e4].[message].[channel]}}",
                 "thread_ts": "{{[7e40a65b-2683-4028-a7c3-d0b2921862e4].[message].[ts]}}"
               }
@@ -446,7 +614,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "✅  *The URL was not found in the DNS logs*  ✅ \n{{[b944a98b-e659-49e3-acb2-ee238f9894f3].[content]}}",
+                "message": "✅  *The URL was not found in the DNS logs*  ✅ ",
                 "recipient": "#{{[7e40a65b-2683-4028-a7c3-d0b2921862e4].[message].[channel]}}",
                 "thread_ts": "{{[7e40a65b-2683-4028-a7c3-d0b2921862e4].[message].[ts]}}"
               }
@@ -841,7 +1009,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "*Search Term:* {{[7e40a65b-2683-4028-a7c3-d0b2921862e4].[message].[words].[1]}}"
+                "content": "*Searching for Domain:* {{[29dbebc6-4af2-4855-bad4-42c057a42960].[domains].[0]}}"
               },
               "type": "markdown"
             },
@@ -1064,7 +1232,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "⚠️. *The URL was found in the DNS logs* ⚠️\n{{[b944a98b-e659-49e3-acb2-ee238f9894f3].[content]}}\n \n*Was visited by: *\n{{[80f7c21b-cac4-45db-992b-c5c3e5513f80].[content]}}",
+                "message": "⚠️. *The URL was found in the DNS logs* ⚠️\n \n*Was visited by: *\n{{[80f7c21b-cac4-45db-992b-c5c3e5513f80].[content]}}",
                 "recipient": "#{{[7e40a65b-2683-4028-a7c3-d0b2921862e4].[message].[channel]}}",
                 "thread_ts": "{{[7e40a65b-2683-4028-a7c3-d0b2921862e4].[message].[ts]}}"
               }
@@ -1137,8 +1305,8 @@
               "name": "Rapid7 InsightIDR",
               "slugVendor": "rapid7",
               "slugName": "rapid7_insightidr",
-              "slugVersion": "2.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightidr/2.0.0/icon.png"
+              "slugVersion": "2.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightidr/2.0.1/icon.png"
             },
             "identifier": "advanced_query_on_log_set",
             "continueOnFailure": true,
@@ -1147,7 +1315,7 @@
             "parameters": {
               "input": {
                 "log_set": "DNS Query",
-                "query": "where({{[7e40a65b-2683-4028-a7c3-d0b2921862e4].[message].[words].[1]}})",
+                "query": "where({{[29dbebc6-4af2-4855-bad4-42c057a42960].[domains].[0]}})",
                 "time_from": "{{[bc8128a4-af59-4f5e-b36c-60e639669bbb].[date]}}",
                 "time_to": "",
                 "timeout": 60

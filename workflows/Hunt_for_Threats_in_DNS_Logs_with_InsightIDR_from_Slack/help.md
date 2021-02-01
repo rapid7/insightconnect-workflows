@@ -1,6 +1,6 @@
 # Description
 
-Lookup suspicious URLs in IDR DNS Query logs with a simple slack command.
+Lookup suspicious domains in IDR DNS Query logs with a simple slack command.
 
 Sample Slack Trigger Commands:
 
@@ -8,7 +8,7 @@ Sample Slack Trigger Commands:
 
 # Key Features
 
-* **Quickly analyze the scope of a malicious URL** - Quickly find out how many of your users were affected by a malicious URL
+* **Quickly analyze the scope of a malicious domain** - Quickly find out how many of your users were affected by a malicious domain
 
 # Requirements
 
@@ -25,7 +25,7 @@ After import, activate the workflow in order to trigger it.
 
 ### Usage
 
-To run the workflow, send a direct message to your InsightConnect Slack Chatbot starting with the command `enrich-url`. 
+To run the workflow, send a direct message to your InsightConnect Slack Chatbot starting with the command `get-logs`. 
 
 For example:
 
@@ -42,7 +42,8 @@ Plugins utilized by workflow:
 |----|----|--------|
 |Datetime|2.2.0|2|
 |Type Converter|1.6.1|1|
-|Rapid7 InsightIDR|2.0.0|1|
+|Rapid7 InsightIDR|2.0.1|1|
+|ExtractIt|2.0.0|1|
 
 
 ## Troubleshooting
