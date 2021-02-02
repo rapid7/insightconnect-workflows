@@ -22,7 +22,6 @@ Once the workflow has been imported, **It is recommended that you add you add th
 
 After activation, this workflow is triggered when an InsightIDR Brute Force - Domain Account UBA alert occurs.
 
-
 ## Technical Details
 
 Plugins utilized by workflow:
