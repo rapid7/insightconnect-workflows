@@ -30,7 +30,6 @@ To run the workflow, send a direct message to your InsightConnect Slack Chatbot 
 For example:
 
 * `@Rapid7 InsightConnect get-logs badsite.com`
-* `@Rapid7 InsightConnect get-logs http://another.badsite.com`
 
 The workflow will post the results in a thread.
 
