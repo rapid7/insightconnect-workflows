@@ -22,7 +22,6 @@ Once the workflow has been imported, **It is recommended that you add you add th
 
 Activate the workflow in order to trigger it.
 
-TODO IDR Set UP
 
 # Usage
 
