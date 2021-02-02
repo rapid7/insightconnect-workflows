@@ -1,6 +1,6 @@
 # Description
 
-Lookup suspicious domains in IDR DNS Query logs with a simple slack command.
+Lookup suspicious domains in IDR DNS Query logs with a simple slack command. This workflow accepts domains and URLs as input.
 
 Sample Slack Trigger Commands:
 
