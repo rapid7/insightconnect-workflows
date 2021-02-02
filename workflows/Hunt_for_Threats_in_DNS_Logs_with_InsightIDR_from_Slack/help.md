@@ -31,6 +31,12 @@ For example:
 
 * `@Rapid7 InsightConnect get-logs badsite.com`
 
+The workflow will also accept full URLS and convert those into domains for you. For example: 
+
+* `@Rapid7 InsightConnect get-logs http://www.badsite.com`
+
+The workflow will pull the domain out of the command and search for `badsite.com`
+
 The workflow will post the results in a thread.
 
 ## Technical Details
