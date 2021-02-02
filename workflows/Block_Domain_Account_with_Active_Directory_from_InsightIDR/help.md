@@ -26,7 +26,6 @@ TODO IDR Set UP
 
 # Usage
 
-
 The Workflow will run when a InsightIDR Brute Force - Domain Account UBA alert is triggered.
 
 ## Technical Details
