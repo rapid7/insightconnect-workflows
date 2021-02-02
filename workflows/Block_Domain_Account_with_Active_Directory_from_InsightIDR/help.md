@@ -20,7 +20,7 @@ Import the workflow from the Rapid7 Extension Library and proceed through the Im
 
 Once the workflow has been imported, **It is recommended that you add you add the appropriate emails to the `Block Domain Account Decision` step so that the appropriate people are alerted that action needs to be taken**
 
-Activate the workflow in order to trigger it.
+After activation, this workflow is triggered when an InsightIDR Brute Force - Domain Account UBA alert occurs.
 
 
 # Usage
