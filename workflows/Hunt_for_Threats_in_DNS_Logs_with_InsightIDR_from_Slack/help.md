@@ -6,6 +6,8 @@ Sample Slack Trigger Commands:
 
 `@Rapid7 InsightConnect get-logs aadroid.net`
 
+`@Rapid7 InsightConnect get-logs https://aadroid.net`
+
 # Key Features
 
 * **Quickly analyze the scope of a malicious domain** - Quickly find out how many of your users were affected by a malicious domain
