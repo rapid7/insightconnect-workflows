@@ -24,9 +24,7 @@ Sample Slack command:
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-Once the workflow has been imported, **the first Slack step will need the channel name updated to suit your Slack environment!** Edit the input with the preset text of `change_me` in first Slack step in the workflow. There is also an optional Settings step which can be edited to change the maximum number of vulnerabilities and maximum hosts listed per vulnerability which are returned. The defaults are 50 vulnerabilities and 10 assets per vulnerability.
-
-After configuring the Slack and Setting steps, activate the workflow in order to trigger it.
+TODO: WORKFLOW PARAMS INSTRUCTIONS
 
 ### Usage
 
@@ -56,9 +54,9 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|CSV|1.1.5|1|
+|CSV|1.1.6|1|
 |Rapid7 Vulnerability & Exploit Database|2.0.3|1|
-|Type Converter|1.6.0|3|
+|Type Converter|1.6.1|3|
 |Rapid7 InsightVM|4.8.1|5|
 
 ## Troubleshooting
@@ -67,6 +65,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 2.0.0 - Use Workflow Parameters to configure Slack channel name, max vulnerabilities, and max hosts values; Update CSV to version 1.1.6; Update Type Converter to 1.6.1
 * 1.1.0 - Use the automatic extraction functionality instead of Pattern Match step to extract a vulnerability | Improve workflow messaging | Improve documentation | Update screenshots | Update Rapid7 InsightVM to version 4.8.1 | Update Type Converter to version 1.6.0
 * 1.0.0 - Initial workflow
 
