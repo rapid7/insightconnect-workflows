@@ -9,7 +9,7 @@ support: rapid7
 status: []
 hub_tags:
   use_cases: [vulnerability_management, asset_inventory]
-  keywords: [InsightVM, Slack, chat, remediation_management]
+  keywords: [InsightVM, Slack, chat, remediation_management, parameters]
   features: []
 resources:
   source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Lookup_Vulnerable_Hosts_From_Slack
