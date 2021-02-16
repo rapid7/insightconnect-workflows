@@ -1,14 +1,14 @@
 {
   "kom": {
-    "komandVersion": "1.72.0-0-ge9d34",
+    "komandVersion": "1.77.0-0-g8c626",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-12-11T18:21:28.511077837Z",
+    "exportedAt": "2021-02-16T15:36:05.839201087Z",
     "workflowVersions": [
       {
         "name": "Enrich Indicators with OSINT from Microsoft Teams",
         "type": "runnable",
         "version": "",
-        "description": "This workflow triggers from directly messaging the InsightConnect Slack chatbot to investigate the specified indicator. It supports looking up URLs, IPs, and hashes in open-source threat intelligence such as Dig DNS and Whois. The workflow will post back results to the specific user.",
+        "description": "# Description\n\nThreat Intelligence doesn’t have to come with a cost. This workflow uses open-source intelligence (OSINT) to perform domain lookups, header analysis, hash analysis, and more directly from Microsoft Teams. Just connect Microsoft Teams and activate this instant indicator enrichment workflow.\n\nSample Trigger Commands:\n\n`!enrich-indicator 8.8.8.8`\n\n`!enrich-indicator rapid7.com`\n\n`!enrich-indicator 009f1e9b72cfb6daa3de82093a755bdb3685e0eb`\n\n# Key Features\n\n* **Automation in Minutes** - Get your first automation workflow up and running in minutes with this connectionless enrichment workflow.\n* **Investigate Indicators at Scale** - Manually investigating every reported phishing attempt is extremely difficult to scale. Automatic analysis of common phishing IOCs reduces the overhead associated with every reported incident.\n* **Shorten the Investigation Timeline** - Manage timely responses to real attacks by eliminating the investigation of false positives and spam. If the URLs are found to be malicious, pivot seamlessly to incident response.\n\n# Requirements\n\n* [Microsoft Teams](https://insightconnect.help.rapid7.com/docs/microsoft-teams)\n\n# Documentation\n\n## Setup\n\nImport the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.\n\nOnce the workflow has been imported, Configure the parameters for the variables `team name` and `channel name`. These parameters correspond to the team name and channel name from your Microsoft Teams environment. After configuring the parameters, activate the workflow in order to trigger it.\n\n### Usage\n\n*This workflow will only trigger in the channel specified in the Microsoft Teams workflow steps.*\n\nTo run the workflow, send a message to the specified Microsoft Teams channel starting with the command `!enrich-indicator`. \n\nCommands should be in the following format:\n`!enrich-indicator <indicator>`\n\n`!enrich-indicator ip 8.8.8.8`\n`!enrich-indicator url badsite.com`\n`!enrich-indicator hash 009f1e9b72cfb6daa3de82093a755bdb3685e0eb`\n\n\nAlternatively, use `!enrich-indicator help` for more information and examples. \n\nThe workflow will post the results in a thread.\n\n## Technical Details\n\nPlugins utilized by workflow:\n\n|Plugin|Version|Count|\n|----|----|--------|\n|DNS|2.0.0|1|\n|Team Cymru MHR|1.1.1|1|\n|Microsoft Teams|3.1.0|8|\n|WHOIS|3.0.1|2|\n|Type Converter|1.7.0|2|\n\n## Troubleshooting\n\nIn some instances using copy & paste for `!enrich-indicator` commands may introduce unicode characters. These characters may be misinterpreted by the workflow, resulting in the help response triggering for what appear to be valid commands. It is recommended to avoid copying & pasting commands.\n\n# Version History\n\n* 2.0.1 - Update Microsoft Teams to version 3.1.0 | Update documentation\n* 2.0.0 - Update workflow to use loop outputs\n* 1.0.2 - Update to make Microsoft Teams plugin the latest version\n* 1.0.1 - Updated trigger syntax and documentation\n* 1.0.0 - Initial workflow\n\n# Links\n\n## References\n\n* [Microsoft Teams](https://teams.microsoft.com)\n",
         "graph": {
           "edges": {
             "022f65e4-073d-4238-9ef8-8fef8290ac81": {
@@ -340,8 +340,8 @@
               "name": "Type Converter",
               "slugVendor": "rapid7",
               "slugName": "type_converter",
-              "slugVersion": "1.6.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/type_converter/1.6.0/icon.png"
+              "slugVersion": "1.7.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/type_converter/1.7.0/icon.png"
             },
             "identifier": "combine_arrays",
             "continueOnFailure": false,
@@ -405,8 +405,8 @@
                 }
               },
               "required": [
-                "array1",
-                "array2"
+                "array2",
+                "array1"
               ],
               "title": "Variables",
               "type": "object"
@@ -882,12 +882,12 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "change_me",
+                "channel_name": "{{$workflow.[channel name]}}",
                 "message_content": "!enrich-indicator",
-                "team_name": "change_me"
+                "team_name": "{{$workflow.[team name]}}"
               }
             },
-            "triggerId": "50131354-e0b7-4544-9383-882eab9edb73",
+            "triggerId": "0724b958-ce33-424c-95e4-32f537ddad9f",
             "defaultInputJSONSchema": {
               "properties": {
                 "channel_name": {
@@ -1750,8 +1750,8 @@
               "name": "WHOIS",
               "slugVendor": "rapid7",
               "slugName": "whois",
-              "slugVersion": "2.0.2",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/whois/2.0.2/icon.png"
+              "slugVersion": "3.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/whois/3.0.1/icon.png"
             },
             "identifier": "domain",
             "continueOnFailure": false,
@@ -2119,11 +2119,11 @@
             "name": "Dig Lookup Reverse DNS",
             "type": "action",
             "plugin": {
-              "name": "Dig",
+              "name": "DNS",
               "slugVendor": "rapid7",
               "slugName": "dig",
-              "slugVersion": "1.0.5",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/dig/1.0.5/icon.png"
+              "slugVersion": "2.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/dig/2.0.0/icon.png"
             },
             "identifier": "reverse",
             "continueOnFailure": false,
@@ -2165,7 +2165,7 @@
                   "type": "string"
                 },
                 "fulloutput": {
-                  "description": "Full Dig output",
+                  "description": "Full DNS output",
                   "order": 1,
                   "title": "Full Output",
                   "type": "string"
@@ -2577,8 +2577,8 @@
               "name": "WHOIS",
               "slugVendor": "rapid7",
               "slugName": "whois",
-              "slugVersion": "2.0.2",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/whois/2.0.2/icon.png"
+              "slugVersion": "3.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/whois/3.0.1/icon.png"
             },
             "identifier": "address",
             "continueOnFailure": false,
@@ -2586,7 +2586,8 @@
             "isCloud": false,
             "parameters": {
               "input": {
-                "address": "{{[e1840ac5-38a0-48c8-a465-c406e2772a35].[$item]}}"
+                "address": "{{[e1840ac5-38a0-48c8-a465-c406e2772a35].[$item]}}",
+                "registrar": "Autodetect"
               }
             },
             "defaultInputJSONSchema": {
@@ -2595,6 +2596,20 @@
                   "description": "IP to Lookup",
                   "order": 1,
                   "title": "Address",
+                  "type": "string"
+                },
+                "registrar": {
+                  "default": "Autodetect",
+                  "description": "Domain Registrar",
+                  "enum": [
+                    "Autodetect",
+                    "RIPE",
+                    "ARIN",
+                    "LACNIC",
+                    "APNIC"
+                  ],
+                  "order": 2,
+                  "title": "Registrar",
                   "type": "string"
                 }
               },
@@ -2961,8 +2976,8 @@
               "name": "Type Converter",
               "slugVendor": "rapid7",
               "slugName": "type_converter",
-              "slugVersion": "1.6.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/type_converter/1.6.0/icon.png"
+              "slugVersion": "1.7.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/type_converter/1.7.0/icon.png"
             },
             "identifier": "combine_arrays",
             "continueOnFailure": false,
@@ -3026,8 +3041,8 @@
                 }
               },
               "required": [
-                "array1",
-                "array2"
+                "array2",
+                "array1"
               ],
               "title": "Variables",
               "type": "object"
@@ -3057,19 +3072,36 @@
         },
         "tags": null,
         "humanCostSeconds": 300,
-        "humanCostDisplayUnit": "minutes"
+        "humanCostDisplayUnit": "minutes",
+        "parameters": {
+          "definitionSchema": {
+            "type": "object",
+            "required": [],
+            "properties": {
+              "team name": {
+                "type": "string",
+                "description": "The Microsoft Teams team name where the workflow will be triggered and respond"
+              },
+              "channel name": {
+                "type": "string",
+                "description": "The Microsoft Teams channel name where the workflow will be triggered and respond"
+              }
+            },
+            "definitions": {}
+          }
+        }
       }
     ],
     "triggers": [
       {
-        "id": "50131354-e0b7-4544-9383-882eab9edb73",
+        "id": "0724b958-ce33-424c-95e4-32f537ddad9f",
         "identifier": "new_message_received",
         "name": "Microsoft Teams Message",
         "description": "Trigger on MS Teams message\nE.X. !enrich-indicator <Command> <data>",
         "input": {
-          "channel_name": "change_me",
+          "channel_name": "{{$workflow.[channel name]}}",
           "message_content": "!enrich-indicator",
-          "team_name": "change_me"
+          "team_name": "{{$workflow.[team name]}}"
         },
         "inputJsonSchema": {
           "properties": {
