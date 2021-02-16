@@ -60,6 +60,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.2.0 - Leverage Parameters Feature | Update plugins
 * 1.1.0 - Replace pattern match with Automatic indicator extraction | Update plugins
 * 1.0.0 - Initial workflow
 
