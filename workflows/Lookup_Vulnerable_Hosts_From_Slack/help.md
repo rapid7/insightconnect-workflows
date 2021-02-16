@@ -4,9 +4,9 @@ Search InsightVM for hosts with a particular vulnerability present directly from
 
 Sample Slack command:
 
-`lookup-vuln-hosts <vulnerability>`
+`@Rapid7 InsightConnect lookup-vuln-hosts <vulnerability>`
 
-`lookup-vuln-hosts CVE-2019-0708`
+`@Rapid7 InsightConnect lookup-vuln-hosts CVE-2019-0708`
 
 # Key Features
 
@@ -24,7 +24,14 @@ Sample Slack command:
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-TODO: WORKFLOW PARAMS INSTRUCTIONS
+This workflow leverages InsightConnect's Parameters feature. This feature allows variables used multiple times throughout a workflow to be entered once and then referenced throughout the workflow.
+
+There are three parameters you will need to configure in order to complete setup of your workflow:
+* `Slack Channel`:  the Slack channel name in your environment where the workflow should be triggered and respond
+* `Max Hosts`: the maximum number of hosts listed per vulnerability (recommended default is 10)
+* `Max Vulnerabilities`: the maximum number of returned vulnerabilities (recommended default is 50)
+
+To configure the parameters, select "Parameters" either from the Workflow Control Panel page or from the Workflow Builder. Once configured, workflow setup is complete.
 
 ### Usage
 
@@ -56,7 +63,7 @@ Plugins utilized by workflow:
 |----|----|--------|
 |CSV|1.1.6|1|
 |Rapid7 Vulnerability & Exploit Database|2.0.3|1|
-|Type Converter|1.6.1|2|
+|Type Converter|1.7.0|2|
 |Rapid7 InsightVM|4.8.1|5|
 
 ## Troubleshooting
@@ -65,7 +72,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
-* 2.0.0 - Use Workflow Parameters to configure Slack channel name, max vulnerabilities, and max hosts values (and remove the Settings step); Update CSV to version 1.1.6; Update Type Converter to 1.6.1
+* 2.0.0 - Use Workflow Parameters to configure Slack channel name, max vulnerabilities, and max hosts values (and remove the Settings step); Update CSV to version 1.1.6; Update Type Converter to 1.7.0
 * 1.1.0 - Use the automatic extraction functionality instead of Pattern Match step to extract a vulnerability | Improve workflow messaging | Improve documentation | Update screenshots | Update Rapid7 InsightVM to version 4.8.1 | Update Type Converter to version 1.6.0
 * 1.0.0 - Initial workflow
 

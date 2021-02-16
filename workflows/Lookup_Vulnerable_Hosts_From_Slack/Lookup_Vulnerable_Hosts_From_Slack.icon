@@ -1,14 +1,14 @@
 {
   "kom": {
-    "komandVersion": "1.76.8-0-gb7aeb",
+    "komandVersion": "1.77.0-0-g8c626",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2021-02-12T14:04:38.966726181Z",
+    "exportedAt": "2021-02-16T15:20:08.800090465Z",
     "workflowVersions": [
       {
         "name": "Lookup Vulnerable Hosts from Slack",
         "type": "runnable",
         "version": "",
-        "description": "# Description\n\nSearch InsightVM for hosts with a particular vulnerability present directly from Slack. Receive a summary of the vulnerability and all affected assets in a thread.\n\nSample Slack command:\n\n`lookup-vuln-hosts <vulnerability>`\n\n`lookup-vuln-hosts CVE-2019-0708`\n\n# Key Features\n\n* Identify vulnerable hosts\n* Share context with team members in the same Slack channel\n\n# Requirements\n\n* InsightVM Console URL and account credentials\n* [Slack](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops)\n\n# Documentation\n\n## Setup\n\nImport the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.\n\nTODO: WORKFLOW PARAMS INSTRUCTIONS\n\n### Usage\n\n*This workflow will trigger in any direct messages to your Chatbot **or** any message in a channel directed @ your Chatbot. Note the Chatbot must be in the channel in order to trigger the workflow this way.*\n\nTo run the workflow, send a direct message to your InsightConnect Slack Chatbot or @ your Chatbot in a public channel starting with the command `lookup-vuln-hosts`.\n\nCommands should be in the following format: `lookup-vuln-hosts <vulnerability>`\n\n`<vulnerability>` in the command can be any InsightVM vulnerability reference including the following:\n* KB Number\n* CVE ID\n* Nexpose ID\n* Other references InsightVM knows\n\nFor example, in a direct message to your Chatbot:\n* `lookup-vuln-hosts bluekeep`\n\nOr in a channel including your Chatbot:\n* `@Rapid7 InsightConnect lookup-vuln-hosts CVE-2019-0708`\n\nThe workflow will post status updates in a Slack thread throughout execution.\n\n## Technical Details\n\nPlugins utilized by workflow:\n\n|Plugin|Version|Count|\n|----|----|--------|\n|CSV|1.1.5|1|\n|Rapid7 Vulnerability & Exploit Database|2.0.3|1|\n|Type Converter|1.6.0|3|\n|Rapid7 InsightVM|4.8.1|5|\n\n## Troubleshooting\n\n_There is no troubleshooting information at this time_\n\n# Version History\n\n* 1.1.0 - Use the automatic extraction functionality instead of Pattern Match step to extract a vulnerability | Improve workflow messaging | Improve documentation | Update screenshots | Update Rapid7 InsightVM to version 4.8.1 | Update Type Converter to version 1.6.0\n* 1.0.0 - Initial workflow\n\n# Links\n\n## References\n\n* [Rapid7 InsightVM](https://www.rapid7.com/products/insightvm)\n* [Slack](https://slack.com)\n",
+        "description": "Lookup vulnerability details, including a summary of the vulnerability, the affected software package, the remediation or mitigation step, and a list of all affected hosts in the user's environment.",
         "graph": {
           "edges": {
             "048633cb-b96e-4387-a7c8-5f727dbc4d68": {
@@ -533,12 +533,12 @@
                     },
                     "op": "<=",
                     "right": {
-                      "name": "$workflow.max vulnerabilities",
+                      "name": "$workflow.Max Vulnerabilities",
                       "type": "variable"
                     },
                     "type": "binary"
                   },
-                  "expressionText": "length({{[9f271d1c-aa6d-425d-97e8-2b45449a2eba].[search_results]}}) <= {{$workflow.[max vulnerabilities]}}"
+                  "expressionText": "length({{[9f271d1c-aa6d-425d-97e8-2b45449a2eba].[search_results]}}) <= {{$workflow.[Max Vulnerabilities]}}"
                 }
               ]
             },
@@ -690,12 +690,12 @@
                   },
                   "op": ">=",
                   "right": {
-                    "name": "$workflow.max hosts",
+                    "name": "$workflow.Max Hosts",
                     "type": "variable"
                   },
                   "type": "binary"
                 },
-                "expressionText": "length({{[db592e51-daa5-44e6-9084-3439b7f09b85].[$outputs]}}) >= {{$workflow.[max hosts]}}"
+                "expressionText": "length({{[db592e51-daa5-44e6-9084-3439b7f09b85].[$outputs]}}) >= {{$workflow.[Max Hosts]}}"
               }
             },
             "defaultInputJSONSchema": null,
@@ -898,7 +898,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "*Vulnerable Assets* _(max of {{$workflow.[max hosts]}})_\n{{#each [db592e51-daa5-44e6-9084-3439b7f09b85].[Asset Information]}}\n* {{this}}\n{{/each}}",
+                "message": "*Vulnerable Assets* _(max of {{$workflow.[Max Hosts]}})_\n{{#each [db592e51-daa5-44e6-9084-3439b7f09b85].[Asset Information]}}\n* {{this}}\n{{/each}}",
                 "recipient": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[channel_id]}}",
                 "thread_ts": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[ts]}}"
               }
@@ -1703,12 +1703,12 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "matchChannel": "{{$workflow.[channel name]}}",
+                "matchChannel": "{{$workflow.[Slack Channel]}}",
                 "matchText": "lookup-vuln-hosts\\s+\\S+",
                 "type": "any"
               }
             },
-            "triggerId": "804b6a46-6534-410c-becb-b26621b18269",
+            "triggerId": "d40253a8-2b77-4816-9c53-926930e3b744",
             "defaultInputJSONSchema": {
               "properties": {
                 "matchChannel": {
@@ -2607,8 +2607,8 @@
               "name": "Type Converter",
               "slugVendor": "rapid7",
               "slugName": "type_converter",
-              "slugVersion": "1.6.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/type_converter/1.6.1/icon.png"
+              "slugVersion": "1.7.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/type_converter/1.7.0/icon.png"
             },
             "identifier": "string_to_object",
             "continueOnFailure": false,
@@ -2702,8 +2702,8 @@
               "name": "Type Converter",
               "slugVendor": "rapid7",
               "slugName": "type_converter",
-              "slugVersion": "1.6.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/type_converter/1.6.1/icon.png"
+              "slugVersion": "1.7.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/type_converter/1.7.0/icon.png"
             },
             "identifier": "string_to_object",
             "continueOnFailure": false,
@@ -2864,7 +2864,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "_Your search for vulnerability {{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[words].[1]}} is too broad and returned more than {{$workflow.[max vulnerabilities]}} vulnerabilities.  Please try a narrower search.  Here is a search your may find helpful: <https://www.rapid7.com/db/?q={{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[words].[1]}}&type=nexpose|Rapid7 VulnDB Search> _",
+                "message": "_Your search for vulnerability {{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[words].[1]}} is too broad and returned more than {{$workflow.[Max Vulnerabilities]}} vulnerabilities.  Please try a narrower search.  Here is a search your may find helpful: <https://www.rapid7.com/db/?q={{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[words].[1]}}&type=nexpose|Rapid7 VulnDB Search> _",
                 "recipient": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[channel_id]}}",
                 "thread_ts": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[ts]}}"
               }
@@ -3866,17 +3866,17 @@
             "type": "object",
             "required": [],
             "properties": {
-              "max hosts": {
+              "Max Hosts": {
                 "type": "integer",
-                "description": ""
+                "description": "The maximum number of hosts listed per vulnerability (recommended default is 10)"
               },
-              "channel name": {
+              "Slack Channel": {
                 "type": "string",
-                "description": ""
+                "description": "The Slack channel name where the workflow will be triggered and respond"
               },
-              "max vulnerabilities": {
+              "Max Vulnerabilities": {
                 "type": "integer",
-                "description": ""
+                "description": "The maximum number of returned vulnerabilities (recommended default is 50)"
               }
             },
             "definitions": {}
@@ -3886,11 +3886,11 @@
     ],
     "triggers": [
       {
-        "id": "804b6a46-6534-410c-becb-b26621b18269",
+        "id": "d40253a8-2b77-4816-9c53-926930e3b744",
         "name": "Lookup Vulnerable Hosts Trigger",
         "description": "Trigger this workflow using the lookup-vuln-hosts command:\n\nlookup-vuln-hosts bluekeep\nlookup-vuln-hosts CVE-2019-0708",
         "input": {
-          "matchChannel": "{{$workflow.[channel name]}}",
+          "matchChannel": "{{$workflow.[Slack Channel]}}",
           "matchText": "lookup-vuln-hosts\\s+\\S+",
           "type": "any"
         },
