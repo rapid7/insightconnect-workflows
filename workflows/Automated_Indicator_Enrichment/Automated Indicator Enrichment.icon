@@ -2,13 +2,13 @@
   "kom": {
     "komandVersion": "1.77.1-0-ge005f",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2021-02-16T23:01:52.805340755Z",
+    "exportedAt": "2021-02-16T23:31:26.870604862Z",
     "workflowVersions": [
       {
         "name": "Automated Indicator Enrichment",
         "type": "runnable",
         "version": "",
-        "description": "Lookup indicators such as IP addresses or URLs using open source threat intelligence from Slack.\n\nThis workflow leverages insightConnect's Parameters feature. This feature allows variables used multiple times throughout a workflow to be entered once and then referenced throughout the workflow. \n\nThere is one parameter you will need to configure in order to complete setup of your workflow:\n* `Slack Channel`:  the Slack channel name in your environment where the workflow should be triggered and respond\n\nTo begin, select \"Parameters\" either from the Workflow Control Panel or from the Builder to begin configuration.",
+        "description": "Lookup indicators such as IP addresses or URLs using open source threat intelligence from Slack.",
         "graph": {
           "edges": {
             "0322529b-284f-4048-8553-8036380ddffa": {
@@ -792,16 +792,17 @@
               "name": "WHOIS",
               "slugVendor": "rapid7",
               "slugName": "whois",
-              "slugVersion": "2.0.2",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/whois/2.0.2/icon.png"
+              "slugVersion": "3.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/whois/3.0.1/icon.png"
             },
             "identifier": "address",
-            "continueOnFailure": true,
+            "continueOnFailure": false,
             "isDisabled": false,
             "isCloud": false,
             "parameters": {
               "input": {
-                "address": "{{[af308e8e-ba3b-48e8-9863-7703017a1fc6].[$item]}}"
+                "address": "{{[af308e8e-ba3b-48e8-9863-7703017a1fc6].[$item]}}",
+                "registrar": "Autodetect"
               }
             },
             "defaultInputJSONSchema": {
@@ -810,6 +811,20 @@
                   "description": "IP to Lookup",
                   "order": 1,
                   "title": "Address",
+                  "type": "string"
+                },
+                "registrar": {
+                  "default": "Autodetect",
+                  "description": "Domain Registrar",
+                  "enum": [
+                    "Autodetect",
+                    "RIPE",
+                    "ARIN",
+                    "LACNIC",
+                    "APNIC"
+                  ],
+                  "order": 2,
+                  "title": "Registrar",
                   "type": "string"
                 }
               },
