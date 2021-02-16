@@ -2,7 +2,7 @@ extension: workflow
 products: ["insightconnect", "insightvm"]
 name: Lookup_Vulnerable_Hosts_From_Slack
 title: Lookup Vulnerable Hosts from Slack
-description: Lookup vulnerability details, including a summary of the vulnerability, the affected software package, the remediation or mitigation step, and a list of all affected hosts in the user's environment, from a simple Slack message.\n\nCommand to run in any channel that includes your InsightConnect Slack chat bot:\n@Rapid7 InsightConnect lookup-vuln-assets <vulnerability>\n\n<vulnerability> in the command can be any InsightVM vulnerability reference including the following:\n* Vulnerability Name\n* KB Number\n* CVE ID\n* Nexpose ID\n* Other references InsightVM knows\n\nNote this workflow may also be triggered in a direct message to the InsightConnect Slack chat bot.
+description: "Lookup vulnerability details, including a summary of the vulnerability, the affected software package, the remediation or mitigation step, and a list of all affected hosts in the user's environment, from a simple Slack message.\n\nCommand to run in any channel that includes your InsightConnect Slack chat bot:\n@Rapid7 InsightConnect lookup-vuln-assets <vulnerability>\n\n<vulnerability> in the command can be any InsightVM vulnerability reference including the following:\n* Vulnerability Name\n* KB Number\n* CVE ID\n* Nexpose ID\n* Other references InsightVM knows\n\nNote this workflow may also be triggered in a direct message to the InsightConnect Slack chat bot."
 version: 2.0.0
 vendor: rapid7
 support: rapid7
