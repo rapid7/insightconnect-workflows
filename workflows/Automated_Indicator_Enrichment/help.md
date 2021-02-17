@@ -36,7 +36,7 @@ This workflow leverages InsightConnect's Parameters feature. This feature allows
 
 There is one parameter you will need to configure in order to complete setup of your workflow:
 
-* `Slack Channel`:  the Slack channel name in your environment where the workflow should be triggered and respond
+* `Slack Channel`: The Slack channel name in your environment where the workflow should be triggered and respond
 
 To begin, select "Parameters" either from the Workflow Control Panel or from the Builder to begin configuration.
 
