@@ -27,9 +27,9 @@ Import the workflow from the Rapid7 Extension Library and proceed through the Im
 This workflow leverages InsightConnect's Parameters feature. This feature allows variables used multiple times throughout a workflow to be entered once and then referenced throughout the workflow.
 
 There are three parameters you will need to configure in order to complete setup of your workflow:
-* `Slack Channel`: the Slack channel name in your environment where the workflow should be triggered and respond
-* `Max Hosts`: the maximum number of hosts listed per vulnerability (recommended default is 10)
-* `Max Vulnerabilities`: the maximum number of returned vulnerabilities (recommended default is 50)
+* `Slack Channel`: The Slack channel name in your environment where the workflow should be triggered and respond
+* `Max Hosts`: The maximum number of hosts listed per vulnerability (recommended default is 10)
+* `Max Vulnerabilities`: The maximum number of returned vulnerabilities (recommended default is 50)
 
 To configure the parameters, select "Parameters" either from the Workflow Control Panel page or from the Workflow Builder. Once configured, workflow setup is complete.
 
