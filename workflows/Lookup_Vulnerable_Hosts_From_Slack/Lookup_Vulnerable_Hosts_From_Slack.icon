@@ -3868,7 +3868,7 @@
             "properties": {
               "Max Hosts": {
                 "type": "integer",
-                "description": "The maximum number of hosts listed per vulnerability (recommended default is 10)"
+                "description": "The maximum number of affected hosts listed per vulnerability (recommended default is 10)"
               },
               "Slack Channel": {
                 "type": "string",
