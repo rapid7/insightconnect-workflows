@@ -1,6 +1,6 @@
 # Description
 
-This workflow blocks or unblocks a hosts with SonicWall Firewall via Microsoft Teams command and reports information back to Microsoft Teams. The workflow works by adding (host to block) and removing address objects (host to unblock) from an address object group in your firewall. When using this workflow, you will need to configure a policy on your firewall that denies traffic from any objects within a pre-determined  address group (e.g. InsightConnect Block List), and then set that address group in the workflow which will be used to manage the hosts in that the group, effectively blocking or unblocking them from Microsoft Teams.
+This workflow blocks or unblocks a hosts with SonicWall Firewall via Microsoft Teams command and reports information back to Microsoft Teams. The workflow works by adding (host to block) and removing address objects (host to unblock) from an address object group in your firewall. When using this workflow, you will need to configure a policy on your firewall that denies traffic from any objects within a pre-determined address group (e.g. InsightConnect Block List), and then set that address group in the workflow which will be used to manage the hosts in that the group, effectively blocking or unblocking them.
 
 Sample Microsoft Teams Trigger Commands:
 
