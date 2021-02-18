@@ -31,8 +31,6 @@ There are three parameters you will need to configure in order to complete setup
 * `Max Hosts`: The maximum number of hosts listed per vulnerability (recommended default is 10)
 * `Max Vulnerabilities`: The maximum number of returned vulnerabilities (recommended default is 50)
 
-To configure the parameters, select "Parameters" either from the Workflow Control Panel page or from the Workflow Builder. Once configured, workflow setup is complete.
-
 ### Usage
 
 *This workflow will trigger in any direct messages to your Chatbot **or** any message in a channel directed @ your Chatbot. Note the Chatbot must be in the channel in order to trigger the workflow this way.*
