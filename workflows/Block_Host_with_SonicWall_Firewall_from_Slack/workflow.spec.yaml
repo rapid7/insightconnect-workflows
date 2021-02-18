@@ -1,0 +1,39 @@
+extension: workflow
+products: ["insightconnect"]
+name: Block_Host_with_SonicWall_Firewall_from_Slack
+title: Block Host with SonicWall Firewall from Slack
+description: This workflow blocks or unblocks a host with SonicWall Firewall via Slack command and reports information back to Slack.
+version: 1.0.0
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [threat_detection_and_response]
+  keywords: [sonicwall, firewall, slack, chatops, work_from_home]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Block_Host_with_SonicWall_Firewall_from_Slack
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+    - name: block_host.png
+      title: Successfully Blocked Host Message
+    - name: block_host_artifact.png
+      title: Successfully Blocked Host Artifact
+    - name: unblock_host.png
+      title: Successfully Unblocked Host Message
+    - name: unblock_host_artifact.png
+      title: Successfully Unblocked Host Artifact
+    - name: block_hosts.png
+      title: Successfully Blocked Hosts Message
+    - name: unblock_hosts.png
+      title: Successfully Unblocked Hosts Message
+    - name: host_private.png
+      title: Private Host
+    - name: host_whitelisted.png
+      title: Whitelisted Host
+    - name: workflow1.png
+      title: Workflow View
+    - name: workflow2.png
+      title: Workflow View Block Hosts Loop
+    - name: workflow3.png
+      title: Workflow View Unblock Hosts Loop
