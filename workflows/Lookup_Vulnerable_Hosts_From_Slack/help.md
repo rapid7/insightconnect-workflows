@@ -70,7 +70,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
-* 1.2.0 - Leverage Parameters Feature | Use Workflow Parameters to configure Slack channel name, max vulnerabilities, and max hosts values (and remove the Settings step) | Update CSV to version 1.1.6 | Update Type Converter to 1.7.0
+* 2.0.0 - Leverage Parameters Feature | Use Workflow Parameters to configure Slack channel name, max vulnerabilities, and max hosts values (and remove the Settings step) | Update CSV to version 1.1.6 | Update Type Converter to 1.7.0
 * 1.1.0 - Use the automatic extraction functionality instead of Pattern Match step to extract a vulnerability | Improve workflow messaging | Improve documentation | Update screenshots | Update Rapid7 InsightVM to version 4.8.1 | Update Type Converter to version 1.6.0
 * 1.0.0 - Initial workflow
 
