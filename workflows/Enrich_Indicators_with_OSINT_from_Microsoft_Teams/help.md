@@ -29,7 +29,7 @@ Import the workflow from the Rapid7 Extension Library and proceed through the Im
 This workflow leverages InsightConnect's Parameters feature. This feature allows variables used multiple times throughout a workflow to be entered once and then referenced throughout the workflow.
 
 There are two parameters you will need to configure in order to complete setup of your workflow:
-* `team name`:  The Microsoft Teams team name in your environment where the workflow should be triggered and respond
+* `team name`: The Microsoft Teams team name in your environment where the workflow should be triggered and respond
 * `channel name`: The Microsoft Teams channel name in your environment where the workflow should be triggered and respond
 
 To begin, select "Parameters" either from the Workflow Control Panel or from the Builder to begin configuration.
