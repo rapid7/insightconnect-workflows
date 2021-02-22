@@ -48,11 +48,11 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Type Converter|1.7.0|
-|AbuseIPDB|5.0.6|
+|Type Converter|1.7.0|1|
+|AbuseIPDB|5.0.6|1|
 |IPStack|2.0.0|1|
-|VirusTotal|6.0.4|
-|WHOIS|3.0.1|
+|VirusTotal|6.0.4|1|
+|WHOIS|3.0.1|1|
 
 ## Troubleshooting
 
