@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.69.2-0-gaf0d9",
+    "komandVersion": "1.77.0-0-g8c626",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-11-27T09:11:50.017531847Z",
+    "exportedAt": "2021-02-16T15:20:08.800090465Z",
     "workflowVersions": [
       {
         "name": "Lookup Vulnerable Hosts from Slack",
@@ -17,7 +17,7 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "aba0b6ae-4529-4827-a085-aeb46aa6affe",
-              "toNodeId": "e2a8436f-da58-4b85-9173-fd294bfb057d"
+              "toNodeId": "a106410d-01bb-4fe6-aebf-4481868efd99"
             },
             "061f4ce6-2833-4b31-97b1-78dbbb58fb3e": {
               "id": "061f4ce6-2833-4b31-97b1-78dbbb58fb3e",
@@ -347,14 +347,6 @@
               "fromNodeId": "da2ea19b-42d4-43a7-90e5-63bddedf8068",
               "toNodeId": ""
             },
-            "e853a67e-ed84-42c2-89d7-beb426cf82f9": {
-              "id": "e853a67e-ed84-42c2-89d7-beb426cf82f9",
-              "name": "",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "e2a8436f-da58-4b85-9173-fd294bfb057d",
-              "toNodeId": "a106410d-01bb-4fe6-aebf-4481868efd99"
-            },
             "f2034945-2a35-4adc-a9d1-33608085766b": {
               "id": "f2034945-2a35-4adc-a9d1-33608085766b",
               "name": "",
@@ -493,10 +485,6 @@
               "id": "e19ba80b-5d1a-4646-bcdb-3844a9dd04cf",
               "parentNodeId": ""
             },
-            "e2a8436f-da58-4b85-9173-fd294bfb057d": {
-              "id": "e2a8436f-da58-4b85-9173-fd294bfb057d",
-              "parentNodeId": ""
-            },
             "ea5a238b-e930-4b91-b8bc-3f6d44ba273b": {
               "id": "ea5a238b-e930-4b91-b8bc-3f6d44ba273b",
               "parentNodeId": ""
@@ -545,12 +533,12 @@
                     },
                     "op": "<=",
                     "right": {
-                      "name": "e2a8436f-da58-4b85-9173-fd294bfb057d.output.max vulnerabilities",
+                      "name": "$workflow.Max Vulnerabilities",
                       "type": "variable"
                     },
                     "type": "binary"
                   },
-                  "expressionText": "length({{[9f271d1c-aa6d-425d-97e8-2b45449a2eba].[search_results]}}) <= {{[e2a8436f-da58-4b85-9173-fd294bfb057d].[output].[max vulnerabilities]}}"
+                  "expressionText": "length({{[9f271d1c-aa6d-425d-97e8-2b45449a2eba].[search_results]}}) <= {{$workflow.[Max Vulnerabilities]}}"
                 }
               ]
             },
@@ -702,12 +690,12 @@
                   },
                   "op": ">=",
                   "right": {
-                    "name": "e2a8436f-da58-4b85-9173-fd294bfb057d.output.max hosts",
+                    "name": "$workflow.Max Hosts",
                     "type": "variable"
                   },
                   "type": "binary"
                 },
-                "expressionText": "length({{[db592e51-daa5-44e6-9084-3439b7f09b85].[$outputs]}}) >= {{[e2a8436f-da58-4b85-9173-fd294bfb057d].[output].[max hosts]}}"
+                "expressionText": "length({{[db592e51-daa5-44e6-9084-3439b7f09b85].[$outputs]}}) >= {{$workflow.[Max Hosts]}}"
               }
             },
             "defaultInputJSONSchema": null,
@@ -910,7 +898,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "*Vulnerable Assets* _(max of {{[e2a8436f-da58-4b85-9173-fd294bfb057d].[output].[max hosts]}})_\n{{#each [db592e51-daa5-44e6-9084-3439b7f09b85].[Asset Information]}}\n* {{this}}\n{{/each}}",
+                "message": "*Vulnerable Assets* _(max of {{$workflow.[Max Hosts]}})_\n{{#each [db592e51-daa5-44e6-9084-3439b7f09b85].[Asset Information]}}\n* {{this}}\n{{/each}}",
                 "recipient": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[channel_id]}}",
                 "thread_ts": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[ts]}}"
               }
@@ -1057,8 +1045,8 @@
               "name": "CSV",
               "slugVendor": "rapid7",
               "slugName": "csv",
-              "slugVersion": "1.1.5",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/csv/1.1.5/icon.png"
+              "slugVersion": "1.1.6",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/csv/1.1.6/icon.png"
             },
             "identifier": "to_json",
             "continueOnFailure": false,
@@ -1089,8 +1077,8 @@
                 }
               },
               "required": [
-                "csv",
-                "validation"
+                "validation",
+                "csv"
               ],
               "title": "Variables",
               "type": "object"
@@ -1715,12 +1703,12 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "matchChannel": "change_me",
+                "matchChannel": "{{$workflow.[Slack Channel]}}",
                 "matchText": "lookup-vuln-hosts\\s+\\S+",
                 "type": "any"
               }
             },
-            "triggerId": "f7f9066f-2e62-4650-ac04-fdf583833751",
+            "triggerId": "d40253a8-2b77-4816-9c53-926930e3b744",
             "defaultInputJSONSchema": {
               "properties": {
                 "matchChannel": {
@@ -2619,8 +2607,8 @@
               "name": "Type Converter",
               "slugVendor": "rapid7",
               "slugName": "type_converter",
-              "slugVersion": "1.6.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/type_converter/1.6.0/icon.png"
+              "slugVersion": "1.7.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/type_converter/1.7.0/icon.png"
             },
             "identifier": "string_to_object",
             "continueOnFailure": false,
@@ -2714,8 +2702,8 @@
               "name": "Type Converter",
               "slugVendor": "rapid7",
               "slugName": "type_converter",
-              "slugVersion": "1.6.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/type_converter/1.6.0/icon.png"
+              "slugVersion": "1.7.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/type_converter/1.7.0/icon.png"
             },
             "identifier": "string_to_object",
             "continueOnFailure": false,
@@ -2776,84 +2764,6 @@
                     }
                   },
                   "title": "Output",
-                  "type": "object"
-                }
-              },
-              "properties": {
-                "output": {
-                  "$ref": "#/definitions/output",
-                  "description": "Type converted input",
-                  "order": 1,
-                  "title": "Output"
-                }
-              },
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultImageData": "",
-            "connectionType": "ORCHESTRATOR"
-          },
-          "e2a8436f-da58-4b85-9173-fd294bfb057d": {
-            "nodeId": "e2a8436f-da58-4b85-9173-fd294bfb057d",
-            "name": "Settings",
-            "type": "action",
-            "plugin": {
-              "name": "Type Converter",
-              "slugVendor": "rapid7",
-              "slugName": "type_converter",
-              "slugVersion": "1.6.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/type_converter/1.6.0/icon.png"
-            },
-            "identifier": "string_to_object",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "isCloud": false,
-            "parameters": {
-              "input": {
-                "input": "{\"max hosts\":10,\"max vulnerabilities\":50}"
-              }
-            },
-            "defaultInputJSONSchema": {
-              "properties": {
-                "input": {
-                  "description": "Input variable",
-                  "order": 1,
-                  "title": "Input",
-                  "type": "string"
-                }
-              },
-              "required": [
-                "input"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultOutputJSONSchema": {
-              "properties": {
-                "output": {
-                  "description": "Type converted input",
-                  "order": 1,
-                  "title": "Output",
-                  "type": "object"
-                }
-              },
-              "required": [
-                "output"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "outputJSONSchema": {
-              "definitions": {
-                "output": {
-                  "properties": {
-                    "max hosts": {
-                      "type": "integer"
-                    },
-                    "max vulnerabilities": {
-                      "type": "integer"
-                    }
-                  },
                   "type": "object"
                 }
               },
@@ -2954,7 +2864,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "_Your search for vulnerability {{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[words].[1]}} is too broad and returned more than {{[e2a8436f-da58-4b85-9173-fd294bfb057d].[output].[max vulnerabilities]}} vulnerabilities.  Please try a narrower search.  Here is a search your may find helpful: <https://www.rapid7.com/db/?q={{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[words].[1]}}&type=nexpose|Rapid7 VulnDB Search> _",
+                "message": "_Your search for vulnerability {{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[words].[1]}} is too broad and returned more than {{$workflow.[Max Vulnerabilities]}} vulnerabilities.  Please try a narrower search.  Here is a search your may find helpful: <https://www.rapid7.com/db/?q={{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[words].[1]}}&type=nexpose|Rapid7 VulnDB Search> _",
                 "recipient": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[channel_id]}}",
                 "thread_ts": "{{[aba0b6ae-4529-4827-a085-aeb46aa6affe].[message].[ts]}}"
               }
@@ -3950,16 +3860,37 @@
         },
         "tags": null,
         "humanCostSeconds": 0,
-        "humanCostDisplayUnit": ""
+        "humanCostDisplayUnit": "",
+        "parameters": {
+          "definitionSchema": {
+            "type": "object",
+            "required": [],
+            "properties": {
+              "Max Hosts": {
+                "type": "integer",
+                "description": "The maximum number of affected hosts listed per vulnerability (recommended default is 10)"
+              },
+              "Slack Channel": {
+                "type": "string",
+                "description": "The Slack channel name where the workflow will be triggered and respond"
+              },
+              "Max Vulnerabilities": {
+                "type": "integer",
+                "description": "The maximum number of returned vulnerabilities (recommended default is 50)"
+              }
+            },
+            "definitions": {}
+          }
+        }
       }
     ],
     "triggers": [
       {
-        "id": "f7f9066f-2e62-4650-ac04-fdf583833751",
+        "id": "d40253a8-2b77-4816-9c53-926930e3b744",
         "name": "Lookup Vulnerable Hosts Trigger",
         "description": "Trigger this workflow using the lookup-vuln-hosts command:\n\nlookup-vuln-hosts bluekeep\nlookup-vuln-hosts CVE-2019-0708",
         "input": {
-          "matchChannel": "change_me",
+          "matchChannel": "{{$workflow.[Slack Channel]}}",
           "matchText": "lookup-vuln-hosts\\s+\\S+",
           "type": "any"
         },

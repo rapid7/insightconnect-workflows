@@ -3,13 +3,13 @@ products: ["insightconnect", "insightvm"]
 name: Lookup_Vulnerable_Hosts_From_Slack
 title: Lookup Vulnerable Hosts from Slack
 description: Lookup vulnerability details, including a summary of the vulnerability, the affected software package, the remediation or mitigation step, and a list of all affected hosts in the user's environment.
-version: 1.1.0
+version: 2.0.0
 vendor: rapid7
 support: rapid7
 status: []
 hub_tags:
   use_cases: [vulnerability_management, asset_inventory]
-  keywords: [InsightVM, Slack, chat, remediation_management]
+  keywords: [InsightVM, Slack, chat, remediation_management, parameters]
   features: []
 resources:
   source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Lookup_Vulnerable_Hosts_From_Slack
