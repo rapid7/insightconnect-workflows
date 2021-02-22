@@ -72,6 +72,7 @@ In some instances using copy & paste for `!enrich-indicator` commands may introd
 
 # Version History
 
+* 3.0.0 - Update the major version
 * 2.0.2 - Update to use Workflow Parameters | Update DNS plugin to 2.0.0 | Update WHOIS plugin to 3.0.1 | Update documentation
 * 2.0.1 - Update Microsoft Teams to version 3.1.0 | Update documentation
 * 2.0.0 - Update workflow to use loop outputs

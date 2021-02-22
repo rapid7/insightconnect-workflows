@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Enrich_Indicators_with_OSINT_from_Microsoft_Teams
 title: "Enrich Indicators with OSINT from Microsoft Teams"
 description: "Look up and enrich URLs, IP addresses, and hashes directly from Microsoft Teams using open source threat intelligence tools such as Dig, DNS, and Whois."
-version: 2.0.2
+version: 3.0.0
 vendor: rapid7
 support: rapid7
 status: []
