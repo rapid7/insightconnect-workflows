@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Automated_Indicator_Enrichment
 title: "Automated Indicator Enrichment"
 description: "Lookup indicators such as IP addresses or URLs using open source threat intelligence from Slack."
-version: 1.2.0
+version: 2.0.0
 vendor: rapid7
 support: rapid7
 status: []
@@ -25,4 +25,3 @@ resources:
     title: Example Slack Output
   - name: artifact.png
     title: Example Artifact Output
-
