@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.72.0-0-ge9d34",
+    "komandVersion": "1.77.0-0-g8c626",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-12-11T18:21:28.511077837Z",
+    "exportedAt": "2021-02-16T15:36:05.839201087Z",
     "workflowVersions": [
       {
         "name": "Enrich Indicators with OSINT from Microsoft Teams",
@@ -340,8 +340,8 @@
               "name": "Type Converter",
               "slugVendor": "rapid7",
               "slugName": "type_converter",
-              "slugVersion": "1.6.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/type_converter/1.6.0/icon.png"
+              "slugVersion": "1.7.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/type_converter/1.7.0/icon.png"
             },
             "identifier": "combine_arrays",
             "continueOnFailure": false,
@@ -405,8 +405,8 @@
                 }
               },
               "required": [
-                "array1",
-                "array2"
+                "array2",
+                "array1"
               ],
               "title": "Variables",
               "type": "object"
@@ -882,12 +882,12 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "change_me",
+                "channel_name": "{{$workflow.[Channel Name]}}",
                 "message_content": "!enrich-indicator",
-                "team_name": "change_me"
+                "team_name": "{{$workflow.[Team Name]}}"
               }
             },
-            "triggerId": "50131354-e0b7-4544-9383-882eab9edb73",
+            "triggerId": "0724b958-ce33-424c-95e4-32f537ddad9f",
             "defaultInputJSONSchema": {
               "properties": {
                 "channel_name": {
@@ -1750,8 +1750,8 @@
               "name": "WHOIS",
               "slugVendor": "rapid7",
               "slugName": "whois",
-              "slugVersion": "2.0.2",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/whois/2.0.2/icon.png"
+              "slugVersion": "3.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/whois/3.0.1/icon.png"
             },
             "identifier": "domain",
             "continueOnFailure": false,
@@ -2119,11 +2119,11 @@
             "name": "Dig Lookup Reverse DNS",
             "type": "action",
             "plugin": {
-              "name": "Dig",
+              "name": "DNS",
               "slugVendor": "rapid7",
               "slugName": "dig",
-              "slugVersion": "1.0.5",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/dig/1.0.5/icon.png"
+              "slugVersion": "2.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/dig/2.0.0/icon.png"
             },
             "identifier": "reverse",
             "continueOnFailure": false,
@@ -2165,7 +2165,7 @@
                   "type": "string"
                 },
                 "fulloutput": {
-                  "description": "Full Dig output",
+                  "description": "Full DNS output",
                   "order": 1,
                   "title": "Full Output",
                   "type": "string"
@@ -2577,8 +2577,8 @@
               "name": "WHOIS",
               "slugVendor": "rapid7",
               "slugName": "whois",
-              "slugVersion": "2.0.2",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/whois/2.0.2/icon.png"
+              "slugVersion": "3.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/whois/3.0.1/icon.png"
             },
             "identifier": "address",
             "continueOnFailure": false,
@@ -2586,7 +2586,8 @@
             "isCloud": false,
             "parameters": {
               "input": {
-                "address": "{{[e1840ac5-38a0-48c8-a465-c406e2772a35].[$item]}}"
+                "address": "{{[e1840ac5-38a0-48c8-a465-c406e2772a35].[$item]}}",
+                "registrar": "Autodetect"
               }
             },
             "defaultInputJSONSchema": {
@@ -2595,6 +2596,20 @@
                   "description": "IP to Lookup",
                   "order": 1,
                   "title": "Address",
+                  "type": "string"
+                },
+                "registrar": {
+                  "default": "Autodetect",
+                  "description": "Domain Registrar",
+                  "enum": [
+                    "Autodetect",
+                    "RIPE",
+                    "ARIN",
+                    "LACNIC",
+                    "APNIC"
+                  ],
+                  "order": 2,
+                  "title": "Registrar",
                   "type": "string"
                 }
               },
@@ -2961,8 +2976,8 @@
               "name": "Type Converter",
               "slugVendor": "rapid7",
               "slugName": "type_converter",
-              "slugVersion": "1.6.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/type_converter/1.6.0/icon.png"
+              "slugVersion": "1.7.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/type_converter/1.7.0/icon.png"
             },
             "identifier": "combine_arrays",
             "continueOnFailure": false,
@@ -3026,8 +3041,8 @@
                 }
               },
               "required": [
-                "array1",
-                "array2"
+                "array2",
+                "array1"
               ],
               "title": "Variables",
               "type": "object"
@@ -3057,19 +3072,36 @@
         },
         "tags": null,
         "humanCostSeconds": 300,
-        "humanCostDisplayUnit": "minutes"
+        "humanCostDisplayUnit": "minutes",
+        "parameters": {
+          "definitionSchema": {
+            "type": "object",
+            "required": [],
+            "properties": {
+              "Team Name": {
+                "type": "string",
+                "description": "The Microsoft Teams team name where the workflow will be triggered and respond"
+              },
+              "Channel Name": {
+                "type": "string",
+                "description": "The Microsoft Teams channel name where the workflow will be triggered and respond"
+              }
+            },
+            "definitions": {}
+          }
+        }
       }
     ],
     "triggers": [
       {
-        "id": "50131354-e0b7-4544-9383-882eab9edb73",
+        "id": "0724b958-ce33-424c-95e4-32f537ddad9f",
         "identifier": "new_message_received",
         "name": "Microsoft Teams Message",
         "description": "Trigger on MS Teams message\nE.X. !enrich-indicator <Command> <data>",
         "input": {
-          "channel_name": "change_me",
+          "channel_name": "{{$workflow.[Channel Name]}}",
           "message_content": "!enrich-indicator",
-          "team_name": "change_me"
+          "team_name": "{{$workflow.[Team Name]}}"
         },
         "inputJsonSchema": {
           "properties": {

@@ -1,6 +1,6 @@
 # Description
 
-Threat Intelligence doesn’t have to come with a cost. This workflow uses open-source intelligence (OSINT) to perform domain lookups, header analysis, hash analysis, and more directly from Slack. Just connect Slack and activate this instant indicator enrichment workflow.
+Threat Intelligence doesn’t have to come with a cost. This workflow uses open-source intelligence (OSINT) to perform domain lookups, header analysis, hash analysis, and more directly from Microsoft Teams. Just connect Microsoft Teams and activate this instant indicator enrichment workflow.
 
 Sample Trigger Commands:
 
@@ -26,9 +26,15 @@ Sample Trigger Commands:
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-Once the workflow has been imported, **the first Microsoft Teams step will need the team name and channel name updated to suit your Microsoft Teams environment!** Edit the input with the preset text of `change_me` in the first Microsoft Teams step in the workflow.
+This workflow leverages InsightConnect's Parameters feature. This feature allows variables used multiple times throughout a workflow to be entered once and then referenced throughout the workflow.
 
-After configuring the Microsoft Teams steps, activate the workflow in order to trigger it.
+There are two parameters you will need to configure in order to complete setup of your workflow:
+* `team name`: The Microsoft Teams team name in your environment where the workflow should be triggered and respond
+* `channel name`: The Microsoft Teams channel name in your environment where the workflow should be triggered and respond
+
+To begin, select "Parameters" either from the Workflow Control Panel or from the Builder to begin configuration.
+
+After configuring the parameters, activate the workflow in order to trigger it.
 
 ### Usage
 
@@ -54,11 +60,11 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Dig|1.0.5|1|
+|DNS|2.0.0|1|
 |Team Cymru MHR|1.1.1|1|
 |Microsoft Teams|3.1.0|8|
-|WHOIS|2.0.2|2|
-|Type Converter|1.6.0|2|
+|WHOIS|3.0.1|2|
+|Type Converter|1.7.0|2|
 
 ## Troubleshooting
 
@@ -66,6 +72,7 @@ In some instances using copy & paste for `!enrich-indicator` commands may introd
 
 # Version History
 
+* 2.0.2 - Update to use Workflow Parameters | Update DNS plugin to 2.0.0 | Update WHOIS plugin to 3.0.1 | Update documentation
 * 2.0.1 - Update Microsoft Teams to version 3.1.0 | Update documentation
 * 2.0.0 - Update workflow to use loop outputs
 * 1.0.2 - Update to make Microsoft Teams plugin the latest version
