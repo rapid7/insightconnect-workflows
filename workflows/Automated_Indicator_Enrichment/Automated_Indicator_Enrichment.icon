@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.60.2-0-g80196",
+    "komandVersion": "1.77.1-0-ge005f",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-08-25T22:25:07.288229616Z",
+    "exportedAt": "2021-02-16T23:31:26.870604862Z",
     "workflowVersions": [
       {
         "name": "Automated Indicator Enrichment",
@@ -338,7 +338,7 @@
               "input": {
                 "attachments": [],
                 "message": ":warning: A lookup for `{{[364ef08d-d955-478c-860f-272d74eb5c81].[$item]}}` has failed :warning:\n\nSee the job for more info: {{[$job].[URL]}}",
-                "recipient": "{{[d4b99849-7404-4271-83a0-2301855e4098].[message].[channel]}}",
+                "recipient": "{{$workflow.[Slack Channel]}}",
                 "thread_ts": "{{[d4b99849-7404-4271-83a0-2301855e4098].[timestamp]}}"
               }
             },
@@ -523,7 +523,7 @@
               "input": {
                 "attachments": [],
                 "message": "{{[b8535a75-a3cd-46f7-9a68-5d947e3c5741].[content]}}",
-                "recipient": "{{[d4b99849-7404-4271-83a0-2301855e4098].[message].[channel_id]}}",
+                "recipient": "{{$workflow.[Slack Channel]}}",
                 "thread_ts": "{{[fbe690e0-1341-41f1-aef7-5ff47f3ccfac].[timestamp]}}"
               }
             },
@@ -617,8 +617,8 @@
               "name": "Type Converter",
               "slugVendor": "rapid7",
               "slugName": "type_converter",
-              "slugVersion": "1.6.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/type_converter/1.6.0/icon.png"
+              "slugVersion": "1.7.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/type_converter/1.7.0/icon.png"
             },
             "identifier": "combine_arrays",
             "continueOnFailure": false,
@@ -682,8 +682,8 @@
                 }
               },
               "required": [
-                "array1",
-                "array2"
+                "array2",
+                "array1"
               ],
               "title": "Variables",
               "type": "object"
@@ -720,7 +720,7 @@
               "input": {
                 "attachments": [],
                 "message": ":octagonal_sign: *Workflow did not execute* :octagonal_sign:\nNo valid indicators were given! Please input the command and one or more indicators (IPv4, IPv6, URLs).",
-                "recipient": "{{[d4b99849-7404-4271-83a0-2301855e4098].[message].[channel]}}",
+                "recipient": "{{$workflow.[Slack Channel]}}",
                 "thread_ts": "{{[d4b99849-7404-4271-83a0-2301855e4098].[timestamp]}}"
               }
             },
@@ -792,16 +792,17 @@
               "name": "WHOIS",
               "slugVendor": "rapid7",
               "slugName": "whois",
-              "slugVersion": "2.0.2",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/whois/2.0.2/icon.png"
+              "slugVersion": "3.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/whois/3.0.1/icon.png"
             },
             "identifier": "address",
-            "continueOnFailure": true,
+            "continueOnFailure": false,
             "isDisabled": false,
             "isCloud": false,
             "parameters": {
               "input": {
-                "address": "{{[af308e8e-ba3b-48e8-9863-7703017a1fc6].[$item]}}"
+                "address": "{{[af308e8e-ba3b-48e8-9863-7703017a1fc6].[$item]}}",
+                "registrar": "Autodetect"
               }
             },
             "defaultInputJSONSchema": {
@@ -810,6 +811,20 @@
                   "description": "IP to Lookup",
                   "order": 1,
                   "title": "Address",
+                  "type": "string"
+                },
+                "registrar": {
+                  "default": "Autodetect",
+                  "description": "Domain Registrar",
+                  "enum": [
+                    "Autodetect",
+                    "RIPE",
+                    "ARIN",
+                    "LACNIC",
+                    "APNIC"
+                  ],
+                  "order": 2,
+                  "title": "Registrar",
                   "type": "string"
                 }
               },
@@ -941,7 +956,7 @@
               "input": {
                 "attachments": [],
                 "message": "*Results*\n{{[c769b518-c83f-4320-b550-4c99cf247e84].[content]}}",
-                "recipient": "{{[d4b99849-7404-4271-83a0-2301855e4098].[message].[channel]}}",
+                "recipient": "{{$workflow.[Slack Channel]}}",
                 "thread_ts": "{{[d4b99849-7404-4271-83a0-2301855e4098].[timestamp]}}"
               }
             },
@@ -1081,7 +1096,7 @@
               "input": {
                 "attachments": [],
                 "message": ":rocket: *Workflow complete!* :rocket:",
-                "recipient": "{{[d4b99849-7404-4271-83a0-2301855e4098].[message].[channel]}}",
+                "recipient": "{{$workflow.[Slack Channel]}}",
                 "thread_ts": "{{[d4b99849-7404-4271-83a0-2301855e4098].[timestamp]}}"
               }
             },
@@ -1155,7 +1170,7 @@
               "input": {
                 "attachments": [],
                 "message": ":warning: A lookup for `{{[af308e8e-ba3b-48e8-9863-7703017a1fc6].[$item]}}` has failed :warning:\n\nSee the job for more info: {{[$job].[URL]}}",
-                "recipient": "{{[d4b99849-7404-4271-83a0-2301855e4098].[message].[channel]}}",
+                "recipient": "{{$workflow.[Slack Channel]}}",
                 "thread_ts": "{{[d4b99849-7404-4271-83a0-2301855e4098].[timestamp]}}"
               }
             },
@@ -1251,7 +1266,7 @@
               "input": {
                 "attachments": [],
                 "message": "No VirusTotal results found for `{{[364ef08d-d955-478c-860f-272d74eb5c81].[$item]}}`",
-                "recipient": "{{[d4b99849-7404-4271-83a0-2301855e4098].[message].[channel]}}",
+                "recipient": "{{$workflow.[Slack Channel]}}",
                 "thread_ts": "{{[d4b99849-7404-4271-83a0-2301855e4098].[timestamp]}}"
               }
             },
@@ -1467,8 +1482,8 @@
               "name": "VirusTotal",
               "slugVendor": "rapid7",
               "slugName": "virustotal",
-              "slugVersion": "6.0.3",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/virustotal/6.0.3/icon.png"
+              "slugVersion": "6.0.4",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/virustotal/6.0.4/icon.png"
             },
             "identifier": "scan_url_report",
             "continueOnFailure": true,
@@ -1575,12 +1590,12 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "matchChannel": "#change_me",
+                "matchChannel": "{{$workflow.[Slack Channel]}}",
                 "matchText": "investigate",
                 "type": "any"
               }
             },
-            "triggerId": "3ee6308d-fd48-4333-b6dd-bee9bf142a65",
+            "triggerId": "b2a587d1-dce3-4635-81f3-5ffb53bb4488",
             "defaultInputJSONSchema": {
               "properties": {
                 "matchChannel": {
@@ -1665,20 +1680,20 @@
                       "items": {
                         "type": "string"
                       },
-                      "order": 3,
+                      "order": 4,
                       "title": "Email Addresses",
                       "type": "array"
                     },
                     "hashes": {
                       "$ref": "#/definitions/hashes",
                       "description": "Hashes found within the message",
-                      "order": 4,
+                      "order": 5,
                       "title": "Hashes"
                     },
                     "ip_addresses": {
                       "$ref": "#/definitions/ip_addresses",
                       "description": "IP addresses found within the message",
-                      "order": 6,
+                      "order": 7,
                       "title": "IP Addresses"
                     },
                     "mac_addresses": {
@@ -1686,8 +1701,17 @@
                       "items": {
                         "type": "string"
                       },
-                      "order": 5,
+                      "order": 6,
                       "title": "MAC Addresses",
+                      "type": "array"
+                    },
+                    "parent_domains": {
+                      "description": "Parent domains found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "Parent Domains",
                       "type": "array"
                     },
                     "urls": {
@@ -1695,7 +1719,7 @@
                       "items": {
                         "type": "string"
                       },
-                      "order": 2,
+                      "order": 3,
                       "title": "URLs",
                       "type": "array"
                     }
@@ -1750,7 +1774,7 @@
                     "indicators": {
                       "$ref": "#/definitions/indicators",
                       "description": "Potential threat indicators found within the message",
-                      "order": 6,
+                      "order": 7,
                       "title": "Indicators"
                     },
                     "text": {
@@ -1776,6 +1800,15 @@
                       "order": 2,
                       "title": "User ID",
                       "type": "string"
+                    },
+                    "words": {
+                      "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 6,
+                      "title": "Words",
+                      "type": "array"
                     }
                   },
                   "title": "Message",
@@ -1857,7 +1890,7 @@
               "input": {
                 "attachments": [],
                 "message": ":rocket: *Starting Workflow!* :rocket:\n_{{[d4b99849-7404-4271-83a0-2301855e4098].[message].[first_word]}}_",
-                "recipient": "{{[d4b99849-7404-4271-83a0-2301855e4098].[message].[channel]}}",
+                "recipient": "{{$workflow.[Slack Channel]}}",
                 "thread_ts": "{{[d4b99849-7404-4271-83a0-2301855e4098].[timestamp]}}"
               }
             },
@@ -1929,8 +1962,8 @@
               "name": "AbuseIPDB",
               "slugVendor": "rapid7",
               "slugName": "abuseipdb",
-              "slugVersion": "5.0.3",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/abuseipdb/5.0.3/icon.png"
+              "slugVersion": "5.0.6",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/abuseipdb/5.0.6/icon.png"
             },
             "identifier": "check_ip",
             "continueOnFailure": true,
@@ -2127,16 +2160,29 @@
         },
         "tags": null,
         "humanCostSeconds": 300,
-        "humanCostDisplayUnit": "minutes"
+        "humanCostDisplayUnit": "minutes",
+        "parameters": {
+          "definitionSchema": {
+            "type": "object",
+            "required": [],
+            "properties": {
+              "Slack Channel": {
+                "type": "string",
+                "description": "Enter Slack channel name in \"Current Value\" Field\n\nex: #channelname"
+              }
+            },
+            "definitions": {}
+          }
+        }
       }
     ],
     "triggers": [
       {
-        "id": "3ee6308d-fd48-4333-b6dd-bee9bf142a65",
+        "id": "b2a587d1-dce3-4635-81f3-5ffb53bb4488",
         "name": "Slack Investigate Trigger",
         "description": "",
         "input": {
-          "matchChannel": "#change_me",
+          "matchChannel": "{{$workflow.[Slack Channel]}}",
           "matchText": "investigate",
           "type": "any"
         },
@@ -2224,20 +2270,20 @@
                   "items": {
                     "type": "string"
                   },
-                  "order": 3,
+                  "order": 4,
                   "title": "Email Addresses",
                   "type": "array"
                 },
                 "hashes": {
                   "$ref": "#/definitions/hashes",
                   "description": "Hashes found within the message",
-                  "order": 4,
+                  "order": 5,
                   "title": "Hashes"
                 },
                 "ip_addresses": {
                   "$ref": "#/definitions/ip_addresses",
                   "description": "IP addresses found within the message",
-                  "order": 6,
+                  "order": 7,
                   "title": "IP Addresses"
                 },
                 "mac_addresses": {
@@ -2245,8 +2291,17 @@
                   "items": {
                     "type": "string"
                   },
-                  "order": 5,
+                  "order": 6,
                   "title": "MAC Addresses",
+                  "type": "array"
+                },
+                "parent_domains": {
+                  "description": "Parent domains found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "Parent Domains",
                   "type": "array"
                 },
                 "urls": {
@@ -2254,7 +2309,7 @@
                   "items": {
                     "type": "string"
                   },
-                  "order": 2,
+                  "order": 3,
                   "title": "URLs",
                   "type": "array"
                 }
@@ -2309,7 +2364,7 @@
                 "indicators": {
                   "$ref": "#/definitions/indicators",
                   "description": "Potential threat indicators found within the message",
-                  "order": 6,
+                  "order": 7,
                   "title": "Indicators"
                 },
                 "text": {
@@ -2335,6 +2390,15 @@
                   "order": 2,
                   "title": "User ID",
                   "type": "string"
+                },
+                "words": {
+                  "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 6,
+                  "title": "Words",
+                  "type": "array"
                 }
               },
               "title": "Message",

@@ -32,7 +32,13 @@ Sample Slack Trigger Commands:
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-Once the workflow has been imported, **Update the first step with the channel name to suit your Slack environment!** by editing the input with the preset text of `change_me` to match the channel to monitor.
+This workflow leverages InsightConnect's Parameters feature. This feature allows variables used multiple times throughout a workflow to be entered once and then referenced throughout the workflow. 
+
+There is one parameter you will need to configure in order to complete setup of your workflow:
+
+* `Slack Channel`: The Slack channel name in your environment where the workflow should be triggered and respond
+
+To begin, select "Parameters" either from the Workflow Control Panel or from the Builder to begin configuration.
 
 After configuring the steps, activate the workflow in order to trigger it. 
 
@@ -42,11 +48,11 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Type Converter|1.6.0|1|
-|AbuseIPDB|5.0.3|1|
+|Type Converter|1.7.0|1|
+|AbuseIPDB|5.0.6|1|
 |IPStack|2.0.0|1|
-|VirusTotal|6.0.3|1|
-|WHOIS|2.0.2|1|
+|VirusTotal|6.0.4|1|
+|WHOIS|3.0.1|1|
 
 ## Troubleshooting
 
@@ -54,6 +60,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 2.0.0 - Leverage Parameters Feature | Update AbuseIPDB, VirusTotal, Whois, and Type Converter plugins
 * 1.1.0 - Replace pattern match with Automatic indicator extraction | Update plugins
 * 1.0.0 - Initial workflow
 
