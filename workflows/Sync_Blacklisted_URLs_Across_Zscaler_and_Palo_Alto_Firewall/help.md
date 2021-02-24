@@ -21,7 +21,7 @@ Import the workflow from the Rapid7 Extension Library and proceed through the Im
 
 This workflow leverages InsightConnect's Parameters feature. This feature allows variables used multiple times throughout a workflow to be entered once and then referenced throughout the workflow. 
 
-There are one parameter you will need to configure in order to complete setup of your workflow:
+There is one parameter you will need to configure in order to complete the setup of your workflow:
 
 * `Group Name`: The Palo Alto Firewall address object group to monitor
 
