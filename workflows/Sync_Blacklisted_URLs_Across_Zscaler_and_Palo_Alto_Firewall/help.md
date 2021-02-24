@@ -2,7 +2,7 @@
 
 The workflow automatically synchronizes URL blacklists across Palo Alto Firewall and Zscaler by adding or removing address objects from an address object group in your Palo Alto Firewall and blacklisting or unblacklisting URLs in Zscaler to keep them in sync bi-directionally on an hourly schedule.
 
-This workflow ensures that hosts blocked in the firewall are also blocked at the web proxy, and that hosts blocked in the web proxy are also blocked in the firewall creating a more consistent defensive perimeter across the organization.
+This workflow ensures that hosts blocked in the firewall are also blocked at the web proxy, and that hosts blocked in the web proxy are also blocked at the firewall, creating a more consistent defensive perimeter across the organization.
 
 # Key Features
 
