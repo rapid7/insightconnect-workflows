@@ -6,7 +6,7 @@ This workflow ensures that hosts blocked in the firewall are also blocked at the
 
 # Key Features
 
-* **Sync URL blacklists** - Use InsightConnect to synchronize blacklisted URLs across Palo Alto Firewall and Zscaler easy.
+* **Sync URL blacklists** - Use InsightConnect to synchronize blacklisted URLs across Palo Alto Firewall and Zscaler easily.
 
 # Requirements
 
