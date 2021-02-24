@@ -23,7 +23,7 @@ This workflow leverages InsightConnect's Parameters feature. This feature allows
 
 There is one parameter you will need to configure in order to complete the setup of your workflow:
 
-* `Group Name`: The Palo Alto Firewall address object group to monitor
+* `Group Name`: The Palo Alto Firewall address object group to monitor. This is the group from which address objects will be synced with Zscaler.
 
 To begin, select "Parameters" either from the Workflow Control Panel or from the Builder to begin configuration.
 
