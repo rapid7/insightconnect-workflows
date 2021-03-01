@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.72.0-0-ge9d34",
+    "komandVersion": "1.78.1-0-g7f1ed",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-12-15T12:06:51.086117476Z",
+    "exportedAt": "2021-03-01T20:58:09.736299613Z",
     "workflowVersions": [
       {
         "name": "Lookup Host in InsightVM from Teams",
@@ -160,8 +160,8 @@
               "name": "HTML",
               "slugVendor": "rapid7",
               "slugName": "html",
-              "slugVersion": "1.2.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/html/1.2.1/icon.png"
+              "slugVersion": "1.2.2",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/html/1.2.2/icon.png"
             },
             "identifier": "text",
             "continueOnFailure": false,
@@ -297,12 +297,12 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "change_me",
+                "channel_name": "{{$workflow.[Channel Name]}}",
                 "message_content": "(?i)!lookup-host",
-                "team_name": "change_me"
+                "team_name": "{{$workflow.[Team Name]}}"
               }
             },
-            "triggerId": "c0146fef-dcfd-4296-8074-0369e2cd1e5b",
+            "triggerId": "31c63df8-ef0f-4a95-b117-9082ba4fe7e1",
             "defaultInputJSONSchema": {
               "properties": {
                 "channel_name": {
@@ -634,10 +634,32 @@
                 {
                   "edgeId": "c20b633e-f9ed-4a8b-9f11-83e37e42364c",
                   "expression": {
-                    "name": "d79b7dd3-bc74-4649-8e24-67680740b43e.$success",
-                    "type": "variable"
+                    "left": {
+                      "name": "d79b7dd3-bc74-4649-8e24-67680740b43e.$success",
+                      "type": "variable"
+                    },
+                    "op": "AND",
+                    "right": {
+                      "left": {
+                        "args": [
+                          {
+                            "name": "d79b7dd3-bc74-4649-8e24-67680740b43e.assets",
+                            "type": "variable"
+                          }
+                        ],
+                        "name": "length",
+                        "type": "function"
+                      },
+                      "op": ">",
+                      "right": {
+                        "type": "literal",
+                        "value": 0
+                      },
+                      "type": "binary"
+                    },
+                    "type": "binary"
                   },
-                  "expressionText": "{{[d79b7dd3-bc74-4649-8e24-67680740b43e].[$success]}}"
+                  "expressionText": "{{[d79b7dd3-bc74-4649-8e24-67680740b43e].[$success]}} AND length({{[d79b7dd3-bc74-4649-8e24-67680740b43e].[assets]}}) > 0"
                 }
               ]
             },
@@ -1246,8 +1268,8 @@
               "name": "Rapid7 InsightVM",
               "slugVendor": "rapid7",
               "slugName": "rapid7_insightvm",
-              "slugVersion": "4.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/4.0.0/icon.png"
+              "slugVersion": "4.8.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/4.8.1/icon.png"
             },
             "identifier": "asset_search",
             "continueOnFailure": false,
@@ -1278,6 +1300,19 @@
                   "description": "Tag search criteria - options documentation: https://help.rapid7.com/insightvm/en-us/api/#section/Responses/SearchCriteria",
                   "order": 1,
                   "title": "Search Criteria",
+                  "type": "object"
+                },
+                "size": {
+                  "default": 0,
+                  "description": "The number of records to retrieve. If blank or '0' all assets that match the search will be returned",
+                  "order": 2,
+                  "title": "Size",
+                  "type": "number"
+                },
+                "sort_criteria": {
+                  "description": "JSON object for sorting by criteria. Multiple criteria can be specified with an order of 'asc' (ascending) or 'desc' (descending)",
+                  "order": 3,
+                  "title": "Sort Criteria",
                   "type": "object"
                 }
               },
@@ -2168,19 +2203,36 @@
         },
         "tags": null,
         "humanCostSeconds": 0,
-        "humanCostDisplayUnit": ""
+        "humanCostDisplayUnit": "",
+        "parameters": {
+          "definitionSchema": {
+            "type": "object",
+            "required": [],
+            "properties": {
+              "Team Name": {
+                "type": "string",
+                "description": "The Microsoft Teams team name where the workflow will be triggered and respond"
+              },
+              "Channel Name": {
+                "type": "string",
+                "description": "The Microsoft Teams channel name where the workflow will be triggered and respond"
+              }
+            },
+            "definitions": {}
+          }
+        }
       }
     ],
     "triggers": [
       {
-        "id": "c0146fef-dcfd-4296-8074-0369e2cd1e5b",
+        "id": "31c63df8-ef0f-4a95-b117-9082ba4fe7e1",
         "identifier": "new_message_received",
         "name": "lookup-host Trigger",
         "description": "Trigger this workflow by entering a Teams command in the following format:\n\"!lookup-host workstation123\"\nOR\n\"!lookup-host 192.168.1.2\"",
         "input": {
-          "channel_name": "change_me",
+          "channel_name": "{{$workflow.[Channel Name]}}",
           "message_content": "(?i)!lookup-host",
-          "team_name": "change_me"
+          "team_name": "{{$workflow.[Team Name]}}"
         },
         "inputJsonSchema": {
           "properties": {
