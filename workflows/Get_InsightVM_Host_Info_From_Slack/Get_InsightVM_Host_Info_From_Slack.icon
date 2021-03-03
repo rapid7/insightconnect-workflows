@@ -1,14 +1,14 @@
 {
   "kom": {
-    "komandVersion": "1.50.0-0-g9ce07",
+    "komandVersion": "1.78.2-0-g05eb7",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-05-19T16:26:12.350284104Z",
+    "exportedAt": "2021-03-03T16:27:20.094655903Z",
     "workflowVersions": [
       {
         "name": "Lookup Host with InsightVM from Slack",
         "type": "runnable",
         "version": "",
-        "description": "This workflow accepts a Slack command containing a hostname or IP address and returns asset details from InsightVM.\n\nSample Slack Trigger Commands: \nlookup-host workstation123\nlookup-host 192.168.1.2",
+        "description": "# Description\n\nThis workflow provides fast, convenient access to information about a given host from InsightVM by fetching asset details from InsightVM and posting them in a Slack thread. Host info includes hostname, IP address, MAC address, operating system, running services, last assessment date, and vulnerability stats. Lookup can be performed by either hostname or IP address.\n\n# Key Features\n\n* Fetch host information from InsightVM quickly in Slack\n* Determine when the system was last assessed for vulnerabilities\n* Positively identify a system by looking up its IP or hostname\n* Get an overview of vulnerabilities by criticality\n* View running services\n\n# Requirements\n\n* InsightVM Console URL and account credentials\n* InsightConnect License\n* [Slack](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops)\n\n# Documentation\n\n## Setup\n\nImport the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.\n\nAfter import, activate the workflow in order to trigger it.\n\n## Usage\n\n*This workflow will trigger in any direct messages to your Chatbot **or** any message in a channel directed @ your Chatbot. Note the Chatbot must be in the channel in order to trigger the workflow this way.*\n\nTo run the workflow, send a direct message to your InsightConnect Slack Chatbot or @ your Chatbot in a public channel starting with the command `lookup-host`.\n\nFor example, in a direct message to your Chatbot:\n* `lookup-host hostname123`\n* `lookup-host 10.1.2.34`\n\nOr in a channel including your Chatbot:\n* `@Rapid7 InsightConnect lookup-host hostname123`\n* `@Rapid7 InsightConnect lookup-host 10.1.2.34`\n\nThe workflow will post matching host details in a thread. If multiple hosts meet the search criteria, the details of each will posted in separate messages in the same thread.\n\n## Technical Details\n\nPlugins utilized by workflow:\n\n|Plugin|Version|Count|\n|----|----|--------|\n|Rapid7 InsightVM|4.0.0|1|\n\n## Troubleshooting\n\n_There is no troubleshooting information at this time_\n\n# Version History\n\n* 1.0.1 - Updated workflow to include last assessment date, updated trigger syntax, updated documentation\n* 1.0.0 - Initial workflow\n\n# Links\n\n## References\n\n* [Rapid7 InsightVM](https://www.rapid7.com/products/insightvm)\n* [Slack](https://slack.com)\n",
         "graph": {
           "edges": {
             "27b13b43-f2b5-40b1-811a-317ecf1321e6": {
@@ -41,7 +41,7 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "8b5f067d-03aa-4d9e-a06b-5ad7dda77b99",
-              "toNodeId": "61855db7-9d9e-46ab-8176-6e18cd3d8299"
+              "toNodeId": "aa8aef01-53a9-436c-9bca-d6a25121c028"
             },
             "79c7a1d6-04a6-4469-80b8-9ca0482ee533": {
               "id": "79c7a1d6-04a6-4469-80b8-9ca0482ee533",
@@ -66,14 +66,6 @@
               "parentNodeId": "",
               "fromNodeId": "931acedc-cff6-4f18-b348-3ff465c997c1",
               "toNodeId": "083c5e17-52fc-49f3-a5e4-a8288f944434"
-            },
-            "c148234f-e796-469d-b16d-52efdf2bfe76": {
-              "id": "c148234f-e796-469d-b16d-52efdf2bfe76",
-              "name": "",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "61855db7-9d9e-46ab-8176-6e18cd3d8299",
-              "toNodeId": "aa8aef01-53a9-436c-9bca-d6a25121c028"
             },
             "c20b633e-f9ed-4a8b-9f11-83e37e42364c": {
               "id": "c20b633e-f9ed-4a8b-9f11-83e37e42364c",
@@ -113,10 +105,6 @@
               "id": "1a20436a-d71c-4732-8b36-0dc6ad7012b4",
               "parentNodeId": ""
             },
-            "61855db7-9d9e-46ab-8176-6e18cd3d8299": {
-              "id": "61855db7-9d9e-46ab-8176-6e18cd3d8299",
-              "parentNodeId": ""
-            },
             "8b5f067d-03aa-4d9e-a06b-5ad7dda77b99": {
               "id": "8b5f067d-03aa-4d9e-a06b-5ad7dda77b99",
               "parentNodeId": ""
@@ -149,7 +137,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "No results matching `{{[61855db7-9d9e-46ab-8176-6e18cd3d8299].[argument]}}` were found in Rapid7's Vulnerability Database.\nhttps://media.giphy.com/media/xTiTnm8AGoS75Cvyko/giphy.gif",
+                "message": "No results matching `{{[8b5f067d-03aa-4d9e-a06b-5ad7dda77b99].[message].[words].[1]}}` were found in Rapid7's Vulnerability Database.\nhttps://media.giphy.com/media/xTiTnm8AGoS75Cvyko/giphy.gif",
                 "recipient": "{{[8b5f067d-03aa-4d9e-a06b-5ad7dda77b99].[message].[channel_id]}}",
                 "thread_ts": "{{[8b5f067d-03aa-4d9e-a06b-5ad7dda77b99].[message].[ts]}}"
               }
@@ -243,7 +231,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "# Trigger\n_{{[8b5f067d-03aa-4d9e-a06b-5ad7dda77b99].[message].[user]}}_ started Get InsightVM Host Info workflow with the search term _{{[61855db7-9d9e-46ab-8176-6e18cd3d8299].[argument]}}_ in the _{{[8b5f067d-03aa-4d9e-a06b-5ad7dda77b99].[message].[channel]}}_ channel at _{{[8b5f067d-03aa-4d9e-a06b-5ad7dda77b99].[timestamp]}}_.\n\n# Search Results\n_{{[61855db7-9d9e-46ab-8176-6e18cd3d8299].[argument]}}_ yielded the following search results in InsightVM:\n{{# each [d79b7dd3-bc74-4649-8e24-67680740b43e].[assets]}}\n{{this.[hostName]}}\n{{/each}}\n\n# Outcome\nPosted asset details to the _{{[8b5f067d-03aa-4d9e-a06b-5ad7dda77b99].[message].[channel]}}_ channel in Slack."
+                "content": "# Trigger\n_{{[8b5f067d-03aa-4d9e-a06b-5ad7dda77b99].[message].[user]}}_ started Get InsightVM Host Info workflow with the search term _{{[8b5f067d-03aa-4d9e-a06b-5ad7dda77b99].[message].[words].[1]}}_ in the _{{[8b5f067d-03aa-4d9e-a06b-5ad7dda77b99].[message].[channel]}}_ channel at _{{[8b5f067d-03aa-4d9e-a06b-5ad7dda77b99].[timestamp]}}_.\n\n# Search Results\n_{{[8b5f067d-03aa-4d9e-a06b-5ad7dda77b99].[message].[words].[1]}}_ yielded the following search results in InsightVM:\n{{# each [d79b7dd3-bc74-4649-8e24-67680740b43e].[assets]}}\n{{this.[hostName]}}\n{{/each}}\n\n# Outcome\nPosted asset details to the _{{[8b5f067d-03aa-4d9e-a06b-5ad7dda77b99].[message].[channel]}}_ channel in Slack."
               },
               "type": "markdown"
             },
@@ -251,37 +239,6 @@
             "defaultOutputJSONSchema": null,
             "outputJSONSchema": null,
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
-            "connectionType": "NONE"
-          },
-          "61855db7-9d9e-46ab-8176-6e18cd3d8299": {
-            "nodeId": "61855db7-9d9e-46ab-8176-6e18cd3d8299",
-            "name": "Extract Argument",
-            "type": "pattern_match",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "parameters": {
-              "captureAll": false,
-              "expressionText": "lookup-host\\s+{{argument:/\\S+/}}",
-              "expressions": [
-                {
-                  "type": "text",
-                  "value": "lookup-host\\s+"
-                },
-                {
-                  "type": "variable",
-                  "value": {
-                    "ident": "argument",
-                    "regex": "\\S+"
-                  }
-                }
-              ],
-              "ignoreCase": true,
-              "input": "{{[8b5f067d-03aa-4d9e-a06b-5ad7dda77b99].[message].[text]}}"
-            },
-            "defaultInputJSONSchema": null,
-            "defaultOutputJSONSchema": null,
-            "outputJSONSchema": null,
-            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/pattern-match.svg",
             "connectionType": "NONE"
           },
           "8b5f067d-03aa-4d9e-a06b-5ad7dda77b99": {
@@ -298,7 +255,7 @@
                 "type": "any"
               }
             },
-            "triggerId": "5b295edc-7f5a-4880-a5a6-5f7f36863fd2",
+            "triggerId": "7b867f35-d4fd-4da9-8e8c-91207e683b10",
             "defaultInputJSONSchema": {
               "properties": {
                 "matchChannel": {
@@ -334,6 +291,126 @@
             },
             "defaultOutputJSONSchema": {
               "definitions": {
+                "hashes": {
+                  "properties": {
+                    "md5_hashes": {
+                      "description": "MD5 hashes found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 1,
+                      "title": "MD5 Hashes",
+                      "type": "array"
+                    },
+                    "sha1_hashes": {
+                      "description": "SHA1 hashes found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "SHA1 Hashes",
+                      "type": "array"
+                    },
+                    "sha256_hashes": {
+                      "description": "SHA256 hashes found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 3,
+                      "title": "SHA256 Hashes",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Hashes",
+                  "type": "object"
+                },
+                "indicators": {
+                  "properties": {
+                    "domains": {
+                      "description": "Domains found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 1,
+                      "title": "Domains",
+                      "type": "array"
+                    },
+                    "email_addresses": {
+                      "description": "Email addresses found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 4,
+                      "title": "Email Addresses",
+                      "type": "array"
+                    },
+                    "hashes": {
+                      "$ref": "#/definitions/hashes",
+                      "description": "Hashes found within the message",
+                      "order": 5,
+                      "title": "Hashes"
+                    },
+                    "ip_addresses": {
+                      "$ref": "#/definitions/ip_addresses",
+                      "description": "IP addresses found within the message",
+                      "order": 7,
+                      "title": "IP Addresses"
+                    },
+                    "mac_addresses": {
+                      "description": "MAC addresses found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 6,
+                      "title": "MAC Addresses",
+                      "type": "array"
+                    },
+                    "parent_domains": {
+                      "description": "Parent domains found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "Parent Domains",
+                      "type": "array"
+                    },
+                    "urls": {
+                      "description": "URLs found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 3,
+                      "title": "URLs",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Indicators",
+                  "type": "object"
+                },
+                "ip_addresses": {
+                  "properties": {
+                    "ipv4_addresses": {
+                      "description": "IPv4 addresses found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 1,
+                      "title": "IPv4 Addresses",
+                      "type": "array"
+                    },
+                    "ipv6_addresses": {
+                      "description": "IPv6 addresses found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "IPv6 Addresses",
+                      "type": "array"
+                    }
+                  },
+                  "title": "IP Addresses",
+                  "type": "object"
+                },
                 "message": {
                   "properties": {
                     "channel": {
@@ -347,6 +424,18 @@
                       "order": 4,
                       "title": "Channel ID",
                       "type": "string"
+                    },
+                    "first_word": {
+                      "description": "First word of the message, for example a chat command (ignoring mentions)",
+                      "order": 5,
+                      "title": "First Word",
+                      "type": "string"
+                    },
+                    "indicators": {
+                      "$ref": "#/definitions/indicators",
+                      "description": "Potential threat indicators found within the message",
+                      "order": 7,
+                      "title": "Indicators"
                     },
                     "text": {
                       "description": "Text",
@@ -371,6 +460,15 @@
                       "order": 2,
                       "title": "User ID",
                       "type": "string"
+                    },
+                    "words": {
+                      "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 6,
+                      "title": "Words",
+                      "type": "array"
                     }
                   },
                   "title": "Message",
@@ -451,7 +549,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "_Searching for `{{[61855db7-9d9e-46ab-8176-6e18cd3d8299].[argument]}}`..._",
+                "message": "_Searching for `{{[8b5f067d-03aa-4d9e-a06b-5ad7dda77b99].[message].[words].[1]}}`..._",
                 "recipient": "{{[8b5f067d-03aa-4d9e-a06b-5ad7dda77b99].[message].[channel_id]}}",
                 "thread_ts": "{{[8b5f067d-03aa-4d9e-a06b-5ad7dda77b99].[message].[ts]}}"
               }
@@ -604,6 +702,7 @@
             "identifier": "asset_search",
             "continueOnFailure": false,
             "isDisabled": false,
+            "isCloud": false,
             "parameters": {
               "input": {
                 "searchCriteria": {
@@ -611,12 +710,12 @@
                     {
                       "field": "host-name",
                       "operator": "contains",
-                      "value": "{{[61855db7-9d9e-46ab-8176-6e18cd3d8299].[argument]}}"
+                      "value": "{{[8b5f067d-03aa-4d9e-a06b-5ad7dda77b99].[message].[words].[1]}}"
                     },
                     {
                       "field": "ip-address",
                       "operator": "is-like",
-                      "value": "{{[61855db7-9d9e-46ab-8176-6e18cd3d8299].[argument]}}"
+                      "value": "{{[8b5f067d-03aa-4d9e-a06b-5ad7dda77b99].[message].[words].[1]}}"
                     }
                   ],
                   "match": "any"
@@ -1519,12 +1618,15 @@
         },
         "tags": null,
         "humanCostSeconds": 0,
-        "humanCostDisplayUnit": ""
+        "humanCostDisplayUnit": "",
+        "parameters": {
+          "definitionSchema": null
+        }
       }
     ],
     "triggers": [
       {
-        "id": "5b295edc-7f5a-4880-a5a6-5f7f36863fd2",
+        "id": "7b867f35-d4fd-4da9-8e8c-91207e683b10",
         "name": "lookup-host Trigger",
         "description": "Trigger this workflow by entering a Slack command in the following format:\n\"@Rapid7 InsightConnect lookup-host workstation123\"\nOR\n\"@Rapid7 InsightConnect lookup-host 192.168.1.2\"",
         "input": {
@@ -1567,6 +1669,126 @@
         },
         "outputJsonSchema": {
           "definitions": {
+            "hashes": {
+              "properties": {
+                "md5_hashes": {
+                  "description": "MD5 hashes found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "MD5 Hashes",
+                  "type": "array"
+                },
+                "sha1_hashes": {
+                  "description": "SHA1 hashes found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "SHA1 Hashes",
+                  "type": "array"
+                },
+                "sha256_hashes": {
+                  "description": "SHA256 hashes found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 3,
+                  "title": "SHA256 Hashes",
+                  "type": "array"
+                }
+              },
+              "title": "Hashes",
+              "type": "object"
+            },
+            "indicators": {
+              "properties": {
+                "domains": {
+                  "description": "Domains found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "Domains",
+                  "type": "array"
+                },
+                "email_addresses": {
+                  "description": "Email addresses found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 4,
+                  "title": "Email Addresses",
+                  "type": "array"
+                },
+                "hashes": {
+                  "$ref": "#/definitions/hashes",
+                  "description": "Hashes found within the message",
+                  "order": 5,
+                  "title": "Hashes"
+                },
+                "ip_addresses": {
+                  "$ref": "#/definitions/ip_addresses",
+                  "description": "IP addresses found within the message",
+                  "order": 7,
+                  "title": "IP Addresses"
+                },
+                "mac_addresses": {
+                  "description": "MAC addresses found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 6,
+                  "title": "MAC Addresses",
+                  "type": "array"
+                },
+                "parent_domains": {
+                  "description": "Parent domains found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "Parent Domains",
+                  "type": "array"
+                },
+                "urls": {
+                  "description": "URLs found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 3,
+                  "title": "URLs",
+                  "type": "array"
+                }
+              },
+              "title": "Indicators",
+              "type": "object"
+            },
+            "ip_addresses": {
+              "properties": {
+                "ipv4_addresses": {
+                  "description": "IPv4 addresses found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "IPv4 Addresses",
+                  "type": "array"
+                },
+                "ipv6_addresses": {
+                  "description": "IPv6 addresses found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "IPv6 Addresses",
+                  "type": "array"
+                }
+              },
+              "title": "IP Addresses",
+              "type": "object"
+            },
             "message": {
               "properties": {
                 "channel": {
@@ -1580,6 +1802,18 @@
                   "order": 4,
                   "title": "Channel ID",
                   "type": "string"
+                },
+                "first_word": {
+                  "description": "First word of the message, for example a chat command (ignoring mentions)",
+                  "order": 5,
+                  "title": "First Word",
+                  "type": "string"
+                },
+                "indicators": {
+                  "$ref": "#/definitions/indicators",
+                  "description": "Potential threat indicators found within the message",
+                  "order": 7,
+                  "title": "Indicators"
                 },
                 "text": {
                   "description": "Text",
@@ -1604,6 +1838,15 @@
                   "order": 2,
                   "title": "User ID",
                   "type": "string"
+                },
+                "words": {
+                  "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 6,
+                  "title": "Words",
+                  "type": "array"
                 }
               },
               "title": "Message",
