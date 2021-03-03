@@ -54,6 +54,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.2 - Removed ExtractIt plugin to utilize more reliable variable within the Slack trigger action
 * 1.0.1 - Updated workflow to include last assessment date, updated trigger syntax, updated documentation
 * 1.0.0 - Initial workflow
 
