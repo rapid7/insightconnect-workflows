@@ -3,13 +3,13 @@ products: ["insightconnect"]
 name: Find_InsightConnect_Resources_from_Slack
 title: "Find InsightConnect Resources from Slack"
 description: Find InsightConnect resources to support your initial implementation, without ever leaving Slack! Start using this workflow in minutes, without the need for an orchestrator.
-version: 1.0.0
+version: 2.0.0
 vendor: rapid7
 support: rapid7
 status: []
 hub_tags:
   use_cases: []
-  keywords: [chat, slack]
+  keywords: [chat, slack, parameters]
   features: []
 resources:
   source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/find_insightconnect_resources_from_slack
