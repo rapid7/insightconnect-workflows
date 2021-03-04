@@ -18,7 +18,18 @@ This workflow is designed to provide two benefits; first and foremost, it will a
 
 ## Setup
 
-Follow the [Configure Slack for ChatOps](https://docs.rapid7.com/insightconnect/configure-slack-for-chatops) instructions to get the InsightConnect Slack app added to your organization's Slack instance. Then, import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Select your Slack workspace, and optionally rename the workflow. Select the _Activate workflow upon import_ box, and finish the import.
+Follow the [Configure Slack for ChatOps](https://docs.rapid7.com/insightconnect/configure-slack-for-chatops) instructions to get the InsightConnect Slack app added to your organization's Slack instance. Then, import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect.
+
+This workflow leverages insightConnect's Parameters feature. This feature allows variables used multiple times throughout a workflow to be entered once and then referenced throughout the workflow. 
+
+There is one parameter you will need to configure in order to complete setup of your workflow:
+
+* `Slack Channel`: The Slack channel name in your environment where the workflow should be triggered and respond
+
+To begin, select "Parameters" either from the Workflow Control Panel or from the Builder to begin configuration.
+
+After configuring the parameters, activate the workflow in order to trigger it.
+
 
 ## Usage
 
@@ -48,6 +59,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 2.0.0 - Leverage Workflow Parameters
 * 1.0.0 - Initial workflow
 
 # Links
