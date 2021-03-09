@@ -4,7 +4,7 @@ Quickly look up inactive assets in [Rapid7 InsightVM](https://www.rapid7.com/pro
 
 # Key Features
 
-* Look up inactive assets in InsightVM using a Slack command
+* Look up inactive assets in InsightVM using a Slack command 
 
 # Requirements
 
