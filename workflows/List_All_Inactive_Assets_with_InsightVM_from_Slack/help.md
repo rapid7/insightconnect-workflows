@@ -17,11 +17,15 @@ Quickly look up inactive assets in [Rapid7 InsightVM](https://www.rapid7.com/pro
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-Once the workflow has been imported,
+This workflow leverages insightConnect's Parameters feature. This feature allows variables used multiple times throughout a workflow to be entered once and then referenced throughout the workflow. 
 
-Update the first step with the channel name to suit your Slack environment by editing the input with the preset text of `change_me` to match the channel to monitor.
+There is one parameter you will need to configure in order to complete setup of your workflow:
 
-After import, activate the workflow in order to trigger it.
+* `Slack Channel`: The Slack channel name in your environment where the workflow should be triggered and respond
+
+To begin, select "Parameters" either from the Workflow Control Panel or from the Builder to begin configuration.
+
+After configuring the parameters, activate the workflow in order to trigger it.
 
 ## Usage
 
@@ -40,7 +44,7 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Rapid7 InsightVM|4.2.1|1|
+|Rapid7 InsightVM|4.8.1|2|
 
 ## Troubleshooting
 
@@ -49,6 +53,7 @@ _There is no troubleshooting information at this time_
 # Version History
 
 * 1.0.0 - Initial workflow
+* 2.0.0 - Leverage Parameters Feature | Update InsightVM Plugin
 
 # Links
 
