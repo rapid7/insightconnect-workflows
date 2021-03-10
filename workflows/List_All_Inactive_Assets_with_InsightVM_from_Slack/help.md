@@ -52,8 +52,8 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
-* 1.0.0 - Initial workflow
 * 2.0.0 - Leverage Parameters Feature | Update InsightVM Plugin
+* 1.0.0 - Initial workflow
 
 # Links
 
