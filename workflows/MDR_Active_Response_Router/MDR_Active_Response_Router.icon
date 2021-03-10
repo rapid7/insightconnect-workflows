@@ -984,7 +984,7 @@
               "input": {
                 "body": "{{[129e5475-e9e4-4e50-9f32-a2dcb9ed9210].[payload]}}",
                 "headers": {
-                  "x-api-key": "b591a43c-cc69-4465-855c-03f76f162bb6"
+                  "x-api-key": "change_me"
                 },
                 "route": "7a709395-190f-4497-9054-7cab8d41b468/events/execute"
               }
@@ -2294,7 +2294,7 @@
               "input": {
                 "body": "{{[d402a774-7165-40ad-a8e0-6f91dbdd38d5].[payload]}}",
                 "headers": {
-                  "x-api-key": "b591a43c-cc69-4465-855c-03f76f162bb6"
+                  "x-api-key": "change_me"
                 },
                 "route": "7a709395-190f-4497-9054-7cab8d41b468/events/execute"
               }

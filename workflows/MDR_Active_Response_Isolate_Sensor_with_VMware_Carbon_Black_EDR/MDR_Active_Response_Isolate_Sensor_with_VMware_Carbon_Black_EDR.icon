@@ -115,7 +115,7 @@
               "input": {
                 "body": "{{[919286d7-5a27-42e3-9e7c-d18a486be848].[payload]}}",
                 "headers": {
-                  "x-api-key": "b591a43c-cc69-4465-855c-03f76f162bb6"
+                  "x-api-key": "change_me"
                 },
                 "route": "7a709395-190f-4497-9054-7cab8d41b468/events/execute"
               }
