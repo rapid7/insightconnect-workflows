@@ -1,0 +1,27 @@
+extension: workflow
+products: ["insightconnect"]
+name: Force_Password_Reset_in_Azure_AD_from_Microsoft_Teams
+title: "Reset Password in Azure AD from Microsoft Teams"
+description: Reset a user's Azure AD password with a simple command in Microsoft Teams.
+version: 1.0.6
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [threat_detection_and_response, cloud_security, credential_management, user_management]
+  keywords: [threat_detection_and_response, chat, password, azure, microsoft_teams, work_from_home, phishing]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Force_Password_Reset_in_Azure_AD_from_Microsoft_Teams
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+  - name: workflow1.png
+    title: Workflow View
+  - name: artifact1.png
+    title: Successful Job Artifact
+  - name: artifact2.png
+    title: Failed Job Artifact
+  - name: teams1.png
+    title: Microsoft Teams Successful Message
+  - name: teams2.png
+    title: Microsoft Teams Failed Message

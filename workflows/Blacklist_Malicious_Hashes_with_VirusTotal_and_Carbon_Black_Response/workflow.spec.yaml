@@ -1,0 +1,23 @@
+extension: workflow
+products: ["insightconnect", "insightidr"]
+name: Blacklist_Malicious_Hashes_with_VirusTotal_and_Carbon_Black_Response
+title: "Blacklist Malicious Hashes with VirusTotal and VMware Carbon Black EDR"
+description: "This workflow automates the process of looking up an associated file hash in VirusTotal and VMware Carbon Black EDR from an InsightIDR alert."
+version: 1.0.2
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [threat_detection_and_response]
+  keywords: [enrichment, hash, edr, containment]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Blacklist_Malicious_Hashes_with_VirusTotal_and_Carbon_Black_Response
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+  - name: Blacklist_Malicious_Hashes_with_VirusTotal_and_Carbon_Black_Response_JobArtifactSuccess.png
+    title: Artifact
+  - name: Blacklist_Malicious_Hashes_with_VirusTotal_and_Carbon_Black_Response_JobDetailsDecisions.png
+    title: Decision Output
+  - name: Blacklist_Malicious_Hashes_with_VirusTotal_and_Carbon_Black_Response_JobDetailsSuccess.png
+    title: Job Details

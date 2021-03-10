@@ -1,0 +1,23 @@
+extension: workflow
+products: ["insightconnect"]
+name: Delete_Emails_from_O365_With_Microsoft_Teams
+title: "Find and Delete Emails in Office 365 from Microsoft Teams"
+description: "Use a Microsoft Teams command to find and optionally delete emails matching the given search criteria."
+version: 1.1.0
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [threat_detection_and_response]
+  keywords: [phishing, email, exchange, teams, microsoft, work_from_home, microsoft_teams, office365, phishing]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Delete_Emails_from_O365_With_Microsoft_Teams
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+  - name: workflow1.png
+    title: Workflow 1
+  - name: workflow2.png
+    title: Workflow 2
+  - name: teams_flow_1.png
+    title: Teams Flow 1

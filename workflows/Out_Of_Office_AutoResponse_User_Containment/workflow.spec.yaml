@@ -1,0 +1,29 @@
+extension: workflow
+products: ["insightconnect", "insightidr"]
+name: Out_Of_Office_AutoResponse_User_Containment
+title: "Out of Office AutoResponse User Containment"
+description: This workflow responds to any user event from InsightIDR and determines if the event occurred during or after office hours.
+version: 1.0.1
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [threat_detection_and_response, user_management]
+  keywords: [slack, chat, chatops]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Out_Of_Office_AutoResponse_User_Containment
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+  - name: Out_Of_Office_User_Containment_Workflow.png
+    title: Workflow
+  - name: Out_Of_Office_User_Containment_Slack_Waiting.png
+    title: Slack Response
+  - name: Out_Of_Office_User_Containment_JobDetails_Success.png
+    title: Job Details 1
+  - name: Out_Of_Office_User_Containment_JobDetails_Waiting.png
+    title: Job Details 2
+  - name: Out_Of_Office_User_Containment_Job_Artifact.png
+    title: Artifact
+  - name: Out_Of_Office_User_Containment_Slack_Feedback.png
+    title: Slack

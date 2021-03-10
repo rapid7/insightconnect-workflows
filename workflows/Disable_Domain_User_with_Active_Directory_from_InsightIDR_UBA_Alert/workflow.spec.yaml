@@ -1,0 +1,27 @@
+extension: workflow
+products: ["insightconnect", "InsightIDR"]
+name: Disable_Domain_User_with_Active_Directory_from_InsightIDR_UBA_Alert
+title: "Disable Domain User with Active Directory from InsightIDR UBA Alert"
+description: Disable a Domain User with Active Directory from an InsightIDR UBA Alert.
+version: 1.0.1
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [threat_detection_and_response]
+  keywords: [uba alert, uba, active directory, insightidr, siem, ldap, alert]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Disable_Domain_User_with_Active_Directory_from_InsightIDR_UBA_Alert
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+  - name: workflow1.png
+    title: Workflow View Part 1
+  - name: workflow2.png
+    title: Workflow View Part 2
+  - name: artifact1.png
+    title: Review Artifact
+  - name: artifact2.png
+    title: Disable Actifact
+  - name: decision1.png
+    title: Decision Step

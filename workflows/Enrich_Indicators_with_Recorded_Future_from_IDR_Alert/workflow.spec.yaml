@@ -1,0 +1,35 @@
+extension: workflow
+products: [insightconnect, insightidr]
+name: Enrich_Indicators_with_Recorded_Future_from_IDR_Alert
+title: Enrich Indicators with Recorded Future from IDR Alert
+description: "This workflow enriches an IDR alert by performing a lookup on all domains, hashes, URLs and IPs in the investigation with Recorded Future."
+version: 1.0.0
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [threat_detection_and_response]
+  keywords: [enrichment, recorded future, domain, hash, url, ip]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Enrich_Indicators_with_Recorded_Future_from_IDR_Alert
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+  - name: results1.png
+    title: Recorded Future Domain Lookup Output
+  - name: results2.png
+    title: Recorded Future URL Lookup Output
+  - name: results3.png
+    title: Recorded Future Hash Lookup Output
+  - name: workflow1.png
+    title: Workflow View Part One
+  - name: workflow2.png
+    title: Workflow View Part Two
+  - name: workflow3.png
+    title: Workflow View Part Three
+  - name: workflow4.png
+    title: Workflow View Part Four
+  - name: workflow5.png
+    title: Workflow View Part Five
+  - name: workflow6.png
+    title: Workflow View Part Six

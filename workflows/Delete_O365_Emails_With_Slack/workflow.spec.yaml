@@ -1,0 +1,25 @@
+extension: workflow
+products: ["insightconnect"]
+name: Delete_O365_Emails_With_Slack
+title: "Find and Delete Emails in Office 365 from Slack"
+description: "Use a Slack command to find and optionally delete emails matching the given search criteria."
+version: 1.0.6
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [threat_detection_and_response]
+  keywords: [phishing, email, office365, slack, work_from_home, phishing, chat]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Delete_O365_Emails_With_Slack
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+  - name: workflow1.png
+    title: Workflow Part 1
+  - name: workflow2.png
+    title: Workflow Part 2
+  - name: slack_flow_1.png
+    title: Slack Message Flow
+  - name: artifacts1.png
+    title: Artifacts

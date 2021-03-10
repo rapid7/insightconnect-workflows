@@ -1,0 +1,35 @@
+extension: workflow
+products: ["insightconnect"]
+name: Office_365_Analysis_with_Virus_Total
+title: "Office 365 Enrichment with Virus Total"
+description: "This workflow is designed to automatically analyze incoming emails to determine if they are malicious. This workflow assumes a user is using their report phishing button to send an email to an administrative account with the suspicious email attached. The workflow will then analyze any URLs or files in the attached email to find malicious links. If any malicious indicators are found the email will be remediated across the organization."
+version: 1.0.1
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [threat_detection_and_response]
+  keywords: [phishing, email, office365]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Office_365_Analysis_with_Virus_Total
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+  - name: artifacts1.png
+    title: Artifact Example 1
+  - name: artifacts2.png
+    title: Artifact Example 2
+  - name: artifacts3.png
+    title: Artifact Example 3
+  - name: workflow1.png
+    title: Workflow View 1
+  - name: workflow2.png
+    title: Workflow View 2
+  - name: workflow3.png
+    title: Workflow View 3
+  - name: file_analysis_loop.png
+    title: Workflow View 4
+  - name: url_analysis_inner_loop.png
+    title: Workflow View 5
+  - name: url_analysis_outter_loop.png
+    title: Workflow View 6

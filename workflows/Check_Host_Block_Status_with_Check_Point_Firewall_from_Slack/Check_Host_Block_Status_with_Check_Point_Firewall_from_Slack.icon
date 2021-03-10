@@ -1,0 +1,790 @@
+{
+  "kom": {
+    "komandVersion": "1.57.5-0-g8957c",
+    "komFileVersion": "2.0.0",
+    "exportedAt": "2020-07-28T22:20:42.239473662Z",
+    "workflowVersions": [
+      {
+        "name": "Check Host Block Status with Check Point Firewall from Slack",
+        "type": "runnable",
+        "version": "",
+        "description": "",
+        "graph": {
+          "edges": {
+            "09a27550-6a65-4cad-93f5-ebe35f54f46f": {
+              "id": "09a27550-6a65-4cad-93f5-ebe35f54f46f",
+              "name": "IP is in Address Group",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "f96f5847-f0f7-490c-8554-4e4559c7b243",
+              "toNodeId": "22b0b82b-5215-4760-9539-7eed95b5f59d"
+            },
+            "1339574c-f312-4483-94ed-78fc6d84dfde": {
+              "id": "1339574c-f312-4483-94ed-78fc6d84dfde",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "7e1ed5e8-e5be-4cac-aa7e-7ba594f2a4d6",
+              "toNodeId": "58ef804c-7f4b-4787-be69-39eed3e92016"
+            },
+            "154e33c8-0e2e-48b2-bce4-d774a630b374": {
+              "id": "154e33c8-0e2e-48b2-bce4-d774a630b374",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "fad41bc0-b7b7-4419-8263-bdcc64d1a909",
+              "toNodeId": ""
+            },
+            "28d6bf4a-d251-4e78-b2fe-77f10df99e0b": {
+              "id": "28d6bf4a-d251-4e78-b2fe-77f10df99e0b",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "3afc85cf-1e97-4afb-9e93-ca9fc617e62f",
+              "toNodeId": "f96f5847-f0f7-490c-8554-4e4559c7b243"
+            },
+            "5d36bb72-6ed4-4dfc-a291-45eed5b70c79": {
+              "id": "5d36bb72-6ed4-4dfc-a291-45eed5b70c79",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "eb45a27e-1a93-4580-b5dc-f48c252db9f3",
+              "toNodeId": "7e1ed5e8-e5be-4cac-aa7e-7ba594f2a4d6"
+            },
+            "5f1ccc19-18d6-4bfb-bca7-73655f23387c": {
+              "id": "5f1ccc19-18d6-4bfb-bca7-73655f23387c",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "a3d5b7fb-2a0d-419e-bb41-461213fd5df1",
+              "toNodeId": ""
+            },
+            "79494a02-4a9b-4469-b8aa-bf946fd90aea": {
+              "id": "79494a02-4a9b-4469-b8aa-bf946fd90aea",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "60772325-689a-485b-b66b-e6898e071d8a",
+              "toNodeId": "a3d5b7fb-2a0d-419e-bb41-461213fd5df1"
+            },
+            "8cbd05b6-170e-43fd-bd22-5205c2140957": {
+              "id": "8cbd05b6-170e-43fd-bd22-5205c2140957",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "58ef804c-7f4b-4787-be69-39eed3e92016",
+              "toNodeId": "3afc85cf-1e97-4afb-9e93-ca9fc617e62f"
+            },
+            "9eeced1a-b1ac-46f2-9e61-a5babdbfad0e": {
+              "id": "9eeced1a-b1ac-46f2-9e61-a5babdbfad0e",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "22b0b82b-5215-4760-9539-7eed95b5f59d",
+              "toNodeId": "fad41bc0-b7b7-4419-8263-bdcc64d1a909"
+            },
+            "f601f6d0-6833-4114-9908-f5182bb828e2": {
+              "id": "f601f6d0-6833-4114-9908-f5182bb828e2",
+              "name": "IP is not in Address Group",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "f96f5847-f0f7-490c-8554-4e4559c7b243",
+              "toNodeId": "60772325-689a-485b-b66b-e6898e071d8a"
+            }
+          },
+          "nodes": {
+            "22b0b82b-5215-4760-9539-7eed95b5f59d": {
+              "id": "22b0b82b-5215-4760-9539-7eed95b5f59d",
+              "parentNodeId": ""
+            },
+            "3afc85cf-1e97-4afb-9e93-ca9fc617e62f": {
+              "id": "3afc85cf-1e97-4afb-9e93-ca9fc617e62f",
+              "parentNodeId": ""
+            },
+            "58ef804c-7f4b-4787-be69-39eed3e92016": {
+              "id": "58ef804c-7f4b-4787-be69-39eed3e92016",
+              "parentNodeId": ""
+            },
+            "60772325-689a-485b-b66b-e6898e071d8a": {
+              "id": "60772325-689a-485b-b66b-e6898e071d8a",
+              "parentNodeId": ""
+            },
+            "7e1ed5e8-e5be-4cac-aa7e-7ba594f2a4d6": {
+              "id": "7e1ed5e8-e5be-4cac-aa7e-7ba594f2a4d6",
+              "parentNodeId": ""
+            },
+            "a3d5b7fb-2a0d-419e-bb41-461213fd5df1": {
+              "id": "a3d5b7fb-2a0d-419e-bb41-461213fd5df1",
+              "parentNodeId": ""
+            },
+            "eb45a27e-1a93-4580-b5dc-f48c252db9f3": {
+              "id": "eb45a27e-1a93-4580-b5dc-f48c252db9f3",
+              "parentNodeId": ""
+            },
+            "f96f5847-f0f7-490c-8554-4e4559c7b243": {
+              "id": "f96f5847-f0f7-490c-8554-4e4559c7b243",
+              "parentNodeId": ""
+            },
+            "fad41bc0-b7b7-4419-8263-bdcc64d1a909": {
+              "id": "fad41bc0-b7b7-4419-8263-bdcc64d1a909",
+              "parentNodeId": ""
+            }
+          }
+        },
+        "steps": {
+          "22b0b82b-5215-4760-9539-7eed95b5f59d": {
+            "nodeId": "22b0b82b-5215-4760-9539-7eed95b5f59d",
+            "name": "IP Blocked ",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "🚫 🚧 The IP {{[58ef804c-7f4b-4787-be69-39eed3e92016].[ip]}} is blocked. 🚧 🚫\n"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "3afc85cf-1e97-4afb-9e93-ca9fc617e62f": {
+            "nodeId": "3afc85cf-1e97-4afb-9e93-ca9fc617e62f",
+            "name": "Check for IP",
+            "type": "action",
+            "plugin": {
+              "name": "Check Point NGFW",
+              "slugVendor": "rapid7",
+              "slugName": "checkpoint_ngfw",
+              "slugVersion": "2.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/checkpoint_ngfw/2.0.1/icon.png"
+            },
+            "identifier": "check_if_address_in_group",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "address": "{{[58ef804c-7f4b-4787-be69-39eed3e92016].[ip]}}",
+                "group": "change_me"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "address": {
+                  "description": "IPv4 or IPv6 address to check in the group",
+                  "order": 2,
+                  "title": "Address",
+                  "type": "string"
+                },
+                "group": {
+                  "description": "Group to check. UID is not supported. Omitting this input will check all groups",
+                  "order": 1,
+                  "title": "Group",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "address"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "address_objects": {
+                  "description": "The names of the address objects that match or contain the address",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "Address Objects",
+                  "type": "array"
+                },
+                "found": {
+                  "description": "Was address found in group",
+                  "order": 1,
+                  "title": "Found",
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "found",
+                "address_objects"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "58ef804c-7f4b-4787-be69-39eed3e92016": {
+            "nodeId": "58ef804c-7f4b-4787-be69-39eed3e92016",
+            "name": "Extract IP",
+            "type": "pattern_match",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "captureAll": false,
+              "expressionText": "block-status {{ip:/.*/}}",
+              "expressions": [
+                {
+                  "type": "text",
+                  "value": "block-status "
+                },
+                {
+                  "type": "variable",
+                  "value": {
+                    "ident": "ip",
+                    "regex": ".*"
+                  }
+                }
+              ],
+              "ignoreCase": true,
+              "input": "{{[eb45a27e-1a93-4580-b5dc-f48c252db9f3].[message].[text]}}"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/pattern-match.svg",
+            "connectionType": "NONE"
+          },
+          "60772325-689a-485b-b66b-e6898e071d8a": {
+            "nodeId": "60772325-689a-485b-b66b-e6898e071d8a",
+            "name": "IP Not Blocked ",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "✅ 🚧 The IP {{[58ef804c-7f4b-4787-be69-39eed3e92016].[ip]}} is not blocked. 🚧 ✅"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          },
+          "7e1ed5e8-e5be-4cac-aa7e-7ba594f2a4d6": {
+            "nodeId": "7e1ed5e8-e5be-4cac-aa7e-7ba594f2a4d6",
+            "name": "Post Workflow Running",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": "Request received! Running Check Point workflow...",
+                "recipient": "{{[eb45a27e-1a93-4580-b5dc-f48c252db9f3].[message].[channel]}}",
+                "thread_ts": "{{[eb45a27e-1a93-4580-b5dc-f48c252db9f3].[timestamp]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 4,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 3,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                },
+                "thread_ts": {
+                  "description": "Select timestamp output variable from parent message step",
+                  "order": 2,
+                  "title": "To post in a thread, select parent message timestamp",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
+          },
+          "a3d5b7fb-2a0d-419e-bb41-461213fd5df1": {
+            "nodeId": "a3d5b7fb-2a0d-419e-bb41-461213fd5df1",
+            "name": "IP Not Blocked Message",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": "{{[60772325-689a-485b-b66b-e6898e071d8a].[content]}}",
+                "recipient": "{{[eb45a27e-1a93-4580-b5dc-f48c252db9f3].[message].[channel]}}",
+                "thread_ts": "{{[eb45a27e-1a93-4580-b5dc-f48c252db9f3].[timestamp]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 4,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 3,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                },
+                "thread_ts": {
+                  "description": "Select timestamp output variable from parent message step",
+                  "order": 2,
+                  "title": "To post in a thread, select parent message timestamp",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
+          },
+          "eb45a27e-1a93-4580-b5dc-f48c252db9f3": {
+            "nodeId": "eb45a27e-1a93-4580-b5dc-f48c252db9f3",
+            "name": "Check for IP Message",
+            "type": "trigger",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "matchChannel": "change_me",
+                "matchText": "block-status",
+                "type": "any"
+              }
+            },
+            "triggerId": "90bb6fba-75d1-4284-ad97-68331e220abf",
+            "defaultInputJSONSchema": {
+              "properties": {
+                "matchChannel": {
+                  "description": "Regex to match for channel name",
+                  "order": 1,
+                  "title": "Match Channel",
+                  "type": "string"
+                },
+                "matchText": {
+                  "description": "Regex to match for Slack message content",
+                  "order": 2,
+                  "title": "Match Text",
+                  "type": "string"
+                },
+                "type": {
+                  "default": "any",
+                  "description": "Desired Slack channel type: direct message to Slack app, group chats, or all channels",
+                  "enum": [
+                    "any",
+                    "direct",
+                    "group"
+                  ],
+                  "order": 3,
+                  "title": "Type",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "type"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "message": {
+                  "properties": {
+                    "channel": {
+                      "description": "Channel name",
+                      "order": 3,
+                      "title": "Channel",
+                      "type": "string"
+                    },
+                    "channel_id": {
+                      "description": "Slack channel ID",
+                      "order": 4,
+                      "title": "Channel ID",
+                      "type": "string"
+                    },
+                    "text": {
+                      "description": "Text",
+                      "order": 5,
+                      "title": "Text",
+                      "type": "string"
+                    },
+                    "ts": {
+                      "description": "Timestamp",
+                      "order": 6,
+                      "title": "Ts",
+                      "type": "string"
+                    },
+                    "user": {
+                      "description": "User name",
+                      "order": 1,
+                      "title": "User",
+                      "type": "string"
+                    },
+                    "user_id": {
+                      "description": "Slack User ID",
+                      "order": 2,
+                      "title": "User ID",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Message",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "display_name": {
+                  "description": "User display name",
+                  "order": 4,
+                  "title": "Display Name",
+                  "type": "string"
+                },
+                "message": {
+                  "$ref": "#/definitions/message",
+                  "description": "Message",
+                  "order": 1,
+                  "title": "Message"
+                },
+                "timestamp": {
+                  "description": "Timestamp",
+                  "order": 3,
+                  "title": "Timestamp",
+                  "type": "string"
+                },
+                "type": {
+                  "description": "Message Type",
+                  "order": 2,
+                  "title": "Type",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/chatops.svg",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "message"
+          },
+          "f96f5847-f0f7-490c-8554-4e4559c7b243": {
+            "nodeId": "f96f5847-f0f7-490c-8554-4e4559c7b243",
+            "name": "IP Found",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "f601f6d0-6833-4114-9908-f5182bb828e2",
+              "stepControlParams": [
+                {
+                  "edgeId": "09a27550-6a65-4cad-93f5-ebe35f54f46f",
+                  "expression": {
+                    "left": {
+                      "name": "3afc85cf-1e97-4afb-9e93-ca9fc617e62f.found",
+                      "type": "variable"
+                    },
+                    "op": "==",
+                    "right": {
+                      "type": "literal",
+                      "value": true
+                    },
+                    "type": "binary"
+                  },
+                  "expressionText": "{{[3afc85cf-1e97-4afb-9e93-ca9fc617e62f].[found]}} == true"
+                },
+                {
+                  "edgeId": "f601f6d0-6833-4114-9908-f5182bb828e2",
+                  "expression": {},
+                  "expressionText": ""
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE"
+          },
+          "fad41bc0-b7b7-4419-8263-bdcc64d1a909": {
+            "nodeId": "fad41bc0-b7b7-4419-8263-bdcc64d1a909",
+            "name": "IP Blocked Message",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": "{{[22b0b82b-5215-4760-9539-7eed95b5f59d].[content]}}",
+                "recipient": "{{[eb45a27e-1a93-4580-b5dc-f48c252db9f3].[message].[channel]}}",
+                "thread_ts": "{{[eb45a27e-1a93-4580-b5dc-f48c252db9f3].[timestamp]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 4,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 3,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                },
+                "thread_ts": {
+                  "description": "Select timestamp output variable from parent message step",
+                  "order": 2,
+                  "title": "To post in a thread, select parent message timestamp",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
+          }
+        },
+        "tags": null,
+        "humanCostSeconds": 0,
+        "humanCostDisplayUnit": ""
+      }
+    ],
+    "triggers": [
+      {
+        "id": "90bb6fba-75d1-4284-ad97-68331e220abf",
+        "name": "Check for IP Message",
+        "description": "",
+        "input": {
+          "matchChannel": "change_me",
+          "matchText": "block-status",
+          "type": "any"
+        },
+        "inputJsonSchema": {
+          "properties": {
+            "matchChannel": {
+              "description": "Regex to match for channel name",
+              "order": 1,
+              "title": "Match Channel",
+              "type": "string"
+            },
+            "matchText": {
+              "description": "Regex to match for Slack message content",
+              "order": 2,
+              "title": "Match Text",
+              "type": "string"
+            },
+            "type": {
+              "default": "any",
+              "description": "Desired Slack channel type: direct message to Slack app, group chats, or all channels",
+              "enum": [
+                "any",
+                "direct",
+                "group"
+              ],
+              "order": 3,
+              "title": "Type",
+              "type": "string"
+            }
+          },
+          "required": [
+            "type"
+          ],
+          "title": "Variables",
+          "type": "object"
+        },
+        "outputJsonSchema": {
+          "definitions": {
+            "message": {
+              "properties": {
+                "channel": {
+                  "description": "Channel name",
+                  "order": 3,
+                  "title": "Channel",
+                  "type": "string"
+                },
+                "channel_id": {
+                  "description": "Slack channel ID",
+                  "order": 4,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "text": {
+                  "description": "Text",
+                  "order": 5,
+                  "title": "Text",
+                  "type": "string"
+                },
+                "ts": {
+                  "description": "Timestamp",
+                  "order": 6,
+                  "title": "Ts",
+                  "type": "string"
+                },
+                "user": {
+                  "description": "User name",
+                  "order": 1,
+                  "title": "User",
+                  "type": "string"
+                },
+                "user_id": {
+                  "description": "Slack User ID",
+                  "order": 2,
+                  "title": "User ID",
+                  "type": "string"
+                }
+              },
+              "title": "Message",
+              "type": "object"
+            }
+          },
+          "properties": {
+            "display_name": {
+              "description": "User display name",
+              "order": 4,
+              "title": "Display Name",
+              "type": "string"
+            },
+            "message": {
+              "$ref": "#/definitions/message",
+              "description": "Message",
+              "order": 1,
+              "title": "Message"
+            },
+            "timestamp": {
+              "description": "Timestamp",
+              "order": 3,
+              "title": "Timestamp",
+              "type": "string"
+            },
+            "type": {
+              "description": "Message Type",
+              "order": 2,
+              "title": "Type",
+              "type": "string"
+            }
+          },
+          "title": "Variables",
+          "type": "object"
+        },
+        "tags": [],
+        "type": "trigger_chatops",
+        "chatOpsAppName": "slack",
+        "chatOpsIdentifier": "message"
+      }
+    ]
+  }
+}

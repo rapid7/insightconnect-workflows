@@ -1,0 +1,29 @@
+extension: workflow
+products: ["insightconnect"]
+name: Block_Host_with_Palo_Alto_Firewall_from_Slack
+title: "Block Host with Palo Alto Firewall from Slack"
+description: "Block and unblock a host with a Palo Alto firewall from Slack."
+version: 1.2.0
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [threat_detection_and_response]
+  keywords:  [ransomware, containment, firewall, block, work_from_home, palo, alto, slack]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Block_Host_with_Palo_Alto_Firewall_from_Slack
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+  - name: workflow.png
+    title: Workflow View
+  - name: workflow_loop.png
+    title: Workflow Loop View
+  - name: block_success.png
+    title: Block Success in Slack
+  - name: unblock_success.png
+    title: Unblock Success in Slack
+  - name: unblock_failure.png
+    title: Unblock Failure in Slack
+  - name: artifact.png
+    title: Block Success Artifact

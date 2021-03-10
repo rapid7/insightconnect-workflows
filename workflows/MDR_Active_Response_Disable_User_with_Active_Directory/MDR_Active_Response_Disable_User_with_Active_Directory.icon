@@ -1,0 +1,1227 @@
+{
+  "kom": {
+    "komandVersion": "1.63.0-0-g466c4",
+    "komFileVersion": "2.0.0",
+    "exportedAt": "2020-09-29T18:57:05.227428838Z",
+    "workflowVersions": [
+      {
+        "name": "MDR Active Response Disable User with Active Directory [Editing Restrictions Apply]",
+        "type": "runnable",
+        "version": "",
+        "description": "",
+        "graph": {
+          "edges": {
+            "1eedb582-28a8-4216-bcca-22d06626cd96": {
+              "id": "1eedb582-28a8-4216-bcca-22d06626cd96",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "7422e55c-efd7-4f39-af32-f5e2896c0042",
+              "toNodeId": "3177f2e3-c3d7-4715-9cca-e91d46bc2ed4"
+            },
+            "57ea12c6-925d-48f8-9fd9-5aecce828e0e": {
+              "id": "57ea12c6-925d-48f8-9fd9-5aecce828e0e",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "843f6b30-c341-4b45-9964-bde7bee23f7c",
+              "toNodeId": "3851bba6-c2d1-4d38-8d28-da3ff68bbcab"
+            },
+            "757959a8-4c35-43ec-bf03-b5222893cef7": {
+              "id": "757959a8-4c35-43ec-bf03-b5222893cef7",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "3177f2e3-c3d7-4715-9cca-e91d46bc2ed4",
+              "toNodeId": "4fee7928-5cca-49b6-9d17-b6bae7125f85"
+            },
+            "90a3d7d6-4d0f-4f69-b1c4-59f4cca1e74c": {
+              "id": "90a3d7d6-4d0f-4f69-b1c4-59f4cca1e74c",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "4fee7928-5cca-49b6-9d17-b6bae7125f85",
+              "toNodeId": "843f6b30-c341-4b45-9964-bde7bee23f7c"
+            },
+            "b72ae278-db86-46fc-814c-0909984efa7a": {
+              "id": "b72ae278-db86-46fc-814c-0909984efa7a",
+              "name": "",
+              "description": "",
+              "parentNodeId": "3177f2e3-c3d7-4715-9cca-e91d46bc2ed4",
+              "fromNodeId": "3177f2e3-c3d7-4715-9cca-e91d46bc2ed4",
+              "toNodeId": "42d1e333-db45-41b6-913a-bf06a6026bb0"
+            },
+            "c91227b3-748e-478f-9fa9-7ece487461d4": {
+              "id": "c91227b3-748e-478f-9fa9-7ece487461d4",
+              "name": "",
+              "description": "",
+              "parentNodeId": "3177f2e3-c3d7-4715-9cca-e91d46bc2ed4",
+              "fromNodeId": "42d1e333-db45-41b6-913a-bf06a6026bb0",
+              "toNodeId": ""
+            },
+            "e323d553-9958-4653-b311-0cf71ce30f72": {
+              "id": "e323d553-9958-4653-b311-0cf71ce30f72",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "3851bba6-c2d1-4d38-8d28-da3ff68bbcab",
+              "toNodeId": ""
+            }
+          },
+          "nodes": {
+            "3177f2e3-c3d7-4715-9cca-e91d46bc2ed4": {
+              "id": "3177f2e3-c3d7-4715-9cca-e91d46bc2ed4",
+              "parentNodeId": ""
+            },
+            "3851bba6-c2d1-4d38-8d28-da3ff68bbcab": {
+              "id": "3851bba6-c2d1-4d38-8d28-da3ff68bbcab",
+              "parentNodeId": ""
+            },
+            "42d1e333-db45-41b6-913a-bf06a6026bb0": {
+              "id": "42d1e333-db45-41b6-913a-bf06a6026bb0",
+              "parentNodeId": "3177f2e3-c3d7-4715-9cca-e91d46bc2ed4"
+            },
+            "4fee7928-5cca-49b6-9d17-b6bae7125f85": {
+              "id": "4fee7928-5cca-49b6-9d17-b6bae7125f85",
+              "parentNodeId": ""
+            },
+            "7422e55c-efd7-4f39-af32-f5e2896c0042": {
+              "id": "7422e55c-efd7-4f39-af32-f5e2896c0042",
+              "parentNodeId": ""
+            },
+            "843f6b30-c341-4b45-9964-bde7bee23f7c": {
+              "id": "843f6b30-c341-4b45-9964-bde7bee23f7c",
+              "parentNodeId": ""
+            }
+          }
+        },
+        "steps": {
+          "3177f2e3-c3d7-4715-9cca-e91d46bc2ed4": {
+            "nodeId": "3177f2e3-c3d7-4715-9cca-e91d46bc2ed4",
+            "name": "Loop Users",
+            "type": "loop",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "customOutput": [
+                {
+                  "input": {
+                    "expression": {
+                      "name": "42d1e333-db45-41b6-913a-bf06a6026bb0.success",
+                      "type": "variable"
+                    },
+                    "expressionText": "{{[42d1e333-db45-41b6-913a-bf06a6026bb0].[success]}}",
+                    "value": "{{[3177f2e3-c3d7-4715-9cca-e91d46bc2ed4].[$item]}}",
+                    "valueType": "string"
+                  },
+                  "name": "Disabled Users",
+                  "outputType": "array"
+                },
+                {
+                  "input": {
+                    "expression": {
+                      "expr": {
+                        "name": "42d1e333-db45-41b6-913a-bf06a6026bb0.success",
+                        "type": "variable"
+                      },
+                      "op": "NOT",
+                      "type": "unary"
+                    },
+                    "expressionText": "not {{[42d1e333-db45-41b6-913a-bf06a6026bb0].[success]}}",
+                    "value": "{{[3177f2e3-c3d7-4715-9cca-e91d46bc2ed4].[$item]}}",
+                    "valueType": "string"
+                  },
+                  "name": "Failed Users",
+                  "outputType": "array"
+                }
+              ],
+              "innerEdgeId": "b72ae278-db86-46fc-814c-0909984efa7a",
+              "nextEdgeId": "757959a8-4c35-43ec-bf03-b5222893cef7",
+              "repeatVariable": "{{[7422e55c-efd7-4f39-af32-f5e2896c0042].[containment_params].[users]}}"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": {
+              "properties": {
+                "Disabled Users": {
+                  "description": "Custom output: \"Disabled Users\"",
+                  "items": {
+                    "type": "string"
+                  },
+                  "title": "Disabled Users",
+                  "type": "array"
+                },
+                "Failed Users": {
+                  "description": "Custom output: \"Failed Users\"",
+                  "items": {
+                    "type": "string"
+                  },
+                  "title": "Failed Users",
+                  "type": "array"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/loop.svg",
+            "connectionType": "NONE"
+          },
+          "3851bba6-c2d1-4d38-8d28-da3ff68bbcab": {
+            "nodeId": "3851bba6-c2d1-4d38-8d28-da3ff68bbcab",
+            "name": "Send Update",
+            "type": "action",
+            "plugin": {
+              "name": "REST",
+              "slugVendor": "rapid7",
+              "slugName": "rest",
+              "slugVersion": "3.0.3",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rest/3.0.3/icon.png"
+            },
+            "identifier": "post",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "body": "{{[843f6b30-c341-4b45-9964-bde7bee23f7c].[payload]}}",
+                "headers": {
+                  "x-api-key": "change_me"
+                },
+                "route": "7a709395-190f-4497-9054-7cab8d41b468/events/execute"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "body": {
+                  "description": "Payload to submit to the server when making the REST call",
+                  "order": 3,
+                  "title": "Body",
+                  "type": "object"
+                },
+                "headers": {
+                  "description": "Headers to use for the request. These will override any default headers",
+                  "order": 2,
+                  "title": "Headers",
+                  "type": "object"
+                },
+                "route": {
+                  "description": "The route to append to the base URL e.g. /org/users",
+                  "order": 1,
+                  "title": "Route",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "route"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "body_object": {
+                  "description": "Response payload from the server as an object",
+                  "order": 1,
+                  "title": "Body Object",
+                  "type": "object"
+                },
+                "body_string": {
+                  "description": "Response payload from the server as a string",
+                  "order": 2,
+                  "title": "Body String",
+                  "type": "string"
+                },
+                "headers": {
+                  "description": "Response headers from the server",
+                  "order": 4,
+                  "title": "Headers",
+                  "type": "object"
+                },
+                "status": {
+                  "description": "Status code of the response from the server",
+                  "order": 3,
+                  "title": "Status",
+                  "type": "integer"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "42d1e333-db45-41b6-913a-bf06a6026bb0": {
+            "nodeId": "42d1e333-db45-41b6-913a-bf06a6026bb0",
+            "name": "Disable User",
+            "type": "action",
+            "plugin": {
+              "name": "Active Directory LDAP",
+              "slugVendor": "rapid7",
+              "slugName": "active_directory_ldap",
+              "slugVersion": "4.0.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/active_directory_ldap/4.0.0/icon.png"
+            },
+            "identifier": "disable_user",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "distinguished_name": "{{[3177f2e3-c3d7-4715-9cca-e91d46bc2ed4].[$item]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "distinguished_name": {
+                  "description": "The distinguished name of the user to disable",
+                  "order": 1,
+                  "title": "Distinguished Name",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "distinguished_name"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "success": {
+                  "description": "Operation status",
+                  "order": 1,
+                  "title": "Success",
+                  "type": "boolean"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
+          "4fee7928-5cca-49b6-9d17-b6bae7125f85": {
+            "nodeId": "4fee7928-5cca-49b6-9d17-b6bae7125f85",
+            "name": "Post Message",
+            "type": "action_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "attachments": [],
+                "message": "The following users were successfully disabled in Active Directory: {{[3177f2e3-c3d7-4715-9cca-e91d46bc2ed4].[Disabled Users]}}\n\nThe following users were unsuccessfully disabled: {{[3177f2e3-c3d7-4715-9cca-e91d46bc2ed4].[Disabled Users]}}\n\nDo you want to undo quarantine?\nSteps to *undo a quarantined asset or user:*\n        \n1. Copy -\n        \n```@Rapid7 InsightConnect enable <distinguishedName>```\n        \n2. Paste the above command into your slack channel to initiate the unquarantine action, replacing <distinguishedName> with a DN for a user listed above.",
+                "recipient": "{{[7422e55c-efd7-4f39-af32-f5e2896c0042].[cust_slack_channel]}}",
+                "thread_ts": "{{[7422e55c-efd7-4f39-af32-f5e2896c0042].[cust_slack_timestamp]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 4,
+                  "title": "Attachments",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 3,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "Channels begin with # (e.g. #channel) and usernames begin with @ (e.g. @username)",
+                  "order": 1,
+                  "title": "Enter #channel or @username",
+                  "type": "string"
+                },
+                "thread_ts": {
+                  "description": "Select timestamp output variable from parent message step",
+                  "order": 2,
+                  "title": "To post in a thread, select parent message timestamp",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_message"
+          },
+          "7422e55c-efd7-4f39-af32-f5e2896c0042": {
+            "nodeId": "7422e55c-efd7-4f39-af32-f5e2896c0042",
+            "name": "New Isolation Event",
+            "type": "trigger",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "triggerId": "f5b45baf-676c-45c8-8367-6432e62408dd",
+            "defaultInputJSONSchema": {
+              "definitions": {
+                "containment_params": {
+                  "properties": {
+                    "assets": {
+                      "items": {
+                        "$ref": "#/definitions/containment_params_assets"
+                      },
+                      "type": "array"
+                    },
+                    "run_containment": {
+                      "type": "string"
+                    },
+                    "users": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array"
+                    }
+                  },
+                  "type": "object"
+                },
+                "containment_params_assets": {
+                  "properties": {
+                    "hostId": {
+                      "type": "string"
+                    },
+                    "invocation_data": {
+                      "$ref": "#/definitions/containment_params_assets_invocation_data"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "platform": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "containment_params_assets_invocation_data": {
+                  "properties": {
+                    "creator": {
+                      "type": "string"
+                    },
+                    "customer_code": {
+                      "type": "string"
+                    },
+                    "investigation_id": {
+                      "type": "string"
+                    },
+                    "jobs": {
+                      "items": {
+                        "$ref": "#/definitions/containment_params_assets_invocation_data_jobs"
+                      },
+                      "type": "array"
+                    },
+                    "source": {
+                      "type": "string"
+                    },
+                    "type": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "containment_params_assets_invocation_data_jobs": {
+                  "properties": {
+                    "idr_properties": {
+                      "$ref": "#/definitions/containment_params_assets_invocation_data_jobs_idr_properties"
+                    },
+                    "module_name": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "version": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "containment_params_assets_invocation_data_jobs_idr_properties": {
+                  "properties": {
+                    "advertisement_time": {
+                      "type": "number"
+                    },
+                    "arguments": {
+                      "type": "object"
+                    },
+                    "asset_groups": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array"
+                    },
+                    "assets": {
+                      "items": {
+                        "$ref": "#/definitions/containment_params_assets_invocation_data_jobs_idr_properties_assets"
+                      },
+                      "type": "array"
+                    },
+                    "investigation_id": {
+                      "type": "string"
+                    },
+                    "job_id": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "containment_params_assets_invocation_data_jobs_idr_properties_assets": {
+                  "properties": {
+                    "assetId": {
+                      "type": "string"
+                    },
+                    "hostId": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "customer": {
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "containment_params": {
+                  "$ref": "#/definitions/containment_params"
+                },
+                "criticality": {
+                  "type": "string"
+                },
+                "cust_slack_channel": {
+                  "type": "string"
+                },
+                "cust_slack_timestamp": {
+                  "type": "string"
+                },
+                "customer": {
+                  "$ref": "#/definitions/customer"
+                },
+                "cutoff": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "evidence": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                },
+                "investigation_id": {
+                  "type": "string"
+                },
+                "remediations": {
+                  "type": "string"
+                },
+                "soc_slack_channel": {
+                  "type": "string"
+                },
+                "soc_slack_timestamp": {
+                  "type": "string"
+                },
+                "tagged": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                },
+                "timestamp": {
+                  "type": "string"
+                },
+                "trigger_user": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "containment_params": {
+                  "properties": {
+                    "assets": {
+                      "items": {
+                        "$ref": "#/definitions/containment_params_assets"
+                      },
+                      "type": "array"
+                    },
+                    "run_containment": {
+                      "type": "string"
+                    },
+                    "users": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array"
+                    }
+                  },
+                  "type": "object"
+                },
+                "containment_params_assets": {
+                  "properties": {
+                    "hostId": {
+                      "type": "string"
+                    },
+                    "invocation_data": {
+                      "$ref": "#/definitions/containment_params_assets_invocation_data"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "platform": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "containment_params_assets_invocation_data": {
+                  "properties": {
+                    "creator": {
+                      "type": "string"
+                    },
+                    "customer_code": {
+                      "type": "string"
+                    },
+                    "investigation_id": {
+                      "type": "string"
+                    },
+                    "jobs": {
+                      "items": {
+                        "$ref": "#/definitions/containment_params_assets_invocation_data_jobs"
+                      },
+                      "type": "array"
+                    },
+                    "source": {
+                      "type": "string"
+                    },
+                    "type": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "containment_params_assets_invocation_data_jobs": {
+                  "properties": {
+                    "idr_properties": {
+                      "$ref": "#/definitions/containment_params_assets_invocation_data_jobs_idr_properties"
+                    },
+                    "module_name": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "version": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "containment_params_assets_invocation_data_jobs_idr_properties": {
+                  "properties": {
+                    "advertisement_time": {
+                      "type": "number"
+                    },
+                    "arguments": {
+                      "type": "object"
+                    },
+                    "asset_groups": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array"
+                    },
+                    "assets": {
+                      "items": {
+                        "$ref": "#/definitions/containment_params_assets_invocation_data_jobs_idr_properties_assets"
+                      },
+                      "type": "array"
+                    },
+                    "investigation_id": {
+                      "type": "string"
+                    },
+                    "job_id": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "containment_params_assets_invocation_data_jobs_idr_properties_assets": {
+                  "properties": {
+                    "assetId": {
+                      "type": "string"
+                    },
+                    "hostId": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "customer": {
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "containment_params": {
+                  "$ref": "#/definitions/containment_params"
+                },
+                "criticality": {
+                  "type": "string"
+                },
+                "cust_slack_channel": {
+                  "type": "string"
+                },
+                "cust_slack_timestamp": {
+                  "type": "string"
+                },
+                "customer": {
+                  "$ref": "#/definitions/customer"
+                },
+                "cutoff": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "evidence": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                },
+                "investigation_id": {
+                  "type": "string"
+                },
+                "remediations": {
+                  "type": "string"
+                },
+                "soc_slack_channel": {
+                  "type": "string"
+                },
+                "soc_slack_timestamp": {
+                  "type": "string"
+                },
+                "tagged": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                },
+                "timestamp": {
+                  "type": "string"
+                },
+                "trigger_user": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/trigger-api.svg",
+            "connectionType": "NONE"
+          },
+          "843f6b30-c341-4b45-9964-bde7bee23f7c": {
+            "nodeId": "843f6b30-c341-4b45-9964-bde7bee23f7c",
+            "name": "Format Json",
+            "type": "action",
+            "plugin": {
+              "name": "Python 3 Script",
+              "slugVendor": "rapid7",
+              "slugName": "python_3_script",
+              "slugVersion": "2.0.2",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/python_3_script/2.0.2/icon.png"
+            },
+            "identifier": "run",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "function": "def run(params={}):\n    \n    return {\"payload\": {\"update\":'''The following users were disabled successfully: {{[3177f2e3-c3d7-4715-9cca-e91d46bc2ed4].[Disabled Users]}}. \\\n    The following users were unsuccessfully disabled: {{[3177f2e3-c3d7-4715-9cca-e91d46bc2ed4].[Failed Users]}}. Please follow up manually!''',\n            \"soc_slack_timestamp\":\"{{[7422e55c-efd7-4f39-af32-f5e2896c0042].[soc_slack_timestamp]}}\",\"soc_slack_channel\":\"{{[7422e55c-efd7-4f39-af32-f5e2896c0042].[soc_slack_channel]}}\"}}",
+                "input": {}
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "function": {
+                  "default": "def run(params={}):\\n    return {}",
+                  "description": "Function definition. Must be named `run`. Accepts the `input` object as params. Returns the dict as output",
+                  "displayType": "python",
+                  "format": "python",
+                  "order": 1,
+                  "title": "Function",
+                  "type": "string"
+                },
+                "input": {
+                  "description": "Input object to be passed as `params={}` to the `run` function",
+                  "order": 2,
+                  "title": "Input",
+                  "type": "object"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "result1": {
+                  "description": "Sample output result1 (delete or edit)",
+                  "order": 1,
+                  "title": "Result1",
+                  "type": "string"
+                },
+                "result2": {
+                  "description": "Sample output result2 (delete or edit)",
+                  "order": 2,
+                  "title": "Result2",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          }
+        },
+        "tags": null,
+        "humanCostSeconds": 0,
+        "humanCostDisplayUnit": ""
+      }
+    ],
+    "triggers": [
+      {
+        "id": "f5b45baf-676c-45c8-8367-6432e62408dd",
+        "name": "New Isolation Event",
+        "description": "",
+        "input": null,
+        "inputJsonSchema": {
+          "definitions": {
+            "containment_params": {
+              "properties": {
+                "assets": {
+                  "items": {
+                    "$ref": "#/definitions/containment_params_assets"
+                  },
+                  "type": "array"
+                },
+                "run_containment": {
+                  "type": "string"
+                },
+                "users": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                }
+              },
+              "type": "object"
+            },
+            "containment_params_assets": {
+              "properties": {
+                "hostId": {
+                  "type": "string"
+                },
+                "invocation_data": {
+                  "$ref": "#/definitions/containment_params_assets_invocation_data"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "platform": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "containment_params_assets_invocation_data": {
+              "properties": {
+                "creator": {
+                  "type": "string"
+                },
+                "customer_code": {
+                  "type": "string"
+                },
+                "investigation_id": {
+                  "type": "string"
+                },
+                "jobs": {
+                  "items": {
+                    "$ref": "#/definitions/containment_params_assets_invocation_data_jobs"
+                  },
+                  "type": "array"
+                },
+                "source": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "containment_params_assets_invocation_data_jobs": {
+              "properties": {
+                "idr_properties": {
+                  "$ref": "#/definitions/containment_params_assets_invocation_data_jobs_idr_properties"
+                },
+                "module_name": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "version": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "containment_params_assets_invocation_data_jobs_idr_properties": {
+              "properties": {
+                "advertisement_time": {
+                  "type": "number"
+                },
+                "arguments": {
+                  "type": "object"
+                },
+                "asset_groups": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                },
+                "assets": {
+                  "items": {
+                    "$ref": "#/definitions/containment_params_assets_invocation_data_jobs_idr_properties_assets"
+                  },
+                  "type": "array"
+                },
+                "investigation_id": {
+                  "type": "string"
+                },
+                "job_id": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "containment_params_assets_invocation_data_jobs_idr_properties_assets": {
+              "properties": {
+                "assetId": {
+                  "type": "string"
+                },
+                "hostId": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "customer": {
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          },
+          "properties": {
+            "containment_params": {
+              "$ref": "#/definitions/containment_params"
+            },
+            "criticality": {
+              "type": "string"
+            },
+            "cust_slack_channel": {
+              "type": "string"
+            },
+            "cust_slack_timestamp": {
+              "type": "string"
+            },
+            "customer": {
+              "$ref": "#/definitions/customer"
+            },
+            "cutoff": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "evidence": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "investigation_id": {
+              "type": "string"
+            },
+            "remediations": {
+              "type": "string"
+            },
+            "soc_slack_channel": {
+              "type": "string"
+            },
+            "soc_slack_timestamp": {
+              "type": "string"
+            },
+            "tagged": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "timestamp": {
+              "type": "string"
+            },
+            "trigger_user": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "outputJsonSchema": {
+          "definitions": {
+            "containment_params": {
+              "properties": {
+                "assets": {
+                  "items": {
+                    "$ref": "#/definitions/containment_params_assets"
+                  },
+                  "type": "array"
+                },
+                "run_containment": {
+                  "type": "string"
+                },
+                "users": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                }
+              },
+              "type": "object"
+            },
+            "containment_params_assets": {
+              "properties": {
+                "hostId": {
+                  "type": "string"
+                },
+                "invocation_data": {
+                  "$ref": "#/definitions/containment_params_assets_invocation_data"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "platform": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "containment_params_assets_invocation_data": {
+              "properties": {
+                "creator": {
+                  "type": "string"
+                },
+                "customer_code": {
+                  "type": "string"
+                },
+                "investigation_id": {
+                  "type": "string"
+                },
+                "jobs": {
+                  "items": {
+                    "$ref": "#/definitions/containment_params_assets_invocation_data_jobs"
+                  },
+                  "type": "array"
+                },
+                "source": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "containment_params_assets_invocation_data_jobs": {
+              "properties": {
+                "idr_properties": {
+                  "$ref": "#/definitions/containment_params_assets_invocation_data_jobs_idr_properties"
+                },
+                "module_name": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "version": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "containment_params_assets_invocation_data_jobs_idr_properties": {
+              "properties": {
+                "advertisement_time": {
+                  "type": "number"
+                },
+                "arguments": {
+                  "type": "object"
+                },
+                "asset_groups": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                },
+                "assets": {
+                  "items": {
+                    "$ref": "#/definitions/containment_params_assets_invocation_data_jobs_idr_properties_assets"
+                  },
+                  "type": "array"
+                },
+                "investigation_id": {
+                  "type": "string"
+                },
+                "job_id": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "containment_params_assets_invocation_data_jobs_idr_properties_assets": {
+              "properties": {
+                "assetId": {
+                  "type": "string"
+                },
+                "hostId": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "customer": {
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          },
+          "properties": {
+            "containment_params": {
+              "$ref": "#/definitions/containment_params"
+            },
+            "criticality": {
+              "type": "string"
+            },
+            "cust_slack_channel": {
+              "type": "string"
+            },
+            "cust_slack_timestamp": {
+              "type": "string"
+            },
+            "customer": {
+              "$ref": "#/definitions/customer"
+            },
+            "cutoff": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "evidence": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "investigation_id": {
+              "type": "string"
+            },
+            "remediations": {
+              "type": "string"
+            },
+            "soc_slack_channel": {
+              "type": "string"
+            },
+            "soc_slack_timestamp": {
+              "type": "string"
+            },
+            "tagged": {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "timestamp": {
+              "type": "string"
+            },
+            "trigger_user": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "tags": [],
+        "type": "trigger_api"
+      }
+    ]
+  }
+}

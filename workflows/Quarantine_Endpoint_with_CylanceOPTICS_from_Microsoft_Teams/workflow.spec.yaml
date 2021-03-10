@@ -1,0 +1,27 @@
+extension: workflow
+products: ["insightconnect"]
+name: Quarantine_Endpoint_with_CylanceOPTICS_from_Microsoft_Teams
+title: Quarantine Endpoint with CylanceOPTICS from Microsoft Teams
+description: Quarantine (lockdown) an endpoint in CylanceOPTICS from a Microsoft Teams command.
+version: 1.0.1
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [threat_detection_and_response]
+  keywords: [quarantine, work_from_home, microsoft teams]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Quarantine_Endpoint_with_CylanceOPTICS_from_Microsoft_Teams
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+    - name: workflow1.png
+      title: Workflow View
+    - name: workflowloop.png
+      title: Workflow Loop View
+    - name: cylance.png
+      title: Quarantined Endpoint in CylanceOPTICS
+    - name: quarantinesuccess.png
+      title: Successful Quarantine Request
+    - name: quarantinefailure.png
+      title: Failed Quarantine Request

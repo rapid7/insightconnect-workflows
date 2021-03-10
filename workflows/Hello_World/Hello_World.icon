@@ -1,0 +1,125 @@
+{
+  "kom": {
+    "komandVersion": "1.61.3-0-g16082",
+    "komFileVersion": "2.0.0",
+    "exportedAt": "2020-09-21T16:14:39.152006666Z",
+    "workflowVersions": [
+      {
+        "name": "Hello World",
+        "type": "runnable",
+        "version": "",
+        "description": "The Hello World workflow is meant to help first-time InsightConnect users learn about triggers, inputs, artifacts, and jobs. To try it out, open the workflow draft, and click the blue Test button. Enter a message (eg, \"Hello World!\") and then click Test Workflow.",
+        "graph": {
+          "edges": {
+            "d377042a-655d-4521-9998-84829cc3ffda": {
+              "id": "d377042a-655d-4521-9998-84829cc3ffda",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "c5827b0f-09dc-44b9-923c-e21cfbb7f5b2",
+              "toNodeId": ""
+            },
+            "fa7d53a7-629c-43a6-92a5-2507f4ed5bd6": {
+              "id": "fa7d53a7-629c-43a6-92a5-2507f4ed5bd6",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "bec382b2-c345-44cc-9264-3c5d405a1403",
+              "toNodeId": "c5827b0f-09dc-44b9-923c-e21cfbb7f5b2"
+            }
+          },
+          "nodes": {
+            "bec382b2-c345-44cc-9264-3c5d405a1403": {
+              "id": "bec382b2-c345-44cc-9264-3c5d405a1403",
+              "parentNodeId": ""
+            },
+            "c5827b0f-09dc-44b9-923c-e21cfbb7f5b2": {
+              "id": "c5827b0f-09dc-44b9-923c-e21cfbb7f5b2",
+              "parentNodeId": ""
+            }
+          }
+        },
+        "steps": {
+          "bec382b2-c345-44cc-9264-3c5d405a1403": {
+            "nodeId": "bec382b2-c345-44cc-9264-3c5d405a1403",
+            "name": "API Trigger",
+            "type": "trigger",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "triggerId": "f6b8b2e6-e2da-42c2-9c72-583d03a7d8e3",
+            "defaultInputJSONSchema": {
+              "definitions": {},
+              "properties": {
+                "message": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {},
+              "properties": {
+                "message": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/trigger-api.svg",
+            "connectionType": "NONE"
+          },
+          "c5827b0f-09dc-44b9-923c-e21cfbb7f5b2": {
+            "nodeId": "c5827b0f-09dc-44b9-923c-e21cfbb7f5b2",
+            "name": "Message Artifact",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "*Welcome to InsightConnect, and congratulations on running your first workflow!*\n\n## Message\nYour message was: `{{[bec382b2-c345-44cc-9264-3c5d405a1403].[message]}}`\n\n## Job\nView your workflow job here: [{{[$job].[URL]}}]({{[$job].[URL]}})\n\n## Up Next\nHead on back to the **[Discover](#/home?loadDiscover=1)** tab to try your next workflow!"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE"
+          }
+        },
+        "tags": null,
+        "humanCostSeconds": 60,
+        "humanCostDisplayUnit": "minutes"
+      }
+    ],
+    "triggers": [
+      {
+        "id": "f6b8b2e6-e2da-42c2-9c72-583d03a7d8e3",
+        "name": "API Trigger",
+        "description": "",
+        "input": null,
+        "inputJsonSchema": {
+          "definitions": {},
+          "properties": {
+            "message": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "outputJsonSchema": {
+          "definitions": {},
+          "properties": {
+            "message": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "tags": [],
+        "type": "trigger_api"
+      }
+    ]
+  }
+}

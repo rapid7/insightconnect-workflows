@@ -1,0 +1,31 @@
+extension: workflow
+products: ["insightconnect", "insightidr"]
+name: Suspicious_User_Login_with_IDR_and_Slack_Chatops
+title: "Suspicious User Login with IDR and Slack Chatops"
+description: This workflow automates the process of confirming if a user is traveling in other office location using global artifacts before escalating to security via Slack chatbot.
+version: 1.0.2
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [threat_detection_and_response]
+  keywords: [insightidr, enrichment, slack, chat, chatops]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Suspicious_User_Login_with_IDR_and_Slack_Chatops
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+  - name: Suspicious_User_Login_InsightIDR_SlackAlertThread.png
+    title: Slack Alert Thread
+  - name: Suspicious_User_Login_InsightIDR_slackPrompt.png
+    title: Slack Prompt
+  - name: Suspicious_User_Login_InsightIDR_ActiveWF.png
+    title: Workflow View
+  - name: Suspicious_User_Login_InsightIDR_Decision.png
+    title: Decision Point
+  - name: Suspicious_User_Login_InsightIDR_DisableUserArtifact.png
+    title: Disable Artifact
+  - name: Suspicious_User_Login_InsightIDR_OOOUserArtifact.png
+    title: User Artifact
+  - name: Suspicious_User_Login_InsightIDR_OOOUserOutput.png
+    title: User Output

@@ -1,0 +1,27 @@
+extension: workflow
+products: ["insightconnect"]
+name: Force_Password_Reset_in_Active_Directory_with_Microsoft_Teams
+title: Force Password Reset in Active Directory from Microsoft Teams
+description: "Force an Active Directory user password reset from Microsoft Teams."
+version: 1.1.1
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [threat_detection_and_response, remediation_management]
+  keywords: [active directory, teams, containment, work_from_home, phishing]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Force_Password_Reset_in_Active_Directory_with_Microsoft_Teams
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+  - name: artifact1.png
+    title: Artifact View
+  - name: teams1.png
+    title: Example Microsoft Teams Job Input and Output
+  - name: teams_failed.png
+    title: Example Teams Job Failure
+  - name: workflow1.png
+    title: Workflow View Part One
+  - name: workflow2.png
+    title: Workflow View Part Two

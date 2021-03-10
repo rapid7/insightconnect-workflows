@@ -1,0 +1,25 @@
+extension: workflow
+products: ["insightconnect"]
+name: Enrich_Process_Hash_with_OSINT_from_Slack
+title: "Enrich Process Hash with OSINT from Slack"
+description: Enrich potentially malicious process hashes with threat intelligence provided by Threat Crowd and Team Cymru MHR from Slack.
+version: 1.0.0
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [data_enrichment, threat_detection_and_response]
+  keywords: [slack, chat, chatops, work_from_home]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Enrich_Process_Hash_with_OSINT_from_Slack
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+  - name: slack.png
+    title: Slack Response
+  - name: workflow1.png
+    title: Workflow Part 1
+  - name: workflow2.png
+    title: Workflow Part 2
+  - name: workflow3.png
+    title: Workflow Part 3

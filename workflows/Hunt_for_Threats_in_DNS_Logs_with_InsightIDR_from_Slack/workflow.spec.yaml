@@ -1,0 +1,25 @@
+extension: workflow
+products: ["insightconnect"]
+name: Hunt_for_Threats_in_DNS_Logs_with_InsightIDR_from_Slack
+title: "Hunt for Threats in DNS Logs with InsightIDR from Slack"
+description: Find potential indicators of compromise in InsightIDR DNS Query logs with a Slack command.
+version: 1.0.0
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [threat_detection_and_response]
+  keywords: [chat, slack, work_from_home]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Hunt_for_Threats_in_DNS_Logs_with_InsightIDR_from_Slack
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+  - name: workflow1.png
+    title: Workflow Start View
+  - name: workflow2.png
+    title: Workflow End View
+  - name: slack_message_found.png
+    title: Successful Job in Slack
+  - name: slack_message_not_found.png
+    title: Results Not Found Message

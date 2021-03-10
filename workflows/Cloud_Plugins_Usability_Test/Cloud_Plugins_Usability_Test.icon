@@ -1,0 +1,419 @@
+{
+  "kom": {
+    "komandVersion": "1.59.1-0-gf525c",
+    "komFileVersion": "2.0.0",
+    "exportedAt": "2020-08-06T23:22:21.426792141Z",
+    "workflowVersions": [
+      {
+        "name": "Cloud Plugin Usability Testing",
+        "type": "runnable",
+        "version": "",
+        "description": "This workflow is designed for usability testing for the Cloud Plugins feature. It is not intended for operational use and merely tests the various plugins that are cloud-enabled as of August 6, 2020.",
+        "graph": {
+          "edges": {
+            "84649f3e-2e4d-44e4-a2ef-b90b04d2f325": {
+              "id": "84649f3e-2e4d-44e4-a2ef-b90b04d2f325",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "f1c38dd1-084e-4588-a050-f0fe7a0d81e1",
+              "toNodeId": "2d5c472a-35ff-41f8-b313-f698c82d7f0b"
+            },
+            "8fb2a5bd-b3ab-427c-9819-8df42c62c4ae": {
+              "id": "8fb2a5bd-b3ab-427c-9819-8df42c62c4ae",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "a601ce6b-9086-449c-b80d-7448cc0c3df5",
+              "toNodeId": "f1c38dd1-084e-4588-a050-f0fe7a0d81e1"
+            },
+            "a9d072d9-1eff-4a9b-a4b5-40013af71105": {
+              "id": "a9d072d9-1eff-4a9b-a4b5-40013af71105",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "0490a67d-323e-4c7d-a41b-30b3e7066363",
+              "toNodeId": "a601ce6b-9086-449c-b80d-7448cc0c3df5"
+            },
+            "c3fff72a-2cdf-4161-aab2-ab901baa4337": {
+              "id": "c3fff72a-2cdf-4161-aab2-ab901baa4337",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "2d5c472a-35ff-41f8-b313-f698c82d7f0b",
+              "toNodeId": ""
+            }
+          },
+          "nodes": {
+            "0490a67d-323e-4c7d-a41b-30b3e7066363": {
+              "id": "0490a67d-323e-4c7d-a41b-30b3e7066363",
+              "parentNodeId": ""
+            },
+            "2d5c472a-35ff-41f8-b313-f698c82d7f0b": {
+              "id": "2d5c472a-35ff-41f8-b313-f698c82d7f0b",
+              "parentNodeId": ""
+            },
+            "a601ce6b-9086-449c-b80d-7448cc0c3df5": {
+              "id": "a601ce6b-9086-449c-b80d-7448cc0c3df5",
+              "parentNodeId": ""
+            },
+            "f1c38dd1-084e-4588-a050-f0fe7a0d81e1": {
+              "id": "f1c38dd1-084e-4588-a050-f0fe7a0d81e1",
+              "parentNodeId": ""
+            }
+          }
+        },
+        "steps": {
+          "0490a67d-323e-4c7d-a41b-30b3e7066363": {
+            "nodeId": "0490a67d-323e-4c7d-a41b-30b3e7066363",
+            "name": "Trigger Every Minute",
+            "type": "trigger",
+            "plugin": {
+              "name": "Timers",
+              "slugVendor": "rapid7",
+              "slugName": "timers",
+              "slugVersion": "2.0.4",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/timers/2.0.4/icon.png"
+            },
+            "identifier": "periodic",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "message": "",
+                "period": 1
+              }
+            },
+            "triggerId": "43da26a1-3923-412d-b53d-883521b39a1c",
+            "defaultInputJSONSchema": {
+              "properties": {
+                "message": {
+                  "description": "A message to send with the event",
+                  "order": 2,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "period": {
+                  "default": 60,
+                  "description": "Minutes between events",
+                  "order": 1,
+                  "title": "Period",
+                  "type": "number"
+                }
+              },
+              "required": [
+                "period"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "message": {
+                  "description": "Message",
+                  "order": 1,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "time": {
+                  "description": "Time",
+                  "displayType": "date",
+                  "format": "date-time",
+                  "order": 2,
+                  "title": "Time",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "message",
+                "time"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg",
+            "connectionType": "ORCHESTRATOR"
+          },
+          "2d5c472a-35ff-41f8-b313-f698c82d7f0b": {
+            "nodeId": "2d5c472a-35ff-41f8-b313-f698c82d7f0b",
+            "name": "Get Datetime",
+            "type": "action",
+            "plugin": {
+              "name": "Datetime",
+              "slugVendor": "rapid7",
+              "slugName": "datetime",
+              "slugVersion": "2.0.6",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/datetime/2.0.6/icon.png"
+            },
+            "identifier": "get_datetime",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "format_string": "%d %b %Y %H:%M:%S",
+                "use_rfc3339_format": true
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "format_string": {
+                  "default": "%d %b %Y %H:%M:%S",
+                  "description": "Format string for the output",
+                  "order": 1,
+                  "title": "Format String",
+                  "type": "string"
+                },
+                "use_rfc3339_format": {
+                  "description": "Use RFC3339 format (eg. 2017-10-24T18:27:36.23Z). This is the most compatible date format for timestamp manipulation. Enabling this will override the format string input",
+                  "order": 2,
+                  "title": "Use RFC3339 Format",
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "format_string",
+                "use_rfc3339_format"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "datetime": {
+                  "description": "Datetime",
+                  "order": 1,
+                  "title": "Datetime",
+                  "type": "string"
+                },
+                "epoch_timestamp": {
+                  "description": "Epoch timestamp",
+                  "order": 2,
+                  "title": "Epoch Timestamp",
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "datetime",
+                "epoch_timestamp"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR"
+          },
+          "a601ce6b-9086-449c-b80d-7448cc0c3df5": {
+            "nodeId": "a601ce6b-9086-449c-b80d-7448cc0c3df5",
+            "name": "Convert CSV to JSON",
+            "type": "action",
+            "plugin": {
+              "name": "CSV",
+              "slugVendor": "rapid7",
+              "slugName": "csv",
+              "slugVersion": "1.1.6",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/csv/1.1.6/icon.png"
+            },
+            "identifier": "to_json",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "csv": "Ik1vbnRoIiwgIjE5NTgiLCAiMTk1OSIsICIxOTYwIgoiSkFOIiwgIDM0MCwgIDM2MCwgIDQxNwoiRkVCIiwgIDMxOCwgIDM0MiwgIDM5MQoiTUFSIiwgIDM2MiwgIDQwNiwgIDQxOQoiQVBSIiwgIDM0OCwgIDM5NiwgIDQ2MQoiTUFZIiwgIDM2MywgIDQyMCwgIDQ3MgoiSlVOIiwgIDQzNSwgIDQ3MiwgIDUzNQoiSlVMIiwgIDQ5MSwgIDU0OCwgIDYyMgoiQVVHIiwgIDUwNSwgIDU1OSwgIDYwNgoiU0VQIiwgIDQwNCwgIDQ2MywgIDUwOAoiT0NUIiwgIDM1OSwgIDQwNywgIDQ2MQoiTk9WIiwgIDMxMCwgIDM2MiwgIDM5MAoiREVDIiwgIDMzNywgIDQwNSwgIDQzMgo=",
+                "validation": false
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "csv": {
+                  "description": "Base64 encoded CSV file",
+                  "displayType": "bytes",
+                  "format": "bytes",
+                  "order": 1,
+                  "title": "CSV",
+                  "type": "string"
+                },
+                "validation": {
+                  "default": false,
+                  "description": "Validate CSV data, error if not valid",
+                  "order": 2,
+                  "title": "Validate",
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "validation",
+                "csv"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "json": {
+                  "description": "List of objects",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 1,
+                  "title": "JSON",
+                  "type": "array"
+                }
+              },
+              "required": [
+                "json"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR"
+          },
+          "f1c38dd1-084e-4588-a050-f0fe7a0d81e1": {
+            "nodeId": "f1c38dd1-084e-4588-a050-f0fe7a0d81e1",
+            "name": "Decode Base64",
+            "type": "action",
+            "plugin": {
+              "name": "Base64",
+              "slugVendor": "rapid7",
+              "slugName": "base64",
+              "slugVersion": "1.1.6",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/base64/1.1.6/icon.png"
+            },
+            "identifier": "decode",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "base64": "UG93ZXJpbmcgU2VjdXJpdHkgVG9nZXRoZXIKV2hlbiB5b3UgaGF2ZSBsZWFkaW5nIHNlY3VyaXR5IHNvbHV0aW9ucyBhbmQgZ3JvdW5kYnJlYWtpbmcgcmVzZWFyY2ggb24geW91ciBzaWRlLCB5b3UgY2FuIGlubm92YXRlIHdpdGhvdXQgc2xvd2luZyBkb3duLg==\nb25lZncKLCwsLApva25kZm9waXMsLGR3ZmR3LCw=",
+                "errors": "nothing"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "base64": {
+                  "description": "Data to decode",
+                  "displayType": "bytes",
+                  "format": "bytes",
+                  "order": 1,
+                  "title": "Base64",
+                  "type": "string"
+                },
+                "errors": {
+                  "default": "nothing",
+                  "description": "How errors should be handled when decoding Base64",
+                  "enum": [
+                    "replace",
+                    "ignore",
+                    "nothing"
+                  ],
+                  "order": 2,
+                  "title": "Errors",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "base64"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "data": {
+                  "description": "Decoded data result",
+                  "order": 1,
+                  "title": "Decoded Data",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "data"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR"
+          }
+        },
+        "tags": null,
+        "humanCostSeconds": 0,
+        "humanCostDisplayUnit": ""
+      }
+    ],
+    "triggers": [
+      {
+        "id": "43da26a1-3923-412d-b53d-883521b39a1c",
+        "identifier": "periodic",
+        "name": "Trigger Every Minute",
+        "description": "",
+        "input": {
+          "message": "",
+          "period": 1
+        },
+        "inputJsonSchema": {
+          "properties": {
+            "message": {
+              "description": "A message to send with the event",
+              "order": 2,
+              "title": "Message",
+              "type": "string"
+            },
+            "period": {
+              "default": 60,
+              "description": "Minutes between events",
+              "order": 1,
+              "title": "Period",
+              "type": "number"
+            }
+          },
+          "required": [
+            "period"
+          ],
+          "title": "Variables",
+          "type": "object"
+        },
+        "outputJsonSchema": {
+          "properties": {
+            "message": {
+              "description": "Message",
+              "order": 1,
+              "title": "Message",
+              "type": "string"
+            },
+            "time": {
+              "description": "Time",
+              "displayType": "date",
+              "format": "date-time",
+              "order": 2,
+              "title": "Time",
+              "type": "string"
+            }
+          },
+          "required": [
+            "message",
+            "time"
+          ],
+          "title": "Variables",
+          "type": "object"
+        },
+        "tags": [],
+        "type": "trigger_plugin",
+        "plugin": {
+          "name": "Timers",
+          "slugVendor": "rapid7",
+          "slugName": "timers",
+          "slugVersion": "2.0.4",
+          "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/timers/2.0.4/icon.png"
+        }
+      }
+    ]
+  }
+}

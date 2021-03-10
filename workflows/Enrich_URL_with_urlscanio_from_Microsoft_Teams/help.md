@@ -1,0 +1,67 @@
+# Description
+
+Lookup and enrich suspicious URLs and domains with a simple Microsoft Teams message. URL and domain analysis provided by urlscan.io is returned in a Microsoft Teams message.
+
+Sample Teams Trigger Commands:
+
+`!enrich-url https://bit.ly/39HoYMu`
+
+# Key Features
+
+* **Investigate Indicators at Scale** - Manually investigating every reported phishing attempt is extremely difficult to scale. Automatic analysis of common phishing IOCs reduces the overhead associated with every reported incident.
+* **Offload Repetitive Tasks** - Parsing out, analyzing, and enriching URLs manually can be repetitive and mind-numbing. Give that time back to your team so you can elevate your focus to identifying and resolving threats.
+* **Shorten the Investigation Timeline** - Manage timely responses to real attacks by eliminating the investigation of false positives and spam. If the URLs are found to be malicious, pivot seamlessly to incident response.
+
+# Requirements
+
+* [Microsoft Teams](https://insightconnect.help.rapid7.com/docs/microsoft-teams)
+* urlscan.io API Key
+
+# Documentation
+
+## Setup
+
+Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
+
+Once the workflow has been imported, **the first Microsoft Teams step will need the team name and channel name updated to suit your Microsoft Teams environment!** Edit the input with the preset text of `change_me` in the first Microsoft Teams step in the workflow.
+
+After configuring the Microsoft Teams steps, activate the workflow in order to trigger it.
+
+## Usage
+
+*This workflow will only trigger in the channel specified in the Microsoft Teams workflow steps.*
+
+To run the workflow, send a message to the specified Microsoft Teams channel starting with the command `!enrich-url`.
+For example:
+* `!enrich-url badsite.com`
+* `!enrich-url http://another.badsite.com`
+
+## Technical Details
+
+Plugins utilized by workflow:
+
+|Plugin|Version|Count|
+|----|----|--------|
+|ExtractIt|2.0.0|1|
+|Microsoft Teams|3.1.0|5|
+|Python 3 Script|2.0.1|1|
+|Sleep|1.0.2|1|
+|urlscan.io|2.1.4|2|
+
+## Troubleshooting
+
+If a URL is submitted but no report is generated, urlscan.io may have blacklisted the domain.
+
+# Version History
+
+* 1.1.0 - Replace the preset text of "change_me" with automatic team and channel name extraction in all Microsoft Teams steps except the first one | Update Microsoft Teams to version 3.1.0 | Update documentation
+* 1.0.1 - Update to make Microsoft Teams plugin the latest version
+* 1.0.0 - Initial workflow
+
+# Links
+
+## References
+
+* [Microsoft Teams](https://products.office.com/en-US/microsoft-teams/group-chat-software)
+* [URLScan](https://urlscan.io)
+

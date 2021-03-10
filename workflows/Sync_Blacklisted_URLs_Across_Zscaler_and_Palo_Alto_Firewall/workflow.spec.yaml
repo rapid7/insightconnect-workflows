@@ -1,0 +1,41 @@
+extension: workflow
+products: ["insightconnect"]
+name: Sync_Blacklisted_URLs_Across_Zscaler_and_Palo_Alto_Firewall
+title: Sync Blacklisted URLs Across Zscaler and Palo Alto Firewall
+description: "This workflow synchronizes blacklisted URLs across Palo Alto Firewall and Zscaler."
+version: 1.0.0
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [threat_detection_and_response]
+  keywords:  [ransomware, containment, firewall, blacklist, unblacklist, sync, palo, alto, zscaler, work_from_home, parameters]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Sync_Blacklisted_URLs_across_Zscaler_and_Palo_Alto_Firewall
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+  - name: zscaler_before_sync.png
+    title: Zscaler Blacklist before Sync
+  - name: palo_alto_before_sync.png
+    title: Palo Alto Firewall Blacklist before Sync
+  - name: artifact.png
+    title: Artifact
+  - name: zscaler_after_sync.png
+    title: Zscaler Blacklist after Sync
+  - name: palo_alto_after_sync.png
+    title: Palo Alto Firewall Blacklist after Sync
+  - name: workflow.png
+    title: Workflow View
+  - name: workflow1.png
+    title: Workflow View Part 1
+  - name: workflow2.png
+    title: Workflow View Part 2
+  - name: workflow3.png
+    title: Workflow View Part 3
+  - name: workflow_loop1.png
+    title: Remove URLs from Palo Alto Loop View
+  - name: workflow_loop2.png
+    title: Create Address Objects Loop View
+  - name: workflow_loop3.png
+    title: Create Objects Loop View

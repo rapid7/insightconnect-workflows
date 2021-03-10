@@ -1,0 +1,23 @@
+extension: workflow
+products: ["insightconnect"]
+name: Quarantine_Endpoint_with_Rapid7_Insight_Agent_from_Microsoft_Teams
+title: "Quarantine Endpoint with Rapid7 Insight Agent from Microsoft Teams"
+description: "This workflow uses a Microsoft Teams command to quarantine or unquarantine an endpoint monitored by the Insight Agent."
+version: 1.0.1
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [threat_detection_and_response]
+  keywords: [quarantine, insight, agent, idr, ivm, endpoint]
+  features: [insightagent]
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Quarantine_Endpoint_with_Rapid7_Insight_Agent_from_Microsoft_Teams
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+  - name: workflow1.png
+    title: Workflow View
+  - name: workflow_loop1.png
+    title: Workflow Loop View
+  - name: teams_flow1.png
+    title: Completed Workflow in Microsoft Teams

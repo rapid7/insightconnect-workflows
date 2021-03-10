@@ -1,0 +1,25 @@
+extension: workflow
+products: ["insightconnect", "insightidr"]
+name: InsightIDR_Impossible_Location_with_Slack_Chatbot
+title: "InsightIDR Impossible Location with Slack Chatbot"
+description: This workflow automates the process of enriching IPs associated with an InsightIDR alert and escalating to the security team if found to be suspicious.
+version: 1.0.1
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [threat_detection_and_response]
+  keywords: [insightidr, enrichment, slack, chat, chatops]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/InsightIDR_Impossible_Location_with_Slack_Chatbot
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+  - name: InsightIDR_Impossible_Location_with_Slack_JobDecision.png
+    title: Job Decision
+  - name: InsightIDR_Impossible_Location_with_SlackChbot.png
+    title: Slack Chatbot
+  - name: InsightIDR_Impossible_Location_with_Slack_BlockIP.png
+    title: Block IP
+  - name: InsightIDR_Impossible_Location_with_Slack_JobDetails.png
+    title: Job Details

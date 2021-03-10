@@ -1,0 +1,27 @@
+extension: workflow
+products: ["insightconnect", "insightvm"]
+name: Send_Remediated_Vulnerabilities_Message_in_Microsoft_Teams_from_InsightVM
+title: Send Remediated Vulnerabilities Message in Microsoft Teams from InsightVM
+description: This workflow sends a message in Microsoft Teams when vulnerabilities are remediated in InsightVM.
+version: 2.0.1
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [vulnerability_management, remediation_management, alerting_and_notifications]
+  keywords: [chat, microsoft_teams]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Send_Remediated_Vulnerabilities_Message_in_Microsoft_Teams_from_InsightVM
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+    - name: teams_output.png
+      title: New Vulnerabilities Remediated Message in Microsoft Teams
+    - name: workflow1.png
+      title: Workflow Builder View
+    - name: workflow2.png
+      title: Workflow Loop Step
+    - name: job.png
+      title: Successful Workflow Job
+    - name: test.png
+      title: Successful Workflow Test

@@ -1,0 +1,25 @@
+extension: workflow
+products: ["insightconnect", "insightvm"]
+name: Get_Asset_Details_and_Scan_Asset_with_InsightVM
+title: "Get Asset Details and Scan Asset with InsightVM"
+description: "Fetch host details and scan target asset with a simple InsightConnect API request."
+version: 1.0.0
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [remediation_management, vulnerability_management]
+  keywords: [remediation_management, vulnerability_management]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Get_Asset_Details_and_Scan_Asset_with_InsightVM
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+  - name: test.png
+    title: Workflow Test
+  - name: workflow.png
+    title: Workflow Builder View
+  - name: artifact.png
+    title: Workflow Artifact
+  - name: job.png
+    title: Successful Workflow Job

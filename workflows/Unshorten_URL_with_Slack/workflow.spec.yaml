@@ -1,0 +1,27 @@
+extension: workflow
+products: ["insightconnect"]
+name: Unshorten_URL_with_Slack
+title: "Unshorten URL from Slack"
+description: Unshorten a URL with a message to your InsightConnect Slack Chatbot.
+version: 1.0.3
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [data_enrichment, threat_detection_and_response]
+  keywords: [data_enrichment, threat_detection_and_response, chat, chatops, work_from_home, phishing]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Unshorten_URL_with_Slack
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+  - name: job.png
+    title: Successful Workflow Job
+  - name: workflow.png
+    title: Workflow View
+  - name: slack1.png
+    title: Completed Job In Slack with Valid Input
+  - name: slack2.png
+    title: Completed Job In Slack, Domain Non-Existant
+  - name: artifact.png
+    title: Final Report Artifact

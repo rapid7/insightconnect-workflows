@@ -1,0 +1,31 @@
+extension: workflow
+products: ["insightconnect"]
+name: Delete_Email_with_Gmail_from_Slack
+title: "Delete Email with Gmail from Slack"
+description: "Find and delete emails matching a given search criteria in a Gmail mailbox using only a Slack command."
+version: 1.0.0
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [threat_detection_and_response]
+  keywords: [phishing, email, work_from_home, google, chat, chatops, gmail]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Delete_Email_with_Gmail_from_Slack
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+  - name: workflow1.png
+    title: Workflow View Top Half
+  - name: workflow2.png
+    title: Workflow View Bottom Half
+  - name: slack1.png
+    title: Completed Job in Slack and Delete is Automatic
+  - name: slack2.png
+    title: Completed Job in Slack and User is Prompted for Delete
+  - name: slack3.png
+    title: Completed Job in Slack for an Invalid Email Address
+  - name: artifact1.png
+    title: Artifacts of a Successful Job
+  - name: job1.png
+    title: Successful Workflow Job

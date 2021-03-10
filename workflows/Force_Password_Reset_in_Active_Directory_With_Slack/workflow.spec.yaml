@@ -1,0 +1,27 @@
+extension: workflow
+products: ["insightconnect"]
+name: Force_Password_Reset_in_Active_Directory_With_Slack
+title: Force Password Reset in Active Directory from Slack
+description: "Force an Active Directory user password reset with a command in Slack."
+version: 1.1.0
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [threat_detection_and_response, user_management]
+  keywords: [active_directory, slack, containment, chat, work_from_home, phishing]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Force_Password_Reset_in_Active_Directory_With_Slack
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+  - name: artifact1.png
+    title: Artifact View
+  - name: slack_job1.png
+    title: Example Slack Job Input and Output
+  - name: slack_failed.png
+    title: Example Slack Job Failure
+  - name: workflow1.png
+    title: Workflow View Part One
+  - name: workflow2.png
+    title: Workflow View Part Two

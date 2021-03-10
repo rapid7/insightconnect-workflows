@@ -1,0 +1,26 @@
+extension: workflow
+products: ["insightconnect"]
+name: Check_Host_Block_Status_with_Check_Point_Firewall_from_Slack
+title: "Check Host Block Status with Check Point Firewall from Slack"
+description: This workflow accepts a Slack command, checks if an IP address is blocked, and posts if the IP address is blocked.
+version: 1.1.2
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [remediation_management,threat_detection_and_response]
+  keywords: [check point, firewall, slack, chatops, work_from_home]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Check_Host_Block_Status_with_Check_Point_Firewall_from_Slack
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+  - name: workflow1.png
+    title: Workflow View
+  - name: job1.png
+    title: Blocked IP Address Artifact
+  - name: job2.png
+    title: Successful Job Run
+  - name: slack1.png
+    title: Post and Response from Slack
+

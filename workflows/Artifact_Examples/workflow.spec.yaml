@@ -1,0 +1,23 @@
+extension: workflow
+products: ["insightconnect"]
+name: Artifact_Examples
+title: "Artifact Examples"
+description: "This uses an API Trigger with each of the DataTypes. The workflow then has different Actions to see how to work with that data."
+version: 1.0.0
+vendor: community
+support: community
+status: []
+hub_tags:
+  use_cases: [data_utility]
+  keywords: [example, cloud_enabled]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Artifact_Examples
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+  - name: Artifact_Examples_Job_First_Artifact.png
+    title: Example of Presenting data directly from the Trigger
+  - name: Artifact_Examples_Job_Second_Artifact.png
+    title: Example of Presenting data inside a Loop
+  - name: Artifact_Examples_Workflow.png
+    title: Workflow View
