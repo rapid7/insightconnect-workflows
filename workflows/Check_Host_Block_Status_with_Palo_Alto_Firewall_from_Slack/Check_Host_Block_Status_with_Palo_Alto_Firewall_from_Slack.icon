@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.61.0-0-g0bf41",
+    "komandVersion": "1.79.0-0-g8476e",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-09-04T14:19:52.794847883Z",
+    "exportedAt": "2021-03-10T21:45:47.738128805Z",
     "workflowVersions": [
       {
         "name": "Check Host Block Status with Palo Alto Firewall from Slack",
@@ -248,11 +248,11 @@
               "name": "Palo Alto Firewall",
               "slugVendor": "rapid7",
               "slugName": "palo_alto_pan_os",
-              "slugVersion": "6.0.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/6.0.1/icon.png"
+              "slugVersion": "6.1.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/6.1.0/icon.png"
             },
             "identifier": "check_if_address_object_in_group",
-            "continueOnFailure": false,
+            "continueOnFailure": true,
             "isDisabled": false,
             "isCloud": false,
             "parameters": {
@@ -260,7 +260,7 @@
                 "address": "{{[1c82f2e1-413f-47e5-963f-ba3ab91b904c].[$item]}}",
                 "device_name": "localhost.localdomain",
                 "enable_search": true,
-                "group": "ICON Block List",
+                "group": "{{$workflow.[Palo Alto Object Group Name]}}",
                 "virtual_system": "vsys1"
               }
             },
@@ -281,7 +281,7 @@
                 },
                 "enable_search": {
                   "default": false,
-                  "description": "When enabled, the Address input will accept a IP, CIDR, or domain name to search across the available Address Objects in the system. This is useful when you don’t know the Address Object by its name",
+                  "description": "When enabled, the Address input will accept a IP, CIDR, or domain name to search across the available Address Objects in the system. This is useful when you don't know the Address Object by its name",
                   "order": 3,
                   "title": "Enable Search",
                   "type": "boolean"
@@ -590,12 +590,12 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "matchChannel": "change_me",
+                "matchChannel": "{{$workflow.[Slack Channel]}}",
                 "matchText": "block-status.*",
                 "type": "any"
               }
             },
-            "triggerId": "18ce0354-94d4-404e-8213-324b6a4bc079",
+            "triggerId": "d5d46e13-37ad-4bd1-aff6-942cd35b978b",
             "defaultInputJSONSchema": {
               "properties": {
                 "matchChannel": {
@@ -680,20 +680,20 @@
                       "items": {
                         "type": "string"
                       },
-                      "order": 3,
+                      "order": 4,
                       "title": "Email Addresses",
                       "type": "array"
                     },
                     "hashes": {
                       "$ref": "#/definitions/hashes",
                       "description": "Hashes found within the message",
-                      "order": 4,
+                      "order": 5,
                       "title": "Hashes"
                     },
                     "ip_addresses": {
                       "$ref": "#/definitions/ip_addresses",
                       "description": "IP addresses found within the message",
-                      "order": 6,
+                      "order": 7,
                       "title": "IP Addresses"
                     },
                     "mac_addresses": {
@@ -701,8 +701,17 @@
                       "items": {
                         "type": "string"
                       },
-                      "order": 5,
+                      "order": 6,
                       "title": "MAC Addresses",
+                      "type": "array"
+                    },
+                    "parent_domains": {
+                      "description": "Parent domains found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "Parent Domains",
                       "type": "array"
                     },
                     "urls": {
@@ -710,7 +719,7 @@
                       "items": {
                         "type": "string"
                       },
-                      "order": 2,
+                      "order": 3,
                       "title": "URLs",
                       "type": "array"
                     }
@@ -765,7 +774,7 @@
                     "indicators": {
                       "$ref": "#/definitions/indicators",
                       "description": "Potential threat indicators found within the message",
-                      "order": 6,
+                      "order": 7,
                       "title": "Indicators"
                     },
                     "text": {
@@ -791,6 +800,15 @@
                       "order": 2,
                       "title": "User ID",
                       "type": "string"
+                    },
+                    "words": {
+                      "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 6,
+                      "title": "Words",
+                      "type": "array"
                     }
                   },
                   "title": "Message",
@@ -914,8 +932,8 @@
               "name": "Type Converter",
               "slugVendor": "rapid7",
               "slugName": "type_converter",
-              "slugVersion": "1.6.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/type_converter/1.6.0/icon.png"
+              "slugVersion": "1.8.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/type_converter/1.8.0/icon.png"
             },
             "identifier": "combine_arrays",
             "continueOnFailure": false,
@@ -1150,16 +1168,33 @@
         },
         "tags": null,
         "humanCostSeconds": 300,
-        "humanCostDisplayUnit": "minutes"
+        "humanCostDisplayUnit": "minutes",
+        "parameters": {
+          "definitionSchema": {
+            "type": "object",
+            "required": [],
+            "properties": {
+              "Slack Channel": {
+                "type": "string",
+                "description": "Enter Slack channel name in \"Current Value\" field, ex: #channelname"
+              },
+              "Palo Alto Object Group Name": {
+                "type": "string",
+                "description": "Specify the name of the group you would like to add and remove host objects from, ex: ICON Block List"
+              }
+            },
+            "definitions": {}
+          }
+        }
       }
     ],
     "triggers": [
       {
-        "id": "18ce0354-94d4-404e-8213-324b6a4bc079",
+        "id": "d5d46e13-37ad-4bd1-aff6-942cd35b978b",
         "name": "Slack Trigger",
         "description": "",
         "input": {
-          "matchChannel": "change_me",
+          "matchChannel": "{{$workflow.[Slack Channel]}}",
           "matchText": "block-status.*",
           "type": "any"
         },
@@ -1247,20 +1282,20 @@
                   "items": {
                     "type": "string"
                   },
-                  "order": 3,
+                  "order": 4,
                   "title": "Email Addresses",
                   "type": "array"
                 },
                 "hashes": {
                   "$ref": "#/definitions/hashes",
                   "description": "Hashes found within the message",
-                  "order": 4,
+                  "order": 5,
                   "title": "Hashes"
                 },
                 "ip_addresses": {
                   "$ref": "#/definitions/ip_addresses",
                   "description": "IP addresses found within the message",
-                  "order": 6,
+                  "order": 7,
                   "title": "IP Addresses"
                 },
                 "mac_addresses": {
@@ -1268,8 +1303,17 @@
                   "items": {
                     "type": "string"
                   },
-                  "order": 5,
+                  "order": 6,
                   "title": "MAC Addresses",
+                  "type": "array"
+                },
+                "parent_domains": {
+                  "description": "Parent domains found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "Parent Domains",
                   "type": "array"
                 },
                 "urls": {
@@ -1277,7 +1321,7 @@
                   "items": {
                     "type": "string"
                   },
-                  "order": 2,
+                  "order": 3,
                   "title": "URLs",
                   "type": "array"
                 }
@@ -1332,7 +1376,7 @@
                 "indicators": {
                   "$ref": "#/definitions/indicators",
                   "description": "Potential threat indicators found within the message",
-                  "order": 6,
+                  "order": 7,
                   "title": "Indicators"
                 },
                 "text": {
@@ -1358,6 +1402,15 @@
                   "order": 2,
                   "title": "User ID",
                   "type": "string"
+                },
+                "words": {
+                  "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 6,
+                  "title": "Words",
+                  "type": "array"
                 }
               },
               "title": "Message",

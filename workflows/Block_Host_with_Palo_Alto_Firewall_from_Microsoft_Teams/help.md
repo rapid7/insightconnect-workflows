@@ -29,13 +29,19 @@ The workflow works by adding and removing address objects from an address object
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-Once the workflow has been imported, **the first Microsoft Teams step will need the team name and channel name updated to suit your Microsoft Teams environment!** Edit the input with the preset text of `change_me` in the first Microsoft Teams step in the workflow.
+This workflow leverages InsightConnect's Parameters feature. This feature allows variables used multiple times throughout a workflow to be entered once and then referenced throughout the workflow. 
 
-**Edit Each Palo Alto Firewall step to specify the group you are using** In these steps, specify the group you would like to add and remove host objects from. 
+There are three parameters you will need to configure in order to complete setup of your workflow:
+
+* Teams Channel - enter the Teams channel name matching your environment ex: `channelname`
+* Teams Team - enter the Teams team name matching your environment ex: `teamname`
+* Palo Alto Object Group Name - enter the name of the group you would like to add and remove host objects from, ex: `ICON Block List`
+
+To begin, select "Parameters" either from the Workflow Control Panel or from the Builder to begin configuration.
+
+After configuring the parameters, activate the workflow in order to trigger it.
 
 By default this workflow will automatically skip blocking private IP addresses, if you’d like to block these as well, set `Skip RFC 1918` option to false in the `Create Network Object` step.
-
-After import, activate the workflow in order to trigger it.
 
 ### Usage
 
@@ -60,9 +66,9 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Palo Alto Firewall|6.0.1|5|
-|Type Converter|1.6.0|1|
-|Microsoft Teams|3.1.0|7|
+|Palo Alto Firewall|6.1.0|5|
+|Type Converter|1.8.0|1|
+|Microsoft Teams|3.1.1|7|
 
 ## Troubleshooting
 
@@ -70,6 +76,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 2.0.0 - Leverage Parameters Feature | Update Palo Alto Firewall to latest version | Update Type Converter to latest version | Update Microsoft Teams to latest version
 * 1.2.1 - Update Microsoft Teams to version 3.1.0 | Update documentation
 * 1.2.0 - Add automatic indicator extraction, allow for multiple hosts
 * 1.1.1 - Update to make Microsoft Teams plugin the latest version
