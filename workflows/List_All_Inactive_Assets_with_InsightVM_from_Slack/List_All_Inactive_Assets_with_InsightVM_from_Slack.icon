@@ -1,14 +1,14 @@
 {
   "kom": {
-    "komandVersion": "1.60.2-0-g80196",
+    "komandVersion": "1.78.4-0-gc91b3",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-08-31T16:53:59.486215208Z",
+    "exportedAt": "2021-03-09T16:40:49.990159703Z",
     "workflowVersions": [
       {
         "name": "List All Inactive Assets with InsightVM from Slack",
         "type": "runnable",
         "version": "",
-        "description": "Quickly look up inactive assets in InsightVM using a slack command. This workflow helps teams share vulnerability intelligence through shared Slack channels.",
+        "description": "# Description\n\nQuickly look up inactive assets in [Rapid7 InsightVM](https://www.rapid7.com/products/insightvm/) using a Slack command. This workflow helps teams share vulnerability intelligence through shared Slack channels.\n\n# Key Features\n\n* Look up inactive assets in InsightVM using a Slack command\n\n# Requirements\n\n* [Rapid7 InsightVM](https://www.rapid7.com/products/insightvm/)\n* [Slack](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops)\n\n# Documentation\n\n## Setup\n\nImport the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.\n\nOnce the workflow has been imported,\n\nUpdate the first step with the channel name to suit your Slack environment by editing the input with the preset text of `change_me` to match the channel to monitor.\n\nAfter import, activate the workflow in order to trigger it.\n\n## Usage\n\n*This workflow will trigger in any direct messages to your Chatbot **or** any message in a channel directed @ your Chatbot. Note the Chatbot must be in the channel in order to trigger the workflow this way.*\n\nTo run the workflow, send a direct message to your InsightConnect Slack Chatbot or @ your Chatbot in a public channel starting with the command `list-inactive`.\n\nFor example, in a direct message to your Chatbot:\n* `@Rapid7 InsightConnect list-inactive`\n\nThe workflow is set to list assets that haven't been scanned in 14 days. To edit this number, please change the input for the \"Get Inactive Assets\" step.\n\n## Technical Details\n\nPlugins utilized by workflow:\n\n|Plugin|Version|Count|\n|----|----|--------|\n|Rapid7 InsightVM|4.2.1|1|\n\n## Troubleshooting\n\n_There is no troubleshooting information at this time_\n\n# Version History\n\n* 1.0.0 - Initial workflow\n\n# Links\n\n## References\n\n* [Rapid7 InsightVM](https://www.rapid7.com/products/insightvm/)\n* [Slack](https://slack.com)\n",
         "graph": {
           "edges": {
             "17e49dbb-cf85-4761-8c93-afb9dd6ca824": {
@@ -400,12 +400,12 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "matchChannel": "change_me",
+                "matchChannel": "{{$workflow.[Slack Channel]}}",
                 "matchText": "list-inactive",
                 "type": "any"
               }
             },
-            "triggerId": "1640f1e5-7977-440e-9bd9-608881aa1e58",
+            "triggerId": "40a3db0e-99fc-4bb0-93c9-086d4c71cae1",
             "defaultInputJSONSchema": {
               "properties": {
                 "matchChannel": {
@@ -490,20 +490,20 @@
                       "items": {
                         "type": "string"
                       },
-                      "order": 3,
+                      "order": 4,
                       "title": "Email Addresses",
                       "type": "array"
                     },
                     "hashes": {
                       "$ref": "#/definitions/hashes",
                       "description": "Hashes found within the message",
-                      "order": 4,
+                      "order": 5,
                       "title": "Hashes"
                     },
                     "ip_addresses": {
                       "$ref": "#/definitions/ip_addresses",
                       "description": "IP addresses found within the message",
-                      "order": 6,
+                      "order": 7,
                       "title": "IP Addresses"
                     },
                     "mac_addresses": {
@@ -511,8 +511,17 @@
                       "items": {
                         "type": "string"
                       },
-                      "order": 5,
+                      "order": 6,
                       "title": "MAC Addresses",
+                      "type": "array"
+                    },
+                    "parent_domains": {
+                      "description": "Parent domains found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "Parent Domains",
                       "type": "array"
                     },
                     "urls": {
@@ -520,7 +529,7 @@
                       "items": {
                         "type": "string"
                       },
-                      "order": 2,
+                      "order": 3,
                       "title": "URLs",
                       "type": "array"
                     }
@@ -575,7 +584,7 @@
                     "indicators": {
                       "$ref": "#/definitions/indicators",
                       "description": "Potential threat indicators found within the message",
-                      "order": 6,
+                      "order": 7,
                       "title": "Indicators"
                     },
                     "text": {
@@ -601,6 +610,15 @@
                       "order": 2,
                       "title": "User ID",
                       "type": "string"
+                    },
+                    "words": {
+                      "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 6,
+                      "title": "Words",
+                      "type": "array"
                     }
                   },
                   "title": "Message",
@@ -650,8 +668,8 @@
               "name": "Rapid7 InsightVM",
               "slugVendor": "rapid7",
               "slugName": "rapid7_insightvm",
-              "slugVersion": "4.2.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/4.2.1/icon.png"
+              "slugVersion": "4.8.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/4.8.1/icon.png"
             },
             "identifier": "list_inactive_assets",
             "continueOnFailure": false,
@@ -1559,16 +1577,29 @@
         },
         "tags": null,
         "humanCostSeconds": 300,
-        "humanCostDisplayUnit": "minutes"
+        "humanCostDisplayUnit": "minutes",
+        "parameters": {
+          "definitionSchema": {
+            "type": "object",
+            "required": [],
+            "properties": {
+              "Slack Channel": {
+                "type": "string",
+                "description": "Enter Slack channel name in \"Current Value\" field\n\nex: #channelname"
+              }
+            },
+            "definitions": {}
+          }
+        }
       }
     ],
     "triggers": [
       {
-        "id": "1640f1e5-7977-440e-9bd9-608881aa1e58",
+        "id": "40a3db0e-99fc-4bb0-93c9-086d4c71cae1",
         "name": "List Inactive Trigger Message",
         "description": "",
         "input": {
-          "matchChannel": "change_me",
+          "matchChannel": "{{$workflow.[Slack Channel]}}",
           "matchText": "list-inactive",
           "type": "any"
         },
@@ -1656,20 +1687,20 @@
                   "items": {
                     "type": "string"
                   },
-                  "order": 3,
+                  "order": 4,
                   "title": "Email Addresses",
                   "type": "array"
                 },
                 "hashes": {
                   "$ref": "#/definitions/hashes",
                   "description": "Hashes found within the message",
-                  "order": 4,
+                  "order": 5,
                   "title": "Hashes"
                 },
                 "ip_addresses": {
                   "$ref": "#/definitions/ip_addresses",
                   "description": "IP addresses found within the message",
-                  "order": 6,
+                  "order": 7,
                   "title": "IP Addresses"
                 },
                 "mac_addresses": {
@@ -1677,8 +1708,17 @@
                   "items": {
                     "type": "string"
                   },
-                  "order": 5,
+                  "order": 6,
                   "title": "MAC Addresses",
+                  "type": "array"
+                },
+                "parent_domains": {
+                  "description": "Parent domains found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "Parent Domains",
                   "type": "array"
                 },
                 "urls": {
@@ -1686,7 +1726,7 @@
                   "items": {
                     "type": "string"
                   },
-                  "order": 2,
+                  "order": 3,
                   "title": "URLs",
                   "type": "array"
                 }
@@ -1741,7 +1781,7 @@
                 "indicators": {
                   "$ref": "#/definitions/indicators",
                   "description": "Potential threat indicators found within the message",
-                  "order": 6,
+                  "order": 7,
                   "title": "Indicators"
                 },
                 "text": {
@@ -1767,6 +1807,15 @@
                   "order": 2,
                   "title": "User ID",
                   "type": "string"
+                },
+                "words": {
+                  "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 6,
+                  "title": "Words",
+                  "type": "array"
                 }
               },
               "title": "Message",
