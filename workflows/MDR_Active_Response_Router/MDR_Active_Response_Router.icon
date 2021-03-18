@@ -1,14 +1,14 @@
 {
   "kom": {
-    "komandVersion": "1.60.1-0-g652e5",
+    "komandVersion": "1.79.3-0-g0f0e3",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-08-24T17:09:41.896561949Z",
+    "exportedAt": "2021-03-18T18:35:50.939954777Z",
     "workflowVersions": [
       {
-        "name": "MDR Active Response Router [Editing Restrictions Apply]",
+        "name": "MDR Active Response Router",
         "type": "runnable",
         "version": "",
-        "description": "",
+        "description": "# Description\n\nThis workflow is part of the MDR Active Response add-on. When the MDR team identifies a threat, such as a compromised user, this workflow enables them to send an email, SMS, and Slack notification that you can review and respond to within a grace period of 10 minutes. This workflow also triggers the MDR Containment DIsable User with Active Directory and MDR Containment Isolate Sensor in Cb Response workflows.\n\n# Key Features\n\n* Quarantine Asset with Insight Agent or Cb Response\n* Send real-time updates to actions using your preferred communication methods: phone, email, Slack, and SMS.\n* Accelerate or cancel containment actions from your mobile or desktop devices via Slack.\n\n\n# Requirements\n\n* Insight Platform Organization-level API key\n* Python3 Script \n* Type Converter\n* REST\n* Active Directory LDAP\n* Microsoft Office 365 Email \n* Twilio (Optional) \n* Slack (ChatOps)\n\n\n# Documentation\n\n## Setup\n\nImport the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.\n \n## Technical Details\n\nFor Technical Details, please refer to the import MDR Active Response Asset Quarantine Workflow page.\n\n## Troubleshooting\n\n|Plugin|Version|Count|\n|----|----|--------|\n|REST|3.0.3|5|\n|Python 3 Script|2.0.2|4|\n|Twilio|1.0.2|1|\n|Type Converter|1.5.1|1|\n|Microsoft Office 365 Email|4.1.4|1|\n|String Operations|1.3.0|2|\n\n_There is no troubleshooting information at this time_\n\n# Version History\n\n* 1.0.0 - Initial workflow\n* 1.0.1 - Fix null issue affecting the filter step\n\n# Links\n\n## References\n",
         "graph": {
           "edges": {
             "037f8fd2-7ded-443b-9edc-ab7dc9d6c671": {
@@ -754,8 +754,8 @@
             "connectionType": "NONE",
             "helperIdentifier": "lookup_global_artifacts",
             "globalArtifact": {
-              "name": "Asset Exclude List",
-              "id": "11905ed4-e69d-4b1d-a443-93f3c699e03c",
+              "name": "Asset Exclude List - Plugin Update",
+              "id": "29e54b68-9bf6-4cfa-9ff9-298458619a89",
               "schema": {
                 "definitions": {
                   "_ROOT_": {
@@ -970,11 +970,11 @@
             "name": "Send Whitelist Update",
             "type": "action",
             "plugin": {
-              "name": "REST",
+              "name": "HTTP Requests",
               "slugVendor": "rapid7",
               "slugName": "rest",
-              "slugVersion": "3.0.3",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rest/3.0.3/icon.png"
+              "slugVersion": "4.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rest/4.0.1/icon.png"
             },
             "identifier": "post",
             "continueOnFailure": false,
@@ -983,16 +983,14 @@
             "parameters": {
               "input": {
                 "body": "{{[129e5475-e9e4-4e50-9f32-a2dcb9ed9210].[payload]}}",
-                "headers": {
-                  "x-api-key": "change_me"
-                },
+                "headers": {},
                 "route": "7a709395-190f-4497-9054-7cab8d41b468/events/execute"
               }
             },
             "defaultInputJSONSchema": {
               "properties": {
                 "body": {
-                  "description": "Payload to submit to the server when making the REST call",
+                  "description": "Payload to submit to the server when making the HTTP Request call",
                   "order": 3,
                   "title": "Body",
                   "type": "object"
@@ -1154,8 +1152,8 @@
             "connectionType": "NONE",
             "helperIdentifier": "lookup_global_artifacts",
             "globalArtifact": {
-              "name": "User Exclude List",
-              "id": "cc3785cb-2ff2-484d-96ad-be864e2a8080",
+              "name": "User Exclude - Plugin Update",
+              "id": "de4d79e7-951a-408c-8145-edbfd31fa53c",
               "schema": {
                 "definitions": {
                   "_ROOT_": {
@@ -1189,7 +1187,7 @@
             "type": "trigger",
             "continueOnFailure": false,
             "isDisabled": false,
-            "triggerId": "307e4d4e-63b5-4cf0-a967-203bd7cda8ea",
+            "triggerId": "e078d07c-466b-42cd-942b-2e2805f04ff3",
             "defaultInputJSONSchema": {
               "definitions": {
                 "containment_params": {
@@ -2194,14 +2192,14 @@
           },
           "cbcc87aa-26c9-4e76-b527-fe9d043d661a": {
             "nodeId": "cbcc87aa-26c9-4e76-b527-fe9d043d661a",
-            "name": "Perform Isolation",
+            "name": "Perform CB Isolation",
             "type": "action",
             "plugin": {
-              "name": "REST",
+              "name": "HTTP Requests",
               "slugVendor": "rapid7",
               "slugName": "rest",
-              "slugVersion": "3.0.3",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rest/3.0.3/icon.png"
+              "slugVersion": "4.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rest/4.0.1/icon.png"
             },
             "identifier": "post",
             "continueOnFailure": false,
@@ -2217,7 +2215,7 @@
             "defaultInputJSONSchema": {
               "properties": {
                 "body": {
-                  "description": "Payload to submit to the server when making the REST call",
+                  "description": "Payload to submit to the server when making the HTTP Request call",
                   "order": 3,
                   "title": "Body",
                   "type": "object"
@@ -2280,11 +2278,11 @@
             "name": "Run Quarantine Action",
             "type": "action",
             "plugin": {
-              "name": "REST",
+              "name": "HTTP Requests",
               "slugVendor": "rapid7",
               "slugName": "rest",
-              "slugVersion": "3.0.3",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rest/3.0.3/icon.png"
+              "slugVersion": "4.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rest/4.0.1/icon.png"
             },
             "identifier": "post",
             "continueOnFailure": false,
@@ -2293,16 +2291,14 @@
             "parameters": {
               "input": {
                 "body": "{{[d402a774-7165-40ad-a8e0-6f91dbdd38d5].[payload]}}",
-                "headers": {
-                  "x-api-key": "change_me"
-                },
+                "headers": {},
                 "route": "7a709395-190f-4497-9054-7cab8d41b468/events/execute"
               }
             },
             "defaultInputJSONSchema": {
               "properties": {
                 "body": {
-                  "description": "Payload to submit to the server when making the REST call",
+                  "description": "Payload to submit to the server when making the HTTP Request call",
                   "order": 3,
                   "title": "Body",
                   "type": "object"
@@ -2584,11 +2580,11 @@
             "name": "Post Do Nothing",
             "type": "action",
             "plugin": {
-              "name": "REST",
+              "name": "HTTP Requests",
               "slugVendor": "rapid7",
               "slugName": "rest",
-              "slugVersion": "3.0.3",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rest/3.0.3/icon.png"
+              "slugVersion": "4.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rest/4.0.1/icon.png"
             },
             "identifier": "post",
             "continueOnFailure": false,
@@ -2604,7 +2600,7 @@
             "defaultInputJSONSchema": {
               "properties": {
                 "body": {
-                  "description": "Payload to submit to the server when making the REST call",
+                  "description": "Payload to submit to the server when making the HTTP Request call",
                   "order": 3,
                   "title": "Body",
                   "type": "object"
@@ -2667,11 +2663,11 @@
             "name": "Quarantine Users",
             "type": "action",
             "plugin": {
-              "name": "REST",
+              "name": "HTTP Requests",
               "slugVendor": "rapid7",
               "slugName": "rest",
-              "slugVersion": "3.0.3",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rest/3.0.3/icon.png"
+              "slugVersion": "4.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rest/4.0.1/icon.png"
             },
             "identifier": "post",
             "continueOnFailure": false,
@@ -2681,13 +2677,13 @@
               "input": {
                 "body": "{{[39d3b534-e693-4c60-952d-506c90ae4592].[payload]}}",
                 "headers": {},
-                "route": "66d9ae26-a121-48e6-b996-2624ccfd2085/events/execute"
+                "route": "758dab72-1583-4158-b12d-38e69404ce55/events/execute"
               }
             },
             "defaultInputJSONSchema": {
               "properties": {
                 "body": {
-                  "description": "Payload to submit to the server when making the REST call",
+                  "description": "Payload to submit to the server when making the HTTP Request call",
                   "order": 3,
                   "title": "Body",
                   "type": "object"
@@ -2791,7 +2787,7 @@
               "input": {
                 "attachments": [],
                 "message": "{{[deeec789-ff2e-4975-ae22-e219c0d1f7b6].[content]}}",
-                "recipient": "#mdr_customer_test",
+                "recipient": "#mdr_active_response",
                 "thread_ts": ""
               }
             },
@@ -3082,12 +3078,15 @@
         },
         "tags": null,
         "humanCostSeconds": 0,
-        "humanCostDisplayUnit": "minutes"
+        "humanCostDisplayUnit": "minutes",
+        "parameters": {
+          "definitionSchema": null
+        }
       }
     ],
     "triggers": [
       {
-        "id": "307e4d4e-63b5-4cf0-a967-203bd7cda8ea",
+        "id": "e078d07c-466b-42cd-942b-2e2805f04ff3",
         "name": "New Containment Action",
         "description": "",
         "input": null,
@@ -3326,7 +3325,10 @@
           "type": "object"
         },
         "tags": [],
-        "type": "trigger_api"
+        "type": "trigger_api",
+        "options": {
+          "webhookEnabled": true
+        }
       }
     ]
   }

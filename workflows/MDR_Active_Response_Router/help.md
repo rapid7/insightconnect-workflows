@@ -35,7 +35,7 @@ For Technical Details, please refer to the import MDR Active Response Asset Quar
 
 |Plugin|Version|Count|
 |----|----|--------|
-|REST|3.0.3|5|
+|REST|4.0.1|5|
 |Python 3 Script|2.0.2|4|
 |Twilio|1.0.2|1|
 |Type Converter|1.5.1|1|
@@ -48,6 +48,7 @@ _There is no troubleshooting information at this time_
 
 * 1.0.0 - Initial workflow
 * 1.0.1 - Fix null issue affecting the filter step
+* 1.0.2 - Update REST Plugin to 4.0.1
 
 # Links
 
