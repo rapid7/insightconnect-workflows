@@ -35,7 +35,7 @@ For Technical Details, please refer to the import MDR Active Response Asset Quar
 
 |Plugin|Version|Count|
 |----|----|--------|
-|HTTP Requests|4.0.1|5|
+|HTTP Requests|4.0.1|4|
 |Python 3 Script|2.0.2|4|
 |Twilio|1.0.2|1|
 |Type Converter|1.5.1|1|
