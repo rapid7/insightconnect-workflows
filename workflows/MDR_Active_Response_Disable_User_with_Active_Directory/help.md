@@ -25,9 +25,9 @@ Import the workflow from the Rapid7 Extension Library and proceed through the Im
 
 |Plugin|Version|Count|
 |----|----|--------|
-|HTTP REST|4.0.1|1|
+|HTTP Requests|4.0.1|1|
 |Python 3 Script|2.0.2|1|
-|Active Directory LDAP|3.2.9|1|
+|Active Directory LDAP|5.0.1|1|
 
 For Technical details, refer to the MDR Containment Disable User with Active Directory import instructions. 
 
