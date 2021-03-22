@@ -25,7 +25,7 @@ Import the workflow from the Rapid7 Extension Library and proceed through the Im
 
 |Plugin|Version|Count|
 |----|----|--------|
-|REST|3.0.3|1|
+|HTTP REST|4.0.1|1|
 |Python 3 Script|2.0.2|1|
 |Active Directory LDAP|3.2.9|1|
 
@@ -37,8 +37,9 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
-* 1.0.0 - Initial workflow
+* 1.0.2 - Upgrade HTTP Rest Plugin
 * 1.0.1 - Fix AD backslash issue
+* 1.0.0 - Initial workflow
 
 # Links
 
