@@ -23,7 +23,7 @@ Import the workflow from the Rapid7 Extension Library and proceed through the Im
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Active Directory LDAP|5.0.1|1|
+|Active Directory LDAP|5.1.0|1|
 
 For Technical details, refer to the MDR Containment Enable User with Active Directory import instructions.
 
