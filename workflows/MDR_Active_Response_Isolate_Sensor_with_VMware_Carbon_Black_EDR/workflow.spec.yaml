@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: MDR_Active_Response_Isolate_Sensor_with_VMware_Carbon_Black_EDR
 title: MDR Active Response Isolate Sensor with VMware Carbon Black EDR
 description: This workflow is part of the MDR Active Response add-on and is required to complete quarantine actions with VMware Carbon Back EDR when the MDR team validates a threat in your environment.
-version: 1.0.0
+version: 1.0.1
 vendor: rapid7
 support: rapid7
 status: ["hidden"]

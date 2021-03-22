@@ -30,9 +30,8 @@ Import the workflow from the Rapid7 Extension Library and proceed through the Im
 
 |Plugin|Version|Count|
 |----|----|--------|
-|REST|3.0.3|1|
+|HTTP Requests|4.0.1|1|
 |VMware Carbon Black EDR|3.1.10|1|
-|Python 3 Script|2.0.2|1|
 
 For Technical details, please refer to MDR Containment Isolate Sensor with VMware Carbon Back EDR import instructions.
 
@@ -42,6 +41,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.1 - Update HTTP Requests plugin
 * 1.0.0 - Initial workflow
 
 # Links

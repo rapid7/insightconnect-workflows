@@ -1,14 +1,14 @@
 {
   "kom": {
-    "komandVersion": "1.63.0-0-g466c4",
+    "komandVersion": "1.79.3-0-g0f0e3",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-09-29T18:57:05.227428838Z",
+    "exportedAt": "2021-03-22T15:25:38.7959771Z",
     "workflowVersions": [
       {
-        "name": "MDR Active Response Disable User with Active Directory [Editing Restrictions Apply]",
+        "name": "MDR Active Response Disable User with Active Directory",
         "type": "runnable",
         "version": "",
-        "description": "",
+        "description": "# Description\n\nThis workflow is part of the MDR Active Response add-on and is required to disable users with Active Directory.\n\n# Key Features\n\n* Disable User with Active Directory\n* Send real-time updates to actions using your preferred communication methods: email, Slack, and SMS.\n* Accelerate or cancel containment actions from your mobile or desktop devices via Slack.\n\n# Requirements\n\n* Active Directory LDAP\n* Python3 Script\n* Slack (ChatOps)\n* REST\n\n# Documentation\n\n## Setup\n\nImport the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.\n \n## Technical Details\n\n|Plugin|Version|Count|\n|----|----|--------|\n|REST|4.1.0|1|\n|Python 3 Script|2.0.2|1|\n|Active Directory LDAP|5.0.1|1|\n\nFor Technical details, refer to the MDR Containment Disable User with Active Directory import instructions. \n\n## Troubleshooting\n\n_There is no troubleshooting information at this time_\n\n# Version History\n\n* 1.1.0 - Updated LDAP and HTTP Rest Plugins\n* 1.0.1 - Fix AD backslash issue\n* 1.0.0 - Initial workflow\n\n\n# Links\n\n## References\n",
         "graph": {
           "edges": {
             "1eedb582-28a8-4216-bcca-22d06626cd96": {
@@ -18,14 +18,6 @@
               "parentNodeId": "",
               "fromNodeId": "7422e55c-efd7-4f39-af32-f5e2896c0042",
               "toNodeId": "3177f2e3-c3d7-4715-9cca-e91d46bc2ed4"
-            },
-            "57ea12c6-925d-48f8-9fd9-5aecce828e0e": {
-              "id": "57ea12c6-925d-48f8-9fd9-5aecce828e0e",
-              "name": "",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "843f6b30-c341-4b45-9964-bde7bee23f7c",
-              "toNodeId": "3851bba6-c2d1-4d38-8d28-da3ff68bbcab"
             },
             "757959a8-4c35-43ec-bf03-b5222893cef7": {
               "id": "757959a8-4c35-43ec-bf03-b5222893cef7",
@@ -41,7 +33,7 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "4fee7928-5cca-49b6-9d17-b6bae7125f85",
-              "toNodeId": "843f6b30-c341-4b45-9964-bde7bee23f7c"
+              "toNodeId": "3851bba6-c2d1-4d38-8d28-da3ff68bbcab"
             },
             "b72ae278-db86-46fc-814c-0909984efa7a": {
               "id": "b72ae278-db86-46fc-814c-0909984efa7a",
@@ -87,10 +79,6 @@
             },
             "7422e55c-efd7-4f39-af32-f5e2896c0042": {
               "id": "7422e55c-efd7-4f39-af32-f5e2896c0042",
-              "parentNodeId": ""
-            },
-            "843f6b30-c341-4b45-9964-bde7bee23f7c": {
-              "id": "843f6b30-c341-4b45-9964-bde7bee23f7c",
               "parentNodeId": ""
             }
           }
@@ -171,11 +159,11 @@
             "name": "Send Update",
             "type": "action",
             "plugin": {
-              "name": "REST",
+              "name": "HTTP Requests",
               "slugVendor": "rapid7",
               "slugName": "rest",
-              "slugVersion": "3.0.3",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rest/3.0.3/icon.png"
+              "slugVersion": "4.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rest/4.0.1/icon.png"
             },
             "identifier": "post",
             "continueOnFailure": false,
@@ -183,17 +171,19 @@
             "isCloud": false,
             "parameters": {
               "input": {
-                "body": "{{[843f6b30-c341-4b45-9964-bde7bee23f7c].[payload]}}",
-                "headers": {
-                  "x-api-key": "change_me"
+                "body": {
+                  "soc_slack_channel": "{{[7422e55c-efd7-4f39-af32-f5e2896c0042].[soc_slack_channel]}}",
+                  "soc_slack_timestamp": "{{[7422e55c-efd7-4f39-af32-f5e2896c0042].[soc_slack_timestamp]}}",
+                  "update": "The following users were disabled successfully: {{[3177f2e3-c3d7-4715-9cca-e91d46bc2ed4].[Disabled Users]}}. The following users were unsuccessfully disabled: {{[3177f2e3-c3d7-4715-9cca-e91d46bc2ed4].[Failed Users]}}. Please follow up manually!"
                 },
+                "headers": {},
                 "route": "7a709395-190f-4497-9054-7cab8d41b468/events/execute"
               }
             },
             "defaultInputJSONSchema": {
               "properties": {
                 "body": {
-                  "description": "Payload to submit to the server when making the REST call",
+                  "description": "Payload to submit to the server when making the HTTP Request call",
                   "order": 3,
                   "title": "Body",
                   "type": "object"
@@ -259,8 +249,8 @@
               "name": "Active Directory LDAP",
               "slugVendor": "rapid7",
               "slugName": "active_directory_ldap",
-              "slugVersion": "4.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/active_directory_ldap/4.0.0/icon.png"
+              "slugVersion": "5.1.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/active_directory_ldap/5.1.0/icon.png"
             },
             "identifier": "disable_user",
             "continueOnFailure": false,
@@ -311,7 +301,7 @@
             "parameters": {
               "input": {
                 "attachments": [],
-                "message": "The following users were successfully disabled in Active Directory: {{[3177f2e3-c3d7-4715-9cca-e91d46bc2ed4].[Disabled Users]}}\n\nThe following users were unsuccessfully disabled: {{[3177f2e3-c3d7-4715-9cca-e91d46bc2ed4].[Disabled Users]}}\n\nDo you want to undo quarantine?\nSteps to *undo a quarantined asset or user:*\n        \n1. Copy -\n        \n```@Rapid7 InsightConnect enable <distinguishedName>```\n        \n2. Paste the above command into your slack channel to initiate the unquarantine action, replacing <distinguishedName> with a DN for a user listed above.",
+                "message": "The following users were successfully disabled in Active Directory: {{[3177f2e3-c3d7-4715-9cca-e91d46bc2ed4].[Disabled Users]}}\n\nThe following users were unsuccessfully disabled: {{[3177f2e3-c3d7-4715-9cca-e91d46bc2ed4].[Failed Users]}}\n\nYou may either re-enable the user within Active Directory or re-enable them via Slack. If you re-enable them within Active Directory, you will not see a successful message within this Slack thread.\n\nSteps to undo a quarantined user in Slack:\n       \n1. Enter the following command. Replace <distinguishedName> with the full distinguishedName(DN). The full DN includes everthing between the quotes (\"DN\") within the success message above:\n       \n```@Rapid7 InsightConnect enable <distinguishedName>```\n\nFor example, if the output is `[\"cn=user test1,ou=users,ou=domain,dc=domain,dc=local\"]`, copy and paste `cn=user test1,ou=users,ou=domain,dc=domain,dc=local` as the DN.\n       \n",
                 "recipient": "{{[7422e55c-efd7-4f39-af32-f5e2896c0042].[cust_slack_channel]}}",
                 "thread_ts": "{{[7422e55c-efd7-4f39-af32-f5e2896c0042].[cust_slack_timestamp]}}"
               }
@@ -382,7 +372,7 @@
             "type": "trigger",
             "continueOnFailure": false,
             "isDisabled": false,
-            "triggerId": "f5b45baf-676c-45c8-8367-6432e62408dd",
+            "triggerId": "613c4e40-194e-476e-b1bf-32c2c621b319",
             "defaultInputJSONSchema": {
               "definitions": {
                 "containment_params": {
@@ -764,80 +754,19 @@
             "outputJSONSchema": null,
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/trigger-api.svg",
             "connectionType": "NONE"
-          },
-          "843f6b30-c341-4b45-9964-bde7bee23f7c": {
-            "nodeId": "843f6b30-c341-4b45-9964-bde7bee23f7c",
-            "name": "Format Json",
-            "type": "action",
-            "plugin": {
-              "name": "Python 3 Script",
-              "slugVendor": "rapid7",
-              "slugName": "python_3_script",
-              "slugVersion": "2.0.2",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/python_3_script/2.0.2/icon.png"
-            },
-            "identifier": "run",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "isCloud": false,
-            "parameters": {
-              "input": {
-                "function": "def run(params={}):\n    \n    return {\"payload\": {\"update\":'''The following users were disabled successfully: {{[3177f2e3-c3d7-4715-9cca-e91d46bc2ed4].[Disabled Users]}}. \\\n    The following users were unsuccessfully disabled: {{[3177f2e3-c3d7-4715-9cca-e91d46bc2ed4].[Failed Users]}}. Please follow up manually!''',\n            \"soc_slack_timestamp\":\"{{[7422e55c-efd7-4f39-af32-f5e2896c0042].[soc_slack_timestamp]}}\",\"soc_slack_channel\":\"{{[7422e55c-efd7-4f39-af32-f5e2896c0042].[soc_slack_channel]}}\"}}",
-                "input": {}
-              }
-            },
-            "defaultInputJSONSchema": {
-              "properties": {
-                "function": {
-                  "default": "def run(params={}):\\n    return {}",
-                  "description": "Function definition. Must be named `run`. Accepts the `input` object as params. Returns the dict as output",
-                  "displayType": "python",
-                  "format": "python",
-                  "order": 1,
-                  "title": "Function",
-                  "type": "string"
-                },
-                "input": {
-                  "description": "Input object to be passed as `params={}` to the `run` function",
-                  "order": 2,
-                  "title": "Input",
-                  "type": "object"
-                }
-              },
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultOutputJSONSchema": {
-              "properties": {
-                "result1": {
-                  "description": "Sample output result1 (delete or edit)",
-                  "order": 1,
-                  "title": "Result1",
-                  "type": "string"
-                },
-                "result2": {
-                  "description": "Sample output result2 (delete or edit)",
-                  "order": 2,
-                  "title": "Result2",
-                  "type": "string"
-                }
-              },
-              "title": "Variables",
-              "type": "object"
-            },
-            "outputJSONSchema": null,
-            "defaultImageData": "",
-            "connectionType": "CONNECTION"
           }
         },
         "tags": null,
         "humanCostSeconds": 0,
-        "humanCostDisplayUnit": ""
+        "humanCostDisplayUnit": "",
+        "parameters": {
+          "definitionSchema": null
+        }
       }
     ],
     "triggers": [
       {
-        "id": "f5b45baf-676c-45c8-8367-6432e62408dd",
+        "id": "613c4e40-194e-476e-b1bf-32c2c621b319",
         "name": "New Isolation Event",
         "description": "",
         "input": null,
@@ -1220,7 +1149,10 @@
           "type": "object"
         },
         "tags": [],
-        "type": "trigger_api"
+        "type": "trigger_api",
+        "options": {
+          "webhookEnabled": true
+        }
       }
     ]
   }

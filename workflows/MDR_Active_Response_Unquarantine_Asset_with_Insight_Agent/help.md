@@ -30,13 +30,14 @@ For Technical details, refer to the MDR Containment Unquarantine Asset with Insi
 
 |Plugin|Version|Count|
 |----|----|--------|
-|REST|3.0.3|1|
+|HTTP Requests|4.0.1|1|
 |Python 3 Script|2.0.2|1|
 
 _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.1 - Update HTTP Requests Plugin
 * 1.0.0 - Initial workflow
 
 # Links
