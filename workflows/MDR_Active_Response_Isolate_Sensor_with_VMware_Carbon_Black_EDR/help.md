@@ -32,7 +32,6 @@ Import the workflow from the Rapid7 Extension Library and proceed through the Im
 |----|----|--------|
 |HTTP Requests|4.0.1|1|
 |VMware Carbon Black EDR|3.1.10|1|
-|Python 3 Script|2.0.2|1|
 
 For Technical details, please refer to MDR Containment Isolate Sensor with VMware Carbon Back EDR import instructions.
 
