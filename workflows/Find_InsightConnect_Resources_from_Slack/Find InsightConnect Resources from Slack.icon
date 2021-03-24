@@ -1,11 +1,11 @@
 {
   "kom": {
-    "komandVersion": "1.78.3-0-gbfe7f",
+    "komandVersion": "1.79.4-0-gf9f16",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2021-03-04T16:25:44.794397838Z",
+    "exportedAt": "2021-03-24T15:51:31.870454839Z",
     "workflowVersions": [
       {
-        "name": "Find_InsightConnect_Resources_from_Slack",
+        "name": "Find InsightConnect Resources from Slack",
         "type": "runnable",
         "version": "",
         "description": "# Description\n\nThis workflow is designed to provide two benefits; first and foremost, it will allow you to easily find InsightConnect documentation through an interaction with the Slack app, and secondly, it will provide an example of how to structure Slack-based InsightConnect workflows in the future! This workflow allows you to seamlessly interact with the InsightConnect Slack app in order to find helpful resources to support your implementation. By kicking this workflow off in Slack using a custom command, you will be asked a series of questions to determine what stage of your implementation you are in, and what resources you may need. Behind the scenes, this workflow leverages a \"Repeat Until\" Loop in order to deliver a seamless user experience in Slack that allows you to change your answer several times, within a single execution of the Workflow. \n\n\n# Key Features\n\n* Find resources and consume content without ever leaving Slack\n* Explore multiple different paths within a single execution of the Workflow, all through Slack's interactive message experience\n* This workflow does not require an orchestrator\n\n# Requirements\n\n* InsightConnect License\n* [Slack](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops)\n\n# Documentation\n\n## Setup\n\nFollow the [Configure Slack for ChatOps](https://docs.rapid7.com/insightconnect/configure-slack-for-chatops) instructions to get the InsightConnect Slack app added to your organization's Slack instance. Then, import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Select your Slack workspace, and optionally rename the workflow. Select the _Activate workflow upon import_ box, and finish the import.\n\n## Usage\n\n_This workflow will trigger in any direct messages to the InsightConnect app, or any message in a channel directed @ the InsightConnect app. The app must first be invited to the channel in order to trigger the workflow this way._\n\nTo run the workflow, send a direct message to your InsightConnect Slack app or @ the app in a channel starting with the command `icon-start` for example `@Rapid7 InsightConnect icon-start` or `@Rapid7 InsightConnect icon-help` to follow along with the interactive Slack buttons to find the resources best for your needs.\n\nFor example, in a direct message with the InsightConnect app:\n\n* `icon-start`\n\nOr, in a channel including the app:\n\n* `@Rapid7 InsightConnect icon-start`\n\n## Technical Details\n\n_There are no plugins utilized by this workflow, only the InsightConnect Slack app_.\n\nPlugins utilized by workflow:\n|Plugin|Version|Count|\n|----|----|--------|\n\n## Troubleshooting\n\n_There is no troubleshooting information at this time_\n\n# Version History\n\n* 1.0.0 - Initial workflow\n\n# Links\n\n## References\n\n* [Slack](https://slack.com)\n",
@@ -709,7 +709,7 @@
                 "type": "any"
               }
             },
-            "triggerId": "3004fcf6-5365-45c4-8800-ce3fb1c2e6b9",
+            "triggerId": "f1813991-3c6e-4bd0-95c5-00f842129564",
             "defaultInputJSONSchema": {
               "properties": {
                 "matchChannel": {
@@ -1378,7 +1378,7 @@
     ],
     "triggers": [
       {
-        "id": "3004fcf6-5365-45c4-8800-ce3fb1c2e6b9",
+        "id": "f1813991-3c6e-4bd0-95c5-00f842129564",
         "name": "Slack Trigger",
         "description": "@Rapid7 InsightConnect icon-start; or\n@Rapid7 InsightConnect icon-help",
         "input": {
