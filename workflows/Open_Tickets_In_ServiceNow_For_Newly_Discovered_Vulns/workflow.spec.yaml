@@ -1,7 +1,7 @@
 extension: workflow
 products: ["insightconnect", "insightvm"]
 name: Open_Tickets_In_ServiceNow_For_Newly_Discovered_Vulns
-title: "Open Tickets In ServiceNow For Newly Discovered Vulns"
+title: "Open Tickets in ServiceNow for Newly Discovered Vulns"
 description: "This workflow opens tickets in ServiceNow for vulnerabilities discovered by InsightVM."
 version: 1.0.0
 vendor: rapid7
@@ -16,12 +16,12 @@ resources:
   license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
   screenshots:
   - name: servicenow1.png
-    title: Newly created vulnerability ticket in ServiceNow
+    title: Newly Created Vulnerability Ticket in ServiceNow
   - name: servicenow2.png
-    title: Notes for newly created vulnerability ticket in ServiceNow
+    title: Notes for Newly Created Vulnerability Ticket in ServiceNow
   - name: workflow1.png
-    title: Workflow builder view
+    title: Workflow Builder View
   - name: workflow2.png
-    title: Workflow Loop over Vulns view
+    title: Workflow Loop Over Vulns View
   - name: job.png
-    title: Successful workflow job
+    title: Successful Workflow Job
