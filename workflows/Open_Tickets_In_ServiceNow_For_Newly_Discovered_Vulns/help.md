@@ -4,7 +4,7 @@
 
 This workflow automatically opens incidents in ServiceNow for newly discovered vulnerabilities with a risk score greater than the user-defined `Risk Threshold`. Each incident ticket is named with the InsightVM vulnerability identifier and asset identifier. The incident description includes vulnerability and asset details. Issues opened by this workflow will be automatically closed upon remediation by the associated [Close Tickets in ServiceNow for Newly Remediated Vulnerabilities](https://extensions.rapid7.com/extension/Close_Tickets_in_ServiceNow_for_Newly_Remediated_Vulns). Make sure you import and activate both workflows for closed-loop vulnerability ticketing!
 
-These workflows help IT and Security teams open, track, and close remediation tasks as vulnerabilities are discovered by InsightVM and subsequently remediated. Both workflows use InsightConnect's [VM Events trigger](https://docs.rapid7.com/insightconnect/set-up-an-insightvm-events-trigger). This workflow uses the [vulnerabilities found]https://docs.rapid7.com/insightconnect/set-up-an-insightvm-events-trigger#vulnerabilities-found) event trigger.
+These workflows help IT and Security teams open, track, and close remediation tasks as vulnerabilities are discovered by InsightVM and subsequently remediated. Both workflows use InsightConnect's [VM Events trigger](https://docs.rapid7.com/insightconnect/set-up-an-insightvm-events-trigger). This workflow uses the [vulnerabilities found](https://docs.rapid7.com/insightconnect/set-up-an-insightvm-events-trigger#vulnerabilities-found) event trigger.
 
 # Key Features
 
