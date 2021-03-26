@@ -1,0 +1,29 @@
+extension: workflow
+products: ["insightconnect", "insightvm"]
+name: Close_Tickets_in_ServiceNow_for_Newly_Remediated_Vulns
+title: "Close Tickets in ServiceNow for Newly Remediated Vulnerabilities"
+description: "This workflow closes tickets in ServiceNow for vulnerabilities previously discovered by InsightVM that have been remediated."
+version: 1.0.0
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [vulnerability_management, remediation_management]
+  keywords: [servicenow, insightvm, itsm, ticketing]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Close_Tickets_in_ServiceNow_for_Newly_Remediated_Vulns
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+  - name: servicenow1.png
+    title: Resolved Vulnerability Ticket in ServiceNow
+  - name: servicenow2.png
+    title: Notes and Resolution Information for Resolved Vulnerability Ticket in ServiceNow
+  - name: workflow1.png
+    title: Workflow Builder View
+  - name: workflow2.png
+    title: Workflow Loop Over Vulns Remediated View
+  - name: artifact.png
+    title: Artifacts from a Successful Job
+  - name: job.png
+    title: Successful Workflow Job
