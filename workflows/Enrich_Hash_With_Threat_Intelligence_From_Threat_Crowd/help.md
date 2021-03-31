@@ -11,6 +11,8 @@ This workflow is meant to introduce InsightIDR users to plugins, actions, and ru
 * Learn how to use the API Trigger
 * See how third-party threat intelligence can help your incident investigations
 
+# Requirements
+
 # Documentation
 
 ## Setup
