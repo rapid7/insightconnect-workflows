@@ -56,6 +56,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.2 - Added cloud_enabled tag
 * 1.0.1 - Updated Artifact
 * 1.0.0 - Initial workflow
 
