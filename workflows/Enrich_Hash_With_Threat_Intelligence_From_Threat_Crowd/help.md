@@ -45,7 +45,7 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Threat Crowd|3.0.1|1|
+|Threat Crowd|3.0.0|1|
 
 ## Troubleshooting
 
