@@ -1,16 +1,16 @@
 # Description
 
-This workflow adds the Cisco Meraki L3 firewall rule to all networks in the organization via Microsoft Teams command and reports information back to Microsoft Teams. This workflow updates the L3 firewall rules of each SSID on an MR network by adding a new rule with a deny traffic policy for each destination IP address provided in the command.
+This workflow adds the Cisco Meraki L3 firewall deny rule to all networks in the organization via Microsoft Teams command and reports information back to Microsoft Teams. This workflow updates the L3 firewall rules of each SSID on an MR network by adding a new rule with a deny traffic policy for each destination IP address provided in the command.
 
 Sample Microsoft Teams Trigger Commands:
 
-`!add-rule 198.51.100.100`
+`!add-deny-rule 198.51.100.100`
 
-`!add-rule 198.51.100.100 198.51.100.101 198.51.100.102`
+`!add-deny-rule 198.51.100.100 198.51.100.101 198.51.100.102`
 
 # Key Features
 
-* Add the Cisco Meraki L3 firewall rule to all networks in the organization
+* Add the Cisco Meraki L3 firewall deny rule to all networks in the organization
 
 # Requirements
 
@@ -39,13 +39,13 @@ After configuring the parameters, activate the workflow in order to trigger it.
 
 *This workflow will only trigger in the channel specified in the Microsoft Teams workflow steps.*
 
-To run the workflow, send a message to the specified Microsoft Teams channel starting with the command `!add-rule`.
+To run the workflow, send a message to the specified Microsoft Teams channel starting with the command `!add-deny-rule <ip address>`.
 
 For example:
 
-`!add-rule 198.51.100.100`
+`!add-deny-rule 198.51.100.100`
 
-`!add-rule 198.51.100.100 198.51.100.101 198.51.100.102`
+`!add-deny-rule 198.51.100.100 198.51.100.101 198.51.100.102`
 
 The workflow will post status updates in the designated Microsoft Teams channel as it runs.
 

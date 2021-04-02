@@ -2,13 +2,13 @@
   "kom": {
     "komandVersion": "1.79.6-0-gaae7d",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2021-04-01T20:00:40.309606905Z",
+    "exportedAt": "2021-04-02T17:29:58.147963804Z",
     "workflowVersions": [
       {
         "name": "Add Cisco Meraki L3 Firewall Rule to Networks from Microsoft Teams",
         "type": "runnable",
         "version": "",
-        "description": "This workflow adds the Cisco Meraki L3 firewall rule to all networks in the organization via Microsoft Teams command and reports information back to Microsoft Teams.",
+        "description": "This workflow adds the Cisco Meraki L3 firewall deny rule to all networks in the organization via Microsoft Teams command and reports information back to Microsoft Teams.",
         "graph": {
           "edges": {
             "0f96be66-5d4b-46ae-bc02-7409f44f430f": {
@@ -248,7 +248,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "The rules have been successfully added to all networks."
+                "content": "Deny rules have been successfully added to all networks."
               },
               "type": "markdown"
             },
@@ -495,7 +495,7 @@
             "parameters": {
               "input": {
                 "channel_name": "{{[ae72f6d9-4ccc-4dae-a3e1-a62fc7e8f144].[channel_name]}}",
-                "message_content": "The rules for <code>{{[ae72f6d9-4ccc-4dae-a3e1-a62fc7e8f144].[indicators].[ip_addresses].[ipv4_addresses]}}</code> will be added to the networks below: <br>\n{{#each [4b79b182-c240-44d1-922f-0bef80abe8a2].[networks]}} \n{{#if name}} \n* {{name}} <br>\n{{/if}} {{/each}}",
+                "message_content": "Deny rules for <code>{{[ae72f6d9-4ccc-4dae-a3e1-a62fc7e8f144].[indicators].[ip_addresses].[ipv4_addresses]}}</code> will be added to the networks below: <br>\n{{#each [4b79b182-c240-44d1-922f-0bef80abe8a2].[networks]}} \n{{#if name}} \n* {{name}} <br>\n{{/if}} {{/each}}",
                 "team_name": "{{[ae72f6d9-4ccc-4dae-a3e1-a62fc7e8f144].[team_name]}}",
                 "thread_id": "{{[ae72f6d9-4ccc-4dae-a3e1-a62fc7e8f144].[message].[id]}}"
               }
@@ -1676,7 +1676,7 @@
           },
           "ae72f6d9-4ccc-4dae-a3e1-a62fc7e8f144": {
             "nodeId": "ae72f6d9-4ccc-4dae-a3e1-a62fc7e8f144",
-            "name": "Add Rule Trigger",
+            "name": "Add Deny Rule Trigger",
             "type": "trigger",
             "plugin": {
               "name": "Microsoft Teams",
@@ -1691,7 +1691,7 @@
             "parameters": {
               "input": {
                 "channel_name": "{{$workflow.[Channel Name]}}",
-                "message_content": "!add-rule.*",
+                "message_content": "!add-deny-rule.*",
                 "team_name": "{{$workflow.[Team Name]}}"
               }
             },
@@ -1952,8 +1952,8 @@
                     }
                   },
                   "required": [
-                    "first_word",
-                    "words"
+                    "words",
+                    "first_word"
                   ],
                   "title": "Message",
                   "type": "object"
@@ -2282,11 +2282,11 @@
       {
         "id": "4b6c45cd-20e1-4c7d-910d-2903101ddab2",
         "identifier": "new_message_received",
-        "name": "Add Rule Trigger",
+        "name": "Add Deny Rule Trigger",
         "description": "",
         "input": {
           "channel_name": "{{$workflow.[Channel Name]}}",
-          "message_content": "!add-rule.*",
+          "message_content": "!add-deny-rule.*",
           "team_name": "{{$workflow.[Team Name]}}"
         },
         "inputJsonSchema": {
@@ -2545,8 +2545,8 @@
                 }
               },
               "required": [
-                "first_word",
-                "words"
+                "words",
+                "first_word"
               ],
               "title": "Message",
               "type": "object"
