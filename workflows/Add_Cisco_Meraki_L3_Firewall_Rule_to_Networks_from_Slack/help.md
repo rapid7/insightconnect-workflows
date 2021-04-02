@@ -1,16 +1,16 @@
 # Description
 
-This workflow adds the Cisco Meraki L3 firewall rule to all networks in the organization via Slack command and reports information back to Slack. This workflow updates the L3 firewall rules of each SSID on an MR network by adding a new rule with a deny traffic policy for each destination IP address provided in the command.
+This workflow adds the Cisco Meraki L3 firewall deny rule to all networks in the organization via Slack command and reports information back to Slack. This workflow updates the L3 firewall rules of each SSID on an MR network by adding a new rule with a deny traffic policy for each destination IP address provided in the command.
 
 Sample Slack Trigger Commands:
 
-`@Rapid7 InsightConnect add-rule 198.51.100.100`
+`@Rapid7 InsightConnect add-deny-rule 198.51.100.100`
 
-`@Rapid7 InsightConnect add-rule 198.51.100.100 198.51.100.101 198.51.100.102`
+`@Rapid7 InsightConnect add-deny-rule 198.51.100.100 198.51.100.101 198.51.100.102`
 
 # Key Features
 
-* Add the Cisco Meraki L3 firewall rule to all networks in the organization
+* Add the Cisco Meraki L3 firewall deny rule to all networks in the organization
 
 # Requirements
 
@@ -38,13 +38,13 @@ After configuring the parameters, activate the workflow in order to trigger it.
 
 *This workflow will only trigger in the channel specified in the Slack workflow steps.*
 
-To run the workflow, send a message to the specified Slack channel starting with the command `@Rapid7 InsightConnect add-rule <ip address>`.
+To run the workflow, send a message to the specified Slack channel starting with the command `@Rapid7 InsightConnect add-deny-rule <ip address>`.
 
 For example:
 
-`@Rapid7 InsightConnect add-rule 198.51.100.100`
+`@Rapid7 InsightConnect add-deny-rule 198.51.100.100`
 
-`@Rapid7 InsightConnect add-rule 198.51.100.100 198.51.100.101 198.51.100.102`
+`@Rapid7 InsightConnect add-deny-rule 198.51.100.100 198.51.100.101 198.51.100.102`
 
 Your Chatbot will post status updates in a Slack thread throughout execution.
 

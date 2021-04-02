@@ -2,7 +2,7 @@ extension: workflow
 products: ["insightconnect"]
 name: Add_Cisco_Meraki_L3_Firewall_Rule_to_Networks_from_Slack
 title: Add Cisco Meraki L3 Firewall Rule to Networks from Slack
-description: This workflow adds the Cisco Meraki L3 firewall rule to all networks in the organization via Slack command and reports information back to Slack.
+description: This workflow adds the Cisco Meraki L3 firewall deny rule to all networks in the organization via Slack command and reports information back to Slack.
 version: 1.0.0
 vendor: rapid7
 support: rapid7

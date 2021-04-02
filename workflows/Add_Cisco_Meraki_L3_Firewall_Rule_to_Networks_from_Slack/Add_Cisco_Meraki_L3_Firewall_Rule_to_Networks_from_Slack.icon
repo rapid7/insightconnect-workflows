@@ -2,13 +2,13 @@
   "kom": {
     "komandVersion": "1.79.6-0-gaae7d",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2021-04-01T18:35:30.428603693Z",
+    "exportedAt": "2021-04-02T16:13:44.904355287Z",
     "workflowVersions": [
       {
         "name": "Add Cisco Meraki L3 Firewall Rule to Networks from Slack",
         "type": "runnable",
         "version": "",
-        "description": "This workflow adds the Cisco Meraki L3 firewall rule to all networks in the organization via Slack command and reports information back to Slack.",
+        "description": "This workflow adds the Cisco Meraki L3 firewall deny rule to all networks in the organization via Slack command and reports information back to Slack.",
         "graph": {
           "edges": {
             "07827780-dba1-4976-9ceb-a07991d9ed39": {
@@ -771,14 +771,14 @@
           },
           "b23e178f-9751-48c9-8335-e0fadfbe51b6": {
             "nodeId": "b23e178f-9751-48c9-8335-e0fadfbe51b6",
-            "name": "Add Rule Trigger",
+            "name": "Add Deny Rule Trigger",
             "type": "trigger",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "input": {
                 "matchChannel": "{{$workflow.[Channel Name]}}",
-                "matchText": "add-rule.*",
+                "matchText": "add-deny-rule.*",
                 "type": "any"
               }
             },
@@ -1390,7 +1390,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "The rules have been successfully added to all networks."
+                "content": "Deny rules have been successfully added to all networks."
               },
               "type": "markdown"
             },
@@ -1408,20 +1408,20 @@
             "isDisabled": false,
             "parameters": {
               "attachments": null,
-              "message": "The rules for `{{[b23e178f-9751-48c9-8335-e0fadfbe51b6].[message].[indicators].[ip_addresses].[ipv4_addresses]}}` will be added to the networks below:\n{{#each [ea5a0738-9b07-4c23-8fc6-260f63a2cdcb].[networks]}}\n{{#if name}}\n* {{name}}\n{{/if}}\n{{/each}}",
+              "message": "Deny rules for `{{[b23e178f-9751-48c9-8335-e0fadfbe51b6].[message].[indicators].[ip_addresses].[ipv4_addresses]}}` will be added to the networks below:\n{{#each [ea5a0738-9b07-4c23-8fc6-260f63a2cdcb].[networks]}}\n{{#if name}}\n* {{name}}\n{{/if}}\n{{/each}}",
               "messageType": "button",
               "options": [
                 {
                   "answer": "Yes",
                   "buttonStyle": "default",
-                  "confirmation": "The rules will be added to all networks.",
+                  "confirmation": "Deny rules will be added to all networks.",
                   "edgeId": "d464195d-1f26-4fc4-a566-7618f89f2614",
                   "isTimeoutOnly": false
                 },
                 {
                   "answer": "No",
                   "buttonStyle": "default",
-                  "confirmation": "The rules will be not added.",
+                  "confirmation": "Deny rules will be not added.",
                   "edgeId": "c2b0b740-9f46-465f-9086-30a11a9a4b1d",
                   "isTimeoutOnly": false
                 }
@@ -1736,7 +1736,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "The rules have not been added."
+                "content": "Deny rules have not been added."
               },
               "type": "markdown"
             },
@@ -1772,11 +1772,11 @@
     "triggers": [
       {
         "id": "0db10a7a-1eee-4bf1-87f1-e0fece8dc260",
-        "name": "Add Rule Trigger",
+        "name": "Add Deny Rule Trigger",
         "description": "",
         "input": {
           "matchChannel": "{{$workflow.[Channel Name]}}",
-          "matchText": "add-rule.*",
+          "matchText": "add-deny-rule.*",
           "type": "any"
         },
         "inputJsonSchema": {
