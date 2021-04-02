@@ -13,6 +13,7 @@ This workflow is meant to introduce InsightIDR users to plugins, actions, and ru
 
 # Requirements
 
+_There are no requirements at this time_
 # Documentation
 
 ## Setup
