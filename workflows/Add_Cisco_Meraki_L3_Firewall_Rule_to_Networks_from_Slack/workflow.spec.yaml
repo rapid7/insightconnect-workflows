@@ -1,0 +1,29 @@
+extension: workflow
+products: ["insightconnect"]
+name: Add_Cisco_Meraki_L3_Firewall_Rule_to_Networks_from_Slack
+title: Add Cisco Meraki L3 Firewall Rule to Networks from Slack
+description: This workflow adds the Cisco Meraki L3 firewall deny rule to all networks in the organization via Slack command and reports information back to Slack.
+version: 1.0.0
+vendor: rapid7
+support: rapid7
+status: []
+hub_tags:
+  use_cases: [threat_detection_and_response]
+  keywords: [cisco, meraki, firewall, l3_firewall_rule, slack, chatops, work_from_home, parameters]
+  features: []
+resources:
+  source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Add_Cisco_Meraki_L3_Firewall_Rule_to_Networks_from_Slack
+  license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+    - name: add_rules_success.png
+      title: Successfully Added Rules Message
+    - name: artifact.png
+      title: Successfully Added Rules Artifact
+    - name: confirmation.png
+      title: Confirmation of Adding Rules
+    - name: failure_invalid_ip.png
+      title: Failure Provided Invalid IP Address
+    - name: failure_network_not_found.png
+      title: Failure Network Not Found
+    - name: workflow.png
+      title: Workflow View
