@@ -284,7 +284,7 @@
             "parameters": {
               "input": {
                 "channel_name": "{{[9eb59f4b-f4c3-4783-8085-618fce021d83].[channel_name]}}",
-                "message_content": "No asset with hostname containing <b>{{[7fbd956f-e239-40fd-801e-4b4411dfe334].[argument]}}</b> was found.<br>\n<img src=\"https://media.giphy.com/media/xTiTnm8AGoS75Cvyko/giphy.gif\"/>",
+                "message_content": "No asset with hostname containing <b>{{[7fbd956f-e239-40fd-801e-4b4411dfe334].[argument]}}</b> was found.",
                 "team_name": "{{[9eb59f4b-f4c3-4783-8085-618fce021d83].[team_name]}}",
                 "thread_id": "{{[9eb59f4b-f4c3-4783-8085-618fce021d83].[message].[id]}}"
               }
