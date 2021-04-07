@@ -1,14 +1,14 @@
 {
   "kom": {
-    "komandVersion": "1.69.2-0-gaf0d9",
+    "komandVersion": "1.80.0-0-gf3f72",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-11-28T23:02:34.968643341Z",
+    "exportedAt": "2021-04-07T17:58:10.725815163Z",
     "workflowVersions": [
       {
         "name": "Lookup Top Remediations with InsightVM from Microsoft Teams",
         "type": "runnable",
         "version": "",
-        "description": "This workflow accepts a Microsoft Teams command containing a hostname and returns the Top 10 Remediations for that asset from InsightVM.\n\nSample Microsoft Teams Trigger Command:\n!top-remediations hostname123",
+        "description": "# Description\n\nLookup the top 10 remediation steps from InsightVM for a given host from a Microsoft Teams message. The workflow returns the top 10 remediation steps for the specified entity to the designated Microsoft Teams channel, making it easy to identify top risk-reducing actions and share with your team!\n\nSample Microsoft Teams command:\n\n`!top-remediations hostname123`\n\n# Key Features\n\n* Lookup the top risk-reducing remediation steps for any InsightVM asset\n* Get a summarized list of remediation steps AND details for each step in a Microsoft Teams message\n* Create a shared understanding across team members by viewing the vulnerabilities and risk reduced for each step in the same Microsoft Teams channel\n* Expedite your patching procedures with real-time access to remediation data from InsightVM without leaving the comfort of your chat window\n\n# Requirements\n\n* InsightConnect License\n* [Microsoft Teams](https://insightconnect.help.rapid7.com/docs/microsoft-teams)\n\n# Documentation\n\n## Setup\n\nImport the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.\n\nOnce the workflow has been imported, **edit the Trigger step - with Microsoft Teams team name and channel name to suit your Teams environment!**\n\nAfter configuring the Trigger step with your Microsoft Teams details, activate the workflow in order to trigger it.\n\n### Usage\n\n*This workflow will only trigger in the channel specified in the Microsoft Teams workflow steps.*\n\nTo run the workflow, send a message to the specified Microsoft Teams channel starting with the command `!top-remediations`.\n\nFor example:\n\n* `!top-remediations hostname123`\n\nThe workflow will reply to the request message with the top 10 remediation steps for the specified entity to the channel where the command was triggered.\n\n## Technical Details\n\nPlugins utilized by workflow:\n\n|Plugin|Version|Count|\n|----|----|--------|\n|Rapid7 InsightVM|4.8.1|2|\n|Microsoft Teams|3.1.0|5|\n|HTML|1.2.2|1|\n|Type Converter|1.6.0|1|\n\n## Troubleshooting\n\n_There is no troubleshooting information at this time_\n\n# Version History\n\n* 1.0.3 - Updated screenshots, documentation, and plugins to the latest version\n* 1.0.2 - Removed unnecessary type conversion step from workflow\n* 1.0.1 - Update to make Microsoft Teams plugin the latest version\n* 1.0.0 - Initial workflow\n\n# Links\n\n## References\n\n* [Microsoft Teams](https://teams.microsoft.com)\n* [Microsoft Teams Setup](https://insightconnect.help.rapid7.com/docs/microsoft-teams)\n",
         "graph": {
           "edges": {
             "1b565291-9554-4765-abab-3980a4c6551d": {
@@ -284,7 +284,7 @@
             "parameters": {
               "input": {
                 "channel_name": "{{[9eb59f4b-f4c3-4783-8085-618fce021d83].[channel_name]}}",
-                "message_content": "No asset with hostname containing <b>{{[7fbd956f-e239-40fd-801e-4b4411dfe334].[argument]}}</b> was found.",
+                "message_content": "No asset with hostname containing <b>{{[7fbd956f-e239-40fd-801e-4b4411dfe334].[argument]}}</b> was found.<br>\n",
                 "team_name": "{{[9eb59f4b-f4c3-4783-8085-618fce021d83].[team_name]}}",
                 "thread_id": "{{[9eb59f4b-f4c3-4783-8085-618fce021d83].[message].[id]}}"
               }
@@ -981,12 +981,12 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "change_me",
+                "channel_name": "{{[$workflow].[Channel Name]}}",
                 "message_content": "!top-remediations\\s+\\S+",
-                "team_name": "change_me"
+                "team_name": "{{[$workflow].[Team Name]}}"
               }
             },
-            "triggerId": "603b4663-5221-4fd5-8ae1-27113d2ac404",
+            "triggerId": "fce293e9-bdae-480a-846f-fa595c428412",
             "defaultInputJSONSchema": {
               "properties": {
                 "channel_name": {
@@ -2780,19 +2780,36 @@
         },
         "tags": null,
         "humanCostSeconds": 0,
-        "humanCostDisplayUnit": ""
+        "humanCostDisplayUnit": "",
+        "parameters": {
+          "definitionSchema": {
+            "type": "object",
+            "required": [],
+            "properties": {
+              "Team Name": {
+                "type": "string",
+                "description": "The Microsoft Teams team name where the workflow will be triggered and respond"
+              },
+              "Channel Name": {
+                "type": "string",
+                "description": "The Microsoft Teams channel name where the workflow will be triggered and respond"
+              }
+            },
+            "definitions": {}
+          }
+        }
       }
     ],
     "triggers": [
       {
-        "id": "603b4663-5221-4fd5-8ae1-27113d2ac404",
+        "id": "fce293e9-bdae-480a-846f-fa595c428412",
         "identifier": "new_message_received",
         "name": "!top-remediations Trigger",
         "description": "",
         "input": {
-          "channel_name": "change_me",
+          "channel_name": "{{[$workflow].[Channel Name]}}",
           "message_content": "!top-remediations\\s+\\S+",
-          "team_name": "change_me"
+          "team_name": "{{[$workflow].[Team Name]}}"
         },
         "inputJsonSchema": {
           "properties": {
