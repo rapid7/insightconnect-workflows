@@ -3,10 +3,10 @@ products: ["insightconnect", "insightvm"]
 name: Open_Tickets_in_ServiceNow_for_Newly_Discovered_Vulns
 title: "Open Tickets in ServiceNow for Newly Discovered Vulns"
 description: "This workflow opens tickets in ServiceNow for vulnerabilities discovered by InsightVM."
-version: 1.0.0
+version: 1.0.1
 vendor: rapid7
 support: rapid7
-status: [obsolete]
+status: []
 hub_tags:
   use_cases: [vulnerability_management, remediation_management]
   keywords: [servicenow, insightvm, itsm, ticketing, parameters]
