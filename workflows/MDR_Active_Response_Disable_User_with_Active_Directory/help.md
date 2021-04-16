@@ -36,7 +36,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
-* 1.1.0 - Updated LDAP and HTTP Rest Plugins
+* 1.0.2 - Upgrade HTTP Requests and Active Directory LDAP plugins
 * 1.0.1 - Fix AD backslash issue
 * 1.0.0 - Initial workflow
 

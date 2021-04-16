@@ -33,7 +33,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
-* 1.1.0 - Update Active Directory LDAP Plugin to 5.0.1
+* 1.0.2 - Update Active Directory LDAP Plugin to 5.0.1
 * 1.0.1 - Fix AD backslash issue
 * 1.0.0 - Initial workflow
 
