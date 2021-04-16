@@ -36,7 +36,6 @@ For Technical Details, please refer to the import MDR Active Response Asset Quar
 |Plugin|Version|Count|
 |----|----|--------|
 |HTTP Requests|4.0.1|5|
-|Python 3 Script|2.0.2|2|
 |Twilio|1.0.2|1|
 |Microsoft Office 365 Email|4.1.4|1|
 |String Operations|1.3.0|2|
