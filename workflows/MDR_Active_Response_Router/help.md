@@ -43,8 +43,8 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
-* 1.0.3 - Update parameters
-* 1.0.2 - Update HTTP Requests plugin to 4.0.1
+* 1.1.1 - Re-added ability to utilize CB Response
+* 1.1.0 - Update HTTP Requests plugin to 4.0.1
 * 1.0.1 - Fix null issue affecting the filter step
 * 1.0.0 - Initial workflow
 
