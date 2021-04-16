@@ -37,8 +37,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
-* 1.0.2 - Update parameters
-* 1.0.1 - Update HTTP Requests Plugin
+* 1.1.0 - Added Parameters and Updated HTTP Rest Plugin
 * 1.0.0 - Initial workflow
 
 # Links

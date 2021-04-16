@@ -33,8 +33,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
-* 1.0.2 - Update parameters
-* 1.0.1 - Add parameters to workflow
+* 1.1.0 - Added Parameters
 * 1.0.0 - Initial workflow
 
 # Links
