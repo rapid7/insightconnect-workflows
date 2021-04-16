@@ -1,11 +1,11 @@
 {
   "kom": {
-    "komandVersion": "1.79.3-0-g0f0e3",
+    "komandVersion": "1.79.5-0-g2fa9a",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2021-03-22T15:25:34.029557213Z",
+    "exportedAt": "2021-03-31T14:52:43.988241682Z",
     "workflowVersions": [
       {
-        "name": "MDR Active Response Isolate Sensor with VMware Carbon Black EDR",
+        "name": "MDR Active Response Isolate Sensor with VMware Carbon Black EDR [Editing Restrictions Apply]",
         "type": "runnable",
         "version": "",
         "description": "# Description\n\nThis workflow is part of the MDR Active Response add-on and is required to complete quarantine actions with VMware Carbon Back EDR when the MDR team validates a threat in your environment.\n\n# Key Features\n\n* Isolate Sensor with VMware Carbon Back EDR\n* Send real-time updates to actions using Slack as the communication method.\n* Accelerate or cancel containment actions from your mobile or desktop devices via Slack.\n\n\n# Requirements\n\n* Type Converter\n* REST \n* Python 3 Script \n* VMware Carbon Black EDR (Not required if using the Insight Agent)\n* Active Directory LDAP \n* REST \n* Slack (ChatOps)\n\n\n# Documentation\n\n## Setup\n\nImport the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.\n \n## Technical Details\n\n|Plugin|Version|Count|\n|----|----|--------|\n|REST|4.1.0|1|\n|VMware Carbon Black EDR|3.1.10|1|\n|Python 3 Script|2.0.2|1|\n\nFor Technical details, please refer to MDR Containment Isolate Sensor with VMware Carbon Back EDR import instructions.\n\n## Troubleshooting\n\n_There is no troubleshooting information at this time_\n\n# Version History\n\n* 1.1.0 - Updated HTTP Rest Plugin\n* 1.0.0 - Initial workflow\n\n# Links\n\n## References\n",

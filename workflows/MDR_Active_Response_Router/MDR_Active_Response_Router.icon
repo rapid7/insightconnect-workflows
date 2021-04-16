@@ -1,24 +1,16 @@
 {
   "kom": {
-    "komandVersion": "1.79.3-0-g0f0e3",
+    "komandVersion": "1.79.5-0-g2fa9a",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2021-03-22T15:25:31.081191021Z",
+    "exportedAt": "2021-03-31T14:52:37.797127189Z",
     "workflowVersions": [
       {
-        "name": "MDR Active Response Router",
+        "name": "MDR Active Response Router [Editing Restrictions Apply]",
         "type": "runnable",
         "version": "",
-        "description": "# Description\n\nThis workflow is part of the MDR Active Response add-on. When the MDR team identifies a threat, such as a compromised user, this workflow enables them to send an email, SMS, and Slack notification that you can review and respond to within a grace period of 10 minutes. This workflow also triggers the MDR Containment Disable User with Active Directory and MDR Containment Isolate Sensor in Cb Response workflows.\n\n# Key Features\n\n* Quarantine Asset with Insight Agent or Cb Response\n* Send real-time updates to actions using your preferred communication methods: phone, email, Slack, and SMS.\n* Accelerate or cancel containment actions from your mobile or desktop devices via Slack.\n\n\n# Requirements\n\n* Insight Platform Organization-level API key\n* Python3 Script \n* Type Converter\n* REST\n* Active Directory LDAP\n* Microsoft Office 365 Email \n* Twilio (Optional) \n* Slack (ChatOps)\n\n\n# Documentation\n\n## Setup\n\nImport the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.\n \n## Technical Details\n\nFor Technical Details, please refer to the import MDR Active Response Asset Quarantine Workflow page.\n\n## Troubleshooting\n\n|Plugin|Version|Count|\n|----|----|--------|\n|REST|4.1.0|5|\n|Python 3 Script|2.0.2|4|\n|Twilio|1.0.2|1|\n|Type Converter|1.5.1|1|\n|Microsoft Office 365 Email|4.1.4|1|\n|String Operations|1.3.0|2|\n\n_There is no troubleshooting information at this time_\n\n# Version History\n\n* 1.1.0 - Added Parameters and Updated HTTP Rest Plugin\n* 1.0.1 - Fix null issue affecting the filter step\n* 1.0.0 - Initial workflow\n\n\n# Links\n\n## References\n",
+        "description": "# Description\n\nThis workflow is part of the MDR Active Response add-on. When the MDR team identifies a threat, such as a compromised user, this workflow enables them to send an email, SMS, and Slack notification that you can review and respond to within a grace period of 10 minutes. This workflow also triggers the MDR Containment DIsable User with Active Directory and MDR Containment Isolate Sensor in Cb Response workflows.\n\n# Key Features\n\n* Quarantine Asset with Insight Agent or Cb Response\n* Send real-time updates to actions using your preferred communication methods: phone, email, Slack, and SMS.\n* Accelerate or cancel containment actions from your mobile or desktop devices via Slack.\n\n\n# Requirements\n\n* Insight Platform Organization-level API key\n* Python3 Script \n* Type Converter\n* REST\n* Active Directory LDAP\n* Microsoft Office 365 Email \n* Twilio (Optional) \n* Slack (ChatOps)\n\n\n# Documentation\n\n## Setup\n\nImport the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.\n \n## Technical Details\n\nFor Technical Details, please refer to the import MDR Active Response Asset Quarantine Workflow page.\n\n## Troubleshooting\n\n|Plugin|Version|Count|\n|----|----|--------|\n|REST|4.1.0|5|\n|Python 3 Script|2.0.2|4|\n|Twilio|1.0.2|1|\n|Type Converter|1.5.1|1|\n|Microsoft Office 365 Email|4.1.4|1|\n|String Operations|1.3.0|2|\n\n_There is no troubleshooting information at this time_\n\n# Version History\n\n*1.1.1 - Re-added ability to utilize CB Response\n* 1.1.0 - Added Parameters and Updated HTTP Rest Plugin\n* 1.0.1 - Fix null issue affecting the filter step\n* 1.0.0 - Initial workflow\n\n\n# Links\n\n## References\n",
         "graph": {
           "edges": {
-            "037f8fd2-7ded-443b-9edc-ab7dc9d6c671": {
-              "id": "037f8fd2-7ded-443b-9edc-ab7dc9d6c671",
-              "name": "",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "129e5475-e9e4-4e50-9f32-a2dcb9ed9210",
-              "toNodeId": "36d02b74-141f-4487-873d-78dfb003a604"
-            },
             "10281f31-5d5d-41f9-86ce-42e4d244a9db": {
               "id": "10281f31-5d5d-41f9-86ce-42e4d244a9db",
               "name": "",
@@ -121,7 +113,7 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "b8bfc14d-3a32-478e-9fd5-09184aae1045",
-              "toNodeId": "129e5475-e9e4-4e50-9f32-a2dcb9ed9210"
+              "toNodeId": "36d02b74-141f-4487-873d-78dfb003a604"
             },
             "615c201f-f7a9-4058-be6d-7ff86ecbf7cc": {
               "id": "615c201f-f7a9-4058-be6d-7ff86ecbf7cc",
@@ -169,7 +161,7 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "c83548db-2cbb-4d61-889d-afa02e74a788",
-              "toNodeId": "d402a774-7165-40ad-a8e0-6f91dbdd38d5"
+              "toNodeId": "eddb0f17-30c9-4c32-9d02-514b8443131c"
             },
             "80ca6849-a333-40eb-8ab8-8d3e9b164923": {
               "id": "80ca6849-a333-40eb-8ab8-8d3e9b164923",
@@ -194,6 +186,14 @@
               "parentNodeId": "f791bb4b-6114-4f5f-a715-40b198d2eb7e",
               "fromNodeId": "8e7bd4ef-6eac-49aa-98d5-1eaf17448e02",
               "toNodeId": "3c8d4acc-bc3f-41f9-b0cd-ed385ff7dd15"
+            },
+            "95266ee9-b45c-4ef4-83aa-a9bfca23b3c0": {
+              "id": "95266ee9-b45c-4ef4-83aa-a9bfca23b3c0",
+              "name": "Cb Response",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "eddb0f17-30c9-4c32-9d02-514b8443131c",
+              "toNodeId": "7bada40e-de26-4d55-8afe-8d408311c2cb"
             },
             "9daa8c84-6a46-4a9a-a286-6f16183590cf": {
               "id": "9daa8c84-6a46-4a9a-a286-6f16183590cf",
@@ -259,6 +259,14 @@
               "fromNodeId": "28091da0-5d5b-4604-9dfd-1bc68d44a4f8",
               "toNodeId": "e62603c6-a718-432b-bb4e-01651b37c9bb"
             },
+            "d6f17df9-422c-4737-b042-1ebedfae7dcc": {
+              "id": "d6f17df9-422c-4737-b042-1ebedfae7dcc",
+              "name": "Insight Agent",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "eddb0f17-30c9-4c32-9d02-514b8443131c",
+              "toNodeId": "d29c0661-c591-4344-a5c2-54091402599a"
+            },
             "ec92f913-13d1-4532-8e23-f193e14457f3": {
               "id": "ec92f913-13d1-4532-8e23-f193e14457f3",
               "name": "",
@@ -283,13 +291,13 @@
               "fromNodeId": "28091da0-5d5b-4604-9dfd-1bc68d44a4f8",
               "toNodeId": "422d84e3-f151-4ecd-8fe0-9dd5c617e608"
             },
-            "f112060e-9105-4567-8238-d0835d927ebb": {
-              "id": "f112060e-9105-4567-8238-d0835d927ebb",
+            "fd3f80fc-536e-4531-8934-42ff7f557c24": {
+              "id": "fd3f80fc-536e-4531-8934-42ff7f557c24",
               "name": "",
               "description": "",
               "parentNodeId": "",
-              "fromNodeId": "d402a774-7165-40ad-a8e0-6f91dbdd38d5",
-              "toNodeId": "d29c0661-c591-4344-a5c2-54091402599a"
+              "fromNodeId": "7bada40e-de26-4d55-8afe-8d408311c2cb",
+              "toNodeId": ""
             },
             "fe76c441-060e-45fa-a43a-d89bb7b7209d": {
               "id": "fe76c441-060e-45fa-a43a-d89bb7b7209d",
@@ -301,10 +309,6 @@
             }
           },
           "nodes": {
-            "129e5475-e9e4-4e50-9f32-a2dcb9ed9210": {
-              "id": "129e5475-e9e4-4e50-9f32-a2dcb9ed9210",
-              "parentNodeId": ""
-            },
             "148276ff-d421-484e-a784-1be0e09a3b30": {
               "id": "148276ff-d421-484e-a784-1be0e09a3b30",
               "parentNodeId": ""
@@ -349,6 +353,10 @@
               "id": "7763493e-67ed-4232-add4-6c6d47ff5470",
               "parentNodeId": ""
             },
+            "7bada40e-de26-4d55-8afe-8d408311c2cb": {
+              "id": "7bada40e-de26-4d55-8afe-8d408311c2cb",
+              "parentNodeId": ""
+            },
             "7e78394c-eb74-462d-8784-26c92a62541e": {
               "id": "7e78394c-eb74-462d-8784-26c92a62541e",
               "parentNodeId": ""
@@ -385,10 +393,6 @@
               "id": "d29c0661-c591-4344-a5c2-54091402599a",
               "parentNodeId": ""
             },
-            "d402a774-7165-40ad-a8e0-6f91dbdd38d5": {
-              "id": "d402a774-7165-40ad-a8e0-6f91dbdd38d5",
-              "parentNodeId": ""
-            },
             "deeec789-ff2e-4975-ae22-e219c0d1f7b6": {
               "id": "deeec789-ff2e-4975-ae22-e219c0d1f7b6",
               "parentNodeId": ""
@@ -403,6 +407,10 @@
             },
             "e9f6ca9e-43bf-4bb0-8b50-b036b44a25dc": {
               "id": "e9f6ca9e-43bf-4bb0-8b50-b036b44a25dc",
+              "parentNodeId": ""
+            },
+            "eddb0f17-30c9-4c32-9d02-514b8443131c": {
+              "id": "eddb0f17-30c9-4c32-9d02-514b8443131c",
               "parentNodeId": ""
             },
             "f4b6a105-998b-4c10-98e3-7aaf2b52ef7d": {
@@ -420,82 +428,6 @@
           }
         },
         "steps": {
-          "129e5475-e9e4-4e50-9f32-a2dcb9ed9210": {
-            "nodeId": "129e5475-e9e4-4e50-9f32-a2dcb9ed9210",
-            "name": "Format Whitelist Body",
-            "type": "action",
-            "plugin": {
-              "name": "Python 3 Script",
-              "slugVendor": "rapid7",
-              "slugName": "python_3_script",
-              "slugVersion": "2.0.2",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/python_3_script/2.0.2/icon.png"
-            },
-            "identifier": "run",
-            "continueOnFailure": false,
-            "isDisabled": true,
-            "isCloud": false,
-            "parameters": {
-              "input": {
-                "function": "def run(params={}):\n    \n    return {\"payload\": {\"update\":'''{{[e9f6ca9e-43bf-4bb0-8b50-b036b44a25dc].[content]}} {{[5fed2448-ee9c-4a82-9241-b2c3f8a759c3].[content]}}''',\n            \"soc_slack_timestamp\":\"{{[4123d7e4-7d69-4d75-a8e8-4073f3e90fa1].[soc_slack_timestamp]}}\",\n            \"soc_slack_channel\":\"{{[4123d7e4-7d69-4d75-a8e8-4073f3e90fa1].[soc_slack_channel]}}\"}}",
-                "input": {}
-              }
-            },
-            "defaultInputJSONSchema": {
-              "properties": {
-                "function": {
-                  "default": "def run(params={}):\\n    return {}",
-                  "description": "Function definition. Must be named `run`. Accepts the `input` object as params. Returns the dict as output",
-                  "displayType": "python",
-                  "format": "python",
-                  "order": 1,
-                  "title": "Function",
-                  "type": "string"
-                },
-                "input": {
-                  "description": "Input object to be passed as `params={}` to the `run` function",
-                  "order": 2,
-                  "title": "Input",
-                  "type": "object"
-                }
-              },
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultOutputJSONSchema": {
-              "properties": {
-                "result1": {
-                  "description": "Sample output result1 (delete or edit)",
-                  "order": 1,
-                  "title": "Result1",
-                  "type": "string"
-                },
-                "result2": {
-                  "description": "Sample output result2 (delete or edit)",
-                  "order": 2,
-                  "title": "Result2",
-                  "type": "string"
-                }
-              },
-              "title": "Variables",
-              "type": "object"
-            },
-            "outputJSONSchema": {
-              "definitions": {},
-              "properties": {
-                "payload": {
-                  "description": "Sample output result1 (delete or edit)",
-                  "order": 1,
-                  "title": "Result1",
-                  "type": "object"
-                }
-              },
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultImageData": "",
-            "connectionType": "CONNECTION"
-          },
           "148276ff-d421-484e-a784-1be0e09a3b30": {
             "nodeId": "148276ff-d421-484e-a784-1be0e09a3b30",
             "name": "Asset Loop",
@@ -620,7 +552,7 @@
             "connectionType": "NONE",
             "helperIdentifier": "lookup_global_artifacts",
             "globalArtifact": {
-              "name": "Asset Exclusion List - DONT DELETE",
+              "name": "Asset Exclusion List",
               "id": "cfc9f04a-d696-47de-a5bc-677fbb194633",
               "schema": {
                 "definitions": {
@@ -892,7 +824,7 @@
             "connectionType": "NONE",
             "helperIdentifier": "lookup_global_artifacts",
             "globalArtifact": {
-              "name": "User Exclusion List - DONT DELETE",
+              "name": "User Exclusion List",
               "id": "a8efebb3-5255-44a7-933d-28f7330d1242",
               "schema": {
                 "definitions": {
@@ -1477,6 +1409,99 @@
             "chatOpsAppName": "slack",
             "chatOpsIdentifier": "post_message"
           },
+          "7bada40e-de26-4d55-8afe-8d408311c2cb": {
+            "nodeId": "7bada40e-de26-4d55-8afe-8d408311c2cb",
+            "name": "Perform CB Isolation",
+            "type": "action",
+            "plugin": {
+              "name": "HTTP Requests",
+              "slugVendor": "rapid7",
+              "slugName": "rest",
+              "slugVersion": "4.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rest/4.0.1/icon.png"
+            },
+            "identifier": "post",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "body": {
+                  "agent_quarantine": true,
+                  "assets": "{{[148276ff-d421-484e-a784-1be0e09a3b30].[Asset Contain List]}}",
+                  "cust_slack_channel": "{{[f4b6a105-998b-4c10-98e3-7aaf2b52ef7d].[channel_id]}}",
+                  "cust_slack_timestamp": "{{[f4b6a105-998b-4c10-98e3-7aaf2b52ef7d].[timestamp]}}",
+                  "customer": "{{[4123d7e4-7d69-4d75-a8e8-4073f3e90fa1].[customer]}}",
+                  "investigation_id": "{{[4123d7e4-7d69-4d75-a8e8-4073f3e90fa1].[containment_params].[assets].[0].[payload].[investigationId]}}",
+                  "soc_slack_channel": "{{[4123d7e4-7d69-4d75-a8e8-4073f3e90fa1].[soc_slack_channel]}}",
+                  "soc_slack_timestamp": "{{[4123d7e4-7d69-4d75-a8e8-4073f3e90fa1].[soc_slack_timestamp]}}",
+                  "update": "The customer has decided to proceed with quarantine. Attempting now..."
+                },
+                "headers": {},
+                "route": "4cdadbbf-5f03-4bd3-8789-3acfe246f94d/events/execute"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "body": {
+                  "description": "Payload to submit to the server when making the HTTP Request call",
+                  "order": 3,
+                  "title": "Body",
+                  "type": "object"
+                },
+                "headers": {
+                  "description": "Headers to use for the request. These will override any default headers",
+                  "order": 2,
+                  "title": "Headers",
+                  "type": "object"
+                },
+                "route": {
+                  "description": "The route to append to the base URL e.g. /org/users",
+                  "order": 1,
+                  "title": "Route",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "route"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "body_object": {
+                  "description": "Response payload from the server as an object",
+                  "order": 1,
+                  "title": "Body Object",
+                  "type": "object"
+                },
+                "body_string": {
+                  "description": "Response payload from the server as a string",
+                  "order": 2,
+                  "title": "Body String",
+                  "type": "string"
+                },
+                "headers": {
+                  "description": "Response headers from the server",
+                  "order": 4,
+                  "title": "Headers",
+                  "type": "object"
+                },
+                "status": {
+                  "description": "Status code of the response from the server",
+                  "order": 3,
+                  "title": "Status",
+                  "type": "integer"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION"
+          },
           "7e78394c-eb74-462d-8784-26c92a62541e": {
             "nodeId": "7e78394c-eb74-462d-8784-26c92a62541e",
             "name": "Update for Thread",
@@ -1929,79 +1954,6 @@
             "defaultImageData": "",
             "connectionType": "CONNECTION"
           },
-          "d402a774-7165-40ad-a8e0-6f91dbdd38d5": {
-            "nodeId": "d402a774-7165-40ad-a8e0-6f91dbdd38d5",
-            "name": "Format Agent Quarantine",
-            "type": "action",
-            "plugin": {
-              "name": "Python 3 Script",
-              "slugVendor": "rapid7",
-              "slugName": "python_3_script",
-              "slugVersion": "2.0.2",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/python_3_script/2.0.2/icon.png"
-            },
-            "identifier": "run",
-            "continueOnFailure": false,
-            "isDisabled": true,
-            "isCloud": false,
-            "parameters": {
-              "input": {
-                "function": "def run(params={}):\n    from ast import literal_eval\n    s = '''{{[148276ff-d421-484e-a784-1be0e09a3b30].[Asset Contain List]}}'''.replace(\"true\", \"True\").replace(\"false\", \"False\").replace(\"null\", \"None\")\n    assets = literal_eval(s)\n    #invocation_data = []\n    #for a in assets:\n        #invocation_data.append(a['payload'])\n\n    #fix investigation id here\n    return {\"payload\": {\"soc_slack_channel\": \"{{[4123d7e4-7d69-4d75-a8e8-4073f3e90fa1].[soc_slack_channel]}}\",\n                        \"customer\": {{[4123d7e4-7d69-4d75-a8e8-4073f3e90fa1].[customer]}},\n                        \"soc_slack_timestamp\": \"{{[4123d7e4-7d69-4d75-a8e8-4073f3e90fa1].[soc_slack_timestamp]}}\",\n                        \"cust_slack_channel\": \"{{[f4b6a105-998b-4c10-98e3-7aaf2b52ef7d].[channel_id]}}\",\n                        \"cust_slack_timestamp\": \"{{[f4b6a105-998b-4c10-98e3-7aaf2b52ef7d].[timestamp]}}\",\n                        \"agent_quarantine\": True,\"investigation_id\": \"{{[4123d7e4-7d69-4d75-a8e8-4073f3e90fa1].[containment_params].[assets].[0].payload.investigationId}}\",\n                        \"assets\": assets,\"update\": \"The customer has decided to proceed with quarantine. Attempting now...\",\n                        \"cust_slack_channel\": \"{{[f4b6a105-998b-4c10-98e3-7aaf2b52ef7d].[channel_id]}}\", \"cust_slack_timestamp\": \"{{[f4b6a105-998b-4c10-98e3-7aaf2b52ef7d].[timestamp]}}\"}}",
-                "input": {}
-              }
-            },
-            "defaultInputJSONSchema": {
-              "properties": {
-                "function": {
-                  "default": "def run(params={}):\\n    return {}",
-                  "description": "Function definition. Must be named `run`. Accepts the `input` object as params. Returns the dict as output",
-                  "displayType": "python",
-                  "format": "python",
-                  "order": 1,
-                  "title": "Function",
-                  "type": "string"
-                },
-                "input": {
-                  "description": "Input object to be passed as `params={}` to the `run` function",
-                  "order": 2,
-                  "title": "Input",
-                  "type": "object"
-                }
-              },
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultOutputJSONSchema": {
-              "properties": {
-                "result1": {
-                  "description": "Sample output result1 (delete or edit)",
-                  "order": 1,
-                  "title": "Result1",
-                  "type": "string"
-                },
-                "result2": {
-                  "description": "Sample output result2 (delete or edit)",
-                  "order": 2,
-                  "title": "Result2",
-                  "type": "string"
-                }
-              },
-              "title": "Variables",
-              "type": "object"
-            },
-            "outputJSONSchema": {
-              "definitions": {},
-              "properties": {
-                "payload": {
-                  "type": "object"
-                }
-              },
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultImageData": "",
-            "connectionType": "CONNECTION"
-          },
           "deeec789-ff2e-4975-ae22-e219c0d1f7b6": {
             "nodeId": "deeec789-ff2e-4975-ae22-e219c0d1f7b6",
             "name": "Format Customer Alert",
@@ -2209,6 +2161,133 @@
             "outputJSONSchema": null,
             "defaultImageData": "https://us.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
             "connectionType": "NONE"
+          },
+          "eddb0f17-30c9-4c32-9d02-514b8443131c": {
+            "nodeId": "eddb0f17-30c9-4c32-9d02-514b8443131c",
+            "name": "Agent or Cb Quarantine",
+            "type": "decision_chatops",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "attachments": null,
+              "message": "NOTE: This will go away in production",
+              "messageType": "button",
+              "options": [
+                {
+                  "answer": "Insight Agent",
+                  "buttonStyle": "primary",
+                  "confirmation": "Awesome! Proceeding with agent quarantine.",
+                  "edgeId": "d6f17df9-422c-4737-b042-1ebedfae7dcc",
+                  "isTimeoutOnly": false
+                },
+                {
+                  "answer": "Cb Response",
+                  "buttonStyle": "danger",
+                  "confirmation": "Sweet! Isolating sensor with Cb Response...",
+                  "edgeId": "95266ee9-b45c-4ef4-83aa-a9bfca23b3c0",
+                  "isTimeoutOnly": false
+                }
+              ],
+              "question": "What should we leverage to perform agent quarantine?",
+              "recipient": "{{[f4b6a105-998b-4c10-98e3-7aaf2b52ef7d].[channel_id]}}",
+              "timeout": 120,
+              "timeoutDisplayUnit": "minutes",
+              "timeoutEdgeId": "d6f17df9-422c-4737-b042-1ebedfae7dcc"
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "attachments": {
+                  "description": "JSON array of attachments - see https://api.slack.com/docs/message-attachments (Advanced)",
+                  "displayType": "bytes",
+                  "format": "bytes",
+                  "order": 3,
+                  "title": "Attachments",
+                  "type": "string"
+                },
+                "message": {
+                  "description": "Message to send",
+                  "order": 1,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "A channel (e.g. #channel) or username",
+                  "order": 2,
+                  "title": "Recipient",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "recipient"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "$success": {
+                  "description": "",
+                  "order": 8,
+                  "title": "$success",
+                  "type": "boolean"
+                },
+                "channel_id": {
+                  "description": "ChannelID of successful message",
+                  "order": 1,
+                  "title": "Channel ID",
+                  "type": "string"
+                },
+                "display_name": {
+                  "description": "The slack display name for the user responding to the question",
+                  "order": 9,
+                  "title": "Display Name",
+                  "type": "string"
+                },
+                "message": {
+                  "description": "The message that was sent to slack",
+                  "order": 4,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "path": {
+                  "description": "The path taken",
+                  "order": 6,
+                  "title": "Path",
+                  "type": "string"
+                },
+                "recipient": {
+                  "description": "The Channel name or User Name",
+                  "order": 3,
+                  "title": "Recipient",
+                  "type": "string"
+                },
+                "responding_user": {
+                  "description": "The slack username of the user responding to the question",
+                  "order": 7,
+                  "title": "Response User",
+                  "type": "string"
+                },
+                "response_question": {
+                  "description": "The response question that was sent to slack",
+                  "order": 5,
+                  "title": "Response Question",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Timestamp of successful message",
+                  "order": 2,
+                  "title": "Timestamp",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "chatOpsAppName": "slack",
+            "chatOpsIdentifier": "post_interactive_message"
           },
           "f4b6a105-998b-4c10-98e3-7aaf2b52ef7d": {
             "nodeId": "f4b6a105-998b-4c10-98e3-7aaf2b52ef7d",
@@ -2505,11 +2584,11 @@
               },
               "Slack channel": {
                 "type": "string",
-                "description": "Slack channel you would like notifications to go to\nE.X. #Testing123"
+                "description": "Slack channel you would like notifications to go to. Be sure to include the \"#\"\nE.X. #Testing123"
               },
               "Disable User workflow ID": {
                 "type": "string",
-                "description": "This is the UUID from the MDR Disable User Workflow.\nNOTE:\n1)Go to the Disable User Workflow\n2) Find and click the \"New Isolation Event\" step \n2) In the \"Trigger URL\" field, copy the UUID. This is the key following \"workflows/\"\n3) Use that UUID to populate this value. For example, if the URL is \"https://us.api.insight.rapid7.com/connect/v1/execute/async/workflows/668ed842-cf1c-4b93-aa1e-e64552c32605\", you will paste \"668ed842-cf1c-4b93-aa1e-e64552c32605\" as your UUID"
+                "description": "This is the UUID from the MDR Disable User Workflow.\nNOTE:\n1)Go to the Disable User Workflow\n\n2) Find and click the \"New Isolation Event\" step \n\n3) In the \"Trigger URL\" field, copy the UUID. This is the key following \"workflows/\"\n\n4) Use that UUID to populate this value. \n\nFor example, if the URL is \"https://us.api.insight.rapid7.com/connect/v1/execute/async/workflows/668ed842-cf1c-4b93-aa1e-e64552c32605\", you will paste \"668ed842-cf1c-4b93-aa1e-e64552c32605\" as your UUID"
               }
             },
             "definitions": {}

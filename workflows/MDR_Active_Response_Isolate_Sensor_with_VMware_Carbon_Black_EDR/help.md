@@ -41,6 +41,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.2 - Add Carbon Black Response tree
 * 1.0.1 - Update HTTP Requests plugin
 * 1.0.0 - Initial workflow
 

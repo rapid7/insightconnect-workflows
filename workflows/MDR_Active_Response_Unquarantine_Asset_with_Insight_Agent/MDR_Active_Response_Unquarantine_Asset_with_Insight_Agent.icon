@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.79.3-0-g0f0e3",
+    "komandVersion": "1.79.5-0-g2fa9a",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2021-03-22T15:25:37.157603892Z",
+    "exportedAt": "2021-03-31T14:52:42.50242883Z",
     "workflowVersions": [
       {
         "name": "MDR Active Response Unquarantine Asset with Insight Agent [Editing Restrictions Apply]",
@@ -148,7 +148,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "matchChannel": "#mdr_active_response",
+                "matchChannel": "{{$workflow.[Slack Channel]}}",
                 "matchText": "unquarantine",
                 "type": "any"
               }
@@ -537,7 +537,7 @@
             "properties": {
               "Slack Channel": {
                 "type": "string",
-                "description": "Slack channel you would like notifications to go to E.X. #Testing123"
+                "description": "Slack channel you would like notifications to go to. Be sure to include the \"#\".\nE.X. #Testing123"
               }
             },
             "definitions": {}
@@ -551,7 +551,7 @@
         "name": "Unquarantine Message",
         "description": "",
         "input": {
-          "matchChannel": "#mdr_active_response",
+          "matchChannel": "{{$workflow.[Slack Channel]}}",
           "matchText": "unquarantine",
           "type": "any"
         },

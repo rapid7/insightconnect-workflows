@@ -1,11 +1,11 @@
 {
   "kom": {
-    "komandVersion": "1.79.3-0-g0f0e3",
+    "komandVersion": "1.79.5-0-g2fa9a",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2021-03-22T15:25:38.7959771Z",
+    "exportedAt": "2021-03-31T14:52:45.265751651Z",
     "workflowVersions": [
       {
-        "name": "MDR Active Response Disable User with Active Directory",
+        "name": "MDR Active Response Disable User with Active Directory [Editing Restrictions Apply]",
         "type": "runnable",
         "version": "",
         "description": "# Description\n\nThis workflow is part of the MDR Active Response add-on and is required to disable users with Active Directory.\n\n# Key Features\n\n* Disable User with Active Directory\n* Send real-time updates to actions using your preferred communication methods: email, Slack, and SMS.\n* Accelerate or cancel containment actions from your mobile or desktop devices via Slack.\n\n# Requirements\n\n* Active Directory LDAP\n* Python3 Script\n* Slack (ChatOps)\n* REST\n\n# Documentation\n\n## Setup\n\nImport the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.\n \n## Technical Details\n\n|Plugin|Version|Count|\n|----|----|--------|\n|REST|4.1.0|1|\n|Python 3 Script|2.0.2|1|\n|Active Directory LDAP|5.0.1|1|\n\nFor Technical details, refer to the MDR Containment Disable User with Active Directory import instructions. \n\n## Troubleshooting\n\n_There is no troubleshooting information at this time_\n\n# Version History\n\n* 1.1.0 - Updated LDAP and HTTP Rest Plugins\n* 1.0.1 - Fix AD backslash issue\n* 1.0.0 - Initial workflow\n\n\n# Links\n\n## References\n",

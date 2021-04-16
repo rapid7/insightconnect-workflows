@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: MDR_Active_Response_Router
 title: MDR Active Response Router
 description: This workflow is part of the MDR Active Response add-on. When the MDR team identifies a threat, such as a compromised user, this workflow enables them to send an email, SMS, and Slack notification that you can review and respond to within a grace period of 10 minutes. This workflow also triggers the MDR Containment DIsable User with Active Directory and MDR Containment Isolate Sensor in Cb Response workflows.
-version: 1.0.2
+version: 1.0.3
 vendor: rapid7
 support: rapid7
 status: ["hidden"]
