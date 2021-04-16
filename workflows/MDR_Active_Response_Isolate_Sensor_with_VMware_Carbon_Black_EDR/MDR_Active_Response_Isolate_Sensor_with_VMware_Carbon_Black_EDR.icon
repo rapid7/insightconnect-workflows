@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.79.3-0-g0f0e3",
+    "komandVersion": "1.79.5-0-g2fa9a",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2021-03-22T15:25:34.029557213Z",
+    "exportedAt": "2021-03-31T14:52:43.988241682Z",
     "workflowVersions": [
       {
         "name": "MDR Active Response Isolate Sensor with VMware Carbon Black EDR",

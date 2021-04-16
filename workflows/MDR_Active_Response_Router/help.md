@@ -12,7 +12,6 @@ This workflow is part of the MDR Active Response add-on. When the MDR team ident
 # Requirements
 
 * Insight Platform Organization-level API key
-* Python3 Script 
 * Type Converter
 * REST
 * Active Directory LDAP
@@ -35,8 +34,7 @@ For Technical Details, please refer to the import MDR Active Response Asset Quar
 
 |Plugin|Version|Count|
 |----|----|--------|
-|HTTP Requests|4.0.1|4|
-|Python 3 Script|2.0.2|2|
+|HTTP Requests|4.0.1|5|
 |Twilio|1.0.2|1|
 |Microsoft Office 365 Email|4.1.4|1|
 |String Operations|1.3.0|2|
@@ -45,6 +43,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.3 - Re-added ability to utilize CB Response
 * 1.0.2 - Update HTTP Requests plugin to 4.0.1
 * 1.0.1 - Fix null issue affecting the filter step
 * 1.0.0 - Initial workflow

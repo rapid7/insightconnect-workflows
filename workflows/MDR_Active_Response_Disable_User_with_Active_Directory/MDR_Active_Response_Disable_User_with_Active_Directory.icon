@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.79.3-0-g0f0e3",
+    "komandVersion": "1.79.5-0-g2fa9a",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2021-03-22T15:25:38.7959771Z",
+    "exportedAt": "2021-03-31T14:52:45.265751651Z",
     "workflowVersions": [
       {
         "name": "MDR Active Response Disable User with Active Directory",

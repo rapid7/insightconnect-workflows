@@ -3,13 +3,13 @@ products: ["insightconnect"]
 name: MDR_Active_Response_Unisolate_Sensor_with_VMware_Carbon_Black_EDR
 title: MDR Active Response Unisolate Sensor with VMware Carbon Black EDR
 description: This workflow is part of the MDR Active Response add-on and is required for you to reverse quarantine actions.
-version: 1.0.1
+version: 1.0.2
 vendor: rapid7
 support: rapid7
 status: ["hidden"]
 hub_tags:
   use_cases: [threat_detection_and_response]
-  keywords: [mdr, containment, quarantine, active_response]
+  keywords: [mdr, containment, quarantine, active_response, parameters]
   features: []
 resources:
   source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/MDR_Active_Response_Unisolate_Sensor_with_VMware_Carbon_Black_EDR
