@@ -24,7 +24,7 @@ Sample Microsoft Teams command:
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-Once the workflow has been imported, **edit the Trigger step - with Microsoft Teams team name and channel name to suit your Teams environment!**
+Once the workflow has been imported, **edit the paramaters - with Microsoft Teams team name and channel name to suit your Teams environment!**
 
 After configuring the Trigger step with your Microsoft Teams details, activate the workflow in order to trigger it.
 
@@ -46,10 +46,8 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Rapid7 InsightVM|4.8.1|2|
-|Microsoft Teams|3.1.0|5|
-|HTML|1.2.2|1|
-|Type Converter|1.6.0|1|
+|Rapid7 InsightVM|4.9.0|2|
+|Microsoft Teams|3.1.2|5|
 
 ## Troubleshooting
 
@@ -57,7 +55,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
-* 1.0.4 - Update to fix formatting on target not found error | Update to add WF parameters
+* 1.0.4 - Added parameters, removed uneccessary steps, updated plugins
 * 1.0.3 - Updated screenshots, documentation, and plugins to the latest version
 * 1.0.2 - Removed unnecessary type conversion step from workflow
 * 1.0.1 - Update to make Microsoft Teams plugin the latest version

@@ -1,14 +1,14 @@
 {
   "kom": {
-    "komandVersion": "1.80.0-0-gf3f72",
+    "komandVersion": "1.82.0-0-g2ef20",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2021-04-07T17:58:10.725815163Z",
+    "exportedAt": "2021-04-16T15:58:11.029952287Z",
     "workflowVersions": [
       {
         "name": "Lookup Top Remediations with InsightVM from Microsoft Teams",
         "type": "runnable",
         "version": "",
-        "description": "# Description\n\nLookup the top 10 remediation steps from InsightVM for a given host from a Microsoft Teams message. The workflow returns the top 10 remediation steps for the specified entity to the designated Microsoft Teams channel, making it easy to identify top risk-reducing actions and share with your team!\n\nSample Microsoft Teams command:\n\n`!top-remediations hostname123`\n\n# Key Features\n\n* Lookup the top risk-reducing remediation steps for any InsightVM asset\n* Get a summarized list of remediation steps AND details for each step in a Microsoft Teams message\n* Create a shared understanding across team members by viewing the vulnerabilities and risk reduced for each step in the same Microsoft Teams channel\n* Expedite your patching procedures with real-time access to remediation data from InsightVM without leaving the comfort of your chat window\n\n# Requirements\n\n* InsightConnect License\n* [Microsoft Teams](https://insightconnect.help.rapid7.com/docs/microsoft-teams)\n\n# Documentation\n\n## Setup\n\nImport the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.\n\nOnce the workflow has been imported, **edit the Trigger step - with Microsoft Teams team name and channel name to suit your Teams environment!**\n\nAfter configuring the Trigger step with your Microsoft Teams details, activate the workflow in order to trigger it.\n\n### Usage\n\n*This workflow will only trigger in the channel specified in the Microsoft Teams workflow steps.*\n\nTo run the workflow, send a message to the specified Microsoft Teams channel starting with the command `!top-remediations`.\n\nFor example:\n\n* `!top-remediations hostname123`\n\nThe workflow will reply to the request message with the top 10 remediation steps for the specified entity to the channel where the command was triggered.\n\n## Technical Details\n\nPlugins utilized by workflow:\n\n|Plugin|Version|Count|\n|----|----|--------|\n|Rapid7 InsightVM|4.8.1|2|\n|Microsoft Teams|3.1.0|5|\n|HTML|1.2.2|1|\n|Type Converter|1.6.0|1|\n\n## Troubleshooting\n\n_There is no troubleshooting information at this time_\n\n# Version History\n\n* 1.0.3 - Updated screenshots, documentation, and plugins to the latest version\n* 1.0.2 - Removed unnecessary type conversion step from workflow\n* 1.0.1 - Update to make Microsoft Teams plugin the latest version\n* 1.0.0 - Initial workflow\n\n# Links\n\n## References\n\n* [Microsoft Teams](https://teams.microsoft.com)\n* [Microsoft Teams Setup](https://insightconnect.help.rapid7.com/docs/microsoft-teams)\n",
+        "description": "This workflow accepts a Microsoft Teams command containing a hostname and returns the Top 10 Remediations for that asset from InsightVM.\n\nSample Microsoft Teams Trigger Command:\n!top-remediations hostname123",
         "graph": {
           "edges": {
             "1b565291-9554-4765-abab-3980a4c6551d": {
@@ -35,14 +35,6 @@
               "fromNodeId": "368f0859-fe8b-462c-8d3a-42de7cf407e3",
               "toNodeId": "c9b63fbb-2046-4ae0-b682-6d6f069c314b"
             },
-            "452aec33-7a31-48dc-98f6-68b1e8ee898b": {
-              "id": "452aec33-7a31-48dc-98f6-68b1e8ee898b",
-              "name": "",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "e5cc9186-ca78-45ba-af5f-be183915d218",
-              "toNodeId": "7fbd956f-e239-40fd-801e-4b4411dfe334"
-            },
             "46a86429-4a95-4e9e-b4f9-e438bc85fa90": {
               "id": "46a86429-4a95-4e9e-b4f9-e438bc85fa90",
               "name": "",
@@ -67,14 +59,6 @@
               "fromNodeId": "e2af6a3d-d338-496d-9539-4cc4917fbec9",
               "toNodeId": "5c6d3567-4385-4be8-b143-f66de30ba196"
             },
-            "72982e88-5f93-4332-8c7e-a09822d2c38a": {
-              "id": "72982e88-5f93-4332-8c7e-a09822d2c38a",
-              "name": "",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "04212356-df57-4bca-b8a0-fb61e6d3e607",
-              "toNodeId": "e2af6a3d-d338-496d-9539-4cc4917fbec9"
-            },
             "7bdb99fc-6320-44a4-9ba2-5ee37f95150d": {
               "id": "7bdb99fc-6320-44a4-9ba2-5ee37f95150d",
               "name": "Asset Found",
@@ -97,7 +81,7 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "7b963048-cbe6-4368-b518-cdb5d810570b",
-              "toNodeId": "04212356-df57-4bca-b8a0-fb61e6d3e607"
+              "toNodeId": "e2af6a3d-d338-496d-9539-4cc4917fbec9"
             },
             "b528b3fb-84ff-4492-9efb-1800f7e1c843": {
               "id": "b528b3fb-84ff-4492-9efb-1800f7e1c843",
@@ -129,14 +113,10 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "9eb59f4b-f4c3-4783-8085-618fce021d83",
-              "toNodeId": "e5cc9186-ca78-45ba-af5f-be183915d218"
+              "toNodeId": "7fbd956f-e239-40fd-801e-4b4411dfe334"
             }
           },
           "nodes": {
-            "04212356-df57-4bca-b8a0-fb61e6d3e607": {
-              "id": "04212356-df57-4bca-b8a0-fb61e6d3e607",
-              "parentNodeId": ""
-            },
             "1a31d3af-d021-45e7-8455-dbeab4a59048": {
               "id": "1a31d3af-d021-45e7-8455-dbeab4a59048",
               "parentNodeId": ""
@@ -177,10 +157,6 @@
               "id": "e2af6a3d-d338-496d-9539-4cc4917fbec9",
               "parentNodeId": ""
             },
-            "e5cc9186-ca78-45ba-af5f-be183915d218": {
-              "id": "e5cc9186-ca78-45ba-af5f-be183915d218",
-              "parentNodeId": ""
-            },
             "ec7c57b7-f38d-43fd-aff8-588cb0d6b7ce": {
               "id": "ec7c57b7-f38d-43fd-aff8-588cb0d6b7ce",
               "parentNodeId": "5c6d3567-4385-4be8-b143-f66de30ba196"
@@ -188,84 +164,6 @@
           }
         },
         "steps": {
-          "04212356-df57-4bca-b8a0-fb61e6d3e607": {
-            "nodeId": "04212356-df57-4bca-b8a0-fb61e6d3e607",
-            "name": "Convert Asset ID to Array",
-            "type": "action",
-            "plugin": {
-              "name": "Type Converter",
-              "slugVendor": "rapid7",
-              "slugName": "type_converter",
-              "slugVersion": "1.6.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/type_converter/1.6.0/icon.png"
-            },
-            "identifier": "string_to_object",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "isCloud": false,
-            "parameters": {
-              "input": {
-                "input": "{\"array\": [{{[c9b63fbb-2046-4ae0-b682-6d6f069c314b].[assets].[0].[id]}}]}"
-              }
-            },
-            "defaultInputJSONSchema": {
-              "properties": {
-                "input": {
-                  "description": "Input variable",
-                  "order": 1,
-                  "title": "Input",
-                  "type": "string"
-                }
-              },
-              "required": [
-                "input"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultOutputJSONSchema": {
-              "properties": {
-                "output": {
-                  "description": "Type converted input",
-                  "order": 1,
-                  "title": "Output",
-                  "type": "object"
-                }
-              },
-              "required": [
-                "output"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "outputJSONSchema": {
-              "definitions": {
-                "output": {
-                  "properties": {
-                    "array": {
-                      "items": {
-                        "type": "integer"
-                      },
-                      "type": "array"
-                    }
-                  },
-                  "type": "object"
-                }
-              },
-              "properties": {
-                "output": {
-                  "$ref": "#/definitions/output",
-                  "description": "Type converted input",
-                  "order": 1,
-                  "title": "Output"
-                }
-              },
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultImageData": "",
-            "connectionType": "ORCHESTRATOR"
-          },
           "1a31d3af-d021-45e7-8455-dbeab4a59048": {
             "nodeId": "1a31d3af-d021-45e7-8455-dbeab4a59048",
             "name": "Asset Not Found Message",
@@ -274,8 +172,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "3.1.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
+              "slugVersion": "3.1.2",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.2/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
@@ -284,7 +182,7 @@
             "parameters": {
               "input": {
                 "channel_name": "{{[9eb59f4b-f4c3-4783-8085-618fce021d83].[channel_name]}}",
-                "message_content": "No asset with hostname containing <b>{{[7fbd956f-e239-40fd-801e-4b4411dfe334].[argument]}}</b> was found.<br>\n",
+                "message_content": "No asset with hostname containing <b>{{[7fbd956f-e239-40fd-801e-4b4411dfe334].[argument]}}</b> was found.",
                 "team_name": "{{[9eb59f4b-f4c3-4783-8085-618fce021d83].[team_name]}}",
                 "thread_id": "{{[9eb59f4b-f4c3-4783-8085-618fce021d83].[message].[id]}}"
               }
@@ -317,9 +215,9 @@
                 }
               },
               "required": [
+                "message_content",
                 "team_name",
-                "channel_name",
-                "message_content"
+                "channel_name"
               ],
               "title": "Variables",
               "type": "object"
@@ -509,8 +407,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "3.1.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
+              "slugVersion": "3.1.2",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.2/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
@@ -552,9 +450,9 @@
                 }
               },
               "required": [
+                "message_content",
                 "team_name",
-                "channel_name",
-                "message_content"
+                "channel_name"
               ],
               "title": "Variables",
               "type": "object"
@@ -745,8 +643,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "3.1.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
+              "slugVersion": "3.1.2",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.2/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
@@ -788,9 +686,9 @@
                 }
               },
               "required": [
+                "message_content",
                 "team_name",
-                "channel_name",
-                "message_content"
+                "channel_name"
               ],
               "title": "Variables",
               "type": "object"
@@ -957,7 +855,7 @@
                 }
               ],
               "ignoreCase": true,
-              "input": "{{[e5cc9186-ca78-45ba-af5f-be183915d218].[text]}}"
+              "input": "{{[9eb59f4b-f4c3-4783-8085-618fce021d83].[message].[body].[content]}}"
             },
             "defaultInputJSONSchema": null,
             "defaultOutputJSONSchema": null,
@@ -973,20 +871,20 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "3.1.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
+              "slugVersion": "3.1.2",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.2/icon.png"
             },
             "identifier": "new_message_received",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "{{[$workflow].[Channel Name]}}",
+                "channel_name": "{{[$workflow].[Channel]}}",
                 "message_content": "!top-remediations\\s+\\S+",
-                "team_name": "{{[$workflow].[Team Name]}}"
+                "team_name": "{{[$workflow].[Team]}}"
               }
             },
-            "triggerId": "fce293e9-bdae-480a-846f-fa595c428412",
+            "triggerId": "26c94468-3a83-4429-bc39-2da8bec6e0ba",
             "defaultInputJSONSchema": {
               "properties": {
                 "channel_name": {
@@ -1309,8 +1207,8 @@
               "name": "Rapid7 InsightVM",
               "slugVendor": "rapid7",
               "slugName": "rapid7_insightvm",
-              "slugVersion": "4.8.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/4.8.1/icon.png"
+              "slugVersion": "4.9.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/4.9.0/icon.png"
             },
             "identifier": "asset_search",
             "continueOnFailure": false,
@@ -2244,8 +2142,8 @@
               "name": "Rapid7 InsightVM",
               "slugVendor": "rapid7",
               "slugName": "rapid7_insightvm",
-              "slugVersion": "4.8.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/4.8.1/icon.png"
+              "slugVersion": "4.9.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/4.9.0/icon.png"
             },
             "identifier": "top_remediations",
             "continueOnFailure": false,
@@ -2256,7 +2154,7 @@
                 "asset_limit": 0,
                 "limit": 10,
                 "scope": "assets",
-                "scope_ids": "{{[04212356-df57-4bca-b8a0-fb61e6d3e607].[output].[array]}}",
+                "scope_ids": "[{{[c9b63fbb-2046-4ae0-b682-6d6f069c314b].[assets].[0].[id]}}]",
                 "vulnerability_limit": 0
               }
             },
@@ -2386,13 +2284,13 @@
                     }
                   },
                   "required": [
-                    "assetCount",
-                    "nexposeId",
-                    "summary",
-                    "vulnerabilityCount",
                     "riskScore",
                     "assets",
                     "vulnerabilities",
+                    "nexposeId",
+                    "summary",
+                    "assetCount",
+                    "vulnerabilityCount",
                     "solutionId"
                   ],
                   "title": "Remediation",
@@ -2490,12 +2388,12 @@
                     }
                   },
                   "required": [
+                    "title",
                     "description",
                     "cvssScore",
                     "severity",
                     "riskScore",
-                    "id",
-                    "title"
+                    "id"
                   ],
                   "title": "Remediation Vulnerability",
                   "type": "object"
@@ -2522,64 +2420,6 @@
             "defaultImageData": "",
             "connectionType": "CONNECTION"
           },
-          "e5cc9186-ca78-45ba-af5f-be183915d218": {
-            "nodeId": "e5cc9186-ca78-45ba-af5f-be183915d218",
-            "name": "Clean Teams Message",
-            "type": "action",
-            "plugin": {
-              "name": "HTML",
-              "slugVendor": "rapid7",
-              "slugName": "html",
-              "slugVersion": "1.2.2",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/html/1.2.2/icon.png"
-            },
-            "identifier": "text",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "isCloud": false,
-            "parameters": {
-              "input": {
-                "doc": "{{[9eb59f4b-f4c3-4783-8085-618fce021d83].[message].[body].[content]}}",
-                "remove_scripts": true
-              }
-            },
-            "defaultInputJSONSchema": {
-              "properties": {
-                "doc": {
-                  "description": "Document to transform",
-                  "order": 1,
-                  "title": "Document",
-                  "type": "string"
-                },
-                "remove_scripts": {
-                  "description": "Remove non-HTML scripts from the document",
-                  "order": 2,
-                  "title": "Remove Scripts",
-                  "type": "boolean"
-                }
-              },
-              "required": [
-                "doc"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultOutputJSONSchema": {
-              "properties": {
-                "text": {
-                  "description": "String without HTML tags",
-                  "order": 1,
-                  "title": "Text",
-                  "type": "string"
-                }
-              },
-              "title": "Variables",
-              "type": "object"
-            },
-            "outputJSONSchema": null,
-            "defaultImageData": "",
-            "connectionType": "ORCHESTRATOR"
-          },
           "ec7c57b7-f38d-43fd-aff8-588cb0d6b7ce": {
             "nodeId": "ec7c57b7-f38d-43fd-aff8-588cb0d6b7ce",
             "name": "Post Fix to Teams",
@@ -2588,8 +2428,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "3.1.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
+              "slugVersion": "3.1.2",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.2/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
@@ -2631,9 +2471,9 @@
                 }
               },
               "required": [
+                "message_content",
                 "team_name",
-                "channel_name",
-                "message_content"
+                "channel_name"
               ],
               "title": "Variables",
               "type": "object"
@@ -2786,13 +2626,13 @@
             "type": "object",
             "required": [],
             "properties": {
-              "Team Name": {
+              "Team": {
                 "type": "string",
-                "description": "The Microsoft Teams team name where the workflow will be triggered and respond"
+                "description": "Team to use for trigger and responses"
               },
-              "Channel Name": {
+              "Channel": {
                 "type": "string",
-                "description": "The Microsoft Teams channel name where the workflow will be triggered and respond"
+                "description": "Channel to use for trigger and responses"
               }
             },
             "definitions": {}
@@ -2802,14 +2642,14 @@
     ],
     "triggers": [
       {
-        "id": "fce293e9-bdae-480a-846f-fa595c428412",
+        "id": "26c94468-3a83-4429-bc39-2da8bec6e0ba",
         "identifier": "new_message_received",
         "name": "!top-remediations Trigger",
         "description": "",
         "input": {
-          "channel_name": "{{[$workflow].[Channel Name]}}",
+          "channel_name": "{{[$workflow].[Channel]}}",
           "message_content": "!top-remediations\\s+\\S+",
-          "team_name": "{{[$workflow].[Team Name]}}"
+          "team_name": "{{[$workflow].[Team]}}"
         },
         "inputJsonSchema": {
           "properties": {
@@ -3127,8 +2967,8 @@
           "name": "Microsoft Teams",
           "slugVendor": "rapid7",
           "slugName": "microsoft_teams",
-          "slugVersion": "3.1.0",
-          "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
+          "slugVersion": "3.1.2",
+          "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.2/icon.png"
         }
       }
     ]
