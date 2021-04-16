@@ -3176,7 +3176,7 @@
         },
         "tags": null,
         "humanCostSeconds": 0,
-        "humanCostDisplayUnit": "",
+        "humanCostDisplayUnit": ""
       }
     ],
     "triggers": [
