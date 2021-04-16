@@ -3177,14 +3177,6 @@
         "tags": null,
         "humanCostSeconds": 0,
         "humanCostDisplayUnit": "",
-        "parameters": {
-          "definitionSchema": {
-            "type": "object",
-            "required": [],
-            "properties": {},
-            "definitions": {}
-          }
-        }
       }
     ],
     "triggers": [
