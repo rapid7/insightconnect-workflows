@@ -2,7 +2,7 @@
   "kom": {
     "komandVersion": "1.82.0-0-g2ef20",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2021-04-16T13:01:41.487208723Z",
+    "exportedAt": "2021-04-16T14:17:31.695135504Z",
     "workflowVersions": [
       {
         "name": "Lookup Top Remediations with InsightVM from Slack",
