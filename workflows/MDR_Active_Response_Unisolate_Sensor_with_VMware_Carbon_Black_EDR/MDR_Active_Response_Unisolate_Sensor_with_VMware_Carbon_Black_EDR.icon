@@ -5,7 +5,7 @@
     "exportedAt": "2021-03-31T14:52:41.116478876Z",
     "workflowVersions": [
       {
-        "name": "MDR Active Response Unisolate Sensor with VMware Carbon Black EDR [Editing Restrictions Apply]",
+        "name": "MDR Active Response Unisolate Sensor with VMware Carbon Black EDR",
         "type": "runnable",
         "version": "",
         "description": "# Description\n\nThis workflow is part of the MDR Active Response add-on and is required for you to reverse quarantine actions.\n\n# Key Features\n\n* Unisolate Sensor with Cb Response\n* Reverse containment actions from your mobile or desktop devices via Slack.\n* Receive real-time updates to actions in Slack.\n\n# Requirements\n\n* VMware Carbon Black EDR\n* Slack (ChatOps)\n\n# Documentation\n\n## Setup\n\nImport the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.\n \n## Technical Details\n\n|Plugin|Version|Count|\n|----|----|--------|\n|VMware Carbon Black EDR|3.1.10|1|\n\nFor Technical details, refer to the MDR Containment Unisolate Sensor with Cb Response import instructions.\n\n## Troubleshooting\n\n_There is no troubleshooting information at this time_\n\n# Version History\n\n* 1.1.0 - Added Parameters\n* 1.0.0 - Initial workflow\n\n# Links\n\n## References\n",

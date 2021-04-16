@@ -5,7 +5,7 @@
     "exportedAt": "2021-03-31T14:52:42.50242883Z",
     "workflowVersions": [
       {
-        "name": "MDR Active Response Unquarantine Asset with Insight Agent [Editing Restrictions Apply]",
+        "name": "MDR Active Response Unquarantine Asset with Insight Agent",
         "type": "runnable",
         "version": "",
         "description": "# Description\n\nThis workflow is part of the MDR Active Response add-on and is required for you to reverse quarantine actions taken against an asset in your environment.\n\n# Key Features\n\n* Unquarantine Asset with Insight Agent\n* Reverse containment actions from your mobile or desktop devices via Slack.\n* Receive real-time updates to actions in Slack.\n\n\n# Requirements\n\n* Python3 Script\n* Slack (ChatOps)\n* REST\n\n\n# Documentation\n\n## Setup\n\nImport the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.\n \n## Technical Details\n\nFor Technical details, refer to the MDR Containment Unquarantine Asset with Insight Agent import instructions.\n\n## Troubleshooting\n\n|Plugin|Version|Count|\n|----|----|--------|\n|REST|4.0.1|1|\n|Python 3 Script|2.0.2|1|\n\n_There is no troubleshooting information at this time_\n\n# Version History\n\n* 1.1.0 - Added Parameters and Updated HTTP Rest Plugin\n* 1.0.0 - Initial workflow\n\n# Links\n\n## References\n",

@@ -12,7 +12,6 @@ This workflow is part of the MDR Active Response add-on. When the MDR team ident
 # Requirements
 
 * Insight Platform Organization-level API key
-* Python3 Script 
 * Type Converter
 * REST
 * Active Directory LDAP
