@@ -51,8 +51,7 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Rapid7 InsightVM|4.8.1|5|
-|Type Converter|1.6.0|1|
+|Rapid7 InsightVM|4.9.0|5|
 
 ## Troubleshooting
 
@@ -60,6 +59,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.1.3 - Removed unecessary steps, updated plugins
 * 1.1.2 - Updated documentation, and plugins to the latest version
 * 1.1.1 - Updated spec files
 * 1.1.0 - Workflow updated to support different types (asset, group, site, or tag). Updated documentation.
