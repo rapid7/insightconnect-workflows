@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Enrich_Malicious_Hash_Alerts_from_InsightIDR_with_OSINT
 title: "Enrich Malicious Hash Alerts from InsightIDR with OSINT"
 description: Enrich a potentially malicious process hash with threat intelligence provided by Threat Crowd and Team Cymru MHR from Slack.
-version: 1.0.0
+version: 1.0.1
 vendor: rapid7
 support: rapid7
 status: []

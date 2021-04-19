@@ -30,8 +30,8 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Threat Crowd|3.0.0|1|
-|Team Cymru MHR|1.1.1|1|
+|Threat Crowd|3.0.1|1|
+|Team Cymru MHR|1.1.2|1|
 
 ## Troubleshooting
 
@@ -39,6 +39,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.1 - Update Threat Crowd plugin to version 3.0.1 | Update Team Cymru MHR plugin to version 1.1.2
 * 1.0.0 - Initial workflow
 
 # Links

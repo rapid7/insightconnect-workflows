@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.61.3-0-g16082",
+    "komandVersion": "1.80.0-0-gf3f72",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-09-21T22:23:25.978931103Z",
+    "exportedAt": "2021-04-07T12:11:29.402977187Z",
     "workflowVersions": [
       {
         "name": "Enrich Hash with Threat Intelligence from Threat Crowd",
@@ -76,7 +76,7 @@
             "type": "trigger",
             "continueOnFailure": false,
             "isDisabled": false,
-            "triggerId": "ad80c5fb-9044-4a34-8a63-b2e842a6cfd1",
+            "triggerId": "4d2e656d-d268-4c51-88c9-484c317d2f81",
             "defaultInputJSONSchema": {
               "definitions": {},
               "properties": {
@@ -107,8 +107,8 @@
               "name": "Threat Crowd",
               "slugVendor": "rapid7",
               "slugName": "threatcrowd",
-              "slugVersion": "3.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/threatcrowd/3.0.0/icon.png"
+              "slugVersion": "3.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/threatcrowd/3.0.1/icon.png"
             },
             "identifier": "hash",
             "continueOnFailure": false,
@@ -228,12 +228,15 @@
         },
         "tags": null,
         "humanCostSeconds": 300,
-        "humanCostDisplayUnit": "minutes"
+        "humanCostDisplayUnit": "minutes",
+        "parameters": {
+          "definitionSchema": null
+        }
       }
     ],
     "triggers": [
       {
-        "id": "ad80c5fb-9044-4a34-8a63-b2e842a6cfd1",
+        "id": "4d2e656d-d268-4c51-88c9-484c317d2f81",
         "name": "API Trigger",
         "description": "",
         "input": null,
@@ -256,7 +259,10 @@
           "type": "object"
         },
         "tags": [],
-        "type": "trigger_api"
+        "type": "trigger_api",
+        "options": {
+          "webhookEnabled": true
+        }
       }
     ]
   }

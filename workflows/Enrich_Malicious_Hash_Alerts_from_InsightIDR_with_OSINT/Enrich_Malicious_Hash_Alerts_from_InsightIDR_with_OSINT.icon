@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.75.0-0-g0b8f4",
+    "komandVersion": "1.80.0-0-gf3f72",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2021-01-22T16:19:39.408206067Z",
+    "exportedAt": "2021-04-07T13:05:08.000798185Z",
     "workflowVersions": [
       {
         "name": "Enrich Malicious Hash Alerts from InsightIDR with OSINT",
@@ -112,8 +112,8 @@
               "name": "Team Cymru MHR",
               "slugVendor": "rapid7",
               "slugName": "cymru_malware_hash",
-              "slugVersion": "1.1.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/cymru_malware_hash/1.1.1/icon.png"
+              "slugVersion": "1.1.2",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/cymru_malware_hash/1.1.2/icon.png"
             },
             "identifier": "lookup_hash",
             "continueOnFailure": false,
@@ -246,7 +246,7 @@
             "type": "trigger",
             "continueOnFailure": false,
             "isDisabled": false,
-            "triggerId": "4fd33396-68e2-4be3-9aa0-4d4d36faf580",
+            "triggerId": "9d8f4f79-a371-4edb-8788-8b367bae77d4",
             "defaultInputJSONSchema": {
               "definitions": {
                 "actor": {
@@ -831,8 +831,8 @@
               "name": "Threat Crowd",
               "slugVendor": "rapid7",
               "slugName": "threatcrowd",
-              "slugVersion": "3.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/threatcrowd/3.0.0/icon.png"
+              "slugVersion": "3.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/threatcrowd/3.0.1/icon.png"
             },
             "identifier": "hash",
             "continueOnFailure": false,
@@ -960,7 +960,7 @@
     ],
     "triggers": [
       {
-        "id": "4fd33396-68e2-4be3-9aa0-4d4d36faf580",
+        "id": "9d8f4f79-a371-4edb-8788-8b367bae77d4",
         "name": "InsightIDR Event",
         "description": "",
         "input": null,
