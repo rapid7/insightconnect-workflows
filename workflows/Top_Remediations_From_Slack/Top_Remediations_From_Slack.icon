@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.69.2-0-gaf0d9",
+    "komandVersion": "1.82.0-0-g2ef20",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-11-28T18:39:04.409871219Z",
+    "exportedAt": "2021-04-16T14:17:31.695135504Z",
     "workflowVersions": [
       {
         "name": "Lookup Top Remediations with InsightVM from Slack",
@@ -139,14 +139,6 @@
               "fromNodeId": "dc63d024-fdaa-47d5-a826-bde4ab9449d1",
               "toNodeId": "6d228223-b518-4ca1-8e23-ecb5eac81bd7"
             },
-            "a5db74b3-e59a-4417-8462-0792e73f0ac0": {
-              "id": "a5db74b3-e59a-4417-8462-0792e73f0ac0",
-              "name": "",
-              "description": "",
-              "parentNodeId": "",
-              "fromNodeId": "0175bc38-217a-4316-a186-423f2371786c",
-              "toNodeId": "ef5963ec-1d46-4015-9029-05315366a3f7"
-            },
             "b5950d72-5647-41dd-be5c-a950888635a6": {
               "id": "b5950d72-5647-41dd-be5c-a950888635a6",
               "name": "",
@@ -225,14 +217,10 @@
               "description": "",
               "parentNodeId": "",
               "fromNodeId": "6ff0ab53-2295-40bd-9f1f-8e0dad22ff3d",
-              "toNodeId": "0175bc38-217a-4316-a186-423f2371786c"
+              "toNodeId": "ef5963ec-1d46-4015-9029-05315366a3f7"
             }
           },
           "nodes": {
-            "0175bc38-217a-4316-a186-423f2371786c": {
-              "id": "0175bc38-217a-4316-a186-423f2371786c",
-              "parentNodeId": ""
-            },
             "21bb5980-bd1b-4726-9fa2-2012c959a824": {
               "id": "21bb5980-bd1b-4726-9fa2-2012c959a824",
               "parentNodeId": ""
@@ -312,84 +300,6 @@
           }
         },
         "steps": {
-          "0175bc38-217a-4316-a186-423f2371786c": {
-            "nodeId": "0175bc38-217a-4316-a186-423f2371786c",
-            "name": "Input for Top Remediations",
-            "type": "action",
-            "plugin": {
-              "name": "Type Converter",
-              "slugVendor": "rapid7",
-              "slugName": "type_converter",
-              "slugVersion": "1.6.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/type_converter/1.6.0/icon.png"
-            },
-            "identifier": "string_to_object",
-            "continueOnFailure": false,
-            "isDisabled": false,
-            "isCloud": false,
-            "parameters": {
-              "input": {
-                "input": "{\"array\":[{{[fb9db7f9-7607-422b-b9f5-82c5a2ca6932].[target]}}]}"
-              }
-            },
-            "defaultInputJSONSchema": {
-              "properties": {
-                "input": {
-                  "description": "Input variable",
-                  "order": 1,
-                  "title": "Input",
-                  "type": "string"
-                }
-              },
-              "required": [
-                "input"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultOutputJSONSchema": {
-              "properties": {
-                "output": {
-                  "description": "Type converted input",
-                  "order": 1,
-                  "title": "Output",
-                  "type": "object"
-                }
-              },
-              "required": [
-                "output"
-              ],
-              "title": "Variables",
-              "type": "object"
-            },
-            "outputJSONSchema": {
-              "definitions": {
-                "output": {
-                  "properties": {
-                    "array": {
-                      "items": {
-                        "type": "integer"
-                      },
-                      "type": "array"
-                    }
-                  },
-                  "type": "object"
-                }
-              },
-              "properties": {
-                "output": {
-                  "$ref": "#/definitions/output",
-                  "description": "Type converted input",
-                  "order": 1,
-                  "title": "Output"
-                }
-              },
-              "title": "Variables",
-              "type": "object"
-            },
-            "defaultImageData": "",
-            "connectionType": "ORCHESTRATOR"
-          },
           "21bb5980-bd1b-4726-9fa2-2012c959a824": {
             "nodeId": "21bb5980-bd1b-4726-9fa2-2012c959a824",
             "name": "Get Group",
@@ -398,8 +308,8 @@
               "name": "Rapid7 InsightVM",
               "slugVendor": "rapid7",
               "slugName": "rapid7_insightvm",
-              "slugVersion": "4.8.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/4.8.1/icon.png"
+              "slugVersion": "4.9.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/4.9.0/icon.png"
             },
             "identifier": "get_asset_groups",
             "continueOnFailure": false,
@@ -486,13 +396,13 @@
                     }
                   },
                   "required": [
+                    "assets",
                     "type",
                     "vulnerabilities",
-                    "assets",
-                    "links",
-                    "riskScore",
                     "id",
-                    "name"
+                    "links",
+                    "name",
+                    "riskScore"
                   ],
                   "title": "Asset Group",
                   "type": "object"
@@ -839,8 +749,8 @@
               "name": "Rapid7 InsightVM",
               "slugVendor": "rapid7",
               "slugName": "rapid7_insightvm",
-              "slugVersion": "4.8.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/4.8.1/icon.png"
+              "slugVersion": "4.9.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/4.9.0/icon.png"
             },
             "identifier": "get_tags",
             "continueOnFailure": false,
@@ -962,9 +872,9 @@
                     }
                   },
                   "required": [
-                    "type",
                     "id",
-                    "name"
+                    "name",
+                    "type"
                   ],
                   "title": "Tag",
                   "type": "object"
@@ -1128,7 +1038,7 @@
                 "type": "any"
               }
             },
-            "triggerId": "0005a5ed-8ebe-40f1-b9d4-2f427a6a8720",
+            "triggerId": "3535eaa7-96b7-4fec-b66c-d6e9e4578ab5",
             "defaultInputJSONSchema": {
               "properties": {
                 "matchChannel": {
@@ -1635,8 +1545,8 @@
               "name": "Rapid7 InsightVM",
               "slugVendor": "rapid7",
               "slugName": "rapid7_insightvm",
-              "slugVersion": "4.8.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/4.8.1/icon.png"
+              "slugVersion": "4.9.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/4.9.0/icon.png"
             },
             "identifier": "asset_search",
             "continueOnFailure": false,
@@ -2645,8 +2555,8 @@
               "name": "Rapid7 InsightVM",
               "slugVendor": "rapid7",
               "slugName": "rapid7_insightvm",
-              "slugVersion": "4.8.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/4.8.1/icon.png"
+              "slugVersion": "4.9.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/4.9.0/icon.png"
             },
             "identifier": "top_remediations",
             "continueOnFailure": false,
@@ -2657,7 +2567,7 @@
                 "asset_limit": 0,
                 "limit": 10,
                 "scope": "{{[fb9db7f9-7607-422b-b9f5-82c5a2ca6932].[type]}}",
-                "scope_ids": "{{[0175bc38-217a-4316-a186-423f2371786c].[output].[array]}}",
+                "scope_ids": "[{{[fb9db7f9-7607-422b-b9f5-82c5a2ca6932].[target]}}]",
                 "vulnerability_limit": 10
               }
             },
@@ -2787,13 +2697,13 @@
                     }
                   },
                   "required": [
-                    "assetCount",
-                    "nexposeId",
-                    "summary",
-                    "vulnerabilityCount",
                     "riskScore",
                     "assets",
                     "vulnerabilities",
+                    "nexposeId",
+                    "summary",
+                    "assetCount",
+                    "vulnerabilityCount",
                     "solutionId"
                   ],
                   "title": "Remediation",
@@ -2891,12 +2801,12 @@
                     }
                   },
                   "required": [
+                    "title",
                     "description",
                     "cvssScore",
                     "severity",
                     "riskScore",
-                    "id",
-                    "title"
+                    "id"
                   ],
                   "title": "Remediation Vulnerability",
                   "type": "object"
@@ -2931,8 +2841,8 @@
               "name": "Rapid7 InsightVM",
               "slugVendor": "rapid7",
               "slugName": "rapid7_insightvm",
-              "slugVersion": "4.8.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/4.8.1/icon.png"
+              "slugVersion": "4.9.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/4.9.0/icon.png"
             },
             "identifier": "get_sites",
             "continueOnFailure": false,
@@ -3063,16 +2973,16 @@
                     }
                   },
                   "required": [
-                    "scanEngine",
+                    "importance",
+                    "links",
+                    "riskScore",
                     "type",
                     "assets",
-                    "id",
-                    "links",
-                    "name",
-                    "riskScore",
+                    "scanEngine",
+                    "scanTemplate",
                     "vulnerabilities",
-                    "importance",
-                    "scanTemplate"
+                    "id",
+                    "name"
                   ],
                   "title": "Site",
                   "type": "object"
@@ -3271,7 +3181,7 @@
     ],
     "triggers": [
       {
-        "id": "0005a5ed-8ebe-40f1-b9d4-2f427a6a8720",
+        "id": "3535eaa7-96b7-4fec-b66c-d6e9e4578ab5",
         "name": "Get Host Info Slack Trigger",
         "description": "@ your InsightConnect Slack chat bot or send a direct message to trigger the workflow using the command top-remediations asset/group/site/tag target_name\n\nFor example:\n@Rapid7 InsightConnect top-remediations asset hostname123\n@Rapid7 InsightConnect top-remediations group Windows Servers\n@Rapid7 InsightConnect top-remediations site DMZ\n@Rapid7 InsightConnect top-remediations tag John",
         "input": {
