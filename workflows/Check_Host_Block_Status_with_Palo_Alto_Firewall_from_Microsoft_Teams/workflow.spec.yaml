@@ -3,13 +3,13 @@ products: ["insightconnect"]
 name: Check_Host_Block_Status_with_Palo_Alto_Firewall_from_Microsoft_Teams
 title: "Check Host Block Status with Palo Alto Firewall from Microsoft Teams"
 description: Check if an IP address or domain is blocked via Microsoft Teams.
-version: 1.2.1
+version: 2.0.0
 vendor: rapid7
 support: rapid7
 status: []
 hub_tags:
   use_cases: [remediation_management,threat_detection_and_response]
-  keywords: [palo, alto, firewall, teams, microsoft_teams, chatops, work_from_home]
+  keywords: [palo, alto, firewall, teams, microsoft_teams, chatops, work_from_home, parameters]
   features: []
 resources:
   source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Check_Host_Block_Status_with_Palo_Alto_Firewall_from_Microsoft_Teams
