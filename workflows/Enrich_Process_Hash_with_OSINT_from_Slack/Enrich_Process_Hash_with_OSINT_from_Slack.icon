@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.60.0-0-g82f99",
+    "komandVersion": "1.80.0-0-gf3f72",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-08-18T19:53:26.833219114Z",
+    "exportedAt": "2021-04-07T12:46:50.440605003Z",
     "workflowVersions": [
       {
         "name": "Enrich Process Hash with OSINT from Slack",
@@ -160,8 +160,8 @@
               "name": "Team Cymru MHR",
               "slugVendor": "rapid7",
               "slugName": "cymru_malware_hash",
-              "slugVersion": "1.1.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/cymru_malware_hash/1.1.0/icon.png"
+              "slugVersion": "1.1.2",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/cymru_malware_hash/1.1.2/icon.png"
             },
             "identifier": "lookup_hash",
             "continueOnFailure": false,
@@ -217,10 +217,10 @@
                     }
                   },
                   "required": [
+                    "last_seen_utc",
                     "response_code",
                     "detected",
-                    "found",
-                    "last_seen_utc"
+                    "found"
                   ],
                   "title": "Result",
                   "type": "object"
@@ -392,8 +392,8 @@
               "name": "Team Cymru MHR",
               "slugVendor": "rapid7",
               "slugName": "cymru_malware_hash",
-              "slugVersion": "1.1.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/cymru_malware_hash/1.1.0/icon.png"
+              "slugVersion": "1.1.2",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/cymru_malware_hash/1.1.2/icon.png"
             },
             "identifier": "lookup_hash",
             "continueOnFailure": false,
@@ -449,10 +449,10 @@
                     }
                   },
                   "required": [
+                    "last_seen_utc",
                     "response_code",
                     "detected",
-                    "found",
-                    "last_seen_utc"
+                    "found"
                   ],
                   "title": "Result",
                   "type": "object"
@@ -484,8 +484,8 @@
               "name": "Threat Crowd",
               "slugVendor": "rapid7",
               "slugName": "threatcrowd",
-              "slugVersion": "3.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/threatcrowd/3.0.0/icon.png"
+              "slugVersion": "3.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/threatcrowd/3.0.1/icon.png"
             },
             "identifier": "hash",
             "continueOnFailure": false,
@@ -681,7 +681,7 @@
                 "type": "any"
               }
             },
-            "triggerId": "463a9d33-3c12-49fc-93be-710c6b0b24e7",
+            "triggerId": "16dffd5d-2da9-4357-b529-db7527b4e519",
             "defaultInputJSONSchema": {
               "properties": {
                 "matchChannel": {
@@ -766,20 +766,20 @@
                       "items": {
                         "type": "string"
                       },
-                      "order": 3,
+                      "order": 4,
                       "title": "Email Addresses",
                       "type": "array"
                     },
                     "hashes": {
                       "$ref": "#/definitions/hashes",
                       "description": "Hashes found within the message",
-                      "order": 4,
+                      "order": 5,
                       "title": "Hashes"
                     },
                     "ip_addresses": {
                       "$ref": "#/definitions/ip_addresses",
                       "description": "IP addresses found within the message",
-                      "order": 6,
+                      "order": 7,
                       "title": "IP Addresses"
                     },
                     "mac_addresses": {
@@ -787,8 +787,17 @@
                       "items": {
                         "type": "string"
                       },
-                      "order": 5,
+                      "order": 6,
                       "title": "MAC Addresses",
+                      "type": "array"
+                    },
+                    "parent_domains": {
+                      "description": "Parent domains found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "Parent Domains",
                       "type": "array"
                     },
                     "urls": {
@@ -796,7 +805,7 @@
                       "items": {
                         "type": "string"
                       },
-                      "order": 2,
+                      "order": 3,
                       "title": "URLs",
                       "type": "array"
                     }
@@ -851,7 +860,7 @@
                     "indicators": {
                       "$ref": "#/definitions/indicators",
                       "description": "Potential threat indicators found within the message",
-                      "order": 6,
+                      "order": 7,
                       "title": "Indicators"
                     },
                     "text": {
@@ -877,6 +886,15 @@
                       "order": 2,
                       "title": "User ID",
                       "type": "string"
+                    },
+                    "words": {
+                      "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 6,
+                      "title": "Words",
+                      "type": "array"
                     }
                   },
                   "title": "Message",
@@ -1000,8 +1018,8 @@
               "name": "Threat Crowd",
               "slugVendor": "rapid7",
               "slugName": "threatcrowd",
-              "slugVersion": "3.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/threatcrowd/3.0.0/icon.png"
+              "slugVersion": "3.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/threatcrowd/3.0.1/icon.png"
             },
             "identifier": "hash",
             "continueOnFailure": false,
@@ -1195,12 +1213,15 @@
         },
         "tags": null,
         "humanCostSeconds": 0,
-        "humanCostDisplayUnit": ""
+        "humanCostDisplayUnit": "",
+        "parameters": {
+          "definitionSchema": null
+        }
       }
     ],
     "triggers": [
       {
-        "id": "463a9d33-3c12-49fc-93be-710c6b0b24e7",
+        "id": "16dffd5d-2da9-4357-b529-db7527b4e519",
         "name": "Trigger on Keyword: enrich-hash",
         "description": "",
         "input": {
@@ -1292,20 +1313,20 @@
                   "items": {
                     "type": "string"
                   },
-                  "order": 3,
+                  "order": 4,
                   "title": "Email Addresses",
                   "type": "array"
                 },
                 "hashes": {
                   "$ref": "#/definitions/hashes",
                   "description": "Hashes found within the message",
-                  "order": 4,
+                  "order": 5,
                   "title": "Hashes"
                 },
                 "ip_addresses": {
                   "$ref": "#/definitions/ip_addresses",
                   "description": "IP addresses found within the message",
-                  "order": 6,
+                  "order": 7,
                   "title": "IP Addresses"
                 },
                 "mac_addresses": {
@@ -1313,8 +1334,17 @@
                   "items": {
                     "type": "string"
                   },
-                  "order": 5,
+                  "order": 6,
                   "title": "MAC Addresses",
+                  "type": "array"
+                },
+                "parent_domains": {
+                  "description": "Parent domains found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "Parent Domains",
                   "type": "array"
                 },
                 "urls": {
@@ -1322,7 +1352,7 @@
                   "items": {
                     "type": "string"
                   },
-                  "order": 2,
+                  "order": 3,
                   "title": "URLs",
                   "type": "array"
                 }
@@ -1377,7 +1407,7 @@
                 "indicators": {
                   "$ref": "#/definitions/indicators",
                   "description": "Potential threat indicators found within the message",
-                  "order": 6,
+                  "order": 7,
                   "title": "Indicators"
                 },
                 "text": {
@@ -1403,6 +1433,15 @@
                   "order": 2,
                   "title": "User ID",
                   "type": "string"
+                },
+                "words": {
+                  "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 6,
+                  "title": "Words",
+                  "type": "array"
                 }
               },
               "title": "Message",

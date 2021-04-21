@@ -46,7 +46,7 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Threat Crowd|3.0.0|1|
+|Threat Crowd|3.0.1|1|
 
 ## Troubleshooting
 
@@ -54,6 +54,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.0.3 - Update Threat Crowd plugin to version 3.0.1
 * 1.0.2 - Fix spelling of cloud_enabled tag | Update documentation
 * 1.0.1 - Updated Artifact
 * 1.0.0 - Initial workflow

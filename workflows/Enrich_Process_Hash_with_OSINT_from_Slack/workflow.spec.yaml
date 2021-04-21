@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Enrich_Process_Hash_with_OSINT_from_Slack
 title: "Enrich Process Hash with OSINT from Slack"
 description: Enrich potentially malicious process hashes with threat intelligence provided by Threat Crowd and Team Cymru MHR from Slack.
-version: 1.0.0
+version: 1.0.1
 vendor: rapid7
 support: rapid7
 status: []

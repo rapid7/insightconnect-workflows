@@ -3,7 +3,7 @@ products: ["insightconnect"]
 name: Enrich_Hash_With_Threat_Intelligence_From_Threat_Crowd
 title: "Enrich Hash with Threat Intelligence from Threat Crowd"
 description: Learn to enrich a hash with threat intelligence from Threat Crowd using an API trigger.
-version: 1.0.2
+version: 1.0.3
 vendor: rapid7
 support: rapid7
 status: []
