@@ -29,9 +29,16 @@ The following connections will need to be setup:
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-Once the workflow has been imported, **the first Microsoft Teams step will need the team name and channel name updated to suit your Microsoft Teams environment!** Edit the input with the preset text of `change_me` in the first Microsoft Teams step in the workflow.
+This workflow leverages InsightConnect's Parameters feature. This feature allows variables used multiple times throughout a workflow to be entered once and then referenced throughout the workflow.
 
-After configuring the Microsoft Teams steps, activate the workflow in order to trigger it.
+There are two parameters you will need to configure in order to complete setup of your workflow:
+
+* Team Name: The Microsoft Teams team name in your environment where the workflow should be triggered and respond
+* Channel Name: The Microsoft Teams channel name in your environment where the workflow should be triggered and respond (the channel should exist in the aforementioned team)
+
+To begin, select "Parameters" either from the Workflow Control Panel or from the Builder to begin configuration.
+
+After configuring the parameters, activate the workflow in order to trigger it.
 
 ### Usage
 
@@ -47,7 +54,7 @@ This will kick off the workflow search for any emails with "A phishy email" in t
 Search criteria can be 'body', 'subject', or 'from' lines in the email. 
 
 For example:
-* `!find-email user@example.com subject="A phishy email" from="example.com" body="Click here for free stuff" `
+* `!find-email user@example.com subject="A phishy email" from="example.com" body="Click here for free stuff"`
 
 Any combination of 'body', 'subject', and 'from' can be used. At least one search item must be given.
 
@@ -64,10 +71,10 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Microsoft Office 365 Email|4.1.1|2|
-|Microsoft Teams|3.1.0|6|
-|Python 3 Script|2.0.1|2|
-|HTML|1.2.1|1|
+|Microsoft Office 365 Email|5.0.1|2|
+|Microsoft Teams|3.1.2|6|
+|Python 3 Script|2.0.2|2|
+|HTML|1.2.2|1|
 
 ## Troubleshooting
 
@@ -75,6 +82,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 2.0.0 - Leverage Parameters Feature | Fix the bug that causes the workflow to fail when the `delete` flag is not used | Update documentation | Update Microsoft Office 365 Email plugin to version 5.0.1 | Update Microsoft Teams plugin to version 3.1.2 | Update Python 3 Script plugin to version 2.0.2 | Update HTML plugin tu version 1.2.2
 * 1.1.0 - Replace the preset text of "change_me" with automatic team and channel name extraction in all Microsoft Teams steps except the first one | Update Microsoft Teams to version 3.1.0 | Update documentation
 * 1.0.4 - Update to make Microsoft Teams plugin the latest version
 * 1.0.3 - Set "change_me" items in workflow input
