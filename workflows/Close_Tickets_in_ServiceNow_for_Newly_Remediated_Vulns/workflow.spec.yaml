@@ -3,7 +3,7 @@ products: ["insightconnect", "insightvm"]
 name: Close_Tickets_in_ServiceNow_for_Newly_Remediated_Vulns
 title: "Close Tickets in ServiceNow for Newly Remediated Vulnerabilities"
 description: "This workflow closes tickets in ServiceNow for vulnerabilities previously discovered by InsightVM that have been remediated."
-version: 1.0.0
+version: 1.0.1
 vendor: rapid7
 support: rapid7
 status: []
