@@ -28,11 +28,11 @@ Plugins utilized by workflow:
 |Plugin|Version|Count|
 |----|----|--------|
 |ExtractIt|2.0.0|4|
-|Microsoft Teams|3.1.0|2|
-|HashIt|2.0.3|2|
-|String Operations|1.2.1|2|
-|Python 3 Script|2.0.1|1|
-|Microsoft Office 365 Email|4.1.1|1|
+|Microsoft Teams|3.1.2|2|
+|HashIt|2.0.4|2|
+|String Operations|1.3.1|2|
+|Python 3 Script|2.0.2|1|
+|Microsoft Office 365 Email|5.0.1|1|
 
 ## Troubleshooting
 
@@ -40,6 +40,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.1.0 - Update step `Nested Headers` and `Top Level Headers` inputs | Update Microsoft Teams version to 3.1.2 | Update String Operations version to 1.3.1 | Update Python 3 Script version to 2.0.2 | Update Microsoft Office 365 Email version to 5.0.1 | Update HashIt version to 2.0.4
 * 1.0.7 - Update Microsoft Teams to version 3.1.0
 * 1.0.6 - Update to make Microsoft Teams plugin the latest version
 * 1.0.5 - Fix issue where Nested Headers artifact incorrectly defined an each loop
