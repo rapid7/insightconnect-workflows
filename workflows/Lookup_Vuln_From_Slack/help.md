@@ -2,6 +2,12 @@
 
 Lookup a vulnerability to receive an overview, including risk, publish date, description, and solutions for remediation. This workflow helps teams share vulnerability intelligence through shared Slack channels.
 
+Sample Slack trigger commands:
+
+`@Rapid7 InsightConnect lookup-vuln CVE-2020-0674`
+
+`@Rapid7 InsightConnect lookup-vuln bluekeep`
+
 # Key Features
 
 * Lookup vulnerability information from Slack
@@ -19,7 +25,15 @@ Lookup a vulnerability to receive an overview, including risk, publish date, des
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-After import, activate the workflow in order to trigger it.
+This workflow leverages InsightConnect's Parameters feature. This feature allows variables used multiple times throughout a workflow to be entered once and then referenced throughout the workflow.
+
+There is one parameter you will need to configure in order to complete setup of your workflow:
+
+* Channel: The Slack channel name in your environment where the workflow should be triggered
+
+To begin, select "Parameters" either from the Workflow Control Panel or from the Builder to begin configuration.
+
+After configuring the parameter, activate the workflow in order to trigger it.
 
 ## Usage
 
@@ -39,7 +53,7 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Rapid7 Vulnerability & Exploit Database|2.0.3|2|
+|Rapid7 Vulnerability & Exploit Database|2.1.0|2|
 
 ## Troubleshooting
 
@@ -47,6 +61,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 2.0.0 - Leverage Parameters Feature | Update documentation | Update Rapid7 Vulnerability & Exploit Database plugin to version 2.1.0
 * 1.1.4 - Update workflow to be entirely cloud based
 * 1.1.3 - Updated trigger syntax, updated Rapid7 Vuln DB plugin, updated documentation
 * 1.1.2 - Updated documentation
