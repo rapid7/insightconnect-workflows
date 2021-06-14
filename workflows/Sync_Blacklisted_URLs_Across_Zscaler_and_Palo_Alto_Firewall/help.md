@@ -21,13 +21,14 @@ Import the workflow from the Rapid7 Extension Library and proceed through the Im
 
 This workflow leverages InsightConnect's Parameters feature. This feature allows variables used multiple times throughout a workflow to be entered once and then referenced throughout the workflow. 
 
-There is one parameter you will need to configure in order to complete the setup of your workflow:
+There are two parameters you will need to configure in order to complete the setup of your workflow:
 
 * `Group Name`: The Palo Alto Firewall address object group to monitor. This is the group from which address objects will be synced with Zscaler.
+* `Activate Configuration`: Set to true to activate configuration changes in Zscaler
 
 To begin, select "Parameters" either from the Workflow Control Panel or from the Builder to begin configuration.
 
-After configuring the parameter, activate the workflow in order to trigger it.
+After configuring the parameters, activate the workflow in order to trigger it.
 
 ### Usage
 
@@ -39,11 +40,11 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Palo Alto Firewall|6.1.0|7|
+|Palo Alto Firewall|6.1.1|7|
 |Storage|1.0.1|6|
 |Timers|2.0.5|1|
 |Type Converter|1.8.0|10|
-|Zscaler|1.3.0|5|
+|Zscaler|1.4.0|5|
 
 ## Troubleshooting
 
@@ -51,6 +52,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 2.0.0 - Update Zscaler plugin to version 1.4.0 | Update Palo Alto Firewall plugin to version 6.1.1 | Add the `Activate Configuration` input to the workflow parameters
 * 1.0.0 - Initial workflow
 
 # Links

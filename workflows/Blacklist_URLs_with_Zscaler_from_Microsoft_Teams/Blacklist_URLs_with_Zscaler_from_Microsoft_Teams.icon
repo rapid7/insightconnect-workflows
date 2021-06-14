@@ -1,14 +1,14 @@
 {
   "kom": {
-    "komandVersion": "1.73.0-0-g930f9",
+    "komandVersion": "1.85.1-0-gf6a19",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-12-21T12:53:07.972478666Z",
+    "exportedAt": "2021-06-09T22:32:00.584854815Z",
     "workflowVersions": [
       {
         "name": "Blacklist URLs with Zscaler from Microsoft Teams",
         "type": "runnable",
         "version": "",
-        "description": "",
+        "description": "# Description\n\nUse the simplicity of a chat command in Microsoft Teams to block or unblock URLs in Zscaler.\n\nMultiple indicators can be specified within one command.\n\nSample Microsoft Teams command:\n\n`!blacklist-url example.com`\n`!blacklist-url http://example.com example2.com`\n`!unblacklist-url example.com`\n`!unblacklist-url http://example.com example2.com`\n\n# Key Features\n\n* **Blacklist URLs** - Use Microsoft Teams and InsightConnect to make managing URL blacklist states in Zscaler easy\n\n# Requirements\n\n* [Microsoft Teams](https://insightconnect.help.rapid7.com/docs/microsoft-teams)\n* Zscaler base URL, API key, and credentials\n\n# Documentation\n\n## Setup\n\nThe workflow works by blacklisting or unblacklisting URLs in Zscaler through Microsoft Teams chat commands.\n\nImport the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.\n\nOnce the workflow has been imported, **Update the first step with the team name and the channel name to suit your Microsoft Teams environment!** by editing the input with the preset text of `change_me` to match the channel to monitor.\n\nAfter import, activate the workflow in order to trigger it.\n\n### Usage\n\n*This workflow will only trigger in the channel specified in the Microsoft Teams workflow steps, or from any channel if left empty.*\n\nFor example:\n* `!blacklist-url http://example.com example2.com`\n* `!unblacklist-url http://example.com example2.com`\n\nThe workflow will reply when it completes.\n\n## Technical Details\n\nPlugins utilized by workflow:\n\n|Plugin|Version|Count|\n|----|----|--------|\n|Microsoft Teams|3.1.0|5|\n|Zscaler|1.2.1|2|\n\n## Troubleshooting\n\n_There is no troubleshooting information at this time_\n\n# Version History\n\n* 1.0.0 - Initial workflow\n\n# Links\n\n## References\n\n* [Zscaler](https://www.zscaler.com/)\n* [Microsoft Teams Configuration](https://insightconnect.help.rapid7.com/docs/microsoft-teams)\n* [Microsoft Teams](https://teams.microsoft.com/)\n",
         "graph": {
           "edges": {
             "06aa3007-0307-4730-85db-0468a92ed2d3": {
@@ -210,8 +210,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "3.1.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
+              "slugVersion": "3.1.2",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.2/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
@@ -253,9 +253,9 @@
                 }
               },
               "required": [
+                "message_content",
                 "team_name",
-                "channel_name",
-                "message_content"
+                "channel_name"
               ],
               "title": "Variables",
               "type": "object"
@@ -407,8 +407,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "3.1.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
+              "slugVersion": "3.1.2",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.2/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
@@ -450,9 +450,9 @@
                 }
               },
               "required": [
+                "message_content",
                 "team_name",
-                "channel_name",
-                "message_content"
+                "channel_name"
               ],
               "title": "Variables",
               "type": "object"
@@ -648,8 +648,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "3.1.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
+              "slugVersion": "3.1.2",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.2/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
@@ -691,9 +691,9 @@
                 }
               },
               "required": [
+                "message_content",
                 "team_name",
-                "channel_name",
-                "message_content"
+                "channel_name"
               ],
               "title": "Variables",
               "type": "object"
@@ -845,8 +845,8 @@
               "name": "Zscaler",
               "slugVendor": "rapid7",
               "slugName": "zscaler",
-              "slugVersion": "1.2.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/zscaler/1.2.1/icon.png"
+              "slugVersion": "1.4.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/zscaler/1.4.0/icon.png"
             },
             "identifier": "blacklist_url",
             "continueOnFailure": true,
@@ -854,12 +854,20 @@
             "isCloud": false,
             "parameters": {
               "input": {
+                "activate_configuration": "{{$workflow.[Activate Configuration]}}",
                 "blacklist_state": false,
                 "urls": "{{[df6ddb9d-72a9-44c4-8cac-3588d6a4a253].[indicators].[domains]}}"
               }
             },
             "defaultInputJSONSchema": {
               "properties": {
+                "activate_configuration": {
+                  "default": false,
+                  "description": "Set to true to activate configuration changes",
+                  "order": 3,
+                  "title": "Activate Configuration",
+                  "type": "boolean"
+                },
                 "blacklist_state": {
                   "default": true,
                   "description": "True to blacklist a URL, false to unblacklist a URL",
@@ -878,13 +886,20 @@
                 }
               },
               "required": [
-                "urls"
+                "urls",
+                "activate_configuration"
               ],
               "title": "Variables",
               "type": "object"
             },
             "defaultOutputJSONSchema": {
               "properties": {
+                "status": {
+                  "description": "Activation status for a configuration change",
+                  "order": 2,
+                  "title": "Status",
+                  "type": "string"
+                },
                 "success": {
                   "description": "Whether or not the request succeeded",
                   "order": 1,
@@ -893,7 +908,8 @@
                 }
               },
               "required": [
-                "success"
+                "success",
+                "status"
               ],
               "title": "Variables",
               "type": "object"
@@ -910,8 +926,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "3.1.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
+              "slugVersion": "3.1.2",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.2/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
@@ -953,9 +969,9 @@
                 }
               },
               "required": [
+                "message_content",
                 "team_name",
-                "channel_name",
-                "message_content"
+                "channel_name"
               ],
               "title": "Variables",
               "type": "object"
@@ -1235,8 +1251,8 @@
               "name": "Zscaler",
               "slugVendor": "rapid7",
               "slugName": "zscaler",
-              "slugVersion": "1.2.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/zscaler/1.2.1/icon.png"
+              "slugVersion": "1.4.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/zscaler/1.4.0/icon.png"
             },
             "identifier": "blacklist_url",
             "continueOnFailure": true,
@@ -1244,12 +1260,20 @@
             "isCloud": false,
             "parameters": {
               "input": {
+                "activate_configuration": "{{$workflow.[Activate Configuration]}}",
                 "blacklist_state": true,
                 "urls": "{{[df6ddb9d-72a9-44c4-8cac-3588d6a4a253].[indicators].[domains]}}"
               }
             },
             "defaultInputJSONSchema": {
               "properties": {
+                "activate_configuration": {
+                  "default": false,
+                  "description": "Set to true to activate configuration changes",
+                  "order": 3,
+                  "title": "Activate Configuration",
+                  "type": "boolean"
+                },
                 "blacklist_state": {
                   "default": true,
                   "description": "True to blacklist a URL, false to unblacklist a URL",
@@ -1268,13 +1292,20 @@
                 }
               },
               "required": [
-                "urls"
+                "urls",
+                "activate_configuration"
               ],
               "title": "Variables",
               "type": "object"
             },
             "defaultOutputJSONSchema": {
               "properties": {
+                "status": {
+                  "description": "Activation status for a configuration change",
+                  "order": 2,
+                  "title": "Status",
+                  "type": "string"
+                },
                 "success": {
                   "description": "Whether or not the request succeeded",
                   "order": 1,
@@ -1283,7 +1314,8 @@
                 }
               },
               "required": [
-                "success"
+                "success",
+                "status"
               ],
               "title": "Variables",
               "type": "object"
@@ -1300,20 +1332,20 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "3.1.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
+              "slugVersion": "3.1.2",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.2/icon.png"
             },
             "identifier": "new_message_received",
             "continueOnFailure": false,
             "isDisabled": false,
             "parameters": {
               "input": {
-                "channel_name": "change_me",
+                "channel_name": "{{$workflow.[Channel Name]}}",
                 "message_content": "!blacklist-url|!unblacklist-url",
-                "team_name": "change_me"
+                "team_name": "{{$workflow.[Team Name]}}"
               }
             },
-            "triggerId": "d103f085-db8f-426e-aed8-4d5f69465e2d",
+            "triggerId": "3461f9bb-8d08-45df-8ddf-ab6b6a0dac26",
             "defaultInputJSONSchema": {
               "properties": {
                 "channel_name": {
@@ -1631,19 +1663,40 @@
         },
         "tags": null,
         "humanCostSeconds": 0,
-        "humanCostDisplayUnit": "minutes"
+        "humanCostDisplayUnit": "minutes",
+        "parameters": {
+          "definitionSchema": {
+            "type": "object",
+            "required": [],
+            "properties": {
+              "Team Name": {
+                "type": "string",
+                "description": "The Microsoft Teams team name in your environment where the workflow should be triggered and respond"
+              },
+              "Channel Name": {
+                "type": "string",
+                "description": "The Microsoft Teams channel name in your environment where the workflow should be triggered and respond (the channel should exist in the aforementioned team)"
+              },
+              "Activate Configuration": {
+                "type": "boolean",
+                "description": "Set to true to activate configuration changes in Zscaler"
+              }
+            },
+            "definitions": {}
+          }
+        }
       }
     ],
     "triggers": [
       {
-        "id": "d103f085-db8f-426e-aed8-4d5f69465e2d",
+        "id": "3461f9bb-8d08-45df-8ddf-ab6b6a0dac26",
         "identifier": "new_message_received",
         "name": "Check Blacklist Message Received",
         "description": "",
         "input": {
-          "channel_name": "change_me",
+          "channel_name": "{{$workflow.[Channel Name]}}",
           "message_content": "!blacklist-url|!unblacklist-url",
-          "team_name": "change_me"
+          "team_name": "{{$workflow.[Team Name]}}"
         },
         "inputJsonSchema": {
           "properties": {
@@ -1961,8 +2014,8 @@
           "name": "Microsoft Teams",
           "slugVendor": "rapid7",
           "slugName": "microsoft_teams",
-          "slugVersion": "3.1.0",
-          "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
+          "slugVersion": "3.1.2",
+          "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.2/icon.png"
         }
       }
     ]

@@ -1,14 +1,14 @@
 {
   "kom": {
-    "komandVersion": "1.72.0-0-ge9d34",
+    "komandVersion": "1.85.1-0-gf6a19",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-12-14T19:50:14.291959457Z",
+    "exportedAt": "2021-06-09T22:34:48.456234331Z",
     "workflowVersions": [
       {
         "name": "Blacklist URLs with Zscaler from Slack",
         "type": "runnable",
         "version": "",
-        "description": "",
+        "description": "# Description\n\nUse the simplicity of a chat command in Slack to block URLs in Zscaler.\n\nMultiple indicators can be specified within one command.\n\nSample Slack Trigger Commands:\n\n`@Rapid7 InsightConnect blacklist-url example.com`\n\n`@Rapid7 InsightConnect blacklist-url example.com example2.com`\n\n# Key Features\n\n* **Blacklist URLs** - Use Slack and InsightConnect to make managing URL blacklist states in Zscaler easy\n\n# Requirements\n\n* [Slack](https://insightconnect.help.rapid7.com/docs/chatops-step)\n* Zscaler base URL, API key, and credentials\n\n# Documentation\n\n## Setup\n\nThe workflow works by blacklisting or unblacklisting URLs in Zscaler through Slack chat commands.\n\nImport the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.\n\nOnce the workflow has been imported, **Update the first step with the channel name to suit your Slack environment!** by editing the input with the preset text of `change_me` to match the channel to monitor.\n\nAfter import, activate the workflow in order to trigger it.\n\n### Usage\n\n*This workflow will trigger in any direct messages to your Chatbot **or** any message in a channel directed @ your Chatbot. Note the Chatbot must be in the channel in order to trigger the workflow this way.*\n\nFor example:\n* `@Rapid7 InsightConnect blacklist-url example.com example2.com`\n\nThe workflow will reply when it completes.\n\n## Technical Details\n\nPlugins utilized by workflow:\n\n|Plugin|Version|Count|\n|----|----|--------|\n|Zscaler|1.2.1|2|\n\n## Troubleshooting\n\n_There is no troubleshooting information at this time_\n\n# Version History\n\n* 1.0.0 - Initial workflow\n\n# Links\n\n## References\n\n* [Zscaler](https://www.zscaler.com/)\n* [Slack](https://slack.com)\n",
         "graph": {
           "edges": {
             "1e390a90-8dbb-48ea-a622-4139bd9c93d8": {
@@ -242,6 +242,12 @@
                   "title": "Channel ID",
                   "type": "string"
                 },
+                "parent_message_timestamp": {
+                  "description": " The timestamp of the parent message or of the current message if there is no parent. Used to post messages to a thread.",
+                  "order": 3,
+                  "title": "Parent Message Timestamp",
+                  "type": "string"
+                },
                 "timestamp": {
                   "description": "Timestamp of successful message",
                   "order": 2,
@@ -368,6 +374,12 @@
                   "title": "Channel ID",
                   "type": "string"
                 },
+                "parent_message_timestamp": {
+                  "description": " The timestamp of the parent message or of the current message if there is no parent. Used to post messages to a thread.",
+                  "order": 3,
+                  "title": "Parent Message Timestamp",
+                  "type": "string"
+                },
                 "timestamp": {
                   "description": "Timestamp of successful message",
                   "order": 2,
@@ -442,6 +454,12 @@
                   "title": "Channel ID",
                   "type": "string"
                 },
+                "parent_message_timestamp": {
+                  "description": " The timestamp of the parent message or of the current message if there is no parent. Used to post messages to a thread.",
+                  "order": 3,
+                  "title": "Parent Message Timestamp",
+                  "type": "string"
+                },
                 "timestamp": {
                   "description": "Timestamp of successful message",
                   "order": 2,
@@ -484,8 +502,8 @@
               "name": "Zscaler",
               "slugVendor": "rapid7",
               "slugName": "zscaler",
-              "slugVersion": "1.2.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/zscaler/1.2.1/icon.png"
+              "slugVersion": "1.4.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/zscaler/1.4.0/icon.png"
             },
             "identifier": "blacklist_url",
             "continueOnFailure": true,
@@ -493,12 +511,20 @@
             "isCloud": false,
             "parameters": {
               "input": {
+                "activate_configuration": "{{$workflow.[Activate Configuration]}}",
                 "blacklist_state": true,
                 "urls": "{{[eb45a27e-1a93-4580-b5dc-f48c252db9f3].[message].[indicators].[domains]}}"
               }
             },
             "defaultInputJSONSchema": {
               "properties": {
+                "activate_configuration": {
+                  "default": false,
+                  "description": "Set to true to activate configuration changes",
+                  "order": 3,
+                  "title": "Activate Configuration",
+                  "type": "boolean"
+                },
                 "blacklist_state": {
                   "default": true,
                   "description": "True to blacklist a URL, false to unblacklist a URL",
@@ -517,13 +543,20 @@
                 }
               },
               "required": [
-                "urls"
+                "urls",
+                "activate_configuration"
               ],
               "title": "Variables",
               "type": "object"
             },
             "defaultOutputJSONSchema": {
               "properties": {
+                "status": {
+                  "description": "Activation status for a configuration change",
+                  "order": 2,
+                  "title": "Status",
+                  "type": "string"
+                },
                 "success": {
                   "description": "Whether or not the request succeeded",
                   "order": 1,
@@ -532,7 +565,8 @@
                 }
               },
               "required": [
-                "success"
+                "success",
+                "status"
               ],
               "title": "Variables",
               "type": "object"
@@ -597,6 +631,12 @@
                   "description": "ChannelID of successful message",
                   "order": 1,
                   "title": "Channel ID",
+                  "type": "string"
+                },
+                "parent_message_timestamp": {
+                  "description": " The timestamp of the parent message or of the current message if there is no parent. Used to post messages to a thread.",
+                  "order": 3,
+                  "title": "Parent Message Timestamp",
                   "type": "string"
                 },
                 "timestamp": {
@@ -705,8 +745,8 @@
               "name": "Zscaler",
               "slugVendor": "rapid7",
               "slugName": "zscaler",
-              "slugVersion": "1.2.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/zscaler/1.2.1/icon.png"
+              "slugVersion": "1.4.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/zscaler/1.4.0/icon.png"
             },
             "identifier": "blacklist_url",
             "continueOnFailure": true,
@@ -714,12 +754,20 @@
             "isCloud": false,
             "parameters": {
               "input": {
+                "activate_configuration": "{{$workflow.[Activate Configuration]}}",
                 "blacklist_state": false,
                 "urls": "{{[eb45a27e-1a93-4580-b5dc-f48c252db9f3].[message].[indicators].[domains]}}"
               }
             },
             "defaultInputJSONSchema": {
               "properties": {
+                "activate_configuration": {
+                  "default": false,
+                  "description": "Set to true to activate configuration changes",
+                  "order": 3,
+                  "title": "Activate Configuration",
+                  "type": "boolean"
+                },
                 "blacklist_state": {
                   "default": true,
                   "description": "True to blacklist a URL, false to unblacklist a URL",
@@ -738,13 +786,20 @@
                 }
               },
               "required": [
-                "urls"
+                "urls",
+                "activate_configuration"
               ],
               "title": "Variables",
               "type": "object"
             },
             "defaultOutputJSONSchema": {
               "properties": {
+                "status": {
+                  "description": "Activation status for a configuration change",
+                  "order": 2,
+                  "title": "Status",
+                  "type": "string"
+                },
                 "success": {
                   "description": "Whether or not the request succeeded",
                   "order": 1,
@@ -753,7 +808,8 @@
                 }
               },
               "required": [
-                "success"
+                "success",
+                "status"
               ],
               "title": "Variables",
               "type": "object"
@@ -808,12 +864,12 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "matchChannel": "change_me",
+                "matchChannel": "{{$workflow.[Channel]}}",
                 "matchText": "blacklist-url|unblacklist-url",
                 "type": "any"
               }
             },
-            "triggerId": "74c6b42e-63d9-4d61-901f-ebea0db0be95",
+            "triggerId": "fd2e92aa-6669-4bb7-b3f1-45291239842d",
             "defaultInputJSONSchema": {
               "properties": {
                 "matchChannel": {
@@ -1071,16 +1127,33 @@
         },
         "tags": null,
         "humanCostSeconds": 300,
-        "humanCostDisplayUnit": "minutes"
+        "humanCostDisplayUnit": "minutes",
+        "parameters": {
+          "definitionSchema": {
+            "type": "object",
+            "required": [],
+            "properties": {
+              "Channel": {
+                "type": "string",
+                "description": "The Slack channel name in your environment where the workflow should be triggered"
+              },
+              "Activate Configuration": {
+                "type": "boolean",
+                "description": "Set to true to activate configuration changes in Zscaler"
+              }
+            },
+            "definitions": {}
+          }
+        }
       }
     ],
     "triggers": [
       {
-        "id": "74c6b42e-63d9-4d61-901f-ebea0db0be95",
+        "id": "fd2e92aa-6669-4bb7-b3f1-45291239842d",
         "name": "Check Blacklist Message Received",
         "description": "",
         "input": {
-          "matchChannel": "change_me",
+          "matchChannel": "{{$workflow.[Channel]}}",
           "matchText": "blacklist-url|unblacklist-url",
           "type": "any"
         },

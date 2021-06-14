@@ -3,13 +3,13 @@ products: ["insightconnect"]
 name: Sync_Blacklisted_URLs_Across_Zscaler_and_Palo_Alto_Firewall
 title: Sync Blacklisted URLs Across Zscaler and Palo Alto Firewall
 description: "This workflow synchronizes blacklisted URLs across Palo Alto Firewall and Zscaler."
-version: 1.0.0
+version: 2.0.0
 vendor: rapid7
 support: rapid7
 status: []
 hub_tags:
   use_cases: [threat_detection_and_response]
-  keywords:  [ransomware, containment, firewall, blacklist, unblacklist, sync, palo, alto, zscaler, work_from_home, parameters]
+  keywords:  [containment, firewall, blacklist, palo_alto, parameters]
   features: []
 resources:
   source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Sync_Blacklisted_URLs_across_Zscaler_and_Palo_Alto_Firewall

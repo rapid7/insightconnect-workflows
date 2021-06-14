@@ -1,14 +1,14 @@
 {
   "kom": {
-    "komandVersion": "1.78.0-0-g12f20",
+    "komandVersion": "1.85.1-0-gf6a19",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2021-02-24T10:56:30.929505399Z",
+    "exportedAt": "2021-06-09T22:52:40.485113327Z",
     "workflowVersions": [
       {
         "name": "Sync Blacklisted URLs across Zscaler and Palo Alto Firewall",
         "type": "runnable",
         "version": "",
-        "description": "This workflow synchronizes blacklisted URLs across Palo Alto Firewall and Zscaler.",
+        "description": "# Description\n\nThe workflow automatically synchronizes URL blacklists across Palo Alto Firewall and Zscaler by adding or removing address objects from an address object group in your Palo Alto Firewall and blacklisting or unblacklisting URLs in Zscaler to keep them in sync bi-directionally on an hourly schedule.\n\nThis workflow ensures that hosts blocked in the firewall are also blocked at the web proxy, and that hosts blocked in the web proxy are also blocked at the firewall, creating a more consistent defensive perimeter across the organization.\n\n# Key Features\n\n* **Sync URL blacklists** - Use InsightConnect to synchronize blacklisted URLs across Palo Alto Firewall and Zscaler easily.\n\n# Requirements\n\n* Palo Alto Firewall username and password\n* Zscaler base URL, API key, username and password\n\n# Documentation\n\n## Setup\n\nImport the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.\n\nThis workflow leverages InsightConnect's Parameters feature. This feature allows variables used multiple times throughout a workflow to be entered once and then referenced throughout the workflow. \n\nThere is one parameter you will need to configure in order to complete the setup of your workflow:\n\n* `Group Name`: The Palo Alto Firewall address object group to monitor. This is the group from which address objects will be synced with Zscaler.\n\nTo begin, select \"Parameters\" either from the Workflow Control Panel or from the Builder to begin configuration.\n\nAfter configuring the parameter, activate the workflow in order to trigger it.\n\n### Usage\n\nThis workflow will trigger automatically on an hourly schedule to sync blacklisted URLs across Palo Alto Firewall and Zscaler.\n\n## Technical Details\n\nPlugins utilized by workflow:\n\n|Plugin|Version|Count|\n|----|----|--------|\n|Palo Alto Firewall|6.1.0|7|\n|Storage|1.0.1|6|\n|Timers|2.0.5|1|\n|Type Converter|1.8.0|10|\n|Zscaler|1.3.0|5|\n\n## Troubleshooting\n\n_There is no troubleshooting information at this time_\n\n# Version History\n\n* 1.0.0 - Initial workflow\n\n# Links\n\n## References\n\n* [Palo Alto Firewall](https://www.paloaltonetworks.com/)\n* [Zscaler](https://www.zscaler.com/)\n",
         "graph": {
           "edges": {
             "02de94d0-bbf2-4b33-a3a3-c717f54c4ab6": {
@@ -548,8 +548,8 @@
               "name": "Palo Alto Firewall",
               "slugVendor": "rapid7",
               "slugName": "palo_alto_pan_os",
-              "slugVersion": "6.1.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/6.1.0/icon.png"
+              "slugVersion": "6.1.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/6.1.1/icon.png"
             },
             "identifier": "set_address_object",
             "continueOnFailure": true,
@@ -721,10 +721,10 @@
             "parameters": {
               "input": {
                 "message": "",
-                "minute": 20
+                "minute": 1
               }
             },
-            "triggerId": "a4164900-8ef6-4eaa-8930-674bf59dca0f",
+            "triggerId": "1171fe36-a441-47fa-b5f0-01bafaa94d33",
             "defaultInputJSONSchema": {
               "properties": {
                 "message": {
@@ -776,8 +776,8 @@
               "name": "Zscaler",
               "slugVendor": "rapid7",
               "slugName": "zscaler",
-              "slugVersion": "1.3.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/zscaler/1.3.0/icon.png"
+              "slugVersion": "1.4.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/zscaler/1.4.0/icon.png"
             },
             "identifier": "blacklist_url",
             "continueOnFailure": true,
@@ -785,12 +785,20 @@
             "isCloud": false,
             "parameters": {
               "input": {
+                "activate_configuration": "{{$workflow.[Activate Configuration]}}",
                 "blacklist_state": true,
                 "urls": "{{[bb9ccaf3-9016-4186-9915-ed19cfde24d8].[difference_array]}}"
               }
             },
             "defaultInputJSONSchema": {
               "properties": {
+                "activate_configuration": {
+                  "default": false,
+                  "description": "Set to true to activate configuration changes",
+                  "order": 3,
+                  "title": "Activate Configuration",
+                  "type": "boolean"
+                },
                 "blacklist_state": {
                   "default": true,
                   "description": "True to blacklist a URL, false to unblacklist a URL",
@@ -809,13 +817,20 @@
                 }
               },
               "required": [
-                "urls"
+                "urls",
+                "activate_configuration"
               ],
               "title": "Variables",
               "type": "object"
             },
             "defaultOutputJSONSchema": {
               "properties": {
+                "status": {
+                  "description": "Activation status for a configuration change",
+                  "order": 2,
+                  "title": "Status",
+                  "type": "string"
+                },
                 "success": {
                   "description": "Whether or not the request succeeded",
                   "order": 1,
@@ -824,7 +839,8 @@
                 }
               },
               "required": [
-                "success"
+                "success",
+                "status"
               ],
               "title": "Variables",
               "type": "object"
@@ -1341,8 +1357,8 @@
               "name": "Palo Alto Firewall",
               "slugVendor": "rapid7",
               "slugName": "palo_alto_pan_os",
-              "slugVersion": "6.1.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/6.1.0/icon.png"
+              "slugVersion": "6.1.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/6.1.1/icon.png"
             },
             "identifier": "get_addresses_from_group",
             "continueOnFailure": false,
@@ -1379,9 +1395,9 @@
                 }
               },
               "required": [
+                "group",
                 "device_name",
-                "virtual_system",
-                "group"
+                "virtual_system"
               ],
               "title": "Variables",
               "type": "object"
@@ -1818,8 +1834,8 @@
               "name": "Palo Alto Firewall",
               "slugVendor": "rapid7",
               "slugName": "palo_alto_pan_os",
-              "slugVersion": "6.1.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/6.1.0/icon.png"
+              "slugVersion": "6.1.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/6.1.1/icon.png"
             },
             "identifier": "add_address_object_to_group",
             "continueOnFailure": false,
@@ -1893,8 +1909,8 @@
                 }
               },
               "required": [
-                "success",
-                "address_objects"
+                "address_objects",
+                "success"
               ],
               "title": "Variables",
               "type": "object"
@@ -1975,8 +1991,8 @@
               "name": "Zscaler",
               "slugVendor": "rapid7",
               "slugName": "zscaler",
-              "slugVersion": "1.3.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/zscaler/1.3.0/icon.png"
+              "slugVersion": "1.4.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/zscaler/1.4.0/icon.png"
             },
             "identifier": "get_blacklist_url",
             "continueOnFailure": false,
@@ -2114,8 +2130,8 @@
               "name": "Zscaler",
               "slugVendor": "rapid7",
               "slugName": "zscaler",
-              "slugVersion": "1.3.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/zscaler/1.3.0/icon.png"
+              "slugVersion": "1.4.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/zscaler/1.4.0/icon.png"
             },
             "identifier": "get_blacklist_url",
             "continueOnFailure": false,
@@ -2155,8 +2171,8 @@
               "name": "Palo Alto Firewall",
               "slugVendor": "rapid7",
               "slugName": "palo_alto_pan_os",
-              "slugVersion": "6.1.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/6.1.0/icon.png"
+              "slugVersion": "6.1.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/6.1.1/icon.png"
             },
             "identifier": "set_address_object",
             "continueOnFailure": true,
@@ -2480,8 +2496,8 @@
               "name": "Zscaler",
               "slugVendor": "rapid7",
               "slugName": "zscaler",
-              "slugVersion": "1.3.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/zscaler/1.3.0/icon.png"
+              "slugVersion": "1.4.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/zscaler/1.4.0/icon.png"
             },
             "identifier": "blacklist_url",
             "continueOnFailure": true,
@@ -2489,12 +2505,20 @@
             "isCloud": false,
             "parameters": {
               "input": {
+                "activate_configuration": "{{$workflow.[Activate Configuration]}}",
                 "blacklist_state": true,
                 "urls": "{{[5c4ad99d-0c14-4dcb-a787-e992b5788be5].[difference_array]}}"
               }
             },
             "defaultInputJSONSchema": {
               "properties": {
+                "activate_configuration": {
+                  "default": false,
+                  "description": "Set to true to activate configuration changes",
+                  "order": 3,
+                  "title": "Activate Configuration",
+                  "type": "boolean"
+                },
                 "blacklist_state": {
                   "default": true,
                   "description": "True to blacklist a URL, false to unblacklist a URL",
@@ -2513,13 +2537,20 @@
                 }
               },
               "required": [
-                "urls"
+                "urls",
+                "activate_configuration"
               ],
               "title": "Variables",
               "type": "object"
             },
             "defaultOutputJSONSchema": {
               "properties": {
+                "status": {
+                  "description": "Activation status for a configuration change",
+                  "order": 2,
+                  "title": "Status",
+                  "type": "string"
+                },
                 "success": {
                   "description": "Whether or not the request succeeded",
                   "order": 1,
@@ -2528,7 +2559,8 @@
                 }
               },
               "required": [
-                "success"
+                "success",
+                "status"
               ],
               "title": "Variables",
               "type": "object"
@@ -2607,8 +2639,8 @@
               "name": "Palo Alto Firewall",
               "slugVendor": "rapid7",
               "slugName": "palo_alto_pan_os",
-              "slugVersion": "6.1.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/6.1.0/icon.png"
+              "slugVersion": "6.1.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/6.1.1/icon.png"
             },
             "identifier": "remove_address_object_from_group",
             "continueOnFailure": true,
@@ -2652,10 +2684,10 @@
                 }
               },
               "required": [
-                "address_object",
                 "group",
                 "device_name",
-                "virtual_system"
+                "virtual_system",
+                "address_object"
               ],
               "title": "Variables",
               "type": "object"
@@ -2773,8 +2805,8 @@
               "name": "Zscaler",
               "slugVendor": "rapid7",
               "slugName": "zscaler",
-              "slugVersion": "1.3.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/zscaler/1.3.0/icon.png"
+              "slugVersion": "1.4.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/zscaler/1.4.0/icon.png"
             },
             "identifier": "blacklist_url",
             "continueOnFailure": false,
@@ -2782,12 +2814,20 @@
             "isCloud": false,
             "parameters": {
               "input": {
+                "activate_configuration": "{{$workflow.[Activate Configuration]}}",
                 "blacklist_state": false,
                 "urls": "{{[df22c675-86df-4ae3-ba43-18fcdf94b91b].[matches_array]}}"
               }
             },
             "defaultInputJSONSchema": {
               "properties": {
+                "activate_configuration": {
+                  "default": false,
+                  "description": "Set to true to activate configuration changes",
+                  "order": 3,
+                  "title": "Activate Configuration",
+                  "type": "boolean"
+                },
                 "blacklist_state": {
                   "default": true,
                   "description": "True to blacklist a URL, false to unblacklist a URL",
@@ -2806,13 +2846,20 @@
                 }
               },
               "required": [
-                "urls"
+                "urls",
+                "activate_configuration"
               ],
               "title": "Variables",
               "type": "object"
             },
             "defaultOutputJSONSchema": {
               "properties": {
+                "status": {
+                  "description": "Activation status for a configuration change",
+                  "order": 2,
+                  "title": "Status",
+                  "type": "string"
+                },
                 "success": {
                   "description": "Whether or not the request succeeded",
                   "order": 1,
@@ -2821,7 +2868,8 @@
                 }
               },
               "required": [
-                "success"
+                "success",
+                "status"
               ],
               "title": "Variables",
               "type": "object"
@@ -2838,8 +2886,8 @@
               "name": "Palo Alto Firewall",
               "slugVendor": "rapid7",
               "slugName": "palo_alto_pan_os",
-              "slugVersion": "6.1.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/6.1.0/icon.png"
+              "slugVersion": "6.1.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/6.1.1/icon.png"
             },
             "identifier": "get_addresses_from_group",
             "continueOnFailure": false,
@@ -2876,9 +2924,9 @@
                 }
               },
               "required": [
+                "group",
                 "device_name",
-                "virtual_system",
-                "group"
+                "virtual_system"
               ],
               "title": "Variables",
               "type": "object"
@@ -2950,8 +2998,8 @@
               "name": "Palo Alto Firewall",
               "slugVendor": "rapid7",
               "slugName": "palo_alto_pan_os",
-              "slugVersion": "6.1.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/6.1.0/icon.png"
+              "slugVersion": "6.1.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/palo_alto_pan_os/6.1.1/icon.png"
             },
             "identifier": "add_address_object_to_group",
             "continueOnFailure": false,
@@ -3025,8 +3073,8 @@
                 }
               },
               "required": [
-                "success",
-                "address_objects"
+                "address_objects",
+                "success"
               ],
               "title": "Variables",
               "type": "object"
@@ -3069,6 +3117,10 @@
               "Group Name": {
                 "type": "string",
                 "description": "The Palo Alto Firewall address group to monitor."
+              },
+              "Activate Configuration": {
+                "type": "boolean",
+                "description": "Set to true to activate configuration changes in Zscaler"
               }
             },
             "definitions": {}
@@ -3078,13 +3130,13 @@
     ],
     "triggers": [
       {
-        "id": "a4164900-8ef6-4eaa-8930-674bf59dca0f",
+        "id": "1171fe36-a441-47fa-b5f0-01bafaa94d33",
         "identifier": "hourly",
         "name": "Sync Blacklists",
         "description": "",
         "input": {
           "message": "",
-          "minute": 20
+          "minute": 1
         },
         "inputJsonSchema": {
           "properties": {
