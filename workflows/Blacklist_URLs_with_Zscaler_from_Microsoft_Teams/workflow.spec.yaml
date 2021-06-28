@@ -3,13 +3,13 @@ products: ["insightconnect"]
 name: Blacklist_URLs_with_Zscaler_from_Microsoft_Teams
 title: Blacklist URLs with Zscaler from Microsoft Teams
 description: This workflow uses a Microsoft Teams command to blacklist or unblacklist URLs in Zscaler.
-version: 1.0.0
+version: 2.0.0
 vendor: rapid7
 support: rapid7
 status: []
 hub_tags:
   use_cases: [threat_detection_and_response]
-  keywords:  [block, unblock, zscaler, microsoft_teams]
+  keywords:  [block, microsoft_teams, parameters]
   features: []
 resources:
   source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Blacklist_URLs_with_Zscaler_from_Microsoft_Teams
