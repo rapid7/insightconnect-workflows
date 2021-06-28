@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.70.0-0-g96f18",
+    "komandVersion": "1.82.0-0-g2ef20",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-12-02T17:15:25.617436723Z",
+    "exportedAt": "2021-04-21T11:14:26.373138493Z",
     "workflowVersions": [
       {
         "name": "Find and Delete Emails in Office 365 from Slack",
@@ -588,8 +588,8 @@
               "name": "Microsoft Office 365 Email",
               "slugVendor": "rapid7",
               "slugName": "microsoft_office365_email",
-              "slugVersion": "5.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_office365_email/5.0.0/icon.png"
+              "slugVersion": "5.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_office365_email/5.0.1/icon.png"
             },
             "identifier": "delete_email",
             "continueOnFailure": false,
@@ -617,8 +617,8 @@
                 }
               },
               "required": [
-                "mailbox_id",
-                "email_id"
+                "email_id",
+                "mailbox_id"
               ],
               "title": "Variables",
               "type": "object"
@@ -1081,8 +1081,8 @@
               "name": "Microsoft Office 365 Email",
               "slugVendor": "rapid7",
               "slugName": "microsoft_office365_email",
-              "slugVersion": "5.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_office365_email/5.0.0/icon.png"
+              "slugVersion": "5.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_office365_email/5.0.1/icon.png"
             },
             "identifier": "delete_email",
             "continueOnFailure": false,
@@ -1110,8 +1110,8 @@
                 }
               },
               "required": [
-                "mailbox_id",
-                "email_id"
+                "email_id",
+                "mailbox_id"
               ],
               "title": "Variables",
               "type": "object"
@@ -1287,12 +1287,12 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "matchChannel": "change_me",
+                "matchChannel": "{{$workflow.[Channel]}}",
                 "matchText": "find-email",
                 "type": "any"
               }
             },
-            "triggerId": "369b8edd-bf1d-49c7-8bb0-c70555f303f9",
+            "triggerId": "b33ce9d0-47ce-4187-a1ad-f7708a94ce6b",
             "defaultInputJSONSchema": {
               "properties": {
                 "matchChannel": {
@@ -1835,8 +1835,8 @@
               "name": "Microsoft Office 365 Email",
               "slugVendor": "rapid7",
               "slugName": "microsoft_office365_email",
-              "slugVersion": "5.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_office365_email/5.0.0/icon.png"
+              "slugVersion": "5.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_office365_email/5.0.1/icon.png"
             },
             "identifier": "get_email_from_user",
             "continueOnFailure": true,
@@ -2279,16 +2279,29 @@
         },
         "tags": null,
         "humanCostSeconds": 0,
-        "humanCostDisplayUnit": ""
+        "humanCostDisplayUnit": "",
+        "parameters": {
+          "definitionSchema": {
+            "type": "object",
+            "required": [],
+            "properties": {
+              "Channel": {
+                "type": "string",
+                "description": "The Slack channel name in your environment where the workflow should be triggered"
+              }
+            },
+            "definitions": {}
+          }
+        }
       }
     ],
     "triggers": [
       {
-        "id": "369b8edd-bf1d-49c7-8bb0-c70555f303f9",
+        "id": "b33ce9d0-47ce-4187-a1ad-f7708a94ce6b",
         "name": "Delete Email Trigger",
         "description": "",
         "input": {
-          "matchChannel": "change_me",
+          "matchChannel": "{{$workflow.[Channel]}}",
           "matchText": "find-email",
           "type": "any"
         },

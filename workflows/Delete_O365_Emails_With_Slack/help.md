@@ -4,9 +4,9 @@ Don’t let your users fall for the same phish twice. This workflow uses a Slack
 
 Sample Slack trigger command:
 
-`!find-email user@example.com subject="A phishy email" from="example.com" body="Click here for free stuff" `
+`find-email user@example.com subject="A phishy email" from="example.com" body="Click here for free stuff"`
 
-`!find-email user@example.com subject="A phishy email" delete=true`
+`find-email user@example.com subject="A phishy email" delete=true`
 
 
 # Key Features
@@ -28,7 +28,15 @@ The following connections will need to be setup:
 
 Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.
 
-After import, activate the workflow in order to trigger it.
+This workflow leverages InsightConnect's Parameters feature. This feature allows variables used multiple times throughout a workflow to be entered once and then referenced throughout the workflow.
+
+There is one parameter you will need to configure in order to complete setup of your workflow:
+
+* Slack Channel: The Slack channel name in your environment where the workflow should be triggered
+
+To begin, select "Parameters" either from the Workflow Control Panel or from the Builder to begin configuration.
+
+After configuring the parameter, activate the workflow in order to trigger it.
 
 ### Usage
 
@@ -46,7 +54,7 @@ This will kick off the workflow and prompt you when the search is completed. If 
 
 Search criteria can be 'body', 'subject', or 'from' lines in the email. For example:
 
-`!find-email user@example.com subject="A phishy email" from="example.com" body="Click here for free stuff" `
+`find-email user@example.com subject="A phishy email" from="example.com" body="Click here for free stuff"`
 
 Any combination of 'body', 'subject', and 'from' can be used. At least one search item must be given.
 
@@ -62,7 +70,7 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Microsoft Office 365 Email|5.0.0|3|
+|Microsoft Office 365 Email|5.0.1|3|
 |Python 3 Script|2.0.2|2|
 
 ## Troubleshooting
@@ -71,6 +79,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 2.0.0 - Leverage Parameters Feature | Update documentation | Update Microsoft Office 365 Email plugin to version 5.0.1
 * 1.0.7 - Fix bug with incorrect email address extraction when using command message directed to Chatbot in the channel | Fix manual deletion of emails | Update Microsoft Office 365 Email to version 5.0.0 | Update Python 3 Script to version 2.0.2
 * 1.0.6 - Updated trigger syntax and documentation
 * 1.0.5 - Updated documentation
