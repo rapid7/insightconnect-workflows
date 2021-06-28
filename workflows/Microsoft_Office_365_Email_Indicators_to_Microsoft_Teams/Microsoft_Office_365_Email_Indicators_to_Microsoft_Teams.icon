@@ -1,14 +1,14 @@
 {
   "kom": {
-    "komandVersion": "1.72.0-0-ge9d34",
+    "komandVersion": "1.83.0-0-gee549",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-12-16T15:34:35.258252239Z",
+    "exportedAt": "2021-05-23T21:38:17.406589604Z",
     "workflowVersions": [
       {
         "name": "Post Office 365 Phishing Alerts to Microsoft Teams",
         "type": "runnable",
         "version": "",
-        "description": "# Description\n\nThis workflow will dissect an email and return all potential malicious indicators to Microsoft Teams in a message. \n\n# Key Features\n\n* Automatically post potential malicious indicators to Microsoft Teams\n\n# Requirements\n\nThe following connections will need to be setup: \n\n* [Microsoft Office 365](https://insightconnect.help.rapid7.com/docs/office365)\n* [Microsoft Teams](https://insightconnect.help.rapid7.com/docs/microsoft-teams)\n\n# Documentation\n\n## Setup\n\nImport the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.\n\nOnce the workflow is successfully imported, edit each Microsoft Teams step to target the channel you would like indicators posted to. Change the New Message trigger inputs to monitor the mailbox and folder where phish emails will be sent. \n\n## Technical Details\n\nPlugins utilized by workflow:\n\n|Plugin|Version|Count|\n|----|----|--------|\n|ExtractIt|2.0.0|4|\n|Microsoft Teams|2.0.4|2|\n|HashIt|2.0.3|2|\n|String Operations|1.2.1|2|\n|Python 3 Script|2.0.1|1|\n|Microsoft Office 365 Email|4.1.1|1|\n\n## Troubleshooting\n\n_There is no troubleshooting information at this time_\n\n# Version History\n\n* 1.0.6 - Update to make Microsoft Teams plugin the latest version\n* 1.0.5 - Fix issue where Nested Headers artifact incorrectly defined an each loop\n* 1.0.4 - Update description\n* 1.0.3 - Set more \"change_me\" items in workflow input\n* 1.0.2 - Set \"change_me\" items in workflow input\n* 1.0.1 - Update to fix title\n* 1.0.0 - Initial workflow\n\n# Links\n\n## References\n\n* [Microsoft Office 365](https://office.microsoft.com)\n* [Microsoft Office 365 Setup Guide](https://insightconnect.help.rapid7.com/docs/office365)\n* [Microsoft Teams](https://teams.microsoft.com/)\n* [Microsoft Teams Setup Guide](https://insightconnect.help.rapid7.com/docs/microsoft-teams)\n",
+        "description": "# Description\n\nThis workflow will dissect an email and return all potential malicious indicators to Microsoft Teams in a message. \n\n# Key Features\n\n* Automatically post potential malicious indicators to Microsoft Teams\n\n# Requirements\n\nThe following connections will need to be setup: \n\n* [Microsoft Office 365](https://insightconnect.help.rapid7.com/docs/office365)\n* [Microsoft Teams](https://insightconnect.help.rapid7.com/docs/microsoft-teams)\n\n# Documentation\n\n## Setup\n\nImport the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.\n\nOnce the workflow is successfully imported, edit each Microsoft Teams step to target the channel you would like indicators posted to. Change the New Message trigger inputs to monitor the mailbox and folder where phish emails will be sent. \n\n## Technical Details\n\nPlugins utilized by workflow:\n\n|Plugin|Version|Count|\n|----|----|--------|\n|ExtractIt|2.0.0|4|\n|Microsoft Teams|3.1.0|2|\n|HashIt|2.0.3|2|\n|String Operations|1.2.1|2|\n|Python 3 Script|2.0.1|1|\n|Microsoft Office 365 Email|4.1.1|1|\n\n## Troubleshooting\n\n_There is no troubleshooting information at this time_\n\n# Version History\n\n* 1.0.7 - Update Microsoft Teams to version 3.1.0\n* 1.0.6 - Update to make Microsoft Teams plugin the latest version\n* 1.0.5 - Fix issue where Nested Headers artifact incorrectly defined an each loop\n* 1.0.4 - Update description\n* 1.0.3 - Set more \"change_me\" items in workflow input\n* 1.0.2 - Set \"change_me\" items in workflow input\n* 1.0.1 - Update to fix title\n* 1.0.0 - Initial workflow\n\n# Links\n\n## References\n\n* [Microsoft Office 365](https://office.microsoft.com)\n* [Microsoft Office 365 Setup Guide](https://insightconnect.help.rapid7.com/docs/office365)\n* [Microsoft Teams](https://teams.microsoft.com/)\n* [Microsoft Teams Setup Guide](https://insightconnect.help.rapid7.com/docs/microsoft-teams)\n",
         "graph": {
           "edges": {
             "0cf381c3-2d82-4ef4-9c6e-aaa6521f9cb1": {
@@ -276,8 +276,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "3.1.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
+              "slugVersion": "3.1.2",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.2/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
@@ -319,9 +319,9 @@
                 }
               },
               "required": [
+                "message_content",
                 "team_name",
-                "channel_name",
-                "message_content"
+                "channel_name"
               ],
               "title": "Variables",
               "type": "object"
@@ -473,11 +473,11 @@
               "name": "String Operations",
               "slugVendor": "rapid7",
               "slugName": "string",
-              "slugVersion": "1.2.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/string/1.2.1/icon.png"
+              "slugVersion": "1.3.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/string/1.3.1/icon.png"
             },
             "identifier": "split_to_list",
-            "continueOnFailure": false,
+            "continueOnFailure": true,
             "isDisabled": false,
             "isCloud": false,
             "parameters": {
@@ -495,7 +495,7 @@
                   "type": "string"
                 },
                 "string": {
-                  "description": "String to convert e.g. Sentence one\nSentence two",
+                  "description": "String to break into an array",
                   "order": 1,
                   "title": "String Input",
                   "type": "string"
@@ -578,8 +578,8 @@
               "name": "Python 3 Script",
               "slugVendor": "rapid7",
               "slugName": "python_3_script",
-              "slugVersion": "2.0.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/python_3_script/2.0.1/icon.png"
+              "slugVersion": "2.0.2",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/python_3_script/2.0.2/icon.png"
             },
             "identifier": "run",
             "continueOnFailure": false,
@@ -727,8 +727,8 @@
               "name": "String Operations",
               "slugVendor": "rapid7",
               "slugName": "string",
-              "slugVersion": "1.2.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/string/1.2.1/icon.png"
+              "slugVersion": "1.3.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/string/1.3.1/icon.png"
             },
             "identifier": "split_to_list",
             "continueOnFailure": true,
@@ -749,7 +749,7 @@
                   "type": "string"
                 },
                 "string": {
-                  "description": "String to convert e.g. Sentence one\nSentence two",
+                  "description": "String to break into an array",
                   "order": 1,
                   "title": "String Input",
                   "type": "string"
@@ -810,7 +810,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "{{#each [2b201ddd-9f55-4393-a287-133821563e98].[$outputs]}}\n{{#each [\"Headers\"].[$outputs]}}\n{{#each [82705658-5bbe-44a3-81f4-4196f66113f8].[domains]}}\n{{this}}\n{{/each}}\n{{/each}}\n{{/each}}"
+                "content": "{{#each [2b201ddd-9f55-4393-a287-133821563e98].[$outputs]}}\n{{#each [82705658-5bbe-44a3-81f4-4196f66113f8].[domains]}}\n{{this}}\n{{/each}}\n{{/each}}"
               },
               "type": "markdown"
             },
@@ -828,8 +828,8 @@
               "name": "Microsoft Office 365 Email",
               "slugVendor": "rapid7",
               "slugName": "microsoft_office365_email",
-              "slugVersion": "4.1.1",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_office365_email/4.1.1/icon.png"
+              "slugVersion": "5.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_office365_email/5.0.1/icon.png"
             },
             "identifier": "email_received",
             "continueOnFailure": false,
@@ -843,7 +843,7 @@
                 "subject_query": ""
               }
             },
-            "triggerId": "cd09581e-4121-4db5-aded-caa61a58401a",
+            "triggerId": "aaf065ee-4f3a-46e4-806b-c68e980bbd14",
             "defaultInputJSONSchema": {
               "properties": {
                 "flatten_attachments": {
@@ -867,7 +867,7 @@
                   "type": "integer"
                 },
                 "mailbox_id": {
-                  "description": "The mailbox to monitor for incoming email e.g. user@example.com",
+                  "description": "The mailbox to monitor for incoming email",
                   "order": 1,
                   "title": "Mailbox ID",
                   "type": "string"
@@ -881,8 +881,8 @@
                 }
               },
               "required": [
-                "mailbox_id",
-                "flatten_attachments"
+                "flatten_attachments",
+                "mailbox_id"
               ],
               "title": "Variables",
               "type": "object"
@@ -1467,8 +1467,8 @@
               "name": "HashIt",
               "slugVendor": "rapid7",
               "slugName": "hashit",
-              "slugVersion": "2.0.3",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/hashit/2.0.3/icon.png"
+              "slugVersion": "2.0.4",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/hashit/2.0.4/icon.png"
             },
             "identifier": "string",
             "continueOnFailure": false,
@@ -1554,8 +1554,8 @@
               "name": "Microsoft Teams",
               "slugVendor": "rapid7",
               "slugName": "microsoft_teams",
-              "slugVersion": "3.1.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.0/icon.png"
+              "slugVersion": "3.1.2",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/3.1.2/icon.png"
             },
             "identifier": "send_html_message",
             "continueOnFailure": false,
@@ -1597,9 +1597,9 @@
                 }
               },
               "required": [
+                "message_content",
                 "team_name",
-                "channel_name",
-                "message_content"
+                "channel_name"
               ],
               "title": "Variables",
               "type": "object"
@@ -1769,8 +1769,8 @@
               "name": "HashIt",
               "slugVendor": "rapid7",
               "slugName": "hashit",
-              "slugVersion": "2.0.3",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/hashit/2.0.3/icon.png"
+              "slugVersion": "2.0.4",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/hashit/2.0.4/icon.png"
             },
             "identifier": "string",
             "continueOnFailure": false,
@@ -1838,7 +1838,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "{{#each [\"Header Loop\"].[$outputs]}}\n{{#each [\"Domain From Email Header\"].[domains]}}\n{{this}}\n{{/each}}\n{{/each}}"
+                "content": "{{#each [4c4168fa-4ff2-4cb4-912b-0922a64f04cc].[domains]}}\n{{this}}\n{{/each}}"
               },
               "type": "markdown"
             },
@@ -1850,13 +1850,16 @@
           }
         },
         "tags": null,
-        "humanCostSeconds": 0,
-        "humanCostDisplayUnit": ""
+        "humanCostSeconds": 600,
+        "humanCostDisplayUnit": "minutes",
+        "parameters": {
+          "definitionSchema": null
+        }
       }
     ],
     "triggers": [
       {
-        "id": "cd09581e-4121-4db5-aded-caa61a58401a",
+        "id": "aaf065ee-4f3a-46e4-806b-c68e980bbd14",
         "identifier": "email_received",
         "name": "New Message",
         "description": "",
@@ -1890,7 +1893,7 @@
               "type": "integer"
             },
             "mailbox_id": {
-              "description": "The mailbox to monitor for incoming email e.g. user@example.com",
+              "description": "The mailbox to monitor for incoming email",
               "order": 1,
               "title": "Mailbox ID",
               "type": "string"
@@ -1904,8 +1907,8 @@
             }
           },
           "required": [
-            "mailbox_id",
-            "flatten_attachments"
+            "flatten_attachments",
+            "mailbox_id"
           ],
           "title": "Variables",
           "type": "object"
@@ -2294,8 +2297,8 @@
           "name": "Microsoft Office 365 Email",
           "slugVendor": "rapid7",
           "slugName": "microsoft_office365_email",
-          "slugVersion": "4.1.1",
-          "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_office365_email/4.1.1/icon.png"
+          "slugVersion": "5.0.1",
+          "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_office365_email/5.0.1/icon.png"
         }
       }
     ]
