@@ -1,14 +1,14 @@
 {
   "kom": {
-    "komandVersion": "1.62.0-0-g716d3",
+    "komandVersion": "1.85.0-0-g8dbdd",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-09-25T18:29:56.840753405Z",
+    "exportedAt": "2021-06-04T16:20:29.788891366Z",
     "workflowVersions": [
       {
         "name": "Lookup Vulnerability from Slack",
         "type": "runnable",
         "version": "",
-        "description": "This workflow accepts a Slack command containing a CVE ID or vulnerability keyword(s), looks up the vulnerability in Rapid7's vulnerability database, and posts the vulnerability details back to the same Slack channel.\n\nSample Slack Trigger Commands: \nlookup-vuln CVE-2020-0674\nlookup-vuln heartbleed\nlookup-vuln heartbleed vmware\n\nRapid7 Vulnerability Database: https://www.rapid7.com/db",
+        "description": "# Description\n\nLookup a vulnerability to receive an overview, including risk, publish date, description, and solutions for remediation. This workflow helps teams share vulnerability intelligence through shared Slack channels.\n\n# Key Features\n\n* Lookup vulnerability information from Slack\n* Find all vulnerabilities that match a search term\n* Get severity, description, publish date, and solution information in a Slack message\n\n# Requirements\n\n* InsightConnect License\n* [Slack](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops)\n\n# Documentation\n\n## Setup\n\nImport the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.\n\nAfter import, activate the workflow in order to trigger it.\n\n## Usage\n\n*This workflow will trigger in any direct messages to your Chatbot **or** any message in a channel directed @ your Chatbot. Note the Chatbot must be in the channel in order to trigger the workflow this way.*\n\nTo run the workflow, send a direct message to your InsightConnect Slack Chatbot or @ your Chatbot in a public channel starting with the command `lookup-vuln`.\n\nFor example, in a direct message to your Chatbot:\n* `lookup-vuln CVE-2020-0674`\n\nOr in a channel including your Chatbot:\n* `@Rapid7 InsightConnect lookup-vuln bluekeep`\n\n## Technical Details\n\nPlugins utilized by workflow:\n\n|Plugin|Version|Count|\n|----|----|--------|\n|Rapid7 Vulnerability & Exploit Database|2.0.3|2|\n\n## Troubleshooting\n\n_There is no troubleshooting information at this time_\n\n# Version History\n\n* 1.1.4 - Update workflow to be entirely cloud based\n* 1.1.3 - Updated trigger syntax, updated Rapid7 Vuln DB plugin, updated documentation\n* 1.1.2 - Updated documentation\n* 1.1.1 - Updated plugin versions in help.md\n* 1.1.0 - Updated workflow to work with v2.0.2 of the Rapid7 Vulnerability & Exploit Database plugin | Added a Final Report workflow artifact including a summary of workflow results\n* 1.0.0 - Initial workflow\n\n# Links\n\n## References\n\n* [Rapid7 Vulnerability Database](https://www.rapid7.com/db)\n* [Slack](https://slack.com)\n",
         "graph": {
           "edges": {
             "0a9405d6-fd98-4087-bed8-f61b0093ec5a": {
@@ -397,6 +397,12 @@
                   "title": "Channel ID",
                   "type": "string"
                 },
+                "parent_message_timestamp": {
+                  "description": " The timestamp of the parent message or of the current message if there is no parent. Used to post messages to a thread.",
+                  "order": 3,
+                  "title": "Parent Message Timestamp",
+                  "type": "string"
+                },
                 "timestamp": {
                   "description": "Timestamp of successful message",
                   "order": 2,
@@ -471,6 +477,12 @@
                   "title": "Channel ID",
                   "type": "string"
                 },
+                "parent_message_timestamp": {
+                  "description": " The timestamp of the parent message or of the current message if there is no parent. Used to post messages to a thread.",
+                  "order": 3,
+                  "title": "Parent Message Timestamp",
+                  "type": "string"
+                },
                 "timestamp": {
                   "description": "Timestamp of successful message",
                   "order": 2,
@@ -540,12 +552,12 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "matchChannel": "change_me",
+                "matchChannel": "{{$workflow.[Channel]}}",
                 "matchText": "lookup-vuln",
                 "type": "any"
               }
             },
-            "triggerId": "1f531da7-291f-4303-a4fa-a81b804654d3",
+            "triggerId": "10f8cfaf-66ed-4ec4-9721-ff21aed5aa79",
             "defaultInputJSONSchema": {
               "properties": {
                 "matchChannel": {
@@ -630,20 +642,20 @@
                       "items": {
                         "type": "string"
                       },
-                      "order": 3,
+                      "order": 4,
                       "title": "Email Addresses",
                       "type": "array"
                     },
                     "hashes": {
                       "$ref": "#/definitions/hashes",
                       "description": "Hashes found within the message",
-                      "order": 4,
+                      "order": 5,
                       "title": "Hashes"
                     },
                     "ip_addresses": {
                       "$ref": "#/definitions/ip_addresses",
                       "description": "IP addresses found within the message",
-                      "order": 6,
+                      "order": 7,
                       "title": "IP Addresses"
                     },
                     "mac_addresses": {
@@ -651,8 +663,17 @@
                       "items": {
                         "type": "string"
                       },
-                      "order": 5,
+                      "order": 6,
                       "title": "MAC Addresses",
+                      "type": "array"
+                    },
+                    "parent_domains": {
+                      "description": "Parent domains found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "Parent Domains",
                       "type": "array"
                     },
                     "urls": {
@@ -660,7 +681,7 @@
                       "items": {
                         "type": "string"
                       },
-                      "order": 2,
+                      "order": 3,
                       "title": "URLs",
                       "type": "array"
                     }
@@ -715,7 +736,7 @@
                     "indicators": {
                       "$ref": "#/definitions/indicators",
                       "description": "Potential threat indicators found within the message",
-                      "order": 6,
+                      "order": 7,
                       "title": "Indicators"
                     },
                     "text": {
@@ -741,6 +762,15 @@
                       "order": 2,
                       "title": "User ID",
                       "type": "string"
+                    },
+                    "words": {
+                      "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 6,
+                      "title": "Words",
+                      "type": "array"
                     }
                   },
                   "title": "Message",
@@ -838,6 +868,12 @@
                   "description": "ChannelID of successful message",
                   "order": 1,
                   "title": "Channel ID",
+                  "type": "string"
+                },
+                "parent_message_timestamp": {
+                  "description": " The timestamp of the parent message or of the current message if there is no parent. Used to post messages to a thread.",
+                  "order": 3,
+                  "title": "Parent Message Timestamp",
                   "type": "string"
                 },
                 "timestamp": {
@@ -956,8 +992,8 @@
               "name": "Rapid7 Vulnerability & Exploit Database",
               "slugVendor": "rapid7",
               "slugName": "rapid7_vulndb",
-              "slugVersion": "2.0.3",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_vulndb/2.0.3/icon.png"
+              "slugVersion": "2.1.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_vulndb/2.1.0/icon.png"
             },
             "identifier": "get_content",
             "continueOnFailure": false,
@@ -1140,6 +1176,12 @@
                   "title": "Channel ID",
                   "type": "string"
                 },
+                "parent_message_timestamp": {
+                  "description": " The timestamp of the parent message or of the current message if there is no parent. Used to post messages to a thread.",
+                  "order": 3,
+                  "title": "Parent Message Timestamp",
+                  "type": "string"
+                },
                 "timestamp": {
                   "description": "Timestamp of successful message",
                   "order": 2,
@@ -1236,6 +1278,12 @@
                   "title": "Channel ID",
                   "type": "string"
                 },
+                "parent_message_timestamp": {
+                  "description": " The timestamp of the parent message or of the current message if there is no parent. Used to post messages to a thread.",
+                  "order": 3,
+                  "title": "Parent Message Timestamp",
+                  "type": "string"
+                },
                 "timestamp": {
                   "description": "Timestamp of successful message",
                   "order": 2,
@@ -1260,8 +1308,8 @@
               "name": "Rapid7 Vulnerability & Exploit Database",
               "slugVendor": "rapid7",
               "slugName": "rapid7_vulndb",
-              "slugVersion": "2.0.3",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_vulndb/2.0.3/icon.png"
+              "slugVersion": "2.1.0",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_vulndb/2.1.0/icon.png"
             },
             "identifier": "search_db",
             "continueOnFailure": true,
@@ -1319,6 +1367,12 @@
                       "description": "Published date of vulnerability",
                       "order": 3,
                       "title": "Published At",
+                      "type": "string"
+                    },
+                    "solutions": {
+                      "description": "List of possible solutions for the vulnerability",
+                      "order": 5,
+                      "title": "Solutions",
                       "type": "string"
                     },
                     "title": {
@@ -1435,6 +1489,12 @@
                   "title": "Channel ID",
                   "type": "string"
                 },
+                "parent_message_timestamp": {
+                  "description": " The timestamp of the parent message or of the current message if there is no parent. Used to post messages to a thread.",
+                  "order": 3,
+                  "title": "Parent Message Timestamp",
+                  "type": "string"
+                },
                 "timestamp": {
                   "description": "Timestamp of successful message",
                   "order": 2,
@@ -1472,16 +1532,29 @@
         },
         "tags": null,
         "humanCostSeconds": 0,
-        "humanCostDisplayUnit": ""
+        "humanCostDisplayUnit": "minutes",
+        "parameters": {
+          "definitionSchema": {
+            "type": "object",
+            "required": [],
+            "properties": {
+              "Channel": {
+                "type": "string",
+                "description": "The Slack channel name in your environment where the workflow should be triggered"
+              }
+            },
+            "definitions": {}
+          }
+        }
       }
     ],
     "triggers": [
       {
-        "id": "1f531da7-291f-4303-a4fa-a81b804654d3",
+        "id": "10f8cfaf-66ed-4ec4-9721-ff21aed5aa79",
         "name": "lookup-vuln Trigger",
         "description": "Trigger this workflow by entering a Slack command in the following format:\n\"@Rapid7 InsightConnect lookup-vuln CVE-XXXX-XXXX\"\nOR\n\"@Rapid7 InsightConnect lookup-vuln heartbleed\"",
         "input": {
-          "matchChannel": "change_me",
+          "matchChannel": "{{$workflow.[Channel]}}",
           "matchText": "lookup-vuln",
           "type": "any"
         },
@@ -1569,20 +1642,20 @@
                   "items": {
                     "type": "string"
                   },
-                  "order": 3,
+                  "order": 4,
                   "title": "Email Addresses",
                   "type": "array"
                 },
                 "hashes": {
                   "$ref": "#/definitions/hashes",
                   "description": "Hashes found within the message",
-                  "order": 4,
+                  "order": 5,
                   "title": "Hashes"
                 },
                 "ip_addresses": {
                   "$ref": "#/definitions/ip_addresses",
                   "description": "IP addresses found within the message",
-                  "order": 6,
+                  "order": 7,
                   "title": "IP Addresses"
                 },
                 "mac_addresses": {
@@ -1590,8 +1663,17 @@
                   "items": {
                     "type": "string"
                   },
-                  "order": 5,
+                  "order": 6,
                   "title": "MAC Addresses",
+                  "type": "array"
+                },
+                "parent_domains": {
+                  "description": "Parent domains found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "Parent Domains",
                   "type": "array"
                 },
                 "urls": {
@@ -1599,7 +1681,7 @@
                   "items": {
                     "type": "string"
                   },
-                  "order": 2,
+                  "order": 3,
                   "title": "URLs",
                   "type": "array"
                 }
@@ -1654,7 +1736,7 @@
                 "indicators": {
                   "$ref": "#/definitions/indicators",
                   "description": "Potential threat indicators found within the message",
-                  "order": 6,
+                  "order": 7,
                   "title": "Indicators"
                 },
                 "text": {
@@ -1680,6 +1762,15 @@
                   "order": 2,
                   "title": "User ID",
                   "type": "string"
+                },
+                "words": {
+                  "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 6,
+                  "title": "Words",
+                  "type": "array"
                 }
               },
               "title": "Message",
