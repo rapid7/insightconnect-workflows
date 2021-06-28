@@ -38,6 +38,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.1.1 - Change references link | Add workflow screenshot
 * 1.1.0 - Update Recorded Future plugin
 * 1.0.0 - Initial workflow
 
@@ -45,4 +46,4 @@ _There is no troubleshooting information at this time_
 
 ## References
 
-* [Recorded Future API Documentation](https://support.recordedfuture.com/hc/en-us/categories/115000803507-Raw-API)
+* [Recorded Future API Documentation](https://support.recordedfuture.com/hc/en-us/articles/115001351947-Connect-API-Overview)
