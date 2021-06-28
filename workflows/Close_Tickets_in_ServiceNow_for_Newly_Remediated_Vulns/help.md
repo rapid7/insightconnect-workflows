@@ -25,7 +25,9 @@ These workflows help IT and Security teams open, track, and close remediation ta
 
 ## Setup
 
+Import the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary. Don't forget to include a time savings estimate!
 
+Once the workflow has been imported, open the workflow and view the InsightVM Events trigger step. Save the trigger configuration step and proceed through the Instructions on subscribing to the InsightVM Vulnerabilities Found Webhook Event. This will require an [Insight Platform User API Key](https://docs.rapid7.com/insight/managing-platform-api-keys#generating-a-user-key). Insert your User API Key, copy the API request, run it from a command prompt, and look for a JSON response including an ID. If you receive a JSON response, then your webhook event subscription is active! Close your command prompt and return to the workflow in InsightConnect.
  
 ## Technical Details
 
@@ -43,6 +45,7 @@ Experiencing delays? InsightVM Events are delivered to InsightConnect from Insig
 
 # Version History
 
+* 1.0.1 - Updated setup documentation
 * 1.0.0 - Initial workflow
 
 # Links
