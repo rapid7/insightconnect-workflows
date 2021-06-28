@@ -1,0 +1,27 @@
+{
+  "actors": {
+    "assets": [],
+    "users": []
+  },
+  "contents": {
+    "domains": [],
+    "ipAddresses": [
+      {
+        "ip": "192.168.1.1",
+        "type": "EXTERNAL"
+      },
+      {
+        "ip": "10.10.1.1",
+        "type": "EXTERNAL"
+      }
+    ],
+    "processes": [],
+    "urls": []
+  },
+  "description": "Account user@example.com authenticated from 6 countries",
+  "investigationId": "123456789-1234-1234-1234-123145678",
+  "link": "https://us.idr.insight.rapid7.com/op/B746BABDB84E41D06AC3#/investigations/123456789-1234-1234-1234-123145678",
+  "name": "Account user@example.com authenticated from 3 countries in 12 minutes 26 seconds",
+  "timestamp": "2020-10-13T17:24:19.743Z",
+  "type": "MultipleCountryAuthentications"
+}
