@@ -1,14 +1,14 @@
 {
   "kom": {
-    "komandVersion": "1.64.0-0-gda317",
+    "komandVersion": "1.86.1-0-gc4523",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-10-06T21:18:07.417970845Z",
+    "exportedAt": "2021-06-28T23:44:22.609656581Z",
     "workflowVersions": [
       {
         "name": "Enrich CVE with Recorded Future from Slack",
         "type": "runnable",
         "version": "",
-        "description": "Returns detailed information about the CVE provided.",
+        "description": "# Description\n\nUse the simplicity of a chat command in Slack to get enriched details about a vulnerability using Recorded Future.\n\nSample Slack Trigger Commands:\n\n`@Rapid7 InsightConnect enrich-cve CVE-2019-0708`\n\n# Key Features\n\n* Perform a CVE lookup\n\n# Requirements\n\n* Recorded Future API Key\n* [Slack](https://insightconnect.help.rapid7.com/docs/configure-slack-for-chatops)\n\n# Documentation\n\n## Setup\n\nImport the workflow from the Rapid7 Extension Library and proceed through the Import Workflow wizard in InsightConnect. Import plugins, create or select connections, and rename the workflow as a part of the Import Workflow wizard as necessary.\n\nOnce the workflow has been imported, **Update the first step with the channel name to suit your Slack environment!** by editing the input with the preset text of `change_me` to match the channel to monitor.\n\nAfter configuring those steps, activate the workflow and then issue a Slack command to trigger it. \n\n### Usage\n\n*This workflow will only trigger in the channel specified in the ChatOps workflow steps.*\n\nTo run the workflow, send a message to the specified Slack channel starting with the command `@Rapid7 InsightConnect enrich-cve` and then provide the CVE ID, in upper or lowercase format, of the vulnerability you would like to get more details on.\n\nYour chat bot will reply to the message thread when the workflow completes.\n\n## Technical Details\n\nPlugins utilized by workflow:\n\n|Plugin|Version|Count|\n|----|----|--------|\n|Recorded Future|2.2.0|1|\n\n## Troubleshooting\n\n_There is no troubleshooting information at this time_\n\n# Version History\n\n* 1.0.0 - Initial workflow\n\n# Links\n\n## References\n\n* [Recorded Future API Documentation](https://support.recordedfuture.com/hc/en-us/categories/115000803507-Raw-API)\n* [Slack](https://slack.com)\n",
         "graph": {
           "edges": {
             "4f9b2478-c89d-477b-b3e5-bb9bccc6a7a2": {
@@ -253,8 +253,8 @@
               "name": "Recorded Future",
               "slugVendor": "rapid7",
               "slugName": "recorded_future",
-              "slugVersion": "2.2.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/recorded_future/2.2.0/icon.png"
+              "slugVersion": "5.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/recorded_future/5.0.1/icon.png"
             },
             "identifier": "lookup_vulnerability",
             "continueOnFailure": true,
@@ -286,16 +286,19 @@
                   "properties": {
                     "attributes": {
                       "$ref": "#/definitions/attributes",
+                      "description": "Attributes",
                       "order": 1,
                       "title": "Attributes"
                     },
                     "id": {
+                      "description": "ID",
                       "order": 2,
-                      "title": "Id",
+                      "title": "ID",
                       "type": "string"
                     },
                     "source": {
                       "$ref": "#/definitions/labels",
+                      "description": "Source",
                       "order": 3,
                       "title": "Source"
                     }
@@ -306,6 +309,7 @@
                 "attributes": {
                   "properties": {
                     "context_entities": {
+                      "description": "Context entities",
                       "items": {
                         "$ref": "#/definitions/context_entities"
                       },
@@ -314,6 +318,7 @@
                       "type": "array"
                     },
                     "labels": {
+                      "description": "Labels",
                       "items": {
                         "$ref": "#/definitions/labels"
                       },
@@ -322,6 +327,7 @@
                       "type": "array"
                     },
                     "note_entities": {
+                      "description": "Note entities",
                       "items": {
                         "$ref": "#/definitions/labels"
                       },
@@ -330,36 +336,42 @@
                       "type": "array"
                     },
                     "published": {
+                      "description": "Published",
                       "order": 4,
                       "title": "Published",
                       "type": "string"
                     },
                     "text": {
+                      "description": "Text",
                       "order": 5,
                       "title": "Text",
                       "type": "string"
                     },
                     "title": {
+                      "description": "Title",
                       "order": 6,
                       "title": "Title",
                       "type": "string"
                     },
                     "topic": {
                       "$ref": "#/definitions/context_entities",
+                      "description": "Topic",
                       "order": 7,
                       "title": "Topic"
                     },
                     "validated_on": {
+                      "description": "Validated on",
                       "order": 8,
                       "title": "Validated On",
                       "type": "string"
                     },
                     "validation_urls": {
+                      "description": "Validation URLs",
                       "items": {
                         "$ref": "#/definitions/labels"
                       },
                       "order": 9,
-                      "title": "Validation Urls",
+                      "title": "Validation URLs",
                       "type": "array"
                     }
                   },
@@ -369,21 +381,25 @@
                 "context_entities": {
                   "properties": {
                     "description": {
+                      "description": "Description",
                       "order": 1,
                       "title": "Description",
                       "type": "string"
                     },
                     "id": {
+                      "description": "ID",
                       "order": 2,
-                      "title": "Id",
+                      "title": "ID",
                       "type": "string"
                     },
                     "name": {
+                      "description": "Name",
                       "order": 3,
                       "title": "Name",
                       "type": "string"
                     },
                     "type": {
+                      "description": "Type",
                       "order": 4,
                       "title": "Type",
                       "type": "string"
@@ -395,11 +411,13 @@
                 "counts": {
                   "properties": {
                     "count": {
+                      "description": "Count",
                       "order": 1,
                       "title": "Count",
                       "type": "integer"
                     },
                     "date": {
+                      "description": "Date",
                       "order": 2,
                       "title": "Date",
                       "type": "string"
@@ -411,51 +429,61 @@
                 "cvss": {
                   "properties": {
                     "accessComplexity": {
+                      "description": "Access complexity",
                       "order": 3,
                       "title": "Access Complexity",
                       "type": "string"
                     },
                     "accessVector": {
+                      "description": "Access vector",
                       "order": 9,
                       "title": "Access Vector",
                       "type": "string"
                     },
                     "authentication": {
+                      "description": "Authentication",
                       "order": 4,
                       "title": "Authentication",
                       "type": "string"
                     },
                     "availability": {
+                      "description": "Availability",
                       "order": 8,
                       "title": "Availability",
                       "type": "string"
                     },
                     "confidentiality": {
+                      "description": "Confidentiality",
                       "order": 1,
                       "title": "Confidentiality",
                       "type": "string"
                     },
                     "integrity": {
+                      "description": "Integrity",
                       "order": 7,
                       "title": "Integrity",
                       "type": "string"
                     },
                     "lastModified": {
+                      "description": "Last modified",
                       "order": 2,
                       "title": "Last Modified",
                       "type": "string"
                     },
                     "published": {
+                      "description": "Published",
                       "order": 6,
                       "title": "Published",
                       "type": "string"
                     },
                     "score": {
+                      "description": "Score",
                       "order": 5,
                       "title": "Score",
                       "type": "number"
                     },
                     "version": {
+                      "description": "Version",
                       "order": 10,
                       "title": "Version",
                       "type": "string"
@@ -467,13 +495,15 @@
                 "cvssv3": {
                   "properties": {
                     "attackComplexity": {
+                      "description": "Attack complexity",
                       "order": 1,
-                      "title": "AttackComplexity",
+                      "title": "Attack Complexity",
                       "type": "string"
                     },
                     "attackVector": {
+                      "description": "Attack vector",
                       "order": 2,
-                      "title": "AttackVector",
+                      "title": "Attack Vector",
                       "type": "string"
                     }
                   },
@@ -483,12 +513,14 @@
                 "entities": {
                   "properties": {
                     "count": {
+                      "description": "Count",
                       "order": 1,
                       "title": "Count",
                       "type": "integer"
                     },
                     "entity": {
                       "$ref": "#/definitions/entity",
+                      "description": "Entity",
                       "order": 2,
                       "title": "Entity"
                     }
@@ -499,21 +531,25 @@
                 "entity": {
                   "properties": {
                     "description": {
+                      "description": "Description",
                       "order": 4,
                       "title": "Description",
                       "type": "string"
                     },
                     "id": {
+                      "description": "ID",
                       "order": 1,
-                      "title": "Id",
+                      "title": "ID",
                       "type": "string"
                     },
                     "name": {
+                      "description": "Name",
                       "order": 2,
                       "title": "Name",
                       "type": "string"
                     },
                     "type": {
+                      "description": "Type",
                       "order": 3,
                       "title": "Type",
                       "type": "string"
@@ -525,26 +561,31 @@
                 "evidenceDetails": {
                   "properties": {
                     "criticality": {
+                      "description": "Criticality",
                       "order": 1,
                       "title": "Criticality",
                       "type": "number"
                     },
                     "criticalityLabel": {
+                      "description": "Criticality label",
                       "order": 2,
                       "title": "Criticality Label",
                       "type": "string"
                     },
                     "evidenceString": {
+                      "description": "Evidence string",
                       "order": 3,
                       "title": "Evidence String",
                       "type": "string"
                     },
                     "rule": {
+                      "description": "Rule",
                       "order": 4,
                       "title": "Rule",
                       "type": "string"
                     },
                     "timestamp": {
+                      "description": "Timestamp",
                       "order": 5,
                       "title": "Timestamp",
                       "type": "string"
@@ -556,16 +597,19 @@
                 "labels": {
                   "properties": {
                     "id": {
+                      "description": "ID",
                       "order": 1,
-                      "title": "Id",
+                      "title": "ID",
                       "type": "string"
                     },
                     "name": {
+                      "description": "Name",
                       "order": 2,
                       "title": "Name",
                       "type": "string"
                     },
                     "type": {
+                      "description": "Type",
                       "order": 3,
                       "title": "Type",
                       "type": "string"
@@ -577,11 +621,13 @@
                 "metrics": {
                   "properties": {
                     "type": {
+                      "description": "Type",
                       "order": 1,
                       "title": "Type",
                       "type": "string"
                     },
                     "value": {
+                      "description": "Value",
                       "order": 2,
                       "title": "Value",
                       "type": "number"
@@ -611,6 +657,7 @@
                 "relatedEntities": {
                   "properties": {
                     "entities": {
+                      "description": "Entities",
                       "items": {
                         "$ref": "#/definitions/entities"
                       },
@@ -619,6 +666,7 @@
                       "type": "array"
                     },
                     "type": {
+                      "description": "Type",
                       "order": 2,
                       "title": "Type",
                       "type": "string"
@@ -630,16 +678,19 @@
                 "risk": {
                   "properties": {
                     "criticality": {
+                      "description": "Criticality",
                       "order": 1,
                       "title": "Criticality",
                       "type": "number"
                     },
                     "criticalityLabel": {
+                      "description": "Criticality label",
                       "order": 2,
                       "title": "Criticality Label",
                       "type": "string"
                     },
                     "evidenceDetails": {
+                      "description": "Evidence details",
                       "items": {
                         "$ref": "#/definitions/evidenceDetails"
                       },
@@ -648,16 +699,19 @@
                       "type": "array"
                     },
                     "riskSummary": {
+                      "description": "Risk summary",
                       "order": 4,
                       "title": "Risk Summary",
                       "type": "string"
                     },
                     "rules": {
+                      "description": "Rules",
                       "order": 5,
                       "title": "Rules",
                       "type": "integer"
                     },
                     "score": {
+                      "description": "Score",
                       "order": 6,
                       "title": "Score",
                       "type": "integer"
@@ -669,47 +723,85 @@
                 "sightings": {
                   "properties": {
                     "fragment": {
+                      "description": "Fragment",
                       "order": 1,
                       "title": "Fragment",
                       "type": "string"
                     },
                     "published": {
+                      "description": "Published",
                       "order": 2,
                       "title": "Published",
                       "type": "string"
                     },
                     "source": {
+                      "description": "Source",
                       "order": 3,
                       "title": "Source",
                       "type": "string"
                     },
                     "title": {
+                      "description": "Title",
                       "order": 4,
                       "title": "Title",
                       "type": "string"
                     },
                     "type": {
+                      "description": "Type",
                       "order": 5,
                       "title": "Type",
                       "type": "string"
                     },
                     "url": {
+                      "description": "URL",
                       "order": 6,
-                      "title": "Url",
+                      "title": "URL",
                       "type": "string"
                     }
                   },
                   "title": "Sightings",
                   "type": "object"
                 },
+                "threatLists": {
+                  "properties": {
+                    "description": {
+                      "description": "Description",
+                      "order": 1,
+                      "title": "Description",
+                      "type": "string"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 2,
+                      "title": "ID",
+                      "type": "string"
+                    },
+                    "name": {
+                      "description": "Name",
+                      "order": 3,
+                      "title": "Name",
+                      "type": "string"
+                    },
+                    "type": {
+                      "description": "Type",
+                      "order": 4,
+                      "title": "Type",
+                      "type": "string"
+                    }
+                  },
+                  "title": "ThreatLists",
+                  "type": "object"
+                },
                 "timestamps": {
                   "properties": {
                     "firstSeen": {
+                      "description": "First seen",
                       "order": 1,
                       "title": "First Seen",
                       "type": "string"
                     },
                     "lastSeen": {
+                      "description": "Last seen",
                       "order": 2,
                       "title": "Last Seen",
                       "type": "string"
@@ -721,22 +813,25 @@
                 "vulnerability_search_data": {
                   "properties": {
                     "analystNotes": {
+                      "description": "Analyst notes",
                       "items": {
                         "$ref": "#/definitions/analystNote"
                       },
-                      "order": 18,
+                      "order": 17,
                       "title": "Analyst Notes",
                       "type": "array"
                     },
                     "commonNames": {
+                      "description": "Common names",
                       "items": {
                         "type": "string"
                       },
-                      "order": 15,
-                      "title": "CommonNames",
+                      "order": 14,
+                      "title": "Common Names",
                       "type": "array"
                     },
                     "counts": {
+                      "description": "Counts",
                       "items": {
                         "$ref": "#/definitions/counts"
                       },
@@ -745,99 +840,108 @@
                       "type": "array"
                     },
                     "cpe": {
+                      "description": "CPE",
                       "items": {
                         "type": "string"
                       },
                       "order": 3,
-                      "title": "Cpe",
+                      "title": "CPE",
                       "type": "array"
                     },
                     "cvss": {
                       "$ref": "#/definitions/cvss",
+                      "description": "CVSS",
                       "order": 2,
-                      "title": "Cvss"
+                      "title": "CVSS"
                     },
                     "cvssv3": {
                       "$ref": "#/definitions/cvssv3",
-                      "order": 16,
-                      "title": "Cvssv3"
+                      "description": "CVSSV3",
+                      "order": 15,
+                      "title": "CVSSV3"
                     },
                     "entity": {
                       "$ref": "#/definitions/entity",
+                      "description": "Entity",
                       "order": 5,
                       "title": "Entity"
                     },
-                    "hashAlgorithm": {
-                      "order": 6,
-                      "title": "Hash Algorithm",
-                      "type": "string"
-                    },
                     "intelCard": {
-                      "order": 7,
+                      "description": "Intel card",
+                      "order": 6,
                       "title": "Intel Card",
                       "type": "string"
                     },
                     "metrics": {
+                      "description": "Metrics",
                       "items": {
                         "$ref": "#/definitions/metrics"
                       },
-                      "order": 8,
+                      "order": 7,
                       "title": "Metrics",
                       "type": "array"
                     },
                     "nvdDescription": {
+                      "description": "NVD description",
                       "order": 4,
                       "title": "NVD Description",
                       "type": "string"
                     },
                     "rawrisk": {
+                      "description": "Rawrisk",
                       "items": {
                         "$ref": "#/definitions/rawrisk"
                       },
-                      "order": 14,
+                      "order": 13,
                       "title": "Rawrisk",
                       "type": "array"
                     },
                     "relatedEntities": {
+                      "description": "Related entities",
                       "items": {
                         "$ref": "#/definitions/relatedEntities"
                       },
-                      "order": 9,
+                      "order": 8,
                       "title": "Related Entities",
                       "type": "array"
                     },
                     "relatedLinks": {
+                      "description": "Related links",
                       "items": {
                         "type": "string"
                       },
-                      "order": 17,
-                      "title": "RelatedLinks",
+                      "order": 16,
+                      "title": "Related Links",
                       "type": "array"
                     },
                     "risk": {
                       "$ref": "#/definitions/risk",
-                      "order": 10,
+                      "description": "Risk",
+                      "order": 9,
                       "title": "Risk"
                     },
                     "sightings": {
+                      "description": "Sightings",
                       "items": {
                         "$ref": "#/definitions/sightings"
                       },
-                      "order": 11,
+                      "order": 10,
                       "title": "Sightings",
                       "type": "array"
                     },
                     "threatLists": {
+                      "description": "Threat lists",
                       "items": {
-                        "type": "object"
+                        "$ref": "#/definitions/threatLists"
                       },
-                      "order": 12,
+                      "order": 11,
                       "title": "Threat Lists",
                       "type": "array"
                     },
                     "timestamps": {
                       "$ref": "#/definitions/timestamps",
-                      "order": 13,
+                      "description": "Timestamps",
+                      "order": 12,
                       "title": "Timestamps"
                     }
                   },
@@ -853,6 +957,9 @@
                   "title": "Data"
                 }
               },
+              "required": [
+                "data"
+              ],
               "title": "Variables",
               "type": "object"
             },
@@ -874,7 +981,7 @@
                 "type": "any"
               }
             },
-            "triggerId": "8a0a5cc9-3f61-40cb-acf1-edb22960b2c0",
+            "triggerId": "0b5266e6-ddf3-46b7-a06e-eefd01163f5b",
             "defaultInputJSONSchema": {
               "properties": {
                 "matchChannel": {
@@ -959,20 +1066,20 @@
                       "items": {
                         "type": "string"
                       },
-                      "order": 3,
+                      "order": 4,
                       "title": "Email Addresses",
                       "type": "array"
                     },
                     "hashes": {
                       "$ref": "#/definitions/hashes",
                       "description": "Hashes found within the message",
-                      "order": 4,
+                      "order": 5,
                       "title": "Hashes"
                     },
                     "ip_addresses": {
                       "$ref": "#/definitions/ip_addresses",
                       "description": "IP addresses found within the message",
-                      "order": 6,
+                      "order": 7,
                       "title": "IP Addresses"
                     },
                     "mac_addresses": {
@@ -980,8 +1087,17 @@
                       "items": {
                         "type": "string"
                       },
-                      "order": 5,
+                      "order": 6,
                       "title": "MAC Addresses",
+                      "type": "array"
+                    },
+                    "parent_domains": {
+                      "description": "Parent domains found within the message",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 2,
+                      "title": "Parent Domains",
                       "type": "array"
                     },
                     "urls": {
@@ -989,7 +1105,7 @@
                       "items": {
                         "type": "string"
                       },
-                      "order": 2,
+                      "order": 3,
                       "title": "URLs",
                       "type": "array"
                     }
@@ -1044,7 +1160,7 @@
                     "indicators": {
                       "$ref": "#/definitions/indicators",
                       "description": "Potential threat indicators found within the message",
-                      "order": 6,
+                      "order": 7,
                       "title": "Indicators"
                     },
                     "text": {
@@ -1070,6 +1186,15 @@
                       "order": 2,
                       "title": "User ID",
                       "type": "string"
+                    },
+                    "words": {
+                      "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 6,
+                      "title": "Words",
+                      "type": "array"
                     }
                   },
                   "title": "Message",
@@ -1119,7 +1244,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "## Description\n\n**CVE**: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[entity].[name]}}\n**Type**: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[entity].[type]}}\n**Description**: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[entity].[description]}}\n**First Seen**: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[timestamps].[firstSeen]}}\n**Last Seen**: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[timestamps].[lastSeen]}}\n\n## Risk\n\n**Risk**: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[risk].[score]}}\n**Severity**: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[risk].[criticalityLabel]}}\n\n### CVSS\n**Integrity Impact**: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[cvssv3].[integrityImpact]}}\n**Confidentiality Impact**: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[cvssv3].[confidentialityImpact]}}\n**Exploitability Score**: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[cvssv3].[exploitabilityScore]}}\n**Modified**: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[cvssv3].[modified]}}\n**Base Severity**: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[cvssv3].[baseSeverity]}}\n**Base Score**: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[cvssv3].[baseScore]}}\n**Impact Score**: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[cvssv3].[impactScore]}}\n**Attack Vector**: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[cvssv3].[attackVector]}}\n**Attack Complexity**: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[cvssv3].[attackComplexity]}}\n**Created**: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[cvssv3].[created]}}\n**Availability Impact**: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[cvssv3].[availabilityImpact]}}"
+                "content": "# Enrich CVE Vulnerability\n*Enrich CVE Vulnerability*: {{[1bee5620-ed03-4332-9c31-829d0a369ed2]}}\n*Enrich CVE Vulnerability.data*: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data]}}\n*Enrich CVE Vulnerability.data.cpe first*: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[cpe].[0]}}\n*Enrich CVE Vulnerability.data.cvss*: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[cvss]}}\n*Enrich CVE Vulnerability.data.cvss.score*: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[cvss].[score]}}\n*Enrich CVE Vulnerability.data.cvss.version*: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[cvss].[version]}}\n*Enrich CVE Vulnerability.data.cvss.integrity*: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[cvss].[integrity]}}\n*Enrich CVE Vulnerability.data.cvss.published*: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[cvss].[published]}}\n*Enrich CVE Vulnerability.data.cvss.accessVector*: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[cvss].[accessVector]}}\n*Enrich CVE Vulnerability.data.cvss.availability*: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[cvss].[availability]}}\n*Enrich CVE Vulnerability.data.cvss.lastModified*: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[cvss].[lastModified]}}\n*Enrich CVE Vulnerability.data.cvss.authentication*: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[cvss].[authentication]}}\n*Enrich CVE Vulnerability.data.cvss.confidentiality*: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[cvss].[confidentiality]}}\n*Enrich CVE Vulnerability.data.cvss.accessComplexity*: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[cvss].[accessComplexity]}}\n*Enrich CVE Vulnerability.data.risk*: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[risk]}}\n*Enrich CVE Vulnerability.data.risk.rules*: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[risk].[rules]}}\n*Enrich CVE Vulnerability.data.risk.score*: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[risk].[score]}}\n*Enrich CVE Vulnerability.data.risk.criticality*: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[risk].[criticality]}}\n*Enrich CVE Vulnerability.data.risk.riskSummary*: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[risk].[riskSummary]}}\n*Enrich CVE Vulnerability.data.risk.evidenceDetails first*: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[risk].[evidenceDetails].[0]}}\n*Enrich CVE Vulnerability.data.risk.criticalityLabel*: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[risk].[criticalityLabel]}}\n*Enrich CVE Vulnerability.data.counts first*: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[counts].[0]}}\n*Enrich CVE Vulnerability.data.cvssv3*: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[cvssv3]}}\n*Enrich CVE Vulnerability.data.cvssv3.attackVector*: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[cvssv3].[attackVector]}}\n*Enrich CVE Vulnerability.data.cvssv3.attackComplexity*: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[cvssv3].[attackComplexity]}}\n*Enrich CVE Vulnerability.data.entity*: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[entity]}}\n*Enrich CVE Vulnerability.data.entity.id*: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[entity].[id]}}\n*Enrich CVE Vulnerability.data.entity.name*: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[entity].[name]}}\n*Enrich CVE Vulnerability.data.entity.type*: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[entity].[type]}}\n*Enrich CVE Vulnerability.data.entity.description*: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[entity].[description]}}\n*Enrich CVE Vulnerability.data.metrics first*: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[metrics].[0]}}\n*Enrich CVE Vulnerability.data.rawrisk first*: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[rawrisk].[0]}}\n*Enrich CVE Vulnerability.data.intelCard*: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[intelCard]}}\n*Enrich CVE Vulnerability.data.sightings first*: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[sightings].[0]}}\n*Enrich CVE Vulnerability.data.timestamps*: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[timestamps]}}\n*Enrich CVE Vulnerability.data.timestamps.lastSeen*: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[timestamps].[lastSeen]}}\n*Enrich CVE Vulnerability.data.timestamps.firstSeen*: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[timestamps].[firstSeen]}}\n*Enrich CVE Vulnerability.data.commonNames first*: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[commonNames].[0]}}\n*Enrich CVE Vulnerability.data.threatLists first*: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[threatLists].[0]}}\n*Enrich CVE Vulnerability.data.analystNotes first*: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[analystNotes].[0]}}\n*Enrich CVE Vulnerability.data.relatedLinks first*: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[relatedLinks].[0]}}\n*Enrich CVE Vulnerability.data.nvdDescription*: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[nvdDescription]}}\n*Enrich CVE Vulnerability.data.relatedEntities first*: {{[1bee5620-ed03-4332-9c31-829d0a369ed2].[data].[relatedEntities].[0]}}"
               },
               "type": "markdown"
             },
@@ -1185,6 +1310,12 @@
                   "description": "ChannelID of successful message",
                   "order": 1,
                   "title": "Channel ID",
+                  "type": "string"
+                },
+                "parent_message_timestamp": {
+                  "description": " The timestamp of the parent message or of the current message if there is no parent. Used to post messages to a thread.",
+                  "order": 3,
+                  "title": "Parent Message Timestamp",
                   "type": "string"
                 },
                 "timestamp": {
@@ -1291,6 +1422,12 @@
                   "title": "Channel ID",
                   "type": "string"
                 },
+                "parent_message_timestamp": {
+                  "description": " The timestamp of the parent message or of the current message if there is no parent. Used to post messages to a thread.",
+                  "order": 3,
+                  "title": "Parent Message Timestamp",
+                  "type": "string"
+                },
                 "timestamp": {
                   "description": "Timestamp of successful message",
                   "order": 2,
@@ -1363,6 +1500,12 @@
                   "description": "ChannelID of successful message",
                   "order": 1,
                   "title": "Channel ID",
+                  "type": "string"
+                },
+                "parent_message_timestamp": {
+                  "description": " The timestamp of the parent message or of the current message if there is no parent. Used to post messages to a thread.",
+                  "order": 3,
+                  "title": "Parent Message Timestamp",
                   "type": "string"
                 },
                 "timestamp": {
@@ -1461,6 +1604,12 @@
                   "title": "Channel ID",
                   "type": "string"
                 },
+                "parent_message_timestamp": {
+                  "description": " The timestamp of the parent message or of the current message if there is no parent. Used to post messages to a thread.",
+                  "order": 3,
+                  "title": "Parent Message Timestamp",
+                  "type": "string"
+                },
                 "timestamp": {
                   "description": "Timestamp of successful message",
                   "order": 2,
@@ -1535,6 +1684,12 @@
                   "title": "Channel ID",
                   "type": "string"
                 },
+                "parent_message_timestamp": {
+                  "description": " The timestamp of the parent message or of the current message if there is no parent. Used to post messages to a thread.",
+                  "order": 3,
+                  "title": "Parent Message Timestamp",
+                  "type": "string"
+                },
                 "timestamp": {
                   "description": "Timestamp of successful message",
                   "order": 2,
@@ -1554,12 +1709,15 @@
         },
         "tags": null,
         "humanCostSeconds": 0,
-        "humanCostDisplayUnit": ""
+        "humanCostDisplayUnit": "minutes",
+        "parameters": {
+          "definitionSchema": null
+        }
       }
     ],
     "triggers": [
       {
-        "id": "8a0a5cc9-3f61-40cb-acf1-edb22960b2c0",
+        "id": "0b5266e6-ddf3-46b7-a06e-eefd01163f5b",
         "name": "Enrich CVE Request",
         "description": "Slack message that triggers enrichment of the CVE provided",
         "input": {
@@ -1651,20 +1809,20 @@
                   "items": {
                     "type": "string"
                   },
-                  "order": 3,
+                  "order": 4,
                   "title": "Email Addresses",
                   "type": "array"
                 },
                 "hashes": {
                   "$ref": "#/definitions/hashes",
                   "description": "Hashes found within the message",
-                  "order": 4,
+                  "order": 5,
                   "title": "Hashes"
                 },
                 "ip_addresses": {
                   "$ref": "#/definitions/ip_addresses",
                   "description": "IP addresses found within the message",
-                  "order": 6,
+                  "order": 7,
                   "title": "IP Addresses"
                 },
                 "mac_addresses": {
@@ -1672,8 +1830,17 @@
                   "items": {
                     "type": "string"
                   },
-                  "order": 5,
+                  "order": 6,
                   "title": "MAC Addresses",
+                  "type": "array"
+                },
+                "parent_domains": {
+                  "description": "Parent domains found within the message",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "Parent Domains",
                   "type": "array"
                 },
                 "urls": {
@@ -1681,7 +1848,7 @@
                   "items": {
                     "type": "string"
                   },
-                  "order": 2,
+                  "order": 3,
                   "title": "URLs",
                   "type": "array"
                 }
@@ -1736,7 +1903,7 @@
                 "indicators": {
                   "$ref": "#/definitions/indicators",
                   "description": "Potential threat indicators found within the message",
-                  "order": 6,
+                  "order": 7,
                   "title": "Indicators"
                 },
                 "text": {
@@ -1762,6 +1929,15 @@
                   "order": 2,
                   "title": "User ID",
                   "type": "string"
+                },
+                "words": {
+                  "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 6,
+                  "title": "Words",
+                  "type": "array"
                 }
               },
               "title": "Message",
