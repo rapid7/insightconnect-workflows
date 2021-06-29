@@ -3,13 +3,13 @@ products: ["insightconnect"]
 name: Enrich_CVE_with_Recorded_Future_from_Microsoft_Teams
 title: "Enrich CVE with Recorded Future from Microsoft Teams"
 description: "This workflow returns enriched CVE details by performing a vulnerability lookup with Recorded Future from chat."
-version: 1.0.1
+version: 1.0.2
 vendor: rapid7
 support: rapid7
 status: []
 hub_tags:
   use_cases: [vulnerability_management]
-  keywords: [enrichment, recorded future, cve, teams]
+  keywords: [enrichment, recorded_future, cve, microsoft_teams, parameters]
   features: []
 resources:
   source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Enrich_CVE_With_Recorded_Future_From_Slack
