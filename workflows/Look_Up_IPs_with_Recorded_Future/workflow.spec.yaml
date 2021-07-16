@@ -3,7 +3,7 @@ products: [insightconnect, insightidr]
 name: Look_Up_IPs_with_Recorded_Future
 title: "Look Up IPs with Recorded Future"
 description: "This workflow enriches an IDR alert by performing a lookup on all IPs in the investigation with Recorded Future."
-version: 1.1.0
+version: 1.2.0
 vendor: rapid7
 support: rapid7
 status: []
@@ -14,3 +14,10 @@ hub_tags:
 resources:
   source_url: https://github.com/rapid7/insightconnect-workflows/tree/master/workflows/Look_Up_IPs_with_Recorded_Future
   license_url: https://github.com/rapid7/insightconnect-workflows/blob/master/LICENSE
+  screenshots:
+  - name: workflow_view.png
+    title: Workflow View
+  - name: ip_loop_view.png
+    title: Workflow IP Loop View
+  - name: artifacts.png
+    title: Successful Job Artifacts

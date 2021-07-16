@@ -18,6 +18,6 @@ resources:
   - name: workflow_view.png
     title: Workflow View
   - name: hash_loop_view.png
-    title: Workflow IP Loop View
+    title: Workflow Hash Loop View
   - name: artifacts.png
     title: Successful Job Artifacts
