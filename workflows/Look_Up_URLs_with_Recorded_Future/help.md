@@ -30,7 +30,7 @@ Plugins utilized by workflow:
 
 |Plugin|Version|Count|
 |----|----|--------|
-|Recorded Future|4.0.0|1|
+|Recorded Future|5.0.1|1|
 
 ## Troubleshooting
 
@@ -38,6 +38,7 @@ _There is no troubleshooting information at this time_
 
 # Version History
 
+* 1.2.0 - Update Recorded Future plugin | Added screenshots
 * 1.1.0 - Update Recorded Future plugin
 * 1.0.0 - Initial workflow
 
