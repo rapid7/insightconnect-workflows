@@ -1,8 +1,8 @@
 {
   "kom": {
-    "komandVersion": "1.67.0-0-gbd094",
+    "komandVersion": "1.88.0-0-gcbc46",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2020-11-06T00:55:09.807136902Z",
+    "exportedAt": "2021-07-16T22:39:46.200062573Z",
     "workflowVersions": [
       {
         "name": "Look Up Hashes with RecordedFuture",
@@ -131,7 +131,7 @@
             "type": "trigger",
             "continueOnFailure": false,
             "isDisabled": false,
-            "triggerId": "892780fa-84e9-4371-aea7-6a4ef543cffa",
+            "triggerId": "a959acc1-5ab4-431e-a2fc-67034d06cd65",
             "defaultInputJSONSchema": {
               "definitions": {
                 "actor": {
@@ -698,11 +698,11 @@
               "name": "Recorded Future",
               "slugVendor": "rapid7",
               "slugName": "recorded_future",
-              "slugVersion": "4.0.0",
-              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/recorded_future/4.0.0/icon.png"
+              "slugVersion": "5.0.1",
+              "imageData": "https://us.cdn-assets.connect.insight.rapid7.com/icons/rapid7/recorded_future/5.0.1/icon.png"
             },
             "identifier": "lookup_hash",
-            "continueOnFailure": false,
+            "continueOnFailure": true,
             "isDisabled": false,
             "isCloud": false,
             "parameters": {
@@ -734,14 +734,142 @@
             },
             "defaultOutputJSONSchema": {
               "definitions": {
+                "analystNote": {
+                  "properties": {
+                    "attributes": {
+                      "$ref": "#/definitions/attributes",
+                      "description": "Attributes",
+                      "order": 1,
+                      "title": "Attributes"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 2,
+                      "title": "ID",
+                      "type": "string"
+                    },
+                    "source": {
+                      "$ref": "#/definitions/labels",
+                      "description": "Source",
+                      "order": 3,
+                      "title": "Source"
+                    }
+                  },
+                  "title": "AnalystNote",
+                  "type": "object"
+                },
+                "attributes": {
+                  "properties": {
+                    "context_entities": {
+                      "description": "Context entities",
+                      "items": {
+                        "$ref": "#/definitions/context_entities"
+                      },
+                      "order": 1,
+                      "title": "Context Entities",
+                      "type": "array"
+                    },
+                    "labels": {
+                      "description": "Labels",
+                      "items": {
+                        "$ref": "#/definitions/labels"
+                      },
+                      "order": 2,
+                      "title": "Labels",
+                      "type": "array"
+                    },
+                    "note_entities": {
+                      "description": "Note entities",
+                      "items": {
+                        "$ref": "#/definitions/labels"
+                      },
+                      "order": 3,
+                      "title": "Note Entities",
+                      "type": "array"
+                    },
+                    "published": {
+                      "description": "Published",
+                      "order": 4,
+                      "title": "Published",
+                      "type": "string"
+                    },
+                    "text": {
+                      "description": "Text",
+                      "order": 5,
+                      "title": "Text",
+                      "type": "string"
+                    },
+                    "title": {
+                      "description": "Title",
+                      "order": 6,
+                      "title": "Title",
+                      "type": "string"
+                    },
+                    "topic": {
+                      "$ref": "#/definitions/context_entities",
+                      "description": "Topic",
+                      "order": 7,
+                      "title": "Topic"
+                    },
+                    "validated_on": {
+                      "description": "Validated on",
+                      "order": 8,
+                      "title": "Validated On",
+                      "type": "string"
+                    },
+                    "validation_urls": {
+                      "description": "Validation URLs",
+                      "items": {
+                        "$ref": "#/definitions/labels"
+                      },
+                      "order": 9,
+                      "title": "Validation URLs",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Attributes",
+                  "type": "object"
+                },
+                "context_entities": {
+                  "properties": {
+                    "description": {
+                      "description": "Description",
+                      "order": 1,
+                      "title": "Description",
+                      "type": "string"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 2,
+                      "title": "ID",
+                      "type": "string"
+                    },
+                    "name": {
+                      "description": "Name",
+                      "order": 3,
+                      "title": "Name",
+                      "type": "string"
+                    },
+                    "type": {
+                      "description": "Type",
+                      "order": 4,
+                      "title": "Type",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Context Entities",
+                  "type": "object"
+                },
                 "counts": {
                   "properties": {
                     "count": {
+                      "description": "Count",
                       "order": 1,
                       "title": "Count",
                       "type": "integer"
                     },
                     "date": {
+                      "description": "Date",
                       "order": 2,
                       "title": "Date",
                       "type": "string"
@@ -771,12 +899,14 @@
                 "entities": {
                   "properties": {
                     "count": {
+                      "description": "Count",
                       "order": 1,
                       "title": "Count",
                       "type": "integer"
                     },
                     "entity": {
                       "$ref": "#/definitions/entity",
+                      "description": "Entity",
                       "order": 2,
                       "title": "Entity"
                     }
@@ -787,21 +917,25 @@
                 "entity": {
                   "properties": {
                     "description": {
+                      "description": "Description",
                       "order": 4,
                       "title": "Description",
                       "type": "string"
                     },
                     "id": {
+                      "description": "ID",
                       "order": 1,
-                      "title": "Id",
+                      "title": "ID",
                       "type": "string"
                     },
                     "name": {
+                      "description": "Name",
                       "order": 2,
                       "title": "Name",
                       "type": "string"
                     },
                     "type": {
+                      "description": "Type",
                       "order": 3,
                       "title": "Type",
                       "type": "string"
@@ -813,32 +947,160 @@
                 "evidenceDetails": {
                   "properties": {
                     "criticality": {
+                      "description": "Criticality",
                       "order": 1,
                       "title": "Criticality",
                       "type": "number"
                     },
                     "criticalityLabel": {
+                      "description": "Criticality label",
                       "order": 2,
                       "title": "Criticality Label",
                       "type": "string"
                     },
                     "evidenceString": {
+                      "description": "Evidence string",
                       "order": 3,
                       "title": "Evidence String",
                       "type": "string"
                     },
                     "rule": {
+                      "description": "Rule",
                       "order": 4,
                       "title": "Rule",
                       "type": "string"
                     },
                     "timestamp": {
+                      "description": "Timestamp",
                       "order": 5,
                       "title": "Timestamp",
                       "type": "string"
                     }
                   },
                   "title": "EvidenceDetails",
+                  "type": "object"
+                },
+                "hash_search_data": {
+                  "properties": {
+                    "analystNotes": {
+                      "description": "Notes from an analyst",
+                      "items": {
+                        "$ref": "#/definitions/analystNote"
+                      },
+                      "order": 1,
+                      "title": "Analyst Notes",
+                      "type": "array"
+                    },
+                    "counts": {
+                      "description": "Counts",
+                      "items": {
+                        "$ref": "#/definitions/counts"
+                      },
+                      "order": 2,
+                      "title": "Counts",
+                      "type": "array"
+                    },
+                    "enterpriseLists": {
+                      "description": "Enterprise lists",
+                      "items": {
+                        "$ref": "#/definitions/enterpriseLists"
+                      },
+                      "order": 3,
+                      "title": "Enterprise Lists",
+                      "type": "array"
+                    },
+                    "entity": {
+                      "$ref": "#/definitions/entity",
+                      "description": "Entity",
+                      "order": 4,
+                      "title": "Entity"
+                    },
+                    "hashAlgorithm": {
+                      "description": "Hash algorithm",
+                      "order": 5,
+                      "title": "Hash Algorithm",
+                      "type": "string"
+                    },
+                    "intelCard": {
+                      "description": "Intel card",
+                      "order": 6,
+                      "title": "Intel Card",
+                      "type": "string"
+                    },
+                    "metrics": {
+                      "description": "Metrics",
+                      "items": {
+                        "$ref": "#/definitions/metrics"
+                      },
+                      "order": 7,
+                      "title": "Metrics",
+                      "type": "array"
+                    },
+                    "relatedEntities": {
+                      "description": "Related entities",
+                      "items": {
+                        "$ref": "#/definitions/relatedEntities"
+                      },
+                      "order": 8,
+                      "title": "Related Entities",
+                      "type": "array"
+                    },
+                    "risk": {
+                      "$ref": "#/definitions/risk",
+                      "description": "Risk",
+                      "order": 9,
+                      "title": "Risk"
+                    },
+                    "sightings": {
+                      "description": "Sightings",
+                      "items": {
+                        "$ref": "#/definitions/sightings"
+                      },
+                      "order": 10,
+                      "title": "Sightings",
+                      "type": "array"
+                    },
+                    "threatLists": {
+                      "description": "Threat lists",
+                      "items": {
+                        "$ref": "#/definitions/threatLists"
+                      },
+                      "order": 11,
+                      "title": "Threat Lists",
+                      "type": "array"
+                    },
+                    "timestamps": {
+                      "$ref": "#/definitions/timestamps",
+                      "description": "Timestamps",
+                      "order": 12,
+                      "title": "Timestamps"
+                    }
+                  },
+                  "title": "Hash Search Data",
+                  "type": "object"
+                },
+                "labels": {
+                  "properties": {
+                    "id": {
+                      "description": "ID",
+                      "order": 1,
+                      "title": "ID",
+                      "type": "string"
+                    },
+                    "name": {
+                      "description": "Name",
+                      "order": 2,
+                      "title": "Name",
+                      "type": "string"
+                    },
+                    "type": {
+                      "description": "Type",
+                      "order": 3,
+                      "title": "Type",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Labels",
                   "type": "object"
                 },
                 "list": {
@@ -868,11 +1130,13 @@
                 "metrics": {
                   "properties": {
                     "type": {
+                      "description": "Type",
                       "order": 1,
                       "title": "Type",
                       "type": "string"
                     },
                     "value": {
+                      "description": "Value",
                       "order": 2,
                       "title": "Value",
                       "type": "number"
@@ -884,6 +1148,7 @@
                 "relatedEntities": {
                   "properties": {
                     "entities": {
+                      "description": "Entities",
                       "items": {
                         "$ref": "#/definitions/entities"
                       },
@@ -892,6 +1157,7 @@
                       "type": "array"
                     },
                     "type": {
+                      "description": "Type",
                       "order": 2,
                       "title": "Type",
                       "type": "string"
@@ -903,16 +1169,19 @@
                 "risk": {
                   "properties": {
                     "criticality": {
+                      "description": "Criticality",
                       "order": 1,
                       "title": "Criticality",
                       "type": "number"
                     },
                     "criticalityLabel": {
+                      "description": "Criticality label",
                       "order": 2,
                       "title": "Criticality Label",
                       "type": "string"
                     },
                     "evidenceDetails": {
+                      "description": "Evidence details",
                       "items": {
                         "$ref": "#/definitions/evidenceDetails"
                       },
@@ -921,16 +1190,19 @@
                       "type": "array"
                     },
                     "riskSummary": {
+                      "description": "Risk summary",
                       "order": 4,
                       "title": "Risk Summary",
                       "type": "string"
                     },
                     "rules": {
+                      "description": "Rules",
                       "order": 5,
                       "title": "Rules",
                       "type": "integer"
                     },
                     "score": {
+                      "description": "Score",
                       "order": 6,
                       "title": "Score",
                       "type": "integer"
@@ -942,47 +1214,85 @@
                 "sightings": {
                   "properties": {
                     "fragment": {
+                      "description": "Fragment",
                       "order": 1,
                       "title": "Fragment",
                       "type": "string"
                     },
                     "published": {
+                      "description": "Published",
                       "order": 2,
                       "title": "Published",
                       "type": "string"
                     },
                     "source": {
+                      "description": "Source",
                       "order": 3,
                       "title": "Source",
                       "type": "string"
                     },
                     "title": {
+                      "description": "Title",
                       "order": 4,
                       "title": "Title",
                       "type": "string"
                     },
                     "type": {
+                      "description": "Type",
                       "order": 5,
                       "title": "Type",
                       "type": "string"
                     },
                     "url": {
+                      "description": "URL",
                       "order": 6,
-                      "title": "Url",
+                      "title": "URL",
                       "type": "string"
                     }
                   },
                   "title": "Sightings",
                   "type": "object"
                 },
+                "threatLists": {
+                  "properties": {
+                    "description": {
+                      "description": "Description",
+                      "order": 1,
+                      "title": "Description",
+                      "type": "string"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 2,
+                      "title": "ID",
+                      "type": "string"
+                    },
+                    "name": {
+                      "description": "Name",
+                      "order": 3,
+                      "title": "Name",
+                      "type": "string"
+                    },
+                    "type": {
+                      "description": "Type",
+                      "order": 4,
+                      "title": "Type",
+                      "type": "string"
+                    }
+                  },
+                  "title": "ThreatLists",
+                  "type": "object"
+                },
                 "timestamps": {
                   "properties": {
                     "firstSeen": {
+                      "description": "First seen",
                       "order": 1,
                       "title": "First Seen",
                       "type": "string"
                     },
                     "lastSeen": {
+                      "description": "Last seen",
                       "order": 2,
                       "title": "Last Seen",
                       "type": "string"
@@ -993,100 +1303,16 @@
                 }
               },
               "properties": {
-                "analystNotes": {
-                  "description": "Notes from an analyst",
-                  "items": {
-                    "type": "string"
-                  },
-                  "order": 3,
-                  "title": "Analyst Notes",
-                  "type": "array"
-                },
-                "counts": {
-                  "description": "Counts",
-                  "items": {
-                    "$ref": "#/definitions/counts"
-                  },
-                  "order": 4,
-                  "title": "Counts",
-                  "type": "array"
-                },
-                "enterpriseLists": {
-                  "description": "Enterprise lists",
-                  "items": {
-                    "$ref": "#/definitions/enterpriseLists"
-                  },
-                  "order": 12,
-                  "title": "Enterprise Lists",
-                  "type": "array"
-                },
-                "entity": {
-                  "$ref": "#/definitions/entity",
-                  "description": "Entity",
+                "data": {
+                  "$ref": "#/definitions/hash_search_data",
+                  "description": "Data",
                   "order": 1,
-                  "title": "Entity"
-                },
-                "hashAlgorithm": {
-                  "description": "Hash Algorithm",
-                  "order": 5,
-                  "title": "Hash Algorithm",
-                  "type": "string"
-                },
-                "intelCard": {
-                  "description": "Intel card",
-                  "order": 6,
-                  "title": "Intel Card",
-                  "type": "string"
-                },
-                "metrics": {
-                  "description": "Metrics",
-                  "items": {
-                    "$ref": "#/definitions/metrics"
-                  },
-                  "order": 7,
-                  "title": "Metrics",
-                  "type": "array"
-                },
-                "relatedEntities": {
-                  "description": "Related entities",
-                  "items": {
-                    "$ref": "#/definitions/relatedEntities"
-                  },
-                  "order": 8,
-                  "title": "Related Entities",
-                  "type": "array"
-                },
-                "risk": {
-                  "$ref": "#/definitions/risk",
-                  "description": "Risk",
-                  "order": 11,
-                  "title": "Risk"
-                },
-                "sightings": {
-                  "description": "Sightings",
-                  "items": {
-                    "$ref": "#/definitions/sightings"
-                  },
-                  "order": 9,
-                  "title": "Sightings",
-                  "type": "array"
-                },
-                "threatLists": {
-                  "description": "Threat Lists",
-                  "items": {
-                    "type": "string"
-                  },
-                  "order": 10,
-                  "title": "Threat Lists",
-                  "type": "array"
-                },
-                "timestamps": {
-                  "$ref": "#/definitions/timestamps",
-                  "description": "Timestamps",
-                  "order": 2,
-                  "title": "Timestamps"
+                  "title": "Data"
                 }
               },
+              "required": [
+                "data"
+              ],
               "title": "Variables",
               "type": "object"
             },
@@ -1120,7 +1346,7 @@
             "isDisabled": false,
             "parameters": {
               "input": {
-                "content": "{{#if [725fe549-88e6-4deb-be31-d33c9224f4da].[$success]}}\n**RecordedFuture Hash Lookup Results for {{[725fe549-88e6-4deb-be31-d33c9224f4da].[entity].[name]}}**\n**Quick Lookup:** [{{[725fe549-88e6-4deb-be31-d33c9224f4da].[intelCard]}}]({{[\"RecordedFuture Lookup IPs\"].[intelCard]}})\n\n**Risk Score:** {{[725fe549-88e6-4deb-be31-d33c9224f4da].[risk].[score]}} (out of 100)\n**Risk Summary:** {{[725fe549-88e6-4deb-be31-d33c9224f4da].[risk].[riskSummary]}}\n**Risk Criticality:** {{[725fe549-88e6-4deb-be31-d33c9224f4da].[risk].[criticality]}}\n\n**Hash Algorithm:** {{[725fe549-88e6-4deb-be31-d33c9224f4da].[hashAlgorithm]}}\n**Last Seen:** {{[725fe549-88e6-4deb-be31-d33c9224f4da].[timestamps].[lastSeen]}}\n**First Seen:** {{[725fe549-88e6-4deb-be31-d33c9224f4da].[timestamps].[firstSeen]}}\n\n{{else}}\n**RecordedFuture Hash Lookup yielded no results**\n{{/if}}\n"
+                "content": "{{#if [725fe549-88e6-4deb-be31-d33c9224f4da].[$success]}}\n**RecordedFuture Hash Lookup Results for {{[725fe549-88e6-4deb-be31-d33c9224f4da].[data].[entity].[name]}}**\n**Quick Lookup:** {{[725fe549-88e6-4deb-be31-d33c9224f4da].[data].[intelCard]}}\n\n**Risk Score:** {{[725fe549-88e6-4deb-be31-d33c9224f4da].[data].[risk].[score]}} (out of 100)\n**Risk Summary:** {{[725fe549-88e6-4deb-be31-d33c9224f4da].[data].[risk].[riskSummary]}}\n**Risk Criticality:** {{[725fe549-88e6-4deb-be31-d33c9224f4da].[data].[risk].[criticality]}}\n\n**Hash Algorithm:** {{[725fe549-88e6-4deb-be31-d33c9224f4da].[data].[hashAlgorithm]}}\n**Last Seen:** {{[725fe549-88e6-4deb-be31-d33c9224f4da].[data].[timestamps].[lastSeen]}}\n**First Seen:** {{[725fe549-88e6-4deb-be31-d33c9224f4da].[data].[timestamps].[firstSeen]}}\n\n{{else}}\n**RecordedFuture Hash Lookup for {{[396d6e5e-53a7-42be-856e-5a11c8a25632].[$item].[hash]}} yielded no results**\n{{/if}}\n"
               },
               "type": "markdown"
             },
@@ -1154,12 +1380,15 @@
         },
         "tags": null,
         "humanCostSeconds": 0,
-        "humanCostDisplayUnit": ""
+        "humanCostDisplayUnit": "minutes",
+        "parameters": {
+          "definitionSchema": null
+        }
       }
     ],
     "triggers": [
       {
-        "id": "892780fa-84e9-4371-aea7-6a4ef543cffa",
+        "id": "a959acc1-5ab4-431e-a2fc-67034d06cd65",
         "name": "InsightIDR Event",
         "description": "",
         "input": null,
